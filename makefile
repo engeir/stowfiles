@@ -1,8 +1,8 @@
 install-ubuntu:
 	# Clean
 	stow -D X
-	stow -D aptery
 	stow -D alacritty
+	stow -D aptery
 	stow -D bspwm
 	stow -D compton
 	stow -D lf
