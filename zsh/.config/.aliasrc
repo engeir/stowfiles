@@ -1,0 +1,50 @@
+#!/bin/sh
+
+# General
+alias ls="lsd -FX"
+alias rm="trash-put"
+alias cat="batcat"
+alias v="vim"
+alias nv="nvim"
+alias evrc="nvim ~/.vimrc"
+
+# Dotfiles
+alias dotconfig='/usr/bin/git --git-dir=$HOME/dotfiles/ --work-tree=$HOME' 
+
+# Update file indexing
+alias u="sudo updatedb"
+alias dropbox_update="~/.dropbox-dist/dropboxd"
+alias aptfind="apt list --all-versions | awk -F/ '{print $1}' | fzf --multi --preview 'apt show {1}'"
+
+# File handling
+alias skbat='sk --preview="batcat {} --color=always"'
+alias rg='rg -g "!Dropbox" -g "!OneDrive" -g "!BoxSync" -g "!.cache" -g "!.config/nnn" -g "!.git" -g "!node_module" -g "!.npm" -g "!.mozilla" -g "!.meteor" -g "!.nv" -g "!.conda" -g "!.dropbox-dist" -g "!.vscode" -g "!.vscode-insiders" -g "!miniconda3" -g "!.virtualenvs" -g "!snap" -g "!gems" -g "!.wine" -g "!extensions" -g "!coreutils-8.32" -g "!freetype-2.10.4" -g "!.cargo" -g "!Downloads" -g "!R" -g "!.Mathematica"'
+alias cp='/usr/local/bin/cpg -g'
+alias mv='/usr/local/bin/mvg -g'
+# alias f='cd ~ && cd $(fdfind --type d --type f --hidden --exclude .git --exclude .config/nnn --exclude node_module --exclude .cache --exclude .npm --exclude .mozilla --exclude .meteor --exclude .nv --exclude .conda --exclude .dropbox-dist --exclude .vscode --exclude .vscode-insiders --exclude miniconda3 --exclude .virtualenvs --exclude snap --exclude gems --exclude .wine --exclude extensions --exclude coreutils-8.32 --exclude freetype-2.10.4 --exclude .cargo --exclude Downloads --exclude R --exclude .Mathematica --exclude OneDrive --exclude BoxSync --exclude Dropbox | fzf)'
+alias ll="ls -ltrh"
+alias lsn="ls --color=auto */ | less"
+alias open="xdg-open"
+alias space="ncdu --exclude Dropbox --exclude BoxSync --exclude OneDrive --exclude .config/nnn/mounts"  # View file storage
+
+# Open programs
+alias f="fuck"
+alias yt="ytfzf -t"
+alias vpn="/opt/cisco/anyconnect/bin/vpnui"
+alias nikkerud="~/betty/main.rb"
+
+# reMarkable related
+alias rmv="rmview ~/rmview/rmview.json"
+# alias rmapi="~/./rmapi"
+alias cptodo="cp ~/.kb/data/todo/pdh_work ~/Documents/notes_papers/_includes/todo.md"
+alias saRM="ssh-add ~/rM_share"
+alias skRM="ssh-keygen -R 10.11.99.1"
+alias remouse="/home/een023/remousable_program/./remousable"
+
+# FRAM
+alias sfram="ssh -X -Y een023@fram.sigma2.no"
+alias saFRAM="ssh-add ~/.ssh/id_sigma2"
+alias cpfram="cp ~/.kb/data/cheatsheet/fram ~/Documents/notes_papers/_includes/fram_cheat.md"
+
+# Github
+alias saGITHUB="ssh-add ~/.ssh/id_github"

@@ -1,0 +1,20 @@
+#!/usr/bin/env bash
+
+# Terminate already running bar instances
+killall -q polybar
+
+# Wait until the processes have been shut down
+while pgrep -u $UID -x polybar >/dev/null; do sleep 1; done
+
+# Launch polybar
+polybar main -c ~/.config/bspwm/polybar/config &
+
+my_laptop_external_monitor=$(xrandr --query | grep 'DP-2')
+if [[ $my_laptop_external_monitor = *connected* ]]; then
+    polybar usbc -c ~/.config/bspwm/polybar/config &
+fi
+
+my_laptop_external_monitor=$(xrandr --query | grep 'HDMI-1')
+if [[ $my_laptop_external_monitor = *connected* ]]; then
+    polybar hdmi -c ~/.config/bspwm/polybar/config &
+fi

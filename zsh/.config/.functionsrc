@@ -1,0 +1,255 @@
+#!/bin/sh
+
+# bash functions
+
+batdiff () {
+    git diff --name-only --diff-filter=d | xargs batcat --diff
+}
+
+nn ()
+{
+    # Block nesting of nnn in subshells
+    if [ -n $NNNLVL ] && [ "${NNNLVL:-0}" -ge 1 ]; then
+        echo "nnn is already running"
+        return
+    fi
+
+    # The default behaviour is to cd on quit (nnn checks if NNN_TMPFILE is set)
+    # To cd on quit only on ^G, remove the "export" as in:
+    #     NNN_TMPFILE="${XDG_CONFIG_HOME:-$HOME/.config}/nnn/.lastd"
+    # NOTE: NNN_TMPFILE is fixed, should not be modified
+    export NNN_TMPFILE="${XDG_CONFIG_HOME:-$HOME/.config}/nnn/.lastd"
+
+    # Unmask ^Q (, ^V etc.) (if required, see `stty -a`) to Quit nnn
+    # stty start undef
+    # stty stop undef
+    # stty lwrap undef
+    # stty lnext undef
+
+    nnn -d "$@"
+
+    if [ -f "$NNN_TMPFILE" ]; then
+            . "$NNN_TMPFILE"
+            rm -f "$NNN_TMPFILE" > /dev/null
+    fi
+}
+
+nnn_preview ()
+{
+    # Block nesting of nnn in subshells
+    if [ -n "$NNNLVL" ] && [ "${NNNLVL:-0}" -ge 1 ]; then
+        echo "nnn is already running"
+        return
+    fi
+
+    # The default behaviour is to cd on quit (nnn checks if NNN_TMPFILE is set)
+    # To cd on quit only on ^G, remove the "export" as in:
+    #     NNN_TMPFILE="${XDG_CONFIG_HOME:-$HOME/.config}/nnn/.lastd"
+    # NOTE: NNN_TMPFILE is fixed, should not be modified
+    export NNN_TMPFILE="${XDG_CONFIG_HOME:-$HOME/.config}/nnn/.lastd"
+
+    # This will create a fifo where all nnn selections will be written to
+    NNN_FIFO="$(mktemp --suffix=-nnn -u)"
+    export NNN_FIFO
+    (umask 077; mkfifo "$NNN_FIFO")
+
+    # Preview command
+    preview_cmd="/path/to/preview_cmd.sh"
+
+    # Use `tmux` split as preview
+    if [ -e "${TMUX%%,*}" ]; then
+        tmux split-window -e "NNN_FIFO=$NNN_FIFO" -dh "$preview_cmd"
+
+    # Use `xterm` as a preview window
+    elif (which xterm &> /dev/null); then
+        xterm -e "$preview_cmd" &
+
+    # Unable to find a program to use as a preview window
+    else
+        echo "unable to open preview, please install tmux or xterm"
+    fi
+
+    nnn "$@"
+
+    rm -f "$NNN_FIFO"
+}
+
+lc () {
+    tmp="$(mktemp)"
+    lf -last-dir-path="$tmp" "$@"
+    if [ -f "$tmp" ]; then
+        dir="$(cat "$tmp")"
+        rm -f "$tmp"
+        if [ -d "$dir" ]; then
+            if [ "$dir" != "$(pwd)" ]; then
+                cd "$dir"
+            fi
+        fi
+    fi
+}
+
+# File handling
+p () {
+	# this will open pdf file with the default PDF viewer on KDE, xfce, LXDE and
+	# perhaps on other desktops.
+	open=zathura -
+	# open=xdg-open
+
+    ag --ignore Dropbox --ignore OneDrive --ignore BoxSync -U -g ".pdf$" \
+    | fast-p \
+    | fzf --read0 --reverse -e -d $'\t'  \
+        --preview-window down:80% --preview '
+            v=$(echo {q} | tr " " "|");
+            echo -e {1}"\n"{2} | grep -E "^|$v" -i --color=always;
+        ' \
+    | cut -z -f 1 -d $'\t' | tr -d '\n' | xargs -r --null $open > /dev/null 2> /dev/null
+}
+
+cht(){
+    # Look up any command you'd like
+    curl cht.sh/$1
+}
+
+fopen() {
+    open "$(locate -i $1)"
+}
+
+rmbd() {
+    # Delete everything in current path before <date>
+    # Format: YYYY-MM-DD HH:MM:SS
+    c=$(find . ! -newermt "$1 $2" -printf '.' | wc -c)
+    echo "Are you sure you want to delete $c files form $(pwd)?"
+    select yn in "Yes" "No"; do
+        case $yn in
+       	    Yes ) find . ! -newermt "$1 $2" | xargs rm -rf; break;;
+       	    No ) break;;
+        esac
+    done
+}
+
+rmad() {
+    # Delete everything in current path after <date>
+    # Format: YYYY-MM-DD HH:MM:SS
+    c=$(find . -newermt "$1 $2" -printf '.' | wc -c)
+    echo "Are you sure you want to delete $c files from $(pwd)?"
+    select yn in "Yes" "No"; do
+       	case $yn in
+       		Yes ) find . -newermt "$1 $2" | xargs rm -rf; break;;
+       		No ) break;;
+          	esac
+    done
+}
+
+# Github-related
+giit() {
+	git clone https://github.com/engeir/$1.git
+}
+
+wgit() {
+	wget https://github.com/engeir/$1/archive/master.zip && unzip master && rm -rf master.zip
+}
+
+git-get() {
+	curl -u engeir -L -o delete_me_now https://github.com/engeir/$1/archive/master.zip && unzip delete_me_now && rm -rf delete_me_now
+}
+
+# ImageMagick
+remove_menu() {
+	convert $1 -fill white -draw "rectangle 20,100 100,10" $1
+}
+
+remove_page() {
+	convert $1 -fill white -draw "rectangle 610,1810 800,1850" $1
+}
+
+transparent() {
+	out=${2:-$1}
+	col=${3:-white}
+	convert $1 -transparent $col $out
+}
+
+invert() {
+	out=${2:-$1}
+	convert $1 -channel RGB -negate $out
+}
+
+crop() {
+	# Crop image. (Default remove white)
+	for file in $@
+	do
+		convert -trim $file $file
+	done
+}
+
+cropv() {
+	# Crop image in the vertical direction.
+	# (Default remove white.)
+	for file in $@
+	do
+		croptop $file
+		cropbottom $file
+	done
+}
+
+croptop() {
+	for file in $@
+	do
+		convert $file -background white -splice 0x1 -background black -splice 0x1 -trim +repage -chop 0x1 $file
+	done
+}
+
+cropbottom() {
+	for file in $@
+	do
+		convert $file -gravity South -background white -splice 0x1 -background black -splice 0x1 -trim +repage -chop 0x1 $file
+	done
+}
+
+trinv() {
+	# Make transparent and invert.
+	for file in $@
+	do
+		transparent $file $file
+		invert $file $file
+	done
+}
+
+my_img_magik() {
+	# Remove menu and page number, invert and make transparent.
+	for file in $@
+	do
+		remove_menu $file
+		remove_page $file
+		trinv $file
+	done
+}
+
+# Latex compilers
+tex0() {
+	pdflatex $1.tex
+	pdflatex $1.tex
+	pdflatex $1.tex
+}
+
+tex_bib() {
+	pdflatex $1.tex
+	bibtex $1
+	pdflatex $1.tex
+	pdflatex $1.tex
+}
+
+tex_gls() {
+	pdflatex $1.tex
+	makeglossaries $1
+	pdflatex $1.tex
+	pdflatex $1.tex
+}
+
+tex_full() {
+	pdflatex $1.tex
+	bibtex $1
+	makeglossaries $1
+	pdflatex $1.tex
+	pdflatex $1.tex
+}
+

@@ -1,0 +1,75 @@
+#!/bin/sh
+
+# Automatically set the splits and info
+%{{
+    w=$(tput cols)
+    if [ $w -le 120 ]; then
+        lf -remote "send $id set ratios 1:2"
+        lf -remote "send $id set info"
+    elif [ $w -le 200 ]; then
+        lf -remote "send $id set ratios 1:2:3"
+        lf -remote "send $id set info size"
+    else
+        lf -remote "send $id set ratios 2:3:7"
+        lf -remote "send $id set info size:time"
+    fi
+}}
+
+# General
+set icons true
+
+# Previewer
+set previewer stpv
+set cleaner stpvimgclr
+&stpvimg --listen $id
+set preview true
+
+map <enter> open
+map f fzf_jump
+map . set hidden!
+map ac recol
+
+# Bookmarks
+map bb cd /home/een023/.cache/nnn/bookmarks
+map bc cd /home/een023/.config
+map bd cd /home/een023/Downloads
+map bl cd /home/een023/.local
+map bn cd /home/een023/Documents/notes_papers
+map bo cd /home/een023/OneDrive
+map bp cd /home/een023/programs
+map br cd /home/een023/science/ref
+map bs cd /home/een023/bin
+map bt cd /home/een023/Documents/teaching
+map bw cd /home/een023/Documents/work
+
+cmd fzf_jump ${{
+  res="$(find . -maxdepth 3 | fzf --reverse --header='Jump to location')"
+  if [ -f "$res" ]; then
+    cmd="select"
+  elif [ -d "$res" ]; then
+    cmd="cd"
+  fi
+  lf -remote "send $id $cmd \"$res\""
+}}
+
+cmd open ${{
+    case $(file --mime-type "$f" -bL) in
+        text/*|application/json) $EDITOR "$fx";;
+        text/*|application/xml) $EDITOR "$fx";;
+        *) for f in "$fx"; do xdg-open "$f"> /dev/null 2> /dev/null & done;;
+    esac
+}}
+
+cmd recol &{{
+    w=$(tput cols)
+    if [ $w -le 120 ]; then
+        lf -remote "send $id set ratios 1:2"
+        lf -remote "send $id set info"
+    elif [ $w -le 200 ]; then
+        lf -remote "send $id set ratios 1:2:3"
+        lf -remote "send $id set info size"
+    else
+        lf -remote "send $id set ratios 2:3:7"
+        lf -remote "send $id set info size:time"
+    fi
+}}
