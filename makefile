@@ -1,6 +1,7 @@
 install-ubuntu:
     # Clean
     stow -D X
+    stow -D aptery
     stow -D alacritty
     stow -D bspwm
     stow -D compton
@@ -17,6 +18,7 @@ install-ubuntu:
     stow -D zsh
     # Install
     stow X
+    stow aptery
     stow alacritty
     stow bspwm
     stow compton
