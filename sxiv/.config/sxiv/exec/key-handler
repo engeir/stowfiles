@@ -1,0 +1,63 @@
+#!/usr/bin/env sh
+
+# to test:
+# ./path/to/keyhandler "C-m" < foo.txt
+# where foo.txt is a file with name for each photo file per line.
+
+while read file
+do
+    echo "file: $file"
+    case "$1" in
+        "C-d")
+	    choises="Yes\nNo"
+	    chosen=$(echo "$choises" | dmenu -p "Do you want to permanently delete the image?")
+            case "$chosen" in
+                No) mv "$file" ~/.trash ;;
+		Yes) rm "$file" ;;
+	    esac ;;
+        "C-r")
+            convert -rotate 90 "$file" "$file" ;;
+        "C-c")
+            echo -n "$file" | xclip -selection clipboard ;;
+	"C-n")
+            name="$(dmenu -p "rename $file to: ")" 2> /dev/null
+	    if [ -n "$name" ]; then
+               mv "$file" "$name"
+	    fi
+	    ;;
+        "C-m")
+            mv "$file" $dirpath ;;
+	# "C-s")
+	#     choises="Single\nUSB-C\nHDMI4k\nHDMI2k"
+	#     choses=$(echo "$choises" | dmenu -p "Choose your new monitor setup:")
+	#     case "$chosen" in
+	#         Single) 
+        *)
+            echo "not yet implemented: $1" ;;
+    esac
+done
+
+
+## ^X-^R: prompt for new image name (needs `dmenu`) and `mv`
+## ^X-^C: copy the image path to X clipboard (needs `xclip`)
+
+## Example zenity prompt:
+##   name="$(zenity --entry --display=:0.0 --text "rename $file to")" 2> /dev/null
+
+#while read -r file
+#do
+#    case "$1" in
+#        "C-r")
+#                name="$(dmenu -p "rename $file to: ")" 2> /dev/null
+#                if [ -n "$name" ]; then
+#                    mv "$file" "$name"
+#                fi
+#                ;;
+#        "C-c")
+#                printf "%s" "$file" | xclip -selection clipboard ;;
+#        *)
+#                printf "Sorry, I don't understand"
+#                exit 1
+#                ;;
+#    esac
+#done

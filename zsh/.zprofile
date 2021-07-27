@@ -8,8 +8,8 @@ if [ -d "$HOME/.local/bin" ] ; then
     PATH="$HOME/.local/bin:$PATH"
 fi
 
-export VISUAL="vim"
-export EDITOR="vim"
+export VISUAL="nvim"
+export EDITOR="nvim"
 export READER="zathura"
 export TERMINAL="st"
 # export ZDOTDIR="$HOME/.config/zsh"
