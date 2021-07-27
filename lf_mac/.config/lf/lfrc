@@ -1,0 +1,42 @@
+set ratios 1:2:3
+set icons true
+set hidden
+
+set previewer stpv
+set cleaner stpvimgclr
+&stpvimg --listen $id
+set preview true
+
+cmd open ${{
+    case $(file --mime-type "$f" -bL) in
+        text/*|application/json) $EDITOR "$fx";;
+        text/*|application/xml) $EDITOR "$fx" ;;
+        *) for f in "$fx"; do open "$f"> /dev/null 2> /dev/null & done;;
+    esac
+}}
+
+cmd fzf_jump ${{
+    res="$(find . -maxdepth 3 | fzf --reverse --header='Jump to location')"
+    if [ -f "$res" ]; then
+        cmd="select"
+    elif [ -d "$res" ]; then
+        cmd="cd"
+    fi
+    lf -remote "send $id $cmd \"$res\""
+}}
+
+map <enter> open
+map f fzf_jump
+map . set hidden!
+
+set icons
+set info size
+
+# Bookmarks
+map bb cd ~/OneDrive\ -\ UiT\ Office\ 365/Bilder/Canon\ EOS\ M50
+map bc cd ~/.config
+map bd cd ~/Downloads
+map bm cd ~/stowfiles
+map bp cd ~/programs
+map bs cd ~/scripts
+map bw cd ~/OneDrive\ -\ UiT\ Office\ 365

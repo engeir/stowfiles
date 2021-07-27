@@ -1,20 +1,20 @@
 install-ubuntu:
     # Clean
-    stow -d X
-    stow -d alacritty
-    stow -d bspwm
-    stow -d compton
-    stow -d lf
-    stow -d mimi
-    stow -d mpv
-    stow -d nvim
-    stow -d starship
-    stow -d sxhkd
-    stow -d sxiv
-    stow -d tmux
-    stow -d whoogle
-    stow -d zathura
-    stow -d zsh
+    stow -D X
+    stow -D alacritty
+    stow -D bspwm
+    stow -D compton
+    stow -D lf
+    stow -D mimi
+    stow -D mpv
+    stow -D nvim
+    stow -D starship
+    stow -D sxhkd
+    stow -D sxiv
+    stow -D tmux
+    stow -D whoogle
+    stow -D zathura
+    stow -D zsh
     # Install
     stow X
     stow alacritty
@@ -31,3 +31,17 @@ install-ubuntu:
     stow whoogle
     stow zathura
     stow zsh
+
+install-mac:
+	# Clean
+	stow -D lf_mac
+	stow -D nvim
+	stow -D starship
+	stow -D zsh_mac
+	stow -d alacritty_mac
+	# Install
+	stow alacritty_mac
+	stow lf_mac
+	stow nvim
+	stow starship
+	stow zsh_mac
