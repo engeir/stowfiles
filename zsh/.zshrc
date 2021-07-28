@@ -165,6 +165,9 @@ fi
 unset __conda_setup
 # <<< conda initialize <<<
 
+autoload bashcompinit
+bashcompinit
+source /usr/share/bash-completion/completions/pacstall
 # Improved vi mode
 # ZVM_VI_SURROUND_BINDKEY=s-prefix
 source /home/een023/programs/zsh/zsh-vi-mode/zsh-vi-mode.plugin.zsh 2>/dev/null
