@@ -147,6 +147,7 @@ source ~/.config/.kb_alias
 eval "$(starship init zsh)"
 eval "$(jump shell zsh)"
 eval "$(thefuck --alias)"
+eval "$(pip completion --zsh)"
 xrdb ~/.config/Xresources
 . "/home/een023/.local/share/lscolors.sh"
 

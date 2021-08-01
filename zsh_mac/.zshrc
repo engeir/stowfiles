@@ -232,6 +232,7 @@ source ~/.kb_alias
 
 eval "$(starship init zsh)"
 eval "$(mcfly init zsh)"
+eval "$(pip completion --zsh)"
 
 export PATH="/usr/local/opt/expat/bin:$PATH"
 
