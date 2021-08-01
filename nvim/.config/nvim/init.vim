@@ -15,7 +15,9 @@ source $HOME/.config/nvim/vim-plug/plugsettings/tagbar.vim
 source $HOME/.config/nvim/vim-plug/plugsettings/tex-conceal.vim
 source $HOME/.config/nvim/vim-plug/plugsettings/ultisnips.vim
 source $HOME/.config/nvim/vim-plug/plugsettings/vim-markdown.vim
+source $HOME/.config/nvim/vim-plug/plugsettings/vim-maximizer.vim
 source $HOME/.config/nvim/vim-plug/plugsettings/vim-pencil.vim
+source $HOME/.config/nvim/vim-plug/plugsettings/vimspector.vim
 source $HOME/.config/nvim/vim-plug/plugsettings/vimtex.vim
 
 " Other

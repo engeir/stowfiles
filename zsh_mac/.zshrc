@@ -109,7 +109,7 @@ VIRTUALENVWRAPPER_PYTHON=/usr/bin/python3
 # export MANPATH="/usr/local/man:$MANPATH"
 
 # NNN
-export NNN_BMS="b:~/OneDrive - UiT Office 365/Bilder/Canon EOS M50;c:~/.config;d:~/Downloads;p:~/programs;s:~/.local/bin;w:~/OneDrive - UiT Office 365/Skole"
+export NNN_BMS="b:~/OneDrive - UiT Office 365/Bilder/Canon EOS M50;c:~/.config;d:~/Downloads;m:~/stowfiles;p:~/programs;s:~/.local/bin;w:~/OneDrive - UiT Office 365/Skole"
 export NNN_PLUG='d:diffs;f:fzcd;j:autojump;l:launch;p:preview-tui;t:nmount;v:imgview' 
 export NNN_FIFO=/tmp/nnn.fifo nnn
 export NNN_TRASH=1
@@ -134,7 +134,7 @@ nn ()
     # stty lwrap undef
     # stty lnext undef
 
-    nnn -de "$@"
+    nnn -deH "$@"
 
     if [ -f "$NNN_TMPFILE" ]; then
             . "$NNN_TMPFILE"

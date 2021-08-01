@@ -8,6 +8,9 @@
 
 call plug#begin('~/.vim/plugged')
 
+    " Debugger
+    Plug 'puremourning/vimspector'
+    Plug 'szw/vim-maximizer'
     " Better Syntax Support
     Plug 'sheerun/vim-polyglot'
     Plug 'sainnhe/gruvbox-material'

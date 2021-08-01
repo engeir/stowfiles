@@ -10,7 +10,6 @@ augroup WRIGHTING
 	" autocmd FileType markdown,pandoc,dotoo,org execute 'setlocal dictionary+='. &runtimepath . '/extra/dict/latex_comp.txt'
 augroup END
 
-
 " Better nav for omnicomplete
 inoremap <expr> <c-j> ("\<C-n>")
 inoremap <expr> <c-k> ("\<C-p>")
@@ -25,8 +24,12 @@ nnoremap <M-+>    :resize +2<CR>
 nnoremap <M-->    :resize -2<CR>
 
 " Move lines up and down
-xnoremap K :move '<-2<CR>gv-gv'
-xnoremap J :move '>+1<CR>gv-gv'
+xnoremap J :move '>+1<CR>gv=gv
+xnoremap K :move '<-2<CR>gv=gv
+inoremap <C-j> :m .+1<CR>==
+inoremap <C-k> :m .-2<CR>==
+nnoremap <leader>j :m .+1<CR>==
+nnoremap <leader>k :m .-2<CR>==
 
 " I hate escape more than anything else
 inoremap jk <Esc>
@@ -42,11 +45,11 @@ nnoremap <TAB> :bnext<CR>
 nnoremap <S-TAB> :bprevious<CR>
 
 " Alternate way to save
-nnoremap <C-s> :w<CR>
+" nnoremap <C-s> :w<CR>
 " Alternate way to quit
-nnoremap <C-Q> :wq!<CR>
+" nnoremap <C-Q> :wq!<CR>
 " Use control-c instead of escape
-nnoremap <C-c> <Esc>
+" nnoremap <C-c> <Esc>
 " <TAB>: completion. DO NOT WANT THIS.
 " inoremap <expr><TAB> pumvisible() ? "\<C-n>" : "\<TAB>"
 
@@ -95,14 +98,33 @@ nnoremap <silent><leader>b :Buff<CR>
 " nnoremap <silent><leader>l :BLines<CR>
 nnoremap <silent><leader>L :BLines!<CR>
 
-" Turn off search highlight
-nnoremap <silent><leader>h :noh<CR>
-" Start/turn off spellcheck
-nnoremap <silent><leader>s :set spell spelllang=en_gb<CR>
-nnoremap <silent><leader>S :set spell!<CR>
+" Add more breakpoints for the undo
+inoremap , ,<c-g>u
+inoremap . .<c-g>u
+inoremap ! !<c-g>u
+inoremap ? ?<c-g>u
+
+" Add more breakpoints for the history jumping (ctrl-O)
+nnoremap <expr> k (v:count > 5 ? "m'" . v:count : "") . 'k'
+nnoremap <expr> j (v:count > 5 ? "m'" . v:count : "") . 'j'
+
+" Y should behave similar to D and C
+nnoremap Y y$
+
 " Add n newlines and continue in normal mode
 nnoremap <silent> <leader>n :<C-u>call append(line("."),   repeat([""], v:count1))<CR>
 nnoremap <silent> <leader>N :<C-u>call append(line(".")-1, repeat([""], v:count1))<CR>
+
+" Turn off search highlight
+nnoremap <silent><leader>h :noh<CR>
+" Moving through searches, better
+nnoremap n nzzzv
+nnoremap N Nzzzv
+nnoremap J mzJ`z
+
+" Start/turn off spellcheck
+nnoremap <silent><leader>s :set spell spelllang=en_gb<CR>
+nnoremap <silent><leader>S :set spell!<CR>
 " Spell checker mappings (set spell spelllang=en_gb)
 " Go back to last misspelled word and pick first suggestion.
 inoremap <C-L> <C-G>u<Esc>[s1z=`]a<C-G>u
