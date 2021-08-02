@@ -23,9 +23,9 @@ source $HOME/.config/nvim/vim-plug/plugsettings/vimtex.vim
 " Other
 source $HOME/.config/nvim/keys/mappings.vim
 let OS = system('uname -s')
-if $OS == 'Linux'
-    source /home/een023/.config/cdo/add_cdo_complete_to_your_vimrc
+if OS == "Linux\n"
     let g:python3_host_prog = expand("/home/een023/.pyenv/versions/py3nvim/bin/python")
-elseif $OS == 'Darwin'
+    source /home/een023/.config/cdo/add_cdo_complete_to_your_vimrc
+elseif OS == "Darwin\n"
     let g:python3_host_prog = expand("/Users/eirikenger/.pyenv/versions/py3nvim/bin/python")
 endif
