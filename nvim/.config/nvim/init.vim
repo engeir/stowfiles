@@ -25,7 +25,7 @@ source $HOME/.config/nvim/keys/mappings.vim
 let OS = system('uname -s')
 if $OS == 'Linux'
     source /home/een023/.config/cdo/add_cdo_complete_to_your_vimrc
-    let g:python3_host_prog = '/home/een023/.pyenv/versions/py3nvim/bin/python'
+    let g:python3_host_prog = expand("/home/een023/.pyenv/versions/py3nvim/bin/python")
 elseif $OS == 'Darwin'
     let g:python3_host_prog = expand("/Users/eirikenger/.pyenv/versions/py3nvim/bin/python")
 endif
