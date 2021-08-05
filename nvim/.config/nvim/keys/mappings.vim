@@ -129,7 +129,7 @@ nnoremap <silent><leader>S :set spell!<CR>
 " Go back to last misspelled word and pick first suggestion.
 inoremap <C-L> <C-G>u<Esc>[s1z=`]a<C-G>u
 " Select last misspelled word (typing will edit).
-nnoremap <C-K> <Esc>[sve<C-G>
-inoremap <C-K> <Esc>[sve<C-G>
+nnoremap <C-s> <Esc>[sve<C-G>
+inoremap <C-s> <Esc>[sve<C-G>
 snoremap <C-K> <Esc>b[sviw<C-G>
 

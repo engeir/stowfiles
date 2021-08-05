@@ -22,12 +22,13 @@ set icons true
 set previewer stpv
 set cleaner stpvimgclr
 &stpvimg --listen $id
-set preview true
+# set preview true
 
 map <enter> open
 map f fzf_jump
 map . set hidden!
 map ac recol
+map x delete
 
 # Bookmarks
 map bb cd /home/een023/.cache/nnn/bookmarks

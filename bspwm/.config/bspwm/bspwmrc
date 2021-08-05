@@ -1,5 +1,11 @@
 #!/bin/bash
 
+#
+# Check out this repo for how to dynamically change desktops and posibly also handle dual
+# monitor setup.
+# https://gitlab.com/protesilaos/dotfiles/-/tree/4363c3bf0b8e9c1dc10f1344993277cc7eaca178
+# 
+
 ## Environtment
 export PATH="${PATH}:$HOME/.config/bspwm/bin"
 

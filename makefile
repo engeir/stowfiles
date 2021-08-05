@@ -10,7 +10,6 @@ install-ubuntu:
 	stow -D mpv
 	stow -D nvim
 	stow -D starship
-	stow -D sxhkd
 	stow -D sxiv
 	stow -D tmux
 	stow -D whoogle
@@ -27,7 +26,6 @@ install-ubuntu:
 	stow mpv
 	stow nvim
 	stow starship
-	stow sxhkd
 	stow sxiv
 	stow tmux
 	stow whoogle
