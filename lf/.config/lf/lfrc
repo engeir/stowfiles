@@ -17,6 +17,7 @@
 
 # General
 set icons true
+set hidden true
 
 # Previewer
 set previewer stpv
@@ -35,6 +36,7 @@ map bb cd /home/een023/.cache/nnn/bookmarks
 map bc cd /home/een023/.config
 map bd cd /home/een023/Downloads
 map bl cd /home/een023/.local
+map bm cd /home/een023/stowfiles
 map bn cd /home/een023/Documents/notes_papers
 map bo cd /home/een023/OneDrive
 map bp cd /home/een023/programs

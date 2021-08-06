@@ -172,4 +172,4 @@ bash $HOME/polybar-collection/launch.sh
 blight -d amdgpu_bl0 set 15%
 
 # Set wallpaper
-feh --bg-scale /home/een023/.cache/bspwm/wallpaper.jpg
+feh --bg-fill --geometry -200 /home/een023/.cache/bspwm/wallpaper.jpg

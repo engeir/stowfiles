@@ -5,6 +5,9 @@ export EDITOR="nvim"
 export VISUAL="nvim"
 export TERM=screen-256color  # Needed for italics to work in tmux
 export LD_PRELOAD=/usr/lib/x86_64-linux-gnu/libgtk3-nocsd.so.0
+# pyenv-virtualenv: prompt changing will be removed from future release. configure `export
+# PYENV_VIRTUALENV_DISABLE_PROMPT=1' to simulate the behavior.
+export PYENV_VIRTUALENV_DISABLE_PROMPT=1
 
 # For golang
 GOROOT=/usr/local/go
@@ -68,6 +71,7 @@ autoload -Uz compinit
 compinit
 _comp_options+=(globdots)  # Includes hidden files
 # End of lines added by compinstall
+
 # Lines configured by zsh-newuser-install
 HISTFILE=~/.cache/zsh/.histfile
 HISTSIZE=1000
@@ -76,6 +80,7 @@ setopt autocd extendedglob notify
 unsetopt beep
 bindkey -v
 # End of lines configured by zsh-newuser-install
+
 export KEYTIMEOUT=1
 
 # Change cursor for vi modes:
@@ -111,17 +116,13 @@ autoload edit-command-line; zle -N edit-command-line
 bindkey '^v' edit-command-line
 
 # Config for pyenv
-export PYENV_VIRTUALENV_DISABLE_PROMPT=1
+# export PYENV_VIRTUALENV_DISABLE_PROMPT=1
+eval "$(pyenv init -)"
+eval "$(pyenv virtualenv-init -)"
 # Virtualenvwrapper settings:
 export WORKON_HOME=$HOME/.virtualenvs
 
 export PATH="$HOME/.poetry/bin:$PATH"
-export PYENV_ROOT="$HOME/.pyenv"
-export PATH="$PYENV_ROOT/bin:$PATH"
-if command -v pyenv 1>/dev/null 2>&1; then
- eval "$(pyenv init -)"
- eval "$(pyenv virtualenv-init -)"
-fi
 
 VIRTUALENVWRAPPER_PYTHON=/usr/bin/python3
 . ~/.local/bin/virtualenvwrapper.sh
