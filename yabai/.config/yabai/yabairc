@@ -48,6 +48,7 @@ yabai -m config window_gap                   3
 # System preferences
 # yabai -m rule --add app="^System Preferences$" manage=off
 yabai -m rule --add app="^Systemvalg$" manage=off
+yabai -m rule --add app="^QtPass$" manage=off
 # yabai -m rule --add app="^Finder$" layer=above manage=off
 yabai -m rule --add app="^Plash$" layer=above manage=off
 yabai -m rule --add app="^ZAthura$" layer=above manage=on
