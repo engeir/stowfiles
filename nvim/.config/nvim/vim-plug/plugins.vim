@@ -23,6 +23,7 @@ call plug#begin('~/.vim/plugged')
     Plug 'neoclide/coc.nvim', {'branch': 'release'}
     Plug 'tpope/vim-fugitive'
     Plug 'airblade/vim-gitgutter'
+    Plug 'stsewd/fzf-checkout.vim'
     " Python easymotion
     " Plug 'jeetsukumaran/vim-pythonsense'
     Plug 'fs111/pydoc.vim'
