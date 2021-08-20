@@ -53,4 +53,7 @@ call plug#begin('~/.vim/plugged')
     Plug 'airblade/vim-rooter'
     " Motions
     Plug 'easymotion/vim-easymotion'
+
+    " That browser experience
+    Plug 'glacambre/firenvim', { 'do': { _ -> firenvim#install(0) } }
 call plug#end()
