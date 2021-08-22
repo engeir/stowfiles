@@ -166,6 +166,7 @@ nn ()
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 # MY ALIASES
+alias ls="lsd -FX"
 alias rm="echo Do not use this, use trash-cli put filename instead"
 alias nv="nvim"
 alias nnn="nnn -derH"
