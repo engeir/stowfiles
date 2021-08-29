@@ -87,6 +87,10 @@ vmap <C-r> :'<,'>FloatermNew --wintype=vsplit python<CR>
 nnoremap <silent><leader>r :FloatermNew --wintype=vsplit --autoclose=0 python %<CR>
 map <leader>a :!setsid autocomp % &<CR>
 
+" Open pdf from source (e.g. md file)
+" map <leader><leader>o :!xdg-open "$(echo % | awk -F. '{print $1}').pdf" &<CR>
+map <leader><leader>o :!open_output % &<CR>
+
 " Search files
 nmap <leader>gd <Plug>(coc-definition)
 nmap <leader>gr <Plug>(coc-references)
