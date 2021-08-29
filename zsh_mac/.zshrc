@@ -166,6 +166,7 @@ nn ()
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 # MY ALIASES
+alias ls="lsd -FX"
 alias rm="echo Do not use this, use trash-cli put filename instead"
 alias nv="nvim"
 alias nnn="nnn -derH"
@@ -173,6 +174,7 @@ alias cat="bat"
 alias sxiv="sxiv -b"
 alias pqiv="pqiv -it"
 alias yt="ytfzf"
+alias publish_flottflyt="rsync -rtvzP ~/projects/flottflyt/ root@flottflyt.xyz:/var/www/flottflyt"
 alias figlet="/Users/eirikenger/figlet/./figlet"
 alias lolban="/Users/eirikenger/figlet/./lolban"
 koolcat() {
@@ -223,16 +225,17 @@ yr() {
 }
 
 
-export PATH="~/.pyenv/bin:$PATH"
-if command -v pyenv 1>/dev/null 2>&1; then
-  eval "$(pyenv init -)"
-  eval "$(pyenv virtualenv-init -)"
-fi
+# export PATH="~/.pyenv/bin:$PATH"
+# if command -v pyenv 1>/dev/null 2>&1; then
+eval "$(pyenv init -)"
+eval "$(pyenv virtualenv-init -)"
+# fi
 source ~/.kb_alias
 
 eval "$(starship init zsh)"
 eval "$(mcfly init zsh)"
 eval "$(pip completion --zsh)"
+# eval "$(pass.zsh-completion)"
 
 export PATH="/usr/local/opt/expat/bin:$PATH"
 

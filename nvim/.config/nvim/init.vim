@@ -6,6 +6,9 @@ source $HOME/.config/nvim/general/settings.vim
 source $HOME/.config/nvim/vim-plug/plugins.vim
 
 source $HOME/.config/nvim/vim-plug/plugsettings/coc.vim
+source $HOME/.config/nvim/vim-plug/plugsettings/firenvim.vim
+source $HOME/.config/nvim/vim-plug/plugsettings/fzf.vim
+source $HOME/.config/nvim/vim-plug/plugsettings/fzf-checkout.vim
 source $HOME/.config/nvim/vim-plug/plugsettings/gitgutter.vim
 source $HOME/.config/nvim/vim-plug/plugsettings/gruvbox.vim
 source $HOME/.config/nvim/vim-plug/plugsettings/lesspipe.vim

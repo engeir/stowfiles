@@ -23,6 +23,7 @@ call plug#begin('~/.vim/plugged')
     Plug 'neoclide/coc.nvim', {'branch': 'release'}
     Plug 'tpope/vim-fugitive'
     Plug 'airblade/vim-gitgutter'
+    Plug 'stsewd/fzf-checkout.vim'
     " Python easymotion
     " Plug 'jeetsukumaran/vim-pythonsense'
     Plug 'fs111/pydoc.vim'
@@ -53,4 +54,7 @@ call plug#begin('~/.vim/plugged')
     Plug 'airblade/vim-rooter'
     " Motions
     Plug 'easymotion/vim-easymotion'
+
+    " That browser experience
+    Plug 'glacambre/firenvim', { 'do': { _ -> firenvim#install(0) } }
 call plug#end()

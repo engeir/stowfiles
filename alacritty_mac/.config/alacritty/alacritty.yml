@@ -1,8 +1,8 @@
 colors:
   # Default colors
-  primary:
-    background: '0x002635'
-    foreground: '0xe6e6dc'
+  # primary:
+  #   background: '0x002635'
+  #   foreground: '0xe6e6dc'
 
   # Normal colors
   normal:
@@ -30,7 +30,7 @@ colors:
     text: "0x002635"
     cursor: "0xffcc1b"
 
-background_opacity: 0.97
+background_opacity: 0.9
 
 cursor:
   style:
