@@ -27,9 +27,14 @@ super + alt + p
 # make sxhkd reload its configuration files:
 super + Escape
 	pkill -USR1 -x sxhkd
-# start surf
+
+# start surf in tabbed
 super + alt + Escape
 	tabbed -c surf -e
+
+# start zathura in tabbed
+super + alt + z
+	tabbed -c zathura -e
 
 ##---------- Rofi Launcher & Menus ----------##
 
@@ -54,19 +59,21 @@ alt + F1
 
 # Take a screenshot
 Print
-	scrot 'Screenshot_%Y-%m-%d-%S_$wx$h.png' -e 'mv $f $$(xdg-user-dir PICTURES) ; viewnior $$(xdg-user-dir PICTURES)/$f'
-	
+	scrot 'Screenshot_%Y-%m-%d-%S_$wx$h.png' -e 'mv $f $$(xdg-user-dir PICTURES)/Pictures/Screenshots ; sxiv $$(xdg-user-dir PICTURES)/Pictures/Screenshots/$f'
+
 # Take a screenshot in 5 second
 alt + Print	
-	scrot -d 5 'Screenshot_%Y-%m-%d-%S_$wx$h.png' -e 'mv $f $$(xdg-user-dir PICTURES) ; viewnior $$(xdg-user-dir PICTURES)/$f'
+	scrot -d 5 'Screenshot_%Y-%m-%d-%S_$wx$h.png' -e 'mv $f $$(xdg-user-dir PICTURES)/Pictures/Screenshots ; sxiv $$(xdg-user-dir PICTURES)/Pictures/Screenshots/$f'
+	# scrot -d 5 'Screenshot_%Y-%m-%d-%S_$wx$h.png' -e 'mv $f $$(xdg-user-dir PICTURES)/Pictures/Screenshots ; viewnior $$(xdg-user-dir PICTURES)/Pictures/Screenshots/$f'
 
 # Brighness control
 XF86MonBrightness{Up,Down}
 	backlight{-up,-down}
 	
 # Volume control
-XF86Audio{RaiseVolume,LowerVolume}
-	volume{-up,-down}
+XF86Audio{RaiseVolume,LowerVolume,Mute}
+	~/.config/sxhkd/volume.sh {up,down,mute}
+	# volume{-up,-down}
 
 XF86AudioMute
 	amixer set Master toggle
