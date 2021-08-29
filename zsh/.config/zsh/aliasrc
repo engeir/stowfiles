@@ -2,11 +2,14 @@
 
 # General
 alias ls="lsd -FX"
-alias rm="trash-put"
+# alias rm="trash-put"
 alias cat="batcat"
-alias v="vim"
-alias nv="nvim"
 alias evrc="nvim ~/.vimrc"
+alias nnn="nnn -derH"
+alias nv="nvim"
+alias rm='echo '\''Dont use rm. Use trash-put instead. (Or use \\rm.)'\'
+alias tks="tmux kill-session -t"
+alias v="vim"
 
 # Dotfiles
 alias dotconfig='/usr/bin/git --git-dir=$HOME/dotfiles/ --work-tree=$HOME' 
@@ -48,3 +51,13 @@ alias cpfram="cp ~/.kb/data/cheatsheet/fram ~/Documents/notes_papers/_includes/f
 
 # Github
 alias saGITHUB="ssh-add ~/.ssh/id_github"
+
+# More SSH
+alias saVULTR="ssh-add ~/.ssh/id_vultr"
+
+# Tab-completions for pyenv and pip
+alias epynv='eval "$(pyenv init -)"'
+alias epynvv='eval "$(pyenv virtualenv-init -)"'
+alias epip='eval "$(pip completion --zsh)"'
+
+alias condainit=". ~/.config/zsh/condainit"

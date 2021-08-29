@@ -70,3 +70,4 @@ export FZF_ALT_C_COMMAND="fdfind --type d $FD_OPTIONS"
 
 export BAT_PAGER="less -R"
 
+if [ -e /home/een023/.nix-profile/etc/profile.d/nix.sh ]; then . /home/een023/.nix-profile/etc/profile.d/nix.sh; fi # added by Nix installer
