@@ -226,6 +226,8 @@ yr() {
     curl wttr.in/$loc
 }
 
+# Speedy keys
+xset r rate 210 40
 
 # export PATH="~/.pyenv/bin:$PATH"
 # if command -v pyenv 1>/dev/null 2>&1; then
