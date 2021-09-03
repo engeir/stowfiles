@@ -7,6 +7,8 @@ export VISUAL=nvim
 export EDITOR=nvim
 # Bat is better at showing man-pages as well
 export MANPAGER="sh -c 'col -bx | bat -l man -p'"
+# export LS_COLORS="$(vivid generate nord)"
+export LS_COLORS="$(vivid generate solarized-dark)"
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -224,6 +226,8 @@ yr() {
     curl wttr.in/$loc
 }
 
+# Speedy keys
+xset r rate 210 40
 
 # export PATH="~/.pyenv/bin:$PATH"
 # if command -v pyenv 1>/dev/null 2>&1; then
