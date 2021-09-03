@@ -74,9 +74,6 @@ nnoremap <leader>gs :Git<CR>
 nnoremap <leader>ga :Git add .<CR>
 nnoremap <leader>gg :GitGutterToggle<CR>
 
-" (Python) tagbar
-nmap <F8> :TagbarToggle<CR>
-
 " Open folder view
 " nnoremap <leader>pv :to vsp <bar> :Ex <bar> :vertical resize 40<CR>
 nnoremap <leader>pv :FloatermNew --wintype=vsplit --opener=vsplit --autoclose=2 nnn<CR>

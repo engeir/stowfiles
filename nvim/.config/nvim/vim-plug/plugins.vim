@@ -27,7 +27,6 @@ call plug#begin('~/.vim/plugged')
     " Python easymotion
     " Plug 'jeetsukumaran/vim-pythonsense'
     Plug 'fs111/pydoc.vim'
-    Plug 'preservim/tagbar'
     " Text editing
     " Used for Markdown highlighting
     Plug 'godlygeek/tabular'
@@ -41,6 +40,8 @@ call plug#begin('~/.vim/plugged')
     Plug 'sirver/ultisnips'
     Plug 'honza/vim-snippets'
     Plug 'KeitaNakamura/tex-conceal.vim'
+    " Python
+    Plug 'nvie/vim-flake8'
     " Fuzzy search and open files
     Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
     Plug 'junegunn/fzf.vim'
