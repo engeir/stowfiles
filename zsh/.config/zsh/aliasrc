@@ -2,12 +2,12 @@
 
 # General
 alias ls="lsd -FX"
-# alias rm="trash-put"
 alias cat="batcat"
 alias evrc="nvim ~/.vimrc"
 alias nnn="nnn -derH"
 alias nv="nvim"
-alias rm='echo '\''Dont use rm. Use trash-put instead. (Or use \\rm.)'\'
+# alias rm='echo '\''Dont use rm. Use trash-put instead. (Or use \\rm.)'\'
+alias rm="trash-put"
 alias tks="tmux kill-session -t"
 alias v="vim"
 
@@ -56,8 +56,8 @@ alias saGITHUB="ssh-add ~/.ssh/id_github"
 alias saVULTR="ssh-add ~/.ssh/id_vultr"
 
 # Tab-completions for pyenv and pip
-alias epynv='eval "$(pyenv init -)"'
-alias epynvv='eval "$(pyenv virtualenv-init -)"'
+# alias epynv='eval "$(pyenv init -)"'
+# alias epynvv='eval "$(pyenv virtualenv-init -)"'
 alias epip='eval "$(pip completion --zsh)"'
 
 alias condainit=". ~/.config/zsh/condainit"

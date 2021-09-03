@@ -54,8 +54,8 @@ autoload edit-command-line; zle -N edit-command-line
 bindkey '^v' edit-command-line
 
 # Config for pyenv and pip (slows down the prompt, move to aliasrc)
-# eval "$(pyenv init -)"
-# eval "$(pyenv virtualenv-init -)"
+eval "$(pyenv init -)"
+eval "$(pyenv virtualenv-init -)"
 # eval "$(pip completion --zsh)"  # This slows down the prompt!
 export PATH="$HOME/.poetry/bin:$PATH"
 
