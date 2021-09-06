@@ -12,7 +12,7 @@ call plug#begin('~/.vim/plugged')
     Plug 'puremourning/vimspector'
     Plug 'szw/vim-maximizer'
     " Better Syntax Support
-    Plug 'sheerun/vim-polyglot'
+    " Plug 'sheerun/vim-polyglot'
     Plug 'sainnhe/gruvbox-material'
     Plug 'gko/vim-layout'
     Plug 'sainnhe/forest-night' 

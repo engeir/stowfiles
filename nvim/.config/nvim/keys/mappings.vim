@@ -118,6 +118,9 @@ nnoremap <silent><leader>h :noh<CR>
 nnoremap n nzzzv
 nnoremap N Nzzzv
 nnoremap J mzJ`z
+" Moving over paragraphs, better
+nnoremap { {zz
+nnoremap } }zz
 
 " Start/turn off spellcheck
 nnoremap <silent><leader>s :set spell spelllang=en_gb<CR>

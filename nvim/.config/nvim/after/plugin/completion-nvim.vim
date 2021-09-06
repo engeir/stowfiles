@@ -3,8 +3,8 @@
 " lua require'lspconfig'.pyright.setup{on_attach=require'completion'.on_attach}
 
 " This should be on by default ...
-let g:completion_enable_auto_popup = 1
-" let g:completion_enable_snippet = 'UltiSnips'
+" let g:completion_enable_auto_popup = 1
+let g:completion_enable_snippet = 'UltiSnips'
 
 " Use <Tab> and <S-Tab> to navigate through popup menu
 " inoremap <expr> <Tab>   pumvisible() ? "\<C-n>" : "\<Tab>"
