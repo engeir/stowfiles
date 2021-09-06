@@ -17,12 +17,20 @@ call plug#begin('~/.vim/plugged')
     Plug 'gko/vim-layout'
     Plug 'sainnhe/forest-night' 
     Plug 'tpope/vim-commentary'
-    Plug 'tpope/vim-surround'
+    Plug 'tpope/vim-surround'  " Change surrounding characters
+    Plug 'Raimondi/delimitMate'  " Close matching characters
     Plug 'tpope/vim-speeddating'
+    " Lsp
+    Plug 'neovim/nvim-lspconfig'
+    Plug 'nvim-lua/completion-nvim'
+    Plug 'ray-x/lsp_signature.nvim'
+    Plug 'glepnir/lspsaga.nvim'
     " Git
-    Plug 'neoclide/coc.nvim', {'branch': 'release'}
+    Plug 'nvim-lua/plenary.nvim'
+    Plug 'lewis6991/gitsigns.nvim'
+    " Plug 'neoclide/coc.nvim', {'branch': 'release'}
     Plug 'tpope/vim-fugitive'
-    Plug 'airblade/vim-gitgutter'
+    " Plug 'airblade/vim-gitgutter'
     Plug 'stsewd/fzf-checkout.vim'
     " Python easymotion
     " Plug 'jeetsukumaran/vim-pythonsense'
@@ -47,7 +55,7 @@ call plug#begin('~/.vim/plugged')
     Plug 'junegunn/fzf.vim'
     Plug 'voldikss/vim-floaterm'
     " Statusline
-    Plug 'norcalli/nvim-colorizer.lua'
+    Plug 'hoob3rt/lualine.nvim'
     Plug 'vim-airline/vim-airline'
     Plug 'vim-airline/vim-airline-themes'
     Plug 'mhinz/vim-startify'  " Startup
@@ -55,7 +63,18 @@ call plug#begin('~/.vim/plugged')
     Plug 'airblade/vim-rooter'
     " Motions
     Plug 'easymotion/vim-easymotion'
-
-    " That browser experience
-    Plug 'glacambre/firenvim', { 'do': { _ -> firenvim#install(0) } }
+    " Telescope
+    Plug 'nvim-lua/plenary.nvim'
+    Plug 'nvim-telescope/telescope.nvim'
+    Plug 'kyazdani42/nvim-web-devicons'
+    " Treesitter
+    Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}  " We recommend updating the parsers on update
+    " Install nvim-cmp
+    Plug 'hrsh7th/nvim-cmp'
+    " Install snippet engine (This example installs [hrsh7th/vim-vsnip](https://github.com/hrsh7th/vim-vsnip))
+    Plug 'hrsh7th/vim-vsnip'
+    " Install the buffer completion source
+    Plug 'hrsh7th/cmp-buffer'
+    " Other
+    Plug 'norcalli/nvim-colorizer.lua'
 call plug#end()
