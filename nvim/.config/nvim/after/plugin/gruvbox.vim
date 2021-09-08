@@ -7,4 +7,4 @@ let g:gruvbox_material_cursor = 'green'
 let g:gruvbox_material_transparent_background = 1
 colorscheme gruvbox-material
 set bg=dark
-let g:airline_theme = 'gruvbox_material'
+" let g:airline_theme = 'gruvbox_material'

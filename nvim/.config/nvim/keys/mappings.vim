@@ -85,9 +85,9 @@ map <leader>a :!setsid autocomp % &<CR>
 map <leader><leader>o :!open_output % &<CR>
 
 " Search files
-nmap <leader>gd <Plug>(coc-definition)
-nmap <leader>gr <Plug>(coc-references)
-nnoremap <C-p> :GFiles<CR>
+" nmap <leader>gd <Plug>(coc-definition)
+" nmap <leader>gr <Plug>(coc-references)
+" nnoremap <C-p> :GFiles<CR>
 " Search files (open new or from buffer) with fzf
 nnoremap <silent><leader>o :Files<CR>
 nnoremap <silent><leader>O :Rg<CR>

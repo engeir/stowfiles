@@ -12,23 +12,23 @@ call plug#begin('~/.vim/plugged')
     Plug 'puremourning/vimspector'
     Plug 'szw/vim-maximizer'
     " Better Syntax Support
-    " Plug 'sheerun/vim-polyglot'
     Plug 'sainnhe/gruvbox-material'
     Plug 'gko/vim-layout'
-    Plug 'sainnhe/forest-night' 
+    Plug 'sainnhe/forest-night'
     Plug 'tpope/vim-commentary'
     Plug 'tpope/vim-surround'  " Change surrounding characters
     Plug 'Raimondi/delimitMate'  " Close matching characters
     Plug 'tpope/vim-speeddating'
     " Lsp
     Plug 'neovim/nvim-lspconfig'
-    Plug 'nvim-lua/completion-nvim'
+    " Plug 'nvim-lua/completion-nvim'
     Plug 'ray-x/lsp_signature.nvim'
     Plug 'glepnir/lspsaga.nvim'
+    Plug 'ms-jpq/coq_nvim', {'branch': 'coq'}
+    Plug 'ms-jpq/coq.artifacts', {'branch': 'artifacts'}
     " Git
     Plug 'nvim-lua/plenary.nvim'
     Plug 'lewis6991/gitsigns.nvim'
-    " Plug 'neoclide/coc.nvim', {'branch': 'release'}
     Plug 'tpope/vim-fugitive'
     " Plug 'airblade/vim-gitgutter'
     Plug 'stsewd/fzf-checkout.vim'
@@ -78,3 +78,5 @@ call plug#begin('~/.vim/plugged')
     " Other
     Plug 'norcalli/nvim-colorizer.lua'
 call plug#end()
+
+" autocmd CursorHold,CursorHoldI * lua require('code_action_utils').code_action_listener()

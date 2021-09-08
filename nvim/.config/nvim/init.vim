@@ -4,6 +4,7 @@
 " https://www.youtube.com/watch?v=FW2X1CXrU1w
 source $HOME/.config/nvim/general/settings.vim
 
+let g:coq_settings = { 'auto_start': 'shut-up' }
 " Plugins:
 source $HOME/.config/nvim/vim-plug/plugins.vim
 
