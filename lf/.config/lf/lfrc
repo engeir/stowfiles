@@ -18,6 +18,7 @@
 # General
 set icons true
 set hidden true
+set scrolloff 10   # integer value
 
 # Previewer
 set previewer stpv

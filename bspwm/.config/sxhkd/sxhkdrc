@@ -11,7 +11,7 @@ super + b
 	firefox
 
 # program launcher
-super + @space
+alt + F1
 	dmenu_run
 	# dmenu_run -nb '#000000' -nf "#3CB371" -sb "#3CB371" -fn 3
 	#dmenu_run -nb '#000000' -nf "#00008B" -sb "#00008B" -fn 3
@@ -39,7 +39,7 @@ super + alt + z
 ##---------- Rofi Launcher & Menus ----------##
 
 # Rofi App Launcher
-alt + F1
+super + @space
     rofi -show drun -theme $HOME/programs/command_line_apps/rofi-collection/gruvbox/gruvbox.rasi
 	# sh ~/.config/bspwm/rofi/bin/launcher
 
