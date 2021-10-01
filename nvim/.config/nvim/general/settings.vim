@@ -12,12 +12,14 @@ set conceallevel=0                      " So that I can see `` in markdown files
 set cursorcolumn                        " Enable highlighting of the current column
 set cursorline                          " Enable highlighting of the current line
 set encoding=utf-8                      " The encoding displayed
+set expandtab
 set fileencoding=utf-8                  " The encoding written to file
-set formatoptions-=crot                 " Stop newline continution of comments
+set formatoptions-=crot                 " Stop newline continuation of comments
 set hidden                              " Required to keep multiple buffers open
 set incsearch
 set iskeyword+=-                      	" treat dash separated words as a word text object"
 set laststatus=0                        " Always display the status line
+" set ma                                  " Modifiable on
 set mouse=a                             " Enable your mouse
 set nobackup                            " This is recommended by coc
 set noerrorbells                        " No sound bc. sound is stupid
@@ -33,13 +35,13 @@ set showtabline=2                       " Always show tabs
 set signcolumn=yes                      " Gives space for signs (e.g. git) in leftmost column
 set smartindent                         " Makes indenting smart
 set smarttab                            " Makes tabbing smarter will realize you have 2 vs 4
+set spell spelllang=en_gb
 set splitbelow                          " Horizontal splits will automatically be below
 set splitright                          " Vertical splits will automatically be to the right
-set tabstop=4 softtabstop=4             " Insert 4 spaces for a tab (et=expandtab)
-set expandtab
 set t_Co=256                            " Support 256 colors
+set tabstop=4 softtabstop=4             " Insert 4 spaces for a tab (et=expandtab)
 set termguicolors
-set textwidth=90
+set textwidth=90                        " Automatically insert newline at given column
 set timeoutlen=500                      " By default timeoutlen is 1000 ms
 set updatetime=300                      " Faster completion
 

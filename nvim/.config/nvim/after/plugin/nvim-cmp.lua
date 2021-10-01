@@ -8,7 +8,7 @@ cmp.setup({
   },
   mapping = {
     ['<C-y>'] = cmp.mapping.confirm({ select = true }),
-    ['<Tab>'] = cmp.mapping(cmp.mapping.select_next_item(), { 'i', 's' }),
+    -- ['<Tab>'] = cmp.mapping(cmp.mapping.select_next_item(), { 'i', 's' }),
   },
   completion = {
     autocomplete = false,
