@@ -1,5 +1,6 @@
 # If you come from bash you might have to change your $PATH.
 export PATH=$HOME/bin:/usr/local/bin:$HOME/scripts:$HOME/.local/bin:$PATH
+export NODE_PATH='/usr/local/lib/node_modules'
 
 # Path to your oh-my-zsh installation.
 export ZSH="/Users/eirikenger/.oh-my-zsh"
@@ -169,7 +170,8 @@ nn ()
 
 # MY ALIASES
 alias ls="lsd -FX"
-alias rm="echo Do not use this, use trash-cli put filename instead"
+# alias rm="echo Do not use this, use trash-cli put filename instead"
+alias rm="trash-put"
 alias nv="nvim"
 alias nnn="nnn -derH"
 alias cat="bat"
@@ -177,6 +179,7 @@ alias sxiv="sxiv -b"
 alias pqiv="pqiv -it"
 alias yt="ytfzf"
 alias publish_flottflyt="rsync -rtvzP ~/projects/flottflyt/ root@flottflyt.xyz:/var/www/flottflyt"
+alias publish_eirikenger="rsync -rtvzP ~/projects/eirikenger/ root@flottflyt.xyz:/var/www/eirikenger"
 alias figlet="/Users/eirikenger/figlet/./figlet"
 alias lolban="/Users/eirikenger/figlet/./lolban"
 koolcat() {
@@ -227,10 +230,11 @@ yr() {
 }
 
 # Speedy keys
-xset r rate 210 40
+# xset r rate 210 40
 
 # export PATH="~/.pyenv/bin:$PATH"
 # if command -v pyenv 1>/dev/null 2>&1; then
+export PYENV_VIRTUALENV_DISABLE_PROMPT=1
 eval "$(pyenv init -)"
 eval "$(pyenv virtualenv-init -)"
 # fi

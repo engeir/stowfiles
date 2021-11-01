@@ -11,6 +11,9 @@ export PATH
 PATH="/Users/eirikenger/Documents/ReMarkableAPI:${PATH}"
 export PATH
 
+export PYENV_ROOT="$HOME/.pyenv"
+export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init --path)"
 # NNN
 export NNN_PLUG='j:autojump;f:fzcd;p:preview-tui;d:diffs;t:nmount;v:imgview' 
 
