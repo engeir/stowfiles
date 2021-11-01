@@ -1,0 +1,14 @@
+#!/bin/bash
+
+VAR=0
+
+if [[ $VAR == "0" ]]; then
+	exit 1
+fi
+
+now=`date +'%Y-%m-%dT%H:%M:%S'`
+
+if [[ $VAR < $now ]]; then
+	dunstify -i computer -u 2 FRAM "Your job is done\!"
+	sed -i "s/VAR=$VAR/VAR=0/g" /home/een023/bin/fram_job_done 
+fi

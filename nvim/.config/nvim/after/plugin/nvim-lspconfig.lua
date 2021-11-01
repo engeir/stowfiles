@@ -1,5 +1,5 @@
 local nvim_lsp = require 'lspconfig'
-local coq = require "coq" -- add this
+-- local coq = require "coq" -- add this
 local protocol = require'vim.lsp.protocol'
 
 -- Use an on_attach function to only map the following keys
@@ -41,7 +41,7 @@ local on_attach = function(client, bufnr)
   buf_set_keymap('n', '<space>q', '<cmd>lua vim.lsp.diagnostic.set_loclist()<CR>', opts)
   buf_set_keymap('n', '<space>f', '<cmd>lua vim.lsp.buf.formatting()<CR>', opts)
 
-  -- require 'completion'.on_attach(client, bufnr)
+  require 'completion'.on_attach(client, bufnr)
 
   -- Nice symbols for the pop-up completion menu
   --protocol.SymbolKind = { }
@@ -78,10 +78,10 @@ end
 -- map buffer local keybindings when the language server attaches
 local servers = { 'pyright', 'rust_analyzer', 'tsserver' }
 for _, lsp in ipairs(servers) do
-  nvim_lsp[lsp].setup(coq.lsp_ensure_capabilities({
+  nvim_lsp[lsp].setup({
     on_attach = on_attach,
     flags = {
       debounce_text_changes = 150,
     }
-  }))
+  })
 end

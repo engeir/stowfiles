@@ -1,0 +1,3 @@
+#!/usr/bin/env sh
+
+ cp ~/.kb/data/todo/pdh_work ~/Documents/notes_papers/_includes/todo.md

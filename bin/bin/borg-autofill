@@ -1,0 +1,8 @@
+#!/usr/bin/expect -f
+
+set timeout -1
+spawn borg-backup.sh
+expect -re "Password" { send -- [exec pass Backup/rsync]\r }
+expect -re "Password" { send -- [exec pass Backup/rsync]\r }
+
+expect eof

@@ -1,0 +1,46 @@
+#!/bin/bash
+
+# From issue: https://github.com/moby/moby/issues/12997
+
+# Docker can't pass newlines to containers if there are \n in variables in
+# --env-file files. This tool creates a $1.exported file with newlines that
+# can be sourced before running your container and a $1.vars for you to pass
+# to --env-files so docker passes those variables to the container.
+
+# Usage:
+# dockerize-env .env
+# This creates: .env.vars and .env.exported
+# then you can do: source .env.exported && docker run --env-file .env.vars my_container
+
+# If your .env file contains something like:
+# MY_PRIVKEY="-----BEGIN RSA PRIVATE KEY-----\nNIIJKgIBAAKBAgEAsAWzcV2XCTFUj25LkvHIhhgojOERBHWHCQYb7tqs7r3IKfcl\nyhCe5...
+# you're going to need something like this
+
+set -o nounset
+set -o errexit
+
+echo '' > "$1.vars"
+echo '' > "$1.exported"
+
+while read -r in
+do
+  [[ "$in" =~ ^# ]] && continue
+  [ -z "$in" ] && continue
+  if [[ "$in" == *"="* ]]
+  then
+    IFS='=' read -ra LINE <<< "$in"
+    echo "${LINE[0]}" >> "$1.vars"
+    echo -e "export $in" >> "$1.exported"
+  else
+    echo "Invalid line:"
+    echo $in
+    echo "File $1 contained invalid lines. Lines should be of the form:"
+    echo "#comment"
+    echo "or"
+    echo "VAR=VAL"
+    echo "Usage: docker-run-envfile .env *docker run arguments*"
+    exit 1
+  fi
+done < "$1"
+
+exit 0

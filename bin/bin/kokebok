@@ -1,0 +1,9 @@
+#!/bin/sh
+
+dir=$(pwd)
+cd /home/een023/recepie/kokebok
+lualatex /home/een023/recepie/kokebok/main.tex
+cd $dir
+
+rmapi rm main
+rmapi put /home/een023/recepie/kokebok/main.pdf

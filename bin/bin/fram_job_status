@@ -1,0 +1,27 @@
+#!/bin/bash
+
+job_id=`ssh fram squeue -u een023 | sed -n 's/ \([^ ]\+\).*een023.*/\1/p' | sed 's/^ *//g' | sort | sed 1q`
+
+[ -z "$job_id" ] && dunstify -i computer -t 5000 -u 2 FRAM "No job ID found" && exit 1
+
+VAR=`ssh fram scontrol show job $job_id | sed -n 's/^.*EndTime= *\([^ ]*\) .*$/\1/p'`
+runtime=`ssh fram scontrol show job $job_id | sed -n 's/^.*RunTime= *\([^ ]*\) .*$/\1/p'`
+timelimit=`ssh fram scontrol show job $job_id | sed -n 's/^.*TimeLimit= *\([^ ]*\) .*$/\1/p'`
+# From S to d-H:M:S
+# eval "echo $(date -ud "@$seconds" +'$((%s/3600/24))-%H:%M:%S')"
+# From d-H:M:S to S
+# echo $days | sed 's/-/:/g' | awk -F: '{ if (NF == 1) {print $NF} else if (NF == 2) {print $1 * 60 + $2} else if (NF==3) {print $1 * 3600 + $2 * 60 + $3} else if (NF==4) {print $1 * 3600* 24 + $2 * 3600 + $3 * 60 + $4} }'
+tl_sec=`echo $timelimit | sed 's/-/:/g' | awk -F: '{ if (NF == 1) {print $NF} else if (NF == 2) {print $1 * 60 + $2} else if (NF==3) {print $1 * 3600 + $2 * 60 + $3} else if (NF==4) {print $1 * 3600* 24 + $2 * 3600 + $3 * 60 + $4} }'`
+rt_sec=`echo $runtime | sed 's/-/:/g' | awk -F: '{ if (NF == 1) {print $NF} else if (NF == 2) {print $1 * 60 + $2} else if (NF==3) {print $1 * 3600 + $2 * 60 + $3} else if (NF==4) {print $1 * 3600* 24 + $2 * 3600 + $3 * 60 + $4} }'`
+td_sec=$(($tl_sec - $rt_sec))
+timediff=$(eval "echo $(date -ud "@$td_sec" +'$((%s/3600/24))-%H:%M:%S')")
+
+[ -z "$VAR" ] && dunstify -i computer -t 5000 -u 2 FRAM "Is the job ID ($job_id) correct?" && exit 1
+
+if [[ "$VAR" == "Unknown" ]]; then
+	dunstify -i computer -t 4000 -u 0 FRAM "Job number $job_id has not yet started"
+else
+	dunstify -i computer -t 10000 -u 0 FRAM "Job number $job_id finishes at $VAR. Run time is $runtime out of $timelimit. Time left is $timediff."
+	sed -i "3 s/.*VAR.*/VAR=$VAR/g" /home/een023/bin/fram_job_done
+fi
+

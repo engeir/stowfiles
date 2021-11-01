@@ -9,7 +9,7 @@ cfg = {
                  -- This setting only take effect in insert mode, it does not affect signature help in normal
                  -- mode, 10 by default
 
-  floating_window = true, -- show hint in a floating window, set to false for virtual text only mode
+  floating_window = false, -- show hint in a floating window, set to false for virtual text only mode
   fix_pos = false,  -- set to true, the floating window will not auto-close until finish all parameters
   hint_enable = true, -- virtual hint enable
   hint_prefix = "🐼 ",  -- Panda for parameter
@@ -21,7 +21,7 @@ cfg = {
   max_width = 120, -- max_width of signature floating_window, line will be wrapped if exceed max_width
   transpancy = 10, -- set this value if you want the floating windows to be transpant (100 fully transpant), nil to disable(default)
   handler_opts = {
-    border = "shadow"   -- double, single, shadow, none
+    border = "none"   -- double, single, shadow, none
   },
 
   trigger_on_newline = false, -- set to true if you need multiple line parameter, sometime show signature on new line can be confusing, set it to false for #58

@@ -17,7 +17,6 @@ alias dotconfig='/usr/bin/git --git-dir=$HOME/dotfiles/ --work-tree=$HOME'
 # Update file indexing
 alias u="sudo updatedb"
 alias dropbox_update="~/.dropbox-dist/dropboxd"
-alias aptfind="apt list --all-versions | awk -F/ '{print $1}' | fzf --multi --preview 'apt show {1}'"
 
 # File handling
 alias skbat='sk --preview="batcat {} --color=always"'

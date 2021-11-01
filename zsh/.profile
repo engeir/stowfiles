@@ -11,6 +11,7 @@
 export PYENV_ROOT="$HOME/.pyenv"
 export PATH="$PYENV_ROOT/bin:$PATH"
 eval "$(pyenv init --path)"
+eval "$(pyenv virtualenv-init -)"
 
 # if running bash
 if [ -n "$BASH_VERSION" ]; then
@@ -69,5 +70,6 @@ export FZF_ALT_C_COMMAND="fdfind --type d $FD_OPTIONS"
 #   }
 
 export BAT_PAGER="less -R"
+sh /home/een023/stowfiles/bspwm/.config/bspwm/bin/bspcomp &
 
 if [ -e /home/een023/.nix-profile/etc/profile.d/nix.sh ]; then . /home/een023/.nix-profile/etc/profile.d/nix.sh; fi # added by Nix installer

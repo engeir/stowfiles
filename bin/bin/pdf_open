@@ -1,0 +1,13 @@
+#!/usr/bin/env sh
+# Search through and open and file with .pdf.
+
+cd ~
+c=$(fdfind -H .pdf$ --exclude .config/nnn --exclude OneDrive --exclude BoxSync | grep -o ".*pdf$" | awk -F'/' '{print $NF}' | dmenu -i -F -l 20)
+
+# Exit if none is chosen
+[ -z "$c" ] && exit
+
+DIR=$(fdfind -H "$c"$ --exclude .config/nnn --exclude OneDrive --exclude BoxSync | sed 1q)
+
+# Open with default
+xdg-open /home/een023/"$DIR"

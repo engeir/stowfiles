@@ -1,0 +1,15 @@
+#!/bin/sh
+
+# Open a file from the source file, e.g. a PDF from a Markdown file.
+
+file=$(readlink -f "$1")
+dir=${file%/*}
+base="${file%.*}"
+ext="${file##*.}"
+
+cd "$dir" || exit 1
+
+case "$ext" in
+	md) [ -f "$base".pdf ] && xdg-open "$base".pdf ;;
+	*) echo File not found ;;
+esac

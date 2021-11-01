@@ -1,7 +1,7 @@
 # Clipboard
 set selection-clipboard clipboard
 
-# Open file in a viwer that support annotations
+# Open file in a viewer that support annotations
 map <C-a> feedkeys ":exec okular %<Return>"
 
 # Backward search for tex editing

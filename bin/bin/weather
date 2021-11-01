@@ -1,0 +1,8 @@
+#!/usr/bin/env sh
+
+# Open a terminal window and run a weathter script
+
+# gnome-terminal --tab --title="tab 1" --command="bash -c 'cd /etc; ls; $SHELL'" 
+gnome-terminal --tab --title="tab 1" --command="bash -c 'cd ~/bin; weather_help; $SHELL'"
+# gnome-terminal --tab --title="tab 1" --command="bash -c 'curl wttr.in/tromso'"
+# /usr/bin/notify-send "Weather in Tromsø:" "$(curl wttr.in/tromso)"

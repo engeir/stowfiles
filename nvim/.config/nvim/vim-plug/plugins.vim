@@ -21,11 +21,11 @@ call plug#begin('~/.vim/plugged')
     Plug 'tpope/vim-speeddating'
     " Lsp
     Plug 'neovim/nvim-lspconfig'
-    " Plug 'nvim-lua/completion-nvim'
+    Plug 'nvim-lua/completion-nvim'
     Plug 'ray-x/lsp_signature.nvim'
     Plug 'glepnir/lspsaga.nvim'
-    Plug 'ms-jpq/coq_nvim', {'branch': 'coq'}
-    Plug 'ms-jpq/coq.artifacts', {'branch': 'artifacts'}
+    " Plug 'ms-jpq/coq_nvim', {'branch': 'coq'}
+    " Plug 'ms-jpq/coq.artifacts', {'branch': 'artifacts'}
     " Git
     Plug 'nvim-lua/plenary.nvim'
     Plug 'lewis6991/gitsigns.nvim'
@@ -41,8 +41,6 @@ call plug#begin('~/.vim/plugged')
     Plug 'plasticboy/vim-markdown'
     " Hard wrap or soft wrap of long lines. Also hides unfocused links.
     Plug 'reedes/vim-pencil'
-    " Goyo just removes everything but the text, nice for writing.
-    Plug 'junegunn/goyo.vim'
     " Latex
     Plug 'lervag/vimtex'
     Plug 'sirver/ultisnips'
