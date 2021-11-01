@@ -1,6 +1,6 @@
-export PYENV_ROOT="$HOME/.pyenv"
-export PATH="$PYENV_ROOT/bin:$PATH"
-eval "$(pyenv init --path)"
+# export PYENV_ROOT="$HOME/.pyenv"
+# export PATH="$PYENV_ROOT/bin:$PATH"
+# eval "$(pyenv init --path)"
 
 # set PATH so it includes user's private bin if it exists
 if [ -d "$HOME/bin" ] ; then
@@ -44,3 +44,6 @@ export PATH=$HOME/gems/bin:$PATH
 # #   }
 
 # export BAT_PAGER="less -R"
+
+# Created by `pipx` on 2021-10-25 10:32:18
+export PATH="$PATH:/home/een023/.local/bin"

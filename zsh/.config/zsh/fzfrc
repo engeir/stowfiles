@@ -17,8 +17,11 @@ export FZF_ALT_C_COMMAND="fdfind --type d $FD_OPTIONS"
 #   }
 
 # Replace the normal tab-behavior with fzf
-source ~/programs/zsh/fzf-tab/fzf-tab.plugin.zsh
+# shellcheck source=/dev/null
+. /home/een023/programs/zsh/fzf-tab/fzf-tab.plugin.zsh
 # User configuration fzf
 # source ~/bin/key-bindings.zsh 2>/dev/null
-source /usr/share/doc/fzf/examples/key-bindings.zsh 2>/dev/null
-source /usr/share/doc/fzf/examples/completion.zsh 2>/dev/null
+# shellcheck source=/dev/null
+. /usr/share/doc/fzf/examples/key-bindings.zsh 2>/dev/null
+# shellcheck source=/dev/null
+. /usr/share/doc/fzf/examples/completion.zsh 2>/dev/null

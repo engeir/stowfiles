@@ -58,6 +58,8 @@ autoload edit-command-line; zle -N edit-command-line
 bindkey '^v' edit-command-line
 
 # Config for pyenv and pip (slows down the prompt, move to aliasrc)
+export PATH="$HOME/.pyenv/bin:$PATH"
+eval "$(pyenv init --path)"
 eval "$(pyenv init -)"
 eval "$(pyenv virtualenv-init -)"
 # eval "$(pip completion --zsh)"  # This slows down the prompt!
@@ -93,3 +95,6 @@ eval "$(thefuck --alias)"
 xrdb ~/.config/Xresources
 . "/home/een023/.local/share/lscolors.sh"
 
+
+# Created by `pipx` on 2021-10-25 10:32:18
+export PATH="$PATH:/home/een023/.local/bin"
