@@ -11,9 +11,12 @@ require'nvim-treesitter.configs'.setup {
     -- Using this option may slow down your editor, and you may see some duplicate highlights.
     -- Instead of true it can also be a list of languages
     additional_vim_regex_highlighting = {
+        "bash",
         "latex",
         "lua",
         "python",
+        "toml",
+        "vim",
     }, -- Spell check only in comments, not code, for the given languages
   },
   ensure_installed = {
