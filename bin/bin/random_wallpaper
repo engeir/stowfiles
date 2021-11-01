@@ -1,0 +1,15 @@
+#!/bin/sh
+
+DIR="~/syncthing/wallpapers"
+
+ls ~/syncthing/wallpapers | sort -R | sed 1q | while read file; do
+    # echo $file
+    DIR=$(ls ~/syncthing/wallpapers/* | grep "$file")
+
+    # Copy the selected wallpaper to be the main wallpaper
+    cp $DIR /home/een023/.cache/bspwm/wallpaper.jpg
+
+    # Set the new wallpaper with feh
+    feh --bg-fill $DIR
+done
+

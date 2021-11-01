@@ -1,0 +1,5 @@
+#!/bin/sh
+
+mkdir -p ./paper
+
+cp ~/science/ref/paper_overleaf/* ./paper/

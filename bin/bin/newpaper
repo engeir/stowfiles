@@ -1,0 +1,5 @@
+#!/bin/sh
+
+mkdir -p ./paper
+
+cp -r ~/science/ref/paper/* ./paper/

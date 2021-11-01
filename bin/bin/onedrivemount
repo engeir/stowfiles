@@ -1,0 +1,4 @@
+#!/usr/bin/env sh
+sh -c "rclone --vfs-cache-mode writes mount onedrive: ~/OneDrive" &
+
+sh -c "rclone --vfs-cache-mode writes mount BoxSync: ~/BoxSync" &

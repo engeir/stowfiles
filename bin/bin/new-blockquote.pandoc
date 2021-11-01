@@ -1,0 +1,3 @@
+\usepackage{tcolorbox}
+\newtcolorbox{myquote}{colback=gray!15!white, colframe=gray!75!black}
+\renewenvironment{quote}{\begin{myquote}}{\end{myquote}}

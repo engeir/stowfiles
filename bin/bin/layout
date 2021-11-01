@@ -1,0 +1,9 @@
+#!/bin/sh
+
+# if which checkdeps.sh >/dev/null; then
+#     if ! checkdeps.sh bspc dmenu bsp-layout; then exit 1; fi fi
+
+chosen=$(bsp-layout layouts | dmenu -b -i -l 20 -p "layout")
+
+bsp-layout set $chosen
+# echo $chosen

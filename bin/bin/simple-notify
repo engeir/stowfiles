@@ -1,0 +1,30 @@
+#!/bin/sh
+
+# Create the popup and make it live for 3 seconds
+# bar_font='-*-gohufont-medium-*-*--11-*-*-*-*-*-iso10646-1'
+(echo " $@"; sleep 10) | lemonbar -g 600x60+660+450
+
+##!/bin/sh
+
+
+## how long should the popup remain?
+#duration=3
+
+## define geometry
+#barx=100
+#bary=200
+#barw=220
+#barh=120
+
+## colors
+#bar_bg='#ff333333'
+#bar_fg='#ffffffff' # white is default
+
+## font used
+## bar_font='-*-iHack*-*--11-*-*-*-*-*-iso10646-1'
+
+## compute all this
+#baropt='-g ${barw}x${barh}+${barx}+${bary} -B${bar_bg}'
+
+## Create the popup and make it live for 3 seconds
+#(echo " $@"; sleep ${duration}) | lemonbar ${baropt}

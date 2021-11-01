@@ -1,0 +1,9 @@
+#!/bin/sh
+
+# Create new or attach to existing session
+tmux new -s db -d
+
+tmux neww -t db: -n dropbox
+tmux send-keys "dropbox_update" C-m
+tmux neww -t db: -n notes_papers -c /home/een023/Documents/notes_papers
+tmux send-keys -t db:notes_papers "bundle exec jekyll serve" C-m

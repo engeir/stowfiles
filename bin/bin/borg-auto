@@ -1,0 +1,3 @@
+#!/usr/bin/sh
+
+borg-autofill > /home/een023/.config/borg/backup.log

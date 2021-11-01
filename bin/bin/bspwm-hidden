@@ -1,0 +1,18 @@
+#!/bin/env bash
+# From https://www.reddit.com/r/bspwm/comments/hpv1gh/get_window_name_from_window_id/
+
+(( i = 0 ))
+
+ids=($(bspc query -N -n '.hidden.window')) || exit
+for wid in "${ids[@]}"; do
+    title="$(xtitle "$wid")"
+    options+="$((++i)): ${title:-"$(bspc query -T -n "$wid" | jq -r '
+        .client | "\(.instanceName):\(.className)"
+    ')"}"$'\n'
+done
+
+id_index="$(echo -n "$options" | dmenu | cut -d: -f1)"
+# Exit if none chosen.
+[ -z "$id_index" ] && exit
+
+bspc node "${ids[$((id_index - 1))]}" -g hidden=off -f

@@ -1,0 +1,6 @@
+#!/usr/bin/env sh
+
+# If already running, end this file and running instance.
+
+pkill -f "entr compiler" && exit
+echo "$1" | entr compiler "$1"

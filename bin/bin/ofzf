@@ -1,0 +1,7 @@
+#!/bin/bash
+cd /home/een023
+c=$(fzf)
+
+[ -z "$c" ] && exit
+
+xdg-open "$c" &

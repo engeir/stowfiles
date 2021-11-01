@@ -1,0 +1,5 @@
+#!/bin/sh
+
+mkdir -p ./poster
+
+cp -r ~/science/ref/poster/* ./poster/
