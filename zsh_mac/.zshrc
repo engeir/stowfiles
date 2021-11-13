@@ -110,13 +110,16 @@ lc () {
 # xset r rate 210 40
 
 # Zsh plugins and vi mode
-source $HOME/programs/zsh-vi-mode/zsh-vi-mode.plugin.zsh 2>/dev/null
-zvm_after_init_commands+=('[ -f $HOME/programs/fzf-key-bindings/key-bindings.zsh ] && source $HOME/programs/fzf-key-bindings/key-bindings.zsh')
-source $HOME/programs/zsh-autosuggestions/zsh-autosuggestions.zsh 2>/dev/null
-source $HOME/programs/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh 2>/dev/null
-source $HOME/programs/zsh-history-substring-search/zsh-history-substring-search.plugin.zsh 2>/dev/null
+source $HOME/programs/zsh/zsh-vi-mode/zsh-vi-mode.plugin.zsh 2>/dev/null
+zvm_after_init_commands+=('[ -f $HOME/programs/zsh/fzf-key-bindings/key-bindings.zsh ] && source $HOME/programs/zsh/fzf-key-bindings/key-bindings.zsh')
+source $HOME/programs/zsh/zsh-autosuggestions/zsh-autosuggestions.zsh 2>/dev/null
+source $HOME/programs/zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh 2>/dev/null
+source $HOME/programs/zsh/zsh-history-substring-search/zsh-history-substring-search.plugin.zsh 2>/dev/null
 bindkey -M vicmd 'k' history-substring-search-up
 bindkey -M vicmd 'j' history-substring-search-down
+# source $HOME/programs/zsh/git/.git-completion.bash
+zstyle ':completion:*:*:git:*' script $HOME/programs/zsh/git/.git-completion.bash
+fpath=(~/programs/zsh/git $fpath)
 
 # export PATH="~/.pyenv/bin:$PATH"
 # if command -v pyenv 1>/dev/null 2>&1; then
