@@ -17,29 +17,6 @@ eval "$(pyenv init --path)"
 # NNN
 export NNN_PLUG='j:autojump;f:fzcd;p:preview-tui;d:diffs;t:nmount;v:imgview' 
 
-wgit() {
-    wget https://github.com/engeir/$1/archive/master.zip
-}
-
-giit() {
-    #do things with parameters like $1 such as
-    git clone https://github.com/engeir/$1.git
-}
-
-py() {
-    #do things with parameters like $1 such as
-    python3 $1
-}
-
-gt() {
-    # make a short cut for using Google translate
-    cd ~; ./trans $1; cd -
-}
-
-skole() {
-    cd ~/OneDrive\ -\ UiT\ Office\ 365/Skole/$1
-}
-
 function xman() { open x-man-page://$@ ; }
 
 opn() {
@@ -52,9 +29,6 @@ opn() {
     # open -- "$res"
 }
 
-alias speed="speedtest-cli"
-alias copen="code-insiders -n ."
-alias trans="./trans"
 export PATH="/usr/local/opt/flex/bin:$PATH"
 export PATH="/usr/local/opt/bison/bin:$PATH"
 # added by Anaconda3 2019.10 installer
