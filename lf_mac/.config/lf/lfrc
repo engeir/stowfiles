@@ -1,11 +1,45 @@
+#!/bin/sh
+
+# Automatically set the splits and info
+%{{
+w=&(tput cols)
+if [ $w -le 120 ]; then
+    ls -remote "send $id set ratios 1:2"
+    ls -remote "send $id set info"
+elif [ $w -le 200 ]; then
+    ls -remote "send $id set ratios 1:2:3"
+    ls -remote "send $id set info size"
+else
+    ls -remote "send $id set ratios 2:3:7"
+    ls -remote "send $id set info size:time"
+fi
+}}
+
+# General
 set ratios 1:2:3
 set icons true
 set hidden
 
+# Previewer
 set previewer stpv
 set cleaner stpvimgclr
 &stpvimg --listen $id
-set preview true
+# set preview true
+
+map <enter> open
+map f fzf_jump
+map . set hidden!
+map ac recol
+map x delete
+
+# Bookmarks
+map bb cd ~/OneDrive\ -\ UiT\ Office\ 365/Bilder/Canon\ EOS\ M50
+map bc cd ~/.config
+map bd cd ~/Downloads
+map bm cd ~/stowfiles
+map bp cd ~/programs
+map bs cd ~/scripts
+map bw cd ~/OneDrive\ -\ UiT\ Office\ 365
 
 cmd open ${{
     case $(file --mime-type "$f" -bL) in
@@ -25,18 +59,16 @@ cmd fzf_jump ${{
     lf -remote "send $id $cmd \"$res\""
 }}
 
-map <enter> open
-map f fzf_jump
-map . set hidden!
-
-set icons
-set info size
-
-# Bookmarks
-map bb cd ~/OneDrive\ -\ UiT\ Office\ 365/Bilder/Canon\ EOS\ M50
-map bc cd ~/.config
-map bd cd ~/Downloads
-map bm cd ~/stowfiles
-map bp cd ~/programs
-map bs cd ~/scripts
-map bw cd ~/OneDrive\ -\ UiT\ Office\ 365
+cmd recol &{{
+w=&(tput cols)
+if [ $w -le 120 ]; then
+    ls -remote "send $id set ratios 1:2"
+    ls -remote "send $id set info"
+elif [ $w -le 200 ]; then
+    ls -remote "send $id set ratios 1:2:3"
+    ls -remote "send $id set info size"
+else
+    ls -remote "send $id set ratios 2:3:7"
+    ls -remote "send $id set info size:time"
+fi
+}}
