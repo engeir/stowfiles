@@ -1,26 +1,73 @@
 # If you come from bash you might have to change your $PATH.
 export PATH=$HOME/bin:/usr/local/bin:$HOME/scripts:$HOME/.local/bin:$PATH
 export NODE_PATH='/usr/local/lib/node_modules'
+# export PATH="$HOME/.poetry/bin:$PATH"
+export PATH="/Users/eirikenger/Library/Python/3.9/bin:$PATH"
 
-export VISUAL=nvim
 export EDITOR=nvim
-# Bat is better at showing man-pages as well
+export VISUAL=nvim
+export TERMINAL="alacritty"
+export TERM=screen-256color  # Needed for italics to work in tmux
+export PYENV_VIRTUALENV_DISABLE_PROMPT=1
+export PAGER=less  # Suggested at https://github.com/jarun/nnn/wiki/Advanced-use-cases#pager-as-opener
+LESSOPEN="|/usr/local/bin/lesspipe.sh %s"; export LESSOPEN
 export MANPAGER="sh -c 'col -bx | bat -l man -p'"
+export LESS='-Ri '
 # export LS_COLORS="$(vivid generate nord)"
 export LS_COLORS="$(vivid generate solarized-dark)"
 
+fpath+=${ZDOTDIR:-~}/.zsh_functions  # This must come before compinit
+fpath+=/home/een023/programs/zsh/conda-zsh-completion
+
+# The following lines were added by compinstall
+
+zstyle ':completion:*' completer _complete _ignored _correct _approximate
+zstyle ':completion:*' list-colors ${(s.:.)LS_COLORS}
+zstyle ':completion:*' list-prompt %SAt %p: Hit TAB for more, or the character to insert%s
+zstyle ':completion:*' matcher-list '' '+m:{[:lower:][:upper:]}={[:upper:][:lower:]}' 'r:|[._-]=** r:|=**'
+zstyle ':completion:*' max-errors 2
+zstyle ':completion:*' menu select=1
+zstyle ':completion:*' select-prompt %SScrolling active: current selection at %p%s
+# zstyle :compinstall filename '/home/een023/.config/zsh/.zshrc'
+
+autoload -Uz compinit
+compinit  # Slows down the prompt. Just call it manually when in need
+_comp_options+=(globdots)  # Includes hidden files
+# End of lines added by compinstall
+
+# Lines configured by zsh-newuser-install
+# HISTFILE=~/.cache/zsh/.histfile
+HISTFILE=~/.zsh_history
+HISTSIZE=1000
+SAVEHIST=1000
+setopt autocd extendedglob notify
+unsetopt beep
+bindkey -v
+# End of lines configured by zsh-newuser-install
+
+export KEYTIMEOUT=1
+
+# Search history for input with the up- and down-arrow
+bindkey "^[[A" history-beginning-search-backward
+bindkey "^[[B" history-beginning-search-forward
+# Edit line in vim with ctrl-v
+autoload edit-command-line; zle -N edit-command-line
+bindkey '^v' edit-command-line
+
 # User configuration
 
-##Virtualenvwrapper settings:
-#export WORKON_HOME=$HOME/.virtualenvs
-#VIRTUALENVWRAPPER_PYTHON=/usr/bin/python3
-#. /usr/local/bin/virtualenvwrapper.sh
+# # Virtualenvwrapper settings:
+# export WORKON_HOME=$HOME/.virtualenvs
+# VIRTUALENVWRAPPER_PYTHON=/usr/bin/python3
+# . /usr/local/bin/virtualenvwrapper.sh
 
 # export MANPATH="/usr/local/man:$MANPATH"
 
 # NNN
 export NNN_BMS="b:~/OneDrive - UiT Office 365/Bilder/Canon EOS M50;c:~/.config;d:~/Downloads;m:~/stowfiles;p:~/programs;s:~/.local/bin;w:~/OneDrive - UiT Office 365/Skole"
-export NNN_PLUG='d:diffs;f:fzcd;j:autojump;l:launch;p:preview-tui2;t:nmount;v:imgview' 
+export NNN_PLUG='d:diffs;f:fzcd;j:autojump;l:launch;p:preview-tui2;t:nmount;v:imgview'
+BLK="34" CHR="c9" DIR="e6" EXE="64" REG="fa" HARDLINK="81" SYMLINK="d6" MISSING="f0" ORPHAN="00" FIFO="06" SOCK="00" OTHER="58"
+export NNN_FCOLORS="$BLK$CHR$DIR$EXE$REG$HARDLINK$SYMLINK$MISSING$ORPHAN$FIFO$SOCK$OTHER"
 export NNN_FIFO=/tmp/nnn.fifo nnn
 export NNN_TRASH=1
 # fzf
@@ -123,20 +170,17 @@ fpath=(~/programs/zsh/git $fpath)
 
 # export PATH="~/.pyenv/bin:$PATH"
 # if command -v pyenv 1>/dev/null 2>&1; then
-export PYENV_VIRTUALENV_DISABLE_PROMPT=1
 eval "$(pyenv init -)"
 eval "$(pyenv virtualenv-init -)"
 # fi
 source ~/.kb_alias
 
 eval "$(starship init zsh)"
-eval "$(mcfly init zsh)"
+# eval "$(mcfly init zsh)"
 # eval "$(pip completion --zsh)"
 # eval "$(pass.zsh-completion)"
 
 export PATH="/usr/local/opt/expat/bin:$PATH"
-
-export PATH="$HOME/.poetry/bin:$PATH"
 
 # # >>> conda initialize >>>
 # # !! Contents within this block are managed by 'conda init' !!
