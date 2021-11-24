@@ -44,6 +44,8 @@ set termguicolors
 set textwidth=90                        " Automatically insert newline at given column
 set timeoutlen=500                      " By default timeoutlen is 1000 ms
 set updatetime=300                      " Faster completion
+set wildmenu
+set wildmode=longest:full,full          " The command line menu is just completed to the longest common string
 
 au! BufWritePost $MYVIMRC source %      " auto source when writing to init.vim alternatively you can run :source $MYVIMRC
 au BufRead,BufNewFile *.ncl set filetype=ncl
