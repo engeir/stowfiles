@@ -181,6 +181,7 @@ eval "$(starship init zsh)"
 # eval "$(pass.zsh-completion)"
 
 export PATH="/usr/local/opt/expat/bin:$PATH"
+export HAS_ALLOW_UNSAFE=y
 
 # # >>> conda initialize >>>
 # # !! Contents within this block are managed by 'conda init' !!
