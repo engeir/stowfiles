@@ -7,7 +7,7 @@
 # }
 
 batdiff () {
-    git diff --name-only --diff-filter=d | xargs batcat --diff
+    git diff --name-only --diff-filter=d | xargs bat --diff
 }
 
 # Change cursor for vi modes:

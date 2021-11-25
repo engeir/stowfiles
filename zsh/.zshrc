@@ -9,7 +9,7 @@ export LD_PRELOAD=/usr/lib/x86_64-linux-gnu/libgtk3-nocsd.so.0
 export PYENV_VIRTUALENV_DISABLE_PROMPT=1
 export PAGER=less  # Suggested at https://github.com/jarun/nnn/wiki/Advanced-use-cases#pager-as-opener
 LESSOPEN="|/usr/local/bin/lesspipe.sh %s"; export LESSOPEN
-export MANPAGER="sh -c 'col -bx | batcat -l man -p'"
+export MANPAGER="sh -c 'col -bx | bat -l man -p'"
 export LESS='-Ri '
 
 # For golang

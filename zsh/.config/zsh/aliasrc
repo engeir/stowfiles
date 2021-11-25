@@ -2,8 +2,9 @@
 
 # General
 alias ls="lsd -FX"
-alias cat="batcat"
+alias cat="bat"
 alias evrc="nvim ~/.vimrc"
+alias has="HAS_ALLOW_UNSAFE=y has"
 alias nnn="nnn -derH"
 alias nv="nvim"
 # alias rm='echo '\''Dont use rm. Use trash-put instead. (Or use \\rm.)'\'
@@ -36,7 +37,7 @@ alias vpn="/opt/cisco/anyconnect/bin/vpnui"
 alias nikkerud="~/betty/main.rb"
 
 # reMarkable related
-alias rmv="rmview ~/rmview/rmview.json"
+alias rmv="rmview ~/programs/rmview/rmview.json"
 # alias rmapi="~/./rmapi"
 alias cptodo="cp ~/.kb/data/todo/pdh_work ~/Documents/notes_papers/_includes/todo.md"
 alias saRM="ssh-add ~/rM_share"
