@@ -73,3 +73,4 @@ export BAT_PAGER="less -R"
 sh /home/een023/stowfiles/bspwm/.config/bspwm/bin/bspcomp &
 
 if [ -e /home/een023/.nix-profile/etc/profile.d/nix.sh ]; then . /home/een023/.nix-profile/etc/profile.d/nix.sh; fi # added by Nix installer
+. "$HOME/.cargo/env"
