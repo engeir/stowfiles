@@ -47,3 +47,7 @@ export PATH=$HOME/gems/bin:$PATH
 
 # Created by `pipx` on 2021-10-25 10:32:18
 export PATH="$PATH:/home/een023/.local/bin"
+
+# Make caps-lock work as esc when pressed, ctrl when hold
+setxkbmap -option ctrl:nocaps
+xcape -e 'Control_L=Escape'
