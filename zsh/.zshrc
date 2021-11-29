@@ -63,7 +63,6 @@ eval "$(pyenv init --path)"
 eval "$(pyenv init -)"
 eval "$(pyenv virtualenv-init -)"
 # eval "$(pip completion --zsh)"  # This slows down the prompt!
-export PATH="$HOME/.poetry/bin:$PATH"
 
 # Speedy keys
 xset r rate 210 40

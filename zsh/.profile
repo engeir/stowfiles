@@ -52,7 +52,6 @@ export PATH=$HOME/gems/bin:$PATH
 export WORKON_HOME=$HOME/.virtualenvs
 
 fpath+=${ZDOTDIR:-~}/.zsh_functions
-export PATH="$HOME/.poetry/bin:$PATH"
 
 # Config for fzf
 FD_OPTIONS="--follow --exclude .git --exclude node_modules"

@@ -13,7 +13,7 @@ alias tks="tmux kill-session -t"
 alias v="vim"
 
 # Dotfiles
-alias dotconfig='/usr/bin/git --git-dir=$HOME/dotfiles/ --work-tree=$HOME' 
+alias dotconfig='/usr/bin/git --git-dir=$HOME/dotfiles/ --work-tree=$HOME'
 
 # Update file indexing
 alias u="sudo updatedb"
@@ -29,6 +29,7 @@ alias ll="ls -ltrh"
 alias lsn="ls --color=auto */ | less"
 alias open="xdg-open"
 alias space="ncdu --exclude Dropbox --exclude BoxSync --exclude OneDrive --exclude .config/nnn/mounts"  # View file storage
+alias countfiles="du --exclude="OneDrive" --exclude=".config/nnn/mounts" --exclude="BoxSync" --inodes -S | sort -rh | sed -n '1,50{/^.\{71\}/s/^\(.\{30\}\).*\(.\{37\}\)$/\1...\2/;p}'"
 
 # Open programs
 alias f="fuck"
