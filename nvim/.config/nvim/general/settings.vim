@@ -18,7 +18,7 @@ set formatoptions-=crot                 " Stop newline continuation of comments
 set hidden                              " Required to keep multiple buffers open
 set incsearch
 set iskeyword+=-                      	" treat dash separated words as a word text object"
-set laststatus=0                        " Always display the status line
+set laststatus=2                        " Always display the status line (0 for vim, 2 for lua... or something idk)
 set ma                                  " Modifiable on
 set mouse=a                             " Enable your mouse
 set nobackup                            " This is recommended by coc
@@ -49,7 +49,7 @@ set wildmode=longest:full,full          " The command line menu is just complete
 
 au! BufWritePost $MYVIMRC source %      " auto source when writing to init.vim alternatively you can run :source $MYVIMRC
 au BufRead,BufNewFile *.ncl set filetype=ncl
-au! Syntax newlang source $VIM/ncl.vim 
+au! Syntax newlang source $VIM/ncl.vim
 
 " You can't stop me
 cmap w!! w !sudo tee %

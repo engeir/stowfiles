@@ -53,9 +53,7 @@ call plug#begin('~/.vim/plugged')
     Plug 'junegunn/fzf.vim'
     Plug 'voldikss/vim-floaterm'
     " Statusline
-    Plug 'hoob3rt/lualine.nvim'
-    Plug 'vim-airline/vim-airline'
-    Plug 'vim-airline/vim-airline-themes'
+    Plug 'glepnir/galaxyline.nvim' , {'branch': 'main'}
     Plug 'mhinz/vim-startify'  " Startup
     " Always place in directory root
     Plug 'airblade/vim-rooter'
@@ -64,6 +62,7 @@ call plug#begin('~/.vim/plugged')
     " Telescope
     Plug 'nvim-lua/plenary.nvim'
     Plug 'nvim-telescope/telescope.nvim'
+    " Display icons
     Plug 'kyazdani42/nvim-web-devicons'
     " Treesitter
     Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}  " We recommend updating the parsers on update
