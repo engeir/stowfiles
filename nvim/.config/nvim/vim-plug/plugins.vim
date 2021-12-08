@@ -27,7 +27,6 @@ call plug#begin('~/.vim/plugged')
     " Plug 'ms-jpq/coq_nvim', {'branch': 'coq'}
     " Plug 'ms-jpq/coq.artifacts', {'branch': 'artifacts'}
     " Git
-    Plug 'nvim-lua/plenary.nvim'
     Plug 'lewis6991/gitsigns.nvim'
     Plug 'tpope/vim-fugitive'
     " Plug 'airblade/vim-gitgutter'
@@ -59,9 +58,10 @@ call plug#begin('~/.vim/plugged')
     Plug 'airblade/vim-rooter'
     " Motions
     Plug 'easymotion/vim-easymotion'
-    " Telescope
+    " Navigation
     Plug 'nvim-lua/plenary.nvim'
     Plug 'nvim-telescope/telescope.nvim'
+    Plug 'ThePrimeagen/harpoon'
     " Display icons
     Plug 'kyazdani42/nvim-web-devicons'
     " Treesitter
