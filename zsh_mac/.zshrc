@@ -3,6 +3,7 @@ export PATH=$HOME/bin:/usr/local/bin:$HOME/scripts:$HOME/.local/bin:$PATH
 export NODE_PATH='/usr/local/lib/node_modules'
 # export PATH="$HOME/.poetry/bin:$PATH"
 export PATH="/Users/eirikenger/Library/Python/3.9/bin:$PATH"
+export PATH=/usr/local/opt/ruby/bin:$PATH  # Ruby path
 
 export EDITOR=nvim
 export VISUAL=nvim
@@ -118,6 +119,7 @@ alias sxiv="sxiv -b"
 alias pqiv="pqiv -it"
 alias yt="ytfzf"
 alias publish_flottflyt="rsync -rtvzP ~/projects/flottflyt/ root@flottflyt.xyz:/var/www/flottflyt"
+alias publish_gallery_flottflyt="rsync -rtvzP ~/projects/gallery-flottflyt/photo-stream/_site/ root@flottflyt.xyz:/var/www/gallery-flottflyt"
 alias publish_eirikenger="rsync -rtvzP ~/projects/eirikenger/ root@flottflyt.xyz:/var/www/eirikenger"
 alias figlet="/Users/eirikenger/figlet/./figlet"
 alias lolban="/Users/eirikenger/figlet/./lolban"

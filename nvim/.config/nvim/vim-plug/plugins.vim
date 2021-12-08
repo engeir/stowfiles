@@ -23,7 +23,8 @@ call plug#begin('~/.vim/plugged')
     Plug 'neovim/nvim-lspconfig'
     Plug 'nvim-lua/completion-nvim'
     Plug 'ray-x/lsp_signature.nvim'
-    Plug 'glepnir/lspsaga.nvim'
+    " Plug 'glepnir/lspsaga.nvim'
+    Plug 'tami5/lspsaga.nvim'
     " Plug 'ms-jpq/coq_nvim', {'branch': 'coq'}
     " Plug 'ms-jpq/coq.artifacts', {'branch': 'artifacts'}
     " Git
