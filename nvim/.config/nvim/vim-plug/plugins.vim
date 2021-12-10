@@ -15,7 +15,7 @@ call plug#begin('~/.vim/plugged')
     Plug 'sainnhe/gruvbox-material'
     Plug 'gko/vim-layout'
     Plug 'sainnhe/forest-night'
-    Plug 'tpope/vim-commentary'
+    Plug 'numToStr/Comment.nvim'
     Plug 'tpope/vim-surround'  " Change surrounding characters
     Plug 'Raimondi/delimitMate'  " Close matching characters
     Plug 'tpope/vim-speeddating'
