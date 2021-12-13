@@ -9,10 +9,10 @@ let g:coq_settings = { 'auto_start': 'shut-up' }
 source $HOME/.config/nvim/vim-plug/plugins.vim
 
 lua << EOF
--- require 'darkline'
--- require 'spaceline'
--- require 'evilline'
-require 'galaxyline-line'
+-- require 'statuslines.darkline'
+-- require 'statuslines.spaceline'
+-- require 'statuslines.evilline'
+require 'statuslines.galaxyline-line'
 EOF
 
 " Other:
