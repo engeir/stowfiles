@@ -23,8 +23,12 @@ call plug#begin('~/.vim/plugged')
     Plug 'neovim/nvim-lspconfig'
     Plug 'nvim-lua/completion-nvim'
     Plug 'ray-x/lsp_signature.nvim'
-    " Plug 'glepnir/lspsaga.nvim'
-    Plug 'tami5/lspsaga.nvim'
+    let OS = system('uname -s')
+    if OS == "Linux\n"
+        Plug 'glepnir/lspsaga.nvim'  " Do not work with mac, but with linux
+    elseif OS == "Darwin\n"
+        Plug 'tami5/lspsaga.nvim'  " Do not work with linux, but with mac
+    endif
     " Plug 'ms-jpq/coq_nvim', {'branch': 'coq'}
     " Plug 'ms-jpq/coq.artifacts', {'branch': 'artifacts'}
     " Git
