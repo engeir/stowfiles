@@ -67,12 +67,14 @@ call plug#begin('~/.vim/plugged')
     Plug 'kyazdani42/nvim-web-devicons'
     " Treesitter
     Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}  " We recommend updating the parsers on update
-    " Install nvim-cmp
+    " Completion
     Plug 'hrsh7th/nvim-cmp'
     " Install snippet engine (This example installs [hrsh7th/vim-vsnip](https://github.com/hrsh7th/vim-vsnip))
     Plug 'hrsh7th/vim-vsnip'
     " Install the buffer completion source
     Plug 'hrsh7th/cmp-buffer'
+    Plug 'hrsh7th/cmp-path'
+    Plug 'hrsh7th/cmp-nvim-lsp'
     " Other
     Plug 'norcalli/nvim-colorizer.lua'
 call plug#end()

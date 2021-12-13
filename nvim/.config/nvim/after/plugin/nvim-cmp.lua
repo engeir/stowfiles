@@ -15,7 +15,14 @@ cmp.setup({
     completeopt = 'menu,menuone,noinsert',
   },
   sources = {
-    { name = '...' },
-    ...
+    -- { name = 'gh_issues' },
+    { name = 'nvim_lsp' },
+    { name = 'path' },
+    { name = 'buffer', keyword_length = 4 },
+  },
+
+  experimental = {
+    native_menu = false,
+    ghost_text = true,
   }
 })
