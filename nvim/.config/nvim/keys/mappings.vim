@@ -72,12 +72,14 @@ nnoremap <leader>gg :GitGutterToggle<CR>
 
 " Open folder view
 " nnoremap <leader>pv :to vsp <bar> :Ex <bar> :vertical resize 40<CR>
-nnoremap <leader>pv :FloatermNew --wintype=vsplit --opener=vsplit --autoclose=2 nnn<CR>
+nnoremap <leader>pv :FloatermNew --wintype=float --position=right --autoclose=2 nnn -d<CR>
 
 " Autocompilers
-nnoremap <silent><leader>t :vert ter<CR>
-vmap <C-r> :'<,'>FloatermNew --wintype=vsplit python<CR>
-nnoremap <silent><leader>r :FloatermNew --wintype=vsplit --autoclose=0 python %<CR>
+nnoremap <silent><leader>t :FloatermNew --wintype=vsplit --autohide=0 python<CR><C-\><C-n><C-w>h
+" Select between %% (mimic jupyter notebook)
+nnoremap <silent><leader>H :/%%<CR>VN
+vmap <C-r> :'<,'>FloatermSend <CR>
+nnoremap <silent><leader>r :FloatermNew --wintype=float --position=right --autoclose=0 python %<CR>
 map <leader>a :!setsid autocomp % &<CR>
 
 " Open pdf from source (e.g. md file)
@@ -132,4 +134,3 @@ inoremap <C-L> <C-G>u<Esc>[s1z=`]a<C-G>u
 nnoremap <C-s> <Esc>[sve<C-G>
 inoremap <C-s> <Esc>[sve<C-G>
 snoremap <C-K> <Esc>b[sviw<C-G>
-
