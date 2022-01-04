@@ -23,6 +23,7 @@ call plug#begin('~/.vim/plugged')
     Plug 'neovim/nvim-lspconfig'
     Plug 'nvim-lua/completion-nvim'
     Plug 'ray-x/lsp_signature.nvim'
+    Plug 'jose-elias-alvarez/null-ls.nvim'
     let OS = system('uname -s')
     if OS == "Linux\n"
         Plug 'glepnir/lspsaga.nvim'  " Do not work with mac, but with linux
@@ -71,6 +72,7 @@ call plug#begin('~/.vim/plugged')
     Plug 'kyazdani42/nvim-web-devicons'
     " Treesitter
     Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}  " We recommend updating the parsers on update
+    Plug 'p00f/nvim-ts-rainbow'
     Plug 'code-biscuits/nvim-biscuits'
     " Completion
     Plug 'hrsh7th/nvim-cmp'
