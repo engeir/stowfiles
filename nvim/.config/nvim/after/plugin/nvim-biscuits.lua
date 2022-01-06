@@ -1,6 +1,6 @@
 require("nvim-biscuits").setup({
     toggle_keybind = "<leader>cb",
-    cursor_line_only = true,
+    cursor_line_only = false,
     show_on_start = true,
     default_config = {
         max_length = 12,
