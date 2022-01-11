@@ -1,13 +1,13 @@
 "ScreenShots in Markup
 augroup WRIGHTING
-	autocmd!
-	autocmd FileType pandoc nnoremap <buffer> cic :call pandoc#after#nrrwrgn#NarrowCodeblock()<cr>
-	autocmd FileType markdown,pandoc nnoremap <buffer> <leader>i :<C-U>call dotvim#ImportScreenShot(function('dotvim#MarkdownScreenShot'),'.png')
-	autocmd FileType latex,tex nnoremap <buffer> <leader>i :<C-U>call dotvim#ImportScreenShot(function('dotvim#LatexScreenShot'),'.png')
-	autocmd FileType dotoo,org nnoremap <buffer> <leader>i       :<C-U>call dotvim#ImportScreenShot(function('dotvim#OrgScreenShot'),'.eps')
-	autocmd FileType groff,troff,nroff nnoremap <buffer> <leader>i     :<C-U>call dotvim#ImportScreenShot(function('dotvim#GroffScreenShot'),'.eps')
-	" autocmd BufRead,BufNewFile *.md,*.tex,*.wiki call dotvim#WordProcessor()
-	" autocmd FileType markdown,pandoc,dotoo,org execute 'setlocal dictionary+='. &runtimepath . '/extra/dict/latex_comp.txt'
+    autocmd!
+    autocmd FileType pandoc nnoremap <buffer> cic :call pandoc#after#nrrwrgn#NarrowCodeblock()<cr>
+    autocmd FileType markdown,pandoc nnoremap <buffer> <leader>i :<C-U>call dotvim#ImportScreenShot(function('dotvim#MarkdownScreenShot'),'.png')
+    autocmd FileType latex,tex nnoremap <buffer> <leader>i :<C-U>call dotvim#ImportScreenShot(function('dotvim#LatexScreenShot'),'.png')
+    autocmd FileType dotoo,org nnoremap <buffer> <leader>i       :<C-U>call dotvim#ImportScreenShot(function('dotvim#OrgScreenShot'),'.eps')
+    autocmd FileType groff,troff,nroff nnoremap <buffer> <leader>i     :<C-U>call dotvim#ImportScreenShot(function('dotvim#GroffScreenShot'),'.eps')
+    " autocmd BufRead,BufNewFile *.md,*.tex,*.wiki call dotvim#WordProcessor()
+    " autocmd FileType markdown,pandoc,dotoo,org execute 'setlocal dictionary+='. &runtimepath . '/extra/dict/latex_comp.txt'
 augroup END
 
 " Better nav for omnicomplete
@@ -74,6 +74,8 @@ nnoremap <leader>gg :GitGutterToggle<CR>
 " nnoremap <leader>pv :to vsp <bar> :Ex <bar> :vertical resize 40<CR>
 nnoremap <leader>pv :FloatermNew --wintype=float --position=right --autoclose=2 nnn -d<CR>
 
+" Format code
+nnoremap <silent><leader><leader>f :lua vim.lsp.buf.formatting_sync()<CR>
 " Autocompilers
 nnoremap <silent><leader>t :FloatermNew --wintype=vsplit --autohide=0 python<CR><C-\><C-n><C-w>h
 " Select between %% (mimic jupyter notebook)

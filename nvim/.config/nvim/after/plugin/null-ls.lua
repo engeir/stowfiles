@@ -27,7 +27,7 @@ null_ls.setup({
                 "html",
                 "json",
                 "yaml",
-                "markdown",
+                -- "markdown",
                 "graphql",
                 "solidity",
             },
@@ -35,10 +35,18 @@ null_ls.setup({
         }),
         formatting.black.with({ extra_args = { "--fast" } }),
         formatting.stylua.with({ extra_args = { "--indent-type=Spaces" } }),
+        formatting.shellharden,
+        formatting.shfmt.with({ extra_args = { "-i=4" } }),
+        formatting.latexindent,
+        formatting.taplo,
+        formatting.markdownlint.with({ extra_args = { "-c", "/home/een023/.config/mdl/.markdownlint.jsonc" }}),
+        diagnostics.shellcheck,
+        diagnostics.markdownlint.with({ extra_args = { "-c", "/home/een023/.config/mdl/.markdownlint.jsonc" }}),
+        -- diagnostics.mdl.with({ extra_args = { "-c", "/home/een023/.config/mdl/.markdownlint.jsonc" }}),
     },
-    on_attach = function(client)
-        if client.resolved_capabilities.document_formatting then
-            vim.cmd("autocmd BufWritePre <buffer> lua vim.lsp.buf.formatting_sync()")
-        end
-    end,
+    -- on_attach = function(client)
+    --     if client.resolved_capabilities.document_formatting then
+    --         vim.cmd("autocmd BufWritePre <buffer> lua vim.lsp.buf.formatting_sync()")
+    --     end
+    -- end,
 })
