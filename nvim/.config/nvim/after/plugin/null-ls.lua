@@ -44,6 +44,8 @@ null_ls.setup({
         diagnostics.markdownlint.with({ extra_args = { "-c", "/home/een023/.config/mdl/.markdownlint.jsonc" }}),
         -- diagnostics.mdl.with({ extra_args = { "-c", "/home/een023/.config/mdl/.markdownlint.jsonc" }}),
     },
+    -- This format-on-save command is a bit dangerous, you probably want the option of
+    -- just saving and not format on any occasion.
     -- on_attach = function(client)
     --     if client.resolved_capabilities.document_formatting then
     --         vim.cmd("autocmd BufWritePre <buffer> lua vim.lsp.buf.formatting_sync()")
