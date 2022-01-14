@@ -10,6 +10,6 @@ ext="${file##*.}"
 cd "$dir" || exit 1
 
 case "$ext" in
-	md) [ -f "$base".pdf ] && xdg-open "$base".pdf ;;
-	*) echo File not found ;;
+md) [ -f "$base".pdf ] && xdg-open "$base".pdf ;;
+*) echo File not found ;;
 esac

@@ -2,7 +2,7 @@
 
 # Choose from any wallpapers and reset
 # First show the files in dmenu and catch the full path
-chosen=$(ls ~/syncthing/wallpapers/* | sed 's:.*/::' | dmenu -i -l 20)
+chosen=$(ls "$HOME"/syncthing/wallpapers/* | sed 's:.*/::' | dmenu -i -l 20)
 # chosen=$(ls ~/.config/wallpapers.d/wallpaper*/* | sed 's:.*/::' | dmenu -i -l 20)
 # chosen=$(ls ~/.config/bspwm/wallpaper*/* | sed 's:.*/::' | dmenu -i -l 20)
 
@@ -13,8 +13,7 @@ DIR=$(ls ~/syncthing/wallpapers/* | grep "$chosen")
 # DIR=$(ls ~/.config/bspwm/wallpaper*/* | grep "$chosen")
 
 # Copy the selected wallpaper to be the main wallpaper
-cp $DIR /home/een023/.cache/bspwm/wallpaper.jpg
+cp "$DIR" /home/een023/.cache/bspwm/wallpaper.jpg
 
 # Set the new wallpaper with feh
-feh --bg-fill $DIR
-
+feh --bg-fill "$DIR"

@@ -19,28 +19,26 @@
 set -o nounset
 set -o errexit
 
-echo '' > "$1.vars"
-echo '' > "$1.exported"
+echo '' >"$1.vars"
+echo '' >"$1.exported"
 
-while read -r in
-do
-  [[ "$in" =~ ^# ]] && continue
-  [ -z "$in" ] && continue
-  if [[ "$in" == *"="* ]]
-  then
-    IFS='=' read -ra LINE <<< "$in"
-    echo "${LINE[0]}" >> "$1.vars"
-    echo -e "export $in" >> "$1.exported"
-  else
-    echo "Invalid line:"
-    echo $in
-    echo "File $1 contained invalid lines. Lines should be of the form:"
-    echo "#comment"
-    echo "or"
-    echo "VAR=VAL"
-    echo "Usage: docker-run-envfile .env *docker run arguments*"
-    exit 1
-  fi
-done < "$1"
+while read -r in; do
+    [[ "$in" =~ ^# ]] && continue
+    [ -z "$in" ] && continue
+    if [[ "$in" == *"="* ]]; then
+        IFS='=' read -ra LINE <<<"$in"
+        echo "${LINE[0]}" >>"$1.vars"
+        echo -e "export $in" >>"$1.exported"
+    else
+        echo "Invalid line:"
+        echo "$in"
+        echo "File $1 contained invalid lines. Lines should be of the form:"
+        echo "#comment"
+        echo "or"
+        echo "VAR=VAL"
+        echo "Usage: docker-run-envfile .env *docker run arguments*"
+        exit 1
+    fi
+done <"$1"
 
 exit 0

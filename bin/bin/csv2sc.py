@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python2
 
 import sys
 import string
@@ -11,20 +11,20 @@ filename_in = sys.argv[1]
 
 if len(sys.argv) > 2:
     filename_out = sys.argv[2]
-    outfile = open(filename_out, 'w')
+    outfile = open(filename_out, "w")
 else:
     outfile = sys.stdout
 
-delimiter = ':'
+delimiter = ":"
 if len(sys.argv) == 4:
     delimiter = sys.argv[3][0]
-    print 'using delimiter %c' % delimiter
+    print "using delimiter %c" % delimiter
 
-infile = open(filename_in, 'r')
+infile = open(filename_in, "r")
 
 letters = string.ascii_uppercase
-text = ["# Produced by convert_csv_to_sc.py" ]
-row=0
+text = ["# Produced by convert_csv_to_sc.py"]
+row = 0
 for line in infile.readlines():
     allp = line.rstrip().split(delimiter)
     if len(allp) > 25:
@@ -34,13 +34,13 @@ for line in infile.readlines():
     for p in allp:
         col = letters[column]
         if len(p) == 0:
-                continue
+            continue
         try:
             n = string.atol(p)
-            text.append('let %c%d = %d' % (col, row, n))
+            text.append("let %c%d = %d" % (col, row, n))
         except:
             if p[0] == '"':
-                text.append('label %c%d = %s' % (col, row, p))
+                text.append("label %c%d = %s" % (col, row, p))
             else:
                 text.append('label %c%d = "%s"' % (col, row, p))
         column += 1

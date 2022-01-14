@@ -1,8 +1,8 @@
-#!/usr/bin/env sh
+#!/bin/sh
 
 choises="cpu\nmemory"
 chosen=$(echo "$choises" | dmenu -l 5 -p "Inspect system:")
 case "$chosen" in
-	"cpu") /usr/bin/notify-send "Top ten CPU consumers: (%)" "$(ps axch -o cmd,%cpu --sort=-%cpu | head)" ;;
-	"memory") /usr/bin/notify-send "Using $(free -h | awk '/^Mem:/ {print $3 "/" $2}'): (%)" "$(ps axch -o cmd,%mem --sort=-%mem | head)" ;;
-esac 
+"cpu") /usr/bin/notify-send "Top ten CPU consumers: (%)" "$(ps axch -o cmd,%cpu --sort=-%cpu | head)" ;;
+"memory") /usr/bin/notify-send "Using $(free -h | awk '/^Mem:/ {print $3 "/" $2}'): (%)" "$(ps axch -o cmd,%mem --sort=-%mem | head)" ;;
+esac

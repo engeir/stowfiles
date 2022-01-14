@@ -5,15 +5,15 @@
 choises="passwords\nfram status\npoweroff\nopen pdf\ninspect system\nemojis\nweather\nchange wallpaper\nlayouts\nfind text"
 chosen=$(echo "$choises" | dmenu -F -l 20 -p "Choose a script to run:")
 case "$chosen" in
-	"change wallpaper") wallpaper ;;
-	"emojis") emojis ;;
-	"fram status") fram_job_status ;;
-	"inspect system") inspect_system ;;
-    "find text") find_txt ;;
-	"layouts") layout ;;
-	# "open pdf") pdf2 ;;
-	"open pdf") pdf_open ;;
-	"passwords") passmenu ;;
-	"poweroff") poweroff ;;
-	"weather") weather ;;
+"change wallpaper") wallpaper ;;
+"emojis") emojis ;;
+"fram status") fram_job_status ;;
+"inspect system") inspect_system ;;
+"find text") find_txt ;;
+"layouts") layout ;;
+    # "open pdf") pdf2 ;;
+"open pdf") pdf_open ;;
+"passwords") passmenu ;;
+"poweroff") poweroff ;;
+"weather") weather ;;
 esac

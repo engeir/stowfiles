@@ -23,53 +23,54 @@ ext="${file##*.}"
 
 cd "$dir" || exit 1
 
-textype() { \
+textype() {
     command="pdflatex"
-    ( head -n5 "$file" | grep -qi 'xelatex' ) && command="xelatex"
-    $command --output-directory="$dir" "$base" &&
+    (head -n5 "$file" | grep -qi 'xelatex') && command="xelatex"
+    "$command" --output-directory="$dir" "$base" &&
         grep -qi addbibresource "$file" &&
         biber --input-directory "$dir" "$base" &&
-        $command --output-directory="$dir" "$base" &&
-        $command --output-directory="$dir" "$base"
-    }
+        "$command" --output-directory="$dir" "$base" &&
+        "$command" --output-directory="$dir" "$base"
+}
 
 case "$ext" in
-    # Try to keep these cases in alphabetical order.
-    [0-9]) preconv "$file" | refer -PS -e | groff -mandoc -T pdf > "$base".pdf ;;
-    c) cc "$file" -o "$base" && "$base" ;;
-    cpp) g++ "$file" -o "$base" && "$base" ;;
-    cs) mcs "$file" && mono "$base".exe ;;
-    go) go run "$file" ;;
-    h) sudo make install ;;
-    java) javac -d classes "$file" && java -cp classes "${1%.*}" ;;
-    m) octave "$file" ;;
-    md)	# pandoc -t ms --highlight-style=kate -s -o "$base".pdf "$file" ;;
-    choice=$( sed -n '/---/,/---/p' "$file" | grep kind | awk '{print $2}' )
+# Try to keep these cases in alphabetical order.
+[0-9]) preconv "$file" | refer -PS -e | groff -mandoc -T pdf >"$base".pdf ;;
+c) cc "$file" -o "$base" && "$base" ;;
+cpp) g++ "$file" -o "$base" && "$base" ;;
+cs) mcs "$file" && mono "$base".exe ;;
+go) go run "$file" ;;
+h) sudo make install ;;
+java) javac -d classes "$file" && java -cp classes "${1%.*}" ;;
+m) octave "$file" ;;
+md) # pandoc -t ms --highlight-style=kate -s -o "$base".pdf "$file" ;;
+    choice=$(sed -n '/---/,/---/p' "$file" | grep kind | awk '{print $2}')
     if [ "$choice" = "beamer" ]; then
         pandoc "$file" -t beamer -o "$base".pdf
     else
         # Not stopping the compilation just because of some warnings:
         # pandoc --citeproc --bibliography=/home/een023/science/ref/ref.bib "$file" --filter pandoc-eqnos --filter pandoc-include-code -s -o "$base".pdf > /dev/null 2>&1
-        pandoc --citeproc --bibliography=/home/een023/science/ref/ref.bib "$file" --filter pandoc-include --filter pandoc-eqnos -s -o "$base".pdf > /dev/null 2>&1
-        fi ;;
-        # if  [ -x "$(command -v lowdown)" ]; then
-        # lowdown -d nointem -e super "$file" -Tms | groff -mpdfmark -ms -kept > "$base".pdf
-        # elif [ -x "$(command -v groffdown)" ]; then
-        # groffdown -i "$file" | groff > "$base.pdf"
-        # else
-        # pandoc -t ms --highlight-style=kate -s -o "$base".pdf "$file"
-        # fi ; ;;
-    mom) preconv "$file" | refer -PS -e | groff -mom -kept -T pdf > "$base".pdf ;;
-    # ms) preconv "$file" | refer -PS -e | groff -me -ms -kept -T pdf > "$base".pdf ;;
-    # ms) preconv "$file" | refer -PS -e | groff -me -ms -p -kept -Tps | ps2pdf - "$base".pdf ;;
-    ms) preconv "$file" | refer -PS -e -p ~/science/ref/bibliography | groff -me -ms -p -kept -Tps | ps2pdf - "$base".pdf ;;
-    org) emacs "$file" --batch -u "$USER" -f org-latex-export-to-pdf ;;
-    py) if [ -z $(sed -n 's/^#!//p' "$file") ] ; then python "$file"; else $(sed -n 's/^#!//p' "$file") "$file"; fi ;;
-    [rR]md) Rscript -e "rmarkdown::render('$file', quiet=TRUE)" ;;
-    rs) cargo build ;;
-    sass) sassc -a "$file" "$base.css" ;;
-    scad) openscad -o "$base".stl "$file" ;;
-    sent) setsid -f sent "$file" 2>/dev/null ;;
-    tex) textype "$file" ;;
-    *) head -n1 "$file" | grep "^#!/" | sed "s/^#!//" | xargs -r -I % "$file" ;;
+        pandoc --citeproc --bibliography=/home/een023/science/ref/ref.bib "$file" --filter pandoc-include --filter pandoc-eqnos -s -o "$base".pdf >/dev/null 2>&1
+    fi
+    ;;
+    # if  [ -x "$(command -v lowdown)" ]; then
+    # lowdown -d nointem -e super "$file" -Tms | groff -mpdfmark -ms -kept > "$base".pdf
+    # elif [ -x "$(command -v groffdown)" ]; then
+    # groffdown -i "$file" | groff > "$base.pdf"
+    # else
+    # pandoc -t ms --highlight-style=kate -s -o "$base".pdf "$file"
+    # fi ; ;;
+mom) preconv "$file" | refer -PS -e | groff -mom -kept -T pdf >"$base".pdf ;;
+# ms) preconv "$file" | refer -PS -e | groff -me -ms -kept -T pdf > "$base".pdf ;;
+# ms) preconv "$file" | refer -PS -e | groff -me -ms -p -kept -Tps | ps2pdf - "$base".pdf ;;
+ms) preconv "$file" | refer -PS -e -p ~/science/ref/bibliography | groff -me -ms -p -kept -Tps | ps2pdf - "$base".pdf ;;
+org) emacs "$file" --batch -u "$USER" -f org-latex-export-to-pdf ;;
+py) if [ -z "$(sed -n 's/^#!//p' "$file")" ]; then python "$file"; else "$(sed -n 's/^#!//p' "$file")" "$file"; fi ;;
+[rR]md) Rscript -e "rmarkdown::render('$file', quiet=TRUE)" ;;
+rs) cargo build ;;
+sass) sassc -a "$file" "$base.css" ;;
+scad) openscad -o "$base".stl "$file" ;;
+sent) setsid -f sent "$file" 2>/dev/null ;;
+tex) textype "$file" ;;
+*) head -n1 "$file" | grep "^#!/" | sed "s/^#!//" | xargs -r -I % "$file" ;;
 esac

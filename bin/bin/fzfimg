@@ -33,15 +33,15 @@ function map_options {
     for ((i=0; i < ${#options[@]}; i++)); do
         local key="${options[$i]}" next_key="${options[$((i + 1))]:---}"
         local value=true
-        is_option_key "${key}" || \
+        is_option_key "$key" || \
             continue
-        if is_key_value "${key}"; then
-            <<<"${key}" \
+        if is_key_value "$key"; then
+            <<<"$key" \
                 IFS='=' read key value
-        elif ! is_option_key "${next_key}"; then
-            value="${next_key}"
+        elif ! is_option_key "$next_key"; then
+            value="$next_key"
         fi
-        options_map["${key}"]="${value}"
+        options_map["${key}"]="$value"
     done
 }
 
@@ -55,11 +55,11 @@ function parse_options {
 
 
 function start_ueberzug {
-    mkfifo "${UEBERZUG_FIFO}"
-    <"${UEBERZUG_FIFO}" \
+    mkfifo "$UEBERZUG_FIFO"
+    <"$UEBERZUG_FIFO" \
         ueberzug layer --parser bash --silent &
     # prevent EOF
-    3>"${UEBERZUG_FIFO}" \
+    3>"$UEBERZUG_FIFO" \
         exec
 }
 
@@ -68,9 +68,9 @@ function finalise {
     3>&- \
         exec
     &>/dev/null \
-        rm "${UEBERZUG_FIFO}"
+        rm "$UEBERZUG_FIFO"
     &>/dev/null \
-        kill $(jobs -p)
+        kill "$(jobs -p)"
 }
 
 
@@ -103,10 +103,10 @@ function calculate_position {
 function draw_preview {
     calculate_position
 
-    >"${UEBERZUG_FIFO}" declare -A -p cmd=( \
-        [action]=add [identifier]="${PREVIEW_ID}" \
-        [x]="${X}" [y]="${Y}" \
-        [width]="${COLUMNS}" [height]="${LINES}" \
+    >"$UEBERZUG_FIFO" declare -A -p cmd=( \
+        [action]=add [identifier]="$PREVIEW_ID" \
+        [x]="$X" [y]="$Y" \
+        [width]="$COLUMNS" [height]="$LINES" \
         [scaler]=fit_contain [scaling_position_x]=0.5 [scaling_position_y]=0.5 \
         # [scaler]=forced_cover [scaling_position_x]=0.5 [scaling_position_y]=0.5 \
         [path]="${@}")
@@ -136,13 +136,13 @@ if [[ "${BASH_SOURCE[0]}" == "${0}" ]]; then
     parse_options "${@}"
     # print the redraw key twice as there's a run condition we can't circumvent
     # (we can't know the time fzf finished redrawing it's layout)
-    print_on_winch "${REDRAW_KEY}${REDRAW_KEY}"
+    print_on_winch "$REDRAW_KEY$REDRAW_KEY"
     start_ueberzug
 
     export -f draw_preview calculate_position
-    SHELL="${BASH_BINARY}" \
+    SHELL="$BASH_BINARY" \
         fzf --preview "draw_preview {}" \
-            --preview-window "${DEFAULT_PREVIEW_POSITION}" \
-            --bind "${REDRAW_KEY}:${REDRAW_COMMAND}" \
+            --preview-window "$DEFAULT_PREVIEW_POSITION" \
+            --bind "$REDRAW_KEY:$REDRAW_COMMAND" \
             "${@}"
 fi

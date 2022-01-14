@@ -1,3 +1,3 @@
-#!/usr/bin/env sh
+#!/bin/sh
 
- cp ~/.kb/data/todo/pdh_work ~/Documents/notes_papers/_includes/todo.md
+cp "$HOME"/.kb/data/todo/pdh_work "$HOME"/Documents/notes_papers/_includes/todo.md

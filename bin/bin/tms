@@ -5,25 +5,26 @@
 if [[ $# -eq 1 ]]; then
     selected=$1
 else
-    items=`find ~/Documents/work/projects -maxdepth 1 -mindepth 1 -type d`
-    items+=`echo "" && find ~/projects -maxdepth 1 -mindepth 1 -type d`
-    items+=`echo "" && find $HOME/Documents/teaching -maxdepth 0 -type d`
-    items+=`echo "" && find $HOME/Documents/work/cesm -maxdepth 0 -type d`
-    items+=`echo "" && find $HOME/Documents/other/PhD -maxdepth 0 -type d`
+    items=$(find ~/Documents/work/projects -maxdepth 1 -mindepth 1 -type d)
+    items+=$(echo "" && find ~/projects -maxdepth 1 -mindepth 1 -type d)
+    items+=$(echo "" && find "$HOME"/Documents/teaching -maxdepth 0 -type d)
+    items+=$(echo "" && find "$HOME"/Documents/work/cesm -maxdepth 0 -type d)
+    items+=$(echo "" && find "$HOME"/Documents/other/PhD -maxdepth 0 -type d)
+    items+=$(echo "" && find "$HOME"/Documents/presentations -maxdepth 0 -type d)
     # items+=("$HOME/work")
     # items+=("$HOME/.dotfiles")
     # items+=("$HOME/ansible")
-    selected=`echo "$items" | fzf`
+    selected=$(echo "$items" | fzf)
 
     # Exit if none is chosen
     [ -z "$selected" ] && exit
 fi
 
-tmux_session_name=`basename $selected | tr . _`
+tmux_session_name=$(basename "$selected" | tr . _)
 
-tmux switch-client -t $tmux_session_name
+tmux switch-client -t "$tmux_session_name"
 if [[ $? -eq 0 ]]; then
     exit 0
 fi
 
-tmux new-session -c $selected -d -s $tmux_session_name && tmux switch-client -t $tmux_session_name || tmux new -c $selected -A -s $tmux_session_name
+tmux new-session -c "$selected" -d -s "$tmux_session_name" && tmux switch-client -t "$tmux_session_name" || tmux new -c "$selected" -A -s "$tmux_session_name"

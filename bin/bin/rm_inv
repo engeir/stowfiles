@@ -1,5 +1,4 @@
 #!/usr/bin/env sh
 
 out=${2:-$1}
-convert $1 -channel RGB -negate $out
-
+convert "$1" -channel RGB -negate "$out"

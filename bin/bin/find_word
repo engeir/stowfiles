@@ -9,12 +9,11 @@ file=$(grep -iRl "$search" ./ | fzf)
 
 n=$(echo "$file" | sed 's|\./||g')
 
-dir=$(pwd)/$(dirname $n)
-fullpath=$(pwd)/$n
-echo $dir
-echo $fullpath
+dir=$PWD/$(dirname "$n")
+fullpath=$PWD/$n
+echo "$dir"
+echo "$fullpath"
 
-nvim $n
+nvim "$n"
 # vim $(pwd)/$n
 # cd "$dir"/
-

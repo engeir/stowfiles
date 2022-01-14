@@ -1,9 +1,9 @@
 #!/bin/env bash
 # From https://www.reddit.com/r/bspwm/comments/hpv1gh/get_window_name_from_window_id/
 
-(( i = 0 ))
+((i = 0))
 
-ids=($(bspc query -N -n '.hidden.window')) || exit
+ids=("$(bspc query -N -n '.hidden.window')") || exit
 for wid in "${ids[@]}"; do
     title="$(xtitle "$wid")"
     options+="$((++i)): ${title:-"$(bspc query -T -n "$wid" | jq -r '

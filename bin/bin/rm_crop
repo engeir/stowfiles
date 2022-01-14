@@ -1,8 +1,6 @@
 #!/usr/bin/env sh
 
 # Crop image. (Default remove white)
-for file in $@
-do
-	convert -trim $file $file
+for file in "$@"; do
+    convert -trim "$file" "$file"
 done
-

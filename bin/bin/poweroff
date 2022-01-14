@@ -5,9 +5,9 @@
 choises="Sleep\nReboot\nPower off"
 chosen=$(echo "$choises" | dmenu -i -l 5)
 case "$chosen" in
-	# "Sleep") bsplock ;;
-	# "Sleep") i3lock -c 3d3d3d -f ;;
-	"Sleep") slock -m "$(cowsay "$(fortune)" | lolcat -ft)" ;;
-	"Reboot") systemctl reboot ;;
-	"Power off") systemctl poweroff ;;
+# "Sleep") bsplock ;;
+# "Sleep") i3lock -c 3d3d3d -f ;;
+"Sleep") slock -m "$(cowsay "$(fortune)" | lolcat -ft)" ;;
+"Reboot") systemctl reboot ;;
+"Power off") systemctl poweroff ;;
 esac

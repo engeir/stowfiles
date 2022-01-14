@@ -3,5 +3,4 @@
 out=${2:-$1}
 col=${3:-white}
 XX=${4:-10}
-convert $1 -fuzz "$XX"% -transparent $col $out
-
+convert "$1" -fuzz "$XX"% -transparent "$col" "$out"

@@ -10,13 +10,13 @@ session="nn-prev"
 tmux start-server
 
 # create a new tmux session, starting vim from a saved session in the new window
-tmux new-session -d -s $session -n nn-prev #"vim -S ~/.vim/sessions/kittybusiness"
+tmux new-session -d -s "$session" -n nn-prev #"vim -S ~/.vim/sessions/kittybusiness"
 
-tmux selectp -t 0 
+tmux selectp -t 0
 tmux send-keys "nn -P p" C-m
 
 # # return to main vim window
 # tmux select-window -t $session:0
 
 # Finished setup, attach to the tmux session!
-tmux attach-session -t $session
+tmux attach-session -t "$session"

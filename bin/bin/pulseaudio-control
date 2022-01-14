@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/bin/bash
 
 ##################################################################
 # Polybar Pulseaudio Control                                     #
@@ -22,9 +22,8 @@ declare -a ICONS_VOLUME
 declare -a SINK_BLACKLIST
 
 # Environment & global constants for the script
-END_COLOR="%{F-}"  # For Polybar colors
-LANGUAGE=en_US  # Some calls depend on English outputs of pactl
-
+END_COLOR="%{F-}" # For Polybar colors
+LANGUAGE=en_US    # Some calls depend on English outputs of pactl
 
 # Saves the currently default sink into a variable named `curSink`. It will
 # return an error code when pulseaudio isn't running.
@@ -33,12 +32,10 @@ function getCurSink() {
     curSink=$(pacmd list-sinks | awk '/\* index:/{print $3}')
 }
 
-
 # Saves the sink passed by parameter's volume into a variable named `VOL_LEVEL`.
 function getCurVol() {
     VOL_LEVEL=$(pacmd list-sinks | grep -A 15 'index: '"$1"'' | grep 'volume:' | grep -E -v 'base volume:' | awk -F : '{print $3; exit}' | grep -o -P '.{0,3}%' | sed 's/.$//' | tr -d ' ')
 }
-
 
 # Saves the name of the sink passed by parameter into a variable named
 # `sinkName`.
@@ -46,7 +43,6 @@ function getSinkName() {
     sinkName=$(pactl list sinks short | awk -v sink="$1" '{ if ($1 == sink) {print $2} }')
     portName=$(pacmd list-sinks | grep -e 'index' -e 'active port' | sed -n -e 's/<\(.*\)>/\1/' -e "/index: $1/,+1p" | awk '/active port:/{print $3}')
 }
-
 
 # Saves the name to be displayed for the sink passed by parameter into a
 # variable called `SINK_NICKNAME`.
@@ -56,8 +52,8 @@ function getNickname() {
     getSinkName "$1"
     unset SINK_NICKNAME
 
-    if [ -n "$sinkName" ] && [ -n "$portName" ] && [ -n "${SINK_NICKNAMES[$sinkName/$portName]}" ]; then
-        SINK_NICKNAME="${SINK_NICKNAMES[$sinkName/$portName]}"
+    if [ -n "$sinkName" ] && [ -n "$portName" ] && [ -n "${SINK_NICKNAMES[$sinkName / $portName]}" ]; then
+        SINK_NICKNAME="${SINK_NICKNAMES[$sinkName / $portName]}"
     elif [ -n "$sinkName" ] && [ -n "${SINK_NICKNAMES[$sinkName]}" ]; then
         SINK_NICKNAME="${SINK_NICKNAMES[$sinkName]}"
     elif [ -n "$sinkName" ] && [ -n "$SINK_NICKNAMES_PROP" ]; then
@@ -79,17 +75,17 @@ function getNicknameFromProp() {
     SINK_NICKNAME=
     while read -r property value; do
         case "$property" in
-            name:)
-                sink_name="${value//[<>]/}"
-                unset sink_desc
-                ;;
-            "$nickname_prop")
-                if [ "$sink_name" != "$for_name" ]; then
-                    continue
-                fi
-                SINK_NICKNAME="${value:3:-1}"
-                break
-                ;;
+        name:)
+            sink_name="${value//[<>]/}"
+            unset sink_desc
+            ;;
+        "$nickname_prop")
+            if [ "$sink_name" != "$for_name" ]; then
+                continue
+            fi
+            SINK_NICKNAME="${value:3:-1}"
+            break
+            ;;
         esac
     done < <(pacmd list-sinks)
 }
@@ -100,13 +96,11 @@ function getIsMuted() {
     isMuted=$(pacmd list-sinks | grep -A 15 "index: $1" | awk '/muted/ {print $2; exit}')
 }
 
-
 # Saves all the sink inputs of the sink passed by parameter into a string
 # named `sinkInputs`.
 function getSinkInputs() {
     sinkInputs=$(pacmd list-sink-inputs | grep -B 4 "sink: $1 " | awk '/index:/{print $2}')
 }
-
 
 function volUp() {
     # Obtaining the current volume from pacmd into $VOL_LEVEL.
@@ -126,10 +120,9 @@ function volUp() {
         pactl set-sink-volume "$curSink" "+$VOLUME_STEP%"
     fi
 
-    if [ $OSD = "yes" ]; then showOSD "$curSink"; fi
-    if [ $AUTOSYNC = "yes" ]; then volSync; fi
+    if [ "$OSD" = "yes" ]; then showOSD "$curSink"; fi
+    if [ "$AUTOSYNC" = "yes" ]; then volSync; fi
 }
-
 
 function volDown() {
     # Pactl already handles the volume lower bounds so that negative values
@@ -140,10 +133,9 @@ function volDown() {
     fi
     pactl set-sink-volume "$curSink" "-$VOLUME_STEP%"
 
-    if [ $OSD = "yes" ]; then showOSD "$curSink"; fi
-    if [ $AUTOSYNC = "yes" ]; then volSync; fi
+    if [ "$OSD" = "yes" ]; then showOSD "$curSink"; fi
+    if [ "$AUTOSYNC" = "yes" ]; then volSync; fi
 }
-
 
 function volSync() {
     if ! getCurSink; then
@@ -159,7 +151,6 @@ function volSync() {
         pactl set-sink-input-volume "$each" "$VOL_LEVEL%"
     done
 }
-
 
 function volMute() {
     # Switch to mute/unmute the volume with pactl.
@@ -180,9 +171,8 @@ function volMute() {
         pactl set-sink-mute "$curSink" "no"
     fi
 
-    if [ $OSD = "yes" ]; then showOSD "$curSink"; fi
+    if [ "$OSD" = "yes" ]; then showOSD "$curSink"; fi
 }
-
 
 function nextSink() {
     # The final sinks list, removing the blacklisted ones from the list of
@@ -239,7 +229,7 @@ function nextSink() {
         pacmd move-sink-input "$i" "$newSink"
     done
 
-    if [ $NOTIFICATIONS = "yes" ]; then
+    if [ "$NOTIFICATIONS" = "yes" ]; then
         getNickname "$newSink"
 
         if command -v dunstify &>/dev/null; then
@@ -247,10 +237,9 @@ function nextSink() {
         else
             notify="notify-send"
         fi
-        $notify "PulseAudio" "Changed output to $SINK_NICKNAME" --icon=audio-headphones-symbolic &
+        "$notify" "PulseAudio" "Changed output to $SINK_NICKNAME" --icon=audio-headphones-symbolic &
     fi
 }
-
 
 # This function assumes that PulseAudio is already running. It only supports
 # KDE OSDs for now. It will show a system message with the status of the
@@ -266,7 +255,6 @@ function showOSD() {
     qdbus org.kde.kded /modules/kosd showVolume "$VOL_LEVEL" "$isMuted"
 }
 
-
 function listen() {
     local firstRun=0
 
@@ -278,7 +266,7 @@ function listen() {
                 # If this is the first time just continue and print the current
                 # state. Otherwise wait for events. This is to prevent the
                 # module being empty until an event occurs.
-                if [ $firstRun -eq 0 ]; then
+                if [ "$firstRun" -eq 0 ]; then
                     firstRun=1
                 else
                     read -r event || break
@@ -292,7 +280,6 @@ function listen() {
         done
     }
 }
-
 
 function output() {
     if ! getCurSink; then
@@ -308,7 +295,7 @@ function output() {
         local volSplit=$((VOLUME_MAX / iconsLen))
         for i in $(seq 1 "$iconsLen"); do
             if [ $((i * volSplit)) -ge "$VOL_LEVEL" ]; then
-                VOL_ICON="${ICONS_VOLUME[$((i-1))]}"
+                VOL_ICON="${ICONS_VOLUME[$((i - 1))]}"
                 break
             fi
         done
@@ -322,12 +309,11 @@ function output() {
     if [ "$isMuted" = "yes" ]; then
         # shellcheck disable=SC2034
         VOL_ICON=$ICON_MUTED
-        echo "${COLOR_MUTED}$(eval echo "$FORMAT")${END_COLOR}"
+        echo "$COLOR_MUTED$(eval echo "$FORMAT")$END_COLOR"
     else
         eval echo "$FORMAT"
     fi
 }
-
 
 function usage() {
     echo "\
@@ -405,95 +391,95 @@ while [[ "$1" = --* ]]; do
     fi
 
     case "$arg" in
-        --autosync)
-            AUTOSYNC=yes
-            ;;
-        --no-autosync)
-            AUTOSYNC=no
-            ;;
-        --color-muted|--colour-muted)
-            COLOR_MUTED="%{F#$val}"
-            ;;
-        --notifications)
-            NOTIFICATIONS=yes
-            ;;
-        --no-notifications)
-            NOTIFICATIONS=no
-            ;;
-        --osd)
-            OSD=yes
-            ;;
-        --no-osd)
-            OSD=no
-            ;;
-        --icon-muted)
-            ICON_MUTED="$val"
-            ;;
-        --icon-sink)
-            # shellcheck disable=SC2034
-            ICON_SINK="$val"
-            ;;
-        --icons-volume)
-            IFS=, read -r -a ICONS_VOLUME <<< "$val"
-            ;;
-        --volume-max)
-            VOLUME_MAX="$val"
-            ;;
-        --volume-step)
-            VOLUME_STEP="$val"
-            ;;
-        --sink-blacklist)
-            IFS=, read -r -a SINK_BLACKLIST <<< "$val"
-            ;;
-        --sink-nicknames-from)
-            SINK_NICKNAMES_PROP="$val"
-            ;;
-        --sink-nickname)
-            SINK_NICKNAMES["${val//:*/}"]="${val//*:}"
-            ;;
-        --format)
-	    FORMAT="$val"
-            ;;
-        *)
-            echo "Unrecognised option: $arg" >&2
-            exit 1
-            ;;
+    --autosync)
+        AUTOSYNC=yes
+        ;;
+    --no-autosync)
+        AUTOSYNC=no
+        ;;
+    --color-muted | --colour-muted)
+        COLOR_MUTED="%{F#$val}"
+        ;;
+    --notifications)
+        NOTIFICATIONS=yes
+        ;;
+    --no-notifications)
+        NOTIFICATIONS=no
+        ;;
+    --osd)
+        OSD=yes
+        ;;
+    --no-osd)
+        OSD=no
+        ;;
+    --icon-muted)
+        ICON_MUTED="$val"
+        ;;
+    --icon-sink)
+        # shellcheck disable=SC2034
+        ICON_SINK="$val"
+        ;;
+    --icons-volume)
+        IFS=, read -r -a ICONS_VOLUME <<<"$val"
+        ;;
+    --volume-max)
+        VOLUME_MAX="$val"
+        ;;
+    --volume-step)
+        VOLUME_STEP="$val"
+        ;;
+    --sink-blacklist)
+        IFS=, read -r -a SINK_BLACKLIST <<<"$val"
+        ;;
+    --sink-nicknames-from)
+        SINK_NICKNAMES_PROP="$val"
+        ;;
+    --sink-nickname)
+        SINK_NICKNAMES["${val//:*/}"]="${val//*:/}"
+        ;;
+    --format)
+        FORMAT="$val"
+        ;;
+    *)
+        echo "Unrecognised option: $arg" >&2
+        exit 1
+        ;;
     esac
 done
 
 case "$1" in
-    up)
-        volUp
-        ;;
-    down)
-        volDown
-        ;;
-    togmute)
-        volMute toggle
-        ;;
-    mute)
-        volMute mute
-        ;;
-    unmute)
-        volMute unmute
-        ;;
-    sync)
-        volSync
-        ;;
-    listen)
-        listen
-        ;;
-    next-sink)
-        nextSink
-        ;;
-    output)
-        output
-        ;;
-    help)
-        usage
-        ;;
-    *)
-        echo "Unrecognised action: $1" >&2
-        exit 1
-        ;;
+up)
+    volUp
+    ;;
+down)
+    volDown
+    ;;
+togmute)
+    volMute toggle
+    ;;
+mute)
+    volMute mute
+    ;;
+unmute)
+    volMute unmute
+    ;;
+sync)
+    volSync
+    ;;
+listen)
+    listen
+    ;;
+next-sink)
+    nextSink
+    ;;
+output)
+    output
+    ;;
+help)
+    usage
+    ;;
+*)
+    echo "Unrecognised action: $1" >&2
+    exit 1
+    ;;
 esac

@@ -1,9 +1,9 @@
 #!/bin/sh
 
-dir=$(pwd)
-cd /home/een023/recepie/kokebok
+dir=$PWD
+cd /home/een023/recepie/kokebok || exit 1
 lualatex /home/een023/recepie/kokebok/main.tex
-cd $dir
+cd "$dir" || exit 1
 
 rmapi rm main
 rmapi put /home/een023/recepie/kokebok/main.pdf

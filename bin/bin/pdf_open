@@ -1,7 +1,7 @@
 #!/usr/bin/env sh
 # Search through and open and file with .pdf.
 
-cd ~
+cd ~ || exit 1
 c=$(fdfind --one-file-system -H .pdf$ --exclude .config/nnn --exclude OneDrive --exclude BoxSync | grep -o ".*pdf$" | awk -F'/' '{print $NF}' | dmenu -i -F -l 20)
 
 # Exit if none is chosen
