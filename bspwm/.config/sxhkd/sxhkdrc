@@ -20,7 +20,7 @@ super + alt + @space
 	~/.config/rofi/launchers/misc/launcher.sh &
 # Run custom scripts
 super + alt + x
-	~/bin/custom_scripts & 
+	~/bin/custom_scripts &
 super + alt + p
 	~/bin/pdf_open &
 	# ~/.config/sxhkd/display.sh
@@ -62,14 +62,14 @@ Print
 	scrot 'Screenshot_%Y-%m-%d-%S_$wx$h.png' -e 'mv $f $$(xdg-user-dir PICTURES)/Pictures/Screenshots ; sxiv $$(xdg-user-dir PICTURES)/Pictures/Screenshots/$f'
 
 # Take a screenshot in 5 second
-alt + Print	
+alt + Print
 	scrot -d 5 'Screenshot_%Y-%m-%d-%S_$wx$h.png' -e 'mv $f $$(xdg-user-dir PICTURES)/Pictures/Screenshots ; sxiv $$(xdg-user-dir PICTURES)/Pictures/Screenshots/$f'
 	# scrot -d 5 'Screenshot_%Y-%m-%d-%S_$wx$h.png' -e 'mv $f $$(xdg-user-dir PICTURES)/Pictures/Screenshots ; viewnior $$(xdg-user-dir PICTURES)/Pictures/Screenshots/$f'
 
-# Brighness control
-XF86MonBrightness{Up,Down}
-	backlight{-up,-down}
-	
+# # Brighness control
+# XF86MonBrightness{Up,Down}
+# 	backlight{-up,-down}
+
 # Volume control
 XF86Audio{RaiseVolume,LowerVolume,Mute}
 	~/.config/sxhkd/volume.sh {up,down,mute}
@@ -77,7 +77,7 @@ XF86Audio{RaiseVolume,LowerVolume,Mute}
 
 XF86AudioMute
 	amixer set Master toggle
-	
+
 # Music control
 XF86Audio{Next,Prev,Play,Stop}
 	mpc {next,prev,toggle,stop}
@@ -125,7 +125,7 @@ super + ctrl + {m,x,y,z}
 # Hide/Unhide Window
 super + h
 	bspc node focused -g hidden=on
-	 # winmask		
+	 # winmask
 
 super + alt + h
 	bspwm-hidden
@@ -222,10 +222,9 @@ super + {_,alt +} d
 #	{rofis || rofi -show run,lighthouse | sh}
 ##,dmenu_run -i -p "Search: "}
 
-# # Brightness
-# XF86MonBrightness{Up,Down}
-#     brightnessctl s 10{+,-}
-#     update_wallpaper
+# Brightness
+XF86MonBrightness{Up,Down}
+    brightnessctl s 10%{+,-}
 
 # # Mutes
 # XF86AudioMute
@@ -240,4 +239,3 @@ super + {_,alt +} d
 
 # XF86Audio{Raise,Lower}Volume
 #     pulsemixer --change-volume {+,-}10
-
