@@ -84,6 +84,7 @@ call plug#begin('~/.vim/plugged')
     Plug 'hrsh7th/cmp-nvim-lsp'
     " Other
     Plug 'norcalli/nvim-colorizer.lua'
+    Plug 'editorconfig/editorconfig-vim'
 call plug#end()
 
 " autocmd CursorHold,CursorHoldI * lua require('code_action_utils').code_action_listener()
