@@ -13,6 +13,9 @@
 #
 sudo yabai --load-sa
 yabai -m signal --add event=dock_did_restart action="sudo yabai --load-sa"
+# refresh my †bersicht bar when the space changes
+# yabai -m signal --add event=space_changed \
+#     action="osascript -e 'tell application \"UÌˆbersicht\" to refresh'"
 
 # global settings
 yabai -m config mouse_follows_focus          on
@@ -38,7 +41,7 @@ yabai -m config mouse_drop_action            swap
 
 # general space settings
 yabai -m config layout                       bsp
-yabai -m config top_padding                  6
+yabai -m config top_padding                  32
 yabai -m config bottom_padding               6
 yabai -m config left_padding                 6
 yabai -m config right_padding                6
