@@ -1,4 +1,4 @@
-#!/bin/env bash
+#!/bin/bash
 # From https://www.reddit.com/r/bspwm/comments/hpv1gh/get_window_name_from_window_id/
 
 ((i = 0))

@@ -2,11 +2,12 @@
 
 # Run any of the custom scripts from ~/bin
 
-choises="passwords\nfram status\npoweroff\nopen pdf\ninspect system\nemojis\nweather\nchange wallpaper\nlayouts\nfind text"
+choises="passwords\nfram status\npoweroff\nopen pdf\ninspect system\nemojis\nhtml-symbols\nweather\nchange wallpaper\nlayouts\nfind text"
 chosen=$(echo "$choises" | dmenu -F -l 20 -p "Choose a script to run:")
 case "$chosen" in
 "change wallpaper") wallpaper ;;
 "emojis") emojis ;;
+"html-symbols") html-symbols ;;
 "fram status") fram_job_status ;;
 "inspect system") inspect_system ;;
 "find text") find_txt ;;
