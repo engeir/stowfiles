@@ -24,12 +24,13 @@ call plug#begin('~/.vim/plugged')
     Plug 'nvim-lua/completion-nvim'
     Plug 'ray-x/lsp_signature.nvim'
     Plug 'jose-elias-alvarez/null-ls.nvim'
-    let OS = system('uname -s')
-    if OS == "Linux\n"
-        Plug 'glepnir/lspsaga.nvim'  " Do not work with mac, but with linux
-    elseif OS == "Darwin\n"
-        Plug 'tami5/lspsaga.nvim'  " Do not work with linux, but with mac
-    endif
+    " let OS = system('uname -s')
+    " if OS == "Linux\n"
+    "     Plug 'glepnir/lspsaga.nvim'  " Do not work with mac, but with linux
+    " elseif OS == "Darwin\n"
+    "     Plug 'tami5/lspsaga.nvim'  " Do not work with linux, but with mac
+    " endif
+    Plug 'tami5/lspsaga.nvim'
     " Plug 'ms-jpq/coq_nvim', {'branch': 'coq'}
     " Plug 'ms-jpq/coq.artifacts', {'branch': 'artifacts'}
     " Git
@@ -75,6 +76,7 @@ call plug#begin('~/.vim/plugged')
     Plug 'p00f/nvim-ts-rainbow'
     Plug 'code-biscuits/nvim-biscuits'
     " Completion
+    Plug 'Lucklyric/copilot.vim'
     Plug 'hrsh7th/nvim-cmp'
     " Install snippet engine (This example installs [hrsh7th/vim-vsnip](https://github.com/hrsh7th/vim-vsnip))
     Plug 'hrsh7th/vim-vsnip'
