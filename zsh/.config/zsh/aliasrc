@@ -4,6 +4,7 @@
 alias ls="lsd -FX"
 alias cat="bat"
 alias evrc="nvim ~/.vimrc"
+alias gin="git --no-pager"
 alias has="HAS_ALLOW_UNSAFE=y has"
 alias nnn="nnn -derH"
 alias nv="nvim"
