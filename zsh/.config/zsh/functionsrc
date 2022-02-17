@@ -7,7 +7,11 @@
 # }
 
 batdiff () {
-    git diff --name-only --diff-filter=d | xargs bat --diff
+    if [ "$1" = "--staged" ]; then
+        git diff --staged --name-only --diff-filter=d | xargs -I % sh -c "git diff --staged % | bat"
+    else
+        git diff --name-only --diff-filter=d | xargs bat --diff
+    fi
 }
 
 # Change cursor for vi modes:
@@ -270,4 +274,3 @@ tex_full() {
     pdflatex "$1".tex
     pdflatex "$1".tex
 }
-
