@@ -1,6 +1,7 @@
 install-ubuntu:
 	# Clean
 	stow -D X
+	stow -D bin
 	stow -D alacritty
 	stow -D aptery
 	stow -D bspwm
@@ -17,6 +18,7 @@ install-ubuntu:
 	stow -D zsh
 	# Install
 	stow X
+	stow bin
 	stow alacritty
 	stow aptery
 	stow bspwm
@@ -35,6 +37,7 @@ install-ubuntu:
 install-mac:
 	# Clean
 	stow -D alacritty_mac
+	stow -D bin
 	stow -D brewery
 	stow -D lf_mac
 	stow -D mpv
@@ -46,6 +49,7 @@ install-mac:
 	stow -D zathura
 	# Install
 	stow alacritty_mac
+	stow bin
 	stow brewery
 	stow lf_mac
 	stow mpv

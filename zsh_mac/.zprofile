@@ -1,3 +1,8 @@
+
+#### FIG ENV VARIABLES ####
+# Please make sure this block is at the start of this file.
+[ -s ~/.fig/shell/pre.sh ] && source ~/.fig/shell/pre.sh
+#### END FIG ENV VARIABLES ####
 # Setting PATH for Python 3.6
 # The original version is saved in .bash_profile.pysave
 # PATH="/Library/Frameworks/Python.framework/Versions/3.6/bin:${PATH}"
@@ -72,3 +77,8 @@ export PATH="/opt/local/bin:/opt/local/sbin:$PATH"
 export DISPLAY=:0
 # Finished adapting your DISPLAY environment variable for use with MacPorts.
 
+
+#### FIG ENV VARIABLES ####
+# Please make sure this block is at the end of this file.
+[ -s ~/.fig/fig.sh ] && source ~/.fig/fig.sh
+#### END FIG ENV VARIABLES ####

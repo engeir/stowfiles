@@ -1,5 +1,10 @@
+
+# #### FIG ENV VARIABLES ####
+# # Please make sure this block is at the start of this file.
+# [ -s ~/.fig/shell/pre.sh ] && source ~/.fig/shell/pre.sh
+# #### END FIG ENV VARIABLES ####
 # If you come from bash you might have to change your $PATH.
-export PATH=$HOME/bin:/usr/local/bin:$HOME/scripts:$HOME/.local/bin:$PATH
+export PATH=/usr/local/bin:$HOME/scripts:$HOME/.local/bin:$HOME/bin:$PATH
 export NODE_PATH='/usr/local/lib/node_modules'
 # export PATH="$HOME/.poetry/bin:$PATH"
 export PATH="/Users/eirikenger/Library/Python/3.9/bin:$PATH"
@@ -199,3 +204,8 @@ export HAS_ALLOW_UNSAFE=y
 # fi
 # unset __conda_setup
 # # <<< conda initialize <<<
+
+# #### FIG ENV VARIABLES ####
+# # Please make sure this block is at the end of this file.
+# [ -s ~/.fig/fig.sh ] && source ~/.fig/fig.sh
+# #### END FIG ENV VARIABLES ####
