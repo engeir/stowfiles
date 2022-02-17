@@ -11,6 +11,7 @@ call plug#begin('~/.vim/plugged')
     " Debugger
     Plug 'puremourning/vimspector'
     Plug 'szw/vim-maximizer'
+
     " Better Syntax Support
     Plug 'sainnhe/gruvbox-material'
     Plug 'gko/vim-layout'
@@ -19,6 +20,7 @@ call plug#begin('~/.vim/plugged')
     Plug 'tpope/vim-surround'  " Change surrounding characters
     Plug 'Raimondi/delimitMate'  " Close matching characters
     Plug 'tpope/vim-speeddating'
+
     " Lsp
     Plug 'neovim/nvim-lspconfig'
     Plug 'nvim-lua/completion-nvim'
@@ -33,6 +35,7 @@ call plug#begin('~/.vim/plugged')
     Plug 'tami5/lspsaga.nvim'
     " Plug 'ms-jpq/coq_nvim', {'branch': 'coq'}
     " Plug 'ms-jpq/coq.artifacts', {'branch': 'artifacts'}
+
     " Git
     Plug 'lewis6991/gitsigns.nvim'
     Plug 'tpope/vim-fugitive'
@@ -41,6 +44,7 @@ call plug#begin('~/.vim/plugged')
     " Python easymotion
     " Plug 'jeetsukumaran/vim-pythonsense'
     Plug 'fs111/pydoc.vim'
+
     " Text editing
     " Used for Markdown highlighting
     Plug 'godlygeek/tabular'
@@ -52,29 +56,29 @@ call plug#begin('~/.vim/plugged')
     Plug 'sirver/ultisnips'
     Plug 'honza/vim-snippets'
     Plug 'KeitaNakamura/tex-conceal.vim'
+
     " Python
     Plug 'nvie/vim-flake8'
+
     " Fuzzy search and open files
     Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
     Plug 'junegunn/fzf.vim'
     Plug 'voldikss/vim-floaterm'
+
     " Statusline
     Plug 'glepnir/galaxyline.nvim' , {'branch': 'main'}
     Plug 'mhinz/vim-startify'  " Startup
-    " Always place in directory root
-    Plug 'airblade/vim-rooter'
     " Motions
     Plug 'easymotion/vim-easymotion'
     " Navigation
     Plug 'nvim-lua/plenary.nvim'
     Plug 'nvim-telescope/telescope.nvim'
     Plug 'ThePrimeagen/harpoon'
-    " Display icons
-    Plug 'kyazdani42/nvim-web-devicons'
     " Treesitter
     Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}  " We recommend updating the parsers on update
     Plug 'p00f/nvim-ts-rainbow'
     Plug 'code-biscuits/nvim-biscuits'
+
     " Completion
     Plug 'Lucklyric/copilot.vim'
     Plug 'hrsh7th/nvim-cmp'
@@ -84,9 +88,13 @@ call plug#begin('~/.vim/plugged')
     Plug 'hrsh7th/cmp-buffer'
     Plug 'hrsh7th/cmp-path'
     Plug 'hrsh7th/cmp-nvim-lsp'
+
     " Other
+    Plug 'kyazdani42/nvim-web-devicons'
+    Plug 'airblade/vim-rooter'
     Plug 'norcalli/nvim-colorizer.lua'
-    Plug 'editorconfig/editorconfig-vim'
+    Plug 'editorconfig/editorconfig-vim'  " Used by pacstall
+    Plug 'sindrets/diffview.nvim'  " Nice diff view
 call plug#end()
 
 " autocmd CursorHold,CursorHoldI * lua require('code_action_utils').code_action_listener()
