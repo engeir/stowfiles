@@ -39,6 +39,7 @@ call plug#begin('~/.vim/plugged')
     " Git
     Plug 'lewis6991/gitsigns.nvim'
     Plug 'tpope/vim-fugitive'
+    Plug 'tpope/vim-rhubarb'  " Enables GBrowse
     " Plug 'airblade/vim-gitgutter'
     Plug 'stsewd/fzf-checkout.vim'
     " Python easymotion
