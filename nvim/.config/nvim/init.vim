@@ -28,6 +28,7 @@ lua << EOF
 -- require 'statuslines.spaceline'
 -- require 'statuslines.evilline'
 require 'statuslines.galaxyline-line'
+require 'globals'
 EOF
 
 " Other:
