@@ -136,3 +136,8 @@ inoremap <C-L> <C-G>u<Esc>[s1z=`]a<C-G>u
 nnoremap <C-s> <Esc>[sve<C-G>
 inoremap <C-s> <Esc>[sve<C-G>
 snoremap <C-K> <Esc>b[sviw<C-G>
+
+
+" Lua snippet in vimscript:
+nmap <leader>T <Plug>PlenaryTestFile
+" nnoremap <leader>GH :GhBrowse<CR>

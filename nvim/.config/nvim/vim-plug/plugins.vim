@@ -40,6 +40,8 @@ call plug#begin('~/.vim/plugged')
     Plug 'lewis6991/gitsigns.nvim'
     Plug 'tpope/vim-fugitive'
     Plug 'tpope/vim-rhubarb'  " Enables GBrowse
+    Plug '~/projects/githistory-browse.nvim/'
+    " Plug 'engeir/githistory-browse.nvim'
     " Plug 'airblade/vim-gitgutter'
     Plug 'stsewd/fzf-checkout.vim'
     " Python easymotion
@@ -92,7 +94,7 @@ call plug#begin('~/.vim/plugged')
 
     " Other
     Plug 'kyazdani42/nvim-web-devicons'
-    Plug 'airblade/vim-rooter'
+    " Plug 'airblade/vim-rooter'
     Plug 'norcalli/nvim-colorizer.lua'
     Plug 'editorconfig/editorconfig-vim'  " Used by pacstall
     Plug 'sindrets/diffview.nvim'  " Nice diff view
