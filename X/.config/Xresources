@@ -15,6 +15,13 @@
 #define t_fg_highlight #9D9EA2
 #define t_fg_ceiling   #FEFFFF
 
+Nsxiv.window.background: t_background
+Nsxiv.window.foreground: #fff
+! Nsxiv.bar.font
+Nsxiv.bar.background: #193421
+Nsxiv.bar.foreground: #aaa
+! Nsxiv.mark.foreground:
+
 URxvt.background: t_background
 URxvt.foreground: t_foreground
 

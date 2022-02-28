@@ -31,7 +31,7 @@ do
 	#     choises="Single\nUSB-C\nHDMI4k\nHDMI2k"
 	#     choses=$(echo "$choises" | dmenu -p "Choose your new monitor setup:")
 	#     case "$chosen" in
-	#         Single) 
+	#         Single)
         *)
             echo "not yet implemented: $1" ;;
     esac
