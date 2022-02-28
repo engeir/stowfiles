@@ -3,7 +3,7 @@
 # Run any of the custom scripts from ~/bin
 
 choises="passwords\nfram status\npoweroff\nopen pdf\ninspect system\nemojis\nhtml-symbols\nweather\nchange wallpaper\nlayouts\nfind text"
-chosen=$(echo "$choises" | dmenu -F -l 20 -p "Choose a script to run:")
+chosen=$(echo "$choises" | dmenu -i -l 20 -p "Choose a script to run:")
 case "$chosen" in
 "change wallpaper") wallpaper ;;
 "emojis") emojis ;;
