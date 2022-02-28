@@ -1,6 +1,6 @@
 #!/bin/bash
 
-VAR=2022-02-18T17:09:24
+VAR=0
 
 if [[ $VAR == "0" ]]; then
     exit 1
