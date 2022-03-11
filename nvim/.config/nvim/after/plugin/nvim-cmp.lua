@@ -28,7 +28,7 @@ cmp.setup({
         { name = "nvim_lsp" },
         { name = "path" },
         { name = "buffer", keyword_length = 4 },
-        -- { name = "ultisnips" }, -- For ultisnips users.
+        { name = "ultisnips" }, -- For ultisnips users.
         { name = 'gh_issues' },
     },
 

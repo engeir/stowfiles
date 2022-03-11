@@ -93,13 +93,15 @@ call plug#begin('~/.vim/plugged')
     Plug 'hrsh7th/cmp-buffer'
     Plug 'hrsh7th/cmp-path'
     Plug 'hrsh7th/cmp-nvim-lsp'
+    Plug 'quangnguyen30192/cmp-nvim-ultisnips'
 
     " Other
     Plug 'kyazdani42/nvim-web-devicons'
-    " Plug 'airblade/vim-rooter'
+    Plug 'airblade/vim-rooter'
     Plug 'norcalli/nvim-colorizer.lua'
     Plug 'editorconfig/editorconfig-vim'  " Used by pacstall
     Plug 'sindrets/diffview.nvim'  " Nice diff view
+    Plug 'folke/todo-comments.nvim'
 call plug#end()
 
 " autocmd CursorHold,CursorHoldI * lua require('code_action_utils').code_action_listener()
