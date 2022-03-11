@@ -56,6 +56,8 @@ call plug#begin('~/.vim/plugged')
     Plug 'reedes/vim-pencil'
     " Latex
     Plug 'lervag/vimtex'
+    " Consider using luasnip instead, and transfer the snippet files with
+    " https://github.com/L3MON4D3/LuaSnip/issues/201#issuecomment-950132369
     Plug 'sirver/ultisnips'
     Plug 'honza/vim-snippets'
     Plug 'KeitaNakamura/tex-conceal.vim'

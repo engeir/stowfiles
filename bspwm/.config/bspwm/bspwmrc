@@ -1,10 +1,10 @@
 #!/bin/bash
 
 #
-# Check out this repo for how to dynamically change desktops and posibly also handle dual
+# Check out this repo for how to dynamically change desktops and possibly also handle dual
 # monitor setup.
 # https://gitlab.com/protesilaos/dotfiles/-/tree/4363c3bf0b8e9c1dc10f1344993277cc7eaca178
-# 
+#
 
 ## Environtment
 export PATH="${PATH}:$HOME/.config/bspwm/bin"
@@ -14,30 +14,30 @@ xrdb ~/.Xresources
 getcolors () {
     FOREGROUND=$(xrdb -query | grep 'foreground:'| awk '{print $NF}')
     BACKGROUND=$(xrdb -query | grep 'background:'| awk '{print $NF}')
-    BLACK=$(xrdb -query | grep 'color0:'| awk '{print $NF}')
+    # BLACK=$(xrdb -query | grep 'color0:'| awk '{print $NF}')
     RED=$(xrdb -query | grep 'color1:'| awk '{print $NF}')
-    GREEN=$(xrdb -query | grep 'color2:'| awk '{print $NF}')
-    YELLOW=$(xrdb -query | grep 'color3:'| awk '{print $NF}')
+    # GREEN=$(xrdb -query | grep 'color2:'| awk '{print $NF}')
+    # YELLOW=$(xrdb -query | grep 'color3:'| awk '{print $NF}')
     BLUE=$(xrdb -query | grep 'color4:'| awk '{print $NF}')
-    MAGENTA=$(xrdb -query | grep 'color5:'| awk '{print $NF}')
-    CYAN=$(xrdb -query | grep 'color6:'| awk '{print $NF}')
-    WHITE=$(xrdb -query | grep 'color7:'| awk '{print $NF}')
+    # MAGENTA=$(xrdb -query | grep 'color5:'| awk '{print $NF}')
+    # CYAN=$(xrdb -query | grep 'color6:'| awk '{print $NF}')
+    # WHITE=$(xrdb -query | grep 'color7:'| awk '{print $NF}')
 }
 getcolors
 
 ## Configurations -------------------------------#
 
 if [ "$(bspc query -M | wc -l)" -eq "3" ]; then
-    bspc monitor $(bspc query -M | sed -n 1p) -d 1 2 3
-    bspc monitor $(bspc query -M | sed -n 2p) -d 4 5 6
-    bspc monitor $(bspc query -M | sed -n 3p) -d 7 8 9 0
+    bspc monitor "$(bspc query -M | sed -n 1p)" -d 1 2 3
+    bspc monitor "$(bspc query -M | sed -n 2p)" -d 4 5 6
+    bspc monitor "$(bspc query -M | sed -n 3p)" -d 7 8 9 0
 elif [ "$(bspc query -M | wc -l)" -eq "2" ]; then
     bspc monitor eDP-1 -d 1 2 3
     if [ "$(bspc query -M --names | sed -n 1p)" = "eDP-1" ]; then
-        bspc monitor $(bspc query -M --names | sed -n 2p) -d 4 5 6 7 8 9 0
+        bspc monitor "$(bspc query -M --names | sed -n 2p)" -d 4 5 6 7 8 9 0
     else
         bspc monitor ^2 -s ^1
-        bspc monitor $(bspc query -M --names | sed -n 2p) -d 4 5 6 7 8 9 0
+        bspc monitor "$(bspc query -M --names | sed -n 2p)" -d 4 5 6 7 8 9 0
     fi
 else
     bspc monitor eDP-1 -d 1 2 3 4 5 6 7 8 9 0
@@ -77,7 +77,7 @@ bspc config external_rules_command "$(which external_rules)"
 # Use xprop to find info about a window
 
 # remove all rules first
-bspc rule -r *:*
+bspc rule -r -- *:*
 
 # 1 > terminal
 # bspc rule -a Alacritty desktop='^1' follow=on focus=on
@@ -111,7 +111,7 @@ bspc rule -r *:*
 # bspc rule -a alacritty-float state=floating follow=on focus=on
 bspc rule -a Audacious state=floating follow=on focus=on
 bspc rule -a Conky state=floating manage=off
-bspc rule -a Firefox locked=on
+bspc rule -a firefox locked=on
 # bspc rule -a Firefox:Places state=floating follow=on focus=on
 bspc rule -a matplotlib state=floating  # rectangle=1000x700+500+500
 bspc rule -a Matplotlib state=floating  # rectangle=1000x700+500+500
@@ -139,7 +139,7 @@ dunst \
 xsettingsd &
 
 # polkit agent
-if [[ ! `pidof xfce-polkit` ]]; then
+if [[ ! $(pidof xfce-polkit) ]]; then
     /usr/lib/xfce-polkit/xfce-polkit &
 fi
 
@@ -169,7 +169,7 @@ pgrep bspswallow || bspswallow &
 bspcolors
 bspcomp
 # bspbar
-bash $HOME/polybar-collection/launch.sh
+bash "$HOME"/polybar-collection/launch.sh
 # bspfloat &
 
 ## Adjust backlight (AMD)
