@@ -6,7 +6,13 @@
 #     apt list --all-versions | awk -F/ '{print "$1"}' | fzf --multi --preview 'apt show {1}'
 # }
 
-batdiff () {
+peek() {
+    # cat a file that is in PATH
+    cat "$(which "$1")"
+}
+compdef _whereis peek
+
+batdiff() {
     if [ "$1" = "--staged" ]; then
         git diff --staged --name-only --diff-filter=d | xargs -I % sh -c "git diff --staged % | bat"
     else
@@ -32,11 +38,10 @@ zle_line_init() {
     echo -ne "\e[5 q"
 }
 zle -N zle_line_init
-echo -ne '\e[5 q' # Use beam shape cursor on startup.
-preexec() { echo -ne '\e[5 q' ;} # Use beam shape cursor for each new prompt.
+echo -ne '\e[5 q'                # Use beam shape cursor on startup.
+preexec() { echo -ne '\e[5 q'; } # Use beam shape cursor for each new prompt.
 
-nn ()
-{
+nn() {
     # Block nesting of nnn in subshells
     if [ -n "$NNNLVL" ] && [ "${NNNLVL:-0}" -ge 1 ]; then
         echo "nnn is already running"
@@ -56,12 +61,11 @@ nn ()
     if [ -f "$NNN_TMPFILE" ]; then
         # shellcheck source=/dev/null
         . "$NNN_TMPFILE"
-        rm -f "$NNN_TMPFILE" > /dev/null
+        rm -f "$NNN_TMPFILE" >/dev/null
     fi
 }
 
-nnn_preview ()
-{
+nnn_preview() {
     # Block nesting of nnn in subshells
     if [ -n "$NNNLVL" ] && [ "${NNNLVL:-0}" -ge 1 ]; then
         echo "nnn is already running"
@@ -75,13 +79,16 @@ nnn_preview ()
     # This will create a fifo where all nnn selections will be written to
     NNN_FIFO="$(mktemp --suffix=-nnn -u)"
     export NNN_FIFO
-    (umask 077; mkfifo "$NNN_FIFO")
+    (
+        umask 077
+        mkfifo "$NNN_FIFO"
+    )
     # Preview command
     preview_cmd="/path/to/preview_cmd.sh"
     if [ -e "${TMUX%%,*}" ]; then
         # Use `tmux` split as preview
         tmux split-window -e "NNN_FIFO=$NNN_FIFO" -dh "$preview_cmd"
-    elif (which xterm &> /dev/null); then
+    elif (which xterm &>/dev/null); then
         # Use `xterm` as a preview window
         xterm -e "$preview_cmd" &
     else
@@ -92,14 +99,14 @@ nnn_preview ()
     rm -f "$NNN_FIFO"
 }
 
-lc () {
+lc() {
     tmp="$(mktemp)"
     lf -last-dir-path="$tmp" "$@"
     if [ -f "$tmp" ]; then
         dir="$(cat "$tmp")"
         rm -f "$tmp"
         if [ -d "$dir" ]; then
-            if [ "$dir" != "$(pwd)" ]; then
+            if [ "$dir" != "$PWD" ]; then
                 cd "$dir" || exit
             fi
         fi
@@ -107,27 +114,27 @@ lc () {
 }
 
 # File handling
-p () {
+p() {
     # this will open pdf file with the default PDF viewer on KDE, xfce, LXDE and
     # perhaps on other desktops.
     # open=zathura -
     # open=xdg-open
     # shellcheck disable=SC2016
-    ag --ignore Dropbox --ignore OneDrive --ignore BoxSync -U -g ".pdf$" \
-        | fast-p \
-        | fzf --read0 --reverse -e -d $'\t'  \
-        --preview-window down:80% --preview '
+    ag --ignore Dropbox --ignore OneDrive --ignore BoxSync -U -g ".pdf$" |
+        fast-p |
+        fzf --read0 --reverse -e -d $'\t' \
+            --preview-window down:80% --preview '
             v=$(echo {q} | tr " " "|");
             echo -e {1}"\n"{2} | grep -E "^|$v" -i --color=always;
-            ' \
-                | cut -z -f 1 -d $'\t' | tr -d '\n' | xargs -r --null zathura - > /dev/null 2> /dev/null
+            ' |
+        cut -z -f 1 -d $'\t' | tr -d '\n' | xargs -r --null zathura - >/dev/null 2>/dev/null
 }
 
 pretty_csv() {
     column -t -s, "$@" | less -F -S -X -K
 }
 
-cht(){
+cht() {
     # Look up any command you'd like
     curl cht.sh/"$1"
 }
@@ -140,11 +147,14 @@ rmbd() {
     # Delete everything in current path before <date>
     # Format: YYYY-MM-DD HH:MM:SS
     c=$(find . ! -newermt "$1 $2" -printf '.' | wc -c)
-    echo "Are you sure you want to delete ""$c"" files from ""$(pwd)""?"
+    echo "Are you sure you want to delete ""$c"" files from ""$PWD""?"
     select yn in "Yes" "No"; do
         case "$yn" in
-            Yes ) find . -print0 ! -newermt "$1 $2" | xargs -0 rm -rf; break;;
-            No ) break;;
+        Yes)
+            find . -print0 ! -newermt "$1 $2" | xargs -0 rm -rf
+            break
+            ;;
+        No) break ;;
         esac
     done
 }
@@ -153,11 +163,14 @@ rmad() {
     # Delete everything in current path after <date>
     # Format: YYYY-MM-DD HH:MM:SS
     c=$(find . -newermt "$1 $2" -printf '.' | wc -c)
-    echo "Are you sure you want to delete ""$c"" files from ""$(pwd)""?"
+    echo "Are you sure you want to delete ""$c"" files from ""$PWD""?"
     select yn in "Yes" "No"; do
         case "$yn" in
-            Yes ) find . -print0 -newermt "$1 $2" | xargs -0 rm -rf; break;;
-            No ) break;;
+        Yes)
+            find . -print0 -newermt "$1 $2" | xargs -0 rm -rf
+            break
+            ;;
+        No) break ;;
         esac
     done
 }
@@ -197,8 +210,7 @@ invert() {
 
 crop() {
     # Crop image. (Default remove white)
-    for file in "$@"
-    do
+    for file in "$@"; do
         convert -trim "$file" "$file"
     done
 }
@@ -206,31 +218,27 @@ crop() {
 cropv() {
     # Crop image in the vertical direction.
     # (Default remove white.)
-    for file in "$@"
-    do
+    for file in "$@"; do
         croptop "$file"
         cropbottom "$file"
     done
 }
 
 croptop() {
-    for file in "$@"
-    do
+    for file in "$@"; do
         convert "$file" -background white -splice 0x1 -background black -splice 0x1 -trim +repage -chop 0x1 "$file"
     done
 }
 
 cropbottom() {
-    for file in "$@"
-    do
+    for file in "$@"; do
         convert "$file" -gravity South -background white -splice 0x1 -background black -splice 0x1 -trim +repage -chop 0x1 "$file"
     done
 }
 
 trinv() {
     # Make transparent and invert.
-    for file in "$@"
-    do
+    for file in "$@"; do
         transparent "$file" "$file"
         invert "$file" "$file"
     done
@@ -238,8 +246,7 @@ trinv() {
 
 my_img_magik() {
     # Remove menu and page number, invert and make transparent.
-    for file in "$@"
-    do
+    for file in "$@"; do
         remove_menu "$file"
         remove_page "$file"
         trinv "$file"

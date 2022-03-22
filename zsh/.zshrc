@@ -1,6 +1,9 @@
 # Enable colors:
 autoload -U colors && colors
 
+# /usr/bin/keychain --lockwait 0 --clear $HOME/.ssh/id_rsa
+# echo $HOME/.keychain/$HOSTNAME-sh
+
 export EDITOR="nvim"
 export VISUAL="nvim"
 export TERMINAL="st"
@@ -97,3 +100,26 @@ xrdb ~/.config/Xresources
 
 # Created by `pipx` on 2021-10-25 10:32:18
 export PATH="$PATH:/home/een023/.local/bin"
+
+# setup ssh-agent
+SSH_ENV=$HOME/.ssh/environment
+
+# start the ssh-agent
+function start_agent {
+    echo "Initializing new SSH agent..."
+    # spawn ssh-agent
+    /usr/bin/ssh-agent | sed 's/^echo/#echo/' > "${SSH_ENV}"
+    echo succeeded
+    chmod 600 "${SSH_ENV}"
+    . "${SSH_ENV}" > /dev/null
+    /usr/bin/ssh-add
+}
+
+if [ -f "${SSH_ENV}" ]; then
+     . "${SSH_ENV}" > /dev/null
+     ps -ef | grep ${SSH_AGENT_PID} | grep ssh-agent$ > /dev/null || {
+        start_agent;
+    }
+else
+    start_agent;
+fi
