@@ -51,7 +51,7 @@ call plug#begin('~/.vim/plugged')
     " Text editing
     " Used for Markdown highlighting
     Plug 'godlygeek/tabular'
-    Plug 'plasticboy/vim-markdown'
+    Plug 'preservim/vim-markdown'
     " Hard wrap or soft wrap of long lines. Also hides unfocused links.
     Plug 'reedes/vim-pencil'
     " Latex
