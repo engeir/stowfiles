@@ -1,3 +1,5 @@
+set sandbox none
+
 # Clipboard
 set selection-clipboard clipboard
 
