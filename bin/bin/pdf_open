@@ -1,5 +1,11 @@
 #!/usr/bin/env sh
-# Search through and open and file with .pdf.
+
+#
+# Search through and open any file matching pattern *.pdf.
+# If it become slow, consider looking only in a few key directories, e.g.:
+# /home/een023/.local/share/data/Mendeley\ Ltd./Mendeley\ Desktop/Downloaded/
+# /home/een023/science/
+#
 
 cd ~ || exit 1
 c=$(fdfind --one-file-system -H .pdf$ --exclude .config/nnn --exclude OneDrive --exclude BoxSync | grep -o ".*pdf$" | awk -F'/' '{print $NF}' | dmenu -i -b -l 20)
