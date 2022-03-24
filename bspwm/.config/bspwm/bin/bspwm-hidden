@@ -3,7 +3,7 @@
 
 ((i = 0))
 
-ids=("$(bspc query -N -n '.hidden.window')") || exit
+mapfile -t ids < <(bspc query -N -n '.hidden.window')
 for wid in "${ids[@]}"; do
     title="$(xtitle "$wid")"
     options+="$((++i)): ${title:-"$(bspc query -T -n "$wid" | jq -r '
