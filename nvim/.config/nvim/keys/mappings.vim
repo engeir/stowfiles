@@ -81,7 +81,7 @@ nnoremap <silent><leader>t :FloatermNew --wintype=vsplit --autohide=0 python<CR>
 " Select between %% (mimic jupyter notebook)
 nnoremap <silent><leader>H :/%%<CR>VN
 vmap <C-r> :'<,'>FloatermSend <CR>
-nnoremap <silent><leader>r :FloatermNew --wintype=float --position=right --autoclose=0 python %<CR>
+nnoremap <silent><leader>r :FloatermNew --wintype=float --position=right --autoclose=0 compiler %<CR>
 map <leader>a :!setsid autocomp % &<CR>
 
 " Open pdf from source (e.g. md file)

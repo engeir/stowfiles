@@ -1,4 +1,4 @@
-#!/usr/bin/env sh
+#!/bin/sh
 
 # This script will compile or run another finishing operation on a document. I
 # have this script run via vim.
@@ -66,6 +66,7 @@ mom) preconv "$file" | refer -PS -e | groff -mom -kept -T pdf >"$base".pdf ;;
 ms) preconv "$file" | refer -PS -e -p ~/science/ref/bibliography | groff -me -ms -p -kept -Tps | ps2pdf - "$base".pdf ;;
 org) emacs "$file" --batch -u "$USER" -f org-latex-export-to-pdf ;;
 py) if [ -z "$(sed -n 's/^#!//p' "$file")" ]; then python "$file"; else "$(sed -n 's/^#!//p' "$file")" "$file"; fi ;;
+[rR]) Rscript "$file" ;;
 [rR]md) Rscript -e "rmarkdown::render('$file', quiet=TRUE)" ;;
 rs) cargo build ;;
 sass) sassc -a "$file" "$base.css" ;;
