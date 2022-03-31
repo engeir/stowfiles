@@ -7,7 +7,7 @@ set autoindent                          " Good auto indent
 set background=dark                     " tell vim what the background color looks like
 set clipboard=unnamedplus               " Copy paste between vim and everything else
 set cmdheight=2                         " More space for displaying messages
-set colorcolumn=90
+set colorcolumn=88
 set conceallevel=0                      " So that I can see `` in markdown files
 set cursorcolumn                        " Enable highlighting of the current column
 set cursorline                          " Enable highlighting of the current line
@@ -41,7 +41,7 @@ set splitright                          " Vertical splits will automatically be 
 set t_Co=256                            " Support 256 colors
 set tabstop=4 softtabstop=4             " Insert 4 spaces for a tab (et=expandtab)
 set termguicolors
-set textwidth=90                        " Automatically insert newline at given column
+set textwidth=88                        " Automatically insert newline at given column
 set timeoutlen=500                      " By default timeoutlen is 1000 ms
 set updatetime=300                      " Faster completion
 set wildmenu
