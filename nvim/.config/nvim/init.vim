@@ -3,14 +3,17 @@
 " Finally we set it as the python3_host_prog:
 " Probably need to use uname -o
 let OS = system('uname -s')
-let OS2 = system('uname -m')
+let OS2 = system('uname -n')
 if OS == "Linux\n"
-    if OS2 != "aarch64\n"
-        let g:python3_host_prog = expand("/home/een023/.pyenv/versions/py3nvim/bin/python")
-        source /home/een023/.config/cdo/add_cdo_complete_to_your_vimrc
+    if OS2 == "ubuntu-work\n"
+        let g:python3_host_prog = expand("$HOME/.pyenv/versions/py3nvim/bin/python")
+        source $HOME/.config/cdo/add_cdo_complete_to_your_vimrc
+    elseif "fram.sigma2.no\n" =~ OS2
+        let g:python3_host_prog = expand("$HOME/Envs/py3nvim/bin/python")
+        source $HOME/.config/cdo/add_cdo_complete_to_your_vimrc
     endif
 elseif OS == "Darwin\n"
-    let g:python3_host_prog = expand("/Users/eirikenger/.pyenv/versions/py3nvim/bin/python")
+    let g:python3_host_prog = expand("$HOME/.pyenv/versions/py3nvim/bin/python")
 endif
 
 " See:
