@@ -29,7 +29,8 @@ cmp.setup({
         { name = "path" },
         { name = "buffer", keyword_length = 4 },
         { name = "ultisnips" }, -- For ultisnips users.
-        { name = 'gh_issues' },
+        { name = "gh_issues" },
+        { name = "cmp_tabnine" },
     },
 
     experimental = {

@@ -87,6 +87,7 @@ call plug#begin('~/.vim/plugged')
     " Completion
     Plug 'Lucklyric/copilot.vim'
     Plug 'hrsh7th/nvim-cmp'
+    Plug 'tzachar/cmp-tabnine', { 'do': './install.sh' }
     " Install snippet engine (This example installs [hrsh7th/vim-vsnip](https://github.com/hrsh7th/vim-vsnip))
     Plug 'hrsh7th/vim-vsnip'
     " Install the buffer completion source
