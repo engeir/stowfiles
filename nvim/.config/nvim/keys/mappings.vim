@@ -35,20 +35,6 @@ nnoremap <leader>k :m .-2<CR>==
 " inoremap <c-u> <ESC>viwUi
 " nnoremap <c-u> viwU<Esc>
 
-" TAB in general mode will move to text buffer
-nnoremap <TAB> :bnext<CR>
-" SHIFT-TAB will go back
-nnoremap <S-TAB> :bprevious<CR>
-
-" Alternate way to save
-" nnoremap <C-s> :w<CR>
-" Alternate way to quit
-" nnoremap <C-Q> :wq!<CR>
-" Use control-c instead of escape
-" nnoremap <C-c> <Esc>
-" <TAB>: completion. DO NOT WANT THIS.
-" inoremap <expr><TAB> pumvisible() ? "\<C-n>" : "\<TAB>"
-
 " Better tabbing
 vnoremap < <gv
 vnoremap > >gv
@@ -68,30 +54,19 @@ nnoremap <Leader>O O<Esc>^Da
 nnoremap <leader>gb :Git blame<CR>
 nnoremap <leader>gs :Git<CR>
 nnoremap <leader>ga :Git add .<CR>
-nnoremap <leader>gg :GitGutterToggle<CR>
 
 " Open folder view
 " nnoremap <leader>pv :to vsp <bar> :Ex <bar> :vertical resize 40<CR>
-nnoremap <leader>pv :FloatermNew --wintype=float --position=right --autoclose=2 nnn -d<CR>
 
 " Format code
 nnoremap <silent><leader><leader>f :lua vim.lsp.buf.formatting_sync()<CR>
 " Autocompilers
-nnoremap <silent><leader>t :FloatermNew --wintype=vsplit --autohide=0 python<CR><C-\><C-n><C-w>h
-" Select between %% (mimic jupyter notebook)
-nnoremap <silent><leader>H :/%%<CR>VN
-vmap <C-r> :'<,'>FloatermSend <CR>
-nnoremap <silent><leader>r :FloatermNew --wintype=float --position=right --autoclose=0 compiler %<CR>
 map <leader>a :!setsid autocomp % &<CR>
 
 " Open pdf from source (e.g. md file)
-" map <leader><leader>o :!xdg-open "$(echo % | awk -F. '{print $1}').pdf" &<CR>
 map <leader><leader>o :!open_output % &<CR>
 
 " Search files
-" nmap <leader>gd <Plug>(coc-definition)
-" nmap <leader>gr <Plug>(coc-references)
-" nnoremap <C-p> :GFiles<CR>
 " Search files (open new or from buffer) with fzf
 nnoremap <silent><leader>o :Files<CR>
 nnoremap <silent><leader>O :Rg<CR>
@@ -136,7 +111,6 @@ inoremap <C-L> <C-G>u<Esc>[s1z=`]a<C-G>u
 nnoremap <C-s> <Esc>[sve<C-G>
 inoremap <C-s> <Esc>[sve<C-G>
 snoremap <C-K> <Esc>b[sviw<C-G>
-
 
 " Lua snippet in vimscript:
 nmap <leader>T <Plug>PlenaryTestFile

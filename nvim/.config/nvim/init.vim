@@ -31,6 +31,7 @@ lua << EOF
 -- require 'statuslines.spaceline'
 -- require 'statuslines.evilline'
 require 'statuslines.galaxyline-line'
+-- require 'vim.highlight'
 require 'globals'
 EOF
 

@@ -33,8 +33,6 @@ call plug#begin('~/.vim/plugged')
     "     Plug 'tami5/lspsaga.nvim'  " Do not work with linux, but with mac
     " endif
     Plug 'tami5/lspsaga.nvim'
-    " Plug 'ms-jpq/coq_nvim', {'branch': 'coq'}
-    " Plug 'ms-jpq/coq.artifacts', {'branch': 'artifacts'}
 
     " Git
     Plug 'lewis6991/gitsigns.nvim'
@@ -42,7 +40,6 @@ call plug#begin('~/.vim/plugged')
     Plug 'tpope/vim-rhubarb'  " Enables GBrowse
     Plug '~/projects/githistory-browse.nvim/'
     " Plug 'engeir/githistory-browse.nvim'
-    " Plug 'airblade/vim-gitgutter'
     Plug 'stsewd/fzf-checkout.vim'
     " Python easymotion
     " Plug 'jeetsukumaran/vim-pythonsense'
@@ -72,9 +69,6 @@ call plug#begin('~/.vim/plugged')
 
     " Statusline
     Plug 'glepnir/galaxyline.nvim' , {'branch': 'main'}
-    Plug 'mhinz/vim-startify'  " Startup
-    " Motions
-    Plug 'easymotion/vim-easymotion'
     " Navigation
     Plug 'nvim-lua/plenary.nvim'
     Plug 'nvim-telescope/telescope.nvim'

@@ -45,6 +45,7 @@ null_ls.setup({
         diagnostics.markdownlint.with({ extra_args = { "-c", "/home/een023/.config/mdl/.markdownlint.jsonc" }}),
         diagnostics.jsonlint,
         diagnostics.mypy,
+        diagnostics.pydocstyle,
         -- diagnostics.flake8,
         -- diagnostics.mdl.with({ extra_args = { "-c", "/home/een023/.config/mdl/.markdownlint.jsonc" }}),
     },

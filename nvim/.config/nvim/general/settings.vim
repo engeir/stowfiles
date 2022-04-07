@@ -50,6 +50,9 @@ set wildmode=longest:full,full          " The command line menu is just complete
 au! BufWritePost $MYVIMRC source %      " auto source when writing to init.vim alternatively you can run :source $MYVIMRC
 au BufRead,BufNewFile *.ncl set filetype=ncl
 au! Syntax newlang source $VIM/ncl.vim
+lua << EOF
+vim.cmd[[au TextYankPost * silent! lua vim.highlight.on_yank()]]
+EOF
 
 " You can't stop me
 cmap w!! w !sudo tee %
