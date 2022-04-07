@@ -25,6 +25,7 @@ set previewer stpv
 set cleaner stpvimgclr
 &stpvimg --listen $id
 # set preview true
+set info size
 
 map <enter> open
 map f fzf_jump
@@ -33,18 +34,17 @@ map ac recol
 map x delete
 
 # Bookmarks
-map bb cd /home/een023/.cache/nnn/bookmarks
-map bc cd /home/een023/.config
-map bd cd /home/een023/Downloads
-map bl cd /home/een023/.local
-map bm cd /home/een023/stowfiles
-map bn cd /home/een023/Documents/notes_papers
-map bo cd /home/een023/OneDrive
-map bp cd /home/een023/programs
-map br cd /home/een023/science/ref
-map bs cd /home/een023/bin
-map bt cd /home/een023/Documents/teaching
-map bw cd /home/een023/Documents/work
+# map gb cd /cluster/home/een023/.cache/nnn/bookmarks
+# map bnc cd /cluster/home/een023/model/CESM/cesm2.1.3/CESM/cime/scripts
+map ba1 cd /cluster/projects/nn9817k/cesm/archive
+map ba2 cd /cluster/projects/nn9348k/cesm/archive
+map bc cd /cluster/home/een023/.config
+map bl cd /cluster/home/een023/model/CESM/cesm2.1.3/CESM/cime/cases
+map bn cd /nird/projects/nird/NS9063K/
+map bp cd /cluster/home/een023/.programs
+map bs cd /cluster/home/een023/.local/bin
+map bu cd /cluster/work/users/een023/cesm/
+map bw cd /cluster/home/een023/scripts
 
 # Commands
 cmd fzf_jump ${{
