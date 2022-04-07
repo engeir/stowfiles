@@ -24,6 +24,7 @@ info "Starting backup"
 
 borg create \
     --verbose \
+    --one-file-system \
     --filter AME \
     --list \
     --stats \
@@ -31,15 +32,17 @@ borg create \
     --compression lz4 \
     --exclude-caches \
     --exclude '/home/*/.cache/*' \
-    --exclude '/home/een023/.config/nnn/mounts' \
-    --exclude '/home/een023/OneDrive' \
-    --exclude '/home/een023/Dropbox' \
-    --exclude '/home/een023/BoxSync' \
-    --exclude '/home/een023/Insync' \
-    --exclude '/home/een023/miniconda3' \
-    --exclude '/home/een023/.mozilla' \
-    --exclude '/home/een023/.vscode-insiders' \
     --exclude '/home/een023/.config/Code - Insiders' \
+    --exclude '/home/een023/.config/nnn/mounts' \
+    --exclude '/home/een023/.mozilla' \
+    --exclude '/home/een023/.pyenv/versions' \
+    --exclude '/home/een023/.vscode-insiders' \
+    --exclude '/home/een023/BoxSync' \
+    --exclude '/home/een023/Dropbox' \
+    --exclude '/home/een023/Insync' \
+    --exclude '/home/een023/OneDrive' \
+    --exclude '/home/een023/programs/miniconda3' \
+    --exclude '/home/een023/snap' \
     --exclude '/var/cache/*' \
     --exclude '/var/tmp/*' \
     \
