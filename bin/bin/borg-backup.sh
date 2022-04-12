@@ -63,6 +63,7 @@ borg prune \
     --list \
     --prefix '{hostname}-' \
     --show-rc \
+    --keep-hourly 24 \
     --keep-daily 7 \
     --keep-weekly 4 \
     --keep-monthly 6
