@@ -1,14 +1,13 @@
-
-# #### FIG ENV VARIABLES ####
-# # Please make sure this block is at the start of this file.
-# [ -s ~/.fig/shell/pre.sh ] && source ~/.fig/shell/pre.sh
-# #### END FIG ENV VARIABLES ####
+# Fig pre block. Keep at the top of this file.
+export PATH="${PATH}:${HOME}/.local/bin"
+# 
 # If you come from bash you might have to change your $PATH.
 export PATH=/usr/local/bin:$HOME/scripts:$HOME/.local/bin:$HOME/bin:$PATH
 export NODE_PATH='/usr/local/lib/node_modules'
 # export PATH="$HOME/.poetry/bin:$PATH"
 export PATH="/Users/eirikenger/Library/Python/3.9/bin:$PATH"
 export PATH=/usr/local/opt/ruby/bin:$PATH  # Ruby path
+export PATH=/Applications/ConTeXtStandalone/tex/texmf-osx-64/bin:$PATH  # ConTeXt path
 
 export EDITOR=nvim
 export VISUAL=nvim
@@ -70,7 +69,7 @@ bindkey '^v' edit-command-line
 # export MANPATH="/usr/local/man:$MANPATH"
 
 # NNN
-export NNN_BMS="b:~/OneDrive - UiT Office 365/Bilder/Canon EOS M50;c:~/.config;d:~/Downloads;m:~/stowfiles;p:~/programs;s:~/.local/bin;w:~/OneDrive - UiT Office 365/Skole"
+export NNN_BMS="b:~/photos/Bilder/Canon EOS M50;c:~/.config;d:~/Downloads;m:~/stowfiles;p:~/programs;s:~/.local/bin;w:~/OneDrive - UiT Office 365/Skole"
 export NNN_PLUG='d:diffs;f:fzcd;j:autojump;l:launch;p:preview-tui2;t:nmount;v:imgview'
 BLK="34" CHR="c9" DIR="e6" EXE="64" REG="fa" HARDLINK="81" SYMLINK="d6" MISSING="f0" ORPHAN="00" FIFO="06" SOCK="00" OTHER="58"
 export NNN_FCOLORS="$BLK$CHR$DIR$EXE$REG$HARDLINK$SYMLINK$MISSING$ORPHAN$FIFO$SOCK$OTHER"
@@ -114,7 +113,7 @@ nn ()
 # export LANG=en_US.UTF-8
 
 # MY ALIASES
-alias ls="lsd -FX"
+alias ls="lsd -FXA"
 # alias rm="echo Do not use this, use trash-cli put filename instead"
 alias rm="trash-put"
 alias nv="nvim"
@@ -128,9 +127,7 @@ alias publish_gallery_flottflyt="rsync -rtvzP ~/projects/gallery-flottflyt/photo
 alias publish_eirikenger="rsync -rtvzP ~/projects/eirikenger/ root@flottflyt.xyz:/var/www/eirikenger"
 alias figlet="/Users/eirikenger/figlet/./figlet"
 alias lolban="/Users/eirikenger/figlet/./lolban"
-koolcat() {
-	echo "$@" | figlet | lolcat
-}
+alias tks="tmux kill-session -t"
 
 # Remarkable
 alias saRM="ssh-keygen -R 10.11.99.1"
@@ -189,23 +186,3 @@ eval "$(starship init zsh)"
 
 export PATH="/usr/local/opt/expat/bin:$PATH"
 export HAS_ALLOW_UNSAFE=y
-
-# # >>> conda initialize >>>
-# # !! Contents within this block are managed by 'conda init' !!
-# __conda_setup="$('/usr/local/Caskroom/miniconda/base/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
-# if [ $? -eq 0 ]; then
-#     eval "$__conda_setup"
-# else
-#     if [ -f "/usr/local/Caskroom/miniconda/base/etc/profile.d/conda.sh" ]; then
-#         . "/usr/local/Caskroom/miniconda/base/etc/profile.d/conda.sh"
-#     else
-#         export PATH="/usr/local/Caskroom/miniconda/base/bin:$PATH"
-#     fi
-# fi
-# unset __conda_setup
-# # <<< conda initialize <<<
-
-# #### FIG ENV VARIABLES ####
-# # Please make sure this block is at the end of this file.
-# [ -s ~/.fig/fig.sh ] && source ~/.fig/fig.sh
-# #### END FIG ENV VARIABLES ####
