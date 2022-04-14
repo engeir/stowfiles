@@ -12,6 +12,7 @@ alias nv="nvim"
 alias rm="trash-put"
 alias tks="tmux kill-session -t"
 alias v="vim"
+alias screenkey="screenkey --opacity 0.3 --bak-mode normal -M -f 'DejaVu Sans Mono Bold'"
 
 # Dotfiles
 alias dotconfig='/usr/bin/git --git-dir=$HOME/dotfiles/ --work-tree=$HOME'

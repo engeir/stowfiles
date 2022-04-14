@@ -9,6 +9,7 @@ else
     items+=$(echo "" && find ~/projects -maxdepth 1 -mindepth 1 -type d)
     items+=$(echo "" && find "$HOME" -maxdepth 0 -type d)
     items+=$(echo "" && find "$HOME"/stowfiles -maxdepth 0 -type d)
+    items+=$(echo "" && find "$HOME"/Documents/work -maxdepth 0 -type d)
     items+=$(echo "" && find "$HOME"/Documents/teaching -maxdepth 0 -type d)
     items+=$(echo "" && find "$HOME"/Documents/work/cesm -maxdepth 0 -type d)
     items+=$(echo "" && find "$HOME"/Documents/other/PhD -maxdepth 0 -type d)
