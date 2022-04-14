@@ -86,6 +86,8 @@ cmd - return : open /Applications/Alacritty.app -n
 
 alt - space : open /Applications/dmenu-mac.app
 
+cmd + alt - x : /Users/eirikenger/.local/bin/passmenu
+
 ## Close active application
 # cmd - backspace : $(yabai -m window $(yabai -m query --windows --window | jq -re ".id") --close)
 
