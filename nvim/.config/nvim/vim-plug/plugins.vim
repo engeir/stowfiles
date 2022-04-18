@@ -23,6 +23,7 @@ call plug#begin('~/.vim/plugged')
 
     " Lsp
     Plug 'neovim/nvim-lspconfig'
+    Plug 'williamboman/nvim-lsp-installer'
     Plug 'nvim-lua/completion-nvim'
     Plug 'ray-x/lsp_signature.nvim'
     Plug 'jose-elias-alvarez/null-ls.nvim'

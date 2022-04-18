@@ -5,7 +5,7 @@
 " nnoremap <leader>fh <cmd>Telescope help_tags<cr>
 
 " Using Lua functions
-nnoremap <leader>ff <cmd>lua require('telescope.builtin').find_files()<cr>
+nnoremap <leader>ff <cmd>lua require('telescope.builtin').find_files({hidden=true})<cr>
 nnoremap <leader>fg <cmd>lua require('telescope.builtin').git_files()<cr>
 nnoremap <leader>fr <cmd>lua require('telescope.builtin').live_grep()<cr>
 nnoremap <leader>fb <cmd>lua require('telescope.builtin').buffers()<cr>

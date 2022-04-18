@@ -1,5 +1,4 @@
 local nvim_lsp = require("lspconfig")
--- local coq = require "coq" -- add this
 local protocol = require("vim.lsp.protocol")
 
 -- Use an on_attach function to only map the following keys
@@ -14,6 +13,7 @@ local on_attach = function(client, bufnr)
     local function buf_set_keymap(...)
         vim.api.nvim_buf_set_keymap(bufnr, ...)
     end
+
     local function buf_set_option(...)
         vim.api.nvim_buf_set_option(bufnr, ...)
     end
@@ -86,12 +86,62 @@ end
 
 -- Use a loop to conveniently call 'setup' on multiple servers and
 -- map buffer local keybindings when the language server attaches
-local servers = { "pyright", "rust_analyzer", "tsserver" }
-for _, lsp in ipairs(servers) do
-    nvim_lsp[lsp].setup({
-        on_attach = on_attach,
-        flags = {
-            debounce_text_changes = 150,
-        },
-    })
+-- local servers = { "pyright", "rust_analyzer", "tsserver", "gopls" }
+-- for _, lsp in ipairs(servers) do
+--     nvim_lsp[lsp].setup({
+--         on_attach = on_attach,
+--         flags = {
+--             debounce_text_changes = 150,
+--         },
+--     })
+-- end
+
+-- Lsp Installer
+local lsp_installer = require("nvim-lsp-installer")
+
+-- Include the servers you want to have installed by default below
+local servers = {
+    "bashls",
+    "gopls",
+    "ltex",
+    "pyright",
+    "rust_analyzer",
+    "sumneko_lua",
+    "tsserver",
+    "vuels",
+    "yamlls",
+    "zeta_note",
+}
+
+for _, name in pairs(servers) do
+    local server_is_found, server = lsp_installer.get_server(name)
+    if server_is_found and not server:is_installed() then
+        print("Installing " .. name)
+        server:install()
+    end
 end
+
+local enhance_server_opts = {
+    -- Provide settings that should only apply to the "eslint" server
+    ["eslint"] = function(opts)
+        opts.settings = {
+            format = {
+                enable = true,
+            },
+        }
+    end,
+}
+
+lsp_installer.on_server_ready(function(server)
+    -- Specify the default options which we'll use to setup all servers
+    local opts = {
+        on_attach = on_attach,
+    }
+
+    if enhance_server_opts[server.name] then
+        -- Enhance the default opts with the server-specific ones
+        enhance_server_opts[server.name](opts)
+    end
+
+    server:setup(opts)
+end)

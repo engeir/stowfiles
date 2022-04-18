@@ -13,6 +13,7 @@ require("nvim-treesitter.configs").setup({
         -- Instead of true it can also be a list of languages
         additional_vim_regex_highlighting = {
             "bash",
+            "go",
             "latex",
             "lua",
             "python",
@@ -24,6 +25,7 @@ require("nvim-treesitter.configs").setup({
         "bash",
         "bibtex",
         "css",
+        "go",
         "html",
         "latex",
         "lua",
