@@ -59,11 +59,11 @@ super + @space
 
 # Take a screenshot
 Print
-	scrot 'Screenshot_%Y-%m-%d-%S_$wx$h.png' -e 'mv $f $$(xdg-user-dir PICTURES)/Pictures/Screenshots ; sxiv $$(xdg-user-dir PICTURES)/Pictures/Screenshots/$f'
+	scrot 'Screenshot_%Y-%m-%d-%S_$wx$h.png' -e 'mv $f $$(xdg-user-dir PICTURES)/Pictures/Screenshots ; nsxiv $$(xdg-user-dir PICTURES)/Pictures/Screenshots/$f'
 
 # Take a screenshot in 5 second
 alt + Print
-	scrot -d 5 'Screenshot_%Y-%m-%d-%S_$wx$h.png' -e 'mv $f $$(xdg-user-dir PICTURES)/Pictures/Screenshots ; sxiv $$(xdg-user-dir PICTURES)/Pictures/Screenshots/$f'
+	scrot -d 5 'Screenshot_%Y-%m-%d-%S_$wx$h.png' -e 'mv $f $$(xdg-user-dir PICTURES)/Pictures/Screenshots ; nsxiv $$(xdg-user-dir PICTURES)/Pictures/Screenshots/$f'
 	# scrot -d 5 'Screenshot_%Y-%m-%d-%S_$wx$h.png' -e 'mv $f $$(xdg-user-dir PICTURES)/Pictures/Screenshots ; viewnior $$(xdg-user-dir PICTURES)/Pictures/Screenshots/$f'
 
 # # Brighness control
