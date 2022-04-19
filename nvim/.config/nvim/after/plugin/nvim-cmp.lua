@@ -25,11 +25,11 @@ cmp.setup({
     --     completeopt = "menu,menuone,noinsert",
     -- },
     sources = {
+        { name = "gh_issues" },
         { name = "nvim_lsp" },
         { name = "path" },
         { name = "buffer", keyword_length = 4 },
         { name = "ultisnips" }, -- For ultisnips users.
-        { name = "gh_issues" },
         { name = "cmp_tabnine" },
     },
 

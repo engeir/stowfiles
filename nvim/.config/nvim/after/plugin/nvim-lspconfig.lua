@@ -51,7 +51,7 @@ local on_attach = function(client, bufnr)
     buf_set_keymap("n", "<space>q", "<cmd>lua vim.diagnostic.setloclist()<CR>", opts)
     buf_set_keymap("n", "<space>f", "<cmd>lua vim.lsp.buf.formatting()<CR>", opts)
 
-    require("completion").on_attach(client, bufnr)
+    -- require("completion").on_attach(client, bufnr)
 
     -- Nice symbols for the pop-up completion menu
     --protocol.SymbolKind = { }
