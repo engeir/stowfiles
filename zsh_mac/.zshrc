@@ -186,3 +186,5 @@ eval "$(starship init zsh)"
 
 export PATH="/usr/local/opt/expat/bin:$PATH"
 export HAS_ALLOW_UNSAFE=y
+
+fpath+=~/.zfunc

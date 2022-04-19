@@ -5,6 +5,8 @@ PATH="/usr/local/bin:${PATH}"
 PATH="/usr/bin:${PATH}"
 PATH="/Users/eirikenger/Documents/ReMarkableAPI:${PATH}"
 export PATH
+export GOPATH=$HOME/go
+export PATH=$PATH:$GOPATH/bin
 
 # NNN
 export NNN_PLUG='j:autojump;f:fzcd;p:preview-tui;d:diffs;t:nmount;v:imgview' 
