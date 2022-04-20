@@ -12,8 +12,12 @@ call plug#begin('~/.vim/plugged')
     Plug 'puremourning/vimspector'
     Plug 'szw/vim-maximizer'
 
-    " Better Syntax Support
+    " Colour scheme
     Plug 'sainnhe/gruvbox-material'
+    Plug 'tjdevries/colorbuddy.vim'
+    Plug 'tjdevries/gruvbuddy.nvim'
+
+    " Better Syntax Support
     Plug 'gko/vim-layout'
     Plug 'sainnhe/forest-night'
     Plug 'numToStr/Comment.nvim'
@@ -57,7 +61,6 @@ call plug#begin('~/.vim/plugged')
     " https://github.com/L3MON4D3/LuaSnip/issues/201#issuecomment-950132369
     Plug 'sirver/ultisnips'
     Plug 'honza/vim-snippets'
-    Plug 'KeitaNakamura/tex-conceal.vim'
 
     " Python
     Plug 'nvie/vim-flake8'
@@ -66,17 +69,21 @@ call plug#begin('~/.vim/plugged')
     Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
     Plug 'junegunn/fzf.vim'
     Plug 'voldikss/vim-floaterm'
+    " Telescope
+    Plug 'nvim-telescope/telescope.nvim'
+    Plug 'nvim-telescope/telescope-bibtex.nvim'
 
     " Statusline
     Plug 'glepnir/galaxyline.nvim' , {'branch': 'main'}
+
     " Navigation
     Plug 'nvim-lua/plenary.nvim'
-    Plug 'nvim-telescope/telescope.nvim'
     Plug 'ThePrimeagen/harpoon'
     " Treesitter
     Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}  " We recommend updating the parsers on update
     Plug 'p00f/nvim-ts-rainbow'
     Plug 'code-biscuits/nvim-biscuits'
+    Plug 'ThePrimeagen/refactoring.nvim'
 
     " Completion
     Plug 'Lucklyric/copilot.vim'

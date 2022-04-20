@@ -138,6 +138,22 @@ lsp_installer.on_server_ready(function(server)
         on_attach = on_attach,
     }
 
+    -- This could possibly be put in `enhance_server_opts`?
+
+    -- if server.name == "ltex" then
+    --     opts.cmd = {
+    --         "/home/een023/.local/share/nvim/lsp_servers/ltex/ltex-ls/bin/ltex-cli --client-configuration=~/.config/ltex/settings.json",
+    --     }
+    -- end
+
+    -- This seems like it's not really needed, but it makes LspInfo return true for
+    -- server being found on PATH
+    if server.name == "ltex" then
+        opts.cmd = {
+            "/home/een023/.local/share/nvim/lsp_servers/ltex/ltex-ls/bin/ltex-ls",
+        }
+    end
+
     if enhance_server_opts[server.name] then
         -- Enhance the default opts with the server-specific ones
         enhance_server_opts[server.name](opts)
