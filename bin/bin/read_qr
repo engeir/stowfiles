@@ -1,0 +1,11 @@
+#!/bin/env bash
+# Read QR codes
+
+imagefile="/tmp/sloppy.$RANDOM.png"
+text="/tmp/translation"
+echo "$imagefile"
+slop=$(slop -f "%g") || exit 1
+read -r G < <(echo "$slop")
+import -window root -crop "$G" "$imagefile"
+zbarimg -q --raw "$imagefile" > "$text"
+cat "$text" | xclip -selection c
