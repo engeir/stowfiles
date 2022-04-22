@@ -49,19 +49,6 @@ call plug#begin('~/.vim/plugged')
     " Plug 'jeetsukumaran/vim-pythonsense'
     Plug 'fs111/pydoc.vim'
 
-    " Text editing
-    " Used for Markdown highlighting
-    Plug 'godlygeek/tabular'
-    Plug 'preservim/vim-markdown'
-    " Hard wrap or soft wrap of long lines. Also hides unfocused links.
-    Plug 'reedes/vim-pencil'
-    " Latex
-    Plug 'lervag/vimtex'
-    " Consider using luasnip instead, and transfer the snippet files with
-    " https://github.com/L3MON4D3/LuaSnip/issues/201#issuecomment-950132369
-    Plug 'sirver/ultisnips'
-    Plug 'honza/vim-snippets'
-
     " Python
     Plug 'nvie/vim-flake8'
 
@@ -69,6 +56,9 @@ call plug#begin('~/.vim/plugged')
     Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
     Plug 'junegunn/fzf.vim'
     Plug 'voldikss/vim-floaterm'
+    " Navigation
+    Plug 'nvim-lua/plenary.nvim'
+    Plug 'ThePrimeagen/harpoon'
     " Telescope
     Plug 'nvim-telescope/telescope.nvim'
     Plug 'nvim-telescope/telescope-bibtex.nvim'
@@ -76,9 +66,6 @@ call plug#begin('~/.vim/plugged')
     " Statusline
     Plug 'glepnir/galaxyline.nvim' , {'branch': 'main'}
 
-    " Navigation
-    Plug 'nvim-lua/plenary.nvim'
-    Plug 'ThePrimeagen/harpoon'
     " Treesitter
     Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}  " We recommend updating the parsers on update
     Plug 'p00f/nvim-ts-rainbow'
@@ -89,13 +76,26 @@ call plug#begin('~/.vim/plugged')
     Plug 'Lucklyric/copilot.vim'
     Plug 'hrsh7th/nvim-cmp'
     Plug 'tzachar/cmp-tabnine', { 'do': './install.sh' }
-    " Install snippet engine (This example installs [hrsh7th/vim-vsnip](https://github.com/hrsh7th/vim-vsnip))
-    Plug 'hrsh7th/vim-vsnip'
     " Install the buffer completion source
     Plug 'hrsh7th/cmp-buffer'
     Plug 'hrsh7th/cmp-path'
     Plug 'hrsh7th/cmp-nvim-lsp'
-    Plug 'quangnguyen30192/cmp-nvim-ultisnips'
+
+    " Text editing
+    " Used for Markdown highlighting
+    Plug 'godlygeek/tabular'
+    Plug 'preservim/vim-markdown'
+    " Hard wrap or soft wrap of long lines. Also hides unfocused links.
+    Plug 'reedes/vim-pencil'
+    " Latex
+    Plug 'lervag/vimtex'
+    " Consider using luasnip instead, and transfer the snippet files with
+    " https://github.com/L3MON4D3/LuaSnip/issues/201#issuecomment-950132369
+    Plug 'L3MON4D3/LuaSnip'
+    Plug 'saadparwaiz1/cmp_luasnip'
+    " Plug 'sirver/ultisnips'
+    " Plug 'honza/vim-snippets'  " For ultisnips
+    " Plug 'quangnguyen30192/cmp-nvim-ultisnips'
 
     " Other
     Plug 'kyazdani42/nvim-web-devicons'
