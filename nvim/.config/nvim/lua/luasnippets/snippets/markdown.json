@@ -1,0 +1,55 @@
+{
+    "boldsymbol": {
+        "body": [
+            "\\boldsymbol{$1}$0"
+        ],
+        "prefix": "bbs"
+    },
+    "formatted comment block": {
+        "body": [
+            "header-includes: |",
+            "   \\usepackage{tcolorbox}",
+            "   \\usepackage{tikz}",
+            "   \\usetikzlibrary{calc}",
+            "   \\tcbuselibrary{skins,xparse,breakable}",
+            "   \\tcbset{%",
+            "       % enhanced jigsaw,  % Makes the breakpoint sharp",
+            "       colback=white,",
+            "       colframe=black,",
+            "       title=Answer,  % Title of the block",
+            "   %   bookmark={Q\\arabic{\\tcbcounter}}",
+            "   }",
+            "   \\newtcolorbox{myquote}{%",
+            "       breakable,",
+            "       pad at break*=1.5pc,",
+            "       colback=gray!15!white,",
+            "       colframe=gray!75!black,",
+            "       overlay first and middle={",
+            "         \\coordinate (A1) at ($(interior.south east) + (-10pt,5pt)$);",
+            "         \\coordinate (C1) at ($(interior.south east) + (-6pt,7.5pt)$);",
+            "         \\draw[fill=gray] (A1) -- +(0,5pt) -- (C1) -- cycle;",
+            "       }",
+            "   }",
+            "   \\renewenvironment{quote}{\\begin{NoHyper}\\begin{myquote}}{\\end{myquote}\\end{NoHyper}}"
+        ],
+        "prefix": "comments"
+    },
+    "mathrm": {
+        "body": [
+            "\\mathrm{$1}$0"
+        ],
+        "prefix": "mrm"
+    },
+    "derivative": {
+        "body": [
+            "\\frac{\\mathrm{d}$1}{\\mathrm{d}$2}$0"
+        ],
+        "prefix": "ddt"
+    },
+    "fraction": {
+        "body": [
+            "\\frac{$1}{$2}$0"
+        ],
+        "prefix": "frac"
+    }
+}
