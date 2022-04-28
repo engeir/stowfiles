@@ -42,15 +42,15 @@ call plug#begin('~/.vim/plugged')
     Plug 'lewis6991/gitsigns.nvim'
     Plug 'tpope/vim-fugitive'
     Plug 'tpope/vim-rhubarb'  " Enables GBrowse
-    Plug '~/projects/githistory-browse.nvim/'
+    " Plug '~/projects/githistory-browse.nvim/'
     " Plug 'engeir/githistory-browse.nvim'
     Plug 'stsewd/fzf-checkout.vim'
     " Python easymotion
     " Plug 'jeetsukumaran/vim-pythonsense'
-    Plug 'fs111/pydoc.vim'
 
     " Python
     Plug 'nvie/vim-flake8'
+    Plug 'fs111/pydoc.vim'
 
     " Fuzzy search and open files
     Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
