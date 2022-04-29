@@ -41,7 +41,7 @@ set splitright                          " Vertical splits will automatically be 
 set t_Co=256                            " Support 256 colors
 set tabstop=4 softtabstop=4             " Insert 4 spaces for a tab (et=expandtab)
 set termguicolors
-" set textwidth=88                        " Automatically insert newline at given column
+set tw=88 fo=cq wm=0                    " Set textwidth, but don't automatically insert newline at given column
 set timeoutlen=500                      " By default timeoutlen is 1000 ms
 set updatetime=300                      " Faster completion
 set wildmenu
