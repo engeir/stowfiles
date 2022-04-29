@@ -73,6 +73,8 @@ nnoremap <silent><leader>O :Rg<CR>
 nnoremap <silent><leader>b :Buff<CR>
 " nnoremap <silent><leader>l :BLines<CR>
 nnoremap <silent><leader>L :BLines!<CR>
+" Remove file from buffer
+nnoremap <silent><leader>cc :bd<CR>
 
 " Add more breakpoints for the undo
 inoremap , ,<c-g>u
