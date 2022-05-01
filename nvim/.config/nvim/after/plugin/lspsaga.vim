@@ -23,4 +23,5 @@ nnoremap <leader>K <Cmd>Lspsaga hover_doc<CR>
 inoremap <silent> <C-k> <Cmd>Lspsaga signature_help<CR>
 " nnoremap <silent> gh <cmd>lua require'lspsaga.provider'.lsp_finder()<CR>
 nnoremap <silent><leader>rn :Lspsaga rename<CR>
+nnoremap <silent><leader>ca :Lspsaga code_action<CR>
 nnoremap <silent> gh <Cmd>Lspsaga lsp_finder<CR>
