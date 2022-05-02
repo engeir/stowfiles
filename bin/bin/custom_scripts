@@ -14,7 +14,7 @@ case "$chosen" in
 "read QR") read_qr ;;
 "layouts") layout ;;
     # "open pdf") pdf2 ;;
-"open pdf") pdf_open ;;
+"open pdf") pdf_open_all ;;
 "passwords") passmenu ;;
 "poweroff") poweroff ;;
 "weather") weather ;;
