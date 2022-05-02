@@ -17,6 +17,19 @@ map("n", "<leader>fc", "<cmd>lua require('telescope.builtin').commands()<cr>")
 map("n", "<leader>fk", "<cmd>lua require('telescope.builtin').keymaps()<cr>")
 
 require("telescope").setup({
+    defaults = {
+        path_display = { shorten = 3 },
+        vimgrep_arguments = {
+            "rg",
+            "--color=never",
+            "--no-heading",
+            "--with-filename",
+            "--line-number",
+            "--column",
+            "--hidden",
+            "--smart-case",
+        },
+    },
     extensions = {
         bibtex = {
             -- Path to global bibliographies (placed outside of the project)
