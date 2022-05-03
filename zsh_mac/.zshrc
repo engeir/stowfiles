@@ -1,4 +1,6 @@
 # Fig pre block. Keep at the top of this file.
+. "$HOME/.fig/shell/zshrc.pre.zsh"
+# Fig pre block. Keep at the top of this file.
 export PATH="${PATH}:${HOME}/.local/bin"
 # 
 # If you come from bash you might have to change your $PATH.
@@ -188,3 +190,6 @@ export PATH="/usr/local/opt/expat/bin:$PATH"
 export HAS_ALLOW_UNSAFE=y
 
 fpath+=~/.zfunc
+
+# Fig post block. Keep at the bottom of this file.
+. "$HOME/.fig/shell/zshrc.post.zsh"

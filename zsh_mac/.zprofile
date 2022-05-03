@@ -1,4 +1,6 @@
 # Fig pre block. Keep at the top of this file.
+. "$HOME/.fig/shell/zprofile.pre.zsh"
+# Fig pre block. Keep at the top of this file.
 export PATH="${PATH}:${HOME}/.local/bin"
 
 PATH="/usr/local/bin:${PATH}"
@@ -56,3 +58,6 @@ export PATH="/opt/local/bin:/opt/local/sbin:$PATH"
 export DISPLAY=:0
 # Finished adapting your DISPLAY environment variable for use with MacPorts.
 eval "$(pyenv init --path)"
+
+# Fig post block. Keep at the bottom of this file.
+. "$HOME/.fig/shell/zprofile.post.zsh"
