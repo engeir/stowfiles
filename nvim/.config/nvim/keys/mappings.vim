@@ -50,11 +50,6 @@ nnoremap <Leader>O O<Esc>^Da
 
 " My additions
 
-" Git
-nnoremap <leader>gb :Git blame<CR>
-nnoremap <leader>gs :Git<CR>
-nnoremap <leader>ga :Git add .<CR>
-
 " Open folder view
 " nnoremap <leader>pv :to vsp <bar> :Ex <bar> :vertical resize 40<CR>
 

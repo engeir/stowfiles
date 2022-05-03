@@ -1,11 +1,3 @@
-" auto-install vim-plug
-"if empty(glob('~/.config/nvim/autoload/plug.vim'))
-"  silent !curl -fLo ~/.config/nvim/autoload/plug.vim --create-dirs
-"    \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
-"  "autocmd VimEnter * PlugInstall
-"  "autocmd VimEnter * PlugInstall | source $MYVIMRC
-"endif
-
 call plug#begin('~/.vim/plugged')
 
     " Debugger
@@ -18,8 +10,6 @@ call plug#begin('~/.vim/plugged')
     Plug 'tjdevries/gruvbuddy.nvim'
 
     " Better Syntax Support
-    Plug 'gko/vim-layout'
-    Plug 'sainnhe/forest-night'
     Plug 'numToStr/Comment.nvim'
     Plug 'tpope/vim-surround'  " Change surrounding characters
     Plug 'Raimondi/delimitMate'  " Close matching characters
@@ -30,23 +20,19 @@ call plug#begin('~/.vim/plugged')
     Plug 'williamboman/nvim-lsp-installer'
     Plug 'ray-x/lsp_signature.nvim'
     Plug 'jose-elias-alvarez/null-ls.nvim'
-    " let OS = system('uname -s')
-    " if OS == "Linux\n"
-    "     Plug 'glepnir/lspsaga.nvim'  " Do not work with mac, but with linux
-    " elseif OS == "Darwin\n"
-    "     Plug 'tami5/lspsaga.nvim'  " Do not work with linux, but with mac
-    " endif
     Plug 'tami5/lspsaga.nvim'
 
     " Git
     Plug 'lewis6991/gitsigns.nvim'
-    Plug 'tpope/vim-fugitive'
-    Plug 'tpope/vim-rhubarb'  " Enables GBrowse
+    Plug 'TimUntersberger/neogit'
+    Plug 'sindrets/diffview.nvim'  " Nice diff view
+    Plug 'ruifm/gitlinker.nvim' " Permalink to line(s) you are on
+    Plug 'rhysd/committia.vim'  " Nice split during commits (not working?)
+    " Plug 'tpope/vim-fugitive'
+    " Plug 'tpope/vim-rhubarb'  " Enables GBrowse
     " Plug '~/projects/githistory-browse.nvim/'
     " Plug 'engeir/githistory-browse.nvim'
     Plug 'stsewd/fzf-checkout.vim'
-    " Python easymotion
-    " Plug 'jeetsukumaran/vim-pythonsense'
 
     " Python
     Plug 'nvie/vim-flake8'
@@ -85,6 +71,7 @@ call plug#begin('~/.vim/plugged')
     " Used for Markdown highlighting
     Plug 'godlygeek/tabular'
     Plug 'preservim/vim-markdown'
+    Plug 'ellisonleao/glow.nvim', {'branch': 'main'}
     " Hard wrap or soft wrap of long lines. Also hides unfocused links.
     Plug 'reedes/vim-pencil'
     " Latex
@@ -93,17 +80,13 @@ call plug#begin('~/.vim/plugged')
     " https://github.com/L3MON4D3/LuaSnip/issues/201#issuecomment-950132369
     Plug 'L3MON4D3/LuaSnip'
     Plug 'saadparwaiz1/cmp_luasnip'
-    " Plug 'sirver/ultisnips'
-    " Plug 'honza/vim-snippets'  " For ultisnips
-    " Plug 'quangnguyen30192/cmp-nvim-ultisnips'
 
     " Other
     Plug 'kyazdani42/nvim-web-devicons'
     Plug 'airblade/vim-rooter'
     Plug 'norcalli/nvim-colorizer.lua'
     Plug 'editorconfig/editorconfig-vim'  " Used by pacstall
-    Plug 'sindrets/diffview.nvim'  " Nice diff view
     Plug 'folke/todo-comments.nvim'
-call plug#end()
+    Plug 'nvim-neorg/neorg'  " Org mode in neovim?
 
-" autocmd CursorHold,CursorHoldI * lua require('code_action_utils').code_action_listener()
+call plug#end()

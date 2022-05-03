@@ -21,10 +21,10 @@ set hidden                       " Required to keep multiple buffers open
 set inccommand=split             " Adds a split when you do substitutions
 set incsearch                    "
 set iskeyword+=-                 " treat dash separated words as a word text object
-set laststatus=2                 " Always display the status line (0 for vim, 2 for lua... or something idk)
+set laststatus=3                 " Always display the status line (0 for vim, 2 for lua... or something idk)
 set ma                           " Modifiable on
 set mouse=a                      " Enable your mouse
-set nobackup                     " This is recommended by coc
+" set nobackup                     " This is recommended by coc
 set noerrorbells                 " No sound bc. sound is stupid
 set noshowmode                   " We don't need to see things like -- INSERT -- anymore
 set nowrap                       " Display long lines as just one line
