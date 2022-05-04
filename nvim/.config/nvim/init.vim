@@ -22,17 +22,13 @@ endif
 " https://www.youtube.com/watch?v=FW2X1CXrU1w
 source $HOME/.config/nvim/general/settings.vim
 
-" let g:coq_settings = { 'auto_start': 'shut-up' }
 " Plugins:
 source $HOME/.config/nvim/vim-plug/plugins.vim
 
 lua << EOF
--- require 'statuslines.darkline'
--- require 'statuslines.spaceline'
--- require 'statuslines.evilline'
-require 'statuslines.galaxyline-line'
--- require 'vim.highlight'
+
 require 'globals'
+
 EOF
 
 " Other:

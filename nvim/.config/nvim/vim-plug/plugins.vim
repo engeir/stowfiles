@@ -50,7 +50,8 @@ call plug#begin('~/.vim/plugged')
     Plug 'nvim-telescope/telescope-bibtex.nvim'
 
     " Statusline
-    Plug 'glepnir/galaxyline.nvim' , {'branch': 'main'}
+    Plug 'nvim-lualine/lualine.nvim'
+    Plug 'kyazdani42/nvim-web-devicons'
 
     " Treesitter
     Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}  " We recommend updating the parsers on update
