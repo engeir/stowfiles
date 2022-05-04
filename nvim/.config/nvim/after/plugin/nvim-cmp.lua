@@ -55,7 +55,7 @@ cmp.setup({
         { name = "gh_issues" },
         { name = "nvim_lsp" },
         { name = "path" },
-        { name = "buffer", keyword_length = 4 },
+        { name = "buffer", keyword_length = 5 },
         { name = "luasnip" }, -- For luasnip users.
         { name = "cmp_tabnine" },
     },
@@ -67,7 +67,8 @@ cmp.setup({
 })
 
 -- Setup lspconfig.
-local capabilities = require("cmp_nvim_lsp").update_capabilities(vim.lsp.protocol.make_client_capabilities())
+local capabilities = vim.lsp.protocol.make_client_capabilities()
+capabilities = require("cmp_nvim_lsp").update_capabilities(capabilities)
 -- Replace <YOUR_LSP_SERVER> with each lsp server you've enabled.
 require("lspconfig")["pyright, rust_analyzer, tsserver"].setup({
     capabilities = capabilities,

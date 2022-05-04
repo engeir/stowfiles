@@ -1,7 +1,7 @@
 " set leader key
 let g:mapleader = "\<Space>"
 
-" '<,'>!column -t -s="\"" -o="`""
+" '<,'>!column -t -s="\"" -o="\""
 " to make it nicely aligned
 syntax enable                    " Enables syntax highlighting
 " set autochdir                    " Your working directory will always be the same as your working directory

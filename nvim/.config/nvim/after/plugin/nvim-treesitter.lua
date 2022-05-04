@@ -1,4 +1,9 @@
-require("nvim-treesitter.configs").setup({
+local ok, ts = pcall(require, "nvim-treesitter.configs")
+if not ok then
+    return
+end
+
+ts.setup({
     highlight = {
         enable = true,
         disable = {},
@@ -25,10 +30,13 @@ require("nvim-treesitter.configs").setup({
         "bash",
         "bibtex",
         "css",
+        "fortran",
         "go",
         "html",
         "latex",
         "lua",
+        "markdown",
+        "norg",
         "python",
         "scss",
         "toml",
