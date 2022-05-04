@@ -28,8 +28,6 @@ call plug#begin('~/.vim/plugged')
     Plug 'sindrets/diffview.nvim'  " Nice diff view
     Plug 'ruifm/gitlinker.nvim' " Permalink to line(s) you are on
     Plug 'rhysd/committia.vim'  " Nice split during commits (not working?)
-    " Plug 'tpope/vim-fugitive'
-    " Plug 'tpope/vim-rhubarb'  " Enables GBrowse
     " Plug '~/projects/githistory-browse.nvim/'
     " Plug 'engeir/githistory-browse.nvim'
     Plug 'stsewd/fzf-checkout.vim'
@@ -56,7 +54,6 @@ call plug#begin('~/.vim/plugged')
     " Treesitter
     Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}  " We recommend updating the parsers on update
     Plug 'p00f/nvim-ts-rainbow'
-    Plug 'code-biscuits/nvim-biscuits'
     Plug 'ThePrimeagen/refactoring.nvim'
 
     " Completion
@@ -83,7 +80,6 @@ call plug#begin('~/.vim/plugged')
     Plug 'saadparwaiz1/cmp_luasnip'
 
     " Other
-    Plug 'kyazdani42/nvim-web-devicons'
     Plug 'airblade/vim-rooter'
     Plug 'norcalli/nvim-colorizer.lua'
     Plug 'editorconfig/editorconfig-vim'  " Used by pacstall
