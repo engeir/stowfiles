@@ -107,6 +107,8 @@ local servers = {
     "pyright",
     "rust_analyzer",
     "sumneko_lua",
+    -- Need to figure out how to prevent format on save...
+    -- "texlab",
     "tsserver",
     "vuels",
     "yamlls",
@@ -127,6 +129,13 @@ local enhance_server_opts = {
         opts.settings = {
             format = {
                 enable = true,
+            },
+        }
+    end,
+    ["texlab"] = function(opts)
+        opts.settings = {
+            build = {
+                onSave = false,
             },
         }
     end,
@@ -151,6 +160,24 @@ lsp_installer.on_server_ready(function(server)
     if server.name == "ltex" then
         opts.cmd = {
             "/home/een023/.local/share/nvim/lsp_servers/ltex/ltex-ls/bin/ltex-ls",
+        }
+    end
+    if server.name == "ltex" then
+        opts.settings = {
+            ltex = {
+                enabled = { "latex", "tex", "bib", "markdown" },
+                language = "en-GB",
+                diagnosticSeverity = "information",
+                setenceCacheSize = 2000,
+                additionalRules = {
+                    enablePickyRules = true,
+                    motherTongue = "en",
+                },
+                trace = { server = "verbose" },
+                dictionary = {},
+                disabledRules = {},
+                hiddenFalsePositives = {},
+            },
         }
     end
 

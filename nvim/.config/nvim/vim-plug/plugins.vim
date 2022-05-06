@@ -21,6 +21,7 @@ call plug#begin('~/.vim/plugged')
     Plug 'ray-x/lsp_signature.nvim'
     Plug 'jose-elias-alvarez/null-ls.nvim'
     Plug 'tami5/lspsaga.nvim'
+    Plug 'brymer-meneses/grammar-guard.nvim'
 
     " Git
     Plug 'lewis6991/gitsigns.nvim'
