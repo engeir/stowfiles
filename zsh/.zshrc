@@ -88,7 +88,8 @@ source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh 2>/dev/nul
 if [ -e /home/een023/.nix-profile/etc/profile.d/nix.sh ]; then . /home/een023/.nix-profile/etc/profile.d/nix.sh; fi # added by Nix installer
 source ~/programs/command_line_apps/cdo-1.9.9/contrib/cdoCompletion.zsh 2>/dev/null
 
-# fm6000 -r -c=random -n
+# forgit
+source "$HOME/programs/forgit/forgit.plugin.zsh"
 
 # Change prompt:
 # PS1="%B%{$fg[red]%}[%{$fg[yellow]%}%n%{$fg[green]%}@%{$fg[blue]%}%M %{$fg[magenta]%}%~%{$fg[red]%}]%{$reset_color%}$%b "
