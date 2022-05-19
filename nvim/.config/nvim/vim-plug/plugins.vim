@@ -30,7 +30,7 @@ call plug#begin('~/.vim/plugged')
     Plug 'ruifm/gitlinker.nvim' " Permalink to line(s) you are on
     Plug 'rhysd/committia.vim'  " Nice split during commits (not working?)
     " Plug '~/projects/githistory-browse.nvim/'
-    " Plug 'engeir/githistory-browse.nvim'
+    Plug 'engeir/githistory-browse.nvim'
     Plug 'stsewd/fzf-checkout.vim'
 
     " Python
