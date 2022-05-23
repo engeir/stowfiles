@@ -33,3 +33,4 @@ EOF
 
 " Other:
 source $HOME/.config/nvim/keys/mappings.vim
+source $HOME/.config/nvim/autoload/sage.vim
