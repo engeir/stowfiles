@@ -30,7 +30,7 @@ call plug#begin('~/.vim/plugged')
     Plug 'ruifm/gitlinker.nvim' " Permalink to line(s) you are on
     Plug 'rhysd/committia.vim'  " Nice split during commits (not working?)
     " Plug '~/projects/githistory-browse.nvim/'
-    " Plug 'engeir/githistory-browse.nvim'
+    Plug 'engeir/githistory-browse.nvim'
     Plug 'stsewd/fzf-checkout.vim'
 
     " Python
@@ -71,8 +71,6 @@ call plug#begin('~/.vim/plugged')
     Plug 'godlygeek/tabular'
     Plug 'preservim/vim-markdown'
     Plug 'ellisonleao/glow.nvim', {'branch': 'main'}
-    " Hard wrap or soft wrap of long lines. Also hides unfocused links.
-    Plug 'reedes/vim-pencil'
     " Latex
     Plug 'lervag/vimtex'
     " Consider using luasnip instead, and transfer the snippet files with
