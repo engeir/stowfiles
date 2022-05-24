@@ -9,7 +9,7 @@ end
 
 grammar.init()
 nvim_lsp.grammar_guard.setup({
-    cmd = { "/home/een023/.local/share/nvim/lsp_servers/ltex/ltex-ls/bin/ltex-ls" }, -- add this if you install ltex-ls yourself
+    cmd = {vim.fn.expand("~") .. "/.local/share/nvim/lsp_servers/ltex/ltex-ls/bin/ltex-ls" }, -- add this if you install ltex-ls yourself
     settings = {
         ltex = {
             enabled = { "latex", "tex", "bib", "markdown" },
