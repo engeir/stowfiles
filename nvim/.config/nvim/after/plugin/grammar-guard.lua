@@ -8,7 +8,6 @@ end
 -- end
 
 grammar.init()
-
 -- The below is implemented in nvim-lspconfig.lua. Commented out here to avoid
 -- duplicating.
 -- nvim_lsp.grammar_guard.setup({

@@ -5,10 +5,10 @@ local protocol = require("vim.lsp.protocol")
 -- after the language server attaches to the current buffer
 local on_attach = function(client, bufnr)
     -- if client.name == "tsserver" then
-    --     client.resolved_capabilities.document_formatting = false
+    --     client.server_capabilities.document_formatting = false
     -- end
     -- if client.name == "pyright" then
-    --     client.resolved_capabilities.document_formatting = false
+    --     client.server_capabilities.document_formatting = false
     -- end
     local function buf_set_keymap(...)
         vim.api.nvim_buf_set_keymap(bufnr, ...)
@@ -22,7 +22,7 @@ local on_attach = function(client, bufnr)
     buf_set_option("omnifunc", "v:lua.vim.lsp.omnifunc")
 
     -- Enable format on save
-    if client.resolved_capabilities.document_formatting then
+    if client.server_capabilities.document_formatting then
         vim.api.nvim_command([[augroup Format]])
         vim.api.nvim_command([[autocmd! * <buffer>]])
         vim.api.nvim_command([[autocmd BufWritePre <buffer> lua vim.lsp.buf.formatting_seq_sync()]])
@@ -112,7 +112,7 @@ local servers = {
     "tsserver",
     "vuels",
     "yamlls",
-    "zeta_note",
+    -- "zeta_note",
 }
 
 for _, name in pairs(servers) do
@@ -159,7 +159,7 @@ lsp_installer.on_server_ready(function(server)
     -- server being found on PATH
     if server.name == "ltex" then
         opts.cmd = {
-            "/home/een023/.local/share/nvim/lsp_servers/ltex/ltex-ls/bin/ltex-ls",
+            vim.fn.expand("~") .. "/.local/share/nvim/lsp_servers/ltex/ltex-ls/bin/ltex-ls",
         }
     end
     if server.name == "ltex" then

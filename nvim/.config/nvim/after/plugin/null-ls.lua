@@ -33,19 +33,19 @@ null_ls.setup({
             },
             extra_args = { "--no-semi", "--single-quote", "--jsx-single-quote" },
         }),
-        formatting.bibclean.with({ extra_args = { "--max-width", "0", "--no-fix-names" } }),
+        -- formatting.bibclean.with({ extra_args = { "--max-width", "0", "--no-fix-names" } }),
         formatting.black.with({ extra_args = { "--fast" } }),
         formatting.fixjson,
         formatting.gofmt,
         formatting.latexindent,
-        formatting.markdownlint.with({ extra_args = { "-c", "/home/een023/.config/mdl/.markdownlint.jsonc" } }),
+        formatting.markdownlint.with({ extra_args = { "-c", vim.fn.expand("~") .. "/.config/mdl/.markdownlint.jsonc" } }),
         formatting.shellharden,
         formatting.shfmt.with({ extra_args = { "-i=4" } }),
         formatting.stylua.with({ extra_args = { "--indent-type=Spaces" } }),
         formatting.taplo,
         diagnostics.golangci_lint,
         diagnostics.jsonlint,
-        diagnostics.markdownlint.with({ extra_args = { "-c", "/home/een023/.config/mdl/.markdownlint.jsonc" } }),
+        diagnostics.markdownlint.with({ extra_args = { "-c", vim.fn.expand("~") .. "/.config/mdl/.markdownlint.jsonc" } }),
         diagnostics.mypy,
         diagnostics.pydocstyle,
         diagnostics.shellcheck,
@@ -55,7 +55,7 @@ null_ls.setup({
     -- This format-on-save command is a bit dangerous, you probably want the option of
     -- just saving and not format on any occasion.
     -- on_attach = function(client)
-    --     if client.resolved_capabilities.document_formatting then
+    --     if client.server_capabilities.document_formatting then
     --         vim.cmd("autocmd BufWritePre <buffer> lua vim.lsp.buf.formatting_sync()")
     --     end
     -- end,
