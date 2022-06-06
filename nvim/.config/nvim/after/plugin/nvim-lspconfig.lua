@@ -165,7 +165,7 @@ lsp_installer.on_server_ready(function(server)
     if server.name == "ltex" then
         opts.settings = {
             ltex = {
-                enabled = { "latex", "tex", "bib", "markdown" },
+                enabled = { "latex", "tex", "bib", "markdown", "rst" },
                 language = "en-GB",
                 diagnosticSeverity = "information",
                 setenceCacheSize = 2000,
