@@ -57,7 +57,7 @@ cmp.setup({
         { name = "path" },
         { name = "buffer", keyword_length = 5 },
         { name = "luasnip" }, -- For luasnip users.
-        { name = "cmp_tabnine" },
+        -- { name = "cmp_tabnine" },
     },
 
     experimental = {

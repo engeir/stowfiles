@@ -1,8 +1,9 @@
 call plug#begin('~/.vim/plugged')
 
     " Debugger
-    Plug 'puremourning/vimspector'
+    " Plug 'puremourning/vimspector'
     Plug 'szw/vim-maximizer'
+    Plug 'mfussenegger/nvim-dap'
 
     " Colour scheme
     Plug 'sainnhe/gruvbox-material'
@@ -58,15 +59,17 @@ call plug#begin('~/.vim/plugged')
     Plug 'ThePrimeagen/refactoring.nvim'
 
     " Completion
-    Plug 'Lucklyric/copilot.vim'
+    Plug 'github/copilot.vim'
     Plug 'hrsh7th/nvim-cmp'
-    Plug 'tzachar/cmp-tabnine', { 'do': './install.sh' }
+    " Plug 'tzachar/cmp-tabnine', { 'do': './install.sh' }
     " Install the buffer completion source
     Plug 'hrsh7th/cmp-buffer'
     Plug 'hrsh7th/cmp-path'
     Plug 'hrsh7th/cmp-nvim-lsp'
 
     " Text editing
+    " Live preview
+    Plug 'frabjous/knap'
     " Used for Markdown highlighting
     Plug 'godlygeek/tabular'
     Plug 'preservim/vim-markdown'
