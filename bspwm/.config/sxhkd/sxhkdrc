@@ -24,6 +24,8 @@ super + alt + x
 super + alt + p
 	~/bin/pdf_open &
 	# ~/.config/sxhkd/display.sh
+super + alt + w
+    ~/programs/word-lookup/word-lookup.sh &
 # make sxhkd reload its configuration files:
 super + Escape
 	pkill -USR1 -x sxhkd
