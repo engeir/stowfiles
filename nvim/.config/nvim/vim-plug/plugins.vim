@@ -73,6 +73,7 @@ call plug#begin('~/.vim/plugged')
     Plug 'frabjous/knap'
     " Used for Markdown highlighting
     Plug 'godlygeek/tabular'
+    Plug 'dhruvasagar/vim-table-mode'
     Plug 'preservim/vim-markdown'
     Plug 'ellisonleao/glow.nvim', {'branch': 'main'}
     " Latex
