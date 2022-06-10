@@ -174,7 +174,10 @@ lsp_installer.on_server_ready(function(server)
                     motherTongue = "en",
                 },
                 trace = { server = "verbose" },
-                dictionary = {},
+                dictionary = {
+                    ["en-GB"] = { "Pinatubo", ":/home/een023/.local/share/nvim/lsp_servers/ltex/en-GB.txt" },
+                    ["de-DE"] = {},
+                },
                 disabledRules = {},
                 hiddenFalsePositives = {},
             },
