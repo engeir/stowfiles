@@ -1,5 +1,3 @@
-
-lua << EOF
 local status, knap = pcall(require, "knap")
 if not status then
     return
@@ -28,10 +26,16 @@ kmap('i','<F8>', function() knap.forward_jump() end)
 kmap('v','<F8>', function() knap.forward_jump() end)
 kmap('n','<F8>', function() knap.forward_jump() end)
 
-EOF
+local gknapsettings = {
+    texoutputext = "pdf",
+    textopdf = "pdflatex -synctex=1 -halt-on-error -interaction=batchmode %docroot%",
+    mdtopdf = "pandoc %docroot% -o %outputfile%",
+    mdoutputext = "html",
+    mdtopdfviewerlaunch = "zathura %outputfile%",
+    -- mdtohtmlviewerlaunch = "surf %outputfile%",
+    -- mdtohtmlviewerrefresh = "none",
+}
+vim.g.knap_settings = gknapsettings
 
-" " Use surf as the default viewer
-" let g:knap_settings = {
-"     \ "mdtohtmlviewerlaunch" : "surf %outputfile%",
-"     \ "mdtohtmlviewerrefresh" : "none",
-" \ }
+-- What I use in my compiler script for markdown
+-- pandoc --citeproc --bibliography=/home/een023/science/ref/ref.bib "$file" --filter pandoc-include --filter pandoc-eqnos -s -o "$base".pdf >/dev/null 2>&1
