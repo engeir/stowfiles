@@ -13,8 +13,8 @@ set synctex true
 set synctex-editor-command "gvim --remote-silent +%{line} %{input}"
 
 # Colors for inverse mode
-set recolor-lightcolor \#FFFFFF
-set recolor-darkcolor \#FCE9CE
+# set recolor-lightcolor \#FFFFFF
+# set recolor-darkcolor \#FCE9CE
 
 # https://unix.stackexchange.com/questions/456837/zathura-shortcut-feedkeys-configuration-for-recolouring
 # midnight mode
@@ -33,3 +33,5 @@ map \# feedkeys "<F6><Return><F7><Return>"
 map <F8> focus_inputbar ":set recolor-lightcolor \#ffffff"
 map <F9> focus_inputbar ":set recolor-darkcolor \#000000"
 map $ feedkeys "<F8><Return><F9><Return>"
+
+include extra
