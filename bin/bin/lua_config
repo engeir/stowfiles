@@ -1,0 +1,11 @@
+#!/bin/bash
+
+# If argument is 1:
+cd "$HOME/stowfiles"
+if [ "$1" == "new" ]; then
+    stow -D nvim
+    stow nvim_lua
+else
+    stow -D nvim_lua
+    stow nvim
+fi
