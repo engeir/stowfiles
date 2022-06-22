@@ -15,6 +15,7 @@ call plug#begin('~/.vim/plugged')
     Plug 'tpope/vim-surround'  " Change surrounding characters
     Plug 'Raimondi/delimitMate'  " Close matching characters
     Plug 'tpope/vim-speeddating'
+    Plug 'anufrievroman/vim-angry-reviewer'
 
     " Lsp
     Plug 'neovim/nvim-lspconfig'
@@ -60,7 +61,6 @@ call plug#begin('~/.vim/plugged')
     Plug 'ThePrimeagen/refactoring.nvim'
 
     " Completion
-    Plug 'github/copilot.vim'
     Plug 'hrsh7th/nvim-cmp'
     " Plug 'tzachar/cmp-tabnine', { 'do': './install.sh' }
     " Install the buffer completion source
