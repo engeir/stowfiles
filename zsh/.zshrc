@@ -126,3 +126,4 @@ else
 fi
 
 eval "$(atuin init zsh)"
+export GPG_TTY=$(tty)

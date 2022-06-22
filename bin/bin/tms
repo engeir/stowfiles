@@ -17,7 +17,7 @@ else
     items+=$(echo "" && find "$HOME"/Documents/presentations-files -maxdepth 0 -type d 2>/dev/null)
     items+=$(echo "" && find /media/een023/LaCie/een023/cesm/model-runs -maxdepth 0 -type d 2>/dev/null)
     items+=$(echo "" && find "$HOME/Documents/notes_papers" -maxdepth 0 -type d 2>/dev/null)
-    items+=$(echo "" && find "$HOME/science/notes/state-of-art-volcanic-impact" -maxdepth 0 -type d 2>/dev/null)
+    items+=$(echo "" && find "$HOME/science/notes/state-of-art-volcanoes-in-climate" -maxdepth 0 -type d 2>/dev/null)
     # items+=("$HOME/work")
     # items+=("$HOME/.dotfiles")
     # items+=("$HOME/ansible")

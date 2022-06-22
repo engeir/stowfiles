@@ -11,7 +11,7 @@ for wid in "${ids[@]}"; do
     ')"}"$'\n'
 done
 
-id_index="$(echo -n "$options" | dmenu | cut -d: -f1)"
+id_index="$(echo -n "$options" | dmenu -l 20 -p "Show:" | cut -d: -f1)"
 # Exit if none chosen.
 [ -z "$id_index" ] && exit
 
