@@ -1,0 +1,8 @@
+#!/bin//sh
+
+# List all open (but not current) sessions:
+selected=$(tmux list-sessions | grep -v attached | awk '{print $1}' | sed 's/:$//' | fzf)
+
+[ -z "$selected" ] && exit 0
+
+tmux kill-session -t "$selected"
