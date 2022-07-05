@@ -3,4 +3,4 @@ if not ok then
     return
 end
 
-lualine.setup({ options = { theme = "gruvbox" } })
+lualine.setup({ options = { theme = "auto" } })
