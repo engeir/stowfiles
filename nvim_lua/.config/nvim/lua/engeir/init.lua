@@ -8,9 +8,15 @@ end)()
 local is_mac = has "macunix"
 local is_linux = not is_wsl and not is_mac
 
+-- General stuff
 require("engeir.settings")
 require("engeir.keymaps")
 require("engeir.plugins")
+
+-- Extra stuff
 require("engeir.autocommands")
-require("engeir.lsp")
 require("engeir.cmp")
+require("engeir.colorschemes")
+require("engeir.gitsigns")
+require("engeir.lsp")
+require("engeir.toggleterm")

@@ -56,6 +56,13 @@ return packer.startup(function()
 		"yamatsum/nvim-nonicons",
 		requires = { "kyazdani42/nvim-web-devicons" },
 	})
+	use("zbirenbaum/neodim")
+	use({
+		"lewis6991/spellsitter.nvim",
+		config = function()
+			require("spellsitter").setup()
+		end,
+	})
 
 	-- cmp / completions ---------------------------------------------------------------
 	use("hrsh7th/nvim-cmp") -- The completion plugin
@@ -68,6 +75,9 @@ return packer.startup(function()
 	-- snippets ------------------------------------------------------------------------
 	use({ "L3MON4D3/LuaSnip" })
 
+	-- Post-install/update hook with neovim command ------------------------------------
+	use({ "nvim-treesitter/nvim-treesitter", run = ":TSUpdate" })
+
 	-- LSP -----------------------------------------------------------------------------
 	use("neovim/nvim-lspconfig") -- enable LSP
 	use("williamboman/nvim-lsp-installer") -- simple to use language server installer
@@ -76,19 +86,11 @@ return packer.startup(function()
 	use("tami5/lspsaga.nvim")
 	use("ray-x/lsp_signature.nvim")
 
-	-- Post-install/update hook with neovim command ------------------------------------
-	use({ "nvim-treesitter/nvim-treesitter", run = ":TSUpdate" })
-
-	-- Use dependency and run lua function after load ----------------------------------
+	-- Git some shit done --------------------------------------------------------------
 	use({
 		"lewis6991/gitsigns.nvim",
 		requires = { "nvim-lua/plenary.nvim" },
-		config = function()
-			require("gitsigns").setup()
-		end,
 	})
-
-	-- Git some shit done --------------------------------------------------------------
 	use("mbbill/undotree")
 
 	-- Style and colorschemes ----------------------------------------------------------
@@ -115,6 +117,15 @@ return packer.startup(function()
 		config = function()
 			require("neoclip").setup()
 			require("telescope").load_extension("file_browser")
+		end,
+	})
+
+	-- Miscellaneous -------------------------------------------------------------------
+	use({
+		"akinsho/toggleterm.nvim",
+		tag = "v1.*",
+		config = function()
+			require("toggleterm").setup({ shade_terminals = false })
 		end,
 	})
 

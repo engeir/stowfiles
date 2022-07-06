@@ -1,6 +1,22 @@
 local ok, lualine = pcall(require, "lualine")
 if not ok then
-    return
+	return
 end
 
-lualine.setup({ options = { theme = "auto" } })
+lualine.setup({
+	options = {
+		theme = "gruvbox",
+		-- theme = "auto",
+	},
+	sections = {
+		lualine_c = {
+			{
+				"filename",
+				path = 3,
+			},
+		},
+	},
+	extensions = {
+		"toggleterm",
+	},
+})
