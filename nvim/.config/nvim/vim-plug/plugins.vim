@@ -9,6 +9,8 @@ call plug#begin('~/.vim/plugged')
     Plug 'sainnhe/gruvbox-material'
     Plug 'tjdevries/colorbuddy.vim'
     Plug 'tjdevries/gruvbuddy.nvim'
+    " Plug 'joshdick/onedark.vim'
+    Plug 'folke/tokyonight.nvim', { 'branch': 'main' }
 
     " Better Syntax Support
     Plug 'numToStr/Comment.nvim'
@@ -25,6 +27,7 @@ call plug#begin('~/.vim/plugged')
     Plug 'tami5/lspsaga.nvim'
     Plug 'brymer-meneses/grammar-guard.nvim'
     " Plug 'lewis6991/spellsitter.nvim'
+    Plug 'zbirenbaum/neodim'
 
     " Git
     Plug 'lewis6991/gitsigns.nvim'

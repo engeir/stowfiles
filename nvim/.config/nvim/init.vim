@@ -28,6 +28,7 @@ source $HOME/.config/nvim/vim-plug/plugins.vim
 lua << EOF
 
 require 'globals'
+require("engeir.lsp")
 
 EOF
 
