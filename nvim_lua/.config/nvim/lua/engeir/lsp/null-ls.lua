@@ -26,7 +26,7 @@ null_ls.setup({
         formatting.black.with({ extra_args = { "--fast" } }),
         formatting.fixjson,
         formatting.gofmt,
-        formatting.google_java_format,
+        -- formatting.google_java_format,
         formatting.latexindent,
         formatting.markdownlint.with({
             extra_args = { "-c", vim.fn.expand("~") .. "/.config/mdl/.markdownlint.jsonc" },
