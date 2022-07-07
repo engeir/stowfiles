@@ -88,13 +88,6 @@ return packer.startup(function()
         requires = { "kyazdani42/nvim-web-devicons" },
     })
     use("zbirenbaum/neodim")
-    use({
-        "lewis6991/spellsitter.nvim",
-        config = function()
-            require("spellsitter").setup()
-        end,
-    })
-    use("brymer-meneses/grammar-guard.nvim")
 
     -- cmp / completions ---------------------------------------------------------------
     use("hrsh7th/nvim-cmp") -- The completion plugin
@@ -120,6 +113,16 @@ return packer.startup(function()
     use("tjdevries/colorbuddy.vim")
     use("tjdevries/gruvbuddy.nvim")
     use("marko-cerovac/material.nvim")
+
+    -- Correct spelling and fix grammar ------------------------------------------------
+    use({
+        "lewis6991/spellsitter.nvim",
+        config = function()
+            require("spellsitter").setup()
+        end,
+    })
+    use("brymer-meneses/grammar-guard.nvim")
+    use("anufrievroman/vim-angry-reviewer")
 
     -- Miscellaneous -------------------------------------------------------------------
     use({
