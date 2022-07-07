@@ -7,18 +7,37 @@ end
 local formatting = null_ls.builtins.formatting
 -- https://github.com/jose-elias-alvarez/null-ls.nvim/tree/main/lua/null-ls/builtins/diagnostics
 local diagnostics = null_ls.builtins.diagnostics
+local code_actions = null_ls.builtins.code_actions
 
 -- https://github.com/prettier-solidity/prettier-plugin-solidity
 null_ls.setup({
     debug = false,
     sources = {
+        code_actions.gitsigns,
+        diagnostics.flake8,
+        diagnostics.golangci_lint,
+        diagnostics.jsonlint,
+        diagnostics.markdownlint.with({
+            extra_args = { "-c", vim.fn.expand("~") .. "/.config/mdl/.markdownlint.jsonc" },
+        }),
+        diagnostics.mypy,
+        diagnostics.pydocstyle,
+        diagnostics.shellcheck,
+        formatting.black.with({ extra_args = { "--fast" } }),
+        formatting.fixjson,
+        formatting.gofmt,
+        formatting.google_java_format,
+        formatting.latexindent,
+        formatting.markdownlint.with({
+            extra_args = { "-c", vim.fn.expand("~") .. "/.config/mdl/.markdownlint.jsonc" },
+        }),
         formatting.prettier.with({
             extra_filetypes = { "toml" },
             extra_args = { "--no-semi", "--single-quote", "--jsx-single-quote" },
         }),
-        formatting.black.with({ extra_args = { "--fast" } }),
-        formatting.stylua,
-        formatting.google_java_format,
-        diagnostics.flake8,
+        formatting.shellharden,
+        formatting.shfmt.with({ extra_args = { "-i=4" } }),
+        formatting.stylua.with({ extra_args = { "--indent-type=Spaces" } }),
+        formatting.taplo,
     },
 })
