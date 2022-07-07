@@ -81,7 +81,7 @@ inoremap ? ?<c-g>u
 nnoremap <expr> k (v:count > 5 ? "m'" . v:count : "") . 'k'
 nnoremap <expr> j (v:count > 5 ? "m'" . v:count : "") . 'j'
 
-" Y should behave similar to D and C
+" Y should behave similar to D and C (this is default in neovim)
 nnoremap Y y$
 
 " Add n newlines and continue in normal mode

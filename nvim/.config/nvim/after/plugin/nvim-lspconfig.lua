@@ -105,6 +105,7 @@ local servers = {
     "gopls",
     "ltex",
     "pyright",
+    "sourcery",
     "rust_analyzer",
     "sumneko_lua",
     -- Need to figure out how to prevent format on save...
@@ -183,6 +184,15 @@ lsp_installer.on_server_ready(function(server)
             },
         }
     end
+    -- if server.name == "sourcery" then
+    --     opts.settings = {
+    --         sourcery = {
+    --             init_options = {
+    --                 token = "",
+    --             },
+    --         },
+    --     }
+    -- end
 
     if enhance_server_opts[server.name] then
         -- Enhance the default opts with the server-specific ones
