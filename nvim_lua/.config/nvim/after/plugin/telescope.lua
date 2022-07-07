@@ -16,6 +16,7 @@ map("n", "<leader>fw", "<cmd>lua require('telescope.builtin').grep_string()<cr>"
 map("n", "<leader>b", "<cmd>lua require('telescope.builtin').buffers({sort_mru=true, ignore_current_buffer=true})<cr>")
 map("n", "<leader>fb", "<cmd>Telescope bibtex<cr>")
 map("n", "<leader>fp", "<cmd>Telescope spell_suggest<cr>")
+map("n", "<leader>fv", "<cmd>Telescope neoclip<cr>")
 map("n", "<leader>fh", "<cmd>lua require('telescope.builtin').help_tags()<cr>")
 map("n", "<leader>fc", "<cmd>lua require('telescope.builtin').commands()<cr>")
 map("n", "<leader>fo", "<cmd>lua require('telescope.builtin').git_commits()<cr>")

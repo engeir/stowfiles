@@ -60,7 +60,7 @@ return packer.startup(function()
         "AckslD/nvim-neoclip.lua",
         requires = { "nvim-telescope/telescope.nvim" },
         config = function()
-            require("neoclip").setup()
+            require("neoclip").setup({ default_register = { '"', "+", "*" } })
             require("telescope").load_extension("neoclip")
         end,
     })
@@ -106,6 +106,15 @@ return packer.startup(function()
         requires = { "nvim-lua/plenary.nvim" },
     })
     use("mbbill/undotree")
+    use("sindrets/diffview.nvim")
+    use("TimUntersberger/neogit") -- To commit quickly and view
+    use({
+        "ruifm/gitlinker.nvim",
+        config = function()
+            require("gitlinker").setup()
+        end,
+    })
+    use("rhysd/committia.vim")
 
     -- Style and colorschemes ----------------------------------------------------------
     use("nvim-lualine/lualine.nvim")
