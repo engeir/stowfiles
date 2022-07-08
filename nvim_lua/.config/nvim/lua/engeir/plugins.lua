@@ -68,7 +68,6 @@ return packer.startup(function()
         "nvim-telescope/telescope-file-browser.nvim",
         requires = { "nvim-telescope/telescope.nvim" },
         config = function()
-            require("neoclip").setup()
             require("telescope").load_extension("file_browser")
         end,
     })
@@ -88,6 +87,7 @@ return packer.startup(function()
         requires = { "kyazdani42/nvim-web-devicons" },
     })
     use("zbirenbaum/neodim")
+    use("junegunn/vim-easy-align")
 
     -- cmp / completions ---------------------------------------------------------------
     use("hrsh7th/nvim-cmp") -- The completion plugin
@@ -130,6 +130,14 @@ return packer.startup(function()
             require("bufferline").setup()
         end,
     })
+    use("p00f/nvim-ts-rainbow") -- Different colour for nested parenthesis
+    use({
+        "norcalli/nvim-colorizer.lua",
+        config = function()
+            require("colorizer").setup()
+        end,
+    })
+    use("folke/todo-comments.nvim")
 
     -- Correct spelling and fix grammar ------------------------------------------------
     use({
@@ -141,6 +149,8 @@ return packer.startup(function()
     use("brymer-meneses/grammar-guard.nvim")
     use("anufrievroman/vim-angry-reviewer")
 
+    -- TODO: set up dap
+
     -- Miscellaneous -------------------------------------------------------------------
     use({
         "akinsho/toggleterm.nvim",
@@ -149,6 +159,8 @@ return packer.startup(function()
             require("toggleterm").setup({ shade_terminals = false })
         end,
     })
+    use("airblade/vim-rooter")
+    use("ThePrimeagen/harpoon")
 
     -- Automatically set up your configuration after cloning packer.nvim
     -- Put this at the end after all plugins
