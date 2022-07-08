@@ -14,6 +14,7 @@ null_ls.setup({
     debug = false,
     sources = {
         code_actions.gitsigns,
+        code_actions.proselint,
         diagnostics.flake8,
         diagnostics.golangci_lint,
         diagnostics.jsonlint,
@@ -21,12 +22,12 @@ null_ls.setup({
             extra_args = { "-c", vim.fn.expand("~") .. "/.config/mdl/.markdownlint.jsonc" },
         }),
         diagnostics.mypy,
+        diagnostics.proselint,
         diagnostics.pydocstyle,
         diagnostics.shellcheck,
         formatting.black.with({ extra_args = { "--fast" } }),
         formatting.fixjson,
         formatting.gofmt,
-        -- formatting.google_java_format,
         formatting.latexindent,
         formatting.markdownlint.with({
             extra_args = { "-c", vim.fn.expand("~") .. "/.config/mdl/.markdownlint.jsonc" },

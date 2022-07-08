@@ -150,6 +150,8 @@ return packer.startup(function(use)
     use("brymer-meneses/grammar-guard.nvim")
     use("anufrievroman/vim-angry-reviewer")
 
+    -- Language specific syntax highlighting and more -----------------------------------
+
     -- TODO: set up dap
 
     -- Miscellaneous -------------------------------------------------------------------
@@ -162,6 +164,7 @@ return packer.startup(function(use)
     })
     use("airblade/vim-rooter")
     use("ThePrimeagen/harpoon")
+    use({ "ellisonleao/glow.nvim", branch = "main" })
 
     -- Automatically set up your configuration after cloning packer.nvim
     -- Put this at the end after all plugins

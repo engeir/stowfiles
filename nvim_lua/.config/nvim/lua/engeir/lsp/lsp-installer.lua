@@ -10,6 +10,7 @@ local servers = {
     "html",
     "jsonls",
     "ltex",
+    "prosemd_lsp",
     "pyright",
     "rust_analyzer",
     "sourcery",
@@ -18,7 +19,7 @@ local servers = {
     "tsserver",
     "vuels",
     "yamlls",
-    -- Need to figure out how to prevent format on save...
+    -- TODO: Need to figure out how to prevent format on save...
     -- "texlab",
 }
 
