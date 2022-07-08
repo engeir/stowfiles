@@ -38,7 +38,7 @@ packer.init({
     },
 })
 
-return packer.startup(function()
+return packer.startup(function(use)
     -- Packer can manage itself --------------------------------------------------------
     use("wbthomason/packer.nvim")
 
@@ -91,9 +91,9 @@ return packer.startup(function()
 
     -- cmp / completions ---------------------------------------------------------------
     use("hrsh7th/nvim-cmp") -- The completion plugin
-    use("hrsh7th/cmp-buffer") -- buffer completions
-    use("hrsh7th/cmp-path") -- path completions
-    use("saadparwaiz1/cmp_luasnip") -- snippet completions
+    use("hrsh7th/cmp-buffer") -- Buffer completions
+    use("hrsh7th/cmp-path") -- Path completions
+    use("saadparwaiz1/cmp_luasnip") -- Snippet completions
     use("hrsh7th/cmp-nvim-lsp")
     use("hrsh7th/cmp-nvim-lua")
 
@@ -105,6 +105,7 @@ return packer.startup(function()
         "lewis6991/gitsigns.nvim",
         requires = { "nvim-lua/plenary.nvim" },
     })
+    -- TODO: understand how to ackshually use this
     use("mbbill/undotree")
     use("sindrets/diffview.nvim")
     use("TimUntersberger/neogit") -- To commit quickly and view
@@ -113,7 +114,7 @@ return packer.startup(function()
         config = function()
             require("gitlinker").setup()
         end,
-    })
+    }) -- Quickly get a permalink to lines of code
     use("rhysd/committia.vim")
 
     -- Style and colorschemes ----------------------------------------------------------
