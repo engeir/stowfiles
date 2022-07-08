@@ -52,6 +52,7 @@ return packer.startup(function(use)
     use("RRethy/vim-illuminate")
     use("tami5/lspsaga.nvim")
     use("ray-x/lsp_signature.nvim")
+    use("github/Copilot.vim")
 
     -- Telescope -----------------------------------------------------------------------
     use("nvim-telescope/telescope.nvim")
@@ -150,21 +151,18 @@ return packer.startup(function(use)
     use("brymer-meneses/grammar-guard.nvim")
     use("anufrievroman/vim-angry-reviewer")
 
-    -- Language specific syntax highlighting and more -----------------------------------
+    -- Language specific syntax highlighting, formatting and more ----------------------
+    use("ThePrimeagen/refactoring.nvim")
 
     -- TODO: set up dap
 
     -- Miscellaneous -------------------------------------------------------------------
-    use({
-        "akinsho/toggleterm.nvim",
-        tag = "v1.*",
-        config = function()
-            require("toggleterm").setup({ shade_terminals = false })
-        end,
-    })
+    use({ "akinsho/toggleterm.nvim", tag = "v1.*" })
+    use("voldikss/vim-floaterm")
     use("airblade/vim-rooter")
     use("ThePrimeagen/harpoon")
     use({ "ellisonleao/glow.nvim", branch = "main" })
+    use("goolord/alpha-nvim")
 
     -- Automatically set up your configuration after cloning packer.nvim
     -- Put this at the end after all plugins
