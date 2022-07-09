@@ -1,4 +1,4 @@
-live_config_reload: true
+# live_config_reload: true
 colors:
   # Default colors
   # primary:
