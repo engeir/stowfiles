@@ -1,3 +1,4 @@
+live_config_reload: true
 colors:
   # Default colors
   # primary:
@@ -30,7 +31,6 @@ colors:
     text: "0x002635"
     cursor: "0xffcc1b"
 
-background_opacity: 0.9
 
 cursor:
   style:
@@ -51,10 +51,13 @@ hints:
        key: U
        mods: Control|Shift
 
+background_opacity: 0.9
 window:
   padding:
     x: 5
     y: 5
+  # opacity: 0.3
+  decorations: buttonless
 
 font:
   size: 13
