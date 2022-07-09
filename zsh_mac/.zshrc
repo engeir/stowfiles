@@ -1,5 +1,5 @@
 # Fig pre block. Keep at the top of this file.
-. "$HOME/.fig/shell/zshrc.pre.zsh"
+[[ -f "$HOME/.fig/shell/zshrc.pre.zsh" ]] && . "$HOME/.fig/shell/zshrc.pre.zsh"
 # Fig pre block. Keep at the top of this file.
 export PATH="${PATH}:${HOME}/.local/bin"
 # 
@@ -181,6 +181,9 @@ eval "$(pyenv virtualenv-init -)"
 # fi
 source ~/.kb_alias
 
+# forgit
+source "$HOME/programs/forgit/forgit.plugin.zsh"
+
 eval "$(starship init zsh)"
 # eval "$(mcfly init zsh)"
 # eval "$(pip completion --zsh)"
@@ -190,9 +193,6 @@ export PATH="/usr/local/opt/expat/bin:$PATH"
 export HAS_ALLOW_UNSAFE=y
 
 fpath+=~/.zfunc
-
-# Fig post block. Keep at the bottom of this file.
-. "$HOME/.fig/shell/zshrc.post.zsh"
 
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
@@ -209,3 +209,5 @@ fi
 unset __conda_setup
 # <<< conda initialize <<<
 
+# Fig post block. Keep at the bottom of this file.
+[[ -f "$HOME/.fig/shell/zshrc.post.zsh" ]] && . "$HOME/.fig/shell/zshrc.post.zsh"
