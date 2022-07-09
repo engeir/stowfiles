@@ -1,4 +1,3 @@
-
 " ScreenShots in Markup {{{1
 function! dotvim#OrgScreenShot(desc, dir, filename)
 	call setline('.', printf('[[file:%s/%s]]', a:dir, a:filename))
