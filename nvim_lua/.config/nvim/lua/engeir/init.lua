@@ -1,11 +1,11 @@
 local has = function(x)
-  return vim.fn.has(x) == 1
+    return vim.fn.has(x) == 1
 end
 local is_wsl = (function()
-  local output = vim.fn.systemlist "uname -r"
-  return not not string.find(output[1] or "", "WSL")
+    local output = vim.fn.systemlist("uname -r")
+    return not not string.find(output[1] or "", "WSL")
 end)()
-local is_mac = has "macunix"
+local is_mac = has("macunix")
 local is_linux = not is_wsl and not is_mac
 
 -- General stuff
@@ -36,4 +36,5 @@ require("engeir.telescope")
 require("engeir.terminal")
 require("engeir.todo-comments-nvim")
 require("engeir.treesitter")
+require("engeir.treesitter-context")
 require("engeir.vim-angry-reviewer")

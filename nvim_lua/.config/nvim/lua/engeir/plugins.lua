@@ -42,8 +42,10 @@ return packer.startup(function(use)
     -- Packer can manage itself --------------------------------------------------------
     use("wbthomason/packer.nvim")
 
-    -- The basics ----------------------------------------------------------------------
+    -- Syntax and other good stuff -----------------------------------------------------
     use({ "nvim-treesitter/nvim-treesitter", run = ":TSUpdate" })
+    use("ThePrimeagen/refactoring.nvim")
+    use("nvim-treesitter/nvim-treesitter-context")
 
     -- LSP -----------------------------------------------------------------------------
     use("neovim/nvim-lspconfig") -- enable LSP
@@ -150,9 +152,6 @@ return packer.startup(function(use)
     })
     use("brymer-meneses/grammar-guard.nvim")
     use("anufrievroman/vim-angry-reviewer")
-
-    -- Language specific syntax highlighting, formatting and more ----------------------
-    use("ThePrimeagen/refactoring.nvim")
 
     -- TODO: set up dap
 
