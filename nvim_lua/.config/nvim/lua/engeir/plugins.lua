@@ -4,7 +4,12 @@ local fn = vim.fn
 -- grammar-guard:q
 local is_known = (function()
     local output = vim.fn.systemlist("uname -n")
-    return not string.find(output[1], "ubuntu-work, mac-os")
+    known = { "ubuntu-work", "mac-os" }
+    for _, v in ipairs(known) do
+        if v == output[1] then
+            return true
+        end
+    end
 end)()
 
 -- Automatically install packer
