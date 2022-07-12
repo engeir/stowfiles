@@ -44,7 +44,7 @@ alias nikkerud="~/betty/main.rb"
 # reMarkable related
 alias rmv="rmview ~/programs/rmview/rmview.json"
 # alias rmapi="~/./rmapi"
-alias cptodo="cp ~/.kb/data/todo/pdh_work ~/Documents/notes_papers/_includes/todo.md"
+# alias cptodo="cp ~/.kb/data/todo/pdh_work ~/Documents/notes_papers/_includes/todo.md"
 alias saRM="ssh-add ~/rM_share"
 alias skRM="ssh-keygen -R 10.11.99.1"
 alias remouse="/home/een023/remousable_program/./remousable"

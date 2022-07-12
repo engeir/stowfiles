@@ -4,13 +4,23 @@ local fn = vim.fn
 -- grammar-guard:q
 local is_known = (function()
     local output = vim.fn.systemlist("uname -n")
-    known = { "ubuntu-work", "mac-os" }
+    local known = { "ubuntu-work", "mac-os" }
     for _, v in ipairs(known) do
         if v == output[1] then
             return true
         end
     end
+    return false
 end)()
+local has = function(x)
+    return vim.fn.has(x) == 1
+end
+local is_wsl = (function()
+    local output = vim.fn.systemlist("uname -r")
+    return not not string.find(output[1] or "", "WSL")
+end)()
+local is_mac = has("macunix")
+local is_linux = not is_wsl and not is_mac
 
 -- Automatically install packer
 local install_path = fn.stdpath("data") .. "/site/pack/packer/start/packer.nvim"
@@ -88,6 +98,10 @@ return packer.startup(function(use)
             require("telescope").load_extension("file_browser")
         end,
     })
+    use("nvim-telescope/telescope-symbols.nvim")
+    if is_known and is_linux then
+        use({ "nvim-telescope/telescope-media-files.nvim", requires = { "nvim-lua/popup.nvim" } })
+    end
 
     -- General text manipulation and fonts ---------------------------------------------
     use("numToStr/Comment.nvim")
