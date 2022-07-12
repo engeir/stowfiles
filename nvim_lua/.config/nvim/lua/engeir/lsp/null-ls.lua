@@ -15,8 +15,8 @@ null_ls.setup({
     sources = {
         code_actions.gitsigns,
         code_actions.proselint,
-        code_actions.refactoring,
-        diagnostics.flake8,
+        -- code_actions.refactoring,
+        -- diagnostics.flake8,
         diagnostics.golangci_lint,
         diagnostics.jsonlint,
         diagnostics.markdownlint.with({

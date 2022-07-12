@@ -149,6 +149,7 @@ return packer.startup(function(use)
         },
         tag = "nightly", -- optional, updated every week. (see issue #1193)
     })
+    use("mechatroner/rainbow_csv")
 
     -- Correct spelling and fix grammar ------------------------------------------------
     use({
