@@ -1,5 +1,12 @@
 local fn = vim.fn
 
+-- Check if the computer is one I recognise, if no, do not install copilot and
+-- grammar-guard:q
+local is_known = (function()
+    local output = vim.fn.systemlist("uname -n")
+    return not string.find(output[1], "ubuntu-work, mac-os")
+end)()
+
 -- Automatically install packer
 local install_path = fn.stdpath("data") .. "/site/pack/packer/start/packer.nvim"
 if fn.empty(fn.glob(install_path)) > 0 then
@@ -54,7 +61,9 @@ return packer.startup(function(use)
     use("RRethy/vim-illuminate")
     use("tami5/lspsaga.nvim")
     use("ray-x/lsp_signature.nvim")
-    use("github/Copilot.vim")
+    if is_known then
+        use("github/Copilot.vim")
+    end
 
     -- Telescope -----------------------------------------------------------------------
     use("nvim-telescope/telescope.nvim")
@@ -158,8 +167,10 @@ return packer.startup(function(use)
             require("spellsitter").setup()
         end,
     })
-    use("brymer-meneses/grammar-guard.nvim")
-    use("anufrievroman/vim-angry-reviewer")
+    if is_known then
+        use("brymer-meneses/grammar-guard.nvim")
+        use("anufrievroman/vim-angry-reviewer")
+    end
 
     -- TODO: set up dap
 
