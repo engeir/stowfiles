@@ -1,3 +1,22 @@
+local is_known = (function()
+    local output = vim.fn.systemlist("uname -n")
+    local known = { "ubuntu-work", "eenMBP.local" }
+    for _, v in ipairs(known) do
+        if v == output[1] then
+            return true
+        end
+    end
+    return false
+end)()
+local has = function(x)
+    return vim.fn.has(x) == 1
+end
+local is_wsl = (function()
+    local output = vim.fn.systemlist("uname -r")
+    return not not string.find(output[1] or "", "WSL")
+end)()
+local is_mac = has("macunix")
+local is_linux = not is_wsl and not is_mac
 -- Define keymappings for original telescope plugin
 local function map(mode, lhs, rhs, opts)
     local options = { noremap = true, silent = true }
@@ -43,7 +62,9 @@ require("telescope").setup({
 -- Load extensions
 -- require("telescope-media-files").setup()
 require("telescope").load_extension("bibtex")
-require("telescope").load_extension("media_files")
+if is_linux and is_known then
+    require("telescope").load_extension("media_files")
+end
 
 map("n", "<leader>ff", "<cmd>lua require('telescope.builtin').find_files({hidden=true})<cr>")
 map("n", "<leader>fl", "<cmd>lua require('telescope.builtin').current_buffer_fuzzy_find()<cr>")

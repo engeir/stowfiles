@@ -1,10 +1,10 @@
 local fn = vim.fn
 
 -- Check if the computer is one I recognise, if no, do not install copilot and
--- grammar-guard:q
+-- grammar-guard
 local is_known = (function()
     local output = vim.fn.systemlist("uname -n")
-    local known = { "ubuntu-work", "mac-os" }
+    local known = { "ubuntu-work", "eenMBP.local" }
     for _, v in ipairs(known) do
         if v == output[1] then
             return true
