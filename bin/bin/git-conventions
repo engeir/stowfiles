@@ -1,0 +1,3 @@
+#!/bin/sh
+
+cat ~/bin/git-conventions.txt | dmenu -b -l 20 >/dev/null 2>&1
