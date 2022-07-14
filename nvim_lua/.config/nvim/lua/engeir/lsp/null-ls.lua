@@ -30,12 +30,12 @@ null_ls.setup({
         formatting.fixjson,
         formatting.gofmt,
         formatting.latexindent,
-        formatting.markdownlint.with({
-            extra_args = { "-c", vim.fn.expand("~") .. "/.config/mdl/.markdownlint.jsonc" },
-        }),
-        formatting.prettier.with({
-            extra_filetypes = { "toml" },
-            extra_args = { "--no-semi", "--single-quote", "--jsx-single-quote" },
+        -- formatting.markdownlint.with({
+        --     extra_args = { "-c", vim.fn.expand("~") .. "/.config/mdl/.markdownlint.jsonc" },
+        -- }), -- Using `prettierd` instead
+        formatting.prettierd.with({
+            filetypes = { "toml", "md", "markdown" },
+            -- args = { "--no-semi", "--single-quote", "--jsx-single-quote" },
         }),
         formatting.shellharden,
         formatting.shfmt.with({ extra_args = { "-i=4" } }),
