@@ -21,6 +21,8 @@ super + alt + @space
 # Run custom scripts
 super + alt + x
 	~/bin/custom_scripts &
+super + alt + g
+	~/bin/git-conventions &
 super + alt + p
 	~/bin/pdf_open &
 	# ~/.config/sxhkd/display.sh
