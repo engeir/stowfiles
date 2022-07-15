@@ -5,19 +5,26 @@
 if [[ $# -eq 1 ]]; then
     selected=$1
 else
-    items=$(find ~/Documents/work/projects -maxdepth 1 -mindepth 1 -type d 2>/dev/null)
-    items+=$(echo "" && find ~/projects -maxdepth 1 -mindepth 1 -type d 2>/dev/null)
-    items+=$(echo "" && find "$HOME" -maxdepth 0 -type d 2>/dev/null)
-    items+=$(echo "" && find "$HOME"/stowfiles -maxdepth 0 -type d 2>/dev/null)
-    items+=$(echo "" && find "$HOME"/Documents/work -maxdepth 0 -type d 2>/dev/null)
-    items+=$(echo "" && find "$HOME"/Documents/teaching -maxdepth 0 -type d 2>/dev/null)
-    items+=$(echo "" && find "$HOME"/Documents/work/cesm -maxdepth 0 -type d 2>/dev/null)
-    items+=$(echo "" && find "$HOME"/Documents/other/PhD -maxdepth 0 -type d 2>/dev/null)
-    items+=$(echo "" && find "$HOME"/Documents/presentations -maxdepth 0 -type d 2>/dev/null)
-    items+=$(echo "" && find "$HOME"/Documents/presentations-files -maxdepth 0 -type d 2>/dev/null)
-    items+=$(echo "" && find /media/een023/LaCie/een023/cesm/model-runs -maxdepth 0 -type d 2>/dev/null)
+    # This should be first on any system, then the rest is added
+    items=$(find "$HOME" -maxdepth 0 -type d 2>/dev/null)
+    items+=$(echo "" && find "$HOME/stowfiles" -maxdepth 0 -type d 2>/dev/null)
+    # ubuntu + mac
+    items+=$(echo "" && find "$HOME/projects" -maxdepth 1 -mindepth 1 -type d 2>/dev/null)
+    # ubuntu
+    items+=$(echo "" && find "$HOME/Documents/work/projects" -maxdepth 1 -mindepth 1 -type d 2>/dev/null)
+    items+=$(echo "" && find "$HOME/Documents/work" -maxdepth 0 -type d 2>/dev/null)
+    items+=$(echo "" && find "$HOME/Documents/teaching" -maxdepth 0 -type d 2>/dev/null)
+    items+=$(echo "" && find "$HOME/Documents/work/cesm" -maxdepth 0 -type d 2>/dev/null)
+    items+=$(echo "" && find "$HOME/Documents/other/PhD" -maxdepth 0 -type d 2>/dev/null)
+    items+=$(echo "" && find "$HOME/Documents/presentations" -maxdepth 0 -type d 2>/dev/null)
+    items+=$(echo "" && find "$HOME/Documents/presentations-files" -maxdepth 0 -type d 2>/dev/null)
+    items+=$(echo "" && find "/media/een023/LaCie/een023/cesm/model-runs" -maxdepth 0 -type d 2>/dev/null)
     items+=$(echo "" && find "$HOME/Documents/notes_papers" -maxdepth 0 -type d 2>/dev/null)
-    items+=$(echo "" && find "$HOME/science/notes/state-of-art-volcanoes-in-climate" -maxdepth 0 -type d 2>/dev/null)
+    items+=$(echo "" && find "$HOME/science/notes/hack-md-notes" -maxdepth 0 -type d 2>/dev/null)
+    # FRAM
+    items+=$(echo "" && find "/cluster/projects/nn9817k/cesm/archive" -maxdepth 0 -type d 2>/dev/null)
+    items+=$(echo "" && find "/cluster/work/users/een023/cesm/" -maxdepth 0 -type d 2>/dev/null)
+    items+=$(echo "" && find "$HOME/model/CESM/cesm2.1.3/CESM/cime/cases" -maxdepth 1 -type d 2>/dev/null)
     # items+=("$HOME/work")
     # items+=("$HOME/.dotfiles")
     # items+=("$HOME/ansible")
