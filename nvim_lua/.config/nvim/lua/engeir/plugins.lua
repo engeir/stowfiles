@@ -150,10 +150,6 @@ return packer.startup(function(use)
 
     -- Style and colorschemes ----------------------------------------------------------
     use("nvim-lualine/lualine.nvim")
-    use("sainnhe/gruvbox-material")
-    use("tjdevries/colorbuddy.vim")
-    use("tjdevries/gruvbuddy.nvim")
-    use("marko-cerovac/material.nvim")
     use({
         "akinsho/bufferline.nvim",
         tag = "v2.*",
@@ -162,6 +158,10 @@ return packer.startup(function(use)
             require("bufferline").setup()
         end,
     })
+    use("sainnhe/gruvbox-material")
+    use("tjdevries/colorbuddy.vim")
+    use("tjdevries/gruvbuddy.nvim")
+    use("marko-cerovac/material.nvim")
     use("p00f/nvim-ts-rainbow") -- Different colour for nested parenthesis
     use({
         "norcalli/nvim-colorizer.lua",

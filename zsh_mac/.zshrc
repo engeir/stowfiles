@@ -1,6 +1,3 @@
-# Fig pre block. Keep at the top of this file.
-[[ -f "$HOME/.fig/shell/zshrc.pre.zsh" ]] && . "$HOME/.fig/shell/zshrc.pre.zsh"
-# Fig pre block. Keep at the top of this file.
 export PATH="${PATH}:${HOME}/.local/bin"
 # 
 # If you come from bash you might have to change your $PATH.
@@ -209,5 +206,12 @@ fi
 unset __conda_setup
 # <<< conda initialize <<<
 
-# Fig post block. Keep at the bottom of this file.
-[[ -f "$HOME/.fig/shell/zshrc.post.zsh" ]] && . "$HOME/.fig/shell/zshrc.post.zsh"
+# bun completions
+[ -s "/Users/eirikenger/.bun/_bun" ] && source "/Users/eirikenger/.bun/_bun"
+
+# bun
+export BUN_INSTALL="/Users/eirikenger/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"
+# deno
+export DENO_INSTALL="/Users/eirikenger/.deno"
+export PATH="$DENO_INSTALL/bin:$PATH"
