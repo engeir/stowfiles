@@ -127,3 +127,10 @@ fi
 
 eval "$(atuin init zsh)"
 export GPG_TTY=$(tty)
+
+# bun completions
+[ -s "/home/een023/.bun/_bun" ] && source "/home/een023/.bun/_bun"
+
+# bun
+export BUN_INSTALL="/home/een023/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"

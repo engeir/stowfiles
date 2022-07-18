@@ -1,0 +1,5 @@
+#!/bin/sh
+
+# See https://cheatography.com//albelop/cheat-sheets/conventional-commits/
+
+cat ~/bin/git-conventions.txt | dmenu -b -l 20 >/dev/null 2>&1

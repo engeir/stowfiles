@@ -21,6 +21,9 @@ local is_wsl = (function()
 end)()
 local is_mac = has("macunix")
 local is_linux = not is_wsl and not is_mac
+local executable = function(x)
+    return vim.fn.executable(x) == 1
+end
 
 -- Automatically install packer
 local install_path = fn.stdpath("data") .. "/site/pack/packer/start/packer.nvim"
@@ -61,15 +64,15 @@ packer.init({
 })
 
 return packer.startup(function(use)
-    -- Packer can manage itself --------------------------------------------------------
+    -- Packer can manage itself ===================================================== --
     use("wbthomason/packer.nvim")
 
-    -- Syntax and other good stuff -----------------------------------------------------
+    -- Syntax and other good stuff ================================================== --
     use({ "nvim-treesitter/nvim-treesitter", run = ":TSUpdate" })
     use("ThePrimeagen/refactoring.nvim")
     use("nvim-treesitter/nvim-treesitter-context")
 
-    -- LSP -----------------------------------------------------------------------------
+    -- LSP ========================================================================== --
     use("neovim/nvim-lspconfig") -- enable LSP
     use("williamboman/nvim-lsp-installer") -- simple to use language server installer
     use("jose-elias-alvarez/null-ls.nvim") -- for formatters and linters
@@ -80,7 +83,7 @@ return packer.startup(function(use)
         use("github/Copilot.vim")
     end
 
-    -- Telescope -----------------------------------------------------------------------
+    -- Telescope ==================================================================== --
     use("nvim-telescope/telescope.nvim")
     use("nvim-telescope/telescope-bibtex.nvim")
     use({
@@ -103,9 +106,14 @@ return packer.startup(function(use)
         use({ "nvim-telescope/telescope-media-files.nvim", requires = { "nvim-lua/popup.nvim" } })
     end
 
-    -- General text manipulation and fonts ---------------------------------------------
+    -- General text manipulation and fonts ========================================== --
     use("numToStr/Comment.nvim")
-    use("tpope/vim-surround")
+    use({
+        "kylechui/nvim-surround",
+        config = function()
+            require("nvim-surround").setup({})
+        end,
+    })
     use({
         "windwp/nvim-autopairs",
         config = function()
@@ -120,7 +128,7 @@ return packer.startup(function(use)
     use("zbirenbaum/neodim")
     use("junegunn/vim-easy-align")
 
-    -- cmp / completions ---------------------------------------------------------------
+    -- cmp / completions ============================================================ --
     use("hrsh7th/nvim-cmp") -- The completion plugin
     use("hrsh7th/cmp-buffer") -- Buffer completions
     use("hrsh7th/cmp-path") -- Path completions
@@ -128,10 +136,10 @@ return packer.startup(function(use)
     use("hrsh7th/cmp-nvim-lsp")
     use("hrsh7th/cmp-nvim-lua")
 
-    -- snippets ------------------------------------------------------------------------
+    -- snippets ===================================================================== --
     use({ "L3MON4D3/LuaSnip" })
 
-    -- Git some shit done --------------------------------------------------------------
+    -- Git some shit done =========================================================== --
     use({
         "lewis6991/gitsigns.nvim",
         requires = { "nvim-lua/plenary.nvim" },
@@ -147,8 +155,9 @@ return packer.startup(function(use)
         end,
     }) -- Quickly get a permalink to lines of code
     use("rhysd/committia.vim")
+    use({ "kdheepak/lazygit.nvim", cond = executable("lazygit") })
 
-    -- Style and colorschemes ----------------------------------------------------------
+    -- Style and colorschemes ======================================================= --
     use("nvim-lualine/lualine.nvim")
     use({
         "akinsho/bufferline.nvim",
@@ -179,7 +188,7 @@ return packer.startup(function(use)
     })
     use("mechatroner/rainbow_csv")
 
-    -- Correct spelling and fix grammar ------------------------------------------------
+    -- Correct spelling and fix grammar ============================================= --
     use({
         "lewis6991/spellsitter.nvim",
         config = function()
@@ -193,7 +202,7 @@ return packer.startup(function(use)
 
     -- TODO: set up dap
 
-    -- Miscellaneous -------------------------------------------------------------------
+    -- Miscellaneous ================================================================ --
     use({ "akinsho/toggleterm.nvim", tag = "v1.*" })
     use("voldikss/vim-floaterm")
     use("airblade/vim-rooter")
