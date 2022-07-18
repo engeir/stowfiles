@@ -107,8 +107,8 @@ disabled = false
 
 [time]
 style = "white"
-time_format = "%d %b %Y, %H:%M:%S [%z]"
-format = '[ \($time\)]($style)'
+time_format = "%d %b %Y, %H:%M:%S (%z)"
+format = '[ $time]($style)'
 disabled = false
 
 [username]
