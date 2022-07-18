@@ -4,9 +4,9 @@ set sandbox none
 set selection-clipboard clipboard
 
 # Open file in a viewer that support annotations
-map <C-a> feedkeys ":exec okular %<Return>"
+map <C-a> feedkeys ":exec okular $FILE<Return>"
 # Send document to reMarkable
-map <C-s> feedkeys ":exec rmapi put %<Return>"
+map <C-s> feedkeys ":exec rmapi put $FILE<Return>"
 
 # Backward search for tex editing
 set synctex true
