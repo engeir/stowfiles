@@ -1,5 +1,7 @@
 {
   // Example markdownlint JSON(C) configuration with all properties set to their default value
+  // See https://github.com/DavidAnson/markdownlint/blob/main/doc/Rules.md for a list of
+  // all rules
 
   // Default state for all rules
   "default": true,
@@ -80,11 +82,11 @@
     // Number of characters for code blocks
     "code_block_line_length": 88,
     // Include code blocks
-    "code_blocks": true,
+    "code_blocks": false,
     // Include tables
-    "tables": true,
+    "tables": false,
     // Include headings
-    "headings": true,
+    "headings": false,
     // Include headings
     "headers": true,
     // Strict length checking
@@ -177,7 +179,7 @@
   // MD033/no-inline-html - Inline HTML
   "MD033": {
     // Allowed elements
-    "allowed_elements": []
+    "allowed_elements": ["div", "table", "tr", "td"]
   },
 
   // MD034/no-bare-urls - Bare URL used
@@ -240,7 +242,7 @@
   // MD046/code-block-style - Code block style
   "MD046": {
     // Block style
-    "style": "consistent"
+    "style": "fenced"
   },
 
   // MD047/single-trailing-newline - Files should end with a single newline character
