@@ -80,7 +80,19 @@ return packer.startup(function(use)
     use("tami5/lspsaga.nvim")
     use("ray-x/lsp_signature.nvim")
     if is_known then
-        use("github/Copilot.vim")
+        use({
+            "zbirenbaum/copilot.lua",
+            event = { "VimEnter" },
+            config = function()
+                vim.defer_fn(function()
+                    require("copilot").setup()
+                end, 100)
+            end,
+        })
+        use({
+            "zbirenbaum/copilot-cmp",
+            module = "copilot_cmp",
+        })
     end
 
     -- Telescope ==================================================================== --
