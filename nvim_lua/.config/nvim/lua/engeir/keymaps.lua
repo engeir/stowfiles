@@ -1,7 +1,3 @@
-local executable = function(x)
-  return vim.fn.executable(x) == 1
-end
-
 -- Shorten function name
 local keymap = vim.keymap.set
 -- Silent keymap option
@@ -39,9 +35,9 @@ keymap("n", "{", "{zz", opts)
 keymap("n", "}", "}zz", opts)
 
 -- Running and compiling code
-if executable "autocomp" then
+if EXECUTABLE "autocomp" then
     keymap("n", "<leader>a", ":!setsid autocomp % &<CR>", opts)
 end
-if executable "open_output" then
+if EXECUTABLE "open_output" then
     keymap("n", "<leader><leader>o", ":!open_output % &<CR>", opts)
 end
