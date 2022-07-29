@@ -1,5 +1,9 @@
-local status_ok, lsp_installer = pcall(require, "nvim-lsp-installer")
+local status_ok, mason = pcall(require, "mason")
 if not status_ok then
+    return
+end
+local mason_config_ok, mason_config = pcall(require, "mason-lspconfig")
+if not mason_config_ok then
     return
 end
 
@@ -23,7 +27,24 @@ local servers = {
     -- "texlab",
 }
 
-lsp_installer.setup()
+local settings = {
+    ui = {
+        border = "rounded",
+        icons = {
+            package_installed = "◍",
+            package_pending = "◍",
+            package_uninstalled = "◍",
+        },
+    },
+    log_level = vim.log.levels.INFO,
+    max_concurrent_installers = 4,
+}
+
+mason.setup(settings)
+mason_config.setup({
+    ensure_installed = servers,
+    automatic_installation = true,
+})
 
 local lspconfig_status_ok, lspconfig = pcall(require, "lspconfig")
 if not lspconfig_status_ok then
@@ -38,9 +59,26 @@ for _, server in pairs(servers) do
         capabilities = require("engeir.lsp.handlers").capabilities,
     }
 
+    server = vim.split(server, "@")[1]
+
     if server == "sumneko_lua" then
-        local sumneko_opts = require("engeir.lsp.settings.sumneko_lua")
-        opts = vim.tbl_deep_extend("force", sumneko_opts, opts)
+        -- local sumneko_opts = require("engeir.lsp.settings.sumneko_lua")
+        -- opts = vim.tbl_deep_extend("force", sumneko_opts, opts)
+        local l_status_ok, lua_dev = pcall(require, "lua-dev")
+        if not l_status_ok then
+            return
+        end
+        local luadev = lua_dev.setup({
+            --   -- add any options here, or leave empty to use the default settings
+            -- lspconfig = opts,
+            lspconfig = {
+                on_attach = opts.on_attach,
+                capabilities = opts.capabilities,
+                --   -- settings = opts.settings,
+            },
+        })
+        lspconfig.sumneko_lua.setup(luadev)
+        goto continue
     end
 
     if server == "pyright" then
@@ -60,5 +98,18 @@ for _, server in pairs(servers) do
         opts = vim.tbl_deep_extend("force", ltex_opts, opts)
     end
 
+    if server == "rust_analyzer" then
+        local rust_opts = require("engeir.lsp.settings.rust")
+        -- opts = vim.tbl_deep_extend("force", rust_opts, opts)
+        local rust_tools_status_ok, rust_tools = pcall(require, "rust-tools")
+        if not rust_tools_status_ok then
+            return
+        end
+
+        rust_tools.setup(rust_opts)
+        goto continue
+    end
+
     lspconfig[server].setup(opts)
+    ::continue::
 end

@@ -1,11 +1,11 @@
 local M = {}
 
+M.capabilities = vim.lsp.protocol.make_client_capabilities()
+
 local status_cmp_ok, cmp_nvim_lsp = pcall(require, "cmp_nvim_lsp")
 if not status_cmp_ok then
     return
 end
-
-M.capabilities = vim.lsp.protocol.make_client_capabilities()
 M.capabilities.textDocument.completion.completionItem.snippetSupport = true
 M.capabilities = cmp_nvim_lsp.update_capabilities(M.capabilities)
 
@@ -24,6 +24,7 @@ M.setup = function()
 
     local config = {
         virtual_text = false, -- disable virtual text
+        virtual_lines = false,
         signs = {
             active = signs, -- show signs
         },
@@ -67,7 +68,7 @@ local function lsp_keymaps(bufnr)
     keymap(bufnr, "n", "<leader>wr", "<cmd>lua vim.lsp.buf.remove_workspace_folder()<CR>", opts)
     keymap(bufnr, "n", "<leader>wl", "<cmd>lua print(vim.inspect(vim.lsp.buf.list_workspace_folders()))<CR>", opts)
     keymap(bufnr, "n", "<leader>D", "<cmd>lua vim.lsp.buf.type_definition()<CR>", opts)
-    keymap(bufnr, 'n', '<leader>rn', '<cmd>lua vim.lsp.buf.rename()<CR>', opts)
+    keymap(bufnr, "n", "<leader>rn", "<cmd>lua vim.lsp.buf.rename()<CR>", opts)
     -- keymap(bufnr, "n", "<leader>lr", "<cmd>lua vim.lsp.buf.rename()<cr>", opts)
     -- keymap(bufnr, "n", "<space>ca", "<cmd>lua vim.lsp.buf.code_action()<CR>", opts)
     -- keymap(bufnr, "n", "<leader>la", "<cmd>lua vim.lsp.buf.code_action()<cr>", opts)
@@ -100,6 +101,8 @@ local function lsp_keymaps(bufnr)
 end
 
 M.on_attach = function(client, bufnr)
+    lsp_keymaps(bufnr)
+
     if client.name == "tsserver" then
         client.server_capabilities.document_formatting = false
     end
@@ -108,12 +111,11 @@ M.on_attach = function(client, bufnr)
         client.server_capabilities.document_formatting = false
     end
 
-    lsp_keymaps(bufnr)
-    local status_ok, illuminate = pcall(require, "illuminate")
-    if not status_ok then
-        return
-    end
-    illuminate.on_attach(client)
+    -- local status_ok, illuminate = pcall(require, "illuminate")
+    -- if not status_ok then
+    --     return
+    -- end
+    -- illuminate.on_attach(client)
 end
 
 return M
