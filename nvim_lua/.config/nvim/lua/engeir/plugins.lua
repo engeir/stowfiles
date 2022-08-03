@@ -114,6 +114,9 @@ return packer.startup(function(use)
     })
     use("zbirenbaum/neodim")
     use("junegunn/vim-easy-align")
+    if IS_KNOWN then
+        use("nvim-neorg/neorg")
+    end
 
     -- cmp / completions ============================================================ --
     use("hrsh7th/nvim-cmp") -- The completion plugin
