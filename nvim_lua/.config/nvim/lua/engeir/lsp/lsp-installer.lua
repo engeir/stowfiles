@@ -2,9 +2,6 @@ local status_ok, lsp_installer = pcall(require, "nvim-lsp-installer")
 if not status_ok then
     return
 end
-local executable = function(x)
-    return vim.fn.executable(x) == 1
-end
 
 local servers = {
     "bashls",
@@ -51,7 +48,7 @@ for _, server in pairs(servers) do
         opts = vim.tbl_deep_extend("force", pyright_opts, opts)
     end
 
-    if executable("pass") and server == "sourcery" then
+    if EXECUTABLE("pass") and server == "sourcery" then
         local sourcery_opts = require("engeir.lsp.settings.sourcery")
         opts = vim.tbl_deep_extend("force", sourcery_opts, opts)
     end

@@ -21,7 +21,6 @@ export LESS='-Ri '
 export LS_COLORS="$(vivid generate solarized-dark)"
 
 fpath+=${ZDOTDIR:-~}/.zsh_functions  # This must come before compinit
-fpath+=/home/een023/programs/zsh/conda-zsh-completion
 
 # The following lines were added by compinstall
 
@@ -190,21 +189,6 @@ export PATH="/usr/local/opt/expat/bin:$PATH"
 export HAS_ALLOW_UNSAFE=y
 
 fpath+=~/.zfunc
-
-# >>> conda initialize >>>
-# !! Contents within this block are managed by 'conda init' !!
-__conda_setup="$('/usr/local/Caskroom/miniconda/base/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
-if [ $? -eq 0 ]; then
-    eval "$__conda_setup"
-else
-    if [ -f "/usr/local/Caskroom/miniconda/base/etc/profile.d/conda.sh" ]; then
-        . "/usr/local/Caskroom/miniconda/base/etc/profile.d/conda.sh"
-    else
-        export PATH="/usr/local/Caskroom/miniconda/base/bin:$PATH"
-    fi
-fi
-unset __conda_setup
-# <<< conda initialize <<<
 
 # bun completions
 [ -s "/Users/eirikenger/.bun/_bun" ] && source "/Users/eirikenger/.bun/_bun"

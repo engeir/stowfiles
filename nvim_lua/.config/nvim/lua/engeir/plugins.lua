@@ -1,30 +1,5 @@
 local fn = vim.fn
 
--- Check if the computer is one I recognise, if no, do not install copilot and
--- grammar-guard
-local is_known = (function()
-    local output = vim.fn.systemlist("uname -n")
-    local known = { "ubuntu-work", "eenMBP.local" }
-    for _, v in ipairs(known) do
-        if v == output[1] then
-            return true
-        end
-    end
-    return false
-end)()
-local has = function(x)
-    return vim.fn.has(x) == 1
-end
-local is_wsl = (function()
-    local output = vim.fn.systemlist("uname -r")
-    return not not string.find(output[1] or "", "WSL")
-end)()
-local is_mac = has("macunix")
-local is_linux = not is_wsl and not is_mac
-local executable = function(x)
-    return vim.fn.executable(x) == 1
-end
-
 -- Automatically install packer
 local install_path = fn.stdpath("data") .. "/site/pack/packer/start/packer.nvim"
 if fn.empty(fn.glob(install_path)) > 0 then
@@ -79,7 +54,7 @@ return packer.startup(function(use)
     use("RRethy/vim-illuminate")
     use("tami5/lspsaga.nvim")
     use("ray-x/lsp_signature.nvim")
-    if is_known then
+    if IS_KNOWN then
         use({
             "zbirenbaum/copilot.lua",
             event = { "VimEnter" },
@@ -114,7 +89,7 @@ return packer.startup(function(use)
         end,
     })
     use("nvim-telescope/telescope-symbols.nvim")
-    if is_known and is_linux then
+    if IS_KNOWN and IS_LINUX then
         use({ "nvim-telescope/telescope-media-files.nvim", requires = { "nvim-lua/popup.nvim" } })
     end
 
@@ -167,7 +142,7 @@ return packer.startup(function(use)
         end,
     }) -- Quickly get a permalink to lines of code
     use("rhysd/committia.vim")
-    use({ "kdheepak/lazygit.nvim", cond = executable("lazygit") })
+    use({ "kdheepak/lazygit.nvim", cond = EXECUTABLE("lazygit") })
 
     -- Style and colorschemes ======================================================= --
     use("nvim-lualine/lualine.nvim")
@@ -207,7 +182,7 @@ return packer.startup(function(use)
             require("spellsitter").setup()
         end,
     })
-    if is_known then
+    if IS_KNOWN then
         use("brymer-meneses/grammar-guard.nvim")
         use("anufrievroman/vim-angry-reviewer")
     end
