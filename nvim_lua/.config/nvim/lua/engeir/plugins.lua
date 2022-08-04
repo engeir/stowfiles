@@ -54,21 +54,21 @@ return packer.startup(function(use)
     use("RRethy/vim-illuminate")
     use("tami5/lspsaga.nvim")
     use("ray-x/lsp_signature.nvim")
-    if IS_KNOWN then
-        use({
-            "zbirenbaum/copilot.lua",
-            event = { "VimEnter" },
-            config = function()
-                vim.defer_fn(function()
-                    require("copilot").setup()
-                end, 100)
-            end,
-        })
-        use({
-            "zbirenbaum/copilot-cmp",
-            module = "copilot_cmp",
-        })
-    end
+    -- if IS_KNOWN then
+    --     use({
+    --         "zbirenbaum/copilot.lua",
+    --         event = { "VimEnter" },
+    --         config = function()
+    --             vim.defer_fn(function()
+    --                 require("copilot").setup()
+    --             end, 100)
+    --         end,
+    --     })
+    --     use({
+    --         "zbirenbaum/copilot-cmp",
+    --         module = "copilot_cmp",
+    --     })
+    -- end
 
     -- Telescope ==================================================================== --
     use("nvim-telescope/telescope.nvim")
