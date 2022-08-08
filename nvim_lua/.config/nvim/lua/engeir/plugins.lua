@@ -46,6 +46,7 @@ return packer.startup(function(use)
     use({ "nvim-treesitter/nvim-treesitter", run = ":TSUpdate" })
     use("ThePrimeagen/refactoring.nvim")
     use("nvim-treesitter/nvim-treesitter-context")
+    use("ziontee113/syntax-tree-surfer")
 
     -- LSP ========================================================================== --
     use("neovim/nvim-lspconfig") -- enable LSP
@@ -168,6 +169,7 @@ return packer.startup(function(use)
             require("colorizer").setup()
         end,
     })
+    use("ziontee113/color-picker.nvim")
     use("folke/todo-comments.nvim")
     use({
         "kyazdani42/nvim-tree.lua",
