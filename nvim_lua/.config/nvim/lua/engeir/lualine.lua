@@ -6,6 +6,12 @@ end
 local function getWords()
     return tostring(vim.fn.wordcount().words) .. " words"
 end
+local function getLines()
+    return tostring(vim.api.nvim_buf_line_count(0)) .. " lines"
+end
+local function getFileInfo()
+    return getWords() .. ", " .. getLines()
+end
 
 lualine.setup({
     options = {
@@ -23,7 +29,7 @@ lualine.setup({
                 "filename",
                 path = 3,
             },
-            { getWords },
+            { getFileInfo },
         },
     },
     extensions = {
