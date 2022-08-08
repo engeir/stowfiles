@@ -114,8 +114,18 @@ return packer.startup(function(use)
     })
     use("zbirenbaum/neodim")
     use("junegunn/vim-easy-align")
+    use({
+        "AckslD/nvim-FeMaco.lua",
+        config = 'require("femaco").setup()',
+    })
     if IS_KNOWN then
-        use("nvim-neorg/neorg")
+        -- use("nvim-neorg/neorg")
+        use({
+            "nvim-orgmode/orgmode",
+            config = function()
+                require("orgmode").setup({})
+            end,
+        })
     end
 
     -- cmp / completions ============================================================ --
