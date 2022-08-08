@@ -46,9 +46,15 @@ vim.api.nvim_create_autocmd({ "TextYankPost" }, {
 })
 
 -- Give syntax highlight to `.ncl` files
--- vim.api.nvim_create_autocmd({ "Syntax" }, {
---   callback = function()
--- print(vim.fn.expand("$MYVIMRC"))
--- vim.cmd([[ au! Syntax newlang source /home/een023/.config/nvim/syntax/ncl.vim ]])
---   end,
--- })
+local set_filetype_ncl = function()
+    vim.opt.filetype:append("ncl")
+end
+vim.api.nvim_create_autocmd({ "BufRead", "BufNewFile" }, {
+    pattern = "*.ncl",
+    callback = set_filetype_ncl,
+})
+local vim_set_ncl = "source /home/een023/.config/nvim/syntax/ncl.vim"
+vim.api.nvim_create_autocmd("Syntax", {
+    pattern = "newlang",
+    callback = vim_set_ncl,
+})
