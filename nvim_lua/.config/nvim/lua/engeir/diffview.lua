@@ -107,3 +107,7 @@ require("diffview").setup({
         },
     },
 })
+
+local opts = { silent = true, noremap = true }
+vim.keymap.set("n", "dc", ":DiffviewClose<cr>", opts)
+vim.keymap.set("n", "do", ":DiffviewOpen<cr>", opts)
