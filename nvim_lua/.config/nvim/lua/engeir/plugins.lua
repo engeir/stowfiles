@@ -109,10 +109,6 @@ return packer.startup(function(use)
         end,
     })
     use("monaqa/dial.nvim")
-    use({
-        "yamatsum/nvim-nonicons",
-        requires = { "kyazdani42/nvim-web-devicons" },
-    })
     use("zbirenbaum/neodim")
     use("junegunn/vim-easy-align")
     use({
