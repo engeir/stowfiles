@@ -1,7 +1,7 @@
-#!/bin//sh
+#!/bin/sh
 
 # List all open (but not current) sessions:
-selected=$(tmux list-sessions | grep -v attached | awk '{print $1}' | sed 's/:$//' | fzf)
+selected=$(tmux list-sessions | grep -v attached | awk '{print $1}' | sed 's/:$//' | fzf-tmux -p)
 
 [ -z "$selected" ] && exit 0
 

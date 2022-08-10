@@ -1,5 +1,7 @@
 #!/bin/bash
 
+# This script is a somewhat modified version of the blazingly awesome `tmux-sessionizer`
+# of @theprimeagen:
 # https://github.com/ThePrimeagen/.dotfiles/blob/master/bin/.local/bin/tmux-sessionizer
 
 if [[ $# -eq 1 ]]; then
@@ -28,7 +30,7 @@ else
     # items+=("$HOME/work")
     # items+=("$HOME/.dotfiles")
     # items+=("$HOME/ansible")
-    selected=$(echo "$items" | fzf)
+    selected=$(echo "$items" | fzf-tmux -p)
 
     # Exit if none is chosen
     [ -z "$selected" ] && exit
