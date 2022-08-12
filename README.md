@@ -1,6 +1,8 @@
 # Stowfiles
 
-![`cat engeir.txt | lolcat 2>/dev/null`](assets/logo.svg)
+<!-- rich-codex --skip-git-checks --use-pty --hide-command --terminal-width 46 --head 24 -->
+<!-- ![`cat engeir.txt | lolcat 2>/dev/null`](assets/logo.svg) -->
+![This is the altered version of the above](assets/logo-alt.svg)
 
 [![pre-commit](https://img.shields.io/badge/pre--commit-enabled-brightgreen?logo=pre-commit&logoColor=white)](https://github.com/pre-commit/pre-commit)
 
