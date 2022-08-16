@@ -47,6 +47,12 @@ return packer.startup(function(use)
     use("ThePrimeagen/refactoring.nvim")
     use("nvim-treesitter/nvim-treesitter-context")
     use("ziontee113/syntax-tree-surfer")
+    use({
+        "stevearc/aerial.nvim",
+        config = function()
+            require("aerial").setup()
+        end,
+    })
 
     -- LSP ========================================================================== --
     use("neovim/nvim-lspconfig") -- enable LSP

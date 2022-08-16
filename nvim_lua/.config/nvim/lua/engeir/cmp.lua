@@ -110,6 +110,7 @@ cmp.setup({
         { name = "path" },
         { name = "buffer", keyword_length = 5 },
         { name = "luasnip" }, -- For luasnip users.
+        { name = "orgmode" },
         { name = "copilot" },
         -- { name = "cmp_tabnine" },
     },

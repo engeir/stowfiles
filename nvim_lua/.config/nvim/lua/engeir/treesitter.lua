@@ -36,6 +36,7 @@ ts.setup({
         "lua",
         "markdown",
         "norg",
+        "org",
         "python",
         "scss",
         "toml",
