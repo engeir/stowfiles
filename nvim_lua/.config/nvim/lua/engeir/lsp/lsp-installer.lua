@@ -13,7 +13,6 @@ local servers = {
     "prosemd_lsp",
     "pyright",
     "rust_analyzer",
-    "sourcery",
     "sumneko_lua",
     "taplo",
     "tsserver",
@@ -22,6 +21,9 @@ local servers = {
     -- TODO: Need to figure out how to prevent format on save...
     -- "texlab",
 }
+if IS_KNOWN then
+    table.insert(servers, "sourcery")
+end
 
 lsp_installer.setup()
 
