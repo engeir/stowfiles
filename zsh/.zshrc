@@ -90,6 +90,9 @@ source ~/programs/command_line_apps/cdo-1.9.9/contrib/cdoCompletion.zsh 2>/dev/n
 # forgit
 source "$HOME/programs/forgit/forgit.plugin.zsh"
 
+# for tabby to recognize where I am
+precmd () { echo -n "\x1b]1337;CurrentDir=$(pwd)\x07" }
+
 # Change prompt:
 # PS1="%B%{$fg[red]%}[%{$fg[yellow]%}%n%{$fg[green]%}@%{$fg[blue]%}%M %{$fg[magenta]%}%~%{$fg[red]%}]%{$reset_color%}$%b "
 eval "$(starship init zsh)"
@@ -132,3 +135,6 @@ export GPG_TTY=$(tty)
 # bun
 export BUN_INSTALL="/home/een023/.bun"
 export PATH="$BUN_INSTALL/bin:$PATH"
+
+# Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
+export PATH="$PATH:$HOME/.rvm/bin"

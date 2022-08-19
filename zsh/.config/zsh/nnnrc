@@ -4,7 +4,7 @@
 export NNN_USE_EDITOR=1
 export NNN_PLUG='a:bookmarks;b:bibfinder;c:diffs;d:dragdrop;f:fzcd;i:ipinfo;m:viewmedia;o:organize;p:preview-tui2;r:rm-send;u:upgrade'
 # export NNN_PLUG='a:bookmarks;b:bibfinder;c:diffs;d:dragdrop;f:fzcd;i:ipinfo;m:viewmedia;o:organize;p:my_preview;r:rm-send;u:upgrade'
-export NNN_BMS='b:~/BoxSync/;c:~/.config/;d:~/Downloads/;l:~/.local;n:~/Documents/notes_papers/;m:~/stowfiles/;o:~/OneDrive/;p:~/programs/;r:~/science/ref/;s:~/bin/;t:~/Documents/teaching/;w:~/Documents/work/'
+export NNN_BMS='b:~/Pictures/;c:~/.config/;d:~/Downloads/;l:~/.local;n:~/Documents/notes_papers/;m:~/stowfiles/;o:~/OneDrive/;p:~/programs/;r:~/science/ref/;s:~/bin/;t:~/Documents/teaching/;w:~/Documents/work/'
 BLK="34" CHR="c9" DIR="e6" EXE="64" REG="fa" HARDLINK="81" SYMLINK="d6" MISSING="f0" ORPHAN="00" FIFO="06" SOCK="00" OTHER="58"
 # export NNN_FCOLORS='34c9E664fa81d6f000000058'
 # BLK="0B" CHR="0B" DIR="04" EXE="06" REG="00" HARDLINK="06" SYMLINK="06" MISSING="00" ORPHAN="09" FIFO="06" SOCK="0B" OTHER="06"
