@@ -79,10 +79,13 @@ draw_bold_text_with_bright_colors: false
 key_bindings:
   # Use this to re-map: https://eastmanreference.com/complete-list-of-applescript-key-codes
   # No, better use the app Key Codes
-  - { key: 25,      mods: Alt, chars: "]" }
-  - { key: 25,      mods: Alt|Shift, chars: "}" }
-  - { key: 26,      mods: Alt, chars: "|" }
-  - { key: 26,      mods: Alt|Shift, chars: "\\" }
-  - { key: 28,      mods: Alt, chars: "[" }
-  - { key: 28,      mods: Alt|Shift, chars: "{" }
+  #   Make alt+<key> work as alt+<key>
+  - { key: 25, mods: Alt,       chars: "]"     }
+  - { key: 25, mods: Alt|Shift, chars: "}"     }
+  - { key: 26, mods: Alt,       chars: "|"     }
+  - { key: 26, mods: Alt|Shift, chars: "\\"    }
+  - { key: 28, mods: Alt,       chars: "["     }
+  - { key: 28, mods: Alt|Shift, chars: "{"     }
+  - { key: P,  mods: Alt,       chars: "\x1bp" }
+  - { key: Q,  mods: Alt,       chars: "\x1bq" }
   # - { key: 30,      mods: Alt, chars: "~" }
