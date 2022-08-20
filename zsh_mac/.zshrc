@@ -74,6 +74,7 @@ export NNN_FCOLORS="$BLK$CHR$DIR$EXE$REG$HARDLINK$SYMLINK$MISSING$ORPHAN$FIFO$SO
 export NNN_FIFO=/tmp/nnn.fifo nnn
 export NNN_TRASH=1
 # fzf
+export FZF_DEFAULT_OPTS="--layout=reverse --height 100%"
 export FZF_DEFAULT_COMMAND='fd --type f'
 export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
 
