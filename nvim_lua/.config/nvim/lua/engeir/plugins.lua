@@ -94,6 +94,7 @@ return packer.startup(function(use)
     if IS_KNOWN and IS_LINUX then
         use({ "nvim-telescope/telescope-media-files.nvim", requires = { "nvim-lua/popup.nvim" } })
     end
+    use("samodostal/image.nvim")
 
     -- General text manipulation and fonts ========================================== --
     use("numToStr/Comment.nvim")
