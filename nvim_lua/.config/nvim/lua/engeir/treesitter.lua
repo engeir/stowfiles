@@ -23,6 +23,7 @@ ts.setup({
             "python",
             "toml",
             "vim",
+            "markdown", -- This is important. Without it, [s doesn't work in keymaps
         }, -- Spell check only in comments, not code, for the given languages
     },
     ensure_installed = {
