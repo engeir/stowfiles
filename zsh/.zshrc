@@ -1,3 +1,4 @@
+zmodload zsh/zprof  # Uncomment to run profiler (also last line)
 # Enable colors:
 autoload -U colors && colors
 
@@ -129,8 +130,9 @@ fi
 eval "$(atuin init zsh)"
 export GPG_TTY=$(tty)
 
+# This takes a moment to load (0.4-0.5 seconds), can be annoying
 # bun completions
-[ -s "/home/een023/.bun/_bun" ] && source "/home/een023/.bun/_bun"
+# [ -s "/home/een023/.bun/_bun" ] && source "/home/een023/.bun/_bun"
 
 # bun
 export BUN_INSTALL="/home/een023/.bun"
@@ -138,3 +140,4 @@ export PATH="$BUN_INSTALL/bin:$PATH"
 
 # Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
 export PATH="$PATH:$HOME/.rvm/bin"
+zprof  # Uncomment to run profiler (also first line)
