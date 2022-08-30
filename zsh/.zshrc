@@ -1,4 +1,4 @@
-zmodload zsh/zprof  # Uncomment to run profiler (also last line)
+# zmodload zsh/zprof  # Uncomment to run profiler (also last line)
 # Enable colors:
 autoload -U colors && colors
 
@@ -140,4 +140,4 @@ export PATH="$BUN_INSTALL/bin:$PATH"
 
 # Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
 export PATH="$PATH:$HOME/.rvm/bin"
-zprof  # Uncomment to run profiler (also first line)
+# zprof  # Uncomment to run profiler (also first line)
