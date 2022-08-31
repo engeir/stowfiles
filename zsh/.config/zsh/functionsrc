@@ -7,10 +7,19 @@
 # }
 
 peek() {
-    # cat a file that is in PATH
+    # cat a file that is on PATH
     cat "$(which "$1")"
 }
 compdef _whereis peek
+
+nvp() {
+    # edit a file that is on PATH
+    if [ -z "$1" ]; then
+        echo "Usage: edit a file on PATH with neovim. Any argument that works with whereis works with nvp as well."
+    fi
+    nvim "$(which "$1")"
+}
+compdef _whereis nvp
 
 batdiff() {
     if [ "$1" = "--staged" ]; then
@@ -22,14 +31,14 @@ batdiff() {
 
 # Change cursor for vi modes:
 zle_keymap_select() {
-    if [[ ${KEYMAP} == vicmd ]] ||
+    if [[ $KEYMAP == vicmd ]] ||
         [[ $1 = 'block' ]]; then
-            echo -ne '\e[1 q'
-        elif [[ ${KEYMAP} == main ]] ||
-            [[ ${KEYMAP} == viins ]] ||
-            [[ ${KEYMAP} = '' ]] ||
-            [[ $1 = 'beam' ]]; then
-                    echo -ne '\e[5 q'
+        echo -ne '\e[1 q'
+    elif [[ $KEYMAP == main ]] ||
+        [[ $KEYMAP == viins ]] ||
+        [[ $KEYMAP = '' ]] ||
+        [[ $1 = 'beam' ]]; then
+        echo -ne '\e[5 q'
     fi
 }
 zle -N zle_keymap_select
