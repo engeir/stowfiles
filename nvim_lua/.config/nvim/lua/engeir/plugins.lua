@@ -126,6 +126,12 @@ return packer.startup(function(use)
             end,
         })
     end
+    use({
+        "gaoDean/autolist.nvim",
+        config = function()
+            require("autolist").setup()
+        end,
+    })
 
     -- cmp / completions ============================================================ --
     use("hrsh7th/nvim-cmp") -- The completion plugin
@@ -156,15 +162,12 @@ return packer.startup(function(use)
     use("rhysd/committia.vim")
     use({ "kdheepak/lazygit.nvim", cond = EXECUTABLE("lazygit") })
 
-    -- Style and colorschemes ======================================================= --
+    -- Style and colour schemes ===================================================== --
     use("nvim-lualine/lualine.nvim")
     use({
         "akinsho/bufferline.nvim",
         tag = "v2.*",
         requires = "kyazdani42/nvim-web-devicons",
-        config = function()
-            require("bufferline").setup()
-        end,
     })
     use("sainnhe/gruvbox-material")
     use("tjdevries/colorbuddy.vim")
