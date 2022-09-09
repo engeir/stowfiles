@@ -1,0 +1,8 @@
+#!/bin/sh
+
+cd /home/een023/programs/neovim || exit 1
+
+git pull
+sudo make distclean
+sudo make CMAKE_BUILD_TYPE=RelWithDebInfo
+sudo make install
