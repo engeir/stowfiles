@@ -16,8 +16,9 @@ nvp() {
     # edit a file that is on PATH
     if [ -z "$1" ]; then
         echo "Usage: edit a file on PATH with neovim. Any argument that works with whereis works with nvp as well."
+    else
+        nvim "$(which "$1")"
     fi
-    nvim "$(which "$1")"
 }
 compdef _whereis nvp
 
