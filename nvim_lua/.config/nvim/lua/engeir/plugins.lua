@@ -170,6 +170,7 @@ return packer.startup(function(use)
         requires = "kyazdani42/nvim-web-devicons",
     })
     use("sainnhe/gruvbox-material")
+    use({ "catppuccin/nvim", as = "catppuccin" })
     use("tjdevries/colorbuddy.vim")
     use("tjdevries/gruvbuddy.nvim")
     use("marko-cerovac/material.nvim")
