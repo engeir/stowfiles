@@ -138,6 +138,9 @@ export GPG_TTY=$(tty)
 export BUN_INSTALL="/home/een023/.bun"
 export PATH="$BUN_INSTALL/bin:$PATH"
 
+# bob
+export PATH="/home/een023/.local/share/neovim/bin:$PATH"
+
 # Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
 export PATH="$PATH:$HOME/.rvm/bin"
 # zprof  # Uncomment to run profiler (also first line)
