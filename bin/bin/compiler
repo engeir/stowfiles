@@ -73,7 +73,8 @@ py) if [ -z "$(sed -n 's/^#!//p' "$file")" ]; then python "$file"; else "$(sed -
 rs) cargo build ;;
 sass) sassc -a "$file" "$base.css" ;;
 scad) openscad -o "$base".stl "$file" ;;
-sent) setsid -f sent "$file" 2>/dev/null ;;
+sent) sent "$file" ;;
+# sent) setsid -f sent "$file" 2>/dev/null ;;
 tex) textype "$file" ;;
 *) head -n1 "$file" | grep "^#!/" | sed "s/^#!//" | xargs -r -I % "$file" ;;
 esac

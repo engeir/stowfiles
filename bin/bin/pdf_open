@@ -9,7 +9,7 @@ DIR2="/home/een023/science/"
 echo "$DIR1"
 
 cd ~ || exit 1
-c=$(fdfind -H . -e 'pdf' "$DIR1" "$DIR2" | grep -o ".*pdf$" | awk -F'/' '{print $NF}' | dmenu -i -b -l 20)
+c=$(fdfind . -e 'pdf' "$DIR1" "$DIR2" | grep -o ".*pdf$" | awk -F'/' '{print $NF}' | dmenu -i -b -l 20)
 
 # Exit if none is chosen
 [ -z "$c" ] && exit
