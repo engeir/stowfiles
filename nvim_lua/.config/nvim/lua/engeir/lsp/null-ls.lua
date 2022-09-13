@@ -7,14 +7,15 @@ end
 local formatting = null_ls.builtins.formatting
 -- https://github.com/jose-elias-alvarez/null-ls.nvim/tree/main/lua/null-ls/builtins/diagnostics
 local diagnostics = null_ls.builtins.diagnostics
-local code_actions = null_ls.builtins.code_actions
+-- local code_actions = null_ls.builtins.code_actions
 
 -- https://github.com/prettier-solidity/prettier-plugin-solidity
 null_ls.setup({
     debug = false,
     sources = {
-        code_actions.gitsigns,
-        code_actions.proselint,
+        -- Stopped working all of a sudden. Crashes `gq<motion>`.
+        -- code_actions.gitsigns,
+        -- code_actions.proselint,
         -- code_actions.refactoring,
         -- diagnostics.flake8,
         diagnostics.golangci_lint,
@@ -23,7 +24,7 @@ null_ls.setup({
             extra_args = { "-c", vim.fn.expand("~") .. "/.config/mdl/.markdownlint.jsonc" },
         }),
         diagnostics.mypy,
-        diagnostics.proselint,
+        -- diagnostics.proselint,
         diagnostics.pydocstyle,
         diagnostics.shellcheck,
         formatting.bibclean.with({ extra_args = { "--max-width", "0", "--no-fix-names" } }),

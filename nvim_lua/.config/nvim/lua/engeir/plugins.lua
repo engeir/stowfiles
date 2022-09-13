@@ -119,12 +119,7 @@ return packer.startup(function(use)
     })
     if IS_KNOWN then
         -- use("nvim-neorg/neorg")
-        use({
-            "nvim-orgmode/orgmode",
-            config = function()
-                require("orgmode").setup({})
-            end,
-        })
+        use("nvim-orgmode/orgmode")
     end
     use({
         "gaoDean/autolist.nvim",
@@ -213,6 +208,11 @@ return packer.startup(function(use)
     use("ThePrimeagen/harpoon")
     use({ "ellisonleao/glow.nvim", branch = "main" })
     use("goolord/alpha-nvim")
+    -- Jupyter notebooks
+    if IS_KNOWN and IS_LINUX then
+        use({ "dccsillag/magma-nvim", run = ":UpdateRemotePlugins" })
+        use("goerz/jupytext.vim")
+    end
 
     -- Automatically set up your configuration after cloning packer.nvim
     -- Put this at the end after all plugins
