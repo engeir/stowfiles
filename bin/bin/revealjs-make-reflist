@@ -1,0 +1,16 @@
+#!/bin/sh
+
+# Check if "Added by revealjs-make-reflist" is in file, and delete everything after (and
+# including) that comment
+sed -i '/<!-- Start adding with revealjs-make-reflist -->/,/<!-- End adding with revealjs-make-reflist -->/d' "$1"
+
+# Save file content to variable for use in the brace below
+FILE="$1"
+# Append start line, content and end line to file
+{
+    echo "<!-- Start adding with revealjs-make-reflist -->"
+    echo "---"
+    /bin/python ~/bin/revealjs-make-reflist.py "$FILE" | pandoc --bibliography ~/science/ref/ref.bib --citeproc | /bin/python ~/bin/revealjs-make-reflist.py
+    echo "<!-- End adding with revealjs-make-reflist -->"
+} >> "$1"
+# /bin/python ~/bin/revealjs-make-reflist.py "$1" | pandoc --bibliography ~/science/ref/ref.bib --filter pandoc-citeproc -o references.html
