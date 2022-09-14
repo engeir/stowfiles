@@ -33,6 +33,7 @@ borg create \
     --exclude-caches \
     --exclude '/home/*/.cache/*' \
     --exclude '/home/een023/.config/Code - Insiders' \
+    --exclude '/home/een023/.local/share' \
     --exclude '/home/een023/.config/nnn/mounts' \
     --exclude '/home/een023/.mozilla' \
     --exclude '/home/een023/.pyenv/versions' \

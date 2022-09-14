@@ -2,20 +2,20 @@
 
 # Run any of the custom scripts from ~/bin
 
-choises="passwords\nfram status\npoweroff\nopen pdf\ninspect system\nemojis\nhtml-symbols\nweather\nchange wallpaper\nlayouts\nfind text\nread QR"
+choises="passwords\npoweroff\nopen pdf\ninspect system\nemojis\nhtml-symbols\nweather\nchange wallpaper\nlayouts\nfind word definition\nfind text\nread QR\nfram status"
 chosen=$(echo "$choises" | dmenu -i -l 20 -p "Choose a script to run:")
 case "$chosen" in
 "change wallpaper") wallpaper ;;
 "emojis") emojis ;;
-"html-symbols") html-symbols ;;
-"fram status") fram_job_status ;;
-"inspect system") inspect_system ;;
 "find text") find_txt ;;
-"read QR") read_qr ;;
+"find word definition") ~/programs/word-lookup/word-lookup.sh ;;
+"fram status") fram_job_status ;;
+"html-symbols") html-symbols ;;
+"inspect system") inspect_system ;;
 "layouts") layout ;;
-    # "open pdf") pdf2 ;;
 "open pdf") pdf_open_all ;;
 "passwords") passmenu ;;
 "poweroff") poweroff ;;
+"read QR") read_qr ;;
 "weather") weather ;;
 esac
