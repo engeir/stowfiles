@@ -16,8 +16,6 @@ alt + F1
 	# dmenu_run -nb '#000000' -nf "#3CB371" -sb "#3CB371" -fn 3
 	#dmenu_run -nb '#000000' -nf "#00008B" -sb "#00008B" -fn 3
 
-super + alt + @space
-	~/.config/rofi/launchers/misc/launcher.sh &
 # Run custom scripts
 super + alt + x
 	~/bin/custom_scripts &
@@ -44,9 +42,12 @@ super + alt + z
 
 # Rofi App Launcher
 super + @space
-    rofi -show drun -theme $HOME/programs/command_line_apps/rofi-collection/gruvbox/gruvbox.rasi
+    rofi -show drun -theme $HOME/programs/command_line_apps/rofi-collection/nord/nord.rasi
 	# sh ~/.config/bspwm/rofi/bin/launcher
-
+super + alt + @space
+	~/.config/rofi/launchers/misc/launcher.sh &
+super + {_,alt +} d
+    rofi -show {window,run} -theme $HOME/programs/command_line_apps/rofi-collection/nord/nord.rasi
 # # Rofi Network Menu (nmd is not installed)
 # super + n
 # 	nmd
@@ -223,8 +224,6 @@ super + {h,j,k,l}
 #
 # my additions
 #
-super + {_,alt +} d
-    rofi -show {window,run} -theme $HOME/programs/command_line_apps/rofi-collection/gruvbox/gruvbox.rasi
 #super + {_,shift + } d
 #	{rofis || rofi -show run,lighthouse | sh}
 ##,dmenu_run -i -p "Search: "}
