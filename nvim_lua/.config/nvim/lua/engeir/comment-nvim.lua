@@ -7,3 +7,4 @@ comment.setup()
 
 local ft = require("Comment.ft")
 ft.set("ncl", ";%s")
+ft.set("sent", "#%s")
