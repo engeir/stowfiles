@@ -36,7 +36,11 @@ local function footer()
     -- local fortune = handle:read("*a")
     -- handle:close()
     -- return fortune
-    return "Nvim Config by @engeir"
+    local handle = io.popen("nvim --version")
+    local result = "Config by @engeir — " .. string.match(handle:read("*a"), "NVIM v[^\n]*")
+    handle:close()
+    return result
+    -- return "Nvim Config by @engeir"
 end
 
 dashboard.section.footer.val = footer()
