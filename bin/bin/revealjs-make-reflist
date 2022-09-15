@@ -13,4 +13,3 @@ FILE="$1"
     /bin/python ~/bin/revealjs-make-reflist.py "$FILE" | pandoc --bibliography ~/science/ref/ref.bib --citeproc | /bin/python ~/bin/revealjs-make-reflist.py
     echo "<!-- End adding with revealjs-make-reflist -->"
 } >> "$1"
-# /bin/python ~/bin/revealjs-make-reflist.py "$1" | pandoc --bibliography ~/science/ref/ref.bib --filter pandoc-citeproc -o references.html
