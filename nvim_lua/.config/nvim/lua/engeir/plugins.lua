@@ -213,6 +213,8 @@ return packer.startup(function(use)
         use({ "dccsillag/magma-nvim", run = ":UpdateRemotePlugins" })
         use("goerz/jupytext.vim")
     end
+    -- Latex
+    use("lervag/vimtex")
 
     -- Automatically set up your configuration after cloning packer.nvim
     -- Put this at the end after all plugins

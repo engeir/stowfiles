@@ -12,36 +12,36 @@ local diagnostics = null_ls.builtins.diagnostics
 -- https://github.com/prettier-solidity/prettier-plugin-solidity
 null_ls.setup({
     debug = false,
+    -- Stopped working all of a sudden. Crashes `gq<motion>`.
     sources = {
-        -- Stopped working all of a sudden. Crashes `gq<motion>`.
-        -- code_actions.gitsigns,
-        -- code_actions.proselint,
-        -- code_actions.refactoring,
-        -- diagnostics.flake8,
-        diagnostics.golangci_lint,
-        diagnostics.jsonlint,
-        diagnostics.markdownlint.with({
-            extra_args = { "-c", vim.fn.expand("~") .. "/.config/mdl/.markdownlint.jsonc" },
-        }),
-        diagnostics.mypy,
-        -- diagnostics.proselint,
-        diagnostics.pydocstyle,
-        diagnostics.shellcheck,
-        formatting.bibclean.with({ extra_args = { "--max-width", "0", "--no-fix-names" } }),
-        formatting.black.with({ extra_args = { "--fast" } }),
-        formatting.fixjson,
-        formatting.gofmt,
-        formatting.latexindent,
-        -- formatting.markdownlint.with({
+        -- -- code_actions.gitsigns,
+        -- -- code_actions.proselint,
+        -- -- code_actions.refactoring,
+        -- -- diagnostics.flake8,
+        -- diagnostics.golangci_lint,
+        -- diagnostics.jsonlint,
+        -- diagnostics.markdownlint.with({
         --     extra_args = { "-c", vim.fn.expand("~") .. "/.config/mdl/.markdownlint.jsonc" },
-        -- }), -- Using `prettierd` instead
-        formatting.prettierd.with({
-            filetypes = { "yml", "yaml", "toml", "md", "markdown" },
-            -- args = { "--no-semi", "--single-quote", "--jsx-single-quote" },
-        }),
-        formatting.shellharden,
-        formatting.shfmt.with({ extra_args = { "-i=4" } }),
-        formatting.stylua.with({ extra_args = { "--indent-type=Spaces" } }),
-        formatting.taplo,
+        -- }),
+        -- diagnostics.mypy,
+        -- -- diagnostics.proselint,
+        -- diagnostics.pydocstyle,
+        -- diagnostics.shellcheck,
+        -- formatting.bibclean.with({ extra_args = { "--max-width", "0", "--no-fix-names" } }),
+        -- formatting.black.with({ extra_args = { "--fast" } }),
+        -- formatting.fixjson,
+        -- formatting.gofmt,
+        -- formatting.latexindent,
+        -- -- formatting.markdownlint.with({
+        -- --     extra_args = { "-c", vim.fn.expand("~") .. "/.config/mdl/.markdownlint.jsonc" },
+        -- -- }), -- Using `prettierd` instead
+        -- formatting.prettierd.with({
+        --     filetypes = { "yml", "yaml", "toml", "md", "markdown" },
+        --     -- args = { "--no-semi", "--single-quote", "--jsx-single-quote" },
+        -- }),
+        -- formatting.shellharden,
+        -- formatting.shfmt.with({ extra_args = { "-i=4" } }),
+        -- formatting.stylua.with({ extra_args = { "--indent-type=Spaces" } }),
+        -- formatting.taplo,
     },
 })
