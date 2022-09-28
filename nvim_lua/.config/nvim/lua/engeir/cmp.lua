@@ -31,7 +31,7 @@ local kind_icons = {
     Value = "",
     Enum = "",
     Keyword = "",
-    Snippet = "",
+    Snippet = "✂️",
     Color = "",
     File = "",
     Reference = "",
@@ -108,8 +108,8 @@ cmp.setup({
         { name = "nvim_lsp" },
         { name = "nvim_lua" },
         { name = "path" },
-        { name = "buffer", keyword_length = 5 },
         { name = "luasnip" }, -- For luasnip users.
+        { name = "buffer", keyword_length = 4 },
         -- { name = "orgmode" },
         { name = "copilot" },
         -- { name = "cmp_tabnine" },
