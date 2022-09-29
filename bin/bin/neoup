@@ -1,6 +1,6 @@
 #!/bin/sh
 
-cd /home/een023/programs/neovim || exit 1
+cd ~/programs/neovim || exit 1
 
 git pull
 sudo make distclean
