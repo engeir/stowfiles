@@ -53,7 +53,7 @@ require("telescope").setup({
         },
         live_grep = {
             layout_strategy = "vertical",
-        }
+        },
     },
     extensions = {
         bibtex = {
@@ -64,6 +64,15 @@ require("telescope").setup({
             -- Fallback to global/directory .bib files if context not found
             -- This setting has no effect if context = false
             context_fallback = true,
+            -- Custom format for HTML referencing
+            custom_formats = {
+                {
+                    id = "myFormat",
+                    -- citation_format = '<a href="https://doi.org/{{doi}}" data-citation-key="@{{label}}">{{author}}</a>',
+                    cite_marker = "#%s#",
+                },
+            },
+            citation_format = '<a href="https://doi.org/{{doi}}" data-citation-key="@{{label}}">{{author}} ({{year}})</a>',
         },
         media_files = {
             -- filetypes whitelist
