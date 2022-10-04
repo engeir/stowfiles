@@ -88,6 +88,8 @@ require("luasnip.loaders.from_vscode").lazy_load({ paths = { "~/.config/nvim/lua
 ls.add_snippets("all", {
     ls.parser.parse_snippet("expandme", "-- hello there"),
 })
+
+-- Lua =================================================================================
 ls.add_snippets("lua", {
     -- Lua specific snippets go here.
     s(
@@ -98,6 +100,8 @@ ls.add_snippets("lua", {
         )
     ),
 })
+
+-- Markdown ============================================================================
 ls.add_snippets("markdown", {
     s({ trig = "frr", snippetType = "autosnippet" }, {
         t("\\frac{"),
@@ -107,6 +111,8 @@ ls.add_snippets("markdown", {
         t("}"),
     }),
 })
+
+-- Tex =================================================================================
 ls.add_snippets("tex", {
     -- rec_ls is self-referencing. That makes this snippet 'infinite' eg. have as many
     -- \item as necessary by utilizing a choiceNode.
@@ -119,13 +125,3 @@ ls.add_snippets("tex", {
 }, {
     key = "tex",
 })
-
--- -- set type to "autosnippets" for adding autotriggered snippets.
--- ls.add_snippets("all", {
--- 	s("autotrigger", {
--- 		t("autosnippet"),
--- 	}),
--- }, {
--- 	type = "autosnippets",
--- 	key = "all_auto",
--- })
