@@ -1,3 +1,4 @@
 helix/.config/helix/runtime
 packer_compiled.lua
 **/spell/**
+newsboat/.newsboat/cache.db
