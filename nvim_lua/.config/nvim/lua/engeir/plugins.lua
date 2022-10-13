@@ -47,10 +47,10 @@ return packer.startup(function(use)
 
     -- Syntax and other good stuff ================================================== --
     use({ "nvim-treesitter/nvim-treesitter", run = ":TSUpdate" })
-    use("ThePrimeagen/refactoring.nvim")
     use("nvim-treesitter/nvim-treesitter-context")
-    use("ziontee113/syntax-tree-surfer")
     use("stevearc/aerial.nvim")
+    use("RRethy/vim-illuminate")
+    use("zbirenbaum/neodim")
     use({
         "vigoux/notifier.nvim",
         config = function()
@@ -59,29 +59,17 @@ return packer.startup(function(use)
             })
         end,
     })
+    if IS_KNOWN then
+        use("ThePrimeagen/refactoring.nvim")
+        use("ziontee113/syntax-tree-surfer")
+    end
 
     -- LSP ========================================================================== --
     use("neovim/nvim-lspconfig") -- enable LSP
     use("williamboman/nvim-lsp-installer") -- simple to use language server installer
     use("jose-elias-alvarez/null-ls.nvim") -- for formatters and linters
-    use("RRethy/vim-illuminate")
     use("tami5/lspsaga.nvim")
     use("ray-x/lsp_signature.nvim")
-    -- if IS_KNOWN then
-    --     use({
-    --         "zbirenbaum/copilot.lua",
-    --         event = { "VimEnter" },
-    --         config = function()
-    --             vim.defer_fn(function()
-    --                 require("copilot").setup()
-    --             end, 100)
-    --         end,
-    --     })
-    --     use({
-    --         "zbirenbaum/copilot-cmp",
-    --         module = "copilot_cmp",
-    --     })
-    -- end
 
     -- Telescope ==================================================================== --
     use("nvim-telescope/telescope.nvim")
@@ -109,7 +97,7 @@ return packer.startup(function(use)
     use("samodostal/image.nvim")
 
     -- General text manipulation and fonts ========================================== --
-    use({"ibhagwan/smartyank.nvim"})
+    use({ "ibhagwan/smartyank.nvim" })
     use("numToStr/Comment.nvim")
     use({
         "kylechui/nvim-surround",
@@ -123,14 +111,13 @@ return packer.startup(function(use)
             require("nvim-autopairs").setup({})
         end,
     })
-    use("monaqa/dial.nvim")
-    use("zbirenbaum/neodim")
-    use("junegunn/vim-easy-align")
-    use({
-        "AckslD/nvim-FeMaco.lua",
-        config = 'require("femaco").setup()',
-    })
     if IS_KNOWN then
+        use("monaqa/dial.nvim")
+        use("junegunn/vim-easy-align")
+        use({
+            "AckslD/nvim-FeMaco.lua",
+            config = 'require("femaco").setup()',
+        })
         -- use("nvim-neorg/neorg")
         use("nvim-orgmode/orgmode")
     end
@@ -151,7 +138,9 @@ return packer.startup(function(use)
 
     -- snippets ===================================================================== --
     use("L3MON4D3/LuaSnip")
-    use("rafamadriz/friendly-snippets")
+    if IS_KNOWN then
+        use("rafamadriz/friendly-snippets")
+    end
 
     -- Git some shit done =========================================================== --
     use({
@@ -161,15 +150,17 @@ return packer.startup(function(use)
     -- TODO: understand how to ackshually use this
     use("mbbill/undotree")
     use("sindrets/diffview.nvim")
-    use("TimUntersberger/neogit") -- To commit quickly and view
+    if IS_KNOWN then
+        use("TimUntersberger/neogit") -- To commit quickly and view
+        use("rhysd/committia.vim")
+        use({ "kdheepak/lazygit.nvim", cond = EXECUTABLE("lazygit") })
+    end
     use({
         "ruifm/gitlinker.nvim",
         config = function()
             require("gitlinker").setup()
         end,
     }) -- Quickly get a permalink to lines of code
-    use("rhysd/committia.vim")
-    use({ "kdheepak/lazygit.nvim", cond = EXECUTABLE("lazygit") })
 
     -- Style and colour schemes ===================================================== --
     use("nvim-lualine/lualine.nvim")
@@ -210,7 +201,9 @@ return packer.startup(function(use)
     -- TODO: set up dap
 
     -- Miscellaneous ================================================================ --
-    use({ "akinsho/toggleterm.nvim", tag = "v1.*" })
+    if IS_KNOWN then
+        use({ "akinsho/toggleterm.nvim", tag = "v1.*" })
+    end
     use("voldikss/vim-floaterm")
     use("airblade/vim-rooter")
     use("ThePrimeagen/harpoon")
