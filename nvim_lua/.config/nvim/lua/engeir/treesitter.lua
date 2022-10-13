@@ -6,7 +6,7 @@ end
 ts.setup({
     highlight = {
         enable = true,
-        disable = {},
+        -- disable = {},
         custom_captures = {
             -- Highlight the @foo.bar capture group with the "Identifier" highlight group.
             ["foo.bar"] = "Identifier",
@@ -16,14 +16,13 @@ ts.setup({
         -- Using this option may slow down your editor, and you may see some duplicate highlights.
         -- Instead of true it can also be a list of languages
         additional_vim_regex_highlighting = {
-            "bash",
-            "go",
-            "latex",
-            "lua",
-            "python",
-            "toml",
-            "vim",
-            "markdown", -- This is important. Without it, [s doesn't work in keymaps
+            -- "bash",
+            -- "go",
+            -- "latex",
+            -- "lua",
+            -- "python",
+            -- "toml",
+            -- "vim",
         }, -- Spell check only in comments, not code, for the given languages
     },
     ensure_installed = {

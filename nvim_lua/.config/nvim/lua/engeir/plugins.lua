@@ -42,12 +42,23 @@ return packer.startup(function(use)
     -- Packer can manage itself ===================================================== --
     use("wbthomason/packer.nvim")
 
+    -- Performance ================================================================== --
+    use("lewis6991/impatient.nvim")
+
     -- Syntax and other good stuff ================================================== --
     use({ "nvim-treesitter/nvim-treesitter", run = ":TSUpdate" })
     use("ThePrimeagen/refactoring.nvim")
     use("nvim-treesitter/nvim-treesitter-context")
     use("ziontee113/syntax-tree-surfer")
     use("stevearc/aerial.nvim")
+    use({
+        "vigoux/notifier.nvim",
+        config = function()
+            require("notifier").setup({
+                -- You configuration here
+            })
+        end,
+    })
 
     -- LSP ========================================================================== --
     use("neovim/nvim-lspconfig") -- enable LSP
@@ -74,6 +85,7 @@ return packer.startup(function(use)
 
     -- Telescope ==================================================================== --
     use("nvim-telescope/telescope.nvim")
+    use({ "axkirillov/easypick.nvim", requires = "nvim-telescope/telescope.nvim" })
     use("nvim-telescope/telescope-bibtex.nvim")
     use({
         "AckslD/nvim-neoclip.lua",
@@ -97,6 +109,7 @@ return packer.startup(function(use)
     use("samodostal/image.nvim")
 
     -- General text manipulation and fonts ========================================== --
+    use({"ibhagwan/smartyank.nvim"})
     use("numToStr/Comment.nvim")
     use({
         "kylechui/nvim-surround",
@@ -189,12 +202,6 @@ return packer.startup(function(use)
     use("mechatroner/rainbow_csv")
 
     -- Correct spelling and fix grammar ============================================= --
-    use({
-        "lewis6991/spellsitter.nvim",
-        config = function()
-            require("spellsitter").setup()
-        end,
-    })
     if IS_KNOWN then
         use("brymer-meneses/grammar-guard.nvim")
         use("anufrievroman/vim-angry-reviewer")
