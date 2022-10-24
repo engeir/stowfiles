@@ -97,7 +97,7 @@ return packer.startup(function(use)
     use("samodostal/image.nvim")
 
     -- General text manipulation and fonts ========================================== --
-    use({ "ibhagwan/smartyank.nvim" })
+    -- use({ "ibhagwan/smartyank.nvim" })
     use("numToStr/Comment.nvim")
     use({
         "kylechui/nvim-surround",
@@ -216,6 +216,8 @@ return packer.startup(function(use)
     end
     -- Latex
     use("lervag/vimtex")
+    -- Python venv
+    use("AckslD/swenv.nvim")
 
     -- Automatically set up your configuration after cloning packer.nvim
     -- Put this at the end after all plugins
