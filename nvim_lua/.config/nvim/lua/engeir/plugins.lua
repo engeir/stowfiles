@@ -112,7 +112,7 @@ return packer.startup(function(use)
         end,
     })
     if IS_KNOWN then
-        use("monaqa/dial.nvim")
+        use("nat-418/boole.nvim")
         use("junegunn/vim-easy-align")
         use({
             "AckslD/nvim-FeMaco.lua",
