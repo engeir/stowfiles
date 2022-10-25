@@ -216,6 +216,8 @@ return packer.startup(function(use)
     end
     -- Latex
     use("lervag/vimtex")
+    -- My plugins
+    use("engeir/githistory-browse.nvim")
 
     -- Automatically set up your configuration after cloning packer.nvim
     -- Put this at the end after all plugins
