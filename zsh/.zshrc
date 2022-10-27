@@ -128,6 +128,8 @@ else
 fi
 
 eval "$(atuin init zsh)"
+eval "$(atuin gen-completions --shell zsh --out-dir $HOME/.config/zsh/atuin_completion)"
+fpath+="$HOME"/.config/zsh/atuin_completion
 export GPG_TTY=$(tty)
 
 # This takes a moment to load (0.4-0.5 seconds), can be annoying
