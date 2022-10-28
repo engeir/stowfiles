@@ -3,11 +3,9 @@
 # General
 alias cat="bat"
 alias evrc="nvim ~/.vimrc"
-alias gin="git --no-pager"
 alias has="HAS_ALLOW_UNSAFE=y has"
 # alias ls="lsd -FA --group-dirs first"
-# exa has slightly better icons I think (.git and .github dirs icons are different from
-# lsd)
+# exa has slightly better icons I think (.git and .github dirs icons are different from lsd)
 alias ls="exa --icons -Fa  --group-directories-first"
 alias nnn="nnn -derH"
 alias nv="nvim"
@@ -17,6 +15,7 @@ alias screenkey="screenkey --opacity 0.3 --bak-mode normal -M -f 'DejaVu Sans Mo
 alias tks="tmux kill-session -t"
 alias v="vim"
 alias wezterm='flatpak run org.wezfurlong.wezterm'
+alias so="source ~/.zshrc"
 
 # Dotfiles
 alias dotconfig='/usr/bin/git --git-dir=$HOME/dotfiles/ --work-tree=$HOME'
@@ -56,6 +55,10 @@ alias saFRAM="ssh-add ~/.ssh/id_sigma2"
 alias cpfram="cp ~/.kb/data/cheatsheet/fram ~/Documents/notes_papers/_includes/fram_cheat.md"
 
 # Github
+alias gin="git --no-pager"
+alias gic="git commit"
+alias gip="git push"
+alias gpull="git pull --ff-only"
 alias saGITHUB="ssh-add ~/.ssh/id_github"
 
 # More SSH
