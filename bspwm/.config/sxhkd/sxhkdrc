@@ -26,6 +26,10 @@ super + alt + p
 	# ~/.config/sxhkd/display.sh
 super + alt + w
     ~/programs/word-lookup/word-lookup.sh &
+super + alt + b
+    ~/bin/new-bookmark.sh &
+super + alt + t
+    ~/bin/type-bookmark.sh &
 # make sxhkd reload its configuration files:
 super + Escape
 	pkill -USR1 -x sxhkd
