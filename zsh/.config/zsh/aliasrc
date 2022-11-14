@@ -37,9 +37,11 @@ alias space="ncdu --exclude Dropbox --exclude BoxSync --exclude OneDrive --exclu
 
 # Open programs
 alias f="fuck"
-alias yt="ytfzf -t"
-alias vpn="/opt/cisco/anyconnect/bin/vpnui"
+alias lg="lazygit"
 alias nikkerud="~/betty/main.rb"
+alias nvb="nvim ~/.local/share/bookmarks/bookmarks.sh"
+alias vpn="/opt/cisco/anyconnect/bin/vpnui"
+alias yt="ytfzf -t"
 
 # reMarkable related
 alias rmv="rmview ~/programs/rmview/rmview.json"
@@ -57,7 +59,7 @@ alias cpfram="cp ~/.kb/data/cheatsheet/fram ~/Documents/notes_papers/_includes/f
 # Github
 alias gin="git --no-pager"
 alias gic="git commit"
-alias gip="git push"
+alias gip="git push -u origin main"
 alias gpull="git pull --ff-only"
 alias saGITHUB="ssh-add ~/.ssh/id_github"
 
