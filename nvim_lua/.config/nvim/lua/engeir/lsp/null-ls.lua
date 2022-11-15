@@ -11,7 +11,7 @@ local diagnostics = null_ls.builtins.diagnostics
 
 -- https://github.com/prettier-solidity/prettier-plugin-solidity
 null_ls.setup({
-    debug = false,
+    debug = true,
     -- Stopped working all of a sudden. Crashes `gq<motion>`.
     sources = {
         -- code_actions.gitsigns,
@@ -27,6 +27,7 @@ null_ls.setup({
         -- diagnostics.proselint,
         diagnostics.pydocstyle,
         diagnostics.shellcheck,
+        formatting.beautysh,
         formatting.bibclean.with({ extra_args = { "--max-width", "0", "--no-fix-names" } }),
         formatting.black.with({ extra_args = { "--fast" } }),
         formatting.fixjson,
