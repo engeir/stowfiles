@@ -11,9 +11,6 @@ neogit.setup({
     },
 })
 
-nmap({ "<space>vv", ":DiffviewOpen<CR>" })
-nmap({ "<space>vc", ":DiffviewClose<CR>" })
-
 nmap({ "<leader>gs", neogit.open })
 nmap({
     "<leader>gc",
