@@ -87,6 +87,7 @@ require("luasnip.loaders.from_vscode").lazy_load({ paths = { "~/.config/nvim/lua
 -- Create some snippets
 ls.add_snippets("all", {
     ls.parser.parse_snippet("expandme", "-- hello there"),
+    ls.parser.parse_snipmate("weeknum", "`strftime('%U')`")
 })
 
 -- Lua =================================================================================
@@ -121,6 +122,13 @@ ls.add_snippets("tex", {
         i(1),
         d(2, rec_ls, {}),
         t({ "", "\\end{itemize}" }),
+    }),
+    s("frame", {
+        t({ "\\begin{frame}{" }),
+        i(1, "Frame Title"),
+        t({ "}", "\t" }),
+        i(2),
+        t({ "", "\\end{frame}" }),
     }),
 }, {
     key = "tex",
