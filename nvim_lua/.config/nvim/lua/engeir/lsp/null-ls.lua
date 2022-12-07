@@ -32,7 +32,7 @@ null_ls.setup({
         formatting.black.with({ extra_args = { "--fast" } }),
         formatting.fixjson,
         formatting.gofmt,
-        formatting.latexindent,
+        formatting.latexindent.with({extra_args={"-l", vim.fn.expand("~") .. "/.config/latexindent/latexindent.yaml"}}),
         -- formatting.markdownlint.with({
         --     extra_args = { "-c", vim.fn.expand("~") .. "/.config/mdl/.markdownlint.jsonc" },
         -- }), -- Using `prettierd` instead
