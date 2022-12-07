@@ -1,8 +1,9 @@
--- local status_ok, term = pcall(require, "floaterm")
+-- local status_ok, term = pcall(require, "vim-floaterm")
 -- if not status_ok then
 --     return
 -- end
--- term.setup()
+
+vim.g.floaterm_width = 0.45
 
 -- Shorten function name
 local keymap = vim.keymap.set
