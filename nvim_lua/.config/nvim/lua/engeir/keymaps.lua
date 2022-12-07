@@ -34,6 +34,10 @@ keymap("n", "N", "Nzzzv", opts)
 keymap("n", "{", "{zz", opts)
 keymap("n", "}", "}zz", opts)
 
+-- Evaluate math
+keymap("x", "<leader><leader>e", 'c<C-R>=py3eval(@")<CR><Esc>')
+-- keymap("x", "<leader><leader>e", 'c<C-R>=eval(@")<CR><Esc>')
+
 -- Running and compiling code
 if EXECUTABLE("autocomp") then
     keymap("n", "<leader>a", ":!setsid autocomp % &<CR>", opts)
