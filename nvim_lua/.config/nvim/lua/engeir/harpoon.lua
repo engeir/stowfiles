@@ -1,4 +1,4 @@
-local ok, _ = pcall(require, "harpoon")
+local ok, harpoon = pcall(require, "harpoon")
 if not ok then
     return
 end
@@ -10,3 +10,9 @@ map("n", "<leader>hf", '<cmd>lua require("harpoon.ui").toggle_quick_menu()<CR>',
 map("n", "<leader>hm", '<cmd>lua require("harpoon.mark").add_file()<CR>', default_opts)
 map("n", "<leader>hn", '<cmd>lua require("harpoon.ui").nav_next()<CR>', default_opts)
 map("n", "<leader>hN", '<cmd>lua require("harpoon.ui").nav_prev()<CR>', default_opts)
+
+harpoon.setup({
+    menu = {
+        width = math.floor(vim.api.nvim_win_get_width(0) * 0.5),
+    },
+})

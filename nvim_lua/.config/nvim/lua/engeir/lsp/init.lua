@@ -1,5 +1,5 @@
-local ok, lsp, cmp = pcall(function()
-    return require("lsp-zero"), require("cmp")
+local ok, lsp, cmp, luasnip = pcall(function()
+    return require("lsp-zero"), require("cmp"), require("luasnip")
 end)
 if not ok then
     return
@@ -65,15 +65,15 @@ lsp.on_attach(function(_, bufnr)
     nmap("<leader>ca", vim.lsp.buf.code_action, "[C]ode [A]ction")
 
     nmap("gd", vim.lsp.buf.definition, "[G]oto [D]efinition")
-    nmap("gi", vim.lsp.buf.implementation, "[G]oto [I]mplementation")
+    nmap("<leader>gi", vim.lsp.buf.implementation, "[G]oto [I]mplementation")
     nmap("gr", require("telescope.builtin").lsp_references, "[G]oto [R]eferences")
     nmap("<leader>ds", require("telescope.builtin").lsp_document_symbols, "[D]ocument [S]ymbols")
     nmap("<leader>ws", require("telescope.builtin").lsp_dynamic_workspace_symbols, "[W]orkspace [S]ymbols")
 
     -- See `:help K` for why this keymap
     nmap("K", vim.lsp.buf.hover, "Hover Documentation")
-    nmap("<C-k>", vim.lsp.buf.signature_help, "Signature Documentation")
-    vim.keymap.set("i", "<C-k>", vim.lsp.buf.signature_help, { buffer = bufnr, desc = "Signature Documentation" })
+    nmap("<C-h>", vim.lsp.buf.signature_help, "Signature Documentation")
+    vim.keymap.set("i", "<C-h>", vim.lsp.buf.signature_help, { buffer = bufnr, desc = "Signature Documentation" })
 
     -- Lesser used LSP functionality
     nmap("gD", vim.lsp.buf.declaration, "[G]oto [D]eclaration")
@@ -98,17 +98,62 @@ end)
 
 lsp.setup()
 
+-- This inputs the text as it is highlighted, and thus there is no need for
+-- confirmation.
+-- https://github.com/hrsh7th/nvim-cmp
+local has_words_before = function()
+    local line, col = unpack(vim.api.nvim_win_get_cursor(0))
+    return col ~= 0 and vim.api.nvim_buf_get_lines(0, line - 1, line, true)[1]:sub(col, col):match("%s") == nil
+end
 cmp.setup({
     completion = {
-        completeopt = "menu,menuone,noinsert,noselect",
+        completeopt = "menuone,noselect",
+    },
+    snippet = {
+        expand = function(args)
+            luasnip.lsp_expand(args.body)
+        end,
     },
     mapping = lsp.defaults.cmp_mappings({
         ["<C-d>"] = cmp.mapping.scroll_docs(-4),
         ["<C-f>"] = cmp.mapping.scroll_docs(4),
-        ["<C-p>"] = cmp.mapping.select_prev_item(cmp_select),
-        ["<C-n>"] = cmp.mapping.select_next_item(cmp_select),
+        ["<C-p>"] = cmp.mapping(function(fallback)
+            if cmp.visible() then
+                cmp.select_prev_item()
+            elseif luasnip.jumpable(-1) then
+                luasnip.jump(-1)
+            else
+                fallback()
+            end
+        end, { "i", "s" }),
+        ["<C-n>"] = cmp.mapping(function(fallback)
+            if cmp.visible() then
+                cmp.select_next_item()
+            elseif luasnip.expand_or_jumpable() then
+                luasnip.expand_or_jump()
+            elseif has_words_before() then
+                cmp.complete()
+            else
+                fallback()
+            end
+        end, { "i", "s" }),
         ["<C-y>"] = cmp.mapping.confirm({ select = true }),
         ["<C-Space>"] = cmp.mapping.complete(),
         ["<CR>"] = cmp.mapping.confirm({ select = false }),
     }),
+    sources = {
+        { name = "gh_issues" },
+        { name = "nvim_lsp" },
+        { name = "nvim_lua" },
+        { name = "path" },
+        { name = "luasnip" }, -- For luasnip users.
+        { name = "buffer", keyword_length = 4 },
+        -- { name = "orgmode" },
+        -- { name = "copilot" },
+        -- { name = "cmp_tabnine" },
+    },
+    experimental = {
+        native_menu = false,
+        ghost_text = true,
+    },
 })
