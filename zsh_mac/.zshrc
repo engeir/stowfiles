@@ -202,3 +202,5 @@ export DENO_INSTALL="/Users/eirikenger/.deno"
 export PATH="$DENO_INSTALL/bin:$PATH"
 # bob
 export PATH="$PATH:/Users/eirikenger/Library/Application Support/neovim/bin"
+
+eval "$(atuin init zsh)"
