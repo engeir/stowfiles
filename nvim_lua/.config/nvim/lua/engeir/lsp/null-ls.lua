@@ -1,5 +1,5 @@
-local null_ls_status_ok, null_ls = pcall(require, "null-ls")
-if not null_ls_status_ok then
+local ok, null_ls = pcall(require, "null-ls")
+if not ok then
     return
 end
 
@@ -11,7 +11,7 @@ local diagnostics = null_ls.builtins.diagnostics
 
 -- https://github.com/prettier-solidity/prettier-plugin-solidity
 null_ls.setup({
-    debug = true,
+    -- debug = true,
     -- Stopped working all of a sudden. Crashes `gq<motion>`.
     sources = {
         -- code_actions.gitsigns,
@@ -32,7 +32,9 @@ null_ls.setup({
         formatting.black.with({ extra_args = { "--fast" } }),
         formatting.fixjson,
         formatting.gofmt,
-        formatting.latexindent.with({extra_args={"-l", vim.fn.expand("~") .. "/.config/latexindent/latexindent.yaml"}}),
+        formatting.latexindent.with({
+            extra_args = { "-l", vim.fn.expand("~") .. "/.config/latexindent/latexindent.yaml" },
+        }),
         -- formatting.markdownlint.with({
         --     extra_args = { "-c", vim.fn.expand("~") .. "/.config/mdl/.markdownlint.jsonc" },
         -- }), -- Using `prettierd` instead
@@ -45,4 +47,13 @@ null_ls.setup({
         formatting.stylua.with({ extra_args = { "--indent-type=Spaces" } }),
         formatting.taplo,
     },
+})
+
+-- null-ls has an issue with gqq when an lsp is attached, but the below solves it. See:
+-- https://github.com/jose-elias-alvarez/null-ls.nvim/issues/1259
+-- Use internal formatting for bindings like gq.
+vim.api.nvim_create_autocmd("LspAttach", {
+    callback = function(args)
+        vim.bo[args.buf].formatexpr = nil
+    end,
 })
