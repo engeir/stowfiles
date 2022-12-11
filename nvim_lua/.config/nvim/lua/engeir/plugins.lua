@@ -147,20 +147,6 @@ return packer.startup(function(use)
         end,
     })
 
-    -- -- cmp / completions ============================================================ --
-    -- use("hrsh7th/nvim-cmp") -- The completion plugin
-    -- use("hrsh7th/cmp-buffer") -- Buffer completions
-    -- use("hrsh7th/cmp-path") -- Path completions
-    -- use("saadparwaiz1/cmp_luasnip") -- Snippet completions
-    -- use("hrsh7th/cmp-nvim-lsp")
-    -- use("hrsh7th/cmp-nvim-lua")
-
-    -- -- snippets ===================================================================== --
-    -- use("L3MON4D3/LuaSnip")
-    -- if IS_KNOWN then
-    --     use("rafamadriz/friendly-snippets")
-    -- end
-
     -- Git some shit done =========================================================== --
     use({
         "lewis6991/gitsigns.nvim",
@@ -228,6 +214,7 @@ return packer.startup(function(use)
     use("ThePrimeagen/harpoon")
     use({ "ellisonleao/glow.nvim", branch = "main" })
     use("goolord/alpha-nvim")
+    use("folke/zen-mode.nvim")
     -- Jupyter notebooks
     if IS_KNOWN and IS_LINUX then
         use({ "dccsillag/magma-nvim", run = ":UpdateRemotePlugins" })
