@@ -27,6 +27,7 @@ null_ls.setup({
         -- diagnostics.proselint,
         diagnostics.pydocstyle,
         diagnostics.shellcheck,
+        diagnostics.ruff,
         formatting.beautysh,
         formatting.bibclean.with({ extra_args = { "--max-width", "0", "--no-fix-names" } }),
         formatting.black.with({ extra_args = { "--fast" } }),
