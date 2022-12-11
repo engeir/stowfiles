@@ -51,7 +51,7 @@ hints:
        key: U
        mods: Control|Shift
 
-background_opacity: 0.9
+background_opacity: 0.95
 window:
   padding:
     x: 5
