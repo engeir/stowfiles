@@ -35,7 +35,7 @@ vim.keymap.set("n", "<leader>N", ':<C-u>call append(line(".")-1, repeat([""], v:
 -- nnoremap <silent><leader>S :set spell!<CR>
 vim.keymap.set(
     "i",
-    "<C-M>",
+    "<C-s>",
     "<C-G>u<Esc>[s1z=`]a<C-G>u",
     { silent = true, noremap = true, desc = "Accept first spelling on previous misspelled word." }
 )
