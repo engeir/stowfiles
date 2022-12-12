@@ -33,7 +33,12 @@ vim.keymap.set("n", "<leader>N", ':<C-u>call append(line(".")-1, repeat([""], v:
 -- Spelling
 -- nnoremap <silent><leader>s :set spell spelllang=en_gb<CR>
 -- nnoremap <silent><leader>S :set spell!<CR>
-vim.keymap.set("i", "<C-l>", "<C-G>u<Esc>[s1z=`]a<C-G>u", opts)
+vim.keymap.set(
+    "i",
+    "<C-M>",
+    "<C-G>u<Esc>[s1z=`]a<C-G>u",
+    { silent = true, noremap = true, desc = "Accept first spelling on previous misspelled word." }
+)
 
 -- Search, highlight and move
 vim.keymap.set("n", "<leader>zw", ":%s/\\<<C-r><C-w>\\>/<C-r><C-w>/gI<Left><Left><Left>", { desc = "[Z]wap [W]ords" })
