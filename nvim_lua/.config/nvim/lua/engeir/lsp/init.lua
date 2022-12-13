@@ -1,11 +1,14 @@
-local ok, lsp, cmp, luasnip = pcall(function()
-    return require("lsp-zero"), require("cmp"), require("luasnip")
+local ok, lsp, lspconfig, cmp, luasnip = pcall(function()
+    return require("lsp-zero"), require("lspconfig"), require("cmp"), require("luasnip")
 end)
 if not ok then
     return
 end
 
+-- null-ls settings
 require("engeir.lsp.null-ls")
+
+-- ==================================== LSP-ZERO ==================================== --
 lsp.preset("recommended")
 lsp.set_preferences({
     set_lsp_keymaps = false,
@@ -14,12 +17,6 @@ lsp.nvim_workspace()
 local cmp_select = { behavior = cmp.SelectBehavior.Select }
 
 lsp.on_attach(function(_, bufnr)
-    -- NOTE: Remember that lua is a real programming language, and as such it is
-    -- possible to define small helper and utility functions so you don't have to repeat
-    -- yourself many times.
-    -- In this case, we create a function that lets us more easily define mappings
-    -- specific for LSP related items. It sets the mode, buffer and description for us
-    -- each time.
     local map = function(mode, keys, func, desc)
         if desc then
             desc = "LSP: " .. desc
@@ -83,8 +80,23 @@ lsp.on_attach(function(_, bufnr)
     nmap("<leader>s", "<cmd>Format<CR>", "Format")
 end)
 
+-- ============================ CUSTOM SERVER SETTINGS ============================== --
+-- Set up specific LSPs. They seem to work, but not sure if it's the intended way by
+-- lsp-zero.
+local opts = {
+    on_attach = require("engeir.lsp.handlers").on_attach,
+    capabilities = require("engeir.lsp.handlers").capabilities,
+}
+lspconfig.sumneko_lua.setup(vim.tbl_deep_extend("force", require("engeir.lsp.settings.sumneko_lua"), opts))
+lspconfig.pyright.setup(vim.tbl_deep_extend("force", require("engeir.lsp.settings.pyright"), opts))
+lspconfig.ltex.setup(vim.tbl_deep_extend("force", require("engeir.lsp.settings.ltex"), opts))
+if EXECUTABLE("pass") then
+    lspconfig.sourcery.setup(vim.tbl_deep_extend("force", require("engeir.lsp.settings.sourcery"), opts))
+end
+
 lsp.setup()
 
+-- ====================================== CMP ======================================= --
 -- This inputs the text as it is highlighted, and thus there is no need for
 -- confirmation.
 -- https://github.com/hrsh7th/nvim-cmp

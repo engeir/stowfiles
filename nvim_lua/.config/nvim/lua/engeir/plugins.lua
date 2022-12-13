@@ -52,9 +52,11 @@ return packer.startup(function(use)
     use("RRethy/vim-illuminate")
     use("zbirenbaum/neodim")
     use({
-        "vigoux/notifier.nvim",
+        -- "vigoux/notifier.nvim",
+        "j-hui/fidget.nvim",
         config = function()
-            require("notifier").setup({
+            -- require("notifier").setup({
+            require("fidget").setup({
                 -- You configuration here
             })
         end,

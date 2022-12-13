@@ -18,9 +18,11 @@ elseif os[1] == "Darwin" then
 end
 
 -- General stuff
-require("engeir.settings")
+require("engeir.autocommands")
+require("engeir.customcommands")
 require("engeir.keymaps")
 require("engeir.plugins")
+require("engeir.settings")
 
 -- Extra stuff
 -- require("engeir.cmp")
@@ -31,7 +33,6 @@ require("engeir.plugins")
 require("engeir.aerial")
 require("engeir.align")
 require("engeir.alpha")
-require("engeir.autocommands")
 require("engeir.boole")
 require("engeir.bufferline")
 require("engeir.cmp_gh_source")
@@ -39,7 +40,6 @@ require("engeir.color-picker")
 require("engeir.colorschemes")
 require("engeir.comment-nvim")
 require("engeir.copilot")
-require("engeir.customcommands")
 require("engeir.diffview")
 require("engeir.easypick")
 require("engeir.gitsigns")
