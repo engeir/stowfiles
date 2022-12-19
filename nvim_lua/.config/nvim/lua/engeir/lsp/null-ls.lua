@@ -25,7 +25,7 @@ null_ls.setup({
         }),
         diagnostics.mypy,
         -- diagnostics.proselint,
-        diagnostics.pydocstyle,
+        -- diagnostics.pydocstyle,
         diagnostics.shellcheck,
         diagnostics.ruff,
         formatting.beautysh,
