@@ -48,13 +48,16 @@ return packer.startup(function(use)
     -- Syntax and other good stuff ================================================== --
     use({ "nvim-treesitter/nvim-treesitter", run = ":TSUpdate" })
     use("nvim-treesitter/nvim-treesitter-context")
+    use("nvim-treesitter/nvim-treesitter-textobjects")
     use("stevearc/aerial.nvim")
     use("RRethy/vim-illuminate")
     use("zbirenbaum/neodim")
     use({
-        "vigoux/notifier.nvim",
+        -- "vigoux/notifier.nvim",
+        "j-hui/fidget.nvim",
         config = function()
-            require("notifier").setup({
+            -- require("notifier").setup({
+            require("fidget").setup({
                 -- You configuration here
             })
         end,
@@ -65,11 +68,30 @@ return packer.startup(function(use)
     end
 
     -- LSP ========================================================================== --
-    use("neovim/nvim-lspconfig") -- enable LSP
-    use("williamboman/nvim-lsp-installer") -- simple to use language server installer
-    use("jose-elias-alvarez/null-ls.nvim") -- for formatters and linters
-    use("tami5/lspsaga.nvim")
-    use("ray-x/lsp_signature.nvim")
+    use({
+        "VonHeikemen/lsp-zero.nvim",
+        requires = {
+            -- LSP Support
+            { "neovim/nvim-lspconfig" },
+            { "williamboman/mason.nvim" },
+            { "williamboman/mason-lspconfig.nvim" },
+
+            -- Autocompletion
+            { "hrsh7th/nvim-cmp" },
+            { "hrsh7th/cmp-buffer" },
+            { "hrsh7th/cmp-path" },
+            { "saadparwaiz1/cmp_luasnip" },
+            { "hrsh7th/cmp-nvim-lsp" },
+            { "hrsh7th/cmp-nvim-lua" },
+
+            -- Snippets
+            { "L3MON4D3/LuaSnip" },
+            { "rafamadriz/friendly-snippets" },
+
+            -- Extra
+            { "jose-elias-alvarez/null-ls.nvim" },
+        },
+    })
 
     -- Telescope ==================================================================== --
     use("nvim-telescope/telescope.nvim")
@@ -127,20 +149,6 @@ return packer.startup(function(use)
             require("autolist").setup()
         end,
     })
-
-    -- cmp / completions ============================================================ --
-    use("hrsh7th/nvim-cmp") -- The completion plugin
-    use("hrsh7th/cmp-buffer") -- Buffer completions
-    use("hrsh7th/cmp-path") -- Path completions
-    use("saadparwaiz1/cmp_luasnip") -- Snippet completions
-    use("hrsh7th/cmp-nvim-lsp")
-    use("hrsh7th/cmp-nvim-lua")
-
-    -- snippets ===================================================================== --
-    use("L3MON4D3/LuaSnip")
-    if IS_KNOWN then
-        use("rafamadriz/friendly-snippets")
-    end
 
     -- Git some shit done =========================================================== --
     use({
@@ -209,6 +217,7 @@ return packer.startup(function(use)
     use("ThePrimeagen/harpoon")
     use({ "ellisonleao/glow.nvim", branch = "main" })
     use("goolord/alpha-nvim")
+    use("folke/zen-mode.nvim")
     -- Jupyter notebooks
     if IS_KNOWN and IS_LINUX then
         use({ "dccsillag/magma-nvim", run = ":UpdateRemotePlugins" })
