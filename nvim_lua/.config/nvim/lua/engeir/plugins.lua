@@ -48,9 +48,11 @@ return packer.startup(function(use)
     -- Syntax and other good stuff ================================================== --
     use({ "nvim-treesitter/nvim-treesitter", run = ":TSUpdate" })
     use("nvim-treesitter/nvim-treesitter-context")
+    use("nvim-treesitter/nvim-treesitter-textobjects")
     use("stevearc/aerial.nvim")
     use("RRethy/vim-illuminate")
     use({ "zbirenbaum/neodim" })
+
     if IS_KNOWN then
         use("ThePrimeagen/refactoring.nvim")
         use("ziontee113/syntax-tree-surfer")

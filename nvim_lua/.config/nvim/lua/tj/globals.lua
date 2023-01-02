@@ -17,7 +17,7 @@ end
 -- grammar-guard
 IS_KNOWN = (function()
     local output = vim.fn.systemlist("uname -n")
-    local known = { "ubuntu-work", "eenMBP.local" }
+    local known = { "ubuntu-work", "eenMBP.lan" }
     for _, v in ipairs(known) do
         if v == output[1] then
             return true
