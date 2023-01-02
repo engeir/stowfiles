@@ -89,6 +89,7 @@ local opts = {
 }
 lspconfig.sumneko_lua.setup(vim.tbl_deep_extend("force", require("engeir.lsp.settings.sumneko_lua"), opts))
 lspconfig.pyright.setup(vim.tbl_deep_extend("force", require("engeir.lsp.settings.pyright"), opts))
+lspconfig.ruff_lsp.setup(opts)
 lspconfig.ltex.setup(vim.tbl_deep_extend("force", require("engeir.lsp.settings.ltex"), opts))
 if EXECUTABLE("pass") then
     lspconfig.sourcery.setup(vim.tbl_deep_extend("force", require("engeir.lsp.settings.sourcery"), opts))
