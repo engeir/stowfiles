@@ -52,16 +52,6 @@ return packer.startup(function(use)
     use("stevearc/aerial.nvim")
     use("RRethy/vim-illuminate")
     use("zbirenbaum/neodim")
-    use({
-        -- "vigoux/notifier.nvim",
-        "j-hui/fidget.nvim",
-        config = function()
-            -- require("notifier").setup({
-            require("fidget").setup({
-                -- You configuration here
-            })
-        end,
-    })
     if IS_KNOWN then
         use("ThePrimeagen/refactoring.nvim")
         use("ziontee113/syntax-tree-surfer")
@@ -119,7 +109,6 @@ return packer.startup(function(use)
     use("samodostal/image.nvim")
 
     -- General text manipulation and fonts ========================================== --
-    -- use({ "ibhagwan/smartyank.nvim" })
     use("numToStr/Comment.nvim")
     use({
         "kylechui/nvim-surround",
@@ -136,12 +125,6 @@ return packer.startup(function(use)
     if IS_KNOWN then
         use("nat-418/boole.nvim")
         use("junegunn/vim-easy-align")
-        use({
-            "AckslD/nvim-FeMaco.lua",
-            config = 'require("femaco").setup()',
-        })
-        -- use("nvim-neorg/neorg")
-        use("nvim-orgmode/orgmode")
     end
     use({
         "gaoDean/autolist.nvim",
@@ -202,33 +185,50 @@ return packer.startup(function(use)
 
     -- Correct spelling and fix grammar ============================================= --
     if IS_KNOWN then
-        use("brymer-meneses/grammar-guard.nvim")
         use("anufrievroman/vim-angry-reviewer")
     end
 
     -- TODO: set up dap
 
     -- Miscellaneous ================================================================ --
-    if IS_KNOWN then
-        use({ "akinsho/toggleterm.nvim", tag = "v1.*" })
-    end
+    use({
+        -- "vigoux/notifier.nvim",
+        "j-hui/fidget.nvim",
+        config = function()
+            -- require("notifier").setup({
+            require("fidget").setup({
+                -- You configuration here
+            })
+        end,
+    })
     use("voldikss/vim-floaterm")
     use("airblade/vim-rooter")
     use("ThePrimeagen/harpoon")
     use({ "ellisonleao/glow.nvim", branch = "main" })
     use("goolord/alpha-nvim")
     use("folke/zen-mode.nvim")
-    -- Jupyter notebooks
-    if IS_KNOWN and IS_LINUX then
-        use({ "dccsillag/magma-nvim", run = ":UpdateRemotePlugins" })
-        use("goerz/jupytext.vim")
-    end
     -- Latex
     use("lervag/vimtex")
     -- My plugins
     use("engeir/githistory-browse.nvim")
-    -- Python venv
-    use("AckslD/swenv.nvim")
+
+    -- Graveyard (plugins I've used but that I don't think I have use for)
+    -- use({ "ibhagwan/smartyank.nvim" })
+    -- use({
+    --     "AckslD/nvim-FeMaco.lua",
+    --     config = 'require("femaco").setup()',
+    -- })
+    -- use("nvim-neorg/neorg")
+    -- use("nvim-orgmode/orgmode")
+    -- use("brymer-meneses/grammar-guard.nvim")
+    -- if IS_KNOWN then
+    --     use({ "akinsho/toggleterm.nvim", tag = "v1.*" })
+    -- end
+    -- if IS_KNOWN and IS_LINUX then
+    --     use({ "dccsillag/magma-nvim", run = ":UpdateRemotePlugins" })
+    --     use("goerz/jupytext.vim")
+    -- end
+    -- use("AckslD/swenv.nvim")
 
     -- Automatically set up your configuration after cloning packer.nvim
     -- Put this at the end after all plugins
