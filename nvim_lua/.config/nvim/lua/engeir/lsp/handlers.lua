@@ -60,11 +60,6 @@ M.on_attach = function(client, bufnr)
         client.server_capabilities.document_formatting = false
     end
 
-    local status_ok, aerial = pcall(require, "aerial")
-    if not status_ok then
-        return
-    end
-    aerial.on_attach(client, bufnr)
     local status_ok2, illuminate = pcall(require, "illuminate")
     if not status_ok2 then
         return
