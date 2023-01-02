@@ -2,5 +2,5 @@
 
 # If already running, end this file and running instance.
 
-pkill -f "entr compiler" && exit
-echo "$1" | entr compiler "$1"
+pkill -f "entr -n compiler" && exit
+echo "$1" | entr -n compiler "$1"
