@@ -52,6 +52,12 @@ return packer.startup(function(use)
     use("stevearc/aerial.nvim")
     use("RRethy/vim-illuminate")
     use("zbirenbaum/neodim")
+    use({
+        "danymat/neogen",
+        requires = "nvim-treesitter/nvim-treesitter",
+        -- Uncomment next line if you want to follow only stable versions
+        -- tag = "*"
+    })
     if IS_KNOWN then
         use("ThePrimeagen/refactoring.nvim")
         use("ziontee113/syntax-tree-surfer")
