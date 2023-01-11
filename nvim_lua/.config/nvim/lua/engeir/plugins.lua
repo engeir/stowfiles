@@ -132,6 +132,13 @@ return packer.startup(function(use)
             require("autolist").setup()
         end,
     })
+    use({
+        "asiryk/auto-hlsearch.nvim",
+        tag = "1.0.0",
+        config = function()
+            require("auto-hlsearch").setup()
+        end,
+    })
 
     -- Git some shit done =========================================================== --
     use({
