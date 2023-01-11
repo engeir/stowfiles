@@ -191,6 +191,7 @@ return packer.startup(function(use)
     -- TODO: set up dap
 
     -- Miscellaneous ================================================================ --
+    use("ThePrimeagen/vim-be-good")
     use({
         -- "vigoux/notifier.nvim",
         "j-hui/fidget.nvim",
