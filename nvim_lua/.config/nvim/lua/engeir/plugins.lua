@@ -147,6 +147,7 @@ return packer.startup(function(use)
     })
 
     -- Git some shit done =========================================================== --
+    use("tpope/vim-fugitive")
     use({
         "lewis6991/gitsigns.nvim",
         requires = { "nvim-lua/plenary.nvim" },
