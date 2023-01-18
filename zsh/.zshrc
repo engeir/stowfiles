@@ -144,5 +144,5 @@ export PATH="$BUN_INSTALL/bin:$PATH"
 export PATH="/home/een023/.local/share/neovim/bin:$PATH"
 
 # Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
-export PATH="$PATH:$HOME/.rvm/bin"
+export PATH="$PATH:$HOME/gems/bin:$HOME/.rvm/bin"
 # zprof  # Uncomment to run profiler (also first line)
