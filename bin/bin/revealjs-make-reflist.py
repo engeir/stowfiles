@@ -22,10 +22,10 @@ except IndexError:
             print("\n--\n")
             i += 1
             wc = 0
+        print('- <!-- .element: style="font-size:20pt" -->')
         print(element)
-        print('<!-- .element: style="font-size:20pt" -->')
 else:
     with open(file, "r") as fp:
         soup = BeautifulSoup(fp, features="lxml")
-    for link in soup.find_all('a'):
-        print(link.get('data-citation-key'))
+    for link in soup.find_all("a"):
+        print(link.get("data-citation-key"))
