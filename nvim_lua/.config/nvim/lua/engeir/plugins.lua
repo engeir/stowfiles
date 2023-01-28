@@ -132,12 +132,7 @@ return packer.startup(function(use)
         use("nat-418/boole.nvim")
         use("junegunn/vim-easy-align")
     end
-    use({
-        "gaoDean/autolist.nvim",
-        config = function()
-            require("autolist").setup()
-        end,
-    })
+    use("gaoDean/autolist.nvim")
     use({
         "asiryk/auto-hlsearch.nvim",
         tag = "1.0.0",
@@ -147,6 +142,7 @@ return packer.startup(function(use)
     })
 
     -- Git some shit done =========================================================== --
+    use("tpope/vim-fugitive")
     use({
         "lewis6991/gitsigns.nvim",
         requires = { "nvim-lua/plenary.nvim" },
