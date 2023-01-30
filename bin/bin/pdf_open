@@ -21,12 +21,12 @@ else
 fi
 
 cd ~ || exit 1
-c=$("$fd" -I . -e 'pdf' "$DIR1" "$DIR2" | grep -o ".*pdf$" | awk -F'/' '{print $NF}' | "$dmenu")
+c=$("$fd" -I . -e 'pdf' "$DIR1" "$DIR2" | grep -o ".*pdf$" | awk -F'/' '{print $NF}' | eval "$dmenu")
 
 # Exit if none is chosen
 [ "$c" = "" ] && exit
 
-DIR=$("$fd" -I -H "$c"$ "$DIR1" "$DIR2" | sed 1q)
+DIR=$("$fd" -I -H "$c" "$DIR1" "$DIR2" | sed 1q)
 
 # Open with default
 "$open" "$DIR"
