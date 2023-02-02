@@ -34,6 +34,7 @@ null_ls.setup({
         formatting.black.with({ extra_args = { "--fast" } }),
         formatting.fixjson,
         formatting.gofmt,
+        formatting.isort,
         formatting.latexindent.with({
             extra_args = { "-l", vim.fn.expand("~") .. "/.config/latexindent/latexindent.yaml" },
         }),

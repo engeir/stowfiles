@@ -132,7 +132,7 @@ return packer.startup(function(use)
         use("nat-418/boole.nvim")
         use("junegunn/vim-easy-align")
     end
-    use("gaoDean/autolist.nvim")
+    -- use("gaoDean/autolist.nvim")
     use({
         "asiryk/auto-hlsearch.nvim",
         tag = "1.0.0",
