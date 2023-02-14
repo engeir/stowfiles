@@ -87,7 +87,7 @@ local opts = {
     on_attach = require("engeir.lsp.handlers").on_attach,
     capabilities = require("engeir.lsp.handlers").capabilities,
 }
-lspconfig.sumneko_lua.setup(vim.tbl_deep_extend("force", require("engeir.lsp.settings.sumneko_lua"), opts))
+lspconfig.lua_ls.setup(vim.tbl_deep_extend("force", require("engeir.lsp.settings.lua_ls"), opts))
 lspconfig.pyright.setup(vim.tbl_deep_extend("force", require("engeir.lsp.settings.pyright"), opts))
 lspconfig.ruff_lsp.setup(opts)
 lspconfig.ltex.setup(vim.tbl_deep_extend("force", require("engeir.lsp.settings.ltex"), opts))
