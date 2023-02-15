@@ -101,18 +101,10 @@ return packer.startup(function(use)
             require("telescope").load_extension("neoclip")
         end,
     })
-    use({
-        "nvim-telescope/telescope-file-browser.nvim",
-        requires = { "nvim-telescope/telescope.nvim" },
-        config = function()
-            require("telescope").load_extension("file_browser")
-        end,
-    })
     use("nvim-telescope/telescope-symbols.nvim")
     if IS_KNOWN and IS_LINUX then
         use({ "nvim-telescope/telescope-media-files.nvim", requires = { "nvim-lua/popup.nvim" } })
     end
-    use("samodostal/image.nvim")
 
     -- General text manipulation and fonts ========================================== --
     use("numToStr/Comment.nvim")
@@ -223,6 +215,8 @@ return packer.startup(function(use)
     use("engeir/githistory-browse.nvim")
 
     -- Graveyard (plugins I've used but that I don't think I have use for)
+    -- use("nvim-telescope/telescope-file-browser.nvim")
+    -- use("samodostal/image.nvim")
     -- use({ "ibhagwan/smartyank.nvim" })
     -- use({
     --     "AckslD/nvim-FeMaco.lua",

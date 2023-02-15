@@ -1,4 +1,7 @@
 local ok, image = pcall(require, "image")
+if not ok then
+  return
+end
 image.setup {
   render = {
     min_padding = 5,
