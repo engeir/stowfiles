@@ -33,6 +33,7 @@ null_ls.setup({
         formatting.bibclean.with({ extra_args = { "--max-width", "0", "--no-fix-names" } }),
         formatting.black.with({ extra_args = { "--fast" } }),
         formatting.fixjson,
+        formatting.fprettify,
         formatting.gofmt,
         formatting.isort,
         formatting.latexindent.with({
