@@ -5,7 +5,7 @@ vim.api.nvim_create_autocmd({ "FileType" }, {
         vim.cmd([[
       nnoremap <silent> <buffer> q :close<CR>
       set nobuflisted
-    ]]   )
+    ]])
     end,
 })
 
@@ -27,7 +27,7 @@ vim.api.nvim_create_autocmd({ "User" }, {
         vim.cmd([[
       set showtabline=0 | autocmd BufUnload <buffer> set showtabline=2
       set laststatus=0 | autocmd BufUnload <buffer> set laststatus=3
-    ]]   )
+    ]])
     end,
 })
 
@@ -73,3 +73,50 @@ vim.cmd("au BufRead,BufNewFile *.ncl set filetype=ncl")
 vim.cmd("au! Syntax newlang source $VIM/ncl.vim")
 -- au BufRead,BufNewFile *.ncl set filetype=ncl
 -- au! Syntax newlang source $VIM/ncl.vim
+
+-- Add screenshot capabilities
+-- See for example c613d353fbe843d9bdd31f2b2e92a513c0ede755
+-- https://github.com/engeir/stowfiles/blob/c613d353fbe843d9bdd31f2b2e92a513c0ede755/nvim/.config/nvim/autoload/dotvim.vim
+-- https://github.com/engeir/stowfiles/blob/c613d353fbe843d9bdd31f2b2e92a513c0ede755/nvim/.config/nvim/keys/mappings.vim
+-- Neovim API: https://neovim.io/doc/user/lua-guide.html#lua-guide-autocommand-create
+
+-- Augroup for creating and inserting screenshots in text files.
+local write_group = vim.api.nvim_create_augroup("WRIGHTING", { clear = true })
+local opts = { desc = "Save screenshots to ./assets/images and insert in doc" }
+local dir = "./assets/images"
+-- autocmd FileType pandoc nnoremap <buffer> cic :call pandoc#after#nrrwrgn#NarrowCodeblock()<cr>
+vim.api.nvim_create_autocmd({ "FileType" }, {
+    group = write_group,
+    pattern = "pandoc",
+    command = "nnoremap <buffer> cic :call pandoc#after#nrrwrgn#NarrowCodeblock()<cr>",
+})
+-- autocmd FileType markdown,pandoc nnoremap <buffer> <leader>i :<C-U>call dotvim#ImportScreenShot(function('dotvim#MarkdownScreenShot'),'.png')
+vim.api.nvim_create_autocmd({ "FileType" }, {
+    group = write_group,
+    pattern = { "markdown", "pandoc" },
+    -- command = "nnoremap <buffer> <leader>i :<C-U>call dotvim#ImportScreenShot(function('dotvim#MarkdownScreenShot'),'.png')",
+    -- command = "nnoremap <buffer> <leader>i :<C-U>lua=",
+    callback = function()
+        vim.keymap.set("n", "<leader>i", function()
+            vim.api.nvim_set_current_line(dir)
+        end, opts)
+    end,
+})
+-- autocmd FileType latex,tex nnoremap <buffer> <leader>i :<C-U>call dotvim#ImportScreenShot(function('dotvim#LatexScreenShot'),'.png')
+vim.api.nvim_create_autocmd({ "FileType" }, {
+    group = write_group,
+    pattern = { "latex", "tex" },
+    command = "nnoremap <buffer> <leader>i :<C-U>call dotvim#ImportScreenShot(function('dotvim#LatexScreenShot'),'.png')",
+})
+-- autocmd FileType dotoo,org nnoremap <buffer> <leader>i       :<C-U>call dotvim#ImportScreenShot(function('dotvim#OrgScreenShot'),'.eps')
+vim.api.nvim_create_autocmd({ "FileType" }, {
+    group = write_group,
+    pattern = { "dotoo", "org" },
+    command = "nnoremap <buffer> <leader>i :<C-U>call dotvim#ImportScreenShot(function('dotvim#OrgScreenShot'),'.eps')",
+})
+-- autocmd FileType groff,troff,nroff nnoremap <buffer> <leader>i     :<C-U>call dotvim#ImportScreenShot(function('dotvim#GroffScreenShot'),'.eps')
+vim.api.nvim_create_autocmd({ "FileType" }, {
+    group = write_group,
+    pattern = { "groff", "troff", "nroff" },
+    command = "nnoremap <buffer> <leader>i :<C-U>call dotvim#ImportScreenShot(function('dotvim#GroffScreenShot'),'.eps')",
+})
