@@ -143,6 +143,9 @@ export PATH="$BUN_INSTALL/bin:$PATH"
 # bob
 export PATH="/home/een023/.local/share/neovim/bin:$PATH"
 
+# rtx
+eval "$(rtx activate zsh)"
+
 # Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
 export PATH="$PATH:$HOME/gems/bin:$HOME/.rvm/bin"
 # zprof  # Uncomment to run profiler (also first line)
