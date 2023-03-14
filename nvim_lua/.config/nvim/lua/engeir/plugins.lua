@@ -50,7 +50,6 @@ return packer.startup(function(use)
     use("nvim-treesitter/nvim-treesitter-context")
     use("nvim-treesitter/nvim-treesitter-textobjects")
     use("stevearc/aerial.nvim")
-    use("RRethy/vim-illuminate")
     use("zbirenbaum/neodim")
     use({
         "danymat/neogen",
@@ -73,6 +72,7 @@ return packer.startup(function(use)
             { "williamboman/mason-lspconfig.nvim" },
 
             -- Autocompletion
+            -- TODO: replace with mini.completion?
             { "hrsh7th/nvim-cmp" },
             { "hrsh7th/cmp-buffer" },
             { "hrsh7th/cmp-path" },
@@ -106,20 +106,15 @@ return packer.startup(function(use)
         use({ "nvim-telescope/telescope-media-files.nvim", requires = { "nvim-lua/popup.nvim" } })
     end
 
+    -- mini.nvim
+    -- Replaces:
+    --   RRethy/vim-illuminate -> mini.cursorword
+    --   numToStr/Comment.nvim -> mini.comment
+    --   kylechui/nvim-surround -> mini.surround
+    --   windwp/nvim-autopairs -> mini.pairs
+    use("echasnovski/mini.nvim")
+
     -- General text manipulation and fonts ========================================== --
-    use("numToStr/Comment.nvim")
-    use({
-        "kylechui/nvim-surround",
-        config = function()
-            require("nvim-surround").setup({})
-        end,
-    })
-    use({
-        "windwp/nvim-autopairs",
-        config = function()
-            require("nvim-autopairs").setup({})
-        end,
-    })
     if IS_KNOWN then
         use("nat-418/boole.nvim")
         use("junegunn/vim-easy-align")
@@ -155,7 +150,9 @@ return packer.startup(function(use)
     }) -- Quickly get a permalink to lines of code
 
     -- Style and colour schemes ===================================================== --
+    -- TODO: replace with mini.statusline?
     use("nvim-lualine/lualine.nvim")
+    -- TODO: replace with mini.tabline?
     use({
         "akinsho/bufferline.nvim",
         tag = "v2.*",
@@ -207,7 +204,6 @@ return packer.startup(function(use)
     use("airblade/vim-rooter")
     use("ThePrimeagen/harpoon")
     use({ "ellisonleao/glow.nvim", branch = "main" })
-    use("goolord/alpha-nvim")
     use("folke/zen-mode.nvim")
     -- Latex
     use("lervag/vimtex")
