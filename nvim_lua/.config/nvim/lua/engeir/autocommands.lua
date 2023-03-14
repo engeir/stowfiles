@@ -5,7 +5,7 @@ vim.api.nvim_create_autocmd({ "FileType" }, {
         vim.cmd([[
       nnoremap <silent> <buffer> q :close<CR>
       set nobuflisted
-    ]]   )
+    ]])
     end,
 })
 
@@ -27,7 +27,7 @@ vim.api.nvim_create_autocmd({ "User" }, {
         vim.cmd([[
       set showtabline=0 | autocmd BufUnload <buffer> set showtabline=2
       set laststatus=0 | autocmd BufUnload <buffer> set laststatus=3
-    ]]   )
+    ]])
     end,
 })
 
@@ -56,6 +56,14 @@ vim.api.nvim_create_autocmd({ "TextYankPost" }, {
     end,
 })
 
+-- Enable treesitter highlighting
+-- https://this-week-in-neovim.org/2023/Feb/20#core
+vim.api.nvim_create_autocmd("FileType", {
+    pattern = { "lua", "help", "python" }, -- or { 'lua', 'help' },
+    callback = function()
+        vim.treesitter.start()
+    end,
+})
 -- -- Give syntax highlight to `.ncl` files
 -- local set_filetype_ncl = function()
 --     vim.opt.filetype:append("ncl")
