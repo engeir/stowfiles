@@ -6,6 +6,7 @@ export NODE_PATH='/usr/local/lib/node_modules'
 # export PATH="$HOME/.poetry/bin:$PATH"
 export PATH="/Users/eirikenger/Library/Python/3.9/bin:$PATH"
 export PATH=/usr/local/opt/ruby/bin:$PATH  # Ruby path
+source /Users/eirikenger/.rvm/scripts/rvm
 export PATH=/Applications/ConTeXtStandalone/tex/texmf-osx-64/bin:$PATH  # ConTeXt path
 
 export EDITOR=nvim
@@ -203,4 +204,8 @@ export PATH="$DENO_INSTALL/bin:$PATH"
 # bob
 export PATH="$PATH:/Users/eirikenger/Library/Application Support/neovim/bin"
 
+eval "$(rtx activate zsh)"
 eval "$(atuin init zsh)"
+
+# Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
+export PATH="$PATH:$HOME/.rvm/bin"
