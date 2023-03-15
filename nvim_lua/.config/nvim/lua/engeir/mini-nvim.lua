@@ -1,21 +1,32 @@
-local ok, ai, comment, cursorword, indentscope, jump, pairs, splitjoin, starter, surround, trailspace = pcall(function()
-    return require("mini.ai"),
-        require("mini.comment"),
-        require("mini.cursorword"),
-        require("mini.indentscope"),
-        require("mini.jump"),
-        require("mini.pairs"),
-        require("mini.splitjoin"),
-        require("mini.starter"),
-        require("mini.surround"),
-        require("mini.trailspace")
-end)
+local ok, ai, align, bracketed, comment, cursorword, indentscope, jump, pairs, splitjoin, starter, surround, trailspace =
+pcall(
+    function()
+        return require("mini.ai"),
+            require("mini.align"),
+            require("mini.bracketed"),
+            require("mini.comment"),
+            require("mini.cursorword"),
+            require("mini.indentscope"),
+            require("mini.jump"),
+            require("mini.pairs"),
+            require("mini.splitjoin"),
+            require("mini.starter"),
+            require("mini.surround"),
+            require("mini.trailspace")
+    end
+)
 if not ok then
     return
 end
 
 -- mini.ai -----------------------------------------------------------------------------
 ai.setup()
+
+-- mini.align --------------------------------------------------------------------------
+align.setup()
+
+-- mini.bracketed ----------------------------------------------------------------------
+bracketed.setup()
 
 -- mini.comment ------------------------------------------------------------------------
 comment.setup()
@@ -74,11 +85,11 @@ local my_telescope = {
         action = "lua require('telescope.builtin').find_files({hidden=true})",
         section = "Telescope",
     },
-    { name = "Git files", action = "lua require'engeir.telescope-extra'.project_files()", section = "Telescope" },
-    { name = "Old files", action = "Telescope oldfiles", section = "Telescope" },
-    { name = "Live grep", action = "Telescope live_grep", section = "Telescope" },
-    { name = "Command history", action = "Telescope command_history", section = "Telescope" },
-    { name = "Help tags", action = "Telescope help_tags", section = "Telescope" },
+    { name = "Git files",       action = "lua require'engeir.telescope-extra'.project_files()", section = "Telescope" },
+    { name = "Old files",       action = "Telescope oldfiles",                                  section = "Telescope" },
+    { name = "Live grep",       action = "Telescope live_grep",                                 section = "Telescope" },
+    { name = "Command history", action = "Telescope command_history",                           section = "Telescope" },
+    { name = "Help tags",       action = "Telescope help_tags",                                 section = "Telescope" },
 }
 local items = {
     my_telescope,
@@ -109,7 +120,7 @@ local starter_opts = {
       ██████╗ ██████║ ██║
       ╚═════╝ ╚═════╝ ████╗
                       ╚═══╝
-]]   ,
+]],
     footer = footer(),
 }
 starter.setup(starter_opts)
