@@ -166,7 +166,9 @@ return packer.startup(function(use)
     use("tjdevries/colorbuddy.vim")
     use("tjdevries/gruvbuddy.nvim")
     use("marko-cerovac/material.nvim")
+    -- nvim-ts-rainbow is archived, but nvim-ts-rainbow2 is ugly
     use("p00f/nvim-ts-rainbow") -- Different colour for nested parenthesis
+    -- use("HiPhish/nvim-ts-rainbow2") -- Different colour for nested parenthesis
     use({
         "norcalli/nvim-colorizer.lua",
         config = function()
@@ -180,7 +182,7 @@ return packer.startup(function(use)
         requires = {
             "kyazdani42/nvim-web-devicons", -- optional, for file icons
         },
-        tag = "nightly", -- optional, updated every week. (see issue #1193)
+        tag = "nightly",                    -- optional, updated every week. (see issue #1193)
     })
     use("mechatroner/rainbow_csv")
 
