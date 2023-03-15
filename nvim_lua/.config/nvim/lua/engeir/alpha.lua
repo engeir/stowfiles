@@ -6,19 +6,19 @@ end
 
 local dashboard = require("alpha.themes.dashboard")
 dashboard.section.header.val = {
-    [[               ██╗       ]],
-    [[             ██╔═██╗     ]],
-    [[   ██████╗   ██║ ██║ ██╗ ]],
-    [[   ╚═════╝   ╚═██╔═╝ ██║ ]],
-    [[ ██████╗   ██████████╔═╝ ]],
-    [[ ╚═════╝   ██╔═██╔═══╝   ]],
-    [[ ██████╗   ██║ ██║       ]],
-    [[ ╚═════╝   ╚═╝ ██║       ]],
-    [[ ██████╗ ████╗ ██████╗   ]],
-    [[ ╚═════╝ ╚═██║ ██║ ██║   ]],
-    [[   ██████╗ ██████║ ██║   ]],
-    [[   ╚═════╝ ╚═════╝ ████╗ ]],
-    [[                   ╚═══╝ ]],
+    [[               ██╗]],
+    [[             ██╔═██╗]],
+    [[   ██████╗   ██║ ██║ ██╗]],
+    [[   ╚═════╝   ╚═██╔═╝ ██║]],
+    [[ ██████╗   ██████████╔═╝]],
+    [[ ╚═════╝   ██╔═██╔═══╝]],
+    [[ ██████╗   ██║ ██║]],
+    [[ ╚═════╝   ╚═╝ ██║]],
+    [[ ██████╗ ████╗ ██████╗]],
+    [[ ╚═════╝ ╚═██║ ██║ ██║]],
+    [[   ██████╗ ██████║ ██║]],
+    [[   ╚═════╝ ╚═════╝ ████╗]],
+    [[                   ╚═══╝]],
 }
 dashboard.section.buttons.val = {
     dashboard.button("f", "  Find file", "<cmd>lua require'engeir.telescope-extra'.project_files()<cr>"),
@@ -37,10 +37,12 @@ local function footer()
     -- handle:close()
     -- return fortune
     local handle = io.popen("nvim --version")
+    if handle == nil then
+        return "Nvim Config by @engeir"
+    end
     local result = "Config by @engeir — " .. string.match(handle:read("*a"), "NVIM v[^\n]*")
     handle:close()
     return result
-    -- return "Nvim Config by @engeir"
 end
 
 dashboard.section.footer.val = footer()
