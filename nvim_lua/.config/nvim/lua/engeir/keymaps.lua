@@ -5,6 +5,10 @@ local opts = { silent = true, noremap = true }
 vim.keymap.set("", "<Space>", "<Nop>", opts)
 vim.g.mapleader = " "
 
+-- Open/close the quickfix window
+-- vim.keymap.set("n", "<leader>cc", ":cclose<cr>", { desc = "Close Quickfix" })
+vim.keymap.set("n", "<leader>co", ":copen<cr>", { desc = "Open Quickfix" })
+
 -- Paste, yank, delete with(out) global clipboard (theprimeagen and asbjornHaland)
 vim.keymap.set("x", "<leader>p", '"_dP')
 -- These are useful only if you don't have global clipboard by default (I think!)

@@ -9,6 +9,12 @@ vim.api.nvim_create_autocmd({ "FileType" }, {
     end,
 })
 
+-- Close quickfix menu after selecting choice
+vim.api.nvim_create_autocmd("FileType", {
+    pattern = { "qf" },
+    command = [[nnoremap <buffer> <CR> <CR>:cclose<CR>]],
+})
+
 -- Remember where you were last time you exited the file.
 vim.api.nvim_create_autocmd("BufReadPost", {
     callback = function()
