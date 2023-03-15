@@ -39,7 +39,7 @@ fi
 
 tmux_session_name=$(basename "$selected" | tr . _)
 
-if tmux switch-client -t "$tmux_session_name";
+if tmux switch-client -t "$tmux_session_name/";
 then
     exit 0
 fi
