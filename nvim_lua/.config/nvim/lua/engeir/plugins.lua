@@ -108,10 +108,12 @@ return packer.startup(function(use)
 
     -- mini.nvim
     -- Replaces:
-    --   RRethy/vim-illuminate -> mini.cursorword
-    --   numToStr/Comment.nvim -> mini.comment
-    --   kylechui/nvim-surround -> mini.surround
-    --   windwp/nvim-autopairs -> mini.pairs
+    --    junegunn/vim-easy-align -> mini.align    junegunn/vim-easy-align -> mini.align
+    --    numToStr/Comment.nvim -> mini.comment    numToStr/Comment.nvim -> mini.comment
+    --    RRethy/vim-illuminate -> mini.cursorword RRethy/vim-illuminate -> mini.cursorword
+    --    windwp/nvim-autopairs -> mini.pairs      windwp/nvim-autopairs -> mini.pairs
+    --    goolord/alpha-nvim -> mini.starter       goolord/alpha-nvim -> mini.starter
+    --    kylechui/nvim-surround -> mini.surround  kylechui/nvim-surround -> mini.surround
     use("echasnovski/mini.nvim")
 
     -- General text manipulation and fonts ========================================== --
