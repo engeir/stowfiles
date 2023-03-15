@@ -93,6 +93,8 @@ return packer.startup(function(use)
     use("nvim-telescope/telescope.nvim")
     use({ "axkirillov/easypick.nvim", requires = "nvim-telescope/telescope.nvim" })
     use("nvim-telescope/telescope-bibtex.nvim")
+    use("nvim-telescope/telescope-ui-select.nvim")
+    use({ "nvim-telescope/telescope-fzf-native.nvim", run = "make" })
     use({
         "AckslD/nvim-neoclip.lua",
         requires = { "nvim-telescope/telescope.nvim" },
@@ -119,6 +121,7 @@ return packer.startup(function(use)
     -- General text manipulation and fonts ========================================== --
     if IS_KNOWN then
         use("nat-418/boole.nvim")
+        use("phaazon/mind.nvim")
     end
     -- use("gaoDean/autolist.nvim")
     use({

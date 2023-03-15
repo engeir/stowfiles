@@ -56,6 +56,17 @@ require("telescope").setup({
         },
     },
     extensions = {
+        fzf = {
+          fuzzy = true,
+          override_generic_sorter = true,
+          override_file_sorter = true,
+          case_mode = "smart_case",
+        },
+        ["ui-select"] = {
+            require("telescope.themes").get_dropdown({
+                -- more options
+            }),
+        },
         bibtex = {
             -- Path to global bibliographies (placed outside of the project)
             global_files = { "/home/een023/science/ref/ref.bib" },
@@ -72,7 +83,8 @@ require("telescope").setup({
                     cite_marker = "#%s#",
                 },
             },
-            citation_format = '<a href="https://doi.org/{{doi}}" data-citation-key="@{{label}}">{{author}} ({{year}})</a>',
+            citation_format =
+            '<a href="https://doi.org/{{doi}}" data-citation-key="@{{label}}">{{author}} ({{year}})</a>',
         },
         media_files = {
             -- filetypes whitelist
@@ -86,6 +98,8 @@ require("telescope").setup({
 -- Load extensions
 -- require("telescope-media-files").setup()
 require("telescope").load_extension("bibtex")
+require("telescope").load_extension("fzf")
+require("telescope").load_extension("ui-select")
 if IS_LINUX and IS_KNOWN then
     require("telescope").load_extension("media_files")
 end
