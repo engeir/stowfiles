@@ -78,13 +78,19 @@ require("telescope").setup({
             -- Custom format for HTML referencing
             custom_formats = {
                 {
-                    id = "myFormat",
-                    -- citation_format = '<a href="https://doi.org/{{doi}}" data-citation-key="@{{label}}">{{author}}</a>',
-                    cite_marker = "#%s#",
+                    id = "hackmd",
+                    citation_format = "[^@{{label}}]: {{author}}, '{{title}}', {{journal}}, {{year}}, vol. {{volume}}, no. {{number}}, p. {{pages}}.",
+                    cite_marker = "[^@%s]",
                 },
+                -- {
+                --     id = "revealjs",
+                --     cite_marker = '<a href="https://doi.org/{{doi}}" data-citation-key="@{{label}}">{{author}} ({{year}})</a>',
+                --     citation_format = '<div class="csl-entry" id="ref-smith2010" role="doc-biblioentry"> {{author}}, {{title}}, {{journal}}, {{year}}, vol. {{volume}}, no. {{number}}, p. {{pages}}.</div>',
+                -- },
             },
-            citation_format =
-            '<a href="https://doi.org/{{doi}}" data-citation-key="@{{label}}">{{author}} ({{year}})</a>',
+            format = "hackmd",
+            citation_format = "{{author}}, '{{title}}', {{journal}}, {{year}}, vol. {{volume}}, no. {{number}}, p. {{pages}}.",
+            -- citation_format = '<a href="https://doi.org/{{doi}}" data-citation-key="@{{label}}">{{author}} ({{year}})</a>',
         },
         media_files = {
             -- filetypes whitelist
