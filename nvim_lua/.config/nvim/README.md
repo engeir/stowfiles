@@ -1,73 +1,75 @@
-# Neovim config
+# NeoVim Config
 
-```txt
-aerial.nvim
-auto-hlsearch.nvim
-boole.nvim
-bufferline.nvim
-catppuccin
-cmp-buffer
-cmp_luasnip
-cmp-nvim-lsp
-cmp-nvim-lua
-cmp-path
-colorbuddy.vim
-color-picker.nvim
-committia.vim
-diffview.nvim
-easypick.nvim
-fidget.nvim
-friendly-snippets
-githistory-browse.nvim
-gitlinker.nvim
-gitsigns.nvim
-glow.nvim
-gruvbox-material
-gruvbuddy.nvim
-harpoon
-impatient.nvim
-lazygit.nvim
-lsp-zero.nvim
-lualine.nvim
-LuaSnip
-mason-lspconfig.nvim
-mason.nvim
-material.nvim
-mind.nvim
-mini.nvim
-neodim
-neogen
-neogit
-null-ls.nvim
-nvim-cmp
-nvim-colorizer.lua
-nvim-lspconfig
-nvim-neoclip.lua
-nvim-tree.lua
-nvim-treesitter
-nvim-treesitter-context
-nvim-treesitter-textobjects
-nvim-ts-rainbow
-nvim-web-devicons
-packer.nvim
-plenary.nvim
-popup.nvim
-rainbow_csv
-refactoring.nvim
-syntax-tree-surfer
-telescope-bibtex.nvim
-telescope-fzf-native.nvim
-telescope-media-files.nvim
-telescope.nvim
-telescope-symbols.nvim
-telescope-ui-select.nvim
-todo-comments.nvim
-undotree
-vim-angry-reviewer
-vim-be-good
-vim-floaterm
-vim-fugitive
-vim-rooter
-vimtex
-zen-mode.nvim
-```
+This is @engeir's NeoVim config, using NVIM v0.9.0-dev-1147+ge389b1890 (view at [latest
+commit](https://github.com/neovim/neovim/tree/e389b1890)). I am currently using the
+[packer plugin manager](https://github.com/wbthomason/packer.nvim).
+
+- [aerial.nvim](https://github.com/stevearc/aerial.nvim)
+- [auto-hlsearch.nvim](https://github.com/asiryk/auto-hlsearch.nvim)
+- [boole.nvim](https://github.com/nat-418/boole.nvim)
+- [bufferline.nvim](https://github.com/akinsho/bufferline.nvim)
+- [catppuccin](https://github.com/catppuccin/nvim)
+- [cmp-buffer](https://github.com/hrsh7th/cmp-buffer)
+- [cmp_luasnip](https://github.com/saadparwaiz1/cmp_luasnip)
+- [cmp-nvim-lsp](https://github.com/hrsh7th/cmp-nvim-lsp)
+- [cmp-nvim-lua](https://github.com/hrsh7th/cmp-nvim-lua)
+- [cmp-path](https://github.com/hrsh7th/cmp-path)
+- [colorbuddy.vim](https://github.com/tjdevries/colorbuddy.vim)
+- [color-picker.nvim](https://github.com/ziontee113/color-picker.nvim)
+- [committia.vim](https://github.com/rhysd/committia.vim)
+- [diffview.nvim](https://github.com/sindrets/diffview.nvim)
+- [easypick.nvim](https://github.com/axkirillov/easypick.nvim)
+- [fidget.nvim](https://github.com/j-hui/fidget.nvim)
+- [friendly-snippets](https://github.com/rafamadriz/friendly-snippets)
+- [githistory-browse.nvim](https://github.com/engeir/githistory-browse.nvim)
+- [gitlinker.nvim](https://github.com/ruifm/gitlinker.nvim)
+- [gitsigns.nvim](https://github.com/lewis6991/gitsigns.nvim)
+- [glow.nvim](https://github.com/ellisonleao/glow.nvim)
+- [gruvbox-material](https://github.com/sainnhe/gruvbox-material)
+- [gruvbuddy.nvim](https://github.com/tjdevries/gruvbuddy.nvim)
+- [harpoon](https://github.com/ThePrimeagen/harpoon)
+- [impatient.nvim](https://github.com/lewis6991/impatient.nvim)
+- [lazygit.nvim](https://github.com/kdheepak/lazygit.nvim)
+- [lsp-zero.nvim](https://github.com/VonHeikemen/lsp-zero.nvim)
+- [lualine.nvim](https://github.com/nvim-lualine/lualine.nvim)
+- [LuaSnip](https://github.com/L3MON4D3/LuaSnip)
+- [mason-lspconfig.nvim](https://github.com/williamboman/mason-lspconfig.nvim)
+- [mason.nvim](https://github.com/williamboman/mason.nvim)
+- [material.nvim](https://github.com/marko-cerovac/material.nvim)
+- [mind.nvim](https://github.com/phaazon/mind.nvim)
+- [mini.nvim](https://github.com/echasnovski/mini.nvim)
+- [neodim](https://github.com/zbirenbaum/neodim)
+- [neogen](https://github.com/danymat/neogen)
+- [neogit](https://github.com/TimUntersberger/neogit)
+- [null-ls.nvim](https://github.com/jose-elias-alvarez/null-ls.nvim)
+- [nvim-cmp](https://github.com/hrsh7th/nvim-cmp)
+- [nvim-colorizer.lua](https://github.com/norcalli/nvim-colorizer.lua)
+- [nvim-lspconfig](https://github.com/neovim/nvim-lspconfig)
+- [nvim-neoclip.lua](https://github.com/AckslD/nvim-neoclip.lua)
+- [nvim-tree.lua](https://github.com/kyazdani42/nvim-tree.lua)
+- [nvim-treesitter-context](https://github.com/nvim-treesitter/nvim-treesitter-context)
+- [nvim-treesitter](https://github.com/nvim-treesitter/nvim-treesitter)
+- [nvim-treesitter-textobjects](https://github.com/nvim-treesitter/nvim-treesitter-textobjects)
+- [nvim-ts-rainbow](https://github.com/p00f/nvim-ts-rainbow)
+- [nvim-web-devicons](https://github.com/kyazdani42/nvim-web-devicons)
+- [packer.nvim](https://github.com/wbthomason/packer.nvim)
+- [plenary.nvim](https://github.com/nvim-lua/plenary.nvim)
+- [popup.nvim](https://github.com/nvim-lua/popup.nvim)
+- [rainbow_csv](https://github.com/mechatroner/rainbow_csv)
+- [refactoring.nvim](https://github.com/ThePrimeagen/refactoring.nvim)
+- [syntax-tree-surfer](https://github.com/ziontee113/syntax-tree-surfer)
+- [telescope-bibtex.nvim](https://github.com/nvim-telescope/telescope-bibtex.nvim)
+- [telescope-fzf-native.nvim](https://github.com/nvim-telescope/telescope-fzf-native.nvim)
+- [telescope-media-files.nvim](https://github.com/nvim-telescope/telescope-media-files.nvim)
+- [telescope.nvim](https://github.com/nvim-telescope/telescope.nvim)
+- [telescope-symbols.nvim](https://github.com/nvim-telescope/telescope-symbols.nvim)
+- [telescope-ui-select.nvim](https://github.com/nvim-telescope/telescope-ui-select.nvim)
+- [todo-comments.nvim](https://github.com/folke/todo-comments.nvim)
+- [undotree](https://github.com/mbbill/undotree)
+- [vim-angry-reviewer](https://github.com/anufrievroman/vim-angry-reviewer)
+- [vim-be-good](https://github.com/ThePrimeagen/vim-be-good)
+- [vim-floaterm](https://github.com/voldikss/vim-floaterm)
+- [vim-fugitive](https://github.com/tpope/vim-fugitive)
+- [vim-rooter](https://github.com/airblade/vim-rooter)
+- [vimtex](https://github.com/lervag/vimtex)
+- [zen-mode.nvim](https://github.com/folke/zen-mode.nvim)

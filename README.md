@@ -9,6 +9,11 @@
 
 [![pre-commit](https://img.shields.io/badge/pre--commit-enabled-brightgreen?logo=pre-commit&logoColor=white)](https://github.com/pre-commit/pre-commit)
 
+## NeoVim
+
+The by far most updated directory/config is the NeoVim config. Have a closer look at it
+[here](./nvim_lua/.config/nvim/README.md).
+
 ## Install
 
 For Ubuntu:

@@ -4,10 +4,10 @@ P = function(v)
     return v
 end
 
-PLUGINS = function ()
+MD_PLUGINS = function ()
     for key, value in pairs(packer_plugins) do
-        print(key)
-        -- print(value.loaded)
+        print("[" .. key .. "](" .. value.url .. ")")
+        -- P(value)
     end
 end
 
