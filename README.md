@@ -12,7 +12,7 @@
 ## NeoVim
 
 The by far most updated directory/config is the NeoVim config. Have a closer look at it
-[here](./nvim_lua/.config/nvim/README.md).
+[here](./nvim_lua/.config/nvim/).
 
 ## Install
 
