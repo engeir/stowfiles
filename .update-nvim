@@ -1,0 +1,11 @@
+#!/bin/sh
+
+PLUGINS="$(nvim --headless -c ':lua PLUGINS()' -c 'q' 2>&1 | sort)"
+
+echo "# Neovim config
+
+\`\`\`txt
+$PLUGINS
+\`\`\`" >"nvim_lua/.config/nvim/README.md"
+
+sed -i 's/\r//g' "nvim_lua/.config/nvim/README.md"

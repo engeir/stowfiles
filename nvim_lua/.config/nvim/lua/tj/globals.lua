@@ -4,6 +4,13 @@ P = function(v)
     return v
 end
 
+PLUGINS = function ()
+    for key, value in pairs(packer_plugins) do
+        print(key)
+        -- print(value.loaded)
+    end
+end
+
 RELOAD = function(...)
     return require("plenary.reload").reload_module(...)
 end
