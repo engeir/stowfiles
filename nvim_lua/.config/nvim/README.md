@@ -2,7 +2,8 @@
 
 This is @engeir's NeoVim config, using NVIM v0.9.0-dev-1147+ge389b1890 (view at [latest
 commit](https://github.com/neovim/neovim/tree/e389b1890)). I am currently using the
-[packer plugin manager](https://github.com/wbthomason/packer.nvim).
+[packer plugin manager](https://github.com/wbthomason/packer.nvim). Below is a complete
+list of all plugins I'm using:
 
 - [aerial.nvim](https://github.com/stevearc/aerial.nvim)
 - [auto-hlsearch.nvim](https://github.com/asiryk/auto-hlsearch.nvim)

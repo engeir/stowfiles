@@ -8,7 +8,8 @@ echo "# NeoVim Config
 
 This is @engeir's NeoVim config, using $VERSION (view at [latest
 commit](https://github.com/neovim/neovim/tree/$COMMIT)). I am currently using the
-[packer plugin manager](https://github.com/wbthomason/packer.nvim).
+[packer plugin manager](https://github.com/wbthomason/packer.nvim). Below is a complete
+list of all plugins I'm using:
 
 $PLUGINS" >"nvim_lua/.config/nvim/README.md"
 
