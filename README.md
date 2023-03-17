@@ -16,33 +16,29 @@ The by far most updated directory/config is the NeoVim config. Have a closer loo
 
 ## Install
 
-For Ubuntu:
+Install any one directory/file:
 
-```sh
-make install-ubuntu
-```
-
-For Mac:
-
-```sh
-make install-mac
-```
-
-Or install any one folder/files:
-
-```sh
+```bash
 stow zsh
+stow nvim_lua
+...
+```
+
+Uninstall with the `-D` option:
+
+```bash
+stow -D zsh
+stow -D nvim_lua
+...
 ```
 
 ## Other
 
-Update the `apt` list of packages:
+A list of packages and binaries installed on my Linux machine is found in
+[INSTALLED-linux.md](./INSTALLED-linux.md).
 
-```sh
-dpkg --get-selections
-```
-
-Update the `brew` list of packages:
+Update the `brew` list of packages, found in
+[brewery/.config/brewery](/./brewery/.config/brewery):
 
 ```sh
 brew list
