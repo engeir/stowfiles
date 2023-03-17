@@ -1,7 +1,7 @@
 # NeoVim Config
 
-This is @engeir's NeoVim config, using NVIM v0.9.0-dev-1147+ge389b1890 (view at [latest
-commit](https://github.com/neovim/neovim/tree/e389b1890)). I am currently using the
+This is @engeir's NeoVim config, using NVIM v0.9.0-dev-1237+gaccdb0104 (view at [latest
+commit](https://github.com/neovim/neovim/tree/accdb0104)). I am currently using the
 [packer plugin manager](https://github.com/wbthomason/packer.nvim). Below is a complete
 list of all plugins I'm using:
 
