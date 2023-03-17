@@ -99,10 +99,10 @@ ts.setup({
         swap = {
             enable = true,
             swap_next = {
-                ["[t"] = "@parameter.inner",
+                ["]n"] = "@parameter.inner",
             },
             swap_previous = {
-                ["]t"] = "@parameter.inner",
+                ["[n"] = "@parameter.inner",
             },
         },
     },
