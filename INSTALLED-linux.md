@@ -1,3 +1,8 @@
+# Installed programs
+
+## Apt
+
+```
 4ti2						install
 accountsservice					install
 accountsservice-ubuntu-schemas			install
@@ -4720,3 +4725,211 @@ zsh-autosuggestions				install
 zsh-common					install
 zsh-syntax-highlighting				install
 zstd						install
+```
+
+## Cargo
+
+```
+alacritty v0.7.2:
+    alacritty
+atuin v13.0.1:
+    atuin
+blindfold v1.0.7:
+    blindfold
+bob-nvim v2.1.3:
+    bob
+cargo-binstall v0.21.3:
+    cargo-binstall
+cargo-edit v0.9.1:
+    cargo-add
+    cargo-rm
+    cargo-set-version
+    cargo-upgrade
+du-dust v0.8.5:
+    dust
+exa v0.10.1:
+    exa
+fd-find v8.7.0:
+    fd
+halp v0.1.1:
+    halp
+    halp-completions
+    halp-mangen
+    halp-test
+helix-term v0.6.0 (/home/een023/programs/helix/helix-term):
+    hx
+hyperfine v1.16.0:
+    hyperfine
+jless v0.8.0:
+    jless
+mdbook v0.4.21:
+    mdbook
+mdbook-admonish v1.7.0:
+    mdbook-admonish
+mdbook-svgbob v0.1.1:
+    mdbook-svgbob
+mdbook-toc v0.9.0:
+    mdbook-toc
+menyoki v1.6.1:
+    menyoki
+pueue v2.1.0:
+    pueue
+    pueued
+ripgrep v13.0.0:
+    rg
+rtx-cli v1.23.7:
+    rtx
+sd v0.7.6:
+    sd
+shellharden v4.1.3:
+    shellharden
+skim v0.9.4:
+    sk
+stylua v0.14.0:
+    stylua
+taplo-cli v0.5.0:
+    taplo
+tree-sitter-cli v0.20.6:
+    tree-sitter
+xcolor v0.5.1:
+    xcolor
+zeta-note v0.1.8:
+    zeta-note
+```
+
+## Pipx
+
+```
+package ansible-core 2.14.3, installed using Python 3.10.4
+ - ansible
+ - ansible-config
+ - ansible-connection
+ - ansible-console
+ - ansible-doc
+ - ansible-galaxy
+ - ansible-inventory
+ - ansible-playbook
+ - ansible-pull
+ - ansible-test
+ - ansible-vault
+package beautysh 6.2.1, installed using Python 3.10.4
+ - beautysh
+package black 23.1.0, installed using Python 3.10.4
+ - black
+ - black-primer
+ - blackd
+package cicero 0.2.5, installed using Python 3.10.4
+ - cicero
+package cowsay 5.0, installed using Python 3.10.4
+ - cowsay
+package flake8 6.0.0, installed using Python 3.10.4
+ - flake8
+package fprettify 0.3.7, installed using Python 3.10.4
+ - fprettify
+package globus-cli 3.12.0, installed using Python 3.10.4
+ - globus
+package howdoi 2.0.20, installed using Python 3.10.4
+ - howdoi
+package httpie 3.2.1, installed using Python 3.10.4
+ - http
+ - httpie
+ - https
+package instagram-scraper 66.0.2, installed using Python 3.10.4
+ - instagram-scraper
+package intake 0.6.8, installed using Python 3.10.4
+ - intake
+ - intake-server
+package jupyter-client 8.0.3, installed using Python 3.10.4
+ - jupyter-kernel
+ - jupyter-kernelspec
+ - jupyter-run
+package jupytext 1.14.5, installed using Python 3.10.4
+ - jupytext
+package kb-manager 0.1.7, installed using Python 3.10.4
+ - kb
+package lookatme 2.5.5, installed using Python 3.10.4
+ - lam
+ - lookatme
+ - witnessme
+package mypy 1.1.1, installed using Python 3.10.4
+ - dmypy
+ - mypy
+ - mypyc
+ - stubgen
+ - stubtest
+package nbpreview 0.9.1, installed using Python 3.10.4
+ - nbp
+ - nbpreview
+package ncdump-rich 0.3.1, installed using Python 3.10.4
+ - ncdump-rich
+package northern-lights-forecast 4.1.4, installed using Python 3.10.4
+ - nlf
+ - nlfd
+package nox 2022.11.21, installed using Python 3.10.4
+ - nox
+ - tox-to-nox
+package npzviewer 0.2.0, installed using Python 3.10.4
+ - npzviewer
+package ntfy 2.7.0, installed using Python 3.10.4
+ - ntfy
+package openconnect-sso 0.7.3, installed using Python 3.10.4
+ - openconnect-sso
+package pandoc-eqnos 2.5.0, installed using Python 3.10.4
+ - pandoc-eqnos
+package pandoc-include 1.2.0, installed using Python 3.10.4
+ - pandoc-include
+package pipenv 2023.2.18, installed using Python 3.10.4
+ - pipenv
+ - pipenv-resolver
+package pipreqs 0.4.11, installed using Python 3.10.4
+ - pipreqs
+package poetry2conda 0.3.0, installed using Python 3.10.4
+ - poetry2conda
+package poetry2setup 1.1.0, installed using Python 3.10.4
+ - poetry2setup
+package pptx2md 1.1.2, installed using Python 3.10.4
+ - pptx2md
+package pre-commit 3.1.1, installed using Python 3.10.4
+ - pre-commit
+ - pre-commit-validate-config
+ - pre-commit-validate-manifest
+package pydocstyle 6.3.0, installed using Python 3.10.4
+ - pydocstyle
+package pypistats 1.2.1, installed using Python 3.10.4
+ - pypistats
+package pyqt5 5.15.9, installed using Python 3.10.4
+ - pylupdate5
+ - pyrcc5
+ - pyuic5
+package pyright 1.1.299, installed using Python 3.10.4
+ - pyright
+ - pyright-langserver
+ - pyright-python
+ - pyright-python-langserver
+package rich-cli 1.8.0, installed using Python 3.10.4
+ - rich
+package rich-codex 1.2.6, installed using Python 3.10.4
+ - rich-codex
+package rmview 3.0, installed using Python 3.10.4
+ - rmview
+package rofimoji 6.1.0, installed using Python 3.10.4
+ - rofimoji
+package telegram-send 0.34, installed using Python 3.10.4
+ - telegram-send
+package term-image 0.5.0, installed using Python 3.10.4
+ - term-image
+ - term-img
+package tex2svg 0.0.2, installed using Python 3.10.4
+ - tex2svg
+package thefuck 3.32, installed using Python 3.10.4
+ - fuck
+ - thefuck
+package tldr 3.1.0, installed using Python 3.10.4
+ - tldr
+package twine 4.0.2, installed using Python 3.10.4
+ - twine
+package ueberzug 18.1.9, installed using Python 3.10.4
+ - ueberzug
+package wtpython 0.1.0, installed using Python 3.10.4
+ - wtpython
+```
