@@ -8,11 +8,10 @@
 NEW=$(xclip -o)
 FILE="$HOME/.local/share/bookmarks/bookmarks.sh"
 
-# Thanks to
-# https://unix.stackexchange.com/questions/231948/grep-for-string-but-ignore-commented-out-items-with-string
+# Thanks to https://unix.stackexchange.com/a/231959
 if grep -q -P "^(?=[\s]*+[^#])[^#]*($NEW)" "$FILE"; then
     notify-send "Bookmarks" "I found a second version of $NEW in your bookmarks."
 else
     notify-send "Bookmarks" "Adding $NEW to your bookmarks!"
-    echo "$NEW">> "$FILE"
+    echo "$NEW" >>"$FILE"
 fi

@@ -30,6 +30,8 @@ super + alt + b
     ~/bin/new-bookmark.sh &
 super + alt + t
     ~/bin/type-bookmark.sh &
+super + alt + d
+    ~/bin/delete-bookmark.sh
 # make sxhkd reload its configuration files:
 super + Escape
 	pkill -USR1 -x sxhkd
@@ -50,8 +52,10 @@ super + @space
 	# sh ~/.config/bspwm/rofi/bin/launcher
 super + alt + @space
 	~/.config/rofi/launchers/misc/launcher.sh &
-super + {_,alt +} d
-    rofi -show {window,run} -theme $HOME/programs/command_line_apps/rofi-collection/nord/nord.rasi
+# super + {_,alt +} d
+#     rofi -show {window,run} -theme $HOME/programs/command_line_apps/rofi-collection/nord/nord.rasi
+super + d
+    rofi -show window -theme $HOME/programs/command_line_apps/rofi-collection/nord/nord.rasi
 # # Rofi Network Menu (nmd is not installed)
 # super + n
 # 	nmd

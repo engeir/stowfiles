@@ -6,5 +6,5 @@ TRIM=$(sed 's/\s*#.*$//;/^$/d' "$FILE")
 CHOSEN=$(echo "$TRIM" | dmenu -l 20)
 
 # Exit if none chosen.
-[ -z "$CHOSEN" ] && exit
+[ "$CHOSEN" = "" ] && exit
 xdotool type "$CHOSEN"
