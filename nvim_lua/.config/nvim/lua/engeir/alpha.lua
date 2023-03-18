@@ -4,7 +4,10 @@ if not status_ok then
     return
 end
 
-local dashboard = require("alpha.themes.dashboard")
+local ok, dashboard = pcall(require, "alpha.themes.dashboard")
+if not ok then
+    return
+end
 dashboard.section.header.val = {
     [[               ██╗]],
     [[             ██╔═██╗]],
