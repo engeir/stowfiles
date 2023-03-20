@@ -1,3 +1,6 @@
+# Some nice defaults from someone else's config.
+include extra
+
 set sandbox none
 
 # Clipboard
@@ -12,9 +15,14 @@ map <C-s> feedkeys ":exec rmapi put $FILE<Return>"
 set synctex true
 set synctex-editor-command "gvim --remote-silent +%{line} %{input}"
 
+# Transparency (same as #282828 which is set in Xresources)
+set default-bg rgba(40,40,40,0.9)
+
 # Colors for inverse mode
 # set recolor-lightcolor \#FFFFFF
 # set recolor-darkcolor \#FCE9CE
+set recolor-keephue 'true'
+set recolor-reverse-video 'true'
 
 # https://unix.stackexchange.com/questions/456837/zathura-shortcut-feedkeys-configuration-for-recolouring
 # midnight mode
@@ -26,12 +34,14 @@ map <F3> focus_inputbar ":set recolor-lightcolor \#0a0a12"
 map <F4> focus_inputbar ":set recolor-darkcolor \#ff9900"
 map @ feedkeys "<F3><Return><F4><Return>"
 # green on black
-map <F6> focus_inputbar ":set recolor-lightcolor \#000000"
-map <F7> focus_inputbar ":set recolor-darkcolor \#FCE9CE"
+map <F5> focus_inputbar ":set recolor-lightcolor \#000000"
+map <F6> focus_inputbar ":set recolor-darkcolor \#FCE9CE"
 map \# feedkeys "<F6><Return><F7><Return>"
 # original (black on white)
-map <F8> focus_inputbar ":set recolor-lightcolor \#ffffff"
-map <F9> focus_inputbar ":set recolor-darkcolor \#000000"
+map <F7> focus_inputbar ":set recolor-lightcolor \#0f0f0f"
+map <F8> focus_inputbar ":set recolor-darkcolor \#f0f0f0"
 map $ feedkeys "<F8><Return><F9><Return>"
-
-include extra
+# transparent
+map <F9> focus_inputbar ":set recolor-lightcolor rgba(0,0,0,0)"
+map <F10> focus_inputbar ":set recolor-darkcolor \#dac1ba"
+map & feedkeys "<F10><Return><F11><Return>"
