@@ -30,7 +30,7 @@ null_ls.setup({
         -- diagnostics.pydocstyle,
         diagnostics.shellcheck,
         formatting.beautysh,
-        formatting.bibclean.with({ extra_args = { "--max-width", "0", "--no-fix-names" } }),
+        formatting.bibclean.with({ extra_args = { "--max-width", "0" } }),
         formatting.black.with({ extra_args = { "--fast" } }),
         formatting.fixjson,
         formatting.fprettify,
