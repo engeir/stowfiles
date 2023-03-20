@@ -21,6 +21,8 @@ set default-bg rgba(40,40,40,0.9)
 # Colors for inverse mode
 # set recolor-lightcolor \#FFFFFF
 # set recolor-darkcolor \#FCE9CE
+set highlight-color		"#ff9580"
+set highlight-active-color	"#920000"
 set recolor-keephue 'true'
 set recolor-reverse-video 'true'
 
