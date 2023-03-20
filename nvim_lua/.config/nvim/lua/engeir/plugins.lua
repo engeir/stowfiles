@@ -170,13 +170,9 @@ return packer.startup(function(use)
     -- nvim-ts-rainbow is archived, but nvim-ts-rainbow2 is ugly
     use("p00f/nvim-ts-rainbow") -- Different colour for nested parenthesis
     -- use("HiPhish/nvim-ts-rainbow2") -- Different colour for nested parenthesis
-    use({
-        "norcalli/nvim-colorizer.lua",
-        config = function()
-            require("colorizer").setup()
-        end,
-    })
-    use("ziontee113/color-picker.nvim")
+    use("NvChad/nvim-colorizer.lua")
+    -- use("ziontee113/color-picker.nvim")
+    use("uga-rosa/ccc.nvim")
     use("folke/todo-comments.nvim")
     use({
         "kyazdani42/nvim-tree.lua",
