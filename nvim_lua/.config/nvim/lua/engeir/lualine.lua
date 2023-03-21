@@ -16,6 +16,7 @@ end
 lualine.setup({
     options = {
         icons_enabled = true,
+        globalstatus = true,
         component_separators = { "", "" },
         theme = "gruvbox",
         -- theme = "auto",
@@ -31,6 +32,22 @@ lualine.setup({
             },
             { getFileInfo },
         },
+    },
+    winbar = {
+        lualine_a = {},
+        lualine_b = {},
+        lualine_c = {},
+        lualine_x = {},
+        lualine_y = {},
+        lualine_z = {},
+    },
+    inactive_winbar = {
+        lualine_a = {},
+        lualine_b = {},
+        lualine_c = { "filename" },
+        lualine_x = { "location" },
+        lualine_y = {},
+        lualine_z = {},
     },
     extensions = {
         "toggleterm",
