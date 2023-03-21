@@ -15,4 +15,4 @@ FILE="$1"
     echo ""
     /bin/python ~/bin/revealjs-make-reflist.py "$FILE" | pandoc --bibliography ~/science/ref/ref.bib --citeproc | /bin/python ~/bin/revealjs-make-reflist.py
     echo "<!-- End adding with revealjs-make-reflist -->"
-} >> "$1"
+} >>"$1"
