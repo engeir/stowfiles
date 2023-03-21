@@ -25,6 +25,35 @@ ai.setup()
 -- mini.align --------------------------------------------------------------------------
 align.setup()
 
+-- mini.base16 -------------------------------------------------------------------------
+-- require("mini.base16").setup({
+--     palette = {
+--         base00 = "#fbf1c7",
+--         -- Colorcolumn
+--         base01 = "#333333",
+--         base02 = "#98971a",
+--         base03 = "#d79921",
+--         base04 = "#458588",
+--         base05 = "#b16286",
+--         base06 = "#689d6a",
+--         base07 = "#7c6f64",
+--         base08 = "#928374",
+--         base09 = "#9d0006",
+--         base0A = "#79740e",
+--         base0B = "#b57614",
+--         base0C = "#076678",
+--         -- Functions
+--         base0D = "#e96962",
+--         base0E = "#427b58",
+--         base0F = "#3c3836",
+--     },
+--     use_cterm = true,
+--     plugins = {
+--         default = true,
+--         -- ['echasnovski/mini.nvim'] = true,
+--     },
+-- })
+
 -- mini.bracketed ----------------------------------------------------------------------
 bracketed.setup()
 

@@ -154,6 +154,12 @@ return packer.startup(function(use)
     }) -- Quickly get a permalink to lines of code
 
     -- Style and colour schemes ===================================================== --
+    use({
+        "xiyaowong/transparent.nvim",
+        config = function()
+            require("transparent").setup()
+        end,
+    })
     -- TODO: replace with mini.statusline?
     use("nvim-lualine/lualine.nvim")
     -- TODO: replace with mini.tabline?

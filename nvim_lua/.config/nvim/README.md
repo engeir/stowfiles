@@ -66,6 +66,7 @@ list of all plugins I'm using:
 - [telescope-symbols.nvim](https://github.com/nvim-telescope/telescope-symbols.nvim)
 - [telescope-ui-select.nvim](https://github.com/nvim-telescope/telescope-ui-select.nvim)
 - [todo-comments.nvim](https://github.com/folke/todo-comments.nvim)
+- [transparent.nvim](https://github.com/xiyaowong/transparent.nvim)
 - [undotree](https://github.com/mbbill/undotree)
 - [vim-angry-reviewer](https://github.com/anufrievroman/vim-angry-reviewer)
 - [vim-be-good](https://github.com/ThePrimeagen/vim-be-good)
