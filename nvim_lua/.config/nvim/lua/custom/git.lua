@@ -4,8 +4,6 @@ return {
         "lewis6991/gitsigns.nvim",
         dependencies = { "nvim-lua/plenary.nvim" },
     },
-    -- TODO: understand how to ackshually use this
-    "mbbill/undotree",
     {
         "sindrets/diffview.nvim",
         config = function()
@@ -25,4 +23,6 @@ return {
             require("gitlinker").setup()
         end,
     }, -- Quickly get a permalink to lines of code
+    -- My plugins
+    "engeir/githistory-browse.nvim",
 }
