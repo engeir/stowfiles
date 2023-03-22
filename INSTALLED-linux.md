@@ -4730,7 +4730,7 @@ zstd						install
 ## Cargo
 
 ```
-alacritty v0.7.2:
+alacritty v0.11.0:
     alacritty
 atuin v13.0.1:
     atuin
@@ -4738,58 +4738,61 @@ blindfold v1.0.7:
     blindfold
 bob-nvim v2.1.3:
     bob
-cargo-binstall v0.21.3:
+cargo-binstall v0.22.0:
     cargo-binstall
-cargo-edit v0.9.1:
+cargo-edit v0.11.9:
     cargo-add
     cargo-rm
     cargo-set-version
     cargo-upgrade
+cargo-update v12.0.0:
+    cargo-install-update
+    cargo-install-update-config
 du-dust v0.8.5:
     dust
 exa v0.10.1:
     exa
 fd-find v8.7.0:
     fd
-halp v0.1.1:
+halp v0.1.4:
     halp
     halp-completions
     halp-mangen
     halp-test
 helix-term v0.6.0 (/home/een023/programs/helix/helix-term):
     hx
-hyperfine v1.16.0:
+hyperfine v1.16.1:
     hyperfine
 jless v0.8.0:
     jless
-mdbook v0.4.21:
+mdbook v0.4.28:
     mdbook
-mdbook-admonish v1.7.0:
+mdbook-admonish v1.8.0:
     mdbook-admonish
-mdbook-svgbob v0.1.1:
+mdbook-svgbob v0.2.1:
     mdbook-svgbob
-mdbook-toc v0.9.0:
+mdbook-toc v0.11.2:
     mdbook-toc
-menyoki v1.6.1:
+menyoki v1.7.0:
     menyoki
-pueue v2.1.0:
+pueue v3.1.2:
     pueue
     pueued
 ripgrep v13.0.0:
     rg
-rtx-cli v1.23.7:
+rtx-cli v1.26.0:
     rtx
 sd v0.7.6:
     sd
-shellharden v4.1.3:
+shellharden v4.3.0:
     shellharden
-skim v0.9.4:
+skim v0.10.4:
     sk
-stylua v0.14.0:
+stylua v0.17.0:
     stylua
-taplo-cli v0.5.0:
+taplo-cli v0.8.0:
     taplo
-tree-sitter-cli v0.20.6:
+tree-sitter-cli v0.20.7:
     tree-sitter
 xcolor v0.5.1:
     xcolor
@@ -4822,6 +4825,12 @@ package cicero 0.2.5, installed using Python 3.10.4
  - cicero
 package cowsay 5.0, installed using Python 3.10.4
  - cowsay
+package euporie 2.3.2, installed using Python 3.10.4
+ - euporie
+ - euporie-console
+ - euporie-hub
+ - euporie-notebook
+ - euporie-preview
 package flake8 6.0.0, installed using Python 3.10.4
  - flake8
 package fprettify 0.3.7, installed using Python 3.10.4
@@ -4839,7 +4848,7 @@ package instagram-scraper 66.0.2, installed using Python 3.10.4
 package intake 0.6.8, installed using Python 3.10.4
  - intake
  - intake-server
-package jupyter-client 8.0.3, installed using Python 3.10.4
+package jupyter-client 8.1.0, installed using Python 3.10.4
  - jupyter-kernel
  - jupyter-kernelspec
  - jupyter-run
@@ -4860,7 +4869,7 @@ package mypy 1.1.1, installed using Python 3.10.4
 package nbpreview 0.9.1, installed using Python 3.10.4
  - nbp
  - nbpreview
-package ncdump-rich 0.3.1, installed using Python 3.10.4
+package ncdump-rich 0.3.4, installed using Python 3.10.4
  - ncdump-rich
 package northern-lights-forecast 4.1.4, installed using Python 3.10.4
  - nlf
@@ -4878,7 +4887,7 @@ package pandoc-eqnos 2.5.0, installed using Python 3.10.4
  - pandoc-eqnos
 package pandoc-include 1.2.0, installed using Python 3.10.4
  - pandoc-include
-package pipenv 2023.2.18, installed using Python 3.10.4
+package pipenv 2023.3.20, installed using Python 3.10.4
  - pipenv
  - pipenv-resolver
 package pipreqs 0.4.11, installed using Python 3.10.4
@@ -4887,9 +4896,9 @@ package poetry2conda 0.3.0, installed using Python 3.10.4
  - poetry2conda
 package poetry2setup 1.1.0, installed using Python 3.10.4
  - poetry2setup
-package pptx2md 1.1.2, installed using Python 3.10.4
+package pptx2md 1.3.0, installed using Python 3.10.4
  - pptx2md
-package pre-commit 3.1.1, installed using Python 3.10.4
+package pre-commit 3.2.0, installed using Python 3.10.4
  - pre-commit
  - pre-commit-validate-config
  - pre-commit-validate-manifest
@@ -4901,11 +4910,13 @@ package pyqt5 5.15.9, installed using Python 3.10.4
  - pylupdate5
  - pyrcc5
  - pyuic5
-package pyright 1.1.299, installed using Python 3.10.4
+package pyright 1.1.300, installed using Python 3.10.4
  - pyright
  - pyright-langserver
  - pyright-python
  - pyright-python-langserver
+package pywal 3.3.0, installed using Python 3.10.4
+ - wal
 package rich-cli 1.8.0, installed using Python 3.10.4
  - rich
 package rich-codex 1.2.6, installed using Python 3.10.4
