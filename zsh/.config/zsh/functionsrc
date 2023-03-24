@@ -30,7 +30,7 @@ batdiff() {
     fi
 }
 
-reduce-pdf() {
+pdf-reduce() {
     # From
     # https://askubuntu.com/questions/113544/how-can-i-reduce-the-file-size-of-a-scanned-pdf-file
     gs -sDEVICE=pdfwrite -dCompatibilityLevel=1.4 -dPDFSETTINGS=/ebook -dNOPAUSE -dQUIET -dBATCH -sOutputFile=output.pdf "$1"
