@@ -87,12 +87,12 @@ local opts = {
     on_attach = require("engeir.lsp.handlers").on_attach,
     capabilities = require("engeir.lsp.handlers").capabilities,
 }
-lspconfig.lua_ls.setup(vim.tbl_deep_extend("force", require("engeir.lsp.settings.lua_ls"), opts))
-lspconfig.pyright.setup(vim.tbl_deep_extend("force", require("engeir.lsp.settings.pyright"), opts))
+lspconfig.lua_ls.setup(vim.tbl_deep_extend("force", require("engeir.lsp.languages.lua_ls"), opts))
+lspconfig.pyright.setup(vim.tbl_deep_extend("force", require("engeir.lsp.languages.pyright"), opts))
 lspconfig.ruff_lsp.setup(opts)
-lspconfig.ltex.setup(vim.tbl_deep_extend("force", require("engeir.lsp.settings.ltex"), opts))
+lspconfig.ltex.setup(vim.tbl_deep_extend("force", require("engeir.lsp.languages.ltex"), opts))
 if EXECUTABLE("pass") then
-    lspconfig.sourcery.setup(vim.tbl_deep_extend("force", require("engeir.lsp.settings.sourcery"), opts))
+    lspconfig.sourcery.setup(vim.tbl_deep_extend("force", require("engeir.lsp.languages.sourcery"), opts))
 end
 
 lsp.setup()
@@ -199,4 +199,4 @@ cmp.setup({
         ghost_text = true,
     },
 })
-require("engeir.cmp_gh_source")
+require("engeir.lsp.cmp_gh_source")

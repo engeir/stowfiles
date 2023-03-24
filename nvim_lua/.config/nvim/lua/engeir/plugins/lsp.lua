@@ -23,7 +23,7 @@ return {
         { "jose-elias-alvarez/null-ls.nvim" },
     },
     config = function()
-        require("custom.lsp-config.lsp-settings")
-        require("custom.lsp-config.luasnip-settings")
+        require("engeir.lsp")
+        require("engeir.lsp.luasnip-settings")
     end,
 }
