@@ -1,4 +1,5 @@
 return {
+    { "xiyaowong/transparent.nvim", config = true },
     {
         "tjdevries/colorbuddy.vim",
         enabled = false,
@@ -6,7 +7,7 @@ return {
             require("colorbuddy").colorscheme("custom.colorschemes.mycolorscheme")
         end,
     },
-    { "tjdevries/gruvbuddy.nvim", enabled = false },
+    { "tjdevries/gruvbuddy.nvim",   enabled = false },
     {
         "marko-cerovac/material.nvim",
         enabled = false,

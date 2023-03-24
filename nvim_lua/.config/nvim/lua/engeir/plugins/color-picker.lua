@@ -1,6 +1,8 @@
 local opts = { noremap = true, silent = true }
 return {
     "ziontee113/color-picker.nvim",
+    -- Use ccc.nvim (ccc-nvim.lua) instead
+    enabled = false,
     init = function()
         vim.cmd([[hi FloatBorder guibg=NONE]]) -- if you don't want weird border background colors around the popup.
     end,

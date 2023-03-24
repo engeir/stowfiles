@@ -104,7 +104,7 @@ return {
         }
         local items = {
             my_telescope,
-            starter.sections.recent_files(5, true, false),
+            starter.sections.recent_files(5, true, true),
             starter.sections.recent_files(5, false, true),
             {
                 name = "Open TODO",
