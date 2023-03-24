@@ -3,18 +3,13 @@ if not ok then
     return
 end
 
-local nmap = require("tj.keymap").nmap
-
 neogit.setup({
     integrations = {
         diffview = true,
     },
 })
 
-nmap({ "<leader>gs", neogit.open })
-nmap({
-    "<leader>gc",
-    function()
-        neogit.open({ "commit" })
-    end,
-})
+vim.keymap.set("n", "<leader>gs", neogit.open, { desc = "Neogit Open" })
+vim.keymap.set("n", "<leader>gc", function()
+    neogit.open({ "commit" })
+end, { desc = "Neogit Commit" })

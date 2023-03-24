@@ -50,11 +50,6 @@ return {
             },
         },
     },
-    { "sainnhe/gruvbox-material", lazy = false,       priority = 1000 },
-    { "catppuccin/nvim",          name = "catppuccin" },
-    "tjdevries/colorbuddy.vim",
-    "tjdevries/gruvbuddy.nvim",
-    "marko-cerovac/material.nvim",
     -- nvim-ts-rainbow is archived, but nvim-ts-rainbow2 is ugly
     "p00f/nvim-ts-rainbow", -- Different colour for nested parenthesis
     -- "HiPhish/nvim-ts-rainbow2", -- Different colour for nested parenthesis

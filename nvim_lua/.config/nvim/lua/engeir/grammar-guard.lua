@@ -7,7 +7,6 @@ end
 --     return
 -- end
 
-print("loading grammar")
 grammar.init()
 -- The below is implemented in nvim-lspconfig.lua. Commented out here to avoid
 -- duplicating.
