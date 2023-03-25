@@ -4,10 +4,14 @@ P = function(v)
     return v
 end
 
-MD_PLUGINS = function ()
+LAZY_PLUGINS = function()
+    for _, value in pairs(require("lazy").plugins()) do
+        print("[" .. value.name .. "](" .. value.url .. ")")
+    end
+end
+PACKER_PLUGINS = function()
     for key, value in pairs(packer_plugins) do
         print("[" .. key .. "](" .. value.url .. ")")
-        -- P(value)
     end
 end
 
@@ -20,8 +24,7 @@ R = function(name)
     return require(name)
 end
 
--- Check if the computer is one I recognise, if no, do not install copilot and
--- grammar-guard
+-- Check if the computer is one I recognise
 IS_KNOWN = (function()
     local output = vim.fn.systemlist("uname -n")
     local known = { "ubuntu-work", "eenMBP.local" }
