@@ -87,12 +87,12 @@ local opts = {
     on_attach = require("engeir.lsp.handlers").on_attach,
     capabilities = require("engeir.lsp.handlers").capabilities,
 }
-lspconfig.lua_ls.setup(vim.tbl_deep_extend("force", require("engeir.lsp.settings.lua_ls"), opts))
-lspconfig.pyright.setup(vim.tbl_deep_extend("force", require("engeir.lsp.settings.pyright"), opts))
+lspconfig.lua_ls.setup(vim.tbl_deep_extend("force", require("engeir.lsp.languages.lua_ls"), opts))
+lspconfig.pyright.setup(vim.tbl_deep_extend("force", require("engeir.lsp.languages.pyright"), opts))
 lspconfig.ruff_lsp.setup(opts)
-lspconfig.ltex.setup(vim.tbl_deep_extend("force", require("engeir.lsp.settings.ltex"), opts))
+lspconfig.ltex.setup(vim.tbl_deep_extend("force", require("engeir.lsp.languages.ltex"), opts))
 if EXECUTABLE("pass") then
-    lspconfig.sourcery.setup(vim.tbl_deep_extend("force", require("engeir.lsp.settings.sourcery"), opts))
+    lspconfig.sourcery.setup(vim.tbl_deep_extend("force", require("engeir.lsp.languages.sourcery"), opts))
 end
 
 lsp.setup()
@@ -105,6 +105,33 @@ local has_words_before = function()
     local line, col = unpack(vim.api.nvim_win_get_cursor(0))
     return col ~= 0 and vim.api.nvim_buf_get_lines(0, line - 1, line, true)[1]:sub(col, col):match("%s") == nil
 end
+local kind_icons = {
+    Text = "",
+    Method = "",
+    Function = "",
+    Constructor = "",
+    Field = "",
+    Variable = "",
+    Class = "",
+    Interface = "",
+    Module = "",
+    Property = "",
+    Unit = "",
+    Value = "",
+    Enum = "",
+    Keyword = "",
+    Snippet = "✂️",
+    Color = "",
+    File = "",
+    Reference = "",
+    Folder = "",
+    EnumMember = "",
+    Constant = "",
+    Struct = "",
+    Event = "",
+    Operator = "",
+    TypeParameter = "",
+}
 cmp.setup({
     completion = {
         completeopt = "menuone,noselect",
@@ -114,6 +141,21 @@ cmp.setup({
             luasnip.lsp_expand(args.body)
         end,
     },
+    -- formatting = {
+    --     fields = { "kind", "abbr", "menu" },
+    --     format = function(entry, vim_item)
+    --         vim_item.kind = kind_icons[vim_item.kind]
+    --         -- vim_item.menu = ({
+    --         --     nvim_lsp = "",
+    --         --     nvim_lua = "",
+    --         --     luasnip = "",
+    --         --     buffer = "",
+    --         --     path = "",
+    --         --     emoji = "",
+    --         -- })[entry.source.name]
+    --         return vim_item
+    --     end,
+    -- },
     mapping = lsp.defaults.cmp_mappings({
         ["<C-d>"] = cmp.mapping.scroll_docs(-4),
         ["<C-f>"] = cmp.mapping.scroll_docs(4),
@@ -147,7 +189,7 @@ cmp.setup({
         { name = "nvim_lua" },
         { name = "path" },
         { name = "luasnip" }, -- For luasnip users.
-        { name = "buffer", keyword_length = 4 },
+        { name = "buffer",   keyword_length = 4 },
         -- { name = "orgmode" },
         -- { name = "copilot" },
         -- { name = "cmp_tabnine" },
@@ -157,3 +199,4 @@ cmp.setup({
         ghost_text = true,
     },
 })
+require("engeir.lsp.cmp_gh_source")

@@ -1,16 +1,15 @@
-#!/bin/sh
+#!/bin/bash
 
-PLUGINS="$(nvim --headless -c ':lua MD_PLUGINS()' -c 'q' 2>&1 | sort | sed 's/^\[/- \[/')"
+PLUGINS="$(nvim --headless -c ':lua LAZY_PLUGINS()' -c 'q' 2>&1 | sort -f | tr -d $'\r' | sed 's/^\[/- \[/')"
 VERSION="$(nvim -v | sed 1q)"
 COMMIT=${VERSION#*+g}
 
 echo "# NeoVim Config
 
-This is @engeir's NeoVim config, using $VERSION (view at [latest
-commit](https://github.com/neovim/neovim/tree/$COMMIT)). I am currently using the
-[packer plugin manager](https://github.com/wbthomason/packer.nvim). Below is a complete
-list of all plugins I'm using:
+This is @engeir's NeoVim config, on $VERSION (view at [latest
+commit](https://github.com/neovim/neovim/tree/$COMMIT)) installed with the [bob version
+manager for neovim](https://github.com/MordechaiHadad/bob). I am currently using the
+[lazy plugin manager](https://github.com/folke/lazy.nvim). Below is a complete list of
+all plugins I'm using:
 
 $PLUGINS" >"nvim_lua/.config/nvim/README.md"
-
-sed -i 's/\r//g' "nvim_lua/.config/nvim/README.md"
