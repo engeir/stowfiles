@@ -78,7 +78,7 @@ return {
             },
             {
                 name = "Git files",
-                action = "lua require'engeir.telescope-extra'.project_files()",
+                action = "lua require'engeir.telescope.telescope-extra'.project_files()",
                 section = "Telescope",
             },
             {
