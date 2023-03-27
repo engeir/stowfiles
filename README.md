@@ -37,9 +37,5 @@ stow -D nvim_lua
 A list of packages and binaries installed on my Linux machine is found in
 [INSTALLED-linux.md](./INSTALLED-linux.md).
 
-Update the `brew` list of packages, found in
-[brewery/.config/brewery](/./brewery/.config/brewery):
-
-```sh
-brew list
-```
+A list of packages and binaries installed on my Mac machine is found in
+[INSTALLED-mac.md](./INSTALLED-mac.md).

@@ -1,13 +1,46 @@
-#!/bin/sh
+#!/bin/bash
 
 # Updates a file called INSTALLED.md.
+unameOut="$(uname -s)"
+case "$unameOut" in
+Linux*) machine=Linux ;;
+Darwin*) machine=Mac ;;
+CYGWIN*) machine=Cygwin ;;
+MINGW*) machine=MinGw ;;
+*)
+    machine="UNKNOWN:${unameOut}"
+    ;;
+esac
+# echo "$machine"
+if [ "Mac" = "$machine" ]; then
+    BREW="$(brew list)"
+    CARGO="$(cargo install --list)"
+    PIPX="$(pipx list | sed '1,2d' | sed 's/^   //')"
+    echo "# Installed programs
 
-APT="$(dpkg --get-selections)"
-CARGO="$(cargo install --list)"
-PIPX="$(pipx list | sed '1,2d' | sed 's/^\s\s\s//')"
-echo "# Installed programs
+## Brew
 
-## Apt
+\`\`\`
+$BREW
+\`\`\`
+
+## Cargo
+
+\`\`\`
+$CARGO
+\`\`\`
+
+## Pipx
+
+\`\`\`
+$PIPX
+\`\`\`" >"./INSTALLED-mac.md"
+fi
+if [ "Linux" = "$machine" ]; then
+    APT="$(dpkg --get-selections)"
+    CARGO="$(cargo install --list)"
+    PIPX="$(pipx list | sed '1,2d' | sed 's/^\s\s\s//')"
+    echo "# Installed programs
 
 \`\`\`
 $APT
@@ -24,3 +57,4 @@ $CARGO
 \`\`\`
 $PIPX
 \`\`\`" >"./INSTALLED-linux.md"
+fi
