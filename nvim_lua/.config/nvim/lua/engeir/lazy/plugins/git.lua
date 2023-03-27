@@ -1,5 +1,5 @@
 return {
-    "tpope/vim-fugitive",
+    {"tpope/vim-fugitive", enabled = IS_KNOWN},
     {
         "lewis6991/gitsigns.nvim",
         dependencies = { "nvim-lua/plenary.nvim" },

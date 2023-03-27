@@ -226,7 +226,7 @@ return {
     },
     {
         "ziontee113/syntax-tree-surfer",
-        cond = IS_KNOWN,
+        enabled = IS_KNOWN,
         config = function()
             vim.keymap.set("n", "vsj", function()
                 vim.opt.opfunc = "v:lua.STSSwapCurrentNodeNextNormal_Dot"

@@ -181,6 +181,7 @@ return {
     },
     {
         "nvim-telescope/telescope-bibtex.nvim",
+        enabled = IS_KNOWN,
         config = function()
             require("telescope").load_extension("bibtex")
         end,
@@ -209,13 +210,14 @@ return {
     {
         "nvim-telescope/telescope-media-files.nvim",
         dependencies = { "nvim-lua/popup.nvim" },
-        cond = IS_KNOWN and IS_LINUX,
+        enabled = IS_KNOWN and IS_LINUX,
         config = function()
             require("telescope").load_extension("media_files")
         end,
     },
     {
         "nvim-telescope/telescope-file-browser.nvim",
+        enabled = IS_KNOWN,
         dependencies = { "nvim-telescope/telescope.nvim", "nvim-lua/plenary.nvim" },
         config = function()
             require("telescope").load_extension("file_browser")
