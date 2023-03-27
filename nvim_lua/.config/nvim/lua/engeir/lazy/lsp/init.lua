@@ -199,4 +199,6 @@ cmp.setup({
         ghost_text = true,
     },
 })
-require("engeir.lazy.lsp.cmp_gh_source")
+if EXECUTABLE("gh") then
+    require("engeir.lazy.lsp.cmp_gh_source")
+end
