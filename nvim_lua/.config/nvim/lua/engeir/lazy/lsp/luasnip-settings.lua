@@ -47,7 +47,7 @@ end)
 vim.keymap.set(
     "n",
     "<leader><leader>s",
-    "<cmd>source ~/.config/nvim/lua/custom/plugins/lsp/settings/luasnip-settings.lua<CR>",
+    "<cmd>source ~/.config/nvim/lua/engeir/lazy/lsp/luasnip-settings.lua<CR>",
     { desc = "LuaSnip: Source Snippets File" }
 )
 
@@ -88,7 +88,7 @@ end
 
 -- Load in some snippets
 require("luasnip.loaders.from_vscode").lazy_load()
-require("luasnip.loaders.from_vscode").lazy_load({ paths = { "~/.config/nvim/lua/custom/plugins/lsp/settings/luasnippets" } })
+require("luasnip.loaders.from_vscode").lazy_load({ paths = { "~/.config/nvim/lua/engeir/lazy/lsp/luasnippets" } })
 -- Create some snippets
 ls.add_snippets("all", {
     ls.parser.parse_snippet("expandme", "-- hello there"),

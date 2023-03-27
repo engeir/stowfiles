@@ -4,7 +4,7 @@ return {
         "tjdevries/colorbuddy.vim",
         enabled = false,
         config = function()
-            require("colorbuddy").colorscheme("custom.colorschemes.mycolorscheme")
+            require("colorbuddy").colorscheme("engeir.lazy.colorschemes.mycolorscheme")
         end,
     },
     { "tjdevries/gruvbuddy.nvim",   enabled = false },

@@ -22,7 +22,7 @@ return {
             [[                   ╚═══╝]],
         }
         dashboard.section.buttons.val = {
-            dashboard.button("f", "  Find file", "<cmd>lua require'engeir.telescope-extra'.project_files()<cr>"),
+            dashboard.button("f", "  Find file", "<cmd>lua require'engeir.lazy.telescope.telescope-extra'.project_files()<cr>"),
             dashboard.button("e", "  New file", ":ene <BAR> startinsert <CR>"),
             dashboard.button("d", "  Edit TODO", ":e ~/Documents/notes_papers/_includes/todo.md <CR>"),
             dashboard.button("r", "  Recently used files", ":Telescope oldfiles <CR>"),

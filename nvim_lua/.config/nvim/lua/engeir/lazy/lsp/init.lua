@@ -6,7 +6,7 @@ if not ok then
 end
 
 -- null-ls settings
-require("engeir.lsp.null-ls")
+require("engeir.lazy.lsp.null-ls")
 
 -- ==================================== LSP-ZERO ==================================== --
 lsp.preset("recommended")
@@ -84,15 +84,15 @@ end)
 -- Set up specific LSPs. They seem to work, but not sure if it's the intended way by
 -- lsp-zero.
 local opts = {
-    on_attach = require("engeir.lsp.handlers").on_attach,
-    capabilities = require("engeir.lsp.handlers").capabilities,
+    on_attach = require("engeir.lazy.lsp.handlers").on_attach,
+    capabilities = require("engeir.lazy.lsp.handlers").capabilities,
 }
-lspconfig.lua_ls.setup(vim.tbl_deep_extend("force", require("engeir.lsp.languages.lua_ls"), opts))
-lspconfig.pyright.setup(vim.tbl_deep_extend("force", require("engeir.lsp.languages.pyright"), opts))
+lspconfig.lua_ls.setup(vim.tbl_deep_extend("force", require("engeir.lazy.lsp.languages.lua_ls"), opts))
+lspconfig.pyright.setup(vim.tbl_deep_extend("force", require("engeir.lazy.lsp.languages.pyright"), opts))
 lspconfig.ruff_lsp.setup(opts)
-lspconfig.ltex.setup(vim.tbl_deep_extend("force", require("engeir.lsp.languages.ltex"), opts))
+lspconfig.ltex.setup(vim.tbl_deep_extend("force", require("engeir.lazy.lsp.languages.ltex"), opts))
 if EXECUTABLE("pass") then
-    lspconfig.sourcery.setup(vim.tbl_deep_extend("force", require("engeir.lsp.languages.sourcery"), opts))
+    lspconfig.sourcery.setup(vim.tbl_deep_extend("force", require("engeir.lazy.lsp.languages.sourcery"), opts))
 end
 
 lsp.setup()
@@ -199,4 +199,4 @@ cmp.setup({
         ghost_text = true,
     },
 })
-require("engeir.lsp.cmp_gh_source")
+require("engeir.lazy.lsp.cmp_gh_source")
