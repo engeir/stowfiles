@@ -210,7 +210,8 @@ return {
     {
         "nvim-telescope/telescope-media-files.nvim",
         dependencies = { "nvim-lua/popup.nvim" },
-        enabled = IS_KNOWN and IS_LINUX,
+        enabled = IS_KNOWN,
+        cond = IS_LINUX,
         config = function()
             require("telescope").load_extension("media_files")
         end,

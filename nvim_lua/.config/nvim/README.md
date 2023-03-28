@@ -1,7 +1,7 @@
 # NeoVim Config
 
-This is @engeir's NeoVim config, on NVIM v0.9.0-dev-1237+gaccdb0104 (view at [latest
-commit](https://github.com/neovim/neovim/tree/accdb0104)) installed with the [bob version
+This is @engeir's NeoVim config, on NVIM v0.9.0-dev-1278+g063e93864 (view at [latest
+commit](https://github.com/neovim/neovim/tree/063e93864)) installed with the [bob version
 manager for neovim](https://github.com/MordechaiHadad/bob). I am currently using the
 [lazy plugin manager](https://github.com/folke/lazy.nvim). Below is a complete list of
 all plugins I'm using:
@@ -12,10 +12,10 @@ all plugins I'm using:
 - [bufferline](https://github.com/akinsho/bufferline.nvim.git)
 - [ccc.nvim](https://github.com/uga-rosa/ccc.nvim.git)
 - [cmp-buffer](https://github.com/hrsh7th/cmp-buffer.git)
-- [cmp_luasnip](https://github.com/saadparwaiz1/cmp_luasnip.git)
 - [cmp-nvim-lsp](https://github.com/hrsh7th/cmp-nvim-lsp.git)
 - [cmp-nvim-lua](https://github.com/hrsh7th/cmp-nvim-lua.git)
 - [cmp-path](https://github.com/hrsh7th/cmp-path.git)
+- [cmp_luasnip](https://github.com/saadparwaiz1/cmp_luasnip.git)
 - [colorizer](https://github.com/NvChad/nvim-colorizer.lua.git)
 - [committia.vim](https://github.com/rhysd/committia.vim.git)
 - [diffview.nvim](https://github.com/sindrets/diffview.nvim.git)
@@ -29,8 +29,8 @@ all plugins I'm using:
 - [gruvbox-material](https://github.com/sainnhe/gruvbox-material.git)
 - [harpoon](https://github.com/ThePrimeagen/harpoon.git)
 - [impatient.nvim](https://github.com/lewis6991/impatient.nvim.git)
-- [lazygit.nvim](https://github.com/kdheepak/lazygit.nvim.git)
 - [lazy.nvim](https://github.com/folke/lazy.nvim.git)
+- [lazygit.nvim](https://github.com/kdheepak/lazygit.nvim.git)
 - [lsp-zero.nvim](https://github.com/VonHeikemen/lsp-zero.nvim.git)
 - [lualine](https://github.com/nvim-lualine/lualine.nvim.git)
 - [LuaSnip](https://github.com/L3MON4D3/LuaSnip.git)
@@ -47,8 +47,8 @@ all plugins I'm using:
 - [nvim-neoclip.lua](https://github.com/AckslD/nvim-neoclip.lua.git)
 - [nvim-tree.lua](https://github.com/kyazdani42/nvim-tree.lua.git)
 - [nvim-treesitter-context](https://github.com/nvim-treesitter/nvim-treesitter-context.git)
-- [nvim-treesitter](https://github.com/nvim-treesitter/nvim-treesitter.git)
 - [nvim-treesitter-textobjects](https://github.com/nvim-treesitter/nvim-treesitter-textobjects.git)
+- [nvim-treesitter](https://github.com/nvim-treesitter/nvim-treesitter.git)
 - [nvim-ts-rainbow](https://github.com/p00f/nvim-ts-rainbow.git)
 - [nvim-web-devicons](https://github.com/kyazdani42/nvim-web-devicons.git)
 - [plenary.nvim](https://github.com/nvim-lua/plenary.nvim.git)
@@ -59,9 +59,9 @@ all plugins I'm using:
 - [telescope-file-browser.nvim](https://github.com/nvim-telescope/telescope-file-browser.nvim.git)
 - [telescope-fzf-native.nvim](https://github.com/nvim-telescope/telescope-fzf-native.nvim.git)
 - [telescope-media-files.nvim](https://github.com/nvim-telescope/telescope-media-files.nvim.git)
-- [telescope.nvim](https://github.com/nvim-telescope/telescope.nvim.git)
 - [telescope-symbols.nvim](https://github.com/nvim-telescope/telescope-symbols.nvim.git)
 - [telescope-ui-select.nvim](https://github.com/nvim-telescope/telescope-ui-select.nvim.git)
+- [telescope.nvim](https://github.com/nvim-telescope/telescope.nvim.git)
 - [todo-comments.nvim](https://github.com/folke/todo-comments.nvim.git)
 - [transparent.nvim](https://github.com/xiyaowong/transparent.nvim.git)
 - [undotree](https://github.com/mbbill/undotree.git)
