@@ -1,6 +1,15 @@
 #!/bin/bash
 
-PLUGINS="$(nvim --headless -c ':lua LAZY_PLUGINS()' -c 'q' 2>&1 | sort -f | tr -d $'\r' | sed 's/^\[/- \[/')"
+# If the coreutils rust command is installed, use its version of sort (for better cross
+# platform compatibility), otherwise use the standard sort command
+if command -v coreutils > /dev/null 2>&1
+then
+    SORT="coreutils sort"
+else
+    SORT="sort"
+fi
+
+PLUGINS="$(nvim --headless -c ':lua LAZY_PLUGINS()' -c 'q' 2>&1 | $SORT -f | tr -d $'\r' | sed 's/^\[/- \[/')"
 VERSION="$(nvim -v | sed 1q)"
 COMMIT=${VERSION#*+g}
 

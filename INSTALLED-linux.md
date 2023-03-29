@@ -1,7 +1,5 @@
 # Installed programs
 
-## Apt
-
 ```
 4ti2						install
 accountsservice					install
@@ -4730,13 +4728,13 @@ zstd						install
 ## Cargo
 
 ```
-alacritty v0.11.0:
+alacritty v0.12.0:
     alacritty
 atuin v13.0.1:
     atuin
 blindfold v1.0.7:
     blindfold
-bob-nvim v2.1.3:
+bob-nvim v2.2.0:
     bob
 cargo-binstall v0.22.0:
     cargo-binstall
@@ -4748,6 +4746,8 @@ cargo-edit v0.11.9:
 cargo-update v12.0.0:
     cargo-install-update
     cargo-install-update-config
+coreutils v0.0.17:
+    coreutils
 du-dust v0.8.5:
     dust
 exa v0.10.1:
@@ -4780,7 +4780,7 @@ pueue v3.1.2:
     pueued
 ripgrep v13.0.0:
     rg
-rtx-cli v1.26.0:
+rtx-cli v1.27.9:
     rtx
 sd v0.7.6:
     sd
