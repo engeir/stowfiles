@@ -1,7 +1,7 @@
 # NeoVim Config
 
-This is @engeir's NeoVim config, on NVIM v0.9.0-dev-1237+gaccdb0104 (view at [latest
-commit](https://github.com/neovim/neovim/tree/accdb0104)) installed with the [bob version
+This is @engeir's NeoVim config, on NVIM v0.9.0-dev-1278+g063e93864 (view at [latest
+commit](https://github.com/neovim/neovim/tree/063e93864)) installed with the [bob version
 manager for neovim](https://github.com/MordechaiHadad/bob). I am currently using the
 [lazy plugin manager](https://github.com/folke/lazy.nvim). Below is a complete list of
 all plugins I'm using:
@@ -38,19 +38,20 @@ all plugins I'm using:
 - [mason.nvim](https://github.com/williamboman/mason.nvim.git)
 - [mind.nvim](https://github.com/phaazon/mind.nvim.git)
 - [mini.nvim](https://github.com/echasnovski/mini.nvim.git)
+- [neo-tree.nvim](https://github.com/nvim-neo-tree/neo-tree.nvim.git)
 - [neodim](https://github.com/zbirenbaum/neodim.git)
 - [neogen](https://github.com/danymat/neogen.git)
 - [neogit](https://github.com/TimUntersberger/neogit.git)
+- [nui.nvim](https://github.com/MunifTanjim/nui.nvim.git)
 - [null-ls.nvim](https://github.com/jose-elias-alvarez/null-ls.nvim.git)
 - [nvim-cmp](https://github.com/hrsh7th/nvim-cmp.git)
 - [nvim-lspconfig](https://github.com/neovim/nvim-lspconfig.git)
 - [nvim-neoclip.lua](https://github.com/AckslD/nvim-neoclip.lua.git)
-- [nvim-tree.lua](https://github.com/kyazdani42/nvim-tree.lua.git)
 - [nvim-treesitter-context](https://github.com/nvim-treesitter/nvim-treesitter-context.git)
 - [nvim-treesitter-textobjects](https://github.com/nvim-treesitter/nvim-treesitter-textobjects.git)
 - [nvim-treesitter](https://github.com/nvim-treesitter/nvim-treesitter.git)
 - [nvim-ts-rainbow](https://github.com/p00f/nvim-ts-rainbow.git)
-- [nvim-web-devicons](https://github.com/kyazdani42/nvim-web-devicons.git)
+- [nvim-web-devicons](https://github.com/nvim-tree/nvim-web-devicons.git)
 - [plenary.nvim](https://github.com/nvim-lua/plenary.nvim.git)
 - [popup.nvim](https://github.com/nvim-lua/popup.nvim.git)
 - [rainbow_csv](https://github.com/mechatroner/rainbow_csv.git)
