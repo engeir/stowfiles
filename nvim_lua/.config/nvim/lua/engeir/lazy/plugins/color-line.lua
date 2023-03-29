@@ -15,7 +15,7 @@ return {
         "akinsho/bufferline.nvim",
         name = "bufferline",
         version = "v2.*",
-        dependencies = "kyazdani42/nvim-web-devicons",
+        dependencies = "nvim-tree/nvim-web-devicons",
         config = function()
             require("bufferline").setup()
             vim.keymap.set("n", "H", ":BufferLineCyclePrev<CR>", { noremap = true, silent = true })

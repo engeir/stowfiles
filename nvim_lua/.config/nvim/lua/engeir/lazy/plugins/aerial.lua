@@ -1,7 +1,7 @@
 -- See https://github.com/stevearc/aerial.nvim#options
 return {
     "stevearc/aerial.nvim",
-    dependencies = "kyazdani42/nvim-web-devicons", -- optional, for file icons
+    dependencies = "nvim-tree/nvim-web-devicons", -- optional, for file icons
     opts = {
         layout = {
             max_width = { 100, 0.2 },
