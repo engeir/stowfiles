@@ -1,5 +1,6 @@
 return {
     "nvim-tree/nvim-tree.lua",
+    enabled = false,
     dependencies = "nvim-tree/nvim-web-devicons", -- optional, for file icons
     version = "nightly",                           -- optional, updated every week. (see issue #1193)
     keys = {
