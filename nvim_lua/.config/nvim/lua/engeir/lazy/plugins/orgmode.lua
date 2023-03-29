@@ -3,7 +3,7 @@ return {
     enabled = false,
     dependencies = "nvim-treesitter/nvim-treesitter",
     config = function()
-        orgmode = require("orgmode")
+        local orgmode = require("orgmode")
         -- Load custom tree-sitter grammar for org filetype
         orgmode.setup_ts_grammar()
         -- Tree-sitter configuration
@@ -16,7 +16,7 @@ return {
             ensure_installed = { "org" },                      -- Or run :TSUpdate org
         })
 
-        require("orgmode").setup({
+        orgmode.setup({
             org_agenda_files = { "~/projects/todo/org/*", "~/my-orgs/**/*" },
             org_default_notes_file = "~/projects/todo/org/refile.org",
         })
