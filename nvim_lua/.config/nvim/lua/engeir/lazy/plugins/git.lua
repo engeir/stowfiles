@@ -1,5 +1,5 @@
 return {
-    { "tpope/vim-fugitive",    enabled = IS_KNOWN },
+    { "tpope/vim-fugitive",  enabled = IS_KNOWN },
     {
         "lewis6991/gitsigns.nvim",
         dependencies = { "nvim-lua/plenary.nvim" },
@@ -83,8 +83,14 @@ return {
             end, { desc = "Neogit Commit" })
         end,
     }, -- To commit quickly and view
-    { "rhysd/committia.vim",   cond = IS_KNOWN },
-    { "kdheepak/lazygit.nvim", cond = IS_KNOWN and EXECUTABLE("lazygit") },
+    { "rhysd/committia.vim", cond = IS_KNOWN },
+    {
+        "kdheepak/lazygit.nvim",
+        cond = IS_KNOWN and EXECUTABLE("lazygit"),
+        keys = {
+            { "<leader>lg", "<cmd>LazyGit<cr>" },
+        },
+    },
     {
         "ruifm/gitlinker.nvim",
         config = function()
