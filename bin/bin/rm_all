@@ -1,7 +1,0 @@
-#!/usr/bin/env sh
-
-for file in "$@"; do
-    rm_crop "$file"
-    rm_trans "$file"
-    rm_inv "$file"
-done

@@ -1,0 +1,13 @@
+#!/bin/sh
+
+if [ "$1" = "-h" ] || [ "$1" = "-H" ] || [ "$1" = "--help" ] || [ "$#" -eq 0 ]; then
+    printf "Usage:\n\nimg-swap-black-white input.png <output.png>\n"
+    exit 0
+fi
+
+out=${2:-$1}
+convert "$1" -channel rgba -alpha set -fuzz 50% \
+    -fill none -opaque white \
+    -fill white -opaque black \
+    -fill black -opaque none \
+    -alpha off "$out"

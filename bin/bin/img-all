@@ -1,0 +1,12 @@
+#!/bin/sh
+
+if [ "$1" = "-h" ] || [ "$1" = "-H" ] || [ "$1" = "--help" ] || [ "$#" -eq 0 ]; then
+    printf "Usage:\n\nimg-all input.png [input2.png ...]\n\nPerforms crop, transparent and invert in order.\n"
+    exit 0
+fi
+
+for file in "$@"; do
+    img-crop "$file"
+    img-transparent "$file"
+    img-invert "$file"
+done

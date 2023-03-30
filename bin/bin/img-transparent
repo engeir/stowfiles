@@ -1,0 +1,11 @@
+#!/bin/sh
+
+if [ "$1" = "-h" ] || [ "$1" = "-H" ] || [ "$1" = "--help" ] || [ "$#" -eq 0 ]; then
+    printf "Usage:\n\nimg-transparent input.png <output.png> <colour> <percentage>\n"
+    exit 0
+fi
+
+out=${2:-$1}
+col=${3:-white}
+XX=${4:-10}
+convert "$1" -fuzz "$XX"% -transparent "$col" "$out"

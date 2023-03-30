@@ -1,0 +1,10 @@
+#!/bin/sh
+
+if [ "$1" = "-h" ] || [ "$1" = "-H" ] || [ "$1" = "--help" ] || [ "$#" -eq 0 ]; then
+    printf "Usage:\n\nimg-crop input.png [input2.png ...]\n\nRemoves using the -trim option of 'convert'\n"
+    exit 0
+fi
+
+for file in "$@"; do
+    convert -trim "$file" "$file"
+done
