@@ -1,7 +1,7 @@
 # NeoVim Config
 
-This is @engeir's NeoVim config, on NVIM v0.9.0-dev-1278+g063e93864 (view at [latest
-commit](https://github.com/neovim/neovim/tree/063e93864)) installed with the [bob version
+This is @engeir's NeoVim config, on NVIM v0.9.0-dev-1296+g8b7fb668e (view at [latest
+commit](https://github.com/neovim/neovim/tree/8b7fb668e)) installed with the [bob version
 manager for neovim](https://github.com/MordechaiHadad/bob). I am currently using the
 [lazy plugin manager](https://github.com/folke/lazy.nvim). Below is a complete list of
 all plugins I'm using:
@@ -65,6 +65,7 @@ all plugins I'm using:
 - [telescope.nvim](https://github.com/nvim-telescope/telescope.nvim.git)
 - [todo-comments.nvim](https://github.com/folke/todo-comments.nvim.git)
 - [transparent.nvim](https://github.com/xiyaowong/transparent.nvim.git)
+- [trouble.nvim](https://github.com/folke/trouble.nvim.git)
 - [undotree](https://github.com/mbbill/undotree.git)
 - [urlview.nvim](https://github.com/axieax/urlview.nvim.git)
 - [vim-angry-reviewer](https://github.com/anufrievroman/vim-angry-reviewer.git)
