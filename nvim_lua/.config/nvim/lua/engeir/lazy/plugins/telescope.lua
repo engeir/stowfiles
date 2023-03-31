@@ -109,7 +109,7 @@ return {
                     media_files = {
                         -- filetypes whitelist
                         -- defaults to {"png", "jpg", "mp4", "webm", "pdf"}
-                        -- filetypes = { "png", "webp", "jpg", "jpeg" },
+                        filetypes = { "png", "jpg", "jpeg", "webp", "webm", "svg", "mp4", "mov", "epub" },
                         -- find_cmd = "fd", -- find command (defaults to `fd`)
                     },
                 },
