@@ -1,4 +1,4 @@
-#!/usr/bin/env sh
+#!/bin/sh
 
 #
 # Search through and open any file matching pattern *.pdf.
@@ -8,12 +8,13 @@
 #
 
 cd ~ || exit 1
-c=$(fdfind --one-file-system -H .pdf$ --exclude .config/nnn --exclude OneDrive --exclude BoxSync | grep -o ".*pdf$" | awk -F'/' '{print $NF}' | dmenu -i -b -l 20)
+c=$(fd --one-file-system -H .pdf$ --exclude .config/nnn --exclude OneDrive --exclude BoxSync | grep -o ".*pdf$" | awk -F'/' '{print $NF}' | dmenu -i -b -l 20)
 
 # Exit if none is chosen
 [ -z "$c" ] && exit
 
-DIR=$(fdfind --one-file-system -H "$c"$ --exclude .config/nnn --exclude OneDrive --exclude BoxSync | sed 1q)
+# TODO: it should not need to search a second time
+DIR=$(fd --one-file-system -H "$c"$ --exclude .config/nnn --exclude OneDrive --exclude BoxSync | sed 1q)
 
 # Open with default
 xdg-open /home/een023/"$DIR"
