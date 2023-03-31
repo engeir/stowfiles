@@ -36,7 +36,6 @@ all plugins I'm using:
 - [LuaSnip](https://github.com/L3MON4D3/LuaSnip.git)
 - [mason-lspconfig.nvim](https://github.com/williamboman/mason-lspconfig.nvim.git)
 - [mason.nvim](https://github.com/williamboman/mason.nvim.git)
-- [mind.nvim](https://github.com/phaazon/mind.nvim.git)
 - [mini.nvim](https://github.com/echasnovski/mini.nvim.git)
 - [neo-tree.nvim](https://github.com/nvim-neo-tree/neo-tree.nvim.git)
 - [neodim](https://github.com/zbirenbaum/neodim.git)
