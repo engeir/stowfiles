@@ -40,6 +40,8 @@ if [ "Linux" = "$machine" ]; then
     APT="$(dpkg --get-selections)"
     CARGO="$(cargo install --list)"
     PIPX="$(pipx list | sed '1,2d' | sed 's/^\s\s\s//')"
+    FLAT="$(flatpak list)"
+    SNAP="$(snap list)"
     echo "# Installed programs
 
 \`\`\`
@@ -56,5 +58,17 @@ $CARGO
 
 \`\`\`
 $PIPX
+\`\`\`
+
+## Flatpak
+
+\`\`\`
+$FLAT
+\`\`\`
+
+## Snap
+
+\`\`\`
+$SNAP
 \`\`\`" >"./INSTALLED-linux.md"
 fi
