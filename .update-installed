@@ -11,7 +11,46 @@ MINGW*) machine=MinGw ;;
     machine="UNKNOWN:${unameOut}"
     ;;
 esac
-# echo "$machine"
+
+echo_and_run() {
+    echo ""
+    echo "\$ $*"
+    "$@"
+}
+run-updates() {
+    echo_and_run cargo install-update -a
+    echo_and_run pipx upgrade-all
+    if [ "Mac" = "$1" ]; then
+        echo_and_run brew update
+        echo_and_run brew upgrade
+    fi
+    if [ "Linux" = "$1" ]; then
+        echo_and_run sudo nala update
+        echo_and_run sudo nala upgrade
+        echo_and_run sudo snap refresh
+        echo_and_run flatpak update
+    fi
+}
+
+# Handle options
+while getopts 'uh' OPTION; do
+    case "$OPTION" in
+    u)
+        run-updates "$machine"
+        ;;
+    h)
+        printf "Script usage: %s [-u] [-h]\n\t-u\tRun all update commands\n\t-h\tPrint this help and exit\n" "$(basename "$0")" >&2
+        exit 0
+        ;;
+    ?)
+        printf "Script usage: %s [-u] [-h]\n\t-u\tRun all update commands\n\t-h\tPrint this help and exit\n" "$(basename "$0")" >&2
+        exit 1
+        ;;
+    esac
+done
+# shift "$((OPTIND - 1))"
+
+# Run MacOS updates
 if [ "Mac" = "$machine" ]; then
     BREW="$(brew list)"
     CARGO="$(cargo install --list)"
@@ -34,8 +73,10 @@ $CARGO
 
 \`\`\`
 $PIPX
-\`\`\`" >"./INSTALLED-mac.md"
+    \`\`\`" >"./INSTALLED-mac.md"
 fi
+
+# Run Linux updates
 if [ "Linux" = "$machine" ]; then
     APT="$(dpkg --get-selections)"
     CARGO="$(cargo install --list)"
@@ -70,5 +111,5 @@ $FLAT
 
 \`\`\`
 $SNAP
-\`\`\`" >"./INSTALLED-linux.md"
+    \`\`\`" >"./INSTALLED-linux.md"
 fi

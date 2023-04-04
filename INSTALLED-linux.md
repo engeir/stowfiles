@@ -4813,7 +4813,7 @@ zeta-note v0.1.8:
 ## Pipx
 
 ```
-package ansible-core 2.14.3, installed using Python 3.10.4
+package ansible-core 2.14.4, installed using Python 3.10.4
  - ansible
  - ansible-config
  - ansible-connection
@@ -4827,7 +4827,7 @@ package ansible-core 2.14.3, installed using Python 3.10.4
  - ansible-vault
 package beautysh 6.2.1, installed using Python 3.10.4
  - beautysh
-package black 23.1.0, installed using Python 3.10.4
+package black 23.3.0, installed using Python 3.10.4
  - black
  - black-primer
  - blackd
@@ -4908,19 +4908,19 @@ package poetry2setup 1.1.0, installed using Python 3.10.4
  - poetry2setup
 package pptx2md 1.3.0, installed using Python 3.10.4
  - pptx2md
-package pre-commit 3.2.0, installed using Python 3.10.4
+package pre-commit 3.2.2, installed using Python 3.10.4
  - pre-commit
  - pre-commit-validate-config
  - pre-commit-validate-manifest
 package pydocstyle 6.3.0, installed using Python 3.10.4
  - pydocstyle
-package pypistats 1.2.1, installed using Python 3.10.4
+package pypistats 1.3.0, installed using Python 3.10.4
  - pypistats
 package pyqt5 5.15.9, installed using Python 3.10.4
  - pylupdate5
  - pyrcc5
  - pyuic5
-package pyright 1.1.300, installed using Python 3.10.4
+package pyright 1.1.301, installed using Python 3.10.4
  - pyright
  - pyright-langserver
  - pyright-python
@@ -4937,7 +4937,7 @@ package rofimoji 6.1.0, installed using Python 3.10.4
  - rofimoji
 package telegram-send 0.34, installed using Python 3.10.4
  - telegram-send
-package term-image 0.5.0, installed using Python 3.10.4
+package term-image 0.6.0, installed using Python 3.10.4
  - term-image
  - term-img
 package tex2svg 0.0.2, installed using Python 3.10.4
@@ -4961,15 +4961,20 @@ package yapf 0.32.0, installed using Python 3.10.4
 ## Flatpak
 
 ```
-Freedesktop Platform	org.freedesktop.Platform	21.08.15	21.08	system
+Freedesktop Platform	org.freedesktop.Platform	21.08.18	21.08	system
 Mesa	org.freedesktop.Platform.GL.default	21.3.9	21.08	system
+Mesa	org.freedesktop.Platform.GL.default	22.3.5	22.08	system
+Mesa (Extra)	org.freedesktop.Platform.GL.default	22.3.5	22.08-extra	system
 Intel	org.freedesktop.Platform.VAAPI.Intel		21.08	system
+Intel	org.freedesktop.Platform.VAAPI.Intel		22.08	system
 openh264	org.freedesktop.Platform.openh264	2.1.0	2.0	system
-GNOME Application Platform version 42	org.gnome.Platform		42	system
-Citations	org.gnome.World.Citations	0.4.0	stable	system
-Pika Backup	org.gnome.World.PikaBackup	0.4.1	stable	system
+openh264	org.freedesktop.Platform.openh264	2.1.0	2.2.0	system
+GNOME Application Platform version 43	org.gnome.Platform		43	system
+GNOME Application Platform version 44	org.gnome.Platform		44	system
+Citations	org.gnome.World.Citations	0.5.2	stable	system
+Pika Backup	org.gnome.World.PikaBackup	0.5.2	stable	system
 Yaru-dark Gtk Theme	org.gtk.Gtk3theme.Yaru-dark		3.22	system
-Wez's Terminal Emulator	org.wezfurlong.wezterm	20220807-113146-c2fee766	stable	system
+Wez's Terminal Emulator	org.wezfurlong.wezterm	20230326-111934-3666303c	stable	system
 ```
 
 ## Snap
@@ -4982,7 +4987,7 @@ cmake                      3.26.2                      1282   latest/stable    c
 core                       16-2.58.3                   14946  latest/stable    canonical**   core
 core18                     20230320                    2721   latest/stable    canonical**   base
 core20                     20230308                    1852   latest/stable    canonical**   base
-core22                     20230316                    583    latest/stable    canonical**   base
+core22                     20230325                    607    latest/stable    canonical**   base
 dmd                        2.090.1                     102    latest/stable    dlang         classic
 dotnet-sdk                 5.0.408                     167    5.0/stable       dotnetcore**  classic
 dub                        1.19.0                      53     latest/stable    dlang         classic
@@ -5013,4 +5018,4 @@ spt                        0.25.0                      289    latest/stable    p
 timg                       1.4.1+pkg-67d0              16     latest/stable    simosx        -
 vlc                        3.0.18                      3078   latest/stable    videolan**    -
 zenkit                     2.1.8                       17     latest/stable    zenkit**      -
-```
+    ```
