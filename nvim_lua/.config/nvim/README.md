@@ -18,6 +18,7 @@ all plugins I'm using:
 - [cmp_luasnip](https://github.com/saadparwaiz1/cmp_luasnip.git)
 - [colorizer](https://github.com/NvChad/nvim-colorizer.lua.git)
 - [committia.vim](https://github.com/rhysd/committia.vim.git)
+- [d2-vim](https://github.com/terrastruct/d2-vim.git)
 - [diffview.nvim](https://github.com/sindrets/diffview.nvim.git)
 - [easypick.nvim](https://github.com/axkirillov/easypick.nvim.git)
 - [fidget](https://github.com/j-hui/fidget.nvim.git)
