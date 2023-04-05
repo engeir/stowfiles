@@ -73,7 +73,7 @@ $CARGO
 
 \`\`\`
 $PIPX
-    \`\`\`" >"./INSTALLED-mac.md"
+\`\`\`" >"./INSTALLED-mac.md"
 fi
 
 # Run Linux updates
@@ -84,6 +84,8 @@ if [ "Linux" = "$machine" ]; then
     FLAT="$(flatpak list)"
     SNAP="$(snap list)"
     echo "# Installed programs
+
+## Apt
 
 \`\`\`
 $APT
@@ -111,5 +113,5 @@ $FLAT
 
 \`\`\`
 $SNAP
-    \`\`\`" >"./INSTALLED-linux.md"
+\`\`\`" >"./INSTALLED-linux.md"
 fi

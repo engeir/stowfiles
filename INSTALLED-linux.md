@@ -1,5 +1,7 @@
 # Installed programs
 
+## Apt
+
 ```
 4ti2						install
 accountsservice					install
@@ -244,7 +246,6 @@ docker-ce					install
 docker-ce-cli					install
 docker-ce-rootless-extras			install
 docker-compose-plugin				install
-docker-scan-plugin				install
 docutils-common					install
 docx2txt					install
 dos2unix					install
@@ -3664,6 +3665,7 @@ mscompress					install
 mtr-tiny					install
 mullvad-vpn					install
 mupdf						install
+mupdf-tools					install
 mutt						deinstall
 mutt-wizard					deinstall
 mutter						install
@@ -3798,6 +3800,7 @@ plymouth					install
 plymouth-label					install
 plymouth-theme-spinner				install
 plymouth-theme-ubuntu-text			install
+pmount						install
 po-debconf					install
 pocketsphinx-en-us				install
 policykit-1					install
@@ -4607,6 +4610,7 @@ webkit2gtk-driver				install
 webp						install
 wget						install
 whiptail					install
+whois						install
 whoopsie					install
 whoopsie-preferences				install
 wine-stable					install
@@ -4788,7 +4792,7 @@ pueue v3.1.2:
     pueued
 ripgrep v13.0.0:
     rg
-rtx-cli v1.27.10:
+rtx-cli v1.27.11:
     rtx
 sd v0.7.6:
     sd
@@ -4800,7 +4804,7 @@ stylua v0.17.1:
     stylua
 taplo-cli v0.8.0:
     taplo
-tree-sitter-cli v0.20.7:
+tree-sitter-cli v0.20.8:
     tree-sitter
 viu v1.4.0:
     viu
@@ -4920,7 +4924,7 @@ package pyqt5 5.15.9, installed using Python 3.10.4
  - pylupdate5
  - pyrcc5
  - pyuic5
-package pyright 1.1.301, installed using Python 3.10.4
+package pyright 1.1.302, installed using Python 3.10.4
  - pyright
  - pyright-langserver
  - pyright-python
@@ -4982,8 +4986,8 @@ Wez's Terminal Emulator	org.wezfurlong.wezterm	20230326-111934-3666303c	stable	s
 ```
 Name                       Version                     Rev    Tracking         Publisher     Notes
 bare                       1.0                         5      latest/stable    canonical**   base
-canonical-livepatch        10.4.1                      164    latest/stable    canonical**   -
-cmake                      3.26.2                      1282   latest/stable    crascit**     classic
+canonical-livepatch        10.5.2                      190    latest/stable    canonical**   -
+cmake                      3.26.3                      1288   latest/stable    crascit**     classic
 core                       16-2.58.3                   14946  latest/stable    canonical**   core
 core18                     20230320                    2721   latest/stable    canonical**   base
 core20                     20230308                    1852   latest/stable    canonical**   base
@@ -5018,4 +5022,4 @@ spt                        0.25.0                      289    latest/stable    p
 timg                       1.4.1+pkg-67d0              16     latest/stable    simosx        -
 vlc                        3.0.18                      3078   latest/stable    videolan**    -
 zenkit                     2.1.8                       17     latest/stable    zenkit**      -
-    ```
+```
