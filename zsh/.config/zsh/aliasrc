@@ -5,7 +5,7 @@ alias cat="bat"
 alias has="HAS_ALLOW_UNSAFE=y has"
 # alias ls="lsd -FA --group-dirs first"
 # exa has slightly better icons I think (.git and .github dirs icons are different from lsd)
-alias ls="exa --icons -Fa  --group-directories-first"
+alias ls="exa --icons -Fa --group-directories-first"
 alias nnn="nnn -derH"
 alias nv="nvim"
 alias rm="trash-put"
@@ -15,6 +15,11 @@ alias tks="tmux kill-session -t"
 alias wezterm='flatpak run org.wezfurlong.wezterm'
 alias so="source ~/.zshrc"
 alias tex2png="pnglatex -b Black -F White -d 2000"
+# It's nice with habits
+alias :q="exit"
+alias :wq="exit"
+alias ZZ="exit"
+alias ZQ="exit"
 
 # Dotfiles
 alias dotconfig='/usr/bin/git --git-dir=$HOME/dotfiles/ --work-tree=$HOME'
@@ -24,7 +29,7 @@ alias u="sudo updatedb"
 alias dropbox_update="~/.dropbox-dist/dropboxd"
 
 # File handling
-alias skbat='sk --preview="batcat {} --color=always"'
+alias skbat='sk --preview="bat {} --color=always"'
 alias rg='rg -g "!Dropbox" -g "!OneDrive" -g "!BoxSync" -g "!.cache" -g "!.config/nnn" -g "!.git" -g "!node_module" -g "!.npm" -g "!.mozilla" -g "!.meteor" -g "!.nv" -g "!.conda" -g "!.dropbox-dist" -g "!.vscode" -g "!.vscode-insiders" -g "!miniconda3" -g "!.virtualenvs" -g "!snap" -g "!gems" -g "!.wine" -g "!extensions" -g "!coreutils-8.32" -g "!freetype-2.10.4" -g "!.cargo" -g "!Downloads" -g "!R" -g "!.Mathematica"'
 alias cp='/usr/local/bin/cpg -g'
 alias mv='/usr/local/bin/mvg -g'
