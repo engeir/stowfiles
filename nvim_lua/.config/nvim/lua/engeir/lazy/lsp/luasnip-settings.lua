@@ -116,6 +116,12 @@ ls.add_snippets("markdown", {
         i(2),
         t("}"),
     }),
+    s({ trig = "phi-raw" }, { t("𝜙") }),
+    s({ trig = "Phi-raw" }, { t("𝛷") }),
+    s({ trig = "theta-raw" }, { t("𝜃") }),
+    s({ trig = "Theta-raw" }, { t("𝛩") }),
+    s({ trig = "alpha-raw" }, { t("𝛼") }),
+    s({ trig = "Alpha-raw" }, { t("𝛢") }),
 })
 
 -- Tex =================================================================================

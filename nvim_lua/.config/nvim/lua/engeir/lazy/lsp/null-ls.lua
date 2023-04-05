@@ -43,7 +43,7 @@ null_ls.setup({
         --     extra_args = { "-c", vim.fn.expand("~") .. "/.config/mdl/.markdownlint.jsonc" },
         -- }), -- Using `prettierd` instead
         formatting.prettierd.with({
-            filetypes = { "yml", "yaml", "toml", "md", "markdown" },
+            filetypes = { "css", "yml", "yaml", "toml", "md", "markdown" },
             -- args = { "--no-semi", "--single-quote", "--jsx-single-quote" },
         }),
         formatting.ruff,
