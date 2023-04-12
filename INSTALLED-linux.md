@@ -4744,7 +4744,7 @@ atuin v14.0.0:
     atuin
 blindfold v1.0.7:
     blindfold
-bob-nvim v2.2.0:
+bob-nvim v2.3.1:
     bob
 cargo-binstall v0.22.0:
     cargo-binstall
@@ -4753,7 +4753,7 @@ cargo-edit v0.11.9:
     cargo-rm
     cargo-set-version
     cargo-upgrade
-cargo-update v13.0.0:
+cargo-update v13.0.1:
     cargo-install-update
     cargo-install-update-config
 coreutils v0.0.18:
@@ -4792,7 +4792,7 @@ pueue v3.1.2:
     pueued
 ripgrep v13.0.0:
     rg
-rtx-cli v1.27.11:
+rtx-cli v1.28.4:
     rtx
 sd v0.7.6:
     sd
@@ -4874,7 +4874,7 @@ package lookatme 2.5.5, installed using Python 3.10.4
  - lam
  - lookatme
  - witnessme
-package mypy 1.1.1, installed using Python 3.10.4
+package mypy 1.2.0, installed using Python 3.10.4
  - dmypy
  - mypy
  - mypyc
@@ -4978,7 +4978,7 @@ GNOME Application Platform version 44	org.gnome.Platform		44	system
 Citations	org.gnome.World.Citations	0.5.2	stable	system
 Pika Backup	org.gnome.World.PikaBackup	0.5.2	stable	system
 Yaru-dark Gtk Theme	org.gtk.Gtk3theme.Yaru-dark		3.22	system
-Wez's Terminal Emulator	org.wezfurlong.wezterm	20230326-111934-3666303c	stable	system
+Wez's Terminal Emulator	org.wezfurlong.wezterm	20230408-112425-69ae8472	stable	system
 ```
 
 ## Snap
@@ -4986,7 +4986,7 @@ Wez's Terminal Emulator	org.wezfurlong.wezterm	20230326-111934-3666303c	stable	s
 ```
 Name                       Version                     Rev    Tracking         Publisher     Notes
 bare                       1.0                         5      latest/stable    canonical**   base
-canonical-livepatch        10.5.2                      190    latest/stable    canonical**   -
+canonical-livepatch        10.5.3                      196    latest/stable    canonical**   -
 cmake                      3.26.3                      1288   latest/stable    crascit**     classic
 core                       16-2.58.3                   14946  latest/stable    canonical**   core
 core18                     20230320                    2721   latest/stable    canonical**   base
@@ -5012,7 +5012,7 @@ mojave-themes              2020-03-24-35-g2aecfbf      2      latest/stable    g
 notable                    1.8.4-2                     3      latest/stable    spampinabio   classic
 pdftk                      2.02-4                      9      latest/stable    smoser        -
 procs                      v0.13.0                     969    latest/stable    dalance       -
-remmina                    v1.4.29                     5597   latest/stable    remmina**     -
+remmina                    v1.4.30                     5692   latest/stable    remmina**     -
 shotcut                    22.12.21                    929    latest/stable    meltytech**   classic
 skype                      8.96.0.207                  263    latest/stable    skype**       -
 snap-store                 41.3-66-gfe1e325            638    latest/stable/…  canonical**   -

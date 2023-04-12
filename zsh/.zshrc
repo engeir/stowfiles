@@ -141,7 +141,7 @@ export BUN_INSTALL="/home/een023/.bun"
 export PATH="$BUN_INSTALL/bin:$PATH"
 
 # bob
-export PATH="/home/een023/.local/share/neovim/bin:$PATH"
+export PATH="/home/een023/.local/share/bob/nvim-bin:$PATH"
 
 # rtx
 eval "$(rtx activate zsh)"
