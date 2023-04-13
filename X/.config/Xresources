@@ -3,8 +3,8 @@
 *.alpha: .90
 
 !! Set a default font and font size as below:
-*.font: Hack iCursive S12:size=11
-!! *.font: monospace:size=11
+*.font:	Hack iCursive S12:size=11:antialias=true:autohint=true;
+/* *.font: monospace:size=11 */
 
 #define t_bg_floor     #010000
 #define t_bg_dip       #191815
