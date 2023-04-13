@@ -1,7 +1,7 @@
 # NeoVim Config
 
-This is @engeir's NeoVim config, on NVIM v0.10.0-dev-46+ge23c6ebed (view at [latest
-commit](https://github.com/neovim/neovim/tree/e23c6ebed)) installed with the [bob version
+This is @engeir's NeoVim config, on NVIM v0.10.0-dev-53+g5ccec143d (view at [latest
+commit](https://github.com/neovim/neovim/tree/5ccec143d)) installed with the [bob version
 manager for neovim](https://github.com/MordechaiHadad/bob). I am currently using the
 [lazy plugin manager](https://github.com/folke/lazy.nvim). Below is a complete list of
 all plugins I'm using:
@@ -63,6 +63,7 @@ all plugins I'm using:
 - [telescope-symbols.nvim](https://github.com/nvim-telescope/telescope-symbols.nvim.git)
 - [telescope-ui-select.nvim](https://github.com/nvim-telescope/telescope-ui-select.nvim.git)
 - [telescope.nvim](https://github.com/nvim-telescope/telescope.nvim.git)
+- [text-case.nvim](https://github.com/johmsalas/text-case.nvim.git)
 - [todo-comments.nvim](https://github.com/folke/todo-comments.nvim.git)
 - [transparent.nvim](https://github.com/xiyaowong/transparent.nvim.git)
 - [trouble.nvim](https://github.com/folke/trouble.nvim.git)
