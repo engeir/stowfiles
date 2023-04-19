@@ -18,6 +18,9 @@ return {
         -- mini.bracketed --------------------------------------------------------------
         require("mini.bracketed").setup()
 
+        -- mini.colors -----------------------------------------------------------------
+        require('mini.colors').setup()
+
         -- mini.comment ----------------------------------------------------------------
         require("mini.comment").setup()
         --- Set the comment rule for a file type
@@ -34,6 +37,7 @@ return {
 
         set_comment("ncl", ";%s")
         set_comment("sent", "#%s")
+        set_comment("mplstyle", "#%s")
 
         -- mini.cursorword -------------------------------------------------------------
         require("mini.cursorword").setup()

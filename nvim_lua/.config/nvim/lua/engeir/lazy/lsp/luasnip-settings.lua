@@ -107,6 +107,13 @@ ls.add_snippets("lua", {
     ),
 })
 
+-- Python ==============================================================================
+ls.add_snippets("python", {
+    s({ trig = "iplt", snippetType = "autosnippet" }, {
+        t("import matplotlib.pyplot as plt"),
+    }),
+})
+
 -- Markdown ============================================================================
 ls.add_snippets("markdown", {
     s({ trig = "frr", snippetType = "autosnippet" }, {
