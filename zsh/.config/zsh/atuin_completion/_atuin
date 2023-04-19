@@ -15,10 +15,10 @@ _atuin() {
 
     local context curcontext="$curcontext" state line
     _arguments "${_arguments_options[@]}" \
-'-h[Print help information]' \
-'--help[Print help information]' \
-'-V[Print version information]' \
-'--version[Print version information]' \
+'-h[Print help]' \
+'--help[Print help]' \
+'-V[Print version]' \
+'--version[Print version]' \
 ":: :_atuin_commands" \
 "*::: :->atuin" \
 && ret=0
@@ -30,8 +30,8 @@ _atuin() {
         case $line[1] in
             (history)
 _arguments "${_arguments_options[@]}" \
-'-h[Print help information]' \
-'--help[Print help information]' \
+'-h[Print help]' \
+'--help[Print help]' \
 ":: :_atuin__history_commands" \
 "*::: :->history" \
 && ret=0
@@ -44,8 +44,8 @@ _arguments "${_arguments_options[@]}" \
         case $line[1] in
             (start)
 _arguments "${_arguments_options[@]}" \
-'-h[Print help information]' \
-'--help[Print help information]' \
+'-h[Print help]' \
+'--help[Print help]' \
 '*::command:' \
 && ret=0
 ;;
@@ -53,8 +53,8 @@ _arguments "${_arguments_options[@]}" \
 _arguments "${_arguments_options[@]}" \
 '-e+[]:EXIT: ' \
 '--exit=[]:EXIT: ' \
-'-h[Print help information]' \
-'--help[Print help information]' \
+'-h[Print help]' \
+'--help[Print help]' \
 ':id:' \
 && ret=0
 ;;
@@ -68,8 +68,8 @@ _arguments "${_arguments_options[@]}" \
 '--session[]' \
 '--human[]' \
 '--cmd-only[Show only the text of the command]' \
-'-h[Print help information]' \
-'--help[Print help information]' \
+'-h[Print help]' \
+'--help[Print help]' \
 && ret=0
 ;;
 (last)
@@ -78,8 +78,8 @@ _arguments "${_arguments_options[@]}" \
 '--format=[Available variables: {command}, {directory}, {duration}, {user}, {host} and {time}. Example: --format "{time} - \[{duration}\] - {directory}$\\t{command}"]:FORMAT: ' \
 '--human[]' \
 '--cmd-only[Show only the text of the command]' \
-'-h[Print help information]' \
-'--help[Print help information]' \
+'-h[Print help]' \
+'--help[Print help]' \
 && ret=0
 ;;
 (help)
@@ -124,8 +124,8 @@ esac
 ;;
 (import)
 _arguments "${_arguments_options[@]}" \
-'-h[Print help information]' \
-'--help[Print help information]' \
+'-h[Print help]' \
+'--help[Print help]' \
 ":: :_atuin__import_commands" \
 "*::: :->import" \
 && ret=0
@@ -138,50 +138,50 @@ _arguments "${_arguments_options[@]}" \
         case $line[1] in
             (auto)
 _arguments "${_arguments_options[@]}" \
-'-h[Print help information]' \
-'--help[Print help information]' \
+'-h[Print help]' \
+'--help[Print help]' \
 && ret=0
 ;;
 (zsh)
 _arguments "${_arguments_options[@]}" \
-'-h[Print help information]' \
-'--help[Print help information]' \
+'-h[Print help]' \
+'--help[Print help]' \
 && ret=0
 ;;
 (zsh-hist-db)
 _arguments "${_arguments_options[@]}" \
-'-h[Print help information]' \
-'--help[Print help information]' \
+'-h[Print help]' \
+'--help[Print help]' \
 && ret=0
 ;;
 (bash)
 _arguments "${_arguments_options[@]}" \
-'-h[Print help information]' \
-'--help[Print help information]' \
+'-h[Print help]' \
+'--help[Print help]' \
 && ret=0
 ;;
 (resh)
 _arguments "${_arguments_options[@]}" \
-'-h[Print help information]' \
-'--help[Print help information]' \
+'-h[Print help]' \
+'--help[Print help]' \
 && ret=0
 ;;
 (fish)
 _arguments "${_arguments_options[@]}" \
-'-h[Print help information]' \
-'--help[Print help information]' \
+'-h[Print help]' \
+'--help[Print help]' \
 && ret=0
 ;;
 (nu)
 _arguments "${_arguments_options[@]}" \
-'-h[Print help information]' \
-'--help[Print help information]' \
+'-h[Print help]' \
+'--help[Print help]' \
 && ret=0
 ;;
 (nu-hist-db)
 _arguments "${_arguments_options[@]}" \
-'-h[Print help information]' \
-'--help[Print help information]' \
+'-h[Print help]' \
+'--help[Print help]' \
 && ret=0
 ;;
 (help)
@@ -244,8 +244,8 @@ esac
 _arguments "${_arguments_options[@]}" \
 '-c+[How many top commands to list]:COUNT: ' \
 '--count=[How many top commands to list]:COUNT: ' \
-'-h[Print help information]' \
-'--help[Print help information]' \
+'-h[Print help]' \
+'--help[Print help]' \
 '*::period -- compute statistics for the specified period, leave blank for statistics since the beginning:' \
 && ret=0
 ;;
@@ -271,9 +271,12 @@ _arguments "${_arguments_options[@]}" \
 '--shell-up-key-binding[Marker argument used to inform atuin that it was invoked from a shell up-key binding (hidden from help to avoid confusion)]' \
 '--human[Use human-readable formatting for time]' \
 '--cmd-only[Show only the text of the command]' \
-'--delete[]' \
-'-h[Print help information]' \
-'--help[Print help information]' \
+'--delete[Delete anything matching this query. Will not print out the match]' \
+'--delete-it-all[Delete EVERYTHING!]' \
+'-r[Reverse the order of results, oldest first]' \
+'--reverse[Reverse the order of results, oldest first]' \
+'-h[Print help]' \
+'--help[Print help]' \
 '*::query:' \
 && ret=0
 ;;
@@ -281,8 +284,8 @@ _arguments "${_arguments_options[@]}" \
 _arguments "${_arguments_options[@]}" \
 '-f[Force re-download everything]' \
 '--force[Force re-download everything]' \
-'-h[Print help information]' \
-'--help[Print help information]' \
+'-h[Print help]' \
+'--help[Print help]' \
 && ret=0
 ;;
 (login)
@@ -293,14 +296,14 @@ _arguments "${_arguments_options[@]}" \
 '--password=[]:PASSWORD: ' \
 '-k+[The encryption key for your account]:KEY: ' \
 '--key=[The encryption key for your account]:KEY: ' \
-'-h[Print help information]' \
-'--help[Print help information]' \
+'-h[Print help]' \
+'--help[Print help]' \
 && ret=0
 ;;
 (logout)
 _arguments "${_arguments_options[@]}" \
-'-h[Print help information]' \
-'--help[Print help information]' \
+'-h[Print help]' \
+'--help[Print help]' \
 && ret=0
 ;;
 (register)
@@ -311,27 +314,27 @@ _arguments "${_arguments_options[@]}" \
 '--password=[]:PASSWORD: ' \
 '-e+[]:EMAIL: ' \
 '--email=[]:EMAIL: ' \
-'-h[Print help information]' \
-'--help[Print help information]' \
+'-h[Print help]' \
+'--help[Print help]' \
 && ret=0
 ;;
 (key)
 _arguments "${_arguments_options[@]}" \
 '--base64[Switch to base64 output of the key]' \
-'-h[Print help information]' \
-'--help[Print help information]' \
+'-h[Print help]' \
+'--help[Print help]' \
 && ret=0
 ;;
 (status)
 _arguments "${_arguments_options[@]}" \
-'-h[Print help information]' \
-'--help[Print help information]' \
+'-h[Print help]' \
+'--help[Print help]' \
 && ret=0
 ;;
 (server)
 _arguments "${_arguments_options[@]}" \
-'-h[Print help information]' \
-'--help[Print help information]' \
+'-h[Print help]' \
+'--help[Print help]' \
 ":: :_atuin__server_commands" \
 "*::: :->server" \
 && ret=0
@@ -347,8 +350,8 @@ _arguments "${_arguments_options[@]}" \
 '--host=[The host address to bind]:HOST: ' \
 '-p+[The port to bind]:PORT: ' \
 '--port=[The port to bind]:PORT: ' \
-'-h[Print help information]' \
-'--help[Print help information]' \
+'-h[Print help]' \
+'--help[Print help]' \
 && ret=0
 ;;
 (help)
@@ -383,8 +386,8 @@ esac
 _arguments "${_arguments_options[@]}" \
 '--disable-ctrl-r[Disable the binding of CTRL-R to atuin]' \
 '--disable-up-arrow[Disable the binding of the Up Arrow key to atuin]' \
-'-h[Print help information (use `--help` for more detail)]' \
-'--help[Print help information (use `--help` for more detail)]' \
+'-h[Print help (see more with '\''--help'\'')]' \
+'--help[Print help (see more with '\''--help'\'')]' \
 ':shell:((zsh\:"Zsh setup"
 bash\:"Bash setup"
 fish\:"Fish setup"
@@ -393,14 +396,14 @@ nu\:"Nu setup"))' \
 ;;
 (uuid)
 _arguments "${_arguments_options[@]}" \
-'-h[Print help information]' \
-'--help[Print help information]' \
+'-h[Print help]' \
+'--help[Print help]' \
 && ret=0
 ;;
 (contributors)
 _arguments "${_arguments_options[@]}" \
-'-h[Print help information]' \
-'--help[Print help information]' \
+'-h[Print help]' \
+'--help[Print help]' \
 && ret=0
 ;;
 (gen-completions)
@@ -409,8 +412,8 @@ _arguments "${_arguments_options[@]}" \
 '--shell=[Set the shell for generating completions]:SHELL:(bash elvish fish powershell zsh)' \
 '-o+[Set the output directory]:OUT_DIR: ' \
 '--out-dir=[Set the output directory]:OUT_DIR: ' \
-'-h[Print help information]' \
-'--help[Print help information]' \
+'-h[Print help]' \
+'--help[Print help]' \
 && ret=0
 ;;
 (help)
@@ -1065,4 +1068,8 @@ _atuin__import__zsh-hist-db_commands() {
     _describe -t commands 'atuin import zsh-hist-db commands' commands "$@"
 }
 
-_atuin "$@"
+if [ "$funcstack[1]" = "_atuin" ]; then
+    _atuin "$@"
+else
+    compdef _atuin atuin
+fi

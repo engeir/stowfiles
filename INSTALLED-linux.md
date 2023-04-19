@@ -90,6 +90,7 @@ binutils					install
 binutils-common:amd64				install
 binutils-x86-64-linux-gnu			install
 bison						install
+bitwarden					install
 black						install
 blt						install
 blueman						install
@@ -3401,14 +3402,16 @@ linux-firmware					install
 linux-generic					install
 linux-generic-hwe-20.04				install
 linux-generic-hwe-22.04				install
-linux-headers-5.15.0-69				install
-linux-headers-5.15.0-69-generic			install
+linux-headers-5.15.0-70				install
+linux-headers-5.15.0-70-generic			install
 linux-headers-5.19.0-35-generic			install
 linux-headers-5.19.0-38-generic			install
+linux-headers-5.19.0-40-generic			install
 linux-headers-generic				install
 linux-headers-generic-hwe-22.04			install
 linux-hwe-5.19-headers-5.19.0-35		install
 linux-hwe-5.19-headers-5.19.0-38		install
+linux-hwe-5.19-headers-5.19.0-40		install
 linux-image-5.11.0-49-generic			deinstall
 linux-image-5.13.0-35-generic			deinstall
 linux-image-5.13.0-37-generic			deinstall
@@ -3432,10 +3435,12 @@ linux-image-5.15.0-57-generic			deinstall
 linux-image-5.15.0-58-generic			deinstall
 linux-image-5.15.0-60-generic			deinstall
 linux-image-5.15.0-67-generic			deinstall
-linux-image-5.15.0-69-generic			install
+linux-image-5.15.0-69-generic			deinstall
+linux-image-5.15.0-70-generic			install
 linux-image-5.19.0-32-generic			deinstall
 linux-image-5.19.0-35-generic			install
 linux-image-5.19.0-38-generic			install
+linux-image-5.19.0-40-generic			install
 linux-image-5.4.0-42-generic			deinstall
 linux-image-5.4.0-45-generic			deinstall
 linux-image-5.4.0-47-generic			deinstall
@@ -3485,10 +3490,12 @@ linux-modules-5.15.0-57-generic			deinstall
 linux-modules-5.15.0-58-generic			deinstall
 linux-modules-5.15.0-60-generic			deinstall
 linux-modules-5.15.0-67-generic			deinstall
-linux-modules-5.15.0-69-generic			install
+linux-modules-5.15.0-69-generic			deinstall
+linux-modules-5.15.0-70-generic			install
 linux-modules-5.19.0-32-generic			deinstall
 linux-modules-5.19.0-35-generic			install
 linux-modules-5.19.0-38-generic			install
+linux-modules-5.19.0-40-generic			install
 linux-modules-5.4.0-42-generic			deinstall
 linux-modules-5.4.0-45-generic			deinstall
 linux-modules-5.4.0-47-generic			deinstall
@@ -3535,10 +3542,12 @@ linux-modules-extra-5.15.0-57-generic		deinstall
 linux-modules-extra-5.15.0-58-generic		deinstall
 linux-modules-extra-5.15.0-60-generic		deinstall
 linux-modules-extra-5.15.0-67-generic		deinstall
-linux-modules-extra-5.15.0-69-generic		install
+linux-modules-extra-5.15.0-69-generic		deinstall
+linux-modules-extra-5.15.0-70-generic		install
 linux-modules-extra-5.19.0-32-generic		deinstall
 linux-modules-extra-5.19.0-35-generic		install
 linux-modules-extra-5.19.0-38-generic		install
+linux-modules-extra-5.19.0-40-generic		install
 linux-modules-extra-5.4.0-42-generic		deinstall
 linux-modules-extra-5.4.0-45-generic		deinstall
 linux-modules-extra-5.4.0-47-generic		deinstall
@@ -3787,6 +3796,7 @@ picom						install
 pigz						install
 pinentry-curses					install
 pinentry-gnome3					install
+pinentry-qt					install
 pipenv						install
 pipewire:amd64					install
 pipewire-bin					install
@@ -4740,11 +4750,11 @@ zstd						install
 ```
 alacritty v0.12.0:
     alacritty
-atuin v14.0.0:
+atuin v14.0.1:
     atuin
 blindfold v1.0.7:
     blindfold
-bob-nvim v2.3.1:
+bob-nvim v2.3.2:
     bob
 cargo-binstall v0.22.0:
     cargo-binstall
@@ -4766,7 +4776,7 @@ fd-find v8.7.0:
     fd
 ffsend v0.2.76:
     ffsend
-halp v0.1.5:
+halp v0.1.6:
     halp
     halp-completions
     halp-mangen
@@ -4792,7 +4802,7 @@ pueue v3.1.2:
     pueued
 ripgrep v13.0.0:
     rg
-rtx-cli v1.28.4:
+rtx-cli v1.28.5:
     rtx
 sd v0.7.6:
     sd
@@ -4862,7 +4872,7 @@ package instagram-scraper 66.0.2, installed using Python 3.10.4
 package intake 0.6.8, installed using Python 3.10.4
  - intake
  - intake-server
-package jupyter-client 8.1.0, installed using Python 3.10.4
+package jupyter-client 8.2.0, installed using Python 3.10.4
  - jupyter-kernel
  - jupyter-kernelspec
  - jupyter-run
@@ -4904,7 +4914,7 @@ package pandoc-include 1.2.0, installed using Python 3.10.4
 package pipenv 2023.3.20, installed using Python 3.10.4
  - pipenv
  - pipenv-resolver
-package pipreqs 0.4.11, installed using Python 3.10.4
+package pipreqs 0.4.13, installed using Python 3.10.4
  - pipreqs
 package poetry2conda 0.3.0, installed using Python 3.10.4
  - poetry2conda
@@ -4924,7 +4934,7 @@ package pyqt5 5.15.9, installed using Python 3.10.4
  - pylupdate5
  - pyrcc5
  - pyuic5
-package pyright 1.1.302, installed using Python 3.10.4
+package pyright 1.1.303, installed using Python 3.10.4
  - pyright
  - pyright-langserver
  - pyright-python
@@ -4957,7 +4967,7 @@ package ueberzug 18.1.9, installed using Python 3.10.4
  - ueberzug
 package wtpython 0.1.0, installed using Python 3.10.4
  - wtpython
-package yapf 0.32.0, installed using Python 3.10.4
+package yapf 0.33.0, installed using Python 3.10.4
  - yapf
  - yapf-diff
 ```
@@ -4966,9 +4976,10 @@ package yapf 0.32.0, installed using Python 3.10.4
 
 ```
 Freedesktop Platform	org.freedesktop.Platform	21.08.18	21.08	system
+Freedesktop Platform	org.freedesktop.Platform	22.08.10	22.08	system
 Mesa	org.freedesktop.Platform.GL.default	21.3.9	21.08	system
-Mesa	org.freedesktop.Platform.GL.default	22.3.5	22.08	system
-Mesa (Extra)	org.freedesktop.Platform.GL.default	22.3.5	22.08-extra	system
+Mesa	org.freedesktop.Platform.GL.default	23.0.2	22.08	system
+Mesa (Extra)	org.freedesktop.Platform.GL.default	23.0.2	22.08-extra	system
 Intel	org.freedesktop.Platform.VAAPI.Intel		21.08	system
 Intel	org.freedesktop.Platform.VAAPI.Intel		22.08	system
 openh264	org.freedesktop.Platform.openh264	2.1.0	2.0	system
@@ -4976,7 +4987,7 @@ openh264	org.freedesktop.Platform.openh264	2.1.0	2.2.0	system
 GNOME Application Platform version 43	org.gnome.Platform		43	system
 GNOME Application Platform version 44	org.gnome.Platform		44	system
 Citations	org.gnome.World.Citations	0.5.2	stable	system
-Pika Backup	org.gnome.World.PikaBackup	0.5.2	stable	system
+Pika Backup	org.gnome.World.PikaBackup	0.6.0	stable	system
 Yaru-dark Gtk Theme	org.gtk.Gtk3theme.Yaru-dark		3.22	system
 Wez's Terminal Emulator	org.wezfurlong.wezterm	20230408-112425-69ae8472	stable	system
 ```
@@ -4986,7 +4997,7 @@ Wez's Terminal Emulator	org.wezfurlong.wezterm	20230408-112425-69ae8472	stable	s
 ```
 Name                       Version                     Rev    Tracking         Publisher     Notes
 bare                       1.0                         5      latest/stable    canonical**   base
-canonical-livepatch        10.5.3                      196    latest/stable    canonical**   -
+canonical-livepatch        10.5.4                      202    latest/stable    canonical**   -
 cmake                      3.26.3                      1288   latest/stable    crascit**     classic
 core                       16-2.58.3                   14946  latest/stable    canonical**   core
 core18                     20230320                    2721   latest/stable    canonical**   base
@@ -4998,10 +5009,10 @@ dub                        1.19.0                      53     latest/stable    d
 duf-utility                v0.6.0                      1      latest/stable    muesli        -
 firefox                    111.0.1-2                   2487   latest/stable/…  mozilla**     -
 gimp                       2.10.30                     393    latest/stable    snapcrafters  -
-gnome-3-28-1804            3.28.0-19-g98f9e67.98f9e67  194    latest/stable    canonical**   -
+gnome-3-28-1804            3.28.0-19-g98f9e67.98f9e67  198    latest/stable    canonical**   -
 gnome-3-34-1804            0+git.3556cb3               90     latest/stable/…  canonical**   -
 gnome-3-38-2004            0+git.6f39565               137    latest/stable    canonical**   -
-gnome-42-2204              0+git.e7d97c7               68     latest/stable    canonical**   -
+gnome-42-2204              0+git.e7d97c7               87     latest/stable    canonical**   -
 gnome-dictionary           40.0                        53     latest/stable    canonical**   -
 gphoto2                    latest                      8      latest/stable    eberkund      -
 gtk-common-themes          0.1-81-g442e511             1535   latest/stable/…  canonical**   -
@@ -5014,9 +5025,9 @@ pdftk                      2.02-4                      9      latest/stable    s
 procs                      v0.13.0                     969    latest/stable    dalance       -
 remmina                    v1.4.30                     5692   latest/stable    remmina**     -
 shotcut                    22.12.21                    929    latest/stable    meltytech**   classic
-skype                      8.96.0.207                  263    latest/stable    skype**       -
+skype                      8.96.0.408                  266    latest/stable    skype**       -
 snap-store                 41.3-66-gfe1e325            638    latest/stable/…  canonical**   -
-snapd                      2.58.3                      18596  latest/stable    canonical**   snapd
+snapd                      2.59.1                      18933  latest/stable    canonical**   snapd
 snapd-desktop-integration  0.1                         57     latest/stable/…  canonical**   -
 spt                        0.25.0                      289    latest/stable    popey         -
 timg                       1.4.1+pkg-67d0              16     latest/stable    simosx        -
