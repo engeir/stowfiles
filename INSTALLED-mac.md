@@ -17,7 +17,6 @@ aspell
 assimp
 atk
 atool
-atuin
 autoconf
 automake
 bash
@@ -43,7 +42,10 @@ cgif
 chafa
 chruby
 cjson
+clisp
+cloc
 cmake
+cmatrix
 cmocka
 composer
 coreutils
@@ -70,6 +72,7 @@ entr
 expat
 fastjar
 fd
+feh
 ffmpeg
 ffmpeg@4
 ffmpegthumbnailer
@@ -201,6 +204,7 @@ libraw
 librist
 librsvg
 libsamplerate
+libsigsegv
 libsm
 libsndfile
 libsodium
@@ -318,13 +322,16 @@ pinentry-mac
 pipx
 pixman
 pkg-config
+plotutils
 poppler
 popt
 portaudio
 portmidi
+potrace
 pqiv
 prettier
 proj
+pstoedit
 pueue
 pup
 pyenv
@@ -384,6 +391,7 @@ szip
 tcl-tk
 tesseract
 texinfo
+texlive
 theora
 tidy-html5
 tig
@@ -448,7 +456,9 @@ osxfuse
 penc
 platypus
 qtpass
+qutebrowser
 rar
+wezterm
 whichspace
 xquartz
 ```
@@ -456,38 +466,44 @@ xquartz
 ## Cargo
 
 ```
+atuin v14.0.1:
+    atuin
 blindfold v1.0.7:
     blindfold
-bob v1.1.3 (https://github.com/MordechaiHadad/bob.git#5f8a2b23):
+bob-nvim v2.3.2:
     bob
-cargo-binstall v0.21.3:
+cargo-binstall v0.23.0:
     cargo-binstall
-cargo-edit v0.9.1:
+cargo-edit v0.11.9:
     cargo-add
     cargo-rm
     cargo-set-version
     cargo-upgrade
-cargo-update v12.0.0:
+cargo-update v13.0.1:
     cargo-install-update
     cargo-install-update-config
-clap v3.1.18:
+clap v4.2.5:
     stdio-fixture
-czkawka_cli v3.1.0:
+coreutils v0.0.18:
+    coreutils
+czkawka_cli v5.1.0:
     czkawka_cli
-halp v0.1.4:
+exa v0.10.1:
+    exa
+halp v0.1.6:
     halp
     halp-completions
     halp-mangen
     halp-test
 helix-term v0.6.0 (/Users/eirikenger/programs/helix/helix-term):
     hx
-hyperfine v1.16.0:
+hyperfine v1.16.1:
     hyperfine
-mdbook v0.4.15:
+mdbook v0.4.28:
     mdbook
-rtx-cli v1.23.7:
+rtx-cli v1.29.3:
     rtx
-stylua v0.11.3:
+stylua v0.17.1:
     stylua
 ```
 
@@ -496,45 +512,46 @@ stylua v0.11.3:
 ```
 package betty 0.2.6, installed using Python 3.9.6
  - betty
-package black 22.8.0, installed using Python 3.10.0
+package black 23.3.0, installed using Python 3.10.0
  - black
  - black-primer
  - blackd
-package flake8 5.0.4, installed using Python 3.10.0
+package flake8 6.0.0, installed using Python 3.10.0
  - flake8
-package howdoi 2.0.19, installed using Python 3.9.7
+package howdoi 2.0.20, installed using Python 3.9.7
  - howdoi
-package ncdump-rich 0.2.1, installed using Python 3.9.6
+package ncdump-rich 0.3.4, installed using Python 3.9.6
  - ncdump-rich
-package nox 2022.8.7, installed using Python 3.10.0
+package nox 2023.4.22, installed using Python 3.10.0
  - nox
  - tox-to-nox
-package opentimelineio 0.14.1, installed using Python 3.10.1
+package opentimelineio 0.15.0, installed using Python 3.10.1
  - otioautogen_serialized_schema_docs
  - otiocat
  - otioconvert
  - otiopluginfo
  - otiostat
+ - otiotool
  - otioview
 package pandoc-eqnos 2.5.0, installed using Python 3.9.6
  - pandoc-eqnos
 package pandoc-include 1.2.0, installed using Python 3.10.1
  - pandoc-include
-package pipenv 2022.9.8, installed using Python 3.10.0
+package pipenv 2023.4.29, installed using Python 3.10.0
  - pipenv
  - pipenv-resolver
-package pypistats 1.1.0, installed using Python 3.10.6
+package pypistats 1.3.0, installed using Python 3.10.6
  - pypistats
 package pywal 3.3.0, installed using Python 3.9.7
  - wal
 package rich-cli 1.8.0, installed using Python 3.10.6
  - rich
-package rich-codex 1.2.5, installed using Python 3.10.6
+package rich-codex 1.2.6, installed using Python 3.10.6
  - rich-codex
 package speedtest-cli 2.1.3, installed using Python 3.10.0
  - speedtest
  - speedtest-cli
-package trash-cli 0.22.8.27, installed using Python 3.9.6
+package trash-cli 0.23.2.13.2, installed using Python 3.9.6
  - trash
  - trash-empty
  - trash-list
@@ -543,6 +560,6 @@ package trash-cli 0.22.8.27, installed using Python 3.9.6
  - trash-rm
 package ueberzug 18.1.9, installed using Python 3.9.7
  - ueberzug
-package whoogle-search 0.7.4, installed using Python 3.9.5
+package whoogle-search 0.8.2, installed using Python 3.9.5
  - whoogle-search
 ```

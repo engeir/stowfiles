@@ -1,4 +1,3 @@
--- See https://github.com/stevearc/aerial.nvim#options
 return {
     "stevearc/aerial.nvim",
     dependencies = "nvim-tree/nvim-web-devicons", -- optional, for file icons
