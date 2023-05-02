@@ -78,6 +78,8 @@
 
 ## Quickly restart the yabai launch agent
 ctrl + alt + cmd - r : launchctl kickstart -k "gui/${UID}/homebrew.mxcl.yabai"
+# And skhd
+cmd + alt - r : skhd --reload
 
 # open programs
 
@@ -86,7 +88,8 @@ cmd - return : open /Applications/Alacritty.app -n
 
 alt - space : open /Applications/dmenu-mac.app
 
-cmd + alt - x : /Users/eirikenger/.local/bin/passmenu
+# cmd + alt - x : /Users/eirikenger/.local/bin/passmenu
+cmd + alt - x : /Users/eirikenger/bin/custom_scripts
 
 cmd + alt - p : /Users/eirikenger/bin/pdf_open
 
