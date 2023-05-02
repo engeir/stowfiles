@@ -239,4 +239,8 @@ return {
             end, { silent = true, expr = true })
         end,
     },
+    {
+        "windwp/nvim-ts-autotag",
+        config = true,
+    },
 }

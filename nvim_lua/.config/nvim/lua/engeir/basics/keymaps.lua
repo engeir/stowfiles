@@ -5,6 +5,43 @@ local opts = { silent = true, noremap = true }
 vim.keymap.set("", "<Space>", "<Nop>", opts)
 vim.g.mapleader = " "
 
+-- Improving default keys
+vim.keymap.set("n", "J", function()
+    vim.cmd("normal! mzJ")
+
+    local col = vim.fn.col(".")
+    local context = string.sub(vim.fn.getline("."), col - 1, col + 1)
+    if
+        context == ") ."
+        or context == ") :"
+        or context:match("%( .")
+        or context:match(". ,")
+        or context:match("%w %.")
+    then
+        vim.cmd("undojoin | normal! x")
+    elseif context == ",)" then
+        vim.cmd("undojoin | normal! hx")
+    end
+
+    vim.cmd("normal! `z")
+end)
+-- Never yank empty lines
+vim.keymap.set("n", "dd", function()
+    if vim.api.nvim_get_current_line():match("^%s*$") then
+        return '"_dd'
+    else
+        return "dd"
+    end
+end, { expr = true })
+-- Indent similar to 'o'/'O'
+vim.keymap.set("n", "i", function()
+    if #vim.fn.getline(".") == 0 then
+        return [["_cc]]
+    else
+        return "i"
+    end
+end, { expr = true })
+
 -- Open/close the quickfix window
 -- vim.keymap.set("n", "<leader>cc", ":cclose<cr>", { desc = "Close Quickfix" })
 vim.keymap.set("n", "<leader>co", ":copen<cr>", { desc = "Open Quickfix" })

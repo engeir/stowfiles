@@ -14,7 +14,7 @@ return {
         -- TODO: replace with mini.tabline?
         "akinsho/bufferline.nvim",
         name = "bufferline",
-        version = "v2.*",
+        -- version = "v2.*",
         dependencies = "nvim-tree/nvim-web-devicons",
         config = function()
             require("bufferline").setup()

@@ -1,7 +1,7 @@
 # NeoVim Config
 
-This is @engeir's NeoVim config, on NVIM v0.10.0-dev-53+g5ccec143d (view at [latest
-commit](https://github.com/neovim/neovim/tree/5ccec143d)) installed with the [bob version
+This is @engeir's NeoVim config, on NVIM v0.10.0-dev-195+g1fc468aed (view at [latest
+commit](https://github.com/neovim/neovim/tree/1fc468aed)) installed with the [bob version
 manager for neovim](https://github.com/MordechaiHadad/bob). I am currently using the
 [lazy plugin manager](https://github.com/folke/lazy.nvim). Below is a complete list of
 all plugins I'm using:
@@ -42,6 +42,7 @@ all plugins I'm using:
 - [neodim](https://github.com/zbirenbaum/neodim.git)
 - [neogen](https://github.com/danymat/neogen.git)
 - [neogit](https://github.com/TimUntersberger/neogit.git)
+- [neorg](https://github.com/nvim-neorg/neorg.git)
 - [nui.nvim](https://github.com/MunifTanjim/nui.nvim.git)
 - [null-ls.nvim](https://github.com/jose-elias-alvarez/null-ls.nvim.git)
 - [nvim-cmp](https://github.com/hrsh7th/nvim-cmp.git)
@@ -50,6 +51,7 @@ all plugins I'm using:
 - [nvim-treesitter-context](https://github.com/nvim-treesitter/nvim-treesitter-context.git)
 - [nvim-treesitter-textobjects](https://github.com/nvim-treesitter/nvim-treesitter-textobjects.git)
 - [nvim-treesitter](https://github.com/nvim-treesitter/nvim-treesitter.git)
+- [nvim-ts-autotag](https://github.com/windwp/nvim-ts-autotag.git)
 - [nvim-ts-rainbow](https://github.com/p00f/nvim-ts-rainbow.git)
 - [nvim-web-devicons](https://github.com/nvim-tree/nvim-web-devicons.git)
 - [plenary.nvim](https://github.com/nvim-lua/plenary.nvim.git)
