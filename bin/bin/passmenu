@@ -14,7 +14,7 @@ if [[ -n $WAYLAND_DISPLAY ]]; then
 elif [[ $(uname -s) == "Darwin" ]]; then
     dmenu=dmenu-mac
 elif [[ -n $DISPLAY ]]; then
-    dmenu=dmenu
+    dmenu="dmenu -i"
     xdotool="xdotool type --clearmodifiers --file -"
 else
     echo "Error: No Wayland or X11 display detected" >&2
@@ -26,7 +26,7 @@ password_files=("$prefix"/**/*.gpg)
 password_files=("${password_files[@]#"$prefix"/}")
 password_files=("${password_files[@]%.gpg}")
 
-password=$(printf '%s\n' "${password_files[@]}" | "$dmenu" "$@")
+password=$(printf '%s\n' "${password_files[@]}" | eval "$dmenu" "$@")
 
 [[ -n $password ]] || exit
 
