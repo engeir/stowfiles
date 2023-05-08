@@ -1,4 +1,6 @@
+#!/bin/zsh
 # MY ALIASES
+alias history="fc -li 1"
 # alias ls="lsd -FXA"
 alias ls="exa --icons -Fa --group-directories-first"
 # alias rm="echo Do not use this, use trash-cli put filename instead"

@@ -4,7 +4,7 @@ export PATH=/usr/local/bin:$HOME/scripts:$HOME/.local/bin:$HOME/bin:$PATH
 export NODE_PATH='/usr/local/lib/node_modules'
 # export PATH="$HOME/.poetry/bin:$PATH"
 export PATH="/Users/eirikenger/Library/Python/3.9/bin:$PATH"
-export PATH=/usr/local/opt/ruby/bin:$PATH  # Ruby path
+# export PATH=/usr/local/opt/ruby/bin:$PATH  # Ruby path
 export PATH=/Applications/ConTeXtStandalone/tex/texmf-osx-64/bin:$PATH  # ConTeXt path
 
 export EDITOR=nvim
@@ -44,3 +44,5 @@ export PATH="$DENO_INSTALL/bin:$PATH"
 export PATH="$PATH:/Users/eirikenger/Library/Application Support/neovim/bin"
 # auto-notify
 export AUTO_NOTIFY_IGNORE=("docker" "man" "sleep" "lf" "nnn" "hugo serve" "fg" "ga")
+# forgit
+export FORGIT_FZF_DEFAULT_OPTS
