@@ -1,5 +1,4 @@
 #!/bin/zsh
-# export set zsh config directory
 if command -v coreutils 1>/dev/null 2>&1; then
     zmodload "zsh/zprof"  # Uncomment to run profiler (also last line)
     t0=$(coreutils date "+%s.%N")
