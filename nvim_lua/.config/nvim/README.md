@@ -12,6 +12,7 @@ all plugins I'm using:
 - [bufferline](https://github.com/akinsho/bufferline.nvim.git)
 - [ccc.nvim](https://github.com/uga-rosa/ccc.nvim.git)
 - [cmp-buffer](https://github.com/hrsh7th/cmp-buffer.git)
+- [cmp-cmdline](https://github.com/hrsh7th/cmp-cmdline.git)
 - [cmp-nvim-lsp](https://github.com/hrsh7th/cmp-nvim-lsp.git)
 - [cmp-nvim-lua](https://github.com/hrsh7th/cmp-nvim-lua.git)
 - [cmp-path](https://github.com/hrsh7th/cmp-path.git)

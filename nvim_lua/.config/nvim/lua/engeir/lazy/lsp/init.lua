@@ -194,10 +194,32 @@ cmp.setup({
         -- { name = "copilot" },
         -- { name = "cmp_tabnine" },
     },
+    -- view = {
+    --     entries = "native_menu",
+    -- },
     experimental = {
-        native_menu = false,
-        ghost_text = true,
+        ghost_text = false,
     },
+})
+cmp.setup.cmdline({ "/", "?" }, {
+    mapping = cmp.mapping.preset.cmdline(),
+    sources = {
+        { name = "buffer" },
+    },
+})
+-- `:` cmdline setup.
+cmp.setup.cmdline(":", {
+    mapping = cmp.mapping.preset.cmdline(),
+    sources = cmp.config.sources({
+        { name = "path" },
+    }, {
+        {
+            name = "cmdline",
+            option = {
+                ignore_cmds = { "Man", "!" },
+            },
+        },
+    }),
 })
 if EXECUTABLE("gh") then
     require("engeir.lazy.lsp.cmp_gh_source")
