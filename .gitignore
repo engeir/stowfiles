@@ -3,3 +3,5 @@ packer_compiled.lua
 **/spell/**
 newsboat/.newsboat/cache.db
 tmux/.tmux/plugins/
+.zsh_history
+.zcompdump
