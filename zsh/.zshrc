@@ -1,4 +1,8 @@
-# zmodload zsh/zprof  # Uncomment to run profiler (also last line)
+#!/bin/zsh
+if command -v coreutils 1>/dev/null 2>&1; then
+    zmodload "zsh/zprof"
+    t0=$(coreutils date "+%s.%N")
+fi
 # Enable colors:
 autoload -U colors && colors
 
@@ -148,4 +152,7 @@ eval "$(rtx activate zsh)"
 
 # Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
 export PATH="$PATH:$HOME/gems/bin:$HOME/.rvm/bin"
-# zprof  # Uncomment to run profiler (also first line)
+if command -v coreutils 1>/dev/null 2>&1; then
+    t1=$(coreutils date "+%s.%N")
+    printf "Profile took %.3f seconds to load\n" $((t1-t0))
+fi
