@@ -62,9 +62,10 @@ return {
         config = function()
             require("diffview")
         end,
+        lazy = false,
         keys = {
-            { "dc", ":DiffviewClose<cr>", { silent = true, noremap = true } },
-            { "do", ":DiffviewOpen<cr>",  { silent = true, noremap = true } },
+            { "dc", ":DiffviewClose<cr>", { silent = true, noremap = true, desc = "[D]iffview [C]lose" } },
+            { "do", ":DiffviewOpen<cr>",  { silent = true, noremap = true, desc = "[D]iffview [O]pen" } },
         },
     },
     {
