@@ -45,7 +45,7 @@ return {
             require("telescope").setup({
                 defaults = {
                     buffer_previewer_maker = new_maker,
-                    path_display = { shorten = 3 },
+                    path_display = { shorten = 4 },
                     vimgrep_arguments = {
                         "rg",
                         "--color=never",
@@ -119,7 +119,8 @@ return {
             map("n", "<leader>fl", "<cmd>lua require('telescope.builtin').current_buffer_fuzzy_find()<cr>")
             map("n", "<leader>fs", "<cmd>lua require('telescope.builtin').git_files({cwd='~/stowfiles/'})<cr>")
             map("n", "<leader>fg", "<cmd>lua require('telescope.builtin').git_files()<cr>") -- {git_command={'git', 'grep', '--cached', '-Il', '\"\"'}}
-            map("n", "<leader>fr", "<cmd>lua require('telescope.builtin').live_grep()<cr>")
+            -- map("n", "<leader>fr", "<cmd>lua require('telescope.builtin').live_grep()<cr>") -- Does not fuzzy
+            map("n", "<leader>fr", "<cmd>lua require('telescope.builtin').grep_string({search=''})<cr>")
             map("n", "<leader>fw", "<cmd>lua require('telescope.builtin').grep_string()<cr>")
             map(
                 "n",
