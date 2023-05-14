@@ -27,8 +27,6 @@ fpath+=${ZDOTDIR:-~}/.zsh_functions  # This must come before compinit
 # # Lines configured by zsh-newuser-install
 # # HISTFILE=~/.cache/zsh/.histfile
 # HISTFILE=~/.zsh_history
-# HISTSIZE=1000
-# SAVEHIST=1000
 # setopt autocd extendedglob notify
 # unsetopt beep
 # bindkey -v
@@ -53,11 +51,13 @@ plug "MichaelAquilina/zsh-you-should-use"
 plug "jeffreytse/zsh-vi-mode"
 plug "chivalryq/git-alias"
 plug "wfxr/forgit"
+plug "conda-incubator/conda-zsh-completion"
 plug "$HOME/.config/zsh/exports.zsh"
 zvm_after_init_commands+=('[ -f $HOME/programs/zsh/fzf-key-bindings/key-bindings.zsh ] && source $HOME/programs/zsh/fzf-key-bindings/key-bindings.zsh')
 
 plug "$HOME/.config/zsh/aliases.zsh"
 plug "$HOME/.config/zsh/functions.zsh"
+plug "$HOME/.config/zsh/ssh.zsh"
 
 # Search history for input with the up- and down-arrow
 # bindkey "^[[A" history-beginning-search-backward
@@ -79,16 +79,31 @@ setopt INTERACTIVE_COMMENTS
 setopt PROMPT_CR
 
 # Speedy keys
-# xset r rate 210 40
+xset r rate 210 40
+if [ "$MACHINE" = "Ubuntu" ]; then
+    xrdb "$HOME/.config/Xresources"
+fi
 
 # source $HOME/programs/zsh/git/.git-completion.bash
 # zstyle ':completion:*:*:git:*' script $HOME/programs/zsh/git/.git-completion.bash
 # fpath=(~/programs/zsh/git $fpath)
 
 [ -s "$HOME/.bun/_bun" ] && plug "$HOME/.bun/_bun"
+eval "$(thefuck --alias)"
 eval "$(starship init zsh)"
 eval "$(rtx activate zsh)"
 eval "$(atuin init zsh)"
+eval "$(atuin gen-completions --shell zsh --out-dir $HOME/.config/zsh/atuin_completion)"
+
+# Completions sources
+fpath+="$HOME/.config/zsh/atuin_completion"
+fpath+="$HOME/.local/share/zap/plugins/conda-zsh-completion/_conda"
+if [ "$MACHINE" = "Ubuntu" ]; then
+    autoload bashcompinit
+    bashcompinit
+    source "/usr/share/bash-completion/completions/pacstall"
+    source "/usr/share/bash-completions/completions/cdo" 2>/dev/null
+fi
 
 if command -v coreutils 1>/dev/null 2>&1; then
     t1=$(coreutils date "+%s.%N")

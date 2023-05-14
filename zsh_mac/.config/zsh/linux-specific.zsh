@@ -1,0 +1,42 @@
+#!/bin/zsh
+# General
+alias screenkey="screenkey --opacity 0.3 --bak-mode normal -M -f 'DejaVu Sans Mono Bold'"
+alias wezterm='flatpak run org.wezfurlong.wezterm'
+alias tex2png="pnglatex -b Black -F White -d 2000"
+
+# Update file indexing
+alias u="sudo updatedb"
+alias dropbox_update="~/.dropbox-dist/dropboxd"
+
+# File handling
+alias skbat='sk --preview="bat {} --color=always"'
+alias rg='rg -g "!Dropbox" -g "!OneDrive" -g "!BoxSync" -g "!.cache" -g "!.config/nnn" -g "!.git" -g "!node_module" -g "!.npm" -g "!.mozilla" -g "!.meteor" -g "!.nv" -g "!.conda" -g "!.dropbox-dist" -g "!.vscode" -g "!.vscode-insiders" -g "!miniconda3" -g "!.virtualenvs" -g "!snap" -g "!gems" -g "!.wine" -g "!extensions" -g "!coreutils-8.32" -g "!freetype-2.10.4" -g "!.cargo" -g "!Downloads" -g "!R" -g "!.Mathematica"'
+alias cp='/usr/local/bin/cpg -g'
+alias mv='/usr/local/bin/mvg -g'
+# alias f='cd ~ && cd $(fd --type d --type f --hidden --exclude .git --exclude .config/nnn --exclude node_module --exclude .cache --exclude .npm --exclude .mozilla --exclude .meteor --exclude .nv --exclude .conda --exclude .dropbox-dist --exclude .vscode --exclude .vscode-insiders --exclude miniconda3 --exclude .virtualenvs --exclude snap --exclude gems --exclude .wine --exclude extensions --exclude coreutils-8.32 --exclude freetype-2.10.4 --exclude .cargo --exclude Downloads --exclude R --exclude .Mathematica --exclude OneDrive --exclude BoxSync --exclude Dropbox | fzf)'
+alias ll="ls -ltrh"
+alias lsn="ls --color=auto */ | less"
+alias open="xdg-open"
+
+# Open programs
+alias nikkerud="~/betty/main.rb"
+alias nvb="nvim ~/.local/share/bookmarks/bookmarks.sh"
+alias vpn="/opt/cisco/anyconnect/bin/vpnui"
+
+# reMarkable related
+alias rmv="rmview ~/programs/rmview/rmview.json"
+# alias rmapi="~/./rmapi"
+# alias cptodo="cp ~/.kb/data/todo/pdh_work ~/Documents/notes_papers/_includes/todo.md"
+alias saRM="ssh-add ~/rM_share"
+alias skRM="ssh-keygen -R 10.11.99.1"
+alias remouse="/home/een023/remousable_program/./remousable"
+
+# FRAM
+alias sfram="ssh -X -Y een023@fram.sigma2.no"
+alias saFRAM="ssh-add ~/.ssh/id_sigma2"
+alias cpfram="cp ~/.kb/data/cheatsheet/fram ~/Documents/notes_papers/_includes/fram_cheat.md"
+
+# More SSH
+alias saVULTR="ssh-add ~/.ssh/id_vultr"
+
+alias condainit=". ~/.config/zsh/condainit"
