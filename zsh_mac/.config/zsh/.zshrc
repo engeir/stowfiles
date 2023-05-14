@@ -6,35 +6,6 @@ fi
 # Remove unexpected aliases
 unalias -a
 source "$HOME/.config/zsh/which-machine.zsh"
-fpath+=${ZDOTDIR:-~}/.zsh_functions  # This must come before compinit
-
-# # The following lines were added by compinstall
-#
-# zstyle ':completion:*' completer _complete _ignored _correct _approximate
-# zstyle ':completion:*' list-colors ${(s.:.)LS_COLORS}
-# zstyle ':completion:*' list-prompt %SAt %p: Hit TAB for more, or the character to insert%s
-# zstyle ':completion:*' matcher-list '' '+m:{[:lower:][:upper:]}={[:upper:][:lower:]}' 'r:|[._-]=** r:|=**'
-# zstyle ':completion:*' max-errors 2
-# zstyle ':completion:*' menu select=1
-# zstyle ':completion:*' select-prompt %SScrolling active: current selection at %p%s
-# # zstyle :compinstall filename '/home/een023/.config/zsh/.zshrc'
-#
-# autoload -Uz compinit
-# # compinit  # Slows down the prompt. Just call it manually when in need
-# _comp_options+=(globdots)  # Includes hidden files
-# # End of lines added by compinstall
-#
-# # Lines configured by zsh-newuser-install
-# # HISTFILE=~/.cache/zsh/.histfile
-# HISTFILE=~/.zsh_history
-# setopt autocd extendedglob notify
-# unsetopt beep
-# bindkey -v
-# # End of lines configured by zsh-newuser-install
-
-# export KEYTIMEOUT=1
-
-# User configuration
 
 # Created by Zap installer
 [ -f "$HOME/.local/share/zap/zap.zsh" ] && source "$HOME/.local/share/zap/zap.zsh"
@@ -96,6 +67,7 @@ eval "$(atuin init zsh)"
 eval "$(atuin gen-completions --shell zsh --out-dir $HOME/.config/zsh/atuin_completion)"
 
 # Completions sources
+fpath+="${ZDOTDIR:-~}/.zsh_functions"  # This must come before compinit
 fpath+="$HOME/.config/zsh/atuin_completion"
 fpath+="$HOME/.local/share/zap/plugins/conda-zsh-completion/_conda"
 if [ "$MACHINE" = "Ubuntu" ]; then
