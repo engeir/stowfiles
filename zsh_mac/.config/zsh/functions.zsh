@@ -1,10 +1,11 @@
+#!/bin/sh
 batdiff() {
     git diff --name-only --diff-filter=d | xargs bat --diff
 }
 
 cht() {
 	# Cheat sheet for any command you can think of.
-	curl cht.sh/$1
+	curl cht.sh/"$1"
 }
 
 lc () {
@@ -15,7 +16,7 @@ lc () {
         rm -f "$tmp"
         if [ -d "$dir" ]; then
             if [ "$dir" != "$(pwd)" ]; then
-                cd "$dir"
+                cd "$dir" || exit 1
             fi
         fi
     fi
@@ -49,3 +50,18 @@ nn ()
             rm -f "$NNN_TMPFILE" > /dev/null
     fi
 }
+
+# Pyenv take up to 0.5 seconds extra, so we wrap it in a function
+if command -v pyenv 1>/dev/null 2>&1; then
+    pyenvinit () {
+        eval "$(pyenv init -)"
+        eval "$(pyenv virtualenv-init -)"
+    }
+fi
+
+# Pip take up to 1 second extra, so we wrap it in a function
+if command -v pip 1>/dev/null 2>&1; then
+    pipinit () {
+        eval "$(pip completion --zsh)"
+    }
+fi

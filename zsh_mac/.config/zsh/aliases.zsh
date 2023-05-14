@@ -1,22 +1,39 @@
-# MY ALIASES
-# alias ls="lsd -FXA"
-alias ls="exa --icons -Fa --group-directories-first"
-# alias rm="echo Do not use this, use trash-cli put filename instead"
-alias rm="trash-put"
-alias nv="nvim"
-alias nnn="nnn -derH"
-alias cat="bat"
-alias sxiv="sxiv -b"
-alias pqiv="pqiv -it"
-alias yt="ytfzf"
-alias publish_flottflyt="rsync -rtvzP --delete ~/projects/flottflyt/public/ root@flottflyt.xyz:/var/www/flottflyt"
-alias publish_gallery_flottflyt="rsync -rtvzP ~/projects/gallery-flottflyt/photo-stream/_site/ root@flottflyt.xyz:/var/www/gallery-flottflyt"
-alias publish_eirikenger="rsync -rtvzP ~/projects/eirikenger/ root@flottflyt.xyz:/var/www/eirikenger"
-alias figlet="/Users/eirikenger/figlet/./figlet"
-alias lolban="/Users/eirikenger/figlet/./lolban"
-alias tks="tmux kill-session -t"
+#!/bin/zsh
+alias history="fc -li 1"
 
-# Remarkable
-alias saRM="ssh-keygen -R 10.11.99.1"
-alias rmapi="~/./rmapi"
-alias lsn="ls */ | less"
+# MY ALIASES
+
+alias cat="bat"
+alias figlet="$HOME/figlet/./figlet"
+alias has="HAS_ALLOW_UNSAFE=y has"
+alias lg="lazygit"
+alias lolban="$HOME/figlet/./lolban"
+alias ls="exa --icons -Fa --group-directories-first"
+alias nnn="nnn -derH"
+alias nv="nvim"
+alias rm="trash-put"
+alias yt="ytfzf -t"
+
+# It's nice with habits
+alias :q="exit"
+alias :wq="exit"
+alias ZZ="exit"
+alias ZQ="exit"
+
+# Git
+alias gin="git --no-pager"
+alias gip="git push -u origin main"
+alias gpull="git pull --ff-only"
+alias saGITHUB="ssh-add ~/.ssh/id_github"
+
+# Mac
+if [ "$MACHINE" = "Darwin" ]; then
+    plug "$HOME/.config/zsh/mac-specific.zsh"
+fi
+if [ "$MACHINE" = "Ubuntu" ]; then
+    plug "$HOME/.config/zsh/linux-specific.zsh"
+fi
+
+# alias ls="lsd -FXA"
+# alias rm="echo Do not use this, use trash-cli put filename instead"
+# alias pqiv="pqiv -it"

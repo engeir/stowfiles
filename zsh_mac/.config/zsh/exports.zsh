@@ -1,11 +1,10 @@
 export PATH="${PATH}:${HOME}/.local/bin"
 # If you come from bash you might have to change your $PATH.
-export PATH=/usr/local/bin:$HOME/scripts:$HOME/.local/bin:$HOME/bin:$PATH
+# export PATH=/usr/local/bin:$HOME/scripts:$HOME/.local/bin:$HOME/bin:$PATH
 export NODE_PATH='/usr/local/lib/node_modules'
 # export PATH="$HOME/.poetry/bin:$PATH"
-export PATH="/Users/eirikenger/Library/Python/3.9/bin:$PATH"
-export PATH=/usr/local/opt/ruby/bin:$PATH  # Ruby path
-export PATH=/Applications/ConTeXtStandalone/tex/texmf-osx-64/bin:$PATH  # ConTeXt path
+# export PATH=/usr/local/opt/ruby/bin:$PATH  # Ruby path
+export PATH="/Applications/ConTeXtStandalone/tex/texmf-osx-64/bin:$PATH"  # ConTeXt path
 
 export EDITOR=nvim
 export VISUAL=nvim
@@ -15,18 +14,31 @@ export PYENV_VIRTUALENV_DISABLE_PROMPT=1
 export PAGER=less  # Suggested at https://github.com/jarun/nnn/wiki/Advanced-use-cases#pager-as-opener
 LESSOPEN="|/usr/local/bin/lesspipe.sh %s"; export LESSOPEN
 export MANPAGER="sh -c 'col -bx | bat -l man -p'"
+export BAT_PAGER="less -R"
 export LESS='-Ri '
-# export LS_COLORS="$(vivid generate nord)"
 export LS_COLORS="$(vivid generate solarized-dark)"
 
 # NNN
-export NNN_BMS="b:~/photos/Bilder/Canon EOS M50;c:~/.config;d:~/Downloads;m:~/stowfiles;p:~/programs;s:~/.local/bin;w:~/OneDrive - UiT Office 365/Skole"
-export NNN_PLUG='d:diffs;f:fzcd;j:autojump;l:launch;p:preview-tui2;t:nmount;v:imgview'
+export NNN_USE_EDITOR=1
+export USE_VIDEOTHUMB=1
 BLK="34" CHR="c9" DIR="e6" EXE="64" REG="fa" HARDLINK="81" SYMLINK="d6" MISSING="f0" ORPHAN="00" FIFO="06" SOCK="00" OTHER="58"
 export NNN_FCOLORS="$BLK$CHR$DIR$EXE$REG$HARDLINK$SYMLINK$MISSING$ORPHAN$FIFO$SOCK$OTHER"
 export NNN_FIFO=/tmp/nnn.fifo nnn
 export NNN_TRASH=1
-# fzf
+if [ "$MACHINE" = "Darwin" ]; then
+    plug "$HOME/.config/zsh/mac-specific.zsh"
+fi
+if [ "$MACHINE" = "Ubuntu" ]; then
+    plug "$HOME/.config/zsh/linux-specific.zsh"
+fi
+
+# FZF settings
+export FZF_BASE=/usr/bin
+# export DISABLE_FZF_AUTO_COMPLETION="true"
+# export FZF_DEFAULT_OPTS="--no-mouse --layout=reverse --height 100% -1 --multi --inline-info --preview='[[ \$(file --mime {}) =~ binary ]] && echo {} is a binary file || (bat --style=numbers --color=always {} || cat {}) 2> /dev/null | head -300' --preview-window='right:hidden:wrap' --bind='f3:execute(bat --style=numbers {} || less -f {}),f2:toggle-preview,ctrl-d:half-page-down,ctrl-u:half-page-up,ctrl-a:select-all+accept,ctrl-y:execute-silent(echo {+} | pbcopy)'"
+FD_OPTIONS="--follow --exclude .git --exclude node_modules"
+# export FZF_DEFAULT_COMMAND="git ls-files --cached --others --exclude-standard | fd --type f --type 1 $FD_OPTIONS"
+export FZF_ALT_C_COMMAND="fd --type d $FD_OPTIONS"
 export FZF_DEFAULT_OPTS="--layout=reverse --height 100%"
 export FZF_DEFAULT_COMMAND='fd --type f'
 export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
@@ -44,3 +56,5 @@ export PATH="$DENO_INSTALL/bin:$PATH"
 export PATH="$PATH:/Users/eirikenger/Library/Application Support/neovim/bin"
 # auto-notify
 export AUTO_NOTIFY_IGNORE=("docker" "man" "sleep" "lf" "nnn" "hugo serve" "fg" "ga")
+# forgit
+export FORGIT_FZF_DEFAULT_OPTS
