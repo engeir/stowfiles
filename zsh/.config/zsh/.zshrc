@@ -75,6 +75,7 @@ eval "$(pyenv virtualenv-init -)"
 xset r rate 210 40
 
 # Alias, functions and more
+source ~/.config/zsh/exports.zsh
 source ~/.config/zsh/aliasrc
 source ~/.config/zsh/functionsrc
 source ~/.config/zsh/kb_alias
@@ -90,7 +91,7 @@ source /usr/share/zsh-autosuggestions/zsh-autosuggestions.zsh 2>/dev/null
 source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh 2>/dev/null
 # source /home/een023/.config/broot/launcher/bash/br
 if [ -e /home/een023/.nix-profile/etc/profile.d/nix.sh ]; then . /home/een023/.nix-profile/etc/profile.d/nix.sh; fi # added by Nix installer
-source ~/programs/command_line_apps/cdo-1.9.9/contrib/cdoCompletion.zsh 2>/dev/null
+source "/usr/share/bash-completions/completions/cdo" 2>/dev/null
 
 # forgit
 source "$HOME/programs/forgit/forgit.plugin.zsh"
@@ -150,8 +151,6 @@ export PATH="/home/een023/.local/share/bob/nvim-bin:$PATH"
 # rtx
 eval "$(rtx activate zsh)"
 
-# Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
-export PATH="$PATH:$HOME/gems/bin:$HOME/.rvm/bin"
 if command -v coreutils 1>/dev/null 2>&1; then
     t1=$(coreutils date "+%s.%N")
     printf "Profile took %.3f seconds to load\n" $((t1-t0))
