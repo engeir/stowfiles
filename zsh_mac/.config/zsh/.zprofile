@@ -1,14 +1,16 @@
+# set PATH so it includes user's private bin if it exists
+if [ -d "$HOME/bin" ] ; then
+    PATH="$HOME/bin:$PATH"
+fi
+
 export PATH="${PATH}:${HOME}/.local/bin"
 
 PATH="/usr/local/bin:${PATH}"
 PATH="/usr/bin:${PATH}"
-PATH="/Users/eirikenger/Documents/ReMarkableAPI:${PATH}"
+PATH="$HOME/Documents/ReMarkableAPI:${PATH}"
 export PATH
 export GOPATH=$HOME/go
 export PATH=$PATH:$GOPATH/bin
-
-# NNN
-export NNN_PLUG='j:autojump;f:fzcd;p:preview-tui;d:diffs;t:nmount;v:imgview' 
 
 function xman() { open x-man-page://$@ ; }
 
@@ -20,6 +22,11 @@ export PATH="/usr/local/bin:$PATH"
 export PATH="/usr/local/bin:$PATH"
 export PATH="/usr/local/bin:$PATH"
 
+if command -v apt > /dev/null; then
+    # Make caps-lock work as esc when pressed, ctrl when hold
+    setxkbmap -option ctrl:nocaps
+    xcape -e 'Control_L=Escape'
+fi
 
 # Setting PATH for Python 3.8
 # The original version is saved in .zprofile.pysave

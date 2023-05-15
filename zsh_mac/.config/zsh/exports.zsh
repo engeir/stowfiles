@@ -5,6 +5,7 @@ export NODE_PATH='/usr/local/lib/node_modules'
 # export PATH="$HOME/.poetry/bin:$PATH"
 # export PATH=/usr/local/opt/ruby/bin:$PATH  # Ruby path
 export PATH="/Applications/ConTeXtStandalone/tex/texmf-osx-64/bin:$PATH"  # ConTeXt path
+export PATH="$PATH:$HOME/.cabal/bin/"
 
 export EDITOR=nvim
 export VISUAL=nvim
@@ -52,8 +53,6 @@ export PATH="$BUN_INSTALL/bin:$PATH"
 # deno
 export DENO_INSTALL="/Users/eirikenger/.deno"
 export PATH="$DENO_INSTALL/bin:$PATH"
-# bob
-export PATH="$PATH:/Users/eirikenger/Library/Application Support/neovim/bin"
 # auto-notify
 export AUTO_NOTIFY_IGNORE=("docker" "man" "sleep" "lf" "nnn" "hugo serve" "fg" "ga")
 # forgit
