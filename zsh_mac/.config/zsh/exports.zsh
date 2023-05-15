@@ -47,6 +47,8 @@ export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
 export PATH="/usr/local/opt/expat/bin:$PATH"
 export HAS_ALLOW_UNSAFE=y
 
+# bob
+export PATH="$PATH:$HOME/.local/share/bob/nvim-bin"
 # bun
 export BUN_INSTALL="/Users/eirikenger/.bun"
 export PATH="$BUN_INSTALL/bin:$PATH"

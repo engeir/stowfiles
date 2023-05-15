@@ -1,7 +1,7 @@
 # NeoVim Config
 
-This is @engeir's NeoVim config, on NVIM v0.10.0-dev-295+g01f81ed89 (view at [latest
-commit](https://github.com/neovim/neovim/tree/01f81ed89)) installed with the [bob version
+This is @engeir's NeoVim config, on NVIM v0.10.0-dev-340+g33687f5e8 (view at [latest
+commit](https://github.com/neovim/neovim/tree/33687f5e8)) installed with the [bob version
 manager for neovim](https://github.com/MordechaiHadad/bob). I am currently using the
 [lazy plugin manager](https://github.com/folke/lazy.nvim). Below is a complete list of
 all plugins I'm using:
@@ -31,6 +31,7 @@ all plugins I'm using:
 - [gruvbox-material](https://github.com/sainnhe/gruvbox-material.git)
 - [harpoon](https://github.com/ThePrimeagen/harpoon.git)
 - [impatient.nvim](https://github.com/lewis6991/impatient.nvim.git)
+- [keylab.nvim](https://github.com/BooleanCube/keylab.nvim.git)
 - [lazy.nvim](https://github.com/folke/lazy.nvim.git)
 - [lazygit.nvim](https://github.com/kdheepak/lazygit.nvim.git)
 - [lsp-zero.nvim](https://github.com/VonHeikemen/lsp-zero.nvim.git)
@@ -39,6 +40,7 @@ all plugins I'm using:
 - [mason-lspconfig.nvim](https://github.com/williamboman/mason-lspconfig.nvim.git)
 - [mason.nvim](https://github.com/williamboman/mason.nvim.git)
 - [mini.nvim](https://github.com/echasnovski/mini.nvim.git)
+- [muren.nvim](https://github.com/AckslD/muren.nvim.git)
 - [neo-tree.nvim](https://github.com/nvim-neo-tree/neo-tree.nvim.git)
 - [neodim](https://github.com/zbirenbaum/neodim.git)
 - [neogen](https://github.com/danymat/neogen.git)
