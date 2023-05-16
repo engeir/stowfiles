@@ -56,6 +56,6 @@ export PATH="$BUN_INSTALL/bin:$PATH"
 export DENO_INSTALL="/Users/eirikenger/.deno"
 export PATH="$DENO_INSTALL/bin:$PATH"
 # auto-notify
-export AUTO_NOTIFY_IGNORE=("docker" "man" "sleep" "lf" "nnn" "hugo serve" "fg" "ga")
+export AUTO_NOTIFY_IGNORE=("nv" "docker" "man" "sleep" "lf" "nnn" "hugo serve" "fg" "ga")
 # forgit
 export FORGIT_FZF_DEFAULT_OPTS
