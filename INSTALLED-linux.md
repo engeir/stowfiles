@@ -60,6 +60,8 @@ art						install
 asciinema					install
 aspell						install
 aspell-en					install
+asymptote					install
+asymptote-doc					install
 at-spi2-core					install
 autoconf					install
 autoconf-archive				install
@@ -136,6 +138,7 @@ cdo						install
 checkinstall					install
 cheese						install
 cheese-common					install
+chktex						install
 chrome-gnome-shell				install
 chromium-codecs-ffmpeg-extra			install
 cinnamon-desktop-data				install
@@ -255,6 +258,7 @@ dpkg						install
 dpkg-dev					install
 dunst						install
 duplicity					install
+dvidvi						install
 dvipng						install
 dvisvgm						install
 dvtm						install
@@ -312,22 +316,41 @@ fontconfig					install
 fontconfig-config				install
 fontforge					install
 fontforge-common				install
+fonts-adf-accanthis				install
+fonts-adf-berenis				install
+fonts-adf-gillius				install
+fonts-adf-universalis				install
+fonts-arphic-bkai00mp				install
+fonts-arphic-bsmi00lp				install
+fonts-arphic-gbsn00lp				install
+fonts-arphic-gkai00mp				install
+fonts-arphic-uming				install
+fonts-baekmuk					install
 fonts-beng					install
 fonts-beng-extra				install
+fonts-cabin					install
 fonts-cantarell					install
+fonts-comfortaa					install
+fonts-croscore					install
+fonts-crosextra-caladea				install
+fonts-crosextra-carlito				install
 fonts-dejavu					install
 fonts-dejavu-core				install
 fonts-dejavu-extra				install
 fonts-deva					install
 fonts-deva-extra				install
 fonts-droid-fallback				install
+fonts-ebgaramond				install
+fonts-ebgaramond-extra				install
 fonts-firacode					install
 fonts-font-awesome				install
+fonts-freefont-otf				install
 fonts-freefont-ttf				install
 fonts-gargi					install
 fonts-gfs-artemisia				install
 fonts-gfs-baskerville				install
 fonts-gfs-bodoni-classic			install
+fonts-gfs-complutum				install
 fonts-gfs-didot					install
 fonts-gfs-didot-classic				install
 fonts-gfs-gazis					install
@@ -337,13 +360,20 @@ fonts-gfs-porson				install
 fonts-gfs-solomos				install
 fonts-gfs-theokritos				install
 fonts-glyphicons-halflings			install
+fonts-go					install
 fonts-gubbi					install
 fonts-gujr					install
 fonts-gujr-extra				install
 fonts-guru					install
 fonts-guru-extra				install
+fonts-hosny-amiri				install
 fonts-inconsolata				install
 fonts-indic					install
+fonts-ipaexfont-gothic				install
+fonts-ipaexfont-mincho				install
+fonts-ipafont-gothic				install
+fonts-ipafont-mincho				install
+fonts-junicode					install
 fonts-kacst					install
 fonts-kacst-one					install
 fonts-kalapi					install
@@ -354,8 +384,11 @@ fonts-lato					install
 fonts-league-spartan				install
 fonts-liberation				install
 fonts-liberation2				install
+fonts-linuxlibertine				install
 fonts-lklug-sinhala				install
 fonts-lmodern					install
+fonts-lobster					install
+fonts-lobstertwo				install
 fonts-lohit-beng-assamese			install
 fonts-lohit-beng-bengali			install
 fonts-lohit-deva				install
@@ -375,12 +408,16 @@ fonts-nakula					install
 fonts-navilu					install
 fonts-noto-cjk					install
 fonts-noto-color-emoji				install
+fonts-noto-core					install
 fonts-noto-mono					install
+fonts-oflb-asana-math				install
+fonts-open-sans					install
 fonts-opensymbol				install
 fonts-orya					install
 fonts-orya-extra				install
 fonts-pagul					install
 fonts-powerline					install
+fonts-roboto-unhinted				install
 fonts-sahadeva					install
 fonts-samyak-deva				install
 fonts-samyak-gujr				install
@@ -388,7 +425,11 @@ fonts-samyak-mlym				install
 fonts-samyak-taml				install
 fonts-sarai					install
 fonts-sil-abyssinica				install
+fonts-sil-charis				install
 fonts-sil-gentium				install
+fonts-sil-gentium-basic				install
+fonts-sil-gentiumplus				install
+fonts-sil-gentiumplus-compact			install
 fonts-sil-padauk				install
 fonts-smc					install
 fonts-smc-anjalioldlipi				install
@@ -403,6 +444,7 @@ fonts-smc-rachana				install
 fonts-smc-raghumalayalamsans			install
 fonts-smc-suruma				install
 fonts-smc-uroob					install
+fonts-stix					install
 fonts-symbola					install
 fonts-taml					install
 fonts-telu					install
@@ -412,32 +454,47 @@ fonts-texgyre					install
 fonts-thai-tlwg					install
 fonts-tibetan-machine				install
 fonts-tlwg-garuda				install
+fonts-tlwg-garuda-otf				install
 fonts-tlwg-garuda-ttf				install
 fonts-tlwg-kinnari				install
+fonts-tlwg-kinnari-otf				install
 fonts-tlwg-kinnari-ttf				install
 fonts-tlwg-laksaman				install
+fonts-tlwg-laksaman-otf				install
 fonts-tlwg-laksaman-ttf				install
 fonts-tlwg-loma					install
+fonts-tlwg-loma-otf				install
 fonts-tlwg-loma-ttf				install
 fonts-tlwg-mono					install
+fonts-tlwg-mono-otf				install
 fonts-tlwg-mono-ttf				install
 fonts-tlwg-norasi				install
+fonts-tlwg-norasi-otf				install
 fonts-tlwg-norasi-ttf				install
 fonts-tlwg-purisa				install
+fonts-tlwg-purisa-otf				install
 fonts-tlwg-purisa-ttf				install
 fonts-tlwg-sawasdee				install
+fonts-tlwg-sawasdee-otf				install
 fonts-tlwg-sawasdee-ttf				install
 fonts-tlwg-typewriter				install
+fonts-tlwg-typewriter-otf			install
 fonts-tlwg-typewriter-ttf			install
 fonts-tlwg-typist				install
+fonts-tlwg-typist-otf				install
 fonts-tlwg-typist-ttf				install
 fonts-tlwg-typo					install
+fonts-tlwg-typo-otf				install
 fonts-tlwg-typo-ttf				install
 fonts-tlwg-umpush				install
+fonts-tlwg-umpush-otf				install
 fonts-tlwg-umpush-ttf				install
 fonts-tlwg-waree				install
+fonts-tlwg-waree-otf				install
 fonts-tlwg-waree-ttf				install
 fonts-ubuntu					install
+fonts-unfonts-core				install
+fonts-unfonts-extra				install
 fonts-urw-base35				install
 fonts-vlgothic					install
 fonts-wine					install
@@ -446,6 +503,7 @@ foomatic-db-compressed-ppds			install
 fortune-mod					install
 fortunes-min					install
 fprintd						install
+fragmaster					install
 freeglut3:amd64					install
 friendly-recovery				install
 ftp						install
@@ -838,6 +896,7 @@ krb5-locales					install
 krb5-multidev:amd64				install
 kwayland-data					install
 kwayland-integration:amd64			install
+lacheck						install
 language-pack-en				install
 language-pack-en-base				install
 language-pack-gnome-en				install
@@ -845,8 +904,21 @@ language-pack-gnome-en-base			install
 language-selector-common			install
 language-selector-gnome				install
 laptop-detect					install
+latex-cjk-all					install
+latex-cjk-chinese				install
+latex-cjk-chinese-arphic-bkai00mp		install
+latex-cjk-chinese-arphic-bsmi00lp		install
+latex-cjk-chinese-arphic-gbsn00lp		install
+latex-cjk-chinese-arphic-gkai00mp		install
+latex-cjk-common				install
+latex-cjk-japanese				install
+latex-cjk-japanese-wadalab			install
+latex-cjk-korean				install
+latex-cjk-thai					install
+latexdiff					install
 latexmk						install
 lcalc						install
+lcdf-typetools					install
 ldap-utils					install
 lemonbar					install
 less						install
@@ -1304,6 +1376,7 @@ libelf1:i386					install
 libemail-address-xs-perl			install
 libemail-date-format-perl			install
 libemail-valid-perl				install
+libemf1:amd64					install
 libenca0:amd64					install
 libenchant-2-2:amd64				install
 libencode-eucjpms-perl				install
@@ -2576,6 +2649,7 @@ libplexus-languages-java			install
 libplexus-sec-dispatcher-java			install
 libplexus-utils2-java				install
 libplist3:amd64					install
+libplot2c2:amd64				install
 libplymouth5:amd64				install
 libpmix2:amd64					install
 libpng-dev:amd64				install
@@ -2618,6 +2692,7 @@ libpsl5:amd64					install
 libpsl5:i386					install
 libpsm-infinipath1				install
 libpsm2-2					install
+libpstoedit0c2a:amd64				install
 libptexenc1:amd64				install
 libpthread-stubs0-dev:amd64			install
 libptytty0:amd64				install
@@ -2871,6 +2946,7 @@ libspeex1:amd64					install
 libspeex1:i386					install
 libspeexdsp1:amd64				install
 libsphinxbase3:amd64				install
+libspiro-dev:amd64				install
 libspiro1:amd64					install
 libspotify-dev					install
 libspotify12					install
@@ -2966,6 +3042,7 @@ libtext-iconv-perl				install
 libtext-levenshteinxs-perl			install
 libtext-markdown-discount-perl:amd64		install
 libtext-roman-perl				install
+libtext-unidecode-perl				install
 libtext-wrapi18n-perl				install
 libtext-xslate-perl:amd64			install
 libthai-data					install
@@ -2980,6 +3057,7 @@ libtie-ixhash-perl				install
 libtiff-dev:amd64				install
 libtiff5:amd64					install
 libtiff5:i386					install
+libtiff5-dev:amd64				install
 libtiffxx5:amd64				install
 libtime-duration-perl				install
 libtime-moment-perl				install
@@ -3402,16 +3480,14 @@ linux-firmware					install
 linux-generic					install
 linux-generic-hwe-20.04				install
 linux-generic-hwe-22.04				install
-linux-headers-5.15.0-70				install
-linux-headers-5.15.0-70-generic			install
-linux-headers-5.19.0-35-generic			install
-linux-headers-5.19.0-38-generic			install
+linux-headers-5.15.0-72				install
+linux-headers-5.15.0-72-generic			install
 linux-headers-5.19.0-40-generic			install
+linux-headers-5.19.0-41-generic			install
 linux-headers-generic				install
 linux-headers-generic-hwe-22.04			install
-linux-hwe-5.19-headers-5.19.0-35		install
-linux-hwe-5.19-headers-5.19.0-38		install
 linux-hwe-5.19-headers-5.19.0-40		install
+linux-hwe-5.19-headers-5.19.0-41		install
 linux-image-5.11.0-49-generic			deinstall
 linux-image-5.13.0-35-generic			deinstall
 linux-image-5.13.0-37-generic			deinstall
@@ -3436,11 +3512,13 @@ linux-image-5.15.0-58-generic			deinstall
 linux-image-5.15.0-60-generic			deinstall
 linux-image-5.15.0-67-generic			deinstall
 linux-image-5.15.0-69-generic			deinstall
-linux-image-5.15.0-70-generic			install
+linux-image-5.15.0-70-generic			deinstall
+linux-image-5.15.0-72-generic			install
 linux-image-5.19.0-32-generic			deinstall
-linux-image-5.19.0-35-generic			install
-linux-image-5.19.0-38-generic			install
+linux-image-5.19.0-35-generic			deinstall
+linux-image-5.19.0-38-generic			deinstall
 linux-image-5.19.0-40-generic			install
+linux-image-5.19.0-41-generic			install
 linux-image-5.4.0-42-generic			deinstall
 linux-image-5.4.0-45-generic			deinstall
 linux-image-5.4.0-47-generic			deinstall
@@ -3491,11 +3569,13 @@ linux-modules-5.15.0-58-generic			deinstall
 linux-modules-5.15.0-60-generic			deinstall
 linux-modules-5.15.0-67-generic			deinstall
 linux-modules-5.15.0-69-generic			deinstall
-linux-modules-5.15.0-70-generic			install
+linux-modules-5.15.0-70-generic			deinstall
+linux-modules-5.15.0-72-generic			install
 linux-modules-5.19.0-32-generic			deinstall
-linux-modules-5.19.0-35-generic			install
-linux-modules-5.19.0-38-generic			install
+linux-modules-5.19.0-35-generic			deinstall
+linux-modules-5.19.0-38-generic			deinstall
 linux-modules-5.19.0-40-generic			install
+linux-modules-5.19.0-41-generic			install
 linux-modules-5.4.0-42-generic			deinstall
 linux-modules-5.4.0-45-generic			deinstall
 linux-modules-5.4.0-47-generic			deinstall
@@ -3543,11 +3623,13 @@ linux-modules-extra-5.15.0-58-generic		deinstall
 linux-modules-extra-5.15.0-60-generic		deinstall
 linux-modules-extra-5.15.0-67-generic		deinstall
 linux-modules-extra-5.15.0-69-generic		deinstall
-linux-modules-extra-5.15.0-70-generic		install
+linux-modules-extra-5.15.0-70-generic		deinstall
+linux-modules-extra-5.15.0-72-generic		install
 linux-modules-extra-5.19.0-32-generic		deinstall
-linux-modules-extra-5.19.0-35-generic		install
-linux-modules-extra-5.19.0-38-generic		install
+linux-modules-extra-5.19.0-35-generic		deinstall
+linux-modules-extra-5.19.0-38-generic		deinstall
 linux-modules-extra-5.19.0-40-generic		install
+linux-modules-extra-5.19.0-41-generic		install
 linux-modules-extra-5.4.0-42-generic		deinstall
 linux-modules-extra-5.4.0-45-generic		deinstall
 linux-modules-extra-5.4.0-47-generic		deinstall
@@ -3828,6 +3910,7 @@ ppl-dev						install
 ppp						install
 pptp-linux					install
 preload						install
+prerex						install
 preview-latex-style				install
 primecount-bin					install
 primesieve-bin					install
@@ -3851,12 +3934,14 @@ proj-data					install
 protonmail-bridge				install
 ps2eps						install
 psmisc						install
+pstoedit					install
 psutils						install
 publicsuffix					install
 pulseaudio					install
 pulseaudio-module-bluetooth			install
 pulseaudio-utils				install
 pulsemixer					install
+purifyeps					install
 pyflakes3					install
 pylint						deinstall
 python-apt-common				install
@@ -3948,6 +4033,7 @@ python3-execnet					install
 python3-fasteners				install
 python3-filelock				install
 python3-flake8					install
+python3-fontforge:amd64				install
 python3-fonttools				install
 python3-fpylll					install
 python3-fs					install
@@ -4450,24 +4536,59 @@ tesseract-ocr-eng				install
 tesseract-ocr-osd				install
 tex-common					install
 tex-gyre					install
+texinfo						install
 texlive						install
 texlive-base					install
 texlive-bibtex-extra				install
 texlive-binaries				install
 texlive-extra-utils				install
 texlive-font-utils				install
+texlive-fonts-extra				install
+texlive-fonts-extra-doc				install
+texlive-fonts-extra-links			install
 texlive-fonts-recommended			install
+texlive-fonts-recommended-doc			install
 texlive-formats-extra				install
+texlive-full					install
+texlive-games					install
+texlive-humanities				install
+texlive-humanities-doc				install
+texlive-lang-arabic				install
+texlive-lang-chinese				install
+texlive-lang-cjk				install
+texlive-lang-cyrillic				install
+texlive-lang-czechslovak			install
+texlive-lang-english				install
 texlive-lang-european				install
+texlive-lang-french				install
+texlive-lang-german				install
 texlive-lang-greek				install
+texlive-lang-italian				install
+texlive-lang-japanese				install
+texlive-lang-korean				install
+texlive-lang-other				install
+texlive-lang-polish				install
+texlive-lang-portuguese				install
+texlive-lang-spanish				install
 texlive-latex-base				install
+texlive-latex-base-doc				install
 texlive-latex-extra				install
+texlive-latex-extra-doc				install
 texlive-latex-recommended			install
+texlive-latex-recommended-doc			install
 texlive-luatex					install
 texlive-metapost				install
+texlive-metapost-doc				install
+texlive-music					install
 texlive-pictures				install
+texlive-pictures-doc				install
 texlive-plain-generic				install
+texlive-pstricks				install
+texlive-pstricks-doc				install
+texlive-publishers				install
+texlive-publishers-doc				install
 texlive-science					install
+texlive-science-doc				install
 texlive-xetex					install
 thermald					install
 thunar						install
@@ -4611,6 +4732,7 @@ vlc-data					install
 vlc-plugin-base:amd64				install
 vlc-plugin-video-output:amd64			install
 vpnc-scripts					install
+vprerex						install
 w3m						install
 w3m-img						install
 wamerican					install
@@ -4739,9 +4861,7 @@ zlib1g:i386					install
 zlib1g-dev:amd64				install
 zoom						install
 zsh						install
-zsh-autosuggestions				install
 zsh-common					install
-zsh-syntax-highlighting				install
 zstd						install
 ```
 
@@ -4756,19 +4876,19 @@ blindfold v1.0.7:
     blindfold
 bob-nvim v2.3.2:
     bob
-cargo-binstall v0.22.0:
+cargo-binstall v0.23.0:
     cargo-binstall
-cargo-edit v0.11.9:
+cargo-edit v0.11.11:
     cargo-add
     cargo-rm
     cargo-set-version
     cargo-upgrade
-cargo-update v13.0.1:
+cargo-update v13.0.2:
     cargo-install-update
     cargo-install-update-config
 coreutils v0.0.18:
     coreutils
-du-dust v0.8.5:
+du-dust v0.8.6:
     dust
 exa v0.10.1:
     exa
@@ -4787,22 +4907,24 @@ hyperfine v1.16.1:
     hyperfine
 jless v0.8.0:
     jless
-mdbook v0.4.28:
+mdbook v0.4.29:
     mdbook
-mdbook-admonish v1.8.0:
+mdbook-admonish v1.9.0:
     mdbook-admonish
 mdbook-svgbob v0.2.1:
     mdbook-svgbob
-mdbook-toc v0.11.2:
+mdbook-toc v0.12.0:
     mdbook-toc
 menyoki v1.7.0:
     menyoki
+pastel v0.9.0:
+    pastel
 pueue v3.1.2:
     pueue
     pueued
 ripgrep v13.0.0:
     rg
-rtx-cli v1.28.5:
+rtx-cli v1.29.7:
     rtx
 sd v0.7.6:
     sd
@@ -4818,6 +4940,8 @@ tree-sitter-cli v0.20.8:
     tree-sitter
 viu v1.4.0:
     viu
+vivid v0.9.0:
+    vivid
 xcolor v0.5.1:
     xcolor
 zeta-note v0.1.8:
@@ -4827,7 +4951,7 @@ zeta-note v0.1.8:
 ## Pipx
 
 ```
-package ansible-core 2.14.4, installed using Python 3.10.4
+package ansible-core 2.15.0, installed using Python 3.10.4
  - ansible
  - ansible-config
  - ansible-connection
@@ -4859,7 +4983,7 @@ package flake8 6.0.0, installed using Python 3.10.4
  - flake8
 package fprettify 0.3.7, installed using Python 3.10.4
  - fprettify
-package globus-cli 3.12.0, installed using Python 3.10.4
+package globus-cli 3.13.0, installed using Python 3.10.4
  - globus
 package howdoi 2.0.20, installed using Python 3.10.4
  - howdoi
@@ -4884,7 +5008,7 @@ package lookatme 2.5.5, installed using Python 3.10.4
  - lam
  - lookatme
  - witnessme
-package mypy 1.2.0, installed using Python 3.10.4
+package mypy 1.3.0, installed using Python 3.10.4
  - dmypy
  - mypy
  - mypyc
@@ -4898,7 +5022,7 @@ package ncdump-rich 0.3.4, installed using Python 3.10.4
 package northern-lights-forecast 4.1.4, installed using Python 3.10.4
  - nlf
  - nlfd
-package nox 2022.11.21, installed using Python 3.10.4
+package nox 2023.4.22, installed using Python 3.10.4
  - nox
  - tox-to-nox
 package npzviewer 0.2.0, installed using Python 3.10.4
@@ -4911,7 +5035,7 @@ package pandoc-eqnos 2.5.0, installed using Python 3.10.4
  - pandoc-eqnos
 package pandoc-include 1.2.0, installed using Python 3.10.4
  - pandoc-include
-package pipenv 2023.3.20, installed using Python 3.10.4
+package pipenv 2023.4.29, installed using Python 3.10.4
  - pipenv
  - pipenv-resolver
 package pipreqs 0.4.13, installed using Python 3.10.4
@@ -4922,7 +5046,7 @@ package poetry2setup 1.1.0, installed using Python 3.10.4
  - poetry2setup
 package pptx2md 1.3.0, installed using Python 3.10.4
  - pptx2md
-package pre-commit 3.2.2, installed using Python 3.10.4
+package pre-commit 3.3.1, installed using Python 3.10.4
  - pre-commit
  - pre-commit-validate-config
  - pre-commit-validate-manifest
@@ -4934,7 +5058,7 @@ package pyqt5 5.15.9, installed using Python 3.10.4
  - pylupdate5
  - pyrcc5
  - pyuic5
-package pyright 1.1.303, installed using Python 3.10.4
+package pyright 1.1.308, installed using Python 3.10.4
  - pyright
  - pyright-langserver
  - pyright-python
@@ -4951,7 +5075,7 @@ package rofimoji 6.1.0, installed using Python 3.10.4
  - rofimoji
 package telegram-send 0.34, installed using Python 3.10.4
  - telegram-send
-package term-image 0.6.0, installed using Python 3.10.4
+package term-image 0.6.1, installed using Python 3.10.4
  - term-image
  - term-img
 package tex2svg 0.0.2, installed using Python 3.10.4
@@ -4959,7 +5083,7 @@ package tex2svg 0.0.2, installed using Python 3.10.4
 package thefuck 3.32, installed using Python 3.10.4
  - fuck
  - thefuck
-package tldr 3.1.0, installed using Python 3.10.4
+package tldr 3.2.0, installed using Python 3.10.4
  - tldr
 package twine 4.0.2, installed using Python 3.10.4
  - twine
@@ -4976,7 +5100,7 @@ package yapf 0.33.0, installed using Python 3.10.4
 
 ```
 Freedesktop Platform	org.freedesktop.Platform	21.08.18	21.08	system
-Freedesktop Platform	org.freedesktop.Platform	22.08.10	22.08	system
+Freedesktop Platform	org.freedesktop.Platform	22.08.11	22.08	system
 Mesa	org.freedesktop.Platform.GL.default	21.3.9	21.08	system
 Mesa	org.freedesktop.Platform.GL.default	23.0.2	22.08	system
 Mesa (Extra)	org.freedesktop.Platform.GL.default	23.0.2	22.08-extra	system
@@ -4987,7 +5111,7 @@ openh264	org.freedesktop.Platform.openh264	2.1.0	2.2.0	system
 GNOME Application Platform version 43	org.gnome.Platform		43	system
 GNOME Application Platform version 44	org.gnome.Platform		44	system
 Citations	org.gnome.World.Citations	0.5.2	stable	system
-Pika Backup	org.gnome.World.PikaBackup	0.6.0	stable	system
+Pika Backup	org.gnome.World.PikaBackup	0.6.1	stable	system
 Yaru-dark Gtk Theme	org.gtk.Gtk3theme.Yaru-dark		3.22	system
 Wez's Terminal Emulator	org.wezfurlong.wezterm	20230408-112425-69ae8472	stable	system
 ```
@@ -4997,22 +5121,22 @@ Wez's Terminal Emulator	org.wezfurlong.wezterm	20230408-112425-69ae8472	stable	s
 ```
 Name                       Version                     Rev    Tracking         Publisher     Notes
 bare                       1.0                         5      latest/stable    canonical**   base
-canonical-livepatch        10.5.4                      202    latest/stable    canonical**   -
+canonical-livepatch        10.5.5                      209    latest/stable    canonical**   -
 cmake                      3.26.3                      1288   latest/stable    crascit**     classic
 core                       16-2.58.3                   14946  latest/stable    canonical**   core
-core18                     20230320                    2721   latest/stable    canonical**   base
-core20                     20230308                    1852   latest/stable    canonical**   base
-core22                     20230325                    607    latest/stable    canonical**   base
+core18                     20230426                    2745   latest/stable    canonical**   base
+core20                     20230503                    1891   latest/stable    canonical**   base
+core22                     20230503                    634    latest/stable    canonical**   base
 dmd                        2.090.1                     102    latest/stable    dlang         classic
 dotnet-sdk                 5.0.408                     167    5.0/stable       dotnetcore**  classic
 dub                        1.19.0                      53     latest/stable    dlang         classic
 duf-utility                v0.6.0                      1      latest/stable    muesli        -
-firefox                    111.0.1-2                   2487   latest/stable/…  mozilla**     -
+firefox                    113.0.1-1                   2667   latest/stable/…  mozilla**     -
 gimp                       2.10.30                     393    latest/stable    snapcrafters  -
 gnome-3-28-1804            3.28.0-19-g98f9e67.98f9e67  198    latest/stable    canonical**   -
-gnome-3-34-1804            0+git.3556cb3               90     latest/stable/…  canonical**   -
-gnome-3-38-2004            0+git.6f39565               137    latest/stable    canonical**   -
-gnome-42-2204              0+git.e7d97c7               87     latest/stable    canonical**   -
+gnome-3-34-1804            0+git.3556cb3               93     latest/stable/…  canonical**   -
+gnome-3-38-2004            0+git.6f39565               140    latest/stable    canonical**   -
+gnome-42-2204              0+git.587e965               102    latest/stable    canonical**   -
 gnome-dictionary           40.0                        53     latest/stable    canonical**   -
 gphoto2                    latest                      8      latest/stable    eberkund      -
 gtk-common-themes          0.1-81-g442e511             1535   latest/stable/…  canonical**   -
@@ -5024,11 +5148,11 @@ notable                    1.8.4-2                     3      latest/stable    s
 pdftk                      2.02-4                      9      latest/stable    smoser        -
 procs                      v0.13.0                     969    latest/stable    dalance       -
 remmina                    v1.4.30                     5692   latest/stable    remmina**     -
-shotcut                    22.12.21                    929    latest/stable    meltytech**   classic
-skype                      8.96.0.408                  266    latest/stable    skype**       -
-snap-store                 41.3-66-gfe1e325            638    latest/stable/…  canonical**   -
-snapd                      2.59.1                      18933  latest/stable    canonical**   snapd
-snapd-desktop-integration  0.1                         57     latest/stable/…  canonical**   -
+shotcut                    23.05.14                    1104   latest/stable    meltytech**   classic
+skype                      8.97.0.404                  274    latest/stable    skype**       -
+snap-store                 41.3-71-g709398e            959    latest/stable/…  canonical**   -
+snapd                      2.59.2                      19122  latest/stable    canonical**   snapd
+snapd-desktop-integration  0.9                         83     latest/stable/…  canonical**   -
 spt                        0.25.0                      289    latest/stable    popey         -
 timg                       1.4.1+pkg-67d0              16     latest/stable    simosx        -
 vlc                        3.0.18                      3078   latest/stable    videolan**    -
