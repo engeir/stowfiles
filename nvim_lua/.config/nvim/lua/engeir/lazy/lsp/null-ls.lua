@@ -37,7 +37,7 @@ null_ls.setup({
         formatting.gofmt,
         formatting.isort,
         formatting.latexindent.with({
-            extra_args = { "-l", vim.fn.expand("~") .. "/.config/latexindent/latexindent.yaml" },
+            extra_args = { "-m" },
         }),
         -- formatting.markdownlint.with({
         --     extra_args = { "-c", vim.fn.expand("~") .. "/.config/mdl/.markdownlint.jsonc" },
