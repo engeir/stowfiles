@@ -50,8 +50,8 @@ setopt INTERACTIVE_COMMENTS
 setopt PROMPT_CR
 
 # Speedy keys
-xset r rate 210 40
 if [ "$MACHINE" = "Ubuntu" ]; then
+    xset r rate 210 40
     xrdb "$HOME/.config/Xresources"
 fi
 

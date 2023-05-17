@@ -6,7 +6,7 @@ if [[ $(uname) == "Darwin" ]]; then
 elif command -v freebsd-version > /dev/null; then
     export MACHINE="FreeBSD"
 
-elif command -v apt > /dev/null; then
+elif [[ $(uname) == "Linux" ]]; then
     export MACHINE="Ubuntu"
 
 else
