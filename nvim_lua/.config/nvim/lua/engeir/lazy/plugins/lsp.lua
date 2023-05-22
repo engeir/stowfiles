@@ -22,6 +22,8 @@ return {
 
         -- Extra
         { "jose-elias-alvarez/null-ls.nvim" },
+        -- Additional lua configuration, makes nvim stuff amazing!
+        { "folke/neodev.nvim" },
     },
     config = function()
         require("engeir.lazy.lsp")

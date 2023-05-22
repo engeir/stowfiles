@@ -42,6 +42,7 @@ all plugins I'm using:
 - [mini.nvim](https://github.com/echasnovski/mini.nvim.git)
 - [muren.nvim](https://github.com/AckslD/muren.nvim.git)
 - [neo-tree.nvim](https://github.com/nvim-neo-tree/neo-tree.nvim.git)
+- [neodev.nvim](https://github.com/folke/neodev.nvim.git)
 - [neodim](https://github.com/zbirenbaum/neodim.git)
 - [neogen](https://github.com/danymat/neogen.git)
 - [neogit](https://github.com/TimUntersberger/neogit.git)
