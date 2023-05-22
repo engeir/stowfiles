@@ -3,10 +3,14 @@
 # This script will compile or run another finishing operation on a document. I
 # have this script run via vim.
 #
-# Compiles .tex. groff (.mom, .ms), .rmd, .md, .org.  Opens .sent files as sent
-# presentations. Runs scripts based on extention or shebang.
+# IMPORTANT: since this script is not run on the command line, some programs error out
+# since they cannot write to stdout. In this case, direct stdout (and stderr) to
+# /dev/null: ` >/dev/null 2>&1`.
 #
-# Note that .tex files which you wish to compile with XeLaTeX should have the
+# Compiles .tex. groff (.mom, .ms), .rmd, .md, .org.  Opens .sent files as sent
+# presentations. Runs scripts based on extension or shebang.
+#
+# Note that .tex files which you wish to compile with XeLaTeX or other should have the
 # string "xelatex" somewhere in a comment/command in the first 5 lines.
 #
 # The pandoc compiler depends on a working installation of pandoc, the citeproc library
@@ -28,11 +32,16 @@ fi
 textype() {
     command="pdflatex"
     (head -n5 "$file" | grep -qi 'xelatex') && command="xelatex"
-    "$command" --output-directory="$dir" "$base" &&
-        grep -qi addbibresource "$file" &&
-        biber --input-directory "$dir" "$base" &&
+    (head -n5 "$file" | grep -qi 'tectonic') && command="tectonic"
+    if [ "$command" = "tectonic" ]; then
+        tectonic -o "$dir" "$file" >/dev/null 2>&1
+    else
         "$command" --output-directory="$dir" "$base" &&
-        "$command" --output-directory="$dir" "$base"
+            grep -qi addbibresource "$file" &&
+            biber --input-directory "$dir" "$base" &&
+            "$command" --output-directory="$dir" "$base" &&
+            "$command" --output-directory="$dir" "$base"
+    fi
 }
 
 case "$ext" in
@@ -63,18 +72,18 @@ md) # pandoc -t ms --highlight-style=kate -s -o "$base".pdf "$file" ;;
     # pandoc -t ms --highlight-style=kate -s -o "$base".pdf "$file"
     # fi ; ;;
 mom) preconv "$file" | refer -PS -e | groff -mom -kept -T pdf >"$base".pdf ;;
-# ms) preconv "$file" | refer -PS -e | groff -me -ms -kept -T pdf > "$base".pdf ;;
-# ms) preconv "$file" | refer -PS -e | groff -me -ms -p -kept -Tps | ps2pdf - "$base".pdf ;;
+    # ms) preconv "$file" | refer -PS -e | groff -me -ms -kept -T pdf > "$base".pdf ;;
+    # ms) preconv "$file" | refer -PS -e | groff -me -ms -p -kept -Tps | ps2pdf - "$base".pdf ;;
 ms) preconv "$file" | refer -PS -e -p ~/science/ref/bibliography | groff -me -ms -p -kept -Tps | ps2pdf - "$base".pdf ;;
 org) emacs "$file" --batch -u "$USER" -f org-latex-export-to-pdf ;;
-py) if [ -z "$(sed -n 's/^#!//p' "$file")" ]; then python "$file"; else "$(sed -n 's/^#!//p' "$file")" "$file"; fi ;;
+py) if [ "$(sed -n 's/^#!//p' "$file")" = "" ]; then python "$file"; else "$(sed -n 's/^#!//p' "$file")" "$file"; fi ;;
 [rR]) Rscript "$file" ;;
 [rR]md) Rscript -e "rmarkdown::render('$file', quiet=TRUE)" ;;
 rs) cargo build ;;
 sass) sassc -a "$file" "$base.css" ;;
 scad) openscad -o "$base".stl "$file" ;;
 sent) sent "$file" ;;
-# sent) setsid -f sent "$file" 2>/dev/null ;;
+    # sent) setsid -f sent "$file" 2>/dev/null ;;
 tex) textype "$file" ;;
 *) head -n1 "$file" | grep "^#!/" | sed "s/^#!//" | xargs -r -I % "$file" ;;
 esac

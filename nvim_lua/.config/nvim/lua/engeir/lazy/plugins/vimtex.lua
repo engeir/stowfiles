@@ -5,7 +5,9 @@ return {
         vim.g.tex_flavor = "latex"
         vim.g.vimtex_view_method = "zathura"
         vim.g.vimtex_quickfix_mode = 2
-        -- vim.g.vimtex_compiler_method = '' -- xelatex and lualatex are not supported by default
+        -- latexmk is the default option and seems to be the only one supporting
+        -- continuous mode
+        -- vim.g.vimtex_compiler_method = "tectonic" -- latexmk, latexrun, tectonic, arara, generic
     end,
     config = function()
         -- vim.keymap.set("n", "<localleader><localleader>t", ":VimtexTocOpen<CR>", { remap = false, silent = true })
