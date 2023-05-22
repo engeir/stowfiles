@@ -7,7 +7,14 @@
 /* *.font:	Hack iCursive S12:size=11:antialias=true:autohint=true; */
 /* Hasklug looks good, but has ligatures ... */
 /* *.font: Hasklug Nerd Font:size=11:antialias=true:autohint=true; */
-*.font: BitstromWera Nerd Font:size=11:antialias=true:autohint=true;
+/* *.font: BitstromWera Nerd Font:size=11:antialias=true:autohint=true; */
+/*
+These two are both from https://git.sainnhe.dev/sainnhe/icursive-nerd-font. Recursive
+seems to be better, for example with displaying the tilde (~). It does, however, use
+ligatures...
+*/
+*.font: Recursive:size=11:antialias=true:autohint=true;
+/* *.font: Cascursive:size=11:antialias=true:autohint=true; */
 
 #define t_bg_floor     #010000
 #define t_bg_dip       #191815
