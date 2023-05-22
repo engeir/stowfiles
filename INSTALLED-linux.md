@@ -5191,7 +5191,6 @@ pdftk                      2.02-4                      9      latest/stable    s
 procs                      v0.13.0                     969    latest/stable    dalance       -
 remmina                    v1.4.30                     5692   latest/stable    remmina**     -
 shotcut                    23.05.14                    1104   latest/stable    meltytech**   classic
-skype                      8.97.0.404                  274    latest/stable    skype**       -
 snap-store                 41.3-71-g709398e            959    latest/stable/…  canonical**   -
 snapd                      2.59.2                      19122  latest/stable    canonical**   snapd
 snapd-desktop-integration  0.9                         83     latest/stable/…  canonical**   -
