@@ -117,6 +117,7 @@ return {
                 WARN = { icon = " ", color = "warning", alt = { "WARNING", "XXX" } },
                 PERF = { icon = " ", alt = { "OPTIM", "PERFORMANCE", "OPTIMIZE" } },
                 NOTE = { icon = " ", color = "hint", alt = { "INFO" } },
+                IMPORTANT = { icon = "‼ ", color = "#c9ff19", alt = { "IMPORTANT" } },
             },
         },
     },
