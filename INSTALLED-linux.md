@@ -2,7 +2,7 @@
 
 ## Apt
 
-```
+```txt
 4ti2						install
 accountsservice					install
 accountsservice-ubuntu-schemas			install
@@ -78,7 +78,6 @@ base-files					install
 base-passwd					install
 bash						install
 bash-completion					install
-bat						install
 batsignal					install
 bc						install
 bibclean					install
@@ -3482,12 +3481,12 @@ linux-generic-hwe-20.04				install
 linux-generic-hwe-22.04				install
 linux-headers-5.15.0-72				install
 linux-headers-5.15.0-72-generic			install
-linux-headers-5.19.0-40-generic			install
 linux-headers-5.19.0-41-generic			install
+linux-headers-5.19.0-42-generic			install
 linux-headers-generic				install
 linux-headers-generic-hwe-22.04			install
-linux-hwe-5.19-headers-5.19.0-40		install
 linux-hwe-5.19-headers-5.19.0-41		install
+linux-hwe-5.19-headers-5.19.0-42		install
 linux-image-5.11.0-49-generic			deinstall
 linux-image-5.13.0-35-generic			deinstall
 linux-image-5.13.0-37-generic			deinstall
@@ -3517,8 +3516,9 @@ linux-image-5.15.0-72-generic			install
 linux-image-5.19.0-32-generic			deinstall
 linux-image-5.19.0-35-generic			deinstall
 linux-image-5.19.0-38-generic			deinstall
-linux-image-5.19.0-40-generic			install
+linux-image-5.19.0-40-generic			deinstall
 linux-image-5.19.0-41-generic			install
+linux-image-5.19.0-42-generic			install
 linux-image-5.4.0-42-generic			deinstall
 linux-image-5.4.0-45-generic			deinstall
 linux-image-5.4.0-47-generic			deinstall
@@ -3574,8 +3574,9 @@ linux-modules-5.15.0-72-generic			install
 linux-modules-5.19.0-32-generic			deinstall
 linux-modules-5.19.0-35-generic			deinstall
 linux-modules-5.19.0-38-generic			deinstall
-linux-modules-5.19.0-40-generic			install
+linux-modules-5.19.0-40-generic			deinstall
 linux-modules-5.19.0-41-generic			install
+linux-modules-5.19.0-42-generic			install
 linux-modules-5.4.0-42-generic			deinstall
 linux-modules-5.4.0-45-generic			deinstall
 linux-modules-5.4.0-47-generic			deinstall
@@ -3628,8 +3629,9 @@ linux-modules-extra-5.15.0-72-generic		install
 linux-modules-extra-5.19.0-32-generic		deinstall
 linux-modules-extra-5.19.0-35-generic		deinstall
 linux-modules-extra-5.19.0-38-generic		deinstall
-linux-modules-extra-5.19.0-40-generic		install
+linux-modules-extra-5.19.0-40-generic		deinstall
 linux-modules-extra-5.19.0-41-generic		install
+linux-modules-extra-5.19.0-42-generic		install
 linux-modules-extra-5.4.0-42-generic		deinstall
 linux-modules-extra-5.4.0-45-generic		deinstall
 linux-modules-extra-5.4.0-47-generic		deinstall
@@ -4635,8 +4637,6 @@ tumbler-common					install
 tzdata						install
 ubuntu-advantage-desktop-daemon			install
 ubuntu-advantage-tools				install
-ubuntu-desktop					install
-ubuntu-desktop-minimal				install
 ubuntu-docs					install
 ubuntu-drivers-common				install
 ubuntu-keyring					install
@@ -4685,7 +4685,6 @@ unity-services					install
 unity-session					install
 unity-settings-daemon				install
 unity-settings-daemon-schemas			install
-unity-tweak-tool				install
 uno-libs-private				install
 unoconv						install
 unrar						install
@@ -4865,13 +4864,35 @@ zsh-common					install
 zstd						install
 ```
 
+## Pacstall
+
+```txt
+batsignal
+bitwarden-deb
+brave-browser-deb
+brave-keyring-deb
+google-chrome-deb
+htop
+nala-deb
+neofetch
+polybar
+protonmail-bridge-deb
+rstudio
+shfmt-bin
+signal-desktop-deb
+zoom
+zoom-deb
+```
+
 ## Cargo
 
-```
-alacritty v0.12.0:
+```txt
+alacritty v0.12.1:
     alacritty
 atuin v14.0.1:
     atuin
+bat v0.23.0:
+    bat
 blindfold v1.0.7:
     blindfold
 bob-nvim v2.3.2:
@@ -4883,7 +4904,7 @@ cargo-edit v0.11.11:
     cargo-rm
     cargo-set-version
     cargo-upgrade
-cargo-update v13.0.2:
+cargo-update v13.0.4:
     cargo-install-update
     cargo-install-update-config
 coreutils v0.0.18:
@@ -4924,7 +4945,7 @@ pueue v3.1.2:
     pueued
 ripgrep v13.0.0:
     rg
-rtx-cli v1.29.7:
+rtx-cli v1.30.3:
     rtx
 sd v0.7.6:
     sd
@@ -4950,7 +4971,7 @@ zeta-note v0.1.8:
 
 ## Pipx
 
-```
+```txt
 package ansible-core 2.15.0, installed using Python 3.10.4
  - ansible
  - ansible-config
@@ -4987,7 +5008,7 @@ package globus-cli 3.13.0, installed using Python 3.10.4
  - globus
 package howdoi 2.0.20, installed using Python 3.10.4
  - howdoi
-package httpie 3.2.1, installed using Python 3.10.4
+package httpie 3.2.2, installed using Python 3.10.4
  - http
  - httpie
  - https
@@ -5035,7 +5056,7 @@ package pandoc-eqnos 2.5.0, installed using Python 3.10.4
  - pandoc-eqnos
 package pandoc-include 1.2.0, installed using Python 3.10.4
  - pandoc-include
-package pipenv 2023.4.29, installed using Python 3.10.4
+package pipenv 2023.5.19, installed using Python 3.10.4
  - pipenv
  - pipenv-resolver
 package pipreqs 0.4.13, installed using Python 3.10.4
@@ -5046,7 +5067,7 @@ package poetry2setup 1.1.0, installed using Python 3.10.4
  - poetry2setup
 package pptx2md 1.3.0, installed using Python 3.10.4
  - pptx2md
-package pre-commit 3.3.1, installed using Python 3.10.4
+package pre-commit 3.3.2, installed using Python 3.10.4
  - pre-commit
  - pre-commit-validate-config
  - pre-commit-validate-manifest
@@ -5058,7 +5079,7 @@ package pyqt5 5.15.9, installed using Python 3.10.4
  - pylupdate5
  - pyrcc5
  - pyuic5
-package pyright 1.1.308, installed using Python 3.10.4
+package pyright 1.1.309, installed using Python 3.10.4
  - pyright
  - pyright-langserver
  - pyright-python
@@ -5096,9 +5117,29 @@ package yapf 0.33.0, installed using Python 3.10.4
  - yapf-diff
 ```
 
+## Go
+
+```txt
+ascii-image-converter: github.com/TheZoraiz/ascii-image-converter@v1.13.1
+                   d2: oss.terrastruct.com/d2@v0.4.2
+              despell: github.com/bensadeh/despell@v0.0.0-20230424061959-fe5e2e7d0911
+                doggo: github.com/mr-karan/doggo/cmd/doggo@v0.5.5
+                 draw: github.com/maaslalani/draw@v0.1.1
+               fast-p: github.com/bellecp/fast-p@v0.2.5
+        golangci-lint: github.com/golangci/golangci-lint/cmd/golangci-lint@v1.52.2
+                  gup: github.com/nao1215/gup@v0.21.1
+              lazygit: github.com/jesseduffield/lazygit@v0.38.2
+                   lf: github.com/gokcehan/lf@v0.0.0-20230521164141-0ac1491bfb5f
+                rmapi: github.com/juruen/rmapi@(devel)
+                    s: github.com/zquestz/s@v0.6.7
+               slides: github.com/maaslalani/slides@v0.9.0
+            triangula: github.com/RH12503/Triangula-CLI/triangula@v0.0.0-20210520132201-603b709907d8
+                  vhs: github.com/charmbracelet/vhs@v0.5.0
+```
+
 ## Flatpak
 
-```
+```txt
 Freedesktop Platform	org.freedesktop.Platform	21.08.18	21.08	system
 Freedesktop Platform	org.freedesktop.Platform	22.08.11	22.08	system
 Mesa	org.freedesktop.Platform.GL.default	21.3.9	21.08	system
@@ -5108,6 +5149,7 @@ Intel	org.freedesktop.Platform.VAAPI.Intel		21.08	system
 Intel	org.freedesktop.Platform.VAAPI.Intel		22.08	system
 openh264	org.freedesktop.Platform.openh264	2.1.0	2.0	system
 openh264	org.freedesktop.Platform.openh264	2.1.0	2.2.0	system
+Evolution	org.gnome.Evolution	3.48.1	stable	system
 GNOME Application Platform version 43	org.gnome.Platform		43	system
 GNOME Application Platform version 44	org.gnome.Platform		44	system
 Citations	org.gnome.World.Citations	0.5.2	stable	system
@@ -5118,11 +5160,11 @@ Wez's Terminal Emulator	org.wezfurlong.wezterm	20230408-112425-69ae8472	stable	s
 
 ## Snap
 
-```
+```txt
 Name                       Version                     Rev    Tracking         Publisher     Notes
 bare                       1.0                         5      latest/stable    canonical**   base
-canonical-livepatch        10.5.5                      209    latest/stable    canonical**   -
-cmake                      3.26.3                      1288   latest/stable    crascit**     classic
+canonical-livepatch        10.5.6                      216    latest/stable    canonical**   -
+cmake                      3.26.4                      1299   latest/stable    crascit**     classic
 core                       16-2.58.3                   14946  latest/stable    canonical**   core
 core18                     20230426                    2745   latest/stable    canonical**   base
 core20                     20230503                    1891   latest/stable    canonical**   base

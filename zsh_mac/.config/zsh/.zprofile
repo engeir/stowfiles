@@ -8,9 +8,9 @@ export PATH="${PATH}:${HOME}/.local/bin"
 PATH="/usr/local/bin:${PATH}"
 PATH="/usr/bin:${PATH}"
 PATH="$HOME/Documents/ReMarkableAPI:${PATH}"
-export PATH
-export GOPATH=$HOME/go
-export PATH=$PATH:$GOPATH/bin
+export GOROOT="/usr/local/go"
+export GOPATH="$HOME/go"
+export PATH="$PATH:$GOPATH/bin"
 
 function xman() { open x-man-page://$@ ; }
 

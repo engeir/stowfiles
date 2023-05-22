@@ -25,6 +25,7 @@ alias gin="git --no-pager"
 alias gip="git push -u origin main"
 alias gpull="git pull --ff-only"
 alias saGITHUB="ssh-add ~/.ssh/id_github"
+unalias gup
 
 if [ "$MACHINE" = "Darwin" ]; then
     plug "$HOME/.config/zsh/mac-specific.zsh"

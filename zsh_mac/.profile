@@ -37,7 +37,7 @@ export EDITOR=vim
 export READER=zathura
 export TERMINAL=st
 
-export PATH=$PATH:/usr/local/go/bin:/home/een023/go/bin:/home/een023/.cargo/bin
+export PATH="$PATH:/usr/local/go/bin:$HOME/go/bin:$HOME/.cargo/bin"
 export PATH=$HOME/.config/rofi/bin:$PATH
 export FZF_COMPLETION_TRIGGER='\\'
 export GH_PAT_POLYBAR=$(pass API/polybar_github)

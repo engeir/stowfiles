@@ -20,6 +20,7 @@ echo_and_run() {
 run-updates() {
     echo_and_run cargo install-update -a
     echo_and_run pipx upgrade-all
+    echo_and_run gup update
     if [ "Mac" = "$1" ]; then
         echo_and_run brew update
         echo_and_run brew upgrade
@@ -27,6 +28,7 @@ run-updates() {
     if [ "Linux" = "$1" ]; then
         echo_and_run sudo nala update
         echo_and_run sudo nala upgrade
+        echo_and_run pacstall -Up -P
         echo_and_run sudo snap refresh
         echo_and_run flatpak update
     fi
@@ -59,19 +61,19 @@ if [ "Mac" = "$machine" ]; then
 
 ## Brew
 
-\`\`\`
+\`\`\`txt
 $BREW
 \`\`\`
 
 ## Cargo
 
-\`\`\`
+\`\`\`txt
 $CARGO
 \`\`\`
 
 ## Pipx
 
-\`\`\`
+\`\`\`txt
 $PIPX
 \`\`\`" >"./INSTALLED-mac.md"
 fi
@@ -79,39 +81,53 @@ fi
 # Run Linux updates
 if [ "Linux" = "$machine" ]; then
     APT="$(dpkg --get-selections)"
+    PACSTALL="$(pacstall -L)"
     CARGO="$(cargo install --list)"
     PIPX="$(pipx list | sed '1,2d' | sed 's/^\s\s\s//')"
+    GO="$(gup list)"
     FLAT="$(flatpak list)"
     SNAP="$(snap list)"
     echo "# Installed programs
 
 ## Apt
 
-\`\`\`
+\`\`\`txt
 $APT
+\`\`\`
+
+## Pacstall
+
+\`\`\`txt
+$PACSTALL
 \`\`\`
 
 ## Cargo
 
-\`\`\`
+\`\`\`txt
 $CARGO
 \`\`\`
 
 ## Pipx
 
-\`\`\`
+\`\`\`txt
 $PIPX
+\`\`\`
+
+## Go
+
+\`\`\`txt
+$GO
 \`\`\`
 
 ## Flatpak
 
-\`\`\`
+\`\`\`txt
 $FLAT
 \`\`\`
 
 ## Snap
 
-\`\`\`
+\`\`\`txt
 $SNAP
 \`\`\`" >"./INSTALLED-linux.md"
 fi

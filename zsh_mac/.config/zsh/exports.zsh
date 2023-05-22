@@ -6,6 +6,11 @@ export NODE_PATH='/usr/local/lib/node_modules'
 # export PATH=/usr/local/opt/ruby/bin:$PATH  # Ruby path
 export PATH="/Applications/ConTeXtStandalone/tex/texmf-osx-64/bin:$PATH"  # ConTeXt path
 export PATH="$PATH:$HOME/.cabal/bin/"
+# Go
+export GOROOT="/usr/local/go"
+export GOPATH="$HOME/go"
+export PATH="$PATH:$GOPATH/bin"
+export PATH="$PATH:$GOROOT/bin"
 
 export EDITOR=nvim
 export VISUAL=nvim
@@ -49,6 +54,8 @@ export HAS_ALLOW_UNSAFE=y
 
 # bob
 export PATH="$PATH:$HOME/.local/share/bob/nvim-bin"
+# mason bin installation
+export PATH="$PATH:$HOME/.local/share/nvim/mason/bin"
 # bun
 export BUN_INSTALL="/Users/eirikenger/.bun"
 export PATH="$BUN_INSTALL/bin:$PATH"

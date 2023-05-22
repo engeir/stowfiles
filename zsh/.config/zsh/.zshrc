@@ -22,7 +22,7 @@ export LESS='-Ri '
 
 # For golang
 GOROOT=/usr/local/go
-GOPATH=~/.go
+GOPATH=~/go
 CABALPATH=~/.cabal
 PATH=$PATH:$GOROOT/bin:$GOPATH/bin:$CABALPATH/bin
 
