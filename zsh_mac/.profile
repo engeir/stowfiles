@@ -34,8 +34,10 @@ export GPG_TTY=$(tty)
 
 export VISUAL=vim
 export EDITOR=vim
-export READER=zathura
-export TERMINAL=st
+if [[ $(uname) == "Linux" ]]; then
+    export READER=zathura
+    export TERMINAL=st
+fi
 
 export PATH="$PATH:/usr/local/go/bin:$HOME/go/bin:$HOME/.cargo/bin"
 export PATH=$HOME/.config/rofi/bin:$PATH
@@ -68,7 +70,9 @@ export FZF_ALT_C_COMMAND="fd --type d $FD_OPTIONS"
 #   }
 
 export BAT_PAGER="less -R"
-sh /home/een023/stowfiles/bspwm/.config/bspwm/bin/bspcomp &
+if [[ $(uname) == "Linux" ]]; then
+    sh /home/een023/stowfiles/bspwm/.config/bspwm/bin/bspcomp &
+fi
 
 if [ -e /home/een023/.nix-profile/etc/profile.d/nix.sh ]; then . /home/een023/.nix-profile/etc/profile.d/nix.sh; fi # added by Nix installer
 . "$HOME/.cargo/env"

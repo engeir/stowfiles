@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+
+for file in raw/*
+do
+	N=$(echo "$file" | sed -e 's/raw\/\(.*\)\.CR3/\1/')
+	#echo "$N"
+	if [ -z $(ls | grep "$N") ]
+	then
+		rm raw/"$N".CR3
+	fi
+done

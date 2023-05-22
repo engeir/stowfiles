@@ -22,7 +22,7 @@ export PATH="/usr/local/bin:$PATH"
 export PATH="/usr/local/bin:$PATH"
 export PATH="/usr/local/bin:$PATH"
 
-if command -v apt > /dev/null; then
+if [[ $(uname) == "Linux" ]]; then
     # Make caps-lock work as esc when pressed, ctrl when hold
     setxkbmap -option ctrl:nocaps
     xcape -e 'Control_L=Escape'
