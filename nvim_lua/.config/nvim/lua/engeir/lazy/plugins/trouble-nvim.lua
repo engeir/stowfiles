@@ -6,4 +6,7 @@ return {
             auto_close = true,
         })
     end,
+    keys = {
+        { "<leader>tt", "<cmd>TroubleToggle<cr>", desc = "[T]rouble[T]oggle" },
+    },
 }

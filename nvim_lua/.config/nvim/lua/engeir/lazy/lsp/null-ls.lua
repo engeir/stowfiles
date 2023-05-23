@@ -25,7 +25,7 @@ null_ls.setup({
             extra_args = { "-c", vim.fn.expand("~") .. "/.config/mdl/.markdownlint.jsonc" },
         }),
         diagnostics.mypy,
-        -- diagnostics.vale,
+        diagnostics.vale,
         -- diagnostics.proselint,
         -- diagnostics.pydocstyle,
         diagnostics.shellcheck,

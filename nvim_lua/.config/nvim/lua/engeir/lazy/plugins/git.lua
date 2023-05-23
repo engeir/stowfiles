@@ -93,7 +93,7 @@ return {
         "kdheepak/lazygit.nvim",
         cond = IS_KNOWN and EXECUTABLE("lazygit"),
         keys = {
-            { "<leader>lg", "<cmd>LazyGit<cr>" },
+            { "<leader>lg", "<cmd>LazyGit<cr>", desc = "Open [L]azy[G]it" },
         },
     },
     {
