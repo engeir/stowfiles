@@ -42,8 +42,14 @@ return {
                 }):sync()
             end
 
+            local actions = require("telescope.actions")
             require("telescope").setup({
                 defaults = {
+                    mappings = {
+                        i = {
+                            ["<esc>"] = actions.close,
+                        },
+                    },
                     buffer_previewer_maker = new_maker,
                     path_display = { shorten = 4 },
                     vimgrep_arguments = {
