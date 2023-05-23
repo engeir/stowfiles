@@ -4,9 +4,27 @@ end
 local function getLines()
     return tostring(vim.api.nvim_buf_line_count(0)) .. " lines"
 end
-local function getFileInfo()
-    return getWords() .. ", " .. getLines()
+local function get_entr_compiler_status()
+    local handle = io.popen('ps aux | grep -i "[e]ntr.*compiler"')
+    if handle == nil then
+        return ""
+    end
+    local result = string.match(handle:read("*a"), "compiler .*")
+    if result == nil then
+        return ""
+    end
+    local file = vim.fn.expand("%")
+    handle:close()
+    if string.find(result, file, nil, true) then
+        return ", live compiler is ON"
+    else
+        return ""
+    end
 end
+local function getFileInfo()
+    return getWords() .. ", " .. getLines() .. get_entr_compiler_status()
+end
+print(get_entr_compiler_status())
 
 return {
     -- Style and colour schemes ===================================================== --
@@ -31,6 +49,7 @@ return {
                 icons_enabled = true,
                 globalstatus = true,
                 component_separators = { "", "" },
+                section_separators = { left = "", right = "" },
                 theme = "gruvbox",
                 -- theme = "auto",
             },
@@ -42,6 +61,7 @@ return {
                     {
                         "filename",
                         path = 3,
+                        shorting_target = 80,
                     },
                     { getFileInfo },
                 },
