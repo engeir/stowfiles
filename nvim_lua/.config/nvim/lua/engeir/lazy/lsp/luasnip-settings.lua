@@ -174,6 +174,7 @@ ls.add_snippets("tex", {
         i(2),
         t({ "", "\\end{frame}" }),
     }),
+    s("mathin", { t("\\("), i(1), t("\\)") }),
     s("citet", { t({ "\\citet{" }), i(1), t("}") }),
     s("citep", { t({ "\\citep{" }), i(1), t("}") }),
     s("ce", { t({ "\\ce{" }), i(1), t("}") }),
