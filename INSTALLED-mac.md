@@ -2,7 +2,7 @@
 
 ## Brew
 
-```
+```txt
 adns
 adwaita-icon-theme
 amfora
@@ -465,7 +465,7 @@ xquartz
 
 ## Cargo
 
-```
+```txt
 atuin v14.0.1:
     atuin
 blindfold v1.0.7:
@@ -474,15 +474,15 @@ bob-nvim v2.3.2:
     bob
 cargo-binstall v0.23.0:
     cargo-binstall
-cargo-edit v0.11.9:
+cargo-edit v0.11.11:
     cargo-add
     cargo-rm
     cargo-set-version
     cargo-upgrade
-cargo-update v13.0.1:
+cargo-update v13.0.4:
     cargo-install-update
     cargo-install-update-config
-clap v4.2.5:
+clap v4.3.0:
     stdio-fixture
 coreutils v0.0.18:
     coreutils
@@ -499,9 +499,9 @@ helix-term v0.6.0 (/Users/eirikenger/programs/helix/helix-term):
     hx
 hyperfine v1.16.1:
     hyperfine
-mdbook v0.4.28:
+mdbook v0.4.29:
     mdbook
-rtx-cli v1.29.3:
+rtx-cli v1.30.4:
     rtx
 stylua v0.17.1:
     stylua
@@ -509,8 +509,8 @@ stylua v0.17.1:
 
 ## Pipx
 
-```
-package betty 0.2.6, installed using Python 3.9.6
+```txt
+package betty 0.2.7, installed using Python 3.9.6
  - betty
 package black 23.3.0, installed using Python 3.10.0
  - black
@@ -537,7 +537,7 @@ package pandoc-eqnos 2.5.0, installed using Python 3.9.6
  - pandoc-eqnos
 package pandoc-include 1.2.0, installed using Python 3.10.1
  - pandoc-include
-package pipenv 2023.4.29, installed using Python 3.10.0
+package pipenv 2023.5.19, installed using Python 3.10.0
  - pipenv
  - pipenv-resolver
 package pypistats 1.3.0, installed using Python 3.10.6
@@ -551,6 +551,9 @@ package rich-codex 1.2.6, installed using Python 3.10.6
 package speedtest-cli 2.1.3, installed using Python 3.10.0
  - speedtest
  - speedtest-cli
+package thefuck 3.32, installed using Python 3.10.11
+ - fuck
+ - thefuck
 package trash-cli 0.23.2.13.2, installed using Python 3.9.6
  - trash
  - trash-empty
@@ -562,4 +565,16 @@ package ueberzug 18.1.9, installed using Python 3.9.7
  - ueberzug
 package whoogle-search 0.8.2, installed using Python 3.9.5
  - whoogle-search
+```
+
+## Go
+
+```txt
+       despell: github.com/bensadeh/despell@v0.0.0-20230424061959-fe5e2e7d0911
+  gomodifytags: github.com/fatih/gomodifytags@v1.16.0
+           gum: github.com/charmbracelet/gum@v0.10.0
+           gup: github.com/nao1215/gup@v0.21.1
+mandelbrot-cli: github.com/MicheleFiladelfia/mandelbrot-cli@v0.0.0-20230416100519-74781703a9e2
+           pup: @unknown
+           vhs: github.com/charmbracelet/vhs@v0.5.0
 ```

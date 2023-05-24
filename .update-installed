@@ -57,6 +57,7 @@ if [ "Mac" = "$machine" ]; then
     BREW="$(brew list)"
     CARGO="$(cargo install --list)"
     PIPX="$(pipx list | sed '1,2d' | sed 's/^   //')"
+    GO="$(gup list)"
     echo "# Installed programs
 
 ## Brew
@@ -75,6 +76,12 @@ $CARGO
 
 \`\`\`txt
 $PIPX
+\`\`\`
+
+## Go
+
+\`\`\`txt
+$GO
 \`\`\`" >"./INSTALLED-mac.md"
 fi
 
