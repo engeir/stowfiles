@@ -98,6 +98,9 @@ return {
                     },
                     swap = {
                         enable = true,
+                        -- These does not cover all edge cases, so
+                        -- "ziontee113/syntax-tree-surfer" is used along side, see
+                        -- config further down
                         swap_next = {
                             ["]n"] = "@parameter.inner",
                         },
@@ -228,12 +231,13 @@ return {
         "ziontee113/syntax-tree-surfer",
         enabled = IS_KNOWN,
         config = function()
-            vim.keymap.set("n", "vsj", function()
+            require("syntax-tree-surfer").setup()
+            vim.keymap.set("n", "]s", function()
                 vim.opt.opfunc = "v:lua.STSSwapCurrentNodeNextNormal_Dot"
                 return "g@l"
             end, { silent = true, expr = true })
 
-            vim.keymap.set("n", "vsk", function()
+            vim.keymap.set("n", "[s", function()
                 vim.opt.opfunc = "v:lua.STSSwapCurrentNodePrevNormal_Dot"
                 return "g@l"
             end, { silent = true, expr = true })
