@@ -235,12 +235,12 @@ return {
             vim.keymap.set("n", "]s", function()
                 vim.opt.opfunc = "v:lua.STSSwapCurrentNodeNextNormal_Dot"
                 return "g@l"
-            end, { silent = true, expr = true })
+            end, { silent = true, expr = true, desc = "Right sibling [s]wap" })
 
             vim.keymap.set("n", "[s", function()
                 vim.opt.opfunc = "v:lua.STSSwapCurrentNodePrevNormal_Dot"
                 return "g@l"
-            end, { silent = true, expr = true })
+            end, { silent = true, expr = true, desc = "Left sibling [s]wap" })
         end,
     },
     {
