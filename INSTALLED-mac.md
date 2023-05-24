@@ -189,7 +189,9 @@ liblqr
 libmagic
 libmatio
 libmd
+libmediainfo
 libmikmod
+libmms
 libmng
 libmpc
 libnghttp2
@@ -245,6 +247,7 @@ libxrender
 libxt
 libxxf86vm
 libyaml
+libzen
 libzip
 links
 little-cms2
@@ -277,6 +280,7 @@ mpv
 msgpack
 mujs
 mupdf
+mysql@5.7
 nb
 ncspot
 ncurses
@@ -331,6 +335,7 @@ potrace
 pqiv
 prettier
 proj
+protobuf
 pstoedit
 pueue
 pup
@@ -349,7 +354,6 @@ rav1e
 readline
 recode
 ripgrep
-rpm
 rpm2cpio
 rsync
 rtmpdump
@@ -378,6 +382,7 @@ snappy
 soft-serve
 source-highlight
 speex
+sphinx
 sphinx-doc
 spotify-tui
 sqlite
@@ -449,7 +454,6 @@ font-hack-nerd-font
 gimp
 hammerspoon
 kitty
-libreoffice
 macfuse
 nuclear
 osxfuse
@@ -540,18 +544,18 @@ package pandoc-include 1.2.0, installed using Python 3.10.1
 package pipenv 2023.5.19, installed using Python 3.10.0
  - pipenv
  - pipenv-resolver
-package pypistats 1.3.0, installed using Python 3.10.6
+package pypistats 1.3.0, installed using Python 3.11.3
  - pypistats
 package pywal 3.3.0, installed using Python 3.9.7
  - wal
-package rich-cli 1.8.0, installed using Python 3.10.6
+package rich-cli 1.8.0, installed using Python 3.11.3
  - rich
-package rich-codex 1.2.6, installed using Python 3.10.6
+package rich-codex 1.2.6, installed using Python 3.11.3
  - rich-codex
 package speedtest-cli 2.1.3, installed using Python 3.10.0
  - speedtest
  - speedtest-cli
-package thefuck 3.32, installed using Python 3.10.11
+package thefuck 3.32, installed using Python 3.11.3
  - fuck
  - thefuck
 package trash-cli 0.23.2.13.2, installed using Python 3.9.6
