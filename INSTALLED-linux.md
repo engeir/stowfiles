@@ -4739,6 +4739,7 @@ wayland-protocols				install
 wbritish					install
 webkit2gtk-driver				install
 webp						install
+wezterm						install
 wget						install
 whiptail					install
 whois						install
@@ -4880,6 +4881,7 @@ protonmail-bridge-deb
 rstudio
 shfmt-bin
 signal-desktop-deb
+wezterm-app
 zoom
 zoom-deb
 ```
@@ -4945,7 +4947,7 @@ pueue v3.1.2:
     pueued
 ripgrep v13.0.0:
     rg
-rtx-cli v1.30.3:
+rtx-cli v1.30.4:
     rtx
 sd v0.7.6:
     sd
@@ -5129,7 +5131,7 @@ ascii-image-converter: github.com/TheZoraiz/ascii-image-converter@v1.13.1
         golangci-lint: github.com/golangci/golangci-lint/cmd/golangci-lint@v1.52.2
                   gup: github.com/nao1215/gup@v0.21.1
               lazygit: github.com/jesseduffield/lazygit@v0.38.2
-                   lf: github.com/gokcehan/lf@v0.0.0-20230521164141-0ac1491bfb5f
+                   lf: github.com/gokcehan/lf@v0.0.0-20230524093459-a9d90bc56044
                 rmapi: github.com/juruen/rmapi@(devel)
                     s: github.com/zquestz/s@v0.6.7
                slides: github.com/maaslalani/slides@v0.9.0
@@ -5155,7 +5157,6 @@ GNOME Application Platform version 44	org.gnome.Platform		44	system
 Citations	org.gnome.World.Citations	0.5.2	stable	system
 Pika Backup	org.gnome.World.PikaBackup	0.6.1	stable	system
 Yaru-dark Gtk Theme	org.gtk.Gtk3theme.Yaru-dark		3.22	system
-Wez's Terminal Emulator	org.wezfurlong.wezterm	20230408-112425-69ae8472	stable	system
 ```
 
 ## Snap
@@ -5163,7 +5164,7 @@ Wez's Terminal Emulator	org.wezfurlong.wezterm	20230408-112425-69ae8472	stable	s
 ```txt
 Name                       Version                     Rev    Tracking         Publisher     Notes
 bare                       1.0                         5      latest/stable    canonical**   base
-canonical-livepatch        10.5.6                      216    latest/stable    canonical**   -
+canonical-livepatch        10.5.7                      229    latest/stable    canonical**   -
 cmake                      3.26.4                      1299   latest/stable    crascit**     classic
 core                       16-2.58.3                   14946  latest/stable    canonical**   core
 core18                     20230426                    2745   latest/stable    canonical**   base

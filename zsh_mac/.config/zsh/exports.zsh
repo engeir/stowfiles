@@ -66,3 +66,8 @@ export PATH="$DENO_INSTALL/bin:$PATH"
 export AUTO_NOTIFY_IGNORE=("nv" "docker" "man" "sleep" "lf" "nnn" "hugo serve" "fg" "ga")
 # forgit
 export FORGIT_FZF_DEFAULT_OPTS
+
+# wezterm complains about
+# ERROR: ld.so: object 'libgtk3-nocsd.so.0' from LD_PRELOAD cannot be preloaded (failed to map segment from shared object): ignored.
+# See https://stackoverflow.com/a/53825858
+export LD_PRELOAD=/usr/lib/x86_64-linux-gnu/libgtk3-nocsd.so.0
