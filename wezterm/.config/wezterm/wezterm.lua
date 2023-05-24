@@ -63,6 +63,15 @@ config.keys = {
         mods = "ALT",
         action = wezterm.action.EmitEvent("decrement-opacity"),
     },
+    {
+        key = "c",
+        mods = "ALT",
+        action = wezterm.action.CopyTo("ClipboardAndPrimarySelection"),
+    },{
+        key = "v",
+        mods = "ALT",
+        action = wezterm.action.PasteFrom("Clipboard"),
+    },
 }
 
 config.window_padding = {
