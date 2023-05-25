@@ -3,4866 +3,4665 @@
 ## Apt
 
 ```txt
-4ti2						install
-accountsservice					install
-accountsservice-ubuntu-schemas			install
-acl						install
-acpi-support					install
-acpid						install
-activity-log-manager				install
-adb						install
-adduser						install
-adobereader-enu:i386				install
-adwaita-icon-theme				install
-aglfn						install
-airport-utils					install
-aisleriot					install
-alacritty					deinstall
-alltray:i386					install
-alsa-base					install
-alsa-topology-conf				install
-alsa-ucm-conf					install
-alsa-utils					install
-amd64-microcode					install
-anacron						install
-android-libadb					install
-android-libbase					install
-android-libboringssl				install
-android-libcrypto-utils				install
-android-libcutils				install
-android-liblog					install
-android-sdk-platform-tools-common		install
-anthy						install
-anthy-common					install
-antiword					install
-apache2						install
-apache2-bin					install
-apache2-data					install
-apache2-utils					install
-apg						install
-apparmor					install
-apport						install
-apport-gtk					install
-apport-symptoms					install
-appstream					install
-apt						install
-apt-config-icons				install
-apt-config-icons-hidpi				install
-apt-file					install
-apt-transport-https				install
-apt-utils					install
-aptdaemon					install
-aptdaemon-data					install
-apturl						install
-apturl-common					install
-arandr						install
-art						install
-asciinema					install
-aspell						install
-aspell-en					install
-asymptote					install
-asymptote-doc					install
-at-spi2-core					install
-autoconf					install
-autoconf-archive				install
-automake					install
-autopoint					install
-autorandr					install
-autotools-dev					install
-avahi-autoipd					install
-avahi-daemon					install
-avahi-utils					install
-bamfdaemon					install
-baobab						install
-base-files					install
-base-passwd					install
-bash						install
-bash-completion					install
-batsignal					install
-bc						install
-bibclean					install
-biber						install
-bibutils					install
-bind9-dnsutils					install
-bind9-host					install
-bind9-libs:amd64				install
-binfmt-support					install
-binutils					install
-binutils-common:amd64				install
-binutils-x86-64-linux-gnu			install
-bison						install
-bitwarden					install
-black						install
-blt						install
-blueman						install
-bluez						install
-bluez-cups					install
-bluez-obexd					install
-bluez-tools					install
-bolt						install
-borgbackup					install
-boxes						install
-branding-ubuntu					install
-brave-browser					install
-brave-keyring					install
-brightness-udev					install
-brightnessctl					install
-brltty						install
-brotli						install
-bsdextrautils					install
-bsdutils					install
-bspwm						install
-btop						install
-bubblewrap					install
-build-essential					install
-bundler						install
-busybox-initramfs				install
-busybox-static					install
-byobu						install
-bzip2						install
-bzip2-doc					install
-ca-certificates					install
-ca-certificates-java				install
-ca-certificates-mono				install
-cabal-debian					install
-cabal-install					install
-cabextract					install
-caca-utils					install
-calcurse					install
-caprine						install
-catdoc						install
-catimg						install
-cb2bib						install
-cdo						install
-checkinstall					install
-cheese						install
-cheese-common					install
-chktex						install
-chrome-gnome-shell				install
-chromium-codecs-ffmpeg-extra			install
-cinnamon-desktop-data				install
-cinnamon-l10n					install
-cli-common					install
-cliquer						install
-cloc						install
-cm-super					install
-cm-super-minimal				install
-cmake						install
-cmake-data					install
-cmatrix						install
-cmdtest						install
-code						install
-colord						install
-colord-data					install
-comerr-dev:amd64				install
-command-not-found				install
-compiz						install
-compiz-core					install
-compiz-gnome					install
-compiz-plugins:amd64				install
-compiz-plugins-default:amd64			install
-compiz-plugins-extra				install
-compizconfig-settings-manager			install
-compton						install
-console-setup					install
-console-setup-linux				install
-containerd.io					install
-context						install
-context-modules					install
-coreutils					install
-cpio						install
-cpp						install
-cpp-10						install
-cpp-11						install
-cpp-12						install
-cpp-9						install
-cracklib-runtime				install
-crda						deinstall
-cron						install
-csh						install
-csvtool						install
-cups						install
-cups-browsed					install
-cups-bsd					install
-cups-client					install
-cups-common					install
-cups-core-drivers				install
-cups-daemon					install
-cups-filters					install
-cups-filters-core-drivers			install
-cups-ipp-utils					install
-cups-pk-helper					install
-cups-ppdc					install
-cups-server-common				install
-curl						install
-cvs						install
-cvsps						install
-cysignals-tools					install
-cython3						install
-darktable					install
-dash						install
-dbus						install
-dbus-user-session				install
-dbus-x11					install
-dc						install
-dconf-cli					install
-dconf-editor					install
-dconf-gsettings-backend:amd64			install
-dconf-service					install
-dctrl-tools					install
-debconf						install
-debconf-i18n					install
-debhelper					install
-debianutils					install
-debugedit					install
-default-jdk					install
-default-jdk-headless				install
-default-jre					install
-default-jre-headless				install
-deja-dup					install
-desktop-file-utils				install
-dex						install
-dh-autoreconf					install
-dh-elpa-helper					install
-dh-strip-nondeterminism				install
-dialog						install
-dictionaries-common				install
-diffstat					install
-diffutils					install
-dirmngr						install
-distro-info					install
-distro-info-data				install
-djvulibre-bin					install
-dkms						install
-dmidecode					install
-dmsetup						install
-dmz-cursor-theme				install
-dns-root-data					install
-dnsmasq-base					install
-docbook						install
-docbook-to-man					install
-docbook-xml					install
-docbook-xsl					install
-docker						install
-docker-buildx-plugin				install
-docker-ce					install
-docker-ce-cli					install
-docker-ce-rootless-extras			install
-docker-compose-plugin				install
-docutils-common					install
-docx2txt					install
-dos2unix					install
-dosfstools					install
-dpkg						install
-dpkg-dev					install
-dunst						install
-duplicity					install
-dvidvi						install
-dvipng						install
-dvisvgm						install
-dvtm						install
-dwz						install
-e2fsprogs					install
-ecl						install
-eclib-tools					install
-ed						install
-efibootmgr					install
-eject						install
-elinks						install
-elinks-data					install
-emacsen-common					install
-enchant-2					install
-entangle					install
-entr						install
-eog						install
-espeak-ng-data:amd64				install
-evince						install
-evince-common					install
-evolution-data-server				install
-evolution-data-server-common			install
-exif						install
-exiv2						install
-exo-utils					install
-expect						install
-fakeroot					install
-falkon						install
-fastjar						install
-fdisk						install
-feh						install
-feynmf						install
-fflas-ffpack					install
-fflas-ffpack-common				install
-ffmpeg						install
-ffmpegthumbnailer				install
-fig2dev						install
-figlet						install
-file						install
-file-roller					install
-findutils					install
-finger						install
-firefox						install
-firefox-locale-en				install
-firmware-sof-signed				install
-flatpak						install
-flex						install
-flintqs						install
-fltk1.3-doc					install
-fluid						install
-font-manager					install
-font-manager-common:amd64			install
-font-viewer					install
-fontconfig					install
-fontconfig-config				install
-fontforge					install
-fontforge-common				install
-fonts-adf-accanthis				install
-fonts-adf-berenis				install
-fonts-adf-gillius				install
-fonts-adf-universalis				install
-fonts-arphic-bkai00mp				install
-fonts-arphic-bsmi00lp				install
-fonts-arphic-gbsn00lp				install
-fonts-arphic-gkai00mp				install
-fonts-arphic-uming				install
-fonts-baekmuk					install
-fonts-beng					install
-fonts-beng-extra				install
-fonts-cabin					install
-fonts-cantarell					install
-fonts-comfortaa					install
-fonts-croscore					install
-fonts-crosextra-caladea				install
-fonts-crosextra-carlito				install
-fonts-dejavu					install
-fonts-dejavu-core				install
-fonts-dejavu-extra				install
-fonts-deva					install
-fonts-deva-extra				install
-fonts-droid-fallback				install
-fonts-ebgaramond				install
-fonts-ebgaramond-extra				install
-fonts-firacode					install
-fonts-font-awesome				install
-fonts-freefont-otf				install
-fonts-freefont-ttf				install
-fonts-gargi					install
-fonts-gfs-artemisia				install
-fonts-gfs-baskerville				install
-fonts-gfs-bodoni-classic			install
-fonts-gfs-complutum				install
-fonts-gfs-didot					install
-fonts-gfs-didot-classic				install
-fonts-gfs-gazis					install
-fonts-gfs-neohellenic				install
-fonts-gfs-olga					install
-fonts-gfs-porson				install
-fonts-gfs-solomos				install
-fonts-gfs-theokritos				install
-fonts-glyphicons-halflings			install
-fonts-go					install
-fonts-gubbi					install
-fonts-gujr					install
-fonts-gujr-extra				install
-fonts-guru					install
-fonts-guru-extra				install
-fonts-hosny-amiri				install
-fonts-inconsolata				install
-fonts-indic					install
-fonts-ipaexfont-gothic				install
-fonts-ipaexfont-mincho				install
-fonts-ipafont-gothic				install
-fonts-ipafont-mincho				install
-fonts-junicode					install
-fonts-kacst					install
-fonts-kacst-one					install
-fonts-kalapi					install
-fonts-khmeros-core				install
-fonts-knda					install
-fonts-lao					install
-fonts-lato					install
-fonts-league-spartan				install
-fonts-liberation				install
-fonts-liberation2				install
-fonts-linuxlibertine				install
-fonts-lklug-sinhala				install
-fonts-lmodern					install
-fonts-lobster					install
-fonts-lobstertwo				install
-fonts-lohit-beng-assamese			install
-fonts-lohit-beng-bengali			install
-fonts-lohit-deva				install
-fonts-lohit-gujr				install
-fonts-lohit-guru				install
-fonts-lohit-knda				install
-fonts-lohit-mlym				install
-fonts-lohit-orya				install
-fonts-lohit-taml				install
-fonts-lohit-taml-classical			install
-fonts-lohit-telu				install
-fonts-lyx					install
-fonts-mathjax					install
-fonts-mathjax-extras				install
-fonts-mlym					install
-fonts-nakula					install
-fonts-navilu					install
-fonts-noto-cjk					install
-fonts-noto-color-emoji				install
-fonts-noto-core					install
-fonts-noto-mono					install
-fonts-oflb-asana-math				install
-fonts-open-sans					install
-fonts-opensymbol				install
-fonts-orya					install
-fonts-orya-extra				install
-fonts-pagul					install
-fonts-powerline					install
-fonts-roboto-unhinted				install
-fonts-sahadeva					install
-fonts-samyak-deva				install
-fonts-samyak-gujr				install
-fonts-samyak-mlym				install
-fonts-samyak-taml				install
-fonts-sarai					install
-fonts-sil-abyssinica				install
-fonts-sil-charis				install
-fonts-sil-gentium				install
-fonts-sil-gentium-basic				install
-fonts-sil-gentiumplus				install
-fonts-sil-gentiumplus-compact			install
-fonts-sil-padauk				install
-fonts-smc					install
-fonts-smc-anjalioldlipi				install
-fonts-smc-chilanka				install
-fonts-smc-dyuthi				install
-fonts-smc-gayathri				install
-fonts-smc-karumbi				install
-fonts-smc-keraleeyam				install
-fonts-smc-manjari				install
-fonts-smc-meera					install
-fonts-smc-rachana				install
-fonts-smc-raghumalayalamsans			install
-fonts-smc-suruma				install
-fonts-smc-uroob					install
-fonts-stix					install
-fonts-symbola					install
-fonts-taml					install
-fonts-telu					install
-fonts-telu-extra				install
-fonts-teluguvijayam				install
-fonts-texgyre					install
-fonts-thai-tlwg					install
-fonts-tibetan-machine				install
-fonts-tlwg-garuda				install
-fonts-tlwg-garuda-otf				install
-fonts-tlwg-garuda-ttf				install
-fonts-tlwg-kinnari				install
-fonts-tlwg-kinnari-otf				install
-fonts-tlwg-kinnari-ttf				install
-fonts-tlwg-laksaman				install
-fonts-tlwg-laksaman-otf				install
-fonts-tlwg-laksaman-ttf				install
-fonts-tlwg-loma					install
-fonts-tlwg-loma-otf				install
-fonts-tlwg-loma-ttf				install
-fonts-tlwg-mono					install
-fonts-tlwg-mono-otf				install
-fonts-tlwg-mono-ttf				install
-fonts-tlwg-norasi				install
-fonts-tlwg-norasi-otf				install
-fonts-tlwg-norasi-ttf				install
-fonts-tlwg-purisa				install
-fonts-tlwg-purisa-otf				install
-fonts-tlwg-purisa-ttf				install
-fonts-tlwg-sawasdee				install
-fonts-tlwg-sawasdee-otf				install
-fonts-tlwg-sawasdee-ttf				install
-fonts-tlwg-typewriter				install
-fonts-tlwg-typewriter-otf			install
-fonts-tlwg-typewriter-ttf			install
-fonts-tlwg-typist				install
-fonts-tlwg-typist-otf				install
-fonts-tlwg-typist-ttf				install
-fonts-tlwg-typo					install
-fonts-tlwg-typo-otf				install
-fonts-tlwg-typo-ttf				install
-fonts-tlwg-umpush				install
-fonts-tlwg-umpush-otf				install
-fonts-tlwg-umpush-ttf				install
-fonts-tlwg-waree				install
-fonts-tlwg-waree-otf				install
-fonts-tlwg-waree-ttf				install
-fonts-ubuntu					install
-fonts-unfonts-core				install
-fonts-unfonts-extra				install
-fonts-urw-base35				install
-fonts-vlgothic					install
-fonts-wine					install
-fonts-yrsa-rasa					install
-foomatic-db-compressed-ppds			install
-fortune-mod					install
-fortunes-min					install
-fprintd						install
-fragmaster					install
-freeglut3:amd64					install
-friendly-recovery				install
-ftp						install
-fuse						deinstall
-fuse3						install
-fwupd						install
-fwupd-signed					install
-fzf						install
-g++						install
-g++-10						install
-g++-11						install
-g++-9						install
-gamemode					install
-gamemode-daemon					install
-gap						install
-gap-alnuth					install
-gap-atlasrep					install
-gap-autpgrp					install
-gap-character-tables				install
-gap-core					install
-gap-dev						install
-gap-doc						install
-gap-factint					install
-gap-gapdoc					install
-gap-io						install
-gap-libs					install
-gap-online-help					install
-gap-polycyclic					install
-gap-primgrp					install
-gap-smallgrp					install
-gap-table-of-marks				install
-gap-transgrp					install
-gawk						install
-gcc						install
-gcc-10						install
-gcc-10-base:amd64				install
-gcc-11						install
-gcc-11-base:amd64				install
-gcc-12						install
-gcc-12-base:amd64				install
-gcc-12-base:i386				install
-gcc-9						install
-gcc-9-base:amd64				install
-gconf-service					install
-gconf-service-backend				install
-gconf2						install
-gconf2-common					install
-gcr						install
-gdb						install
-gdebi						install
-gdebi-core					install
-gdisk						install
-gdm3						install
-gedit						install
-gedit-common					install
-genisoimage					install
-geoclue-2.0					install
-gettext						install
-gettext-base					install
-gfan						install
-gfortran					install
-gfortran-11					install
-gftp						install
-gftp-common					install
-gftp-gtk					install
-gftp-text					install
-gh						install
-ghc						install
-ghostscript					install
-ghostscript-x					install
-gir1.2-accountsservice-1.0:amd64		install
-gir1.2-adw-1:amd64				install
-gir1.2-atk-1.0:amd64				install
-gir1.2-atspi-2.0:amd64				install
-gir1.2-ayatanaappindicator3-0.1			install
-gir1.2-dbusmenu-glib-0.4:amd64			install
-gir1.2-dee-1.0					install
-gir1.2-entangle-0.1				install
-gir1.2-evince-3.0:amd64				install
-gir1.2-freedesktop:amd64			install
-gir1.2-gck-1:amd64				install
-gir1.2-gcr-3:amd64				install
-gir1.2-gdesktopenums-3.0:amd64			install
-gir1.2-gdkpixbuf-2.0:amd64			install
-gir1.2-gdm-1.0:amd64				install
-gir1.2-geoclue-2.0:amd64			install
-gir1.2-gexiv2-0.10:amd64			install
-gir1.2-glib-2.0:amd64				install
-gir1.2-gmenu-3.0:amd64				install
-gir1.2-gnomebluetooth-3.0:amd64			install
-gir1.2-gnomedesktop-3.0:amd64			install
-gir1.2-goa-1.0:amd64				install
-gir1.2-graphene-1.0:amd64			install
-gir1.2-gst-plugins-base-1.0:amd64		install
-gir1.2-gstreamer-1.0:amd64			install
-gir1.2-gtk-2.0:amd64				install
-gir1.2-gtk-3.0:amd64				install
-gir1.2-gtk-4.0:amd64				install
-gir1.2-gtksource-4:amd64			install
-gir1.2-gudev-1.0:amd64				install
-gir1.2-gweather-3.0:amd64			install
-gir1.2-handy-1:amd64				install
-gir1.2-harfbuzz-0.0:amd64			install
-gir1.2-ibus-1.0:amd64				install
-gir1.2-ical-3.0:amd64				install
-gir1.2-javascriptcoregtk-4.0:amd64		install
-gir1.2-json-1.0:amd64				install
-gir1.2-mutter-10:amd64				install
-gir1.2-nm-1.0:amd64				install
-gir1.2-nma-1.0:amd64				install
-gir1.2-notify-0.7:amd64				install
-gir1.2-packagekitglib-1.0			install
-gir1.2-pango-1.0:amd64				install
-gir1.2-peas-1.0:amd64				install
-gir1.2-polkit-1.0				install
-gir1.2-poppler-0.18:amd64			install
-gir1.2-rb-3.0:amd64				install
-gir1.2-rsvg-2.0:amd64				install
-gir1.2-secret-1:amd64				install
-gir1.2-snapd-1:amd64				install
-gir1.2-soup-2.4:amd64				install
-gir1.2-totem-1.0:amd64				install
-gir1.2-totemplparser-1.0:amd64			install
-gir1.2-udisks-2.0:amd64				install
-gir1.2-unity-7.0:amd64				install
-gir1.2-upowerglib-1.0:amd64			install
-gir1.2-vte-2.91:amd64				install
-gir1.2-webkit2-4.0:amd64			install
-gir1.2-wnck-3.0:amd64				install
-gir1.2-xapp-1.0					install
-gir1.2-zeitgeist-2.0:amd64			install
-gist						install
-git						install
-git-all						install
-git-cvs						install
-git-doc						install
-git-el						deinstall
-git-email					install
-git-gui						install
-git-lfs						install
-git-man						install
-git-mediawiki					install
-git-svn						install
-gitk						install
-gitweb						install
-gjs						install
-gkbd-capplet					install
-glib-networking:amd64				install
-glib-networking:i386				install
-glib-networking-common				install
-glib-networking-services			install
-glpk-utils					install
-gmp-ecm						install
-gnome-accessibility-themes			install
-gnome-bluetooth					install
-gnome-bluetooth-3-common			install
-gnome-bluetooth-common				install
-gnome-calculator				install
-gnome-calendar					install
-gnome-characters				install
-gnome-common					install
-gnome-control-center				install
-gnome-control-center-data			install
-gnome-control-center-faces			install
-gnome-desktop3-data				install
-gnome-disk-utility				install
-gnome-font-viewer				install
-gnome-icon-theme				install
-gnome-initial-setup				install
-gnome-keyring					install
-gnome-keyring-pkcs11:amd64			install
-gnome-logs					install
-gnome-mahjongg					install
-gnome-menus					install
-gnome-mines					install
-gnome-online-accounts				install
-gnome-power-manager				install
-gnome-remote-desktop				install
-gnome-screensaver				install
-gnome-screenshot				install
-gnome-session-bin				install
-gnome-session-canberra				install
-gnome-session-common				install
-gnome-settings-daemon				install
-gnome-settings-daemon-common			install
-gnome-shell					install
-gnome-shell-common				install
-gnome-shell-extension-appindicator		install
-gnome-shell-extension-desktop-icons-ng		install
-gnome-shell-extension-prefs			install
-gnome-shell-extension-ubuntu-dock		install
-gnome-shell-extensions				install
-gnome-startup-applications			install
-gnome-sudoku					install
-gnome-sushi					install
-gnome-system-monitor				install
-gnome-terminal					install
-gnome-terminal-data				install
-gnome-themes-extra:amd64			install
-gnome-themes-extra-data				install
-gnome-todo					install
-gnome-todo-common				install
-gnome-tweaks					install
-gnome-user-docs					install
-gnome-video-effects				install
-gnupg						install
-gnupg-l10n					install
-gnupg-utils					install
-gnupg2						install
-gnuplot						install
-gnuplot-data					install
-gnuplot-qt					install
-golang-go					deinstall
-golly						install
-google-chrome-stable				install
-gperf						install
-gpg						install
-gpg-agent					install
-gpg-wks-client					install
-gpg-wks-server					install
-gpgconf						install
-gpgsm						install
-gpgv						install
-gphotofs					install
-grabc						deinstall
-graphicsmagick					install
-graphviz					install
-grep						install
-grilo-plugins-0.3-base:amd64			install
-groff						install
-groff-base					install
-grub-common					install
-grub-efi-amd64-bin				install
-grub-efi-amd64-signed				install
-grub-gfxpayload-lists				install
-grub-pc						install
-grub-pc-bin					install
-grub2-common					install
-gsettings-desktop-schemas			install
-gsettings-ubuntu-schemas			install
-gsfonts						install
-gstreamer1.0-alsa:amd64				install
-gstreamer1.0-clutter-3.0:amd64			install
-gstreamer1.0-gl:amd64				install
-gstreamer1.0-gtk3:amd64				install
-gstreamer1.0-libav:amd64			install
-gstreamer1.0-packagekit				install
-gstreamer1.0-pipewire:amd64			install
-gstreamer1.0-plugins-bad:amd64			install
-gstreamer1.0-plugins-base:amd64			install
-gstreamer1.0-plugins-base:i386			install
-gstreamer1.0-plugins-base-apps			install
-gstreamer1.0-plugins-good:amd64			install
-gstreamer1.0-plugins-good:i386			install
-gstreamer1.0-plugins-ugly:amd64			install
-gstreamer1.0-pulseaudio:amd64			install
-gstreamer1.0-tools				install
-gstreamer1.0-vaapi:amd64			install
-gstreamer1.0-x:amd64				install
-gstreamer1.0-x:i386				install
-gtk-doc-tools					install
-gtk-update-icon-cache				install
-gtk2-engines-murrine:amd64			install
-gtk2-engines-murrine:i386			install
-gtk2-engines-pixbuf:amd64			install
-gtk2.0-examples					install
-gtk3-nocsd					install
-gucharmap					install
-guile-2.2-libs:amd64				install
-gvfs:amd64					install
-gvfs-backends					install
-gvfs-common					install
-gvfs-daemons					install
-gvfs-fuse					install
-gvfs-libs:amd64					install
-gzip						install
-hddtemp						deinstall
-hdf5-helpers					install
-hdf5-tools					install
-hdparm						install
-hicolor-icon-theme				install
-hostname					install
-hplip						install
-hplip-data					install
-html2text					install
-htop						install
-hud						install
-humanity-icon-theme				install
-hunspell-en-us					install
-hwdata						install
-hyphen-en-us					install
-i3-wm						install
-i3lock						deinstall
-i3status					install
-i965-va-driver:amd64				install
-ibus						install
-ibus-data					install
-ibus-gtk:amd64					install
-ibus-gtk3:amd64					install
-ibus-gtk4:amd64					install
-ibus-table					install
-ibverbs-providers:amd64				install
-icu-devtools					install
-id3						install
-id3v2						install
-iio-sensor-proxy				install
-im-config					install
-imagemagick					install
-imagemagick-6-common				install
-imagemagick-6.q16				install
-imv						install
-indicator-application				install
-indicator-appmenu				install
-indicator-bluetooth				install
-indicator-common				install
-indicator-datetime				install
-indicator-keyboard				install
-indicator-messages				install
-indicator-power					install
-indicator-printers				install
-indicator-session				install
-indicator-sound					install
-info						install
-init						install
-init-system-helpers				install
-initramfs-tools					install
-initramfs-tools-bin				install
-initramfs-tools-core				install
-inkscape					install
-inputattach					install
-install-info					install
-insync						install
-intel-media-va-driver:amd64			install
-intel-microcode					install
-intel-opencl-icd				install
-intltool					install
-intltool-debian					install
-inxi						install
-ipp-usb						install
-iproute2					install
-iptables					install
-iputils-ping					install
-iputils-tracepath				install
-ipython3					install
-irqbalance					install
-isc-dhcp-client					install
-isc-dhcp-common					install
-iso-codes					install
-isync						install
-iucode-tool					install
-iw						install
-jabref						install
-java-common					install
-javascript-common				install
-jayatana					install
-jmol						install
-jo						install
-jp2a						install
-jpegoptim					install
-jq						install
-julia-common					deinstall
-jump						install
-jupyter-nbextension-jupyter-js-widgets		install
-jupyter-notebook				deinstall
-kaccounts-providers				install
-kactivities-bin					install
-kactivitymanagerd				install
-kakoune						install
-kasumi						install
-kbd						install
-kde-cli-tools					install
-kde-cli-tools-data				install
-kdeconnect					install
-kded5						install
-keditbookmarks					install
-kerneloops					install
-keyboard-configuration				install
-keychain					install
-kinit						install
-kio						install
-kitty						install
-kitty-doc					install
-kitty-terminfo					install
-klibc-utils					install
-kmod						install
-kpackagelauncherqml				install
-kpackagetool5					install
-kpeople-vcard:amd64				install
-krb5-locales					install
-krb5-multidev:amd64				install
-kwayland-data					install
-kwayland-integration:amd64			install
-lacheck						install
-language-pack-en				install
-language-pack-en-base				install
-language-pack-gnome-en				install
-language-pack-gnome-en-base			install
-language-selector-common			install
-language-selector-gnome				install
-laptop-detect					install
-latex-cjk-all					install
-latex-cjk-chinese				install
-latex-cjk-chinese-arphic-bkai00mp		install
-latex-cjk-chinese-arphic-bsmi00lp		install
-latex-cjk-chinese-arphic-gbsn00lp		install
-latex-cjk-chinese-arphic-gkai00mp		install
-latex-cjk-common				install
-latex-cjk-japanese				install
-latex-cjk-japanese-wadalab			install
-latex-cjk-korean				install
-latex-cjk-thai					install
-latexdiff					install
-latexmk						install
-lcalc						install
-lcdf-typetools					install
-ldap-utils					install
-lemonbar					install
-less						install
-lfm						install
-lib2geom1.1.0:amd64				install
-lib32gcc-s1					install
-lib32stdc++6					install
-liba52-0.7.4:amd64				install
-libaa1:amd64					install
-libaa1:i386					install
-libaacs0:amd64					install
-libabsl20210324:amd64				install
-libabw-0.1-1:amd64				install
-libaccounts-glib0:amd64				install
-libaccounts-qt5-1:amd64				install
-libaccountsservice0:amd64			install
-libacl1:amd64					install
-libadplug-2.3.3-0				install
-libadwaita-1-0:amd64				install
-libaec-dev:amd64				install
-libaec0:amd64					install
-libalgorithm-c3-perl				install
-libalgorithm-diff-perl				install
-libalgorithm-diff-xs-perl			install
-libalgorithm-merge-perl				install
-libaliased-perl					install
-libamd2:amd64					install
-libann0						install
-libanthy1:amd64					install
-libanthyinput0:amd64				install
-libanyevent-i3-perl				install
-libanyevent-perl				install
-libao-common					install
-libao4:amd64					install
-libaom3:amd64					install
-libaopalliance-java				install
-libapache-pom-java				install
-libapparmor1:amd64				install
-libapparmor1:i386				install
-libappstream-glib8:amd64			install
-libappstream4:amd64				install
-libapr1:amd64					install
-libaprutil1:amd64				install
-libaprutil1-dbd-sqlite3:amd64			install
-libaprutil1-ldap:amd64				install
-libapt-pkg-perl					install
-libapt-pkg6.0:amd64				install
-libarchive-cpio-perl				install
-libarchive-dev:amd64				install
-libarchive-tools				install
-libarchive-zip-perl				install
-libarchive13:amd64				install
-libargon2-1:amd64				install
-libaribb24-0:amd64				install
-libasan5:amd64					install
-libasan6:amd64					install
-libasan8:amd64					install
-libasm-java					install
-libasn1-8-heimdal:amd64				install
-libasn1-8-heimdal:i386				install
-libasound2:amd64				install
-libasound2:i386					install
-libasound2-data					install
-libasound2-dev:amd64				install
-libasound2-plugins:amd64			install
-libasound2-plugins:i386				install
-libaspell15:amd64				install
-libass9:amd64					install
-libassuan0:amd64				install
-libasync-interrupt-perl				install
-libasyncns0:amd64				install
-libasyncns0:i386				install
-libatasmart4:amd64				install
-libatinject-jsr330-api-java			install
-libatk-adaptor:amd64				install
-libatk-adaptor:i386				install
-libatk-bridge2.0-0:amd64			install
-libatk-bridge2.0-0:i386				install
-libatk-bridge2.0-dev:amd64			install
-libatk-wrapper-java				install
-libatk-wrapper-java-jni:amd64			install
-libatk1.0-0:amd64				install
-libatk1.0-0:i386				install
-libatk1.0-data					install
-libatk1.0-dev:amd64				install
-libatk1.0-doc					install
-libatkmm-1.6-1v5:amd64				install
-libatlas3-base:amd64				install
-libatm1:amd64					install
-libatomic-ops-dev				install
-libatomic1:amd64				install
-libatomic1:i386					install
-libatopology2:amd64				install
-libatspi2.0-0:amd64				install
-libatspi2.0-0:i386				install
-libatspi2.0-dev:amd64				install
-libattr1:amd64					install
-libaudiofile1:amd64				install
-libaudit-common					install
-libaudit1:amd64					install
-libauthen-sasl-perl				install
-libautovivification-perl			install
-libavahi-client3:amd64				install
-libavahi-client3:i386				install
-libavahi-common-data:amd64			install
-libavahi-common-data:i386			install
-libavahi-common3:amd64				install
-libavahi-common3:i386				install
-libavahi-core7:amd64				install
-libavahi-glib1:amd64				install
-libavahi-ui-gtk3-0:amd64			install
-libavc1394-0:amd64				install
-libavc1394-0:i386				install
-libavcodec-dev:amd64				install
-libavcodec58:amd64				install
-libavdevice-dev:amd64				install
-libavdevice58:amd64				install
-libavfilter-dev:amd64				install
-libavfilter7:amd64				install
-libavformat-dev:amd64				install
-libavformat58:amd64				install
-libavutil-dev:amd64				install
-libavutil56:amd64				install
-libayatana-appindicator3-1			install
-libayatana-ido3-0.4-0:amd64			install
-libayatana-indicator3-7:amd64			install
-libb-hooks-endofscope-perl			install
-libb-hooks-op-check-perl			install
-libbabeltrace1:amd64				install
-libbamf3-2:amd64				install
-libbasicobjects0:amd64				install
-libbcprov-java					install
-libbdplus0:amd64				install
-libbibutils8:amd64				install
-libbinio1v5:amd64				install
-libbinutils:amd64				install
-libblas-dev:amd64				install
-libblas3:amd64					install
-libblkid-dev:amd64				install
-libblkid1:amd64					install
-libblkid1:i386					install
-libblockdev-crypto2:amd64			install
-libblockdev-fs2:amd64				install
-libblockdev-loop2:amd64				install
-libblockdev-part-err2:amd64			install
-libblockdev-part2:amd64				install
-libblockdev-swap2:amd64				install
-libblockdev-utils2:amd64			install
-libblockdev2:amd64				install
-libblosc1:amd64					install
-libbluetooth3:amd64				install
-libbluray2:amd64				install
-libboost-dev:amd64				install
-libboost-filesystem1.74.0:amd64			install
-libboost-iostreams1.74.0:amd64			install
-libboost-locale1.74.0:amd64			install
-libboost-program-options1.74.0:amd64		install
-libboost-python1.74.0				install
-libboost-regex1.74.0:amd64			install
-libboost-thread1.74.0:amd64			install
-libboost1.74-dev:amd64				install
-libbpf0:amd64					install
-libbraiding-dev:amd64				install
-libbraiding0:amd64				install
-libbrial-dev					install
-libbrial-groebner-dev				install
-libbrial-groebner3:amd64			install
-libbrial3:amd64					install
-libbrlapi0.8:amd64				install
-libbrotli-dev:amd64				install
-libbrotli1:amd64				install
-libbrotli1:i386					install
-libbs2b0:amd64					install
-libbsd-dev:amd64				install
-libbsd0:amd64					install
-libbsd0:i386					install
-libbtf1:amd64					install
-libbtparse2					install
-libbusiness-isbn-data-perl			install
-libbusiness-isbn-perl				install
-libbusiness-ismn-perl				install
-libbusiness-issn-perl				install
-libbz2-1.0:amd64				install
-libbz2-1.0:i386					install
-libbz2-dev:amd64				install
-libc-ares2:amd64				install
-libc-bin					install
-libc-dev-bin					install
-libc6:amd64					install
-libc6:i386					install
-libc6-dbg:amd64					install
-libc6-dev:amd64					install
-libc6-i386					install
-libcaca-dev					install
-libcaca0:amd64					install
-libcaca0:i386					install
-libcairo-gobject-perl:amd64			install
-libcairo-gobject2:amd64				install
-libcairo-gobject2:i386				install
-libcairo-perl:amd64				install
-libcairo-script-interpreter2:amd64		install
-libcairo2:amd64					install
-libcairo2:i386					install
-libcairo2-dev:amd64				install
-libcairomm-1.0-1v5:amd64			install
-libcamd2:amd64					install
-libcamel-1.2-63:amd64				install
-libcanberra-gtk-module:amd64			install
-libcanberra-gtk-module:i386			install
-libcanberra-gtk0:amd64				install
-libcanberra-gtk0:i386				install
-libcanberra-gtk3-0:amd64			install
-libcanberra-gtk3-module:amd64			install
-libcanberra-pulse:amd64				install
-libcanberra0:amd64				install
-libcanberra0:i386				install
-libcap-dev:amd64				install
-libcap-ng0:amd64				install
-libcap2:amd64					install
-libcap2:i386					install
-libcap2-bin					install
-libcapi20-3:amd64				install
-libcapi20-3:i386				install
-libcapture-tiny-perl				install
-libcbor0.8:amd64				install
-libcc1-0:amd64					install
-libccolamd2:amd64				install
-libcdd-dev:amd64				install
-libcdd-doc					install
-libcdd-tools					install
-libcdd0d:amd64					install
-libcddb2					install
-libcdi-api-java					install
-libcdi0:amd64					install
-libcdio-cdda2:amd64				install
-libcdio-paranoia2:amd64				install
-libcdio19:amd64					install
-libcdparanoia0:amd64				install
-libcdparanoia0:i386				install
-libcdr-0.1-1:amd64				install
-libcdt5:amd64					install
-libcgi-fast-perl				install
-libcgi-pm-perl					install
-libcgraph6:amd64				install
-libcheese-gtk25:amd64				install
-libcheese8:amd64				install
-libchm1						install
-libcholmod3:amd64				install
-libchromaprint1:amd64				install
-libcinnamon-desktop4:amd64			install
-libclang-14-dev					install
-libclang-common-14-dev				install
-libclang-cpp11					install
-libclang-cpp12					install
-libclang-cpp13					install
-libclang-cpp14					install
-libclang-dev					install
-libclang1-14					install
-libclass-accessor-perl				install
-libclass-c3-perl				install
-libclass-c3-xs-perl				install
-libclass-data-inheritable-perl			install
-libclass-inspector-perl				install
-libclass-method-modifiers-perl			install
-libclass-singleton-perl				install
-libclass-xsaccessor-perl			install
-libcliquer-dev:amd64				install
-libcliquer1					install
-libclone-perl					install
-libclucene-contribs1v5:amd64			install
-libclucene-core1v5:amd64			install
-libclutter-1.0-0:amd64				install
-libclutter-1.0-common				install
-libclutter-gst-3.0-0:amd64			install
-libclutter-gtk-1.0-0:amd64			install
-libcoarrays-dev:amd64				deinstall
-libcodec2-1.0:amd64				install
-libcogl-common					install
-libcogl-pango20:amd64				install
-libcogl-path20:amd64				install
-libcogl20:amd64					install
-libcolamd2:amd64				install
-libcollection4:amd64				install
-libcolord-gtk1:amd64				install
-libcolord2:amd64				install
-libcolorhug2:amd64				install
-libcolumbus1-common				install
-libcolumbus1v5:amd64				install
-libcom-err2:amd64				install
-libcom-err2:i386				install
-libcommon-sense-perl:amd64			install
-libcommons-cli-java				install
-libcommons-exec-java				install
-libcommons-io-java				install
-libcommons-lang-java				install
-libcommons-lang3-java				install
-libcommons-logging-java				install
-libcommons-parent-java				install
-libcompizconfig0:amd64				install
-libconfig-dev:amd64				install
-libconfig-doc					install
-libconfig-tiny-perl				install
-libconfig9:amd64				install
-libconfuse-common				install
-libconfuse2:amd64				install
-libconst-fast-perl				install
-libcpanel-json-xs-perl:amd64			install
-libcrack2:amd64					install
-libcrypt-dev:amd64				install
-libcrypt1:amd64					install
-libcrypt1:i386					install
-libcryptsetup12:amd64				install
-libctf-nobfd0:amd64				install
-libctf0:amd64					install
-libcue2:amd64					install
-libcups2:amd64					install
-libcups2:i386					install
-libcupsfilters1:amd64				install
-libcupsimage2:amd64				install
-libcurl3-gnutls:amd64				install
-libcurl3-gnutls:i386				install
-libcurl4:amd64					install
-libcurl4:i386					install
-libcurl4-openssl-dev:amd64			install
-libcxsparse3:amd64				install
-libdaemon0:amd64				install
-libdata-compare-perl				install
-libdata-dpath-perl				install
-libdata-dump-perl				install
-libdata-messagepack-perl			install
-libdata-optlist-perl				install
-libdata-uniqid-perl				install
-libdata-validate-domain-perl			install
-libdata-validate-ip-perl			install
-libdata-validate-uri-perl			install
-libdate-simple-perl				install
-libdatetime-calendar-julian-perl		install
-libdatetime-format-builder-perl			install
-libdatetime-format-iso8601-perl			install
-libdatetime-format-strptime-perl		install
-libdatetime-locale-perl				install
-libdatetime-perl:amd64				install
-libdatetime-timezone-perl			install
-libdatrie-dev:amd64				install
-libdatrie1:amd64				install
-libdatrie1:i386					install
-libdav1d5:amd64					install
-libdazzle-1.0-0:amd64				install
-libdazzle-common				install
-libdb-dev:amd64					install
-libdb5.3:amd64					install
-libdb5.3:i386					install
-libdb5.3-dev					install
-libdbd-sqlite3-perl:amd64			install
-libdbi-perl:amd64				install
-libdbus-1-3:amd64				install
-libdbus-1-3:i386				install
-libdbus-1-dev:amd64				install
-libdbus-glib-1-2:amd64				install
-libdbusmenu-glib4:amd64				install
-libdbusmenu-gtk3-4:amd64			install
-libdbusmenu-qt5-2:amd64				install
-libdc1394-25:amd64				install
-libdca0:amd64					install
-libdconf1:amd64					install
-libde265-0:amd64				install
-libdebconfclient0:amd64				install
-libdebhelper-perl				install
-libdebuginfod-common				install
-libdebuginfod1:amd64				install
-libdecor-0-0:amd64				install
-libdecor-0-0:i386				install
-libdecor-0-dev:amd64				install
-libdecor-0-plugin-1-cairo:amd64			install
-libdecor-0-plugin-1-cairo:i386			install
-libdecoration0:amd64				install
-libdee-1.0-4:amd64				install
-libdeflate-dev:amd64				install
-libdeflate0:amd64				install
-libdeflate0:i386				install
-libdevel-callchecker-perl			install
-libdevel-caller-perl				install
-libdevel-globaldestruction-perl			install
-libdevel-lexalias-perl				install
-libdevel-size-perl				install
-libdevel-stacktrace-perl			install
-libdevmapper1.02.1:amd64			install
-libdhash1:amd64					install
-libdigest-bubblebabble-perl			install
-libdigest-hmac-perl				install
-libdist-checkconflicts-perl			install
-libdjvulibre-text				install
-libdjvulibre21:amd64				install
-libdmapsharing-3.0-2:amd64			install
-libdmtx0b:amd64					install
-libdmx-dev:amd64				install
-libdmx1:amd64					install
-libdns-export1110				install
-libdotconf0:amd64				install
-libdouble-conversion3:amd64			install
-libdpkg-perl					install
-libdrm-amdgpu1:amd64				install
-libdrm-amdgpu1:i386				install
-libdrm-common					install
-libdrm-dev:amd64				install
-libdrm-intel1:amd64				install
-libdrm-nouveau2:amd64				install
-libdrm-nouveau2:i386				install
-libdrm-radeon1:amd64				install
-libdrm-radeon1:i386				install
-libdrm2:amd64					install
-libdrm2:i386					install
-libdsdp-5.8gf					install
-libdv4:amd64					install
-libdv4:i386					install
-libdvbpsi10:amd64				install
-libdvdnav4:amd64				install
-libdvdread8:amd64				install
-libdw1:amd64					install
-libdw1:i386					install
-libdxflib3:amd64				install
-libdynaloader-functions-perl			install
-libe-book-0.1-1:amd64				install
-libebackend-1.2-10:amd64			install
-libebml5:amd64					install
-libebook-1.2-20:amd64				install
-libebook-contacts-1.2-3:amd64			install
-libec-dev:amd64					install
-libec8:amd64					install
-libecal-2.0-1:amd64				install
-libeccodes-data					install
-libeccodes0:amd64				install
-libeckit0d:amd64				install
-libecl-dev:amd64				install
-libecl21.2:amd64				install
-libecm-dev					install
-libecm1:amd64					install
-libecm1-dev:amd64				install
-libecm1-dev-common				install
-libedata-book-1.2-26:amd64			install
-libedata-cal-2.0-1:amd64			install
-libedataserver-1.2-26:amd64			install
-libedataserverui-1.2-3:amd64			install
-libedit2:amd64					install
-libedit2:i386					install
-libefiboot1:amd64				install
-libefivar1:amd64				install
-libegl-dev:amd64				install
-libegl-mesa0:amd64				install
-libegl1:amd64					install
-libegl1-mesa:amd64				install
-libegl1-mesa-dev:amd64				install
-libelf1:amd64					install
-libelf1:i386					install
-libemail-address-xs-perl			install
-libemail-date-format-perl			install
-libemail-valid-perl				install
-libemf1:amd64					install
-libenca0:amd64					install
-libenchant-2-2:amd64				install
-libencode-eucjpms-perl				install
-libencode-hanextra-perl				install
-libencode-jis2k-perl				install
-libencode-locale-perl				install
-libencode-perl:amd64				install
-libeot0:amd64					install
-libepoxy-dev:amd64				install
-libepoxy0:amd64					install
-libepub0					install
-libepubgen-0.1-1:amd64				install
-liberror-perl					install
-libespeak-ng1:amd64				install
-libestr0:amd64					install
-libetonyek-0.1-1:amd64				install
-libev-dev:amd64					install
-libev-perl					install
-libev4:amd64					install
-libeval-closure-perl				install
-libevdev-dev:amd64				install
-libevdev2:amd64					install
-libevdocument3-4:amd64				install
-libevent-2.1-7:amd64				install
-libevent-core-2.1-7:amd64			install
-libevent-dev					install
-libevent-extra-2.1-7:amd64			install
-libevent-openssl-2.1-7:amd64			install
-libevent-pthreads-2.1-7:amd64			install
-libevview3-3:amd64				install
-libexception-class-perl				install
-libexec-maven-plugin-java			install
-libexempi8:amd64				install
-libexif-dev:amd64				install
-libexif-doc					install
-libexif12:amd64					install
-libexif12:i386					install
-libexiv2-27:amd64				install
-libexo-2-0:amd64				install
-libexo-common					install
-libexpat1:amd64					install
-libexpat1:i386					install
-libexpat1-dev:amd64				install
-libexporter-tiny-perl				install
-libext2fs2:amd64				install
-libexttextcat-2.0-0:amd64			install
-libexttextcat-data				install
-libextutils-depends-perl			install
-libfaad2:amd64					install
-libfabric1:amd64				install
-libfakekey0:amd64				install
-libfakeroot:amd64				install
-libfam0:amd64					install
-libfastjson4:amd64				install
-libfaudio0:amd64				install
-libfaudio0:i386					install
-libfcgi-bin					install
-libfcgi-perl:amd64				install
-libfcgi0ldbl:amd64				install
-libfcitx-config4:amd64				install
-libfcitx-gclient1:amd64				install
-libfcitx-utils0:amd64				install
-libfdisk1:amd64					install
-libffi-dev:amd64				install
-libffi6:amd64					install
-libffi7:amd64					install
-libffi8:amd64					install
-libffi8:i386					install
-libffmpegthumbnailer4v5:amd64			install
-libfftw3-double3:amd64				install
-libfftw3-single3:amd64				install
-libfido2-1:amd64				install
-libfile-basedir-perl				install
-libfile-desktopentry-perl			install
-libfile-fcntllock-perl				install
-libfile-find-rule-perl				install
-libfile-homedir-perl				install
-libfile-listing-perl				install
-libfile-mimeinfo-perl				install
-libfile-sharedir-perl				install
-libfile-slurper-perl				install
-libfile-stripnondeterminism-perl		install
-libfile-which-perl				install
-libfl-dev:amd64					install
-libfl2:amd64					install
-libflac8:amd64					install
-libflac8:i386					install
-libflint-2.8.4:amd64				install
-libflint-arb-dev:amd64				install
-libflint-arb2:amd64				install
-libflint-dev					install
-libflite1:amd64					install
-libfltk-cairo1.3:amd64				install
-libfltk-forms1.3:amd64				install
-libfltk-gl1.3:amd64				install
-libfltk-images1.3:amd64				install
-libfltk1.3:amd64				install
-libfltk1.3-dev:amd64				install
-libfluidsynth3:amd64				install
-libfmt8:amd64					install
-libfont-afm-perl				install
-libfont-ttf-perl				install
-libfontbox-java					install
-libfontconfig-dev:amd64				install
-libfontconfig1:amd64				install
-libfontconfig1:i386				install
-libfontconfig1-dev:amd64			install
-libfontembed1:amd64				install
-libfontenc-dev:amd64				install
-libfontenc1:amd64				install
-libfontforge4:amd64				install
-libfplll-dev:amd64				install
-libfplll7:amd64					install
-libfplll7-data					install
-libfprint-2-2:amd64				install
-libframe6:amd64					install
-libfreeaptx0:amd64				install
-libfreehand-0.1-1				install
-libfreeimage3:amd64				install
-libfreerdp-client2-2:amd64			install
-libfreerdp-server2-2:amd64			install
-libfreerdp2-2:amd64				install
-libfreetype-dev:amd64				install
-libfreetype6:amd64				install
-libfreetype6:i386				install
-libfreetype6-dev:amd64				install
-libfribidi-bin					install
-libfribidi-dev:amd64				install
-libfribidi0:amd64				install
-libfribidi0:i386				install
-libfs-dev:amd64					install
-libfs6:amd64					install
-libfsplib0					install
-libfsverity0:amd64				install
-libfuse2:amd64					install
-libfuse3-3:amd64				install
-libfwupd2:amd64					install
-libfwupdplugin5:amd64				install
-libgail-3-0:amd64				install
-libgail-common:amd64				install
-libgail-common:i386				install
-libgail18:amd64					install
-libgail18:i386					install
-libgamemode0:amd64				install
-libgamemode0:i386				install
-libgamemodeauto0:amd64				install
-libgamemodeauto0:i386				install
-libgap-dev:amd64				install
-libgap7:amd64					install
-libgbm-dev:amd64				install
-libgbm1:amd64					install
-libgbm1:i386					install
-libgc-dev:amd64					install
-libgc1:amd64					install
-libgcab-1.0-0:amd64				install
-libgcc-10-dev:amd64				install
-libgcc-11-dev:amd64				install
-libgcc-12-dev:amd64				install
-libgcc-9-dev:amd64				install
-libgcc-s1:amd64					install
-libgcc-s1:i386					install
-libgck-1-0:amd64				install
-libgconf-2-4:amd64				install
-libgcr-base-3-1:amd64				install
-libgcr-ui-3-1:amd64				install
-libgcroots0:amd64				install
-libgcrypt20:amd64				install
-libgcrypt20:i386				install
-libgcrypt20-dev					install
-libgd-dev:amd64					install
-libgd3:amd64					install
-libgd3:i386					install
-libgdata-common					install
-libgdata22:amd64				install
-libgdbm-compat4:amd64				install
-libgdbm-compat4:i386				install
-libgdbm-dev:amd64				install
-libgdbm6:amd64					install
-libgdbm6:i386					install
-libgdiplus					install
-libgdk-pixbuf-2.0-0:amd64			install
-libgdk-pixbuf-2.0-0:i386			install
-libgdk-pixbuf-2.0-dev:amd64			install
-libgdk-pixbuf-xlib-2.0-0:amd64			install
-libgdk-pixbuf-xlib-2.0-dev:amd64		install
-libgdk-pixbuf2.0-0:amd64			install
-libgdk-pixbuf2.0-bin				install
-libgdk-pixbuf2.0-common				install
-libgdk-pixbuf2.0-dev:amd64			install
-libgdm1						install
-libgee-0.8-2:amd64				install
-libgeis1:amd64					install
-libgeoclue-2-0:amd64				install
-libgeocode-glib0:amd64				install
-libgeonames-common				install
-libgeonames0:amd64				install
-libgeos++-dev					install
-libgeos-c1v5:amd64				install
-libgeos-dev					install
-libgeos-doc					install
-libgeos3.10.2:amd64				install
-libgeotiff5:amd64				install
-libgeronimo-annotation-1.3-spec-java		install
-libgeronimo-interceptor-3.0-spec-java		install
-libgexiv2-2:amd64				install
-libgf2x-dev					install
-libgf2x3:amd64					install
-libgfortran-11-dev:amd64			install
-libgfortran5:amd64				install
-libgiac-dev					install
-libgiac0:amd64					install
-libgif-dev					install
-libgif7:amd64					install
-libgirara-dev:amd64				install
-libgirara-gtk3-3:amd64				install
-libgirepository-1.0-1:amd64			install
-libgit2-1.1:amd64				install
-libgivaro-dev					install
-libgivaro9:amd64				install
-libgjs0g:amd64					install
-libgl-dev:amd64					install
-libgl1:amd64					install
-libgl1:i386					install
-libgl1-amber-dri:amd64				install
-libgl1-mesa-dev:amd64				install
-libgl1-mesa-dri:amd64				install
-libgl1-mesa-dri:i386				install
-libgl1-mesa-glx:amd64				install
-libgl2ps1.4					install
-libglapi-mesa:amd64				install
-libglapi-mesa:i386				install
-libgles-dev:amd64				install
-libgles1:amd64					install
-libgles2:amd64					install
-libglew2.2:amd64				install
-libglewmx1.13:amd64				install
-libglib-object-introspection-perl		install
-libglib-perl:amd64				install
-libglib2.0-0:amd64				install
-libglib2.0-0:i386				install
-libglib2.0-bin					install
-libglib2.0-cil					install
-libglib2.0-cil-dev				install
-libglib2.0-data					install
-libglib2.0-dev:amd64				install
-libglib2.0-dev-bin				install
-libglib2.0-doc					install
-libglibmm-2.4-1v5:amd64				install
-libglpk-dev:amd64				install
-libglpk40:amd64					install
-libglu1-mesa:amd64				install
-libglu1-mesa:i386				install
-libglu1-mesa-dev:amd64				install
-libglvnd-core-dev:amd64				install
-libglvnd-dev:amd64				install
-libglvnd0:amd64					install
-libglvnd0:i386					install
-libglx-dev:amd64				install
-libglx-mesa0:amd64				install
-libglx-mesa0:i386				install
-libglx0:amd64					install
-libglx0:i386					install
-libgme0:amd64					install
-libgmime-3.0-0:amd64				install
-libgmp-dev:amd64				install
-libgmp10:amd64					install
-libgmp10:i386					install
-libgmpxx4ldbl:amd64				install
-libgnome-autoar-0-0:amd64			install
-libgnome-bg-4-1:amd64				install
-libgnome-bluetooth-3.0-13:amd64			install
-libgnome-bluetooth13:amd64			install
-libgnome-desktop-3-19:amd64			install
-libgnome-desktop-4-1:amd64			install
-libgnome-games-support-1-3:amd64		install
-libgnome-games-support-common			install
-libgnome-menu-3-0:amd64				install
-libgnome-todo					install
-libgnome2-common				deinstall
-libgnomekbd-common				install
-libgnomekbd8:amd64				install
-libgnutls-dane0:amd64				install
-libgnutls-openssl27:amd64			install
-libgnutls28-dev:amd64				install
-libgnutls30:amd64				install
-libgnutls30:i386				install
-libgnutlsxx28:amd64				install
-libgoa-1.0-0b:amd64				install
-libgoa-1.0-common				install
-libgoa-backend-1.0-1:amd64			install
-libgom-1.0-0:amd64				install
-libgomp1:amd64					install
-libgpg-error-dev				install
-libgpg-error-l10n				install
-libgpg-error0:amd64				install
-libgpg-error0:i386				install
-libgpgme11:amd64				install
-libgpgmepp6:amd64				install
-libgphoto2-6:amd64				install
-libgphoto2-6:i386				install
-libgphoto2-l10n					install
-libgphoto2-port12:amd64				install
-libgphoto2-port12:i386				install
-libgpm2:amd64					install
-libgpm2:i386					install
-libgpod-common					install
-libgpod4:amd64					install
-libgrail6:amd64					install
-libgraph-easy-as-svg-perl			install
-libgraph-easy-perl				install
-libgraphblas-dev:amd64				install
-libgraphblas6:amd64				install
-libgraphene-1.0-0:amd64				install
-libgraphicsmagick++-q16-12			install
-libgraphicsmagick-q16-3				install
-libgraphite2-3:amd64				install
-libgraphite2-3:i386				install
-libgraphite2-dev:amd64				install
-libgrilo-0.3-0:amd64				install
-libgs9:amd64					install
-libgs9-common					install
-libgsettings-qt1:amd64				install
-libgsf-1-114:amd64				install
-libgsf-1-common					install
-libgsl-dev					install
-libgsl27:amd64					install
-libgslcblas0:amd64				install
-libgsm1:amd64					install
-libgsm1:i386					install
-libgsoap-2.8.117:amd64				install
-libgsound0:amd64				install
-libgspell-1-2:amd64				install
-libgspell-1-common				install
-libgssapi-krb5-2:amd64				install
-libgssapi-krb5-2:i386				install
-libgssapi3-heimdal:amd64			install
-libgssapi3-heimdal:i386				install
-libgssdp-1.2-0:amd64				install
-libgssrpc4:amd64				install
-libgstreamer-gl1.0-0:amd64			install
-libgstreamer-plugins-bad1.0-0:amd64		install
-libgstreamer-plugins-base1.0-0:amd64		install
-libgstreamer-plugins-base1.0-0:i386		install
-libgstreamer-plugins-good1.0-0:amd64		install
-libgstreamer-plugins-good1.0-0:i386		install
-libgstreamer1.0-0:amd64				install
-libgstreamer1.0-0:i386				install
-libgtk-3-0:amd64				install
-libgtk-3-bin					install
-libgtk-3-common					install
-libgtk-3-dev:amd64				install
-libgtk-4-1:amd64				install
-libgtk-4-bin					install
-libgtk-4-common					install
-libgtk2.0-0:amd64				install
-libgtk2.0-0:i386				install
-libgtk2.0-bin					install
-libgtk2.0-cil					install
-libgtk2.0-cil-dev				install
-libgtk2.0-common				install
-libgtk2.0-dev:amd64				install
-libgtk2.0-doc					install
-libgtk3-nocsd0:amd64				install
-libgtk3-perl					install
-libgtkmm-3.0-1v5:amd64				install
-libgtksourceview-4-0:amd64			install
-libgtksourceview-4-common			install
-libgtop-2.0-11:amd64				install
-libgtop2-common					install
-libgts-0.7-5:amd64				install
-libgts-bin					install
-libguard-perl					install
-libguava-java					install
-libgucharmap-2-90-7:amd64			install
-libgudev-1.0-0:amd64				install
-libgudev-1.0-0:i386				install
-libguice-java					install
-libgumbo1:amd64					install
-libgupnp-1.2-1:amd64				install
-libgupnp-av-1.0-3				install
-libgupnp-dlna-2.0-4				install
-libgupnp-igd-1.0-4:amd64			install
-libgusb2:amd64					install
-libgvc6						install
-libgvpr2:amd64					install
-libgweather-3-16:amd64				install
-libgweather-common				install
-libgxps2:amd64					install
-libhandy-1-0:amd64				install
-libharfbuzz-bin					install
-libharfbuzz-dev:amd64				install
-libharfbuzz-gobject0:amd64			install
-libharfbuzz-icu0:amd64				install
-libharfbuzz0b:amd64				install
-libharfbuzz0b:i386				install
-libhawtjni-runtime-java				install
-libhcrypto4-heimdal:amd64			install
-libhcrypto4-heimdal:i386			install
-libhdf5-103-1:amd64				install
-libhdf5-cpp-103-1:amd64				install
-libhdf5-dev					install
-libhdf5-fortran-102:amd64			install
-libhdf5-hl-100:amd64				install
-libhdf5-hl-cpp-100:amd64			install
-libhdf5-hl-fortran-100:amd64			install
-libheif1:amd64					install
-libheimbase1-heimdal:amd64			install
-libheimbase1-heimdal:i386			install
-libheimntlm0-heimdal:amd64			install
-libheimntlm0-heimdal:i386			install
-libhfstospell11:amd64				install
-libhogweed6:amd64				install
-libhogweed6:i386				install
-libhomfly-dev:amd64				install
-libhomfly0:amd64				install
-libhpmud0:amd64					install
-libhtml-form-perl				install
-libhtml-format-perl				install
-libhtml-html5-entities-perl			install
-libhtml-parser-perl:amd64			install
-libhtml-tagset-perl				install
-libhtml-tree-perl				install
-libhttp-cookies-perl				install
-libhttp-daemon-perl				install
-libhttp-date-perl				install
-libhttp-message-perl				install
-libhttp-negotiate-perl				install
-libhttp-parser2.9:amd64				install
-libhunspell-1.7-0:amd64				install
-libhwloc-plugins:amd64				install
-libhwloc15:amd64				install
-libhx509-5-heimdal:amd64			install
-libhx509-5-heimdal:i386				install
-libhyphen0:amd64				install
-libibus-1.0-5:amd64				install
-libibus-1.0-dev:amd64				install
-libibverbs1:amd64				install
-libical-dev:amd64				install
-libical3:amd64					install
-libice-dev:amd64				install
-libice6:amd64					install
-libicu-dev:amd64				install
-libicu66:amd64					install
-libicu70:amd64					install
-libicu70:i386					install
-libid3-3.8.3v5:amd64				install
-libid3tag0:amd64				install
-libid3tag0-dev					install
-libidn12:amd64					install
-libidn2-0:amd64					install
-libidn2-0:i386					install
-libidn2-dev:amd64				install
-libido3-0.1-0:amd64				install
-libiec61883-0:amd64				install
-libiec61883-0:i386				install
-libieee1284-3:amd64				install
-libieee1284-3:i386				install
-libigc1:amd64					install
-libigdfcl1:amd64				install
-libigdgmm12:amd64				install
-libijs-0.35:amd64				install
-libilmbase25:amd64				install
-libimage-base-bundle-perl			install
-libimage-exiftool-perl				install
-libimage-info-perl				install
-libimage-magick-perl				install
-libimage-magick-q16-perl			install
-libimagequant0:amd64				install
-libiml-dev					install
-libiml0:amd64					install
-libimlib2:amd64					install
-libimlib2-dev					install
-libimobiledevice6:amd64				install
-libimport-into-perl				install
-libinchi1					install
-libindicator3-7					install
-libini-config5:amd64				install
-libinih1:amd64					install
-libinput-bin					install
-libinput10:amd64				install
-libinstpatch-1.0-2:amd64			install
-libio-html-perl					install
-libio-interactive-perl				install
-libio-prompt-tiny-perl				install
-libio-socket-ssl-perl				install
-libio-string-perl				install
-libio-stringy-perl				install
-libip4tc2:amd64					install
-libip6tc2:amd64					install
-libipa-hbac0					install
-libipc-run3-perl				install
-libipc-shareable-perl				install
-libipc-system-simple-perl			install
-libipt2						install
-libisc-export1105:amd64				install
-libisl23:amd64					install
-libiso9660-11:amd64				install
-libiterator-perl				install
-libiterator-util-perl				install
-libitm1:amd64					install
-libiw-dev:amd64					install
-libiw30:amd64					install
-libixml10:amd64					install
-libjack-jackd2-0:amd64				install
-libjack-jackd2-0:i386				install
-libjansi-java					install
-libjansi-native-java				install
-libjansson-dev:amd64				install
-libjansson4:amd64				install
-libjavascriptcoregtk-4.0-18:amd64		install
-libjbig-dev:amd64				install
-libjbig0:amd64					install
-libjbig0:i386					install
-libjbig2dec0:amd64				install
-libjcat1:amd64					install
-libjmol-java					install
-libjni-inchi-java				install
-libjni-inchi-jni				install
-libjpeg-dev:amd64				install
-libjpeg-progs					install
-libjpeg-turbo8:amd64				install
-libjpeg-turbo8:i386				install
-libjpeg-turbo8-dev:amd64			install
-libjpeg8:amd64					install
-libjpeg8:i386					install
-libjpeg8-dev:amd64				install
-libjpeg9:amd64					install
-libjq1:amd64					install
-libjs-backbone					install
-libjs-bootstrap					install
-libjs-bootstrap-tour				install
-libjs-bootstrap4				install
-libjs-codemirror				install
-libjs-es6-promise				install
-libjs-jed					install
-libjs-jquery					install
-libjs-jquery-hotkeys				install
-libjs-jquery-isonscreen				install
-libjs-jquery-metadata				install
-libjs-jquery-tablesorter			install
-libjs-jquery-throttle-debounce			install
-libjs-jquery-typeahead				install
-libjs-jquery-ui					install
-libjs-lunr					install
-libjs-marked					install
-libjs-mathjax					install
-libjs-modernizr					install
-libjs-moment					install
-libjs-popper.js					install
-libjs-requirejs					install
-libjs-requirejs-text				install
-libjs-sizzle					install
-libjs-sphinxdoc					install
-libjs-text-encoding				install
-libjs-three					install
-libjs-underscore				install
-libjs-xmlextras					install
-libjs-xterm					install
-libjson-c-dev:amd64				install
-libjson-c5:amd64				install
-libjson-glib-1.0-0:amd64			install
-libjson-glib-1.0-common				install
-libjson-maybexs-perl				install
-libjson-perl					install
-libjson-xs-perl					install
-libjsoncpp-dev:amd64				install
-libjsoncpp25:amd64				install
-libjsonparser1.1:amd64				install
-libjsr305-java					install
-libjxr-tools					install
-libjxr0:amd64					install
-libk5crypto3:amd64				install
-libk5crypto3:i386				install
-libkaccounts2:amd64				install
-libkadm5clnt-mit12:amd64			install
-libkadm5srv-mit12:amd64				install
-libkate1:amd64					install
-libkdb5-10:amd64				install
-libkeyutils1:amd64				install
-libkeyutils1:i386				install
-libkf5activities5:amd64				install
-libkf5archive5:amd64				install
-libkf5auth-data					install
-libkf5auth5:amd64				install
-libkf5authcore5:amd64				install
-libkf5bluezqt-data				install
-libkf5bluezqt6:amd64				install
-libkf5bookmarks-data				install
-libkf5bookmarks5:amd64				install
-libkf5calendarevents5:amd64			install
-libkf5codecs-data				install
-libkf5codecs5:amd64				install
-libkf5completion-data				install
-libkf5completion5:amd64				install
-libkf5config-bin				install
-libkf5config-data				install
-libkf5configcore5:amd64				install
-libkf5configgui5:amd64				install
-libkf5configwidgets-data			install
-libkf5configwidgets5:amd64			install
-libkf5contacts-data				install
-libkf5contacts5:amd64				install
-libkf5coreaddons-data				install
-libkf5coreaddons5:amd64				install
-libkf5crash5:amd64				install
-libkf5dbusaddons-bin				install
-libkf5dbusaddons-data				install
-libkf5dbusaddons5:amd64				install
-libkf5declarative-data				install
-libkf5declarative5:amd64			install
-libkf5doctools5:amd64				install
-libkf5globalaccel-bin				install
-libkf5globalaccel-data				install
-libkf5globalaccel5:amd64			install
-libkf5globalaccelprivate5:amd64			install
-libkf5guiaddons-bin				install
-libkf5guiaddons-data				install
-libkf5guiaddons5:amd64				install
-libkf5i18n-data					install
-libkf5i18n5:amd64				install
-libkf5i18nlocaledata5:amd64			install
-libkf5iconthemes-bin				install
-libkf5iconthemes-data				install
-libkf5iconthemes5:amd64				install
-libkf5idletime5:amd64				install
-libkf5itemviews-data				install
-libkf5itemviews5:amd64				install
-libkf5jobwidgets-data				install
-libkf5jobwidgets5:amd64				install
-libkf5js5:amd64					install
-libkf5jsapi5:amd64				install
-libkf5kcmutils-data				install
-libkf5kcmutils5:amd64				install
-libkf5kexiv2-15.0.0:amd64			install
-libkf5khtml-bin					install
-libkf5khtml-data				install
-libkf5khtml5:amd64				install
-libkf5kiocore5:amd64				install
-libkf5kiofilewidgets5:amd64			install
-libkf5kiogui5:amd64				install
-libkf5kiontlm5:amd64				install
-libkf5kiowidgets5:amd64				install
-libkf5kirigami2-5				install
-libkf5notifications-data			install
-libkf5notifications5:amd64			install
-libkf5package-data				install
-libkf5package5:amd64				install
-libkf5parts-data				install
-libkf5parts-plugins				install
-libkf5parts5:amd64				install
-libkf5people-data				install
-libkf5people5:amd64				install
-libkf5peoplebackend5:amd64			install
-libkf5peoplewidgets5:amd64			install
-libkf5plasma5:amd64				install
-libkf5plasmaquick5:amd64			install
-libkf5prison5:amd64				install
-libkf5pty-data					install
-libkf5pty5:amd64				install
-libkf5pulseaudioqt3:amd64			install
-libkf5purpose-bin:amd64				install
-libkf5purpose5:amd64				install
-libkf5quickaddons5:amd64			install
-libkf5service-bin				install
-libkf5service-data				install
-libkf5service5:amd64				install
-libkf5solid5:amd64				install
-libkf5solid5-data				install
-libkf5sonnet5-data				install
-libkf5sonnetcore5:amd64				install
-libkf5sonnetui5:amd64				install
-libkf5su-bin					install
-libkf5su-data					install
-libkf5su5:amd64					install
-libkf5textwidgets-data				install
-libkf5textwidgets5:amd64			install
-libkf5threadweaver5:amd64			install
-libkf5wallet-bin				install
-libkf5wallet-data				install
-libkf5wallet5:amd64				install
-libkf5waylandclient5:amd64			install
-libkf5widgetsaddons-data			install
-libkf5widgetsaddons5:amd64			install
-libkf5windowsystem-data				install
-libkf5windowsystem5:amd64			install
-libkf5xmlgui-bin:amd64				install
-libkf5xmlgui-data				install
-libkf5xmlgui5:amd64				install
-libklibc:amd64					install
-libklu1:amd64					install
-libkmod2:amd64					install
-libkpathsea6:amd64				install
-libkrb5-26-heimdal:amd64			install
-libkrb5-26-heimdal:i386				install
-libkrb5-3:amd64					install
-libkrb5-3:i386					install
-libkrb5-dev:amd64				install
-libkrb5support0:amd64				install
-libkrb5support0:i386				install
-libksba8:amd64					install
-libkwalletbackend5-5:amd64			install
-libkworkspace5-5				install
-liblab-gamut1:amd64				install
-liblangtag-common				install
-liblangtag1:amd64				install
-liblapack-dev:amd64				install
-liblapack3:amd64				install
-liblbfgsb0:amd64				install
-liblcms2-2:amd64				install
-liblcms2-2:i386					install
-liblcms2-utils					install
-libldacbt-enc2:amd64				install
-libldap-2.4-2:amd64				install
-libldap-2.4-2:i386				install
-libldap-2.5-0:amd64				install
-libldap-2.5-0:i386				install
-libldap-common					install
-libldb2:amd64					install
-libldl2:amd64					install
-liblensfun-data-v1				install
-liblensfun1:amd64				install
-liblept5:amd64					install
-libleptonica-dev				install
-liblfunction-dev:amd64				install
-liblfunction1:amd64				install
-liblightdm-gobject-1-0:amd64			install
-liblilv-0-0:amd64				install
-liblinbox-1.7.0-0:amd64				install
-liblinbox-dev					install
-liblingua-translit-perl				install
-liblirc-client0:amd64				install
-liblist-allutils-perl				install
-liblist-compare-perl				install
-liblist-moreutils-perl				install
-liblist-moreutils-xs-perl			install
-liblist-someutils-perl				install
-liblist-someutils-xs-perl			install
-liblist-utilsby-perl				install
-libllvm11:amd64					install
-libllvm12:amd64					install
-libllvm13:amd64					install
-libllvm14:amd64					install
-libllvm15:amd64					install
-libllvm15:i386					install
-libllvmspirvlib12:amd64				install
-liblmdb0:amd64					install
-liblocale-gettext-perl				install
-liblog-dispatch-perl				install
-liblog-log4perl-perl				install
-liblog4j1.2-java				install
-liblouis-data					install
-liblouis20:amd64				install
-liblouisutdml-bin				install
-liblouisutdml-data				install
-liblouisutdml9:amd64				install
-liblqr-1-0:amd64				install
-liblrcalc-dev					install
-liblrcalc1:amd64				install
-liblsan0:amd64					install
-libltc11:amd64					install
-libltdl-dev:amd64				install
-libltdl7:amd64					install
-libltdl7:i386					install
-liblua5.1-0:amd64				install
-liblua5.2-0:amd64				install
-liblua5.3-0:amd64				install
-liblua5.4-0:amd64				install
-libluajit-5.1-2:amd64				install
-libluajit-5.1-common				install
-libluajit-5.1-dev:amd64				install
-liblwp-mediatypes-perl				install
-liblwp-protocol-https-perl			install
-liblz1:amd64					install
-liblz4-1:amd64					install
-liblz4-1:i386					install
-liblz4-tool					install
-liblzf1:amd64					install
-liblzma-dev:amd64				install
-liblzma5:amd64					install
-liblzma5:i386					install
-liblzo2-2:amd64					install
-libm17n-0:amd64					install
-libm4ri-0.0.20200125:amd64			install
-libm4ri-dev					install
-libm4rie-0.0.20200125:amd64			install
-libm4rie-dev:amd64				install
-libmad0:amd64					install
-libmagic-mgc					install
-libmagic1:amd64					install
-libmagick++-6.q16-8:amd64			install
-libmagickcore-6.q16-6:amd64			install
-libmagickcore-6.q16-6-extra:amd64		install
-libmagickwand-6.q16-6:amd64			install
-libmagics++-data				install
-libmagplus3v5:amd64				install
-libmail-sendmail-perl				install
-libmailtools-perl				install
-libmalcontent-0-0:amd64				install
-libmanette-0.2-0:amd64				install
-libmarkdown2:amd64				install
-libmath-base85-perl				install
-libmatio11:amd64				install
-libmatroska7:amd64				install
-libmaven-compiler-plugin-java			install
-libmaven-parent-java				install
-libmaven-resolver-java				install
-libmaven-shared-incremental-java		install
-libmaven-shared-utils-java			install
-libmaven3-core-java				install
-libmaxminddb0:amd64				install
-libmbedcrypto7:amd64				install
-libmbedtls14:amd64				install
-libmbedx509-1:amd64				install
-libmbim-glib4:amd64				install
-libmbim-proxy					install
-libmd-dev:amd64					install
-libmd0:amd64					install
-libmd0:i386					install
-libmd4c0:amd64					install
-libmediaart-2.0-0:amd64				install
-libmediainfo0v5:amd64				install
-libmediawiki-api-perl				install
-libmessaging-menu0:amd64			install
-libmetacity3:amd64				install
-libmetis5:amd64					install
-libmfx1:amd64					install
-libmhash2:amd64					install
-libmikmod3:amd64				install
-libmime-charset-perl				install
-libmime-lite-perl				install
-libmime-types-perl				install
-libminiupnpc17:amd64				install
-libminizip1:amd64				install
-libmjpegutils-2.1-0:amd64			install
-libmm-glib0:amd64				install
-libmms0:amd64					install
-libmnl0:amd64					install
-libmodplug1:amd64				install
-libmodule-implementation-perl			install
-libmodule-runtime-perl				install
-libmongoose2:amd64				install
-libmono-2.0-1					install
-libmono-2.0-dev					install
-libmono-accessibility4.0-cil			install
-libmono-btls-interface4.0-cil			install
-libmono-cairo4.0-cil				install
-libmono-cecil-private-cil			install
-libmono-cil-dev					install
-libmono-codecontracts4.0-cil			install
-libmono-compilerservices-symbolwriter4.0-cil	install
-libmono-corlib4.5-cil				install
-libmono-corlib4.5-dll				install
-libmono-cscompmgd0.0-cil			install
-libmono-csharp4.0c-cil				install
-libmono-custommarshalers4.0-cil			install
-libmono-data-tds4.0-cil				install
-libmono-db2-1.0-cil				install
-libmono-debugger-soft4.0a-cil			install
-libmono-http4.0-cil				install
-libmono-i18n-cjk4.0-cil				install
-libmono-i18n-mideast4.0-cil			install
-libmono-i18n-other4.0-cil			install
-libmono-i18n-rare4.0-cil			install
-libmono-i18n-west4.0-cil			install
-libmono-i18n4.0-all				install
-libmono-i18n4.0-cil				install
-libmono-ldap4.0-cil				install
-libmono-management4.0-cil			install
-libmono-messaging-rabbitmq4.0-cil		install
-libmono-messaging4.0-cil			install
-libmono-microsoft-build-engine4.0-cil		install
-libmono-microsoft-build-framework4.0-cil	install
-libmono-microsoft-build-tasks-v4.0-4.0-cil	install
-libmono-microsoft-build-utilities-v4.0-4.0-cil	install
-libmono-microsoft-build4.0-cil			install
-libmono-microsoft-csharp4.0-cil			install
-libmono-microsoft-visualc10.0-cil		install
-libmono-microsoft-web-infrastructure1.0-cil	install
-libmono-oracle4.0-cil				install
-libmono-parallel4.0-cil				install
-libmono-peapi4.0a-cil				install
-libmono-posix4.0-cil				install
-libmono-profiler				install
-libmono-rabbitmq4.0-cil				install
-libmono-relaxng4.0-cil				install
-libmono-security4.0-cil				install
-libmono-sharpzip4.84-cil			install
-libmono-simd4.0-cil				install
-libmono-smdiagnostics0.0-cil			install
-libmono-sqlite4.0-cil				install
-libmono-system-componentmodel-composition4.0-cil	install
-libmono-system-componentmodel-dataannotations4.0-cil	install
-libmono-system-configuration-install4.0-cil	install
-libmono-system-configuration4.0-cil		install
-libmono-system-core4.0-cil			install
-libmono-system-data-datasetextensions4.0-cil	install
-libmono-system-data-entity4.0-cil		install
-libmono-system-data-linq4.0-cil			install
-libmono-system-data-services-client4.0-cil	install
-libmono-system-data-services4.0-cil		install
-libmono-system-data4.0-cil			install
-libmono-system-deployment4.0-cil		install
-libmono-system-design4.0-cil			install
-libmono-system-drawing-design4.0-cil		install
-libmono-system-drawing4.0-cil			install
-libmono-system-dynamic4.0-cil			install
-libmono-system-enterpriseservices4.0-cil	install
-libmono-system-identitymodel-selectors4.0-cil	install
-libmono-system-identitymodel4.0-cil		install
-libmono-system-io-compression-filesystem4.0-cil	install
-libmono-system-io-compression4.0-cil		install
-libmono-system-json-microsoft4.0-cil		install
-libmono-system-json4.0-cil			install
-libmono-system-ldap-protocols4.0-cil		install
-libmono-system-ldap4.0-cil			install
-libmono-system-management4.0-cil		install
-libmono-system-messaging4.0-cil			install
-libmono-system-net-http-formatting4.0-cil	install
-libmono-system-net-http-webrequest4.0-cil	install
-libmono-system-net-http4.0-cil			install
-libmono-system-net4.0-cil			install
-libmono-system-numerics-vectors4.0-cil		install
-libmono-system-numerics4.0-cil			install
-libmono-system-reactive-core2.2-cil		install
-libmono-system-reactive-debugger2.2-cil		install
-libmono-system-reactive-experimental2.2-cil	install
-libmono-system-reactive-interfaces2.2-cil	install
-libmono-system-reactive-linq2.2-cil		install
-libmono-system-reactive-observable-aliases0.0-cil	install
-libmono-system-reactive-platformservices2.2-cil	install
-libmono-system-reactive-providers2.2-cil	install
-libmono-system-reactive-runtime-remoting2.2-cil	install
-libmono-system-reactive-windows-forms2.2-cil	install
-libmono-system-reactive-windows-threading2.2-cil	install
-libmono-system-reflection-context4.0-cil	install
-libmono-system-runtime-caching4.0-cil		install
-libmono-system-runtime-durableinstancing4.0-cil	install
-libmono-system-runtime-serialization-formatters-soap4.0-cil	install
-libmono-system-runtime-serialization4.0-cil	install
-libmono-system-runtime4.0-cil			install
-libmono-system-security4.0-cil			install
-libmono-system-servicemodel-activation4.0-cil	install
-libmono-system-servicemodel-discovery4.0-cil	install
-libmono-system-servicemodel-internals0.0-cil	install
-libmono-system-servicemodel-routing4.0-cil	install
-libmono-system-servicemodel-web4.0-cil		install
-libmono-system-servicemodel4.0a-cil		install
-libmono-system-serviceprocess4.0-cil		install
-libmono-system-threading-tasks-dataflow4.0-cil	install
-libmono-system-transactions4.0-cil		install
-libmono-system-web-abstractions4.0-cil		install
-libmono-system-web-applicationservices4.0-cil	install
-libmono-system-web-dynamicdata4.0-cil		install
-libmono-system-web-extensions-design4.0-cil	install
-libmono-system-web-extensions4.0-cil		install
-libmono-system-web-http-selfhost4.0-cil		install
-libmono-system-web-http-webhost4.0-cil		install
-libmono-system-web-http4.0-cil			install
-libmono-system-web-mobile4.0-cil		install
-libmono-system-web-mvc3.0-cil			install
-libmono-system-web-razor2.0-cil			install
-libmono-system-web-regularexpressions4.0-cil	install
-libmono-system-web-routing4.0-cil		install
-libmono-system-web-services4.0-cil		install
-libmono-system-web-webpages-deployment2.0-cil	install
-libmono-system-web-webpages-razor2.0-cil	install
-libmono-system-web-webpages2.0-cil		install
-libmono-system-web4.0-cil			install
-libmono-system-windows-forms-datavisualization4.0a-cil	install
-libmono-system-windows-forms4.0-cil		install
-libmono-system-windows4.0-cil			install
-libmono-system-workflow-activities4.0-cil	install
-libmono-system-workflow-componentmodel4.0-cil	install
-libmono-system-workflow-runtime4.0-cil		install
-libmono-system-xaml4.0-cil			install
-libmono-system-xml-linq4.0-cil			install
-libmono-system-xml-serialization4.0-cil		install
-libmono-system-xml4.0-cil			install
-libmono-system4.0-cil				install
-libmono-tasklets4.0-cil				install
-libmono-webbrowser4.0-cil			install
-libmono-webmatrix-data4.0-cil			install
-libmono-windowsbase4.0-cil			install
-libmono-xbuild-tasks4.0-cil			install
-libmonoboehm-2.0-1				install
-libmonosgen-2.0-1				install
-libmonosgen-2.0-dev				install
-libmoo-perl					install
-libmoox-aliases-perl				install
-libmount-dev:amd64				install
-libmount1:amd64					install
-libmount1:i386					install
-libmouse-perl					install
-libmozjs-91-0:amd64				install
-libmp3lame0:amd64				install
-libmp3lame0:i386				install
-libmpc-dev:amd64				install
-libmpc3:amd64					install
-libmpcdec6:amd64				install
-libmpdclient-dev:amd64				install
-libmpdclient2:amd64				install
-libmpdec3:amd64					install
-libmpeg2-4:amd64				install
-libmpeg2encpp-2.1-0:amd64			install
-libmpfi-dev:amd64				install
-libmpfi-dev-common				install
-libmpfi0:amd64					install
-libmpfr-dev:amd64				install
-libmpfr6:amd64					install
-libmpg123-0:amd64				install
-libmpg123-0:i386				install
-libmplex2-2.1-0:amd64				install
-libmro-compat-perl				install
-libmsgpack-dev:amd64				install
-libmsgpackc2:amd64				install
-libmspack0:amd64				install
-libmspub-0.1-1:amd64				install
-libmtdev-dev:amd64				install
-libmtdev1:amd64					install
-libmtp-common					install
-libmtp-runtime					install
-libmtp9:amd64					install
-libmujs1:amd64					install
-libmutter-10-0:amd64				install
-libmwaw-0.3-3:amd64				install
-libmysofa1:amd64				install
-libmysqlclient21:amd64				install
-libmythes-1.2-0:amd64				install
-libnaga-java					install
-libnamespace-autoclean-perl			install
-libnamespace-clean-perl				install
-libnatpmp1:amd64				install
-libnautilus-extension1a:amd64			install
-libnauty2:amd64					install
-libncurses-dev:amd64				install
-libncurses5-dev:amd64				install
-libncurses6:amd64				install
-libncurses6:i386				install
-libncursesw5-dev:amd64				install
-libncursesw6:amd64				install
-libncursesw6:i386				install
-libndp0:amd64					install
-libnemo-extension1:amd64			install
-libnet-dbus-perl				install
-libnet-dns-perl					install
-libnet-dns-sec-perl				install
-libnet-domain-tld-perl				install
-libnet-http-perl				install
-libnet-ip-perl					install
-libnet-ipv6addr-perl				install
-libnet-libidn-perl				install
-libnet-netmask-perl				install
-libnet-smtp-ssl-perl				install
-libnet-ssleay-perl:amd64			install
-libnetaddr-ip-perl				install
-libnetcdf-dev					install
-libnetcdf19:amd64				install
-libnetcdff-dev					install
-libnetcdff7					install
-libnetfilter-conntrack3:amd64			install
-libnetpbm10					install
-libnetplan0:amd64				install
-libnettle8:amd64				install
-libnettle8:i386					install
-libnewt0.52:amd64				install
-libnfnetlink0:amd64				install
-libnfs13:amd64					install
-libnfsidmap1:amd64				install
-libnftables1:amd64				install
-libnftnl11:amd64				install
-libnghttp2-14:amd64				install
-libnghttp2-14:i386				install
-libnice10:amd64					install
-libnl-3-200:amd64				install
-libnl-3-dev:amd64				install
-libnl-genl-3-200:amd64				install
-libnl-genl-3-dev:amd64				install
-libnl-route-3-200:amd64				install
-libnm0:amd64					install
-libnma-common					install
-libnma0:amd64					install
-libnorm-dev:amd64				install
-libnorm1:amd64					install
-libnormaliz3:amd64				install
-libnotify-bin					install
-libnotify-dev:amd64				install
-libnotify4:amd64				install
-libnotmuch5					install
-libnpth0:amd64					install
-libnsl-dev:amd64				install
-libnsl2:amd64					install
-libnsl2:i386					install
-libnspr4:amd64					install
-libnspr4:i386					install
-libnspr4-dev					install
-libnss-mdns:amd64				install
-libnss-nis:amd64				install
-libnss-nis:i386					install
-libnss-nisplus:amd64				install
-libnss-nisplus:i386				install
-libnss-sss:amd64				install
-libnss-systemd:amd64				install
-libnss3:amd64					install
-libnss3:i386					install
-libnss3-dev:amd64				install
-libntfs-3g89					install
-libntl-dev					install
-libntl44:amd64					install
-libnuma1:amd64					install
-libnumber-compare-perl				install
-libnunit-cil-dev				install
-libnunit-console-runner2.6.3-cil		install
-libnunit-core-interfaces2.6.3-cil		install
-libnunit-core2.6.3-cil				install
-libnunit-framework2.6.3-cil			install
-libnunit-mocks2.6.3-cil				install
-libnunit-util2.6.3-cil				install
-libnux-4.0-0					install
-libnux-4.0-common				install
-libobjc-11-dev:amd64				install
-libobjc4:amd64					install
-libodbc1:amd64					install
-libodbc1:i386					install
-libodbc2:amd64					install
-libodbc2:i386					install
-libodbccr2:amd64				install
-libodbccr2:i386					install
-libodc-0d:amd64					install
-libodfgen-0.1-1:amd64				install
-libogg0:amd64					install
-libogg0:i386					install
-libokular5core9					install
-libonig-dev					install
-libonig5:amd64					install
-libopenal-data					install
-libopenal1:amd64				install
-libopenal1:i386					install
-libopenblas-dev:amd64				install
-libopenblas-pthread-dev:amd64			install
-libopenblas0:amd64				install
-libopenblas0-pthread:amd64			install
-libopencl-clang12:amd64				install
-libopenconnect5:amd64				install
-libopencore-amrnb0:amd64			install
-libopencore-amrwb0:amd64			install
-libopenexr25:amd64				install
-libopengl-dev:amd64				install
-libopengl0:amd64				install
-libopengl0:i386					install
-libopenh264-6:amd64				install
-libopenjp2-7:amd64				install
-libopenjp2-7:i386				install
-libopenmpi3:amd64				install
-libopenmpt-modplug1:amd64			install
-libopenmpt0:amd64				install
-libopenni2-0:amd64				install
-libopus0:amd64					install
-libopus0:i386					install
-liborc-0.4-0:amd64				install
-liborc-0.4-0:i386				install
-liborcus-0.17-0:amd64				install
-liborcus-parser-0.17-0:amd64			install
-libosmesa6:amd64				install
-libosmesa6:i386					install
-libosmgpsmap-1.0-1:amd64			install
-libosp5						install
-libostree-1-1:amd64				install
-libostyle1c2					install
-libotf1:amd64					install
-libp11-kit-dev:amd64				install
-libp11-kit0:amd64				install
-libp11-kit0:i386				install
-libpackage-stash-perl				install
-libpackage-stash-xs-perl			install
-libpackagekit-glib2-18:amd64			install
-libpadwalker-perl				install
-libpagemaker-0.0-0:amd64			install
-libpam-cap:amd64				install
-libpam-fprintd:amd64				install
-libpam-gnome-keyring:amd64			install
-libpam-modules:amd64				install
-libpam-modules-bin				install
-libpam-pwquality:amd64				install
-libpam-runtime					install
-libpam-sss:amd64				install
-libpam-systemd:amd64				install
-libpam0g:amd64					install
-libpam0g-dev:amd64				install
-libpango-1.0-0:amd64				install
-libpango-1.0-0:i386				install
-libpango-perl					install
-libpango1.0-0:i386				install
-libpango1.0-dev:amd64				install
-libpango1.0-doc					install
-libpangocairo-1.0-0:amd64			install
-libpangocairo-1.0-0:i386			install
-libpangoft2-1.0-0:amd64				install
-libpangoft2-1.0-0:i386				install
-libpangomm-1.4-1v5:amd64			install
-libpangoxft-1.0-0:amd64				install
-libpangoxft-1.0-0:i386				install
-libpaper-utils					install
-libpaper1:amd64					install
-libparallel-forkmanager-perl			install
-libparams-classify-perl				install
-libparams-util-perl				install
-libparams-validate-perl:amd64			install
-libparams-validationcompiler-perl		install
-libpari-dev:amd64				install
-libpari-gmp-tls7:amd64				install
-libparse-recdescent-perl			install
-libparted-fs-resize0:amd64			install
-libparted2:amd64				install
-libpath-tiny-perl				install
-libpath-utils1:amd64				install
-libpathplan4:amd64				install
-libpcap0.8:amd64				install
-libpcap0.8:i386					install
-libpcaudio0:amd64				install
-libpci3:amd64					install
-libpci3:i386					install
-libpciaccess-dev:amd64				install
-libpciaccess0:amd64				install
-libpcre16-3:amd64				install
-libpcre2-16-0:amd64				install
-libpcre2-32-0:amd64				install
-libpcre2-8-0:amd64				install
-libpcre2-8-0:i386				install
-libpcre2-dev:amd64				install
-libpcre2-posix3:amd64				install
-libpcre3:amd64					install
-libpcre3:i386					install
-libpcre3-dev:amd64				install
-libpcre32-3:amd64				install
-libpcrecpp0v5:amd64				install
-libpcsclite1:amd64				install
-libpdfbox-java					install
-libpeas-1.0-0:amd64				install
-libpeas-common					install
-libperl4-corelibs-perl				install
-libperl5.34:amd64				install
-libperl5.34:i386				install
-libperlio-gzip-perl				install
-libperlio-utf8-strict-perl			install
-libpfm4:amd64					install
-libpgm-5.3-0:amd64				install
-libpgm-dev:amd64				install
-libphonenumber8:amd64				install
-libphonon4qt5-4:amd64				install
-libphonon4qt5-data				install
-libpipeline1:amd64				install
-libpipewire-0.3-0:amd64				install
-libpipewire-0.3-common				install
-libpipewire-0.3-modules:amd64			install
-libpixman-1-0:amd64				install
-libpixman-1-0:i386				install
-libpixman-1-dev:amd64				install
-libpkcs11-helper1:amd64				install
-libplacebo192:amd64				install
-libplanarity-dev:amd64				install
-libplanarity0:amd64				install
-libplayerctl2:amd64				install
-libplexus-cipher-java				install
-libplexus-classworlds-java			install
-libplexus-compiler-java				install
-libplexus-component-annotations-java		install
-libplexus-container-default-java		install
-libplexus-interpolation-java			install
-libplexus-languages-java			install
-libplexus-sec-dispatcher-java			install
-libplexus-utils2-java				install
-libplist3:amd64					install
-libplot2c2:amd64				install
-libplymouth5:amd64				install
-libpmix2:amd64					install
-libpng-dev:amd64				install
-libpng-tools					install
-libpng16-16:amd64				install
-libpng16-16:i386				install
-libpocketsphinx3:amd64				install
-libpolkit-agent-1-0:amd64			install
-libpolkit-gobject-1-0:amd64			install
-libpolkit-qt5-1-1:amd64				install
-libpoppler-cpp0v5:amd64				install
-libpoppler-glib8:amd64				install
-libpoppler-glib8:i386				install
-libpoppler-qt5-1:amd64				install
-libpoppler118:amd64				install
-libpoppler118:i386				install
-libpopt0:amd64					install
-libpostproc-dev:amd64				install
-libpostproc55:amd64				install
-libpotrace0:amd64				install
-libppl-c4:amd64					install
-libppl-dev:amd64				install
-libppl14:amd64					install
-libpq5:amd64					install
-libprimecount7:amd64				install
-libprimesieve9:amd64				install
-libproc-processtable-perl:amd64			install
-libprocps8:amd64				install
-libproj-dev:amd64				install
-libproj22:amd64					install
-libprotobuf-lite23:amd64			install
-libprotobuf23:amd64				install
-libproxy-tools					install
-libproxy1-plugin-gsettings:amd64		install
-libproxy1-plugin-networkmanager:amd64		install
-libproxy1v5:amd64				install
-libproxy1v5:i386				install
-libpskc0:amd64					install
-libpsl5:amd64					install
-libpsl5:i386					install
-libpsm-infinipath1				install
-libpsm2-2					install
-libpstoedit0c2a:amd64				install
-libptexenc1:amd64				install
-libpthread-stubs0-dev:amd64			install
-libptytty0:amd64				install
-libpugixml1v5:amd64				install
-libpulse-dev:amd64				install
-libpulse-mainloop-glib0:amd64			install
-libpulse0:amd64					install
-libpulse0:i386					install
-libpulsedsp:amd64				install
-libpwquality-common				install
-libpwquality1:amd64				install
-libpython2-stdlib:amd64				install
-libpython2.7-minimal:amd64			install
-libpython2.7-stdlib:amd64			install
-libpython3-dev:amd64				install
-libpython3-stdlib:amd64				install
-libpython3.10:amd64				install
-libpython3.10-dev:amd64				install
-libpython3.10-minimal:amd64			install
-libpython3.10-stdlib:amd64			install
-libpython3.9-minimal:amd64			deinstall
-libqca-qt5-2:amd64				install
-libqca-qt5-2-plugins:amd64			install
-libqdox2-java					install
-libqhull-r8.0:amd64				install
-libqmi-glib5:amd64				install
-libqmi-proxy					install
-libqmobipocket2:amd64				install
-libqpdf28:amd64					install
-libqqwing2v5:amd64				install
-libqrencode4:amd64				install
-libqt5charts5:amd64				install
-libqt5concurrent5:amd64				install
-libqt5core5a:amd64				install
-libqt5dbus5:amd64				install
-libqt5designer5:amd64				install
-libqt5gui5:amd64				install
-libqt5help5:amd64				install
-libqt5multimedia5:amd64				install
-libqt5multimediaquick5:amd64			install
-libqt5network5:amd64				install
-libqt5opengl5:amd64				install
-libqt5positioning5:amd64			install
-libqt5printsupport5:amd64			install
-libqt5qml5:amd64				install
-libqt5qmlmodels5:amd64				install
-libqt5qmlworkerscript5:amd64			install
-libqt5quick5:amd64				install
-libqt5quickcontrols2-5:amd64			install
-libqt5quickparticles5:amd64			install
-libqt5quicktemplates2-5:amd64			install
-libqt5quickwidgets5:amd64			install
-libqt5sensors5:amd64				install
-libqt5sql5:amd64				install
-libqt5sql5-sqlite:amd64				install
-libqt5svg5:amd64				install
-libqt5test5:amd64				install
-libqt5texttospeech5:amd64			install
-libqt5waylandclient5:amd64			install
-libqt5waylandcompositor5:amd64			install
-libqt5webchannel5:amd64				install
-libqt5webengine-data				install
-libqt5webengine5:amd64				install
-libqt5webenginecore5:amd64			install
-libqt5webenginewidgets5:amd64			install
-libqt5webkit5:amd64				install
-libqt5websockets5:amd64				install
-libqt5widgets5:amd64				install
-libqt5x11extras5:amd64				install
-libqt5xml5:amd64				install
-libquadmath0:amd64				install
-librabbitmq4:amd64				install
-libraptor2-0:amd64				install
-libraqm0:amd64					install
-librasqal3:amd64				install
-libratpoints-2.1.3:amd64			install
-libratpoints-dev:amd64				install
-libraw1394-11:amd64				install
-libraw1394-11:i386				install
-libraw20:amd64					install
-librbio2:amd64					install
-librcc0						install
-librccgtk2-0					install
-librcd0:amd64					install
-librdf0:amd64					install
-librdmacm1:amd64				install
-libre2-9:amd64					install
-libreadline-dev:amd64				install
-libreadline7:amd64				install
-libreadline8:amd64				install
-libreadonly-perl				install
-librecode0:amd64				install
-libref-array1:amd64				install
-libref-util-perl				install
-libref-util-xs-perl				install
-libregexp-assemble-perl				install
-libregexp-common-perl				install
-libreoffice-base-core				install
-libreoffice-calc				install
-libreoffice-common				install
-libreoffice-core				install
-libreoffice-draw				install
-libreoffice-gnome				deinstall
-libreoffice-gtk3				deinstall
-libreoffice-help-common				install
-libreoffice-help-en-us				install
-libreoffice-impress				install
-libreoffice-math				install
-libreoffice-style-breeze			install
-libreoffice-style-colibre			install
-libreoffice-style-elementary			deinstall
-libreoffice-writer				install
-libresid-builder0c2a				install
-librest-0.7-0:amd64				install
-librevenge-0.0-0:amd64				install
-librhash0:amd64					install
-librhythmbox-core10:amd64			install
-libroken18-heimdal:amd64			install
-libroken18-heimdal:i386				install
-librole-tiny-perl				install
-librpm9						install
-librpmbuild9					install
-librpmio9					install
-librpmsign9					install
-librsvg2-2:amd64				install
-librsvg2-2:i386					install
-librsvg2-common:amd64				install
-librsvg2-common:i386				install
-librsync2:amd64					install
-librtmp1:amd64					install
-librtmp1:i386					install
-librubberband2:amd64				install
-libruby2.7:amd64				install
-libruby3.0:amd64				install
-librw-dev:amd64					install
-librw0:amd64					install
-librygel-core-2.6-2:amd64			install
-librygel-db-2.6-2:amd64				install
-librygel-renderer-2.6-2:amd64			install
-librygel-server-2.6-2:amd64			install
-libsamplerate0:amd64				install
-libsamplerate0:i386				install
-libsane:amd64					install
-libsane:i386					install
-libsane-common					install
-libsane-hpaio:amd64				install
-libsane1:amd64					install
-libsane1:i386					install
-libsasl2-2:amd64				install
-libsasl2-2:i386					install
-libsasl2-modules:amd64				install
-libsasl2-modules:i386				install
-libsasl2-modules-db:amd64			install
-libsasl2-modules-db:i386			install
-libsasl2-modules-gssapi-mit:amd64		install
-libsass1:amd64					install
-libsbc1:amd64					install
-libscalar-list-utils-perl			install
-libsdl-image1.2:amd64				install
-libsdl1.2debian:amd64				install
-libsdl2-2.0-0:amd64				install
-libsdl2-2.0-0:i386				install
-libsdl2-dev:amd64				install
-libseccomp-dev:amd64				install
-libseccomp2:amd64				install
-libsecret-1-0:amd64				install
-libsecret-common				install
-libselinux1:amd64				install
-libselinux1:i386				install
-libselinux1-dev:amd64				install
-libsemanage-common				install
-libsemanage2:amd64				install
-libsensors-config				install
-libsensors5:amd64				install
-libsensors5:i386				install
-libsepol-dev:amd64				install
-libsepol2:amd64					install
-libserd-0-0:amd64				install
-libsereal-decoder-perl				install
-libsereal-encoder-perl:amd64			install
-libserf-1-1:amd64				install
-libset-scalar-perl				install
-libsexp1:amd64					install
-libsgutils2-2:amd64				install
-libshine3:amd64					install
-libshout3:amd64					install
-libshout3:i386					install
-libsidplay1v5:amd64				install
-libsidplay2					install
-libsidplayfp6:amd64				install
-libsigc++-2.0-0v5:amd64				install
-libsignon-plugins-common1:amd64			install
-libsignon-qt5-1:amd64				install
-libsigsegv2:amd64				install
-libsingular4-dev:amd64				install
-libsingular4-dev-common				install
-libsingular4m2n1:amd64				install
-libsisu-inject-java				install
-libsisu-plexus-java				install
-libsixel-bin					install
-libsixel-dev:amd64				install
-libsixel1:amd64					install
-libslang2:amd64					install
-libslang2:i386					install
-libslang2-dev:amd64				install
-libslf4j-java					install
-libsliplu1:amd64				install
-libslirp0:amd64					install
-libsm-dev:amd64					install
-libsm6:amd64					install
-libsmartcols1:amd64				install
-libsmbclient:amd64				install
-libsmbios-c2					install
-libsnapd-glib1:amd64				install
-libsnappy1v5:amd64				install
-libsndfile1:amd64				install
-libsndfile1:i386				install
-libsndio-dev:amd64				install
-libsndio7.0:amd64				install
-libsndio7.0:i386				install
-libsnmp-base					install
-libsnmp40:amd64					install
-libsnmp40:i386					install
-libsocket6-perl					install
-libsodium-dev:amd64				install
-libsodium23:amd64				install
-libsombok3:amd64				install
-libsonic0:amd64					install
-libsord-0-0:amd64				install
-libsort-key-perl				install
-libsort-versions-perl				install
-libsoundtouch1:amd64				install
-libsoup-gnome2.4-1:amd64			install
-libsoup2.4-1:amd64				install
-libsoup2.4-1:i386				install
-libsoup2.4-common				install
-libsource-highlight-common			install
-libsource-highlight4v5				install
-libsox-fmt-alsa:amd64				install
-libsox-fmt-base:amd64				install
-libsox-fmt-pulse:amd64				install
-libsox3:amd64					install
-libsoxr0:amd64					install
-libspa-0.2-modules:amd64			install
-libspandsp2:amd64				install
-libspatialaudio0:amd64				install
-libspecio-perl					install
-libspectre1:amd64				install
-libspeechd2:amd64				install
-libspeex1:amd64					install
-libspeex1:i386					install
-libspeexdsp1:amd64				install
-libsphinxbase3:amd64				install
-libspiro-dev:amd64				install
-libspiro1:amd64					install
-libspotify-dev					install
-libspotify12					install
-libspqr2:amd64					install
-libsqlite3-0:amd64				install
-libsqlite3-0:i386				install
-libsqlite3-dev:amd64				install
-libsratom-0-0:amd64				install
-libsrt1.4-gnutls:amd64				install
-libsrtp2-1:amd64				install
-libss2:amd64					install
-libssh-4:amd64					install
-libssh-4:i386					install
-libssh-gcrypt-4:amd64				install
-libssh2-1:amd64					install
-libssl-dev:amd64				install
-libssl1.1:amd64					install
-libssl3:amd64					install
-libssl3:i386					install
-libsss-certmap0					install
-libsss-idmap0					install
-libsss-nss-idmap0				install
-libstartup-notification0:amd64			install
-libstb0:amd64					install
-libstb0:i386					install
-libstdc++-10-dev:amd64				install
-libstdc++-11-dev:amd64				install
-libstdc++-9-dev:amd64				install
-libstdc++6:amd64				install
-libstdc++6:i386					install
-libstemmer0d:amd64				install
-libstfl0					install
-libstoken1:amd64				install
-libstrictures-perl				install
-libstring-crc32-perl:amd64			install
-libsub-exporter-perl				install
-libsub-exporter-progressive-perl		install
-libsub-identify-perl				install
-libsub-install-perl				install
-libsub-name-perl				install
-libsub-override-perl				install
-libsub-quote-perl				install
-libsuitesparse-dev:amd64			install
-libsuitesparseconfig5:amd64			install
-libsvn-perl:amd64				install
-libsvn1:amd64					install
-libswresample-dev:amd64				install
-libswresample3:amd64				install
-libswscale-dev:amd64				install
-libswscale5:amd64				install
-libsymmetrica2:amd64				install
-libsymmetrica2-dev:amd64			install
-libsynctex2:amd64				install
-libsyntax-keyword-try-perl			install
-libsys-hostname-long-perl			install
-libsysmetrics1:amd64				install
-libsystemd0:amd64				install
-libsystemd0:i386				install
-libsz2:amd64					install
-libtachyon-mt-0:amd64				install
-libtag1v5:amd64					install
-libtag1v5:i386					install
-libtag1v5-vanilla:amd64				install
-libtag1v5-vanilla:i386				install
-libtalloc2:amd64				install
-libtasn1-6:amd64				install
-libtasn1-6:i386					install
-libtasn1-6-dev:amd64				install
-libtasn1-doc					install
-libtbb12:amd64					install
-libtbbmalloc2:amd64				install
-libtcl8.6:amd64					install
-libtdb1:amd64					install
-libtdb1:i386					install
-libteamdctl0:amd64				install
-libteckit0:amd64				install
-libtelepathy-glib0:amd64			install
-libterm-readkey-perl				install
-libtermkey-dev:amd64				install
-libtermkey1:amd64				install
-libterralib3:amd64				install
-libtesseract-dev:amd64				install
-libtesseract4:amd64				install
-libtevent0:amd64				install
-libtexlua53:amd64				install
-libtexluajit2:amd64				install
-libtext-bibtex-perl				install
-libtext-charwidth-perl				install
-libtext-csv-perl				install
-libtext-csv-xs-perl:amd64			install
-libtext-glob-perl				install
-libtext-iconv-perl				install
-libtext-levenshteinxs-perl			install
-libtext-markdown-discount-perl:amd64		install
-libtext-roman-perl				install
-libtext-unidecode-perl				install
-libtext-wrapi18n-perl				install
-libtext-xslate-perl:amd64			install
-libthai-data					install
-libthai-dev:amd64				install
-libthai0:amd64					install
-libthai0:i386					install
-libtheora0:amd64				install
-libtheora0:i386					install
-libthunarx-3-0:amd64				install
-libtie-cycle-perl				install
-libtie-ixhash-perl				install
-libtiff-dev:amd64				install
-libtiff5:amd64					install
-libtiff5:i386					install
-libtiff5-dev:amd64				install
-libtiffxx5:amd64				install
-libtime-duration-perl				install
-libtime-moment-perl				install
-libtimedate-perl				install
-libtimezonemap-data				install
-libtimezonemap1:amd64				install
-libtinfo5:amd64					install
-libtinfo6:amd64					install
-libtinfo6:i386					install
-libtinyxml2-9:amd64				install
-libtirpc-common					install
-libtirpc-dev:amd64				install
-libtirpc3:amd64					install
-libtirpc3:i386					install
-libtk8.6:amd64					install
-libtokyocabinet9:amd64				install
-libtomcrypt1:amd64				install
-libtommath1:amd64				install
-libtool						install
-libtool-bin					install
-libtotem-plparser-common			install
-libtotem-plparser18:amd64			install
-libtotem0:amd64					install
-libtracker-sparql-3.0-0:amd64			install
-libtre5:amd64					install
-libtry-tiny-perl				install
-libtsan0:amd64					install
-libtsan2:amd64					install
-libtss2-esys-3.0.2-0:amd64			install
-libtss2-mu0:amd64				install
-libtss2-sys1:amd64				install
-libtss2-tcti-cmd0:amd64				install
-libtss2-tcti-device0:amd64			install
-libtss2-tcti-mssim0:amd64			install
-libtss2-tcti-swtpm0:amd64			install
-libtss2-tctildr0:amd64				install
-libtumbler-1-0:amd64				install
-libturbojpeg:amd64				deinstall
-libtwolame0:amd64				install
-libtwolame0:i386				install
-libtypes-serialiser-perl			install
-libu2f-udev					install
-libubsan1:amd64					install
-libuchardet0:amd64				install
-libucx0:amd64					install
-libudev-dev:amd64				install
-libudev1:amd64					install
-libudev1:i386					install
-libudfread0:amd64				install
-libudisks2-0:amd64				install
-libudunits2-0					install
-libudunits2-data				install
-libuim-custom2:amd64				install
-libuim-data					install
-libuim-scm0:amd64				install
-libuim8:amd64					install
-libumfpack5:amd64				install
-libunbound8:amd64				install
-libunibilium-dev				install
-libunibilium4:amd64				install
-libunicode-linebreak-perl			install
-libunicode-utf8-perl				install
-libuninameslist1:amd64				install
-libunistring2:amd64				install
-libunistring2:i386				install
-libunity-control-center1			install
-libunity-core-6.0-9:amd64			install
-libunity-gtk2-parser0:amd64			install
-libunity-gtk3-parser0:amd64			install
-libunity-misc4					install
-libunity-protocol-private0:amd64		install
-libunity-scopes-json-def-desktop		install
-libunity-settings-daemon1:amd64			install
-libunity9:amd64					install
-libuno-cppu3					install
-libuno-cppuhelpergcc3-3				install
-libuno-purpenvhelpergcc3-3			install
-libuno-sal3					install
-libuno-salhelpergcc3-3				install
-libunwind8:amd64				install
-libunwind8:i386					install
-libupnp13:amd64					install
-libupower-glib3:amd64				install
-liburi-perl					install
-liburing2:amd64					install
-libusb-1.0-0:amd64				install
-libusb-1.0-0:i386				install
-libusb-1.0-0-dev:amd64				install
-libusb-1.0-doc					install
-libusbmuxd6:amd64				install
-libutempter0:amd64				install
-libutf8proc-dev:amd64				install
-libutf8proc2:amd64				install
-libuuid1:amd64					install
-libuuid1:i386					install
-libuv1:amd64					install
-libuv1-dev:amd64				install
-libv4l-0:amd64					install
-libv4l-0:i386					install
-libv4l2rds0:amd64				install
-libv4lconvert0:amd64				install
-libv4lconvert0:i386				install
-libva-drm2:amd64				install
-libva-wayland2:amd64				install
-libva-x11-2:amd64				install
-libva2:amd64					install
-libvariable-magic-perl				install
-libvdpau1:amd64					install
-libvdpau1:i386					deinstall
-libvidstab1.1:amd64				install
-libvisio-0.1-1:amd64				install
-libvisual-0.4-0:amd64				install
-libvisual-0.4-0:i386				install
-libvkd3d1:amd64					install
-libvkd3d1:i386					install
-libvlc-bin:amd64				install
-libvlc5:amd64					install
-libvlccore9:amd64				install
-libvncclient1:amd64				install
-libvncserver1:amd64				install
-libvo-aacenc0:amd64				install
-libvo-amrwbenc0:amd64				install
-libvoikko1:amd64				install
-libvolume-key1					install
-libvorbis0a:amd64				install
-libvorbis0a:i386				install
-libvorbisenc2:amd64				install
-libvorbisenc2:i386				install
-libvorbisfile3:amd64				install
-libvorbisfile3:i386				install
-libvpx-dev:amd64				install
-libvpx7:amd64					install
-libvpx7:i386					install
-libvte-2.91-0:amd64				install
-libvte-2.91-common				install
-libvterm-dev:amd64				install
-libvterm0:amd64					install
-libvulkan1:amd64				install
-libvulkan1:i386					install
-libwacom-bin					install
-libwacom-common					install
-libwacom9:amd64					install
-libwagon-provider-api-java			install
-libwavpack1:amd64				install
-libwavpack1:i386				install
-libwayland-bin					install
-libwayland-client0:amd64			install
-libwayland-client0:i386				install
-libwayland-cursor0:amd64			install
-libwayland-cursor0:i386				install
-libwayland-dev:amd64				install
-libwayland-egl1:amd64				install
-libwayland-egl1:i386				install
-libwayland-server0:amd64			install
-libwayland-server0:i386				install
-libwbclient0:amd64				install
-libwebkit2gtk-4.0-37:amd64			install
-libwebp-dev:amd64				install
-libwebp7:amd64					install
-libwebp7:i386					install
-libwebpdemux2:amd64				install
-libwebpmux3:amd64				install
-libwebrtc-audio-processing1:amd64		install
-libwebsockets-dev:amd64				install
-libwebsockets16:amd64				install
-libwhoopsie-preferences0			install
-libwhoopsie0:amd64				install
-libwildmidi2:amd64				install
-libwind0-heimdal:amd64				install
-libwind0-heimdal:i386				install
-libwine:amd64					install
-libwine:i386					install
-libwinpr2-2:amd64				install
-libwmf-0.2-7:amd64				install
-libwmf-0.2-7-gtk				install
-libwmf-bin					install
-libwmf0.2-7:amd64				install
-libwmf0.2-7-gtk:amd64				install
-libwmflite-0.2-7:amd64				install
-libwnck-3-0:amd64				install
-libwnck-3-common				install
-libwoff1:amd64					install
-libwpd-0.10-10:amd64				install
-libwpg-0.3-3:amd64				install
-libwps-0.4-4:amd64				install
-libwrap0:amd64					install
-libwrap0:i386					install
-libwv-1.2-4:amd64				install
-libwww-perl					install
-libwww-robotrules-perl				install
-libwxbase3.0-0v5:amd64				install
-libwxgtk3.0-gtk3-0v5:amd64			install
-libx11-6:amd64					install
-libx11-6:i386					install
-libx11-data					install
-libx11-dev:amd64				install
-libx11-protocol-perl				install
-libx11-xcb-dev:amd64				install
-libx11-xcb1:amd64				install
-libx11-xcb1:i386				install
-libx264-163:amd64				install
-libx265-199:amd64				install
-libxapian30:amd64				install
-libxapp1:amd64					install
-libxatracker2:amd64				install
-libxau-dev:amd64				install
-libxau6:amd64					install
-libxau6:i386					install
-libxaw7:amd64					install
-libxaw7-dev:amd64				install
-libxbean-reflect-java				install
-libxcb-composite0:amd64				install
-libxcb-composite0-dev:amd64			install
-libxcb-cursor-dev:amd64				install
-libxcb-cursor0:amd64				install
-libxcb-damage0:amd64				install
-libxcb-damage0-dev:amd64			install
-libxcb-dri2-0:amd64				install
-libxcb-dri2-0:i386				install
-libxcb-dri3-0:amd64				install
-libxcb-dri3-0:i386				install
-libxcb-ewmh-dev:amd64				install
-libxcb-ewmh2:amd64				install
-libxcb-glx0:amd64				install
-libxcb-glx0:i386				install
-libxcb-glx0-dev:amd64				install
-libxcb-icccm4:amd64				install
-libxcb-icccm4-dev:amd64				install
-libxcb-image0:amd64				install
-libxcb-image0-dev:amd64				install
-libxcb-keysyms1:amd64				install
-libxcb-keysyms1-dev:amd64			install
-libxcb-present-dev:amd64			install
-libxcb-present0:amd64				install
-libxcb-present0:i386				install
-libxcb-randr0:amd64				install
-libxcb-randr0:i386				install
-libxcb-randr0-dev:amd64				install
-libxcb-render-util0:amd64			install
-libxcb-render-util0-dev:amd64			install
-libxcb-render0:amd64				install
-libxcb-render0:i386				install
-libxcb-render0-dev:amd64			install
-libxcb-res0:amd64				install
-libxcb-res0-dev:amd64				install
-libxcb-shape0:amd64				install
-libxcb-shape0-dev:amd64				install
-libxcb-shm0:amd64				install
-libxcb-shm0:i386				install
-libxcb-shm0-dev:amd64				install
-libxcb-sync-dev:amd64				install
-libxcb-sync1:amd64				install
-libxcb-sync1:i386				install
-libxcb-util-dev:amd64				install
-libxcb-util0-dev:amd64				install
-libxcb-util1:amd64				install
-libxcb-xfixes0:amd64				install
-libxcb-xfixes0:i386				install
-libxcb-xfixes0-dev:amd64			install
-libxcb-xinerama0:amd64				install
-libxcb-xinerama0-dev:amd64			install
-libxcb-xinput0:amd64				install
-libxcb-xkb-dev:amd64				install
-libxcb-xkb1:amd64				install
-libxcb-xrm-dev:amd64				install
-libxcb-xrm0:amd64				install
-libxcb-xtest0:amd64				install
-libxcb-xtest0-dev:amd64				install
-libxcb-xv0:amd64				install
-libxcb1:amd64					install
-libxcb1:i386					install
-libxcb1-dev:amd64				install
-libxcomposite-dev:amd64				install
-libxcomposite1:amd64				install
-libxcomposite1:i386				install
-libxcursor-dev:amd64				install
-libxcursor1:amd64				install
-libxcursor1:i386				install
-libxcvt-dev:amd64				install
-libxcvt0:amd64					install
-libxdamage-dev:amd64				install
-libxdamage1:amd64				install
-libxdamage1:i386				install
-libxdg-basedir-dev				install
-libxdg-basedir1					install
-libxdmcp-dev:amd64				install
-libxdmcp6:amd64					install
-libxdmcp6:i386					install
-libxdo3:amd64					install
-libxext-dev:amd64				install
-libxext6:amd64					install
-libxext6:i386					install
-libxfce4panel-2.0-4				install
-libxfce4ui-2-0:amd64				install
-libxfce4ui-common				install
-libxfce4util-bin				install
-libxfce4util-common				install
-libxfce4util7:amd64				install
-libxfconf-0-3:amd64				install
-libxfixes-dev:amd64				install
-libxfixes3:amd64				install
-libxfixes3:i386					install
-libxfont-dev					install
-libxfont2:amd64					install
-libxft-dev:amd64				install
-libxft2:amd64					install
-libxft2:i386					install
-libxi-dev:amd64					install
-libxi6:amd64					install
-libxi6:i386					install
-libxinerama-dev:amd64				install
-libxinerama1:amd64				install
-libxinerama1:i386				install
-libxkbcommon-dev:amd64				install
-libxkbcommon-x11-0:amd64			install
-libxkbcommon-x11-dev:amd64			install
-libxkbcommon0:amd64				install
-libxkbcommon0:i386				install
-libxkbfile-dev:amd64				install
-libxkbfile1:amd64				install
-libxkbregistry0:amd64				install
-libxklavier16:amd64				install
-libxml-libxml-perl				install
-libxml-libxml-simple-perl			install
-libxml-libxslt-perl				install
-libxml-namespacesupport-perl			install
-libxml-parser-perl:amd64			install
-libxml-sax-base-perl				install
-libxml-sax-expat-perl				install
-libxml-sax-perl					install
-libxml-twig-perl				install
-libxml-writer-perl				install
-libxml-xpathengine-perl				install
-libxml2:amd64					install
-libxml2:i386					install
-libxml2-dev:amd64				install
-libxml2-utils					install
-libxmlb2:amd64					install
-libxmlsec1:amd64				install
-libxmlsec1-dev					install
-libxmlsec1-gcrypt:amd64				install
-libxmlsec1-gnutls:amd64				install
-libxmlsec1-nss:amd64				install
-libxmlsec1-openssl:amd64			install
-libxmu-dev:amd64				install
-libxmu-headers					install
-libxmu6:amd64					install
-libxmuu-dev:amd64				install
-libxmuu1:amd64					install
-libxnvctrl0:amd64				install
-libxpm-dev:amd64				install
-libxpm4:amd64					install
-libxpm4:i386					install
-libxrandr-dev:amd64				install
-libxrandr2:amd64				install
-libxrandr2:i386					install
-libxrender-dev:amd64				install
-libxrender1:amd64				install
-libxrender1:i386				install
-libxres-dev:amd64				install
-libxres1:amd64					install
-libxs-parse-keyword-perl			install
-libxshmfence1:amd64				install
-libxshmfence1:i386				install
-libxsimd-dev:amd64				install
-libxslt1-dev:amd64				install
-libxslt1.1:amd64				install
-libxslt1.1:i386					install
-libxss-dev:amd64				install
-libxss1:amd64					install
-libxss1:i386					install
-libxstring-perl					install
-libxt-dev:amd64					install
-libxt6:amd64					install
-libxtables12:amd64				install
-libxtst-dev:amd64				install
-libxtst6:amd64					install
-libxv-dev:amd64					install
-libxv1:amd64					install
-libxv1:i386					install
-libxvidcore4:amd64				install
-libxvmc-dev:amd64				install
-libxvmc1:amd64					install
-libxxf86dga-dev:amd64				install
-libxxf86dga1:amd64				install
-libxxf86vm-dev:amd64				install
-libxxf86vm1:amd64				install
-libxxf86vm1:i386				install
-libxxhash0:amd64				install
-libyajl2:amd64					install
-libyaml-0-2:amd64				install
-libyaml-dev:amd64				install
-libyaml-libyaml-perl				install
-libyaml-perl					install
-libyaml-tiny-perl				install
-libyelp0:amd64					install
-libz-mingw-w64					install
-libz3-4:amd64					install
-libz3-dev:amd64					install
-libzbar0:amd64					install
-libzeitgeist-2.0-0:amd64			install
-libzen0v5:amd64					install
-libzimg2:amd64					install
-libzip4:amd64					install
-libzmq3-dev:amd64				install
-libzmq5:amd64					install
-libzn-poly-0.9:amd64				install
-libzn-poly-dev:amd64				install
-libzstd1:amd64					install
-libzstd1:i386					install
-libzvbi-common					install
-libzvbi0:amd64					install
-libzxingcore1:amd64				install
-libzzip-0-13:amd64				install
-lightdm						install
-links						install
-lintian						install
-linux-base					install
-linux-firmware					install
-linux-generic					install
-linux-generic-hwe-20.04				install
-linux-generic-hwe-22.04				install
-linux-headers-5.15.0-72				install
-linux-headers-5.15.0-72-generic			install
-linux-headers-5.19.0-41-generic			install
-linux-headers-5.19.0-42-generic			install
-linux-headers-generic				install
-linux-headers-generic-hwe-22.04			install
-linux-hwe-5.19-headers-5.19.0-41		install
-linux-hwe-5.19-headers-5.19.0-42		install
-linux-image-5.11.0-49-generic			deinstall
-linux-image-5.13.0-35-generic			deinstall
-linux-image-5.13.0-37-generic			deinstall
-linux-image-5.13.0-39-generic			deinstall
-linux-image-5.13.0-40-generic			deinstall
-linux-image-5.13.0-41-generic			deinstall
-linux-image-5.13.0-44-generic			deinstall
-linux-image-5.13.0-48-generic			deinstall
-linux-image-5.13.0-51-generic			deinstall
-linux-image-5.13.0-52-generic			deinstall
-linux-image-5.15.0-41-generic			deinstall
-linux-image-5.15.0-43-generic			deinstall
-linux-image-5.15.0-46-generic			deinstall
-linux-image-5.15.0-47-generic			deinstall
-linux-image-5.15.0-48-generic			deinstall
-linux-image-5.15.0-50-generic			deinstall
-linux-image-5.15.0-52-generic			deinstall
-linux-image-5.15.0-53-generic			deinstall
-linux-image-5.15.0-56-generic			deinstall
-linux-image-5.15.0-57-generic			deinstall
-linux-image-5.15.0-58-generic			deinstall
-linux-image-5.15.0-60-generic			deinstall
-linux-image-5.15.0-67-generic			deinstall
-linux-image-5.15.0-69-generic			deinstall
-linux-image-5.15.0-70-generic			deinstall
-linux-image-5.15.0-72-generic			install
-linux-image-5.19.0-32-generic			deinstall
-linux-image-5.19.0-35-generic			deinstall
-linux-image-5.19.0-38-generic			deinstall
-linux-image-5.19.0-40-generic			deinstall
-linux-image-5.19.0-41-generic			install
-linux-image-5.19.0-42-generic			install
-linux-image-5.4.0-42-generic			deinstall
-linux-image-5.4.0-45-generic			deinstall
-linux-image-5.4.0-47-generic			deinstall
-linux-image-5.4.0-48-generic			deinstall
-linux-image-5.4.0-51-generic			deinstall
-linux-image-5.4.0-52-generic			deinstall
-linux-image-5.4.0-53-generic			deinstall
-linux-image-5.4.0-54-generic			deinstall
-linux-image-5.4.0-56-generic			deinstall
-linux-image-5.4.0-58-generic			deinstall
-linux-image-5.8.0-34-generic			deinstall
-linux-image-5.8.0-36-generic			deinstall
-linux-image-5.8.0-38-generic			deinstall
-linux-image-5.8.0-41-generic			deinstall
-linux-image-5.8.0-43-generic			deinstall
-linux-image-5.8.0-44-generic			deinstall
-linux-image-5.8.0-45-generic			deinstall
-linux-image-5.8.0-48-generic			deinstall
-linux-image-5.8.0-49-generic			deinstall
-linux-image-5.8.0-50-generic			deinstall
-linux-image-5.8.0-53-generic			deinstall
-linux-image-5.8.0-55-generic			deinstall
-linux-image-5.8.0-63-generic			deinstall
-linux-image-generic				install
-linux-image-generic-hwe-22.04			install
-linux-libc-dev:amd64				install
-linux-modules-5.11.0-49-generic			deinstall
-linux-modules-5.13.0-35-generic			deinstall
-linux-modules-5.13.0-37-generic			deinstall
-linux-modules-5.13.0-39-generic			deinstall
-linux-modules-5.13.0-40-generic			deinstall
-linux-modules-5.13.0-41-generic			deinstall
-linux-modules-5.13.0-44-generic			deinstall
-linux-modules-5.13.0-48-generic			deinstall
-linux-modules-5.13.0-51-generic			deinstall
-linux-modules-5.13.0-52-generic			deinstall
-linux-modules-5.15.0-41-generic			deinstall
-linux-modules-5.15.0-43-generic			deinstall
-linux-modules-5.15.0-46-generic			deinstall
-linux-modules-5.15.0-47-generic			deinstall
-linux-modules-5.15.0-48-generic			deinstall
-linux-modules-5.15.0-50-generic			deinstall
-linux-modules-5.15.0-52-generic			deinstall
-linux-modules-5.15.0-53-generic			deinstall
-linux-modules-5.15.0-56-generic			deinstall
-linux-modules-5.15.0-57-generic			deinstall
-linux-modules-5.15.0-58-generic			deinstall
-linux-modules-5.15.0-60-generic			deinstall
-linux-modules-5.15.0-67-generic			deinstall
-linux-modules-5.15.0-69-generic			deinstall
-linux-modules-5.15.0-70-generic			deinstall
-linux-modules-5.15.0-72-generic			install
-linux-modules-5.19.0-32-generic			deinstall
-linux-modules-5.19.0-35-generic			deinstall
-linux-modules-5.19.0-38-generic			deinstall
-linux-modules-5.19.0-40-generic			deinstall
-linux-modules-5.19.0-41-generic			install
-linux-modules-5.19.0-42-generic			install
-linux-modules-5.4.0-42-generic			deinstall
-linux-modules-5.4.0-45-generic			deinstall
-linux-modules-5.4.0-47-generic			deinstall
-linux-modules-5.4.0-48-generic			deinstall
-linux-modules-5.4.0-51-generic			deinstall
-linux-modules-5.4.0-52-generic			deinstall
-linux-modules-5.4.0-53-generic			deinstall
-linux-modules-5.4.0-54-generic			deinstall
-linux-modules-5.4.0-56-generic			deinstall
-linux-modules-5.4.0-58-generic			deinstall
-linux-modules-5.8.0-34-generic			deinstall
-linux-modules-5.8.0-36-generic			deinstall
-linux-modules-5.8.0-38-generic			deinstall
-linux-modules-5.8.0-41-generic			deinstall
-linux-modules-5.8.0-43-generic			deinstall
-linux-modules-5.8.0-44-generic			deinstall
-linux-modules-5.8.0-45-generic			deinstall
-linux-modules-5.8.0-48-generic			deinstall
-linux-modules-5.8.0-49-generic			deinstall
-linux-modules-5.8.0-50-generic			deinstall
-linux-modules-5.8.0-53-generic			deinstall
-linux-modules-5.8.0-55-generic			deinstall
-linux-modules-5.8.0-59-generic			deinstall
-linux-modules-extra-5.11.0-49-generic		deinstall
-linux-modules-extra-5.13.0-35-generic		deinstall
-linux-modules-extra-5.13.0-37-generic		deinstall
-linux-modules-extra-5.13.0-39-generic		deinstall
-linux-modules-extra-5.13.0-40-generic		deinstall
-linux-modules-extra-5.13.0-41-generic		deinstall
-linux-modules-extra-5.13.0-44-generic		deinstall
-linux-modules-extra-5.13.0-48-generic		deinstall
-linux-modules-extra-5.13.0-51-generic		deinstall
-linux-modules-extra-5.13.0-52-generic		deinstall
-linux-modules-extra-5.15.0-41-generic		deinstall
-linux-modules-extra-5.15.0-43-generic		deinstall
-linux-modules-extra-5.15.0-46-generic		deinstall
-linux-modules-extra-5.15.0-47-generic		deinstall
-linux-modules-extra-5.15.0-48-generic		deinstall
-linux-modules-extra-5.15.0-50-generic		deinstall
-linux-modules-extra-5.15.0-52-generic		deinstall
-linux-modules-extra-5.15.0-53-generic		deinstall
-linux-modules-extra-5.15.0-56-generic		deinstall
-linux-modules-extra-5.15.0-57-generic		deinstall
-linux-modules-extra-5.15.0-58-generic		deinstall
-linux-modules-extra-5.15.0-60-generic		deinstall
-linux-modules-extra-5.15.0-67-generic		deinstall
-linux-modules-extra-5.15.0-69-generic		deinstall
-linux-modules-extra-5.15.0-70-generic		deinstall
-linux-modules-extra-5.15.0-72-generic		install
-linux-modules-extra-5.19.0-32-generic		deinstall
-linux-modules-extra-5.19.0-35-generic		deinstall
-linux-modules-extra-5.19.0-38-generic		deinstall
-linux-modules-extra-5.19.0-40-generic		deinstall
-linux-modules-extra-5.19.0-41-generic		install
-linux-modules-extra-5.19.0-42-generic		install
-linux-modules-extra-5.4.0-42-generic		deinstall
-linux-modules-extra-5.4.0-45-generic		deinstall
-linux-modules-extra-5.4.0-47-generic		deinstall
-linux-modules-extra-5.4.0-48-generic		deinstall
-linux-modules-extra-5.4.0-51-generic		deinstall
-linux-modules-extra-5.4.0-52-generic		deinstall
-linux-modules-extra-5.4.0-53-generic		deinstall
-linux-modules-extra-5.4.0-54-generic		deinstall
-linux-modules-extra-5.4.0-56-generic		deinstall
-linux-modules-extra-5.4.0-58-generic		deinstall
-linux-modules-extra-5.8.0-34-generic		deinstall
-linux-modules-extra-5.8.0-36-generic		deinstall
-linux-modules-extra-5.8.0-38-generic		deinstall
-linux-modules-extra-5.8.0-41-generic		deinstall
-linux-modules-extra-5.8.0-43-generic		deinstall
-linux-modules-extra-5.8.0-44-generic		deinstall
-linux-modules-extra-5.8.0-45-generic		deinstall
-linux-modules-extra-5.8.0-48-generic		deinstall
-linux-modules-extra-5.8.0-49-generic		deinstall
-linux-modules-extra-5.8.0-50-generic		deinstall
-linux-modules-extra-5.8.0-53-generic		deinstall
-linux-modules-extra-5.8.0-55-generic		deinstall
-linux-sound-base				install
-llvm						install
-llvm-11						install
-llvm-11-dev					install
-llvm-11-linker-tools				install
-llvm-11-runtime					install
-llvm-11-tools					install
-llvm-13						install
-llvm-13-dev					install
-llvm-13-linker-tools				install
-llvm-13-runtime					install
-llvm-13-tools					install
-llvm-14						install
-llvm-14-dev					install
-llvm-14-linker-tools				install
-llvm-14-runtime					install
-llvm-14-tools					install
-llvm-runtime:amd64				install
-lm-sensors					install
-lmodern						install
-locales						install
-locate						install
-login						install
-logrotate					install
-logsave						install
-lolcat						install
-lp-solve					install
-lsb-base					install
-lsb-release					install
-lsd						install
-lshw						install
-lsof						install
-lto-disabled-list				install
-ltrace						deinstall
-luajit						install
-luarocks					deinstall
-lynx						install
-lynx-common					install
-lz4						install
-lzip						install
-lzop						install
-m17n-db						install
-m4						install
-mailcap						install
-make						install
-man-db						install
-manpages					install
-manpages-dev					install
-matio-tools					install
-mawk						install
-maxima-sage					install
-maxima-sage-doc					install
-maxima-sage-share				install
-mc						deinstall
-media-player-info				install
-media-types					install
-mediainfo					install
-memtest86+					install
-mercurial					deinstall
-mercurial-common				deinstall
-mesa-common-dev:amd64				install
-mesa-utils					install
-mesa-utils-bin:amd64				install
-mesa-va-drivers:amd64				install
-mesa-vdpau-drivers:amd64			install
-mesa-vulkan-drivers:amd64			install
-mesa-vulkan-drivers:i386			install
-meson						install
-metacity-common					install
-mime-support					install
-mkdocs						install
-mobile-broadband-provider-info			install
-modemmanager					install
-mokutil						install
-mono-4.0-gac					install
-mono-4.0-service				install
-mono-complete					install
-mono-csharp-shell				install
-mono-devel					install
-mono-gac					install
-mono-mcs					install
-mono-runtime					install
-mono-runtime-common				install
-mono-runtime-sgen				install
-mono-utils					install
-mono-xbuild					install
-mono-xsp4					install
-mono-xsp4-base					install
-monodoc-base					install
-monodoc-gtk2.0-manual				install
-monodoc-http					install
-monodoc-manual					install
-mopidy						install
-mopidy-mpd					install
-mosh						install
-mount						install
-mousetweaks					install
-mpc						install
-mpd						install
-mpv						install
-mscompress					install
-mtr-tiny					install
-mullvad-vpn					install
-mupdf						install
-mupdf-tools					install
-mutt						deinstall
-mutt-wizard					deinstall
-mutter						install
-mutter-common					install
-mysql-common					install
-mythes-en-us					install
-nala						install
-nano						install
-nautilus					install
-nautilus-data					install
-nautilus-extension-gnome-terminal		install
-nautilus-sendto					install
-nautilus-share					install
-nauty						install
-ncal						install
-ncdu						install
-ncmpcpp						install
-nco						install
-ncurses-base					install
-ncurses-bin					install
-ncurses-term					install
-ncview						install
-nemo						install
-nemo-data					install
-nemo-fileroller					install
-neomutt						install
-net-tools					install
-netbase						install
-netcat-openbsd					install
-netcdf-bin					install
-netpbm						install
-netplan.io					install
-nettle-dev:amd64				install
-network-manager					install
-network-manager-config-connectivity-ubuntu	install
-network-manager-gnome				install
-network-manager-openvpn				install
-network-manager-openvpn-gnome			install
-network-manager-pptp				install
-network-manager-pptp-gnome			install
-networkd-dispatcher				install
-newsboat					install
-nftables					install
-ninja-build					install
-nnn						install
-node-jed					install
-node-jquery					install
-nodejs						install
-normaliz					install
-normaliz-bin					install
-notify-osd					install
-notify-osd-icons				install
-ntfs-3g						install
-numba-doc					install
-nux-tools					install
-ocl-icd-libopencl1:amd64			install
-ocl-icd-libopencl1:i386				install
-odt2txt						install
-ofono						install
-okular						install
-okular-extra-backends				install
-openconnect					install
-openjade					install
-openjdk-11-jdk:amd64				install
-openjdk-11-jdk-headless:amd64			install
-openjdk-11-jre:amd64				install
-openjdk-11-jre-headless:amd64			install
-openmpi-bin					deinstall
-openprinting-ppds				install
-opensp						install
-openssh-client					install
-openssh-server					install
-openssh-sftp-server				install
-openssl						install
-openvpn						install
-opera-stable					deinstall
-orca						install
-os-prober					install
-p11-kit						install
-p11-kit-modules:amd64				install
-p7zip						install
-p7zip-full					install
-packagekit					install
-packagekit-tools				install
-palp						install
-pango1.0-tools					install
-papirus-icon-theme				install
-pari-doc					install
-pari-elldata					install
-pari-galdata					install
-pari-galpol					install
-pari-gp						install
-pari-gp2c					install
-pari-seadata					install
-parted						install
-pass						install
-passwd						install
-pastebinit					install
-patch						install
-patchutils					install
-pavucontrol					install
-pci.ids						install
-pciutils					install
-pcmciautils					install
-pdf2djvu					install
-pdf2svg						install
-pdfarranger					install
-pdftk						install
-pdftk-java					install
-pepperflashplugin-nonfree			deinstall
-perl						install
-perl-base					install
-perl-modules-5.34				install
-perl-openssl-defaults:amd64			install
-pfb2t1c2pfb					install
-phonon4qt5:amd64				install
-phonon4qt5-backend-vlc:amd64			install
-picom						install
-pigz						install
-pinentry-curses					install
-pinentry-gnome3					install
-pinentry-qt					install
-pipenv						install
-pipewire:amd64					install
-pipewire-bin					install
-pipewire-media-session				install
-pkexec						install
-pkg-config					install
-planarity					install
-plasma-framework				install
-playerctl					install
-plymouth					install
-plymouth-label					install
-plymouth-theme-spinner				install
-plymouth-theme-ubuntu-text			install
-pmount						install
-po-debconf					install
-pocketsphinx-en-us				install
-policykit-1					install
-policykit-1-gnome				install
-policykit-desktop-privileges			install
-polkitd						install
-polybar						install
-poppler-data					install
-poppler-utils					install
-power-profiles-daemon				install
-powerline					install
-powermgmt-base					install
-ppa-purge					install
-ppl-dev						install
-ppp						install
-pptp-linux					install
-preload						install
-prerex						install
-preview-latex-style				install
-primecount-bin					install
-primesieve-bin					install
-prince						install
-printer-driver-brlaser				install
-printer-driver-c2esp				install
-printer-driver-foo2zjs				install
-printer-driver-foo2zjs-common			install
-printer-driver-hpcups				install
-printer-driver-m2300w				install
-printer-driver-min12xxw				install
-printer-driver-pnm2ppa				install
-printer-driver-postscript-hp			install
-printer-driver-ptouch				install
-printer-driver-pxljr				install
-printer-driver-sag-gdi				install
-printer-driver-splix				install
-procps						install
-proj-bin					install
-proj-data					install
-protonmail-bridge				install
-ps2eps						install
-psmisc						install
-pstoedit					install
-psutils						install
-publicsuffix					install
-pulseaudio					install
-pulseaudio-module-bluetooth			install
-pulseaudio-utils				install
-pulsemixer					install
-purifyeps					install
-pyflakes3					install
-pylint						deinstall
-python-apt-common				install
-python-babel-localedata				install
-python-gmpy2-common				install
-python-is-python3				install
-python-matplotlib-data				install
-python-odf-doc					install
-python-odf-tools				install
-python-pkg-resources				install
-python-ppl-doc					install
-python-setuptools				install
-python-tables-data				install
-python2						install
-python2-minimal					install
-python2.7					install
-python2.7-minimal				install
-python3						install
-python3-alabaster				install
-python3-anyio					install
-python3-appdirs					install
-python3-apport					install
-python3-apt					install
-python3-aptdaemon				install
-python3-aptdaemon.gtk3widgets			install
-python3-argon2					install
-python3-asciitree				install
-python3-asn1crypto				install
-python3-async-generator				install
-python3-attr					install
-python3-babel					install
-python3-backcall				install
-python3-bcrypt					install
-python3-beniget					install
-python3-bleach					install
-python3-blinker					install
-python3-blosc					install
-python3-bottleneck				install
-python3-brial					install
-python3-brlapi:amd64				install
-python3-brotli					install
-python3-bs4					install
-python3-cachetools				install
-python3-cairo:amd64				install
-python3-cdo					install
-python3-certifi					install
-python3-cffi-backend:amd64			install
-python3-cftime					install
-python3-chardet					install
-python3-charset-normalizer			install
-python3-cliapp					install
-python3-click					install
-python3-cloudpickle				install
-python3-colorama				install
-python3-commandnotfound				install
-python3-commonmark				install
-python3-compizconfig:amd64			install
-python3-configobj				install
-python3-cov-core				install
-python3-coverage				install
-python3-cryptography				install
-python3-cups:amd64				install
-python3-cupshelpers				install
-python3-cvxopt					install
-python3-cycler					install
-python3-cypari2					install
-python3-cysignals-pari				install
-python3-dask					install
-python3-dateutil				install
-python3-dbus					install
-python3-debconf					install
-python3-debian					install
-python3-decorator				install
-python3-defer					install
-python3-defusedxml				install
-python3-dev					install
-python3-distlib					install
-python3-distributed				install
-python3-distro					install
-python3-distro-info				install
-python3-distupgrade				install
-python3-distutils				install
-python3-distutils-extra				install
-python3-docutils				install
-python3-dropbox					install
-python3-entrypoints				install
-python3-et-xmlfile				install
-python3-execnet					install
-python3-fasteners				install
-python3-filelock				install
-python3-flake8					install
-python3-fontforge:amd64				install
-python3-fonttools				install
-python3-fpylll					install
-python3-fs					install
-python3-fsspec					install
-python3-fusepy					install
-python3-future					install
-python3-gast					install
-python3-gdbm:amd64				install
-python3-gi					install
-python3-gi-cairo				install
-python3-gmpy2					install
-python3-google-auth				install
-python3-google-auth-httplib2			install
-python3-googleapi				install
-python3-greenlet				install
-python3-gst-1.0					install
-python3-h11					install
-python3-h5netcdf				install
-python3-h5py-serial				install
-python3-heapdict				install
-python3-html5lib				install
-python3-httpcore				install
-python3-httplib2				install
-python3-httpx					install
-python3-ibus-1.0				install
-python3-idna					install
-python3-imagesize				install
-python3-img2pdf					install
-python3-importlib-metadata			install
-python3-iniconfig				install
-python3-ipykernel				install
-python3-ipython					install
-python3-ipython-genutils			install
-python3-ipywidgets				install
-python3-isort					install
-python3-itsdangerous				install
-python3-jdcal					install
-python3-jedi					install
-python3-jeepney					install
-python3-jinja2					install
-python3-jsonschema				install
-python3-jupyter-client				install
-python3-jupyter-core				install
-python3-jupyterlab-pygments			install
-python3-jwt					install
-python3-keyring					install
-python3-kiwisolver				install
-python3-launchpadlib				install
-python3-lazr.restfulclient			install
-python3-lazr.uri				install
-python3-ldb					install
-python3-levenshtein				install
-python3-lib2to3					install
-python3-libarchive-c				install
-python3-livereload				install
-python3-llfuse:amd64				install
-python3-llvmlite				install
-python3-locket					install
-python3-lockfile				install
-python3-louis					install
-python3-lxml:amd64				install
-python3-lz4					install
-python3-macaroonbakery				install
-python3-mako					install
-python3-markdown				install
-python3-markupsafe				install
-python3-matplotlib				install
-python3-matplotlib-inline			install
-python3-mccabe					install
-python3-mechanize				install
-python3-memory-allocator			install
-python3-minimal					install
-python3-mistune					install
-python3-monotonic				install
-python3-more-itertools				install
-python3-mpd					install
-python3-mpmath					install
-python3-msgpack					install
-python3-mypy					install
-python3-mypy-extensions				install
-python3-nacl					install
-python3-nbclient				install
-python3-nbconvert				install
-python3-nbformat				install
-python3-nest-asyncio				install
-python3-netcdf4					install
-python3-netifaces:amd64				install
-python3-networkx				install
-python3-newt:amd64				install
-python3-nose					install
-python3-nose2					install
-python3-notebook				install
-python3-numba					install
-python3-numcodecs				install
-python3-numexpr					install
-python3-numpy					install
-python3-oauth2client				install
-python3-oauthlib				install
-python3-odf					install
-python3-olefile					install
-python3-openpyxl				install
-python3-openssl					install
-python3-outcome					install
-python3-packaging				install
-python3-pandas					install
-python3-pandas-lib:amd64			install
-python3-pandocfilters				install
-python3-paramiko				install
-python3-parso					install
-python3-partd					install
-python3-path					install
-python3-pathspec				install
-python3-pbr					deinstall
-python3-pexpect					install
-python3-pickleshare				install
-python3-pikepdf					install
-python3-pil:amd64				install
-python3-pil.imagetk:amd64			install
-python3-pip					install
-python3-pip-whl					install
-python3-pkg-resources				install
-python3-pkgconfig				install
-python3-platformdirs				install
-python3-pluggy					install
-python3-ply					install
-python3-powerline				install
-python3-ppl					install
-python3-primecountpy				install
-python3-problem-report				install
-python3-prometheus-client			install
-python3-prompt-toolkit				install
-python3-protobuf				install
-python3-psutil					install
-python3-ptyprocess				install
-python3-py					install
-python3-pyasn1					install
-python3-pyasn1-modules				install
-python3-pyatspi					install
-python3-pycodestyle				install
-python3-pycryptodome				install
-python3-pydrive					install
-python3-pyflakes				install
-python3-pyfuse3					install
-python3-pygit2					install
-python3-pygments				install
-python3-pyinotify				install
-python3-pykka					install
-python3-pymacaroons				install
-python3-pyparsing				install
-python3-pyqt5					install
-python3-pyqt5.qtopengl				install
-python3-pyqt5.qtquick				install
-python3-pyqt5.qtsql				install
-python3-pyqt5.qtwebchannel			install
-python3-pyqt5.qtwebengine			install
-python3-pyqt5.qtwebkit				install
-python3-pyqt5.sip				install
-python3-pyrsistent:amd64			install
-python3-pytest					install
-python3-pytest-cov				install
-python3-pytest-forked				install
-python3-pytest-sugar				install
-python3-pytest-xdist				install
-python3-pythran					install
-python3-pyxattr:amd64				install
-python3-regex					deinstall
-python3-renderpm:amd64				install
-python3-reportlab				install
-python3-reportlab-accel:amd64			install
-python3-requests				install
-python3-requests-file				install
-python3-rfc3339					install
-python3-rfc3986					install
-python3-rich					install
-python3-roman					install
-python3-rpy2					install
-python3-rsa					install
-python3-sage					install
-python3-sagenb-export				install
-python3-sagetex					install
-python3-scipy					install
-python3-scour					install
-python3-secretstorage				install
-python3-send2trash				install
-python3-setproctitle:amd64			install
-python3-setuptools				install
-python3-setuptools-scm				install
-python3-setuptools-whl				install
-python3-shellingham				install
-python3-simplegeneric				install
-python3-simplejson				install
-python3-singledispatch				install
-python3-sip					install
-python3-six					install
-python3-sniffio					install
-python3-snowballstemmer				install
-python3-software-properties			install
-python3-sortedcontainers			install
-python3-soupsieve				install
-python3-speechd					install
-python3-sphinx					install
-python3-sqlalchemy				install
-python3-sqlalchemy-ext:amd64			install
-python3-sss					install
-python3-stemmer:amd64				install
-python3-stone					install
-python3-sympy					install
-python3-systemd					install
-python3-tables					install
-python3-tables-lib				install
-python3-tagpy					install
-python3-talloc:amd64				install
-python3-tblib					install
-python3-termcolor				install
-python3-terminado				install
-python3-testpath				install
-python3-tk:amd64				install
-python3-tldextract				install
-python3-toml					install
-python3-tomli					install
-python3-toolz					install
-python3-tornado					install
-python3-traitlets				install
-python3-trio					install
-python3-ttystatus				install
-python3-typed-ast				install
-python3-typer					install
-python3-typing-extensions			install
-python3-tz					install
-python3-tzlocal					install
-python3-ufolib2					install
-python3-unicodedata2				install
-python3-uno					install
-python3-update-manager				install
-python3-uritemplate				install
-python3-urllib3					install
-python3-vcversioner				install
-python3-venv					install
-python3-virtualenv				install
-python3-virtualenv-clone			install
-python3-wadllib					install
-python3-wcwidth					install
-python3-webencodings				install
-python3-websocket				install
-python3-werkzeug				install
-python3-wheel					install
-python3-wheel-whl				install
-python3-widgetsnbextension			install
-python3-xarray					install
-python3-xcbgen					install
-python3-xdg					install
-python3-xkit					install
-python3-xlrd					install
-python3-xlwt					install
-python3-yaml					install
-python3-zarr					install
-python3-zict					install
-python3-zipp					install
-python3-zmq					install
-python3-zope.interface				install
-python3.10					install
-python3.10-dev					install
-python3.10-minimal				install
-python3.10-venv					install
-python3.8-venv					deinstall
-python3.9-minimal				deinstall
-python3.9-venv					deinstall
-qml-module-org-kde-bluezqt:amd64		install
-qml-module-org-kde-kconfig:amd64		install
-qml-module-org-kde-kirigami2			install
-qml-module-org-kde-kquickcontrols:amd64		install
-qml-module-org-kde-kquickcontrolsaddons:amd64	install
-qml-module-org-kde-people:amd64			install
-qml-module-org-kde-prison:amd64			install
-qml-module-org-kde-purpose:amd64		install
-qml-module-org-kde-qqc2desktopstyle		install
-qml-module-org-kde-sonnet:amd64			install
-qml-module-qt-labs-folderlistmodel:amd64	install
-qml-module-qt-labs-platform:amd64		install
-qml-module-qt-labs-settings:amd64		install
-qml-module-qtgraphicaleffects:amd64		install
-qml-module-qtmultimedia:amd64			install
-qml-module-qtqml:amd64				install
-qml-module-qtqml-models2:amd64			install
-qml-module-qtquick-controls:amd64		install
-qml-module-qtquick-controls2:amd64		install
-qml-module-qtquick-dialogs:amd64		install
-qml-module-qtquick-layouts:amd64		install
-qml-module-qtquick-particles2:amd64		install
-qml-module-qtquick-privatewidgets:amd64		install
-qml-module-qtquick-templates2:amd64		install
-qml-module-qtquick-window2:amd64		install
-qml-module-qtquick2:amd64			install
-qml-module-qtwebengine:amd64			install
-qml-module-ubuntu-onlineaccounts:amd64		install
-qrencode					install
-qt5-gtk-platformtheme:amd64			install
-qt5dxcb-plugin:amd64				install
-qtquickcontrols2-5-dev:amd64			install
-qtspeech5-flite-plugin:amd64			install
-qttranslations5-l10n				install
-qtwayland5:amd64				install
-qutebrowser					install
-qutebrowser-qtwebengine				install
-qutebrowser-qtwebkit				install
-r-base						install
-r-base-core					install
-r-base-dev					install
-r-base-html					install
-r-cran-boot					install
-r-cran-class					install
-r-cran-cluster					install
-r-cran-codetools				install
-r-cran-foreign					install
-r-cran-kernsmooth				install
-r-cran-lattice					install
-r-cran-mass					install
-r-cran-matrix					install
-r-cran-mgcv					install
-r-cran-nlme					install
-r-cran-nnet					install
-r-cran-rpart					install
-r-cran-spatial					install
-r-cran-survival					install
-r-doc-html					install
-r-recommended					install
-rake						install
-ranger						install
-rclone						install
-rclone-browser					install
-readline-common					install
-recode						install
-recordmydesktop					install
-remarkable-linux-client				install
-remind						install
-remmina						install
-remmina-common					install
-remmina-plugin-rdp:amd64			install
-remmina-plugin-secret:amd64			install
-remmina-plugin-vnc:amd64			install
-rfkill						install
-rhythmbox					install
-rhythmbox-data					install
-rhythmbox-plugin-alternative-toolbar		install
-rhythmbox-plugin-zeitgeist			install
-rhythmbox-plugins				install
-ri						install
-rlwrap						install
-rofi						install
-rpcsvc-proto					install
-rpm						install
-rpm-common					install
-rpm2cpio					install
-rstudio						install
-rsync						install
-rsyslog						install
-rtkit						install
-rtmpdump					install
-ruby						install
-ruby-bundler					install
-ruby-dev:amd64					install
-ruby-full					install
-ruby-minitest					install
-ruby-net-telnet					install
-ruby-optimist					install
-ruby-paint					install
-ruby-power-assert				install
-ruby-rubygems					install
-ruby-test-unit					install
-ruby-xmlrpc					install
-ruby3.0						install
-ruby3.0-dev:amd64				install
-ruby3.0-doc					install
-rubygems-integration				install
-run-one						install
-rxvt-unicode					install
-rygel						install
-sagemath					install
-sagemath-database-conway-polynomials		install
-sagemath-database-elliptic-curves		install
-sagemath-database-graphs			install
-sagemath-database-mutually-combinatorial-designs	install
-sagemath-database-polytopes			install
-sagemath-doc					install
-sagemath-jupyter				install
-sagetex						install
-samba-libs:amd64				install
-sane-airscan					install
-sane-utils					install
-sassc						install
-sbsigntool					install
-sc						install
-scrcpy						install
-scrcpy-server					install
-screenkey					install
-scrot						install
-seahorse					install
-secureboot-db					install
-sed						install
-sensible-utils					install
-session-migration				install
-session-shortcuts				install
-sgml-base					install
-sgml-data					install
-shared-mime-info				install
-shellcheck					install
-shfmt						install
-shfmt-bin					install
-shim-signed					install
-shotwell					install
-shotwell-common					install
-shutter						deinstall
-signal-desktop					install
-signal-desktop-beta				deinstall
-signon-plugin-oauth2				install
-silversearcher-ag				install
-simple-scan					install
-singular:amd64					install
-singular-data					install
-singular-doc					install
-singular-modules:amd64				install
-singular-ui					install
-slack-desktop					install
-slirp4netns					install
-slop						install
-snapd						install
-software-properties-common			install
-software-properties-gtk				install
-sonata						install
-sonnet-plugins:amd64				install
-sound-icons					install
-sound-theme-freedesktop				install
-source-highlight				install
-sox						install
-speech-dispatcher				install
-speech-dispatcher-audio-plugins:amd64		install
-speech-dispatcher-espeak-ng			install
-speedtest-cli					install
-sphinx-common					install
-sphinx-rtd-theme-common				install
-spice-vdagent					install
-spotify-client					install
-spyder						deinstall
-sqlite3						install
-squashfs-tools					install
-ssh-import-id					install
-sshfs						install
-ssl-cert					install
-sssd						install
-sssd-ad						install
-sssd-ad-common					install
-sssd-common					install
-sssd-dbus					deinstall
-sssd-ipa					install
-sssd-krb5					install
-sssd-krb5-common				install
-sssd-ldap					install
-sssd-proxy					install
-stacer						install
-stow						install
-strace						install
-sublime-text					install
-suckless-tools					deinstall
-sudo						install
-surf						deinstall
-surf-alggeo					install
-surf-alggeo-nox					install
-switcheroo-control				install
-sxhkd						install
-sympow						install
-sympow-data					install
-syncthing					install
-system-config-printer				install
-system-config-printer-common			install
-system-config-printer-udev			install
-systemd						install
-systemd-hwe-hwdb				install
-systemd-oomd					install
-systemd-sysv					install
-systemd-timesyncd				install
-sysvinit-utils					install
-t1utils						install
-tabby-terminal					install
-tachyon						install
-tachyon-bin-nox					install
-tar						install
-tcl						install
-tcl-dev:amd64					install
-tcl-expect:amd64				install
-tcl8.6						install
-tcl8.6-dev:amd64				install
-tcllib						install
-tcpdump						install
-teams						install
-teckit						install
-telegram-bin					deinstall
-telnet						install
-tesseract-ocr					install
-tesseract-ocr-eng				install
-tesseract-ocr-osd				install
-tex-common					install
-tex-gyre					install
-texinfo						install
-texlive						install
-texlive-base					install
-texlive-bibtex-extra				install
-texlive-binaries				install
-texlive-extra-utils				install
-texlive-font-utils				install
-texlive-fonts-extra				install
-texlive-fonts-extra-doc				install
-texlive-fonts-extra-links			install
-texlive-fonts-recommended			install
-texlive-fonts-recommended-doc			install
-texlive-formats-extra				install
-texlive-full					install
-texlive-games					install
-texlive-humanities				install
-texlive-humanities-doc				install
-texlive-lang-arabic				install
-texlive-lang-chinese				install
-texlive-lang-cjk				install
-texlive-lang-cyrillic				install
-texlive-lang-czechslovak			install
-texlive-lang-english				install
-texlive-lang-european				install
-texlive-lang-french				install
-texlive-lang-german				install
-texlive-lang-greek				install
-texlive-lang-italian				install
-texlive-lang-japanese				install
-texlive-lang-korean				install
-texlive-lang-other				install
-texlive-lang-polish				install
-texlive-lang-portuguese				install
-texlive-lang-spanish				install
-texlive-latex-base				install
-texlive-latex-base-doc				install
-texlive-latex-extra				install
-texlive-latex-extra-doc				install
-texlive-latex-recommended			install
-texlive-latex-recommended-doc			install
-texlive-luatex					install
-texlive-metapost				install
-texlive-metapost-doc				install
-texlive-music					install
-texlive-pictures				install
-texlive-pictures-doc				install
-texlive-plain-generic				install
-texlive-pstricks				install
-texlive-pstricks-doc				install
-texlive-publishers				install
-texlive-publishers-doc				install
-texlive-science					install
-texlive-science-doc				install
-texlive-xetex					install
-thermald					install
-thunar						install
-thunar-data					install
-thunar-volman					install
-thunderbird					install
-thunderbird-gnome-support			install
-thunderbird-locale-en				install
-thunderbird-locale-en-us			install
-time						install
-timer						install
-timgm6mb-soundfont				install
-tipa						install
-tk						install
-tk-dev:amd64					install
-tk8.6						install
-tk8.6-blt2.5					install
-tk8.6-dev:amd64					install
-tmux						install
-tnftp						install
-toilet						install
-toilet-fonts					install
-topcom						install
-topcom-examples					install
-tor						deinstall
-totem						install
-totem-common					install
-totem-plugins					install
-tox						install
-tpm-udev					install
-tracker						install
-tracker-extract					install
-tracker-miner-fs				install
-translate-shell					install
-transmission-common				install
-transmission-gtk				install
-trash-cli					install
-tree						install
-ttf-bitstream-vera				install
-ttf-mscorefonts-installer			install
-ttyd						deinstall
-tumbler:amd64					install
-tumbler-common					install
-tzdata						install
-ubuntu-advantage-desktop-daemon			install
-ubuntu-advantage-tools				install
-ubuntu-docs					install
-ubuntu-drivers-common				install
-ubuntu-keyring					install
-ubuntu-minimal					install
-ubuntu-mono					install
-ubuntu-release-upgrader-core			install
-ubuntu-release-upgrader-gtk			install
-ubuntu-report					install
-ubuntu-restricted-addons			install
-ubuntu-session					install
-ubuntu-settings					install
-ubuntu-standard					install
-ubuntu-touch-sounds				install
-ubuntu-wallpapers				install
-ubuntu-wallpapers-jammy				install
-ucf						install
-udev						install
-udisks2						install
-ufw						install
-uim						install
-uim-data					install
-uim-fep						install
-uim-gtk2.0					install
-uim-gtk2.0-immodule:amd64			install
-uim-gtk3					install
-uim-gtk3-immodule:amd64				install
-uim-plugins:amd64				install
-uim-qt5						install
-uim-qt5-immodule:amd64				install
-uim-xim						install
-ulauncher					deinstall
-unattended-upgrades				install
-unicode-data					install
-units						install
-unity						install
-unity-asset-pool				install
-unity-control-center				install
-unity-greeter					install
-unity-gtk-module-common				install
-unity-gtk2-module:amd64				install
-unity-gtk3-module:amd64				install
-unity-schemas					install
-unity-scope-home				install
-unity-scopes-master-default			install
-unity-services					install
-unity-session					install
-unity-settings-daemon				install
-unity-settings-daemon-schemas			install
-uno-libs-private				install
-unoconv						install
-unrar						install
-unrtf						install
-unzip						install
-update-inetd					install
-update-manager					install
-update-manager-core				install
-update-notifier					install
-update-notifier-common				install
-upower						install
-ure						install
-usb-creator-common				install
-usb-creator-gtk					install
-usb-modeswitch					install
-usb-modeswitch-data				install
-usb.ids						install
-usbmuxd						install
-usbutils					install
-usrmerge					install
-uthash-dev:amd64				install
-util-linux					install
-uuid-dev:amd64					install
-uuid-runtime					install
-v4l-utils					install
-v4l2loopback-dkms				install
-v4l2loopback-utils				install
-va-driver-all:amd64				install
-vdpau-driver-all:amd64				install
-viewnior					install
-vifm						install
-vim						install
-vim-addon-manager				install
-vim-common					install
-vim-gtk3					install
-vim-gui-common					install
-vim-nox						install
-vim-runtime					install
-vim-tiny					install
-virtualbox					install
-virtualbox-dkms					install
-virtualbox-qt					install
-vlc-data					install
-vlc-plugin-base:amd64				install
-vlc-plugin-video-output:amd64			install
-vpnc-scripts					install
-vprerex						install
-w3m						install
-w3m-img						install
-wamerican					install
-wayland-protocols				install
-wbritish					install
-webkit2gtk-driver				install
-webp						install
-wezterm						install
-wget						install
-whiptail					install
-whois						install
-whoopsie					install
-whoopsie-preferences				install
-wine-stable					install
-wine-stable-amd64				install
-wine-stable-i386:i386				install
-wine32:i386					install
-wine64						install
-winehq-stable					install
-wireless-regdb					install
-wireless-tools					install
-wmdocker					install
-wmtemp						install
-wolframscript					install
-wpasupplicant					install
-wv						install
-x11-apps					install
-x11-common					install
-x11-session-utils				install
-x11-utils					install
-x11-xkb-utils					install
-x11-xserver-utils				install
-x11proto-core-dev				install
-x11proto-dev					install
-x11proto-randr-dev				install
-x11proto-record-dev				install
-x11proto-scrnsaver-dev				install
-x11proto-xext-dev				install
-x11proto-xf86dga-dev				install
-x11proto-xf86vidmode-dev			install
-xapp						install
-xapps-common					install
-xauth						install
-xaw3dg:amd64					install
-xbitmaps					install
-xbrlapi						install
-xcape						install
-xcas						install
-xcb						install
-xcb-proto					install
-xclip						install
-xcompmgr					install
-xcursor-themes					install
-xcvt						install
-xdg-dbus-proxy					install
-xdg-desktop-portal				install
-xdg-desktop-portal-gnome			install
-xdg-desktop-portal-gtk				install
-xdg-user-dirs					install
-xdg-user-dirs-gtk				install
-xdg-utils					install
-xdm						install
-xdo						install
-xdotool						install
-xfconf						install
-xfig						install
-xfig-libs					install
-xfonts-base					install
-xfonts-encodings				install
-xfonts-scalable					install
-xfonts-utils					install
-xinit						install
-xinput						install
-xkb-data					install
-xml-core					install
-xorg						install
-xorg-dev					install
-xorg-docs-core					install
-xorg-sgml-doctools				install
-xserver-common					install
-xserver-xephyr					install
-xserver-xorg					install
-xserver-xorg-core				install
-xserver-xorg-dev				install
-xserver-xorg-input-all				install
-xserver-xorg-input-libinput			install
-xserver-xorg-input-wacom			install
-xserver-xorg-legacy				install
-xserver-xorg-video-all				install
-xserver-xorg-video-amdgpu			install
-xserver-xorg-video-ati				install
-xserver-xorg-video-fbdev			install
-xserver-xorg-video-intel			install
-xserver-xorg-video-nouveau			install
-xserver-xorg-video-qxl				install
-xserver-xorg-video-radeon			install
-xserver-xorg-video-vesa				install
-xserver-xorg-video-vmware			install
-xsltproc					install
-xterm						install
-xtrans-dev					install
-xul-ext-ubufox					deinstall
-xutils-dev					install
-xwayland					install
-xxd						install
-xz-utils					install
-yaru-theme-gnome-shell				install
-yaru-theme-gtk					install
-yaru-theme-icon					install
-yaru-theme-sound				install
-yasm						install
-yelp						install
-yelp-xsl					install
-youtube-dl					install
-yudit-common					install
-zathura						install
-zathura-dev:amd64				install
-zathura-pdf-poppler				install
-zbar-tools					install
-zeitgeist-core					install
-zeitgeist-datahub				install
-zenity						install
-zenity-common					install
-zip						install
-zlib1g:amd64					install
-zlib1g:i386					install
-zlib1g-dev:amd64				install
-zoom						install
-zsh						install
-zsh-common					install
-zstd						install
+accountsservice 22.07.5-2ubuntu1.3 [Ubuntu/jammy main]
+accountsservice-ubuntu-schemas 0.0.7+21.10.20210712-0ubuntu2 [Ubuntu/jammy universe]
+acl 2.3.1-1 [Ubuntu/jammy main]
+acpi-support 0.144 [Ubuntu/jammy main]
+acpid 1:2.0.33-1ubuntu1 [Ubuntu/jammy main]
+activity-log-manager 0.9.7-0ubuntu28 [Ubuntu/jammy universe]
+adb 1:10.0.0+r36-9 [Ubuntu/jammy universe]
+adduser 3.118ubuntu5 [Ubuntu/jammy main]
+adobereader-enu:i386 9.5.5 [local]
+adwaita-icon-theme 41.0-1ubuntu1 [Ubuntu/jammy main]
+aglfn 1.7+git20191031.4036a9c-2 [Ubuntu/jammy universe]
+airport-utils 2-8 [Ubuntu/jammy universe]
+aisleriot 1:3.22.22-1 [Ubuntu/jammy main]
+alltray:i386 0.60-1 [local]
+alsa-base 1.0.25+dfsg-0ubuntu7 [Ubuntu/jammy main]
+alsa-topology-conf 1.2.5.1-2 [Ubuntu/jammy main]
+alsa-ucm-conf 1.2.6.3-1ubuntu1.5 [Ubuntu/jammy main]
+alsa-utils 1.2.6-1ubuntu1 [Ubuntu/jammy main]
+amd64-microcode 3.20191218.1ubuntu2 [Ubuntu/jammy main]
+anacron 2.3-31ubuntu2 [Ubuntu/jammy main]
+android-libadb 1:10.0.0+r36-9 [Ubuntu/jammy universe]
+android-libbase 1:10.0.0+r36-9 [Ubuntu/jammy universe]
+android-libboringssl 10.0.0+r36-1 [Ubuntu/jammy universe]
+android-libcrypto-utils 1:10.0.0+r36-9 [Ubuntu/jammy universe]
+android-libcutils 1:10.0.0+r36-9 [Ubuntu/jammy universe]
+android-liblog 1:10.0.0+r36-9 [Ubuntu/jammy universe]
+android-sdk-platform-tools-common 28.0.2+6 [Ubuntu/jammy universe]
+anthy 1:0.4-2 [Ubuntu/jammy universe]
+anthy-common 1:0.4-2 [Ubuntu/jammy universe]
+antiword 0.37-16 [Ubuntu/jammy universe]
+apache2 2.4.52-1ubuntu4.5 [Ubuntu/jammy main]
+apache2-bin 2.4.52-1ubuntu4.5 [Ubuntu/jammy main]
+apache2-data 2.4.52-1ubuntu4.5 [Ubuntu/jammy main]
+apache2-utils 2.4.52-1ubuntu4.5 [Ubuntu/jammy main]
+apg 2.2.3.dfsg.1-5build2 [Ubuntu/jammy main]
+apparmor 3.0.4-2ubuntu2.2 [Ubuntu/jammy main]
+apport 2.20.11-0ubuntu82.5 [Ubuntu/jammy main]
+apport-gtk 2.20.11-0ubuntu82.5 [Ubuntu/jammy main]
+apport-symptoms 0.24 [Ubuntu/jammy main]
+appstream 0.15.2-2 [Ubuntu/jammy main]
+apt 2.4.9 [Ubuntu/jammy main]
+apt-config-icons 0.15.2-2 [Ubuntu/jammy main]
+apt-config-icons-hidpi 0.15.2-2 [Ubuntu/jammy main]
+apt-file 3.2.2 [Ubuntu/jammy universe]
+apt-transport-https 2.4.9 [Ubuntu/jammy universe]
+apt-utils 2.4.9 [Ubuntu/jammy main]
+aptdaemon 1.1.1+bzr982-0ubuntu39 [Ubuntu/jammy main]
+aptdaemon-data 1.1.1+bzr982-0ubuntu39 [Ubuntu/jammy main]
+apturl 0.5.2ubuntu22 [Ubuntu/jammy main]
+apturl-common 0.5.2ubuntu22 [Ubuntu/jammy main]
+arandr 0.1.10-1.1 [Ubuntu/jammy universe]
+art 1.2-1dhor~focal [local]
+asciinema 2.1.0-1 [Ubuntu/jammy universe]
+aspell 0.60.8-4build1 [Ubuntu/jammy main]
+aspell-en 2018.04.16-0-1 [Ubuntu/jammy main]
+asymptote 2.78+ds-2 [Ubuntu/jammy universe]
+asymptote-doc 2.78+ds-2 [Ubuntu/jammy universe]
+at-spi2-core 2.44.0-3 [Ubuntu/jammy main]
+autoconf 2.71-2 [Ubuntu/jammy main]
+autoconf-archive 20210219-2.1 [Ubuntu/jammy universe]
+automake 1:1.16.5-1.3 [Ubuntu/jammy main]
+autopoint 0.21-4ubuntu4 [Ubuntu/jammy main]
+autorandr 1.11-1 [Ubuntu/jammy universe]
+autotools-dev 20220109.1 [Ubuntu/jammy main]
+avahi-autoipd 0.8-5ubuntu5 [Ubuntu/jammy main]
+avahi-daemon 0.8-5ubuntu5 [Ubuntu/jammy main]
+avahi-utils 0.8-5ubuntu5 [Ubuntu/jammy main]
+bamfdaemon 0.5.6+22.04.20220217-0ubuntu1 [Ubuntu/jammy universe]
+baobab 41.0-2 [Ubuntu/jammy main]
+base-files 12ubuntu4.3 [Ubuntu/jammy main]
+base-passwd 3.5.52build1 [Ubuntu/jammy main]
+bash 5.1-6ubuntu1 [Ubuntu/jammy main]
+bash-completion 1:2.11-5ubuntu1 [Ubuntu/jammy main]
+batsignal 1.6.4 [local]
+bc 1.07.1-3build1 [Ubuntu/jammy main]
+bibclean 2.11.4.1-4build1 [Ubuntu/jammy universe]
+biber 2.17-2 [Ubuntu/jammy universe]
+bibutils 7.2-1 [Ubuntu/jammy universe]
+bind9-dnsutils 1:9.18.12-0ubuntu0.22.04.1 [Ubuntu/jammy main]
+bind9-host 1:9.18.12-0ubuntu0.22.04.1 [Ubuntu/jammy main]
+bind9-libs 1:9.18.12-0ubuntu0.22.04.1 [Ubuntu/jammy main]
+binfmt-support 2.2.1-2 [Ubuntu/jammy main]
+binutils 2.38-4ubuntu2.2 [Ubuntu/jammy main]
+binutils-common 2.38-4ubuntu2.2 [Ubuntu/jammy main]
+binutils-x86-64-linux-gnu 2.38-4ubuntu2.2 [Ubuntu/jammy main]
+bison 2:3.8.2+dfsg-1build1 [Ubuntu/jammy main]
+bitwarden 2023.4.0 [local]
+black 21.12b0-1 [Ubuntu/jammy universe]
+blt 2.5.3+dfsg-4.1build2 [Ubuntu/jammy main]
+blueman 2.2.4-1 [Ubuntu/jammy universe]
+bluez 5.64-0ubuntu1 [Ubuntu/jammy main]
+bluez-cups 5.64-0ubuntu1 [Ubuntu/jammy main]
+bluez-obexd 5.64-0ubuntu1 [Ubuntu/jammy main]
+bluez-tools 2.0~20170911.0.7cb788c-4 [Ubuntu/jammy universe]
+bolt 0.9.2-1 [Ubuntu/jammy main]
+borgbackup 1.2.0-1 [Ubuntu/jammy universe]
+boxes 2.1.1-2 [Ubuntu/jammy universe]
+branding-ubuntu 0.10 [Ubuntu/jammy main]
+brave-browser 1.51.118 [local]
+brave-keyring 1.13 [local]
+brightness-udev 0.5.1-3 [Ubuntu/jammy universe]
+brightnessctl 0.5.1-3 [Ubuntu/jammy universe]
+brltty 6.4-4ubuntu3 [Ubuntu/jammy main]
+brotli 1.0.9-2build6 [Ubuntu/jammy universe]
+bsdextrautils 2.37.2-4ubuntu3 [Ubuntu/jammy main]
+bsdutils 1:2.37.2-4ubuntu3 [Ubuntu/jammy main]
+bspwm 0.9.10-2 [Ubuntu/jammy universe]
+btop 1.2.3-2 [Ubuntu/jammy universe]
+bubblewrap 0.6.1-1 [Ubuntu/jammy main]
+build-essential 12.9ubuntu3 [Ubuntu/jammy main]
+bundler 2.3.5-2 [Ubuntu/jammy universe]
+busybox-initramfs 1:1.30.1-7ubuntu3 [Ubuntu/jammy main]
+busybox-static 1:1.30.1-7ubuntu3 [Ubuntu/jammy main]
+byobu 5.133-1 [Ubuntu/jammy main]
+bzip2 1.0.8-5build1 [Ubuntu/jammy main]
+bzip2-doc 1.0.8-5build1 [Ubuntu/jammy main]
+ca-certificates 20211016ubuntu0.22.04.1 [Ubuntu/jammy main]
+ca-certificates-java 20190909ubuntu1.2 [Ubuntu/jammy main]
+ca-certificates-mono 6.8.0.105+dfsg-3.2 [Ubuntu/jammy universe]
+cabal-debian 5.0.3-1build1.1 [Ubuntu/jammy universe]
+cabal-install 3.0.0.0-3build1.1 [Ubuntu/jammy universe]
+cabextract 1.9-3 [Ubuntu/jammy universe]
+caca-utils 0.99.beta19-2.2ubuntu4 [Ubuntu/jammy universe]
+calcurse 4.6.0-2 [Ubuntu/jammy universe]
+caprine 2.52.2 [local]
+catdoc 1:0.95-5 [Ubuntu/jammy universe]
+catimg 2.7.0-1 [Ubuntu/jammy universe]
+cb2bib 2.0.1-2 [Ubuntu/jammy universe]
+cdo 2.0.4-1 [Ubuntu/jammy universe]
+checkinstall 1.6.2+git20170426.d24a630-2ubuntu2 [Ubuntu/jammy universe]
+cheese 41.1-1build1 [Ubuntu/jammy main]
+cheese-common 41.1-1build1 [Ubuntu/jammy main]
+chktex 1.7.6-4 [Ubuntu/jammy universe]
+chrome-gnome-shell 10.1-5 [Ubuntu/jammy universe]
+chromium-codecs-ffmpeg-extra 1:85.0.4183.83-0ubuntu2.22.04.1 [Ubuntu/jammy universe]
+cinnamon-desktop-data 5.2.1-1 [Ubuntu/jammy universe]
+cinnamon-l10n 5.2.2-1 [Ubuntu/jammy universe]
+cli-common 0.10 [Ubuntu/jammy universe]
+cliquer 1.21-3 [Ubuntu/jammy universe]
+cloc 1.90-1 [Ubuntu/jammy universe]
+cm-super 0.3.4-17 [Ubuntu/jammy universe]
+cm-super-minimal 0.3.4-17 [Ubuntu/jammy universe]
+cmake 3.22.1-1ubuntu1.22.04.1 [Ubuntu/jammy main]
+cmake-data 3.22.1-1ubuntu1.22.04.1 [Ubuntu/jammy main]
+cmatrix 2.0-3 [Ubuntu/jammy universe]
+cmdtest 0.32.14.gcdfe14e-2 [Ubuntu/jammy universe]
+code 1.65.1-1646706496 [local]
+colord 1.4.6-1 [Ubuntu/jammy main]
+colord-data 1.4.6-1 [Ubuntu/jammy main]
+comerr-dev 2.1-1.46.5-2ubuntu1.1 [Ubuntu/jammy main]
+command-not-found 22.04.0 [Ubuntu/jammy main]
+compiz 1:0.9.14.1+22.04.20220820-0ubuntu1 [Ubuntu/jammy universe]
+compiz-core 1:0.9.14.1+22.04.20220820-0ubuntu1 [Ubuntu/jammy universe]
+compiz-gnome 1:0.9.14.1+22.04.20220820-0ubuntu1 [Ubuntu/jammy universe]
+compiz-plugins 1:0.9.14.1+22.04.20220820-0ubuntu1 [Ubuntu/jammy universe]
+compiz-plugins-default 1:0.9.14.1+22.04.20220820-0ubuntu1 [Ubuntu/jammy universe]
+compiz-plugins-extra 1:0.9.14.1+22.04.20220820-0ubuntu1 [Ubuntu/jammy universe]
+compizconfig-settings-manager 1:0.9.14.1+22.04.20220820-0ubuntu1 [Ubuntu/jammy universe]
+compton 1-1 [Ubuntu/jammy universe]
+console-setup 1.205ubuntu3 [Ubuntu/jammy main]
+console-setup-linux 1.205ubuntu3 [Ubuntu/jammy main]
+containerd.io 1.6.21-1 [Docker CE/ stable]
+context 2021.03.05.20220211-1 [Ubuntu/jammy universe]
+context-modules 20210301-1 [Ubuntu/jammy universe]
+coreutils 8.32-4.1ubuntu1 [Ubuntu/jammy main]
+cpio 2.13+dfsg-7 [Ubuntu/jammy main]
+cpp 4:11.2.0-1ubuntu1 [Ubuntu/jammy main]
+cpp-10 10.4.0-4ubuntu1~22.04 [Ubuntu/jammy universe]
+cpp-11 11.3.0-1ubuntu1~22.04.1 [Ubuntu/jammy main]
+cpp-12 12.1.0-2ubuntu1~22.04 [Ubuntu/jammy main]
+cpp-9 9.5.0-1ubuntu1~22.04 [Ubuntu/jammy universe]
+cracklib-runtime 2.9.6-3.4build4 [Ubuntu/jammy main]
+cron 3.0pl1-137ubuntu3 [Ubuntu/jammy main]
+csh 20110502-7 [Ubuntu/jammy universe]
+csvtool 2.4-1build3 [Ubuntu/jammy universe]
+cups 2.4.1op1-1ubuntu4.1 [Ubuntu/jammy main]
+cups-browsed 1.28.15-0ubuntu1.2 [Ubuntu/jammy main]
+cups-bsd 2.4.1op1-1ubuntu4.1 [Ubuntu/jammy main]
+cups-client 2.4.1op1-1ubuntu4.1 [Ubuntu/jammy main]
+cups-common 2.4.1op1-1ubuntu4.1 [Ubuntu/jammy main]
+cups-core-drivers 2.4.1op1-1ubuntu4.1 [Ubuntu/jammy main]
+cups-daemon 2.4.1op1-1ubuntu4.1 [Ubuntu/jammy main]
+cups-filters 1.28.15-0ubuntu1.2 [Ubuntu/jammy main]
+cups-filters-core-drivers 1.28.15-0ubuntu1.2 [Ubuntu/jammy main]
+cups-ipp-utils 2.4.1op1-1ubuntu4.1 [Ubuntu/jammy main]
+cups-pk-helper 0.2.6-1ubuntu5 [Ubuntu/jammy main]
+cups-ppdc 2.4.1op1-1ubuntu4.1 [Ubuntu/jammy main]
+cups-server-common 2.4.1op1-1ubuntu4.1 [Ubuntu/jammy main]
+curl 7.81.0-1ubuntu1.10 [Ubuntu/jammy main]
+cvs 2:1.12.13+real-28 [Ubuntu/jammy universe]
+cvsps 2.1-8build2 [Ubuntu/jammy universe]
+cysignals-tools 1.11.2+ds-1build1 [Ubuntu/jammy universe]
+cython3 0.29.28-1ubuntu3 [Ubuntu/jammy universe]
+darktable 3.8.1-2 [Ubuntu/jammy universe]
+dash 0.5.11+git20210903+057cd650a4ed-3build1 [Ubuntu/jammy main]
+dbus 1.12.20-2ubuntu4.1 [Ubuntu/jammy main]
+dbus-user-session 1.12.20-2ubuntu4.1 [Ubuntu/jammy main]
+dbus-x11 1.12.20-2ubuntu4.1 [Ubuntu/jammy main]
+dc 1.07.1-3build1 [Ubuntu/jammy main]
+dconf-cli 0.40.0-3 [Ubuntu/jammy main]
+dconf-editor 3.38.3-3 [Ubuntu/jammy universe]
+dconf-gsettings-backend 0.40.0-3 [Ubuntu/jammy main]
+dconf-service 0.40.0-3 [Ubuntu/jammy main]
+dctrl-tools 2.24-3build2 [Ubuntu/jammy main]
+debconf 1.5.79ubuntu1 [Ubuntu/jammy main]
+debconf-i18n 1.5.79ubuntu1 [Ubuntu/jammy main]
+debhelper 13.6ubuntu1 [Ubuntu/jammy main]
+debianutils 5.5-1ubuntu2 [Ubuntu/jammy main]
+debugedit 1:5.0-4build1 [Ubuntu/jammy main]
+default-jdk 2:1.11-72build2 [Ubuntu/jammy main]
+default-jdk-headless 2:1.11-72build2 [Ubuntu/jammy main]
+default-jre 2:1.11-72build2 [Ubuntu/jammy main]
+default-jre-headless 2:1.11-72build2 [Ubuntu/jammy main]
+deja-dup 42.9-1ubuntu3 [Ubuntu/jammy main]
+desktop-file-utils 0.26-1ubuntu3 [Ubuntu/jammy main]
+dex 0.9.0-1 [Ubuntu/jammy universe]
+dh-autoreconf 20 [Ubuntu/jammy main]
+dh-elpa-helper 2.0.9ubuntu1 [Ubuntu/jammy main]
+dh-strip-nondeterminism 1.13.0-1 [Ubuntu/jammy main]
+dialog 1.3-20211214-1 [Ubuntu/jammy universe]
+dictionaries-common 1.28.14 [Ubuntu/jammy main]
+diffstat 1.64-1build2 [Ubuntu/jammy main]
+diffutils 1:3.8-0ubuntu2 [Ubuntu/jammy main]
+dirmngr 2.2.27-3ubuntu2.1 [Ubuntu/jammy main]
+distro-info 1.1build1 [Ubuntu/jammy main]
+distro-info-data 0.52ubuntu0.4 [Ubuntu/jammy main]
+djvulibre-bin 3.5.28-2build2 [Ubuntu/jammy universe]
+dkms 2.8.7-2ubuntu2.1 [Ubuntu/jammy main]
+dmidecode 3.3-3ubuntu0.1 [Ubuntu/jammy main]
+dmsetup 2:1.02.175-2.1ubuntu4 [Ubuntu/jammy main]
+dmz-cursor-theme 0.4.5ubuntu1 [Ubuntu/jammy main]
+dns-root-data 2021011101 [Ubuntu/jammy main]
+dnsmasq-base 2.86-1.1ubuntu0.3 [Ubuntu/jammy main]
+docbook 4.5-9 [Ubuntu/jammy universe]
+docbook-to-man 1:2.0.0-45 [Ubuntu/jammy universe]
+docbook-xml 4.5-11 [Ubuntu/jammy main]
+docbook-xsl 1.79.2+dfsg-1 [Ubuntu/jammy universe]
+docker 1.5-2 [Ubuntu/jammy universe]
+docker-buildx-plugin 0.10.4-1~ubuntu.20.04~focal [Docker CE/ stable]
+docker-ce 5:24.0.1-1~ubuntu.20.04~focal [Docker CE/ stable]
+docker-ce-cli 5:24.0.1-1~ubuntu.20.04~focal [Docker CE/ stable]
+docker-ce-rootless-extras 5:24.0.1-1~ubuntu.20.04~focal [Docker CE/ stable]
+docker-compose-plugin 2.18.1-1~ubuntu.20.04~focal [Docker CE/ stable]
+docutils-common 0.17.1+dfsg-2 [Ubuntu/jammy main]
+docx2txt 1.4-5 [Ubuntu/jammy universe]
+dos2unix 7.4.2-2 [Ubuntu/jammy universe]
+dosfstools 4.2-1build3 [Ubuntu/jammy main]
+dpkg 1.21.1ubuntu2.1 [Ubuntu/jammy main]
+dpkg-dev 1.21.1ubuntu2.1 [Ubuntu/jammy main]
+dunst 20210810-1 [local]
+duplicity 0.8.21-1build1 [Ubuntu/jammy main]
+dvidvi 1.0-8.2 [Ubuntu/jammy universe]
+dvipng 1.15-1.1 [Ubuntu/jammy universe]
+dvisvgm 2.13.1-1 [Ubuntu/jammy universe]
+dvtm 0.15+40.g311a8c0-1build1 [Ubuntu/jammy universe]
+dwz 0.14-1build2 [Ubuntu/jammy main]
+e2fsprogs 1.46.5-2ubuntu1.1 [Ubuntu/jammy main]
+ecl 21.2.1+ds-4 [Ubuntu/jammy universe]
+eclib-tools 20210625-1build1 [Ubuntu/jammy universe]
+ed 1.18-1 [Ubuntu/jammy main]
+efibootmgr 17-1ubuntu2 [Ubuntu/jammy main]
+eject 2.37.2-4ubuntu3 [Ubuntu/jammy main]
+elinks 0.13.2-1build3 [Ubuntu/jammy universe]
+elinks-data 0.13.2-1build3 [Ubuntu/jammy universe]
+emacsen-common 3.0.4 [Ubuntu/jammy main]
+enchant-2 2.3.2-1ubuntu2 [Ubuntu/jammy main]
+entangle 3.0-3 [Ubuntu/jammy universe]
+entr 5.1-1 [Ubuntu/jammy universe]
+eog 42.0-1 [Ubuntu/jammy main]
+espeak-ng-data 1.50+dfsg-10 [Ubuntu/jammy main]
+evince 42.3-0ubuntu3 [Ubuntu/jammy main]
+evince-common 42.3-0ubuntu3 [Ubuntu/jammy main]
+evolution-data-server 3.44.4-0ubuntu1 [Ubuntu/jammy main]
+evolution-data-server-common 3.44.4-0ubuntu1 [Ubuntu/jammy main]
+exif 0.6.22-2 [Ubuntu/jammy universe]
+exiv2 0.27.5-3ubuntu1 [Ubuntu/jammy universe]
+exo-utils 4.16.3-1 [Ubuntu/jammy universe]
+expect 5.45.4-2build1 [Ubuntu/jammy universe]
+fakeroot 1.28-1ubuntu1 [Ubuntu/jammy main]
+falkon 3.2.0+dfsg1-1 [Ubuntu/jammy universe]
+fastjar 2:0.98-7 [Ubuntu/jammy universe]
+fdisk 2.37.2-4ubuntu3 [Ubuntu/jammy main]
+feh 3.6.3-1 [Ubuntu/jammy universe]
+feynmf 1.08-13 [Ubuntu/jammy universe]
+fflas-ffpack 2.5.0-1 [Ubuntu/jammy universe]
+fflas-ffpack-common 2.5.0-1 [Ubuntu/jammy universe]
+ffmpeg 7:4.4.2-0ubuntu0.22.04.1 [Ubuntu/jammy universe]
+ffmpegthumbnailer 2.2.2+dfsg-1 [Ubuntu/jammy universe]
+fig2dev 1:3.2.8b-1 [Ubuntu/jammy universe]
+figlet 2.2.5-3 [Ubuntu/jammy universe]
+file 1:5.41-3 [Ubuntu/jammy main]
+file-roller 3.42.0-1 [Ubuntu/jammy main]
+findutils 4.8.0-1ubuntu3 [Ubuntu/jammy main]
+finger 0.17-17 [Ubuntu/jammy universe]
+firefox 1:1snap1-0ubuntu2 [Ubuntu/jammy main]
+firefox-locale-en 1:1snap1-0ubuntu2 [Ubuntu/jammy universe]
+firmware-sof-signed 2.0-1ubuntu4.1 [Ubuntu/jammy restricted]
+flatpak 1.12.7-1 [Ubuntu/jammy universe]
+flex 2.6.4-8build2 [Ubuntu/jammy main]
+flintqs 1:1.0-3build1 [Ubuntu/jammy universe]
+fltk1.3-doc 1.3.8-4 [Ubuntu/jammy universe]
+fluid 1.3.8-4 [Ubuntu/jammy universe]
+font-manager 0.8.8-1 [Ubuntu/jammy universe]
+font-manager-common 0.8.8-1 [Ubuntu/jammy universe]
+font-viewer 0.8.8-1 [Ubuntu/jammy universe]
+fontconfig 2.13.1-4.2ubuntu5 [Ubuntu/jammy main]
+fontconfig-config 2.13.1-4.2ubuntu5 [Ubuntu/jammy main]
+fontforge 1:20201107~dfsg-4build1 [Ubuntu/jammy universe]
+fontforge-common 1:20201107~dfsg-4build1 [Ubuntu/jammy universe]
+fonts-adf-accanthis 0.20190904-2 [Ubuntu/jammy universe]
+fonts-adf-berenis 0.20190904-2 [Ubuntu/jammy universe]
+fonts-adf-gillius 0.20190904-2 [Ubuntu/jammy universe]
+fonts-adf-universalis 0.20190904-2 [Ubuntu/jammy universe]
+fonts-arphic-bkai00mp 2.10-21 [Ubuntu/jammy universe]
+fonts-arphic-bsmi00lp 2.10-18 [Ubuntu/jammy universe]
+fonts-arphic-gbsn00lp 2.11-16 [Ubuntu/jammy universe]
+fonts-arphic-gkai00mp 2.11-16 [Ubuntu/jammy universe]
+fonts-arphic-uming 0.2.20080216.2-10ubuntu2 [Ubuntu/jammy main]
+fonts-baekmuk 2.2-13 [Ubuntu/jammy universe]
+fonts-beng 2:1.3 [Ubuntu/jammy main]
+fonts-beng-extra 3.2.1-1 [Ubuntu/jammy main]
+fonts-cabin 1.5-3 [Ubuntu/jammy universe]
+fonts-cantarell 0.303-2 [Ubuntu/jammy universe]
+fonts-comfortaa 3.001-3 [Ubuntu/jammy universe]
+fonts-croscore 20201225-1build1 [Ubuntu/jammy universe]
+fonts-crosextra-caladea 20130214-2.1 [Ubuntu/jammy universe]
+fonts-crosextra-carlito 20130920-1.1 [Ubuntu/jammy universe]
+fonts-dejavu 2.37-2build1 [Ubuntu/jammy universe]
+fonts-dejavu-core 2.37-2build1 [Ubuntu/jammy main]
+fonts-dejavu-extra 2.37-2build1 [Ubuntu/jammy main]
+fonts-deva 2:1.3 [Ubuntu/jammy main]
+fonts-deva-extra 3.0-5 [Ubuntu/jammy main]
+fonts-droid-fallback 1:6.0.1r16-1.1build1 [Ubuntu/jammy main]
+fonts-ebgaramond 0.016+git20210310.42d4f9f2-1 [Ubuntu/jammy universe]
+fonts-ebgaramond-extra 0.016+git20210310.42d4f9f2-1 [Ubuntu/jammy universe]
+fonts-firacode 6.2-1 [Ubuntu/jammy universe]
+fonts-font-awesome 5.0.10+really4.7.0~dfsg-4.1 [Ubuntu/jammy main]
+fonts-freefont-otf 20120503-10build1 [Ubuntu/jammy universe]
+fonts-freefont-ttf 20120503-10build1 [Ubuntu/jammy main]
+fonts-gargi 2.0-5 [Ubuntu/jammy main]
+fonts-gfs-artemisia 1.1-6 [Ubuntu/jammy universe]
+fonts-gfs-baskerville 1.1-6 [Ubuntu/jammy universe]
+fonts-gfs-bodoni-classic 1.1-6 [Ubuntu/jammy universe]
+fonts-gfs-complutum 1.1-7 [Ubuntu/jammy universe]
+fonts-gfs-didot 1.1-7 [Ubuntu/jammy universe]
+fonts-gfs-didot-classic 1.1-6 [Ubuntu/jammy universe]
+fonts-gfs-gazis 1.1-6 [Ubuntu/jammy universe]
+fonts-gfs-neohellenic 1.1-7 [Ubuntu/jammy universe]
+fonts-gfs-olga 1.1-6 [Ubuntu/jammy universe]
+fonts-gfs-porson 1.1-7 [Ubuntu/jammy universe]
+fonts-gfs-solomos 1.1-6 [Ubuntu/jammy universe]
+fonts-gfs-theokritos 1.1-6 [Ubuntu/jammy universe]
+fonts-glyphicons-halflings 1.009~3.4.1+dfsg-2 [Ubuntu/jammy universe]
+fonts-go 0~20170330-1 [Ubuntu/jammy universe]
+fonts-gubbi 1.3-5build1 [Ubuntu/jammy main]
+fonts-gujr 2:1.4 [Ubuntu/jammy main]
+fonts-gujr-extra 1.0.1-1 [Ubuntu/jammy main]
+fonts-guru 2:1.3 [Ubuntu/jammy main]
+fonts-guru-extra 2.0-5 [Ubuntu/jammy main]
+fonts-hosny-amiri 0.113-1 [Ubuntu/jammy main]
+fonts-inconsolata 001.010-6build1 [Ubuntu/jammy universe]
+fonts-indic 2:1.4 [Ubuntu/jammy main]
+fonts-ipaexfont-gothic 00401-3ubuntu1 [Ubuntu/jammy universe]
+fonts-ipaexfont-mincho 00401-3ubuntu1 [Ubuntu/jammy universe]
+fonts-ipafont-gothic 00303-21ubuntu1 [Ubuntu/jammy universe]
+fonts-ipafont-mincho 00303-21ubuntu1 [Ubuntu/jammy universe]
+fonts-junicode 1.002-2 [Ubuntu/jammy universe]
+fonts-kacst 2.01+mry-15 [Ubuntu/jammy main]
+fonts-kacst-one 5.0+svn11846-10 [Ubuntu/jammy main]
+fonts-kalapi 1.0-4 [Ubuntu/jammy main]
+fonts-khmeros-core 5.0-9ubuntu1 [Ubuntu/jammy main]
+fonts-knda 2:1.3 [Ubuntu/jammy main]
+fonts-lao 0.0.20060226-10ubuntu2 [Ubuntu/jammy main]
+fonts-lato 2.0-2.1 [Ubuntu/jammy main]
+fonts-league-spartan 2.210-1 [Ubuntu/jammy universe]
+fonts-liberation 1:1.07.4-11 [Ubuntu/jammy main]
+fonts-liberation2 2.1.5-1 [Ubuntu/jammy main]
+fonts-linuxlibertine 5.3.0-6 [Ubuntu/jammy universe]
+fonts-lklug-sinhala 0.6-4 [Ubuntu/jammy main]
+fonts-lmodern 2.004.5-6.1 [Ubuntu/jammy universe]
+fonts-lobster 2.0-2.1 [Ubuntu/jammy universe]
+fonts-lobstertwo 2.0-2.1 [Ubuntu/jammy universe]
+fonts-lohit-beng-assamese 2.91.5-2 [Ubuntu/jammy main]
+fonts-lohit-beng-bengali 2.91.5-2 [Ubuntu/jammy main]
+fonts-lohit-deva 2.95.4-4 [Ubuntu/jammy main]
+fonts-lohit-gujr 2.92.4-4 [Ubuntu/jammy main]
+fonts-lohit-guru 2.91.2-2build1 [Ubuntu/jammy main]
+fonts-lohit-knda 2.5.4-3 [Ubuntu/jammy main]
+fonts-lohit-mlym 2.92.2-2 [Ubuntu/jammy main]
+fonts-lohit-orya 2.91.2-2 [Ubuntu/jammy main]
+fonts-lohit-taml 2.91.3-2 [Ubuntu/jammy main]
+fonts-lohit-taml-classical 2.5.4-2 [Ubuntu/jammy main]
+fonts-lohit-telu 2.5.5-2build1 [Ubuntu/jammy main]
+fonts-lyx 2.3.6-1 [Ubuntu/jammy universe]
+fonts-mathjax 2.7.9+dfsg-1 [Ubuntu/jammy main]
+fonts-mathjax-extras 2.7.9+dfsg-1 [Ubuntu/jammy universe]
+fonts-mlym 2:1.3 [Ubuntu/jammy main]
+fonts-nakula 1.0-4 [Ubuntu/jammy main]
+fonts-navilu 1.2-3 [Ubuntu/jammy main]
+fonts-noto-cjk 1:20220127+repack1-1 [Ubuntu/jammy main]
+fonts-noto-color-emoji 2.038-0ubuntu1 [Ubuntu/jammy main]
+fonts-noto-core 20201225-1build1 [Ubuntu/jammy main]
+fonts-noto-mono 20201225-1build1 [Ubuntu/jammy main]
+fonts-oflb-asana-math 000.907-7build1 [Ubuntu/jammy universe]
+fonts-open-sans 1.11-2 [Ubuntu/jammy universe]
+fonts-opensymbol 2:102.12+LibO7.3.7-0ubuntu0.22.04.2 [Ubuntu/jammy main]
+fonts-orya 2:1.3 [Ubuntu/jammy main]
+fonts-orya-extra 2.0-6 [Ubuntu/jammy main]
+fonts-pagul 1.0-8 [Ubuntu/jammy main]
+fonts-powerline 2.8.2-1 [Ubuntu/jammy universe]
+fonts-roboto-unhinted 2:0~20170802-3 [Ubuntu/jammy universe]
+fonts-sahadeva 1.0-5 [Ubuntu/jammy main]
+fonts-samyak-deva 1.2.2-5build1 [Ubuntu/jammy main]
+fonts-samyak-gujr 1.2.2-5build1 [Ubuntu/jammy main]
+fonts-samyak-mlym 1.2.2-5build1 [Ubuntu/jammy main]
+fonts-samyak-taml 1.2.2-5build1 [Ubuntu/jammy main]
+fonts-sarai 1.0-3 [Ubuntu/jammy main]
+fonts-sil-abyssinica 2.100-3 [Ubuntu/jammy main]
+fonts-sil-charis 6.101-1 [Ubuntu/jammy universe]
+fonts-sil-gentium 20081126:1.03-4 [Ubuntu/jammy universe]
+fonts-sil-gentium-basic 1.102-1.1 [Ubuntu/jammy universe]
+fonts-sil-gentiumplus 6.101-1 [Ubuntu/jammy universe]
+fonts-sil-gentiumplus-compact 5.000-4 [Ubuntu/jammy universe]
+fonts-sil-padauk 5.000-3 [Ubuntu/jammy main]
+fonts-smc 1:7.2 [Ubuntu/jammy main]
+fonts-smc-anjalioldlipi 7.1.2-2 [Ubuntu/jammy main]
+fonts-smc-chilanka 1.540-1 [Ubuntu/jammy main]
+fonts-smc-dyuthi 3.0.2-2 [Ubuntu/jammy main]
+fonts-smc-gayathri 1.110-2-1 [Ubuntu/jammy main]
+fonts-smc-karumbi 1.1.2-2 [Ubuntu/jammy main]
+fonts-smc-keraleeyam 3.0.2-2 [Ubuntu/jammy main]
+fonts-smc-manjari 2.000-3 [Ubuntu/jammy main]
+fonts-smc-meera 7.0.3-1 [Ubuntu/jammy main]
+fonts-smc-rachana 7.0.2-1build1 [Ubuntu/jammy main]
+fonts-smc-raghumalayalamsans 2.2.1-1 [Ubuntu/jammy main]
+fonts-smc-suruma 3.2.3-1 [Ubuntu/jammy main]
+fonts-smc-uroob 2.0.2-1 [Ubuntu/jammy main]
+fonts-stix 1.1.1-4.1 [Ubuntu/jammy universe]
+fonts-symbola 2.60-1.1 [Ubuntu/jammy universe]
+fonts-taml 2:1.4 [Ubuntu/jammy main]
+fonts-telu 2:1.3 [Ubuntu/jammy main]
+fonts-telu-extra 2.0-5 [Ubuntu/jammy main]
+fonts-teluguvijayam 2.1-1 [Ubuntu/jammy main]
+fonts-texgyre 20180621-3.1 [Ubuntu/jammy universe]
+fonts-thai-tlwg 1:0.7.3-1 [Ubuntu/jammy main]
+fonts-tibetan-machine 1.901b-6 [Ubuntu/jammy main]
+fonts-tlwg-garuda 1:0.7.3-1 [Ubuntu/jammy main]
+fonts-tlwg-garuda-otf 1:0.7.3-1 [Ubuntu/jammy universe]
+fonts-tlwg-garuda-ttf 1:0.7.3-1 [Ubuntu/jammy main]
+fonts-tlwg-kinnari 1:0.7.3-1 [Ubuntu/jammy main]
+fonts-tlwg-kinnari-otf 1:0.7.3-1 [Ubuntu/jammy universe]
+fonts-tlwg-kinnari-ttf 1:0.7.3-1 [Ubuntu/jammy main]
+fonts-tlwg-laksaman 1:0.7.3-1 [Ubuntu/jammy main]
+fonts-tlwg-laksaman-otf 1:0.7.3-1 [Ubuntu/jammy universe]
+fonts-tlwg-laksaman-ttf 1:0.7.3-1 [Ubuntu/jammy main]
+fonts-tlwg-loma 1:0.7.3-1 [Ubuntu/jammy main]
+fonts-tlwg-loma-otf 1:0.7.3-1 [Ubuntu/jammy universe]
+fonts-tlwg-loma-ttf 1:0.7.3-1 [Ubuntu/jammy main]
+fonts-tlwg-mono 1:0.7.3-1 [Ubuntu/jammy main]
+fonts-tlwg-mono-otf 1:0.7.3-1 [Ubuntu/jammy universe]
+fonts-tlwg-mono-ttf 1:0.7.3-1 [Ubuntu/jammy main]
+fonts-tlwg-norasi 1:0.7.3-1 [Ubuntu/jammy main]
+fonts-tlwg-norasi-otf 1:0.7.3-1 [Ubuntu/jammy universe]
+fonts-tlwg-norasi-ttf 1:0.7.3-1 [Ubuntu/jammy main]
+fonts-tlwg-purisa 1:0.7.3-1 [Ubuntu/jammy main]
+fonts-tlwg-purisa-otf 1:0.7.3-1 [Ubuntu/jammy universe]
+fonts-tlwg-purisa-ttf 1:0.7.3-1 [Ubuntu/jammy main]
+fonts-tlwg-sawasdee 1:0.7.3-1 [Ubuntu/jammy main]
+fonts-tlwg-sawasdee-otf 1:0.7.3-1 [Ubuntu/jammy universe]
+fonts-tlwg-sawasdee-ttf 1:0.7.3-1 [Ubuntu/jammy main]
+fonts-tlwg-typewriter 1:0.7.3-1 [Ubuntu/jammy main]
+fonts-tlwg-typewriter-otf 1:0.7.3-1 [Ubuntu/jammy universe]
+fonts-tlwg-typewriter-ttf 1:0.7.3-1 [Ubuntu/jammy main]
+fonts-tlwg-typist 1:0.7.3-1 [Ubuntu/jammy main]
+fonts-tlwg-typist-otf 1:0.7.3-1 [Ubuntu/jammy universe]
+fonts-tlwg-typist-ttf 1:0.7.3-1 [Ubuntu/jammy main]
+fonts-tlwg-typo 1:0.7.3-1 [Ubuntu/jammy main]
+fonts-tlwg-typo-otf 1:0.7.3-1 [Ubuntu/jammy universe]
+fonts-tlwg-typo-ttf 1:0.7.3-1 [Ubuntu/jammy main]
+fonts-tlwg-umpush 1:0.7.3-1 [Ubuntu/jammy main]
+fonts-tlwg-umpush-otf 1:0.7.3-1 [Ubuntu/jammy universe]
+fonts-tlwg-umpush-ttf 1:0.7.3-1 [Ubuntu/jammy main]
+fonts-tlwg-waree 1:0.7.3-1 [Ubuntu/jammy main]
+fonts-tlwg-waree-otf 1:0.7.3-1 [Ubuntu/jammy universe]
+fonts-tlwg-waree-ttf 1:0.7.3-1 [Ubuntu/jammy main]
+fonts-ubuntu 0.83-6ubuntu1 [Ubuntu/jammy main]
+fonts-unfonts-core 1:1.0.2-080608-16 [Ubuntu/jammy universe]
+fonts-unfonts-extra 1:1.0.2-080608+dfsg-9 [Ubuntu/jammy universe]
+fonts-urw-base35 20200910-1 [Ubuntu/jammy main]
+fonts-vlgothic 20200720-1ubuntu1 [Ubuntu/jammy universe]
+fonts-wine 6.0.3~repack-1 [Ubuntu/jammy universe]
+fonts-yrsa-rasa 2.005-1 [Ubuntu/jammy main]
+foomatic-db-compressed-ppds 20220223-0ubuntu1 [Ubuntu/jammy main]
+fortune-mod 1:1.99.1-7.1 [Ubuntu/jammy universe]
+fortunes-min 1:1.99.1-7.1 [Ubuntu/jammy universe]
+fprintd 1.94.2-1ubuntu0.22.04.1 [Ubuntu/jammy main]
+fragmaster 1.7-10 [Ubuntu/jammy universe]
+freeglut3 2.8.1-6 [Ubuntu/jammy universe]
+friendly-recovery 0.2.42 [Ubuntu/jammy main]
+ftp 20210827-4build1 [Ubuntu/jammy main]
+fuse3 3.10.5-1build1 [Ubuntu/jammy main]
+fwupd 1.7.9-1~22.04.1 [Ubuntu/jammy main]
+fwupd-signed 1.51~22.04.1+1.2-3ubuntu0.2 [Ubuntu/jammy main]
+fzf 0.29.0-1 [Ubuntu/jammy universe]
+g++ 4:11.2.0-1ubuntu1 [Ubuntu/jammy main]
+g++-10 10.4.0-4ubuntu1~22.04 [Ubuntu/jammy universe]
+g++-11 11.3.0-1ubuntu1~22.04.1 [Ubuntu/jammy main]
+g++-9 9.5.0-1ubuntu1~22.04 [Ubuntu/jammy universe]
+gamemode 1.6.1-1build2 [Ubuntu/jammy main]
+gamemode-daemon 1.6.1-1build2 [Ubuntu/jammy main]
+gap 4.11.1-1 [Ubuntu/jammy universe]
+gap-alnuth 3.1.2-2 [Ubuntu/jammy universe]
+gap-atlasrep 2.1.0-3 [Ubuntu/jammy universe]
+gap-autpgrp 1.10.2-2 [Ubuntu/jammy universe]
+gap-character-tables 1.3.1-1 [Ubuntu/jammy universe]
+gap-core 4.11.1-1 [Ubuntu/jammy universe]
+gap-dev 4.11.1-1 [Ubuntu/jammy universe]
+gap-doc 4.11.1-1 [Ubuntu/jammy universe]
+gap-factint 1.6.3+ds-1 [Ubuntu/jammy universe]
+gap-gapdoc 1.6.4-1 [Ubuntu/jammy universe]
+gap-io 4.7.2+ds-1ubuntu1 [Ubuntu/jammy universe]
+gap-libs 4.11.1-1 [Ubuntu/jammy universe]
+gap-online-help 4.11.1-1 [Ubuntu/jammy universe]
+gap-polycyclic 2.15.1-1 [Ubuntu/jammy universe]
+gap-primgrp 3.4.0-1 [Ubuntu/jammy universe]
+gap-smallgrp 1.4.1-2 [Ubuntu/jammy universe]
+gap-table-of-marks 1.2.9-1 [Ubuntu/jammy universe]
+gap-transgrp 2.0.6-2 [Ubuntu/jammy universe]
+gawk 1:5.1.0-1build3 [Ubuntu/jammy main]
+gcc 4:11.2.0-1ubuntu1 [Ubuntu/jammy main]
+gcc-10 10.4.0-4ubuntu1~22.04 [Ubuntu/jammy universe]
+gcc-10-base 10.4.0-4ubuntu1~22.04 [Ubuntu/jammy universe]
+gcc-11 11.3.0-1ubuntu1~22.04.1 [Ubuntu/jammy main]
+gcc-11-base 11.3.0-1ubuntu1~22.04.1 [Ubuntu/jammy main]
+gcc-12 12.1.0-2ubuntu1~22.04 [Ubuntu/jammy main]
+gcc-12-base 12.1.0-2ubuntu1~22.04 [Ubuntu/jammy main]
+gcc-12-base:i386 12.1.0-2ubuntu1~22.04 [Ubuntu/jammy main]
+gcc-9 9.5.0-1ubuntu1~22.04 [Ubuntu/jammy universe]
+gcc-9-base 9.5.0-1ubuntu1~22.04 [Ubuntu/jammy universe]
+gconf-service 3.2.6-7ubuntu2 [Ubuntu/jammy universe]
+gconf-service-backend 3.2.6-7ubuntu2 [Ubuntu/jammy universe]
+gconf2 3.2.6-7ubuntu2 [Ubuntu/jammy universe]
+gconf2-common 3.2.6-7ubuntu2 [Ubuntu/jammy universe]
+gcr 3.40.0-4 [Ubuntu/jammy main]
+gdb 12.1-0ubuntu1~22.04 [Ubuntu/jammy main]
+gdebi 0.9.5.7+nmu6 [Ubuntu/jammy universe]
+gdebi-core 0.9.5.7+nmu6 [Ubuntu/jammy universe]
+gdisk 1.0.8-4build1 [Ubuntu/jammy main]
+gdm3 42.0-1ubuntu7.22.04.2 [Ubuntu/jammy main]
+gedit 41.0-3 [Ubuntu/jammy main]
+gedit-common 41.0-3 [Ubuntu/jammy main]
+genisoimage 9:1.1.11-3.2ubuntu1 [Ubuntu/jammy main]
+geoclue-2.0 2.5.7-3ubuntu3 [Ubuntu/jammy main]
+gettext 0.21-4ubuntu4 [Ubuntu/jammy main]
+gettext-base 0.21-4ubuntu4 [Ubuntu/jammy main]
+gfan 0.6.2-6 [Ubuntu/jammy universe]
+gfortran 4:11.2.0-1ubuntu1 [Ubuntu/jammy main]
+gfortran-11 11.3.0-1ubuntu1~22.04.1 [Ubuntu/jammy main]
+gftp 2.9.1~beta-1 [Ubuntu/jammy universe]
+gftp-common 2.9.1~beta-1 [Ubuntu/jammy universe]
+gftp-gtk 2.9.1~beta-1 [Ubuntu/jammy universe]
+gftp-text 2.9.1~beta-1 [Ubuntu/jammy universe]
+gh 2.14.7 [gh/stable main]
+ghc 8.8.4-3 [Ubuntu/jammy universe]
+ghostscript 9.55.0~dfsg1-0ubuntu5.2 [Ubuntu/jammy main]
+ghostscript-x 9.55.0~dfsg1-0ubuntu5.2 [Ubuntu/jammy main]
+gir1.2-accountsservice-1.0 22.07.5-2ubuntu1.3 [Ubuntu/jammy main]
+gir1.2-adw-1 1.1.0-1ubuntu2 [Ubuntu/jammy main]
+gir1.2-atk-1.0 2.36.0-3build1 [Ubuntu/jammy main]
+gir1.2-atspi-2.0 2.44.0-3 [Ubuntu/jammy main]
+gir1.2-ayatanaappindicator3-0.1 0.5.90-7ubuntu2 [Ubuntu/jammy main]
+gir1.2-dbusmenu-glib-0.4 16.04.1+18.10.20180917-0ubuntu8 [Ubuntu/jammy main]
+gir1.2-dee-1.0 1.2.7+17.10.20170616-6ubuntu4 [Ubuntu/jammy main]
+gir1.2-entangle-0.1 3.0-3 [Ubuntu/jammy universe]
+gir1.2-evince-3.0 42.3-0ubuntu3 [Ubuntu/jammy main]
+gir1.2-freedesktop 1.72.0-1 [Ubuntu/jammy main]
+gir1.2-gck-1 3.40.0-4 [Ubuntu/jammy main]
+gir1.2-gcr-3 3.40.0-4 [Ubuntu/jammy main]
+gir1.2-gdesktopenums-3.0 42.0-1ubuntu1 [Ubuntu/jammy main]
+gir1.2-gdkpixbuf-2.0 2.42.8+dfsg-1ubuntu0.2 [Ubuntu/jammy main]
+gir1.2-gdm-1.0 42.0-1ubuntu7.22.04.2 [Ubuntu/jammy main]
+gir1.2-geoclue-2.0 2.5.7-3ubuntu3 [Ubuntu/jammy main]
+gir1.2-gexiv2-0.10 0.14.0-1build1 [Ubuntu/jammy main]
+gir1.2-glib-2.0 1.72.0-1 [Ubuntu/jammy main]
+gir1.2-gmenu-3.0 3.36.0-1ubuntu3 [Ubuntu/jammy main]
+gir1.2-gnomebluetooth-3.0 42.0-5 [Ubuntu/jammy main]
+gir1.2-gnomedesktop-3.0 42.5-0ubuntu1 [Ubuntu/jammy main]
+gir1.2-goa-1.0 3.44.0-1ubuntu1 [Ubuntu/jammy main]
+gir1.2-graphene-1.0 1.10.8-1 [Ubuntu/jammy main]
+gir1.2-gst-plugins-base-1.0 1.20.1-1 [Ubuntu/jammy main]
+gir1.2-gstreamer-1.0 1.20.3-0ubuntu1 [Ubuntu/jammy main]
+gir1.2-gtk-2.0 2.24.33-2ubuntu2 [Ubuntu/jammy universe]
+gir1.2-gtk-3.0 3.24.33-1ubuntu2 [Ubuntu/jammy main]
+gir1.2-gtk-4.0 4.6.6+ds-0ubuntu1 [Ubuntu/jammy main]
+gir1.2-gtksource-4 4.8.3-1 [Ubuntu/jammy main]
+gir1.2-gudev-1.0 1:237-2build1 [Ubuntu/jammy main]
+gir1.2-gweather-3.0 40.0-5build1 [Ubuntu/jammy main]
+gir1.2-handy-1 1.6.1-1 [Ubuntu/jammy main]
+gir1.2-harfbuzz-0.0 2.7.4-1ubuntu3.1 [Ubuntu/jammy main]
+gir1.2-ibus-1.0 1.5.26-4 [Ubuntu/jammy main]
+gir1.2-ical-3.0 3.0.14-1build1 [Ubuntu/jammy main]
+gir1.2-javascriptcoregtk-4.0 2.38.6-0ubuntu0.22.04.1 [Ubuntu/jammy main]
+gir1.2-json-1.0 1.6.6-1build1 [Ubuntu/jammy main]
+gir1.2-mutter-10 42.5-0ubuntu1 [Ubuntu/jammy main]
+gir1.2-nm-1.0 1.36.6-0ubuntu2 [Ubuntu/jammy main]
+gir1.2-nma-1.0 1.8.34-1ubuntu1 [Ubuntu/jammy main]
+gir1.2-notify-0.7 0.7.9-3ubuntu5.22.04.1 [Ubuntu/jammy main]
+gir1.2-packagekitglib-1.0 1.2.5-2ubuntu2 [Ubuntu/jammy main]
+gir1.2-pango-1.0 1.50.6+ds-2ubuntu1 [Ubuntu/jammy main]
+gir1.2-peas-1.0 1.32.0-1 [Ubuntu/jammy main]
+gir1.2-polkit-1.0 0.105-33 [Ubuntu/jammy main]
+gir1.2-poppler-0.18 22.02.0-2ubuntu0.1 [Ubuntu/jammy main]
+gir1.2-rb-3.0 3.4.4-5ubuntu1 [Ubuntu/jammy main]
+gir1.2-rsvg-2.0 2.52.5+dfsg-3 [Ubuntu/jammy main]
+gir1.2-secret-1 0.20.5-2 [Ubuntu/jammy main]
+gir1.2-snapd-1 1.60-0ubuntu1 [Ubuntu/jammy main]
+gir1.2-soup-2.4 2.74.2-3 [Ubuntu/jammy main]
+gir1.2-totem-1.0 42.0-1ubuntu1 [Ubuntu/jammy main]
+gir1.2-totemplparser-1.0 3.26.6-1build1 [Ubuntu/jammy main]
+gir1.2-udisks-2.0 2.9.4-1ubuntu2 [Ubuntu/jammy main]
+gir1.2-unity-7.0 7.1.4+19.04.20190319-6build1 [Ubuntu/jammy main]
+gir1.2-upowerglib-1.0 0.99.17-1 [Ubuntu/jammy main]
+gir1.2-vte-2.91 0.68.0-1 [Ubuntu/jammy main]
+gir1.2-webkit2-4.0 2.38.6-0ubuntu0.22.04.1 [Ubuntu/jammy main]
+gir1.2-wnck-3.0 40.1-1 [Ubuntu/jammy main]
+gir1.2-xapp-1.0 2.2.8-1 [Ubuntu/jammy universe]
+gir1.2-zeitgeist-2.0 1.0.3-4ubuntu1 [Ubuntu/jammy universe]
+gist 6.0.0-2 [Ubuntu/jammy universe]
+git 1:2.34.1-1ubuntu1.9 [Ubuntu/jammy main]
+git-all 1:2.34.1-1ubuntu1.9 [Ubuntu/jammy universe]
+git-cvs 1:2.34.1-1ubuntu1.9 [Ubuntu/jammy universe]
+git-doc 1:2.34.1-1ubuntu1.9 [Ubuntu/jammy main]
+git-email 1:2.34.1-1ubuntu1.9 [Ubuntu/jammy universe]
+git-gui 1:2.34.1-1ubuntu1.9 [Ubuntu/jammy universe]
+git-lfs 3.0.2-1ubuntu0.2 [Ubuntu/jammy universe]
+git-man 1:2.34.1-1ubuntu1.9 [Ubuntu/jammy main]
+git-mediawiki 1:2.34.1-1ubuntu1.9 [Ubuntu/jammy universe]
+git-svn 1:2.34.1-1ubuntu1.9 [Ubuntu/jammy universe]
+gitk 1:2.34.1-1ubuntu1.9 [Ubuntu/jammy universe]
+gitweb 1:2.34.1-1ubuntu1.9 [Ubuntu/jammy universe]
+gjs 1.72.2-0ubuntu1 [Ubuntu/jammy main]
+gkbd-capplet 3.26.1-2 [Ubuntu/jammy main]
+glib-networking 2.72.0-1 [Ubuntu/jammy main]
+glib-networking-common 2.72.0-1 [Ubuntu/jammy main]
+glib-networking-services 2.72.0-1 [Ubuntu/jammy main]
+glib-networking:i386 2.72.0-1 [Ubuntu/jammy main]
+glpk-utils 5.0-1 [Ubuntu/jammy universe]
+gmp-ecm 7.0.4+ds-6 [Ubuntu/jammy universe]
+gnome-accessibility-themes 3.28-1ubuntu3 [Ubuntu/jammy main]
+gnome-bluetooth 3.34.5-8 [Ubuntu/jammy main]
+gnome-bluetooth-3-common 42.0-5 [Ubuntu/jammy main]
+gnome-bluetooth-common 3.34.5-8 [Ubuntu/jammy main]
+gnome-calculator 1:41.1-2ubuntu2 [Ubuntu/jammy main]
+gnome-calendar 41.2-3 [Ubuntu/jammy main]
+gnome-characters 41.0-4 [Ubuntu/jammy main]
+gnome-common 3.18.0-4 [Ubuntu/jammy universe]
+gnome-control-center 1:41.7-0ubuntu0.22.04.6 [Ubuntu/jammy main]
+gnome-control-center-data 1:41.7-0ubuntu0.22.04.6 [Ubuntu/jammy main]
+gnome-control-center-faces 1:41.7-0ubuntu0.22.04.6 [Ubuntu/jammy main]
+gnome-desktop3-data 42.5-0ubuntu1 [Ubuntu/jammy main]
+gnome-disk-utility 42.0-1ubuntu1 [Ubuntu/jammy main]
+gnome-font-viewer 41.0-2 [Ubuntu/jammy main]
+gnome-icon-theme 3.12.0-4 [Ubuntu/jammy universe]
+gnome-initial-setup 42.0.1-1ubuntu2.3 [Ubuntu/jammy main]
+gnome-keyring 40.0-3ubuntu3 [Ubuntu/jammy main]
+gnome-keyring-pkcs11 40.0-3ubuntu3 [Ubuntu/jammy main]
+gnome-logs 42.0-1 [Ubuntu/jammy main]
+gnome-mahjongg 1:3.38.3-2 [Ubuntu/jammy main]
+gnome-menus 3.36.0-1ubuntu3 [Ubuntu/jammy main]
+gnome-mines 1:40.1-1 [Ubuntu/jammy main]
+gnome-online-accounts 3.44.0-1ubuntu1 [Ubuntu/jammy main]
+gnome-power-manager 3.32.0-2build2 [Ubuntu/jammy main]
+gnome-remote-desktop 42.4-0ubuntu1 [local]
+gnome-screensaver 3.6.1-13ubuntu1 [Ubuntu/jammy universe]
+gnome-screenshot 41.0-2 [Ubuntu/jammy universe]
+gnome-session-bin 42.0-1ubuntu2 [Ubuntu/jammy main]
+gnome-session-canberra 0.30-10ubuntu1 [Ubuntu/jammy main]
+gnome-session-common 42.0-1ubuntu2 [Ubuntu/jammy main]
+gnome-settings-daemon 42.1-1ubuntu2.2 [Ubuntu/jammy main]
+gnome-settings-daemon-common 42.1-1ubuntu2.2 [Ubuntu/jammy main]
+gnome-shell 42.5-0ubuntu1 [Ubuntu/jammy main]
+gnome-shell-common 42.5-0ubuntu1 [Ubuntu/jammy main]
+gnome-shell-extension-appindicator 42-2~fakesync1 [Ubuntu/jammy main]
+gnome-shell-extension-desktop-icons-ng 43-2ubuntu1 [Ubuntu/jammy main]
+gnome-shell-extension-prefs 42.5-0ubuntu1 [Ubuntu/jammy universe]
+gnome-shell-extension-ubuntu-dock 72~ubuntu5.22.04.1 [Ubuntu/jammy main]
+gnome-shell-extensions 42.1-0ubuntu1 [Ubuntu/jammy universe]
+gnome-startup-applications 42.0-1ubuntu2 [Ubuntu/jammy main]
+gnome-sudoku 1:42.0-1 [Ubuntu/jammy main]
+gnome-sushi 42.0-0ubuntu1 [Ubuntu/jammy universe]
+gnome-system-monitor 42.0-1 [Ubuntu/jammy main]
+gnome-terminal 3.44.0-1ubuntu1 [Ubuntu/jammy main]
+gnome-terminal-data 3.44.0-1ubuntu1 [Ubuntu/jammy main]
+gnome-themes-extra 3.28-1ubuntu3 [Ubuntu/jammy main]
+gnome-themes-extra-data 3.28-1ubuntu3 [Ubuntu/jammy main]
+gnome-todo 3.28.1-6ubuntu1 [Ubuntu/jammy main]
+gnome-todo-common 3.28.1-6ubuntu1 [Ubuntu/jammy main]
+gnome-tweaks 42~beta-1ubuntu2 [Ubuntu/jammy universe]
+gnome-user-docs 41.5-1ubuntu2 [Ubuntu/jammy main]
+gnome-video-effects 0.5.0-1ubuntu1 [Ubuntu/jammy main]
+gnupg 2.2.27-3ubuntu2.1 [Ubuntu/jammy main]
+gnupg-l10n 2.2.27-3ubuntu2.1 [Ubuntu/jammy main]
+gnupg-utils 2.2.27-3ubuntu2.1 [Ubuntu/jammy main]
+gnupg2 2.2.27-3ubuntu2.1 [Ubuntu/jammy universe]
+gnuplot 5.4.2+dfsg2-2 [Ubuntu/jammy universe]
+gnuplot-data 5.4.2+dfsg2-2 [Ubuntu/jammy universe]
+gnuplot-qt 5.4.2+dfsg2-2 [Ubuntu/jammy universe]
+golly 3.3-1build1 [Ubuntu/jammy universe]
+google-chrome-stable 113.0.5672.126-1 [Google/stable main]
+gperf 3.1-1build1 [Ubuntu/jammy universe]
+gpg 2.2.27-3ubuntu2.1 [Ubuntu/jammy main]
+gpg-agent 2.2.27-3ubuntu2.1 [Ubuntu/jammy main]
+gpg-wks-client 2.2.27-3ubuntu2.1 [Ubuntu/jammy main]
+gpg-wks-server 2.2.27-3ubuntu2.1 [Ubuntu/jammy main]
+gpgconf 2.2.27-3ubuntu2.1 [Ubuntu/jammy main]
+gpgsm 2.2.27-3ubuntu2.1 [Ubuntu/jammy main]
+gpgv 2.2.27-3ubuntu2.1 [Ubuntu/jammy main]
+gphotofs 0.5-6 [Ubuntu/jammy universe]
+graphicsmagick 1.4+really1.3.38-1ubuntu0.1 [Ubuntu/jammy universe]
+graphviz 2.42.2-6 [Ubuntu/jammy universe]
+grep 3.7-1build1 [Ubuntu/jammy main]
+grilo-plugins-0.3-base 0.3.14-1ubuntu2 [Ubuntu/jammy main]
+groff 1.22.4-8build1 [Ubuntu/jammy universe]
+groff-base 1.22.4-8build1 [Ubuntu/jammy main]
+grub-common 2.06-2ubuntu7.1 [Ubuntu/jammy main]
+grub-efi-amd64-bin 2.06-2ubuntu14.1 [Ubuntu/jammy main]
+grub-efi-amd64-signed 1.187.3~22.04.1+2.06-2ubuntu14.1 [Ubuntu/jammy main]
+grub-gfxpayload-lists 0.7 [Ubuntu/jammy main]
+grub-pc 2.06-2ubuntu7.1 [Ubuntu/jammy main]
+grub-pc-bin 2.06-2ubuntu7.1 [Ubuntu/jammy main]
+grub2-common 2.06-2ubuntu7.1 [Ubuntu/jammy main]
+gsettings-desktop-schemas 42.0-1ubuntu1 [Ubuntu/jammy main]
+gsettings-ubuntu-schemas 0.0.7+21.10.20210712-0ubuntu2 [Ubuntu/jammy main]
+gsfonts 1:8.11+urwcyr1.0.7~pre44-4.5 [Ubuntu/jammy universe]
+gstreamer1.0-alsa 1.20.1-1 [Ubuntu/jammy main]
+gstreamer1.0-clutter-3.0 3.0.27-2ubuntu1 [Ubuntu/jammy main]
+gstreamer1.0-gl 1.20.1-1 [Ubuntu/jammy main]
+gstreamer1.0-gtk3 1.20.3-0ubuntu1 [Ubuntu/jammy main]
+gstreamer1.0-libav 1.20.3-0ubuntu1 [Ubuntu/jammy universe]
+gstreamer1.0-packagekit 1.2.5-2ubuntu2 [Ubuntu/jammy main]
+gstreamer1.0-pipewire 0.3.48-1ubuntu3 [Ubuntu/jammy main]
+gstreamer1.0-plugins-bad 1.20.3-0ubuntu1 [Ubuntu/jammy universe]
+gstreamer1.0-plugins-base 1.20.1-1 [Ubuntu/jammy main]
+gstreamer1.0-plugins-base-apps 1.20.1-1 [Ubuntu/jammy main]
+gstreamer1.0-plugins-base:i386 1.20.1-1 [Ubuntu/jammy main]
+gstreamer1.0-plugins-good 1.20.3-0ubuntu1 [Ubuntu/jammy main]
+gstreamer1.0-plugins-good:i386 1.20.3-0ubuntu1 [Ubuntu/jammy main]
+gstreamer1.0-plugins-ugly 1.20.1-1 [Ubuntu/jammy universe]
+gstreamer1.0-pulseaudio 1.20.3-0ubuntu1 [Ubuntu/jammy main]
+gstreamer1.0-tools 1.20.3-0ubuntu1 [Ubuntu/jammy main]
+gstreamer1.0-vaapi 1.20.1-1ubuntu1 [Ubuntu/jammy universe]
+gstreamer1.0-x 1.20.1-1 [Ubuntu/jammy main]
+gstreamer1.0-x:i386 1.20.1-1 [Ubuntu/jammy main]
+gtk-doc-tools 1.33.2-1 [Ubuntu/jammy universe]
+gtk-update-icon-cache 3.24.33-1ubuntu2 [Ubuntu/jammy main]
+gtk2-engines-murrine 0.98.2-3build2 [Ubuntu/jammy main]
+gtk2-engines-murrine:i386 0.98.2-3build2 [Ubuntu/jammy main]
+gtk2-engines-pixbuf 2.24.33-2ubuntu2 [Ubuntu/jammy main]
+gtk2.0-examples 2.24.33-2ubuntu2 [Ubuntu/jammy universe]
+gtk3-nocsd 3-1ubuntu1 [Ubuntu/jammy universe]
+gucharmap 1:14.0.3-1 [Ubuntu/jammy universe]
+guile-2.2-libs 2.2.7+1-6build2 [Ubuntu/jammy main]
+gvfs 1.48.2-0ubuntu1 [Ubuntu/jammy main]
+gvfs-backends 1.48.2-0ubuntu1 [Ubuntu/jammy main]
+gvfs-common 1.48.2-0ubuntu1 [Ubuntu/jammy main]
+gvfs-daemons 1.48.2-0ubuntu1 [Ubuntu/jammy main]
+gvfs-fuse 1.48.2-0ubuntu1 [Ubuntu/jammy main]
+gvfs-libs 1.48.2-0ubuntu1 [Ubuntu/jammy main]
+gzip 1.10-4ubuntu4.1 [Ubuntu/jammy main]
+hdf5-helpers 1.10.7+repack-4ubuntu2 [Ubuntu/jammy universe]
+hdf5-tools 1.10.7+repack-4ubuntu2 [Ubuntu/jammy universe]
+hdparm 9.60+ds-1build3 [Ubuntu/jammy main]
+hicolor-icon-theme 0.17-2 [Ubuntu/jammy main]
+hostname 3.23ubuntu2 [Ubuntu/jammy main]
+hplip 3.21.12+dfsg0-1 [Ubuntu/jammy main]
+hplip-data 3.21.12+dfsg0-1 [Ubuntu/jammy main]
+html2text 1.3.2a-28 [Ubuntu/jammy universe]
+htop 3.2.1-1 [local]
+hud 14.10+17.10.20170619-0ubuntu4 [Ubuntu/jammy universe]
+humanity-icon-theme 0.6.16 [Ubuntu/jammy main]
+hunspell-en-us 1:2020.12.07-2 [Ubuntu/jammy main]
+hwdata 0.357-1 [Ubuntu/jammy main]
+hyphen-en-us 2.8.8-7build2 [Ubuntu/jammy main]
+i3-wm 4.20.1-1 [Ubuntu/jammy universe]
+i3status 2.13-3 [Ubuntu/jammy universe]
+i965-va-driver 2.4.1+dfsg1-1 [Ubuntu/jammy universe]
+ibus 1.5.26-4 [Ubuntu/jammy main]
+ibus-data 1.5.26-4 [Ubuntu/jammy main]
+ibus-gtk 1.5.26-4 [Ubuntu/jammy main]
+ibus-gtk3 1.5.26-4 [Ubuntu/jammy main]
+ibus-gtk4 1.5.26-4 [Ubuntu/jammy main]
+ibus-table 1.16.7-1 [Ubuntu/jammy main]
+ibverbs-providers 39.0-1 [Ubuntu/jammy main]
+icu-devtools 70.1-2 [Ubuntu/jammy main]
+id3 1.1.2-3 [Ubuntu/jammy universe]
+id3v2 0.1.12+dfsg-6 [Ubuntu/jammy universe]
+iio-sensor-proxy 3.3-0ubuntu6 [Ubuntu/jammy main]
+im-config 0.50-2ubuntu22.04.1 [Ubuntu/jammy main]
+imagemagick 8:6.9.11.60+dfsg-1.3ubuntu0.22.04.3 [Ubuntu/jammy universe]
+imagemagick-6-common 8:6.9.11.60+dfsg-1.3ubuntu0.22.04.3 [Ubuntu/jammy universe]
+imagemagick-6.q16 8:6.9.11.60+dfsg-1.3ubuntu0.22.04.3 [Ubuntu/jammy universe]
+imv 4.3.0-1build1 [Ubuntu/jammy universe]
+indicator-application 12.10.1+19.04.20190308.1-0ubuntu3 [Ubuntu/jammy universe]
+indicator-appmenu 15.02.0+20.10.20200617.2-0ubuntu1 [Ubuntu/jammy universe]
+indicator-bluetooth 0.0.6+17.10.20170605-0ubuntu3 [Ubuntu/jammy universe]
+indicator-common 16.10.0+18.04.20180321.1-0ubuntu5 [Ubuntu/jammy universe]
+indicator-datetime 15.10+21.04.20210304-0ubuntu1 [Ubuntu/jammy universe]
+indicator-keyboard 0.0.0+19.10.20190716-0ubuntu3 [Ubuntu/jammy universe]
+indicator-messages 13.10.1+18.10.20180918-0ubuntu3 [Ubuntu/jammy universe]
+indicator-power 12.10.6+17.10.20170829.1-0ubuntu7 [Ubuntu/jammy universe]
+indicator-printers 0.1.7+17.10.20171101-0ubuntu3 [Ubuntu/jammy universe]
+indicator-session 17.3.20+21.10.20210613.1-0ubuntu1 [Ubuntu/jammy universe]
+indicator-sound 12.10.2+18.10.20180612-0ubuntu4 [Ubuntu/jammy universe]
+info 6.8-4build1 [Ubuntu/jammy main]
+init 1.62 [Ubuntu/jammy main]
+init-system-helpers 1.62 [Ubuntu/jammy main]
+initramfs-tools 0.140ubuntu13.1 [Ubuntu/jammy main]
+initramfs-tools-bin 0.140ubuntu13.1 [Ubuntu/jammy main]
+initramfs-tools-core 0.140ubuntu13.1 [Ubuntu/jammy main]
+inkscape 1.1.2-3ubuntu1 [Ubuntu/jammy universe]
+inputattach 1:1.7.1-1build2 [Ubuntu/jammy main]
+install-info 6.8-4build1 [Ubuntu/jammy main]
+insync 3.2.6.40863-focal [local]
+intel-media-va-driver 22.3.1+dfsg1-1ubuntu2 [Ubuntu/jammy universe]
+intel-microcode 3.20230214.0ubuntu0.22.04.1 [Ubuntu/jammy main]
+intel-opencl-icd 22.14.22890-1 [Ubuntu/jammy universe]
+intltool 0.51.0-6 [Ubuntu/jammy universe]
+intltool-debian 0.35.0+20060710.5 [Ubuntu/jammy main]
+inxi 3.3.13-1-1 [Ubuntu/jammy universe]
+ipp-usb 0.9.20-1ubuntu0.22.04.1 [Ubuntu/jammy main]
+iproute2 5.15.0-1ubuntu2 [Ubuntu/jammy main]
+iptables 1.8.7-1ubuntu5 [Ubuntu/jammy main]
+iputils-ping 3:20211215-1 [Ubuntu/jammy main]
+iputils-tracepath 3:20211215-1 [Ubuntu/jammy main]
+ipython3 7.31.1-1 [Ubuntu/jammy universe]
+irqbalance 1.8.0-1build1 [Ubuntu/jammy main]
+isc-dhcp-client 4.4.1-2.3ubuntu2.4 [Ubuntu/jammy main]
+isc-dhcp-common 4.4.1-2.3ubuntu2.4 [Ubuntu/jammy main]
+iso-codes 4.9.0-1 [Ubuntu/jammy main]
+isync 1.4.4-3ubuntu0.22.04.1 [Ubuntu/jammy universe]
+iucode-tool 2.3.1-1build1 [Ubuntu/jammy main]
+iw 5.16-1build1 [Ubuntu/jammy main]
+jabref 5.0.50001-1 [local]
+java-common 0.72build2 [Ubuntu/jammy main]
+javascript-common 11+nmu1 [Ubuntu/jammy main]
+jayatana 2.7-0ubuntu6 [Ubuntu/jammy universe]
+jmol 14.32.3+dfsg1-1 [Ubuntu/jammy universe]
+jo 1.4-1 [Ubuntu/jammy universe]
+jp2a 1.1.1-1 [Ubuntu/jammy universe]
+jpegoptim 1.4.6-1 [Ubuntu/jammy universe]
+jq 1.6-2.1ubuntu3 [Ubuntu/jammy main]
+jump 0.30.1 [local]
+jupyter-nbextension-jupyter-js-widgets 6.0.0-9 [Ubuntu/jammy universe]
+kaccounts-providers 4:21.12.3-0ubuntu1 [Ubuntu/jammy universe]
+kactivities-bin 5.92.0-0ubuntu1 [Ubuntu/jammy universe]
+kactivitymanagerd 5.24.4-0ubuntu1 [Ubuntu/jammy universe]
+kakoune 2020.09.01-3 [Ubuntu/jammy universe]
+kasumi 2.5-10 [Ubuntu/jammy universe]
+kbd 2.3.0-3ubuntu4.22.04 [Ubuntu/jammy main]
+kde-cli-tools 4:5.24.4-0ubuntu1 [Ubuntu/jammy universe]
+kde-cli-tools-data 4:5.24.4-0ubuntu1 [Ubuntu/jammy universe]
+kdeconnect 21.12.3-0ubuntu1 [Ubuntu/jammy universe]
+kded5 5.92.0-0ubuntu1 [Ubuntu/jammy universe]
+keditbookmarks 21.12.3-0ubuntu1 [Ubuntu/jammy universe]
+kerneloops 0.12+git20140509-6ubuntu5 [Ubuntu/jammy main]
+keyboard-configuration 1.205ubuntu3 [Ubuntu/jammy main]
+keychain 2.8.5-2 [Ubuntu/jammy universe]
+kinit 5.92.0-0ubuntu1 [Ubuntu/jammy universe]
+kio 5.92.0-0ubuntu1 [Ubuntu/jammy universe]
+kitty 0.21.2-1ubuntu0.22.04.1 [Ubuntu/jammy universe]
+kitty-doc 0.21.2-1ubuntu0.22.04.1 [Ubuntu/jammy universe]
+kitty-terminfo 0.21.2-1ubuntu0.22.04.1 [Ubuntu/jammy universe]
+klibc-utils 2.0.10-4 [Ubuntu/jammy main]
+kmod 29-1ubuntu1 [Ubuntu/jammy main]
+kpackagelauncherqml 5.92.0-0ubuntu1 [Ubuntu/jammy universe]
+kpackagetool5 5.92.0-0ubuntu1 [Ubuntu/jammy universe]
+kpeople-vcard 0.1-2 [Ubuntu/jammy universe]
+krb5-locales 1.19.2-2ubuntu0.2 [Ubuntu/jammy main]
+krb5-multidev 1.19.2-2ubuntu0.2 [Ubuntu/jammy main]
+kwayland-data 4:5.92.0-0ubuntu1 [Ubuntu/jammy universe]
+kwayland-integration 4:5.24.4-0ubuntu1 [Ubuntu/jammy universe]
+lacheck 1.26-17 [Ubuntu/jammy universe]
+language-pack-en 1:22.04+20230209 [Ubuntu/jammy main]
+language-pack-en-base 1:22.04+20230209 [Ubuntu/jammy main]
+language-pack-gnome-en 1:22.04+20230209 [Ubuntu/jammy main]
+language-pack-gnome-en-base 1:22.04+20230209 [Ubuntu/jammy main]
+language-selector-common 0.219.1 [Ubuntu/jammy main]
+language-selector-gnome 0.219.1 [Ubuntu/jammy main]
+laptop-detect 0.16 [Ubuntu/jammy main]
+latex-cjk-all 4.8.4+git20170127-4 [Ubuntu/jammy universe]
+latex-cjk-chinese 4.8.4+git20170127-4 [Ubuntu/jammy universe]
+latex-cjk-chinese-arphic-bkai00mp 1.23+nmu1 [Ubuntu/jammy universe]
+latex-cjk-chinese-arphic-bsmi00lp 1.23+nmu1 [Ubuntu/jammy universe]
+latex-cjk-chinese-arphic-gbsn00lp 1.23+nmu1 [Ubuntu/jammy universe]
+latex-cjk-chinese-arphic-gkai00mp 1.23+nmu1 [Ubuntu/jammy universe]
+latex-cjk-common 4.8.4+git20170127-4 [Ubuntu/jammy universe]
+latex-cjk-japanese 4.8.4+git20170127-4 [Ubuntu/jammy universe]
+latex-cjk-japanese-wadalab 0.20050817-17.1 [Ubuntu/jammy universe]
+latex-cjk-korean 4.8.4+git20170127-4 [Ubuntu/jammy universe]
+latex-cjk-thai 4.8.4+git20170127-4 [Ubuntu/jammy universe]
+latexdiff 1.3.1-1 [Ubuntu/jammy universe]
+latexmk 1:4.76-1 [Ubuntu/jammy universe]
+lcalc 2.0.5-1 [Ubuntu/jammy universe]
+lcdf-typetools 2.108-2 [Ubuntu/jammy universe]
+ldap-utils 2.5.14+dfsg-0ubuntu0.22.04.2 [Ubuntu/jammy main]
+lemonbar 1.4-1 [Ubuntu/jammy universe]
+less 590-1ubuntu0.22.04.1 [Ubuntu/jammy main]
+lfm 3.1-2 [Ubuntu/jammy universe]
+lib2geom1.1.0 1.1-2build1 [Ubuntu/jammy universe]
+lib32gcc-s1 12.1.0-2ubuntu1~22.04 [Ubuntu/jammy main]
+lib32stdc++6 12.1.0-2ubuntu1~22.04 [Ubuntu/jammy main]
+liba52-0.7.4 0.7.4-20 [Ubuntu/jammy universe]
+libaa1 1.4p5-50build1 [Ubuntu/jammy main]
+libaa1:i386 1.4p5-50build1 [Ubuntu/jammy main]
+libaacs0 0.11.1-1 [Ubuntu/jammy universe]
+libabsl20210324 0~20210324.2-2 [Ubuntu/jammy main]
+libabw-0.1-1 0.1.3-1build3 [Ubuntu/jammy main]
+libaccounts-glib0 1.25-1 [Ubuntu/jammy universe]
+libaccounts-qt5-1 1.16-2 [Ubuntu/jammy universe]
+libaccountsservice0 22.07.5-2ubuntu1.3 [Ubuntu/jammy main]
+libacl1 2.3.1-1 [Ubuntu/jammy main]
+libadplug-2.3.3-0 2.3.3+dfsg-2 [Ubuntu/jammy universe]
+libadwaita-1-0 1.1.0-1ubuntu2 [Ubuntu/jammy main]
+libaec-dev 1.0.6-1 [Ubuntu/jammy universe]
+libaec0 1.0.6-1 [Ubuntu/jammy universe]
+libalgorithm-c3-perl 0.11-1 [Ubuntu/jammy universe]
+libalgorithm-diff-perl 1.201-1 [Ubuntu/jammy main]
+libalgorithm-diff-xs-perl 0.04-6build3 [Ubuntu/jammy main]
+libalgorithm-merge-perl 0.08-3 [Ubuntu/jammy main]
+libaliased-perl 0.34-1.1 [Ubuntu/jammy main]
+libamd2 1:5.10.1+dfsg-4build1 [Ubuntu/jammy universe]
+libann0 1.1.2+doc-7build1 [Ubuntu/jammy universe]
+libanthy1 1:0.4-2 [Ubuntu/jammy universe]
+libanthyinput0 1:0.4-2 [Ubuntu/jammy universe]
+libanyevent-i3-perl 0.17-1 [Ubuntu/jammy universe]
+libanyevent-perl 7.170-2build2 [Ubuntu/jammy universe]
+libao-common 1.2.2+20180113-1.1ubuntu3 [Ubuntu/jammy main]
+libao4 1.2.2+20180113-1.1ubuntu3 [Ubuntu/jammy main]
+libaom3 3.3.0-1 [Ubuntu/jammy universe]
+libaopalliance-java 20070526-6 [Ubuntu/jammy universe]
+libapache-pom-java 18-1 [Ubuntu/jammy universe]
+libapparmor1 3.0.4-2ubuntu2.2 [Ubuntu/jammy main]
+libapparmor1:i386 3.0.4-2ubuntu2.2 [Ubuntu/jammy main]
+libappstream-glib8 0.7.18-2 [Ubuntu/jammy universe]
+libappstream4 0.15.2-2 [Ubuntu/jammy main]
+libapr1 1.7.0-8ubuntu0.22.04.1 [Ubuntu/jammy main]
+libaprutil1 1.6.1-5ubuntu4.22.04.1 [Ubuntu/jammy main]
+libaprutil1-dbd-sqlite3 1.6.1-5ubuntu4.22.04.1 [Ubuntu/jammy main]
+libaprutil1-ldap 1.6.1-5ubuntu4.22.04.1 [Ubuntu/jammy main]
+libapt-pkg-perl 0.1.40build2 [Ubuntu/jammy main]
+libapt-pkg6.0 2.4.9 [Ubuntu/jammy main]
+libarchive-cpio-perl 0.10-1.1 [Ubuntu/jammy main]
+libarchive-dev 3.6.0-1ubuntu1 [Ubuntu/jammy main]
+libarchive-tools 3.6.0-1ubuntu1 [Ubuntu/jammy universe]
+libarchive-zip-perl 1.68-1 [Ubuntu/jammy main]
+libarchive13 3.6.0-1ubuntu1 [Ubuntu/jammy main]
+libargon2-1 0~20171227-0.3 [Ubuntu/jammy main]
+libaribb24-0 1.0.3-2 [Ubuntu/jammy universe]
+libasan5 9.5.0-1ubuntu1~22.04 [Ubuntu/jammy universe]
+libasan6 11.3.0-1ubuntu1~22.04.1 [Ubuntu/jammy main]
+libasan8 12.1.0-2ubuntu1~22.04 [Ubuntu/jammy main]
+libasm-java 9.2-1 [Ubuntu/jammy universe]
+libasn1-8-heimdal 7.7.0+dfsg-3ubuntu1 [Ubuntu/jammy universe]
+libasn1-8-heimdal:i386 7.7.0+dfsg-3ubuntu1 [Ubuntu/jammy universe]
+libasound2 1.2.6.1-1ubuntu1 [Ubuntu/jammy main]
+libasound2-data 1.2.6.1-1ubuntu1 [Ubuntu/jammy main]
+libasound2-dev 1.2.6.1-1ubuntu1 [Ubuntu/jammy main]
+libasound2-plugins 1.2.6-1 [Ubuntu/jammy main]
+libasound2-plugins:i386 1.2.6-1 [Ubuntu/jammy main]
+libasound2:i386 1.2.6.1-1ubuntu1 [Ubuntu/jammy main]
+libaspell15 0.60.8-4build1 [Ubuntu/jammy main]
+libass9 1:0.15.2-1 [Ubuntu/jammy universe]
+libassuan0 2.5.5-1build1 [Ubuntu/jammy main]
+libasync-interrupt-perl 1.26-1build2 [Ubuntu/jammy universe]
+libasyncns0 0.8-6build2 [Ubuntu/jammy main]
+libasyncns0:i386 0.8-6build2 [Ubuntu/jammy main]
+libatasmart4 0.19-5build2 [Ubuntu/jammy main]
+libatinject-jsr330-api-java 1.0+ds1-5 [Ubuntu/jammy universe]
+libatk-adaptor 2.38.0-3 [Ubuntu/jammy main]
+libatk-adaptor:i386 2.38.0-3 [Ubuntu/jammy main]
+libatk-bridge2.0-0 2.38.0-3 [Ubuntu/jammy main]
+libatk-bridge2.0-0:i386 2.38.0-3 [Ubuntu/jammy main]
+libatk-bridge2.0-dev 2.38.0-3 [Ubuntu/jammy main]
+libatk-wrapper-java 0.38.0-5build1 [Ubuntu/jammy main]
+libatk-wrapper-java-jni 0.38.0-5build1 [Ubuntu/jammy main]
+libatk1.0-0 2.36.0-3build1 [Ubuntu/jammy main]
+libatk1.0-0:i386 2.36.0-3build1 [Ubuntu/jammy main]
+libatk1.0-data 2.36.0-3build1 [Ubuntu/jammy main]
+libatk1.0-dev 2.36.0-3build1 [Ubuntu/jammy main]
+libatk1.0-doc 2.36.0-3build1 [Ubuntu/jammy main]
+libatkmm-1.6-1v5 2.28.2-1build1 [Ubuntu/jammy main]
+libatlas3-base 3.10.3-12ubuntu1 [Ubuntu/jammy universe]
+libatm1 1:2.5.1-4build2 [Ubuntu/jammy main]
+libatomic-ops-dev 7.6.12-1 [Ubuntu/jammy main]
+libatomic1 12.1.0-2ubuntu1~22.04 [Ubuntu/jammy main]
+libatomic1:i386 12.1.0-2ubuntu1~22.04 [Ubuntu/jammy main]
+libatopology2 1.2.6.1-1ubuntu1 [Ubuntu/jammy main]
+libatspi2.0-0 2.44.0-3 [Ubuntu/jammy main]
+libatspi2.0-0:i386 2.44.0-3 [Ubuntu/jammy main]
+libatspi2.0-dev 2.44.0-3 [Ubuntu/jammy main]
+libattr1 1:2.5.1-1build1 [Ubuntu/jammy main]
+libaudiofile1 0.3.6-5build1 [Ubuntu/jammy universe]
+libaudit-common 1:3.0.7-1build1 [Ubuntu/jammy main]
+libaudit1 1:3.0.7-1build1 [Ubuntu/jammy main]
+libauthen-sasl-perl 2.1600-1.1 [Ubuntu/jammy main]
+libautovivification-perl 0.18-1build4 [Ubuntu/jammy universe]
+libavahi-client3 0.8-5ubuntu5 [Ubuntu/jammy main]
+libavahi-client3:i386 0.8-5ubuntu5 [Ubuntu/jammy main]
+libavahi-common-data 0.8-5ubuntu5 [Ubuntu/jammy main]
+libavahi-common-data:i386 0.8-5ubuntu5 [Ubuntu/jammy main]
+libavahi-common3 0.8-5ubuntu5 [Ubuntu/jammy main]
+libavahi-common3:i386 0.8-5ubuntu5 [Ubuntu/jammy main]
+libavahi-core7 0.8-5ubuntu5 [Ubuntu/jammy main]
+libavahi-glib1 0.8-5ubuntu5 [Ubuntu/jammy main]
+libavahi-ui-gtk3-0 0.8-5ubuntu5 [Ubuntu/jammy main]
+libavc1394-0 0.5.4-5build2 [Ubuntu/jammy main]
+libavc1394-0:i386 0.5.4-5build2 [Ubuntu/jammy main]
+libavcodec-dev 7:4.4.2-0ubuntu0.22.04.1 [Ubuntu/jammy universe]
+libavcodec58 7:4.4.2-0ubuntu0.22.04.1 [Ubuntu/jammy universe]
+libavdevice-dev 7:4.4.2-0ubuntu0.22.04.1 [Ubuntu/jammy universe]
+libavdevice58 7:4.4.2-0ubuntu0.22.04.1 [Ubuntu/jammy universe]
+libavfilter-dev 7:4.4.2-0ubuntu0.22.04.1 [Ubuntu/jammy universe]
+libavfilter7 7:4.4.2-0ubuntu0.22.04.1 [Ubuntu/jammy universe]
+libavformat-dev 7:4.4.2-0ubuntu0.22.04.1 [Ubuntu/jammy universe]
+libavformat58 7:4.4.2-0ubuntu0.22.04.1 [Ubuntu/jammy universe]
+libavutil-dev 7:4.4.2-0ubuntu0.22.04.1 [Ubuntu/jammy universe]
+libavutil56 7:4.4.2-0ubuntu0.22.04.1 [Ubuntu/jammy universe]
+libayatana-appindicator3-1 0.5.90-7ubuntu2 [Ubuntu/jammy main]
+libayatana-ido3-0.4-0 0.9.1-1 [Ubuntu/jammy main]
+libayatana-indicator3-7 0.9.1-1 [Ubuntu/jammy main]
+libb-hooks-endofscope-perl 0.25-1 [Ubuntu/jammy main]
+libb-hooks-op-check-perl 0.22-1build5 [Ubuntu/jammy main]
+libbabeltrace1 1.5.8-2build1 [Ubuntu/jammy main]
+libbamf3-2 0.5.6+22.04.20220217-0ubuntu1 [Ubuntu/jammy universe]
+libbasicobjects0 0.6.2-1 [Ubuntu/jammy main]
+libbcprov-java 1.68-5 [Ubuntu/jammy universe]
+libbdplus0 0.2.0-1 [Ubuntu/jammy universe]
+libbibutils8 7.2-1 [Ubuntu/jammy universe]
+libbinio1v5 1.5+dfsg-0.1 [Ubuntu/jammy universe]
+libbinutils 2.38-4ubuntu2.2 [Ubuntu/jammy main]
+libblas-dev 3.10.0-2ubuntu1 [Ubuntu/jammy main]
+libblas3 3.10.0-2ubuntu1 [Ubuntu/jammy main]
+libblkid-dev 2.37.2-4ubuntu3 [Ubuntu/jammy main]
+libblkid1 2.37.2-4ubuntu3 [Ubuntu/jammy main]
+libblkid1:i386 2.37.2-4ubuntu3 [Ubuntu/jammy main]
+libblockdev-crypto2 2.26-1 [Ubuntu/jammy main]
+libblockdev-fs2 2.26-1 [Ubuntu/jammy main]
+libblockdev-loop2 2.26-1 [Ubuntu/jammy main]
+libblockdev-part-err2 2.26-1 [Ubuntu/jammy main]
+libblockdev-part2 2.26-1 [Ubuntu/jammy main]
+libblockdev-swap2 2.26-1 [Ubuntu/jammy main]
+libblockdev-utils2 2.26-1 [Ubuntu/jammy main]
+libblockdev2 2.26-1 [Ubuntu/jammy main]
+libblosc1 1.21.1+ds2-2 [Ubuntu/jammy universe]
+libbluetooth3 5.64-0ubuntu1 [Ubuntu/jammy main]
+libbluray2 1:1.3.1-1 [Ubuntu/jammy universe]
+libboost-dev 1.74.0.3ubuntu7 [Ubuntu/jammy main]
+libboost-filesystem1.74.0 1.74.0-14ubuntu3 [Ubuntu/jammy main]
+libboost-iostreams1.74.0 1.74.0-14ubuntu3 [Ubuntu/jammy main]
+libboost-locale1.74.0 1.74.0-14ubuntu3 [Ubuntu/jammy main]
+libboost-program-options1.74.0 1.74.0-14ubuntu3 [Ubuntu/jammy main]
+libboost-python1.74.0 1.74.0-14ubuntu3 [Ubuntu/jammy main]
+libboost-regex1.74.0 1.74.0-14ubuntu3 [Ubuntu/jammy main]
+libboost-thread1.74.0 1.74.0-14ubuntu3 [Ubuntu/jammy main]
+libboost1.74-dev 1.74.0-14ubuntu3 [Ubuntu/jammy main]
+libbpf0 1:0.5.0-1ubuntu22.04.1 [Ubuntu/jammy main]
+libbraiding-dev 1.0-1build1 [Ubuntu/jammy universe]
+libbraiding0 1.0-1build1 [Ubuntu/jammy universe]
+libbrial-dev 1.2.10-1build1 [Ubuntu/jammy universe]
+libbrial-groebner-dev 1.2.10-1build1 [Ubuntu/jammy universe]
+libbrial-groebner3 1.2.10-1build1 [Ubuntu/jammy universe]
+libbrial3 1.2.10-1build1 [Ubuntu/jammy universe]
+libbrlapi0.8 6.4-4ubuntu3 [Ubuntu/jammy main]
+libbrotli-dev 1.0.9-2build6 [Ubuntu/jammy main]
+libbrotli1 1.0.9-2build6 [Ubuntu/jammy main]
+libbrotli1:i386 1.0.9-2build6 [Ubuntu/jammy main]
+libbs2b0 3.1.0+dfsg-2.2build1 [Ubuntu/jammy universe]
+libbsd-dev 0.11.5-1 [Ubuntu/jammy main]
+libbsd0 0.11.5-1 [Ubuntu/jammy main]
+libbsd0:i386 0.11.5-1 [Ubuntu/jammy main]
+libbtf1 1:5.10.1+dfsg-4build1 [Ubuntu/jammy universe]
+libbtparse2 0.88-3build3 [Ubuntu/jammy universe]
+libbusiness-isbn-data-perl 20210112.006-1 [Ubuntu/jammy universe]
+libbusiness-isbn-perl 3.006-1 [Ubuntu/jammy universe]
+libbusiness-ismn-perl 1.202-1 [Ubuntu/jammy universe]
+libbusiness-issn-perl 1.005-1 [Ubuntu/jammy universe]
+libbz2-1.0 1.0.8-5build1 [Ubuntu/jammy main]
+libbz2-1.0:i386 1.0.8-5build1 [Ubuntu/jammy main]
+libbz2-dev 1.0.8-5build1 [Ubuntu/jammy main]
+libc-ares2 1.18.1-1ubuntu0.22.04.1 [Ubuntu/jammy main]
+libc-bin 2.35-0ubuntu3.1 [Ubuntu/jammy main]
+libc-dev-bin 2.35-0ubuntu3.1 [Ubuntu/jammy main]
+libc6 2.35-0ubuntu3.1 [Ubuntu/jammy main]
+libc6-dbg 2.35-0ubuntu3.1 [Ubuntu/jammy main]
+libc6-dev 2.35-0ubuntu3.1 [Ubuntu/jammy main]
+libc6-i386 2.35-0ubuntu3.1 [Ubuntu/jammy main]
+libc6:i386 2.35-0ubuntu3.1 [Ubuntu/jammy main]
+libcaca-dev 0.99.beta19-2.2ubuntu4 [Ubuntu/jammy main]
+libcaca0 0.99.beta19-2.2ubuntu4 [Ubuntu/jammy main]
+libcaca0:i386 0.99.beta19-2.2ubuntu4 [Ubuntu/jammy main]
+libcairo-gobject-perl 1.005-3build1 [Ubuntu/jammy main]
+libcairo-gobject2 1.16.0-5ubuntu2 [Ubuntu/jammy main]
+libcairo-gobject2:i386 1.16.0-5ubuntu2 [Ubuntu/jammy main]
+libcairo-perl 1.109-2build1 [Ubuntu/jammy main]
+libcairo-script-interpreter2 1.16.0-5ubuntu2 [Ubuntu/jammy main]
+libcairo2 1.16.0-5ubuntu2 [Ubuntu/jammy main]
+libcairo2-dev 1.16.0-5ubuntu2 [Ubuntu/jammy main]
+libcairo2:i386 1.16.0-5ubuntu2 [Ubuntu/jammy main]
+libcairomm-1.0-1v5 1.12.2-4build3 [Ubuntu/jammy main]
+libcamd2 1:5.10.1+dfsg-4build1 [Ubuntu/jammy universe]
+libcamel-1.2-63 3.44.4-0ubuntu1 [Ubuntu/jammy main]
+libcanberra-gtk-module 0.30-10ubuntu1 [Ubuntu/jammy universe]
+libcanberra-gtk-module:i386 0.30-10ubuntu1 [Ubuntu/jammy universe]
+libcanberra-gtk0 0.30-10ubuntu1 [Ubuntu/jammy universe]
+libcanberra-gtk0:i386 0.30-10ubuntu1 [Ubuntu/jammy universe]
+libcanberra-gtk3-0 0.30-10ubuntu1 [Ubuntu/jammy main]
+libcanberra-gtk3-module 0.30-10ubuntu1 [Ubuntu/jammy main]
+libcanberra-pulse 0.30-10ubuntu1 [Ubuntu/jammy main]
+libcanberra0 0.30-10ubuntu1 [Ubuntu/jammy main]
+libcanberra0:i386 0.30-10ubuntu1 [Ubuntu/jammy main]
+libcap-dev 1:2.44-1build3 [Ubuntu/jammy main]
+libcap-ng0 0.7.9-2.2build3 [Ubuntu/jammy main]
+libcap2 1:2.44-1build3 [Ubuntu/jammy main]
+libcap2-bin 1:2.44-1build3 [Ubuntu/jammy main]
+libcap2:i386 1:2.44-1build3 [Ubuntu/jammy main]
+libcapi20-3 1:3.27-3 [Ubuntu/jammy universe]
+libcapi20-3:i386 1:3.27-3 [Ubuntu/jammy universe]
+libcapture-tiny-perl 0.48-1 [Ubuntu/jammy main]
+libcbor0.8 0.8.0-2ubuntu1 [Ubuntu/jammy main]
+libcc1-0 12.1.0-2ubuntu1~22.04 [Ubuntu/jammy main]
+libccolamd2 1:5.10.1+dfsg-4build1 [Ubuntu/jammy universe]
+libcdd-dev 094m-1 [Ubuntu/jammy universe]
+libcdd-doc 094m-1 [Ubuntu/jammy universe]
+libcdd-tools 094m-1 [Ubuntu/jammy universe]
+libcdd0d 094m-1 [Ubuntu/jammy universe]
+libcddb2 1.3.2-7fakesync1 [Ubuntu/jammy universe]
+libcdi-api-java 1.2-3 [Ubuntu/jammy universe]
+libcdi0 2.0.4-1 [Ubuntu/jammy universe]
+libcdio-cdda2 10.2+2.0.0-1build3 [Ubuntu/jammy main]
+libcdio-paranoia2 10.2+2.0.0-1build3 [Ubuntu/jammy main]
+libcdio19 2.1.0-3build1 [Ubuntu/jammy main]
+libcdparanoia0 3.10.2+debian-14build2 [Ubuntu/jammy main]
+libcdparanoia0:i386 3.10.2+debian-14build2 [Ubuntu/jammy main]
+libcdr-0.1-1 0.1.6-2build2 [Ubuntu/jammy main]
+libcdt5 2.42.2-6 [Ubuntu/jammy universe]
+libcgi-fast-perl 1:2.15-1 [Ubuntu/jammy main]
+libcgi-pm-perl 4.54-1 [Ubuntu/jammy main]
+libcgraph6 2.42.2-6 [Ubuntu/jammy universe]
+libcheese-gtk25 41.1-1build1 [Ubuntu/jammy main]
+libcheese8 41.1-1build1 [Ubuntu/jammy main]
+libchm1 2:0.40a-7 [Ubuntu/jammy universe]
+libcholmod3 1:5.10.1+dfsg-4build1 [Ubuntu/jammy universe]
+libchromaprint1 1.5.1-2 [Ubuntu/jammy universe]
+libcinnamon-desktop4 5.2.1-1 [Ubuntu/jammy universe]
+libclang-14-dev 1:14.0.0-1ubuntu1 [Ubuntu/jammy universe]
+libclang-common-14-dev 1:14.0.0-1ubuntu1 [Ubuntu/jammy universe]
+libclang-cpp11 1:11.1.0-6 [Ubuntu/jammy universe]
+libclang-cpp12 1:12.0.1-19ubuntu3 [Ubuntu/jammy universe]
+libclang-cpp13 1:13.0.1-2ubuntu2.1 [Ubuntu/jammy main]
+libclang-cpp14 1:14.0.0-1ubuntu1 [Ubuntu/jammy universe]
+libclang-dev 1:14.0-55~exp2 [Ubuntu/jammy universe]
+libclang1-14 1:14.0.0-1ubuntu1 [Ubuntu/jammy universe]
+libclass-accessor-perl 0.51-1 [Ubuntu/jammy universe]
+libclass-c3-perl 0.35-1 [Ubuntu/jammy universe]
+libclass-c3-xs-perl 0.15-1build2 [Ubuntu/jammy universe]
+libclass-data-inheritable-perl 0.08-3 [Ubuntu/jammy main]
+libclass-inspector-perl 1.36-1 [Ubuntu/jammy universe]
+libclass-method-modifiers-perl 2.13-1 [Ubuntu/jammy main]
+libclass-singleton-perl 1.6-1 [Ubuntu/jammy universe]
+libclass-xsaccessor-perl 1.19-3build9 [Ubuntu/jammy main]
+libcliquer-dev 1.21-3 [Ubuntu/jammy universe]
+libcliquer1 1.21-3 [Ubuntu/jammy universe]
+libclone-perl 0.45-1build3 [Ubuntu/jammy main]
+libclucene-contribs1v5 2.3.3.4+dfsg-1ubuntu5 [Ubuntu/jammy main]
+libclucene-core1v5 2.3.3.4+dfsg-1ubuntu5 [Ubuntu/jammy main]
+libclutter-1.0-0 1.26.4+dfsg-4build1 [Ubuntu/jammy main]
+libclutter-1.0-common 1.26.4+dfsg-4build1 [Ubuntu/jammy main]
+libclutter-gst-3.0-0 3.0.27-2ubuntu1 [Ubuntu/jammy main]
+libclutter-gtk-1.0-0 1.8.4-4build2 [Ubuntu/jammy main]
+libcodec2-1.0 1.0.1-3 [Ubuntu/jammy universe]
+libcogl-common 1.22.8-3build1 [Ubuntu/jammy main]
+libcogl-pango20 1.22.8-3build1 [Ubuntu/jammy main]
+libcogl-path20 1.22.8-3build1 [Ubuntu/jammy main]
+libcogl20 1.22.8-3build1 [Ubuntu/jammy main]
+libcolamd2 1:5.10.1+dfsg-4build1 [Ubuntu/jammy main]
+libcollection4 0.6.2-1 [Ubuntu/jammy main]
+libcolord-gtk1 0.3.0-1 [Ubuntu/jammy main]
+libcolord2 1.4.6-1 [Ubuntu/jammy main]
+libcolorhug2 1.4.6-1 [Ubuntu/jammy main]
+libcolumbus1-common 1.1.0+15.10.20150806-0ubuntu26 [Ubuntu/jammy universe]
+libcolumbus1v5 1.1.0+15.10.20150806-0ubuntu26 [Ubuntu/jammy universe]
+libcom-err2 1.46.5-2ubuntu1.1 [Ubuntu/jammy main]
+libcom-err2:i386 1.46.5-2ubuntu1.1 [Ubuntu/jammy main]
+libcommon-sense-perl 3.75-2build1 [Ubuntu/jammy main]
+libcommons-cli-java 1.4-2 [Ubuntu/jammy universe]
+libcommons-exec-java 1.3-2 [Ubuntu/jammy universe]
+libcommons-io-java 2.11.0-2 [Ubuntu/jammy universe]
+libcommons-lang-java 2.6-9 [Ubuntu/jammy universe]
+libcommons-lang3-java 3.11-1 [Ubuntu/jammy universe]
+libcommons-logging-java 1.2-2 [Ubuntu/jammy universe]
+libcommons-parent-java 43-1 [Ubuntu/jammy universe]
+libcompizconfig0 1:0.9.14.1+22.04.20220820-0ubuntu1 [Ubuntu/jammy universe]
+libconfig-dev 1.5-0.4build1 [Ubuntu/jammy universe]
+libconfig-doc 1.5-0.4build1 [Ubuntu/jammy universe]
+libconfig-tiny-perl 2.28-1 [Ubuntu/jammy main]
+libconfig9 1.5-0.4build1 [Ubuntu/jammy universe]
+libconfuse-common 3.3-2 [Ubuntu/jammy universe]
+libconfuse2 3.3-2 [Ubuntu/jammy universe]
+libconst-fast-perl 0.014-1.1 [Ubuntu/jammy main]
+libcpanel-json-xs-perl 4.27-1build1 [Ubuntu/jammy main]
+libcrack2 2.9.6-3.4build4 [Ubuntu/jammy main]
+libcrypt-dev 1:4.4.27-1 [Ubuntu/jammy main]
+libcrypt1 1:4.4.27-1 [Ubuntu/jammy main]
+libcrypt1:i386 1:4.4.27-1 [Ubuntu/jammy main]
+libcryptsetup12 2:2.4.3-1ubuntu1.1 [Ubuntu/jammy main]
+libctf-nobfd0 2.38-4ubuntu2.2 [Ubuntu/jammy main]
+libctf0 2.38-4ubuntu2.2 [Ubuntu/jammy main]
+libcue2 2.2.1-3build3 [Ubuntu/jammy main]
+libcups2 2.4.1op1-1ubuntu4.1 [Ubuntu/jammy main]
+libcups2:i386 2.4.1op1-1ubuntu4.1 [Ubuntu/jammy main]
+libcupsfilters1 1.28.15-0ubuntu1.2 [Ubuntu/jammy main]
+libcupsimage2 2.4.1op1-1ubuntu4.1 [Ubuntu/jammy main]
+libcurl3-gnutls 7.81.0-1ubuntu1.10 [Ubuntu/jammy main]
+libcurl3-gnutls:i386 7.81.0-1ubuntu1.10 [Ubuntu/jammy main]
+libcurl4 7.81.0-1ubuntu1.10 [Ubuntu/jammy main]
+libcurl4-openssl-dev 7.81.0-1ubuntu1.10 [Ubuntu/jammy main]
+libcurl4:i386 7.81.0-1ubuntu1.10 [Ubuntu/jammy main]
+libcxsparse3 1:5.10.1+dfsg-4build1 [Ubuntu/jammy universe]
+libdaemon0 0.14-7.1ubuntu3 [Ubuntu/jammy main]
+libdata-compare-perl 1.27-1 [Ubuntu/jammy universe]
+libdata-dpath-perl 0.58-1 [Ubuntu/jammy main]
+libdata-dump-perl 1.25-1 [Ubuntu/jammy main]
+libdata-messagepack-perl 1.01-2build1 [Ubuntu/jammy main]
+libdata-optlist-perl 0.112-1 [Ubuntu/jammy main]
+libdata-uniqid-perl 0.12-1.1 [Ubuntu/jammy universe]
+libdata-validate-domain-perl 0.10-1.1 [Ubuntu/jammy main]
+libdata-validate-ip-perl 0.30-1 [Ubuntu/jammy main]
+libdata-validate-uri-perl 0.07-2 [Ubuntu/jammy main]
+libdate-simple-perl 3.0300-3build2 [Ubuntu/jammy universe]
+libdatetime-calendar-julian-perl 0.107-1 [Ubuntu/jammy universe]
+libdatetime-format-builder-perl 0.8300-1 [Ubuntu/jammy universe]
+libdatetime-format-iso8601-perl 0.16-1 [Ubuntu/jammy universe]
+libdatetime-format-strptime-perl 1.7900-1 [Ubuntu/jammy universe]
+libdatetime-locale-perl 1:1.33-1 [Ubuntu/jammy universe]
+libdatetime-perl 2:1.55-1build1 [Ubuntu/jammy universe]
+libdatetime-timezone-perl 1:2.51-1+2021e [Ubuntu/jammy universe]
+libdatrie-dev 0.2.13-2 [Ubuntu/jammy main]
+libdatrie1 0.2.13-2 [Ubuntu/jammy main]
+libdatrie1:i386 0.2.13-2 [Ubuntu/jammy main]
+libdav1d5 0.9.2-1 [Ubuntu/jammy universe]
+libdazzle-1.0-0 3.44.0-1 [Ubuntu/jammy main]
+libdazzle-common 3.44.0-1 [Ubuntu/jammy main]
+libdb-dev 1:5.3.21~exp1ubuntu4 [Ubuntu/jammy main]
+libdb5.3 5.3.28+dfsg1-0.8ubuntu3 [Ubuntu/jammy main]
+libdb5.3-dev 5.3.28+dfsg1-0.8ubuntu3 [Ubuntu/jammy main]
+libdb5.3:i386 5.3.28+dfsg1-0.8ubuntu3 [Ubuntu/jammy main]
+libdbd-sqlite3-perl 1.70-3build1 [Ubuntu/jammy universe]
+libdbi-perl 1.643-3build3 [Ubuntu/jammy main]
+libdbus-1-3 1.12.20-2ubuntu4.1 [Ubuntu/jammy main]
+libdbus-1-3:i386 1.12.20-2ubuntu4.1 [Ubuntu/jammy main]
+libdbus-1-dev 1.12.20-2ubuntu4.1 [Ubuntu/jammy main]
+libdbus-glib-1-2 0.112-2build1 [Ubuntu/jammy main]
+libdbusmenu-glib4 16.04.1+18.10.20180917-0ubuntu8 [Ubuntu/jammy main]
+libdbusmenu-gtk3-4 16.04.1+18.10.20180917-0ubuntu8 [Ubuntu/jammy main]
+libdbusmenu-qt5-2 0.9.3+16.04.20160218-2build1 [Ubuntu/jammy universe]
+libdc1394-25 2.2.6-4 [Ubuntu/jammy universe]
+libdca0 0.0.7-2 [Ubuntu/jammy universe]
+libdconf1 0.40.0-3 [Ubuntu/jammy main]
+libde265-0 1.0.8-1 [Ubuntu/jammy universe]
+libdebconfclient0 0.261ubuntu1 [Ubuntu/jammy main]
+libdebhelper-perl 13.6ubuntu1 [Ubuntu/jammy main]
+libdebuginfod-common 0.186-1build1 [Ubuntu/jammy main]
+libdebuginfod1 0.186-1build1 [Ubuntu/jammy main]
+libdecor-0-0 0.1.0-3build1 [Ubuntu/jammy main]
+libdecor-0-0:i386 0.1.0-3build1 [Ubuntu/jammy main]
+libdecor-0-dev 0.1.0-3build1 [Ubuntu/jammy main]
+libdecor-0-plugin-1-cairo 0.1.0-3build1 [Ubuntu/jammy main]
+libdecor-0-plugin-1-cairo:i386 0.1.0-3build1 [Ubuntu/jammy main]
+libdecoration0 1:0.9.14.1+22.04.20220820-0ubuntu1 [Ubuntu/jammy universe]
+libdee-1.0-4 1.2.7+17.10.20170616-6ubuntu4 [Ubuntu/jammy main]
+libdeflate-dev 1.10-2 [Ubuntu/jammy main]
+libdeflate0 1.10-2 [Ubuntu/jammy main]
+libdeflate0:i386 1.10-2 [Ubuntu/jammy main]
+libdevel-callchecker-perl 0.008-1ubuntu4 [Ubuntu/jammy main]
+libdevel-caller-perl 2.06-2build4 [Ubuntu/jammy universe]
+libdevel-globaldestruction-perl 0.14-1.1 [Ubuntu/jammy universe]
+libdevel-lexalias-perl 0.05-2build4 [Ubuntu/jammy universe]
+libdevel-size-perl 0.83-1build4 [Ubuntu/jammy main]
+libdevel-stacktrace-perl 2.0400-1 [Ubuntu/jammy main]
+libdevmapper1.02.1 2:1.02.175-2.1ubuntu4 [Ubuntu/jammy main]
+libdhash1 0.6.2-1 [Ubuntu/jammy main]
+libdigest-bubblebabble-perl 0.02-2.1 [Ubuntu/jammy main]
+libdigest-hmac-perl 1.04+dfsg-1 [Ubuntu/jammy main]
+libdist-checkconflicts-perl 0.11-1.1 [Ubuntu/jammy universe]
+libdjvulibre-text 3.5.28-2build2 [Ubuntu/jammy main]
+libdjvulibre21 3.5.28-2build2 [Ubuntu/jammy main]
+libdmapsharing-3.0-2 2.9.41-3build2 [Ubuntu/jammy main]
+libdmtx0b 0.7.5-3 [Ubuntu/jammy universe]
+libdmx-dev 1:1.1.4-2build2 [Ubuntu/jammy main]
+libdmx1 1:1.1.4-2build2 [Ubuntu/jammy main]
+libdns-export1110 1:9.11.19+dfsg-2.1ubuntu3 [Ubuntu/jammy main]
+libdotconf0 1.3-0.3fakesync1build2 [Ubuntu/jammy main]
+libdouble-conversion3 3.1.7-4 [Ubuntu/jammy universe]
+libdpkg-perl 1.21.1ubuntu2.1 [Ubuntu/jammy main]
+libdrm-amdgpu1 2.4.113-2~ubuntu0.22.04.1 [Ubuntu/jammy main]
+libdrm-amdgpu1:i386 2.4.113-2~ubuntu0.22.04.1 [Ubuntu/jammy main]
+libdrm-common 2.4.113-2~ubuntu0.22.04.1 [Ubuntu/jammy main]
+libdrm-dev 2.4.113-2~ubuntu0.22.04.1 [Ubuntu/jammy main]
+libdrm-intel1 2.4.113-2~ubuntu0.22.04.1 [Ubuntu/jammy main]
+libdrm-nouveau2 2.4.113-2~ubuntu0.22.04.1 [Ubuntu/jammy main]
+libdrm-nouveau2:i386 2.4.113-2~ubuntu0.22.04.1 [Ubuntu/jammy main]
+libdrm-radeon1 2.4.113-2~ubuntu0.22.04.1 [Ubuntu/jammy main]
+libdrm-radeon1:i386 2.4.113-2~ubuntu0.22.04.1 [Ubuntu/jammy main]
+libdrm2 2.4.113-2~ubuntu0.22.04.1 [Ubuntu/jammy main]
+libdrm2:i386 2.4.113-2~ubuntu0.22.04.1 [Ubuntu/jammy main]
+libdsdp-5.8gf 5.8-9.4build1 [Ubuntu/jammy universe]
+libdv4 1.0.0-14build1 [Ubuntu/jammy main]
+libdv4:i386 1.0.0-14build1 [Ubuntu/jammy main]
+libdvbpsi10 1.3.3-1 [Ubuntu/jammy universe]
+libdvdnav4 6.1.1-1 [Ubuntu/jammy universe]
+libdvdread8 6.1.2-1 [Ubuntu/jammy universe]
+libdw1 0.186-1build1 [Ubuntu/jammy main]
+libdw1:i386 0.186-1build1 [Ubuntu/jammy main]
+libdxflib3 3.26.4-1 [Ubuntu/jammy universe]
+libdynaloader-functions-perl 0.003-1.1 [Ubuntu/jammy main]
+libe-book-0.1-1 0.1.3-2build2 [Ubuntu/jammy main]
+libebackend-1.2-10 3.44.4-0ubuntu1 [Ubuntu/jammy main]
+libebml5 1.4.2-2 [Ubuntu/jammy universe]
+libebook-1.2-20 3.44.4-0ubuntu1 [Ubuntu/jammy main]
+libebook-contacts-1.2-3 3.44.4-0ubuntu1 [Ubuntu/jammy main]
+libec-dev 20210625-1build1 [Ubuntu/jammy universe]
+libec8 20210625-1build1 [Ubuntu/jammy universe]
+libecal-2.0-1 3.44.4-0ubuntu1 [Ubuntu/jammy main]
+libeccodes-data 2.24.2-1 [Ubuntu/jammy universe]
+libeccodes0 2.24.2-1 [Ubuntu/jammy universe]
+libeckit0d 1.18.7-1 [Ubuntu/jammy universe]
+libecl-dev 21.2.1+ds-4 [Ubuntu/jammy universe]
+libecl21.2 21.2.1+ds-4 [Ubuntu/jammy universe]
+libecm-dev 7.0.4+ds-6 [Ubuntu/jammy universe]
+libecm1 7.0.4+ds-6 [Ubuntu/jammy universe]
+libecm1-dev 7.0.4+ds-6 [Ubuntu/jammy universe]
+libecm1-dev-common 7.0.4+ds-6 [Ubuntu/jammy universe]
+libedata-book-1.2-26 3.44.4-0ubuntu1 [Ubuntu/jammy main]
+libedata-cal-2.0-1 3.44.4-0ubuntu1 [Ubuntu/jammy main]
+libedataserver-1.2-26 3.44.4-0ubuntu1 [Ubuntu/jammy main]
+libedataserverui-1.2-3 3.44.4-0ubuntu1 [Ubuntu/jammy main]
+libedit2 3.1-20210910-1build1 [Ubuntu/jammy main]
+libedit2:i386 3.1-20210910-1build1 [Ubuntu/jammy main]
+libefiboot1 37-6ubuntu2 [Ubuntu/jammy main]
+libefivar1 37-6ubuntu2 [Ubuntu/jammy main]
+libegl-dev 1.4.0-1 [Ubuntu/jammy main]
+libegl-mesa0 22.2.5-0ubuntu0.1~22.04.1 [local]
+libegl1 1.4.0-1 [Ubuntu/jammy main]
+libegl1-mesa 22.2.5-0ubuntu0.1~22.04.1 [local]
+libegl1-mesa-dev 22.2.5-0ubuntu0.1~22.04.1 [local]
+libelf1 0.186-1build1 [Ubuntu/jammy main]
+libelf1:i386 0.186-1build1 [Ubuntu/jammy main]
+libemail-address-xs-perl 1.04-1build6 [Ubuntu/jammy main]
+libemail-date-format-perl 1.005-1.1 [Ubuntu/jammy main]
+libemail-valid-perl 1.202-1 [Ubuntu/jammy universe]
+libemf1 1.0.13-3 [Ubuntu/jammy universe]
+libenca0 1.19-1 [Ubuntu/jammy universe]
+libenchant-2-2 2.3.2-1ubuntu2 [Ubuntu/jammy main]
+libencode-eucjpms-perl 0.07-3build9 [Ubuntu/jammy universe]
+libencode-hanextra-perl 0.23-5build4 [Ubuntu/jammy universe]
+libencode-jis2k-perl 0.03-1build7 [Ubuntu/jammy universe]
+libencode-locale-perl 1.05-1.1 [Ubuntu/jammy main]
+libencode-perl 3.16-1build1 [Ubuntu/jammy universe]
+libeot0 0.01-5build2 [Ubuntu/jammy main]
+libepoxy-dev 1.5.10-1 [Ubuntu/jammy main]
+libepoxy0 1.5.10-1 [Ubuntu/jammy main]
+libepub0 0.2.2-4ubuntu3 [Ubuntu/jammy universe]
+libepubgen-0.1-1 0.1.1-1ubuntu5 [Ubuntu/jammy main]
+liberror-perl 0.17029-1 [Ubuntu/jammy main]
+libespeak-ng1 1.50+dfsg-10 [Ubuntu/jammy main]
+libestr0 0.1.10-2.1build3 [Ubuntu/jammy main]
+libetonyek-0.1-1 0.1.10-3build1 [Ubuntu/jammy main]
+libev-dev 1:4.33-1 [Ubuntu/jammy universe]
+libev-perl 4.33-1build2 [Ubuntu/jammy universe]
+libev4 1:4.33-1 [Ubuntu/jammy universe]
+libeval-closure-perl 0.14-1 [Ubuntu/jammy universe]
+libevdev-dev 1.12.1+dfsg-1 [Ubuntu/jammy main]
+libevdev2 1.12.1+dfsg-1 [Ubuntu/jammy main]
+libevdocument3-4 42.3-0ubuntu3 [Ubuntu/jammy main]
+libevent-2.1-7 2.1.12-stable-1build3 [Ubuntu/jammy main]
+libevent-core-2.1-7 2.1.12-stable-1build3 [Ubuntu/jammy main]
+libevent-dev 2.1.12-stable-1build3 [Ubuntu/jammy main]
+libevent-extra-2.1-7 2.1.12-stable-1build3 [Ubuntu/jammy main]
+libevent-openssl-2.1-7 2.1.12-stable-1build3 [Ubuntu/jammy main]
+libevent-pthreads-2.1-7 2.1.12-stable-1build3 [Ubuntu/jammy main]
+libevview3-3 42.3-0ubuntu3 [Ubuntu/jammy main]
+libexception-class-perl 1.45-1 [Ubuntu/jammy main]
+libexec-maven-plugin-java 1.6.0-4.1 [Ubuntu/jammy universe]
+libexempi8 2.5.2-1ubuntu0.22.04.1 [Ubuntu/jammy main]
+libexif-dev 0.6.24-1build1 [Ubuntu/jammy main]
+libexif-doc 0.6.24-1build1 [Ubuntu/jammy main]
+libexif12 0.6.24-1build1 [Ubuntu/jammy main]
+libexif12:i386 0.6.24-1build1 [Ubuntu/jammy main]
+libexiv2-27 0.27.5-3ubuntu1 [Ubuntu/jammy main]
+libexo-2-0 4.16.3-1 [Ubuntu/jammy universe]
+libexo-common 4.16.3-1 [Ubuntu/jammy universe]
+libexpat1 2.4.7-1ubuntu0.2 [Ubuntu/jammy main]
+libexpat1-dev 2.4.7-1ubuntu0.2 [Ubuntu/jammy main]
+libexpat1:i386 2.4.7-1ubuntu0.2 [Ubuntu/jammy main]
+libexporter-tiny-perl 1.002002-1 [Ubuntu/jammy main]
+libext2fs2 1.46.5-2ubuntu1.1 [Ubuntu/jammy main]
+libexttextcat-2.0-0 3.4.5-1build2 [Ubuntu/jammy main]
+libexttextcat-data 3.4.5-1build2 [Ubuntu/jammy main]
+libextutils-depends-perl 0.8001-1 [Ubuntu/jammy main]
+libfaad2 2.10.0-2 [Ubuntu/jammy universe]
+libfabric1 1.11.0-3 [Ubuntu/jammy universe]
+libfakekey0 0.3+git20170516-2build2 [Ubuntu/jammy universe]
+libfakeroot 1.28-1ubuntu1 [Ubuntu/jammy main]
+libfam0 2.7.0-17.3build2 [local]
+libfastjson4 0.99.9-1build2 [Ubuntu/jammy main]
+libfaudio0 22.02-1 [Ubuntu/jammy universe]
+libfaudio0:i386 22.02-1 [Ubuntu/jammy universe]
+libfcgi-bin 2.4.2-2build2 [Ubuntu/jammy main]
+libfcgi-perl 0.82+ds-1build1 [Ubuntu/jammy main]
+libfcgi0ldbl 2.4.2-2build2 [Ubuntu/jammy main]
+libfcitx-config4 1:4.2.9.8-5 [Ubuntu/jammy universe]
+libfcitx-gclient1 1:4.2.9.8-5 [Ubuntu/jammy universe]
+libfcitx-utils0 1:4.2.9.8-5 [Ubuntu/jammy universe]
+libfdisk1 2.37.2-4ubuntu3 [Ubuntu/jammy main]
+libffi-dev 3.4.2-4 [Ubuntu/jammy main]
+libffi6 3.2.1-8 [local]
+libffi7 3.3-5ubuntu1 [Ubuntu/jammy universe]
+libffi8 3.4.2-4 [Ubuntu/jammy main]
+libffi8:i386 3.4.2-4 [Ubuntu/jammy main]
+libffmpegthumbnailer4v5 2.2.2+dfsg-1 [Ubuntu/jammy universe]
+libfftw3-double3 3.3.8-2ubuntu8 [Ubuntu/jammy main]
+libfftw3-single3 3.3.8-2ubuntu8 [Ubuntu/jammy main]
+libfido2-1 1.10.0-1 [Ubuntu/jammy main]
+libfile-basedir-perl 0.09-1 [Ubuntu/jammy main]
+libfile-desktopentry-perl 0.22-2 [Ubuntu/jammy main]
+libfile-fcntllock-perl 0.22-3build7 [Ubuntu/jammy main]
+libfile-find-rule-perl 0.34-1 [Ubuntu/jammy main]
+libfile-homedir-perl 1.006-1 [Ubuntu/jammy main]
+libfile-listing-perl 6.14-1 [Ubuntu/jammy main]
+libfile-mimeinfo-perl 0.31-1 [Ubuntu/jammy main]
+libfile-sharedir-perl 1.118-1 [Ubuntu/jammy universe]
+libfile-slurper-perl 0.013-1 [Ubuntu/jammy main]
+libfile-stripnondeterminism-perl 1.13.0-1 [Ubuntu/jammy main]
+libfile-which-perl 1.23-1 [Ubuntu/jammy main]
+libfl-dev 2.6.4-8build2 [Ubuntu/jammy main]
+libfl2 2.6.4-8build2 [Ubuntu/jammy main]
+libflac8 1.3.3-2ubuntu0.1 [Ubuntu/jammy main]
+libflac8:i386 1.3.3-2ubuntu0.1 [Ubuntu/jammy main]
+libflint-2.8.4 2.8.4-2build1 [Ubuntu/jammy universe]
+libflint-arb-dev 1:2.22.1-1 [Ubuntu/jammy universe]
+libflint-arb2 1:2.22.1-1 [Ubuntu/jammy universe]
+libflint-dev 2.8.4-2build1 [Ubuntu/jammy universe]
+libflite1 2.2-3 [Ubuntu/jammy universe]
+libfltk-cairo1.3 1.3.8-4 [Ubuntu/jammy universe]
+libfltk-forms1.3 1.3.8-4 [Ubuntu/jammy universe]
+libfltk-gl1.3 1.3.8-4 [Ubuntu/jammy universe]
+libfltk-images1.3 1.3.8-4 [Ubuntu/jammy universe]
+libfltk1.3 1.3.8-4 [Ubuntu/jammy universe]
+libfltk1.3-dev 1.3.8-4 [Ubuntu/jammy universe]
+libfluidsynth3 2.2.5-1 [Ubuntu/jammy universe]
+libfmt8 8.1.1+ds1-2 [Ubuntu/jammy universe]
+libfont-afm-perl 1.20-3 [Ubuntu/jammy main]
+libfont-ttf-perl 1.06-1.1 [Ubuntu/jammy main]
+libfontbox-java 1:1.8.16-2 [Ubuntu/jammy universe]
+libfontconfig-dev 2.13.1-4.2ubuntu5 [Ubuntu/jammy main]
+libfontconfig1 2.13.1-4.2ubuntu5 [Ubuntu/jammy main]
+libfontconfig1-dev 2.13.1-4.2ubuntu5 [Ubuntu/jammy main]
+libfontconfig1:i386 2.13.1-4.2ubuntu5 [Ubuntu/jammy main]
+libfontembed1 1.28.15-0ubuntu1.2 [Ubuntu/jammy main]
+libfontenc-dev 1:1.1.4-1build3 [Ubuntu/jammy main]
+libfontenc1 1:1.1.4-1build3 [Ubuntu/jammy main]
+libfontforge4 1:20201107~dfsg-4build1 [Ubuntu/jammy universe]
+libfplll-dev 5.4.1-1 [Ubuntu/jammy universe]
+libfplll7 5.4.1-1 [Ubuntu/jammy universe]
+libfplll7-data 5.4.1-1 [Ubuntu/jammy universe]
+libfprint-2-2 1:1.94.3+tod1-0ubuntu2~22.04.04 [Ubuntu/jammy main]
+libframe6 2.5.0daily13.06.05+16.10.20160809-0ubuntu3 [Ubuntu/jammy universe]
+libfreeaptx0 0.1.1-1 [Ubuntu/jammy universe]
+libfreehand-0.1-1 0.1.2-3build2 [Ubuntu/jammy main]
+libfreeimage3 3.18.0+ds2-6ubuntu5 [Ubuntu/jammy universe]
+libfreerdp-client2-2 2.6.1+dfsg1-3ubuntu2.3 [Ubuntu/jammy main]
+libfreerdp-server2-2 2.6.1+dfsg1-3ubuntu2.3 [Ubuntu/jammy main]
+libfreerdp2-2 2.6.1+dfsg1-3ubuntu2.3 [Ubuntu/jammy main]
+libfreetype-dev 2.11.1+dfsg-1ubuntu0.2 [Ubuntu/jammy main]
+libfreetype6 2.11.1+dfsg-1ubuntu0.2 [Ubuntu/jammy main]
+libfreetype6-dev 2.11.1+dfsg-1ubuntu0.2 [Ubuntu/jammy main]
+libfreetype6:i386 2.11.1+dfsg-1ubuntu0.2 [Ubuntu/jammy main]
+libfribidi-bin 1.0.8-2ubuntu3.1 [Ubuntu/jammy universe]
+libfribidi-dev 1.0.8-2ubuntu3.1 [Ubuntu/jammy main]
+libfribidi0 1.0.8-2ubuntu3.1 [Ubuntu/jammy main]
+libfribidi0:i386 1.0.8-2ubuntu3.1 [Ubuntu/jammy main]
+libfs-dev 2:1.0.8-1build2 [Ubuntu/jammy main]
+libfs6 2:1.0.8-1build2 [Ubuntu/jammy main]
+libfsplib0 0.14-5 [Ubuntu/jammy universe]
+libfsverity0 1.4-1~exp1build1 [Ubuntu/jammy universe]
+libfuse2 2.9.9-5ubuntu3 [Ubuntu/jammy universe]
+libfuse3-3 3.10.5-1build1 [Ubuntu/jammy main]
+libfwupd2 1.7.9-1~22.04.1 [Ubuntu/jammy main]
+libfwupdplugin5 1.7.9-1~22.04.1 [Ubuntu/jammy main]
+libgail-3-0 3.24.33-1ubuntu2 [Ubuntu/jammy main]
+libgail-common 2.24.33-2ubuntu2 [Ubuntu/jammy main]
+libgail-common:i386 2.24.33-2ubuntu2 [Ubuntu/jammy main]
+libgail18 2.24.33-2ubuntu2 [Ubuntu/jammy main]
+libgail18:i386 2.24.33-2ubuntu2 [Ubuntu/jammy main]
+libgamemode0 1.6.1-1build2 [Ubuntu/jammy main]
+libgamemode0:i386 1.6.1-1build2 [Ubuntu/jammy main]
+libgamemodeauto0 1.6.1-1build2 [Ubuntu/jammy main]
+libgamemodeauto0:i386 1.6.1-1build2 [Ubuntu/jammy main]
+libgap-dev 4.11.1-1 [Ubuntu/jammy universe]
+libgap7 4.11.1-1 [Ubuntu/jammy universe]
+libgbm-dev 22.2.5-0ubuntu0.1~22.04.1 [local]
+libgbm1 22.2.5-0ubuntu0.1~22.04.1 [local]
+libgbm1:i386 22.2.5-0ubuntu0.1~22.04.1 [local]
+libgc-dev 1:8.0.6-1.1build1 [Ubuntu/jammy main]
+libgc1 1:8.0.6-1.1build1 [Ubuntu/jammy main]
+libgcab-1.0-0 1.4-3build2 [Ubuntu/jammy main]
+libgcc-10-dev 10.4.0-4ubuntu1~22.04 [Ubuntu/jammy universe]
+libgcc-11-dev 11.3.0-1ubuntu1~22.04.1 [Ubuntu/jammy main]
+libgcc-12-dev 12.1.0-2ubuntu1~22.04 [Ubuntu/jammy main]
+libgcc-9-dev 9.5.0-1ubuntu1~22.04 [Ubuntu/jammy universe]
+libgcc-s1 12.1.0-2ubuntu1~22.04 [Ubuntu/jammy main]
+libgcc-s1:i386 12.1.0-2ubuntu1~22.04 [Ubuntu/jammy main]
+libgck-1-0 3.40.0-4 [Ubuntu/jammy main]
+libgconf-2-4 3.2.6-7ubuntu2 [Ubuntu/jammy universe]
+libgcr-base-3-1 3.40.0-4 [Ubuntu/jammy main]
+libgcr-ui-3-1 3.40.0-4 [Ubuntu/jammy main]
+libgcroots0 0.9.1-1 [Ubuntu/jammy universe]
+libgcrypt20 1.9.4-3ubuntu3 [Ubuntu/jammy main]
+libgcrypt20-dev 1.9.4-3ubuntu3 [Ubuntu/jammy main]
+libgcrypt20:i386 1.9.4-3ubuntu3 [Ubuntu/jammy main]
+libgd-dev 2.3.0-2ubuntu2 [Ubuntu/jammy main]
+libgd3 2.3.0-2ubuntu2 [Ubuntu/jammy main]
+libgd3:i386 2.3.0-2ubuntu2 [Ubuntu/jammy main]
+libgdata-common 0.18.1-2build1 [Ubuntu/jammy main]
+libgdata22 0.18.1-2build1 [Ubuntu/jammy main]
+libgdbm-compat4 1.23-1 [Ubuntu/jammy main]
+libgdbm-compat4:i386 1.23-1 [Ubuntu/jammy main]
+libgdbm-dev 1.23-1 [Ubuntu/jammy main]
+libgdbm6 1.23-1 [Ubuntu/jammy main]
+libgdbm6:i386 1.23-1 [Ubuntu/jammy main]
+libgdiplus 6.0.4+dfsg-2 [Ubuntu/jammy universe]
+libgdk-pixbuf-2.0-0 2.42.8+dfsg-1ubuntu0.2 [Ubuntu/jammy main]
+libgdk-pixbuf-2.0-0:i386 2.42.8+dfsg-1ubuntu0.2 [Ubuntu/jammy main]
+libgdk-pixbuf-2.0-dev 2.42.8+dfsg-1ubuntu0.2 [Ubuntu/jammy main]
+libgdk-pixbuf-xlib-2.0-0 2.40.2-2build4 [Ubuntu/jammy main]
+libgdk-pixbuf-xlib-2.0-dev 2.40.2-2build4 [Ubuntu/jammy main]
+libgdk-pixbuf2.0-0 2.40.2-2build4 [Ubuntu/jammy universe]
+libgdk-pixbuf2.0-bin 2.42.8+dfsg-1ubuntu0.2 [Ubuntu/jammy main]
+libgdk-pixbuf2.0-common 2.42.8+dfsg-1ubuntu0.2 [Ubuntu/jammy main]
+libgdk-pixbuf2.0-dev 2.40.2-2build4 [Ubuntu/jammy main]
+libgdm1 42.0-1ubuntu7.22.04.2 [Ubuntu/jammy main]
+libgee-0.8-2 0.20.5-2 [Ubuntu/jammy main]
+libgeis1 2.2.17+16.04.20160126-0ubuntu8 [Ubuntu/jammy universe]
+libgeoclue-2-0 2.5.7-3ubuntu3 [Ubuntu/jammy main]
+libgeocode-glib0 3.26.2-2build2 [Ubuntu/jammy main]
+libgeonames-common 0.2+17.04.20170220-0ubuntu4 [Ubuntu/jammy universe]
+libgeonames0 0.2+17.04.20170220-0ubuntu4 [Ubuntu/jammy universe]
+libgeos++-dev 3.10.2-1 [Ubuntu/jammy universe]
+libgeos-c1v5 3.10.2-1 [Ubuntu/jammy universe]
+libgeos-dev 3.10.2-1 [Ubuntu/jammy universe]
+libgeos-doc 3.10.2-1 [Ubuntu/jammy universe]
+libgeos3.10.2 3.10.2-1 [Ubuntu/jammy universe]
+libgeotiff5 1.7.0-2build1 [Ubuntu/jammy universe]
+libgeronimo-annotation-1.3-spec-java 1.3-1 [Ubuntu/jammy universe]
+libgeronimo-interceptor-3.0-spec-java 1.0.1-4fakesync [Ubuntu/jammy universe]
+libgexiv2-2 0.14.0-1build1 [Ubuntu/jammy main]
+libgf2x-dev 1.3.0-2 [Ubuntu/jammy universe]
+libgf2x3 1.3.0-2 [Ubuntu/jammy universe]
+libgfortran-11-dev 11.3.0-1ubuntu1~22.04.1 [Ubuntu/jammy main]
+libgfortran5 12.1.0-2ubuntu1~22.04 [Ubuntu/jammy main]
+libgiac-dev 1.7.0.39+dfsg2-1build2 [Ubuntu/jammy universe]
+libgiac0 1.7.0.39+dfsg2-1build2 [Ubuntu/jammy universe]
+libgif-dev 5.1.9-2build2 [Ubuntu/jammy main]
+libgif7 5.1.9-2build2 [Ubuntu/jammy main]
+libgirara-dev 0.3.7-1 [Ubuntu/jammy universe]
+libgirara-gtk3-3 0.3.7-1 [Ubuntu/jammy universe]
+libgirepository-1.0-1 1.72.0-1 [Ubuntu/jammy main]
+libgit2-1.1 1.1.0+dfsg.1-4.1build1 [Ubuntu/jammy universe]
+libgivaro-dev 4.2.0-1 [Ubuntu/jammy universe]
+libgivaro9 4.2.0-1 [Ubuntu/jammy universe]
+libgjs0g 1.72.2-0ubuntu1 [Ubuntu/jammy main]
+libgl-dev 1.4.0-1 [Ubuntu/jammy main]
+libgl1 1.4.0-1 [Ubuntu/jammy main]
+libgl1-amber-dri 21.3.7-0ubuntu1 [Ubuntu/jammy main]
+libgl1-mesa-dev 22.2.5-0ubuntu0.1~22.04.1 [local]
+libgl1-mesa-dri 22.2.5-0ubuntu0.1~22.04.1 [local]
+libgl1-mesa-dri:i386 22.2.5-0ubuntu0.1~22.04.1 [local]
+libgl1-mesa-glx 22.2.5-0ubuntu0.1~22.04.1 [local]
+libgl1:i386 1.4.0-1 [Ubuntu/jammy main]
+libgl2ps1.4 1.4.2+dfsg1-2 [Ubuntu/jammy universe]
+libglapi-mesa 22.2.5-0ubuntu0.1~22.04.1 [local]
+libglapi-mesa:i386 22.2.5-0ubuntu0.1~22.04.1 [local]
+libgles-dev 1.4.0-1 [Ubuntu/jammy main]
+libgles1 1.4.0-1 [Ubuntu/jammy main]
+libgles2 1.4.0-1 [Ubuntu/jammy main]
+libglew2.2 2.2.0-4 [Ubuntu/jammy universe]
+libglewmx1.13 1.13.0-5 [Ubuntu/jammy universe]
+libglib-object-introspection-perl 0.049-1+build2 [Ubuntu/jammy main]
+libglib-perl 3:1.329.3-2build1 [Ubuntu/jammy main]
+libglib2.0-0 2.72.4-0ubuntu2 [Ubuntu/jammy main]
+libglib2.0-0:i386 2.72.4-0ubuntu2 [Ubuntu/jammy main]
+libglib2.0-bin 2.72.4-0ubuntu2 [Ubuntu/jammy main]
+libglib2.0-cil 2.12.40-3ubuntu1 [Ubuntu/jammy universe]
+libglib2.0-cil-dev 2.12.40-3ubuntu1 [Ubuntu/jammy universe]
+libglib2.0-data 2.72.4-0ubuntu2 [Ubuntu/jammy main]
+libglib2.0-dev 2.72.4-0ubuntu2 [Ubuntu/jammy main]
+libglib2.0-dev-bin 2.72.4-0ubuntu2 [Ubuntu/jammy main]
+libglib2.0-doc 2.72.4-0ubuntu2 [Ubuntu/jammy main]
+libglibmm-2.4-1v5 2.66.2-2 [Ubuntu/jammy main]
+libglpk-dev 5.0-1 [Ubuntu/jammy universe]
+libglpk40 5.0-1 [Ubuntu/jammy universe]
+libglu1-mesa 9.0.2-1 [Ubuntu/jammy main]
+libglu1-mesa-dev 9.0.2-1 [Ubuntu/jammy main]
+libglu1-mesa:i386 9.0.2-1 [Ubuntu/jammy main]
+libglvnd-core-dev 1.4.0-1 [Ubuntu/jammy main]
+libglvnd-dev 1.4.0-1 [Ubuntu/jammy main]
+libglvnd0 1.4.0-1 [Ubuntu/jammy main]
+libglvnd0:i386 1.4.0-1 [Ubuntu/jammy main]
+libglx-dev 1.4.0-1 [Ubuntu/jammy main]
+libglx-mesa0 22.2.5-0ubuntu0.1~22.04.1 [local]
+libglx-mesa0:i386 22.2.5-0ubuntu0.1~22.04.1 [local]
+libglx0 1.4.0-1 [Ubuntu/jammy main]
+libglx0:i386 1.4.0-1 [Ubuntu/jammy main]
+libgme0 0.6.3-2 [Ubuntu/jammy universe]
+libgmime-3.0-0 3.2.7-1 [Ubuntu/jammy universe]
+libgmp-dev 2:6.2.1+dfsg-3ubuntu1 [Ubuntu/jammy main]
+libgmp10 2:6.2.1+dfsg-3ubuntu1 [Ubuntu/jammy main]
+libgmp10:i386 2:6.2.1+dfsg-3ubuntu1 [Ubuntu/jammy main]
+libgmpxx4ldbl 2:6.2.1+dfsg-3ubuntu1 [Ubuntu/jammy main]
+libgnome-autoar-0-0 0.4.3-1 [Ubuntu/jammy main]
+libgnome-bg-4-1 42.5-0ubuntu1 [Ubuntu/jammy main]
+libgnome-bluetooth-3.0-13 42.0-5 [Ubuntu/jammy main]
+libgnome-bluetooth13 3.34.5-8 [Ubuntu/jammy main]
+libgnome-desktop-3-19 42.5-0ubuntu1 [Ubuntu/jammy main]
+libgnome-desktop-4-1 42.5-0ubuntu1 [Ubuntu/jammy main]
+libgnome-games-support-1-3 1.8.2-1build1 [Ubuntu/jammy main]
+libgnome-games-support-common 1.8.2-1build1 [Ubuntu/jammy main]
+libgnome-menu-3-0 3.36.0-1ubuntu3 [Ubuntu/jammy main]
+libgnome-todo 3.28.1-6ubuntu1 [Ubuntu/jammy main]
+libgnomekbd-common 3.26.1-2 [Ubuntu/jammy main]
+libgnomekbd8 3.26.1-2 [Ubuntu/jammy main]
+libgnutls-dane0 3.7.3-4ubuntu1.2 [Ubuntu/jammy main]
+libgnutls-openssl27 3.7.3-4ubuntu1.2 [Ubuntu/jammy main]
+libgnutls28-dev 3.7.3-4ubuntu1.2 [Ubuntu/jammy main]
+libgnutls30 3.7.3-4ubuntu1.2 [Ubuntu/jammy main]
+libgnutls30:i386 3.7.3-4ubuntu1.2 [Ubuntu/jammy main]
+libgnutlsxx28 3.7.3-4ubuntu1.2 [Ubuntu/jammy main]
+libgoa-1.0-0b 3.44.0-1ubuntu1 [Ubuntu/jammy main]
+libgoa-1.0-common 3.44.0-1ubuntu1 [Ubuntu/jammy main]
+libgoa-backend-1.0-1 3.44.0-1ubuntu1 [Ubuntu/jammy main]
+libgom-1.0-0 0.4-1build2 [Ubuntu/jammy main]
+libgomp1 12.1.0-2ubuntu1~22.04 [Ubuntu/jammy main]
+libgpg-error-dev 1.43-3 [Ubuntu/jammy main]
+libgpg-error-l10n 1.43-3 [Ubuntu/jammy main]
+libgpg-error0 1.43-3 [Ubuntu/jammy main]
+libgpg-error0:i386 1.43-3 [Ubuntu/jammy main]
+libgpgme11 1.16.0-1.2ubuntu4 [Ubuntu/jammy main]
+libgpgmepp6 1.16.0-1.2ubuntu4 [Ubuntu/jammy main]
+libgphoto2-6 2.5.27-1build2 [Ubuntu/jammy main]
+libgphoto2-6:i386 2.5.27-1build2 [Ubuntu/jammy main]
+libgphoto2-l10n 2.5.27-1build2 [Ubuntu/jammy main]
+libgphoto2-port12 2.5.27-1build2 [Ubuntu/jammy main]
+libgphoto2-port12:i386 2.5.27-1build2 [Ubuntu/jammy main]
+libgpm2 1.20.7-10build1 [Ubuntu/jammy main]
+libgpm2:i386 1.20.7-10build1 [Ubuntu/jammy main]
+libgpod-common 0.8.3-16build2 [Ubuntu/jammy main]
+libgpod4 0.8.3-16build2 [Ubuntu/jammy main]
+libgrail6 3.1.1-3 [Ubuntu/jammy universe]
+libgraph-easy-as-svg-perl 0.28-1 [Ubuntu/jammy universe]
+libgraph-easy-perl 0.76-1 [Ubuntu/jammy universe]
+libgraphblas-dev 6.1.4+dfsg-2 [Ubuntu/jammy universe]
+libgraphblas6 6.1.4+dfsg-2 [Ubuntu/jammy universe]
+libgraphene-1.0-0 1.10.8-1 [Ubuntu/jammy main]
+libgraphicsmagick++-q16-12 1.4+really1.3.38-1ubuntu0.1 [Ubuntu/jammy universe]
+libgraphicsmagick-q16-3 1.4+really1.3.38-1ubuntu0.1 [Ubuntu/jammy universe]
+libgraphite2-3 1.3.14-1build2 [Ubuntu/jammy main]
+libgraphite2-3:i386 1.3.14-1build2 [Ubuntu/jammy main]
+libgraphite2-dev 1.3.14-1build2 [Ubuntu/jammy main]
+libgrilo-0.3-0 0.3.14-1build1 [Ubuntu/jammy main]
+libgs9 9.55.0~dfsg1-0ubuntu5.2 [Ubuntu/jammy main]
+libgs9-common 9.55.0~dfsg1-0ubuntu5.2 [Ubuntu/jammy main]
+libgsettings-qt1 0.2-4 [Ubuntu/jammy universe]
+libgsf-1-114 1.14.47-1build2 [Ubuntu/jammy main]
+libgsf-1-common 1.14.47-1build2 [Ubuntu/jammy main]
+libgsl-dev 2.7.1+dfsg-3 [Ubuntu/jammy universe]
+libgsl27 2.7.1+dfsg-3 [Ubuntu/jammy universe]
+libgslcblas0 2.7.1+dfsg-3 [Ubuntu/jammy universe]
+libgsm1 1.0.19-1 [Ubuntu/jammy universe]
+libgsm1:i386 1.0.19-1 [Ubuntu/jammy universe]
+libgsoap-2.8.117 2.8.117-2build1 [Ubuntu/jammy universe]
+libgsound0 1.0.3-2build1 [Ubuntu/jammy main]
+libgspell-1-2 1.9.1-4 [Ubuntu/jammy main]
+libgspell-1-common 1.9.1-4 [Ubuntu/jammy main]
+libgssapi-krb5-2 1.19.2-2ubuntu0.2 [Ubuntu/jammy main]
+libgssapi-krb5-2:i386 1.19.2-2ubuntu0.2 [Ubuntu/jammy main]
+libgssapi3-heimdal 7.7.0+dfsg-3ubuntu1 [Ubuntu/jammy universe]
+libgssapi3-heimdal:i386 7.7.0+dfsg-3ubuntu1 [Ubuntu/jammy universe]
+libgssdp-1.2-0 1.4.0.1-2build1 [Ubuntu/jammy main]
+libgssrpc4 1.19.2-2ubuntu0.2 [Ubuntu/jammy main]
+libgstreamer-gl1.0-0 1.20.1-1 [Ubuntu/jammy main]
+libgstreamer-plugins-bad1.0-0 1.20.3-0ubuntu1 [Ubuntu/jammy universe]
+libgstreamer-plugins-base1.0-0 1.20.1-1 [Ubuntu/jammy main]
+libgstreamer-plugins-base1.0-0:i386 1.20.1-1 [Ubuntu/jammy main]
+libgstreamer-plugins-good1.0-0 1.20.3-0ubuntu1 [Ubuntu/jammy main]
+libgstreamer-plugins-good1.0-0:i386 1.20.3-0ubuntu1 [Ubuntu/jammy main]
+libgstreamer1.0-0 1.20.3-0ubuntu1 [Ubuntu/jammy main]
+libgstreamer1.0-0:i386 1.20.3-0ubuntu1 [Ubuntu/jammy main]
+libgtk-3-0 3.24.33-1ubuntu2 [Ubuntu/jammy main]
+libgtk-3-bin 3.24.33-1ubuntu2 [Ubuntu/jammy main]
+libgtk-3-common 3.24.33-1ubuntu2 [Ubuntu/jammy main]
+libgtk-3-dev 3.24.33-1ubuntu2 [Ubuntu/jammy main]
+libgtk-4-1 4.6.6+ds-0ubuntu1 [Ubuntu/jammy main]
+libgtk-4-bin 4.6.6+ds-0ubuntu1 [Ubuntu/jammy main]
+libgtk-4-common 4.6.6+ds-0ubuntu1 [Ubuntu/jammy main]
+libgtk2.0-0 2.24.33-2ubuntu2 [Ubuntu/jammy main]
+libgtk2.0-0:i386 2.24.33-2ubuntu2 [Ubuntu/jammy main]
+libgtk2.0-bin 2.24.33-2ubuntu2 [Ubuntu/jammy main]
+libgtk2.0-cil 2.12.40-3ubuntu1 [Ubuntu/jammy universe]
+libgtk2.0-cil-dev 2.12.40-3ubuntu1 [Ubuntu/jammy universe]
+libgtk2.0-common 2.24.33-2ubuntu2 [Ubuntu/jammy main]
+libgtk2.0-dev 2.24.33-2ubuntu2 [Ubuntu/jammy universe]
+libgtk2.0-doc 2.24.33-2ubuntu2 [Ubuntu/jammy main]
+libgtk3-nocsd0 3-1ubuntu1 [Ubuntu/jammy universe]
+libgtk3-perl 0.038-1 [Ubuntu/jammy main]
+libgtkmm-3.0-1v5 3.24.5-1build1 [Ubuntu/jammy main]
+libgtksourceview-4-0 4.8.3-1 [Ubuntu/jammy main]
+libgtksourceview-4-common 4.8.3-1 [Ubuntu/jammy main]
+libgtop-2.0-11 2.40.0-2build3 [Ubuntu/jammy main]
+libgtop2-common 2.40.0-2build3 [Ubuntu/jammy main]
+libgts-0.7-5 0.7.6+darcs121130-5 [Ubuntu/jammy universe]
+libgts-bin 0.7.6+darcs121130-5 [Ubuntu/jammy universe]
+libguard-perl 1.023-1build7 [Ubuntu/jammy universe]
+libguava-java 29.0-6 [Ubuntu/jammy universe]
+libgucharmap-2-90-7 1:14.0.3-1 [Ubuntu/jammy universe]
+libgudev-1.0-0 1:237-2build1 [Ubuntu/jammy main]
+libgudev-1.0-0:i386 1:237-2build1 [Ubuntu/jammy main]
+libguice-java 4.2.3-2 [Ubuntu/jammy universe]
+libgumbo1 0.10.1+dfsg-2.4 [Ubuntu/jammy universe]
+libgupnp-1.2-1 1.4.3-1 [Ubuntu/jammy main]
+libgupnp-av-1.0-3 0.14.0-3 [Ubuntu/jammy main]
+libgupnp-dlna-2.0-4 0.12.0-3 [Ubuntu/jammy main]
+libgupnp-igd-1.0-4 1.2.0-1build1 [Ubuntu/jammy universe]
+libgusb2 0.3.10-1 [Ubuntu/jammy main]
+libgvc6 2.42.2-6 [Ubuntu/jammy universe]
+libgvpr2 2.42.2-6 [Ubuntu/jammy universe]
+libgweather-3-16 40.0-5build1 [Ubuntu/jammy main]
+libgweather-common 40.0-5build1 [Ubuntu/jammy main]
+libgxps2 0.3.2-2 [Ubuntu/jammy main]
+libhandy-1-0 1.6.1-1 [Ubuntu/jammy main]
+libharfbuzz-bin 2.7.4-1ubuntu3.1 [Ubuntu/jammy universe]
+libharfbuzz-dev 2.7.4-1ubuntu3.1 [Ubuntu/jammy main]
+libharfbuzz-gobject0 2.7.4-1ubuntu3.1 [Ubuntu/jammy main]
+libharfbuzz-icu0 2.7.4-1ubuntu3.1 [Ubuntu/jammy main]
+libharfbuzz0b 2.7.4-1ubuntu3.1 [Ubuntu/jammy main]
+libharfbuzz0b:i386 2.7.4-1ubuntu3.1 [Ubuntu/jammy main]
+libhawtjni-runtime-java 1.17-1 [Ubuntu/jammy universe]
+libhcrypto4-heimdal 7.7.0+dfsg-3ubuntu1 [Ubuntu/jammy universe]
+libhcrypto4-heimdal:i386 7.7.0+dfsg-3ubuntu1 [Ubuntu/jammy universe]
+libhdf5-103-1 1.10.7+repack-4ubuntu2 [Ubuntu/jammy universe]
+libhdf5-cpp-103-1 1.10.7+repack-4ubuntu2 [Ubuntu/jammy universe]
+libhdf5-dev 1.10.7+repack-4ubuntu2 [Ubuntu/jammy universe]
+libhdf5-fortran-102 1.10.7+repack-4ubuntu2 [Ubuntu/jammy universe]
+libhdf5-hl-100 1.10.7+repack-4ubuntu2 [Ubuntu/jammy universe]
+libhdf5-hl-cpp-100 1.10.7+repack-4ubuntu2 [Ubuntu/jammy universe]
+libhdf5-hl-fortran-100 1.10.7+repack-4ubuntu2 [Ubuntu/jammy universe]
+libheif1 1.12.0-2build1 [Ubuntu/jammy universe]
+libheimbase1-heimdal 7.7.0+dfsg-3ubuntu1 [Ubuntu/jammy universe]
+libheimbase1-heimdal:i386 7.7.0+dfsg-3ubuntu1 [Ubuntu/jammy universe]
+libheimntlm0-heimdal 7.7.0+dfsg-3ubuntu1 [Ubuntu/jammy universe]
+libheimntlm0-heimdal:i386 7.7.0+dfsg-3ubuntu1 [Ubuntu/jammy universe]
+libhfstospell11 0.5.2-1build3 [Ubuntu/jammy main]
+libhogweed6 3.7.3-1build2 [Ubuntu/jammy main]
+libhogweed6:i386 3.7.3-1build2 [Ubuntu/jammy main]
+libhomfly-dev 1.02r6-1 [Ubuntu/jammy universe]
+libhomfly0 1.02r6-1 [Ubuntu/jammy universe]
+libhpmud0 3.21.12+dfsg0-1 [Ubuntu/jammy main]
+libhtml-form-perl 6.07-1 [Ubuntu/jammy main]
+libhtml-format-perl 2.12-1.1 [Ubuntu/jammy main]
+libhtml-html5-entities-perl 0.004-1.1 [Ubuntu/jammy main]
+libhtml-parser-perl 3.76-1build2 [Ubuntu/jammy main]
+libhtml-tagset-perl 3.20-4 [Ubuntu/jammy main]
+libhtml-tree-perl 5.07-2 [Ubuntu/jammy main]
+libhttp-cookies-perl 6.10-1 [Ubuntu/jammy main]
+libhttp-daemon-perl 6.13-1ubuntu0.1 [Ubuntu/jammy main]
+libhttp-date-perl 6.05-1 [Ubuntu/jammy main]
+libhttp-message-perl 6.36-1 [Ubuntu/jammy main]
+libhttp-negotiate-perl 6.01-1 [Ubuntu/jammy main]
+libhttp-parser2.9 2.9.4-4 [Ubuntu/jammy universe]
+libhunspell-1.7-0 1.7.0-4build1 [Ubuntu/jammy main]
+libhwloc-plugins 2.7.0-2ubuntu1 [Ubuntu/jammy universe]
+libhwloc15 2.7.0-2ubuntu1 [Ubuntu/jammy universe]
+libhx509-5-heimdal 7.7.0+dfsg-3ubuntu1 [Ubuntu/jammy universe]
+libhx509-5-heimdal:i386 7.7.0+dfsg-3ubuntu1 [Ubuntu/jammy universe]
+libhyphen0 2.8.8-7build2 [Ubuntu/jammy main]
+libibus-1.0-5 1.5.26-4 [Ubuntu/jammy main]
+libibus-1.0-dev 1.5.26-4 [Ubuntu/jammy main]
+libibverbs1 39.0-1 [Ubuntu/jammy main]
+libical-dev 3.0.14-1build1 [Ubuntu/jammy main]
+libical3 3.0.14-1build1 [Ubuntu/jammy main]
+libice-dev 2:1.0.10-1build2 [Ubuntu/jammy main]
+libice6 2:1.0.10-1build2 [Ubuntu/jammy main]
+libicu-dev 70.1-2 [Ubuntu/jammy main]
+libicu66 66.1-2ubuntu2 [local]
+libicu70 70.1-2 [Ubuntu/jammy main]
+libicu70:i386 70.1-2 [Ubuntu/jammy main]
+libid3-3.8.3v5 3.8.3-16.3 [Ubuntu/jammy universe]
+libid3tag0 0.15.1b-14 [Ubuntu/jammy universe]
+libid3tag0-dev 0.15.1b-14 [Ubuntu/jammy universe]
+libidn12 1.38-4build1 [Ubuntu/jammy main]
+libidn2-0 2.3.2-2build1 [Ubuntu/jammy main]
+libidn2-0:i386 2.3.2-2build1 [Ubuntu/jammy main]
+libidn2-dev 2.3.2-2build1 [Ubuntu/jammy main]
+libido3-0.1-0 13.10.0+17.04.20161028-0ubuntu3 [Ubuntu/jammy universe]
+libiec61883-0 1.2.0-4build3 [Ubuntu/jammy main]
+libiec61883-0:i386 1.2.0-4build3 [Ubuntu/jammy main]
+libieee1284-3 0.2.11-14build2 [Ubuntu/jammy main]
+libieee1284-3:i386 0.2.11-14build2 [Ubuntu/jammy main]
+libigc1 1.0.10840-1 [Ubuntu/jammy universe]
+libigdfcl1 1.0.10840-1 [Ubuntu/jammy universe]
+libigdgmm12 22.1.2+ds1-1 [Ubuntu/jammy universe]
+libijs-0.35 0.35-15build2 [Ubuntu/jammy main]
+libilmbase25 2.5.7-2 [Ubuntu/jammy universe]
+libimage-base-bundle-perl 1.0.7-3.4 [Ubuntu/jammy universe]
+libimage-exiftool-perl 12.40+dfsg-1 [Ubuntu/jammy universe]
+libimage-info-perl 1.42-1 [Ubuntu/jammy universe]
+libimage-magick-perl 8:6.9.11.60+dfsg-1.3ubuntu0.22.04.3 [Ubuntu/jammy universe]
+libimage-magick-q16-perl 8:6.9.11.60+dfsg-1.3ubuntu0.22.04.3 [Ubuntu/jammy universe]
+libimagequant0 2.17.0-1 [Ubuntu/jammy main]
+libiml-dev 1.0.5-1 [Ubuntu/jammy universe]
+libiml0 1.0.5-1 [Ubuntu/jammy universe]
+libimlib2 1.7.4-1build1 [Ubuntu/jammy universe]
+libimlib2-dev 1.7.4-1build1 [Ubuntu/jammy universe]
+libimobiledevice6 1.3.0-6build3 [Ubuntu/jammy main]
+libimport-into-perl 1.002005-1 [Ubuntu/jammy main]
+libinchi1 1.03+dfsg-4 [Ubuntu/jammy universe]
+libindicator3-7 16.10.0+18.04.20180321.1-0ubuntu5 [Ubuntu/jammy universe]
+libini-config5 0.6.2-1 [Ubuntu/jammy main]
+libinih1 53-1ubuntu3 [Ubuntu/jammy main]
+libinput-bin 1.20.0-1ubuntu0.2 [Ubuntu/jammy main]
+libinput10 1.20.0-1ubuntu0.2 [Ubuntu/jammy main]
+libinstpatch-1.0-2 1.1.6-1 [Ubuntu/jammy universe]
+libio-html-perl 1.004-2 [Ubuntu/jammy main]
+libio-interactive-perl 1.023-1 [Ubuntu/jammy main]
+libio-prompt-tiny-perl 0.003-1 [Ubuntu/jammy main]
+libio-socket-ssl-perl 2.074-2 [Ubuntu/jammy main]
+libio-string-perl 1.08-3.1 [Ubuntu/jammy main]
+libio-stringy-perl 2.111-3 [Ubuntu/jammy main]
+libip4tc2 1.8.7-1ubuntu5 [Ubuntu/jammy main]
+libip6tc2 1.8.7-1ubuntu5 [Ubuntu/jammy main]
+libipa-hbac0 2.6.3-1ubuntu3.2 [Ubuntu/jammy main]
+libipc-run3-perl 0.048-2 [Ubuntu/jammy main]
+libipc-shareable-perl 1.06-2 [Ubuntu/jammy universe]
+libipc-system-simple-perl 1.30-1 [Ubuntu/jammy main]
+libipt2 2.0.5-1 [Ubuntu/jammy main]
+libisc-export1105 1:9.11.19+dfsg-2.1ubuntu3 [Ubuntu/jammy main]
+libisl23 0.24-2build1 [Ubuntu/jammy main]
+libiso9660-11 2.1.0-3build1 [Ubuntu/jammy main]
+libiterator-perl 0.03+ds1-1.1 [Ubuntu/jammy main]
+libiterator-util-perl 0.02+ds1-1.1 [Ubuntu/jammy main]
+libitm1 12.1.0-2ubuntu1~22.04 [Ubuntu/jammy main]
+libiw-dev 30~pre9-13.1ubuntu4 [Ubuntu/jammy main]
+libiw30 30~pre9-13.1ubuntu4 [Ubuntu/jammy main]
+libixml10 1:1.8.4-2ubuntu2 [Ubuntu/jammy universe]
+libjack-jackd2-0 1.9.20~dfsg-1 [Ubuntu/jammy main]
+libjack-jackd2-0:i386 1.9.20~dfsg-1 [Ubuntu/jammy main]
+libjansi-java 1.18-1 [Ubuntu/jammy universe]
+libjansi-native-java 1.8-1 [Ubuntu/jammy universe]
+libjansson-dev 2.13.1-1.1build3 [Ubuntu/jammy main]
+libjansson4 2.13.1-1.1build3 [Ubuntu/jammy main]
+libjavascriptcoregtk-4.0-18 2.38.6-0ubuntu0.22.04.1 [Ubuntu/jammy main]
+libjbig-dev 2.1-3.1ubuntu0.22.04.1 [Ubuntu/jammy main]
+libjbig0 2.1-3.1ubuntu0.22.04.1 [Ubuntu/jammy main]
+libjbig0:i386 2.1-3.1ubuntu0.22.04.1 [Ubuntu/jammy main]
+libjbig2dec0 0.19-3build2 [Ubuntu/jammy main]
+libjcat1 0.1.9-1 [Ubuntu/jammy main]
+libjmol-java 14.32.3+dfsg1-1 [Ubuntu/jammy universe]
+libjni-inchi-java 0.8+dfsg-6 [Ubuntu/jammy universe]
+libjni-inchi-jni 0.8+dfsg-6 [Ubuntu/jammy universe]
+libjpeg-dev 8c-2ubuntu10 [Ubuntu/jammy main]
+libjpeg-progs 1:9d-1 [Ubuntu/jammy universe]
+libjpeg-turbo8 2.1.2-0ubuntu1 [Ubuntu/jammy main]
+libjpeg-turbo8-dev 2.1.2-0ubuntu1 [Ubuntu/jammy main]
+libjpeg-turbo8:i386 2.1.2-0ubuntu1 [Ubuntu/jammy main]
+libjpeg8 8c-2ubuntu10 [Ubuntu/jammy main]
+libjpeg8-dev 8c-2ubuntu10 [Ubuntu/jammy main]
+libjpeg8:i386 8c-2ubuntu10 [Ubuntu/jammy main]
+libjpeg9 1:9d-1 [Ubuntu/jammy universe]
+libjq1 1.6-2.1ubuntu3 [Ubuntu/jammy main]
+libjs-backbone 1.4.0~dfsg+~1.4.5-2 [Ubuntu/jammy universe]
+libjs-bootstrap 3.4.1+dfsg-2 [Ubuntu/jammy universe]
+libjs-bootstrap-tour 0.12.0+dfsg-3 [Ubuntu/jammy universe]
+libjs-bootstrap4 4.6.0+dfsg1-4 [Ubuntu/jammy universe]
+libjs-codemirror 5.65.0+~cs5.83.9-1 [Ubuntu/jammy universe]
+libjs-es6-promise 4.2.8-9 [Ubuntu/jammy universe]
+libjs-jed 1.1.1-3 [Ubuntu/jammy universe]
+libjs-jquery 3.6.0+dfsg+~3.5.13-1 [Ubuntu/jammy main]
+libjs-jquery-hotkeys 0~20130707+git2d51e3a9+dfsg-2ubuntu1 [Ubuntu/jammy universe]
+libjs-jquery-isonscreen 1.2.0-1.1 [Ubuntu/jammy universe]
+libjs-jquery-metadata 12-3 [Ubuntu/jammy universe]
+libjs-jquery-tablesorter 1:2.31.3+dfsg1-3 [Ubuntu/jammy universe]
+libjs-jquery-throttle-debounce 1.1+dfsg.1-2 [Ubuntu/jammy universe]
+libjs-jquery-typeahead 2.11.0+dfsg1-3 [Ubuntu/jammy universe]
+libjs-jquery-ui 1.13.1+dfsg-1 [Ubuntu/jammy universe]
+libjs-lunr 2.3.9~dfsg-1 [Ubuntu/jammy universe]
+libjs-marked 4.0.12+ds+~4.0.1-2ubuntu2 [Ubuntu/jammy universe]
+libjs-mathjax 2.7.9+dfsg-1 [Ubuntu/jammy main]
+libjs-modernizr 2.6.2+ds1-4 [Ubuntu/jammy universe]
+libjs-moment 2.29.1+ds-3ubuntu0.2 [Ubuntu/jammy universe]
+libjs-popper.js 1.16.1+ds-5 [Ubuntu/jammy universe]
+libjs-requirejs 2.3.6+ds-1 [Ubuntu/jammy universe]
+libjs-requirejs-text 2.0.12-1.1 [Ubuntu/jammy universe]
+libjs-sizzle 2.3.6+ds+~2.3.3-1 [Ubuntu/jammy universe]
+libjs-sphinxdoc 4.3.2-1 [Ubuntu/jammy main]
+libjs-text-encoding 0.7.0-4 [Ubuntu/jammy universe]
+libjs-three 111+dfsg1-2 [Ubuntu/jammy universe]
+libjs-underscore 1.13.2~dfsg-2 [Ubuntu/jammy main]
+libjs-xmlextras 20060529-2 [Ubuntu/jammy universe]
+libjs-xterm 3.8.1+~cs0.9.0-1 [Ubuntu/jammy universe]
+libjson-c-dev 0.15-3~ubuntu1.22.04.1 [Ubuntu/jammy main]
+libjson-c5 0.15-3~ubuntu1.22.04.1 [Ubuntu/jammy main]
+libjson-glib-1.0-0 1.6.6-1build1 [Ubuntu/jammy main]
+libjson-glib-1.0-common 1.6.6-1build1 [Ubuntu/jammy main]
+libjson-maybexs-perl 1.004003-1 [Ubuntu/jammy main]
+libjson-perl 4.04000-1 [Ubuntu/jammy main]
+libjson-xs-perl 4.030-1build3 [Ubuntu/jammy main]
+libjsoncpp-dev 1.9.5-3 [Ubuntu/jammy main]
+libjsoncpp25 1.9.5-3 [Ubuntu/jammy main]
+libjsonparser1.1 1.1.0-2 [Ubuntu/jammy universe]
+libjsr305-java 0.1~+svn49-11 [Ubuntu/jammy universe]
+libjxr-tools 1.2~git20170615.f752187-5 [Ubuntu/jammy universe]
+libjxr0 1.2~git20170615.f752187-5 [Ubuntu/jammy universe]
+libk5crypto3 1.19.2-2ubuntu0.2 [Ubuntu/jammy main]
+libk5crypto3:i386 1.19.2-2ubuntu0.2 [Ubuntu/jammy main]
+libkaccounts2 4:21.12.3-0ubuntu1 [Ubuntu/jammy universe]
+libkadm5clnt-mit12 1.19.2-2ubuntu0.2 [Ubuntu/jammy main]
+libkadm5srv-mit12 1.19.2-2ubuntu0.2 [Ubuntu/jammy main]
+libkate1 0.4.1-11build1 [Ubuntu/jammy universe]
+libkdb5-10 1.19.2-2ubuntu0.2 [Ubuntu/jammy main]
+libkeyutils1 1.6.1-2ubuntu3 [Ubuntu/jammy main]
+libkeyutils1:i386 1.6.1-2ubuntu3 [Ubuntu/jammy main]
+libkf5activities5 5.92.0-0ubuntu1 [Ubuntu/jammy universe]
+libkf5archive5 5.92.0-0ubuntu1 [Ubuntu/jammy universe]
+libkf5auth-data 5.92.0-0ubuntu1 [Ubuntu/jammy universe]
+libkf5auth5 5.92.0-0ubuntu1 [Ubuntu/jammy universe]
+libkf5authcore5 5.92.0-0ubuntu1 [Ubuntu/jammy universe]
+libkf5bluezqt-data 5.92.0-0ubuntu1 [Ubuntu/jammy universe]
+libkf5bluezqt6 5.92.0-0ubuntu1 [Ubuntu/jammy universe]
+libkf5bookmarks-data 5.92.0-0ubuntu1 [Ubuntu/jammy universe]
+libkf5bookmarks5 5.92.0-0ubuntu1 [Ubuntu/jammy universe]
+libkf5calendarevents5 5.92.0-0ubuntu1 [Ubuntu/jammy universe]
+libkf5codecs-data 5.92.0-0ubuntu1 [Ubuntu/jammy universe]
+libkf5codecs5 5.92.0-0ubuntu1 [Ubuntu/jammy universe]
+libkf5completion-data 5.92.0-0ubuntu1 [Ubuntu/jammy universe]
+libkf5completion5 5.92.0-0ubuntu1 [Ubuntu/jammy universe]
+libkf5config-bin 5.92.0-0ubuntu1 [Ubuntu/jammy universe]
+libkf5config-data 5.92.0-0ubuntu1 [Ubuntu/jammy universe]
+libkf5configcore5 5.92.0-0ubuntu1 [Ubuntu/jammy universe]
+libkf5configgui5 5.92.0-0ubuntu1 [Ubuntu/jammy universe]
+libkf5configwidgets-data 5.92.0-0ubuntu1 [Ubuntu/jammy universe]
+libkf5configwidgets5 5.92.0-0ubuntu1 [Ubuntu/jammy universe]
+libkf5contacts-data 5:5.92.0-0ubuntu1 [Ubuntu/jammy universe]
+libkf5contacts5 5:5.92.0-0ubuntu1 [Ubuntu/jammy universe]
+libkf5coreaddons-data 5.92.0-0ubuntu1 [Ubuntu/jammy universe]
+libkf5coreaddons5 5.92.0-0ubuntu1 [Ubuntu/jammy universe]
+libkf5crash5 5.92.0-0ubuntu1 [Ubuntu/jammy universe]
+libkf5dbusaddons-bin 5.92.0-0ubuntu1 [Ubuntu/jammy universe]
+libkf5dbusaddons-data 5.92.0-0ubuntu1 [Ubuntu/jammy universe]
+libkf5dbusaddons5 5.92.0-0ubuntu1 [Ubuntu/jammy universe]
+libkf5declarative-data 5.92.0-0ubuntu1 [Ubuntu/jammy universe]
+libkf5declarative5 5.92.0-0ubuntu1 [Ubuntu/jammy universe]
+libkf5doctools5 5.92.0-0ubuntu1 [Ubuntu/jammy universe]
+libkf5globalaccel-bin 5.92.0-0ubuntu1 [Ubuntu/jammy universe]
+libkf5globalaccel-data 5.92.0-0ubuntu1 [Ubuntu/jammy universe]
+libkf5globalaccel5 5.92.0-0ubuntu1 [Ubuntu/jammy universe]
+libkf5globalaccelprivate5 5.92.0-0ubuntu1 [Ubuntu/jammy universe]
+libkf5guiaddons-bin 5.92.0-0ubuntu1 [Ubuntu/jammy universe]
+libkf5guiaddons-data 5.92.0-0ubuntu1 [Ubuntu/jammy universe]
+libkf5guiaddons5 5.92.0-0ubuntu1 [Ubuntu/jammy universe]
+libkf5i18n-data 5.92.0-0ubuntu2 [Ubuntu/jammy universe]
+libkf5i18n5 5.92.0-0ubuntu2 [Ubuntu/jammy universe]
+libkf5i18nlocaledata5 5.92.0-0ubuntu2 [Ubuntu/jammy universe]
+libkf5iconthemes-bin 5.92.0-0ubuntu1 [Ubuntu/jammy universe]
+libkf5iconthemes-data 5.92.0-0ubuntu1 [Ubuntu/jammy universe]
+libkf5iconthemes5 5.92.0-0ubuntu1 [Ubuntu/jammy universe]
+libkf5idletime5 5.92.0-0ubuntu1 [Ubuntu/jammy universe]
+libkf5itemviews-data 5.92.0-0ubuntu1 [Ubuntu/jammy universe]
+libkf5itemviews5 5.92.0-0ubuntu1 [Ubuntu/jammy universe]
+libkf5jobwidgets-data 5.92.0-0ubuntu1 [Ubuntu/jammy universe]
+libkf5jobwidgets5 5.92.0-0ubuntu1 [Ubuntu/jammy universe]
+libkf5js5 5.92.0-0ubuntu1 [Ubuntu/jammy universe]
+libkf5jsapi5 5.92.0-0ubuntu1 [Ubuntu/jammy universe]
+libkf5kcmutils-data 5.92.0-0ubuntu1 [Ubuntu/jammy universe]
+libkf5kcmutils5 5.92.0-0ubuntu1 [Ubuntu/jammy universe]
+libkf5kexiv2-15.0.0 21.12.3-0ubuntu1 [Ubuntu/jammy universe]
+libkf5khtml-bin 5.92.0-0ubuntu1 [Ubuntu/jammy universe]
+libkf5khtml-data 5.92.0-0ubuntu1 [Ubuntu/jammy universe]
+libkf5khtml5 5.92.0-0ubuntu1 [Ubuntu/jammy universe]
+libkf5kiocore5 5.92.0-0ubuntu1 [Ubuntu/jammy universe]
+libkf5kiofilewidgets5 5.92.0-0ubuntu1 [Ubuntu/jammy universe]
+libkf5kiogui5 5.92.0-0ubuntu1 [Ubuntu/jammy universe]
+libkf5kiontlm5 5.92.0-0ubuntu1 [Ubuntu/jammy universe]
+libkf5kiowidgets5 5.92.0-0ubuntu1 [Ubuntu/jammy universe]
+libkf5kirigami2-5 5.92.0-0ubuntu2 [Ubuntu/jammy universe]
+libkf5notifications-data 5.92.0-0ubuntu1 [Ubuntu/jammy universe]
+libkf5notifications5 5.92.0-0ubuntu1 [Ubuntu/jammy universe]
+libkf5package-data 5.92.0-0ubuntu1 [Ubuntu/jammy universe]
+libkf5package5 5.92.0-0ubuntu1 [Ubuntu/jammy universe]
+libkf5parts-data 5.92.0-0ubuntu1 [Ubuntu/jammy universe]
+libkf5parts-plugins 5.92.0-0ubuntu1 [Ubuntu/jammy universe]
+libkf5parts5 5.92.0-0ubuntu1 [Ubuntu/jammy universe]
+libkf5people-data 5.92.0-0ubuntu1 [Ubuntu/jammy universe]
+libkf5people5 5.92.0-0ubuntu1 [Ubuntu/jammy universe]
+libkf5peoplebackend5 5.92.0-0ubuntu1 [Ubuntu/jammy universe]
+libkf5peoplewidgets5 5.92.0-0ubuntu1 [Ubuntu/jammy universe]
+libkf5plasma5 5.92.0-0ubuntu1 [Ubuntu/jammy universe]
+libkf5plasmaquick5 5.92.0-0ubuntu1 [Ubuntu/jammy universe]
+libkf5prison5 5.92.0-0ubuntu1 [Ubuntu/jammy universe]
+libkf5pty-data 5.92.0-0ubuntu1 [Ubuntu/jammy universe]
+libkf5pty5 5.92.0-0ubuntu1 [Ubuntu/jammy universe]
+libkf5pulseaudioqt3 1.3-2 [Ubuntu/jammy universe]
+libkf5purpose-bin 5.92.0-0ubuntu1 [Ubuntu/jammy universe]
+libkf5purpose5 5.92.0-0ubuntu1 [Ubuntu/jammy universe]
+libkf5quickaddons5 5.92.0-0ubuntu1 [Ubuntu/jammy universe]
+libkf5service-bin 5.92.0-0ubuntu1 [Ubuntu/jammy universe]
+libkf5service-data 5.92.0-0ubuntu1 [Ubuntu/jammy universe]
+libkf5service5 5.92.0-0ubuntu1 [Ubuntu/jammy universe]
+libkf5solid5 5.92.0-0ubuntu1 [Ubuntu/jammy universe]
+libkf5solid5-data 5.92.0-0ubuntu1 [Ubuntu/jammy universe]
+libkf5sonnet5-data 5.92.0-0ubuntu1 [Ubuntu/jammy universe]
+libkf5sonnetcore5 5.92.0-0ubuntu1 [Ubuntu/jammy universe]
+libkf5sonnetui5 5.92.0-0ubuntu1 [Ubuntu/jammy universe]
+libkf5su-bin 5.92.0-0ubuntu1.1 [Ubuntu/jammy universe]
+libkf5su-data 5.92.0-0ubuntu1.1 [Ubuntu/jammy universe]
+libkf5su5 5.92.0-0ubuntu1.1 [Ubuntu/jammy universe]
+libkf5textwidgets-data 5.92.0-0ubuntu1 [Ubuntu/jammy universe]
+libkf5textwidgets5 5.92.0-0ubuntu1 [Ubuntu/jammy universe]
+libkf5threadweaver5 5.92.0-0ubuntu1 [Ubuntu/jammy universe]
+libkf5wallet-bin 5.92.0-0ubuntu1 [Ubuntu/jammy universe]
+libkf5wallet-data 5.92.0-0ubuntu1 [Ubuntu/jammy universe]
+libkf5wallet5 5.92.0-0ubuntu1 [Ubuntu/jammy universe]
+libkf5waylandclient5 4:5.92.0-0ubuntu1 [Ubuntu/jammy universe]
+libkf5widgetsaddons-data 5.92.0-0ubuntu1 [Ubuntu/jammy universe]
+libkf5widgetsaddons5 5.92.0-0ubuntu1 [Ubuntu/jammy universe]
+libkf5windowsystem-data 5.92.0-0ubuntu1 [Ubuntu/jammy universe]
+libkf5windowsystem5 5.92.0-0ubuntu1 [Ubuntu/jammy universe]
+libkf5xmlgui-bin 5.92.0-0ubuntu2 [Ubuntu/jammy universe]
+libkf5xmlgui-data 5.92.0-0ubuntu2 [Ubuntu/jammy universe]
+libkf5xmlgui5 5.92.0-0ubuntu2 [Ubuntu/jammy universe]
+libklibc 2.0.10-4 [Ubuntu/jammy main]
+libklu1 1:5.10.1+dfsg-4build1 [Ubuntu/jammy universe]
+libkmod2 29-1ubuntu1 [Ubuntu/jammy main]
+libkpathsea6 2021.20210626.59705-1build1 [Ubuntu/jammy main]
+libkrb5-26-heimdal 7.7.0+dfsg-3ubuntu1 [Ubuntu/jammy universe]
+libkrb5-26-heimdal:i386 7.7.0+dfsg-3ubuntu1 [Ubuntu/jammy universe]
+libkrb5-3 1.19.2-2ubuntu0.2 [Ubuntu/jammy main]
+libkrb5-3:i386 1.19.2-2ubuntu0.2 [Ubuntu/jammy main]
+libkrb5-dev 1.19.2-2ubuntu0.2 [Ubuntu/jammy main]
+libkrb5support0 1.19.2-2ubuntu0.2 [Ubuntu/jammy main]
+libkrb5support0:i386 1.19.2-2ubuntu0.2 [Ubuntu/jammy main]
+libksba8 1.6.0-2ubuntu0.2 [Ubuntu/jammy main]
+libkwalletbackend5-5 5.92.0-0ubuntu1 [Ubuntu/jammy universe]
+libkworkspace5-5 4:5.24.7-0ubuntu0.1 [Ubuntu/jammy universe]
+liblab-gamut1 2.42.2-6 [Ubuntu/jammy universe]
+liblangtag-common 0.6.3-2ubuntu1 [Ubuntu/jammy main]
+liblangtag1 0.6.3-2ubuntu1 [Ubuntu/jammy main]
+liblapack-dev 3.10.0-2ubuntu1 [Ubuntu/jammy main]
+liblapack3 3.10.0-2ubuntu1 [Ubuntu/jammy main]
+liblbfgsb0 3.0+dfsg.3-10 [Ubuntu/jammy universe]
+liblcms2-2 2.12~rc1-2build2 [Ubuntu/jammy main]
+liblcms2-2:i386 2.12~rc1-2build2 [Ubuntu/jammy main]
+liblcms2-utils 2.12~rc1-2build2 [Ubuntu/jammy main]
+libldacbt-enc2 2.0.2.3+git20200429+ed310a0-4 [Ubuntu/jammy universe]
+libldap-2.4-2 2.4.57+dfsg-2ubuntu1 [local]
+libldap-2.4-2:i386 2.4.57+dfsg-2ubuntu1 [local]
+libldap-2.5-0 2.5.14+dfsg-0ubuntu0.22.04.2 [Ubuntu/jammy main]
+libldap-2.5-0:i386 2.5.14+dfsg-0ubuntu0.22.04.2 [Ubuntu/jammy main]
+libldap-common 2.5.14+dfsg-0ubuntu0.22.04.2 [Ubuntu/jammy main]
+libldb2 2:2.4.4-0ubuntu0.22.04.2 [Ubuntu/jammy main]
+libldl2 1:5.10.1+dfsg-4build1 [Ubuntu/jammy universe]
+liblensfun-data-v1 0.3.2-6 [Ubuntu/jammy universe]
+liblensfun1 0.3.2-6 [Ubuntu/jammy universe]
+liblept5 1.82.0-3build1 [Ubuntu/jammy universe]
+libleptonica-dev 1.82.0-3build1 [Ubuntu/jammy universe]
+liblfunction-dev 2.0.5-1 [Ubuntu/jammy universe]
+liblfunction1 2.0.5-1 [Ubuntu/jammy universe]
+liblightdm-gobject-1-0 1.30.0-0ubuntu5 [Ubuntu/jammy universe]
+liblilv-0-0 0.24.12-2 [Ubuntu/jammy universe]
+liblinbox-1.7.0-0 1.7.0-2 [Ubuntu/jammy universe]
+liblinbox-dev 1.7.0-2 [Ubuntu/jammy universe]
+liblingua-translit-perl 0.28-1 [Ubuntu/jammy universe]
+liblirc-client0 0.10.1-6.3ubuntu1 [Ubuntu/jammy main]
+liblist-allutils-perl 0.19-1 [Ubuntu/jammy universe]
+liblist-compare-perl 0.55-1 [Ubuntu/jammy main]
+liblist-moreutils-perl 0.430-2 [Ubuntu/jammy main]
+liblist-moreutils-xs-perl 0.430-2build2 [Ubuntu/jammy main]
+liblist-someutils-perl 0.58-1 [Ubuntu/jammy main]
+liblist-someutils-xs-perl 0.58-2build3 [Ubuntu/jammy main]
+liblist-utilsby-perl 0.11-1 [Ubuntu/jammy main]
+libllvm11 1:11.1.0-6 [Ubuntu/jammy universe]
+libllvm12 1:12.0.1-19ubuntu3 [Ubuntu/jammy universe]
+libllvm13 1:13.0.1-2ubuntu2.1 [Ubuntu/jammy main]
+libllvm14 1:14.0.0-1ubuntu1 [Ubuntu/jammy main]
+libllvm15 1:15.0.7-0ubuntu0.22.04.1 [Ubuntu/jammy main]
+libllvm15:i386 1:15.0.7-0ubuntu0.22.04.1 [Ubuntu/jammy main]
+libllvmspirvlib12 12.0.0-3 [Ubuntu/jammy universe]
+liblmdb0 0.9.24-1build2 [Ubuntu/jammy main]
+liblocale-gettext-perl 1.07-4build3 [Ubuntu/jammy main]
+liblog-dispatch-perl 2.70-1 [Ubuntu/jammy universe]
+liblog-log4perl-perl 1.54-1 [Ubuntu/jammy universe]
+liblog4j1.2-java 1.2.17-11 [Ubuntu/jammy universe]
+liblouis-data 3.20.0-2ubuntu0.2 [Ubuntu/jammy main]
+liblouis20 3.20.0-2ubuntu0.2 [Ubuntu/jammy main]
+liblouisutdml-bin 2.10.0-4 [Ubuntu/jammy main]
+liblouisutdml-data 2.10.0-4 [Ubuntu/jammy main]
+liblouisutdml9 2.10.0-4 [Ubuntu/jammy main]
+liblqr-1-0 0.4.2-2.1 [Ubuntu/jammy universe]
+liblrcalc-dev 1.2-2 [Ubuntu/jammy universe]
+liblrcalc1 1.2-2 [Ubuntu/jammy universe]
+liblsan0 12.1.0-2ubuntu1~22.04 [Ubuntu/jammy main]
+libltc11 1.3.1-1 [Ubuntu/jammy universe]
+libltdl-dev 2.4.6-15build2 [Ubuntu/jammy main]
+libltdl7 2.4.6-15build2 [Ubuntu/jammy main]
+libltdl7:i386 2.4.6-15build2 [Ubuntu/jammy main]
+liblua5.1-0 5.1.5-8.1build4 [Ubuntu/jammy universe]
+liblua5.2-0 5.2.4-2 [Ubuntu/jammy universe]
+liblua5.3-0 5.3.6-1build1 [Ubuntu/jammy main]
+liblua5.4-0 5.4.4-1 [Ubuntu/jammy universe]
+libluajit-5.1-2 2.1.0~beta3+dfsg-6 [Ubuntu/jammy universe]
+libluajit-5.1-common 2.1.0~beta3+dfsg-6 [Ubuntu/jammy universe]
+libluajit-5.1-dev 2.1.0~beta3+dfsg-6 [Ubuntu/jammy universe]
+liblwp-mediatypes-perl 6.04-1 [Ubuntu/jammy main]
+liblwp-protocol-https-perl 6.10-1 [Ubuntu/jammy main]
+liblz1 1.13-1 [Ubuntu/jammy universe]
+liblz4-1 1.9.3-2build2 [Ubuntu/jammy main]
+liblz4-1:i386 1.9.3-2build2 [Ubuntu/jammy main]
+liblz4-tool 1.9.3-2build2 [Ubuntu/jammy universe]
+liblzf1 3.6-3 [Ubuntu/jammy universe]
+liblzma-dev 5.2.5-2ubuntu1 [Ubuntu/jammy main]
+liblzma5 5.2.5-2ubuntu1 [Ubuntu/jammy main]
+liblzma5:i386 5.2.5-2ubuntu1 [Ubuntu/jammy main]
+liblzo2-2 2.10-2build3 [Ubuntu/jammy main]
+libm17n-0 1.8.0-4 [Ubuntu/jammy main]
+libm4ri-0.0.20200125 20200125-1 [Ubuntu/jammy universe]
+libm4ri-dev 20200125-1 [Ubuntu/jammy universe]
+libm4rie-0.0.20200125 20200125-1build1 [Ubuntu/jammy universe]
+libm4rie-dev 20200125-1build1 [Ubuntu/jammy universe]
+libmad0 0.15.1b-10ubuntu1 [Ubuntu/jammy universe]
+libmagic-mgc 1:5.41-3 [Ubuntu/jammy main]
+libmagic1 1:5.41-3 [Ubuntu/jammy main]
+libmagick++-6.q16-8 8:6.9.11.60+dfsg-1.3ubuntu0.22.04.3 [Ubuntu/jammy universe]
+libmagickcore-6.q16-6 8:6.9.11.60+dfsg-1.3ubuntu0.22.04.3 [Ubuntu/jammy universe]
+libmagickcore-6.q16-6-extra 8:6.9.11.60+dfsg-1.3ubuntu0.22.04.3 [Ubuntu/jammy universe]
+libmagickwand-6.q16-6 8:6.9.11.60+dfsg-1.3ubuntu0.22.04.3 [Ubuntu/jammy universe]
+libmagics++-data 4.10.1-1 [Ubuntu/jammy universe]
+libmagplus3v5 4.10.1-1 [Ubuntu/jammy universe]
+libmail-sendmail-perl 0.80-1.1 [Ubuntu/jammy main]
+libmailtools-perl 2.21-1 [Ubuntu/jammy main]
+libmalcontent-0-0 0.10.4-1 [Ubuntu/jammy universe]
+libmanette-0.2-0 0.2.6-3build1 [Ubuntu/jammy main]
+libmarkdown2 2.2.7-2 [Ubuntu/jammy main]
+libmath-base85-perl 0.5+dfsg-1 [Ubuntu/jammy main]
+libmatio11 1.5.21-1 [Ubuntu/jammy universe]
+libmatroska7 1.6.3-2 [Ubuntu/jammy universe]
+libmaven-compiler-plugin-java 3.8.1-4 [Ubuntu/jammy universe]
+libmaven-parent-java 31-2 [Ubuntu/jammy universe]
+libmaven-resolver-java 1.4.2-3build1 [Ubuntu/jammy universe]
+libmaven-shared-incremental-java 1.1-3 [Ubuntu/jammy universe]
+libmaven-shared-utils-java 3.3.0-1 [Ubuntu/jammy universe]
+libmaven3-core-java 3.6.3-5 [Ubuntu/jammy universe]
+libmaxminddb0 1.5.2-1build2 [Ubuntu/jammy main]
+libmbedcrypto7 2.28.0-1build1 [Ubuntu/jammy universe]
+libmbedtls14 2.28.0-1build1 [Ubuntu/jammy universe]
+libmbedx509-1 2.28.0-1build1 [Ubuntu/jammy universe]
+libmbim-glib4 1.28.0-1~ubuntu20.04.1 [Ubuntu/jammy main]
+libmbim-proxy 1.28.0-1~ubuntu20.04.1 [Ubuntu/jammy main]
+libmd-dev 1.0.4-1build1 [Ubuntu/jammy main]
+libmd0 1.0.4-1build1 [Ubuntu/jammy main]
+libmd0:i386 1.0.4-1build1 [Ubuntu/jammy main]
+libmd4c0 0.4.8-1 [Ubuntu/jammy universe]
+libmediaart-2.0-0 1.9.5-2build1 [Ubuntu/jammy main]
+libmediainfo0v5 21.09+dfsg-4 [Ubuntu/jammy universe]
+libmediawiki-api-perl 0.52-1 [Ubuntu/jammy universe]
+libmessaging-menu0 22.2.0-1 [Ubuntu/jammy main]
+libmetacity3 1:3.44.0-1ubuntu1 [Ubuntu/jammy universe]
+libmetis5 5.1.0.dfsg-7build2 [Ubuntu/jammy universe]
+libmfx1 22.3.0-1 [Ubuntu/jammy universe]
+libmhash2 0.9.9.9-9build2 [Ubuntu/jammy main]
+libmikmod3 3.3.11.1-6 [Ubuntu/jammy universe]
+libmime-charset-perl 1.012.2-1 [Ubuntu/jammy universe]
+libmime-lite-perl 3.033-1 [Ubuntu/jammy main]
+libmime-types-perl 2.22-1 [Ubuntu/jammy main]
+libminiupnpc17 2.2.3-1build1 [Ubuntu/jammy main]
+libminizip1 1.1-8build1 [Ubuntu/jammy universe]
+libmjpegutils-2.1-0 1:2.1.0+debian-6build1 [Ubuntu/jammy universe]
+libmm-glib0 1.20.0-1~ubuntu22.04.1 [Ubuntu/jammy main]
+libmms0 0.6.4-3 [Ubuntu/jammy universe]
+libmnl0 1.0.4-3build2 [Ubuntu/jammy main]
+libmodplug1 1:0.8.9.0-3 [Ubuntu/jammy universe]
+libmodule-implementation-perl 0.09-1.1 [Ubuntu/jammy main]
+libmodule-runtime-perl 0.016-1 [Ubuntu/jammy main]
+libmongoose2 1:5.10.1+dfsg-4build1 [Ubuntu/jammy universe]
+libmono-2.0-1 6.8.0.105+dfsg-3.2 [Ubuntu/jammy universe]
+libmono-2.0-dev 6.8.0.105+dfsg-3.2 [Ubuntu/jammy universe]
+libmono-accessibility4.0-cil 6.8.0.105+dfsg-3.2 [Ubuntu/jammy universe]
+libmono-btls-interface4.0-cil 6.8.0.105+dfsg-3.2 [Ubuntu/jammy universe]
+libmono-cairo4.0-cil 6.8.0.105+dfsg-3.2 [Ubuntu/jammy universe]
+libmono-cecil-private-cil 6.8.0.105+dfsg-3.2 [Ubuntu/jammy universe]
+libmono-cil-dev 6.8.0.105+dfsg-3.2 [Ubuntu/jammy universe]
+libmono-codecontracts4.0-cil 6.8.0.105+dfsg-3.2 [Ubuntu/jammy universe]
+libmono-compilerservices-symbolwriter4.0-cil 6.8.0.105+dfsg-3.2 [Ubuntu/jammy universe]
+libmono-corlib4.5-cil 6.8.0.105+dfsg-3.2 [Ubuntu/jammy universe]
+libmono-corlib4.5-dll 6.8.0.105+dfsg-3.2 [Ubuntu/jammy universe]
+libmono-cscompmgd0.0-cil 6.8.0.105+dfsg-3.2 [Ubuntu/jammy universe]
+libmono-csharp4.0c-cil 6.8.0.105+dfsg-3.2 [Ubuntu/jammy universe]
+libmono-custommarshalers4.0-cil 6.8.0.105+dfsg-3.2 [Ubuntu/jammy universe]
+libmono-data-tds4.0-cil 6.8.0.105+dfsg-3.2 [Ubuntu/jammy universe]
+libmono-db2-1.0-cil 6.8.0.105+dfsg-3.2 [Ubuntu/jammy universe]
+libmono-debugger-soft4.0a-cil 6.8.0.105+dfsg-3.2 [Ubuntu/jammy universe]
+libmono-http4.0-cil 6.8.0.105+dfsg-3.2 [Ubuntu/jammy universe]
+libmono-i18n-cjk4.0-cil 6.8.0.105+dfsg-3.2 [Ubuntu/jammy universe]
+libmono-i18n-mideast4.0-cil 6.8.0.105+dfsg-3.2 [Ubuntu/jammy universe]
+libmono-i18n-other4.0-cil 6.8.0.105+dfsg-3.2 [Ubuntu/jammy universe]
+libmono-i18n-rare4.0-cil 6.8.0.105+dfsg-3.2 [Ubuntu/jammy universe]
+libmono-i18n-west4.0-cil 6.8.0.105+dfsg-3.2 [Ubuntu/jammy universe]
+libmono-i18n4.0-all 6.8.0.105+dfsg-3.2 [Ubuntu/jammy universe]
+libmono-i18n4.0-cil 6.8.0.105+dfsg-3.2 [Ubuntu/jammy universe]
+libmono-ldap4.0-cil 6.8.0.105+dfsg-3.2 [Ubuntu/jammy universe]
+libmono-management4.0-cil 6.8.0.105+dfsg-3.2 [Ubuntu/jammy universe]
+libmono-messaging-rabbitmq4.0-cil 6.8.0.105+dfsg-3.2 [Ubuntu/jammy universe]
+libmono-messaging4.0-cil 6.8.0.105+dfsg-3.2 [Ubuntu/jammy universe]
+libmono-microsoft-build-engine4.0-cil 6.8.0.105+dfsg-3.2 [Ubuntu/jammy universe]
+libmono-microsoft-build-framework4.0-cil 6.8.0.105+dfsg-3.2 [Ubuntu/jammy universe]
+libmono-microsoft-build-tasks-v4.0-4.0-cil 6.8.0.105+dfsg-3.2 [Ubuntu/jammy universe]
+libmono-microsoft-build-utilities-v4.0-4.0-cil 6.8.0.105+dfsg-3.2 [Ubuntu/jammy universe]
+libmono-microsoft-build4.0-cil 6.8.0.105+dfsg-3.2 [Ubuntu/jammy universe]
+libmono-microsoft-csharp4.0-cil 6.8.0.105+dfsg-3.2 [Ubuntu/jammy universe]
+libmono-microsoft-visualc10.0-cil 6.8.0.105+dfsg-3.2 [Ubuntu/jammy universe]
+libmono-microsoft-web-infrastructure1.0-cil 6.8.0.105+dfsg-3.2 [Ubuntu/jammy universe]
+libmono-oracle4.0-cil 6.8.0.105+dfsg-3.2 [Ubuntu/jammy universe]
+libmono-parallel4.0-cil 6.8.0.105+dfsg-3.2 [Ubuntu/jammy universe]
+libmono-peapi4.0a-cil 6.8.0.105+dfsg-3.2 [Ubuntu/jammy universe]
+libmono-posix4.0-cil 6.8.0.105+dfsg-3.2 [Ubuntu/jammy universe]
+libmono-profiler 6.8.0.105+dfsg-3.2 [Ubuntu/jammy universe]
+libmono-rabbitmq4.0-cil 6.8.0.105+dfsg-3.2 [Ubuntu/jammy universe]
+libmono-relaxng4.0-cil 6.8.0.105+dfsg-3.2 [Ubuntu/jammy universe]
+libmono-security4.0-cil 6.8.0.105+dfsg-3.2 [Ubuntu/jammy universe]
+libmono-sharpzip4.84-cil 6.8.0.105+dfsg-3.2 [Ubuntu/jammy universe]
+libmono-simd4.0-cil 6.8.0.105+dfsg-3.2 [Ubuntu/jammy universe]
+libmono-smdiagnostics0.0-cil 6.8.0.105+dfsg-3.2 [Ubuntu/jammy universe]
+libmono-sqlite4.0-cil 6.8.0.105+dfsg-3.2 [Ubuntu/jammy universe]
+libmono-system-componentmodel-composition4.0-cil 6.8.0.105+dfsg-3.2 [Ubuntu/jammy universe]
+libmono-system-componentmodel-dataannotations4.0-cil 6.8.0.105+dfsg-3.2 [Ubuntu/jammy universe]
+libmono-system-configuration-install4.0-cil 6.8.0.105+dfsg-3.2 [Ubuntu/jammy universe]
+libmono-system-configuration4.0-cil 6.8.0.105+dfsg-3.2 [Ubuntu/jammy universe]
+libmono-system-core4.0-cil 6.8.0.105+dfsg-3.2 [Ubuntu/jammy universe]
+libmono-system-data-datasetextensions4.0-cil 6.8.0.105+dfsg-3.2 [Ubuntu/jammy universe]
+libmono-system-data-entity4.0-cil 6.8.0.105+dfsg-3.2 [Ubuntu/jammy universe]
+libmono-system-data-linq4.0-cil 6.8.0.105+dfsg-3.2 [Ubuntu/jammy universe]
+libmono-system-data-services-client4.0-cil 6.8.0.105+dfsg-3.2 [Ubuntu/jammy universe]
+libmono-system-data-services4.0-cil 6.8.0.105+dfsg-3.2 [Ubuntu/jammy universe]
+libmono-system-data4.0-cil 6.8.0.105+dfsg-3.2 [Ubuntu/jammy universe]
+libmono-system-deployment4.0-cil 6.8.0.105+dfsg-3.2 [Ubuntu/jammy universe]
+libmono-system-design4.0-cil 6.8.0.105+dfsg-3.2 [Ubuntu/jammy universe]
+libmono-system-drawing-design4.0-cil 6.8.0.105+dfsg-3.2 [Ubuntu/jammy universe]
+libmono-system-drawing4.0-cil 6.8.0.105+dfsg-3.2 [Ubuntu/jammy universe]
+libmono-system-dynamic4.0-cil 6.8.0.105+dfsg-3.2 [Ubuntu/jammy universe]
+libmono-system-enterpriseservices4.0-cil 6.8.0.105+dfsg-3.2 [Ubuntu/jammy universe]
+libmono-system-identitymodel-selectors4.0-cil 6.8.0.105+dfsg-3.2 [Ubuntu/jammy universe]
+libmono-system-identitymodel4.0-cil 6.8.0.105+dfsg-3.2 [Ubuntu/jammy universe]
+libmono-system-io-compression-filesystem4.0-cil 6.8.0.105+dfsg-3.2 [Ubuntu/jammy universe]
+libmono-system-io-compression4.0-cil 6.8.0.105+dfsg-3.2 [Ubuntu/jammy universe]
+libmono-system-json-microsoft4.0-cil 6.8.0.105+dfsg-3.2 [Ubuntu/jammy universe]
+libmono-system-json4.0-cil 6.8.0.105+dfsg-3.2 [Ubuntu/jammy universe]
+libmono-system-ldap-protocols4.0-cil 6.8.0.105+dfsg-3.2 [Ubuntu/jammy universe]
+libmono-system-ldap4.0-cil 6.8.0.105+dfsg-3.2 [Ubuntu/jammy universe]
+libmono-system-management4.0-cil 6.8.0.105+dfsg-3.2 [Ubuntu/jammy universe]
+libmono-system-messaging4.0-cil 6.8.0.105+dfsg-3.2 [Ubuntu/jammy universe]
+libmono-system-net-http-formatting4.0-cil 6.8.0.105+dfsg-3.2 [Ubuntu/jammy universe]
+libmono-system-net-http-webrequest4.0-cil 6.8.0.105+dfsg-3.2 [Ubuntu/jammy universe]
+libmono-system-net-http4.0-cil 6.8.0.105+dfsg-3.2 [Ubuntu/jammy universe]
+libmono-system-net4.0-cil 6.8.0.105+dfsg-3.2 [Ubuntu/jammy universe]
+libmono-system-numerics-vectors4.0-cil 6.8.0.105+dfsg-3.2 [Ubuntu/jammy universe]
+libmono-system-numerics4.0-cil 6.8.0.105+dfsg-3.2 [Ubuntu/jammy universe]
+libmono-system-reactive-core2.2-cil 6.8.0.105+dfsg-3.2 [Ubuntu/jammy universe]
+libmono-system-reactive-debugger2.2-cil 6.8.0.105+dfsg-3.2 [Ubuntu/jammy universe]
+libmono-system-reactive-experimental2.2-cil 6.8.0.105+dfsg-3.2 [Ubuntu/jammy universe]
+libmono-system-reactive-interfaces2.2-cil 6.8.0.105+dfsg-3.2 [Ubuntu/jammy universe]
+libmono-system-reactive-linq2.2-cil 6.8.0.105+dfsg-3.2 [Ubuntu/jammy universe]
+libmono-system-reactive-observable-aliases0.0-cil 6.8.0.105+dfsg-3.2 [Ubuntu/jammy universe]
+libmono-system-reactive-platformservices2.2-cil 6.8.0.105+dfsg-3.2 [Ubuntu/jammy universe]
+libmono-system-reactive-providers2.2-cil 6.8.0.105+dfsg-3.2 [Ubuntu/jammy universe]
+libmono-system-reactive-runtime-remoting2.2-cil 6.8.0.105+dfsg-3.2 [Ubuntu/jammy universe]
+libmono-system-reactive-windows-forms2.2-cil 6.8.0.105+dfsg-3.2 [Ubuntu/jammy universe]
+libmono-system-reactive-windows-threading2.2-cil 6.8.0.105+dfsg-3.2 [Ubuntu/jammy universe]
+libmono-system-reflection-context4.0-cil 6.8.0.105+dfsg-3.2 [Ubuntu/jammy universe]
+libmono-system-runtime-caching4.0-cil 6.8.0.105+dfsg-3.2 [Ubuntu/jammy universe]
+libmono-system-runtime-durableinstancing4.0-cil 6.8.0.105+dfsg-3.2 [Ubuntu/jammy universe]
+libmono-system-runtime-serialization-formatters-soap4.0-cil 6.8.0.105+dfsg-3.2 [Ubuntu/jammy universe]
+libmono-system-runtime-serialization4.0-cil 6.8.0.105+dfsg-3.2 [Ubuntu/jammy universe]
+libmono-system-runtime4.0-cil 6.8.0.105+dfsg-3.2 [Ubuntu/jammy universe]
+libmono-system-security4.0-cil 6.8.0.105+dfsg-3.2 [Ubuntu/jammy universe]
+libmono-system-servicemodel-activation4.0-cil 6.8.0.105+dfsg-3.2 [Ubuntu/jammy universe]
+libmono-system-servicemodel-discovery4.0-cil 6.8.0.105+dfsg-3.2 [Ubuntu/jammy universe]
+libmono-system-servicemodel-internals0.0-cil 6.8.0.105+dfsg-3.2 [Ubuntu/jammy universe]
+libmono-system-servicemodel-routing4.0-cil 6.8.0.105+dfsg-3.2 [Ubuntu/jammy universe]
+libmono-system-servicemodel-web4.0-cil 6.8.0.105+dfsg-3.2 [Ubuntu/jammy universe]
+libmono-system-servicemodel4.0a-cil 6.8.0.105+dfsg-3.2 [Ubuntu/jammy universe]
+libmono-system-serviceprocess4.0-cil 6.8.0.105+dfsg-3.2 [Ubuntu/jammy universe]
+libmono-system-threading-tasks-dataflow4.0-cil 6.8.0.105+dfsg-3.2 [Ubuntu/jammy universe]
+libmono-system-transactions4.0-cil 6.8.0.105+dfsg-3.2 [Ubuntu/jammy universe]
+libmono-system-web-abstractions4.0-cil 6.8.0.105+dfsg-3.2 [Ubuntu/jammy universe]
+libmono-system-web-applicationservices4.0-cil 6.8.0.105+dfsg-3.2 [Ubuntu/jammy universe]
+libmono-system-web-dynamicdata4.0-cil 6.8.0.105+dfsg-3.2 [Ubuntu/jammy universe]
+libmono-system-web-extensions-design4.0-cil 6.8.0.105+dfsg-3.2 [Ubuntu/jammy universe]
+libmono-system-web-extensions4.0-cil 6.8.0.105+dfsg-3.2 [Ubuntu/jammy universe]
+libmono-system-web-http-selfhost4.0-cil 6.8.0.105+dfsg-3.2 [Ubuntu/jammy universe]
+libmono-system-web-http-webhost4.0-cil 6.8.0.105+dfsg-3.2 [Ubuntu/jammy universe]
+libmono-system-web-http4.0-cil 6.8.0.105+dfsg-3.2 [Ubuntu/jammy universe]
+libmono-system-web-mobile4.0-cil 6.8.0.105+dfsg-3.2 [Ubuntu/jammy universe]
+libmono-system-web-mvc3.0-cil 6.8.0.105+dfsg-3.2 [Ubuntu/jammy universe]
+libmono-system-web-razor2.0-cil 6.8.0.105+dfsg-3.2 [Ubuntu/jammy universe]
+libmono-system-web-regularexpressions4.0-cil 6.8.0.105+dfsg-3.2 [Ubuntu/jammy universe]
+libmono-system-web-routing4.0-cil 6.8.0.105+dfsg-3.2 [Ubuntu/jammy universe]
+libmono-system-web-services4.0-cil 6.8.0.105+dfsg-3.2 [Ubuntu/jammy universe]
+libmono-system-web-webpages-deployment2.0-cil 6.8.0.105+dfsg-3.2 [Ubuntu/jammy universe]
+libmono-system-web-webpages-razor2.0-cil 6.8.0.105+dfsg-3.2 [Ubuntu/jammy universe]
+libmono-system-web-webpages2.0-cil 6.8.0.105+dfsg-3.2 [Ubuntu/jammy universe]
+libmono-system-web4.0-cil 6.8.0.105+dfsg-3.2 [Ubuntu/jammy universe]
+libmono-system-windows-forms-datavisualization4.0a-cil 6.8.0.105+dfsg-3.2 [Ubuntu/jammy universe]
+libmono-system-windows-forms4.0-cil 6.8.0.105+dfsg-3.2 [Ubuntu/jammy universe]
+libmono-system-windows4.0-cil 6.8.0.105+dfsg-3.2 [Ubuntu/jammy universe]
+libmono-system-workflow-activities4.0-cil 6.8.0.105+dfsg-3.2 [Ubuntu/jammy universe]
+libmono-system-workflow-componentmodel4.0-cil 6.8.0.105+dfsg-3.2 [Ubuntu/jammy universe]
+libmono-system-workflow-runtime4.0-cil 6.8.0.105+dfsg-3.2 [Ubuntu/jammy universe]
+libmono-system-xaml4.0-cil 6.8.0.105+dfsg-3.2 [Ubuntu/jammy universe]
+libmono-system-xml-linq4.0-cil 6.8.0.105+dfsg-3.2 [Ubuntu/jammy universe]
+libmono-system-xml-serialization4.0-cil 6.8.0.105+dfsg-3.2 [Ubuntu/jammy universe]
+libmono-system-xml4.0-cil 6.8.0.105+dfsg-3.2 [Ubuntu/jammy universe]
+libmono-system4.0-cil 6.8.0.105+dfsg-3.2 [Ubuntu/jammy universe]
+libmono-tasklets4.0-cil 6.8.0.105+dfsg-3.2 [Ubuntu/jammy universe]
+libmono-webbrowser4.0-cil 6.8.0.105+dfsg-3.2 [Ubuntu/jammy universe]
+libmono-webmatrix-data4.0-cil 6.8.0.105+dfsg-3.2 [Ubuntu/jammy universe]
+libmono-windowsbase4.0-cil 6.8.0.105+dfsg-3.2 [Ubuntu/jammy universe]
+libmono-xbuild-tasks4.0-cil 6.8.0.105+dfsg-3.2 [Ubuntu/jammy universe]
+libmonoboehm-2.0-1 6.8.0.105+dfsg-3.2 [Ubuntu/jammy universe]
+libmonosgen-2.0-1 6.8.0.105+dfsg-3.2 [Ubuntu/jammy universe]
+libmonosgen-2.0-dev 6.8.0.105+dfsg-3.2 [Ubuntu/jammy universe]
+libmoo-perl 2.005004-3 [Ubuntu/jammy main]
+libmoox-aliases-perl 0.001006-1.1 [Ubuntu/jammy main]
+libmount-dev 2.37.2-4ubuntu3 [Ubuntu/jammy main]
+libmount1 2.37.2-4ubuntu3 [Ubuntu/jammy main]
+libmount1:i386 2.37.2-4ubuntu3 [Ubuntu/jammy main]
+libmouse-perl 2.5.10-1build4 [Ubuntu/jammy main]
+libmozjs-91-0 91.10.0-0ubuntu1 [Ubuntu/jammy main]
+libmp3lame0 3.100-3build2 [Ubuntu/jammy main]
+libmp3lame0:i386 3.100-3build2 [Ubuntu/jammy main]
+libmpc-dev 1.2.1-2build1 [Ubuntu/jammy main]
+libmpc3 1.2.1-2build1 [Ubuntu/jammy main]
+libmpcdec6 2:0.1~r495-2 [Ubuntu/jammy universe]
+libmpdclient-dev 2.20-1 [Ubuntu/jammy universe]
+libmpdclient2 2.20-1 [Ubuntu/jammy universe]
+libmpdec3 2.5.1-2build2 [Ubuntu/jammy main]
+libmpeg2-4 0.5.1-9 [Ubuntu/jammy universe]
+libmpeg2encpp-2.1-0 1:2.1.0+debian-6build1 [Ubuntu/jammy universe]
+libmpfi-dev 1.5.3+ds-6 [Ubuntu/jammy universe]
+libmpfi-dev-common 1.5.3+ds-6 [Ubuntu/jammy universe]
+libmpfi0 1.5.3+ds-6 [Ubuntu/jammy universe]
+libmpfr-dev 4.1.0-3build3 [Ubuntu/jammy main]
+libmpfr6 4.1.0-3build3 [Ubuntu/jammy main]
+libmpg123-0 1.29.3-1build1 [Ubuntu/jammy main]
+libmpg123-0:i386 1.29.3-1build1 [Ubuntu/jammy main]
+libmplex2-2.1-0 1:2.1.0+debian-6build1 [Ubuntu/jammy universe]
+libmro-compat-perl 0.15-1 [Ubuntu/jammy universe]
+libmsgpack-dev 3.3.0-4 [Ubuntu/jammy universe]
+libmsgpackc2 3.3.0-4 [Ubuntu/jammy universe]
+libmspack0 0.10.1-2build2 [Ubuntu/jammy main]
+libmspub-0.1-1 0.1.4-3build3 [Ubuntu/jammy main]
+libmtdev-dev 1.1.6-1build4 [Ubuntu/jammy main]
+libmtdev1 1.1.6-1build4 [Ubuntu/jammy main]
+libmtp-common 1.1.19-1build1 [Ubuntu/jammy main]
+libmtp-runtime 1.1.19-1build1 [Ubuntu/jammy main]
+libmtp9 1.1.19-1build1 [Ubuntu/jammy main]
+libmujs1 1.1.3-3 [Ubuntu/jammy universe]
+libmutter-10-0 42.5-0ubuntu1 [Ubuntu/jammy main]
+libmwaw-0.3-3 0.3.21-1build1 [Ubuntu/jammy main]
+libmysofa1 1.2.1~dfsg0-1 [Ubuntu/jammy universe]
+libmysqlclient21 8.0.33-0ubuntu0.22.04.2 [Ubuntu/jammy main]
+libmythes-1.2-0 2:1.2.4-4build1 [Ubuntu/jammy main]
+libnaga-java 3.0+svn80-4 [Ubuntu/jammy universe]
+libnamespace-autoclean-perl 0.29-1 [Ubuntu/jammy main]
+libnamespace-clean-perl 0.27-1 [Ubuntu/jammy main]
+libnatpmp1 20150609-7.1build2 [Ubuntu/jammy main]
+libnautilus-extension1a 1:42.2-0ubuntu2.1 [Ubuntu/jammy main]
+libnauty2 2.7r3+ds-1 [Ubuntu/jammy universe]
+libncurses-dev 6.3-2ubuntu0.1 [Ubuntu/jammy main]
+libncurses5-dev 6.3-2ubuntu0.1 [Ubuntu/jammy main]
+libncurses6 6.3-2ubuntu0.1 [Ubuntu/jammy main]
+libncurses6:i386 6.3-2ubuntu0.1 [Ubuntu/jammy main]
+libncursesw5-dev 6.3-2ubuntu0.1 [Ubuntu/jammy main]
+libncursesw6 6.3-2ubuntu0.1 [Ubuntu/jammy main]
+libncursesw6:i386 6.3-2ubuntu0.1 [Ubuntu/jammy main]
+libndp0 1.8-0ubuntu3 [Ubuntu/jammy main]
+libnemo-extension1 5.2.4-1 [Ubuntu/jammy universe]
+libnet-dbus-perl 1.2.0-1build3 [Ubuntu/jammy main]
+libnet-dns-perl 1.33-1 [Ubuntu/jammy main]
+libnet-dns-sec-perl 1.19-1build2 [Ubuntu/jammy main]
+libnet-domain-tld-perl 1.75-1.1 [Ubuntu/jammy main]
+libnet-http-perl 6.22-1 [Ubuntu/jammy main]
+libnet-ip-perl 1.26-2 [Ubuntu/jammy main]
+libnet-ipv6addr-perl 1.02-1 [Ubuntu/jammy main]
+libnet-libidn-perl 0.12.ds-3build6 [Ubuntu/jammy main]
+libnet-netmask-perl 2.0001-1 [Ubuntu/jammy main]
+libnet-smtp-ssl-perl 1.04-1 [Ubuntu/jammy main]
+libnet-ssleay-perl 1.92-1build2 [Ubuntu/jammy main]
+libnetaddr-ip-perl 4.079+dfsg-1build7 [Ubuntu/jammy main]
+libnetcdf-dev 1:4.8.1-1 [Ubuntu/jammy universe]
+libnetcdf19 1:4.8.1-1 [Ubuntu/jammy universe]
+libnetcdff-dev 4.5.4+ds-1 [Ubuntu/jammy universe]
+libnetcdff7 4.5.4+ds-1 [Ubuntu/jammy universe]
+libnetfilter-conntrack3 1.0.9-1 [Ubuntu/jammy main]
+libnetpbm10 2:10.0-15.4 [Ubuntu/jammy universe]
+libnetplan0 0.105-0ubuntu2~22.04.3 [Ubuntu/jammy main]
+libnettle8 3.7.3-1build2 [Ubuntu/jammy main]
+libnettle8:i386 3.7.3-1build2 [Ubuntu/jammy main]
+libnewt0.52 0.52.21-5ubuntu2 [Ubuntu/jammy main]
+libnfnetlink0 1.0.1-3build3 [Ubuntu/jammy main]
+libnfs13 4.0.0-1build2 [Ubuntu/jammy main]
+libnfsidmap1 1:2.6.1-1ubuntu1.2 [Ubuntu/jammy main]
+libnftables1 1.0.2-1ubuntu3 [Ubuntu/jammy main]
+libnftnl11 1.2.1-1build1 [Ubuntu/jammy main]
+libnghttp2-14 1.43.0-1build3 [Ubuntu/jammy main]
+libnghttp2-14:i386 1.43.0-1build3 [Ubuntu/jammy main]
+libnice10 0.1.18-2 [Ubuntu/jammy universe]
+libnl-3-200 3.5.0-0.1 [Ubuntu/jammy main]
+libnl-3-dev 3.5.0-0.1 [Ubuntu/jammy main]
+libnl-genl-3-200 3.5.0-0.1 [Ubuntu/jammy main]
+libnl-genl-3-dev 3.5.0-0.1 [Ubuntu/jammy main]
+libnl-route-3-200 3.5.0-0.1 [Ubuntu/jammy main]
+libnm0 1.36.6-0ubuntu2 [Ubuntu/jammy main]
+libnma-common 1.8.34-1ubuntu1 [Ubuntu/jammy main]
+libnma0 1.8.34-1ubuntu1 [Ubuntu/jammy main]
+libnorm-dev 1.5.9+dfsg-2 [Ubuntu/jammy universe]
+libnorm1 1.5.9+dfsg-2 [Ubuntu/jammy universe]
+libnormaliz3 3.8.9+ds-1 [Ubuntu/jammy universe]
+libnotify-bin 0.7.9-3ubuntu5.22.04.1 [Ubuntu/jammy main]
+libnotify-dev 0.7.9-3ubuntu5.22.04.1 [Ubuntu/jammy main]
+libnotify4 0.7.9-3ubuntu5.22.04.1 [Ubuntu/jammy main]
+libnotmuch5 0.35-2ubuntu1 [Ubuntu/jammy universe]
+libnpth0 1.6-3build2 [Ubuntu/jammy main]
+libnsl-dev 1.3.0-2build2 [Ubuntu/jammy main]
+libnsl2 1.3.0-2build2 [Ubuntu/jammy main]
+libnsl2:i386 1.3.0-2build2 [Ubuntu/jammy main]
+libnspr4 2:4.32-3build1 [Ubuntu/jammy main]
+libnspr4-dev 2:4.32-3build1 [Ubuntu/jammy main]
+libnspr4:i386 2:4.32-3build1 [Ubuntu/jammy main]
+libnss-mdns 0.15.1-1ubuntu1 [Ubuntu/jammy main]
+libnss-nis 3.1-0ubuntu6 [Ubuntu/jammy main]
+libnss-nis:i386 3.1-0ubuntu6 [Ubuntu/jammy main]
+libnss-nisplus 1.3-0ubuntu6 [Ubuntu/jammy main]
+libnss-nisplus:i386 1.3-0ubuntu6 [Ubuntu/jammy main]
+libnss-sss 2.6.3-1ubuntu3.2 [Ubuntu/jammy main]
+libnss-systemd 249.11-0ubuntu3.9 [Ubuntu/jammy main]
+libnss3 2:3.68.2-0ubuntu1.2 [Ubuntu/jammy main]
+libnss3-dev 2:3.68.2-0ubuntu1.2 [Ubuntu/jammy main]
+libnss3:i386 2:3.68.2-0ubuntu1.2 [Ubuntu/jammy main]
+libntfs-3g89 1:2021.8.22-3ubuntu1.2 [Ubuntu/jammy main]
+libntl-dev 11.5.1-1 [Ubuntu/jammy universe]
+libntl44 11.5.1-1 [Ubuntu/jammy universe]
+libnuma1 2.0.14-3ubuntu2 [Ubuntu/jammy main]
+libnumber-compare-perl 0.03-2 [Ubuntu/jammy main]
+libnunit-cil-dev 2.6.4+dfsg-1.1 [Ubuntu/jammy universe]
+libnunit-console-runner2.6.3-cil 2.6.4+dfsg-1.1 [Ubuntu/jammy universe]
+libnunit-core-interfaces2.6.3-cil 2.6.4+dfsg-1.1 [Ubuntu/jammy universe]
+libnunit-core2.6.3-cil 2.6.4+dfsg-1.1 [Ubuntu/jammy universe]
+libnunit-framework2.6.3-cil 2.6.4+dfsg-1.1 [Ubuntu/jammy universe]
+libnunit-mocks2.6.3-cil 2.6.4+dfsg-1.1 [Ubuntu/jammy universe]
+libnunit-util2.6.3-cil 2.6.4+dfsg-1.1 [Ubuntu/jammy universe]
+libnux-4.0-0 4.0.8+18.10.20180623-0ubuntu4 [Ubuntu/jammy universe]
+libnux-4.0-common 4.0.8+18.10.20180623-0ubuntu4 [Ubuntu/jammy universe]
+libobjc-11-dev 11.3.0-1ubuntu1~22.04.1 [Ubuntu/jammy universe]
+libobjc4 12.1.0-2ubuntu1~22.04 [Ubuntu/jammy universe]
+libodbc1 2.3.9-5 [Ubuntu/jammy main]
+libodbc1:i386 2.3.9-5 [Ubuntu/jammy main]
+libodbc2 2.3.9-5 [Ubuntu/jammy main]
+libodbc2:i386 2.3.9-5 [Ubuntu/jammy main]
+libodbccr2 2.3.9-5 [Ubuntu/jammy main]
+libodbccr2:i386 2.3.9-5 [Ubuntu/jammy main]
+libodc-0d 1.4.4-1 [Ubuntu/jammy universe]
+libodfgen-0.1-1 0.1.8-2build2 [Ubuntu/jammy main]
+libogg0 1.3.5-0ubuntu3 [Ubuntu/jammy main]
+libogg0:i386 1.3.5-0ubuntu3 [Ubuntu/jammy main]
+libokular5core9 4:21.12.3-0ubuntu1 [Ubuntu/jammy universe]
+libonig-dev 6.9.7.1-2build1 [Ubuntu/jammy main]
+libonig5 6.9.7.1-2build1 [Ubuntu/jammy main]
+libopenal-data 1:1.19.1-2build3 [Ubuntu/jammy universe]
+libopenal1 1:1.19.1-2build3 [Ubuntu/jammy universe]
+libopenal1:i386 1:1.19.1-2build3 [Ubuntu/jammy universe]
+libopenblas-dev 0.3.20+ds-1 [Ubuntu/jammy universe]
+libopenblas-pthread-dev 0.3.20+ds-1 [Ubuntu/jammy universe]
+libopenblas0 0.3.20+ds-1 [Ubuntu/jammy universe]
+libopenblas0-pthread 0.3.20+ds-1 [Ubuntu/jammy universe]
+libopencl-clang12 12.0.0-3 [Ubuntu/jammy universe]
+libopenconnect5 8.20-1 [Ubuntu/jammy universe]
+libopencore-amrnb0 0.1.5-1 [Ubuntu/jammy universe]
+libopencore-amrwb0 0.1.5-1 [Ubuntu/jammy universe]
+libopenexr25 2.5.7-1 [Ubuntu/jammy universe]
+libopengl-dev 1.4.0-1 [Ubuntu/jammy main]
+libopengl0 1.4.0-1 [Ubuntu/jammy main]
+libopengl0:i386 1.4.0-1 [Ubuntu/jammy main]
+libopenh264-6 2.2.0+dfsg-2 [Ubuntu/jammy universe]
+libopenjp2-7 2.4.0-6 [Ubuntu/jammy main]
+libopenjp2-7:i386 2.4.0-6 [Ubuntu/jammy main]
+libopenmpi3 4.1.2-2ubuntu1 [Ubuntu/jammy universe]
+libopenmpt-modplug1 0.8.9.0-openmpt1-2 [Ubuntu/jammy universe]
+libopenmpt0 0.6.1-1 [Ubuntu/jammy universe]
+libopenni2-0 2.2.0.33+dfsg-15 [Ubuntu/jammy universe]
+libopus0 1.3.1-0.1build2 [Ubuntu/jammy main]
+libopus0:i386 1.3.1-0.1build2 [Ubuntu/jammy main]
+liborc-0.4-0 1:0.4.32-2 [Ubuntu/jammy main]
+liborc-0.4-0:i386 1:0.4.32-2 [Ubuntu/jammy main]
+liborcus-0.17-0 0.17.2-2 [Ubuntu/jammy main]
+liborcus-parser-0.17-0 0.17.2-2 [Ubuntu/jammy main]
+libosmesa6 22.2.5-0ubuntu0.1~22.04.1 [local]
+libosmesa6:i386 22.2.5-0ubuntu0.1~22.04.1 [local]
+libosmgpsmap-1.0-1 1.2.0-1build1 [Ubuntu/jammy universe]
+libosp5 1.5.2-13ubuntu3 [Ubuntu/jammy universe]
+libostree-1-1 2022.2-3 [Ubuntu/jammy universe]
+libostyle1c2 1.4devel1-22 [Ubuntu/jammy universe]
+libotf1 0.9.16-3build1 [Ubuntu/jammy main]
+libp11-kit-dev 0.24.0-6build1 [Ubuntu/jammy main]
+libp11-kit0 0.24.0-6build1 [Ubuntu/jammy main]
+libp11-kit0:i386 0.24.0-6build1 [Ubuntu/jammy main]
+libpackage-stash-perl 0.39-1 [Ubuntu/jammy main]
+libpackage-stash-xs-perl 0.29-1build5 [Ubuntu/jammy main]
+libpackagekit-glib2-18 1.2.5-2ubuntu2 [Ubuntu/jammy main]
+libpadwalker-perl 2.5-1build2 [Ubuntu/jammy universe]
+libpagemaker-0.0-0 0.0.4-1build3 [Ubuntu/jammy main]
+libpam-cap 1:2.44-1build3 [Ubuntu/jammy main]
+libpam-fprintd 1.94.2-1ubuntu0.22.04.1 [Ubuntu/jammy main]
+libpam-gnome-keyring 40.0-3ubuntu3 [Ubuntu/jammy main]
+libpam-modules 1.4.0-11ubuntu2.3 [Ubuntu/jammy main]
+libpam-modules-bin 1.4.0-11ubuntu2.3 [Ubuntu/jammy main]
+libpam-pwquality 1.4.4-1build2 [Ubuntu/jammy main]
+libpam-runtime 1.4.0-11ubuntu2.3 [Ubuntu/jammy main]
+libpam-sss 2.6.3-1ubuntu3.2 [Ubuntu/jammy main]
+libpam-systemd 249.11-0ubuntu3.9 [Ubuntu/jammy main]
+libpam0g 1.4.0-11ubuntu2.3 [Ubuntu/jammy main]
+libpam0g-dev 1.4.0-11ubuntu2.3 [Ubuntu/jammy main]
+libpango-1.0-0 1.50.6+ds-2ubuntu1 [Ubuntu/jammy main]
+libpango-1.0-0:i386 1.50.6+ds-2ubuntu1 [Ubuntu/jammy main]
+libpango-perl 1.227-3build3 [Ubuntu/jammy universe]
+libpango1.0-0:i386 1.50.6+ds-2ubuntu1 [Ubuntu/jammy universe]
+libpango1.0-dev 1.50.6+ds-2ubuntu1 [Ubuntu/jammy main]
+libpango1.0-doc 1.50.6+ds-2ubuntu1 [Ubuntu/jammy main]
+libpangocairo-1.0-0 1.50.6+ds-2ubuntu1 [Ubuntu/jammy main]
+libpangocairo-1.0-0:i386 1.50.6+ds-2ubuntu1 [Ubuntu/jammy main]
+libpangoft2-1.0-0 1.50.6+ds-2ubuntu1 [Ubuntu/jammy main]
+libpangoft2-1.0-0:i386 1.50.6+ds-2ubuntu1 [Ubuntu/jammy main]
+libpangomm-1.4-1v5 2.46.2-1 [Ubuntu/jammy main]
+libpangoxft-1.0-0 1.50.6+ds-2ubuntu1 [Ubuntu/jammy main]
+libpangoxft-1.0-0:i386 1.50.6+ds-2ubuntu1 [Ubuntu/jammy main]
+libpaper-utils 1.1.28build2 [Ubuntu/jammy main]
+libpaper1 1.1.28build2 [Ubuntu/jammy main]
+libparallel-forkmanager-perl 2.02-1 [Ubuntu/jammy universe]
+libparams-classify-perl 0.015-1build5 [Ubuntu/jammy main]
+libparams-util-perl 1.102-1build3 [Ubuntu/jammy main]
+libparams-validate-perl 1.30-1build3 [Ubuntu/jammy universe]
+libparams-validationcompiler-perl 0.30-1 [Ubuntu/jammy universe]
+libpari-dev 2.13.3-1 [Ubuntu/jammy universe]
+libpari-gmp-tls7 2.13.3-1 [Ubuntu/jammy universe]
+libparse-recdescent-perl 1.967015+dfsg-2 [Ubuntu/jammy universe]
+libparted-fs-resize0 3.4-2build1 [Ubuntu/jammy main]
+libparted2 3.4-2build1 [Ubuntu/jammy main]
+libpath-tiny-perl 0.122-1 [Ubuntu/jammy main]
+libpath-utils1 0.6.2-1 [Ubuntu/jammy main]
+libpathplan4 2.42.2-6 [Ubuntu/jammy universe]
+libpcap0.8 1.10.1-4build1 [Ubuntu/jammy main]
+libpcap0.8:i386 1.10.1-4build1 [Ubuntu/jammy main]
+libpcaudio0 1.1-6build2 [Ubuntu/jammy main]
+libpci3 1:3.7.0-6 [Ubuntu/jammy main]
+libpci3:i386 1:3.7.0-6 [Ubuntu/jammy main]
+libpciaccess-dev 0.16-3 [Ubuntu/jammy main]
+libpciaccess0 0.16-3 [Ubuntu/jammy main]
+libpcre16-3 2:8.39-13ubuntu0.22.04.1 [Ubuntu/jammy main]
+libpcre2-16-0 10.39-3ubuntu0.1 [Ubuntu/jammy main]
+libpcre2-32-0 10.39-3ubuntu0.1 [Ubuntu/jammy main]
+libpcre2-8-0 10.39-3ubuntu0.1 [Ubuntu/jammy main]
+libpcre2-8-0:i386 10.39-3ubuntu0.1 [Ubuntu/jammy main]
+libpcre2-dev 10.39-3ubuntu0.1 [Ubuntu/jammy main]
+libpcre2-posix3 10.39-3ubuntu0.1 [Ubuntu/jammy main]
+libpcre3 2:8.39-13ubuntu0.22.04.1 [Ubuntu/jammy main]
+libpcre3-dev 2:8.39-13ubuntu0.22.04.1 [Ubuntu/jammy main]
+libpcre32-3 2:8.39-13ubuntu0.22.04.1 [Ubuntu/jammy main]
+libpcre3:i386 2:8.39-13ubuntu0.22.04.1 [Ubuntu/jammy main]
+libpcrecpp0v5 2:8.39-13ubuntu0.22.04.1 [Ubuntu/jammy main]
+libpcsclite1 1.9.5-3 [Ubuntu/jammy main]
+libpdfbox-java 1:1.8.16-2 [Ubuntu/jammy universe]
+libpeas-1.0-0 1.32.0-1 [Ubuntu/jammy main]
+libpeas-common 1.32.0-1 [Ubuntu/jammy main]
+libperl4-corelibs-perl 0.004-2 [Ubuntu/jammy main]
+libperl5.34 5.34.0-3ubuntu1.1 [Ubuntu/jammy main]
+libperl5.34:i386 5.34.0-3ubuntu1.1 [Ubuntu/jammy main]
+libperlio-gzip-perl 0.19-1build8 [Ubuntu/jammy main]
+libperlio-utf8-strict-perl 0.009-1build1 [Ubuntu/jammy main]
+libpfm4 4.11.1+git32-gd0b85fb-1ubuntu0.1 [Ubuntu/jammy main]
+libpgm-5.3-0 5.3.128~dfsg-2 [Ubuntu/jammy universe]
+libpgm-dev 5.3.128~dfsg-2 [Ubuntu/jammy universe]
+libphonenumber8 8.12.44-1 [Ubuntu/jammy main]
+libphonon4qt5-4 4:4.11.1-4 [Ubuntu/jammy universe]
+libphonon4qt5-data 4:4.11.1-4 [Ubuntu/jammy universe]
+libpipeline1 1.5.5-1 [Ubuntu/jammy main]
+libpipewire-0.3-0 0.3.48-1ubuntu3 [Ubuntu/jammy main]
+libpipewire-0.3-common 0.3.48-1ubuntu3 [Ubuntu/jammy main]
+libpipewire-0.3-modules 0.3.48-1ubuntu3 [Ubuntu/jammy main]
+libpixman-1-0 0.40.0-1ubuntu0.22.04.1 [Ubuntu/jammy main]
+libpixman-1-0:i386 0.40.0-1ubuntu0.22.04.1 [Ubuntu/jammy main]
+libpixman-1-dev 0.40.0-1ubuntu0.22.04.1 [Ubuntu/jammy main]
+libpkcs11-helper1 1.28-1ubuntu0.22.04.1 [Ubuntu/jammy main]
+libplacebo192 4.192.1-1 [Ubuntu/jammy universe]
+libplanarity-dev 3.0.1.1-1 [Ubuntu/jammy universe]
+libplanarity0 3.0.1.1-1 [Ubuntu/jammy universe]
+libplayerctl2 2.4.1-1 [Ubuntu/jammy universe]
+libplexus-cipher-java 1.8-2 [Ubuntu/jammy universe]
+libplexus-classworlds-java 2.6.0-1 [Ubuntu/jammy universe]
+libplexus-compiler-java 2.8.8-2 [Ubuntu/jammy universe]
+libplexus-component-annotations-java 2.1.0-1 [Ubuntu/jammy universe]
+libplexus-container-default-java 2.1.0-1 [Ubuntu/jammy universe]
+libplexus-interpolation-java 1.26-1 [Ubuntu/jammy universe]
+libplexus-languages-java 0.9.10-2 [Ubuntu/jammy universe]
+libplexus-sec-dispatcher-java 1.4-4 [Ubuntu/jammy universe]
+libplexus-utils2-java 3.3.0-1 [Ubuntu/jammy universe]
+libplist3 2.2.0-6build2 [Ubuntu/jammy main]
+libplot2c2 2.6-11 [Ubuntu/jammy universe]
+libplymouth5 0.9.5+git20211018-1ubuntu3 [Ubuntu/jammy main]
+libpmix2 4.1.2-2ubuntu1 [Ubuntu/jammy universe]
+libpng-dev 1.6.37-3build5 [Ubuntu/jammy main]
+libpng-tools 1.6.37-3build5 [Ubuntu/jammy main]
+libpng16-16 1.6.37-3build5 [Ubuntu/jammy main]
+libpng16-16:i386 1.6.37-3build5 [Ubuntu/jammy main]
+libpocketsphinx3 0.8.0+real5prealpha+1-14ubuntu1 [Ubuntu/jammy universe]
+libpolkit-agent-1-0 0.105-33 [Ubuntu/jammy main]
+libpolkit-gobject-1-0 0.105-33 [Ubuntu/jammy main]
+libpolkit-qt5-1-1 0.114.0-2 [Ubuntu/jammy universe]
+libpoppler-cpp0v5 22.02.0-2ubuntu0.1 [Ubuntu/jammy main]
+libpoppler-glib8 22.02.0-2ubuntu0.1 [Ubuntu/jammy main]
+libpoppler-glib8:i386 22.02.0-2ubuntu0.1 [Ubuntu/jammy main]
+libpoppler-qt5-1 22.02.0-2ubuntu0.1 [Ubuntu/jammy universe]
+libpoppler118 22.02.0-2ubuntu0.1 [Ubuntu/jammy main]
+libpoppler118:i386 22.02.0-2ubuntu0.1 [Ubuntu/jammy main]
+libpopt0 1.18-3build1 [Ubuntu/jammy main]
+libpostproc-dev 7:4.4.2-0ubuntu0.22.04.1 [Ubuntu/jammy universe]
+libpostproc55 7:4.4.2-0ubuntu0.22.04.1 [Ubuntu/jammy universe]
+libpotrace0 1.16-2 [Ubuntu/jammy universe]
+libppl-c4 1:1.2-8.1build1 [Ubuntu/jammy universe]
+libppl-dev 1:1.2-8.1build1 [Ubuntu/jammy universe]
+libppl14 1:1.2-8.1build1 [Ubuntu/jammy universe]
+libpq5 14.7-0ubuntu0.22.04.1 [Ubuntu/jammy main]
+libprimecount7 7.2+ds-6 [Ubuntu/jammy universe]
+libprimesieve9 7.8+ds-1 [Ubuntu/jammy universe]
+libproc-processtable-perl 0.634-1build1 [Ubuntu/jammy main]
+libprocps8 2:3.3.17-6ubuntu2 [Ubuntu/jammy main]
+libproj-dev 8.2.1-1 [Ubuntu/jammy universe]
+libproj22 8.2.1-1 [Ubuntu/jammy universe]
+libprotobuf-lite23 3.12.4-1ubuntu7.22.04.1 [Ubuntu/jammy main]
+libprotobuf23 3.12.4-1ubuntu7.22.04.1 [Ubuntu/jammy main]
+libproxy-tools 0.4.17-2 [Ubuntu/jammy universe]
+libproxy1-plugin-gsettings 0.4.17-2 [Ubuntu/jammy main]
+libproxy1-plugin-networkmanager 0.4.17-2 [Ubuntu/jammy main]
+libproxy1v5 0.4.17-2 [Ubuntu/jammy main]
+libproxy1v5:i386 0.4.17-2 [Ubuntu/jammy main]
+libpskc0 2.6.7-3build1 [Ubuntu/jammy main]
+libpsl5 0.21.0-1.2build2 [Ubuntu/jammy main]
+libpsl5:i386 0.21.0-1.2build2 [Ubuntu/jammy main]
+libpsm-infinipath1 3.3+20.604758e7-6.1 [Ubuntu/jammy universe]
+libpsm2-2 11.2.185-1 [Ubuntu/jammy universe]
+libpstoedit0c2a 3.78-1 [Ubuntu/jammy universe]
+libptexenc1 2021.20210626.59705-1build1 [Ubuntu/jammy main]
+libpthread-stubs0-dev 0.4-1build2 [Ubuntu/jammy main]
+libptytty0 2.0-1 [Ubuntu/jammy universe]
+libpugixml1v5 1.12.1-1 [Ubuntu/jammy universe]
+libpulse-dev 1:15.99.1+dfsg1-1ubuntu2.1 [Ubuntu/jammy main]
+libpulse-mainloop-glib0 1:15.99.1+dfsg1-1ubuntu2.1 [Ubuntu/jammy main]
+libpulse0 1:15.99.1+dfsg1-1ubuntu2.1 [Ubuntu/jammy main]
+libpulse0:i386 1:15.99.1+dfsg1-1ubuntu2.1 [Ubuntu/jammy main]
+libpulsedsp 1:15.99.1+dfsg1-1ubuntu2.1 [Ubuntu/jammy main]
+libpwquality-common 1.4.4-1build2 [Ubuntu/jammy main]
+libpwquality1 1.4.4-1build2 [Ubuntu/jammy main]
+libpython2-stdlib 2.7.18-3 [Ubuntu/jammy universe]
+libpython2.7-minimal 2.7.18-13ubuntu1.1 [Ubuntu/jammy universe]
+libpython2.7-stdlib 2.7.18-13ubuntu1.1 [Ubuntu/jammy universe]
+libpython3-dev 3.10.6-1~22.04 [Ubuntu/jammy main]
+libpython3-stdlib 3.10.6-1~22.04 [Ubuntu/jammy main]
+libpython3.10 3.10.6-1~22.04.2ubuntu1 [Ubuntu/jammy main]
+libpython3.10-dev 3.10.6-1~22.04.2ubuntu1 [Ubuntu/jammy main]
+libpython3.10-minimal 3.10.6-1~22.04.2ubuntu1 [Ubuntu/jammy main]
+libpython3.10-stdlib 3.10.6-1~22.04.2ubuntu1 [Ubuntu/jammy main]
+libqca-qt5-2 2.3.4-1build1 [Ubuntu/jammy universe]
+libqca-qt5-2-plugins 2.3.4-1build1 [Ubuntu/jammy universe]
+libqdox2-java 2.0.0-1 [Ubuntu/jammy universe]
+libqhull-r8.0 2020.2-4 [Ubuntu/jammy universe]
+libqmi-glib5 1.32.0-1ubuntu0.22.04.1 [Ubuntu/jammy main]
+libqmi-proxy 1.32.0-1ubuntu0.22.04.1 [Ubuntu/jammy main]
+libqmobipocket2 4:21.12.3-0ubuntu1 [Ubuntu/jammy universe]
+libqpdf28 10.6.3-1 [Ubuntu/jammy main]
+libqqwing2v5 1.3.4-1.1ubuntu3 [Ubuntu/jammy main]
+libqrencode4 4.1.1-1 [Ubuntu/jammy universe]
+libqt5charts5 5.15.3-1 [Ubuntu/jammy universe]
+libqt5concurrent5 5.15.3+dfsg-2ubuntu0.2 [Ubuntu/jammy universe]
+libqt5core5a 5.15.3+dfsg-2ubuntu0.2 [Ubuntu/jammy universe]
+libqt5dbus5 5.15.3+dfsg-2ubuntu0.2 [Ubuntu/jammy universe]
+libqt5designer5 5.15.3-1 [Ubuntu/jammy universe]
+libqt5gui5 5.15.3+dfsg-2ubuntu0.2 [Ubuntu/jammy universe]
+libqt5help5 5.15.3-1 [Ubuntu/jammy universe]
+libqt5multimedia5 5.15.3-1 [Ubuntu/jammy universe]
+libqt5multimediaquick5 5.15.3-1 [Ubuntu/jammy universe]
+libqt5network5 5.15.3+dfsg-2ubuntu0.2 [Ubuntu/jammy universe]
+libqt5opengl5 5.15.3+dfsg-2ubuntu0.2 [Ubuntu/jammy universe]
+libqt5positioning5 5.15.3+dfsg-3 [Ubuntu/jammy universe]
+libqt5printsupport5 5.15.3+dfsg-2ubuntu0.2 [Ubuntu/jammy universe]
+libqt5qml5 5.15.3+dfsg-1 [Ubuntu/jammy universe]
+libqt5qmlmodels5 5.15.3+dfsg-1 [Ubuntu/jammy universe]
+libqt5qmlworkerscript5 5.15.3+dfsg-1 [Ubuntu/jammy universe]
+libqt5quick5 5.15.3+dfsg-1 [Ubuntu/jammy universe]
+libqt5quickcontrols2-5 5.15.3+dfsg-1 [Ubuntu/jammy universe]
+libqt5quickparticles5 5.15.3+dfsg-1 [Ubuntu/jammy universe]
+libqt5quicktemplates2-5 5.15.3+dfsg-1 [Ubuntu/jammy universe]
+libqt5quickwidgets5 5.15.3+dfsg-1 [Ubuntu/jammy universe]
+libqt5sensors5 5.15.3-1 [Ubuntu/jammy universe]
+libqt5sql5 5.15.3+dfsg-2ubuntu0.2 [Ubuntu/jammy universe]
+libqt5sql5-sqlite 5.15.3+dfsg-2ubuntu0.2 [Ubuntu/jammy universe]
+libqt5svg5 5.15.3-1 [Ubuntu/jammy universe]
+libqt5test5 5.15.3+dfsg-2ubuntu0.2 [Ubuntu/jammy universe]
+libqt5texttospeech5 5.15.3-1 [Ubuntu/jammy universe]
+libqt5waylandclient5 5.15.3-1 [Ubuntu/jammy universe]
+libqt5waylandcompositor5 5.15.3-1 [Ubuntu/jammy universe]
+libqt5webchannel5 5.15.3-1 [Ubuntu/jammy universe]
+libqt5webengine-data 5.15.9+dfsg-1 [Ubuntu/jammy universe]
+libqt5webengine5 5.15.9+dfsg-1 [Ubuntu/jammy universe]
+libqt5webenginecore5 5.15.9+dfsg-1 [Ubuntu/jammy universe]
+libqt5webenginewidgets5 5.15.9+dfsg-1 [Ubuntu/jammy universe]
+libqt5webkit5 5.212.0~alpha4-15ubuntu1 [Ubuntu/jammy universe]
+libqt5websockets5 5.15.3-1 [Ubuntu/jammy universe]
+libqt5widgets5 5.15.3+dfsg-2ubuntu0.2 [Ubuntu/jammy universe]
+libqt5x11extras5 5.15.3-1 [Ubuntu/jammy universe]
+libqt5xml5 5.15.3+dfsg-2ubuntu0.2 [Ubuntu/jammy universe]
+libquadmath0 12.1.0-2ubuntu1~22.04 [Ubuntu/jammy main]
+librabbitmq4 0.10.0-1ubuntu2 [Ubuntu/jammy main]
+libraptor2-0 2.0.15-0ubuntu4 [Ubuntu/jammy main]
+libraqm0 0.7.0-4ubuntu1 [Ubuntu/jammy main]
+librasqal3 0.9.33-0.2ubuntu1 [Ubuntu/jammy main]
+libratpoints-2.1.3 1:2.1.3-2 [Ubuntu/jammy universe]
+libratpoints-dev 1:2.1.3-2 [Ubuntu/jammy universe]
+libraw1394-11 2.1.2-2build2 [Ubuntu/jammy main]
+libraw1394-11:i386 2.1.2-2build2 [Ubuntu/jammy main]
+libraw20 0.20.2-2ubuntu2 [Ubuntu/jammy main]
+librbio2 1:5.10.1+dfsg-4build1 [Ubuntu/jammy universe]
+librcc0 0.2.12-0.1 [Ubuntu/jammy universe]
+librccgtk2-0 0.2.12-0.1 [Ubuntu/jammy universe]
+librcd0 0.1.14-1 [Ubuntu/jammy universe]
+librdf0 1.0.17-1.1ubuntu3 [Ubuntu/jammy main]
+librdmacm1 39.0-1 [Ubuntu/jammy main]
+libre2-9 20220201+dfsg-1 [Ubuntu/jammy main]
+libreadline-dev 8.1.2-1 [Ubuntu/jammy main]
+libreadline7 7.0-3 [local]
+libreadline8 8.1.2-1 [Ubuntu/jammy main]
+libreadonly-perl 2.050-3 [Ubuntu/jammy main]
+librecode0 3.6-24build2 [Ubuntu/jammy main]
+libref-array1 0.6.2-1 [Ubuntu/jammy main]
+libref-util-perl 0.204-1 [Ubuntu/jammy main]
+libref-util-xs-perl 0.117-1build5 [Ubuntu/jammy main]
+libregexp-assemble-perl 0.36-1.1 [Ubuntu/jammy universe]
+libregexp-common-perl 2017060201-1 [Ubuntu/jammy universe]
+libreoffice-base-core 1:7.3.7-0ubuntu0.22.04.2 [Ubuntu/jammy main]
+libreoffice-calc 1:7.3.7-0ubuntu0.22.04.2 [Ubuntu/jammy main]
+libreoffice-common 1:7.3.7-0ubuntu0.22.04.2 [Ubuntu/jammy main]
+libreoffice-core 1:7.3.7-0ubuntu0.22.04.2 [Ubuntu/jammy main]
+libreoffice-draw 1:7.3.7-0ubuntu0.22.04.2 [Ubuntu/jammy main]
+libreoffice-help-common 1:7.3.7-0ubuntu0.22.04.2 [Ubuntu/jammy main]
+libreoffice-help-en-us 1:7.3.7-0ubuntu0.22.04.2 [Ubuntu/jammy main]
+libreoffice-impress 1:7.3.7-0ubuntu0.22.04.2 [Ubuntu/jammy main]
+libreoffice-math 1:7.3.7-0ubuntu0.22.04.2 [Ubuntu/jammy main]
+libreoffice-style-breeze 1:7.3.7-0ubuntu0.22.04.2 [Ubuntu/jammy main]
+libreoffice-style-colibre 1:7.3.7-0ubuntu0.22.04.2 [Ubuntu/jammy main]
+libreoffice-writer 1:7.3.7-0ubuntu0.22.04.2 [Ubuntu/jammy main]
+libresid-builder0c2a 2.1.1-15ubuntu2 [Ubuntu/jammy universe]
+librest-0.7-0 0.8.1-1.1build2 [Ubuntu/jammy main]
+librevenge-0.0-0 0.0.4-6ubuntu7 [Ubuntu/jammy main]
+librhash0 1.4.2-1ubuntu1 [Ubuntu/jammy main]
+librhythmbox-core10 3.4.4-5ubuntu1 [Ubuntu/jammy main]
+libroken18-heimdal 7.7.0+dfsg-3ubuntu1 [Ubuntu/jammy universe]
+libroken18-heimdal:i386 7.7.0+dfsg-3ubuntu1 [Ubuntu/jammy universe]
+librole-tiny-perl 2.002004-1 [Ubuntu/jammy main]
+librpm9 4.17.0+dfsg1-4build1 [Ubuntu/jammy universe]
+librpmbuild9 4.17.0+dfsg1-4build1 [Ubuntu/jammy universe]
+librpmio9 4.17.0+dfsg1-4build1 [Ubuntu/jammy universe]
+librpmsign9 4.17.0+dfsg1-4build1 [Ubuntu/jammy universe]
+librsvg2-2 2.52.5+dfsg-3 [Ubuntu/jammy main]
+librsvg2-2:i386 2.52.5+dfsg-3 [Ubuntu/jammy main]
+librsvg2-common 2.52.5+dfsg-3 [Ubuntu/jammy main]
+librsvg2-common:i386 2.52.5+dfsg-3 [Ubuntu/jammy main]
+librsync2 2.3.2-1ubuntu1 [Ubuntu/jammy main]
+librtmp1 2.4+20151223.gitfa8646d.1-2build4 [Ubuntu/jammy main]
+librtmp1:i386 2.4+20151223.gitfa8646d.1-2build4 [Ubuntu/jammy main]
+librubberband2 2.0.0-2 [Ubuntu/jammy universe]
+libruby2.7 2.7.4-1ubuntu3.2 [local]
+libruby3.0 3.0.2-7ubuntu2.3 [Ubuntu/jammy main]
+librw-dev 0.9+ds1-1 [Ubuntu/jammy universe]
+librw0 0.9+ds1-1 [Ubuntu/jammy universe]
+librygel-core-2.6-2 0.40.3-1ubuntu2 [Ubuntu/jammy main]
+librygel-db-2.6-2 0.40.3-1ubuntu2 [Ubuntu/jammy main]
+librygel-renderer-2.6-2 0.40.3-1ubuntu2 [Ubuntu/jammy main]
+librygel-server-2.6-2 0.40.3-1ubuntu2 [Ubuntu/jammy main]
+libsamplerate0 0.2.2-1build1 [Ubuntu/jammy main]
+libsamplerate0:i386 0.2.2-1build1 [Ubuntu/jammy main]
+libsane 1.1.1-5 [Ubuntu/jammy universe]
+libsane-common 1.1.1-5 [Ubuntu/jammy main]
+libsane-hpaio 3.21.12+dfsg0-1 [Ubuntu/jammy main]
+libsane1 1.1.1-5 [Ubuntu/jammy main]
+libsane1:i386 1.1.1-5 [Ubuntu/jammy main]
+libsane:i386 1.1.1-5 [Ubuntu/jammy universe]
+libsasl2-2 2.1.27+dfsg2-3ubuntu1.2 [Ubuntu/jammy main]
+libsasl2-2:i386 2.1.27+dfsg2-3ubuntu1.2 [Ubuntu/jammy main]
+libsasl2-modules 2.1.27+dfsg2-3ubuntu1.2 [Ubuntu/jammy main]
+libsasl2-modules-db 2.1.27+dfsg2-3ubuntu1.2 [Ubuntu/jammy main]
+libsasl2-modules-db:i386 2.1.27+dfsg2-3ubuntu1.2 [Ubuntu/jammy main]
+libsasl2-modules-gssapi-mit 2.1.27+dfsg2-3ubuntu1.2 [Ubuntu/jammy main]
+libsasl2-modules:i386 2.1.27+dfsg2-3ubuntu1.2 [Ubuntu/jammy main]
+libsass1 3.6.5-1ubuntu1 [Ubuntu/jammy universe]
+libsbc1 1.5-3build2 [Ubuntu/jammy main]
+libscalar-list-utils-perl 1:1.61-1 [Ubuntu/jammy universe]
+libsdl-image1.2 1.2.12-13build1 [Ubuntu/jammy universe]
+libsdl1.2debian 1.2.15+dfsg2-6 [Ubuntu/jammy universe]
+libsdl2-2.0-0 2.0.20+dfsg-2ubuntu1.22.04.1 [Ubuntu/jammy main]
+libsdl2-2.0-0:i386 2.0.20+dfsg-2ubuntu1.22.04.1 [Ubuntu/jammy main]
+libsdl2-dev 2.0.20+dfsg-2ubuntu1.22.04.1 [Ubuntu/jammy universe]
+libseccomp-dev 2.5.3-2ubuntu2 [Ubuntu/jammy main]
+libseccomp2 2.5.3-2ubuntu2 [Ubuntu/jammy main]
+libsecret-1-0 0.20.5-2 [Ubuntu/jammy main]
+libsecret-common 0.20.5-2 [Ubuntu/jammy main]
+libselinux1 3.3-1build2 [Ubuntu/jammy main]
+libselinux1-dev 3.3-1build2 [Ubuntu/jammy main]
+libselinux1:i386 3.3-1build2 [Ubuntu/jammy main]
+libsemanage-common 3.3-1build2 [Ubuntu/jammy main]
+libsemanage2 3.3-1build2 [Ubuntu/jammy main]
+libsensors-config 1:3.6.0-7ubuntu1 [Ubuntu/jammy main]
+libsensors5 1:3.6.0-7ubuntu1 [Ubuntu/jammy main]
+libsensors5:i386 1:3.6.0-7ubuntu1 [Ubuntu/jammy main]
+libsepol-dev 3.3-1build1 [Ubuntu/jammy main]
+libsepol2 3.3-1build1 [Ubuntu/jammy main]
+libserd-0-0 0.30.10-2 [Ubuntu/jammy universe]
+libsereal-decoder-perl 4.023+ds-1 [Ubuntu/jammy main]
+libsereal-encoder-perl 4.023+ds-1 [Ubuntu/jammy main]
+libserf-1-1 1.3.9-10ubuntu2 [Ubuntu/jammy universe]
+libset-scalar-perl 1.29-2 [Ubuntu/jammy universe]
+libsexp1 1.3.1+18~git20210718-1 [Ubuntu/jammy universe]
+libsgutils2-2 1.46-1build1 [Ubuntu/jammy main]
+libshine3 3.1.1-2 [Ubuntu/jammy universe]
+libshout3 2.4.5-1build3 [Ubuntu/jammy main]
+libshout3:i386 2.4.5-1build3 [Ubuntu/jammy main]
+libsidplay1v5 1.36.60-1 [Ubuntu/jammy universe]
+libsidplay2 2.1.1-15ubuntu2 [Ubuntu/jammy universe]
+libsidplayfp6 2.3.1-1 [Ubuntu/jammy universe]
+libsigc++-2.0-0v5 2.10.4-2ubuntu3 [Ubuntu/jammy main]
+libsignon-plugins-common1 8.60+r699+dbusapi1+pkg3~daily~ubuntu6.0.1 [local]
+libsignon-qt5-1 8.60+r699+dbusapi1+pkg3~daily~ubuntu6.0.1 [local]
+libsigsegv2 2.13-1ubuntu3 [Ubuntu/jammy main]
+libsingular4-dev 1:4.2.1-p3+ds-1 [Ubuntu/jammy universe]
+libsingular4-dev-common 1:4.2.1-p3+ds-1 [Ubuntu/jammy universe]
+libsingular4m2n1 1:4.2.1-p3+ds-1 [Ubuntu/jammy universe]
+libsisu-inject-java 0.3.4-2 [Ubuntu/jammy universe]
+libsisu-plexus-java 0.3.4-3 [Ubuntu/jammy universe]
+libsixel-bin 1.10.3-3 [Ubuntu/jammy universe]
+libsixel-dev 1.10.3-3 [Ubuntu/jammy universe]
+libsixel1 1.10.3-3 [Ubuntu/jammy universe]
+libslang2 2.3.2-5build4 [Ubuntu/jammy main]
+libslang2-dev 2.3.2-5build4 [Ubuntu/jammy main]
+libslang2:i386 2.3.2-5build4 [Ubuntu/jammy main]
+libslf4j-java 1.7.32-1 [Ubuntu/jammy universe]
+libsliplu1 1:5.10.1+dfsg-4build1 [Ubuntu/jammy universe]
+libslirp0 4.6.1-1build1 [Ubuntu/jammy main]
+libsm-dev 2:1.2.3-1build2 [Ubuntu/jammy main]
+libsm6 2:1.2.3-1build2 [Ubuntu/jammy main]
+libsmartcols1 2.37.2-4ubuntu3 [Ubuntu/jammy main]
+libsmbclient 2:4.15.13+dfsg-0ubuntu1.1 [Ubuntu/jammy main]
+libsmbios-c2 2.4.3-1build1 [Ubuntu/jammy main]
+libsnapd-glib1 1.60-0ubuntu1 [Ubuntu/jammy main]
+libsnappy1v5 1.1.8-1build3 [Ubuntu/jammy main]
+libsndfile1 1.0.31-2build1 [Ubuntu/jammy main]
+libsndfile1:i386 1.0.31-2build1 [Ubuntu/jammy main]
+libsndio-dev 1.8.1-1.1 [Ubuntu/jammy universe]
+libsndio7.0 1.8.1-1.1 [Ubuntu/jammy universe]
+libsndio7.0:i386 1.8.1-1.1 [Ubuntu/jammy universe]
+libsnmp-base 5.9.1+dfsg-1ubuntu2.6 [Ubuntu/jammy main]
+libsnmp40 5.9.1+dfsg-1ubuntu2.6 [Ubuntu/jammy main]
+libsnmp40:i386 5.9.1+dfsg-1ubuntu2.6 [Ubuntu/jammy main]
+libsocket6-perl 0.29-1build4 [Ubuntu/jammy main]
+libsodium-dev 1.0.18-1build2 [Ubuntu/jammy main]
+libsodium23 1.0.18-1build2 [Ubuntu/jammy main]
+libsombok3 2.4.0-2 [Ubuntu/jammy universe]
+libsonic0 0.2.0-11build1 [Ubuntu/jammy main]
+libsord-0-0 0.16.8-2 [Ubuntu/jammy universe]
+libsort-key-perl 1.33-2build5 [Ubuntu/jammy universe]
+libsort-versions-perl 1.62-1 [Ubuntu/jammy main]
+libsoundtouch1 2.3.1+ds1-1 [Ubuntu/jammy universe]
+libsoup-gnome2.4-1 2.74.2-3 [Ubuntu/jammy main]
+libsoup2.4-1 2.74.2-3 [Ubuntu/jammy main]
+libsoup2.4-1:i386 2.74.2-3 [Ubuntu/jammy main]
+libsoup2.4-common 2.74.2-3 [Ubuntu/jammy main]
+libsource-highlight-common 3.1.9-4.1build2 [Ubuntu/jammy main]
+libsource-highlight4v5 3.1.9-4.1build2 [Ubuntu/jammy main]
+libsox-fmt-alsa 14.4.2+git20190427-2+deb11u2build0.22.04.1 [Ubuntu/jammy universe]
+libsox-fmt-base 14.4.2+git20190427-2+deb11u2build0.22.04.1 [Ubuntu/jammy universe]
+libsox-fmt-pulse 14.4.2+git20190427-2+deb11u2build0.22.04.1 [Ubuntu/jammy universe]
+libsox3 14.4.2+git20190427-2+deb11u2build0.22.04.1 [Ubuntu/jammy universe]
+libsoxr0 0.1.3-4build2 [Ubuntu/jammy main]
+libspa-0.2-modules 0.3.48-1ubuntu3 [Ubuntu/jammy main]
+libspandsp2 0.0.6+dfsg-2 [Ubuntu/jammy universe]
+libspatialaudio0 0.3.0+git20180730+dfsg1-2build1 [Ubuntu/jammy universe]
+libspecio-perl 0.47-1 [Ubuntu/jammy universe]
+libspectre1 0.2.10-1 [Ubuntu/jammy main]
+libspeechd2 0.11.1-1ubuntu2 [Ubuntu/jammy main]
+libspeex1 1.2~rc1.2-1.1ubuntu3 [Ubuntu/jammy main]
+libspeex1:i386 1.2~rc1.2-1.1ubuntu3 [Ubuntu/jammy main]
+libspeexdsp1 1.2~rc1.2-1.1ubuntu3 [Ubuntu/jammy main]
+libsphinxbase3 0.8+5prealpha+1-13build1 [Ubuntu/jammy universe]
+libspiro-dev 1:20200505-2 [Ubuntu/jammy universe]
+libspiro1 1:20200505-2 [Ubuntu/jammy universe]
+libspotify-dev 12.1.51-1 [local]
+libspotify12 12.1.51-1 [local]
+libspqr2 1:5.10.1+dfsg-4build1 [Ubuntu/jammy universe]
+libsqlite3-0 3.37.2-2ubuntu0.1 [Ubuntu/jammy main]
+libsqlite3-0:i386 3.37.2-2ubuntu0.1 [Ubuntu/jammy main]
+libsqlite3-dev 3.37.2-2ubuntu0.1 [Ubuntu/jammy main]
+libsratom-0-0 0.6.8-1 [Ubuntu/jammy universe]
+libsrt1.4-gnutls 1.4.4-4 [Ubuntu/jammy universe]
+libsrtp2-1 2.4.2-2 [Ubuntu/jammy universe]
+libss2 1.46.5-2ubuntu1.1 [Ubuntu/jammy main]
+libssh-4 0.9.6-2build1 [Ubuntu/jammy main]
+libssh-4:i386 0.9.6-2build1 [Ubuntu/jammy main]
+libssh-gcrypt-4 0.9.6-2build1 [Ubuntu/jammy main]
+libssh2-1 1.10.0-3 [Ubuntu/jammy universe]
+libssl-dev 3.0.2-0ubuntu1.9 [Ubuntu/jammy main]
+libssl1.1 1.1.1l-1ubuntu1.6 [local]
+libssl3 3.0.2-0ubuntu1.9 [Ubuntu/jammy main]
+libssl3:i386 3.0.2-0ubuntu1.9 [Ubuntu/jammy main]
+libsss-certmap0 2.6.3-1ubuntu3.2 [Ubuntu/jammy main]
+libsss-idmap0 2.6.3-1ubuntu3.2 [Ubuntu/jammy main]
+libsss-nss-idmap0 2.6.3-1ubuntu3.2 [Ubuntu/jammy main]
+libstartup-notification0 0.12-6build2 [Ubuntu/jammy main]
+libstb0 0.0~git20210910.af1a5bc+ds-1 [Ubuntu/jammy universe]
+libstb0:i386 0.0~git20210910.af1a5bc+ds-1 [Ubuntu/jammy universe]
+libstdc++-10-dev 10.4.0-4ubuntu1~22.04 [Ubuntu/jammy universe]
+libstdc++-11-dev 11.3.0-1ubuntu1~22.04.1 [Ubuntu/jammy main]
+libstdc++-9-dev 9.5.0-1ubuntu1~22.04 [Ubuntu/jammy universe]
+libstdc++6 12.1.0-2ubuntu1~22.04 [Ubuntu/jammy main]
+libstdc++6:i386 12.1.0-2ubuntu1~22.04 [Ubuntu/jammy main]
+libstemmer0d 2.2.0-1build1 [Ubuntu/jammy main]
+libstfl0 0.22-3build1 [Ubuntu/jammy universe]
+libstoken1 0.92-1 [Ubuntu/jammy universe]
+libstrictures-perl 2.000006-1 [Ubuntu/jammy main]
+libstring-crc32-perl 2.100-1build1 [Ubuntu/jammy universe]
+libsub-exporter-perl 0.988-1 [Ubuntu/jammy main]
+libsub-exporter-progressive-perl 0.001013-1 [Ubuntu/jammy main]
+libsub-identify-perl 0.14-1build5 [Ubuntu/jammy main]
+libsub-install-perl 0.928-1.1 [Ubuntu/jammy main]
+libsub-name-perl 0.26-1build3 [Ubuntu/jammy main]
+libsub-override-perl 0.09-2 [Ubuntu/jammy main]
+libsub-quote-perl 2.006006-1 [Ubuntu/jammy main]
+libsuitesparse-dev 1:5.10.1+dfsg-4build1 [Ubuntu/jammy universe]
+libsuitesparseconfig5 1:5.10.1+dfsg-4build1 [Ubuntu/jammy main]
+libsvn-perl 1.14.1-3ubuntu0.22.04.1 [Ubuntu/jammy universe]
+libsvn1 1.14.1-3ubuntu0.22.04.1 [Ubuntu/jammy universe]
+libswresample-dev 7:4.4.2-0ubuntu0.22.04.1 [Ubuntu/jammy universe]
+libswresample3 7:4.4.2-0ubuntu0.22.04.1 [Ubuntu/jammy universe]
+libswscale-dev 7:4.4.2-0ubuntu0.22.04.1 [Ubuntu/jammy universe]
+libswscale5 7:4.4.2-0ubuntu0.22.04.1 [Ubuntu/jammy universe]
+libsymmetrica2 2.0+ds-6 [Ubuntu/jammy universe]
+libsymmetrica2-dev 2.0+ds-6 [Ubuntu/jammy universe]
+libsynctex2 2021.20210626.59705-1build1 [Ubuntu/jammy main]
+libsyntax-keyword-try-perl 0.26-1build1 [Ubuntu/jammy main]
+libsys-hostname-long-perl 1.5-2 [Ubuntu/jammy main]
+libsysmetrics1 1.7.1 [Ubuntu/jammy main]
+libsystemd0 249.11-0ubuntu3.9 [Ubuntu/jammy main]
+libsystemd0:i386 249.11-0ubuntu3.9 [Ubuntu/jammy main]
+libsz2 1.0.6-1 [Ubuntu/jammy universe]
+libtachyon-mt-0 0.99~b6+dsx-10 [Ubuntu/jammy universe]
+libtag1v5 1.11.1+dfsg.1-3ubuntu3 [Ubuntu/jammy main]
+libtag1v5-vanilla 1.11.1+dfsg.1-3ubuntu3 [Ubuntu/jammy main]
+libtag1v5-vanilla:i386 1.11.1+dfsg.1-3ubuntu3 [Ubuntu/jammy main]
+libtag1v5:i386 1.11.1+dfsg.1-3ubuntu3 [Ubuntu/jammy main]
+libtalloc2 2.3.3-2build1 [Ubuntu/jammy main]
+libtasn1-6 4.18.0-4build1 [Ubuntu/jammy main]
+libtasn1-6-dev 4.18.0-4build1 [Ubuntu/jammy main]
+libtasn1-6:i386 4.18.0-4build1 [Ubuntu/jammy main]
+libtasn1-doc 4.18.0-4build1 [Ubuntu/jammy main]
+libtbb12 2021.5.0-7ubuntu2 [Ubuntu/jammy universe]
+libtbbmalloc2 2021.5.0-7ubuntu2 [Ubuntu/jammy universe]
+libtcl8.6 8.6.12+dfsg-1build1 [Ubuntu/jammy main]
+libtdb1 1.4.5-2build1 [Ubuntu/jammy main]
+libtdb1:i386 1.4.5-2build1 [Ubuntu/jammy main]
+libteamdctl0 1.31-1build2 [Ubuntu/jammy main]
+libteckit0 2.5.11+ds1-1 [Ubuntu/jammy universe]
+libtelepathy-glib0 0.24.1-3 [Ubuntu/jammy universe]
+libterm-readkey-perl 2.38-1build4 [Ubuntu/jammy main]
+libtermkey-dev 0.22-1 [Ubuntu/jammy universe]
+libtermkey1 0.22-1 [Ubuntu/jammy universe]
+libterralib3 4.3.0+dfsg.2-12.1build2 [Ubuntu/jammy universe]
+libtesseract-dev 4.1.1-2.1build1 [Ubuntu/jammy universe]
+libtesseract4 4.1.1-2.1build1 [Ubuntu/jammy universe]
+libtevent0 0.11.0-1build1 [Ubuntu/jammy main]
+libtexlua53 2021.20210626.59705-1build1 [Ubuntu/jammy main]
+libtexluajit2 2021.20210626.59705-1build1 [Ubuntu/jammy main]
+libtext-bibtex-perl 0.88-3build3 [Ubuntu/jammy universe]
+libtext-charwidth-perl 0.04-10build3 [Ubuntu/jammy main]
+libtext-csv-perl 2.01-1 [Ubuntu/jammy universe]
+libtext-csv-xs-perl 1.47-1build1 [Ubuntu/jammy universe]
+libtext-glob-perl 0.11-2 [Ubuntu/jammy main]
+libtext-iconv-perl 1.7-7build3 [Ubuntu/jammy main]
+libtext-levenshteinxs-perl 0.03-4build10 [Ubuntu/jammy main]
+libtext-markdown-discount-perl 0.13-1build1 [Ubuntu/jammy main]
+libtext-roman-perl 3.5-2.1 [Ubuntu/jammy universe]
+libtext-unidecode-perl 1.30-1 [Ubuntu/jammy universe]
+libtext-wrapi18n-perl 0.06-9 [Ubuntu/jammy main]
+libtext-xslate-perl 3.5.9-1build1 [Ubuntu/jammy main]
+libthai-data 0.1.29-1build1 [Ubuntu/jammy main]
+libthai-dev 0.1.29-1build1 [Ubuntu/jammy main]
+libthai0 0.1.29-1build1 [Ubuntu/jammy main]
+libthai0:i386 0.1.29-1build1 [Ubuntu/jammy main]
+libtheora0 1.1.1+dfsg.1-15ubuntu4 [Ubuntu/jammy main]
+libtheora0:i386 1.1.1+dfsg.1-15ubuntu4 [Ubuntu/jammy main]
+libthunarx-3-0 4.16.10-1 [Ubuntu/jammy universe]
+libtie-cycle-perl 1.226-1 [Ubuntu/jammy universe]
+libtie-ixhash-perl 1.23-2.1 [Ubuntu/jammy main]
+libtiff-dev 4.3.0-6ubuntu0.4 [Ubuntu/jammy main]
+libtiff5 4.3.0-6ubuntu0.4 [Ubuntu/jammy main]
+libtiff5-dev 4.3.0-6ubuntu0.4 [Ubuntu/jammy main]
+libtiff5:i386 4.3.0-6ubuntu0.4 [Ubuntu/jammy main]
+libtiffxx5 4.3.0-6ubuntu0.4 [Ubuntu/jammy main]
+libtime-duration-perl 1.21-1 [Ubuntu/jammy main]
+libtime-moment-perl 0.44-1build6 [Ubuntu/jammy main]
+libtimedate-perl 2.3300-2 [Ubuntu/jammy main]
+libtimezonemap-data 0.4.6-2build2 [Ubuntu/jammy main]
+libtimezonemap1 0.4.6-2build2 [Ubuntu/jammy main]
+libtinfo5 6.3-2ubuntu0.1 [Ubuntu/jammy universe]
+libtinfo6 6.3-2ubuntu0.1 [Ubuntu/jammy main]
+libtinfo6:i386 6.3-2ubuntu0.1 [Ubuntu/jammy main]
+libtinyxml2-9 9.0.0+dfsg-3 [Ubuntu/jammy universe]
+libtirpc-common 1.3.2-2ubuntu0.1 [Ubuntu/jammy main]
+libtirpc-dev 1.3.2-2ubuntu0.1 [Ubuntu/jammy main]
+libtirpc3 1.3.2-2ubuntu0.1 [Ubuntu/jammy main]
+libtirpc3:i386 1.3.2-2ubuntu0.1 [Ubuntu/jammy main]
+libtk8.6 8.6.12-1build1 [Ubuntu/jammy main]
+libtokyocabinet9 1.4.48-14build1 [Ubuntu/jammy main]
+libtomcrypt1 1.18.2-5 [Ubuntu/jammy universe]
+libtommath1 1.2.0-6build3 [Ubuntu/jammy main]
+libtool 2.4.6-15build2 [Ubuntu/jammy main]
+libtool-bin 2.4.6-15build2 [Ubuntu/jammy main]
+libtotem-plparser-common 3.26.6-1build1 [Ubuntu/jammy main]
+libtotem-plparser18 3.26.6-1build1 [Ubuntu/jammy main]
+libtotem0 42.0-1ubuntu1 [Ubuntu/jammy main]
+libtracker-sparql-3.0-0 3.3.0-1 [Ubuntu/jammy main]
+libtre5 0.8.0-6 [Ubuntu/jammy universe]
+libtry-tiny-perl 0.31-1 [Ubuntu/jammy main]
+libtsan0 11.3.0-1ubuntu1~22.04.1 [Ubuntu/jammy main]
+libtsan2 12.1.0-2ubuntu1~22.04 [Ubuntu/jammy main]
+libtss2-esys-3.0.2-0 3.2.0-1ubuntu1 [Ubuntu/jammy main]
+libtss2-mu0 3.2.0-1ubuntu1 [Ubuntu/jammy main]
+libtss2-sys1 3.2.0-1ubuntu1 [Ubuntu/jammy main]
+libtss2-tcti-cmd0 3.2.0-1ubuntu1 [Ubuntu/jammy main]
+libtss2-tcti-device0 3.2.0-1ubuntu1 [Ubuntu/jammy main]
+libtss2-tcti-mssim0 3.2.0-1ubuntu1 [Ubuntu/jammy main]
+libtss2-tcti-swtpm0 3.2.0-1ubuntu1 [Ubuntu/jammy main]
+libtss2-tctildr0 3.2.0-1ubuntu1 [Ubuntu/jammy main]
+libtumbler-1-0 4.16.0-1 [Ubuntu/jammy universe]
+libtwolame0 0.4.0-2build2 [Ubuntu/jammy main]
+libtwolame0:i386 0.4.0-2build2 [Ubuntu/jammy main]
+libtypes-serialiser-perl 1.01-1 [Ubuntu/jammy main]
+libu2f-udev 1.1.10-3build2 [Ubuntu/jammy main]
+libubsan1 12.1.0-2ubuntu1~22.04 [Ubuntu/jammy main]
+libuchardet0 0.0.7-1build2 [Ubuntu/jammy main]
+libucx0 1.12.1~rc2-1 [Ubuntu/jammy universe]
+libudev-dev 249.11-0ubuntu3.9 [Ubuntu/jammy main]
+libudev1 249.11-0ubuntu3.9 [Ubuntu/jammy main]
+libudev1:i386 249.11-0ubuntu3.9 [Ubuntu/jammy main]
+libudfread0 1.1.2-1 [Ubuntu/jammy universe]
+libudisks2-0 2.9.4-1ubuntu2 [Ubuntu/jammy main]
+libudunits2-0 2.2.28-3 [Ubuntu/jammy universe]
+libudunits2-data 2.2.28-3 [Ubuntu/jammy universe]
+libuim-custom2 1:1.8.8-9build1 [Ubuntu/jammy universe]
+libuim-data 1:1.8.8-9build1 [Ubuntu/jammy universe]
+libuim-scm0 1:1.8.8-9build1 [Ubuntu/jammy universe]
+libuim8 1:1.8.8-9build1 [Ubuntu/jammy universe]
+libumfpack5 1:5.10.1+dfsg-4build1 [Ubuntu/jammy universe]
+libunbound8 1.13.1-1ubuntu5.3 [Ubuntu/jammy main]
+libunibilium-dev 2.1.0-1 [Ubuntu/jammy universe]
+libunibilium4 2.1.0-1 [Ubuntu/jammy universe]
+libunicode-linebreak-perl 0.0.20190101-1build3 [Ubuntu/jammy universe]
+libunicode-utf8-perl 0.62-1build4 [Ubuntu/jammy main]
+libuninameslist1 20211114-1 [Ubuntu/jammy universe]
+libunistring2 1.0-1 [Ubuntu/jammy main]
+libunistring2:i386 1.0-1 [Ubuntu/jammy main]
+libunity-control-center1 15.04.0+21.10.20220207-0ubuntu3 [Ubuntu/jammy universe]
+libunity-core-6.0-9 7.5.1+22.04.20211026.2-0ubuntu1 [Ubuntu/jammy universe]
+libunity-gtk2-parser0 0.0.0+18.04.20171202-0ubuntu3 [Ubuntu/jammy universe]
+libunity-gtk3-parser0 0.0.0+18.04.20171202-0ubuntu3 [Ubuntu/jammy universe]
+libunity-misc4 4.0.5+14.04.20140115-0ubuntu3 [Ubuntu/jammy universe]
+libunity-protocol-private0 7.1.4+19.04.20190319-6build1 [Ubuntu/jammy main]
+libunity-scopes-json-def-desktop 7.1.4+19.04.20190319-6build1 [Ubuntu/jammy main]
+libunity-settings-daemon1 15.04.1+21.10.20220207-0ubuntu1 [Ubuntu/jammy universe]
+libunity9 7.1.4+19.04.20190319-6build1 [Ubuntu/jammy main]
+libuno-cppu3 1:7.3.7-0ubuntu0.22.04.2 [Ubuntu/jammy main]
+libuno-cppuhelpergcc3-3 1:7.3.7-0ubuntu0.22.04.2 [Ubuntu/jammy main]
+libuno-purpenvhelpergcc3-3 1:7.3.7-0ubuntu0.22.04.2 [Ubuntu/jammy main]
+libuno-sal3 1:7.3.7-0ubuntu0.22.04.2 [Ubuntu/jammy main]
+libuno-salhelpergcc3-3 1:7.3.7-0ubuntu0.22.04.2 [Ubuntu/jammy main]
+libunwind8 1.3.2-2build2 [Ubuntu/jammy main]
+libunwind8:i386 1.3.2-2build2 [Ubuntu/jammy main]
+libupnp13 1:1.8.4-2ubuntu2 [Ubuntu/jammy universe]
+libupower-glib3 0.99.17-1 [Ubuntu/jammy main]
+liburi-perl 5.10-1 [Ubuntu/jammy main]
+liburing2 2.1-2build1 [Ubuntu/jammy main]
+libusb-1.0-0 2:1.0.25-1ubuntu2 [Ubuntu/jammy main]
+libusb-1.0-0-dev 2:1.0.25-1ubuntu2 [Ubuntu/jammy main]
+libusb-1.0-0:i386 2:1.0.25-1ubuntu2 [Ubuntu/jammy main]
+libusb-1.0-doc 2:1.0.25-1ubuntu2 [Ubuntu/jammy main]
+libusbmuxd6 2.0.2-3build2 [Ubuntu/jammy main]
+libutempter0 1.2.1-2build2 [Ubuntu/jammy main]
+libutf8proc-dev 2.7.0-3 [Ubuntu/jammy universe]
+libutf8proc2 2.7.0-3 [Ubuntu/jammy universe]
+libuuid1 2.37.2-4ubuntu3 [Ubuntu/jammy main]
+libuuid1:i386 2.37.2-4ubuntu3 [Ubuntu/jammy main]
+libuv1 1.43.0-1 [Ubuntu/jammy main]
+libuv1-dev 1.43.0-1 [Ubuntu/jammy main]
+libv4l-0 1.22.1-2build1 [Ubuntu/jammy main]
+libv4l-0:i386 1.22.1-2build1 [Ubuntu/jammy main]
+libv4l2rds0 1.22.1-2build1 [Ubuntu/jammy main]
+libv4lconvert0 1.22.1-2build1 [Ubuntu/jammy main]
+libv4lconvert0:i386 1.22.1-2build1 [Ubuntu/jammy main]
+libva-drm2 2.14.0-1 [Ubuntu/jammy universe]
+libva-wayland2 2.14.0-1 [Ubuntu/jammy universe]
+libva-x11-2 2.14.0-1 [Ubuntu/jammy universe]
+libva2 2.14.0-1 [Ubuntu/jammy universe]
+libvariable-magic-perl 0.62-1build5 [Ubuntu/jammy main]
+libvdpau1 1.4-3build2 [Ubuntu/jammy main]
+libvidstab1.1 1.1.0-2 [Ubuntu/jammy universe]
+libvisio-0.1-1 0.1.7-1build5 [Ubuntu/jammy main]
+libvisual-0.4-0 0.4.0-17build2 [Ubuntu/jammy main]
+libvisual-0.4-0:i386 0.4.0-17build2 [Ubuntu/jammy main]
+libvkd3d1 1.1-5 [Ubuntu/jammy universe]
+libvkd3d1:i386 1.1-5 [Ubuntu/jammy universe]
+libvlc-bin 3.0.16-1build7 [Ubuntu/jammy universe]
+libvlc5 3.0.16-1build7 [Ubuntu/jammy universe]
+libvlccore9 3.0.16-1build7 [Ubuntu/jammy universe]
+libvncclient1 0.9.13+dfsg-3build2 [Ubuntu/jammy main]
+libvncserver1 0.9.13+dfsg-3build2 [Ubuntu/jammy main]
+libvo-aacenc0 0.1.3-2 [Ubuntu/jammy universe]
+libvo-amrwbenc0 0.1.3-2 [Ubuntu/jammy universe]
+libvoikko1 4.3.1-1build1 [Ubuntu/jammy main]
+libvolume-key1 0.3.12-3.1build3 [Ubuntu/jammy main]
+libvorbis0a 1.3.7-1build2 [Ubuntu/jammy main]
+libvorbis0a:i386 1.3.7-1build2 [Ubuntu/jammy main]
+libvorbisenc2 1.3.7-1build2 [Ubuntu/jammy main]
+libvorbisenc2:i386 1.3.7-1build2 [Ubuntu/jammy main]
+libvorbisfile3 1.3.7-1build2 [Ubuntu/jammy main]
+libvorbisfile3:i386 1.3.7-1build2 [Ubuntu/jammy main]
+libvpx-dev 1.11.0-2ubuntu2 [Ubuntu/jammy main]
+libvpx7 1.11.0-2ubuntu2 [Ubuntu/jammy main]
+libvpx7:i386 1.11.0-2ubuntu2 [Ubuntu/jammy main]
+libvte-2.91-0 0.68.0-1 [Ubuntu/jammy main]
+libvte-2.91-common 0.68.0-1 [Ubuntu/jammy main]
+libvterm-dev 0.1.4-1 [Ubuntu/jammy universe]
+libvterm0 0.1.4-1 [Ubuntu/jammy universe]
+libvulkan1 1.3.204.1-2 [Ubuntu/jammy main]
+libvulkan1:i386 1.3.204.1-2 [Ubuntu/jammy main]
+libwacom-bin 2.2.0-1 [Ubuntu/jammy main]
+libwacom-common 2.2.0-1 [Ubuntu/jammy main]
+libwacom9 2.2.0-1 [Ubuntu/jammy main]
+libwagon-provider-api-java 3.3.4-1 [Ubuntu/jammy universe]
+libwavpack1 5.4.0-1build2 [Ubuntu/jammy main]
+libwavpack1:i386 5.4.0-1build2 [Ubuntu/jammy main]
+libwayland-bin 1.20.0-1ubuntu0.1 [Ubuntu/jammy main]
+libwayland-client0 1.20.0-1ubuntu0.1 [Ubuntu/jammy main]
+libwayland-client0:i386 1.20.0-1ubuntu0.1 [Ubuntu/jammy main]
+libwayland-cursor0 1.20.0-1ubuntu0.1 [Ubuntu/jammy main]
+libwayland-cursor0:i386 1.20.0-1ubuntu0.1 [Ubuntu/jammy main]
+libwayland-dev 1.20.0-1ubuntu0.1 [Ubuntu/jammy main]
+libwayland-egl1 1.20.0-1ubuntu0.1 [Ubuntu/jammy main]
+libwayland-egl1:i386 1.20.0-1ubuntu0.1 [Ubuntu/jammy main]
+libwayland-server0 1.20.0-1ubuntu0.1 [Ubuntu/jammy main]
+libwayland-server0:i386 1.20.0-1ubuntu0.1 [Ubuntu/jammy main]
+libwbclient0 2:4.15.13+dfsg-0ubuntu1.1 [Ubuntu/jammy main]
+libwebkit2gtk-4.0-37 2.38.6-0ubuntu0.22.04.1 [Ubuntu/jammy main]
+libwebp-dev 1.2.2-2ubuntu0.22.04.1 [Ubuntu/jammy main]
+libwebp7 1.2.2-2ubuntu0.22.04.1 [Ubuntu/jammy main]
+libwebp7:i386 1.2.2-2ubuntu0.22.04.1 [Ubuntu/jammy main]
+libwebpdemux2 1.2.2-2ubuntu0.22.04.1 [Ubuntu/jammy main]
+libwebpmux3 1.2.2-2ubuntu0.22.04.1 [Ubuntu/jammy main]
+libwebrtc-audio-processing1 0.3.1-0ubuntu5 [Ubuntu/jammy main]
+libwebsockets-dev 4.0.20-2ubuntu1 [Ubuntu/jammy universe]
+libwebsockets16 4.0.20-2ubuntu1 [Ubuntu/jammy universe]
+libwhoopsie-preferences0 23 [Ubuntu/jammy main]
+libwhoopsie0 0.2.77 [Ubuntu/jammy main]
+libwildmidi2 0.4.3-1 [Ubuntu/jammy universe]
+libwind0-heimdal 7.7.0+dfsg-3ubuntu1 [Ubuntu/jammy universe]
+libwind0-heimdal:i386 7.7.0+dfsg-3ubuntu1 [Ubuntu/jammy universe]
+libwine 6.0.3~repack-1 [Ubuntu/jammy universe]
+libwine:i386 6.0.3~repack-1 [Ubuntu/jammy universe]
+libwinpr2-2 2.6.1+dfsg1-3ubuntu2.3 [Ubuntu/jammy main]
+libwmf-0.2-7 0.2.12-5ubuntu1 [Ubuntu/jammy main]
+libwmf-0.2-7-gtk 0.2.12-5ubuntu1 [Ubuntu/jammy main]
+libwmf-bin 0.2.12-5ubuntu1 [Ubuntu/jammy universe]
+libwmf0.2-7 0.2.12-5ubuntu1 [Ubuntu/jammy universe]
+libwmf0.2-7-gtk 0.2.12-5ubuntu1 [Ubuntu/jammy main]
+libwmflite-0.2-7 0.2.12-5ubuntu1 [Ubuntu/jammy main]
+libwnck-3-0 40.1-1 [Ubuntu/jammy main]
+libwnck-3-common 40.1-1 [Ubuntu/jammy main]
+libwoff1 1.0.2-1build4 [Ubuntu/jammy main]
+libwpd-0.10-10 0.10.3-2build1 [Ubuntu/jammy main]
+libwpg-0.3-3 0.3.3-1build3 [Ubuntu/jammy main]
+libwps-0.4-4 0.4.12-2build1 [Ubuntu/jammy main]
+libwrap0 7.6.q-31build2 [Ubuntu/jammy main]
+libwrap0:i386 7.6.q-31build2 [Ubuntu/jammy main]
+libwv-1.2-4 1.2.9-4.2build1 [Ubuntu/jammy universe]
+libwww-perl 6.61-1 [Ubuntu/jammy main]
+libwww-robotrules-perl 6.02-1 [Ubuntu/jammy main]
+libwxbase3.0-0v5 3.0.5.1+dfsg-4 [Ubuntu/jammy universe]
+libwxgtk3.0-gtk3-0v5 3.0.5.1+dfsg-4 [Ubuntu/jammy universe]
+libx11-6 2:1.7.5-1 [Ubuntu/jammy main]
+libx11-6:i386 2:1.7.5-1 [Ubuntu/jammy main]
+libx11-data 2:1.7.5-1 [Ubuntu/jammy main]
+libx11-dev 2:1.7.5-1 [Ubuntu/jammy main]
+libx11-protocol-perl 0.56-7.1 [Ubuntu/jammy main]
+libx11-xcb-dev 2:1.7.5-1 [Ubuntu/jammy main]
+libx11-xcb1 2:1.7.5-1 [Ubuntu/jammy main]
+libx11-xcb1:i386 2:1.7.5-1 [Ubuntu/jammy main]
+libx264-163 2:0.163.3060+git5db6aa6-2build1 [Ubuntu/jammy universe]
+libx265-199 3.5-2 [Ubuntu/jammy universe]
+libxapian30 1.4.18-4 [Ubuntu/jammy universe]
+libxapp1 2.2.8-1 [Ubuntu/jammy universe]
+libxatracker2 22.2.5-0ubuntu0.1~22.04.1 [local]
+libxau-dev 1:1.0.9-1build5 [Ubuntu/jammy main]
+libxau6 1:1.0.9-1build5 [Ubuntu/jammy main]
+libxau6:i386 1:1.0.9-1build5 [Ubuntu/jammy main]
+libxaw7 2:1.0.14-1 [Ubuntu/jammy main]
+libxaw7-dev 2:1.0.14-1 [Ubuntu/jammy main]
+libxbean-reflect-java 4.5-8 [Ubuntu/jammy universe]
+libxcb-composite0 1.14-3ubuntu3 [Ubuntu/jammy main]
+libxcb-composite0-dev 1.14-3ubuntu3 [Ubuntu/jammy main]
+libxcb-cursor-dev 0.1.1-4ubuntu1 [Ubuntu/jammy universe]
+libxcb-cursor0 0.1.1-4ubuntu1 [Ubuntu/jammy universe]
+libxcb-damage0 1.14-3ubuntu3 [Ubuntu/jammy main]
+libxcb-damage0-dev 1.14-3ubuntu3 [Ubuntu/jammy main]
+libxcb-dri2-0 1.14-3ubuntu3 [Ubuntu/jammy main]
+libxcb-dri2-0:i386 1.14-3ubuntu3 [Ubuntu/jammy main]
+libxcb-dri3-0 1.14-3ubuntu3 [Ubuntu/jammy main]
+libxcb-dri3-0:i386 1.14-3ubuntu3 [Ubuntu/jammy main]
+libxcb-ewmh-dev 0.4.1-1.1build2 [Ubuntu/jammy main]
+libxcb-ewmh2 0.4.1-1.1build2 [Ubuntu/jammy main]
+libxcb-glx0 1.14-3ubuntu3 [Ubuntu/jammy main]
+libxcb-glx0-dev 1.14-3ubuntu3 [Ubuntu/jammy main]
+libxcb-glx0:i386 1.14-3ubuntu3 [Ubuntu/jammy main]
+libxcb-icccm4 0.4.1-1.1build2 [Ubuntu/jammy main]
+libxcb-icccm4-dev 0.4.1-1.1build2 [Ubuntu/jammy main]
+libxcb-image0 0.4.0-2 [Ubuntu/jammy main]
+libxcb-image0-dev 0.4.0-2 [Ubuntu/jammy main]
+libxcb-keysyms1 0.4.0-1build3 [Ubuntu/jammy main]
+libxcb-keysyms1-dev 0.4.0-1build3 [Ubuntu/jammy main]
+libxcb-present-dev 1.14-3ubuntu3 [Ubuntu/jammy main]
+libxcb-present0 1.14-3ubuntu3 [Ubuntu/jammy main]
+libxcb-present0:i386 1.14-3ubuntu3 [Ubuntu/jammy main]
+libxcb-randr0 1.14-3ubuntu3 [Ubuntu/jammy main]
+libxcb-randr0-dev 1.14-3ubuntu3 [Ubuntu/jammy main]
+libxcb-randr0:i386 1.14-3ubuntu3 [Ubuntu/jammy main]
+libxcb-render-util0 0.3.9-1build3 [Ubuntu/jammy main]
+libxcb-render-util0-dev 0.3.9-1build3 [Ubuntu/jammy main]
+libxcb-render0 1.14-3ubuntu3 [Ubuntu/jammy main]
+libxcb-render0-dev 1.14-3ubuntu3 [Ubuntu/jammy main]
+libxcb-render0:i386 1.14-3ubuntu3 [Ubuntu/jammy main]
+libxcb-res0 1.14-3ubuntu3 [Ubuntu/jammy main]
+libxcb-res0-dev 1.14-3ubuntu3 [Ubuntu/jammy main]
+libxcb-shape0 1.14-3ubuntu3 [Ubuntu/jammy main]
+libxcb-shape0-dev 1.14-3ubuntu3 [Ubuntu/jammy main]
+libxcb-shm0 1.14-3ubuntu3 [Ubuntu/jammy main]
+libxcb-shm0-dev 1.14-3ubuntu3 [Ubuntu/jammy main]
+libxcb-shm0:i386 1.14-3ubuntu3 [Ubuntu/jammy main]
+libxcb-sync-dev 1.14-3ubuntu3 [Ubuntu/jammy main]
+libxcb-sync1 1.14-3ubuntu3 [Ubuntu/jammy main]
+libxcb-sync1:i386 1.14-3ubuntu3 [Ubuntu/jammy main]
+libxcb-util-dev 0.4.0-1build2 [Ubuntu/jammy main]
+libxcb-util0-dev 0.4.0-1build2 [Ubuntu/jammy main]
+libxcb-util1 0.4.0-1build2 [Ubuntu/jammy main]
+libxcb-xfixes0 1.14-3ubuntu3 [Ubuntu/jammy main]
+libxcb-xfixes0-dev 1.14-3ubuntu3 [Ubuntu/jammy main]
+libxcb-xfixes0:i386 1.14-3ubuntu3 [Ubuntu/jammy main]
+libxcb-xinerama0 1.14-3ubuntu3 [Ubuntu/jammy main]
+libxcb-xinerama0-dev 1.14-3ubuntu3 [Ubuntu/jammy main]
+libxcb-xinput0 1.14-3ubuntu3 [Ubuntu/jammy main]
+libxcb-xkb-dev 1.14-3ubuntu3 [Ubuntu/jammy main]
+libxcb-xkb1 1.14-3ubuntu3 [Ubuntu/jammy main]
+libxcb-xrm-dev 1.0-3 [Ubuntu/jammy universe]
+libxcb-xrm0 1.0-3 [Ubuntu/jammy universe]
+libxcb-xtest0 1.14-3ubuntu3 [Ubuntu/jammy main]
+libxcb-xtest0-dev 1.14-3ubuntu3 [Ubuntu/jammy main]
+libxcb-xv0 1.14-3ubuntu3 [Ubuntu/jammy main]
+libxcb1 1.14-3ubuntu3 [Ubuntu/jammy main]
+libxcb1-dev 1.14-3ubuntu3 [Ubuntu/jammy main]
+libxcb1:i386 1.14-3ubuntu3 [Ubuntu/jammy main]
+libxcomposite-dev 1:0.4.5-1build2 [Ubuntu/jammy main]
+libxcomposite1 1:0.4.5-1build2 [Ubuntu/jammy main]
+libxcomposite1:i386 1:0.4.5-1build2 [Ubuntu/jammy main]
+libxcursor-dev 1:1.2.0-2build4 [Ubuntu/jammy main]
+libxcursor1 1:1.2.0-2build4 [Ubuntu/jammy main]
+libxcursor1:i386 1:1.2.0-2build4 [Ubuntu/jammy main]
+libxcvt-dev 0.1.1-3 [Ubuntu/jammy main]
+libxcvt0 0.1.1-3 [Ubuntu/jammy main]
+libxdamage-dev 1:1.1.5-2build2 [Ubuntu/jammy main]
+libxdamage1 1:1.1.5-2build2 [Ubuntu/jammy main]
+libxdamage1:i386 1:1.1.5-2build2 [Ubuntu/jammy main]
+libxdg-basedir-dev 1.2.0-2 [Ubuntu/jammy universe]
+libxdg-basedir1 1.2.0-2 [Ubuntu/jammy universe]
+libxdmcp-dev 1:1.1.3-0ubuntu5 [Ubuntu/jammy main]
+libxdmcp6 1:1.1.3-0ubuntu5 [Ubuntu/jammy main]
+libxdmcp6:i386 1:1.1.3-0ubuntu5 [Ubuntu/jammy main]
+libxdo3 1:3.20160805.1-4 [Ubuntu/jammy universe]
+libxext-dev 2:1.3.4-1build1 [Ubuntu/jammy main]
+libxext6 2:1.3.4-1build1 [Ubuntu/jammy main]
+libxext6:i386 2:1.3.4-1build1 [Ubuntu/jammy main]
+libxfce4panel-2.0-4 4.16.3-1 [Ubuntu/jammy universe]
+libxfce4ui-2-0 4.16.1-1 [Ubuntu/jammy universe]
+libxfce4ui-common 4.16.1-1 [Ubuntu/jammy universe]
+libxfce4util-bin 4.16.0-1 [Ubuntu/jammy universe]
+libxfce4util-common 4.16.0-1 [Ubuntu/jammy universe]
+libxfce4util7 4.16.0-1 [Ubuntu/jammy universe]
+libxfconf-0-3 4.16.0-2 [Ubuntu/jammy universe]
+libxfixes-dev 1:6.0.0-1 [Ubuntu/jammy main]
+libxfixes3 1:6.0.0-1 [Ubuntu/jammy main]
+libxfixes3:i386 1:6.0.0-1 [Ubuntu/jammy main]
+libxfont-dev 1:2.0.5-1build1 [Ubuntu/jammy main]
+libxfont2 1:2.0.5-1build1 [Ubuntu/jammy main]
+libxft-dev 2.3.4-1 [Ubuntu/jammy main]
+libxft2 2.3.4-1 [Ubuntu/jammy main]
+libxft2:i386 2.3.4-1 [Ubuntu/jammy main]
+libxi-dev 2:1.8-1build1 [Ubuntu/jammy main]
+libxi6 2:1.8-1build1 [Ubuntu/jammy main]
+libxi6:i386 2:1.8-1build1 [Ubuntu/jammy main]
+libxinerama-dev 2:1.1.4-3 [Ubuntu/jammy main]
+libxinerama1 2:1.1.4-3 [Ubuntu/jammy main]
+libxinerama1:i386 2:1.1.4-3 [Ubuntu/jammy main]
+libxkbcommon-dev 1.4.0-1 [Ubuntu/jammy main]
+libxkbcommon-x11-0 1.4.0-1 [Ubuntu/jammy main]
+libxkbcommon-x11-dev 1.4.0-1 [Ubuntu/jammy main]
+libxkbcommon0 1.4.0-1 [Ubuntu/jammy main]
+libxkbcommon0:i386 1.4.0-1 [Ubuntu/jammy main]
+libxkbfile-dev 1:1.1.0-1build3 [Ubuntu/jammy main]
+libxkbfile1 1:1.1.0-1build3 [Ubuntu/jammy main]
+libxkbregistry0 1.4.0-1 [Ubuntu/jammy main]
+libxklavier16 5.4-4build2 [Ubuntu/jammy main]
+libxml-libxml-perl 2.0207+dfsg+really+2.0134-1 [Ubuntu/jammy main]
+libxml-libxml-simple-perl 1.01-1 [Ubuntu/jammy universe]
+libxml-libxslt-perl 1.99-1build2 [Ubuntu/jammy universe]
+libxml-namespacesupport-perl 1.12-1.1 [Ubuntu/jammy main]
+libxml-parser-perl 2.46-3build1 [Ubuntu/jammy main]
+libxml-sax-base-perl 1.09-1.1 [Ubuntu/jammy main]
+libxml-sax-expat-perl 0.51-1 [Ubuntu/jammy main]
+libxml-sax-perl 1.02+dfsg-3 [Ubuntu/jammy main]
+libxml-twig-perl 1:3.52-1 [Ubuntu/jammy main]
+libxml-writer-perl 0.900-1 [Ubuntu/jammy universe]
+libxml-xpathengine-perl 0.14-1 [Ubuntu/jammy main]
+libxml2 2.9.13+dfsg-1ubuntu0.3 [Ubuntu/jammy main]
+libxml2-dev 2.9.13+dfsg-1ubuntu0.3 [Ubuntu/jammy main]
+libxml2-utils 2.9.13+dfsg-1ubuntu0.3 [Ubuntu/jammy main]
+libxml2:i386 2.9.13+dfsg-1ubuntu0.3 [Ubuntu/jammy main]
+libxmlb2 0.3.6-2build1 [Ubuntu/jammy main]
+libxmlsec1 1.2.33-1build2 [Ubuntu/jammy main]
+libxmlsec1-dev 1.2.33-1build2 [Ubuntu/jammy main]
+libxmlsec1-gcrypt 1.2.33-1build2 [Ubuntu/jammy main]
+libxmlsec1-gnutls 1.2.33-1build2 [Ubuntu/jammy main]
+libxmlsec1-nss 1.2.33-1build2 [Ubuntu/jammy main]
+libxmlsec1-openssl 1.2.33-1build2 [Ubuntu/jammy main]
+libxmu-dev 2:1.1.3-3 [Ubuntu/jammy main]
+libxmu-headers 2:1.1.3-3 [Ubuntu/jammy main]
+libxmu6 2:1.1.3-3 [Ubuntu/jammy main]
+libxmuu-dev 2:1.1.3-3 [Ubuntu/jammy main]
+libxmuu1 2:1.1.3-3 [Ubuntu/jammy main]
+libxnvctrl0 510.47.03-0ubuntu1 [Ubuntu/jammy main]
+libxpm-dev 1:3.5.12-1ubuntu0.22.04.1 [Ubuntu/jammy main]
+libxpm4 1:3.5.12-1ubuntu0.22.04.1 [Ubuntu/jammy main]
+libxpm4:i386 1:3.5.12-1ubuntu0.22.04.1 [Ubuntu/jammy main]
+libxrandr-dev 2:1.5.2-1build1 [Ubuntu/jammy main]
+libxrandr2 2:1.5.2-1build1 [Ubuntu/jammy main]
+libxrandr2:i386 2:1.5.2-1build1 [Ubuntu/jammy main]
+libxrender-dev 1:0.9.10-1build4 [Ubuntu/jammy main]
+libxrender1 1:0.9.10-1build4 [Ubuntu/jammy main]
+libxrender1:i386 1:0.9.10-1build4 [Ubuntu/jammy main]
+libxres-dev 2:1.2.1-1 [Ubuntu/jammy main]
+libxres1 2:1.2.1-1 [Ubuntu/jammy main]
+libxs-parse-keyword-perl 0.21-1build1 [Ubuntu/jammy main]
+libxshmfence1 1.3-1build4 [Ubuntu/jammy main]
+libxshmfence1:i386 1.3-1build4 [Ubuntu/jammy main]
+libxsimd-dev 7.6.0-2 [Ubuntu/jammy universe]
+libxslt1-dev 1.1.34-4ubuntu0.22.04.1 [Ubuntu/jammy main]
+libxslt1.1 1.1.34-4ubuntu0.22.04.1 [Ubuntu/jammy main]
+libxslt1.1:i386 1.1.34-4ubuntu0.22.04.1 [Ubuntu/jammy main]
+libxss-dev 1:1.2.3-1build2 [Ubuntu/jammy main]
+libxss1 1:1.2.3-1build2 [Ubuntu/jammy main]
+libxss1:i386 1:1.2.3-1build2 [Ubuntu/jammy main]
+libxstring-perl 0.005-1build2 [Ubuntu/jammy universe]
+libxt-dev 1:1.2.1-1 [Ubuntu/jammy main]
+libxt6 1:1.2.1-1 [Ubuntu/jammy main]
+libxtables12 1.8.7-1ubuntu5 [Ubuntu/jammy main]
+libxtst-dev 2:1.2.3-1build4 [Ubuntu/jammy main]
+libxtst6 2:1.2.3-1build4 [Ubuntu/jammy main]
+libxv-dev 2:1.0.11-1build2 [Ubuntu/jammy main]
+libxv1 2:1.0.11-1build2 [Ubuntu/jammy main]
+libxv1:i386 2:1.0.11-1build2 [Ubuntu/jammy main]
+libxvidcore4 2:1.3.7-1 [Ubuntu/jammy universe]
+libxvmc-dev 2:1.0.12-2build2 [Ubuntu/jammy main]
+libxvmc1 2:1.0.12-2build2 [Ubuntu/jammy main]
+libxxf86dga-dev 2:1.1.5-0ubuntu3 [Ubuntu/jammy main]
+libxxf86dga1 2:1.1.5-0ubuntu3 [Ubuntu/jammy main]
+libxxf86vm-dev 1:1.1.4-1build3 [Ubuntu/jammy main]
+libxxf86vm1 1:1.1.4-1build3 [Ubuntu/jammy main]
+libxxf86vm1:i386 1:1.1.4-1build3 [Ubuntu/jammy main]
+libxxhash0 0.8.1-1 [Ubuntu/jammy main]
+libyajl2 2.1.0-3build2 [Ubuntu/jammy main]
+libyaml-0-2 0.2.2-1build2 [Ubuntu/jammy main]
+libyaml-dev 0.2.2-1build2 [Ubuntu/jammy main]
+libyaml-libyaml-perl 0.83+ds-1build1 [Ubuntu/jammy main]
+libyaml-perl 1.30-1 [Ubuntu/jammy main]
+libyaml-tiny-perl 1.73-1 [Ubuntu/jammy main]
+libyelp0 42.1-1 [Ubuntu/jammy main]
+libz-mingw-w64 1.2.11+dfsg-4 [Ubuntu/jammy universe]
+libz3-4 4.8.12-1 [Ubuntu/jammy universe]
+libz3-dev 4.8.12-1 [Ubuntu/jammy universe]
+libzbar0 0.23.92-4build2 [Ubuntu/jammy universe]
+libzeitgeist-2.0-0 1.0.3-4ubuntu1 [Ubuntu/jammy universe]
+libzen0v5 0.4.39-1 [Ubuntu/jammy universe]
+libzimg2 3.0.3+ds1-1 [Ubuntu/jammy universe]
+libzip4 1.7.3-1ubuntu2 [Ubuntu/jammy universe]
+libzmq3-dev 4.3.4-2 [Ubuntu/jammy universe]
+libzmq5 4.3.4-2 [Ubuntu/jammy universe]
+libzn-poly-0.9 0.9.2-1 [Ubuntu/jammy universe]
+libzn-poly-dev 0.9.2-1 [Ubuntu/jammy universe]
+libzstd1 1.4.8+dfsg-3build1 [Ubuntu/jammy main]
+libzstd1:i386 1.4.8+dfsg-3build1 [Ubuntu/jammy main]
+libzvbi-common 0.2.35-19 [Ubuntu/jammy universe]
+libzvbi0 0.2.35-19 [Ubuntu/jammy universe]
+libzxingcore1 1.2.0-1 [Ubuntu/jammy universe]
+libzzip-0-13 0.13.72+dfsg.1-1.1 [Ubuntu/jammy universe]
+lightdm 1.30.0-0ubuntu5 [Ubuntu/jammy universe]
+links 2.25-1build1 [Ubuntu/jammy universe]
+lintian 2.114.0ubuntu1.2 [Ubuntu/jammy main]
+linux-base 4.5ubuntu9 [Ubuntu/jammy main]
+linux-firmware 20220329.git681281e4-0ubuntu3.13 [Ubuntu/jammy main]
+linux-generic 5.15.0.72.70 [Ubuntu/jammy main]
+linux-generic-hwe-20.04 5.15.0.72.70 [Ubuntu/jammy main]
+linux-generic-hwe-22.04 5.19.0.42.43~22.04.15 [Ubuntu/jammy main]
+linux-headers-5.15.0-72 5.15.0-72.79 [Ubuntu/jammy main]
+linux-headers-5.15.0-72-generic 5.15.0-72.79 [Ubuntu/jammy main]
+linux-headers-5.19.0-41-generic 5.19.0-41.42~22.04.1 [Ubuntu/jammy main]
+linux-headers-5.19.0-42-generic 5.19.0-42.43~22.04.1 [Ubuntu/jammy main]
+linux-headers-generic 5.15.0.72.70 [Ubuntu/jammy main]
+linux-headers-generic-hwe-22.04 5.19.0.42.43~22.04.15 [Ubuntu/jammy main]
+linux-hwe-5.19-headers-5.19.0-41 5.19.0-41.42~22.04.1 [Ubuntu/jammy main]
+linux-hwe-5.19-headers-5.19.0-42 5.19.0-42.43~22.04.1 [Ubuntu/jammy main]
+linux-image-5.15.0-72-generic 5.15.0-72.79 [Ubuntu/jammy main]
+linux-image-5.19.0-41-generic 5.19.0-41.42~22.04.1 [Ubuntu/jammy main]
+linux-image-5.19.0-42-generic 5.19.0-42.43~22.04.1 [Ubuntu/jammy main]
+linux-image-generic 5.15.0.72.70 [Ubuntu/jammy main]
+linux-image-generic-hwe-22.04 5.19.0.42.43~22.04.15 [Ubuntu/jammy main]
+linux-libc-dev 5.15.0-72.79 [Ubuntu/jammy main]
+linux-modules-5.15.0-72-generic 5.15.0-72.79 [Ubuntu/jammy main]
+linux-modules-5.19.0-41-generic 5.19.0-41.42~22.04.1 [Ubuntu/jammy main]
+linux-modules-5.19.0-42-generic 5.19.0-42.43~22.04.1 [Ubuntu/jammy main]
+linux-modules-extra-5.15.0-72-generic 5.15.0-72.79 [Ubuntu/jammy main]
+linux-modules-extra-5.19.0-41-generic 5.19.0-41.42~22.04.1 [Ubuntu/jammy main]
+linux-modules-extra-5.19.0-42-generic 5.19.0-42.43~22.04.1 [Ubuntu/jammy main]
+linux-sound-base 1.0.25+dfsg-0ubuntu7 [Ubuntu/jammy main]
+llvm 1:14.0-55~exp2 [Ubuntu/jammy universe]
+llvm-11 1:11.1.0-6 [Ubuntu/jammy universe]
+llvm-11-dev 1:11.1.0-6 [Ubuntu/jammy universe]
+llvm-11-linker-tools 1:11.1.0-6 [Ubuntu/jammy universe]
+llvm-11-runtime 1:11.1.0-6 [Ubuntu/jammy universe]
+llvm-11-tools 1:11.1.0-6 [Ubuntu/jammy universe]
+llvm-13 1:13.0.1-2ubuntu2.1 [Ubuntu/jammy main]
+llvm-13-dev 1:13.0.1-2ubuntu2.1 [Ubuntu/jammy main]
+llvm-13-linker-tools 1:13.0.1-2ubuntu2.1 [Ubuntu/jammy main]
+llvm-13-runtime 1:13.0.1-2ubuntu2.1 [Ubuntu/jammy main]
+llvm-13-tools 1:13.0.1-2ubuntu2.1 [Ubuntu/jammy main]
+llvm-14 1:14.0.0-1ubuntu1 [Ubuntu/jammy universe]
+llvm-14-dev 1:14.0.0-1ubuntu1 [Ubuntu/jammy universe]
+llvm-14-linker-tools 1:14.0.0-1ubuntu1 [Ubuntu/jammy universe]
+llvm-14-runtime 1:14.0.0-1ubuntu1 [Ubuntu/jammy universe]
+llvm-14-tools 1:14.0.0-1ubuntu1 [Ubuntu/jammy universe]
+llvm-runtime 1:14.0-55~exp2 [Ubuntu/jammy universe]
+lm-sensors 1:3.6.0-7ubuntu1 [Ubuntu/jammy universe]
+lmodern 2.004.5-6.1 [Ubuntu/jammy universe]
+locales 2.35-0ubuntu3.1 [Ubuntu/jammy main]
+locate 4.8.0-1ubuntu3 [Ubuntu/jammy universe]
+login 1:4.8.1-2ubuntu2.1 [Ubuntu/jammy main]
+logrotate 3.19.0-1ubuntu1.1 [Ubuntu/jammy main]
+logsave 1.46.5-2ubuntu1.1 [Ubuntu/jammy main]
+lolcat 100.0.1-3 [Ubuntu/jammy universe]
+lp-solve 5.5.2.5-2build2 [Ubuntu/jammy main]
+lsb-base 11.1.0ubuntu4 [Ubuntu/jammy main]
+lsb-release 11.1.0ubuntu4 [Ubuntu/jammy main]
+lsd 0.20.1 [local]
+lshw 02.19.git.2021.06.19.996aaad9c7-2build1 [Ubuntu/jammy main]
+lsof 4.93.2+dfsg-1.1build2 [Ubuntu/jammy main]
+lto-disabled-list 24 [Ubuntu/jammy main]
+luajit 2.1.0~beta3+dfsg-6 [Ubuntu/jammy universe]
+lynx 2.9.0dev.10-1 [Ubuntu/jammy universe]
+lynx-common 2.9.0dev.10-1 [Ubuntu/jammy universe]
+lz4 1.9.3-2build2 [Ubuntu/jammy main]
+lzip 1.23-1 [Ubuntu/jammy main]
+lzop 1.04-2build2 [Ubuntu/jammy main]
+m17n-db 1.8.0-3 [Ubuntu/jammy main]
+m4 1.4.18-5ubuntu2 [Ubuntu/jammy main]
+mailcap 3.70+nmu1ubuntu1 [Ubuntu/jammy main]
+make 4.3-4.1build1 [Ubuntu/jammy main]
+man-db 2.10.2-1 [Ubuntu/jammy main]
+manpages 5.10-1ubuntu1 [Ubuntu/jammy main]
+manpages-dev 5.10-1ubuntu1 [Ubuntu/jammy main]
+matio-tools 1.5.21-1 [Ubuntu/jammy universe]
+mawk 1.3.4.20200120-3 [Ubuntu/jammy main]
+maxima-sage 5.45.1-2 [Ubuntu/jammy universe]
+maxima-sage-doc 5.45.1-2 [Ubuntu/jammy universe]
+maxima-sage-share 5.45.1-2 [Ubuntu/jammy universe]
+media-player-info 24-2 [Ubuntu/jammy main]
+media-types 7.0.0 [Ubuntu/jammy main]
+mediainfo 22.03-1 [Ubuntu/jammy universe]
+memtest86+ 5.31b+dfsg-4 [Ubuntu/jammy main]
+mesa-common-dev 22.2.5-0ubuntu0.1~22.04.1 [local]
+mesa-utils 8.4.0-1ubuntu1 [Ubuntu/jammy universe]
+mesa-utils-bin 8.4.0-1ubuntu1 [Ubuntu/jammy universe]
+mesa-va-drivers 22.2.5-0ubuntu0.1~22.04.1 [local]
+mesa-vdpau-drivers 22.2.5-0ubuntu0.1~22.04.1 [local]
+mesa-vulkan-drivers 22.2.5-0ubuntu0.1~22.04.1 [local]
+mesa-vulkan-drivers:i386 22.2.5-0ubuntu0.1~22.04.1 [local]
+meson 0.61.2-1 [Ubuntu/jammy universe]
+metacity-common 1:3.44.0-1ubuntu1 [Ubuntu/jammy universe]
+mime-support 3.66 [Ubuntu/jammy main]
+mkdocs 1.1.2+dfsg-2ubuntu1 [Ubuntu/jammy universe]
+mobile-broadband-provider-info 20220315-1 [Ubuntu/jammy main]
+modemmanager 1.20.0-1~ubuntu22.04.1 [Ubuntu/jammy main]
+mokutil 0.4.0-1ubuntu2 [Ubuntu/jammy main]
+mono-4.0-gac 6.8.0.105+dfsg-3.2 [Ubuntu/jammy universe]
+mono-4.0-service 6.8.0.105+dfsg-3.2 [Ubuntu/jammy universe]
+mono-complete 6.8.0.105+dfsg-3.2 [Ubuntu/jammy universe]
+mono-csharp-shell 6.8.0.105+dfsg-3.2 [Ubuntu/jammy universe]
+mono-devel 6.8.0.105+dfsg-3.2 [Ubuntu/jammy universe]
+mono-gac 6.8.0.105+dfsg-3.2 [Ubuntu/jammy universe]
+mono-mcs 6.8.0.105+dfsg-3.2 [Ubuntu/jammy universe]
+mono-runtime 6.8.0.105+dfsg-3.2 [Ubuntu/jammy universe]
+mono-runtime-common 6.8.0.105+dfsg-3.2 [Ubuntu/jammy universe]
+mono-runtime-sgen 6.8.0.105+dfsg-3.2 [Ubuntu/jammy universe]
+mono-utils 6.8.0.105+dfsg-3.2 [Ubuntu/jammy universe]
+mono-xbuild 6.8.0.105+dfsg-3.2 [Ubuntu/jammy universe]
+mono-xsp4 4.2-2.3 [Ubuntu/jammy universe]
+mono-xsp4-base 4.2-2.3 [Ubuntu/jammy universe]
+monodoc-base 6.8.0.105+dfsg-3.2 [Ubuntu/jammy universe]
+monodoc-gtk2.0-manual 2.12.40-3ubuntu1 [Ubuntu/jammy universe]
+monodoc-http 4.2-3.1 [Ubuntu/jammy universe]
+monodoc-manual 6.8.0.105+dfsg-3.2 [Ubuntu/jammy universe]
+mopidy 3.2.0-1 [Ubuntu/jammy universe]
+mopidy-mpd 3.1.0-1 [Ubuntu/jammy universe]
+mosh 1.3.2-2.1ubuntu1 [Ubuntu/jammy universe]
+mount 2.37.2-4ubuntu3 [Ubuntu/jammy main]
+mousetweaks 3.32.0-3build2 [Ubuntu/jammy main]
+mpc 0.34-1 [Ubuntu/jammy universe]
+mpd 0.23.5-1build7 [Ubuntu/jammy universe]
+mpv 0.34.1-1ubuntu3 [Ubuntu/jammy universe]
+mscompress 0.4-9build1 [Ubuntu/jammy main]
+mtr-tiny 0.95-1 [Ubuntu/jammy main]
+mullvad-vpn 2023.3 [local]
+mupdf 1.19.0+ds1-2 [Ubuntu/jammy universe]
+mupdf-tools 1.19.0+ds1-2 [Ubuntu/jammy universe]
+mutter 42.5-0ubuntu1 [Ubuntu/jammy universe]
+mutter-common 42.5-0ubuntu1 [Ubuntu/jammy main]
+mysql-common 5.8+1.0.8 [Ubuntu/jammy main]
+mythes-en-us 1:7.2.0-2 [Ubuntu/jammy main]
+nala 0.12.3 [local]
+nano 6.2-1 [Ubuntu/jammy main]
+nautilus 1:42.2-0ubuntu2.1 [Ubuntu/jammy main]
+nautilus-data 1:42.2-0ubuntu2.1 [Ubuntu/jammy main]
+nautilus-extension-gnome-terminal 3.44.0-1ubuntu1 [Ubuntu/jammy main]
+nautilus-sendto 3.8.6-4 [Ubuntu/jammy main]
+nautilus-share 0.7.3-2ubuntu6 [Ubuntu/jammy main]
+nauty 2.7r3+ds-1 [Ubuntu/jammy universe]
+ncal 12.1.7+nmu3ubuntu2 [Ubuntu/jammy universe]
+ncdu 1.15.1-1 [Ubuntu/jammy universe]
+ncmpcpp 0.9.2-2build1 [Ubuntu/jammy universe]
+nco 5.0.6-1 [Ubuntu/jammy universe]
+ncurses-base 6.3-2ubuntu0.1 [Ubuntu/jammy main]
+ncurses-bin 6.3-2ubuntu0.1 [Ubuntu/jammy main]
+ncurses-term 6.3-2ubuntu0.1 [Ubuntu/jammy main]
+ncview 2.1.8+ds-4build1 [Ubuntu/jammy universe]
+nemo 5.2.4-1 [Ubuntu/jammy universe]
+nemo-data 5.2.4-1 [Ubuntu/jammy universe]
+nemo-fileroller 5.2.0-2 [Ubuntu/jammy universe]
+neomutt 20211029+dfsg1-1 [Ubuntu/jammy universe]
+net-tools 1.60+git20181103.0eebece-1ubuntu5 [Ubuntu/jammy main]
+netbase 6.3 [Ubuntu/jammy main]
+netcat-openbsd 1.218-4ubuntu1 [Ubuntu/jammy main]
+netcdf-bin 1:4.8.1-1 [Ubuntu/jammy universe]
+netpbm 2:10.0-15.4 [Ubuntu/jammy universe]
+netplan.io 0.105-0ubuntu2~22.04.3 [Ubuntu/jammy main]
+nettle-dev 3.7.3-1build2 [Ubuntu/jammy main]
+network-manager 1.36.6-0ubuntu2 [Ubuntu/jammy main]
+network-manager-config-connectivity-ubuntu 1.36.6-0ubuntu2 [Ubuntu/jammy main]
+network-manager-gnome 1.24.0-1ubuntu3 [Ubuntu/jammy main]
+network-manager-openvpn 1.8.18-1 [Ubuntu/jammy main]
+network-manager-openvpn-gnome 1.8.18-1 [Ubuntu/jammy main]
+network-manager-pptp 1.2.10-1 [Ubuntu/jammy main]
+network-manager-pptp-gnome 1.2.10-1 [Ubuntu/jammy main]
+networkd-dispatcher 2.1-2ubuntu0.22.04.2 [Ubuntu/jammy main]
+newsboat 2.21-1 [Ubuntu/jammy universe]
+nftables 1.0.2-1ubuntu3 [Ubuntu/jammy main]
+ninja-build 1.10.1-1 [Ubuntu/jammy universe]
+nnn 4.3-1 [Ubuntu/jammy universe]
+node-jed 1.1.1-3 [Ubuntu/jammy universe]
+node-jquery 3.6.0+dfsg+~3.5.13-1 [Ubuntu/jammy universe]
+nodejs 17.9.0-deb-1nodesource1 [Node Source/groovy main]
+normaliz 3.8.9+ds-1 [Ubuntu/jammy universe]
+normaliz-bin 3.8.9+ds-1 [Ubuntu/jammy universe]
+notify-osd 0.9.35+20.04.20191129-0ubuntu2 [Ubuntu/jammy universe]
+notify-osd-icons 0.8+15.10.20151016.2-0ubuntu3 [Ubuntu/jammy universe]
+ntfs-3g 1:2021.8.22-3ubuntu1.2 [Ubuntu/jammy main]
+numba-doc 0.55.1-0ubuntu2 [Ubuntu/jammy universe]
+nux-tools 4.0.8+18.10.20180623-0ubuntu4 [Ubuntu/jammy universe]
+ocl-icd-libopencl1 2.2.14-3 [Ubuntu/jammy universe]
+ocl-icd-libopencl1:i386 2.2.14-3 [Ubuntu/jammy universe]
+odt2txt 0.5-7 [Ubuntu/jammy universe]
+ofono 1.31-3ubuntu1 [Ubuntu/jammy universe]
+okular 4:21.12.3-0ubuntu1 [Ubuntu/jammy universe]
+okular-extra-backends 4:21.12.3-0ubuntu1 [Ubuntu/jammy universe]
+openconnect 8.20-1 [Ubuntu/jammy universe]
+openjade 1.4devel1-22 [Ubuntu/jammy universe]
+openjdk-11-jdk 11.0.19+7~us1-0ubuntu1~22.04.1 [Ubuntu/jammy main]
+openjdk-11-jdk-headless 11.0.19+7~us1-0ubuntu1~22.04.1 [Ubuntu/jammy main]
+openjdk-11-jre 11.0.19+7~us1-0ubuntu1~22.04.1 [Ubuntu/jammy main]
+openjdk-11-jre-headless 11.0.19+7~us1-0ubuntu1~22.04.1 [Ubuntu/jammy main]
+openprinting-ppds 20220223-0ubuntu1 [Ubuntu/jammy main]
+opensp 1.5.2-13ubuntu3 [Ubuntu/jammy universe]
+openssh-client 1:8.9p1-3ubuntu0.1 [Ubuntu/jammy main]
+openssh-server 1:8.9p1-3ubuntu0.1 [Ubuntu/jammy main]
+openssh-sftp-server 1:8.9p1-3ubuntu0.1 [Ubuntu/jammy main]
+openssl 3.0.2-0ubuntu1.9 [Ubuntu/jammy main]
+openvpn 2.5.5-1ubuntu3.1 [Ubuntu/jammy main]
+orca 42.0-1ubuntu2 [Ubuntu/jammy main]
+os-prober 1.79ubuntu2 [Ubuntu/jammy main]
+p11-kit 0.24.0-6build1 [Ubuntu/jammy main]
+p11-kit-modules 0.24.0-6build1 [Ubuntu/jammy main]
+p7zip 16.02+dfsg-8 [Ubuntu/jammy universe]
+p7zip-full 16.02+dfsg-8 [Ubuntu/jammy universe]
+packagekit 1.2.5-2ubuntu2 [Ubuntu/jammy main]
+packagekit-tools 1.2.5-2ubuntu2 [Ubuntu/jammy main]
+palp 2.20-2 [Ubuntu/jammy universe]
+pango1.0-tools 1.50.6+ds-2ubuntu1 [Ubuntu/jammy main]
+papirus-icon-theme 20220204-1 [Ubuntu/jammy universe]
+pari-doc 2.13.3-1 [Ubuntu/jammy universe]
+pari-elldata 0.20210301-1 [Ubuntu/jammy universe]
+pari-galdata 0.20080411-4 [Ubuntu/jammy universe]
+pari-galpol 4.0-2 [Ubuntu/jammy universe]
+pari-gp 2.13.3-1 [Ubuntu/jammy universe]
+pari-gp2c 0.0.12-2 [Ubuntu/jammy universe]
+pari-seadata 0.20090618-3 [Ubuntu/jammy universe]
+parted 3.4-2build1 [Ubuntu/jammy main]
+pass 1.7.4-5 [Ubuntu/jammy universe]
+passwd 1:4.8.1-2ubuntu2.1 [Ubuntu/jammy main]
+pastebinit 1.5.1-1ubuntu1 [Ubuntu/jammy main]
+patch 2.7.6-7build2 [Ubuntu/jammy main]
+patchutils 0.4.2-1build2 [Ubuntu/jammy main]
+pavucontrol 5.0-2 [Ubuntu/jammy universe]
+pci.ids 0.0~2022.01.22-1 [Ubuntu/jammy main]
+pciutils 1:3.7.0-6 [Ubuntu/jammy main]
+pcmciautils 018-13build1 [Ubuntu/jammy main]
+pdf2djvu 0.9.18.2-1 [Ubuntu/jammy universe]
+pdf2svg 0.2.3-2 [Ubuntu/jammy universe]
+pdfarranger 1.8.2-1 [Ubuntu/jammy universe]
+pdftk 2.02-5 [Ubuntu/jammy universe]
+pdftk-java 3.2.2-1 [Ubuntu/jammy universe]
+perl 5.34.0-3ubuntu1.1 [Ubuntu/jammy main]
+perl-base 5.34.0-3ubuntu1.1 [Ubuntu/jammy main]
+perl-modules-5.34 5.34.0-3ubuntu1.1 [Ubuntu/jammy main]
+perl-openssl-defaults 5build2 [Ubuntu/jammy main]
+pfb2t1c2pfb 0.3-11 [Ubuntu/jammy universe]
+phonon4qt5 4:4.11.1-4 [Ubuntu/jammy universe]
+phonon4qt5-backend-vlc 0.11.3-1 [Ubuntu/jammy universe]
+picom 9-1 [Ubuntu/jammy universe]
+pigz 2.6-1 [Ubuntu/jammy universe]
+pinentry-curses 1.1.1-1build2 [Ubuntu/jammy main]
+pinentry-gnome3 1.1.1-1build2 [Ubuntu/jammy main]
+pinentry-qt 1.1.1-1build2 [Ubuntu/jammy universe]
+pipenv 11.9.0-1.1 [Ubuntu/jammy universe]
+pipewire 0.3.48-1ubuntu3 [Ubuntu/jammy main]
+pipewire-bin 0.3.48-1ubuntu3 [Ubuntu/jammy main]
+pipewire-media-session 0.4.1-2ubuntu1 [Ubuntu/jammy main]
+pkexec 0.105-33 [Ubuntu/jammy main]
+pkg-config 0.29.2-1ubuntu3 [Ubuntu/jammy main]
+planarity 3.0.1.1-1 [Ubuntu/jammy universe]
+plasma-framework 5.92.0-0ubuntu1 [Ubuntu/jammy universe]
+playerctl 2.4.1-1 [Ubuntu/jammy universe]
+plymouth 0.9.5+git20211018-1ubuntu3 [Ubuntu/jammy main]
+plymouth-label 0.9.5+git20211018-1ubuntu3 [Ubuntu/jammy main]
+plymouth-theme-spinner 0.9.5+git20211018-1ubuntu3 [Ubuntu/jammy main]
+plymouth-theme-ubuntu-text 0.9.5+git20211018-1ubuntu3 [Ubuntu/jammy main]
+pmount 0.9.23-6 [Ubuntu/jammy universe]
+po-debconf 1.0.21+nmu1 [Ubuntu/jammy main]
+pocketsphinx-en-us 0.8.0+real5prealpha+1-14ubuntu1 [Ubuntu/jammy universe]
+policykit-1 0.105-33 [Ubuntu/jammy main]
+policykit-1-gnome 0.105-7ubuntu3 [Ubuntu/jammy universe]
+policykit-desktop-privileges 0.21 [Ubuntu/jammy main]
+polkitd 0.105-33 [Ubuntu/jammy main]
+polybar 3.6.3-1 [local]
+poppler-data 0.4.11-1 [Ubuntu/jammy main]
+poppler-utils 22.02.0-2ubuntu0.1 [Ubuntu/jammy main]
+power-profiles-daemon 0.10.1-3 [Ubuntu/jammy main]
+powerline 2.8.2-1 [Ubuntu/jammy universe]
+powermgmt-base 1.36 [Ubuntu/jammy main]
+ppa-purge 0.2.8+bzr63-0ubuntu1 [Ubuntu/jammy universe]
+ppl-dev 1:1.2-8.1build1 [Ubuntu/jammy universe]
+ppp 2.4.9-1+1ubuntu3 [Ubuntu/jammy main]
+pptp-linux 1.10.0-1build3 [Ubuntu/jammy main]
+preload 0.6.4-5 [Ubuntu/jammy universe]
+prerex 6.8.0-1 [Ubuntu/jammy universe]
+preview-latex-style 12.2-1ubuntu1 [Ubuntu/jammy universe]
+primecount-bin 7.2+ds-6 [Ubuntu/jammy universe]
+primesieve-bin 7.8+ds-1 [Ubuntu/jammy universe]
+prince 20201029-1 [local]
+printer-driver-brlaser 6-3 [Ubuntu/jammy main]
+printer-driver-c2esp 27-11build1 [Ubuntu/jammy main]
+printer-driver-foo2zjs 20200505dfsg0-2ubuntu2.22.04.1 [Ubuntu/jammy main]
+printer-driver-foo2zjs-common 20200505dfsg0-2ubuntu2.22.04.1 [Ubuntu/jammy main]
+printer-driver-hpcups 3.21.12+dfsg0-1 [Ubuntu/jammy main]
+printer-driver-m2300w 0.51-15build1 [Ubuntu/jammy main]
+printer-driver-min12xxw 0.0.9-11build2 [Ubuntu/jammy main]
+printer-driver-pnm2ppa 1.13+nondbs-0ubuntu9 [Ubuntu/jammy main]
+printer-driver-postscript-hp 3.21.12+dfsg0-1 [Ubuntu/jammy main]
+printer-driver-ptouch 1.6-2build1 [Ubuntu/jammy main]
+printer-driver-pxljr 1.4+repack0-6build1 [Ubuntu/jammy main]
+printer-driver-sag-gdi 0.1-8 [Ubuntu/jammy main]
+printer-driver-splix 2.0.0+svn315-7fakesync1ubuntu0.22.04.1 [Ubuntu/jammy main]
+procps 2:3.3.17-6ubuntu2 [Ubuntu/jammy main]
+proj-bin 8.2.1-1 [Ubuntu/jammy universe]
+proj-data 8.2.1-1 [Ubuntu/jammy universe]
+protonmail-bridge 3.1.3-1 [local]
+ps2eps 1.68+binaryfree-3 [Ubuntu/jammy universe]
+psmisc 23.4-2build3 [Ubuntu/jammy main]
+pstoedit 3.78-1 [Ubuntu/jammy universe]
+psutils 1.17.dfsg-4 [Ubuntu/jammy universe]
+publicsuffix 20211207.1025-1 [Ubuntu/jammy main]
+pulseaudio 1:15.99.1+dfsg1-1ubuntu2.1 [Ubuntu/jammy main]
+pulseaudio-module-bluetooth 1:15.99.1+dfsg1-1ubuntu2.1 [Ubuntu/jammy main]
+pulseaudio-utils 1:15.99.1+dfsg1-1ubuntu2.1 [Ubuntu/jammy main]
+pulsemixer 1.5.1-1 [Ubuntu/jammy universe]
+purifyeps 1.1-3 [Ubuntu/jammy universe]
+pyflakes3 2.4.0-2 [Ubuntu/jammy universe]
+python-apt-common 2.4.0ubuntu1 [Ubuntu/jammy main]
+python-babel-localedata 2.8.0+dfsg.1-7 [Ubuntu/jammy main]
+python-gmpy2-common 2.1.2-1build1 [Ubuntu/jammy universe]
+python-is-python3 3.9.2-2 [Ubuntu/jammy main]
+python-matplotlib-data 3.5.1-2build1 [Ubuntu/jammy universe]
+python-odf-doc 1.4.2-1 [Ubuntu/jammy universe]
+python-odf-tools 1.4.2-1 [Ubuntu/jammy universe]
+python-pkg-resources 44.1.1-1.2ubuntu0.22.04.1 [Ubuntu/jammy universe]
+python-ppl-doc 0.8.7-1build4 [Ubuntu/jammy universe]
+python-setuptools 44.1.1-1.2ubuntu0.22.04.1 [Ubuntu/jammy universe]
+python-tables-data 3.7.0-2build1 [Ubuntu/jammy universe]
+python2 2.7.18-3 [Ubuntu/jammy universe]
+python2-minimal 2.7.18-3 [Ubuntu/jammy universe]
+python2.7 2.7.18-13ubuntu1.1 [Ubuntu/jammy universe]
+python2.7-minimal 2.7.18-13ubuntu1.1 [Ubuntu/jammy universe]
+python3 3.10.6-1~22.04 [Ubuntu/jammy main]
+python3-alabaster 0.7.12-1 [Ubuntu/jammy main]
+python3-anyio 3.5.0-3ubuntu2 [Ubuntu/jammy universe]
+python3-appdirs 1.4.4-2 [Ubuntu/jammy main]
+python3-apport 2.20.11-0ubuntu82.5 [Ubuntu/jammy main]
+python3-apt 2.4.0ubuntu1 [Ubuntu/jammy main]
+python3-aptdaemon 1.1.1+bzr982-0ubuntu39 [Ubuntu/jammy main]
+python3-aptdaemon.gtk3widgets 1.1.1+bzr982-0ubuntu39 [Ubuntu/jammy main]
+python3-argon2 21.1.0-1 [Ubuntu/jammy universe]
+python3-asciitree 0.3.3-3 [Ubuntu/jammy universe]
+python3-asn1crypto 1.4.0-1 [Ubuntu/jammy universe]
+python3-async-generator 1.10-3 [Ubuntu/jammy universe]
+python3-attr 21.2.0-1 [Ubuntu/jammy main]
+python3-babel 2.8.0+dfsg.1-7 [Ubuntu/jammy main]
+python3-backcall 0.2.0-2 [Ubuntu/jammy universe]
+python3-bcrypt 3.2.0-1build1 [Ubuntu/jammy main]
+python3-beniget 0.4.1-2 [Ubuntu/jammy universe]
+python3-bleach 4.1.0-1 [Ubuntu/jammy universe]
+python3-blinker 1.4+dfsg1-0.4 [Ubuntu/jammy main]
+python3-blosc 1.9.2+ds1-3build2 [Ubuntu/jammy universe]
+python3-bottleneck 1.3.2+ds1-2build1 [Ubuntu/jammy universe]
+python3-brial 1.2.10-1build1 [Ubuntu/jammy universe]
+python3-brlapi 6.4-4ubuntu3 [Ubuntu/jammy main]
+python3-brotli 1.0.9-2build6 [Ubuntu/jammy universe]
+python3-bs4 4.10.0-2 [Ubuntu/jammy main]
+python3-cachetools 5.0.0-1 [Ubuntu/jammy main]
+python3-cairo 1.20.1-3build1 [Ubuntu/jammy main]
+python3-cdo 1.5.6-1 [Ubuntu/jammy universe]
+python3-certifi 2020.6.20-1 [Ubuntu/jammy main]
+python3-cffi-backend 1.15.0-1build2 [Ubuntu/jammy main]
+python3-cftime 1.5.2+ds-1build1 [Ubuntu/jammy universe]
+python3-chardet 4.0.0-1 [Ubuntu/jammy main]
+python3-charset-normalizer 2.0.6-2 [Ubuntu/jammy universe]
+python3-cliapp 1.20180812.1-4 [Ubuntu/jammy universe]
+python3-click 8.0.3-1 [Ubuntu/jammy main]
+python3-cloudpickle 2.0.0-1 [Ubuntu/jammy universe]
+python3-colorama 0.4.4-1 [Ubuntu/jammy main]
+python3-commandnotfound 22.04.0 [Ubuntu/jammy main]
+python3-commonmark 0.9.1-3 [Ubuntu/jammy universe]
+python3-compizconfig 1:0.9.14.1+22.04.20220820-0ubuntu1 [Ubuntu/jammy universe]
+python3-configobj 5.0.6-5 [Ubuntu/jammy main]
+python3-cov-core 1.15.0-3build1 [Ubuntu/jammy universe]
+python3-coverage 6.2+dfsg1-2build1 [Ubuntu/jammy universe]
+python3-cryptography 3.4.8-1ubuntu2 [Ubuntu/jammy main]
+python3-cups 2.0.1-5build1 [Ubuntu/jammy main]
+python3-cupshelpers 1.5.16-0ubuntu3 [Ubuntu/jammy main]
+python3-cvxopt 1.2.7+dfsg-2build2 [Ubuntu/jammy universe]
+python3-cycler 0.11.0-1 [Ubuntu/jammy universe]
+python3-cypari2 2.1.2-2build3 [Ubuntu/jammy universe]
+python3-cysignals-pari 1.11.2+ds-1build1 [Ubuntu/jammy universe]
+python3-dask 2022.01.0+dfsg-1ubuntu1 [Ubuntu/jammy universe]
+python3-dateutil 2.8.1-6 [Ubuntu/jammy main]
+python3-dbus 1.2.18-3build1 [Ubuntu/jammy main]
+python3-debconf 1.5.79ubuntu1 [Ubuntu/jammy main]
+python3-debian 0.1.43ubuntu1 [Ubuntu/jammy main]
+python3-decorator 4.4.2-0ubuntu1 [Ubuntu/jammy main]
+python3-defer 1.0.6-2.1ubuntu1 [Ubuntu/jammy main]
+python3-defusedxml 0.7.1-1 [Ubuntu/jammy main]
+python3-dev 3.10.6-1~22.04 [Ubuntu/jammy main]
+python3-distlib 0.3.4-1 [Ubuntu/jammy universe]
+python3-distributed 2022.01.0+ds.1-1 [Ubuntu/jammy universe]
+python3-distro 1.7.0-1 [Ubuntu/jammy main]
+python3-distro-info 1.1build1 [Ubuntu/jammy main]
+python3-distupgrade 1:22.04.16 [Ubuntu/jammy main]
+python3-distutils 3.10.6-1~22.04 [Ubuntu/jammy main]
+python3-distutils-extra 2.45 [Ubuntu/jammy universe]
+python3-docutils 0.17.1+dfsg-2 [Ubuntu/jammy main]
+python3-dropbox 11.26.0-1 [Ubuntu/jammy universe]
+python3-entrypoints 0.4-1 [Ubuntu/jammy universe]
+python3-et-xmlfile 1.0.1-2.1 [Ubuntu/jammy universe]
+python3-execnet 1.9.0-1 [Ubuntu/jammy universe]
+python3-fasteners 0.14.1-2 [Ubuntu/jammy main]
+python3-filelock 3.6.0-1 [Ubuntu/jammy universe]
+python3-flake8 4.0.1-2 [Ubuntu/jammy universe]
+python3-fontforge 1:20201107~dfsg-4build1 [Ubuntu/jammy universe]
+python3-fonttools 4.29.1-2build1 [Ubuntu/jammy universe]
+python3-fpylll 0.5.2+ds1-4build1 [Ubuntu/jammy universe]
+python3-fs 2.4.12-1 [Ubuntu/jammy universe]
+python3-fsspec 2022.01.0-1 [Ubuntu/jammy universe]
+python3-fusepy 3.0.1-2 [Ubuntu/jammy universe]
+python3-future 0.18.2-5ubuntu0.1 [Ubuntu/jammy main]
+python3-gast 0.5.2-2 [Ubuntu/jammy universe]
+python3-gdbm 3.10.6-1~22.04 [Ubuntu/jammy main]
+python3-gi 3.42.1-0ubuntu1 [Ubuntu/jammy main]
+python3-gi-cairo 3.42.1-0ubuntu1 [Ubuntu/jammy main]
+python3-gmpy2 2.1.2-1build1 [Ubuntu/jammy universe]
+python3-google-auth 1.5.1-3 [Ubuntu/jammy universe]
+python3-google-auth-httplib2 0.1.0-2 [Ubuntu/jammy universe]
+python3-googleapi 1.7.11-4 [Ubuntu/jammy universe]
+python3-greenlet 1.1.2-3build1 [Ubuntu/jammy main]
+python3-gst-1.0 1.20.1-1 [Ubuntu/jammy universe]
+python3-h11 0.13.0-1 [Ubuntu/jammy universe]
+python3-h5netcdf 0.12.0-1 [Ubuntu/jammy universe]
+python3-h5py-serial 3.6.0-2build1 [Ubuntu/jammy universe]
+python3-heapdict 1.0.1-1 [Ubuntu/jammy universe]
+python3-html5lib 1.1-3 [Ubuntu/jammy main]
+python3-httpcore 0.14.5-1 [Ubuntu/jammy universe]
+python3-httplib2 0.20.2-2 [Ubuntu/jammy main]
+python3-httpx 0.22.0-1 [Ubuntu/jammy universe]
+python3-ibus-1.0 1.5.26-4 [Ubuntu/jammy main]
+python3-idna 3.3-1 [Ubuntu/jammy main]
+python3-imagesize 1.3.0-1 [Ubuntu/jammy main]
+python3-img2pdf 0.4.2-2 [Ubuntu/jammy universe]
+python3-importlib-metadata 4.6.4-1 [Ubuntu/jammy main]
+python3-iniconfig 1.1.1-2 [Ubuntu/jammy universe]
+python3-ipykernel 6.7.0-1 [Ubuntu/jammy universe]
+python3-ipython 7.31.1-1 [Ubuntu/jammy universe]
+python3-ipython-genutils 0.2.0-5 [Ubuntu/jammy universe]
+python3-ipywidgets 6.0.0-9 [Ubuntu/jammy universe]
+python3-isort 5.6.4-1 [Ubuntu/jammy universe]
+python3-itsdangerous 2.1.0-1 [Ubuntu/jammy main]
+python3-jdcal 1.0-1.3 [Ubuntu/jammy universe]
+python3-jedi 0.18.0-1 [Ubuntu/jammy universe]
+python3-jeepney 0.7.1-3 [Ubuntu/jammy main]
+python3-jinja2 3.0.3-1 [Ubuntu/jammy main]
+python3-jsonschema 3.2.0-0ubuntu2 [Ubuntu/jammy main]
+python3-jupyter-client 7.1.2-1 [Ubuntu/jammy universe]
+python3-jupyter-core 4.9.1-1 [Ubuntu/jammy universe]
+python3-jupyterlab-pygments 0.1.2-8 [Ubuntu/jammy universe]
+python3-jwt 2.3.0-1ubuntu0.2 [Ubuntu/jammy main]
+python3-keyring 23.5.0-1 [Ubuntu/jammy main]
+python3-kiwisolver 1.3.2-1build1 [Ubuntu/jammy universe]
+python3-launchpadlib 1.10.16-1 [Ubuntu/jammy main]
+python3-lazr.restfulclient 0.14.4-1 [Ubuntu/jammy main]
+python3-lazr.uri 1.0.6-2 [Ubuntu/jammy main]
+python3-ldb 2:2.4.4-0ubuntu0.22.04.2 [Ubuntu/jammy main]
+python3-levenshtein 0.12.2-2build1 [Ubuntu/jammy universe]
+python3-lib2to3 3.10.6-1~22.04 [Ubuntu/jammy main]
+python3-libarchive-c 2.9-0.1 [Ubuntu/jammy universe]
+python3-livereload 2.6.3-2 [Ubuntu/jammy universe]
+python3-llfuse 1.3.8+dfsg-2build1 [Ubuntu/jammy universe]
+python3-llvmlite 0.38.0-1 [Ubuntu/jammy universe]
+python3-locket 0.2.1-1 [Ubuntu/jammy universe]
+python3-lockfile 1:0.12.2-2.2 [Ubuntu/jammy main]
+python3-louis 3.20.0-2ubuntu0.2 [Ubuntu/jammy main]
+python3-lxml 4.8.0-1build1 [Ubuntu/jammy main]
+python3-lz4 3.1.3+dfsg-1build3 [Ubuntu/jammy universe]
+python3-macaroonbakery 1.3.1-2ubuntu0.1 [Ubuntu/jammy main]
+python3-mako 1.1.3+ds1-2ubuntu0.1 [Ubuntu/jammy main]
+python3-markdown 3.3.6-1 [Ubuntu/jammy main]
+python3-markupsafe 2.0.1-2build1 [Ubuntu/jammy main]
+python3-matplotlib 3.5.1-2build1 [Ubuntu/jammy universe]
+python3-matplotlib-inline 0.1.3-1 [Ubuntu/jammy universe]
+python3-mccabe 0.6.1-3 [Ubuntu/jammy universe]
+python3-mechanize 1:0.4.7-1 [Ubuntu/jammy universe]
+python3-memory-allocator 0.1.2-2build1 [Ubuntu/jammy universe]
+python3-minimal 3.10.6-1~22.04 [Ubuntu/jammy main]
+python3-mistune 2.0.0-1+really0.8.4-1 [Ubuntu/jammy universe]
+python3-monotonic 1.6-2 [Ubuntu/jammy main]
+python3-more-itertools 8.10.0-2 [Ubuntu/jammy main]
+python3-mpd 3.0.5-1 [Ubuntu/jammy universe]
+python3-mpmath 1.2.1-2 [Ubuntu/jammy universe]
+python3-msgpack 1.0.3-1build1 [Ubuntu/jammy main]
+python3-mypy 0.942-1ubuntu1 [Ubuntu/jammy universe]
+python3-mypy-extensions 0.4.3-2 [Ubuntu/jammy universe]
+python3-nacl 1.5.0-2 [Ubuntu/jammy main]
+python3-nbclient 0.5.6-2 [Ubuntu/jammy universe]
+python3-nbconvert 6.4.0-1 [Ubuntu/jammy universe]
+python3-nbformat 5.1.3-1 [Ubuntu/jammy universe]
+python3-nest-asyncio 1.5.4-1 [Ubuntu/jammy universe]
+python3-netcdf4 1.5.8-1build1 [Ubuntu/jammy universe]
+python3-netifaces 0.11.0-1build2 [Ubuntu/jammy main]
+python3-networkx 2.4-4ubuntu2 [Ubuntu/jammy main]
+python3-newt 0.52.21-5ubuntu2 [Ubuntu/jammy main]
+python3-nose 1.3.7-8 [Ubuntu/jammy universe]
+python3-nose2 0.9.2-1 [Ubuntu/jammy universe]
+python3-notebook 6.4.8-1ubuntu0.1 [Ubuntu/jammy universe]
+python3-numba 0.55.1-0ubuntu2 [Ubuntu/jammy universe]
+python3-numcodecs 0.9.1+ds-2build1 [Ubuntu/jammy universe]
+python3-numexpr 2.8.1-1build1 [Ubuntu/jammy universe]
+python3-numpy 1:1.21.5-1ubuntu22.04.1 [Ubuntu/jammy main]
+python3-oauth2client 4.1.3-2 [Ubuntu/jammy universe]
+python3-oauthlib 3.2.0-1ubuntu0.1 [Ubuntu/jammy main]
+python3-odf 1.4.2-1 [Ubuntu/jammy universe]
+python3-olefile 0.46-3 [Ubuntu/jammy main]
+python3-openpyxl 3.0.9-1 [Ubuntu/jammy universe]
+python3-openssl 21.0.0-1 [Ubuntu/jammy main]
+python3-outcome 1.1.0-1 [Ubuntu/jammy universe]
+python3-packaging 21.3-1 [Ubuntu/jammy main]
+python3-pandas 1.3.5+dfsg-3 [Ubuntu/jammy universe]
+python3-pandas-lib 1.3.5+dfsg-3 [Ubuntu/jammy universe]
+python3-pandocfilters 1.5.0-1 [Ubuntu/jammy universe]
+python3-paramiko 2.9.3-0ubuntu1 [Ubuntu/jammy main]
+python3-parso 0.8.1-1 [Ubuntu/jammy universe]
+python3-partd 1.2.0-1 [Ubuntu/jammy universe]
+python3-path 16.3.0-1 [Ubuntu/jammy universe]
+python3-pathspec 0.9.0-1 [Ubuntu/jammy universe]
+python3-pexpect 4.8.0-2ubuntu1 [Ubuntu/jammy main]
+python3-pickleshare 0.7.5-5 [Ubuntu/jammy universe]
+python3-pikepdf 5.0.1+dfsg-1 [Ubuntu/jammy universe]
+python3-pil 9.0.1-1ubuntu0.1 [Ubuntu/jammy main]
+python3-pil.imagetk 9.0.1-1ubuntu0.1 [Ubuntu/jammy universe]
+python3-pip 22.0.2+dfsg-1ubuntu0.2 [Ubuntu/jammy universe]
+python3-pip-whl 22.0.2+dfsg-1ubuntu0.2 [Ubuntu/jammy universe]
+python3-pkg-resources 59.6.0-1.2ubuntu0.22.04.1 [Ubuntu/jammy main]
+python3-pkgconfig 1.5.5-1 [Ubuntu/jammy universe]
+python3-platformdirs 2.5.1-1 [Ubuntu/jammy universe]
+python3-pluggy 0.13.0-7.1 [Ubuntu/jammy universe]
+python3-ply 3.11-5 [Ubuntu/jammy main]
+python3-powerline 2.8.2-1 [Ubuntu/jammy universe]
+python3-ppl 0.8.7-1build4 [Ubuntu/jammy universe]
+python3-primecountpy 0.1.0-2build1 [Ubuntu/jammy universe]
+python3-problem-report 2.20.11-0ubuntu82.5 [Ubuntu/jammy main]
+python3-prometheus-client 0.9.0-1 [Ubuntu/jammy main]
+python3-prompt-toolkit 3.0.28-1 [Ubuntu/jammy universe]
+python3-protobuf 3.12.4-1ubuntu7.22.04.1 [Ubuntu/jammy main]
+python3-psutil 5.9.0-1build1 [Ubuntu/jammy main]
+python3-ptyprocess 0.7.0-3 [Ubuntu/jammy main]
+python3-py 1.10.0-1 [Ubuntu/jammy universe]
+python3-pyasn1 0.4.8-1 [Ubuntu/jammy main]
+python3-pyasn1-modules 0.2.1-1 [Ubuntu/jammy main]
+python3-pyatspi 2.38.2-1 [Ubuntu/jammy main]
+python3-pycodestyle 2.8.0-2 [Ubuntu/jammy universe]
+python3-pycryptodome 3.11.0+dfsg1-3build1 [Ubuntu/jammy main]
+python3-pydrive 1.3.1-0ubuntu2 [Ubuntu/jammy universe]
+python3-pyflakes 2.4.0-2 [Ubuntu/jammy universe]
+python3-pyfuse3 3.2.0-3build1 [Ubuntu/jammy universe]
+python3-pygit2 1.6.1+dfsg-2 [Ubuntu/jammy universe]
+python3-pygments 2.11.2+dfsg-2 [Ubuntu/jammy main]
+python3-pyinotify 0.9.6-1.3 [Ubuntu/jammy main]
+python3-pykka 2.0.3-2 [Ubuntu/jammy universe]
+python3-pymacaroons 0.13.0-4 [Ubuntu/jammy main]
+python3-pyparsing 2.4.7-1 [Ubuntu/jammy main]
+python3-pyqt5 5.15.6+dfsg-1ubuntu3 [Ubuntu/jammy universe]
+python3-pyqt5.qtopengl 5.15.6+dfsg-1ubuntu3 [Ubuntu/jammy universe]
+python3-pyqt5.qtquick 5.15.6+dfsg-1ubuntu3 [Ubuntu/jammy universe]
+python3-pyqt5.qtsql 5.15.6+dfsg-1ubuntu3 [Ubuntu/jammy universe]
+python3-pyqt5.qtwebchannel 5.15.6+dfsg-1ubuntu3 [Ubuntu/jammy universe]
+python3-pyqt5.qtwebengine 5.15.5-1 [Ubuntu/jammy universe]
+python3-pyqt5.qtwebkit 5.15.6+dfsg-1ubuntu3 [Ubuntu/jammy universe]
+python3-pyqt5.sip 12.9.1-1build1 [Ubuntu/jammy universe]
+python3-pyrsistent 0.18.1-1build1 [Ubuntu/jammy main]
+python3-pytest 6.2.5-1ubuntu2 [Ubuntu/jammy universe]
+python3-pytest-cov 3.0.0-1 [Ubuntu/jammy universe]
+python3-pytest-forked 1.4.0-1 [Ubuntu/jammy universe]
+python3-pytest-sugar 0.9.4-1ubuntu1 [Ubuntu/jammy universe]
+python3-pytest-xdist 2.5.0-1 [Ubuntu/jammy universe]
+python3-pythran 0.10.0+ds2-1 [Ubuntu/jammy universe]
+python3-pyxattr 0.7.2-2ubuntu2 [Ubuntu/jammy main]
+python3-renderpm 3.6.8-1 [Ubuntu/jammy main]
+python3-reportlab 3.6.8-1 [Ubuntu/jammy main]
+python3-reportlab-accel 3.6.8-1 [Ubuntu/jammy main]
+python3-requests 2.25.1+dfsg-2 [Ubuntu/jammy main]
+python3-requests-file 1.5.1-1 [Ubuntu/jammy universe]
+python3-rfc3339 1.1-3 [Ubuntu/jammy main]
+python3-rfc3986 1.5.0-2 [Ubuntu/jammy main]
+python3-rich 11.2.0-1 [Ubuntu/jammy universe]
+python3-roman 3.3-1 [Ubuntu/jammy main]
+python3-rpy2 3.5.11-1.2204.0 [CRAN/jammy-cran40 ]
+python3-rsa 4.8-1 [Ubuntu/jammy universe]
+python3-sage 9.5-4 [Ubuntu/jammy universe]
+python3-sagenb-export 3.2-4 [Ubuntu/jammy universe]
+python3-sagetex 3.6+ds-2 [Ubuntu/jammy universe]
+python3-scipy 1.8.0-1exp2ubuntu1 [Ubuntu/jammy universe]
+python3-scour 0.38.2-2 [Ubuntu/jammy universe]
+python3-secretstorage 3.3.1-1 [Ubuntu/jammy main]
+python3-send2trash 1.8.1~b0-1 [Ubuntu/jammy universe]
+python3-setproctitle 1.2.2-2build1 [Ubuntu/jammy main]
+python3-setuptools 59.6.0-1.2ubuntu0.22.04.1 [Ubuntu/jammy main]
+python3-setuptools-scm 6.4.2-1 [Ubuntu/jammy universe]
+python3-setuptools-whl 59.6.0-1.2ubuntu0.22.04.1 [Ubuntu/jammy universe]
+python3-shellingham 1.4.0-1 [Ubuntu/jammy universe]
+python3-simplegeneric 0.8.1-3 [Ubuntu/jammy main]
+python3-simplejson 3.17.6-1build1 [Ubuntu/jammy main]
+python3-singledispatch 3.4.0.3-3 [Ubuntu/jammy main]
+python3-sip 4.19.25+dfsg-3build1 [Ubuntu/jammy universe]
+python3-six 1.16.0-3ubuntu1 [Ubuntu/jammy main]
+python3-sniffio 1.2.0-1 [Ubuntu/jammy universe]
+python3-snowballstemmer 2.2.0-1build1 [Ubuntu/jammy main]
+python3-software-properties 0.99.22.6 [local]
+python3-sortedcontainers 2.1.0-2 [Ubuntu/jammy main]
+python3-soupsieve 2.3.1-1 [Ubuntu/jammy main]
+python3-speechd 0.11.1-1ubuntu2 [Ubuntu/jammy main]
+python3-sphinx 4.3.2-1 [Ubuntu/jammy main]
+python3-sqlalchemy 1.4.31+ds1-1build1 [Ubuntu/jammy main]
+python3-sqlalchemy-ext 1.4.31+ds1-1build1 [Ubuntu/jammy main]
+python3-sss 2.6.3-1ubuntu3.2 [Ubuntu/jammy main]
+python3-stemmer 2.0.1+dfsg-3build1 [Ubuntu/jammy universe]
+python3-stone 3.3.1-1 [Ubuntu/jammy universe]
+python3-sympy 1.9-1 [Ubuntu/jammy universe]
+python3-systemd 234-3ubuntu2 [Ubuntu/jammy main]
+python3-tables 3.7.0-2build1 [Ubuntu/jammy universe]
+python3-tables-lib 3.7.0-2build1 [Ubuntu/jammy universe]
+python3-tagpy 2013.1-7build7 [Ubuntu/jammy universe]
+python3-talloc 2.3.3-2build1 [Ubuntu/jammy main]
+python3-tblib 1.7.0-2 [Ubuntu/jammy universe]
+python3-termcolor 1.1.0-3 [Ubuntu/jammy universe]
+python3-terminado 0.13.1-1 [Ubuntu/jammy universe]
+python3-testpath 0.5.0+dfsg-1 [Ubuntu/jammy universe]
+python3-tk 3.10.6-1~22.04 [Ubuntu/jammy main]
+python3-tldextract 3.1.2-1 [Ubuntu/jammy universe]
+python3-toml 0.10.2-1 [Ubuntu/jammy universe]
+python3-tomli 1.2.2-2 [Ubuntu/jammy universe]
+python3-toolz 0.11.2-1 [Ubuntu/jammy universe]
+python3-tornado 6.1.0-3build1 [Ubuntu/jammy universe]
+python3-traitlets 5.1.1-1 [Ubuntu/jammy universe]
+python3-trio 0.19.0-1 [Ubuntu/jammy universe]
+python3-ttystatus 0.38-4 [Ubuntu/jammy universe]
+python3-typed-ast 1.4.3-1build1 [Ubuntu/jammy universe]
+python3-typer 0.4.0-1 [Ubuntu/jammy universe]
+python3-typing-extensions 3.10.0.2-1 [Ubuntu/jammy universe]
+python3-tz 2022.1-1ubuntu0.22.04.1 [Ubuntu/jammy main]
+python3-tzlocal 2.1-1 [Ubuntu/jammy universe]
+python3-ufolib2 0.13.1+dfsg1-1 [Ubuntu/jammy universe]
+python3-unicodedata2 14.0.0+ds-8 [Ubuntu/jammy universe]
+python3-uno 1:7.3.7-0ubuntu0.22.04.2 [Ubuntu/jammy main]
+python3-update-manager 1:22.04.10 [Ubuntu/jammy main]
+python3-uritemplate 3.0.1-1 [Ubuntu/jammy universe]
+python3-urllib3 1.26.5-1~exp1 [Ubuntu/jammy main]
+python3-vcversioner 2.16.0.0-6 [Ubuntu/jammy universe]
+python3-venv 3.10.6-1~22.04 [Ubuntu/jammy universe]
+python3-virtualenv 20.13.0+ds-2 [Ubuntu/jammy universe]
+python3-virtualenv-clone 0.3.0-2 [Ubuntu/jammy universe]
+python3-wadllib 1.3.6-1 [Ubuntu/jammy main]
+python3-wcwidth 0.2.5+dfsg1-1 [Ubuntu/jammy main]
+python3-webencodings 0.5.1-4 [Ubuntu/jammy main]
+python3-websocket 1.2.3-1 [Ubuntu/jammy universe]
+python3-werkzeug 2.0.2+dfsg1-1ubuntu0.22.04.1 [Ubuntu/jammy main]
+python3-wheel 0.37.1-2ubuntu0.22.04.1 [Ubuntu/jammy universe]
+python3-wheel-whl 0.37.1-2ubuntu0.22.04.1 [Ubuntu/jammy universe]
+python3-widgetsnbextension 6.0.0-9 [Ubuntu/jammy universe]
+python3-xarray 0.21.1-1 [Ubuntu/jammy universe]
+python3-xcbgen 1.14.1-1 [Ubuntu/jammy universe]
+python3-xdg 0.27-2 [Ubuntu/jammy main]
+python3-xkit 0.5.0ubuntu5 [Ubuntu/jammy main]
+python3-xlrd 1.2.0-2 [Ubuntu/jammy universe]
+python3-xlwt 1.3.0-3 [Ubuntu/jammy universe]
+python3-yaml 5.4.1-1ubuntu1 [Ubuntu/jammy main]
+python3-zarr 2.10.3+ds-1 [Ubuntu/jammy universe]
+python3-zict 2.0.0-1 [Ubuntu/jammy universe]
+python3-zipp 1.0.0-3 [Ubuntu/jammy main]
+python3-zmq 22.3.0-1build1 [Ubuntu/jammy universe]
+python3-zope.interface 5.4.0-1build1 [Ubuntu/jammy main]
+python3.10 3.10.6-1~22.04.2ubuntu1 [Ubuntu/jammy main]
+python3.10-dev 3.10.6-1~22.04.2ubuntu1 [Ubuntu/jammy main]
+python3.10-minimal 3.10.6-1~22.04.2ubuntu1 [Ubuntu/jammy main]
+python3.10-venv 3.10.6-1~22.04.2ubuntu1 [Ubuntu/jammy universe]
+qml-module-org-kde-bluezqt 5.92.0-0ubuntu1 [Ubuntu/jammy universe]
+qml-module-org-kde-kconfig 5.92.0-0ubuntu1 [Ubuntu/jammy universe]
+qml-module-org-kde-kirigami2 5.92.0-0ubuntu2 [Ubuntu/jammy universe]
+qml-module-org-kde-kquickcontrols 5.92.0-0ubuntu1 [Ubuntu/jammy universe]
+qml-module-org-kde-kquickcontrolsaddons 5.92.0-0ubuntu1 [Ubuntu/jammy universe]
+qml-module-org-kde-people 5.92.0-0ubuntu1 [Ubuntu/jammy universe]
+qml-module-org-kde-prison 5.92.0-0ubuntu1 [Ubuntu/jammy universe]
+qml-module-org-kde-purpose 5.92.0-0ubuntu1 [Ubuntu/jammy universe]
+qml-module-org-kde-qqc2desktopstyle 5.92.0-0ubuntu1 [Ubuntu/jammy universe]
+qml-module-org-kde-sonnet 5.92.0-0ubuntu1 [Ubuntu/jammy universe]
+qml-module-qt-labs-folderlistmodel 5.15.3+dfsg-1 [Ubuntu/jammy universe]
+qml-module-qt-labs-platform 5.15.3+dfsg-1 [Ubuntu/jammy universe]
+qml-module-qt-labs-settings 5.15.3+dfsg-1 [Ubuntu/jammy universe]
+qml-module-qtgraphicaleffects 5.15.3-1 [Ubuntu/jammy universe]
+qml-module-qtmultimedia 5.15.3-1 [Ubuntu/jammy universe]
+qml-module-qtqml 5.15.3+dfsg-1 [Ubuntu/jammy universe]
+qml-module-qtqml-models2 5.15.3+dfsg-1 [Ubuntu/jammy universe]
+qml-module-qtquick-controls 5.15.3-1 [Ubuntu/jammy universe]
+qml-module-qtquick-controls2 5.15.3+dfsg-1 [Ubuntu/jammy universe]
+qml-module-qtquick-dialogs 5.15.3-1 [Ubuntu/jammy universe]
+qml-module-qtquick-layouts 5.15.3+dfsg-1 [Ubuntu/jammy universe]
+qml-module-qtquick-particles2 5.15.3+dfsg-1 [Ubuntu/jammy universe]
+qml-module-qtquick-privatewidgets 5.15.3-1 [Ubuntu/jammy universe]
+qml-module-qtquick-templates2 5.15.3+dfsg-1 [Ubuntu/jammy universe]
+qml-module-qtquick-window2 5.15.3+dfsg-1 [Ubuntu/jammy universe]
+qml-module-qtquick2 5.15.3+dfsg-1 [Ubuntu/jammy universe]
+qml-module-qtwebengine 5.15.9+dfsg-1 [Ubuntu/jammy universe]
+qml-module-ubuntu-onlineaccounts 0.6+17.04.20170405-0ubuntu5 [Ubuntu/jammy universe]
+qrencode 4.1.1-1 [Ubuntu/jammy universe]
+qt5-gtk-platformtheme 5.15.3+dfsg-2ubuntu0.2 [Ubuntu/jammy universe]
+qt5dxcb-plugin 5.0.46+git20220314-1 [Ubuntu/jammy universe]
+qtquickcontrols2-5-dev 5.15.3+dfsg-1 [Ubuntu/jammy universe]
+qtspeech5-flite-plugin 5.15.3-1 [Ubuntu/jammy universe]
+qttranslations5-l10n 5.15.3-1 [Ubuntu/jammy universe]
+qtwayland5 5.15.3-1 [Ubuntu/jammy universe]
+qutebrowser 2.5.0-1 [Ubuntu/jammy universe]
+qutebrowser-qtwebengine 2.5.0-1 [Ubuntu/jammy universe]
+qutebrowser-qtwebkit 2.5.0-1 [Ubuntu/jammy universe]
+r-base 4.3.0-1.2204.0 [CRAN/jammy-cran40 ]
+r-base-core 4.3.0-1.2204.0 [CRAN/jammy-cran40 ]
+r-base-dev 4.3.0-1.2204.0 [CRAN/jammy-cran40 ]
+r-base-html 4.3.0-1.2204.0 [CRAN/jammy-cran40 ]
+r-cran-boot 1.3-28-2.2204.0 [CRAN/jammy-cran40 ]
+r-cran-class 7.3-21-1.2204.0 [CRAN/jammy-cran40 ]
+r-cran-cluster 2.1.4-1.2204.0 [CRAN/jammy-cran40 ]
+r-cran-codetools 0.2-19-1.2204.0 [CRAN/jammy-cran40 ]
+r-cran-foreign 0.8.82-1.2204.0 [CRAN/jammy-cran40 ]
+r-cran-kernsmooth 2.23-20-1.2204.0 [CRAN/jammy-cran40 ]
+r-cran-lattice 0.21-8-1.2204.0 [CRAN/jammy-cran40 ]
+r-cran-mass 7.3-59-1.2204.0 [CRAN/jammy-cran40 ]
+r-cran-matrix 1.5-1-1.2204.0 [CRAN/jammy-cran40 ]
+r-cran-mgcv 1.8-42-1.2204.0 [CRAN/jammy-cran40 ]
+r-cran-nlme 3.1.162-1.2204.0 [CRAN/jammy-cran40 ]
+r-cran-nnet 7.3-18-1.2204.0 [CRAN/jammy-cran40 ]
+r-cran-rpart 4.1.19-1.2204.0 [CRAN/jammy-cran40 ]
+r-cran-spatial 7.3-15-1.2204.0 [CRAN/jammy-cran40 ]
+r-cran-survival 3.5-3-1.2204.0 [CRAN/jammy-cran40 ]
+r-doc-html 4.3.0-1.2204.0 [CRAN/jammy-cran40 ]
+r-recommended 4.3.0-1.2204.0 [CRAN/jammy-cran40 ]
+rake 13.0.6-2 [Ubuntu/jammy main]
+ranger 1.9.3-3ubuntu1 [Ubuntu/jammy universe]
+rclone 1.53.3-4ubuntu1.22.04.2 [Ubuntu/jammy universe]
+rclone-browser 1.8.0-1.2build1 [Ubuntu/jammy universe]
+readline-common 8.1.2-1 [Ubuntu/jammy main]
+recode 3.6-24build2 [Ubuntu/jammy main]
+recordmydesktop 0.4.0-1 [Ubuntu/jammy universe]
+remarkable-linux-client 1.0.0 [local]
+remind 03.04.01-1 [Ubuntu/jammy universe]
+remmina 1.4.25+dfsg-1 [Ubuntu/jammy main]
+remmina-common 1.4.25+dfsg-1 [Ubuntu/jammy main]
+remmina-plugin-rdp 1.4.25+dfsg-1 [Ubuntu/jammy main]
+remmina-plugin-secret 1.4.25+dfsg-1 [Ubuntu/jammy main]
+remmina-plugin-vnc 1.4.25+dfsg-1 [Ubuntu/jammy main]
+rfkill 2.37.2-4ubuntu3 [Ubuntu/jammy main]
+rhythmbox 3.4.4-5ubuntu1 [Ubuntu/jammy main]
+rhythmbox-data 3.4.4-5ubuntu1 [Ubuntu/jammy main]
+rhythmbox-plugin-alternative-toolbar 0.20.2-1 [Ubuntu/jammy main]
+rhythmbox-plugin-zeitgeist 3.4.4-5ubuntu1 [Ubuntu/jammy universe]
+rhythmbox-plugins 3.4.4-5ubuntu1 [Ubuntu/jammy main]
+ri 1:3.0~exp1 [Ubuntu/jammy universe]
+rlwrap 0.43-1build3 [Ubuntu/jammy universe]
+rofi 1.7.1-0.1 [Ubuntu/jammy universe]
+rpcsvc-proto 1.4.2-0ubuntu6 [Ubuntu/jammy main]
+rpm 4.17.0+dfsg1-4build1 [Ubuntu/jammy universe]
+rpm-common 4.17.0+dfsg1-4build1 [Ubuntu/jammy universe]
+rpm2cpio 4.17.0+dfsg1-4build1 [Ubuntu/jammy universe]
+rstudio 2022.12.0+353 [local]
+rsync 3.2.7-0ubuntu0.22.04.2 [Ubuntu/jammy main]
+rsyslog 8.2112.0-2ubuntu2.2 [Ubuntu/jammy main]
+rtkit 0.13-4build2 [Ubuntu/jammy main]
+rtmpdump 2.4+20151223.gitfa8646d.1-2build4 [Ubuntu/jammy universe]
+ruby 1:3.0~exp1 [Ubuntu/jammy main]
+ruby-bundler 2.3.5-2 [Ubuntu/jammy universe]
+ruby-dev 1:3.0~exp1 [Ubuntu/jammy main]
+ruby-full 1:3.0~exp1 [Ubuntu/jammy universe]
+ruby-minitest 5.13.0-1 [Ubuntu/jammy universe]
+ruby-net-telnet 0.1.1-2 [Ubuntu/jammy main]
+ruby-optimist 3.0.0-2 [Ubuntu/jammy universe]
+ruby-paint 2.2.0-1 [Ubuntu/jammy universe]
+ruby-power-assert 1.1.7-2 [Ubuntu/jammy universe]
+ruby-rubygems 3.3.5-2 [Ubuntu/jammy main]
+ruby-test-unit 3.3.9-1 [Ubuntu/jammy universe]
+ruby-xmlrpc 0.3.2-1ubuntu0.1 [Ubuntu/jammy main]
+ruby3.0 3.0.2-7ubuntu2.3 [Ubuntu/jammy main]
+ruby3.0-dev 3.0.2-7ubuntu2.3 [Ubuntu/jammy main]
+ruby3.0-doc 3.0.2-7ubuntu2.3 [Ubuntu/jammy main]
+rubygems-integration 1.18 [Ubuntu/jammy main]
+run-one 1.17-0ubuntu1 [Ubuntu/jammy main]
+rxvt-unicode 9.30-2build1 [Ubuntu/jammy universe]
+rygel 0.40.3-1ubuntu2 [Ubuntu/jammy main]
+sagemath 9.5-4 [Ubuntu/jammy universe]
+sagemath-database-conway-polynomials 0.5-8 [Ubuntu/jammy universe]
+sagemath-database-elliptic-curves 0.8.1-5 [Ubuntu/jammy universe]
+sagemath-database-graphs 20210214+dfsg-1 [Ubuntu/jammy universe]
+sagemath-database-mutually-combinatorial-designs 20140630-6 [Ubuntu/jammy universe]
+sagemath-database-polytopes 20170220-5 [Ubuntu/jammy universe]
+sagemath-doc 9.5-4 [Ubuntu/jammy universe]
+sagemath-jupyter 9.5-4 [Ubuntu/jammy universe]
+sagetex 3.6+ds-2 [Ubuntu/jammy universe]
+samba-libs 2:4.15.13+dfsg-0ubuntu1.1 [Ubuntu/jammy main]
+sane-airscan 0.99.27-1build1 [Ubuntu/jammy main]
+sane-utils 1.1.1-5 [Ubuntu/jammy main]
+sassc 3.6.1+20201027-2 [Ubuntu/jammy universe]
+sbsigntool 0.9.4-2ubuntu2 [Ubuntu/jammy main]
+sc 7.16-4ubuntu3 [Ubuntu/jammy universe]
+scrcpy 1.21-1 [Ubuntu/jammy universe]
+scrcpy-server 1.21-1 [Ubuntu/jammy universe]
+screenkey 1:1.5-1 [Ubuntu/jammy universe]
+scrot 1.7-1 [Ubuntu/jammy universe]
+seahorse 41.0-2 [Ubuntu/jammy main]
+secureboot-db 1.8 [Ubuntu/jammy main]
+sed 4.8-1ubuntu2 [Ubuntu/jammy main]
+sensible-utils 0.0.17 [Ubuntu/jammy main]
+session-migration 0.3.6 [Ubuntu/jammy main]
+session-shortcuts 1.4 [Ubuntu/jammy universe]
+sgml-base 1.30 [Ubuntu/jammy main]
+sgml-data 2.0.11+nmu1 [Ubuntu/jammy main]
+shared-mime-info 2.1-2 [Ubuntu/jammy main]
+shellcheck 0.8.0-2 [Ubuntu/jammy universe]
+shfmt 3.6.0 [local]
+shfmt-bin 3.4.3-1 [local]
+shim-signed 1.51.3+15.7-0ubuntu1 [Ubuntu/jammy main]
+shotwell 0.30.14-1ubuntu6 [Ubuntu/jammy main]
+shotwell-common 0.30.14-1ubuntu6 [Ubuntu/jammy main]
+signal-desktop 6.18.1 [. xenial/xenial main]
+signon-plugin-oauth2 0.25-2 [Ubuntu/jammy universe]
+silversearcher-ag 2.2.0+git20200805-1 [Ubuntu/jammy universe]
+simple-scan 42.0-1 [Ubuntu/jammy main]
+singular 1:4.2.1-p3+ds-1 [Ubuntu/jammy universe]
+singular-data 1:4.2.1-p3+ds-1 [Ubuntu/jammy universe]
+singular-doc 1:4.2.1-p3+ds-1 [Ubuntu/jammy universe]
+singular-modules 1:4.2.1-p3+ds-1 [Ubuntu/jammy universe]
+singular-ui 1:4.2.1-p3+ds-1 [Ubuntu/jammy universe]
+slack-desktop 4.32.122 [slack/jessie main]
+slirp4netns 1.0.1-2 [Ubuntu/jammy universe]
+slop 7.5-1.1build2 [Ubuntu/jammy universe]
+snapd 2.58+22.04 [Ubuntu/jammy main]
+software-properties-common 0.99.22.6 [local]
+software-properties-gtk 0.99.22.6 [local]
+sonata 1.7.0-1 [Ubuntu/jammy universe]
+sonnet-plugins 5.92.0-0ubuntu1 [Ubuntu/jammy universe]
+sound-icons 0.1-8 [Ubuntu/jammy main]
+sound-theme-freedesktop 0.8-2ubuntu1 [Ubuntu/jammy main]
+source-highlight 3.1.9-4.1build2 [Ubuntu/jammy universe]
+sox 14.4.2+git20190427-2+deb11u2build0.22.04.1 [Ubuntu/jammy universe]
+speech-dispatcher 0.11.1-1ubuntu2 [Ubuntu/jammy main]
+speech-dispatcher-audio-plugins 0.11.1-1ubuntu2 [Ubuntu/jammy main]
+speech-dispatcher-espeak-ng 0.11.1-1ubuntu2 [Ubuntu/jammy main]
+speedtest-cli 2.1.3-2 [Ubuntu/jammy universe]
+sphinx-common 4.3.2-1 [Ubuntu/jammy main]
+sphinx-rtd-theme-common 1.0.0+dfsg-1 [Ubuntu/jammy main]
+spice-vdagent 0.22.1-1 [Ubuntu/jammy main]
+spotify-client 1:1.1.72.439.gc253025e [local]
+sqlite3 3.37.2-2ubuntu0.1 [Ubuntu/jammy main]
+squashfs-tools 1:4.5-3build1 [Ubuntu/jammy main]
+ssh-import-id 5.11-0ubuntu1 [Ubuntu/jammy main]
+sshfs 3.7.1+repack-2 [Ubuntu/jammy universe]
+ssl-cert 1.1.2 [Ubuntu/jammy main]
+sssd 2.6.3-1ubuntu3.2 [Ubuntu/jammy main]
+sssd-ad 2.6.3-1ubuntu3.2 [Ubuntu/jammy main]
+sssd-ad-common 2.6.3-1ubuntu3.2 [Ubuntu/jammy main]
+sssd-common 2.6.3-1ubuntu3.2 [Ubuntu/jammy main]
+sssd-ipa 2.6.3-1ubuntu3.2 [Ubuntu/jammy main]
+sssd-krb5 2.6.3-1ubuntu3.2 [Ubuntu/jammy main]
+sssd-krb5-common 2.6.3-1ubuntu3.2 [Ubuntu/jammy main]
+sssd-ldap 2.6.3-1ubuntu3.2 [Ubuntu/jammy main]
+sssd-proxy 2.6.3-1ubuntu3.2 [Ubuntu/jammy main]
+stacer 1.1.0+ds-1 [Ubuntu/jammy universe]
+stow 2.3.1-1 [Ubuntu/jammy universe]
+strace 5.16-0ubuntu3 [Ubuntu/jammy main]
+sublime-text 4126 [local]
+sudo 1.9.9-1ubuntu2.4 [Ubuntu/jammy main]
+surf-alggeo 1.0.6+ds-6 [Ubuntu/jammy universe]
+surf-alggeo-nox 1.0.6+ds-6 [Ubuntu/jammy universe]
+switcheroo-control 2.4-3build2 [Ubuntu/jammy main]
+sxhkd 0.6.2-1 [Ubuntu/jammy universe]
+sympow 2.023.6-1 [Ubuntu/jammy universe]
+sympow-data 2.023.6-1 [Ubuntu/jammy universe]
+syncthing 1.18.0~ds1-3ubuntu0.2 [Ubuntu/jammy universe]
+system-config-printer 1.5.16-0ubuntu3 [Ubuntu/jammy main]
+system-config-printer-common 1.5.16-0ubuntu3 [Ubuntu/jammy main]
+system-config-printer-udev 1.5.16-0ubuntu3 [Ubuntu/jammy main]
+systemd 249.11-0ubuntu3.9 [Ubuntu/jammy main]
+systemd-hwe-hwdb 249.11.3 [Ubuntu/jammy main]
+systemd-oomd 249.11-0ubuntu3.9 [Ubuntu/jammy main]
+systemd-sysv 249.11-0ubuntu3.9 [Ubuntu/jammy main]
+systemd-timesyncd 249.11-0ubuntu3.9 [Ubuntu/jammy main]
+sysvinit-utils 3.01-1ubuntu1 [Ubuntu/jammy main]
+t1utils 1.41-4build2 [Ubuntu/jammy main]
+tabby-terminal 1.0.183 [local]
+tachyon 0.99~b6+dsx-10 [Ubuntu/jammy universe]
+tachyon-bin-nox 0.99~b6+dsx-10 [Ubuntu/jammy universe]
+tar 1.34+dfsg-1ubuntu0.1.22.04.1 [Ubuntu/jammy main]
+tcl 8.6.11+1build2 [Ubuntu/jammy main]
+tcl-dev 8.6.11+1build2 [Ubuntu/jammy main]
+tcl-expect 5.45.4-2build1 [Ubuntu/jammy universe]
+tcl8.6 8.6.12+dfsg-1build1 [Ubuntu/jammy main]
+tcl8.6-dev 8.6.12+dfsg-1build1 [Ubuntu/jammy main]
+tcllib 1.20+dfsg-1 [Ubuntu/jammy universe]
+tcpdump 4.99.1-3ubuntu0.1 [Ubuntu/jammy main]
+teams 1.5.00.23861 [local]
+teckit 2.5.11+ds1-1 [Ubuntu/jammy universe]
+telnet 0.17-44build1 [Ubuntu/jammy main]
+tesseract-ocr 4.1.1-2.1build1 [Ubuntu/jammy universe]
+tesseract-ocr-eng 1:4.00~git30-7274cfa-1.1 [Ubuntu/jammy universe]
+tesseract-ocr-osd 1:4.00~git30-7274cfa-1.1 [Ubuntu/jammy universe]
+tex-common 6.17 [Ubuntu/jammy universe]
+tex-gyre 20180621-3.1 [Ubuntu/jammy universe]
+texinfo 6.8-4build1 [Ubuntu/jammy universe]
+texlive 2021.20220204-1 [Ubuntu/jammy universe]
+texlive-base 2021.20220204-1 [Ubuntu/jammy universe]
+texlive-bibtex-extra 2021.20220204-1 [Ubuntu/jammy universe]
+texlive-binaries 2021.20210626.59705-1build1 [Ubuntu/jammy universe]
+texlive-extra-utils 2021.20220204-1 [Ubuntu/jammy universe]
+texlive-font-utils 2021.20220204-1 [Ubuntu/jammy universe]
+texlive-fonts-extra 2021.20220204-1 [Ubuntu/jammy universe]
+texlive-fonts-extra-doc 2021.20220204-1 [Ubuntu/jammy universe]
+texlive-fonts-extra-links 2021.20220204-1 [Ubuntu/jammy universe]
+texlive-fonts-recommended 2021.20220204-1 [Ubuntu/jammy universe]
+texlive-fonts-recommended-doc 2021.20220204-1 [Ubuntu/jammy universe]
+texlive-formats-extra 2021.20220204-1 [Ubuntu/jammy universe]
+texlive-full 2021.20220204-1 [Ubuntu/jammy universe]
+texlive-games 2021.20220204-1 [Ubuntu/jammy universe]
+texlive-humanities 2021.20220204-1 [Ubuntu/jammy universe]
+texlive-humanities-doc 2021.20220204-1 [Ubuntu/jammy universe]
+texlive-lang-arabic 2021.20220204-1 [Ubuntu/jammy universe]
+texlive-lang-chinese 2021.20220204-1 [Ubuntu/jammy universe]
+texlive-lang-cjk 2021.20220204-1 [Ubuntu/jammy universe]
+texlive-lang-cyrillic 2021.20220204-1 [Ubuntu/jammy universe]
+texlive-lang-czechslovak 2021.20220204-1 [Ubuntu/jammy universe]
+texlive-lang-english 2021.20220204-1 [Ubuntu/jammy universe]
+texlive-lang-european 2021.20220204-1 [Ubuntu/jammy universe]
+texlive-lang-french 2021.20220204-1 [Ubuntu/jammy universe]
+texlive-lang-german 2021.20220204-1 [Ubuntu/jammy universe]
+texlive-lang-greek 2021.20220204-1 [Ubuntu/jammy universe]
+texlive-lang-italian 2021.20220204-1 [Ubuntu/jammy universe]
+texlive-lang-japanese 2021.20220204-1 [Ubuntu/jammy universe]
+texlive-lang-korean 2021.20220204-1 [Ubuntu/jammy universe]
+texlive-lang-other 2021.20220204-1 [Ubuntu/jammy universe]
+texlive-lang-polish 2021.20220204-1 [Ubuntu/jammy universe]
+texlive-lang-portuguese 2021.20220204-1 [Ubuntu/jammy universe]
+texlive-lang-spanish 2021.20220204-1 [Ubuntu/jammy universe]
+texlive-latex-base 2021.20220204-1 [Ubuntu/jammy universe]
+texlive-latex-base-doc 2021.20220204-1 [Ubuntu/jammy universe]
+texlive-latex-extra 2021.20220204-1 [Ubuntu/jammy universe]
+texlive-latex-extra-doc 2021.20220204-1 [Ubuntu/jammy universe]
+texlive-latex-recommended 2021.20220204-1 [Ubuntu/jammy universe]
+texlive-latex-recommended-doc 2021.20220204-1 [Ubuntu/jammy universe]
+texlive-luatex 2021.20220204-1 [Ubuntu/jammy universe]
+texlive-metapost 2021.20220204-1 [Ubuntu/jammy universe]
+texlive-metapost-doc 2021.20220204-1 [Ubuntu/jammy universe]
+texlive-music 2021.20220204-1 [Ubuntu/jammy universe]
+texlive-pictures 2021.20220204-1 [Ubuntu/jammy universe]
+texlive-pictures-doc 2021.20220204-1 [Ubuntu/jammy universe]
+texlive-plain-generic 2021.20220204-1 [Ubuntu/jammy universe]
+texlive-pstricks 2021.20220204-1 [Ubuntu/jammy universe]
+texlive-pstricks-doc 2021.20220204-1 [Ubuntu/jammy universe]
+texlive-publishers 2021.20220204-1 [Ubuntu/jammy universe]
+texlive-publishers-doc 2021.20220204-1 [Ubuntu/jammy universe]
+texlive-science 2021.20220204-1 [Ubuntu/jammy universe]
+texlive-science-doc 2021.20220204-1 [Ubuntu/jammy universe]
+texlive-xetex 2021.20220204-1 [Ubuntu/jammy universe]
+thermald 2.4.9-1ubuntu0.2 [Ubuntu/jammy main]
+thunar 4.16.10-1 [Ubuntu/jammy universe]
+thunar-data 4.16.10-1 [Ubuntu/jammy universe]
+thunar-volman 4.16.0-1 [Ubuntu/jammy universe]
+thunderbird 1:102.11.0+build1-0ubuntu0.22.04.1 [Ubuntu/jammy main]
+thunderbird-gnome-support 1:102.11.0+build1-0ubuntu0.22.04.1 [Ubuntu/jammy main]
+thunderbird-locale-en 1:102.11.0+build1-0ubuntu0.22.04.1 [Ubuntu/jammy main]
+thunderbird-locale-en-us 1:102.11.0+build1-0ubuntu0.22.04.1 [Ubuntu/jammy main]
+time 1.9-0.1build2 [Ubuntu/jammy main]
+timer 1.2.0 [local]
+timgm6mb-soundfont 1.3-5 [Ubuntu/jammy universe]
+tipa 2:1.3-21 [Ubuntu/jammy universe]
+tk 8.6.11+1build2 [Ubuntu/jammy main]
+tk-dev 8.6.11+1build2 [Ubuntu/jammy main]
+tk8.6 8.6.12-1build1 [Ubuntu/jammy main]
+tk8.6-blt2.5 2.5.3+dfsg-4.1build2 [Ubuntu/jammy main]
+tk8.6-dev 8.6.12-1build1 [Ubuntu/jammy main]
+tmux 3.2a-4ubuntu0.2 [Ubuntu/jammy main]
+tnftp 20210827-4build1 [Ubuntu/jammy main]
+toilet 0.3-1.4 [Ubuntu/jammy universe]
+toilet-fonts 0.3-1.4 [Ubuntu/jammy universe]
+topcom 0.17.8+ds-3 [Ubuntu/jammy universe]
+topcom-examples 0.17.8+ds-3 [Ubuntu/jammy universe]
+totem 42.0-1ubuntu1 [Ubuntu/jammy main]
+totem-common 42.0-1ubuntu1 [Ubuntu/jammy main]
+totem-plugins 42.0-1ubuntu1 [Ubuntu/jammy main]
+tox 3.21.4-1ubuntu1 [Ubuntu/jammy universe]
+tpm-udev 0.6 [Ubuntu/jammy main]
+tracker 3.3.0-1 [Ubuntu/jammy main]
+tracker-extract 3.3.0-1 [Ubuntu/jammy main]
+tracker-miner-fs 3.3.0-1 [Ubuntu/jammy main]
+translate-shell 0.9.6.12-1 [Ubuntu/jammy multiverse]
+transmission-common 3.00-2ubuntu2 [Ubuntu/jammy main]
+transmission-gtk 3.00-2ubuntu2 [Ubuntu/jammy main]
+trash-cli 0.17.1.14-5build1 [Ubuntu/jammy universe]
+tree 2.0.2-1 [Ubuntu/jammy universe]
+ttf-bitstream-vera 1.10-8.2 [Ubuntu/jammy universe]
+ttf-mscorefonts-installer 3.8ubuntu2 [Ubuntu/jammy multiverse]
+tumbler 4.16.0-1 [Ubuntu/jammy universe]
+tumbler-common 4.16.0-1 [Ubuntu/jammy universe]
+tzdata 2023c-0ubuntu0.22.04.1 [Ubuntu/jammy main]
+ubuntu-advantage-desktop-daemon 1.10~22.04.1 [Ubuntu/jammy main]
+ubuntu-advantage-tools 27.14.4~22.04 [Ubuntu/jammy main]
+ubuntu-docs 22.04.5 [Ubuntu/jammy main]
+ubuntu-drivers-common 1:0.9.6.1 [Ubuntu/jammy main]
+ubuntu-keyring 2021.03.26 [Ubuntu/jammy main]
+ubuntu-minimal 1.481 [Ubuntu/jammy main]
+ubuntu-mono 20.10-0ubuntu2 [Ubuntu/jammy main]
+ubuntu-release-upgrader-core 1:22.04.16 [Ubuntu/jammy main]
+ubuntu-release-upgrader-gtk 1:22.04.16 [Ubuntu/jammy main]
+ubuntu-report 1.7.1 [Ubuntu/jammy main]
+ubuntu-restricted-addons 26 [Ubuntu/jammy multiverse]
+ubuntu-session 42.0-1ubuntu2 [Ubuntu/jammy main]
+ubuntu-settings 22.04.6 [Ubuntu/jammy main]
+ubuntu-standard 1.481 [Ubuntu/jammy main]
+ubuntu-touch-sounds 15.08 [Ubuntu/jammy universe]
+ubuntu-wallpapers 22.04.4-0ubuntu1 [Ubuntu/jammy main]
+ubuntu-wallpapers-jammy 22.04.4-0ubuntu1 [Ubuntu/jammy main]
+ucf 3.0043 [Ubuntu/jammy main]
+udev 249.11-0ubuntu3.9 [Ubuntu/jammy main]
+udisks2 2.9.4-1ubuntu2 [Ubuntu/jammy main]
+ufw 0.36.1-4build1 [Ubuntu/jammy main]
+uim 1:1.8.8-9build1 [Ubuntu/jammy universe]
+uim-data 1:1.8.8-9build1 [Ubuntu/jammy universe]
+uim-fep 1:1.8.8-9build1 [Ubuntu/jammy universe]
+uim-gtk2.0 1:1.8.8-9build1 [Ubuntu/jammy universe]
+uim-gtk2.0-immodule 1:1.8.8-9build1 [Ubuntu/jammy universe]
+uim-gtk3 1:1.8.8-9build1 [Ubuntu/jammy universe]
+uim-gtk3-immodule 1:1.8.8-9build1 [Ubuntu/jammy universe]
+uim-plugins 1:1.8.8-9build1 [Ubuntu/jammy universe]
+uim-qt5 1:1.8.8-9build1 [Ubuntu/jammy universe]
+uim-qt5-immodule 1:1.8.8-9build1 [Ubuntu/jammy universe]
+uim-xim 1:1.8.8-9build1 [Ubuntu/jammy universe]
+unattended-upgrades 2.8ubuntu1 [Ubuntu/jammy main]
+unicode-data 14.0.0-1.1 [Ubuntu/jammy universe]
+units 2.21-2 [Ubuntu/jammy universe]
+unity 7.5.1+22.04.20211026.2-0ubuntu1 [Ubuntu/jammy universe]
+unity-asset-pool 0.8.24+17.10.20170507-0ubuntu3 [Ubuntu/jammy universe]
+unity-control-center 15.04.0+21.10.20220207-0ubuntu3 [Ubuntu/jammy universe]
+unity-greeter 22.04.1-0ubuntu2 [Ubuntu/jammy universe]
+unity-gtk-module-common 0.0.0+18.04.20171202-0ubuntu3 [Ubuntu/jammy universe]
+unity-gtk2-module 0.0.0+18.04.20171202-0ubuntu3 [Ubuntu/jammy universe]
+unity-gtk3-module 0.0.0+18.04.20171202-0ubuntu3 [Ubuntu/jammy universe]
+unity-schemas 7.5.1+22.04.20211026.2-0ubuntu1 [Ubuntu/jammy universe]
+unity-scope-home 6.8.2+19.04.20190412-0ubuntu2 [Ubuntu/jammy universe]
+unity-scopes-master-default 6.8.2+19.04.20190412-0ubuntu2 [Ubuntu/jammy universe]
+unity-services 7.5.1+22.04.20211026.2-0ubuntu1 [Ubuntu/jammy universe]
+unity-session 42.0-1ubuntu2 [Ubuntu/jammy universe]
+unity-settings-daemon 15.04.1+21.10.20220207-0ubuntu1 [Ubuntu/jammy universe]
+unity-settings-daemon-schemas 15.04.1+21.10.20220207-0ubuntu1 [Ubuntu/jammy universe]
+uno-libs-private 1:7.3.7-0ubuntu0.22.04.2 [Ubuntu/jammy main]
+unoconv 0.7-2ubuntu1 [Ubuntu/jammy universe]
+unrar 1:6.1.5-1 [Ubuntu/jammy multiverse]
+unrtf 0.21.10-clean-1 [Ubuntu/jammy universe]
+unzip 6.0-26ubuntu3.1 [Ubuntu/jammy main]
+update-inetd 4.51 [Ubuntu/jammy main]
+update-manager 1:22.04.10 [Ubuntu/jammy main]
+update-manager-core 1:22.04.10 [Ubuntu/jammy main]
+update-notifier 3.192.54.6 [Ubuntu/jammy main]
+update-notifier-common 3.192.54.6 [Ubuntu/jammy main]
+upower 0.99.17-1 [Ubuntu/jammy main]
+ure 1:7.3.7-0ubuntu0.22.04.2 [Ubuntu/jammy main]
+usb-creator-common 0.3.13 [Ubuntu/jammy main]
+usb-creator-gtk 0.3.13 [Ubuntu/jammy main]
+usb-modeswitch 2.6.1-3ubuntu2 [Ubuntu/jammy main]
+usb-modeswitch-data 20191128-4 [Ubuntu/jammy main]
+usb.ids 2022.04.02-1 [Ubuntu/jammy main]
+usbmuxd 1.1.1-2build2 [Ubuntu/jammy main]
+usbutils 1:014-1build1 [Ubuntu/jammy main]
+usrmerge 25ubuntu2 [Ubuntu/jammy main]
+uthash-dev 2.3.0-1 [Ubuntu/jammy universe]
+util-linux 2.37.2-4ubuntu3 [Ubuntu/jammy main]
+uuid-dev 2.37.2-4ubuntu3 [Ubuntu/jammy main]
+uuid-runtime 2.37.2-4ubuntu3 [Ubuntu/jammy main]
+v4l-utils 1.22.1-2build1 [Ubuntu/jammy universe]
+v4l2loopback-dkms 0.12.7-2ubuntu2~22.04.1 [Ubuntu/jammy universe]
+v4l2loopback-utils 0.12.7-2ubuntu2~22.04.1 [Ubuntu/jammy universe]
+va-driver-all 2.14.0-1 [Ubuntu/jammy universe]
+vdpau-driver-all 1.4-3build2 [Ubuntu/jammy main]
+viewnior 1.6-1build3 [Ubuntu/jammy universe]
+vifm 0.12-1 [Ubuntu/jammy universe]
+vim 2:8.2.3995-1ubuntu2.7 [Ubuntu/jammy main]
+vim-addon-manager 0.5.10 [Ubuntu/jammy universe]
+vim-common 2:8.2.3995-1ubuntu2.7 [Ubuntu/jammy main]
+vim-gtk3 2:8.2.3995-1ubuntu2.7 [Ubuntu/jammy universe]
+vim-gui-common 2:8.2.3995-1ubuntu2.7 [Ubuntu/jammy universe]
+vim-nox 2:8.2.3995-1ubuntu2.7 [Ubuntu/jammy universe]
+vim-runtime 2:8.2.3995-1ubuntu2.7 [Ubuntu/jammy main]
+vim-tiny 2:8.2.3995-1ubuntu2.7 [Ubuntu/jammy main]
+virtualbox 6.1.38-dfsg-3~ubuntu1.22.04.1 [Ubuntu/jammy multiverse]
+virtualbox-dkms 6.1.38-dfsg-3~ubuntu1.22.04.1 [Ubuntu/jammy multiverse]
+virtualbox-qt 6.1.38-dfsg-3~ubuntu1.22.04.1 [Ubuntu/jammy multiverse]
+vlc-data 3.0.16-1build7 [Ubuntu/jammy universe]
+vlc-plugin-base 3.0.16-1build7 [Ubuntu/jammy universe]
+vlc-plugin-video-output 3.0.16-1build7 [Ubuntu/jammy universe]
+vpnc-scripts 0.1~git20210402-1 [Ubuntu/jammy universe]
+vprerex 1:6.5.1-1build1 [Ubuntu/jammy universe]
+w3m 0.5.3+git20210102-6ubuntu0.1 [Ubuntu/jammy main]
+w3m-img 0.5.3+git20210102-6ubuntu0.1 [Ubuntu/jammy universe]
+wamerican 2020.12.07-2 [Ubuntu/jammy main]
+wayland-protocols 1.25-1 [Ubuntu/jammy main]
+wbritish 2020.12.07-2 [Ubuntu/jammy main]
+webkit2gtk-driver 2.38.6-0ubuntu0.22.04.1 [Ubuntu/jammy universe]
+webp 1.2.2-2ubuntu0.22.04.1 [Ubuntu/jammy universe]
+wezterm 20230408-112425-69ae8472 [local]
+wget 1.21.2-2ubuntu1 [Ubuntu/jammy main]
+whiptail 0.52.21-5ubuntu2 [Ubuntu/jammy main]
+whois 5.5.13 [Ubuntu/jammy main]
+whoopsie 0.2.77 [Ubuntu/jammy main]
+whoopsie-preferences 23 [Ubuntu/jammy main]
+wine-stable 6.0.1~focal-1 [local]
+wine-stable-amd64 6.0.1~focal-1 [local]
+wine-stable-i386:i386 6.0.1~focal-1 [local]
+wine32:i386 6.0.3~repack-1 [Ubuntu/jammy universe]
+wine64 6.0.3~repack-1 [Ubuntu/jammy universe]
+winehq-stable 6.0.1~focal-1 [local]
+wireless-regdb 2022.06.06-0ubuntu1~22.04.1 [Ubuntu/jammy main]
+wireless-tools 30~pre9-13.1ubuntu4 [Ubuntu/jammy main]
+wmdocker 1.5-2 [Ubuntu/jammy universe]
+wmtemp 0.0.6-3.3build2 [Ubuntu/jammy universe]
+wolframscript 1.4.0+2020061801 [local]
+wpasupplicant 2:2.10-6ubuntu2 [Ubuntu/jammy main]
+wv 1.2.9-4.2build1 [Ubuntu/jammy universe]
+x11-apps 7.7+8build2 [Ubuntu/jammy main]
+x11-common 1:7.7+23ubuntu2 [Ubuntu/jammy main]
+x11-session-utils 7.7+4build2 [Ubuntu/jammy main]
+x11-utils 7.7+5build2 [Ubuntu/jammy main]
+x11-xkb-utils 7.7+5build4 [Ubuntu/jammy main]
+x11-xserver-utils 7.7+9build1 [Ubuntu/jammy main]
+x11proto-core-dev 2021.5-1 [Ubuntu/jammy main]
+x11proto-dev 2021.5-1 [Ubuntu/jammy main]
+x11proto-randr-dev 2021.5-1 [Ubuntu/jammy main]
+x11proto-record-dev 2021.5-1 [Ubuntu/jammy main]
+x11proto-scrnsaver-dev 2021.5-1 [Ubuntu/jammy main]
+x11proto-xext-dev 2021.5-1 [Ubuntu/jammy main]
+x11proto-xf86dga-dev 2021.5-1 [Ubuntu/jammy main]
+x11proto-xf86vidmode-dev 2021.5-1 [Ubuntu/jammy main]
+xapp 2.2.8-1 [Ubuntu/jammy universe]
+xapps-common 2.2.8-1 [Ubuntu/jammy universe]
+xauth 1:1.1-1build2 [Ubuntu/jammy main]
+xaw3dg 1.5+F-1build1 [Ubuntu/jammy universe]
+xbitmaps 1.1.1-2.1ubuntu1 [Ubuntu/jammy main]
+xbrlapi 6.4-4ubuntu3 [Ubuntu/jammy main]
+xcape 1.2-3 [Ubuntu/jammy universe]
+xcas 1.7.0.39+dfsg2-1build2 [Ubuntu/jammy universe]
+xcb 2.4-8 [Ubuntu/jammy universe]
+xcb-proto 1.14.1-1 [Ubuntu/jammy universe]
+xclip 0.13-2 [Ubuntu/jammy universe]
+xcompmgr 1.1.8-1 [Ubuntu/jammy universe]
+xcursor-themes 1.0.6-0ubuntu1 [Ubuntu/jammy main]
+xcvt 0.1.1-3 [Ubuntu/jammy main]
+xdg-dbus-proxy 0.1.3-1 [Ubuntu/jammy main]
+xdg-desktop-portal 1.14.4-1ubuntu2~22.04.1 [Ubuntu/jammy main]
+xdg-desktop-portal-gnome 42.1-0ubuntu1 [Ubuntu/jammy main]
+xdg-desktop-portal-gtk 1.14.0-1build1 [Ubuntu/jammy main]
+xdg-user-dirs 0.17-2ubuntu4 [Ubuntu/jammy main]
+xdg-user-dirs-gtk 0.10-3build2 [Ubuntu/jammy main]
+xdg-utils 1.1.3-4.1ubuntu3~22.04.1 [Ubuntu/jammy main]
+xdm 1:1.1.11-3ubuntu2 [Ubuntu/jammy universe]
+xdo 0.5.7-1 [Ubuntu/jammy universe]
+xdotool 1:3.20160805.1-4 [Ubuntu/jammy universe]
+xfconf 4.16.0-2 [Ubuntu/jammy universe]
+xfig 1:3.2.8b-1 [Ubuntu/jammy universe]
+xfig-libs 1:3.2.8b-1 [Ubuntu/jammy universe]
+xfonts-base 1:1.0.5 [Ubuntu/jammy main]
+xfonts-encodings 1:1.0.5-0ubuntu2 [Ubuntu/jammy main]
+xfonts-scalable 1:1.0.3-1.2ubuntu1 [Ubuntu/jammy main]
+xfonts-utils 1:7.7+6build2 [Ubuntu/jammy main]
+xinit 1.4.1-0ubuntu4 [Ubuntu/jammy main]
+xinput 1.6.3-1build2 [Ubuntu/jammy main]
+xkb-data 2.33-1 [Ubuntu/jammy main]
+xml-core 0.18+nmu1 [Ubuntu/jammy main]
+xorg 1:7.7+23ubuntu2 [Ubuntu/jammy main]
+xorg-dev 1:7.7+23ubuntu2 [Ubuntu/jammy main]
+xorg-docs-core 1:1.7.1-1.2 [Ubuntu/jammy main]
+xorg-sgml-doctools 1:1.11-1.1 [Ubuntu/jammy main]
+xserver-common 2:21.1.4-2ubuntu1.7~22.04.1 [Ubuntu/jammy main]
+xserver-xephyr 2:21.1.4-2ubuntu1.7~22.04.1 [Ubuntu/jammy main]
+xserver-xorg 1:7.7+23ubuntu2 [Ubuntu/jammy main]
+xserver-xorg-core 2:21.1.4-2ubuntu1.7~22.04.1 [Ubuntu/jammy main]
+xserver-xorg-dev 2:21.1.4-2ubuntu1.7~22.04.1 [Ubuntu/jammy main]
+xserver-xorg-input-all 1:7.7+23ubuntu2 [Ubuntu/jammy main]
+xserver-xorg-input-libinput 1.2.1-1 [Ubuntu/jammy main]
+xserver-xorg-input-wacom 1:1.0.0-3ubuntu1 [Ubuntu/jammy main]
+xserver-xorg-legacy 2:21.1.4-2ubuntu1.7~22.04.1 [Ubuntu/jammy main]
+xserver-xorg-video-all 1:7.7+23ubuntu2 [Ubuntu/jammy main]
+xserver-xorg-video-amdgpu 22.0.0-1ubuntu0.1 [Ubuntu/jammy main]
+xserver-xorg-video-ati 1:19.1.0-2ubuntu1 [Ubuntu/jammy main]
+xserver-xorg-video-fbdev 1:0.5.0-2build1 [Ubuntu/jammy main]
+xserver-xorg-video-intel 2:2.99.917+git20210115-1 [Ubuntu/jammy main]
+xserver-xorg-video-nouveau 1:1.0.17-2build1 [Ubuntu/jammy main]
+xserver-xorg-video-qxl 0.1.5+git20200331-3 [Ubuntu/jammy main]
+xserver-xorg-video-radeon 1:19.1.0-2ubuntu1 [Ubuntu/jammy main]
+xserver-xorg-video-vesa 1:2.5.0-1build4 [Ubuntu/jammy main]
+xserver-xorg-video-vmware 1:13.3.0-3build1 [Ubuntu/jammy main]
+xsltproc 1.1.34-4ubuntu0.22.04.1 [Ubuntu/jammy main]
+xterm 372-1ubuntu1 [Ubuntu/jammy universe]
+xtrans-dev 1.4.0-1 [Ubuntu/jammy main]
+xutils-dev 1:7.7+6ubuntu1 [Ubuntu/jammy universe]
+xwayland 2:22.1.1-1ubuntu0.6 [Ubuntu/jammy main]
+xxd 2:8.2.3995-1ubuntu2.7 [Ubuntu/jammy main]
+xz-utils 5.2.5-2ubuntu1 [Ubuntu/jammy main]
+yaru-theme-gnome-shell 22.04.4 [Ubuntu/jammy main]
+yaru-theme-gtk 22.04.4 [Ubuntu/jammy main]
+yaru-theme-icon 22.04.4 [Ubuntu/jammy main]
+yaru-theme-sound 22.04.4 [Ubuntu/jammy main]
+yasm 1.3.0-2.1 [Ubuntu/jammy universe]
+yelp 42.1-1 [Ubuntu/jammy main]
+yelp-xsl 42.0-1 [Ubuntu/jammy main]
+youtube-dl 2021.12.17-1 [Ubuntu/jammy universe]
+yudit-common 3.0.7-3 [Ubuntu/jammy universe]
+zathura 0.4.9-1 [Ubuntu/jammy universe]
+zathura-dev 0.4.9-1 [Ubuntu/jammy universe]
+zathura-pdf-poppler 0.3.0-1build1 [Ubuntu/jammy universe]
+zbar-tools 0.23.92-4build2 [Ubuntu/jammy universe]
+zeitgeist-core 1.0.3-4ubuntu1 [Ubuntu/jammy universe]
+zeitgeist-datahub 1.0.3-4ubuntu1 [Ubuntu/jammy universe]
+zenity 3.42.1-0ubuntu1 [Ubuntu/jammy main]
+zenity-common 3.42.1-0ubuntu1 [Ubuntu/jammy main]
+zip 3.0-12build2 [Ubuntu/jammy main]
+zlib1g 1:1.2.11.dfsg-2ubuntu9.2 [Ubuntu/jammy main]
+zlib1g-dev 1:1.2.11.dfsg-2ubuntu9.2 [Ubuntu/jammy main]
+zlib1g:i386 1:1.2.11.dfsg-2ubuntu9.2 [Ubuntu/jammy main]
+zoom 5.13.5.431 [local]
+zsh 5.8.1-1 [Ubuntu/jammy main]
+zsh-common 5.8.1-1 [Ubuntu/jammy main]
+zstd 1.4.8+dfsg-3build1 [Ubuntu/jammy main]
 ```
 
 ## Pacstall
@@ -4881,7 +4680,7 @@ protonmail-bridge-deb
 rstudio
 shfmt-bin
 signal-desktop-deb
-wezterm-app
+wezterm-bin
 zoom
 zoom-deb
 ```
@@ -5129,9 +4928,11 @@ ascii-image-converter: github.com/TheZoraiz/ascii-image-converter@v1.13.1
                  draw: github.com/maaslalani/draw@v0.1.1
                fast-p: github.com/bellecp/fast-p@v0.2.5
         golangci-lint: github.com/golangci/golangci-lint/cmd/golangci-lint@v1.52.2
+                  gum: github.com/charmbracelet/gum@v0.10.0
                   gup: github.com/nao1215/gup@v0.21.1
               lazygit: github.com/jesseduffield/lazygit@v0.38.2
                    lf: github.com/gokcehan/lf@v0.0.0-20230524093459-a9d90bc56044
+                  nap: github.com/maaslalani/nap@v0.1.2-0.20230401150345-26ac8bdd23bf
                 rmapi: github.com/juruen/rmapi@(devel)
                     s: github.com/zquestz/s@v0.6.7
                slides: github.com/maaslalani/slides@v0.9.0

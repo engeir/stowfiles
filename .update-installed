@@ -87,7 +87,7 @@ fi
 
 # Run Linux updates
 if [ "Linux" = "$machine" ]; then
-    APT="$(dpkg --get-selections)"
+    APT="$(nala list -i | grep '^[a-z,A-Z]')"
     PACSTALL="$(pacstall -L)"
     CARGO="$(cargo install --list)"
     PIPX="$(pipx list | sed '1,2d' | sed 's/^\s\s\s//')"
