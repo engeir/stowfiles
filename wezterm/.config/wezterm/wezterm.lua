@@ -12,8 +12,15 @@ end
 
 -- This is where you actually apply your config choices
 
+-- config.window_decorations = "TITLE"
 config.font = wezterm.font("Recursive")
-config.font_size = 11.0
+local font_size
+if wezterm.target_triple == "x86_64-apple-darwin" then
+    font_size = 13.5
+else
+    font_size = 11.0
+end
+config.font_size = font_size
 config.adjust_window_size_when_changing_font_size = false
 -- For example, changing the color scheme:
 config.color_scheme = "Gruvbox dark, medium (base16)"
@@ -23,6 +30,7 @@ config.colors = {
 config.enable_tab_bar = false
 config.window_close_confirmation = "NeverPrompt"
 config.window_background_opacity = 0.9
+local opacity_crement = 0.02
 wezterm.on("toggle-opacity", function(window, _)
     local overrides = window:get_config_overrides() or {}
     if not overrides.window_background_opacity then
@@ -35,18 +43,18 @@ end)
 wezterm.on("increment-opacity", function(window, _)
     local overrides = window:get_config_overrides() or {}
     if not overrides.window_background_opacity then
-        overrides.window_background_opacity = config.window_background_opacity + 0.1
-    elseif overrides.window_background_opacity < 0.95 then
-        overrides.window_background_opacity = overrides.window_background_opacity + 0.1
+        overrides.window_background_opacity = config.window_background_opacity + opacity_crement
+    elseif overrides.window_background_opacity < 0.99 then
+        overrides.window_background_opacity = overrides.window_background_opacity + opacity_crement
     end
     window:set_config_overrides(overrides)
 end)
 wezterm.on("decrement-opacity", function(window, _)
     local overrides = window:get_config_overrides() or {}
     if not overrides.window_background_opacity then
-        overrides.window_background_opacity = config.window_background_opacity - 0.1
-    elseif overrides.window_background_opacity > 0.05 then
-        overrides.window_background_opacity = overrides.window_background_opacity - 0.1
+        overrides.window_background_opacity = config.window_background_opacity - opacity_crement
+    elseif overrides.window_background_opacity > 0.01 then
+        overrides.window_background_opacity = overrides.window_background_opacity - opacity_crement
     end
     window:set_config_overrides(overrides)
 end)

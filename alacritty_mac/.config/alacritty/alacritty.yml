@@ -55,20 +55,19 @@ window:
   padding:
     x: 5
     y: 5
-  # opacity: 0.3
   decorations: buttonless
 
 font:
   size: 13
 
   normal:
-    family: BitstromWera Nerd Font
+    family: Recursive
     style: Regular
   bold:
-    family: BitstromWera Nerd Font
+    family: Recursive
     style: Bold
   italic:
-    family: BitstromWera Nerd Font
+    family: Recursive
     style: Italic
 
   use_thin_strokes: true
