@@ -112,6 +112,7 @@ if command -v python 1>/dev/null 2>&1; then
         else
             python -m venv --prompt . .venv
         fi
+        source .venv/bin/activate
     }
 fi
 
