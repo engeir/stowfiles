@@ -157,9 +157,7 @@ json-c 0.16
 jump 0.51.0
 krb5 1.20.1
 lame 3.100
-lazygit 0.38.2
 leptonica 1.82.0_2
-lf 30
 libaec 1.0.6
 libarchive 3.6.2_1
 libass 0.17.1
@@ -573,11 +571,22 @@ package whoogle-search 0.8.2, installed using Python 3.9.5
 ## Go
 
 ```txt
-       despell: github.com/bensadeh/despell@v0.0.0-20230424061959-fe5e2e7d0911
-  gomodifytags: github.com/fatih/gomodifytags@v1.16.0
-           gum: github.com/charmbracelet/gum@v0.10.0
-           gup: github.com/nao1215/gup@v0.21.1
-mandelbrot-cli: github.com/MicheleFiladelfia/mandelbrot-cli@v0.0.0-20230416100519-74781703a9e2
-           pup: @unknown
-           vhs: github.com/charmbracelet/vhs@v0.5.0
+ascii-image-converter: github.com/TheZoraiz/ascii-image-converter@v1.13.1
+                   d2: oss.terrastruct.com/d2@v0.4.2
+              despell: github.com/bensadeh/despell@v0.0.0-20230424061959-fe5e2e7d0911
+                 draw: github.com/maaslalani/draw@v0.1.1
+               fast-p: github.com/bellecp/fast-p@v0.2.5
+        golangci-lint: github.com/golangci/golangci-lint/cmd/golangci-lint@v1.52.2
+         gomodifytags: github.com/fatih/gomodifytags@v1.16.0
+                  gum: github.com/charmbracelet/gum@v0.10.0
+                  gup: github.com/nao1215/gup@v0.21.1
+              lazygit: github.com/jesseduffield/lazygit@v0.38.2
+                   lf: github.com/gokcehan/lf@v0.0.0-20230524093459-a9d90bc56044
+       mandelbrot-cli: github.com/MicheleFiladelfia/mandelbrot-cli@v0.0.0-20230416100519-74781703a9e2
+                  nap: github.com/maaslalani/nap@v0.1.1
+                  pup: @unknown
+                    s: github.com/zquestz/s@v0.6.7
+               slides: github.com/maaslalani/slides@v0.9.0
+            triangula: github.com/RH12503/Triangula-CLI/triangula@v0.0.0-20210520132201-603b709907d8
+                  vhs: github.com/charmbracelet/vhs@v0.5.0
 ```

@@ -13,6 +13,7 @@ end
 -- This is where you actually apply your config choices
 
 -- config.window_decorations = "TITLE"
+config.audible_bell = "Disabled"
 config.font = wezterm.font("Recursive")
 local font_size
 if wezterm.target_triple == "x86_64-apple-darwin" then
@@ -84,6 +85,14 @@ config.keys = {
         mods = "ALT",
         action = wezterm.action.PasteFrom("Clipboard"),
     },
+    -- { key = "p",          mods = "ALT",        action = wezterm.action({ SendString = "\x1bp" }) },
+    -- { key = "q",          mods = "ALT",        action = wezterm.action({ SendString = "\x1bq" }) },
+    { key = "7",          mods = "ALT",        action = wezterm.action({ SendString = "|" }) },
+    { key = "/",          mods = "ALT|SHIFT",  action = wezterm.action({ SendString = "\\" }) },
+    { key = "8",          mods = "ALT",        action = wezterm.action({ SendString = "[" }) },
+    { key = "9",          mods = "ALT",        action = wezterm.action({ SendString = "]" }) },
+    { key = "(",          mods = "ALT|SHIFT",  action = wezterm.action({ SendString = "{" }) },
+    { key = ")",          mods = "ALT|SHIFT",  action = wezterm.action({ SendString = "}" }) },
     { key = "K",          mods = "ALT",        action = wezterm.action.IncreaseFontSize },
     { key = "J",          mods = "ALT",        action = wezterm.action.DecreaseFontSize },
     { key = "=",          mods = "CTRL",       action = wezterm.action.DisableDefaultAssignment }, -- default IncreaseFontSize
