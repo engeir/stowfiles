@@ -54,7 +54,7 @@ done
 
 # Run MacOS updates
 if [ "Mac" = "$machine" ]; then
-    BREW="$(brew list)"
+    BREW="$(brew list --versions)"
     CARGO="$(cargo install --list)"
     PIPX="$(pipx list | sed '1,2d' | sed 's/^   //')"
     GO="$(gup list)"
