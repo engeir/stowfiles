@@ -103,6 +103,18 @@ if command -v pip 1>/dev/null 2>&1; then
     }
 fi
 
+# Don't always want to use third party software to create python venvs:
+if command -v python 1>/dev/null 2>&1; then
+    pyvenv() {
+        PYVERSION=$(python -c 'import sys; pv=sys.version_info[:3]; print(pv[0]*100+pv[1]>309)')
+        if [ "$PYVERSION" = "True" ]; then
+            python -m venv --prompt . --upgrade-deps .venv
+        else
+            python -m venv --prompt . .venv
+        fi
+    }
+fi
+
 peek() {
     # cat a file that is on PATH
     cat "$(which "$1")"
