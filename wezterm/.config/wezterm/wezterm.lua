@@ -12,8 +12,11 @@ end
 
 -- This is where you actually apply your config choices
 
+config.font = wezterm.font("Recursive")
+config.font_size = 11.0
+config.adjust_window_size_when_changing_font_size = false
 -- For example, changing the color scheme:
-config.color_scheme = "Gruvbox Dark"
+config.color_scheme = "Gruvbox dark, medium (base16)"
 config.colors = {
     background = "#282828",
 }
@@ -67,11 +70,18 @@ config.keys = {
         key = "c",
         mods = "ALT",
         action = wezterm.action.CopyTo("ClipboardAndPrimarySelection"),
-    },{
+    },
+    {
         key = "v",
         mods = "ALT",
         action = wezterm.action.PasteFrom("Clipboard"),
     },
+    { key = "K",          mods = "ALT",        action = wezterm.action.IncreaseFontSize },
+    { key = "J",          mods = "ALT",        action = wezterm.action.DecreaseFontSize },
+    { key = "=",          mods = "CTRL",       action = wezterm.action.DisableDefaultAssignment }, -- default IncreaseFontSize
+    { key = "-",          mods = "CTRL",       action = wezterm.action.DisableDefaultAssignment }, -- default DecreaseFontSize
+    { key = "LeftArrow",  mods = "CTRL|SHIFT", action = wezterm.action.DisableDefaultAssignment }, -- default ActivatePaneDirection="Left" (I use this in tmux)
+    { key = "RightArrow", mods = "CTRL|SHIFT", action = wezterm.action.DisableDefaultAssignment }, -- default ActivatePaneDirection="Right" (I use this in tmux)
 }
 
 config.window_padding = {
