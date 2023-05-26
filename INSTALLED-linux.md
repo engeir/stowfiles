@@ -780,7 +780,7 @@ hostname 3.23ubuntu2 [Ubuntu/jammy main]
 hplip 3.21.12+dfsg0-1 [Ubuntu/jammy main]
 hplip-data 3.21.12+dfsg0-1 [Ubuntu/jammy main]
 html2text 1.3.2a-28 [Ubuntu/jammy universe]
-htop 3.2.1-1 [local]
+htop 3.2.1 [local]
 hud 14.10+17.10.20170619-0ubuntu4 [Ubuntu/jammy universe]
 humanity-icon-theme 0.6.16 [Ubuntu/jammy main]
 hunspell-en-us 1:2020.12.07-2 [Ubuntu/jammy main]
@@ -4673,7 +4673,7 @@ name: bitwarden version: 2023.4.0
 name: brave-browser version: 1.51.118
 name: brave-keyring version: 1.13
 name: google-chrome-stable version: 113.0.5672.126-1
-name: brave-browser version: 1.51.118
+name: htop version: 3.2.1
 name: nala version: 0.12.3
 name: neofetch version: 7.1.0
 name: polybar version: 3.6.3-1
