@@ -25,6 +25,7 @@ fi
 if [ -d "$HOME/bin" ] ; then
     PATH="$HOME/bin:$PATH"
 fi
+PATH="$HOME/bin:$PATH"
 
 # set PATH so it includes user's private bin if it exists
 if [ -d "$HOME/.local/bin" ] ; then
@@ -72,7 +73,7 @@ export FZF_ALT_C_COMMAND="fd --type d $FD_OPTIONS"
 export BAT_PAGER="less -R"
 if [[ $(uname) == "Linux" ]]; then
     sh /home/een023/stowfiles/bspwm/.config/bspwm/bin/bspcomp &
+    if [ -e /home/een023/.nix-profile/etc/profile.d/nix.sh ]; then . /home/een023/.nix-profile/etc/profile.d/nix.sh; fi # added by Nix installer
 fi
 
-if [ -e /home/een023/.nix-profile/etc/profile.d/nix.sh ]; then . /home/een023/.nix-profile/etc/profile.d/nix.sh; fi # added by Nix installer
 . "$HOME/.cargo/env"

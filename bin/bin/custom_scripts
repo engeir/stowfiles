@@ -5,8 +5,8 @@
 if [[ $(uname -s) == "Darwin" ]]; then
     # Mac
     MACH="Mac"
-    dmenu='sk -p "Choose a script to run:"'
-    choises="passwords\nopen pdf\nlauncher"
+    dmenu='sk -p "Choose a script to run: "'
+    choises="passwords\nopen pdf\nlauncher\nnew bookmark\ncopy bookmark\ndelete bookmark"
 else
     # Linux
     MACH="Linux"
@@ -26,6 +26,9 @@ case "$chosen" in
 "inspect system") inspect_system ;;
 "layouts") layout ;;
 "launcher") launcher ;;
+"new bookmark") new-bookmark.sh ;;
+"copy bookmark") type-bookmark.sh ;;
+"delete bookmark") delete-bookmark.sh ;;
 "open pdf")
     if [ "$MACH" = "Linux" ]; then
         pdf_open_all

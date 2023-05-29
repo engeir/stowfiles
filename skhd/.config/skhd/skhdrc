@@ -86,6 +86,7 @@ cmd + alt - r : skhd --reload
 # Terminal
 # cmd - return : open /Applications/Alacritty.app -n
 cmd - return : wezterm
+cmd - q : $(yabai -m window $(yabai -m query --windows --window | jq -re ".id") --close)
 
 alt - space : popup-mac /Users/eirikenger/bin/custom_scripts
 

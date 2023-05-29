@@ -12,8 +12,6 @@ export GOROOT="/usr/local/go"
 export GOPATH="$HOME/go"
 export PATH="$PATH:$GOPATH/bin"
 
-function xman() { open x-man-page://$@ ; }
-
 export PATH="/usr/local/opt/flex/bin:$PATH"
 export PATH="/usr/local/opt/bison/bin:$PATH"
 export PATH="/usr/local/sbin:$PATH"

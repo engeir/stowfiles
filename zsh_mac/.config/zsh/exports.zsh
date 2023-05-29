@@ -1,4 +1,4 @@
-export PATH="${PATH}:${HOME}/.local/bin"
+export PATH="${PATH}:${HOME}/.local/bin:$HOME/bin"
 # If you come from bash you might have to change your $PATH.
 # export PATH=/usr/local/bin:$HOME/scripts:$HOME/.local/bin:$HOME/bin:$PATH
 export NODE_PATH='/usr/local/lib/node_modules'
