@@ -84,7 +84,8 @@ cmd + alt - r : skhd --reload
 # open programs
 
 # Terminal
-cmd - return : open /Applications/Alacritty.app -n
+# cmd - return : open /Applications/Alacritty.app -n
+cmd - return : wezterm
 
 alt - space : popup-mac /Users/eirikenger/bin/custom_scripts
 

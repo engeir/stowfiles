@@ -467,6 +467,8 @@ xquartz 2.8.1
 ## Cargo
 
 ```txt
+alacritty v0.12.1:
+    alacritty
 atuin v14.0.1:
     atuin
 blindfold v1.0.7:

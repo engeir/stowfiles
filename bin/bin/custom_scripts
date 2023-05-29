@@ -6,7 +6,7 @@ if [[ $(uname -s) == "Darwin" ]]; then
     # Mac
     MACH="Mac"
     dmenu='sk -p "Choose a script to run:"'
-    choises="passwords\nopen pdf"
+    choises="passwords\nopen pdf\nlauncher"
 else
     # Linux
     MACH="Linux"
@@ -25,6 +25,7 @@ case "$chosen" in
 "html-symbols") html-symbols ;;
 "inspect system") inspect_system ;;
 "layouts") layout ;;
+"launcher") launcher ;;
 "open pdf")
     if [ "$MACH" = "Linux" ]; then
         pdf_open_all
