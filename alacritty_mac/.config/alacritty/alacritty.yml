@@ -50,12 +50,12 @@ hints:
         key: U
         mods: Control|Shift
 
-background_opacity: 0.95
 window:
   padding:
     x: 5
     y: 5
   decorations: buttonless
+  opacity: 0.8
 
 font:
   size: 13
@@ -70,7 +70,8 @@ font:
     family: Recursive
     style: Italic
 
-  use_thin_strokes: true
+  # use_thin_strokes: true
+AppleFontSmoothing: 0
 
 draw_bold_text_with_bright_colors: false
 

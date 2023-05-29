@@ -86,10 +86,10 @@ cmd + alt - r : skhd --reload
 # Terminal
 cmd - return : open /Applications/Alacritty.app -n
 
-alt - space : open /Applications/dmenu-mac.app
+alt - space : popup-mac /Users/eirikenger/bin/custom_scripts
 
 # cmd + alt - x : /Users/eirikenger/.local/bin/passmenu
-cmd + alt - x : /Users/eirikenger/bin/custom_scripts
+cmd + alt - x : popup-mac /Users/eirikenger/bin/custom_scripts
 
 cmd + alt - p : /Users/eirikenger/bin/pdf_open
 

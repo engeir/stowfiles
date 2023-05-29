@@ -8,7 +8,7 @@ if [[ $(uname -s) == "Darwin" ]]; then
     # Mac
     DIR1="/Users/eirikenger/personal-library/"
     DIR2="/Users/eirikenger/Downloads/"
-    dmenu="dmenu-mac"
+    dmenu="sk"
     open=open
     fd=fd
 else
