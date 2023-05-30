@@ -11,7 +11,7 @@ super + b
 	firefox
 
 # program launcher
-alt + F1
+alt + @space
 	dmenu_run
 	# dmenu_run -nb '#000000' -nf "#3CB371" -sb "#3CB371" -fn 3
 	#dmenu_run -nb '#000000' -nf "#00008B" -sb "#00008B" -fn 3
@@ -103,7 +103,9 @@ XF86Audio{Next,Prev,Play,Stop}
 
 # quit/restart bspwm
 super + alt + {q,r}
-	bspc {quit,wm -r}
+	bspc {quit,wm -r}; \
+    setxkbmap -option ctrl:nocaps; \
+    xcape -e 'Control_L=Escape'
 
 # close and kill
 super + {_,shift + }q
