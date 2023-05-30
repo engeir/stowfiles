@@ -6,9 +6,33 @@ return {
         },
     },
     keys = {
-        { "<leader>hf", '<cmd>lua require("harpoon.ui").toggle_quick_menu()<CR>' },
-        { "<leader>hm", '<cmd>lua require("harpoon.mark").add_file()<CR>' },
-        { "<leader>hn", '<cmd>lua require("harpoon.ui").nav_next()<CR>' },
-        { "<leader>hN", '<cmd>lua require("harpoon.ui").nav_prev()<CR>' },
+        {
+            "<leader>hf",
+            function()
+                require("harpoon.ui").toggle_quick_menu()
+            end,
+            desc = "[H]arpoon [F]iles",
+        },
+        {
+            "<leader>hm",
+            function()
+                require("harpoon.mark").add_file()
+            end,
+            desc = "[H]arpoon [M]ark",
+        },
+        {
+            "<leader>hn",
+            function()
+                require("harpoon.ui").nav_next()
+            end,
+            desc = "[H]arpoon [N]ext",
+        },
+        {
+            "<leader>hN",
+            function()
+                require("harpoon.ui").nav_prev()
+            end,
+            desc = "[H]arpoon [P]rev",
+        },
     },
 }

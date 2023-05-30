@@ -10,6 +10,7 @@ all plugins I'm using:
 - [auto-hlsearch.nvim](https://github.com/asiryk/auto-hlsearch.nvim.git)
 - [boole.nvim](https://github.com/nat-418/boole.nvim.git)
 - [bufferline](https://github.com/akinsho/bufferline.nvim.git)
+- [bullets.vim](https://github.com/dkarter/bullets.vim.git)
 - [ccc.nvim](https://github.com/uga-rosa/ccc.nvim.git)
 - [cmp-buffer](https://github.com/hrsh7th/cmp-buffer.git)
 - [cmp-cmdline](https://github.com/hrsh7th/cmp-cmdline.git)
