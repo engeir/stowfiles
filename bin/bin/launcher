@@ -1,3 +1,7 @@
-#!/bin/sh
+#!/bin/bash
 
-find /System/Library/CoreServices /System/Applications /Applications /System/Applications/Utilities -maxdepth 1 -name "*.app" | sk | xargs -I {} open "{}"
+if [[ $(uname -s) == "Darwin" ]]; then
+    find /System/Library/CoreServices /System/Applications /Applications /System/Applications/Utilities -maxdepth 1 -name "*.app" | sk | xargs -I {} open "{}"
+else
+    find "$HOME/.cargo/bin" 1 | sk | xargs -I {} open "{}"
+fi

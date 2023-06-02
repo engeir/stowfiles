@@ -53,7 +53,8 @@ super + @space
     rofi -show drun -theme $HOME/programs/command_line_apps/rofi-collection/nord/nord.rasi
 	# sh ~/.config/bspwm/rofi/bin/launcher
 super + alt + @space
-	~/.config/rofi/launchers/misc/launcher.sh &
+    popup-mac ~/bin/launcher
+	# ~/.config/rofi/launchers/misc/launcher.sh &
 # super + {_,alt +} d
 #     rofi -show {window,run} -theme $HOME/programs/command_line_apps/rofi-collection/nord/nord.rasi
 super + d
@@ -102,10 +103,14 @@ XF86Audio{Next,Prev,Play,Stop}
 #
 
 # quit/restart bspwm
+# Also, remap CAPS LOCK to ESC and increase the speed of the keys
 super + alt + {q,r}
 	bspc {quit,wm -r}; \
     setxkbmap -option ctrl:nocaps; \
-    xcape -e 'Control_L=Escape'
+    xcape -e 'Control_L=Escape' \
+    xset r rate 210 40 \
+    xrdb "$HOME/.config/Xresources"
+
 
 # close and kill
 super + {_,shift + }q

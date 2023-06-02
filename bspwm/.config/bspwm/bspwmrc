@@ -123,6 +123,7 @@ bspc rule -a Matplotlib state=floating  # rectangle=1000x700+500+500
 bspc rule -a Zathura state=tiled
 bspc rule -a Blueman-manager state=floating  # rectangle=1000x700+500+500
 bspc rule -a Nm-connection-editor state=floating follow=on focus=on
+bspc rule -a Alacritty:*:mylauncher state=floating follow=on focus=on
 bspc rule -a Onboard state=floating follow=on focus=on
 # bspc rule -a Pcmanfm state=floating follow=on focus=on
 bspc rule -a stalonetray state=floating manage=off
