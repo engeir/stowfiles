@@ -38,7 +38,6 @@ return {
         dependencies = { "L3MON4D3/LuaSnip", "nvim-treesitter/nvim-treesitter" },
         config = function()
             require("luasnip-latex-snippets").setup({ use_treesitter = true })
-            -- or setup({ use_treesitter = true })
         end,
         -- treesitter is required for markdown
         ft = { "tex", "markdown" },
