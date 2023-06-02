@@ -66,6 +66,9 @@ export PATH="$DENO_INSTALL/bin:$PATH"
 export AUTO_NOTIFY_IGNORE=("nv" "docker" "man" "sleep" "lf" "nnn" "hugo serve" "fg" "ga")
 # forgit
 export FORGIT_FZF_DEFAULT_OPTS
+# rye
+export RYE_HOME="$HOME/.local/share/rye/"
+export PATH="$PATH:$RYE_HOME/shims/"
 
 # wezterm complains about
 # ERROR: ld.so: object 'libgtk3-nocsd.so.0' from LD_PRELOAD cannot be preloaded (failed to map segment from shared object): ignored.

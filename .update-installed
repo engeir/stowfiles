@@ -93,7 +93,7 @@ if [ "Linux" = "$machine" ]; then
     CARGO="$(cargo install --list)"
     PIPX="$(pipx list | sed '1,2d' | sed 's/^\s\s\s//')"
     GO="$(gup list)"
-    FLAT="$(flatpak list)"
+    FLAT="$(paste <(echo "Name";flatpak list --columns=name) <(echo "Version";flatpak list --columns=version) <(echo "Branch";flatpak list --columns=branch) | pr -t -e40)"
     SNAP="$(snap list)"
     echo "# Installed programs
 
