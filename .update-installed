@@ -34,11 +34,27 @@ run-updates() {
     fi
 }
 
+try-fix-ppa() {
+    if [[ "$machine" == "Linux" ]]; then
+        echo "It you have an issue with apt/apt-get, where you get something like:"
+        echo "E: The repository 'https://ppa.launchpadcontent.net/fontforge/fontforge/ubuntu jammy Release' does not have a Release file."
+        echo "see https://askubuntu.com/a/1163224."
+        echo "You might have success trying the equivalent of"
+        echo "\$ sudo add-apt-repository --remove ppa:fontforge/fontforge"
+    else
+        echo "This is only available on Linux-based systems."
+    fi
+}
+
 # Handle options
-while getopts 'uh' OPTION; do
+while getopts 'ufh' OPTION; do
     case "$OPTION" in
     u)
         run-updates "$machine"
+        ;;
+    f)
+        try-fix-ppa
+        exit 0
         ;;
     h)
         printf "Script usage: %s [-u] [-h]\n\t-u\tRun all update commands\n\t-h\tPrint this help and exit\n" "$(basename "$0")" >&2
@@ -82,7 +98,7 @@ $PIPX
 
 \`\`\`txt
 $GO
-\`\`\`" >"./INSTALLED-mac.md"
+    \`\`\`" >"./INSTALLED-mac.md"
 fi
 
 # Run Linux updates
@@ -93,7 +109,16 @@ if [ "Linux" = "$machine" ]; then
     CARGO="$(cargo install --list)"
     PIPX="$(pipx list | sed '1,2d' | sed 's/^\s\s\s//')"
     GO="$(gup list)"
-    FLAT="$(paste <(echo "Name";flatpak list --columns=name) <(echo "Version";flatpak list --columns=version) <(echo "Branch";flatpak list --columns=branch) | pr -t -e40)"
+    FLAT="$(paste <(
+        echo "Name"
+        flatpak list --columns=name
+    ) <(
+        echo "Version"
+        flatpak list --columns=version
+    ) <(
+        echo "Branch"
+        flatpak list --columns=branch
+    ) | pr -t -e40)"
     SNAP="$(snap list)"
     echo "# Installed programs
 
@@ -137,5 +162,5 @@ $FLAT
 
 \`\`\`txt
 $SNAP
-\`\`\`" >"./INSTALLED-linux.md"
+    \`\`\`" >"./INSTALLED-linux.md"
 fi

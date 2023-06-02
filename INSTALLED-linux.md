@@ -565,7 +565,7 @@ gftp 2.9.1~beta-1 [Ubuntu/jammy universe]
 gftp-common 2.9.1~beta-1 [Ubuntu/jammy universe]
 gftp-gtk 2.9.1~beta-1 [Ubuntu/jammy universe]
 gftp-text 2.9.1~beta-1 [Ubuntu/jammy universe]
-gh 2.14.7 [gh/stable main]
+gh 2.30.0 [gh/stable main]
 ghc 8.8.4-3 [Ubuntu/jammy universe]
 ghostscript 9.55.0~dfsg1-0ubuntu5.2 [Ubuntu/jammy main]
 ghostscript-x 9.55.0~dfsg1-0ubuntu5.2 [Ubuntu/jammy main]
@@ -834,7 +834,7 @@ intltool-debian 0.35.0+20060710.5 [Ubuntu/jammy main]
 inxi 3.3.13-1-1 [Ubuntu/jammy universe]
 ipp-usb 0.9.20-1ubuntu0.22.04.1 [Ubuntu/jammy main]
 iproute2 5.15.0-1ubuntu2 [Ubuntu/jammy main]
-iptables 1.8.7-1ubuntu5 [Ubuntu/jammy main]
+iptables 1.8.7-1ubuntu5.1 [Ubuntu/jammy main]
 iputils-ping 3:20211215-1 [Ubuntu/jammy main]
 iputils-tracepath 3:20211215-1 [Ubuntu/jammy main]
 ipython3 7.31.1-1 [Ubuntu/jammy universe]
@@ -1850,8 +1850,8 @@ libio-prompt-tiny-perl 0.003-1 [Ubuntu/jammy main]
 libio-socket-ssl-perl 2.074-2 [Ubuntu/jammy main]
 libio-string-perl 1.08-3.1 [Ubuntu/jammy main]
 libio-stringy-perl 2.111-3 [Ubuntu/jammy main]
-libip4tc2 1.8.7-1ubuntu5 [Ubuntu/jammy main]
-libip6tc2 1.8.7-1ubuntu5 [Ubuntu/jammy main]
+libip4tc2 1.8.7-1ubuntu5.1 [Ubuntu/jammy main]
+libip6tc2 1.8.7-1ubuntu5.1 [Ubuntu/jammy main]
 libipa-hbac0 2.6.3-1ubuntu3.2 [Ubuntu/jammy main]
 libipc-run3-perl 0.048-2 [Ubuntu/jammy main]
 libipc-shareable-perl 1.06-2 [Ubuntu/jammy universe]
@@ -2395,7 +2395,7 @@ libnaga-java 3.0+svn80-4 [Ubuntu/jammy universe]
 libnamespace-autoclean-perl 0.29-1 [Ubuntu/jammy main]
 libnamespace-clean-perl 0.27-1 [Ubuntu/jammy main]
 libnatpmp1 20150609-7.1build2 [Ubuntu/jammy main]
-libnautilus-extension1a 1:42.2-0ubuntu2.1 [Ubuntu/jammy main]
+libnautilus-extension1a 1:42.6-0ubuntu1 [Ubuntu/jammy main]
 libnauty2 2.7r3+ds-1 [Ubuntu/jammy universe]
 libncurses-dev 6.3-2ubuntu0.1 [Ubuntu/jammy main]
 libncurses5-dev 6.3-2ubuntu0.1 [Ubuntu/jammy main]
@@ -3412,7 +3412,7 @@ libxss1:i386 1:1.2.3-1build2 [Ubuntu/jammy main]
 libxstring-perl 0.005-1build2 [Ubuntu/jammy universe]
 libxt-dev 1:1.2.1-1 [Ubuntu/jammy main]
 libxt6 1:1.2.1-1 [Ubuntu/jammy main]
-libxtables12 1.8.7-1ubuntu5 [Ubuntu/jammy main]
+libxtables12 1.8.7-1ubuntu5.1 [Ubuntu/jammy main]
 libxtst-dev 2:1.2.3-1build4 [Ubuntu/jammy main]
 libxtst6 2:1.2.3-1build4 [Ubuntu/jammy main]
 libxv-dev 2:1.0.11-1build2 [Ubuntu/jammy main]
@@ -3586,8 +3586,8 @@ mysql-common 5.8+1.0.8 [Ubuntu/jammy main]
 mythes-en-us 1:7.2.0-2 [Ubuntu/jammy main]
 nala 0.13.0 [local]
 nano 6.2-1 [Ubuntu/jammy main]
-nautilus 1:42.2-0ubuntu2.1 [Ubuntu/jammy main]
-nautilus-data 1:42.2-0ubuntu2.1 [Ubuntu/jammy main]
+nautilus 1:42.6-0ubuntu1 [Ubuntu/jammy main]
+nautilus-data 1:42.6-0ubuntu1 [Ubuntu/jammy main]
 nautilus-extension-gnome-terminal 3.44.0-1ubuntu1 [Ubuntu/jammy main]
 nautilus-sendto 3.8.6-4 [Ubuntu/jammy main]
 nautilus-share 0.7.3-2ubuntu6 [Ubuntu/jammy main]
@@ -4748,7 +4748,7 @@ pueue v3.1.2:
     pueued
 ripgrep v13.0.0:
     rg
-rtx-cli v1.30.6:
+rtx-cli v1.31.0:
     rtx
 sd v0.7.6:
     sd
@@ -4859,7 +4859,7 @@ package pandoc-eqnos 2.5.0, installed using Python 3.10.4
  - pandoc-eqnos
 package pandoc-include 1.2.0, installed using Python 3.10.4
  - pandoc-include
-package pipenv 2023.5.19, installed using Python 3.10.4
+package pipenv 2023.6.2, installed using Python 3.10.4
  - pipenv
  - pipenv-resolver
 package pipreqs 0.4.13, installed using Python 3.10.4
@@ -4907,8 +4907,6 @@ package tex2svg 0.0.2, installed using Python 3.10.4
 package thefuck 3.32, installed using Python 3.10.4
  - fuck
  - thefuck
-package tldr 3.2.0, installed using Python 3.10.4
- - tldr
 package twine 4.0.2, installed using Python 3.10.4
  - twine
 package ueberzug 18.1.9, installed using Python 3.10.4
@@ -4929,7 +4927,7 @@ ascii-image-converter: github.com/TheZoraiz/ascii-image-converter@v1.13.1
                 doggo: github.com/mr-karan/doggo/cmd/doggo@v0.5.5
                  draw: github.com/maaslalani/draw@v0.1.1
                fast-p: github.com/bellecp/fast-p@v0.2.5
-        golangci-lint: github.com/golangci/golangci-lint/cmd/golangci-lint@v1.53.0
+        golangci-lint: github.com/golangci/golangci-lint/cmd/golangci-lint@v1.53.1
                   gum: github.com/charmbracelet/gum@v0.10.0
                   gup: github.com/nao1215/gup@v0.22.0
               lazygit: github.com/jesseduffield/lazygit@v0.38.2
@@ -5003,4 +5001,4 @@ spt                        0.25.0                      289    latest/stable    p
 timg                       1.4.1+pkg-67d0              16     latest/stable    simosx        -
 vlc                        3.0.18                      3078   latest/stable    videolan**    -
 zenkit                     2.1.8                       17     latest/stable    zenkit**      -
-```
+    ```
