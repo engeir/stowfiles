@@ -19,7 +19,7 @@ return {
         require("mini.bracketed").setup()
 
         -- mini.colors -----------------------------------------------------------------
-        require('mini.colors').setup()
+        require("mini.colors").setup()
 
         -- mini.comment ----------------------------------------------------------------
         require("mini.comment").setup()
@@ -145,6 +145,11 @@ return {
         starter.setup(starter_opts)
 
         -- mini.trailspace -------------------------------------------------------------
-        require("mini.trailspace").setup()
+        local minitrail = require("mini.trailspace")
+        minitrail.setup()
+        vim.keymap.set("n", "<leader>mt", function()
+            minitrail.trim()
+            minitrail.trim_last_lines()
+        end, { desc = "[M]iniTrailspace [T]rim" })
     end,
 }

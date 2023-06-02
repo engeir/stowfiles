@@ -91,7 +91,7 @@ local opts = {
 lspconfig.lua_ls.setup(vim.tbl_deep_extend("force", require("engeir.lazy.lsp.languages.lua_ls"), opts))
 lspconfig.pyright.setup(vim.tbl_deep_extend("force", require("engeir.lazy.lsp.languages.pyright"), opts))
 lspconfig.ruff_lsp.setup(opts)
-lspconfig.ltex.setup(vim.tbl_deep_extend("force", require("engeir.lazy.lsp.languages.ltex"), opts))
+-- lspconfig.ltex.setup(vim.tbl_deep_extend("force", require("engeir.lazy.lsp.languages.ltex"), opts))
 if EXECUTABLE("pass") then
     lspconfig.sourcery.setup(vim.tbl_deep_extend("force", require("engeir.lazy.lsp.languages.sourcery"), opts))
 end

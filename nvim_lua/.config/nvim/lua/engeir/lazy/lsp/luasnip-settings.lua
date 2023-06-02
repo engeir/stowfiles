@@ -52,7 +52,8 @@ vim.keymap.set(
 )
 
 -- Define useful local variables to generate snippets
---This is a snippet creator
+
+-- This is a snippet creator
 -- s(<trigger>, <nodes>)
 local s = ls.s
 local sn = ls.snippet_node
@@ -70,6 +71,10 @@ local i = ls.insert_node
 -- Repeats a node
 -- rep(<position>)
 local rep = require("luasnip.extras").rep
+-- Inserts a text node.
+-- It takes in a string or a table of strings, where each table element is separated by
+-- a new line.
+-- t({...<string>})
 local t = ls.text_node
 local d = ls.dynamic_node
 local c = ls.choice_node
@@ -174,10 +179,12 @@ ls.add_snippets("tex", {
         i(2),
         t({ "", "\\end{frame}" }),
     }),
-    s("mathin", { t("\\("), i(1), t("\\)") }),
     s("citet", { t({ "\\citet{" }), i(1), t("}") }),
     s("citep", { t({ "\\citep{" }), i(1), t("}") }),
     s("ce", { t({ "\\ce{" }), i(1), t("}") }),
+    s("quote", { t({ "``" }), i(1), t("''") }),
+    -- Replaced by iurimateus/luasnip-latex-snippets.nvim
+    -- s("mathin", { t("\\("), i(1), t("\\)") }),
 }, {
     key = "tex",
 })
