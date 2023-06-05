@@ -73,9 +73,9 @@ lsp.on_attach(function(_, bufnr)
     -- Create a command `:Format` local to the LSP buffer
     vim.api.nvim_buf_create_user_command(bufnr, "Format", function(_)
         if vim.lsp.buf.format then
-            vim.lsp.buf.format()
+            vim.lsp.buf.format({ timeout_ms = 5000 })
         elseif vim.lsp.buf.formatting then
-            vim.lsp.buf.formatting()
+            vim.lsp.buf.formatting({ timeout_ms = 5000 })
         end
     end, { desc = "Format current buffer with LSP" })
     nmap("<leader>s", "<cmd>Format<CR>", "Format")

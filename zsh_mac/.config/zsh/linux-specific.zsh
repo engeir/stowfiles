@@ -1,7 +1,6 @@
 #!/bin/zsh
 # General
 alias screenkey="screenkey --opacity 0.3 --bak-mode normal -M -f 'DejaVu Sans Mono Bold'"
-alias wezterm='flatpak run org.wezfurlong.wezterm'
 alias tex2png="pnglatex -b Black -F White -d 2000"
 
 # Update file indexing
@@ -22,6 +21,8 @@ alias open="xdg-open"
 alias nikkerud="~/betty/main.rb"
 alias nvb="nvim ~/.local/share/bookmarks/bookmarks.sh"
 alias vpn="/opt/cisco/anyconnect/bin/vpnui"
+# Only activate when installing wezterm from flatpak. But never do that.
+# alias wezterm='flatpak run org.wezfurlong.wezterm'
 
 # reMarkable related
 alias rmv="rmview ~/programs/rmview/rmview.json"

@@ -4025,7 +4025,7 @@ python3-rfc3339 1.1-3 [Ubuntu/jammy main]
 python3-rfc3986 1.5.0-2 [Ubuntu/jammy main]
 python3-rich 11.2.0-1 [Ubuntu/jammy universe]
 python3-roman 3.3-1 [Ubuntu/jammy main]
-python3-rpy2 3.5.11-1.2204.0 [CRAN/jammy-cran40 ]
+python3-rpy2 3.5.12-1.2204.0 [CRAN/jammy-cran40 ]
 python3-rsa 4.8-1 [Ubuntu/jammy universe]
 python3-sage 9.5-4 [Ubuntu/jammy universe]
 python3-sagenb-export 3.2-4 [Ubuntu/jammy universe]
@@ -4165,7 +4165,7 @@ r-cran-foreign 0.8.82-1.2204.0 [CRAN/jammy-cran40 ]
 r-cran-kernsmooth 2.23-20-1.2204.0 [CRAN/jammy-cran40 ]
 r-cran-lattice 0.21-8-1.2204.0 [CRAN/jammy-cran40 ]
 r-cran-mass 7.3-59-1.2204.0 [CRAN/jammy-cran40 ]
-r-cran-matrix 1.5-1-1.2204.0 [CRAN/jammy-cran40 ]
+r-cran-matrix 1.5-4.1-1.2204.0 [CRAN/jammy-cran40 ]
 r-cran-mgcv 1.8-42-1.2204.0 [CRAN/jammy-cran40 ]
 r-cran-nlme 3.1.162-1.2204.0 [CRAN/jammy-cran40 ]
 r-cran-nnet 7.3-18-1.2204.0 [CRAN/jammy-cran40 ]
@@ -4710,7 +4710,7 @@ cargo-edit v0.12.0:
 cargo-update v13.0.4:
     cargo-install-update
     cargo-install-update-config
-coreutils v0.0.18:
+coreutils v0.0.19:
     coreutils
 du-dust v0.8.6:
     dust
@@ -4727,7 +4727,7 @@ halp v0.1.6:
     halp-test
 helix-term v0.6.0 (/home/een023/programs/helix/helix-term):
     hx
-hyperfine v1.16.1:
+hyperfine v1.17.0:
     hyperfine
 jless v0.8.0:
     jless
@@ -4748,7 +4748,7 @@ pueue v3.1.2:
     pueued
 ripgrep v13.0.0:
     rg
-rtx-cli v1.31.0:
+rtx-cli v1.32.0:
     rtx
 sd v0.7.6:
     sd
@@ -4824,7 +4824,7 @@ package jupyter-client 8.2.0, installed using Python 3.10.4
  - jupyter-kernel
  - jupyter-kernelspec
  - jupyter-run
-package jupytext 1.14.5, installed using Python 3.10.4
+package jupytext 1.14.6, installed using Python 3.10.4
  - jupytext
 package kb-manager 0.1.7, installed using Python 3.10.4
  - kb
@@ -4899,7 +4899,7 @@ package rofimoji 6.1.0, installed using Python 3.10.4
  - rofimoji
 package telegram-send 0.34, installed using Python 3.10.4
  - telegram-send
-package term-image 0.6.1, installed using Python 3.10.4
+package term-image 0.7.0, installed using Python 3.10.4
  - term-image
  - term-img
 package tex2svg 0.0.2, installed using Python 3.10.4
@@ -4927,11 +4927,11 @@ ascii-image-converter: github.com/TheZoraiz/ascii-image-converter@v1.13.1
                 doggo: github.com/mr-karan/doggo/cmd/doggo@v0.5.5
                  draw: github.com/maaslalani/draw@v0.1.1
                fast-p: github.com/bellecp/fast-p@v0.2.5
-        golangci-lint: github.com/golangci/golangci-lint/cmd/golangci-lint@v1.53.1
+        golangci-lint: github.com/golangci/golangci-lint/cmd/golangci-lint@v1.53.2
                   gum: github.com/charmbracelet/gum@v0.10.0
                   gup: github.com/nao1215/gup@v0.22.0
               lazygit: github.com/jesseduffield/lazygit@v0.38.2
-                   lf: github.com/gokcehan/lf@v0.0.0-20230524093459-a9d90bc56044
+                   lf: github.com/gokcehan/lf@v0.0.0-20230604160429-027538eabf8a
                   nap: github.com/maaslalani/nap@v0.1.1
                 rmapi: github.com/juruen/rmapi@(devel)
                     s: github.com/zquestz/s@v0.6.7

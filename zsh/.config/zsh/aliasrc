@@ -12,7 +12,7 @@ alias rm="trash-put"
 # alias rm='echo '\''Dont use rm. Use trash-put instead. (Or use \\rm.)'\'
 alias screenkey="screenkey --opacity 0.3 --bak-mode normal -M -f 'DejaVu Sans Mono Bold'"
 alias tks="tmux kill-session -t"
-alias wezterm='flatpak run org.wezfurlong.wezterm'
+# alias wezterm='flatpak run org.wezfurlong.wezterm'
 alias so="source ~/.zshrc"
 alias tex2png="pnglatex -b Black -F White -d 2000"
 # It's nice with habits
