@@ -59,6 +59,7 @@ return {
     },
     {
         "sindrets/diffview.nvim",
+        enabled = IS_KNOWN,
         config = function()
             require("diffview").setup({
                 file_panel = {

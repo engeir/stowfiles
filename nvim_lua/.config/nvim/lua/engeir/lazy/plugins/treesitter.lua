@@ -158,6 +158,7 @@ return {
     "nvim-treesitter/nvim-treesitter-textobjects",
     {
         "zbirenbaum/neodim",
+        enabled = IS_KNOWN,
         opts = {
             alpha = 0.5, -- make the dimmed text even dimmer
             blend_color = "#282828",
