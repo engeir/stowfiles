@@ -3,6 +3,7 @@
 ## Brew
 
 ```txt
+abseil 20230125.3
 adns 1.6.0
 adwaita-icon-theme 44.0
 amfora 1.9.2
@@ -22,7 +23,7 @@ automake 1.16.5
 bash 5.2.15
 bash-completion 1.3_3
 bat 0.23.0
-bdw-gc 8.2.2
+bdw-gc 8.2.4
 berkeley-db 18.1.40_1
 bibclean 3.07
 bison 3.8.2
@@ -31,7 +32,7 @@ borgbackup-fuse 1.2.4
 brotli 1.0.9
 btop 1.2.13
 c-ares 1.19.1
-ca-certificates 2023-01-10
+ca-certificates 2023-05-30
 cabextract 1.11
 cairo 1.16.0_5
 carthage 0.39.0
@@ -50,17 +51,18 @@ cmocka 1.1.7
 composer 2.5.7
 coreutils 9.3
 cpio 2.14
-curl 8.1.1
-cython 0.29.34
-dav1d 1.2.0
+curl 8.1.2
+cython 0.29.35
+dav1d 1.2.1
 dbus 1.14.6
 desktop-file-utils 0.26
-despell 0.9
+despell 0.10
 djvulibre 3.5.28_2
 docbook 5.1_1
 docbook-xsl 1.79.2_1
 docutils 0.20.1
 docx2txt 1.4
+doggo 0.5.5_1
 double-conversion 3.3.0
 dpkg 1.21.22
 duf 0.8.1
@@ -86,7 +88,7 @@ freetds 1.3.13 1.3.18
 freetype 2.13.0_1
 frei0r 1.8.0
 fribidi 1.0.13
-fzf 0.40.0
+fzf 0.41.1
 gawk 5.2.2
 gcc 13.1.0
 gd 2.3.3_5
@@ -94,23 +96,23 @@ gdbm 1.23
 gdk-pixbuf 2.42.10_1
 geos 3.11.2
 gettext 0.21.1
-gh 2.29.0
+gh 2.30.0
 ghostscript 10.01.1_1
 giflib 5.2.1
 girara 0.4.0
-git 2.40.1
+git 2.41.0
 git-lfs 3.3.0
 glib 2.76.3
 gmp 6.2.1_1
 gnu-getopt 2.39
 gnu-sed 4.9
 gnu-tar 1.34_1
-gnupg 2.4.1
+gnupg 2.4.2
 gnuplot 5.4.7
 gnutls 3.8.0
 go 1.20.4
 gobject-introspection 1.76.1
-golangci-lint 1.52.2
+golangci-lint 1.53.2
 gpatch 2.7.6
 gping 1.12.0
 graphicsmagick 1.3.40_2
@@ -134,7 +136,7 @@ html2text 2.1.1
 htop 3.2.2
 httpd 2.4.57
 hub 2.14.2
-hugo 0.112.3
+hugo 0.113.0
 hunspell 1.7.2
 hwloc 2.9.1
 icu4c 72.1
@@ -195,14 +197,14 @@ libmpc 1.3.1
 libnghttp2 1.53.0
 libnotify 0.8.2
 libogg 1.3.5
-libomp 16.0.4
+libomp 16.0.5
 libpng 1.6.39
 libpq 15.3
 libproxy 0.4.18
 libpthread-stubs 0.4
 libraw 0.21.1
 librist 0.2.7_3
-librsvg 2.56.0
+librsvg 2.56.1
 libsamplerate 0.2.2
 libsigsegv 2.14
 libsm 1.2.4
@@ -211,7 +213,7 @@ libsodium 1.0.18_1
 libsoxr 0.1.3
 libspectre 0.2.12_1 0.2.10_2
 libspng 0.7.4
-libssh2 1.10.0
+libssh2 1.11.0
 libtasn1 4.19.0
 libtermkey 0.22
 libtiff 4.5.0 4.4.0_1
@@ -248,12 +250,12 @@ libyaml 0.2.5
 libzen 0.4.41_1
 libzip 1.9.2
 links 2.29
-little-cms2 2.14_1
+little-cms2 2.15
 lolcat 100.0.1
 lsd 0.23.1
 lua 5.4.6
 lua@5.3 5.3.6
-luajit HEAD-03080b7 2.1.0-beta3-20230430.1
+luajit HEAD-03080b7 2.1.0-beta3-20230602.5
 luajit-openresty 2.1-20230410
 luarocks 3.9.2
 luv 1.44.2-1
@@ -264,13 +266,13 @@ lzo 2.10
 m4 1.4.19
 make 4.4.1
 mbedtls 3.4.0
-mcfly v0.8.0
+mcfly v0.8.1
 md4c 0.4.8
 media-info 23.04_1
 mercurial 6.4
 mesa 22.3.6_1
-meson 1.1.0
-mozjpeg 4.1.1
+meson 1.1.1
+mozjpeg 4.1.3
 mpdecimal 2.5.1
 mpfr 4.2.0-p9
 mpg123 1.31.3
@@ -292,7 +294,7 @@ nnn 4.8
 node 20.2.0
 npth 1.6
 nspr 4.35
-nss 3.89.1
+nss 3.90
 odt2txt 0.5
 oniguruma 6.9.8
 open-mpi 4.1.5
@@ -302,10 +304,10 @@ openjdk 20.0.1
 openjpeg 2.5.0_1
 openldap 2.6.4
 openslide 3.4.1_8
-openssl@1.1 1.1.1t
-openssl@3 3.1.0
+openssl@1.1 1.1.1u
+openssl@3 3.1.1
 opus 1.3.1
-orc 0.4.33
+orc 0.4.34
 p11-kit 0.24.1_1
 p7zip 17.05
 pandoc 3.1.2
@@ -316,7 +318,7 @@ pass 1.7.4
 pcre 8.45
 pcre2 10.42
 pdftohtml 0.40a
-pdftoipe 7.2.24.1_12
+pdftoipe 7.2.24.1_13
 perl 5.36.1
 php 8.2.6
 pinentry 1.2.1
@@ -325,29 +327,29 @@ pipx 1.2.0
 pixman 0.42.2
 pkg-config 0.29.2_3
 plotutils 2.6_1
-poppler 23.05.0
+poppler 23.06.0
 popt 1.19
 portaudio 19.7.0
 portmidi 2.0.4_1
 potrace 1.16
 pqiv 2.12_6
 prettier 2.8.8
-proj 9.2.0_1
-protobuf 21.12
+proj 9.2.1
+protobuf 22.5
 pstoedit 3.78
 pueue 3.1.2
 pup 0.4.0
-pyenv 2.3.17
+pyenv 2.3.18
 pyenv-virtualenv 1.2.1
 pygments 2.15.1 2.15.0
 pyqt@5 5.15.7_2
 python@3.10 3.10.11
 python@3.11 3.11.3
 python@3.8 3.8.16
-python@3.9 3.9.16
+python@3.9 3.9.17
 qrencode 4.1.1
-qt 6.5.0
-qt@5 5.15.8_3
+qt 6.5.1
+qt@5 5.15.9
 rav1e 0.6.6
 readline 8.2.1
 recode 3.7.14
@@ -358,11 +360,11 @@ rtmpdump 2.4+20151223_1
 rubberband 3.2.1
 ruby 3.2.2
 ruby-install 0.9.0
-rust-analyzer 2023-05-22
+rust-analyzer 2023-06-05
 scrcpy 2.0_1
 screenresolution 1.6
 sd 0.7.6_1
-sdl12-compat 1.2.60
+sdl12-compat 1.2.64
 sdl2 2.26.5
 sdl_image 1.2.12_10
 sdl_mixer 1.2.12_6
@@ -373,7 +375,7 @@ shellharden 4.3.0
 shfmt 3.6.0
 shpotify 2.1
 sk 0.10.4
-skhd 0.3.8
+skhd 0.3.9
 slides 0.9.0
 snappy 1.1.10
 soft-serve 0.5.4
@@ -385,7 +387,7 @@ spotify-tui v0.23.0
 sqlite 3.42.0
 srt 1.5.1
 st 1.1.4_1
-starship 1.14.2
+starship 1.15.0
 stow 2.3.1
 svt-av1 1.4.1 1.5.0
 sxiv 26_1
@@ -401,7 +403,7 @@ timg 1.4.5_1
 tldr 1.6.0
 tmux 3.3a_2
 toilet 0.3
-tree 2.1.0
+tree 2.1.1
 tree-sitter 0.20.8
 ttyd 1.7.3
 uchardet 0.0.7 0.0.8
@@ -425,11 +427,11 @@ xmlto 0.0.28
 xorgproto 2022.2
 xpdf 4.04
 xplr 0.21.2
-xterm 380
+xterm 382
 xvid 1.3.7
 xxhash 0.8.1
 xz 5.4.3
-yabai 5.0.5
+yabai 5.0.6
 yarn 1.22.19
 youtube-dl 2021.12.17
 yt-dlp 2022.10.4 2023.3.4 2022.8.19
@@ -439,15 +441,16 @@ zeromq 4.3.4
 zimg 3.0.4
 zlib 1.2.13
 zstd 1.5.5
+alacritty 0.12.1
 alfred 4.5.1,1256
 amethyst 0.15.3
-android-platform-tools 34.0.1
+android-platform-tools 34.0.3
 basictex 2023.0314
 blackhole-16ch 0.5.0
 borg-wrapper 0.0.2
 dmenu-mac 0.7.2
 docker 3.3.1,63152
-font-hack-nerd-font 3.0.1
+font-hack-nerd-font 3.0.2
 gimp 2.10.34-1
 hammerspoon 0.9.90
 kitty 0.28.1
@@ -458,7 +461,7 @@ penc 1.0.0
 platypus 5.3,1113
 qtpass 1.3.2
 qutebrowser 2.5.3
-rar 6.21
+rar 6.22
 wezterm 20230408-112425,69ae8472
 whichspace 0.3.2
 xquartz 2.8.1
@@ -467,32 +470,40 @@ xquartz 2.8.1
 ## Cargo
 
 ```txt
-alacritty v0.12.1:
-    alacritty
-atuin v14.0.1:
+atuin v15.0.0:
     atuin
+bacon v2.8.1:
+    bacon
 blindfold v1.0.7:
     blindfold
-bob-nvim v2.3.2:
+bob-nvim v2.3.3:
     bob
-cargo-binstall v0.23.0:
+cargo-binstall v0.23.1:
     cargo-binstall
-cargo-edit v0.11.11:
+cargo-edit v0.12.0:
     cargo-add
     cargo-rm
     cargo-set-version
     cargo-upgrade
+cargo-info v0.7.3:
+    cargo-info
 cargo-update v13.0.4:
     cargo-install-update
     cargo-install-update-config
-clap v4.3.0:
+cargo-watch v8.4.0:
+    cargo-watch
+clap v4.3.2:
     stdio-fixture
-coreutils v0.0.18:
+coreutils v0.0.19:
     coreutils
 czkawka_cli v5.1.0:
     czkawka_cli
+evcxr_jupyter v0.14.2:
+    evcxr_jupyter
 exa v0.10.1:
     exa
+gitui v0.22.1:
+    gitui
 halp v0.1.6:
     halp
     halp-completions
@@ -500,14 +511,32 @@ halp v0.1.6:
     halp-test
 helix-term v0.6.0 (/Users/eirikenger/programs/helix/helix-term):
     hx
-hyperfine v1.16.1:
+hyperfine v1.17.0:
     hyperfine
-mdbook v0.4.29:
+irust v1.70.0:
+    irust
+mdbook v0.4.30:
     mdbook
-rtx-cli v1.30.4:
+mprocs v0.6.4:
+    mprocs
+nu v0.80.0:
+    nu
+porsmo v0.2.0:
+    porsmo
+rtx-cli v1.32.0:
     rtx
+sd v0.7.6:
+    sd
+speedtest-rs v0.1.4:
+    speedtest-rs
 stylua v0.17.1:
     stylua
+wiki-tui v0.7.0:
+    wiki-tui
+xh v0.18.0:
+    xh
+zellij v0.36.0:
+    zellij
 ```
 
 ## Pipx
@@ -540,7 +569,7 @@ package pandoc-eqnos 2.5.0, installed using Python 3.9.6
  - pandoc-eqnos
 package pandoc-include 1.2.0, installed using Python 3.10.1
  - pandoc-include
-package pipenv 2023.5.19, installed using Python 3.10.0
+package pipenv 2023.6.2, installed using Python 3.10.0
  - pipenv
  - pipenv-resolver
 package pypistats 1.3.0, installed using Python 3.11.3
@@ -575,15 +604,16 @@ package whoogle-search 0.8.2, installed using Python 3.9.5
 ```txt
 ascii-image-converter: github.com/TheZoraiz/ascii-image-converter@v1.13.1
                    d2: oss.terrastruct.com/d2@v0.4.2
-              despell: github.com/bensadeh/despell@v0.0.0-20230424061959-fe5e2e7d0911
+              despell: github.com/bensadeh/despell@v0.0.0-20230531131653-1c623b613b06
                  draw: github.com/maaslalani/draw@v0.1.1
                fast-p: github.com/bellecp/fast-p@v0.2.5
-        golangci-lint: github.com/golangci/golangci-lint/cmd/golangci-lint@v1.52.2
+        golangci-lint: github.com/golangci/golangci-lint/cmd/golangci-lint@v1.53.2
          gomodifytags: github.com/fatih/gomodifytags@v1.16.0
                   gum: github.com/charmbracelet/gum@v0.10.0
-                  gup: github.com/nao1215/gup@v0.21.1
+                  gup: github.com/nao1215/gup@v0.22.0
+                  jqp: github.com/noahgorstein/jqp@v0.4.0
               lazygit: github.com/jesseduffield/lazygit@v0.38.2
-                   lf: github.com/gokcehan/lf@v0.0.0-20230524093459-a9d90bc56044
+                   lf: github.com/gokcehan/lf@v0.0.0-20230604160429-027538eabf8a
        mandelbrot-cli: github.com/MicheleFiladelfia/mandelbrot-cli@v0.0.0-20230416100519-74781703a9e2
                   nap: github.com/maaslalani/nap@v0.1.1
                   pup: @unknown
@@ -592,3 +622,4 @@ ascii-image-converter: github.com/TheZoraiz/ascii-image-converter@v1.13.1
             triangula: github.com/RH12503/Triangula-CLI/triangula@v0.0.0-20210520132201-603b709907d8
                   vhs: github.com/charmbracelet/vhs@v0.5.0
 ```
+    

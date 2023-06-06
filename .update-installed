@@ -98,7 +98,8 @@ $PIPX
 
 \`\`\`txt
 $GO
-    \`\`\`" >"./INSTALLED-mac.md"
+\`\`\`
+    " >"./INSTALLED-mac.md"
 fi
 
 # Run Linux updates
@@ -162,5 +163,6 @@ $FLAT
 
 \`\`\`txt
 $SNAP
-    \`\`\`" >"./INSTALLED-linux.md"
+\`\`\`
+    " >"./INSTALLED-linux.md"
 fi

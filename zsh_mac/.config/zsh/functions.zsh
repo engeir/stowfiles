@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/zsh
 batdiff() {
     if [ "$1" = "--staged" ]; then
         git diff --staged --name-only --diff-filter=d | xargs -I % sh -c "git diff --staged % | bat"

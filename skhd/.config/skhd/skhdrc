@@ -86,17 +86,17 @@ cmd + alt - r : skhd --reload
 # Terminal
 # cmd - return : open /Applications/Alacritty.app -n
 cmd - return : wezterm
-cmd - q : $(yabai -m window $(yabai -m query --windows --window | jq -re ".id") --close)
+# cmd - q : $(yabai -m window $(yabai -m query --windows --window | jq -re ".id") --close)
 
-alt - space : popup-mac /Users/eirikenger/bin/custom_scripts
+alt - space : /Users/eirikenger/bin/popup-mac /Users/eirikenger/bin/custom_scripts
 
 # cmd + alt - x : /Users/eirikenger/.local/bin/passmenu
-cmd + alt - x : popup-mac /Users/eirikenger/bin/custom_scripts
+cmd + alt - x : /Users/eirikenger/bin/popup-mac /Users/eirikenger/bin/custom_scripts
 
 cmd + alt - p : /Users/eirikenger/bin/pdf_open
 
 ## Close active application
-# cmd - backspace : $(yabai -m window $(yabai -m query --windows --window | jq -re ".id") --close)
+cmd - backspace : $(yabai -m window $(yabai -m query --windows --window | jq -re ".id") --close)
 
 # focus window
 # alt - h : yabai -m window --focus west

@@ -1,4 +1,12 @@
-# live_config_reload: true
+live_config_reload: true
+env:
+  # TERM variable
+  #
+  # This value is used to set the `$TERM` environment variable for
+  # each instance of Alacritty. If it is not present, alacritty will
+  # check the local terminfo database and use `alacritty` if it is
+  # available, otherwise `xterm-256color` is used.
+  TERM: xterm-256color # alacritty
 colors:
   # Default colors
   # primary:
@@ -31,17 +39,29 @@ colors:
     text: "0x002635"
     cursor: "0xffcc1b"
 
+  # Transparent cell backgrounds
+  #
+  # Whether or not `window.opacity` applies to all cell backgrounds or only to
+  # the default background. When set to `true` all cells will be transparent
+  # regardless of their background color.
+  transparent_background_colors: true
+
 cursor:
   style:
     shape: Beam
 
-  vi_mode_style: Block
+vi_mode_style: Block
+
+shell:
+  program: /bin/zsh
+  args:
+    - --login
 
 hints:
   enabled:
     - regex: "(mailto:|gemini:|gopher:|https:|http:|news:|file:|git:|ssh:|ftp:)\
         [^\u0000-\u001F\u007F-\u009F<>\"\\s{-}\\^⟨⟩`]+"
-      command: xdg-open
+      command: open
       post_processing: true
       mouse:
         enabled: true
@@ -52,8 +72,8 @@ hints:
 
 window:
   padding:
-    x: 5
-    y: 5
+    x: 1
+    y: 1
   decorations: buttonless
   opacity: 0.8
 
@@ -67,11 +87,15 @@ font:
     family: Recursive
     style: Bold
   italic:
-    family: Recursive
+    family: Victor Mono
     style: Italic
+  bold_italic:
+    family: Victor Mono
+    style: Bold Italic
+  builtin_box_drawing: true
 
   # use_thin_strokes: true
-AppleFontSmoothing: 0
+# AppleFontSmoothing: 0
 
 draw_bold_text_with_bright_colors: false
 
@@ -79,12 +103,33 @@ key_bindings:
   # Use this to re-map: https://eastmanreference.com/complete-list-of-applescript-key-codes
   # No, better use the app Key Codes
   #   Make alt+<key> work as alt+<key>
-  - { key: 25, mods: Alt, chars: "]" }
-  - { key: 25, mods: Alt|Shift, chars: "}" }
-  - { key: 26, mods: Alt, chars: "|" }
-  - { key: 26, mods: Alt|Shift, chars: "\\" }
-  - { key: 28, mods: Alt, chars: "[" }
-  - { key: 28, mods: Alt|Shift, chars: "{" }
+  - { key: RBracket, mods: Alt, chars: "]" } # key 25
+  - { key: RBracket, mods: Alt|Shift, chars: "}" } # key 25
+  - { key: Slash, mods: Alt, chars: "|" } # key 26
+  - { key: Slash, mods: Alt|Shift, chars: "\\" } # key 26
+  - { key: LBracket, mods: Alt, chars: "[" } # key 28
+  - { key: LBracket, mods: Alt|Shift, chars: "{" } # key 28
   - { key: P, mods: Alt, chars: "\x1bp" }
   - { key: Q, mods: Alt, chars: "\x1bq" }
+  - { key: K, mods: Alt|Shift, action: IncreaseFontSize }
+  - { key: J, mods: Alt|Shift, action: DecreaseFontSize }
   # - { key: 30,      mods: Alt, chars: "~" }
+  # (macOS only)
+  #- { key: K,              mods: Command, mode: ~Vi|~Search, chars: "\x0c"                 }
+  #- { key: K,              mods: Command, mode: ~Vi|~Search, action: ClearHistory          }
+  #- { key: Key0,           mods: Command,                    action: ResetFontSize         }
+  # - { key: Plus,           mods: Command,                    action: IncreaseFontSize      }
+  # - { key: NumpadAdd,      mods: Command,                    action: IncreaseFontSize      }
+  # - { key: NumpadSubtract, mods: Command,                    action: DecreaseFontSize      }
+  #- { key: V,              mods: Command,                    action: Paste                 }
+  #- { key: C,              mods: Command,                    action: Copy                  }
+  #- { key: C,              mods: Command, mode: Vi|~Search,  action: ClearSelection        }
+  #- { key: H,              mods: Command,                    action: Hide                  }
+  #- { key: H,              mods: Command|Alt,                action: HideOtherApplications }
+  #- { key: M,              mods: Command,                    action: Minimize              }
+  #- { key: Q,              mods: Command,                    action: Quit                  }
+  #- { key: W,              mods: Command,                    action: Quit                  }
+  #- { key: N,              mods: Command,                    action: CreateNewWindow       }
+  #- { key: F,              mods: Command|Control,            action: ToggleFullscreen      }
+  #- { key: F,              mods: Command, mode: ~Search,     action: SearchForward         }
+  #- { key: B,              mods: Command, mode: ~Search,     action: SearchBackward        }
