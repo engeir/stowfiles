@@ -81,16 +81,19 @@ font:
   size: 13
 
   normal:
-    family: Recursive
-    style: Regular
+    # family: Recursive
+    # style: Regular
+    family: VictorMono Nerd Font Mono
+    style: Medium
   bold:
-    family: Recursive
+    # family: Recursive
+    family: VictorMono Nerd Font Mono
     style: Bold
   italic:
-    family: Victor Mono
+    family: VictorMono Nerd Font Mono
     style: Italic
   bold_italic:
-    family: Victor Mono
+    family: VictorMono Nerd Font Mono
     style: Bold Italic
   builtin_box_drawing: true
 
