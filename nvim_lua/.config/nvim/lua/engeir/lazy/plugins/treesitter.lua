@@ -183,7 +183,7 @@ return {
             },
         },
         keys = {
-            { "gp", ":lua require('neogen').generate()<CR>", { noremap = true, silent = true } },
+            { "gp", ":lua require('neogen').generate()<CR>", desc = "Neogen: [G]enerate docstring", { noremap = true, silent = true } },
         },
         -- Uncomment next line if you want to follow only stable versions
         -- tag = "*"

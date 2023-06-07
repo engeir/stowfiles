@@ -181,6 +181,8 @@ ls.add_snippets("tex", {
     }),
     s("citet", { t({ "\\citet{" }), i(1), t("}") }),
     s("citep", { t({ "\\citep{" }), i(1), t("}") }),
+    s({ trig = "acrs", snippetType = "autosnippet" }, { t({ "\\acrshort{" }), i(1), t("}") }),
+    s({ trig = "acrf", snippetType = "autosnippet" }, { t({ "\\acrfull{" }), i(1), t("}") }),
     s("ce", { t({ "\\ce{" }), i(1), t("}") }),
     s("quote", { t({ "``" }), i(1), t("''") }),
     -- Replaced by iurimateus/luasnip-latex-snippets.nvim

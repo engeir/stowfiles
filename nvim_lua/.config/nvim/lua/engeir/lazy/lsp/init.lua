@@ -89,7 +89,12 @@ local opts = {
     capabilities = require("engeir.lazy.lsp.handlers").capabilities,
 }
 lspconfig.lua_ls.setup(vim.tbl_deep_extend("force", require("engeir.lazy.lsp.languages.lua_ls"), opts))
-lspconfig.pyright.setup(vim.tbl_deep_extend("force", require("engeir.lazy.lsp.languages.pyright"), opts))
+-- lspconfig.pyright.setup(vim.tbl_deep_extend("force", require("engeir.lazy.lsp.languages.pyright"), opts))
+lspconfig.jedi_language_server.setup(opts)
+-- This might take over for jedi_language_server, but while the GoTo Definition, Rename,
+-- etc., is not working, this is not an option. Maybe I actually have to, since
+-- auto-import is not included in jedi_language_server.
+lspconfig.pylyzer.setup(opts)
 lspconfig.ruff_lsp.setup(opts)
 -- lspconfig.ltex.setup(vim.tbl_deep_extend("force", require("engeir.lazy.lsp.languages.ltex"), opts))
 if EXECUTABLE("pass") then
