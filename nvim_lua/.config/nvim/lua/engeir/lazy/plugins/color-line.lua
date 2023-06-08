@@ -24,7 +24,6 @@ end
 local function getFileInfo()
     return getWords() .. ", " .. getLines() .. get_entr_compiler_status()
 end
-print(get_entr_compiler_status())
 
 return {
     -- Style and colour schemes ===================================================== --
