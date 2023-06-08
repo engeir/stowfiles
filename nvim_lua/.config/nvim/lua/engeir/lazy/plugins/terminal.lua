@@ -24,7 +24,12 @@ return {
             keymap("n", "<leader>pv", ":FloatermNew --wintype=float --position=right --autoclose=2 nnn -dH<CR>", opts)
             keymap("n", "<leader>H", ":/%%<CR>VN", opts)
             keymap("v", "<C-r>", ":'<,'>FloatermSend <CR>", opts)
-            keymap("n", "<leader>r", ":FloatermNew --wintype=float --position=right --autoclose=0 compiler %<CR>", opts)
+            keymap(
+                "n",
+                "<leader>r",
+                ":FloatermNew --wintype=float --position=right --autoclose=0 compiler %<CR>",
+                { desc = "[R]un compiler on script" }
+            )
             keymap("n", "<leader>tn", ":FloatermNext <CR>", opts)
             keymap("n", "<leader>tp", ":FloatermPrev <CR>", opts)
             keymap("n", "<leader>th", ":FloatermHide <CR>", opts)
