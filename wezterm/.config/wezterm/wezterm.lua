@@ -24,10 +24,13 @@ end
 config.font_size = font_size
 config.adjust_window_size_when_changing_font_size = false
 -- For example, changing the color scheme:
-config.color_scheme = "Gruvbox dark, medium (base16)"
+-- This affects the colors reported/used by `pastel`, so is seems better to set
+-- LS_COLORS and not the theme.
+-- config.color_scheme = "Gruvbox dark, medium (base16)"
 config.colors = {
     background = "#282828",
 }
+config.window_background_gradient = require("colors.window_background_gradient")
 config.enable_tab_bar = false
 config.window_close_confirmation = "NeverPrompt"
 config.window_background_opacity = 0.9

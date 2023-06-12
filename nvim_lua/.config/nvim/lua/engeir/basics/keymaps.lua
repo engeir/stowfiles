@@ -83,7 +83,7 @@ vim.keymap.set(
 
 -- Search, highlight and move
 vim.keymap.set("n", "<leader>zw", ":%s/\\<<C-r><C-w>\\>/<C-r><C-w>/gI<Left><Left><Left>", { desc = "[Z]wap [W]ords" })
-vim.keymap.set("n", "<leader>h", ":noh<CR>", opts)
+vim.keymap.set("n", "<leader>hh", ":noh<CR>", {desc="Turn off highlight"})
 vim.keymap.set("n", "n", "nzzzv", opts)
 vim.keymap.set("n", "N", "Nzzzv", opts)
 -- vim.keymap.set("n", "J", "mzJ`z", opts)

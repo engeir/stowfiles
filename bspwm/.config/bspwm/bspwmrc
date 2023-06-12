@@ -120,6 +120,7 @@ bspc rule -a firefox locked=on
 # bspc rule -a Firefox:Places state=floating follow=on focus=on
 bspc rule -a matplotlib state=floating  # rectangle=1000x700+500+500
 bspc rule -a Matplotlib state=floating  # rectangle=1000x700+500+500
+bspc rule -a feh state=floating  # rectangle=1000x700+500+500
 bspc rule -a Zathura state=tiled
 bspc rule -a Blueman-manager state=floating  # rectangle=1000x700+500+500
 bspc rule -a Nm-connection-editor state=floating follow=on focus=on

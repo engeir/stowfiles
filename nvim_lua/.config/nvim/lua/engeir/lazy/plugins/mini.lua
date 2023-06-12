@@ -92,7 +92,7 @@ return {
             },
             {
                 name = "Live grep",
-                action = "Telescope live_grep",
+                action = "lua require('telescope.builtin').grep_string({search=''})",
                 section = "Telescope",
             },
             {

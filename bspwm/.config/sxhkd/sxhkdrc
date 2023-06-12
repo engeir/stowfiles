@@ -1,25 +1,32 @@
-
+#
 # wm independent hotkeys
 #
+# To get hints in a cheat sheet, write commands on the form: (note the not-indented
+# comment)
+# key-command
+# # Explanaition
+#     command
+#
 
-# terminal emulator
 super + Return
+# terminal emulator
 	st
 	# gnome-terminal
 
 super + b
 	firefox
 
-# program launcher
 alt + @space
+# program launcher
 	dmenu_run
 	# dmenu_run -nb '#000000' -nf "#3CB371" -sb "#3CB371" -fn 3
 	#dmenu_run -nb '#000000' -nf "#00008B" -sb "#00008B" -fn 3
 
-# Run custom scripts
 super + alt + x
+# Run custom scripts
 	~/bin/custom_scripts &
 super + alt + g
+# Git conventions cheat sheet
 	~/bin/git-conventions &
 super + alt + p
 	~/bin/pdf_open &

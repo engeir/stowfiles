@@ -1,15 +1,17 @@
 #!/bin/bash
 
-if [[ $(uname -s) == "Darwin" ]]; then
-    CHOOSER="sk"
-else
-    CHOOSER="dmenu -l 20"
-fi
-
 # Read from bookmarks file but strip all comments and empty lines
 FILE="$HOME/.local/share/bookmarks/bookmarks.sh"
-TRIM=$(sed 's/\s*#.*$//;/^$/d' "$FILE")
-CHOSEN=$(echo "$TRIM" | "$CHOOSER")
+
+if [[ $(uname -s) == "Darwin" ]]; then
+    CHOOSER="sk"
+    TRIM=$(gsed 's/\s*#.*$//;/^$/d' "$FILE")
+else
+    CHOOSER="dmenu -l 20"
+    TRIM=$(sed 's/\s*#.*$//;/^$/d' "$FILE")
+fi
+
+CHOSEN=$(echo "$TRIM" | eval "$CHOOSER")
 
 # Exit if none chosen.
 [ "$CHOSEN" = "" ] && exit
