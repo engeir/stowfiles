@@ -1,7 +1,7 @@
 # NeoVim Config
 
-This is @engeir's NeoVim config, on NVIM v0.10.0-dev-476+ga217675a6 (view at [latest
-commit](https://github.com/neovim/neovim/tree/a217675a6)) installed with the [bob version
+This is @engeir's NeoVim config, on NVIM v0.10.0-dev-510+g3c4890d1e (view at [latest
+commit](https://github.com/neovim/neovim/tree/3c4890d1e)) installed with the [bob version
 manager for neovim](https://github.com/MordechaiHadad/bob). I am currently using the
 [lazy plugin manager](https://github.com/folke/lazy.nvim). Below is a complete list of
 all plugins I'm using:
@@ -33,6 +33,7 @@ all plugins I'm using:
 - [gruvbox-material](https://github.com/sainnhe/gruvbox-material.git)
 - [harpoon](https://github.com/ThePrimeagen/harpoon.git)
 - [impatient.nvim](https://github.com/lewis6991/impatient.nvim.git)
+- [jfind.nvim](https://github.com/jake-stewart/jfind.nvim.git)
 - [keylab.nvim](https://github.com/BooleanCube/keylab.nvim.git)
 - [lazy.nvim](https://github.com/folke/lazy.nvim.git)
 - [lazygit.nvim](https://github.com/kdheepak/lazygit.nvim.git)
@@ -87,4 +88,5 @@ all plugins I'm using:
 - [vim-rooter](https://github.com/airblade/vim-rooter.git)
 - [vim-slime](https://github.com/jpalardy/vim-slime.git)
 - [vimtex](https://github.com/lervag/vimtex.git)
+- [which-key.nvim](https://github.com/folke/which-key.nvim.git)
 - [zen-mode.nvim](https://github.com/folke/zen-mode.nvim.git)
