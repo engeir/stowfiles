@@ -14,6 +14,7 @@ seems to be better, for example with displaying the tilde (~). It does, however,
 ligatures...
 */
 *.font: Recursive:size=11:antialias=true:autohint=true;
+/* *.font: VictorMonoNerdFontMono:size=11:antialias=true:autohint=true; */
 /* *.font: Cascursive:size=11:antialias=true:autohint=true; */
 
 #define t_bg_floor     #010000

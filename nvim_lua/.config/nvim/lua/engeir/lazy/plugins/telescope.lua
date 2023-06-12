@@ -121,26 +121,67 @@ return {
                 },
             })
 
-            map("n", "<leader>ff", "<cmd>lua require('telescope.builtin').find_files({hidden=true})<cr>")
-            map("n", "<leader>fl", "<cmd>lua require('telescope.builtin').current_buffer_fuzzy_find()<cr>")
-            map("n", "<leader>fs", "<cmd>lua require('telescope.builtin').git_files({cwd='~/stowfiles/'})<cr>")
-            map("n", "<leader>fg", "<cmd>lua require('telescope.builtin').git_files()<cr>") -- {git_command={'git', 'grep', '--cached', '-Il', '\"\"'}}
+            map(
+                "n",
+                "<leader>ff",
+                "<cmd>lua require('telescope.builtin').find_files({hidden=true})<cr>",
+                { desc = "[F]ind [F]iles" }
+            )
+            map(
+                "n",
+                "<leader>fl",
+                "<cmd>lua require('telescope.builtin').current_buffer_fuzzy_find()<cr>",
+                { desc = "[F]ind [L]ines" }
+            )
+            map(
+                "n",
+                "<leader>fs",
+                "<cmd>lua require('telescope.builtin').git_files({cwd='~/stowfiles/'})<cr>",
+                { desc = "[F]ind [S]towfiles" }
+            )
+            map(
+                "n",
+                "<leader>fg",
+                "<cmd>lua require('telescope.builtin').git_files()<cr>",
+                { desc = "[F]ind [G]itfiles" }
+            ) -- {git_command={'git', 'grep', '--cached', '-Il', '\"\"'}}
             -- map("n", "<leader>fr", "<cmd>lua require('telescope.builtin').live_grep()<cr>") -- Does not fuzzy
-            map("n", "<leader>fr", "<cmd>lua require('telescope.builtin').grep_string({search=''})<cr>")
-            map("n", "<leader>fw", "<cmd>lua require('telescope.builtin').grep_string()<cr>")
+            map(
+                "n",
+                "<leader>fr",
+                "<cmd>lua require('telescope.builtin').grep_string({search=''})<cr>",
+                { desc = "[F]ind [R]ipgrep (find string)" }
+            )
+            map(
+                "n",
+                "<leader>fw",
+                "<cmd>lua require('telescope.builtin').grep_string()<cr>",
+                { desc = "[F]ind [W]ord under cursor" }
+            )
             map(
                 "n",
                 "<leader>b",
-                "<cmd>lua require('telescope.builtin').buffers({sort_mru=true, ignore_current_buffer=true})<cr>"
+                "<cmd>lua require('telescope.builtin').buffers({sort_mru=true, ignore_current_buffer=true})<cr>",
+                { desc = "Find [B]uffers" }
             )
-            map("n", "<leader>fb", "<cmd>Telescope bibtex<cr>")
-            map("n", "<leader>fm", "<cmd>lua require('telescope').extensions.media_files.media_files()<cr>")
-            map("n", "<leader>fp", "<cmd>Telescope spell_suggest<cr>")
-            map("n", "<leader>fv", "<cmd>Telescope neoclip<cr>")
-            map("n", "<leader>fh", "<cmd>lua require('telescope.builtin').help_tags()<cr>")
-            map("n", "<leader>fc", "<cmd>lua require('telescope.builtin').commands()<cr>")
-            map("n", "<leader>fo", "<cmd>lua require('telescope.builtin').git_commits()<cr>")
-            map("n", "<leader>fk", "<cmd>lua require('telescope.builtin').keymaps()<cr>")
+            map("n", "<leader>fb", "<cmd>Telescope bibtex<cr>", { desc = "[F]ind [B]ibtex" })
+            map(
+                "n",
+                "<leader>fm",
+                "<cmd>lua require('telescope').extensions.media_files.media_files()<cr>",
+                { desc = "[F]ind [M]edia files" }
+            )
+            map("n", "<leader>fp", "<cmd>Telescope spell_suggest<cr>", { desc = "[F]ind S[p]ell suggestions" })
+            map("n", "<leader>fv", "<cmd>Telescope neoclip<cr>", { desc = "[F]ind from clipboard registers" })
+            map("n", "<leader>fh", "<cmd>lua require('telescope.builtin').help_tags()<cr>", { desc = "[F]ind [H]elp tags" })
+            map("n", "<leader>fc", "<cmd>lua require('telescope.builtin').commands()<cr>", { desc = "[F]ind [C]ommands" })
+            map(
+                "n",
+                "<leader>fo",
+                "<cmd>lua require('telescope.builtin').git_commits()<cr>",
+                { desc = "[F]ind C[o]mmits" }
+            )
+            map("n", "<leader>fk", "<cmd>lua require('telescope.builtin').keymaps()<cr>", { desc = "[F]ind [K]eymaps" })
         end,
     },
     {

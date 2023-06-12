@@ -83,7 +83,7 @@ vim.keymap.set(
 
 -- Search, highlight and move
 vim.keymap.set("n", "<leader>zw", ":%s/\\<<C-r><C-w>\\>/<C-r><C-w>/gI<Left><Left><Left>", { desc = "[Z]wap [W]ords" })
-vim.keymap.set("n", "<leader>h", ":noh<CR>", opts)
+vim.keymap.set("n", "<leader>hh", ":noh<CR>", {desc="Turn off highlight"})
 vim.keymap.set("n", "n", "nzzzv", opts)
 vim.keymap.set("n", "N", "Nzzzv", opts)
 -- vim.keymap.set("n", "J", "mzJ`z", opts)
@@ -96,8 +96,8 @@ vim.keymap.set("x", "<leader><leader>e", 'c<C-R>=py3eval(@")<CR><Esc>')
 
 -- Running and compiling code
 if EXECUTABLE("autocomp") then
-    vim.keymap.set("n", "<leader>a", ":!setsid autocomp % &<CR>", opts)
+    vim.keymap.set("n", "<leader>a", ":!setsid autocomp % &<CR>", { desc = "Toggle custom [a]uto compiler" })
 end
 if EXECUTABLE("open_output") then
-    vim.keymap.set("n", "<leader><leader>o", ":!open_output % &<CR>", opts)
+    vim.keymap.set("n", "<leader><leader>o", ":!open_output % &<CR>", { desc = "[O]pen compiled output (not robust)" })
 end

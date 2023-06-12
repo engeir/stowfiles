@@ -20,11 +20,21 @@ return {
         end,
         config = function()
             keymap("n", "<leader>ft", "FloatermToggle", opts)
-            keymap("n", "<leader>t", ":FloatermNew --wintype=vsplit --autohide=0 python<CR><C-\\><C-n><C-w>h", opts)
+            keymap(
+                "n",
+                "<leader>to",
+                ":FloatermNew --wintype=vsplit --autohide=0 python<CR><C-\\><C-n><C-w>h",
+                { desc = "[T]erm [O]pen (Python)" }
+            )
             keymap("n", "<leader>pv", ":FloatermNew --wintype=float --position=right --autoclose=2 nnn -dH<CR>", opts)
             keymap("n", "<leader>H", ":/%%<CR>VN", opts)
             keymap("v", "<C-r>", ":'<,'>FloatermSend <CR>", opts)
-            keymap("n", "<leader>r", ":FloatermNew --wintype=float --position=right --autoclose=0 compiler %<CR>", opts)
+            keymap(
+                "n",
+                "<leader>tr",
+                ":FloatermNew --wintype=float --position=right --autoclose=0 compiler %<CR>",
+                { desc = "[R]un compiler on script" }
+            )
             keymap("n", "<leader>tn", ":FloatermNext <CR>", opts)
             keymap("n", "<leader>tp", ":FloatermPrev <CR>", opts)
             keymap("n", "<leader>th", ":FloatermHide <CR>", opts)
@@ -37,7 +47,7 @@ return {
         opts = { shade_terminals = true },
         config = function()
             keymap("n", "<leader>ft", ":ToggleTerm direction=float<CR>", opts)
-            keymap("n", "<leader>t", ":TermExec size=100 direction=vertical cmd='python'<CR>", opts)
+            keymap("n", "<leader>to", ":TermExec size=100 direction=vertical cmd='python'<CR>", opts)
             keymap(
                 "n",
                 "<leader>pv",
@@ -46,7 +56,7 @@ return {
             )
             keymap("n", "<leader>H", ":/%%<CR>VN", opts)
             keymap("v", "<C-r>", ":'<,'>ToggleTermSendVisualLines <CR>", opts)
-            keymap("n", "<leader>r", ":TermExec direction=float go_back=0 cmd='compiler %'<CR>", opts)
+            keymap("n", "<leader>tr", ":TermExec direction=float go_back=0 cmd='compiler %'<CR>", opts)
         end,
     },
 }

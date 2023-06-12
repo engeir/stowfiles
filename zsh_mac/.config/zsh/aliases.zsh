@@ -3,6 +3,7 @@ alias history="fc -li 1"
 
 # MY ALIASES
 
+alias _="sudo"
 alias cat="bat"
 alias figlet="$HOME/figlet/./figlet"
 alias has="HAS_ALLOW_UNSAFE=y has"
