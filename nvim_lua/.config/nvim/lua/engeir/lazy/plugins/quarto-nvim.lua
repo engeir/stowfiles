@@ -1,7 +1,8 @@
 return {
     {
         "quarto-dev/quarto-nvim",
-        enabled = IS_KNOWN,
+        enabled = false,
+        -- enabled = IS_KNOWN,
         config = function()
             require("quarto").setup({
                 debug = false,

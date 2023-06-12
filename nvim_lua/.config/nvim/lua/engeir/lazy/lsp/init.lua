@@ -185,6 +185,7 @@ cmp.setup({
         ["<CR>"] = cmp.mapping.confirm({ select = false }),
     }),
     sources = {
+        { name = "calc" },
         { name = "gh_issues" },
         { name = "nvim_lsp" },
         { name = "nvim_lua" },
@@ -192,7 +193,6 @@ cmp.setup({
         { name = "luasnip" }, -- For luasnip users.
         { name = "buffer",   keyword_length = 4 },
         -- { name = "orgmode" },
-        -- { name = "copilot" },
         -- { name = "cmp_tabnine" },
     },
     -- view = {

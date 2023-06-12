@@ -14,6 +14,7 @@ end
 
 -- config.window_decorations = "TITLE"
 config.audible_bell = "Disabled"
+-- config.font = wezterm.font("Victor Mono")
 config.font = wezterm.font("Recursive")
 local font_size
 if wezterm.target_triple == "x86_64-apple-darwin" then
