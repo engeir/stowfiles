@@ -106,7 +106,7 @@ style = "bold #bd7b8d"
 ssh_only = true
 format = " @ [SSH:](bold red)[$hostname]($style)"
 trim_at = "."
-style = "bold dimmed blue"
+style = "bold dimmed #458487"
 disabled = false
 
 [nodejs]
