@@ -1,5 +1,6 @@
 return {
     "ellisonleao/glow.nvim",
+    enabled = IS_KNOWN,
     branch = "main",
     cmd = "Glow",
     config = true,

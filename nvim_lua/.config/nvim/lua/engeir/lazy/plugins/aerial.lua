@@ -1,5 +1,6 @@
 return {
     "stevearc/aerial.nvim",
+    enabled = IS_KNOWN,
     dependencies = "nvim-tree/nvim-web-devicons", -- optional, for file icons
     config = function()
         require("aerial").setup({

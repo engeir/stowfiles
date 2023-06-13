@@ -82,6 +82,9 @@ local c = ls.choice_node
 -- Load in some snippets
 require("luasnip.loaders.from_vscode").lazy_load()
 require("luasnip.loaders.from_vscode").lazy_load({ paths = { "~/.config/nvim/lua/engeir/lazy/lsp/luasnippets" } })
+require("luasnip.loaders.from_vscode").load({
+    exclude = { "latex", "tex", "plaintex" },
+})
 -- Create some snippets
 ls.add_snippets("all", {
     ls.parser.parse_snippet("expandme", "-- hello there"),
@@ -151,20 +154,20 @@ end
 ls.add_snippets("tex", {
     -- rec_ls is self-referencing. That makes this snippet 'infinite' eg. have as many
     -- \item as necessary by utilizing a choiceNode.
-    s("itemize-lua", {
+    s({ name = "Itemize", trig = "itemize-lua" }, {
         t({ "\\begin{itemize}", "  \\item " }),
         i(1),
         d(2, rec_ls, {}),
         t({ "", "\\end{itemize}" }),
     }),
-    s("enumerate-lua", {
+    s({ name = "Enumerate", trig = "enumerate-lua" }, {
         t({ "\\begin{enumerate}", "  \\item " }),
         i(1),
         i(2),
         d(2, rec_ls, {}),
         t({ "", "\\end{enumerate}" }),
     }),
-    s("description-lua", {
+    s({ name = "Description", trig = "description-lua" }, {
         t({ "\\begin{description}", "  \\item[" }),
         i(1),
         t({ "] " }),
@@ -179,10 +182,13 @@ ls.add_snippets("tex", {
         i(2),
         t({ "", "\\end{frame}" }),
     }),
-    s("citet", { t({ "\\citet{" }), i(1), t("}") }),
-    s("citep", { t({ "\\citep{" }), i(1), t("}") }),
-    s({ trig = "acrs", snippetType = "autosnippet" }, { t({ "\\acrshort{" }), i(1), t("}") }),
+    -- Citations, references, glossaries, acronyms, etc.
+    s({ name = "Text citation", trig = "citet" }, { t({ "\\citet{" }), i(1), t("}") }),
+    s({ name = "Parentheses citation", trig = "citep" }, { t({ "\\citep{" }), i(1), t("}") }),
+    s({ name = "Short acronym", trig = "acrs", snippetType = "autosnippet" }, { t({ "\\acrshort{" }), i(1), t("}") }),
     s({ trig = "acrf", snippetType = "autosnippet" }, { t({ "\\acrfull{" }), i(1), t("}") }),
+    s({ trig = "creff", snippetType = "autosnippet" }, { t("\\cref{fig:"), i(1, "one"), t("}") }),
+    s({ trig = "Creff", snippetType = "autosnippet" }, { t("\\Cref{fig:"), i(1, "one"), t("}") }),
     s("ce", { t({ "\\ce{" }), i(1), t("}") }),
     s("quote", { t({ "``" }), i(1), t("''") }),
     -- Replaced by iurimateus/luasnip-latex-snippets.nvim

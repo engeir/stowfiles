@@ -16,9 +16,10 @@ return {
             { "saadparwaiz1/cmp_luasnip" },
             { "hrsh7th/cmp-nvim-lsp" },
             { "hrsh7th/cmp-nvim-lua" },
+            { "hrsh7th/cmp-calc" },
 
             -- Snippets
-            { "L3MON4D3/LuaSnip" },
+            { "L3MON4D3/LuaSnip",                 build = "make install_jsregexp" },
             { "rafamadriz/friendly-snippets" },
 
             -- Extra

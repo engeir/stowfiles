@@ -7,7 +7,7 @@ end
 
 -- null-ls settings
 require("engeir.lazy.lsp.null-ls")
-require('neodev').setup()
+require("neodev").setup()
 
 -- ==================================== LSP-ZERO ==================================== --
 lsp.preset("recommended")
@@ -190,6 +190,7 @@ cmp.setup({
         ["<CR>"] = cmp.mapping.confirm({ select = false }),
     }),
     sources = {
+        { name = "calc" },
         { name = "gh_issues" },
         { name = "nvim_lsp" },
         { name = "nvim_lua" },
