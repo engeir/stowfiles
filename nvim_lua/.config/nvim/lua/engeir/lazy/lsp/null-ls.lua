@@ -7,8 +7,76 @@ end
 local formatting = null_ls.builtins.formatting
 -- https://github.com/jose-elias-alvarez/null-ls.nvim/tree/main/lua/null-ls/builtins/diagnostics
 local diagnostics = null_ls.builtins.diagnostics
-local code_actions = null_ls.builtins.code_actions
+-- local code_actions = null_ls.builtins.code_actions
 
+local h = require("null-ls.helpers")
+-- This works ...
+local shellcheck_formatter = {
+    name = "shellcheck",
+    method = null_ls.methods.FORMATTING,
+    filetypes = { "sh" },
+    generator = null_ls.formatter({
+        command = "sh",
+        args = { "-c", "shellcheck $0 --format=diff | patch $0 -o-", "$FILENAME" },
+        to_stdin = true,
+        from_stderr = true,
+    }),
+}
+null_ls.register(shellcheck_formatter)
+local blackd = {
+    name = "blackd",
+    method = null_ls.methods.FORMATTING,
+    filetypes = { "python" },
+    generator = h.formatter_factory({
+        command = "blackd-client",
+        to_stdin = true,
+    }),
+}
+-- local function dprint_config()
+--     local lsputil = require("lspconfig.util")
+--     local path = lsputil.path.join(vim.loop.cwd(), "dprint.json")
+--     print(path)
+--     if lsputil.path.exists(path) then
+--         print("path exists")
+--         return path
+--     end
+--     print("path doesnt exist")
+--     return vim.fn.expand("~/.config/dprint/dprint.json")
+-- end
+local dprint = {
+    name = "dprint",
+    method = null_ls.methods.FORMATTING,
+    filetypes = {
+        "json",
+        "markdown",
+        "javascript",
+        "javascriptreact",
+        "typescript",
+        "typescriptreact",
+        "toml",
+        "dockerfile",
+        "css",
+    },
+    generator = h.formatter_factory({
+        command = "dprint",
+        -- condition = function(utils)
+        --     return utils.root_has_file 'dprint.json'
+        -- end,
+        args = {
+            "fmt",
+            "--config",
+            -- dprint_config(),
+            -- require('lspconfig.util').path.join(
+            --     vim.loop.cwd(),
+            --     'dprint.json'
+            -- ),
+            vim.fn.expand("~/.config/dprint/dprint.jsonc"),
+            "--stdin",
+            "$FILEEXT",
+        },
+        to_stdin = true,
+    }),
+}
 -- https://github.com/prettier-solidity/prettier-plugin-solidity
 null_ls.setup({
     -- debug = true,
@@ -31,7 +99,9 @@ null_ls.setup({
         diagnostics.shellcheck,
         formatting.beautysh,
         formatting.bibclean.with({ extra_args = { "--max-width", "0" } }),
-        formatting.black.with({ extra_args = { "--fast" } }),
+        -- formatting.black.with({ extra_args = { "--fast" } }),
+        blackd,
+        dprint,
         formatting.fixjson,
         formatting.fprettify,
         formatting.gofmt,
@@ -43,7 +113,7 @@ null_ls.setup({
         --     extra_args = { "-c", vim.fn.expand("~") .. "/.config/mdl/.markdownlint.jsonc" },
         -- }), -- Using `prettierd` instead
         formatting.prettierd.with({
-            filetypes = { "css", "yml", "yaml", "toml", "md", "markdown" },
+            filetypes = { "css", "yml", "yaml", "toml", },
             -- args = { "--no-semi", "--single-quote", "--jsx-single-quote" },
         }),
         formatting.ruff,
