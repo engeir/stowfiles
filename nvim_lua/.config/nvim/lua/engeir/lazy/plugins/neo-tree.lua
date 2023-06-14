@@ -1,5 +1,6 @@
 return {
     "nvim-neo-tree/neo-tree.nvim",
+    enabled = IS_KNOWN,
     branch = "v2.x",
     dependencies = {
         "nvim-lua/plenary.nvim",

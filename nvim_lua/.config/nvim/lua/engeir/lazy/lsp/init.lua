@@ -7,7 +7,7 @@ end
 
 -- null-ls settings
 require("engeir.lazy.lsp.null-ls")
-require('neodev').setup()
+require("neodev").setup()
 
 -- ==================================== LSP-ZERO ==================================== --
 lsp.preset("recommended")

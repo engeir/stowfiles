@@ -8,28 +8,36 @@ batdiff() {
 }
 
 cht() {
-	# Cheat sheet for any command you can think of.
-	curl cht.sh/"$1"
+    # Cheat sheet for any command you can think of.
+    curl cht.sh/"$1"
 }
 
-lc () {
+lc() {
     tmp="$(mktemp)"
     lf -last-dir-path="$tmp" "$@"
     if [ -f "$tmp" ]; then
         dir="$(cat "$tmp")"
         rm -f "$tmp"
         if [ -d "$dir" ]; then
-            if [ "$dir" != "$(pwd)" ]; then
+            if [ "$dir" != "$PWD" ]; then
                 cd "$dir" || exit 1
             fi
         fi
     fi
 }
 
-nn ()
-{
+fif() {
+    # find-in-file <search-term>
+    if [ ! "$#" -gt 0 ]; then
+        echo "Need a string to search for!"
+        return 1
+    fi
+    rg --files-with-matches --no-messages "$1" | fzf --preview "highlight -O ansi -l {} 2> /dev/null | rg --colors 'match:bg:yellow' --ignore-case --pretty --context 10 '$1' || rg --ignore-case --pretty --context 10 '$1' {}"
+}
+
+nn() {
     # Block nesting of nnn in subshells
-    if [ -n $NNNLVL ] && [ "${NNNLVL:-0}" -ge 1 ]; then
+    if [ "$NNNLVL" != "" ] && [ "${NNNLVL:-0}" -ge 1 ]; then
         echo "nnn is already running"
         return
     fi
@@ -49,14 +57,14 @@ nn ()
     nnn -deH "$@"
 
     if [ -f "$NNN_TMPFILE" ]; then
-            . "$NNN_TMPFILE"
-            rm -f "$NNN_TMPFILE" > /dev/null
+        . "$NNN_TMPFILE"
+        rm -f "$NNN_TMPFILE" >/dev/null
     fi
 }
 
 nnn_preview() {
     # Block nesting of nnn in subshells
-    if [ -n "$NNNLVL" ] && [ "${NNNLVL:-0}" -ge 1 ]; then
+    if [ "$NNNLVL" != "" ] && [ "${NNNLVL:-0}" -ge 1 ]; then
         echo "nnn is already running"
         return
     fi
@@ -77,7 +85,10 @@ nnn_preview() {
     if [ -e "${TMUX%%,*}" ]; then
         # Use `tmux` split as preview
         tmux split-window -e "NNN_FIFO=$NNN_FIFO" -dh "$preview_cmd"
-    elif (which xterm &>/dev/null); then
+    elif (
+        which xterm &
+        >/dev/null
+    ); then
         # Use `xterm` as a preview window
         xterm -e "$preview_cmd" &
     else
@@ -90,7 +101,7 @@ nnn_preview() {
 
 # Pyenv take up to 0.5 seconds extra, so we wrap it in a function
 if command -v pyenv 1>/dev/null 2>&1; then
-    pyenvinit () {
+    pyenvinit() {
         eval "$(pyenv init -)"
         eval "$(pyenv virtualenv-init -)"
     }
@@ -98,7 +109,7 @@ fi
 
 # Pip take up to 1 second extra, so we wrap it in a function
 if command -v pip 1>/dev/null 2>&1; then
-    pipinit () {
+    pipinit() {
         eval "$(pip completion --zsh)"
     }
 fi
@@ -124,7 +135,7 @@ compdef _whereis peek
 
 nvp() {
     # edit a file that is on PATH
-    if [ -z "$1" ]; then
+    if [ "$1" = "" ]; then
         echo "Usage: edit a file on PATH with neovim. Any argument that works with whereis works with nvp as well."
     else
         nvim "$(which "$1")"

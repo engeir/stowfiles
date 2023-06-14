@@ -89,16 +89,17 @@ return {
             end, { desc = "Neogit Commit" })
         end,
     }, -- To commit quickly and view
-    { "rhysd/committia.vim", cond = IS_KNOWN },
+    { "rhysd/committia.vim", enabled = IS_KNOWN },
     {
         "kdheepak/lazygit.nvim",
-        cond = IS_KNOWN and EXECUTABLE("lazygit"),
+        enabled = IS_KNOWN and EXECUTABLE("lazygit"),
         keys = {
             { "<leader>lg", "<cmd>LazyGit<cr>", desc = "Open [L]azy[G]it" },
         },
     },
     {
         "ruifm/gitlinker.nvim",
+        enabled = IS_KNOWN,
         config = function()
             require("gitlinker").setup()
         end,

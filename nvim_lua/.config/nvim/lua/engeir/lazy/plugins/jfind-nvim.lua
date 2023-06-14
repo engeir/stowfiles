@@ -1,6 +1,6 @@
 return {
     "jake-stewart/jfind.nvim",
-    cond = IS_KNOWN and EXECUTABLE("jfind"),
+    enabled = IS_KNOWN and EXECUTABLE("jfind"),
     keys = {
         { "<c-f>" },
     },
