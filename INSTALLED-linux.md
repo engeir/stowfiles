@@ -504,8 +504,8 @@ freeglut3 2.8.1-6 [Ubuntu/jammy universe]
 friendly-recovery 0.2.42 [Ubuntu/jammy main]
 ftp 20210827-4build1 [Ubuntu/jammy main]
 fuse3 3.10.5-1build1 [Ubuntu/jammy main]
-fwupd 1.7.9-1~22.04.1 [local]
-fwupd-signed 1.51~22.04.1+1.2-3ubuntu0.2 [local]
+fwupd 1.7.9-1~22.04.3 [Ubuntu/jammy main]
+fwupd-signed 1.51.1~22.04.1+1.4-0ubuntu0.1 [Ubuntu/jammy main]
 fzf 0.29.0-1 [Ubuntu/jammy universe]
 g++ 4:11.2.0-1ubuntu1 [Ubuntu/jammy main]
 g++-10 10.4.0-4ubuntu1~22.04 [Ubuntu/jammy universe]
@@ -643,7 +643,7 @@ git-mediawiki 1:2.34.1-1ubuntu1.9 [Ubuntu/jammy universe]
 git-svn 1:2.34.1-1ubuntu1.9 [Ubuntu/jammy universe]
 gitk 1:2.34.1-1ubuntu1.9 [Ubuntu/jammy universe]
 gitweb 1:2.34.1-1ubuntu1.9 [Ubuntu/jammy universe]
-gjs 1.72.2-0ubuntu1 [local]
+gjs 1.72.2-0ubuntu2 [Ubuntu/jammy main]
 gkbd-capplet 3.26.1-2 [Ubuntu/jammy main]
 glib-networking 2.72.0-1 [Ubuntu/jammy main]
 glib-networking-common 2.72.0-1 [Ubuntu/jammy main]
@@ -688,7 +688,7 @@ gnome-shell-common 42.5-0ubuntu1 [Ubuntu/jammy main]
 gnome-shell-extension-appindicator 42-2~fakesync1 [Ubuntu/jammy main]
 gnome-shell-extension-desktop-icons-ng 43-2ubuntu1 [Ubuntu/jammy main]
 gnome-shell-extension-prefs 42.5-0ubuntu1 [Ubuntu/jammy universe]
-gnome-shell-extension-ubuntu-dock 72~ubuntu5.22.04.1 [local]
+gnome-shell-extension-ubuntu-dock 72~ubuntu5.22.04.2.1 [Ubuntu/jammy main]
 gnome-shell-extensions 42.1-0ubuntu1 [Ubuntu/jammy universe]
 gnome-startup-applications 42.0-1ubuntu2 [Ubuntu/jammy main]
 gnome-sudoku 1:42.0-1 [Ubuntu/jammy main]
@@ -711,7 +711,7 @@ gnuplot 5.4.2+dfsg2-2 [Ubuntu/jammy universe]
 gnuplot-data 5.4.2+dfsg2-2 [Ubuntu/jammy universe]
 gnuplot-qt 5.4.2+dfsg2-2 [Ubuntu/jammy universe]
 golly 3.3-1build1 [Ubuntu/jammy universe]
-google-chrome-stable 114.0.5735.106-1 [Google/stable main]
+google-chrome-stable 114.0.5735.133-1 [Google/stable main]
 gperf 3.1-1build1 [Ubuntu/jammy universe]
 gpg 2.2.27-3ubuntu2.1 [Ubuntu/jammy main]
 gpg-agent 2.2.27-3ubuntu2.1 [Ubuntu/jammy main]
@@ -1092,7 +1092,7 @@ libbusiness-issn-perl 1.005-1 [Ubuntu/jammy universe]
 libbz2-1.0 1.0.8-5build1 [Ubuntu/jammy main]
 libbz2-1.0:i386 1.0.8-5build1 [Ubuntu/jammy main]
 libbz2-dev 1.0.8-5build1 [Ubuntu/jammy main]
-libc-ares2 1.18.1-1ubuntu0.22.04.1 [Ubuntu/jammy main]
+libc-ares2 1.18.1-1ubuntu0.22.04.2 [Ubuntu/jammy main]
 libc-bin 2.35-0ubuntu3.1 [Ubuntu/jammy main]
 libc-dev-bin 2.35-0ubuntu3.1 [Ubuntu/jammy main]
 libc6 2.35-0ubuntu3.1 [Ubuntu/jammy main]
@@ -1123,11 +1123,11 @@ libcanberra-gtk3-module 0.30-10ubuntu1.22.04.1 [Ubuntu/jammy main]
 libcanberra-pulse 0.30-10ubuntu1.22.04.1 [Ubuntu/jammy main]
 libcanberra0 0.30-10ubuntu1.22.04.1 [Ubuntu/jammy main]
 libcanberra0:i386 0.30-10ubuntu1.22.04.1 [Ubuntu/jammy main]
-libcap-dev 1:2.44-1build3 [Ubuntu/jammy main]
+libcap-dev 1:2.44-1ubuntu0.22.04.1 [Ubuntu/jammy main]
 libcap-ng0 0.7.9-2.2build3 [Ubuntu/jammy main]
-libcap2 1:2.44-1build3 [Ubuntu/jammy main]
-libcap2-bin 1:2.44-1build3 [Ubuntu/jammy main]
-libcap2:i386 1:2.44-1build3 [Ubuntu/jammy main]
+libcap2 1:2.44-1ubuntu0.22.04.1 [Ubuntu/jammy main]
+libcap2-bin 1:2.44-1ubuntu0.22.04.1 [Ubuntu/jammy main]
+libcap2:i386 1:2.44-1ubuntu0.22.04.1 [Ubuntu/jammy main]
 libcapi20-3 1:3.27-3 [Ubuntu/jammy universe]
 libcapi20-3:i386 1:3.27-3 [Ubuntu/jammy universe]
 libcapture-tiny-perl 0.48-1 [Ubuntu/jammy main]
@@ -1500,8 +1500,8 @@ libfsplib0 0.14-5 [Ubuntu/jammy universe]
 libfsverity0 1.4-1~exp1build1 [Ubuntu/jammy universe]
 libfuse2 2.9.9-5ubuntu3 [Ubuntu/jammy universe]
 libfuse3-3 3.10.5-1build1 [Ubuntu/jammy main]
-libfwupd2 1.7.9-1~22.04.1 [local]
-libfwupdplugin5 1.7.9-1~22.04.1 [local]
+libfwupd2 1.7.9-1~22.04.3 [Ubuntu/jammy main]
+libfwupdplugin5 1.7.9-1~22.04.3 [Ubuntu/jammy main]
 libgail-3-0 3.24.33-1ubuntu2 [Ubuntu/jammy main]
 libgail-common 2.24.33-2ubuntu2 [Ubuntu/jammy main]
 libgail-common:i386 2.24.33-2ubuntu2 [Ubuntu/jammy main]
@@ -1583,7 +1583,7 @@ libgirepository-1.0-1 1.72.0-1 [Ubuntu/jammy main]
 libgit2-1.1 1.1.0+dfsg.1-4.1build1 [Ubuntu/jammy universe]
 libgivaro-dev 4.2.0-1 [Ubuntu/jammy universe]
 libgivaro9 4.2.0-1 [Ubuntu/jammy universe]
-libgjs0g 1.72.2-0ubuntu1 [local]
+libgjs0g 1.72.2-0ubuntu2 [Ubuntu/jammy main]
 libgl-dev 1.4.0-1 [Ubuntu/jammy main]
 libgl1 1.4.0-1 [Ubuntu/jammy main]
 libgl1-amber-dri 21.3.7-0ubuntu1 [Ubuntu/jammy main]
@@ -1602,15 +1602,15 @@ libglew2.2 2.2.0-4 [Ubuntu/jammy universe]
 libglewmx1.13 1.13.0-5 [Ubuntu/jammy universe]
 libglib-object-introspection-perl 0.049-1+build2 [Ubuntu/jammy main]
 libglib-perl 3:1.329.3-2build1 [Ubuntu/jammy main]
-libglib2.0-0 2.72.4-0ubuntu2 [Ubuntu/jammy main]
-libglib2.0-0:i386 2.72.4-0ubuntu2 [Ubuntu/jammy main]
-libglib2.0-bin 2.72.4-0ubuntu2 [Ubuntu/jammy main]
+libglib2.0-0 2.72.4-0ubuntu2.2 [Ubuntu/jammy main]
+libglib2.0-0:i386 2.72.4-0ubuntu2.2 [Ubuntu/jammy main]
+libglib2.0-bin 2.72.4-0ubuntu2.2 [Ubuntu/jammy main]
 libglib2.0-cil 2.12.40-3ubuntu1 [Ubuntu/jammy universe]
 libglib2.0-cil-dev 2.12.40-3ubuntu1 [Ubuntu/jammy universe]
-libglib2.0-data 2.72.4-0ubuntu2 [Ubuntu/jammy main]
-libglib2.0-dev 2.72.4-0ubuntu2 [Ubuntu/jammy main]
-libglib2.0-dev-bin 2.72.4-0ubuntu2 [Ubuntu/jammy main]
-libglib2.0-doc 2.72.4-0ubuntu2 [Ubuntu/jammy main]
+libglib2.0-data 2.72.4-0ubuntu2.2 [Ubuntu/jammy main]
+libglib2.0-dev 2.72.4-0ubuntu2.2 [Ubuntu/jammy main]
+libglib2.0-dev-bin 2.72.4-0ubuntu2.2 [Ubuntu/jammy main]
+libglib2.0-doc 2.72.4-0ubuntu2.2 [Ubuntu/jammy main]
 libglibmm-2.4-1v5 2.66.2-2 [Ubuntu/jammy main]
 libglpk-dev 5.0-1 [Ubuntu/jammy universe]
 libglpk40 5.0-1 [Ubuntu/jammy universe]
@@ -2540,7 +2540,7 @@ libpackage-stash-xs-perl 0.29-1build5 [Ubuntu/jammy main]
 libpackagekit-glib2-18 1.2.5-2ubuntu2 [Ubuntu/jammy main]
 libpadwalker-perl 2.5-1build2 [Ubuntu/jammy universe]
 libpagemaker-0.0-0 0.0.4-1build3 [Ubuntu/jammy main]
-libpam-cap 1:2.44-1build3 [Ubuntu/jammy main]
+libpam-cap 1:2.44-1ubuntu0.22.04.1 [Ubuntu/jammy main]
 libpam-fprintd 1.94.2-1ubuntu0.22.04.1 [Ubuntu/jammy main]
 libpam-gnome-keyring 40.0-3ubuntu3 [Ubuntu/jammy main]
 libpam-modules 1.4.0-11ubuntu2.3 [Ubuntu/jammy main]
@@ -4259,7 +4259,7 @@ shfmt-bin 3.4.3-1 [local]
 shim-signed 1.51.3+15.7-0ubuntu1 [Ubuntu/jammy main]
 shotwell 0.30.14-1ubuntu6 [Ubuntu/jammy main]
 shotwell-common 0.30.14-1ubuntu6 [Ubuntu/jammy main]
-signal-desktop 6.20.2 [. xenial/xenial main]
+signal-desktop 6.21.0 [. xenial/xenial main]
 signon-plugin-oauth2 0.25-2 [Ubuntu/jammy universe]
 silversearcher-ag 2.2.0+git20200805-1 [Ubuntu/jammy universe]
 simple-scan 42.0-1 [Ubuntu/jammy main]
@@ -4268,7 +4268,7 @@ singular-data 1:4.2.1-p3+ds-1 [Ubuntu/jammy universe]
 singular-doc 1:4.2.1-p3+ds-1 [Ubuntu/jammy universe]
 singular-modules 1:4.2.1-p3+ds-1 [Ubuntu/jammy universe]
 singular-ui 1:4.2.1-p3+ds-1 [Ubuntu/jammy universe]
-slack-desktop 4.32.122 [slack/jessie main]
+slack-desktop 4.32.127 [slack/jessie main]
 slirp4netns 1.0.1-2 [Ubuntu/jammy universe]
 slop 7.5-1.1build2 [Ubuntu/jammy universe]
 snapd 2.58+22.04.1 [Ubuntu/jammy main]
@@ -4441,7 +4441,7 @@ tzdata 2023c-0ubuntu0.22.04.2 [Ubuntu/jammy main]
 ubuntu-advantage-desktop-daemon 1.10~22.04.1 [Ubuntu/jammy main]
 ubuntu-advantage-tools 27.14.4~22.04 [Ubuntu/jammy main]
 ubuntu-docs 22.04.5 [Ubuntu/jammy main]
-ubuntu-drivers-common 1:0.9.6.1 [Ubuntu/jammy main]
+ubuntu-drivers-common 1:0.9.6.2~0.22.04.3 [Ubuntu/jammy main]
 ubuntu-keyring 2021.03.26 [Ubuntu/jammy main]
 ubuntu-minimal 1.481 [Ubuntu/jammy main]
 ubuntu-mono 20.10-0ubuntu2 [Ubuntu/jammy main]
@@ -4673,7 +4673,7 @@ name: batsignal version: 1.6.4
 name: bitwarden version: 2023.4.0
 name: brave-browser version: 1.52.122
 name: brave-keyring version: 1.13
-name: google-chrome-stable version: 114.0.5735.106-1
+name: google-chrome-stable version: 114.0.5735.133-1
 name: htop version: 3.2.1
 name: nala version: 0.13.0
 name: neofetch version: 7.1.0
@@ -4682,7 +4682,7 @@ name: protonmail-bridge version: 3.2.0-1
 name: quarto version: 1.3.353
 name: rstudio version: 2022.12.0+353
 name: shfmt version: 3.6.0
-name: signal-desktop version: 6.20.2
+name: signal-desktop version: 6.21.0
 name: wezterm version: 20230408-112425-69ae8472
 name: zoom version: 5.14.5.2430
 ```
@@ -4700,7 +4700,7 @@ bat v0.23.0:
     bat
 blindfold v1.0.7:
     blindfold
-bob-nvim v2.3.3:
+bob-nvim v2.4.0:
     bob
 cargo-binstall v0.23.1:
     cargo-binstall
@@ -4743,6 +4743,8 @@ irust v1.70.0:
     irust
 jless v0.8.0:
     jless
+languagetool-rust v2.1.2:
+    ltrs
 mdbook v0.4.30:
     mdbook
 mdbook-admonish v1.9.0:
@@ -4761,7 +4763,7 @@ pastel v0.9.0:
     pastel
 porsmo v0.2.0:
     porsmo
-pueue v3.1.2:
+pueue v3.2.0:
     pueue
     pueued
 ripgrep v13.0.0:
@@ -4778,7 +4780,7 @@ skim v0.10.4:
     sk
 speedtest-rs v0.1.4:
     speedtest-rs
-stylua v0.17.1:
+stylua v0.18.0:
     stylua
 taplo-cli v0.8.0:
     taplo
@@ -4794,6 +4796,8 @@ xcolor v0.5.1:
     xcolor
 xh v0.18.0:
     xh
+xplr v0.21.2:
+    xplr
 zellij v0.36.0:
     zellij
 zeta-note v0.1.8:
@@ -4845,6 +4849,8 @@ package httpie 3.2.2, installed using Python 3.10.4
  - http
  - httpie
  - https
+package huge 0.1.3, installed using Python 3.10.4
+ - huge
 package instagram-scraper 66.0.2, installed using Python 3.10.4
  - instagram-scraper
 package intake 0.7.0, installed using Python 3.10.4
@@ -4903,7 +4909,7 @@ package poetry2setup 1.1.0, installed using Python 3.10.4
  - poetry2setup
 package pptx2md 1.3.0, installed using Python 3.10.4
  - pptx2md
-package pre-commit 3.3.2, installed using Python 3.10.4
+package pre-commit 3.3.3, installed using Python 3.10.4
  - pre-commit
  - pre-commit-validate-config
  - pre-commit-validate-manifest
@@ -4941,7 +4947,7 @@ package ueberzug 18.1.9, installed using Python 3.10.4
  - ueberzug
 package wtpython 0.1.0, installed using Python 3.10.4
  - wtpython
-package yapf 0.33.0, installed using Python 3.10.4
+package yapf 0.40.0, installed using Python 3.10.4
  - yapf
  - yapf-diff
 ```
@@ -4955,7 +4961,7 @@ ascii-image-converter: github.com/TheZoraiz/ascii-image-converter@v1.13.1
                 doggo: github.com/mr-karan/doggo/cmd/doggo@v0.5.5
                  draw: github.com/maaslalani/draw@v0.1.1
                fast-p: github.com/bellecp/fast-p@v0.2.5
-        golangci-lint: github.com/golangci/golangci-lint/cmd/golangci-lint@v1.53.2
+        golangci-lint: github.com/golangci/golangci-lint/cmd/golangci-lint@v1.53.3
                   gum: github.com/charmbracelet/gum@v0.10.0
                   gup: github.com/nao1215/gup@v0.22.0
               lazygit: github.com/jesseduffield/lazygit@v0.38.2
@@ -4972,7 +4978,7 @@ ascii-image-converter: github.com/TheZoraiz/ascii-image-converter@v1.13.1
 
 ```txt
 Name                                    Version                                 Branch
-ncspot                                  0.13.2                                  stable
+ncspot                                  0.13.3                                  stable
 Freedesktop Platform                    21.08.18                                21.08
 Freedesktop Platform                    22.08.12.1                              22.08
 Mesa                                    21.3.9                                  21.08
@@ -4998,14 +5004,14 @@ bare                       1.0                         5      latest/stable    c
 canonical-livepatch        10.5.7                      229    latest/stable    canonical**    -
 cmake                      3.26.4                      1299   latest/stable    crascit**      classic
 core                       16-2.58.3                   14946  latest/stable    canonical**    core
-core18                     20230503                    2751   latest/stable    canonical**    base
+core18                     20230530                    2785   latest/stable    canonical**    base
 core20                     20230503                    1891   latest/stable    canonical**    base
 core22                     20230531                    750    latest/stable    canonical**    base
 dmd                        2.090.1                     102    latest/stable    dlang          classic
 dotnet-sdk                 5.0.408                     167    5.0/stable       dotnetcore**   classic
 dub                        1.19.0                      53     latest/stable    dlang          classic
 duf-utility                v0.6.0                      1      latest/stable    muesli         -
-firefox                    113.0.1-1                   2667   latest/stable/…  mozilla**      -
+firefox                    114.0.1-1                   2760   latest/stable/…  mozilla**      -
 gimp                       2.10.30                     393    latest/stable    snapcrafters*  -
 gnome-3-28-1804            3.28.0-19-g98f9e67.98f9e67  198    latest/stable    canonical**    -
 gnome-3-34-1804            0+git.3556cb3               93     latest/stable/…  canonical**    -
@@ -5022,7 +5028,7 @@ notable                    1.8.4-2                     3      latest/stable    s
 pdftk                      2.02-4                      9      latest/stable    smoser         -
 procs                      v0.13.0                     969    latest/stable    dalance        -
 remmina                    v1.4.31                     5782   latest/stable    remmina**      -
-shotcut                    23.05.14                    1104   latest/stable    meltytech**    classic
+shotcut                    23.06.14                    1136   latest/stable    meltytech**    classic
 snap-store                 41.3-71-g709398e            959    latest/stable/…  canonical**    -
 snapd                      2.59.4                      19361  latest/stable    canonical**    snapd
 snapd-desktop-integration  0.9                         83     latest/stable/…  canonical**    -
