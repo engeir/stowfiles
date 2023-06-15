@@ -94,7 +94,7 @@ null_ls.setup({
         }),
         diagnostics.mypy,
         diagnostics.vale,
-        -- diagnostics.proselint,
+        diagnostics.chktex,
         -- diagnostics.pydocstyle,
         diagnostics.shellcheck,
         formatting.beautysh,
@@ -113,7 +113,7 @@ null_ls.setup({
         --     extra_args = { "-c", vim.fn.expand("~") .. "/.config/mdl/.markdownlint.jsonc" },
         -- }), -- Using `prettierd` instead
         formatting.prettierd.with({
-            filetypes = { "css", "yml", "yaml", "toml", },
+            filetypes = { "css", "yml", "yaml", "toml" },
             -- args = { "--no-semi", "--single-quote", "--jsx-single-quote" },
         }),
         formatting.ruff,

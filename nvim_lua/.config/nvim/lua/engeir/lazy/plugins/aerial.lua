@@ -3,7 +3,9 @@ return {
     enabled = IS_KNOWN,
     dependencies = "nvim-tree/nvim-web-devicons", -- optional, for file icons
     config = function()
-        require("aerial").setup({
+        local air = require("aerial")
+        local aira = require("aerial.actions")
+        air.setup({
             layout = {
                 max_width = { 100, 0.2 },
                 min_width = 40,
@@ -19,13 +21,29 @@ return {
                 -- vim.api.nvim_buf_set_keymap(bufnr, "n", "]]", "<cmd>AerialNextUp<CR>", {})
             end,
             -- When true, aerial will automatically close after jumping to a symbol
-            close_on_select = true,
+            close_on_select = false,
             -- Show box drawing characters for the tree hierarchy
             show_guides = true,
+            nav = {
+                keymaps = {
+                    ["<C-c>"] = "actions.close",
+                    ["q"] = "actions.close",
+                    ["o"] = "actions.jump",
+                    -- ["<CR>"] = { "actions.jump", "actions.close" },
+                    -- ["<CR>"] = {
+                    --     callback = function()
+                    --         air.select()
+                    --         air.close()
+                    --     end,
+                    --     desc = "",
+                    --     nowait = true,
+                    -- },
+                },
+            },
         })
         require("telescope").load_extension("aerial")
     end,
     keys = {
-        { "<leader>at", "<cmd>AerialToggle<CR>", desc = "Aerial Toggle (list of TS objects)" },
+        { "<leader>at", "<cmd>AerialNavToggle<CR>", desc = "Aerial Toggle (list of TS objects)" },
     },
 }

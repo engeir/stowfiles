@@ -1,7 +1,7 @@
 # NeoVim Config
 
-This is @engeir's NeoVim config, on NVIM v0.10.0-dev-510+g3c4890d1e (view at [latest
-commit](https://github.com/neovim/neovim/tree/3c4890d1e)) installed with the [bob version
+This is @engeir's NeoVim config, on NVIM v0.10.0-dev-528+g1f8fb7c00 (view at [latest
+commit](https://github.com/neovim/neovim/tree/1f8fb7c00)) installed with the [bob version
 manager for neovim](https://github.com/MordechaiHadad/bob). I am currently using the
 [lazy plugin manager](https://github.com/folke/lazy.nvim). Below is a complete list of
 all plugins I'm using:
@@ -68,8 +68,8 @@ all plugins I'm using:
 - [otter.nvim](https://github.com/jmbuhr/otter.nvim.git)
 - [plenary.nvim](https://github.com/nvim-lua/plenary.nvim.git)
 - [popup.nvim](https://github.com/nvim-lua/popup.nvim.git)
-- [quarto-nvim](https://github.com/quarto-dev/quarto-nvim.git)
 - [rainbow_csv](https://github.com/mechatroner/rainbow_csv.git)
+- [symbols-outline.nvim](https://github.com/simrat39/symbols-outline.nvim.git)
 - [syntax-tree-surfer](https://github.com/ziontee113/syntax-tree-surfer.git)
 - [telescope-bibtex.nvim](https://github.com/nvim-telescope/telescope-bibtex.nvim.git)
 - [telescope-file-browser.nvim](https://github.com/nvim-telescope/telescope-file-browser.nvim.git)

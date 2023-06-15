@@ -13,6 +13,11 @@ return {
                 return vim.startswith(name, ".git/")
             end,
         },
+        float = {
+            max_width = 150,
+            max_height = 50,
+            padding = 5,
+        }
     },
     -- Optional dependencies
     dependencies = { "nvim-tree/nvim-web-devicons" },

@@ -80,7 +80,7 @@ local d = ls.dynamic_node
 local c = ls.choice_node
 
 -- Load in some snippets
-require("luasnip.loaders.from_vscode").lazy_load()
+-- require("luasnip.loaders.from_vscode").lazy_load()
 require("luasnip.loaders.from_vscode").lazy_load({ paths = { "~/.config/nvim/lua/engeir/lazy/lsp/luasnippets" } })
 require("luasnip.loaders.from_vscode").load({
     exclude = { "latex", "tex", "plaintex" },

@@ -424,11 +424,11 @@
     },
     "Figure environment": {
         "body": [
-            "\\begin{figure}[${1:htpb}]",
+            "\\begin{figure}${2:[${1:htpb}]}",
             "\t\\centering",
-            "\t${2:\\includegraphics[width=0.8\\linewidth]{$3}}",
-            "\t\\caption{${4:$3}}",
-            "\t\\label{fig:${5:${3/\\W+/-/g}}}",
+            "\t${3:\\includegraphics[width=0.95\\linewidth]{figures/$4}}",
+            "\t\\caption{${5:$4}}%",
+            "\t\\label{fig:${6:${4/\\W+/-/g}}}",
             "\\end{figure}"
         ],
         "prefix": "fig"
