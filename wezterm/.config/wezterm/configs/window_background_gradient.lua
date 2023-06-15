@@ -12,8 +12,8 @@ return {
     -- strings and more
     colors = {
         "#282828",
-        "#19192b",
-        "#181531",
+        "#1f1f25",
+        "#282634",
     },
 
     -- Instead of specifying `colors`, you can use one of a number of

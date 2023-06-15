@@ -23,6 +23,8 @@ else
     font_size = 11.0
 end
 config.font_size = font_size
+config.initial_rows = 50
+config.initial_cols = 80
 config.adjust_window_size_when_changing_font_size = false
 -- For example, changing the color scheme:
 -- This affects the colors reported/used by `pastel`, so is seems better to set
