@@ -17,7 +17,7 @@ echo_and_run() {
     echo "\$ $*"
     "$@"
 }
-run-updates() {
+run_updates() {
     echo_and_run cargo install-update -a
     echo_and_run pipx upgrade-all
     echo_and_run gup update
@@ -27,15 +27,15 @@ run-updates() {
     fi
     if [ "Linux" = "$1" ]; then
         echo_and_run sudo nala update
-        echo_and_run sudo nala upgrade
+        echo_and_run sudo nala upgrade --assume-yes
         echo_and_run pacstall -Up -P
         echo_and_run sudo snap refresh
         echo_and_run flatpak update
     fi
 }
 
-try-fix-ppa() {
-    if [[ "$machine" == "Linux" ]]; then
+try_fix_ppa() {
+    if [ "$machine" = "Linux" ]; then
         echo "It you have an issue with apt/apt-get, where you get something like:"
         echo "E: The repository 'https://ppa.launchpadcontent.net/fontforge/fontforge/ubuntu jammy Release' does not have a Release file."
         echo "see https://askubuntu.com/a/1163224."
@@ -50,10 +50,10 @@ try-fix-ppa() {
 while getopts 'ufh' OPTION; do
     case "$OPTION" in
     u)
-        run-updates "$machine"
+        run_updates "$machine"
         ;;
     f)
-        try-fix-ppa
+        try_fix_ppa
         exit 0
         ;;
     h)
