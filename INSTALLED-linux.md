@@ -551,7 +551,7 @@ gdb 12.1-0ubuntu1~22.04 [Ubuntu/jammy main]
 gdebi 0.9.5.7+nmu6 [Ubuntu/jammy universe]
 gdebi-core 0.9.5.7+nmu6 [Ubuntu/jammy universe]
 gdisk 1.0.8-4build1 [Ubuntu/jammy main]
-gdm3 42.0-1ubuntu7.22.04.2 [local]
+gdm3 42.0-1ubuntu7.22.04.3 [Ubuntu/jammy main]
 gedit 41.0-3 [Ubuntu/jammy main]
 gedit-common 41.0-3 [Ubuntu/jammy main]
 genisoimage 9:1.1.11-3.2ubuntu1 [Ubuntu/jammy main]
@@ -583,7 +583,7 @@ gir1.2-gck-1 3.40.0-4 [Ubuntu/jammy main]
 gir1.2-gcr-3 3.40.0-4 [Ubuntu/jammy main]
 gir1.2-gdesktopenums-3.0 42.0-1ubuntu1 [Ubuntu/jammy main]
 gir1.2-gdkpixbuf-2.0 2.42.8+dfsg-1ubuntu0.2 [Ubuntu/jammy main]
-gir1.2-gdm-1.0 42.0-1ubuntu7.22.04.2 [local]
+gir1.2-gdm-1.0 42.0-1ubuntu7.22.04.3 [Ubuntu/jammy main]
 gir1.2-geoclue-2.0 2.5.7-3ubuntu3 [Ubuntu/jammy main]
 gir1.2-gexiv2-0.10 0.14.0-1build1 [Ubuntu/jammy main]
 gir1.2-glib-2.0 1.72.0-1 [Ubuntu/jammy main]
@@ -675,7 +675,7 @@ gnome-menus 3.36.0-1ubuntu3 [Ubuntu/jammy main]
 gnome-mines 1:40.1-1 [Ubuntu/jammy main]
 gnome-online-accounts 3.44.0-1ubuntu1 [Ubuntu/jammy main]
 gnome-power-manager 3.32.0-2build2 [Ubuntu/jammy main]
-gnome-remote-desktop 42.4-0ubuntu1 [local]
+gnome-remote-desktop 42.7-0ubuntu1 [Ubuntu/jammy main]
 gnome-screensaver 3.6.1-13ubuntu1 [Ubuntu/jammy universe]
 gnome-screenshot 41.0-2 [Ubuntu/jammy universe]
 gnome-session-bin 42.0-1ubuntu2 [Ubuntu/jammy main]
@@ -1553,7 +1553,7 @@ libgdk-pixbuf2.0-0 2.40.2-2build4 [Ubuntu/jammy universe]
 libgdk-pixbuf2.0-bin 2.42.8+dfsg-1ubuntu0.2 [Ubuntu/jammy main]
 libgdk-pixbuf2.0-common 2.42.8+dfsg-1ubuntu0.2 [Ubuntu/jammy main]
 libgdk-pixbuf2.0-dev 2.40.2-2build4 [Ubuntu/jammy main]
-libgdm1 42.0-1ubuntu7.22.04.2 [local]
+libgdm1 42.0-1ubuntu7.22.04.3 [Ubuntu/jammy main]
 libgee-0.8-2 0.20.5-2 [Ubuntu/jammy main]
 libgeis1 2.2.17+16.04.20160126-0ubuntu8 [Ubuntu/jammy universe]
 libgeoclue-2-0 2.5.7-3ubuntu3 [Ubuntu/jammy main]
@@ -3623,7 +3623,6 @@ networkd-dispatcher 2.1-2ubuntu0.22.04.2 [Ubuntu/jammy main]
 newsboat 2.21-1 [Ubuntu/jammy universe]
 nftables 1.0.2-1ubuntu3 [Ubuntu/jammy main]
 ninja-build 1.10.1-1 [Ubuntu/jammy universe]
-nnn 4.3-1 [Ubuntu/jammy universe]
 node-jed 1.1.1-3 [Ubuntu/jammy universe]
 node-jquery 3.6.0+dfsg+~3.5.13-1 [Ubuntu/jammy universe]
 nodejs 17.9.0-deb-1nodesource1 [Node Source/groovy main]
@@ -4730,7 +4729,7 @@ ffsend v0.2.76:
     ffsend
 gitui v0.22.1:
     gitui
-halp v0.1.6:
+halp v0.1.7:
     halp
     halp-completions
     halp-mangen
@@ -4798,7 +4797,7 @@ xh v0.18.0:
     xh
 xplr v0.21.2:
     xplr
-zellij v0.36.0:
+zellij v0.37.0:
     zellij
 zeta-note v0.1.8:
     zeta-note
@@ -4898,7 +4897,7 @@ package pandoc-eqnos 2.5.0, installed using Python 3.10.4
  - pandoc-eqnos
 package pandoc-include 1.2.0, installed using Python 3.10.4
  - pandoc-include
-package pipenv 2023.6.12, installed using Python 3.10.4
+package pipenv 2023.6.18, installed using Python 3.10.4
  - pipenv
  - pipenv-resolver
 package pipreqs 0.4.13, installed using Python 3.10.4

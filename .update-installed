@@ -26,8 +26,7 @@ run_updates() {
         echo_and_run brew upgrade
     fi
     if [ "Linux" = "$1" ]; then
-        echo_and_run sudo nala update
-        echo_and_run sudo nala upgrade --assume-yes
+        echo_and_run sudo nala upgrade -y --update
         echo_and_run pacstall -Up -P
         echo_and_run sudo snap refresh
         echo_and_run flatpak update
