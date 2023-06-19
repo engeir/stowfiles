@@ -52,7 +52,11 @@ M.setup = function()
 end
 
 M.on_attach = function(client, bufnr)
-    if client.name == "tsserver" then
+    -- if client.name == "tsserver" then
+    --     client.server_capabilities.document_formatting = false
+    -- end
+
+    if client.name == "pylyzer" then
         client.server_capabilities.document_formatting = false
     end
 

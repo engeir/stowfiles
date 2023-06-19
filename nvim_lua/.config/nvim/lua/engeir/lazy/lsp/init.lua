@@ -10,14 +10,14 @@ require("engeir.lazy.lsp.null-ls")
 require("neodev").setup()
 
 -- ==================================== LSP-ZERO ==================================== --
-lsp.preset("recommended")
+local lsp_pre = lsp.preset("recommended")
 lsp.set_preferences({
     set_lsp_keymaps = false,
 })
 lsp.nvim_workspace()
 local cmp_select = { behavior = cmp.SelectBehavior.Select }
 
-lsp.on_attach(function(_, bufnr)
+lsp_pre.on_attach(function(_, bufnr)
     local map = function(mode, keys, func, desc)
         if desc then
             desc = "LSP: " .. desc
@@ -90,6 +90,7 @@ local opts = {
 }
 lspconfig.lua_ls.setup(vim.tbl_deep_extend("force", require("engeir.lazy.lsp.languages.lua_ls"), opts))
 -- lspconfig.pyright.setup(vim.tbl_deep_extend("force", require("engeir.lazy.lsp.languages.pyright"), opts))
+lspconfig.pylsp.setup(vim.tbl_deep_extend("force", require("engeir.lazy.lsp.languages.pylsp"), opts))
 lspconfig.jedi_language_server.setup(opts)
 -- This might take over for jedi_language_server, but while the GoTo Definition, Rename,
 -- etc., is not working, this is not an option. Maybe I actually have to, since
@@ -101,7 +102,7 @@ if EXECUTABLE("pass") then
     lspconfig.sourcery.setup(vim.tbl_deep_extend("force", require("engeir.lazy.lsp.languages.sourcery"), opts))
 end
 
-lsp.setup()
+lsp_pre.setup()
 
 -- ====================================== CMP ======================================= --
 -- This inputs the text as it is highlighted, and thus there is no need for

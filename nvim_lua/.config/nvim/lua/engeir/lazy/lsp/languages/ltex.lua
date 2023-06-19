@@ -11,21 +11,21 @@ end
 return {
     settings = {
         ltex = {
-            enabled = { "latex", "tex", "bib", "rst" },
+            -- enabled = { "latex", "tex", "bib", "rst" },
             language = "en-GB",
-            diagnosticSeverity = "information",
-            setenceCacheSize = 2000,
-            additionalRules = {
-                enablePickyRules = true,
-                motherTongue = "en",
-            },
-            trace = { server = "verbose" },
+            -- diagnosticSeverity = "information",
+            -- setenceCacheSize = 2000,
+            -- additionalRules = {
+            --     enablePickyRules = true,
+            --     motherTongue = "en",
+            -- },
+            -- trace = { server = "verbose" },
             dictionary = {
                 ["en-GB"] = words,
                 ["de-DE"] = {},
             },
-            disabledRules = {},
-            hiddenFalsePositives = {},
+            -- disabledRules = {},
+            -- hiddenFalsePositives = {},
         },
     },
     -- cmd = {

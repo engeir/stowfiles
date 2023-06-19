@@ -39,3 +39,10 @@ A list of packages and binaries installed on my Linux machine is found in
 
 A list of packages and binaries installed on my Mac machine is found in
 [INSTALLED-mac.md](./INSTALLED-mac.md).
+
+## To do
+
+Fix NeoVim LSP. Setting a custom configuration does not work when calling lsp-zero's
+init after (as is the suggested way according to lsp-zer). I'm doing something wrong,
+figure out what and preferably get rid of lsp-zero and get a better grasp of the
+minimal necessary plugins to be able to use LSP's efficiently.
