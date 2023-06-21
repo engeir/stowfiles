@@ -89,7 +89,7 @@ binutils 2.38-4ubuntu2.2 [Ubuntu/jammy main]
 binutils-common 2.38-4ubuntu2.2 [Ubuntu/jammy main]
 binutils-x86-64-linux-gnu 2.38-4ubuntu2.2 [Ubuntu/jammy main]
 bison 2:3.8.2+dfsg-1build1 [Ubuntu/jammy main]
-bitwarden 2023.4.0 [local]
+bitwarden 2023.5.0 [local]
 black 21.12b0-1 [Ubuntu/jammy universe]
 blt 2.5.3+dfsg-4.1build2 [Ubuntu/jammy main]
 blueman 2.2.4-1 [Ubuntu/jammy universe]
@@ -565,7 +565,7 @@ gftp 2.9.1~beta-1 [Ubuntu/jammy universe]
 gftp-common 2.9.1~beta-1 [Ubuntu/jammy universe]
 gftp-gtk 2.9.1~beta-1 [Ubuntu/jammy universe]
 gftp-text 2.9.1~beta-1 [Ubuntu/jammy universe]
-gh 2.30.0 [gh/stable main]
+gh 2.31.0 [gh/stable main]
 ghc 8.8.4-3 [Ubuntu/jammy universe]
 ghostscript 9.55.0~dfsg1-0ubuntu5.2 [Ubuntu/jammy main]
 ghostscript-x 9.55.0~dfsg1-0ubuntu5.2 [Ubuntu/jammy main]
@@ -946,7 +946,7 @@ libaopalliance-java 20070526-6 [Ubuntu/jammy universe]
 libapache-pom-java 18-1 [Ubuntu/jammy universe]
 libapparmor1 3.0.4-2ubuntu2.2 [Ubuntu/jammy main]
 libapparmor1:i386 3.0.4-2ubuntu2.2 [Ubuntu/jammy main]
-libappstream-glib8 0.7.18-2 [Ubuntu/jammy universe]
+libappstream-glib8 0.7.18-2ubuntu1 [Ubuntu/jammy universe]
 libappstream4 0.15.2-2 [Ubuntu/jammy main]
 libapr1 1.7.0-8ubuntu0.22.04.1 [Ubuntu/jammy main]
 libaprutil1 1.6.1-5ubuntu4.22.04.1 [Ubuntu/jammy main]
@@ -1354,10 +1354,10 @@ libedit2:i386 3.1-20210910-1build1 [Ubuntu/jammy main]
 libefiboot1 37-6ubuntu2 [Ubuntu/jammy main]
 libefivar1 37-6ubuntu2 [Ubuntu/jammy main]
 libegl-dev 1.4.0-1 [Ubuntu/jammy main]
-libegl-mesa0 22.2.5-0ubuntu0.1~22.04.2 [local]
+libegl-mesa0 22.2.5-0ubuntu0.1~22.04.3 [Ubuntu/jammy main]
 libegl1 1.4.0-1 [Ubuntu/jammy main]
-libegl1-mesa 22.2.5-0ubuntu0.1~22.04.2 [local]
-libegl1-mesa-dev 22.2.5-0ubuntu0.1~22.04.2 [local]
+libegl1-mesa 22.2.5-0ubuntu0.1~22.04.3 [Ubuntu/jammy universe]
+libegl1-mesa-dev 22.2.5-0ubuntu0.1~22.04.3 [Ubuntu/jammy main]
 libelf1 0.186-1build1 [Ubuntu/jammy main]
 libelf1:i386 0.186-1build1 [Ubuntu/jammy main]
 libemail-address-xs-perl 1.04-1build6 [Ubuntu/jammy main]
@@ -1513,9 +1513,9 @@ libgamemodeauto0 1.6.1-1build2 [Ubuntu/jammy main]
 libgamemodeauto0:i386 1.6.1-1build2 [Ubuntu/jammy main]
 libgap-dev 4.11.1-1 [Ubuntu/jammy universe]
 libgap7 4.11.1-1 [Ubuntu/jammy universe]
-libgbm-dev 22.2.5-0ubuntu0.1~22.04.2 [local]
-libgbm1 22.2.5-0ubuntu0.1~22.04.2 [local]
-libgbm1:i386 22.2.5-0ubuntu0.1~22.04.2 [local]
+libgbm-dev 22.2.5-0ubuntu0.1~22.04.3 [Ubuntu/jammy main]
+libgbm1 22.2.5-0ubuntu0.1~22.04.3 [Ubuntu/jammy main]
+libgbm1:i386 22.2.5-0ubuntu0.1~22.04.3 [Ubuntu/jammy main]
 libgc-dev 1:8.0.6-1.1build1 [Ubuntu/jammy main]
 libgc1 1:8.0.6-1.1build1 [Ubuntu/jammy main]
 libgcab-1.0-0 1.4-3build2 [Ubuntu/jammy main]
@@ -1587,14 +1587,14 @@ libgjs0g 1.72.2-0ubuntu2 [Ubuntu/jammy main]
 libgl-dev 1.4.0-1 [Ubuntu/jammy main]
 libgl1 1.4.0-1 [Ubuntu/jammy main]
 libgl1-amber-dri 21.3.7-0ubuntu1 [Ubuntu/jammy main]
-libgl1-mesa-dev 22.2.5-0ubuntu0.1~22.04.2 [local]
-libgl1-mesa-dri 22.2.5-0ubuntu0.1~22.04.2 [local]
-libgl1-mesa-dri:i386 22.2.5-0ubuntu0.1~22.04.2 [local]
-libgl1-mesa-glx 22.2.5-0ubuntu0.1~22.04.2 [local]
+libgl1-mesa-dev 22.2.5-0ubuntu0.1~22.04.3 [Ubuntu/jammy main]
+libgl1-mesa-dri 22.2.5-0ubuntu0.1~22.04.3 [Ubuntu/jammy main]
+libgl1-mesa-dri:i386 22.2.5-0ubuntu0.1~22.04.3 [Ubuntu/jammy main]
+libgl1-mesa-glx 22.2.5-0ubuntu0.1~22.04.3 [Ubuntu/jammy universe]
 libgl1:i386 1.4.0-1 [Ubuntu/jammy main]
 libgl2ps1.4 1.4.2+dfsg1-2 [Ubuntu/jammy universe]
-libglapi-mesa 22.2.5-0ubuntu0.1~22.04.2 [local]
-libglapi-mesa:i386 22.2.5-0ubuntu0.1~22.04.2 [local]
+libglapi-mesa 22.2.5-0ubuntu0.1~22.04.3 [Ubuntu/jammy main]
+libglapi-mesa:i386 22.2.5-0ubuntu0.1~22.04.3 [Ubuntu/jammy main]
 libgles-dev 1.4.0-1 [Ubuntu/jammy main]
 libgles1 1.4.0-1 [Ubuntu/jammy main]
 libgles2 1.4.0-1 [Ubuntu/jammy main]
@@ -1622,8 +1622,8 @@ libglvnd-dev 1.4.0-1 [Ubuntu/jammy main]
 libglvnd0 1.4.0-1 [Ubuntu/jammy main]
 libglvnd0:i386 1.4.0-1 [Ubuntu/jammy main]
 libglx-dev 1.4.0-1 [Ubuntu/jammy main]
-libglx-mesa0 22.2.5-0ubuntu0.1~22.04.2 [local]
-libglx-mesa0:i386 22.2.5-0ubuntu0.1~22.04.2 [local]
+libglx-mesa0 22.2.5-0ubuntu0.1~22.04.3 [Ubuntu/jammy main]
+libglx-mesa0:i386 22.2.5-0ubuntu0.1~22.04.3 [Ubuntu/jammy main]
 libglx0 1.4.0-1 [Ubuntu/jammy main]
 libglx0:i386 1.4.0-1 [Ubuntu/jammy main]
 libgme0 0.6.3-2 [Ubuntu/jammy universe]
@@ -2525,8 +2525,8 @@ liborc-0.4-0 1:0.4.32-2 [Ubuntu/jammy main]
 liborc-0.4-0:i386 1:0.4.32-2 [Ubuntu/jammy main]
 liborcus-0.17-0 0.17.2-2 [Ubuntu/jammy main]
 liborcus-parser-0.17-0 0.17.2-2 [Ubuntu/jammy main]
-libosmesa6 22.2.5-0ubuntu0.1~22.04.2 [local]
-libosmesa6:i386 22.2.5-0ubuntu0.1~22.04.2 [local]
+libosmesa6 22.2.5-0ubuntu0.1~22.04.3 [Ubuntu/jammy main]
+libosmesa6:i386 22.2.5-0ubuntu0.1~22.04.3 [Ubuntu/jammy main]
 libosmgpsmap-1.0-1 1.2.0-1build1 [Ubuntu/jammy universe]
 libosp5 1.5.2-13ubuntu3 [Ubuntu/jammy universe]
 libostree-1-1 2022.2-3 [Ubuntu/jammy universe]
@@ -3242,7 +3242,7 @@ libx264-163 2:0.163.3060+git5db6aa6-2build1 [Ubuntu/jammy universe]
 libx265-199 3.5-2 [Ubuntu/jammy universe]
 libxapian30 1.4.18-4 [Ubuntu/jammy universe]
 libxapp1 2.2.8-1 [Ubuntu/jammy universe]
-libxatracker2 22.2.5-0ubuntu0.1~22.04.2 [local]
+libxatracker2 22.2.5-0ubuntu0.1~22.04.3 [Ubuntu/jammy main]
 libxau-dev 1:1.0.9-1build5 [Ubuntu/jammy main]
 libxau6 1:1.0.9-1build5 [Ubuntu/jammy main]
 libxau6:i386 1:1.0.9-1build5 [Ubuntu/jammy main]
@@ -3535,13 +3535,13 @@ media-player-info 24-2 [Ubuntu/jammy main]
 media-types 7.0.0 [Ubuntu/jammy main]
 mediainfo 22.03-1 [Ubuntu/jammy universe]
 memtest86+ 5.31b+dfsg-4 [Ubuntu/jammy main]
-mesa-common-dev 22.2.5-0ubuntu0.1~22.04.2 [local]
+mesa-common-dev 22.2.5-0ubuntu0.1~22.04.3 [Ubuntu/jammy main]
 mesa-utils 8.4.0-1ubuntu1 [Ubuntu/jammy universe]
 mesa-utils-bin 8.4.0-1ubuntu1 [Ubuntu/jammy universe]
-mesa-va-drivers 22.2.5-0ubuntu0.1~22.04.2 [local]
-mesa-vdpau-drivers 22.2.5-0ubuntu0.1~22.04.2 [local]
-mesa-vulkan-drivers 22.2.5-0ubuntu0.1~22.04.2 [local]
-mesa-vulkan-drivers:i386 22.2.5-0ubuntu0.1~22.04.2 [local]
+mesa-va-drivers 22.2.5-0ubuntu0.1~22.04.3 [Ubuntu/jammy universe]
+mesa-vdpau-drivers 22.2.5-0ubuntu0.1~22.04.3 [Ubuntu/jammy main]
+mesa-vulkan-drivers 22.2.5-0ubuntu0.1~22.04.3 [Ubuntu/jammy main]
+mesa-vulkan-drivers:i386 22.2.5-0ubuntu0.1~22.04.3 [Ubuntu/jammy main]
 meson 0.61.2-1 [Ubuntu/jammy universe]
 metacity-common 1:3.44.0-1ubuntu1 [Ubuntu/jammy universe]
 mime-support 3.66 [Ubuntu/jammy main]
@@ -4669,7 +4669,7 @@ zstd 1.4.8+dfsg-3build1 [Ubuntu/jammy main]
 
 ```txt
 name: batsignal version: 1.6.4
-name: bitwarden version: 2023.4.0
+name: bitwarden version: 2023.5.0
 name: brave-browser version: 1.52.122
 name: brave-keyring version: 1.13
 name: google-chrome-stable version: 114.0.5735.133-1
@@ -4693,7 +4693,7 @@ alacritty v0.12.1:
     alacritty
 atuin v15.0.0:
     atuin
-bacon v2.8.1:
+bacon v2.9.0:
     bacon
 bat v0.23.0:
     bat
@@ -4727,7 +4727,7 @@ fd-find v8.7.0:
     fd
 ffsend v0.2.76:
     ffsend
-gitui v0.22.1:
+gitui v0.23.0:
     gitui
 halp v0.1.7:
     halp
@@ -4797,7 +4797,7 @@ xh v0.18.0:
     xh
 xplr v0.21.2:
     xplr
-zellij v0.37.0:
+zellij v0.37.2:
     zellij
 zeta-note v0.1.8:
     zeta-note
@@ -4806,7 +4806,7 @@ zeta-note v0.1.8:
 ## Pipx
 
 ```txt
-package ansible-core 2.15.0, installed using Python 3.10.4
+package ansible-core 2.15.1, installed using Python 3.10.4
  - ansible
  - ansible-config
  - ansible-connection
@@ -4828,6 +4828,8 @@ package cicero 0.2.5, installed using Python 3.10.4
  - cicero
 package cowsay 5.0, installed using Python 3.10.4
  - cowsay
+package daltonlens 0.1.5, installed using Python 3.10.4
+ - daltonlens-python
 package ds-format 3.7.0, installed using Python 3.10.4
  - ds
 package euporie 2.4.3, installed using Python 3.10.4
@@ -4870,7 +4872,7 @@ package lookatme 2.5.5, installed using Python 3.10.4
  - lam
  - lookatme
  - witnessme
-package mypy 1.3.0, installed using Python 3.10.4
+package mypy 1.4.0, installed using Python 3.10.4
  - dmypy
  - mypy
  - mypyc
@@ -4946,7 +4948,7 @@ package ueberzug 18.1.9, installed using Python 3.10.4
  - ueberzug
 package wtpython 0.1.0, installed using Python 3.10.4
  - wtpython
-package yapf 0.40.0, installed using Python 3.10.4
+package yapf 0.40.1, installed using Python 3.10.4
  - yapf
  - yapf-diff
 ```
@@ -5002,15 +5004,15 @@ Name                       Version                     Rev    Tracking         P
 bare                       1.0                         5      latest/stable    canonical**    base
 canonical-livepatch        10.5.7                      229    latest/stable    canonical**    -
 cmake                      3.26.4                      1299   latest/stable    crascit**      classic
-core                       16-2.58.3                   14946  latest/stable    canonical**    core
+core                       16-2.59.4                   15419  latest/stable    canonical**    core
 core18                     20230530                    2785   latest/stable    canonical**    base
-core20                     20230503                    1891   latest/stable    canonical**    base
+core20                     20230613                    1950   latest/stable    canonical**    base
 core22                     20230531                    750    latest/stable    canonical**    base
 dmd                        2.090.1                     102    latest/stable    dlang          classic
 dotnet-sdk                 5.0.408                     167    5.0/stable       dotnetcore**   classic
 dub                        1.19.0                      53     latest/stable    dlang          classic
 duf-utility                v0.6.0                      1      latest/stable    muesli         -
-firefox                    114.0.1-1                   2760   latest/stable/…  mozilla**      -
+firefox                    114.0.2-1                   2800   latest/stable/…  mozilla**      -
 gimp                       2.10.30                     393    latest/stable    snapcrafters*  -
 gnome-3-28-1804            3.28.0-19-g98f9e67.98f9e67  198    latest/stable    canonical**    -
 gnome-3-34-1804            0+git.3556cb3               93     latest/stable/…  canonical**    -
@@ -5029,7 +5031,7 @@ procs                      v0.13.0                     969    latest/stable    d
 remmina                    v1.4.31                     5782   latest/stable    remmina**      -
 shotcut                    23.06.14                    1136   latest/stable    meltytech**    classic
 snap-store                 41.3-71-g709398e            959    latest/stable/…  canonical**    -
-snapd                      2.59.4                      19361  latest/stable    canonical**    snapd
+snapd                      2.59.5                      19457  latest/stable    canonical**    snapd
 snapd-desktop-integration  0.9                         83     latest/stable/…  canonical**    -
 spt                        0.25.0                      289    latest/stable    popey          -
 timg                       1.4.1+pkg-67d0              16     latest/stable    simosx         -

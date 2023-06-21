@@ -87,6 +87,8 @@ let-env NU_PLUGIN_DIRS = [
 # let-env PATH = ($env.PATH | split row (char esep) | prepend '/some/path')
 let-env PATH = ($env.PATH | append $"($env.HOME)/.local/share/bob/nvim-bin")
 
+let-env SHELL = ($"($env.HOME)/.cargo/bin/nu")
+
 # Starship
 mkdir ~/.cache/starship
 starship init nu | save -f ~/.cache/starship/init.nu
