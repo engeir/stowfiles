@@ -11,7 +11,7 @@ alias dropbox_update="~/.dropbox-dist/dropboxd"
 alias cp='/usr/local/bin/cpg -g'
 alias lsn="ls --color=auto */ | less"
 alias mv='/usr/local/bin/mvg -g'
-alias lcm="sudo mount /dev/sda2 /home/een023/LaCie"
+alias lcm="sudo mount -o uid=1000,gid=1000,rw /dev/sda2 /media/een023/LaCie"
 alias lcu="sudo umount /media/een023/LaCie"
 alias lcc="lsblk -e 1,7"
 alias open="xdg-open"
