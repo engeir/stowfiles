@@ -1,7 +1,7 @@
 # NeoVim Config
 
-This is @engeir's NeoVim config, on NVIM v0.10.0-dev-528+g1f8fb7c00 (view at [latest
-commit](https://github.com/neovim/neovim/tree/1f8fb7c00)) installed with the [bob version
+This is @engeir's NeoVim config, on NVIM v0.10.0-dev-546+g3bf887f6e (view at [latest
+commit](https://github.com/neovim/neovim/tree/3bf887f6e)) installed with the [bob version
 manager for neovim](https://github.com/MordechaiHadad/bob). I am currently using the
 [lazy plugin manager](https://github.com/folke/lazy.nvim). Below is a complete list of
 all plugins I'm using:
