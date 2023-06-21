@@ -12,8 +12,9 @@ alias cp='/usr/local/bin/cpg -g'
 alias ll="ls -ltrh"
 alias lsn="ls --color=auto */ | less"
 alias mv='/usr/local/bin/mvg -g'
-alias mlc="sudo mount /media/een023/LaCie"
-alias ulc="sudo umount /media/een023/LaCie"
+alias lcm="sudo mount /media/een023/LaCie"
+alias lcu="sudo umount /media/een023/LaCie"
+alias lcc="lsblk -e 1,7"
 alias open="xdg-open"
 alias rg='rg -g "!Dropbox" -g "!OneDrive" -g "!BoxSync" -g "!.cache" -g "!.config/nnn" -g "!.git" -g "!node_module" -g "!.npm" -g "!.mozilla" -g "!.meteor" -g "!.nv" -g "!.conda" -g "!.dropbox-dist" -g "!.vscode" -g "!.vscode-insiders" -g "!miniconda3" -g "!.virtualenvs" -g "!snap" -g "!gems" -g "!.wine" -g "!extensions" -g "!coreutils-8.32" -g "!freetype-2.10.4" -g "!.cargo" -g "!Downloads" -g "!R" -g "!.Mathematica"'
 alias skbat='sk --preview="bat {} --color=always"'
