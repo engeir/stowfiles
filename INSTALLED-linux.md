@@ -81,9 +81,9 @@ bc 1.07.1-3build1 [Ubuntu/jammy main]
 bibclean 2.11.4.1-4build1 [Ubuntu/jammy universe]
 biber 2.17-2 [Ubuntu/jammy universe]
 bibutils 7.2-1 [Ubuntu/jammy universe]
-bind9-dnsutils 1:9.18.12-0ubuntu0.22.04.1 [Ubuntu/jammy main]
-bind9-host 1:9.18.12-0ubuntu0.22.04.1 [Ubuntu/jammy main]
-bind9-libs 1:9.18.12-0ubuntu0.22.04.1 [Ubuntu/jammy main]
+bind9-dnsutils 1:9.18.12-0ubuntu0.22.04.2 [Ubuntu/jammy main]
+bind9-host 1:9.18.12-0ubuntu0.22.04.2 [Ubuntu/jammy main]
+bind9-libs 1:9.18.12-0ubuntu0.22.04.2 [Ubuntu/jammy main]
 binfmt-support 2.2.1-2 [Ubuntu/jammy main]
 binutils 2.38-4ubuntu2.2 [Ubuntu/jammy main]
 binutils-common 2.38-4ubuntu2.2 [Ubuntu/jammy main]
@@ -101,7 +101,7 @@ bolt 0.9.2-1 [Ubuntu/jammy main]
 borgbackup 1.2.0-1 [Ubuntu/jammy universe]
 boxes 2.1.1-2 [Ubuntu/jammy universe]
 branding-ubuntu 0.10 [Ubuntu/jammy main]
-brave-browser 1.52.122 [local]
+brave-browser 1.52.126 [local]
 brave-keyring 1.13 [local]
 brightness-udev 0.5.1-3 [Ubuntu/jammy universe]
 brightnessctl 0.5.1-3 [Ubuntu/jammy universe]
@@ -178,19 +178,19 @@ cracklib-runtime 2.9.6-3.4build4 [Ubuntu/jammy main]
 cron 3.0pl1-137ubuntu3 [Ubuntu/jammy main]
 csh 20110502-7 [Ubuntu/jammy universe]
 csvtool 2.4-1build3 [Ubuntu/jammy universe]
-cups 2.4.1op1-1ubuntu4.2 [Ubuntu/jammy main]
+cups 2.4.1op1-1ubuntu4.4 [Ubuntu/jammy main]
 cups-browsed 1.28.15-0ubuntu1.2 [Ubuntu/jammy main]
-cups-bsd 2.4.1op1-1ubuntu4.2 [Ubuntu/jammy main]
-cups-client 2.4.1op1-1ubuntu4.2 [Ubuntu/jammy main]
-cups-common 2.4.1op1-1ubuntu4.2 [Ubuntu/jammy main]
-cups-core-drivers 2.4.1op1-1ubuntu4.2 [Ubuntu/jammy main]
-cups-daemon 2.4.1op1-1ubuntu4.2 [Ubuntu/jammy main]
+cups-bsd 2.4.1op1-1ubuntu4.4 [Ubuntu/jammy main]
+cups-client 2.4.1op1-1ubuntu4.4 [Ubuntu/jammy main]
+cups-common 2.4.1op1-1ubuntu4.4 [Ubuntu/jammy main]
+cups-core-drivers 2.4.1op1-1ubuntu4.4 [Ubuntu/jammy main]
+cups-daemon 2.4.1op1-1ubuntu4.4 [Ubuntu/jammy main]
 cups-filters 1.28.15-0ubuntu1.2 [Ubuntu/jammy main]
 cups-filters-core-drivers 1.28.15-0ubuntu1.2 [Ubuntu/jammy main]
-cups-ipp-utils 2.4.1op1-1ubuntu4.2 [Ubuntu/jammy main]
+cups-ipp-utils 2.4.1op1-1ubuntu4.4 [Ubuntu/jammy main]
 cups-pk-helper 0.2.6-1ubuntu5 [Ubuntu/jammy main]
-cups-ppdc 2.4.1op1-1ubuntu4.2 [Ubuntu/jammy main]
-cups-server-common 2.4.1op1-1ubuntu4.2 [Ubuntu/jammy main]
+cups-ppdc 2.4.1op1-1ubuntu4.4 [Ubuntu/jammy main]
+cups-server-common 2.4.1op1-1ubuntu4.4 [Ubuntu/jammy main]
 curl 7.81.0-1ubuntu1.10 [Ubuntu/jammy main]
 cvs 2:1.12.13+real-28 [Ubuntu/jammy universe]
 cvsps 2.1-8build2 [Ubuntu/jammy universe]
@@ -1221,10 +1221,10 @@ libcryptsetup12 2:2.4.3-1ubuntu1.1 [Ubuntu/jammy main]
 libctf-nobfd0 2.38-4ubuntu2.2 [Ubuntu/jammy main]
 libctf0 2.38-4ubuntu2.2 [Ubuntu/jammy main]
 libcue2 2.2.1-3build3 [Ubuntu/jammy main]
-libcups2 2.4.1op1-1ubuntu4.2 [Ubuntu/jammy main]
-libcups2:i386 2.4.1op1-1ubuntu4.2 [Ubuntu/jammy main]
+libcups2 2.4.1op1-1ubuntu4.4 [Ubuntu/jammy main]
+libcups2:i386 2.4.1op1-1ubuntu4.4 [Ubuntu/jammy main]
 libcupsfilters1 1.28.15-0ubuntu1.2 [Ubuntu/jammy main]
-libcupsimage2 2.4.1op1-1ubuntu4.2 [Ubuntu/jammy main]
+libcupsimage2 2.4.1op1-1ubuntu4.4 [Ubuntu/jammy main]
 libcurl3-gnutls 7.81.0-1ubuntu1.10 [Ubuntu/jammy main]
 libcurl3-gnutls:i386 7.81.0-1ubuntu1.10 [Ubuntu/jammy main]
 libcurl4 7.81.0-1ubuntu1.10 [Ubuntu/jammy main]
@@ -4258,7 +4258,7 @@ shfmt-bin 3.4.3-1 [local]
 shim-signed 1.51.3+15.7-0ubuntu1 [Ubuntu/jammy main]
 shotwell 0.30.14-1ubuntu6 [Ubuntu/jammy main]
 shotwell-common 0.30.14-1ubuntu6 [Ubuntu/jammy main]
-signal-desktop 6.21.0 [. xenial/xenial main]
+signal-desktop 6.22.0 [. xenial/xenial main]
 signon-plugin-oauth2 0.25-2 [Ubuntu/jammy universe]
 silversearcher-ag 2.2.0+git20200805-1 [Ubuntu/jammy universe]
 simple-scan 42.0-1 [Ubuntu/jammy main]
@@ -4670,7 +4670,7 @@ zstd 1.4.8+dfsg-3build1 [Ubuntu/jammy main]
 ```txt
 name: batsignal version: 1.6.4
 name: bitwarden version: 2023.5.0
-name: brave-browser version: 1.52.122
+name: brave-browser version: 1.52.126
 name: brave-keyring version: 1.13
 name: google-chrome-stable version: 114.0.5735.133-1
 name: htop version: 3.2.1
@@ -4681,7 +4681,7 @@ name: protonmail-bridge version: 3.2.0-1
 name: quarto version: 1.3.353
 name: rstudio version: 2022.12.0+353
 name: shfmt version: 3.6.0
-name: signal-desktop version: 6.21.0
+name: signal-desktop version: 6.22.0
 name: wezterm version: 20230408-112425-69ae8472
 name: zoom version: 5.14.5.2430
 ```
@@ -4699,7 +4699,7 @@ bat v0.23.0:
     bat
 blindfold v1.0.7:
     blindfold
-bob-nvim v2.4.0:
+bob-nvim v2.4.1:
     bob
 cargo-binstall v0.23.1:
     cargo-binstall
@@ -4842,7 +4842,7 @@ package flake8 6.0.0, installed using Python 3.10.4
  - flake8
 package fprettify 0.3.7, installed using Python 3.10.4
  - fprettify
-package globus-cli 3.14.0, installed using Python 3.10.4
+package globus-cli 3.15.0, installed using Python 3.10.4
  - globus
 package howdoi 2.0.20, installed using Python 3.10.4
  - howdoi
@@ -4857,7 +4857,7 @@ package instagram-scraper 66.0.2, installed using Python 3.10.4
 package intake 0.7.0, installed using Python 3.10.4
  - intake
  - intake-server
-package jupyter-client 8.2.0, installed using Python 3.10.4
+package jupyter-client 8.3.0, installed using Python 3.10.4
  - jupyter-kernel
  - jupyter-kernelspec
  - jupyter-run
@@ -4872,7 +4872,7 @@ package lookatme 2.5.5, installed using Python 3.10.4
  - lam
  - lookatme
  - witnessme
-package mypy 1.4.0, installed using Python 3.10.4
+package mypy 1.4.1, installed using Python 3.10.4
  - dmypy
  - mypy
  - mypyc
@@ -4980,7 +4980,7 @@ ascii-image-converter: github.com/TheZoraiz/ascii-image-converter@v1.13.1
 ```txt
 Name                                    Version                                 Branch
 ncspot                                  0.13.3                                  stable
-Freedesktop Platform                    21.08.18                                21.08
+Freedesktop Platform                    21.08.19                                21.08
 Freedesktop Platform                    22.08.12.1                              22.08
 Mesa                                    21.3.9                                  21.08
 Mesa                                    23.1.1                                  22.08
@@ -5002,12 +5002,12 @@ Yaru-dark Gtk Theme                                                             
 ```txt
 Name                       Version                     Rev    Tracking         Publisher      Notes
 bare                       1.0                         5      latest/stable    canonical**    base
-canonical-livepatch        10.5.7                      229    latest/stable    canonical**    -
+canonical-livepatch        10.6.0                      235    latest/stable    canonical**    -
 cmake                      3.26.4                      1299   latest/stable    crascit**      classic
 core                       16-2.59.4                   15419  latest/stable    canonical**    core
 core18                     20230530                    2785   latest/stable    canonical**    base
 core20                     20230613                    1950   latest/stable    canonical**    base
-core22                     20230531                    750    latest/stable    canonical**    base
+core22                     20230612                    766    latest/stable    canonical**    base
 dmd                        2.090.1                     102    latest/stable    dlang          classic
 dotnet-sdk                 5.0.408                     167    5.0/stable       dotnetcore**   classic
 dub                        1.19.0                      53     latest/stable    dlang          classic
