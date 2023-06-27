@@ -85,6 +85,6 @@ vim.api.nvim_create_autocmd("FileType", {
 --     callback = vim_set_ncl,
 -- })
 vim.cmd("au BufRead,BufNewFile *.ncl set filetype=ncl")
-vim.cmd("au! Syntax newlang source $VIM/ncl.vim")
+vim.cmd("au! Syntax newlang source $HOME/.config/nvim/syntax/ncl.vim")
 -- au BufRead,BufNewFile *.ncl set filetype=ncl
 -- au! Syntax newlang source $VIM/ncl.vim

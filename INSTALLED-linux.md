@@ -711,7 +711,7 @@ gnuplot 5.4.2+dfsg2-2 [Ubuntu/jammy universe]
 gnuplot-data 5.4.2+dfsg2-2 [Ubuntu/jammy universe]
 gnuplot-qt 5.4.2+dfsg2-2 [Ubuntu/jammy universe]
 golly 3.3-1build1 [Ubuntu/jammy universe]
-google-chrome-stable 114.0.5735.133-1 [Google/stable main]
+google-chrome-stable 114.0.5735.198-1 [Google/stable main]
 gperf 3.1-1build1 [Ubuntu/jammy universe]
 gpg 2.2.27-3ubuntu2.1 [Ubuntu/jammy main]
 gpg-agent 2.2.27-3ubuntu2.1 [Ubuntu/jammy main]
@@ -928,6 +928,7 @@ libadplug-2.3.3-0 2.3.3+dfsg-2 [Ubuntu/jammy universe]
 libadwaita-1-0 1.1.0-1ubuntu2 [Ubuntu/jammy main]
 libaec-dev 1.0.6-1 [Ubuntu/jammy universe]
 libaec0 1.0.6-1 [Ubuntu/jammy universe]
+libaio1 0.3.112-13build1 [Ubuntu/jammy main]
 libalgorithm-c3-perl 0.11-1 [Ubuntu/jammy universe]
 libalgorithm-diff-perl 1.201-1 [Ubuntu/jammy main]
 libalgorithm-diff-xs-perl 0.04-6build3 [Ubuntu/jammy main]
@@ -1784,6 +1785,7 @@ libhtml-format-perl 2.12-1.1 [Ubuntu/jammy main]
 libhtml-html5-entities-perl 0.004-1.1 [Ubuntu/jammy main]
 libhtml-parser-perl 3.76-1build2 [Ubuntu/jammy main]
 libhtml-tagset-perl 3.20-4 [Ubuntu/jammy main]
+libhtml-template-perl 2.97-1.1 [Ubuntu/jammy main]
 libhtml-tree-perl 5.07-2 [Ubuntu/jammy main]
 libhttp-cookies-perl 6.10-1 [Ubuntu/jammy main]
 libhttp-daemon-perl 6.13-1ubuntu0.1 [Ubuntu/jammy main]
@@ -2182,6 +2184,7 @@ libmd-dev 1.0.4-1build1 [Ubuntu/jammy main]
 libmd0 1.0.4-1build1 [Ubuntu/jammy main]
 libmd0:i386 1.0.4-1build1 [Ubuntu/jammy main]
 libmd4c0 0.4.8-1 [Ubuntu/jammy universe]
+libmecab2 0.996-14build9 [Ubuntu/jammy main]
 libmediaart-2.0-0 1.9.5-2build1 [Ubuntu/jammy main]
 libmediainfo0v5 21.09+dfsg-4 [Ubuntu/jammy universe]
 libmediawiki-api-perl 0.52-1 [Ubuntu/jammy universe]
@@ -2709,6 +2712,8 @@ libqmobipocket2 4:21.12.3-0ubuntu1 [Ubuntu/jammy universe]
 libqpdf28 10.6.3-1 [Ubuntu/jammy main]
 libqqwing2v5 1.3.4-1.1ubuntu3 [Ubuntu/jammy main]
 libqrencode4 4.1.1-1 [Ubuntu/jammy universe]
+libqscintilla2-qt5-15 2.11.6+dfsg-4 [Ubuntu/jammy universe]
+libqscintilla2-qt5-l10n 2.11.6+dfsg-4 [Ubuntu/jammy universe]
 libqt5charts5 5.15.3-1 [Ubuntu/jammy universe]
 libqt5concurrent5 5.15.3+dfsg-2ubuntu0.2 [Ubuntu/jammy universe]
 libqt5core5a 5.15.3+dfsg-2ubuntu0.2 [Ubuntu/jammy universe]
@@ -3531,6 +3536,9 @@ mawk 1.3.4.20200120-3 [Ubuntu/jammy main]
 maxima-sage 5.45.1-2 [Ubuntu/jammy universe]
 maxima-sage-doc 5.45.1-2 [Ubuntu/jammy universe]
 maxima-sage-share 5.45.1-2 [Ubuntu/jammy universe]
+mecab-ipadic 2.7.0-20070801+main-3 [Ubuntu/jammy main]
+mecab-ipadic-utf8 2.7.0-20070801+main-3 [Ubuntu/jammy main]
+mecab-utils 0.996-14build9 [Ubuntu/jammy main]
 media-player-info 24-2 [Ubuntu/jammy main]
 media-types 7.0.0 [Ubuntu/jammy main]
 mediainfo 22.03-1 [Ubuntu/jammy universe]
@@ -3582,7 +3590,12 @@ mupdf 1.19.0+ds1-2 [Ubuntu/jammy universe]
 mupdf-tools 1.19.0+ds1-2 [Ubuntu/jammy universe]
 mutter 42.5-0ubuntu1 [Ubuntu/jammy universe]
 mutter-common 42.5-0ubuntu1 [Ubuntu/jammy main]
+mysql-client-8.0 8.0.33-0ubuntu0.22.04.2 [Ubuntu/jammy main]
+mysql-client-core-8.0 8.0.33-0ubuntu0.22.04.2 [Ubuntu/jammy main]
 mysql-common 5.8+1.0.8 [Ubuntu/jammy main]
+mysql-server 8.0.33-0ubuntu0.22.04.2 [Ubuntu/jammy main]
+mysql-server-8.0 8.0.33-0ubuntu0.22.04.2 [Ubuntu/jammy main]
+mysql-server-core-8.0 8.0.33-0ubuntu0.22.04.2 [Ubuntu/jammy main]
 mythes-en-us 1:7.2.0-2 [Ubuntu/jammy main]
 nala 0.13.0 [local]
 nano 6.2-1 [Ubuntu/jammy main]
@@ -4288,6 +4301,7 @@ sphinx-rtd-theme-common 1.0.0+dfsg-1 [Ubuntu/jammy main]
 spice-vdagent 0.22.1-1 [Ubuntu/jammy main]
 spotify-client 1:1.1.72.439.gc253025e [local]
 sqlite3 3.37.2-2ubuntu0.1 [Ubuntu/jammy main]
+sqlitebrowser 3.12.1-2 [Ubuntu/jammy universe]
 squashfs-tools 1:4.5-3build1 [Ubuntu/jammy main]
 ssh-import-id 5.11-0ubuntu1 [Ubuntu/jammy main]
 sshfs 3.7.1+repack-2 [Ubuntu/jammy universe]
@@ -4672,7 +4686,7 @@ name: batsignal version: 1.6.4
 name: bitwarden version: 2023.5.0
 name: brave-browser version: 1.52.126
 name: brave-keyring version: 1.13
-name: google-chrome-stable version: 114.0.5735.133-1
+name: google-chrome-stable version: 114.0.5735.198-1
 name: htop version: 3.2.1
 name: nala version: 0.13.0
 name: neofetch version: 7.1.0
@@ -4701,7 +4715,7 @@ blindfold v1.0.7:
     blindfold
 bob-nvim v2.4.1:
     bob
-cargo-binstall v0.23.1:
+cargo-binstall v1.0.0:
     cargo-binstall
 cargo-edit v0.12.0:
     cargo-add
@@ -4899,7 +4913,7 @@ package pandoc-eqnos 2.5.0, installed using Python 3.10.4
  - pandoc-eqnos
 package pandoc-include 1.2.0, installed using Python 3.10.4
  - pandoc-include
-package pipenv 2023.6.18, installed using Python 3.10.4
+package pipenv 2023.6.26, installed using Python 3.10.4
  - pipenv
  - pipenv-resolver
 package pipreqs 0.4.13, installed using Python 3.10.4

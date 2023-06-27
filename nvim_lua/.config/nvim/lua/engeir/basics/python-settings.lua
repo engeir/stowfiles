@@ -8,10 +8,10 @@ local os2 = vim.fn.systemlist("uname -n")
 if os[1] == "Linux" then
     if os2[1] == "ubuntu-work" then
         vim.g.python3_host_prog = vim.fn.expand("$HOME/.pyenv/versions/py3nvim/bin/python")
-        vim.cmd("source $HOME/.config/cdo/add_cdo_complete_to_your_vimrc")
+        vim.cmd("source $HOME/.config/nvim/other-resources/add_ncl_complete_to_your_vimrc")
     elseif string.find(os2[1], "fram.sigma2.no") then
         vim.g.python3_host_prog = vim.fn.expand("$HOME/Envs/py3nvim/bin/python")
-        vim.cmd("source $HOME/.config/cdo/add_cdo_complete_to_your_vimrc")
+        vim.cmd("source $HOME/.config/nvim/other-resources/add_ncl_complete_to_your_vimrc")
     end
 elseif os[1] == "Darwin" then
     vim.g.python3_host_prog = vim.fn.expand("$HOME/.pyenv/versions/py3nvim/bin/python")
