@@ -1,7 +1,7 @@
 # NeoVim Config
 
-This is @engeir's NeoVim config, on NVIM v0.10.0-dev-546+g3bf887f6e (view at [latest
-commit](https://github.com/neovim/neovim/tree/3bf887f6e)) installed with the [bob version
+This is @engeir's NeoVim config, on NVIM v0.10.0-dev-591+g42f9573e5 (view at [latest
+commit](https://github.com/neovim/neovim/tree/42f9573e5)) installed with the [bob version
 manager for neovim](https://github.com/MordechaiHadad/bob). I am currently using the
 [lazy plugin manager](https://github.com/folke/lazy.nvim). Below is a complete list of
 all plugins I'm using:
@@ -41,6 +41,7 @@ all plugins I'm using:
 - [lazy.nvim](https://github.com/folke/lazy.nvim.git)
 - [lazygit.nvim](https://github.com/kdheepak/lazygit.nvim.git)
 - [lsp-zero.nvim](https://github.com/VonHeikemen/lsp-zero.nvim.git)
+- [lspkind.nvim](https://github.com/onsails/lspkind.nvim.git)
 - [lualine](https://github.com/nvim-lualine/lualine.nvim.git)
 - [luasnip-latex-snippets.nvim](https://github.com/iurimateus/luasnip-latex-snippets.nvim.git)
 - [LuaSnip](https://github.com/L3MON4D3/LuaSnip.git)

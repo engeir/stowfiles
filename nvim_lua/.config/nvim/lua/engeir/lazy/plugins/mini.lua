@@ -7,6 +7,7 @@ return {
     --    windwp/nvim-autopairs   -> mini.pairs
     --    goolord/alpha-nvim      -> mini.starter
     --    kylechui/nvim-surround  -> mini.surround
+    --    folke/flash.nvim        <- mini.jump
     "echasnovski/mini.nvim",
     config = function()
         -- mini.ai ---------------------------------------------------------------------
@@ -35,15 +36,21 @@ return {
             })
         end
 
-        set_comment("ncl", ";%s")
-        set_comment("sent", "#%s")
         set_comment("mplstyle", "#%s")
+        set_comment("ncl", ";%s")
+        set_comment("nu", "#%s")
+        set_comment("sent", "#%s")
 
         -- mini.cursorword -------------------------------------------------------------
         require("mini.cursorword").setup()
 
         -- mini.files ------------------------------------------------------------------
         require("mini.files").setup()
+
+        -- mini.fuzzy ------------------------------------------------------------------
+        -- Replaces one of the sorters:
+        -- https://github.com/nvim-telescope/telescope.nvim#sorters
+        require("mini.fuzzy").setup()
 
         -- mini.pairs ------------------------------------------------------------------
         require("mini.pairs").setup()

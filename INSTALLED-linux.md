@@ -3463,7 +3463,7 @@ lintian 2.114.0ubuntu1.2 [Ubuntu/jammy main]
 linux-base 4.5ubuntu9 [Ubuntu/jammy main]
 linux-firmware 20220329.git681281e4-0ubuntu3.13 [Ubuntu/jammy main]
 linux-generic 5.15.0.75.73 [Ubuntu/jammy main]
-linux-generic-hwe-20.04 5.15.0.75.73 [Ubuntu/jammy main]
+linux-generic-hwe-20.04 5.15.0.76.74 [Ubuntu/jammy main]
 linux-generic-hwe-22.04 5.19.0.45.46~22.04.20 [Ubuntu/jammy main]
 linux-headers-5.15.0-75 5.15.0-75.82 [Ubuntu/jammy main]
 linux-headers-5.15.0-75-generic 5.15.0-75.82 [Ubuntu/jammy main]
@@ -4165,10 +4165,10 @@ quarto 1.3.353 [local]
 qutebrowser 2.5.0-1 [Ubuntu/jammy universe]
 qutebrowser-qtwebengine 2.5.0-1 [Ubuntu/jammy universe]
 qutebrowser-qtwebkit 2.5.0-1 [Ubuntu/jammy universe]
-r-base 4.3.0-1.2204.0 [CRAN/jammy-cran40 ]
-r-base-core 4.3.0-1.2204.0 [CRAN/jammy-cran40 ]
-r-base-dev 4.3.0-1.2204.0 [CRAN/jammy-cran40 ]
-r-base-html 4.3.0-1.2204.0 [CRAN/jammy-cran40 ]
+r-base 4.3.1-1.2204.0 [CRAN/jammy-cran40 ]
+r-base-core 4.3.1-1.2204.0 [CRAN/jammy-cran40 ]
+r-base-dev 4.3.1-1.2204.0 [CRAN/jammy-cran40 ]
+r-base-html 4.3.1-1.2204.0 [CRAN/jammy-cran40 ]
 r-cran-boot 1.3-28-2.2204.0 [CRAN/jammy-cran40 ]
 r-cran-class 7.3-21-1.2204.0 [CRAN/jammy-cran40 ]
 r-cran-cluster 2.1.4-1.2204.0 [CRAN/jammy-cran40 ]
@@ -4184,8 +4184,8 @@ r-cran-nnet 7.3-18-1.2204.0 [CRAN/jammy-cran40 ]
 r-cran-rpart 4.1.19-1.2204.0 [CRAN/jammy-cran40 ]
 r-cran-spatial 7.3-15-1.2204.0 [CRAN/jammy-cran40 ]
 r-cran-survival 3.5-3-1.2204.0 [CRAN/jammy-cran40 ]
-r-doc-html 4.3.0-1.2204.0 [CRAN/jammy-cran40 ]
-r-recommended 4.3.0-1.2204.0 [CRAN/jammy-cran40 ]
+r-doc-html 4.3.1-1.2204.0 [CRAN/jammy-cran40 ]
+r-recommended 4.3.1-1.2204.0 [CRAN/jammy-cran40 ]
 rake 13.0.6-2 [Ubuntu/jammy main]
 ranger 1.9.3-3ubuntu1 [Ubuntu/jammy universe]
 rclone 1.53.3-4ubuntu1.22.04.2 [Ubuntu/jammy universe]
@@ -4707,7 +4707,7 @@ alacritty v0.12.1:
     alacritty
 atuin v15.0.0:
     atuin
-bacon v2.9.0:
+bacon v2.10.0:
     bacon
 bat v0.23.0:
     bat
@@ -4770,7 +4770,7 @@ menyoki v1.7.0:
     menyoki
 mprocs v0.6.4:
     mprocs
-nu v0.81.0:
+nu v0.82.0:
     nu
 pastel v0.9.0:
     pastel
@@ -4781,7 +4781,7 @@ pueue v3.2.0:
     pueued
 ripgrep v13.0.0:
     rg
-rtx-cli v1.32.0:
+rtx-cli v1.32.1:
     rtx
 sccache v0.5.3:
     sccache
@@ -4976,6 +4976,7 @@ ascii-image-converter: github.com/TheZoraiz/ascii-image-converter@v1.13.1
                 doggo: github.com/mr-karan/doggo/cmd/doggo@v0.5.5
                  draw: github.com/maaslalani/draw@v0.1.1
                fast-p: github.com/bellecp/fast-p@v0.2.5
+            git-sizer: github.com/github/git-sizer@v1.5.0
         golangci-lint: github.com/golangci/golangci-lint/cmd/golangci-lint@v1.53.3
                   gum: github.com/charmbracelet/gum@v0.10.0
                   gup: github.com/nao1215/gup@v0.22.0

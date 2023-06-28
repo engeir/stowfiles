@@ -1,5 +1,5 @@
-local ok, lsp, lspconfig, cmp, luasnip = pcall(function()
-    return require("lsp-zero"), require("lspconfig"), require("cmp"), require("luasnip")
+local ok, lsp, lspconfig, cmp, luasnip, lspkind = pcall(function()
+    return require("lsp-zero"), require("lspconfig"), require("cmp"), require("luasnip"), require("lspkind")
 end)
 if not ok then
     return
@@ -153,26 +153,57 @@ cmp.setup({
     completion = {
         completeopt = "menuone,noselect",
     },
+    -- From TJ
+    -- https://github.com/tjdevries/config_manager/blob/78608334a7803a0de1a08a9a4bd1b03ad2a5eb11/xdg_config/nvim/after/plugin/completion.lua#L129
+    sorting = {
+        -- TODO: Would be cool to add stuff like "See variable names before method
+        -- names" in rust, or something like that.
+        comparators = {
+            cmp.config.compare.offset,
+            cmp.config.compare.exact,
+            cmp.config.compare.score,
+
+            -- copied from cmp-under, but I don't think I need the plugin for this. I
+            -- might add some more of my own.
+            function(entry1, entry2)
+                local _, entry1_under = entry1.completion_item.label:find("^_+")
+                local _, entry2_under = entry2.completion_item.label:find("^_+")
+                entry1_under = entry1_under or 0
+                entry2_under = entry2_under or 0
+                if entry1_under > entry2_under then
+                    return false
+                elseif entry1_under < entry2_under then
+                    return true
+                end
+            end,
+
+            cmp.config.compare.kind,
+            cmp.config.compare.sort_text,
+            cmp.config.compare.length,
+            cmp.config.compare.order,
+        },
+    },
     snippet = {
         expand = function(args)
             luasnip.lsp_expand(args.body)
         end,
     },
-    -- formatting = {
-    --     fields = { "kind", "abbr", "menu" },
-    --     format = function(entry, vim_item)
-    --         vim_item.kind = kind_icons[vim_item.kind]
-    --         -- vim_item.menu = ({
-    --         --     nvim_lsp = "",
-    --         --     nvim_lua = "",
-    --         --     luasnip = "",
-    --         --     buffer = "",
-    --         --     path = "",
-    --         --     emoji = "",
-    --         -- })[entry.source.name]
-    --         return vim_item
-    --     end,
-    -- },
+    formatting = {
+        -- Youtube: How to set up nice formatting for your sources.
+        format = lspkind.cmp_format({
+            with_text = true,
+            menu = {
+                buffer = "[buf]",
+                nvim_lsp = "[LSP]",
+                nvim_lua = "[api]",
+                path = "[path]",
+                luasnip = "[snip]",
+                gh_issues = "[issues]",
+                tn = "[TabNine]",
+                eruby = "[erb]",
+            },
+        }),
+    },
     mapping = lsp.defaults.cmp_mappings({
         ["<C-d>"] = cmp.mapping.scroll_docs(-4),
         ["<C-f>"] = cmp.mapping.scroll_docs(4),

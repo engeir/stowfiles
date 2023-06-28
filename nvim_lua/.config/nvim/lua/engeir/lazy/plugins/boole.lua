@@ -8,8 +8,10 @@ return {
         },
         -- User defined loops
         additions = {
-            { "Foo", "Bar" },
-            { "tic", "tac", "toe" },
+            { "Foo",    "Bar" },
+            { "enable", "disable" },
+            { "left",   "right" },
+            { "tic",    "tac",    "toe" },
         },
     },
 }

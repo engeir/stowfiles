@@ -22,6 +22,8 @@ return {
             { "hrsh7th/cmp-nvim-lsp" },
             { "hrsh7th/cmp-nvim-lua" },
             { "hrsh7th/cmp-calc" },
+            -- Icons for the LSP cmp view
+            { "onsails/lspkind.nvim" },
 
             -- Snippets
             { "L3MON4D3/LuaSnip",                 build = "make install_jsregexp" },
