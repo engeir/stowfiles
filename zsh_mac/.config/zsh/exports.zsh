@@ -31,6 +31,7 @@ BLK="34" CHR="c9" DIR="e6" EXE="64" REG="fa" HARDLINK="81" SYMLINK="d6" MISSING=
 export NNN_FCOLORS="$BLK$CHR$DIR$EXE$REG$HARDLINK$SYMLINK$MISSING$ORPHAN$FIFO$SOCK$OTHER"
 export NNN_FIFO=/tmp/nnn.fifo nnn
 export NNN_TRASH=1
+export NNN_TERMINAL="wezterm"
 if [ "$MACHINE" = "Darwin" ]; then
     plug "$HOME/.config/zsh/mac-specific.zsh"
 fi
@@ -57,10 +58,10 @@ export PATH="$PATH:$HOME/.local/share/bob/nvim-bin"
 # mason bin installation
 export PATH="$PATH:$HOME/.local/share/nvim/mason/bin"
 # bun
-export BUN_INSTALL="/Users/eirikenger/.bun"
+export BUN_INSTALL="$HOME/.bun"
 export PATH="$BUN_INSTALL/bin:$PATH"
 # deno
-export DENO_INSTALL="/Users/eirikenger/.deno"
+export DENO_INSTALL="$HOME/.deno"
 export PATH="$DENO_INSTALL/bin:$PATH"
 # auto-notify
 export AUTO_NOTIFY_IGNORE=("nv" "docker" "man" "sleep" "lf" "nnn" "hugo serve" "fg" "ga")
