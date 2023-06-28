@@ -1,6 +1,5 @@
 # Using scoped packages with bun install
 [install.scopes]
-
 # Scope name      The value can be a URL string or an object
 "@mybigcompany" = { token = "123456", url = "https://registry.mybigcompany.com" }
 # URL is optional and fallsback to the default registry
@@ -24,7 +23,7 @@ mybigcompany6 = "https://:$NPM_CONFIG_TOKEN@registry.yarnpkg.com/"
 # can be a URL string or an object
 registry = "https://registry.yarnpkg.com/"
 # as an object
-#registry = { url = "https://registry.yarnpkg.com/", token = "123456" }
+# registry = { url = "https://registry.yarnpkg.com/", token = "123456" }
 
 # Install for production? This is the equivalent to the "--production" CLI argument
 production = false
@@ -59,10 +58,8 @@ disable = false
 # Always resolve the latest versions from the registry
 disableManifest = false
 
-
 # Lockfile-related configuration
 [install.lockfile]
-
 # Print a yarn v1 lockfile
 # Note: it does not load the lockfile, it just converts bun.lockb into a yarn.lock
 print = "yarn"

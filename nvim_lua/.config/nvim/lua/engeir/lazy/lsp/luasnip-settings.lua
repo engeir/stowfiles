@@ -125,6 +125,8 @@ ls.add_snippets("markdown", {
     s({ trig = "Theta-raw" }, { t("𝛩") }),
     s({ trig = "alpha-raw" }, { t("𝛼") }),
     s({ trig = "Alpha-raw" }, { t("𝛢") }),
+    s({ trig = "dpis" }, { t("<!-- dprint-ignore-start -->") }),
+    s({ trig = "dpie" }, { t("<!-- dprint-ignore-end -->") }),
 })
 
 -- Tex =================================================================================
