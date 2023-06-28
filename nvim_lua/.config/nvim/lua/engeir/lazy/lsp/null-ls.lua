@@ -3,6 +3,20 @@ if not ok then
     return
 end
 
+-- Nice:
+-- https://github.com/jose-elias-alvarez/null-ls.nvim#parsing-cli-program-output
+local check_exit_code = function(code, stderr)
+    local success = code < 1
+
+    if not success then
+        -- can be noisy for things that run often (e.g. diagnostics), but can
+        -- be useful for things that run on demand (e.g. formatting)
+        print(stderr)
+    end
+
+    return success
+end
+
 -- https://github.com/jose-elias-alvarez/null-ls.nvim/tree/main/lua/null-ls/builtins/formatting
 local formatting = null_ls.builtins.formatting
 -- https://github.com/jose-elias-alvarez/null-ls.nvim/tree/main/lua/null-ls/builtins/diagnostics
@@ -20,6 +34,7 @@ local shellcheck_formatter = {
         args = { "-c", "shellcheck $0 --format=diff | patch $0 -o-", "$FILENAME" },
         to_stdin = true,
         from_stderr = true,
+        check_exit_code = check_exit_code,
     }),
 }
 null_ls.register(shellcheck_formatter)
@@ -30,6 +45,7 @@ local blackd = {
     generator = h.formatter_factory({
         command = "blackd-client",
         to_stdin = true,
+        check_exit_code = check_exit_code,
     }),
 }
 -- local function dprint_config()
@@ -75,6 +91,7 @@ local dprint = {
             "$FILEEXT",
         },
         to_stdin = true,
+        check_exit_code = check_exit_code,
     }),
 }
 -- https://github.com/prettier-solidity/prettier-plugin-solidity
