@@ -1,7 +1,7 @@
 # NeoVim Config
 
-This is @engeir's NeoVim config, on NVIM v0.10.0-dev-591+g42f9573e5 (view at [latest
-commit](https://github.com/neovim/neovim/tree/42f9573e5)) installed with the [bob version
+This is @engeir's NeoVim config, on NVIM v0.10.0-dev-596+g7d0a23973 (view at [latest
+commit](https://github.com/neovim/neovim/tree/7d0a23973)) installed with the [bob version
 manager for neovim](https://github.com/MordechaiHadad/bob). I am currently using the
 [lazy plugin manager](https://github.com/folke/lazy.nvim). Below is a complete list of
 all plugins I'm using:
@@ -59,7 +59,6 @@ all plugins I'm using:
 - [null-ls.nvim](https://github.com/jose-elias-alvarez/null-ls.nvim.git)
 - [nvim-cmp](https://github.com/hrsh7th/nvim-cmp.git)
 - [nvim-lspconfig](https://github.com/neovim/nvim-lspconfig.git)
-- [nvim-neoclip.lua](https://github.com/AckslD/nvim-neoclip.lua.git)
 - [nvim-notify](https://github.com/rcarriga/nvim-notify.git)
 - [nvim-treesitter-context](https://github.com/nvim-treesitter/nvim-treesitter-context.git)
 - [nvim-treesitter-textobjects](https://github.com/nvim-treesitter/nvim-treesitter-textobjects.git)
@@ -76,7 +75,6 @@ all plugins I'm using:
 - [syntax-tree-surfer](https://github.com/ziontee113/syntax-tree-surfer.git)
 - [telescope-bibtex.nvim](https://github.com/nvim-telescope/telescope-bibtex.nvim.git)
 - [telescope-file-browser.nvim](https://github.com/nvim-telescope/telescope-file-browser.nvim.git)
-- [telescope-fzf-native.nvim](https://github.com/nvim-telescope/telescope-fzf-native.nvim.git)
 - [telescope-media-files.nvim](https://github.com/nvim-telescope/telescope-media-files.nvim.git)
 - [telescope-symbols.nvim](https://github.com/nvim-telescope/telescope-symbols.nvim.git)
 - [telescope-ui-select.nvim](https://github.com/nvim-telescope/telescope-ui-select.nvim.git)

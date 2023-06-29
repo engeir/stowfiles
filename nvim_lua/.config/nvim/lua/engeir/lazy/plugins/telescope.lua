@@ -45,6 +45,8 @@ return {
             local actions = require("telescope.actions")
             require("telescope").setup({
                 defaults = {
+                    generic_sorter = require("mini.fuzzy").get_telescope_sorter,
+                    file_sorter = require("mini.fuzzy").get_telescope_sorter,
                     mappings = {
                         i = {
                             ["<esc>"] = actions.close,
@@ -74,12 +76,6 @@ return {
                     },
                 },
                 extensions = {
-                    fzf = {
-                        fuzzy = true,
-                        override_generic_sorter = true,
-                        override_file_sorter = true,
-                        case_mode = "smart_case",
-                    },
                     ["ui-select"] = {
                         require("telescope.themes").get_dropdown({
                             -- more options
@@ -121,67 +117,48 @@ return {
                 },
             })
 
-            map(
-                "n",
-                "<leader>ff",
-                "<cmd>lua require('telescope.builtin').find_files({hidden=true})<cr>",
-                { desc = "[F]ind [F]iles" }
-            )
-            map(
-                "n",
-                "<leader>fl",
-                "<cmd>lua require('telescope.builtin').current_buffer_fuzzy_find()<cr>",
-                { desc = "[F]ind [L]ines" }
-            )
-            map(
-                "n",
-                "<leader>fs",
-                "<cmd>lua require('telescope.builtin').git_files({cwd='~/stowfiles/'})<cr>",
-                { desc = "[F]ind [S]towfiles" }
-            )
-            map(
-                "n",
-                "<leader>fg",
-                "<cmd>lua require('telescope.builtin').git_files()<cr>",
-                { desc = "[F]ind [G]itfiles" }
-            ) -- {git_command={'git', 'grep', '--cached', '-Il', '\"\"'}}
+            vim.keymap.set("n", "<leader>ff", function()
+                require("telescope.builtin").find_files({ hidden = true })
+            end, { desc = "[F]ind [F]iles" })
+            vim.keymap.set("n", "<leader>fl", function()
+                require("telescope.builtin").current_buffer_fuzzy_find()
+            end, { desc = "[F]ind [L]ines" })
+            vim.keymap.set("n", "<leader>fs", function()
+                require("telescope.builtin").git_files({ cwd = "~/stowfiles/" })
+            end, { desc = "[F]ind [S]towfiles" })
+            vim.keymap.set("n", "<leader>fg", function()
+                require("telescope.builtin").git_files()
+            end, { desc = "[F]ind [G]itfiles" }) -- {git_command={'git', 'grep', '--cached', '-Il', '\"\"'}}
             -- map("n", "<leader>fr", "<cmd>lua require('telescope.builtin').live_grep()<cr>") -- Does not fuzzy
-            map(
-                "n",
-                "<leader>fr",
-                "<cmd>lua require('telescope.builtin').grep_string({search=''})<cr>",
-                { desc = "[F]ind [R]ipgrep (find string)" }
-            )
-            map(
-                "n",
-                "<leader>fw",
-                "<cmd>lua require('telescope.builtin').grep_string()<cr>",
-                { desc = "[F]ind [W]ord under cursor" }
-            )
-            map(
-                "n",
-                "<leader>b",
-                "<cmd>lua require('telescope.builtin').buffers({sort_mru=true, ignore_current_buffer=true})<cr>",
-                { desc = "Find [B]uffers" }
-            )
+            vim.keymap.set("n", "<leader>fr", function()
+                require("telescope.builtin").grep_string({ search = "" })
+            end, { desc = "[F]ind [R]ipgrep (find string)" })
+            vim.keymap.set("n", "<leader>fw", function()
+                require("telescope.builtin").grep_string()
+            end, { desc = "[F]ind [W]ord under cursor" })
+            vim.keymap.set("n", "<leader>b", function()
+                require("telescope.builtin").buffers({ sort_mru = true, ignore_current_buffer = true })
+            end, { desc = "Find [B]uffers" })
             map("n", "<leader>fb", "<cmd>Telescope bibtex<cr>", { desc = "[F]ind [B]ibtex" })
-            map(
-                "n",
-                "<leader>fm",
-                "<cmd>lua require('telescope').extensions.media_files.media_files()<cr>",
-                { desc = "[F]ind [M]edia files" }
-            )
-            map("n", "<leader>fp", "<cmd>Telescope spell_suggest<cr>", { desc = "[F]ind S[p]ell suggestions" })
-            map("n", "<leader>fv", "<cmd>Telescope neoclip<cr>", { desc = "[F]ind from clipboard registers" })
-            map("n", "<leader>fh", "<cmd>lua require('telescope.builtin').help_tags()<cr>", { desc = "[F]ind [H]elp tags" })
-            map("n", "<leader>fc", "<cmd>lua require('telescope.builtin').commands()<cr>", { desc = "[F]ind [C]ommands" })
-            map(
-                "n",
-                "<leader>fo",
-                "<cmd>lua require('telescope.builtin').git_commits()<cr>",
-                { desc = "[F]ind C[o]mmits" }
-            )
-            map("n", "<leader>fk", "<cmd>lua require('telescope.builtin').keymaps()<cr>", { desc = "[F]ind [K]eymaps" })
+            vim.keymap.set("n", "<leader>fm", function()
+                require("telescope").extensions.media_files.media_files()
+            end, { desc = "[F]ind [M]edia files" })
+            vim.keymap.set("n", "<leader>fp", function()
+                require("telescope.builtin").spell_suggest()
+            end, { desc = "[F]ind S[p]ell suggestions" })
+            -- map("n", "<leader>fv", "<cmd>Telescope neoclip<cr>", { desc = "[F]ind from clipboard registers" })
+            vim.keymap.set("n", "<leader>fh", function()
+                require("telescope.builtin").help_tags()
+            end, { desc = "[F]ind [H]elp tags" })
+            vim.keymap.set("n", "<leader>fc", function()
+                require("telescope.builtin").commands()
+            end, { desc = "[F]ind [C]ommands" })
+            vim.keymap.set("n", "<leader>fo", function()
+                require("telescope.builtin").git_commits()
+            end, { desc = "[F]ind C[o]mmits" })
+            vim.keymap.set("n", "<leader>fk", function()
+                require("telescope.builtin").keymaps()
+            end, { desc = "[F]ind [K]eymaps" })
         end,
     },
     {
@@ -240,20 +217,13 @@ return {
             require("telescope").load_extension("ui-select")
         end,
     },
-    {
-        "nvim-telescope/telescope-fzf-native.nvim",
-        build = "make",
-        config = function()
-            require("telescope").load_extension("fzf")
-        end,
-    },
-    {
-        "AckslD/nvim-neoclip.lua",
-        config = function()
-            require("neoclip").setup({ default_register = { '"', "+", "*" } })
-            require("telescope").load_extension("neoclip")
-        end,
-    },
+    -- {
+    --     "AckslD/nvim-neoclip.lua",
+    --     config = function()
+    --         require("neoclip").setup({ default_register = { '"', "+", "*" } })
+    --         require("telescope").load_extension("neoclip")
+    --     end,
+    -- },
     "nvim-telescope/telescope-symbols.nvim",
     {
         "nvim-telescope/telescope-media-files.nvim",
