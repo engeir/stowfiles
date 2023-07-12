@@ -27,7 +27,7 @@ bdw-gc 8.2.4
 berkeley-db 18.1.40_1
 bibclean 3.07
 bison 3.8.2
-boost 1.81.0_1
+boost 1.82.0_1
 borgbackup-fuse 1.2.4
 brotli 1.0.9
 btop 1.2.13
@@ -48,13 +48,13 @@ cloc 1.96
 cmake 3.26.4
 cmatrix 2.0
 cmocka 1.1.7
-composer 2.5.7
+composer 2.5.8
 coreutils 9.3
 cpio 2.14
 curl 8.1.2
 cython 0.29.35
 dav1d 1.2.1
-dbus 1.14.6
+dbus 1.14.8
 desktop-file-utils 0.26
 despell 0.10
 djvulibre 3.5.28_2
@@ -88,7 +88,7 @@ freetds 1.3.13 1.3.18
 freetype 2.13.0_1
 frei0r 1.8.0
 fribidi 1.0.13
-fzf 0.41.1
+fzf 0.42.0
 gawk 5.2.2
 gcc 13.1.0
 gd 2.3.3_5
@@ -96,8 +96,8 @@ gdbm 1.23
 gdk-pixbuf 2.42.10_1
 geos 3.11.2
 gettext 0.21.1
-gh 2.30.0
-ghostscript 10.01.1_1
+gh 2.31.0
+ghostscript 10.01.2
 giflib 5.2.1
 girara 0.4.0
 git 2.41.0
@@ -108,11 +108,11 @@ gnu-getopt 2.39
 gnu-sed 4.9
 gnu-tar 1.34_1
 gnupg 2.4.2
-gnuplot 5.4.7
+gnuplot 5.4.8
 gnutls 3.8.0
-go 1.20.4
+go 1.20.5
 gobject-introspection 1.76.1
-golangci-lint 1.53.2
+golangci-lint 1.53.3
 gpatch 2.7.6
 gping 1.12.0
 graphicsmagick 1.3.40_2
@@ -126,7 +126,7 @@ gtk+3 3.24.38
 gtk-mac-integration 3.0.1
 guile 3.0.9
 gumbo-parser 0.10.1
-harfbuzz 7.3.0
+harfbuzz 7.3.0_1
 has 1.4.0
 hdf5 1.14.1
 helix 23.05
@@ -136,13 +136,13 @@ html2text 2.1.1
 htop 3.2.2
 httpd 2.4.57
 hub 2.14.2
-hugo 0.113.0
+hugo 0.114.1
 hunspell 1.7.2
 hwloc 2.9.1
-icu4c 72.1
+icu4c 73.2
 ilmbase 2.5.8
-imagemagick 7.1.1-10
-imath 3.1.7
+imagemagick 7.1.1-11_1
+imath 3.1.9
 imlib2 1.11.1
 intltool 0.51.0_1
 isl 0.26
@@ -152,24 +152,24 @@ jbig2dec 0.19
 jemalloc 5.3.0
 jpeg 9e
 jpeg-turbo 2.1.5.1
-jpeg-xl 0.8.1_2
+jpeg-xl 0.8.2
 jpegoptim 1.5.4
 jq 1.6
 json-c 0.16
 jump 0.51.0
-krb5 1.20.1
+krb5 1.21
 lame 3.100
 leptonica 1.82.0_2
 libaec 1.0.6
 libarchive 3.6.2_1
 libass 0.17.1
-libassuan 2.5.5
+libassuan 2.5.6
 libavif 0.11.1
 libb2 0.98.1
 libbluray 1.3.4
 libcaca 0.99b20
 libcerf 2.3
-libde265 1.0.11
+libde265 1.0.12
 libepoxy 1.5.10
 libev 4.33
 libevent 2.1.12
@@ -183,22 +183,22 @@ libice 1.1.1
 libidn 1.41
 libidn2 2.3.4_1
 libimagequant 4.2.0
-libksba 1.6.3
+libksba 1.6.4
 liblinear 2.46
 liblqr 0.4.2_1
 libmagic 5.44
 libmatio 1.5.23_1
-libmd 1.0.4
+libmd 1.1.0
 libmediainfo 23.04_1
 libmikmod 3.3.11.1
 libmms 0.6.4
 libmng 2.0.3_1
 libmpc 1.3.1
-libnghttp2 1.53.0
+libnghttp2 1.54.0
 libnotify 0.8.2
 libogg 1.3.5
-libomp 16.0.5
-libpng 1.6.39
+libomp 16.0.6
+libpng 1.6.40
 libpq 15.3
 libproxy 0.4.18
 libpthread-stubs 0.4
@@ -216,7 +216,7 @@ libspng 0.7.4
 libssh2 1.11.0
 libtasn1 4.19.0
 libtermkey 0.22
-libtiff 4.5.0 4.4.0_1
+libtiff 4.5.1
 libtool 2.4.7
 libunibreak 5.1
 libunistring 1.1
@@ -239,7 +239,7 @@ libxfixes 6.0.1
 libxft 2.3.8 2.3.7
 libxi 1.8.1
 libxinerama 1.1.5
-libxml2 2.11.4
+libxml2 2.11.4_1
 libxmu 1.1.4
 libxpm 3.5.15 3.5.16
 libxrandr 1.5.3
@@ -255,7 +255,7 @@ lolcat 100.0.1
 lsd 0.23.1
 lua 5.4.6
 lua@5.3 5.3.6
-luajit HEAD-03080b7 2.1.0-beta3-20230602.5
+luajit 2.1.0-beta3-20230612.1 HEAD-03080b7
 luajit-openresty 2.1-20230410
 luarocks 3.9.2
 luv 1.44.2-1
@@ -279,19 +279,19 @@ mpg123 1.31.3
 mpv 0.35.1_2
 msgpack 6.0.0
 mujs 1.3.3 1.2.0
-mupdf 1.22.1
+mupdf 1.22.2
 mysql@5.7 5.7.42
-nb 7.5.1
-ncspot 0.13.2
+nb 7.5.2
+ncspot 0.13.3
 ncurses 6.4
 neofetch 7.1.0
 netcdf 4.9.2_1
-nettle 3.9
-nghttp2 1.53.0
+nettle 3.9.1
+nghttp2 1.54.0_1
 ninja 1.11.1
 nmap 7.94
 nnn 4.8
-node 20.2.0
+node 20.3.1
 npth 1.6
 nspr 4.35
 nss 3.90
@@ -299,18 +299,18 @@ odt2txt 0.5
 oniguruma 6.9.8
 open-mpi 4.1.5
 opencore-amr 0.1.6
-openexr 3.1.7
+openexr 3.1.8_1
 openjdk 20.0.1
 openjpeg 2.5.0_1
 openldap 2.6.4
 openslide 3.4.1_8
 openssl@1.1 1.1.1u
 openssl@3 3.1.1
-opus 1.3.1
+opus 1.4
 orc 0.4.34
 p11-kit 0.24.1_1
 p7zip 17.05
-pandoc 3.1.2
+pandoc 3.1.3
 pandoc-citeproc 0.17.0.2
 pandoc-include-code 1.5.0.0_2
 pango 1.50.14
@@ -320,7 +320,7 @@ pcre2 10.42
 pdftohtml 0.40a
 pdftoipe 7.2.24.1_13
 perl 5.36.1
-php 8.2.6
+php 8.2.7_1
 pinentry 1.2.1
 pinentry-mac 1.1.1.1
 pipx 1.2.0
@@ -335,21 +335,21 @@ potrace 1.16
 pqiv 2.12_6
 prettier 2.8.8
 proj 9.2.1
-protobuf 22.5
+protobuf 23.3
 pstoedit 3.78
-pueue 3.1.2
+pueue 3.2.0
 pup 0.4.0
-pyenv 2.3.18
+pyenv 2.3.21
 pyenv-virtualenv 1.2.1
 pygments 2.15.1 2.15.0
 pyqt@5 5.15.7_2
-python@3.10 3.10.11
-python@3.11 3.11.3
-python@3.8 3.8.16
+python@3.10 3.10.12
+python@3.11 3.11.4
+python@3.8 3.8.17
 python@3.9 3.9.17
 qrencode 4.1.1
-qt 6.5.1
-qt@5 5.15.9
+qt 6.5.1_1
+qt@5 5.15.10
 rav1e 0.6.6
 readline 8.2.1
 recode 3.7.14
@@ -359,9 +359,9 @@ rsync 3.2.7_1
 rtmpdump 2.4+20151223_1
 rubberband 3.2.1
 ruby 3.2.2
-ruby-install 0.9.0
-rust-analyzer 2023-06-05
-scrcpy 2.0_1
+ruby-install 0.9.1
+rust-analyzer 2023-06-19
+scrcpy 2.1
 screenresolution 1.6
 sd 0.7.6_1
 sdl12-compat 1.2.64
@@ -372,7 +372,7 @@ sdl_ttf 2.0.11_2
 shared-mime-info 2.2
 shellcheck 0.9.0
 shellharden 4.3.0
-shfmt 3.6.0
+shfmt 3.7.0
 shpotify 2.1
 sk 0.10.4
 skhd 0.3.9
@@ -389,13 +389,13 @@ srt 1.5.1
 st 1.1.4_1
 starship 1.15.0
 stow 2.3.1
-svt-av1 1.4.1 1.5.0
+svt-av1 1.6.0
 sxiv 26_1
 szip 2.1.1_1
-tcl-tk 8.6.13_2
-tesseract 5.3.1
+tcl-tk 8.6.13_3
+tesseract 5.3.1_1
 texinfo 7.0.3
-texlive 20230313
+texlive 20230313_1
 theora 1.1.1
 tidy-html5 5.8.0
 tig 2.5.8_1
@@ -424,7 +424,7 @@ wget 1.21.4
 x264 r3095
 x265 3.5
 xmlto 0.0.28
-xorgproto 2022.2
+xorgproto 2023.2
 xpdf 4.04
 xplr 0.21.2
 xterm 382
@@ -434,7 +434,7 @@ xz 5.4.3
 yabai 5.0.6
 yarn 1.22.19
 youtube-dl 2021.12.17
-yt-dlp 2022.10.4 2023.3.4 2022.8.19
+yt-dlp 2023.6.22
 zathura 0.5.2
 zathura-pdf-mupdf 0.3.9_1
 zeromq 4.3.4
@@ -472,11 +472,11 @@ xquartz 2.8.1
 ```txt
 atuin v15.0.0:
     atuin
-bacon v2.8.1:
+bacon v2.9.0:
     bacon
 blindfold v1.0.7:
     blindfold
-bob-nvim v2.3.3:
+bob-nvim v2.4.1:
     bob
 cargo-binstall v0.23.1:
     cargo-binstall
@@ -492,19 +492,19 @@ cargo-update v13.0.4:
     cargo-install-update-config
 cargo-watch v8.4.0:
     cargo-watch
-clap v4.3.2:
+clap v4.3.8:
     stdio-fixture
 coreutils v0.0.19:
     coreutils
-czkawka_cli v5.1.0:
+czkawka_cli v6.0.0:
     czkawka_cli
 evcxr_jupyter v0.14.2:
     evcxr_jupyter
 exa v0.10.1:
     exa
-gitui v0.22.1:
+gitui v0.23.0:
     gitui
-halp v0.1.6:
+halp v0.1.7:
     halp
     halp-completions
     halp-mangen
@@ -519,7 +519,7 @@ mdbook v0.4.30:
     mdbook
 mprocs v0.6.4:
     mprocs
-nu v0.80.0:
+nu v0.81.0:
     nu
 porsmo v0.2.0:
     porsmo
@@ -529,13 +529,13 @@ sd v0.7.6:
     sd
 speedtest-rs v0.1.4:
     speedtest-rs
-stylua v0.17.1:
+stylua v0.18.0:
     stylua
 wiki-tui v0.7.0:
     wiki-tui
 xh v0.18.0:
     xh
-zellij v0.36.0:
+zellij v0.37.2:
     zellij
 ```
 
@@ -569,23 +569,14 @@ package pandoc-eqnos 2.5.0, installed using Python 3.9.6
  - pandoc-eqnos
 package pandoc-include 1.2.0, installed using Python 3.10.1
  - pandoc-include
-package pipenv 2023.6.2, installed using Python 3.10.0
+package pipenv 2023.6.18, installed using Python 3.10.0
  - pipenv
  - pipenv-resolver
-package pypistats 1.3.0, installed using Python 3.11.3
- - pypistats
 package pywal 3.3.0, installed using Python 3.9.7
  - wal
-package rich-cli 1.8.0, installed using Python 3.11.3
- - rich
-package rich-codex 1.2.6, installed using Python 3.11.3
- - rich-codex
 package speedtest-cli 2.1.3, installed using Python 3.10.0
  - speedtest
  - speedtest-cli
-package thefuck 3.32, installed using Python 3.11.3
- - fuck
- - thefuck
 package trash-cli 0.23.2.13.2, installed using Python 3.9.6
  - trash
  - trash-empty
@@ -603,17 +594,17 @@ package whoogle-search 0.8.2, installed using Python 3.9.5
 
 ```txt
 ascii-image-converter: github.com/TheZoraiz/ascii-image-converter@v1.13.1
-                   d2: oss.terrastruct.com/d2@v0.4.2
+                   d2: oss.terrastruct.com/d2@v0.5.1
               despell: github.com/bensadeh/despell@v0.0.0-20230531131653-1c623b613b06
                  draw: github.com/maaslalani/draw@v0.1.1
                fast-p: github.com/bellecp/fast-p@v0.2.5
-        golangci-lint: github.com/golangci/golangci-lint/cmd/golangci-lint@v1.53.2
+        golangci-lint: github.com/golangci/golangci-lint/cmd/golangci-lint@v1.53.3
          gomodifytags: github.com/fatih/gomodifytags@v1.16.0
                   gum: github.com/charmbracelet/gum@v0.10.0
                   gup: github.com/nao1215/gup@v0.22.0
                   jqp: github.com/noahgorstein/jqp@v0.4.0
               lazygit: github.com/jesseduffield/lazygit@v0.38.2
-                   lf: github.com/gokcehan/lf@v0.0.0-20230604160429-027538eabf8a
+                   lf: github.com/gokcehan/lf@v0.0.0-20230610085002-e885abe1a3f6
        mandelbrot-cli: github.com/MicheleFiladelfia/mandelbrot-cli@v0.0.0-20230416100519-74781703a9e2
                   nap: github.com/maaslalani/nap@v0.1.1
                   pup: @unknown
