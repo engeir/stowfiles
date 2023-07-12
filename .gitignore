@@ -4,5 +4,6 @@ packer_compiled.lua
 newsboat/.newsboat/cache.db
 tmux/.tmux/plugins/
 .zsh_history
+.zsh_sessions
 .zcompdump
 nushell/**/history.txt

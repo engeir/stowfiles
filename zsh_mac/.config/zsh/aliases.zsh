@@ -12,6 +12,7 @@ alias ls="exa --icons -Fa --group-directories-first"
 alias n.="nvim ."
 alias nnn="nnn -derH"
 alias nv="nvim"
+alias nvl="NVIM_APPNAME=LazyNvim nvim"
 alias rm="trash-put"
 alias yt="ytfzf -t"
 
