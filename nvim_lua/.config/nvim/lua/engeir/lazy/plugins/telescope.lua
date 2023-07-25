@@ -43,6 +43,7 @@ return {
             end
 
             local actions = require("telescope.actions")
+            local trouble = require("trouble.providers.telescope")
             require("telescope").setup({
                 defaults = {
                     generic_sorter = require("mini.fuzzy").get_telescope_sorter,
@@ -50,7 +51,9 @@ return {
                     mappings = {
                         i = {
                             ["<esc>"] = actions.close,
+                            ["<c-t>"] = trouble.open_with_trouble,
                         },
+                        n = { ["<c-t>"] = trouble.open_with_trouble },
                     },
                     buffer_previewer_maker = new_maker,
                     path_display = { shorten = 4 },
@@ -62,7 +65,7 @@ return {
                         "--line-number",
                         "--column",
                         "--hidden",
-                        -- "--smart-case",
+                        "--smart-case",
                         "--trim",
                     },
                 },
