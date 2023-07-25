@@ -5,4 +5,5 @@ newsboat/.newsboat/cache.db
 tmux/.tmux/plugins/
 .zsh_history
 .zcompdump
-nushell/**/history.txt
+nushell/**/history*
+.luarc.json
