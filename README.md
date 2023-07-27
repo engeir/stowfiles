@@ -15,6 +15,17 @@ The by far most updated directory/config is the NeoVim config. Have a closer loo
 [here](./nvim_lua/.config/nvim/) and on
 [Dotfyle](https://dotfyle.com/engeir/stowfiles-nvimlua-config-nvim/readme).
 
+NeoVim might be better installed and run by using the `NVIM_APPNAME` variable:
+
+```bash
+# Download
+git clone git@github.com:engeir/stowfiles ~/.config/engeir/stowfiles
+# Install plugins
+NVIM_APPNAME=engeir/stowfiles/nvim_lua/.config/nvim nvim --headless +Lazy! sync +qa
+# Run
+NVIM_APPNAME=engeir/stowfiles/nvim_lua/.config/nvim nvim
+```
+
 ## Install
 
 > Uses on [GNU Stow](http://www.gnu.org/software/stow/).
