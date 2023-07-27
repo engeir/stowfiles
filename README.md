@@ -12,11 +12,14 @@
 ## NeoVim
 
 The by far most updated directory/config is the NeoVim config. Have a closer look at it
-[here](./nvim_lua/.config/nvim/).
+[here](./nvim_lua/.config/nvim/) and on
+[Dotfyle](https://dotfyle.com/engeir/stowfiles-nvimlua-config-nvim/readme).
 
 ## Install
 
-Install any one directory/file:
+> Uses on [GNU Stow](http://www.gnu.org/software/stow/).
+
+Install any one directory/file: (see `stow --help`)
 
 ```bash
 stow zsh
@@ -44,5 +47,5 @@ A list of packages and binaries installed on my Mac machine is found in
 
 Fix NeoVim LSP. Setting a custom configuration does not work when calling lsp-zero's
 init after (as is the suggested way according to lsp-zer). I'm doing something wrong,
-figure out what and preferably get rid of lsp-zero and get a better grasp of the
-minimal necessary plugins to be able to use LSP's efficiently.
+figure out what and preferably get rid of lsp-zero and get a better grasp of the minimal
+necessary plugins to be able to use LSP's efficiently.

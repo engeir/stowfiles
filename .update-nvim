@@ -2,18 +2,21 @@
 
 # If the coreutils rust command is installed, use its version of sort (for better cross
 # platform compatibility), otherwise use the standard sort command
-if command -v coreutils > /dev/null 2>&1
-then
+if command -v coreutils >/dev/null 2>&1; then
     SORT="coreutils sort"
 else
     SORT="sort"
 fi
 
-PLUGINS="$(nvim --headless -c ':lua LAZY_PLUGINS()' -c 'q' 2>&1 | $SORT -f | tr -d $'\r' | sed 's/^\[/- \[/')"
+PLUGINS="$(nvim --headless -c ':lua LAZY_PLUGINS()' -c 'q' 2>&1 | eval "$SORT" -f | tr -d $'\r' | sed 's/^\[/- \[/')"
 VERSION="$(nvim -v | sed 1q)"
 COMMIT=${VERSION#*+g}
 
 echo "# NeoVim Config
+
+<a href=\"https://dotfyle.com/engeir/stowfiles-nvimlua-config-nvim\"><img src=\"https://dotfyle.com/engeir/stowfiles-nvimlua-config-nvim/badges/plugins?style=for-the-badge\" /></a>
+<a href=\"https://dotfyle.com/engeir/stowfiles-nvimlua-config-nvim\"><img src=\"https://dotfyle.com/engeir/stowfiles-nvimlua-config-nvim/badges/leaderkey?style=for-the-badge\" /></a>
+<a href=\"https://dotfyle.com/engeir/stowfiles-nvimlua-config-nvim\"><img src=\"https://dotfyle.com/engeir/stowfiles-nvimlua-config-nvim/badges/plugin-manager?style=for-the-badge\" /></a>
 
 This is @engeir's NeoVim config, on $VERSION (view at [latest
 commit](https://github.com/neovim/neovim/tree/$COMMIT)) installed with the [bob version

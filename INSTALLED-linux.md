@@ -21,7 +21,7 @@ alsa-base 1.0.25+dfsg-0ubuntu7 [Ubuntu/jammy main]
 alsa-topology-conf 1.2.5.1-2 [Ubuntu/jammy main]
 alsa-ucm-conf 1.2.6.3-1ubuntu1.7 [Ubuntu/jammy main]
 alsa-utils 1.2.6-1ubuntu1 [Ubuntu/jammy main]
-amd64-microcode 3.20191218.1ubuntu2 [Ubuntu/jammy main]
+amd64-microcode 3.20191218.1ubuntu2.1 [Ubuntu/jammy main]
 anacron 2.3-31ubuntu2 [Ubuntu/jammy main]
 android-libadb 1:10.0.0+r36-9 [Ubuntu/jammy universe]
 android-libbase 1:10.0.0+r36-9 [Ubuntu/jammy universe]
@@ -30,6 +30,7 @@ android-libcrypto-utils 1:10.0.0+r36-9 [Ubuntu/jammy universe]
 android-libcutils 1:10.0.0+r36-9 [Ubuntu/jammy universe]
 android-liblog 1:10.0.0+r36-9 [Ubuntu/jammy universe]
 android-sdk-platform-tools-common 28.0.2+6 [Ubuntu/jammy universe]
+ansilove 4.1.5-2 [Ubuntu/jammy universe]
 anthy 1:0.4-2 [Ubuntu/jammy universe]
 anthy-common 1:0.4-2 [Ubuntu/jammy universe]
 antiword 0.37-16 [Ubuntu/jammy universe]
@@ -712,7 +713,7 @@ gnuplot 5.4.2+dfsg2-2 [Ubuntu/jammy universe]
 gnuplot-data 5.4.2+dfsg2-2 [Ubuntu/jammy universe]
 gnuplot-qt 5.4.2+dfsg2-2 [Ubuntu/jammy universe]
 golly 3.3-1build1 [Ubuntu/jammy universe]
-google-chrome-stable 115.0.5790.102-1 [Google/stable main]
+google-chrome-stable 115.0.5790.110-1 [Google/stable main]
 gperf 3.1-1build1 [Ubuntu/jammy universe]
 gpg 2.2.27-3ubuntu2.1 [Ubuntu/jammy main]
 gpg-agent 2.2.27-3ubuntu2.1 [Ubuntu/jammy main]
@@ -908,7 +909,7 @@ latexdiff 1.3.1-1 [Ubuntu/jammy universe]
 latexmk 1:4.76-1 [Ubuntu/jammy universe]
 lcalc 2.0.5-1 [Ubuntu/jammy universe]
 lcdf-typetools 2.108-2 [Ubuntu/jammy universe]
-ldap-utils 2.5.14+dfsg-0ubuntu0.22.04.2 [Ubuntu/jammy main]
+ldap-utils 2.5.14+dfsg-0ubuntu0.22.04.2 [local]
 lemonbar 1.4-1 [Ubuntu/jammy universe]
 less 590-1ubuntu0.22.04.1 [Ubuntu/jammy main]
 lfm 3.1-2 [Ubuntu/jammy universe]
@@ -937,6 +938,7 @@ libalgorithm-merge-perl 0.08-3 [Ubuntu/jammy main]
 libaliased-perl 0.34-1.1 [Ubuntu/jammy main]
 libamd2 1:5.10.1+dfsg-4build1 [Ubuntu/jammy universe]
 libann0 1.1.2+doc-7build1 [Ubuntu/jammy universe]
+libansilove1 1.2.8-1 [Ubuntu/jammy universe]
 libanthy1 1:0.4-2 [Ubuntu/jammy universe]
 libanthyinput0 1:0.4-2 [Ubuntu/jammy universe]
 libanyevent-i3-perl 0.17-1 [Ubuntu/jammy universe]
@@ -2080,9 +2082,9 @@ liblcms2-utils 2.12~rc1-2build2 [Ubuntu/jammy main]
 libldacbt-enc2 2.0.2.3+git20200429+ed310a0-4 [Ubuntu/jammy universe]
 libldap-2.4-2 2.4.57+dfsg-2ubuntu1 [local]
 libldap-2.4-2:i386 2.4.57+dfsg-2ubuntu1 [local]
-libldap-2.5-0 2.5.14+dfsg-0ubuntu0.22.04.2 [Ubuntu/jammy main]
-libldap-2.5-0:i386 2.5.14+dfsg-0ubuntu0.22.04.2 [Ubuntu/jammy main]
-libldap-common 2.5.14+dfsg-0ubuntu0.22.04.2 [Ubuntu/jammy main]
+libldap-2.5-0 2.5.14+dfsg-0ubuntu0.22.04.2 [local]
+libldap-2.5-0:i386 2.5.14+dfsg-0ubuntu0.22.04.2 [local]
+libldap-common 2.5.14+dfsg-0ubuntu0.22.04.2 [local]
 libldb2 2:2.4.4-0ubuntu0.22.04.2 [Ubuntu/jammy main]
 libldl2 1:5.10.1+dfsg-4build1 [Ubuntu/jammy universe]
 liblensfun-data-v1 0.3.2-6 [Ubuntu/jammy universe]
@@ -2393,7 +2395,7 @@ libmujs1 1.1.3-3 [Ubuntu/jammy universe]
 libmutter-10-0 42.9-0ubuntu1 [Ubuntu/jammy main]
 libmwaw-0.3-3 0.3.21-1build1 [Ubuntu/jammy main]
 libmysofa1 1.2.1~dfsg0-1 [Ubuntu/jammy universe]
-libmysqlclient21 8.0.33-0ubuntu0.22.04.2 [Ubuntu/jammy main]
+libmysqlclient21 8.0.33-0ubuntu0.22.04.4 [Ubuntu/jammy main]
 libmythes-1.2-0 2:1.2.4-4build1 [Ubuntu/jammy main]
 libnaga-java 3.0+svn80-4 [Ubuntu/jammy universe]
 libnamespace-autoclean-perl 0.29-1 [Ubuntu/jammy main]
@@ -3590,12 +3592,12 @@ mupdf 1.19.0+ds1-2 [Ubuntu/jammy universe]
 mupdf-tools 1.19.0+ds1-2 [Ubuntu/jammy universe]
 mutter 42.9-0ubuntu1 [Ubuntu/jammy universe]
 mutter-common 42.9-0ubuntu1 [Ubuntu/jammy main]
-mysql-client-8.0 8.0.33-0ubuntu0.22.04.2 [Ubuntu/jammy main]
-mysql-client-core-8.0 8.0.33-0ubuntu0.22.04.2 [Ubuntu/jammy main]
+mysql-client-8.0 8.0.33-0ubuntu0.22.04.4 [Ubuntu/jammy main]
+mysql-client-core-8.0 8.0.33-0ubuntu0.22.04.4 [Ubuntu/jammy main]
 mysql-common 5.8+1.0.8 [Ubuntu/jammy main]
-mysql-server 8.0.33-0ubuntu0.22.04.2 [Ubuntu/jammy main]
-mysql-server-8.0 8.0.33-0ubuntu0.22.04.2 [Ubuntu/jammy main]
-mysql-server-core-8.0 8.0.33-0ubuntu0.22.04.2 [Ubuntu/jammy main]
+mysql-server 8.0.33-0ubuntu0.22.04.4 [Ubuntu/jammy main]
+mysql-server-8.0 8.0.33-0ubuntu0.22.04.4 [Ubuntu/jammy main]
+mysql-server-core-8.0 8.0.33-0ubuntu0.22.04.4 [Ubuntu/jammy main]
 mythes-en-us 1:7.2.0-2 [Ubuntu/jammy main]
 nala 0.13.0 [local]
 nano 6.2-1 [Ubuntu/jammy main]
@@ -4233,6 +4235,7 @@ ruby3.0-dev 3.0.2-7ubuntu2.4 [Ubuntu/jammy main]
 ruby3.0-doc 3.0.2-7ubuntu2.4 [Ubuntu/jammy main]
 rubygems-integration 1.18 [Ubuntu/jammy main]
 run-one 1.17-0ubuntu1 [Ubuntu/jammy main]
+rustdesk 1.2.1 [local]
 rxvt-unicode 9.30-2build1 [Ubuntu/jammy universe]
 rygel 0.40.3-1ubuntu2 [Ubuntu/jammy main]
 sagemath 9.5-4 [Ubuntu/jammy universe]
@@ -4650,10 +4653,10 @@ xutils-dev 1:7.7+6ubuntu1 [Ubuntu/jammy universe]
 xwayland 2:22.1.1-1ubuntu0.6 [Ubuntu/jammy main]
 xxd 2:8.2.3995-1ubuntu2.9 [Ubuntu/jammy main]
 xz-utils 5.2.5-2ubuntu1 [Ubuntu/jammy main]
-yaru-theme-gnome-shell 22.04.4 [Ubuntu/jammy main]
-yaru-theme-gtk 22.04.4 [Ubuntu/jammy main]
-yaru-theme-icon 22.04.4 [Ubuntu/jammy main]
-yaru-theme-sound 22.04.4 [Ubuntu/jammy main]
+yaru-theme-gnome-shell 22.04.5 [Ubuntu/jammy main]
+yaru-theme-gtk 22.04.5 [Ubuntu/jammy main]
+yaru-theme-icon 22.04.5 [Ubuntu/jammy main]
+yaru-theme-sound 22.04.5 [Ubuntu/jammy main]
 yasm 1.3.0-2.1 [Ubuntu/jammy universe]
 yelp 42.1-1 [Ubuntu/jammy main]
 yelp-xsl 42.0-1 [Ubuntu/jammy main]
@@ -4684,7 +4687,7 @@ name: batsignal version: 1.6.4
 name: bitwarden version: 2023.7.0
 name: brave-browser version: 1.52.130
 name: brave-keyring version: 1.13
-name: google-chrome-stable version: 115.0.5790.102-1
+name: google-chrome-stable version: 115.0.5790.110-1
 name: htop version: 3.2.2
 name: nala version: 0.13.0
 name: neofetch version: 7.1.0
@@ -4694,6 +4697,7 @@ name: quarto version: 1.3.433
 name: rstudio version: 2022.12.0+353
 name: shfmt version: 3.7.0
 name: signal-desktop version: 6.26.0
+name: wezterm version: 20230712-072601-f4abf8fd
 name: zoom version: 5.15.3.4839
 ```
 
@@ -4769,7 +4773,7 @@ menyoki v1.7.0:
     menyoki
 mprocs v0.6.4:
     mprocs
-nu v0.82.0:
+nu v0.83.0:
     nu
 pastel v0.9.0:
     pastel
@@ -4780,7 +4784,7 @@ pueue v3.2.0:
     pueued
 ripgrep v13.0.0:
     rg
-rtx-cli v1.34.1:
+rtx-cli v1.35.0:
     rtx
 sccache v0.5.4:
     sccache
@@ -4953,6 +4957,8 @@ package term-image 0.7.0, installed using Python 3.10.4
  - term-img
 package tex2svg 0.0.2, installed using Python 3.10.4
  - tex2svg
+package textual-paint 0.1.0, installed using Python 3.10.4
+ - textual-paint
 package thefuck 3.32, installed using Python 3.10.4
  - fuck
  - thefuck
@@ -4982,7 +4988,7 @@ ascii-image-converter: github.com/TheZoraiz/ascii-image-converter@v1.13.1
                   gum: github.com/charmbracelet/gum@v0.11.0
                   gup: github.com/nao1215/gup@v0.22.0
               lazygit: github.com/jesseduffield/lazygit@v0.39.4
-                   lf: github.com/gokcehan/lf@v0.0.0-20230724120017-95b3613a682a
+                   lf: github.com/gokcehan/lf@v0.0.0-20230727000951-2620f492c27a
                   nap: github.com/maaslalani/nap@v0.1.1
                 rmapi: github.com/juruen/rmapi@(devel)
                     s: github.com/zquestz/s@v0.6.8
@@ -5019,7 +5025,7 @@ Yaru-dark Gtk Theme                                                             
 Name                       Version                     Rev    Tracking         Publisher      Notes
 bare                       1.0                         5      latest/stable    canonical**    base
 canonical-livepatch        10.6.0                      235    latest/stable    canonical**    -
-cmake                      3.27.0                      1316   latest/stable    crascit**      classic
+cmake                      3.27.1                      1324   latest/stable    crascit**      classic
 core                       16-2.59.5                   15511  latest/stable    canonical**    core
 core18                     20230530                    2785   latest/stable    canonical**    base
 core20                     20230622                    1974   latest/stable    canonical**    base
@@ -5028,7 +5034,7 @@ dmd                        2.090.1                     102    latest/stable    d
 dotnet-sdk                 5.0.408                     167    5.0/stable       dotnetcore**   classic
 dub                        1.19.0                      53     latest/stable    dlang          classic
 duf-utility                v0.6.0                      1      latest/stable    muesli         -
-firefox                    114.0.2-1                   2800   latest/stable/…  mozilla**      -
+firefox                    115.0.2-1                   2908   latest/stable/…  mozilla**      -
 gimp                       2.10.30                     393    latest/stable    snapcrafters*  -
 gnome-3-28-1804            3.28.0-19-g98f9e67.98f9e67  198    latest/stable    canonical**    -
 gnome-3-34-1804            0+git.3556cb3               93     latest/stable/…  canonical**    -
