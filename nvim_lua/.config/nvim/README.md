@@ -1,7 +1,11 @@
-# NeoVim Config
+# Neovim Config
 
-This is @engeir's NeoVim config, on NVIM v0.10.0-dev-596+g7d0a23973 (view at [latest
-commit](https://github.com/neovim/neovim/tree/7d0a23973)) installed with the [bob version
+<a href="https://dotfyle.com/engeir/stowfiles-nvimlua-config-nvim"><img src="https://dotfyle.com/engeir/stowfiles-nvimlua-config-nvim/badges/plugins?style=for-the-badge" /></a>
+<a href="https://dotfyle.com/engeir/stowfiles-nvimlua-config-nvim"><img src="https://dotfyle.com/engeir/stowfiles-nvimlua-config-nvim/badges/leaderkey?style=for-the-badge" /></a>
+<a href="https://dotfyle.com/engeir/stowfiles-nvimlua-config-nvim"><img src="https://dotfyle.com/engeir/stowfiles-nvimlua-config-nvim/badges/plugin-manager?style=for-the-badge" /></a>
+
+This is @engeir's Neovim config, on NVIM v0.10.0-dev-722+g7668f89d5 (view at [latest
+commit](https://github.com/neovim/neovim/tree/7668f89d5)) installed with the [bob version
 manager for neovim](https://github.com/MordechaiHadad/bob). I am currently using the
 [lazy plugin manager](https://github.com/folke/lazy.nvim). Below is a complete list of
 all plugins I'm using:

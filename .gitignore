@@ -6,4 +6,5 @@ tmux/.tmux/plugins/
 .zsh_history
 .zsh_sessions
 .zcompdump
-nushell/**/history.txt
+nushell/**/history*
+.luarc.json
