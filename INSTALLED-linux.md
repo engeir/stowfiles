@@ -261,6 +261,7 @@ dvisvgm 2.13.1-1 [Ubuntu/jammy universe]
 dvtm 0.15+40.g311a8c0-1build1 [Ubuntu/jammy universe]
 dwz 0.14-1build2 [Ubuntu/jammy main]
 e2fsprogs 1.46.5-2ubuntu1.1 [Ubuntu/jammy main]
+earlyoom 1.6.2-1 [Ubuntu/jammy universe]
 ecl 21.2.1+ds-4 [Ubuntu/jammy universe]
 eclib-tools 20210625-1build1 [Ubuntu/jammy universe]
 ed 1.18-1 [Ubuntu/jammy main]
@@ -661,9 +662,9 @@ gnome-calculator 1:41.1-2ubuntu2 [Ubuntu/jammy main]
 gnome-calendar 41.2-3 [Ubuntu/jammy main]
 gnome-characters 41.0-4 [Ubuntu/jammy main]
 gnome-common 3.18.0-4 [Ubuntu/jammy universe]
-gnome-control-center 1:41.7-0ubuntu0.22.04.6 [Ubuntu/jammy main]
-gnome-control-center-data 1:41.7-0ubuntu0.22.04.6 [Ubuntu/jammy main]
-gnome-control-center-faces 1:41.7-0ubuntu0.22.04.6 [Ubuntu/jammy main]
+gnome-control-center 1:41.7-0ubuntu0.22.04.7 [Ubuntu/jammy main]
+gnome-control-center-data 1:41.7-0ubuntu0.22.04.7 [Ubuntu/jammy main]
+gnome-control-center-faces 1:41.7-0ubuntu0.22.04.7 [Ubuntu/jammy main]
 gnome-desktop3-data 42.9-0ubuntu1 [Ubuntu/jammy main]
 gnome-disk-utility 42.0-1ubuntu1 [Ubuntu/jammy main]
 gnome-font-viewer 41.0-2 [Ubuntu/jammy main]
@@ -909,7 +910,7 @@ latexdiff 1.3.1-1 [Ubuntu/jammy universe]
 latexmk 1:4.76-1 [Ubuntu/jammy universe]
 lcalc 2.0.5-1 [Ubuntu/jammy universe]
 lcdf-typetools 2.108-2 [Ubuntu/jammy universe]
-ldap-utils 2.5.14+dfsg-0ubuntu0.22.04.2 [local]
+ldap-utils 2.5.15+dfsg-0ubuntu0.22.04.1 [Ubuntu/jammy main]
 lemonbar 1.4-1 [Ubuntu/jammy universe]
 less 590-1ubuntu0.22.04.1 [Ubuntu/jammy main]
 lfm 3.1-2 [Ubuntu/jammy universe]
@@ -1161,14 +1162,14 @@ libchm1 2:0.40a-7 [Ubuntu/jammy universe]
 libcholmod3 1:5.10.1+dfsg-4build1 [Ubuntu/jammy universe]
 libchromaprint1 1.5.1-2 [Ubuntu/jammy universe]
 libcinnamon-desktop4 5.2.1-1 [Ubuntu/jammy universe]
-libclang-14-dev 1:14.0.0-1ubuntu1 [Ubuntu/jammy universe]
-libclang-common-14-dev 1:14.0.0-1ubuntu1 [Ubuntu/jammy universe]
+libclang-14-dev 1:14.0.0-1ubuntu1.1 [Ubuntu/jammy universe]
+libclang-common-14-dev 1:14.0.0-1ubuntu1.1 [Ubuntu/jammy universe]
 libclang-cpp11 1:11.1.0-6 [Ubuntu/jammy universe]
 libclang-cpp12 1:12.0.1-19ubuntu3 [Ubuntu/jammy universe]
-libclang-cpp13 1:13.0.1-2ubuntu2.1 [Ubuntu/jammy main]
-libclang-cpp14 1:14.0.0-1ubuntu1 [Ubuntu/jammy universe]
+libclang-cpp13 1:13.0.1-2ubuntu2.2 [Ubuntu/jammy main]
+libclang-cpp14 1:14.0.0-1ubuntu1.1 [Ubuntu/jammy universe]
 libclang-dev 1:14.0-55~exp2 [Ubuntu/jammy universe]
-libclang1-14 1:14.0.0-1ubuntu1 [Ubuntu/jammy universe]
+libclang1-14 1:14.0.0-1ubuntu1.1 [Ubuntu/jammy universe]
 libclass-accessor-perl 0.51-1 [Ubuntu/jammy universe]
 libclass-c3-perl 0.35-1 [Ubuntu/jammy universe]
 libclass-c3-xs-perl 0.15-1build2 [Ubuntu/jammy universe]
@@ -2082,9 +2083,9 @@ liblcms2-utils 2.12~rc1-2build2 [Ubuntu/jammy main]
 libldacbt-enc2 2.0.2.3+git20200429+ed310a0-4 [Ubuntu/jammy universe]
 libldap-2.4-2 2.4.57+dfsg-2ubuntu1 [local]
 libldap-2.4-2:i386 2.4.57+dfsg-2ubuntu1 [local]
-libldap-2.5-0 2.5.14+dfsg-0ubuntu0.22.04.2 [local]
-libldap-2.5-0:i386 2.5.14+dfsg-0ubuntu0.22.04.2 [local]
-libldap-common 2.5.14+dfsg-0ubuntu0.22.04.2 [local]
+libldap-2.5-0 2.5.15+dfsg-0ubuntu0.22.04.1 [Ubuntu/jammy main]
+libldap-2.5-0:i386 2.5.15+dfsg-0ubuntu0.22.04.1 [Ubuntu/jammy main]
+libldap-common 2.5.15+dfsg-0ubuntu0.22.04.1 [Ubuntu/jammy main]
 libldb2 2:2.4.4-0ubuntu0.22.04.2 [Ubuntu/jammy main]
 libldl2 1:5.10.1+dfsg-4build1 [Ubuntu/jammy universe]
 liblensfun-data-v1 0.3.2-6 [Ubuntu/jammy universe]
@@ -2108,10 +2109,10 @@ liblist-someutils-xs-perl 0.58-2build3 [Ubuntu/jammy main]
 liblist-utilsby-perl 0.11-1 [Ubuntu/jammy main]
 libllvm11 1:11.1.0-6 [Ubuntu/jammy universe]
 libllvm12 1:12.0.1-19ubuntu3 [Ubuntu/jammy universe]
-libllvm13 1:13.0.1-2ubuntu2.1 [Ubuntu/jammy main]
-libllvm14 1:14.0.0-1ubuntu1 [Ubuntu/jammy main]
-libllvm15 1:15.0.7-0ubuntu0.22.04.2 [Ubuntu/jammy main]
-libllvm15:i386 1:15.0.7-0ubuntu0.22.04.2 [Ubuntu/jammy main]
+libllvm13 1:13.0.1-2ubuntu2.2 [Ubuntu/jammy main]
+libllvm14 1:14.0.0-1ubuntu1.1 [Ubuntu/jammy main]
+libllvm15 1:15.0.7-0ubuntu0.22.04.3 [Ubuntu/jammy main]
+libllvm15:i386 1:15.0.7-0ubuntu0.22.04.3 [Ubuntu/jammy main]
 libllvmspirvlib12 12.0.0-3 [Ubuntu/jammy universe]
 liblmdb0 0.9.24-1build2 [Ubuntu/jammy main]
 liblocale-gettext-perl 1.07-4build3 [Ubuntu/jammy main]
@@ -2604,7 +2605,7 @@ libpcre3-dev 2:8.39-13ubuntu0.22.04.1 [Ubuntu/jammy main]
 libpcre32-3 2:8.39-13ubuntu0.22.04.1 [Ubuntu/jammy main]
 libpcre3:i386 2:8.39-13ubuntu0.22.04.1 [Ubuntu/jammy main]
 libpcrecpp0v5 2:8.39-13ubuntu0.22.04.1 [Ubuntu/jammy main]
-libpcsclite1 1.9.5-3 [Ubuntu/jammy main]
+libpcsclite1 1.9.5-3ubuntu1 [Ubuntu/jammy main]
 libpdfbox-java 1:1.8.16-2 [Ubuntu/jammy universe]
 libpeas-1.0-0 1.32.0-1 [Ubuntu/jammy main]
 libpeas-common 1.32.0-1 [Ubuntu/jammy main]
@@ -2993,6 +2994,7 @@ libsynctex2 2021.20210626.59705-1ubuntu0.1 [Ubuntu/jammy main]
 libsyntax-keyword-try-perl 0.26-1build1 [Ubuntu/jammy main]
 libsys-hostname-long-perl 1.5-2 [Ubuntu/jammy main]
 libsysmetrics1 1.7.1 [Ubuntu/jammy main]
+libsystemd-dev 249.11-0ubuntu3.9 [Ubuntu/jammy main]
 libsystemd0 249.11-0ubuntu3.9 [Ubuntu/jammy main]
 libsystemd0:i386 249.11-0ubuntu3.9 [Ubuntu/jammy main]
 libsz2 1.0.6-1 [Ubuntu/jammy universe]
@@ -3495,16 +3497,16 @@ llvm-11-dev 1:11.1.0-6 [Ubuntu/jammy universe]
 llvm-11-linker-tools 1:11.1.0-6 [Ubuntu/jammy universe]
 llvm-11-runtime 1:11.1.0-6 [Ubuntu/jammy universe]
 llvm-11-tools 1:11.1.0-6 [Ubuntu/jammy universe]
-llvm-13 1:13.0.1-2ubuntu2.1 [Ubuntu/jammy main]
-llvm-13-dev 1:13.0.1-2ubuntu2.1 [Ubuntu/jammy main]
-llvm-13-linker-tools 1:13.0.1-2ubuntu2.1 [Ubuntu/jammy main]
-llvm-13-runtime 1:13.0.1-2ubuntu2.1 [Ubuntu/jammy main]
-llvm-13-tools 1:13.0.1-2ubuntu2.1 [Ubuntu/jammy main]
-llvm-14 1:14.0.0-1ubuntu1 [Ubuntu/jammy universe]
-llvm-14-dev 1:14.0.0-1ubuntu1 [Ubuntu/jammy universe]
-llvm-14-linker-tools 1:14.0.0-1ubuntu1 [Ubuntu/jammy universe]
-llvm-14-runtime 1:14.0.0-1ubuntu1 [Ubuntu/jammy universe]
-llvm-14-tools 1:14.0.0-1ubuntu1 [Ubuntu/jammy universe]
+llvm-13 1:13.0.1-2ubuntu2.2 [Ubuntu/jammy main]
+llvm-13-dev 1:13.0.1-2ubuntu2.2 [Ubuntu/jammy main]
+llvm-13-linker-tools 1:13.0.1-2ubuntu2.2 [Ubuntu/jammy main]
+llvm-13-runtime 1:13.0.1-2ubuntu2.2 [Ubuntu/jammy main]
+llvm-13-tools 1:13.0.1-2ubuntu2.2 [Ubuntu/jammy main]
+llvm-14 1:14.0.0-1ubuntu1.1 [Ubuntu/jammy universe]
+llvm-14-dev 1:14.0.0-1ubuntu1.1 [Ubuntu/jammy universe]
+llvm-14-linker-tools 1:14.0.0-1ubuntu1.1 [Ubuntu/jammy universe]
+llvm-14-runtime 1:14.0.0-1ubuntu1.1 [Ubuntu/jammy universe]
+llvm-14-tools 1:14.0.0-1ubuntu1.1 [Ubuntu/jammy universe]
 llvm-runtime 1:14.0-55~exp2 [Ubuntu/jammy universe]
 lm-sensors 1:3.6.0-7ubuntu1 [Ubuntu/jammy universe]
 lmodern 2.004.5-6.1 [Ubuntu/jammy universe]
@@ -4763,7 +4765,7 @@ lscolors v0.15.0:
     lscolors
 mdbook v0.4.32:
     mdbook
-mdbook-admonish v1.10.0:
+mdbook-admonish v1.10.1:
     mdbook-admonish
 mdbook-svgbob v0.2.1:
     mdbook-svgbob
@@ -4773,7 +4775,7 @@ menyoki v1.7.0:
     menyoki
 mprocs v0.6.4:
     mprocs
-nu v0.83.0:
+nu v0.83.1:
     nu
 pastel v0.9.0:
     pastel
@@ -4784,7 +4786,7 @@ pueue v3.2.0:
     pueued
 ripgrep v13.0.0:
     rg
-rtx-cli v1.35.0:
+rtx-cli v1.35.7:
     rtx
 sccache v0.5.4:
     sccache
@@ -4856,12 +4858,14 @@ package euporie 2.4.3, installed using Python 3.10.4
  - euporie-hub
  - euporie-notebook
  - euporie-preview
-package flake8 6.0.0, installed using Python 3.10.4
+package flake8 6.1.0, installed using Python 3.10.4
  - flake8
 package fprettify 0.3.7, installed using Python 3.10.4
  - fprettify
 package globus-cli 3.16.0, installed using Python 3.10.4
  - globus
+package gorps 0.9.1, installed using Python 3.10.4
+ - gorps
 package howdoi 2.0.20, installed using Python 3.10.4
  - howdoi
 package httpie 3.2.2, installed using Python 3.10.4
@@ -4879,7 +4883,7 @@ package jupyter-client 8.3.0, installed using Python 3.10.4
  - jupyter-kernel
  - jupyter-kernelspec
  - jupyter-run
-package jupytext 1.14.7, installed using Python 3.10.4
+package jupytext 1.15.0, installed using Python 3.10.4
  - jupytext
 package kb-manager 0.1.7, installed using Python 3.10.4
  - kb
@@ -4977,7 +4981,7 @@ package yapf 0.40.1, installed using Python 3.10.4
 
 ```txt
 ascii-image-converter: github.com/TheZoraiz/ascii-image-converter@v1.13.1
-                   d2: oss.terrastruct.com/d2@v0.5.1
+                   d2: oss.terrastruct.com/d2@v0.6.0
               despell: github.com/bensadeh/despell@v0.0.0-20230531131653-1c623b613b06
                 doggo: github.com/mr-karan/doggo/cmd/doggo@v0.5.6
                  draw: github.com/maaslalani/draw@v0.1.1
@@ -5002,7 +5006,7 @@ ascii-image-converter: github.com/TheZoraiz/ascii-image-converter@v1.13.1
 ```txt
 Name                                    Version                                 Branch
 ncspot                                  0.13.4                                  stable
-Freedesktop Platform                    21.08.19                                21.08
+Freedesktop Platform                    21.08.20.1                              21.08
 Freedesktop Platform                    22.08.12.1                              22.08
 Mesa                                    21.3.9                                  21.08
 Mesa                                    23.1.1                                  22.08
@@ -5052,7 +5056,7 @@ notable                    1.8.4-2                     3      latest/stable    s
 pdftk                      2.02-4                      9      latest/stable    smoser         -
 procs                      v0.13.0                     969    latest/stable    dalance        -
 remmina                    v1.4.31                     5782   latest/stable    remmina**      -
-shotcut                    23.06.14                    1136   latest/stable    meltytech**    classic
+shotcut                    23.07.29                    1178   latest/stable    meltytech**    classic
 snap-store                 41.3-71-g709398e            959    latest/stable/…  canonical**    -
 snapd                      2.59.5                      19457  latest/stable    canonical**    snapd
 snapd-desktop-integration  0.9                         83     latest/stable/…  canonical**    -
