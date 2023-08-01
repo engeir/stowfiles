@@ -89,6 +89,7 @@ require("luasnip.loaders.from_vscode").lazy_load({
 ls.add_snippets("all", {
     ls.parser.parse_snippet("expandme", "-- hello there"),
     ls.parser.parse_snipmate("weeknum", "`strftime('%U')`"),
+    ls.parser.parse_snipmate("today", "`strftime('%Y-%m-%d')`"),
 })
 
 -- Lua =================================================================================
