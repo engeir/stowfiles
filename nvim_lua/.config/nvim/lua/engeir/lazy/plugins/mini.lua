@@ -46,6 +46,9 @@ return {
 
         -- mini.files ------------------------------------------------------------------
         require("mini.files").setup()
+        vim.keymap.set("n", "<leader>pm", function()
+            MiniFiles.open(vim.api.nvim_buf_get_name(0))
+        end, { desc = "[P]ath explorer with [M]iniFiles" })
 
         -- mini.fuzzy ------------------------------------------------------------------
         -- Replaces one of the sorters:

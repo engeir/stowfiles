@@ -17,7 +17,16 @@ return {
             max_width = 150,
             max_height = 50,
             padding = 5,
-        }
+        },
+    },
+    keys = {
+        {
+            "<leader>po",
+            function()
+                require("oil").open()
+            end,
+            desc = "[P]ath explorer with [O]il",
+        },
     },
     -- Optional dependencies
     dependencies = { "nvim-tree/nvim-web-devicons" },
