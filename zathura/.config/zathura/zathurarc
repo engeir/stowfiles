@@ -10,6 +10,8 @@ set selection-clipboard clipboard
 map <C-a> feedkeys ":exec okular $FILE<Return>"
 # Send document to reMarkable
 map <C-s> feedkeys ":exec rmapi put $FILE<Return>"
+# Try getting a documents bibtex representation
+map <C-b> feedkeys ":exec getbib-linux-copy $FILE<Return>"
 
 # Backward search for tex editing
 set synctex true
