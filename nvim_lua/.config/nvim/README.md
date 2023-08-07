@@ -4,8 +4,8 @@
 <a href="https://dotfyle.com/engeir/stowfiles-nvimlua-config-nvim"><img src="https://dotfyle.com/engeir/stowfiles-nvimlua-config-nvim/badges/leaderkey?style=for-the-badge" /></a>
 <a href="https://dotfyle.com/engeir/stowfiles-nvimlua-config-nvim"><img src="https://dotfyle.com/engeir/stowfiles-nvimlua-config-nvim/badges/plugin-manager?style=for-the-badge" /></a>
 
-This is @engeir's Neovim config, on NVIM v0.10.0-dev-742+g12ccea596 (view at [latest
-commit](https://github.com/neovim/neovim/tree/12ccea596)) installed with the [bob version
+This is @engeir's Neovim config, on NVIM v0.10.0-dev-761+g3d3ec27d5 (view at [latest
+commit](https://github.com/neovim/neovim/tree/3d3ec27d5)) installed with the [bob version
 manager for neovim](https://github.com/MordechaiHadad/bob). I am currently using the
 [lazy plugin manager](https://github.com/folke/lazy.nvim). Below is a complete list of
 all plugins I'm using:
@@ -84,6 +84,7 @@ all plugins I'm using:
 - [telescope-ui-select.nvim](https://github.com/nvim-telescope/telescope-ui-select.nvim.git)
 - [telescope.nvim](https://github.com/nvim-telescope/telescope.nvim.git)
 - [text-case.nvim](https://github.com/johmsalas/text-case.nvim.git)
+- [texty-office.vim](https://gitlab.com/Syndamia/texty-office.vim)
 - [todo-comments.nvim](https://github.com/folke/todo-comments.nvim.git)
 - [transparent.nvim](https://github.com/xiyaowong/transparent.nvim.git)
 - [trouble.nvim](https://github.com/folke/trouble.nvim.git)

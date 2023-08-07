@@ -1,7 +1,6 @@
 return {
     "gaoDean/autolist.nvim",
     enabled = IS_KNOWN,
-    branch = "refac",
     ft = {
         "markdown",
         "text",
