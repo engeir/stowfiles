@@ -262,7 +262,7 @@ _arguments "${_arguments_options[@]}" \
 '--after=[Only include results after this date]:AFTER: ' \
 '--limit=[How many entries to return at most]:LIMIT: ' \
 '--offset=[Offset from the start of the results]:OFFSET: ' \
-'--filter-mode=[Allow overriding filter mode over config]:FILTER_MODE:(global host session directory)' \
+'--filter-mode=[Allow overriding filter mode over config]:FILTER_MODE:(global host session directory workspace)' \
 '--search-mode=[Allow overriding search mode over config]:SEARCH_MODE:(prefix full-text fuzzy skim)' \
 '-f+[Available variables: {command}, {directory}, {duration}, {user}, {host}, {time}, {exit} and {relativetime}. Example: --format "{time} - \[{duration}\] - {directory}$\\t{command}"]:FORMAT: ' \
 '--format=[Available variables: {command}, {directory}, {duration}, {user}, {host}, {time}, {exit} and {relativetime}. Example: --format "{time} - \[{duration}\] - {directory}$\\t{command}"]:FORMAT: ' \
@@ -407,6 +407,72 @@ _arguments "${_arguments_options[@]}" \
 && ret=0
 ;;
 (delete)
+_arguments "${_arguments_options[@]}" \
+&& ret=0
+;;
+(help)
+_arguments "${_arguments_options[@]}" \
+&& ret=0
+;;
+        esac
+    ;;
+esac
+;;
+        esac
+    ;;
+esac
+;;
+(kv)
+_arguments "${_arguments_options[@]}" \
+'-h[Print help]' \
+'--help[Print help]' \
+":: :_atuin__kv_commands" \
+"*::: :->kv" \
+&& ret=0
+
+    case $state in
+    (kv)
+        words=($line[1] "${words[@]}")
+        (( CURRENT += 1 ))
+        curcontext="${curcontext%:*:*}:atuin-kv-command-$line[1]:"
+        case $line[1] in
+            (set)
+_arguments "${_arguments_options[@]}" \
+'-k+[]:KEY: ' \
+'--key=[]:KEY: ' \
+'-n+[]:NAMESPACE: ' \
+'--namespace=[]:NAMESPACE: ' \
+'-h[Print help]' \
+'--help[Print help]' \
+':value:' \
+&& ret=0
+;;
+(get)
+_arguments "${_arguments_options[@]}" \
+'-n+[]:NAMESPACE: ' \
+'--namespace=[]:NAMESPACE: ' \
+'-h[Print help]' \
+'--help[Print help]' \
+':key:' \
+&& ret=0
+;;
+(help)
+_arguments "${_arguments_options[@]}" \
+":: :_atuin__kv__help_commands" \
+"*::: :->help" \
+&& ret=0
+
+    case $state in
+    (help)
+        words=($line[1] "${words[@]}")
+        (( CURRENT += 1 ))
+        curcontext="${curcontext%:*:*}:atuin-kv-help-command-$line[1]:"
+        case $line[1] in
+            (set)
+_arguments "${_arguments_options[@]}" \
+&& ret=0
+;;
+(get)
 _arguments "${_arguments_options[@]}" \
 && ret=0
 ;;
@@ -663,6 +729,30 @@ _arguments "${_arguments_options[@]}" \
     ;;
 esac
 ;;
+(kv)
+_arguments "${_arguments_options[@]}" \
+":: :_atuin__help__kv_commands" \
+"*::: :->kv" \
+&& ret=0
+
+    case $state in
+    (kv)
+        words=($line[1] "${words[@]}")
+        (( CURRENT += 1 ))
+        curcontext="${curcontext%:*:*}:atuin-help-kv-command-$line[1]:"
+        case $line[1] in
+            (set)
+_arguments "${_arguments_options[@]}" \
+&& ret=0
+;;
+(get)
+_arguments "${_arguments_options[@]}" \
+&& ret=0
+;;
+        esac
+    ;;
+esac
+;;
 (server)
 _arguments "${_arguments_options[@]}" \
 ":: :_atuin__help__server_commands" \
@@ -726,6 +816,7 @@ _atuin_commands() {
 'key:Print the encryption key for transfer to another machine' \
 'status:' \
 'account:' \
+'kv:' \
 'server:Start an atuin server' \
 'init:Output shell setup' \
 'uuid:Generate a UUID' \
@@ -851,6 +942,21 @@ _atuin__help__gen-completions_commands() {
     local commands; commands=()
     _describe -t commands 'atuin help gen-completions commands' commands "$@"
 }
+(( $+functions[_atuin__help__kv__get_commands] )) ||
+_atuin__help__kv__get_commands() {
+    local commands; commands=()
+    _describe -t commands 'atuin help kv get commands' commands "$@"
+}
+(( $+functions[_atuin__kv__get_commands] )) ||
+_atuin__kv__get_commands() {
+    local commands; commands=()
+    _describe -t commands 'atuin kv get commands' commands "$@"
+}
+(( $+functions[_atuin__kv__help__get_commands] )) ||
+_atuin__kv__help__get_commands() {
+    local commands; commands=()
+    _describe -t commands 'atuin kv help get commands' commands "$@"
+}
 (( $+functions[_atuin__account__help_commands] )) ||
 _atuin__account__help_commands() {
     local commands; commands=(
@@ -881,6 +987,7 @@ _atuin__help_commands() {
 'key:Print the encryption key for transfer to another machine' \
 'status:' \
 'account:' \
+'kv:' \
 'server:Start an atuin server' \
 'init:Output shell setup' \
 'uuid:Generate a UUID' \
@@ -930,6 +1037,20 @@ _atuin__import__help_commands() {
 _atuin__import__help__help_commands() {
     local commands; commands=()
     _describe -t commands 'atuin import help help commands' commands "$@"
+}
+(( $+functions[_atuin__kv__help_commands] )) ||
+_atuin__kv__help_commands() {
+    local commands; commands=(
+'set:' \
+'get:' \
+'help:Print this message or the help of the given subcommand(s)' \
+    )
+    _describe -t commands 'atuin kv help commands' commands "$@"
+}
+(( $+functions[_atuin__kv__help__help_commands] )) ||
+_atuin__kv__help__help_commands() {
+    local commands; commands=()
+    _describe -t commands 'atuin kv help help commands' commands "$@"
 }
 (( $+functions[_atuin__server__help_commands] )) ||
 _atuin__server__help_commands() {
@@ -1013,6 +1134,23 @@ _atuin__help__key_commands() {
 _atuin__key_commands() {
     local commands; commands=()
     _describe -t commands 'atuin key commands' commands "$@"
+}
+(( $+functions[_atuin__help__kv_commands] )) ||
+_atuin__help__kv_commands() {
+    local commands; commands=(
+'set:' \
+'get:' \
+    )
+    _describe -t commands 'atuin help kv commands' commands "$@"
+}
+(( $+functions[_atuin__kv_commands] )) ||
+_atuin__kv_commands() {
+    local commands; commands=(
+'set:' \
+'get:' \
+'help:Print this message or the help of the given subcommand(s)' \
+    )
+    _describe -t commands 'atuin kv commands' commands "$@"
 }
 (( $+functions[_atuin__help__history__last_commands] )) ||
 _atuin__help__history__last_commands() {
@@ -1188,6 +1326,21 @@ _atuin__server_commands() {
 'help:Print this message or the help of the given subcommand(s)' \
     )
     _describe -t commands 'atuin server commands' commands "$@"
+}
+(( $+functions[_atuin__help__kv__set_commands] )) ||
+_atuin__help__kv__set_commands() {
+    local commands; commands=()
+    _describe -t commands 'atuin help kv set commands' commands "$@"
+}
+(( $+functions[_atuin__kv__help__set_commands] )) ||
+_atuin__kv__help__set_commands() {
+    local commands; commands=()
+    _describe -t commands 'atuin kv help set commands' commands "$@"
+}
+(( $+functions[_atuin__kv__set_commands] )) ||
+_atuin__kv__set_commands() {
+    local commands; commands=()
+    _describe -t commands 'atuin kv set commands' commands "$@"
 }
 (( $+functions[_atuin__help__history__start_commands] )) ||
 _atuin__help__history__start_commands() {

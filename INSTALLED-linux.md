@@ -646,7 +646,7 @@ git-mediawiki 1:2.34.1-1ubuntu1.9 [Ubuntu/jammy universe]
 git-svn 1:2.34.1-1ubuntu1.9 [Ubuntu/jammy universe]
 gitk 1:2.34.1-1ubuntu1.9 [Ubuntu/jammy universe]
 gitweb 1:2.34.1-1ubuntu1.9 [Ubuntu/jammy universe]
-gjs 1.72.4-0ubuntu0.22.04.1 [Ubuntu/jammy main]
+gjs 1.72.4-0ubuntu0.22.04.1 [local]
 gkbd-capplet 3.26.1-2 [Ubuntu/jammy main]
 glib-networking 2.72.0-1 [Ubuntu/jammy main]
 glib-networking-common 2.72.0-1 [Ubuntu/jammy main]
@@ -714,7 +714,7 @@ gnuplot 5.4.2+dfsg2-2 [Ubuntu/jammy universe]
 gnuplot-data 5.4.2+dfsg2-2 [Ubuntu/jammy universe]
 gnuplot-qt 5.4.2+dfsg2-2 [Ubuntu/jammy universe]
 golly 3.3-1build1 [Ubuntu/jammy universe]
-google-chrome-stable 114.0.5735.106-1 [local]
+google-chrome-stable 115.0.5790.170-1 [Google/stable main]
 gperf 3.1-1build1 [Ubuntu/jammy universe]
 gpg 2.2.27-3ubuntu2.1 [Ubuntu/jammy main]
 gpg-agent 2.2.27-3ubuntu2.1 [Ubuntu/jammy main]
@@ -1589,7 +1589,7 @@ libgirepository-1.0-1 1.72.0-1 [Ubuntu/jammy main]
 libgit2-1.1 1.1.0+dfsg.1-4.1build1 [Ubuntu/jammy universe]
 libgivaro-dev 4.2.0-1 [Ubuntu/jammy universe]
 libgivaro9 4.2.0-1 [Ubuntu/jammy universe]
-libgjs0g 1.72.4-0ubuntu0.22.04.1 [Ubuntu/jammy main]
+libgjs0g 1.72.4-0ubuntu0.22.04.1 [local]
 libgl-dev 1.4.0-1 [Ubuntu/jammy main]
 libgl1 1.4.0-1 [Ubuntu/jammy main]
 libgl1-amber-dri 21.3.9-0ubuntu1~22.04.1 [Ubuntu/jammy main]
@@ -4282,7 +4282,7 @@ shfmt-bin 3.4.3-1 [local]
 shim-signed 1.51.3+15.7-0ubuntu1 [Ubuntu/jammy main]
 shotwell 0.30.14-1ubuntu6 [Ubuntu/jammy main]
 shotwell-common 0.30.14-1ubuntu6 [Ubuntu/jammy main]
-signal-desktop 6.26.0 [. xenial/xenial main]
+signal-desktop 6.27.1 [. xenial/xenial main]
 signon-plugin-oauth2 0.25-2 [Ubuntu/jammy universe]
 silversearcher-ag 2.2.0+git20200805-1 [Ubuntu/jammy universe]
 simple-scan 42.0-1 [Ubuntu/jammy main]
@@ -4291,7 +4291,7 @@ singular-data 1:4.2.1-p3+ds-1 [Ubuntu/jammy universe]
 singular-doc 1:4.2.1-p3+ds-1 [Ubuntu/jammy universe]
 singular-modules 1:4.2.1-p3+ds-1 [Ubuntu/jammy universe]
 singular-ui 1:4.2.1-p3+ds-1 [Ubuntu/jammy universe]
-slack-desktop 4.33.73 [slack/jessie main]
+slack-desktop 4.33.84 [slack/jessie main]
 slirp4netns 1.0.1-2 [Ubuntu/jammy universe]
 slop 7.5-1.1build2 [Ubuntu/jammy universe]
 snapd 2.58+22.04.1 [Ubuntu/jammy main]
@@ -4698,7 +4698,7 @@ name: batsignal version: 1.6.4-pacstall1
 name: bitwarden version: 2023.7.0
 name: brave-browser version: 1.52.130
 name: brave-keyring version: 1.13
-name: google-chrome-stable version: 114.0.5735.106-1
+name: google-chrome-stable version: 115.0.5790.170-1
 name: htop version: 3.2.2-pacstall1
 name: nala version: 0.13.0
 name: neofetch version: 7.1.0-pacstall1
@@ -4707,7 +4707,7 @@ name: protonmail-bridge version: 3.3.2-1
 name: quarto version: 1.3.433
 name: rstudio version: 2022.12.0+353
 name: shfmt version: 3.7.0-pacstall1
-name: signal-desktop version: 6.26.0
+name: signal-desktop version: 6.27.1
 name: thorium-browser version: 114.0.5735.134-1
 name: wezterm version: 20230712-072601-f4abf8fd-pacstall1
 name: zoom version: 5.15.3.4839
@@ -4718,7 +4718,7 @@ name: zoom version: 5.15.3.4839
 ```txt
 alacritty v0.12.2:
     alacritty
-atuin v15.0.0:
+atuin v16.0.0:
     atuin
 bacon v2.12.1:
     bacon
@@ -4775,7 +4775,7 @@ lscolors v0.15.0:
     lscolors
 mdbook v0.4.34:
     mdbook
-mdbook-admonish v1.10.1:
+mdbook-admonish v1.10.2:
     mdbook-admonish
 mdbook-svgbob v0.2.1:
     mdbook-svgbob
@@ -4825,7 +4825,7 @@ xcolor v0.5.1:
     xcolor
 xh v0.18.0:
     xh
-xplr v0.21.2:
+xplr v0.21.3:
     xplr
 zellij v0.37.2:
     zellij
@@ -5001,7 +5001,7 @@ ascii-image-converter: github.com/TheZoraiz/ascii-image-converter@v1.13.1
         golangci-lint: github.com/golangci/golangci-lint/cmd/golangci-lint@v1.53.3
                   gum: github.com/charmbracelet/gum@v0.11.0
                   gup: github.com/nao1215/gup@v0.22.0
-              lazygit: github.com/jesseduffield/lazygit@v0.39.4
+              lazygit: github.com/jesseduffield/lazygit@v0.40.2
                    lf: github.com/gokcehan/lf@v0.0.0-20230807080833-b2f8673cb9fb
                   nap: github.com/maaslalani/nap@v0.1.1
                 rmapi: github.com/juruen/rmapi@(devel)
