@@ -4,6 +4,7 @@ alias history="fc -li 1"
 # MY ALIASES
 
 alias _="sudo"
+alias c="calcurse"
 alias cat="bat"
 alias has="HAS_ALLOW_UNSAFE=y has"
 alias lg="lazygit"
@@ -14,6 +15,7 @@ alias nnn="nnn -derH"
 alias nv="nvim"
 alias nvl="NVIM_APPNAME=LazyNvim nvim"
 alias rm="trash-put"
+alias todo='calcurse -t --format-todo "(%p) %m\n%N"'
 alias yt="ytfzf -t"
 
 # It's nice with habits
