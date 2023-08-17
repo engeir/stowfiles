@@ -8,6 +8,8 @@ set selection-clipboard clipboard
 
 # Open file in a viewer that support annotations
 map <C-a> feedkeys ":exec okular $FILE<Return>"
+# Open file in a viewer that support annotations
+map <C-c> feedkeys ":exec sioyek $FILE --new-window<Return>"
 # Send document to reMarkable
 map <C-s> feedkeys ":exec rmapi put $FILE<Return>"
 # Try getting a documents bibtex representation
