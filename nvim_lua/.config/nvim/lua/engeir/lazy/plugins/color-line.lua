@@ -30,18 +30,20 @@ return {
     {
         -- TODO: replace with mini.tabline?
         "akinsho/bufferline.nvim",
+        event = "VeryLazy",
         name = "bufferline",
         -- version = "v2.*",
         dependencies = "nvim-tree/nvim-web-devicons",
-        config = function()
-            require("bufferline").setup()
-            vim.keymap.set("n", "H", ":BufferLineCyclePrev<CR>", { noremap = true, silent = true })
-            vim.keymap.set("n", "L", ":BufferLineCycleNext<CR>", { noremap = true, silent = true })
-        end,
+        keys = {
+            { "H", ":BufferLineCyclePrev<CR>", desc = "BufferLine Previous" },
+            { "L", ":BufferLineCycleNext<CR>", desc = "BufferLine Next" },
+        },
+        config = true,
     },
     {
         -- TODO: replace with mini.statusline?
         "nvim-lualine/lualine.nvim",
+        event = "VeryLazy",
         name = "lualine",
         opts = {
             options = {

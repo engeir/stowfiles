@@ -8,138 +8,182 @@ return {
     --    goolord/alpha-nvim      -> mini.starter
     --    kylechui/nvim-surround  -> mini.surround
     --    folke/flash.nvim        <- mini.jump
-    "echasnovski/mini.nvim",
-    config = function()
-        -- mini.ai ---------------------------------------------------------------------
-        require("mini.ai").setup()
 
-        -- mini.align ------------------------------------------------------------------
-        require("mini.align").setup()
+    -- mini.ai -------------------------------------------------------------------------
+    { "echasnovski/mini.ai",        config = true },
 
-        -- mini.bracketed --------------------------------------------------------------
-        require("mini.bracketed").setup()
+    -- mini.align ----------------------------------------------------------------------
+    { "echasnovski/mini.align",     config = true },
 
-        -- mini.colors -----------------------------------------------------------------
-        require("mini.colors").setup()
+    -- mini.bracketed ------------------------------------------------------------------
+    { "echasnovski/mini.bracketed", config = true },
 
-        -- mini.comment ----------------------------------------------------------------
-        require("mini.comment").setup()
-        --- Set the comment rule for a file type
-        ---@param pattern string
-        ---@param c_string string
-        local function set_comment(pattern, c_string)
+    -- mini.colors ---------------------------------------------------------------------
+    { "echasnovski/mini.colors",    cofig = true },
+
+    -- mini.comment --------------------------------------------------------------------
+    {
+        "echasnovski/mini.comment",
+        init = function()
+            --- Set the comment rule for a file type
+            ---@param pattern string
+            ---@param c_string string
+            local function set_comment(pattern, c_string)
+                vim.api.nvim_create_autocmd("FileType", {
+                    pattern = pattern,
+                    callback = function()
+                        vim.opt_local.commentstring = c_string
+                    end,
+                })
+            end
+
+            set_comment("mplstyle", "#%s")
+            set_comment("ncl", ";%s")
+            set_comment("nu", "#%s")
+            set_comment("sent", "#%s")
+        end,
+        config = true,
+    },
+
+    -- mini.cursorword -----------------------------------------------------------------
+    { "echasnovski/mini.cursorword", config = true },
+
+    -- mini.files ----------------------------------------------------------------------
+    {
+        "echasnovski/mini.files",
+        config = true,
+        keys = {
+            {
+                "<leader>pm",
+                function()
+                    MiniFiles.open(vim.api.nvim_buf_get_name(0))
+                end,
+                desc = "[P]ath explorer with [M]iniFiles",
+            },
+        },
+    },
+
+    -- mini.fuzzy ----------------------------------------------------------------------
+    -- Replaces one of the sorters:
+    -- https://github.com/nvim-telescope/telescope.nvim#sorters
+    { "echasnovski/mini.fuzzy",      config = true },
+
+    -- mini.pairs ----------------------------------------------------------------------
+    { "echasnovski/mini.pairs",      config = true },
+
+    -- mini.indentscope ----------------------------------------------------------------
+    {
+        "echasnovski/mini.indentscope",
+        version = false, -- wait till new 0.7.0 release to put it back on semver
+        event = { "BufReadPre", "BufNewFile" },
+        opts = {
+            -- symbol = "▏",
+            symbol = "│",
+            options = { try_as_border = true },
+        },
+        init = function()
             vim.api.nvim_create_autocmd("FileType", {
-                pattern = pattern,
+                pattern = {
+                    "help",
+                    "alpha",
+                    "dashboard",
+                    "neo-tree",
+                    "Trouble",
+                    "lazy",
+                    "mason",
+                    "notify",
+                    "toggleterm",
+                    "lazyterm",
+                },
                 callback = function()
-                    vim.opt_local.commentstring = c_string
+                    vim.b.miniindentscope_disable = true
                 end,
             })
-        end
+        end,
+    },
 
-        set_comment("mplstyle", "#%s")
-        set_comment("ncl", ";%s")
-        set_comment("nu", "#%s")
-        set_comment("sent", "#%s")
+    -- mini.jump -----------------------------------------------------------------------
+    -- Alternative is folke/flash.nvim
+    -- require("mini.jump").setup({ delay = { highlight = 10 ^ 7 } })
 
-        -- mini.cursorword -------------------------------------------------------------
-        require("mini.cursorword").setup()
+    -- mini.splitjoin ------------------------------------------------------------------
+    { "echasnovski/mini.splitjoin", config = true },
 
-        -- mini.files ------------------------------------------------------------------
-        require("mini.files").setup()
-        vim.keymap.set("n", "<leader>pm", function()
-            MiniFiles.open(vim.api.nvim_buf_get_name(0))
-        end, { desc = "[P]ath explorer with [M]iniFiles" })
+    -- mini.surround -------------------------------------------------------------------
+    { "echasnovski/mini.surround",  config = true },
 
-        -- mini.fuzzy ------------------------------------------------------------------
-        -- Replaces one of the sorters:
-        -- https://github.com/nvim-telescope/telescope.nvim#sorters
-        require("mini.fuzzy").setup()
-
-        -- mini.pairs ------------------------------------------------------------------
-        require("mini.pairs").setup()
-
-        -- mini.indentscope ------------------------------------------------------------
-        require("mini.indentscope").setup()
-
-        -- mini.jump -------------------------------------------------------------------
-        -- Alternative is folke/flash.nvim
-        -- require("mini.jump").setup({ delay = { highlight = 10 ^ 7 } })
-
-        -- mini.splitjoin --------------------------------------------------------------
-        require("mini.splitjoin").setup()
-
-        -- mini.surround ---------------------------------------------------------------
-        require("mini.surround").setup()
-
-        -- mini.starter ----------------------------------------------------------------
-        local starter = require("mini.starter")
-        local function footer()
-            -- NOTE: requires the fortune-mod package to work
-            -- local handle = io.popen("fortune")
-            -- local fortune = handle:read("*a")
-            -- handle:close()
-            -- return fortune
-            local handle = io.popen("nvim --version")
-            if handle == nil then
-                return "Nvim Config by @engeir"
+    -- mini.starter --------------------------------------------------------------------
+    {
+        "echasnovski/mini.starter",
+        config = function()
+            local starter = require("mini.starter")
+            local function footer()
+                -- NOTE: requires the fortune-mod package to work
+                -- local handle = io.popen("fortune")
+                -- local fortune = handle:read("*a")
+                -- handle:close()
+                -- return fortune
+                local handle = io.popen("nvim --version")
+                if handle == nil then
+                    return "Nvim Config by @engeir"
+                end
+                local result = "Config by @engeir — " .. string.match(handle:read("*a"), "NVIM v[^\n]*")
+                handle:close()
+                return result
             end
-            local result = "Config by @engeir — " .. string.match(handle:read("*a"), "NVIM v[^\n]*")
-            handle:close()
-            return result
-        end
 
-        local my_telescope = {
-            {
-                name = "All files",
-                action = "lua require('telescope.builtin').find_files({hidden=true})",
-                section = "Telescope",
-            },
-            {
-                name = "Git files",
-                action = "lua require'engeir.lazy.telescope.telescope-extra'.project_files()",
-                section = "Telescope",
-            },
-            {
-                name = "Old files",
-                action = "Telescope oldfiles",
-                section = "Telescope",
-            },
-            {
-                name = "Live grep",
-                action = "lua require('telescope.builtin').grep_string({search=''})",
-                section = "Telescope",
-            },
-            {
-                name = "Command history",
-                action = "Telescope command_history",
-                section = "Telescope",
-            },
-            {
-                name = "Help tags",
-                action = "Telescope help_tags",
-                section = "Telescope",
-            },
-        }
-        local items = {
-            my_telescope,
-            starter.sections.recent_files(5, true, true),
-            starter.sections.recent_files(5, false, true),
-            {
-                name = "Open TODO",
-                action = ":e ~/Documents/notes_papers/_includes/todo.md",
-                section = "Builtin actions",
-            },
-            starter.sections.builtin_actions(),
-        }
-        local content_hooks = {
-            starter.gen_hook.adding_bullet(),
-            starter.gen_hook.indexing("all", { "Builtin actions", "Telescope" }),
-            starter.gen_hook.aligning("center", "center"),
-        }
-        local starter_opts = {
-            items = items,
-            content_hooks = content_hooks,
-            header = [[
+            local my_telescope = {
+                {
+                    name = "All files",
+                    action = "lua require('telescope.builtin').find_files({hidden=true})",
+                    section = "Telescope",
+                },
+                {
+                    name = "Git files",
+                    action = "lua require'engeir.lazy.telescope.telescope-extra'.project_files()",
+                    section = "Telescope",
+                },
+                {
+                    name = "Old files",
+                    action = "Telescope oldfiles",
+                    section = "Telescope",
+                },
+                {
+                    name = "Live grep",
+                    action = "lua require('telescope.builtin').grep_string({search=''})",
+                    section = "Telescope",
+                },
+                {
+                    name = "Command history",
+                    action = "Telescope command_history",
+                    section = "Telescope",
+                },
+                {
+                    name = "Help tags",
+                    action = "Telescope help_tags",
+                    section = "Telescope",
+                },
+            }
+            local items = {
+                my_telescope,
+                starter.sections.recent_files(5, true, true),
+                starter.sections.recent_files(5, false, true),
+                {
+                    name = "Open TODO",
+                    action = ":e ~/Documents/notes_papers/_includes/todo.md",
+                    section = "Builtin actions",
+                },
+                starter.sections.builtin_actions(),
+            }
+            local content_hooks = {
+                starter.gen_hook.adding_bullet(),
+                starter.gen_hook.indexing("all", { "Builtin actions", "Telescope" }),
+                starter.gen_hook.aligning("center", "center"),
+            }
+            local starter_opts = {
+                items = items,
+                content_hooks = content_hooks,
+                header = [[
                               ██╗
                             ██╔═██╗
                   ██████╗   ██║ ██║ ██╗
@@ -154,16 +198,27 @@ return {
                   ╚═════╝ ╚═════╝ ████╗
                                   ╚═══╝
             ]],
-            footer = footer(),
-        }
-        starter.setup(starter_opts)
+                footer = footer(),
+            }
+            starter.setup(starter_opts)
+        end,
+    },
 
-        -- mini.trailspace -------------------------------------------------------------
-        local minitrail = require("mini.trailspace")
-        minitrail.setup()
-        vim.keymap.set("n", "<leader>mt", function()
-            minitrail.trim()
-            minitrail.trim_last_lines()
-        end, { desc = "[M]iniTrailspace [T]rim" })
-    end,
+    -- mini.trailspace -----------------------------------------------------------------
+    {
+        "echasnovski/mini.trailspace",
+        init = function()
+            require("mini.trailspace").setup()
+        end,
+        keys = {
+            {
+                "<leader>mt",
+                function()
+                    require("mini.trailspace").trim()
+                    require("mini.trailspace").trim_last_lines()
+                end,
+                desc = "[M]iniTrailspace [T]rim",
+            },
+        },
+    },
 }
