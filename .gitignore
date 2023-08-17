@@ -1,10 +1,11 @@
-helix/.config/helix/runtime
-packer_compiled.lua
 **/spell/**
-newsboat/.newsboat/cache.db
-tmux/.tmux/plugins/
+.luarc.json
+.zcompdump
 .zsh_history
 .zsh_sessions
-.zcompdump
+calcurse/.local/share/*
+helix/.config/helix/runtime
+newsboat/.newsboat/cache.db
 nushell/**/history*
-.luarc.json
+packer_compiled.lua
+tmux/.tmux/plugins/
