@@ -44,12 +44,12 @@ apport 2.20.11-0ubuntu82.5 [Ubuntu/jammy main]
 apport-gtk 2.20.11-0ubuntu82.5 [Ubuntu/jammy main]
 apport-symptoms 0.24 [Ubuntu/jammy main]
 appstream 0.15.2-2 [Ubuntu/jammy main]
-apt 2.4.9 [local]
+apt 2.4.10 [Ubuntu/jammy main]
 apt-config-icons 0.15.2-2 [Ubuntu/jammy main]
 apt-config-icons-hidpi 0.15.2-2 [Ubuntu/jammy main]
 apt-file 3.2.2 [Ubuntu/jammy universe]
-apt-transport-https 2.4.9 [local]
-apt-utils 2.4.9 [local]
+apt-transport-https 2.4.10 [Ubuntu/jammy universe]
+apt-utils 2.4.10 [Ubuntu/jammy main]
 aptdaemon 1.1.1+bzr982-0ubuntu39 [Ubuntu/jammy main]
 aptdaemon-data 1.1.1+bzr982-0ubuntu39 [Ubuntu/jammy main]
 apturl 0.5.2ubuntu22 [Ubuntu/jammy main]
@@ -570,8 +570,8 @@ gftp-gtk 2.9.1~beta-1 [Ubuntu/jammy universe]
 gftp-text 2.9.1~beta-1 [Ubuntu/jammy universe]
 gh 2.32.1 [gh/stable main]
 ghc 8.8.4-3 [Ubuntu/jammy universe]
-ghostscript 9.55.0~dfsg1-0ubuntu5.3 [Ubuntu/jammy main]
-ghostscript-x 9.55.0~dfsg1-0ubuntu5.3 [Ubuntu/jammy main]
+ghostscript 9.55.0~dfsg1-0ubuntu5.4 [Ubuntu/jammy main]
+ghostscript-x 9.55.0~dfsg1-0ubuntu5.4 [Ubuntu/jammy main]
 gir1.2-accountsservice-1.0 22.07.5-2ubuntu1.4 [Ubuntu/jammy main]
 gir1.2-adw-1 1.1.7-0ubuntu0.22.04.1 [Ubuntu/jammy main]
 gir1.2-atk-1.0 2.36.0-3build1 [Ubuntu/jammy main]
@@ -822,9 +822,9 @@ indicator-sound 12.10.2+18.10.20180612-0ubuntu4 [Ubuntu/jammy universe]
 info 6.8-4build1 [Ubuntu/jammy main]
 init 1.62 [Ubuntu/jammy main]
 init-system-helpers 1.62 [Ubuntu/jammy main]
-initramfs-tools 0.140ubuntu13.2 [Ubuntu/jammy main]
-initramfs-tools-bin 0.140ubuntu13.2 [Ubuntu/jammy main]
-initramfs-tools-core 0.140ubuntu13.2 [Ubuntu/jammy main]
+initramfs-tools 0.140ubuntu13.4 [Ubuntu/jammy main]
+initramfs-tools-bin 0.140ubuntu13.4 [Ubuntu/jammy main]
+initramfs-tools-core 0.140ubuntu13.4 [Ubuntu/jammy main]
 inkscape 1.1.2-3ubuntu1 [Ubuntu/jammy universe]
 inputattach 1:1.7.1-1build2 [Ubuntu/jammy main]
 install-info 6.8-4build1 [Ubuntu/jammy main]
@@ -958,7 +958,7 @@ libaprutil1 1.6.1-5ubuntu4.22.04.1 [Ubuntu/jammy main]
 libaprutil1-dbd-sqlite3 1.6.1-5ubuntu4.22.04.1 [Ubuntu/jammy main]
 libaprutil1-ldap 1.6.1-5ubuntu4.22.04.1 [Ubuntu/jammy main]
 libapt-pkg-perl 0.1.40build2 [Ubuntu/jammy main]
-libapt-pkg6.0 2.4.9 [local]
+libapt-pkg6.0 2.4.10 [Ubuntu/jammy main]
 libarchive-cpio-perl 0.10-1.1 [Ubuntu/jammy main]
 libarchive-dev 3.6.0-1ubuntu1 [Ubuntu/jammy main]
 libarchive-tools 3.6.0-1ubuntu1 [Ubuntu/jammy universe]
@@ -1688,8 +1688,8 @@ libgraphite2-3 1.3.14-1build2 [Ubuntu/jammy main]
 libgraphite2-3:i386 1.3.14-1build2 [Ubuntu/jammy main]
 libgraphite2-dev 1.3.14-1build2 [Ubuntu/jammy main]
 libgrilo-0.3-0 0.3.14-1build1 [Ubuntu/jammy main]
-libgs9 9.55.0~dfsg1-0ubuntu5.3 [Ubuntu/jammy main]
-libgs9-common 9.55.0~dfsg1-0ubuntu5.3 [Ubuntu/jammy main]
+libgs9 9.55.0~dfsg1-0ubuntu5.4 [Ubuntu/jammy main]
+libgs9-common 9.55.0~dfsg1-0ubuntu5.4 [Ubuntu/jammy main]
 libgsettings-qt1 0.2-4 [Ubuntu/jammy universe]
 libgsf-1-114 1.14.47-1build2 [Ubuntu/jammy main]
 libgsf-1-common 1.14.47-1build2 [Ubuntu/jammy main]
@@ -2669,7 +2669,7 @@ libpotrace0 1.16-2 [Ubuntu/jammy universe]
 libppl-c4 1:1.2-8.1build1 [Ubuntu/jammy universe]
 libppl-dev 1:1.2-8.1build1 [Ubuntu/jammy universe]
 libppl14 1:1.2-8.1build1 [Ubuntu/jammy universe]
-libpq5 14.8-0ubuntu0.22.04.1 [Ubuntu/jammy main]
+libpq5 14.9-0ubuntu0.22.04.1 [Ubuntu/jammy main]
 libprimecount7 7.2+ds-6 [Ubuntu/jammy universe]
 libprimesieve9 7.8+ds-1 [Ubuntu/jammy universe]
 libproc-processtable-perl 0.634-1build1 [Ubuntu/jammy main]
@@ -2898,7 +2898,7 @@ libslirp0 4.6.1-1build1 [Ubuntu/jammy main]
 libsm-dev 2:1.2.3-1build2 [Ubuntu/jammy main]
 libsm6 2:1.2.3-1build2 [Ubuntu/jammy main]
 libsmartcols1 2.37.2-4ubuntu3 [Ubuntu/jammy main]
-libsmbclient 2:4.15.13+dfsg-0ubuntu1.2 [Ubuntu/jammy main]
+libsmbclient 2:4.15.13+dfsg-0ubuntu1.3 [Ubuntu/jammy main]
 libsmbios-c2 2.4.3-1build1 [Ubuntu/jammy main]
 libsnapd-glib1 1.60-0ubuntu1 [Ubuntu/jammy main]
 libsnappy1v5 1.1.8-1build3 [Ubuntu/jammy main]
@@ -3208,7 +3208,7 @@ libwayland-egl1 1.20.0-1ubuntu0.1 [Ubuntu/jammy main]
 libwayland-egl1:i386 1.20.0-1ubuntu0.1 [Ubuntu/jammy main]
 libwayland-server0 1.20.0-1ubuntu0.1 [Ubuntu/jammy main]
 libwayland-server0:i386 1.20.0-1ubuntu0.1 [Ubuntu/jammy main]
-libwbclient0 2:4.15.13+dfsg-0ubuntu1.2 [Ubuntu/jammy main]
+libwbclient0 2:4.15.13+dfsg-0ubuntu1.3 [Ubuntu/jammy main]
 libwebkit2gtk-4.0-37 2.40.5-0ubuntu0.22.04.1 [Ubuntu/jammy main]
 libwebkit2gtk-4.1-0 2.40.5-0ubuntu0.22.04.1 [Ubuntu/jammy universe]
 libwebp-dev 1.2.2-2ubuntu0.22.04.1 [Ubuntu/jammy main]
@@ -4257,7 +4257,7 @@ sagemath-database-polytopes 20170220-5 [Ubuntu/jammy universe]
 sagemath-doc 9.5-4 [Ubuntu/jammy universe]
 sagemath-jupyter 9.5-4 [Ubuntu/jammy universe]
 sagetex 3.6+ds-2 [Ubuntu/jammy universe]
-samba-libs 2:4.15.13+dfsg-0ubuntu1.2 [Ubuntu/jammy main]
+samba-libs 2:4.15.13+dfsg-0ubuntu1.3 [Ubuntu/jammy main]
 sane-airscan 0.99.27-1build1 [Ubuntu/jammy main]
 sane-utils 1.1.1-5 [Ubuntu/jammy main]
 sassc 3.6.1+20201027-2 [Ubuntu/jammy universe]
@@ -4291,7 +4291,7 @@ singular-data 1:4.2.1-p3+ds-1 [Ubuntu/jammy universe]
 singular-doc 1:4.2.1-p3+ds-1 [Ubuntu/jammy universe]
 singular-modules 1:4.2.1-p3+ds-1 [Ubuntu/jammy universe]
 singular-ui 1:4.2.1-p3+ds-1 [Ubuntu/jammy universe]
-slack-desktop 4.33.84 [slack/jessie main]
+slack-desktop 4.33.90 [slack/jessie main]
 slirp4netns 1.0.1-2 [Ubuntu/jammy universe]
 slop 7.5-1.1build2 [Ubuntu/jammy universe]
 snapd 2.58+22.04.1 [Ubuntu/jammy main]
@@ -4422,7 +4422,7 @@ texlive-science 2021.20220204-1 [Ubuntu/jammy universe]
 texlive-science-doc 2021.20220204-1 [Ubuntu/jammy universe]
 texlive-xetex 2021.20220204-1 [Ubuntu/jammy universe]
 thermald 2.4.9-1ubuntu0.3 [Ubuntu/jammy main]
-thorium-browser 114.0.5735.134-1 [local]
+thorium-browser 115.0.5790.172-1 [local]
 thunar 4.16.10-1 [Ubuntu/jammy universe]
 thunar-data 4.16.10-1 [Ubuntu/jammy universe]
 thunar-volman 4.16.0-1 [Ubuntu/jammy universe]
@@ -4708,7 +4708,7 @@ name: quarto version: 1.3.433
 name: rstudio version: 2022.12.0+353
 name: shfmt version: 3.7.0-pacstall1
 name: signal-desktop version: 6.28.0
-name: thorium-browser version: 114.0.5735.134-1
+name: thorium-browser version: 115.0.5790.172-1
 name: wezterm version: 20230712-072601-f4abf8fd-pacstall1
 name: zoom version: 5.15.3.4839
 ```
@@ -4726,7 +4726,7 @@ bat v0.23.0:
     bat
 blindfold v1.0.7:
     blindfold
-bob-nvim v2.4.1:
+bob-nvim v2.5.0:
     bob
 cargo-binstall v1.2.1:
     cargo-binstall
@@ -4796,7 +4796,7 @@ pueue v3.2.0:
     pueued
 ripgrep v13.0.0:
     rg
-rtx-cli v2023.8.1:
+rtx-cli v2023.8.2:
     rtx
 sccache v0.5.4:
     sccache
@@ -4931,7 +4931,7 @@ package pandoc-eqnos 2.5.0, installed using Python 3.10.4
  - pandoc-eqnos
 package pandoc-include 1.2.0, installed using Python 3.10.4
  - pandoc-include
-package pipenv 2023.7.23, installed using Python 3.10.4
+package pipenv 2023.8.20, installed using Python 3.10.4
  - pipenv
  - pipenv-resolver
 package pipreqs 0.4.13, installed using Python 3.10.4
@@ -5007,7 +5007,7 @@ ascii-image-converter: github.com/TheZoraiz/ascii-image-converter@v1.13.1
                   gum: github.com/charmbracelet/gum@v0.11.0
                   gup: github.com/nao1215/gup@v0.22.0
               lazygit: github.com/jesseduffield/lazygit@v0.40.2
-                   lf: github.com/gokcehan/lf@v0.0.0-20230814012048-59dd32543901
+                   lf: github.com/gokcehan/lf@v0.0.0-20230819133302-219ebe5c3177
                   nap: github.com/maaslalani/nap@v0.1.1
                 rmapi: github.com/juruen/rmapi@(devel)
                     s: github.com/zquestz/s@v0.6.8
@@ -5047,7 +5047,7 @@ canonical-livepatch        10.6.0                      235    latest/stable    c
 cmake                      3.27.3                      1328   latest/stable    crascit**      classic
 core                       16-2.59.5                   15511  latest/stable    canonical**    core
 core18                     20230703                    2790   latest/stable    canonical**    base
-core20                     20230622                    1974   latest/stable    canonical**    base
+core20                     20230801                    2015   latest/stable    canonical**    base
 core22                     20230725                    858    latest/stable    canonical**    base
 dmd                        2.090.1                     102    latest/stable    dlang          classic
 dotnet-sdk                 5.0.408                     167    5.0/stable       dotnetcore**   classic

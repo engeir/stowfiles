@@ -195,7 +195,7 @@ ls.add_snippets("tex", {
     s("ce", { t({ "\\ce{" }), i(1), t("}") }),
     s("quote", { t({ "``" }), i(1), t("''") }),
     -- Replaced by iurimateus/luasnip-latex-snippets.nvim
-    -- s("mathin", { t("\\("), i(1), t("\\)") }),
+    s({ trig = "mk", snippetType = "autosnippet" }, { t("\\("), i(1), t("\\)") }),
 }, {
     key = "tex",
 })
