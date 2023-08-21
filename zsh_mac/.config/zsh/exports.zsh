@@ -63,10 +63,14 @@ export PATH="$BUN_INSTALL/bin:$PATH"
 # deno
 export DENO_INSTALL="$HOME/.deno"
 export PATH="$DENO_INSTALL/bin:$PATH"
+# dprint
+export DPRINT_INSTALL="$HOME/.local/bin/"
 # auto-notify
 export AUTO_NOTIFY_IGNORE=("nv" "docker" "man" "sleep" "lf" "nnn" "hugo serve" "fg" "ga")
 # forgit
 export FORGIT_FZF_DEFAULT_OPTS
+# rush
+export RUSH_CONFIG="$HOME/.config/rush/rush.ini"
 # rye
 export RYE_HOME="$HOME/.local/share/rye/"
 export PATH="$PATH:$RYE_HOME/shims/"

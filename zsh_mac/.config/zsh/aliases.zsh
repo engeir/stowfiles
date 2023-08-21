@@ -4,6 +4,7 @@ alias history="fc -li 1"
 # MY ALIASES
 
 alias _="sudo"
+alias bashly='docker run --rm -it --user $(id -u):$(id -g) --volume "$PWD:/app" dannyben/bashly'
 alias c="calcurse"
 alias cat="bat"
 alias has="HAS_ALLOW_UNSAFE=y has"
