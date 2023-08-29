@@ -3,7 +3,11 @@ return {
     enabled = IS_KNOWN,
     init = function()
         vim.g.tex_flavor = "latex"
-        vim.g.vimtex_view_method = "zathura"
+        if IS_MAC then
+            vim.g.vimtex_view_method = "sioyek"
+        else
+            vim.g.vimtex_view_method = "zathura"
+        end
         vim.g.vimtex_quickfix_mode = 2
         -- latexmk is the default option and seems to be the only one supporting
         -- continuous mode

@@ -88,7 +88,7 @@ cmd + alt - r : skhd --reload
 cmd - return : wezterm
 # cmd - q : $(yabai -m window $(yabai -m query --windows --window | jq -re ".id") --close)
 
-alt - space : /Users/eirikenger/bin/popup-mac /Users/eirikenger/bin/custom_scripts
+lalt - space : /Users/eirikenger/bin/popup-mac /Users/eirikenger/bin/custom_scripts
 
 # cmd + alt - x : /Users/eirikenger/.local/bin/passmenu
 cmd + alt - x : /Users/eirikenger/bin/popup-mac /Users/eirikenger/bin/custom_scripts
@@ -219,3 +219,14 @@ fn - t : yabai -m window --focus stack.next || yabai -m window --focus stack.fir
 fn - s : window=$(yabai -m query --windows --window | jq -r '.id') &&\
         yabai -m window east --stack $window ||\
         (yabai -m window $window --toggle float && yabai -m window $window --toggle float)
+
+# Float / Unfloat window: lalt - space
+ralt - space : yabai -m window --toggle float; sketchybar --trigger window_focus
+
+# Make window zoom to fullscreen: shift + lalt - f
+shift + ralt - f : yabai -m window --toggle zoom-fullscreen; sketchybar --trigger window_focus
+
+# Make window zoom to parent node: lalt - f
+ralt - f : yabai -m window --toggle zoom-parent; sketchybar --trigger window_focus
+
+shift + ralt - 1 : yabai -m window --space 1 && sketchybar --trigger windows_on_spaces

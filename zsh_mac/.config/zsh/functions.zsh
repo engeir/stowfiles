@@ -45,8 +45,9 @@ fif() {
 
 mcd() {
     # make a directory and cd to it
-    test -d "$1" || mkdir "$1" && cd "$1"
+    test -d "$1" || mkdir -p "$1" && cd "$1"
 }
+compdef _cd mcd
 
 nn() {
     # Block nesting of nnn in subshells

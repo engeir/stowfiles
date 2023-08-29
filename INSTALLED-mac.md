@@ -34,10 +34,11 @@ borgbackup-fuse 1.2.4
 brotli 1.0.9
 btop 1.2.13
 c-ares 1.19.1
-ca-certificates 2023-05-30
+ca-certificates 2023-08-22
 cabextract 1.11
 cairo 1.16.0_5
 calcurse 4.8.1
+capstone 4.0.2
 carthage 0.39.0
 cask 0.9.0
 cdrtools 3.02a09
@@ -48,14 +49,14 @@ chruby 0.3.9
 cjson 1.7.16
 clisp 2.49.92_1
 cloc 1.98
-cmake 3.27.3
+cmake 3.27.4
 cmatrix 2.0
 cmocka 1.1.7
 composer 2.5.8
 coreutils 9.3
 cpio 2.14
 curl 8.2.1
-cython 3.0.0
+cython 3.0.2
 dav1d 1.2.1
 dbus 1.14.8
 desktop-file-utils 0.26
@@ -63,11 +64,16 @@ despell 0.10
 djvulibre 3.5.28_2
 docbook 5.1_1
 docbook-xsl 1.79.2_1
+docker 24.0.5
+docker-buildx 0.11.2
+docker-completion 24.0.5
+docker-compose 2.20.3
 docutils 0.20.1
 docx2txt 1.4
 doggo 0.5.6
 double-conversion 3.3.0
 dpkg 1.21.22
+dtc 1.7.0
 duf 0.8.1
 dust 0.8.6
 elinks 0.11.7_3
@@ -78,34 +84,33 @@ expat 2.5.0
 fastjar 0.98
 fd 8.7.0
 feh 3.10
-ffmpeg 6.0
+ffmpeg 6.0_1
 ffmpeg@4 4.4.4
 ffmpegthumbnailer 2.2.2_9
 ffsend 0.2.76
 fftw 3.3.10_1
 figlet 2.2.5
-firefoxpwa 2.7.3
 flac 1.4.3
 flex 2.6.4_2
 fontconfig 2.14.2
 freeglut 3.4.0
-freetds 1.3.19
-freetype 2.13.1
+freetds 1.3.20
+freetype 2.13.2
 frei0r 2.3.1
 fribidi 1.0.13
 fzf 0.42.0
 gawk 5.2.2
 gcc 13.1.0
-gd 2.3.3_5
+gd 2.3.3_6
 gdbm 1.23
 gdk-pixbuf 2.42.10_1
 geos 3.12.0
 gettext 0.21.1
-gh 2.32.1
+gh 2.33.0
 ghostscript 10.01.2
 giflib 5.2.1
 girara 0.4.0
-git 2.41.0_2
+git 2.42.0
 git-lfs 3.4.0
 glib 2.76.4
 glow 1.5.1
@@ -118,13 +123,13 @@ gnuplot 5.4.8_1
 gnutls 3.8.1
 go 1.21.0
 gobject-introspection 1.76.1
-golangci-lint 1.54.1_1
+golangci-lint 1.54.2
 gpatch 2.7.6
 gping 1.14.0
 graphicsmagick 1.3.41_1
 graphite2 1.3.14
 grep 3.11
-groovy 4.0.13
+groovy 4.0.14
 gsettings-desktop-schemas 44.0
 gsl 2.7.1
 gtk+ 2.24.33_1
@@ -134,7 +139,7 @@ guile 3.0.9
 gumbo-parser 0.10.1
 harfbuzz 8.1.1
 has 1.5.0
-hdf5 1.14.1
+hdf5 1.14.2
 helix 23.05
 hicolor-icon-theme 0.17
 highway 1.0.6
@@ -163,8 +168,9 @@ jpeg-xl 0.8.2
 jpegoptim 1.5.5
 jq 1.6
 json-c 0.17
+jsoncpp 1.9.5
 jump 0.51.0
-krb5 1.21.1
+krb5 1.21.2
 lame 3.100
 leptonica 1.83.1
 libaec 1.0.6
@@ -172,7 +178,7 @@ libansilove 1.4.1
 libarchive 3.7.1
 libass 0.17.1
 libassuan 2.5.6
-libavif 0.11.1
+libavif 1.0.0
 libb2 0.98.1
 libbluray 1.3.4
 libcaca 0.99b20
@@ -219,12 +225,14 @@ librsvg 2.56.3
 libsamplerate 0.2.2
 libsigsegv 2.14
 libsixel 1.10.3_1
+libslirp 4.7.0
 libsm 1.2.4
 libsndfile 1.2.2
 libsodium 1.0.18_1
 libsoxr 0.1.3
 libspectre 0.2.12_1
 libspng 0.7.4
+libssh 0.10.5_1
 libssh2 1.11.0_1
 libtasn1 4.19.0
 libtermkey 0.22
@@ -260,11 +268,11 @@ libxt 1.3.0
 libxxf86vm 1.1.5
 libyaml 0.2.5
 libzen 0.4.41_1
-libzip 1.10.0_1
+libzip 1.10.1
 links 2.29
 little-cms2 2.15
 lolcat 100.0.1
-lsd 0.23.1
+lsd 1.0.0
 lua 5.4.6
 lua@5.3 5.3.6
 luajit HEAD-03080b7 2.1.0-beta3-20230813.2
@@ -284,7 +292,7 @@ media-info 23.07
 mercurial 6.5.1
 mesa 22.3.6_1
 meson 1.2.1
-mozjpeg 4.1.3
+mozjpeg 4.1.4
 mpdecimal 2.5.1
 mpfr 4.2.0-p12
 mpg123 1.31.3
@@ -293,7 +301,7 @@ msgpack 6.0.0
 mujs 1.3.3
 mupdf 1.22.2_1
 mysql@5.7 5.7.43
-nb 7.5.7
+nb 7.5.8
 ncspot 0.13.4
 ncurses 6.4
 neofetch 7.1.0
@@ -302,7 +310,7 @@ nettle 3.9.1
 nghttp2 1.55.1
 ninja 1.11.1
 nmap 7.94_1
-nnn 4.8
+nnn 4.9
 node 20.5.1
 npth 1.6
 nspr 4.35
@@ -322,7 +330,7 @@ opus 1.4
 orc 0.4.34
 p11-kit 0.25.0
 p7zip 17.05
-pandoc 3.1.6.1
+pandoc 3.1.6.2
 pandoc-citeproc 0.17.0.2
 pandoc-include-code 1.5.0.0_2
 pango 1.50.14
@@ -345,24 +353,25 @@ portaudio 19.7.0
 portmidi 2.0.4_1
 potrace 1.16
 pqiv 2.12_6
-prettier 3.0.2
+prettier 3.0.3
 proj 9.2.1
-protobuf 23.4
+protobuf 24.2
 pstoedit 3.78
 pueue 3.2.0
 pup 0.4.0
-pyenv 2.3.24
+pyenv 2.3.25
 pyenv-virtualenv 1.2.1
 pygments 2.16.1
-pyqt@5 5.15.7_2
+pyqt@5 5.15.9
 python-certifi 2023.7.22
-python@3.10 3.10.12_1
-python@3.11 3.11.4_1
-python@3.8 3.8.17_1
-python@3.9 3.9.17_1
+python@3.10 3.10.13
+python@3.11 3.11.5
+python@3.8 3.8.18
+python@3.9 3.9.18
+qemu 8.1.0_1
 qrencode 4.1.1
-qt 6.5.1_2
-qt@5 5.15.10
+qt 6.5.1_3
+qt@5 5.15.10_1
 rav1e 0.6.6
 readline 8.2.1
 recode 3.7.14
@@ -388,21 +397,23 @@ shellharden 4.3.0
 shfmt 3.7.0
 shpotify 2.1
 sk 0.10.4
+sketchybar 2.16.2
 skhd 0.3.9
 slides 0.9.0
 snappy 1.1.10
-soft-serve 0.5.5
+soft-serve 0.6.0
 source-highlight 3.1.9_5
 speex 1.2.1
 sphinx 2.2.11_4
-sphinx-doc 7.2.2
+sphinx-doc 7.2.4
 spotify-tui v0.23.0
-sqlite 3.42.0_1
+sqlite 3.43.0
 srt 1.5.2
 st 1.1.4_1
 starship 1.16.0
 stow 2.3.1
-svt-av1 1.6.0
+svt-av1 1.7.0
+switchaudio-osx 1.2.2
 sxiv 26_1
 szip 2.1.1_1
 tcl-tk 8.6.13_4
@@ -427,6 +438,7 @@ unrtf 0.21.10
 unzip 6.0_8
 utf8proc 2.8.0
 vapoursynth 62
+vde 2.3.3
 vips 8.14.4
 vitetris 0.59.1
 vivid 0.9.0
@@ -444,7 +456,7 @@ xterm 384
 xvid 1.3.7
 xxhash 0.8.2
 xz 5.4.4
-yabai 5.0.6
+yabai 5.0.7
 yarn 1.22.19
 youtube-dl 2021.12.17
 yt-dlp 2023.7.6_1
@@ -452,7 +464,7 @@ zathura 0.5.2
 zathura-pdf-mupdf 0.3.9_1
 zeromq 4.3.4
 zimg 3.0.5
-zlib 1.2.13
+zlib 1.3
 zstd 1.5.5
 alacritty 0.12.2
 alfred 4.5.1,1256
@@ -462,9 +474,8 @@ basictex 2023.0314
 blackhole-16ch 0.5.0
 borg-wrapper 0.0.2
 dmenu-mac 0.7.2
-docker 3.3.1,63152
 font-hack-nerd-font 3.0.2
-gimp 2.10.34-2
+gimp 2.10.34-3
 hammerspoon 0.9.90
 kitty 0.29.2
 macfuse 4.2.3
@@ -475,6 +486,7 @@ platypus 5.3,1113
 qtpass 1.3.2
 qutebrowser 3.0.0
 rar 6.23
+sf-symbols 5
 sioyek 2.0.0
 skim 1.6.18
 wezterm 20230712-072601,f4abf8fd
@@ -494,9 +506,9 @@ blindfold v1.0.7:
     blindfold
 bob-nvim v2.5.0:
     bob
-cargo-binstall v1.2.1:
+cargo-binstall v1.3.0:
     cargo-binstall
-cargo-edit v0.12.0:
+cargo-edit v0.12.1:
     cargo-add
     cargo-rm
     cargo-set-version
@@ -508,7 +520,7 @@ cargo-update v13.0.4:
     cargo-install-update-config
 cargo-watch v8.4.0:
     cargo-watch
-clap v4.3.23:
+clap v4.4.1:
     stdio-fixture
 coreutils v0.0.20:
     coreutils
@@ -518,7 +530,7 @@ evcxr_jupyter v0.15.1:
     evcxr_jupyter
 exa v0.10.1:
     exa
-gitui v0.23.0:
+gitui v0.24.0:
     gitui
 halp v0.1.7:
     halp
@@ -529,17 +541,17 @@ helix-term v0.6.0 (/Users/eirikenger/programs/helix/helix-term):
     hx
 hyperfine v1.17.0:
     hyperfine
-irust v1.70.0:
+irust v1.71.1:
     irust
 mdbook v0.4.34:
     mdbook
 mprocs v0.6.4:
     mprocs
-nu v0.83.1:
+nu v0.84.0:
     nu
 porsmo v0.2.2:
     porsmo
-rtx-cli v2023.8.2:
+rtx-cli v2023.8.9:
     rtx
 sd v0.7.6:
     sd
@@ -553,29 +565,29 @@ wiki-tui v0.8.2:
     wiki-tui
 xh v0.18.0:
     xh
-zellij v0.37.2:
+zellij v0.38.0:
     zellij
 ```
 
 ## Pipx
 
 ```txt
-package black 23.7.0, installed using Python 3.11.4
+package black 23.7.0, installed using Python 3.11.5
  - black
  - black-primer
  - blackd
-package flake8 6.1.0, installed using Python 3.11.4
+package flake8 6.1.0, installed using Python 3.11.5
  - flake8
-package gorps 0.9.1, installed using Python 3.11.4
+package gorps 0.9.1, installed using Python 3.11.5
  - gorps
-package howdoi 2.0.20, installed using Python 3.11.4
+package howdoi 2.0.20, installed using Python 3.11.5
  - howdoi
-package ncdump-rich 0.1.0, installed using Python 3.11.4
+package ncdump-rich 0.1.0, installed using Python 3.11.5
  - ncdump-rich
-package nox 2023.4.22, installed using Python 3.11.4
+package nox 2023.4.22, installed using Python 3.11.5
  - nox
  - tox-to-nox
-package opentimelineio 0.15.0, installed using Python 3.11.4
+package opentimelineio 0.15.0, installed using Python 3.11.5
  - otioautogen_serialized_schema_docs
  - otiocat
  - otioconvert
@@ -583,35 +595,35 @@ package opentimelineio 0.15.0, installed using Python 3.11.4
  - otiostat
  - otiotool
  - otioview
-package pandoc-eqnos 2.5.0, installed using Python 3.11.4
+package pandoc-eqnos 2.5.0, installed using Python 3.11.5
  - pandoc-eqnos
-package pandoc-include 1.2.0, installed using Python 3.11.4
+package pandoc-include 1.2.0, installed using Python 3.11.5
  - pandoc-include
-package pipenv 2023.8.20, installed using Python 3.11.4
+package pipenv 2023.8.28, installed using Python 3.11.5
  - pipenv
  - pipenv-resolver
-package pypistats 1.4.0, installed using Python 3.11.4
+package pypistats 1.5.0, installed using Python 3.11.5
  - pypistats
-package pywal 3.3.0, installed using Python 3.11.4
+package pywal 3.3.0, installed using Python 3.11.5
  - wal
-package rich-cli 1.8.0, installed using Python 3.11.4
+package rich-cli 1.8.0, installed using Python 3.11.5
  - rich
-package rich-codex 1.2.6, installed using Python 3.11.4
+package rich-codex 1.2.6, installed using Python 3.11.5
  - rich-codex
-package speedtest-cli 2.1.3, installed using Python 3.11.4
+package speedtest-cli 2.1.3, installed using Python 3.11.5
  - speedtest
  - speedtest-cli
-package thefuck 3.32, installed using Python 3.11.4
+package thefuck 3.32, installed using Python 3.11.5
  - fuck
  - thefuck
-package trash-cli 0.23.2.13.2, installed using Python 3.11.4
+package trash-cli 0.23.2.13.2, installed using Python 3.11.5
  - trash
  - trash-empty
  - trash-list
  - trash-put
  - trash-restore
  - trash-rm
-package whoogle-search 0.8.2, installed using Python 3.11.4
+package whoogle-search 0.8.3, installed using Python 3.11.5
  - whoogle-search
 ```
 
