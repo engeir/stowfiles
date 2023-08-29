@@ -30,6 +30,7 @@ zvm_after_init_commands+=('[ -f $HOME/programs/zsh/fzf-key-bindings/key-bindings
 plug "$HOME/.config/zsh/aliases.zsh"
 plug "$HOME/.config/zsh/functions.zsh"
 plug "$HOME/.config/zsh/ssh.zsh"
+plug "$HOME/programs/sketchybar-app-font/icon_map_fn.sh"
 
 # Search history for input with the up- and down-arrow
 # bindkey "^[[A" history-beginning-search-backward

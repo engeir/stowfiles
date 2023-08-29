@@ -7,6 +7,14 @@ batdiff() {
     fi
 }
 
+brew() {
+  command brew "$@"
+
+  if [[ $* =~ "upgrade" ]] || [[ $* =~ "update" ]] || [[ $* =~ "outdated" ]]; then
+    sketchybar --trigger brew_update
+  fi
+}
+
 cht() {
     # Cheat sheet for any command you can think of.
     curl cht.sh/"$1"
@@ -33,6 +41,11 @@ fif() {
         return 1
     fi
     rg --files-with-matches --no-messages "$1" | fzf --preview "highlight -O ansi -l {} 2> /dev/null | rg --colors 'match:bg:yellow' --ignore-case --pretty --context 10 '$1' || rg --ignore-case --pretty --context 10 '$1' {}"
+}
+
+mcd() {
+    # make a directory and cd to it
+    test -d "$1" || mkdir "$1" && cd "$1"
 }
 
 nn() {
