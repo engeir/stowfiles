@@ -1,13 +1,15 @@
 #!/bin/bash
 #
-# If the time is before noon, check if there are any appointments in my calendar and
-# send them to notify-send. Otherwise, send a notify-send message saying that my day is
-# completely open.
+# If the time is before some given time-of-day, check if there are any appointments in
+# my calendar and send them to notify-send. Otherwise, send a notify-send message saying
+# that my day is completely open.
 
-NOON="1200"
+# Default is 2400, meaning we always want a notification if the script is run without a
+# specified time
+CHECK_BEFORE_THIS="${1:-2400}"
 NOW="$(date +%H%M)"
 
-if [ "$NOON" -lt "$NOW" ]; then
+if [ "$CHECK_BEFORE_THIS" -lt "$NOW" ]; then
     exit 0
 fi
 
