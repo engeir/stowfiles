@@ -20,7 +20,11 @@ alt + @space
 # program launcher
 	dmenu_run
 	# dmenu_run -nb '#000000' -nf "#3CB371" -sb "#3CB371" -fn 3
-	#dmenu_run -nb '#000000' -nf "#00008B" -sb "#00008B" -fn 3
+	# dmenu_run -nb '#000000' -nf "#00008B" -sb "#00008B" -fn 3
+
+# ctrl_r + @space
+# # Laumch with cerebro
+# 	/home/een023/.local/bin/Cerebro-0.11.0.AppImage &
 
 super + alt + x
 # Run custom scripts
@@ -32,15 +36,15 @@ super + alt + p
 	~/bin/pdf_open &
 	# ~/.config/sxhkd/display.sh
 super + alt + w
-    ~/programs/word-lookup/word-lookup.sh &
+	~/programs/word-lookup/word-lookup.sh &
 super + alt + b
-    ~/bin/new-bookmark.sh &
+	~/bin/new-bookmark.sh &
 super + alt + t
-    ~/bin/type-bookmark.sh &
+	~/bin/type-bookmark.sh &
 super + alt + d
-    ~/bin/delete-bookmark.sh
+	~/bin/delete-bookmark.sh
 super + alt + f
-    farge &
+	farge &
 # make sxhkd reload its configuration files:
 super + Escape
 	pkill -USR1 -x sxhkd
@@ -57,15 +61,15 @@ super + alt + z
 
 # Rofi App Launcher
 super + @space
-    rofi -show drun -theme $HOME/programs/command_line_apps/rofi-collection/nord/nord.rasi
+	rofi -show drun -theme $HOME/programs/command_line_apps/rofi-collection/nord/nord.rasi
 	# sh ~/.config/bspwm/rofi/bin/launcher
 super + alt + @space
-    popup-mac ~/bin/launcher
+	popup-mac ~/bin/launcher
 	# ~/.config/rofi/launchers/misc/launcher.sh &
 # super + {_,alt +} d
 #     rofi -show {window,run} -theme $HOME/programs/command_line_apps/rofi-collection/nord/nord.rasi
 super + d
-    rofi -show window -theme $HOME/programs/command_line_apps/rofi-collection/nord/nord.rasi
+	rofi -show window -theme $HOME/programs/command_line_apps/rofi-collection/nord/nord.rasi
 # # Rofi Network Menu (nmd is not installed)
 # super + n
 # 	nmd
@@ -113,10 +117,10 @@ XF86Audio{Next,Prev,Play,Stop}
 # Also, remap CAPS LOCK to ESC and increase the speed of the keys
 super + alt + {q,r}
 	bspc {quit,wm -r}; \
-    setxkbmap -option ctrl:nocaps; \
-    xcape -e 'Control_L=Escape' \
-    xset r rate 210 40 \
-    xrdb "$HOME/.config/Xresources"
+	setxkbmap -option ctrl:nocaps; \
+	xcape -e 'Control_L=Escape' \
+	xset r rate 210 40 \
+	xrdb "$HOME/.config/Xresources"
 
 
 # close and kill
@@ -125,7 +129,7 @@ super + {_,shift + }q
 
 # kill
 ctrl + alt + Escape
-    xkill
+	xkill
 
 # alternate between the tiled and monocle layout
 super + m
@@ -154,13 +158,13 @@ super + ctrl + {m,x,y,z}
 # Hide/Unhide Window
 super + h
 	bspc node focused -g hidden=on
-	 # winmask
+	# winmask
 
 super + alt + h
 	bspwm-hidden
 
 super + alt + a
-    sh ~/.config/alacritty/toggle_alacritty_opacity &
+	sh ~/.config/alacritty/toggle_alacritty_opacity &
 
 #
 # focus/swap
@@ -254,7 +258,7 @@ super + {h,j,k,l}
 
 # Brightness
 XF86MonBrightness{Up,Down}
-    brightnessctl s 10%{+,-}
+	brightnessctl s 10%{+,-}
 
 # # Mutes
 # XF86AudioMute

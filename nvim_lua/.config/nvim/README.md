@@ -88,6 +88,7 @@ all plugins I'm using:
 - [plenary.nvim](https://github.com/nvim-lua/plenary.nvim.git)
 - [popup.nvim](https://github.com/nvim-lua/popup.nvim.git)
 - [rainbow_csv](https://github.com/mechatroner/rainbow_csv.git)
+- [sxhkd-vim](https://github.com/kovetskiy/sxhkd-vim.git)
 - [symbols-outline.nvim](https://github.com/simrat39/symbols-outline.nvim.git)
 - [syntax-tree-surfer](https://github.com/ziontee113/syntax-tree-surfer.git)
 - [telescope-bibtex.nvim](https://github.com/nvim-telescope/telescope-bibtex.nvim.git)
