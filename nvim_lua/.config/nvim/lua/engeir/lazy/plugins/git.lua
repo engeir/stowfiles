@@ -1,5 +1,10 @@
 return {
-    { "tpope/vim-fugitive",  enabled = IS_KNOWN },
+    {
+        "tpope/vim-fugitive",
+        enabled = IS_KNOWN,
+        cmd = "Git",
+        keys = { { "gb", ":Git blame<CR>", desc = "[G]it [B]lame" } },
+    },
     {
         "lewis6991/gitsigns.nvim",
         dependencies = { "nvim-lua/plenary.nvim" },
