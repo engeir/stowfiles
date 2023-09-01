@@ -30,6 +30,7 @@ all plugins I'm using:
 - [diffview.nvim](https://github.com/sindrets/diffview.nvim.git)
 - [dressing.nvim](https://github.com/stevearc/dressing.nvim.git)
 - [easypick.nvim](https://github.com/axkirillov/easypick.nvim.git)
+- [f-string-toggle.nvim](https://github.com/roobert/f-string-toggle.nvim.git)
 - [fidget](https://github.com/j-hui/fidget.nvim.git)
 - [flash.nvim](https://github.com/folke/flash.nvim.git)
 - [friendly-snippets](https://github.com/rafamadriz/friendly-snippets.git)

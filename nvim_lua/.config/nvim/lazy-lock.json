@@ -20,6 +20,7 @@
   "diffview.nvim": { "branch": "main", "commit": "7e5a85c186027cab1e825d018f07c350177077fc" },
   "dressing.nvim": { "branch": "master", "commit": "c7b035de7f91bb6b62b4308f105c56d1a968b8c5" },
   "easypick.nvim": { "branch": "main", "commit": "88d2a95eb87413f043cf21ff985a300eaaf20496" },
+  "f-string-toggle.nvim": { "branch": "main", "commit": "383ca5c08ed001f7c1632ba752c14e7bb88ce6ed" },
   "fidget": { "branch": "legacy", "commit": "90c22e47be057562ee9566bad313ad42d622c1d3" },
   "flash.nvim": { "branch": "main", "commit": "8a8e74922a383c253b7f92e042b749150140c8d1" },
   "friendly-snippets": { "branch": "main", "commit": "00e191fea2cfbbdd378243f35b5953296537a116" },

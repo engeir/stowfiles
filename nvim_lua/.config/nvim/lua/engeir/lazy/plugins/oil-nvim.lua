@@ -1,4 +1,6 @@
 return {
+    -- IMPORTANT: do not Lazy load this, since I want this to be default when opening
+    -- vim in a directory.
     "stevearc/oil.nvim",
     config = function()
         require("oil").setup({
@@ -6,11 +8,11 @@ return {
                 -- Show files and directories that start with "."
                 show_hidden = true,
                 -- This function defines what is considered a "hidden" file
-                is_hidden_file = function(name, bufnr)
+                is_hidden_file = function(name, _)
                     return vim.startswith(name, ".")
                 end,
                 -- This function defines what will never be shown, even when `show_hidden` is set
-                is_always_hidden = function(name, bufnr)
+                is_always_hidden = function(name, _)
                     return vim.startswith(name, ".git/")
                 end,
             },
