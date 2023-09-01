@@ -4,6 +4,37 @@ return {
         build = ":TSUpdate",
         config = function()
             require("nvim-treesitter.configs").setup({
+                ensure_installed = {
+                    "bash",
+                    "bibtex",
+                    "css",
+                    "fortran",
+                    "go",
+                    "html",
+                    "latex",
+                    "lua",
+                    "markdown",
+                    "markdown_inline",
+                    -- "norg",
+                    -- "org",
+                    "python",
+                    "scss",
+                    "toml",
+                    "vim",
+                },
+                sync_install = false,
+                auto_install = false,
+                ignore_install = {},
+                rainbow = {
+                    enable = true,
+                    -- disable = { "jsx", "cpp" }, list of languages you want to disable the plugin for
+                    extended_mode = true, -- Also highlight non-bracket delimiters like html tags, boolean or table: lang -> boolean
+                    max_file_lines = nil, -- Do not enable for files with more than n lines, int
+                    -- colors = {}, -- table of hex strings
+                    -- termcolors = {} -- table of colour name strings
+                },
+                modules = { "highlight", "indent", "incremental_selection", "textobjects" },
+                indent = { enable = true },
                 highlight = {
                     enable = true,
                     -- disable = {"markdown"},
@@ -26,7 +57,6 @@ return {
                     -- "vim",
                     -- }, -- Spell check only in comments, not code, for the given languages
                 },
-                indent = { enable = true },
                 incremental_selection = {
                     enable = true,
                     keymaps = {
@@ -36,35 +66,9 @@ return {
                         node_decremental = "<c-m>",
                     },
                 },
-                ensure_installed = {
-                    "bash",
-                    "bibtex",
-                    "css",
-                    "fortran",
-                    "go",
-                    "html",
-                    "latex",
-                    "lua",
-                    "markdown",
-                    "markdown_inline",
-                    -- "norg",
-                    -- "org",
-                    "python",
-                    "scss",
-                    "toml",
-                    "vim",
-                },
-                rainbow = {
-                    enable = true,
-                    -- disable = { "jsx", "cpp" }, list of languages you want to disable the plugin for
-                    extended_mode = true, -- Also highlight non-bracket delimiters like html tags, boolean or table: lang -> boolean
-                    max_file_lines = nil, -- Do not enable for files with more than n lines, int
-                    -- colors = {}, -- table of hex strings
-                    -- termcolors = {} -- table of colour name strings
-                },
                 textobjects = {
+                    enable = true,
                     select = {
-                        enable = true,
                         lookahead = true, -- Automatically jump forward to textobj, similar to targets.vim
                         keymaps = {
                             -- You can use the capture groups defined in textobjects.scm
@@ -116,6 +120,9 @@ return {
         "nvim-treesitter/nvim-treesitter-context",
         config = function()
             require("treesitter-context").setup({
+                min_window_height = 0,
+                line_numbers = true,
+                multiline_threshold = 15,
                 enable = true,        -- Enable this plugin (Can be enabled/disabled later via commands)
                 max_lines = 0,        -- How many lines the window should span. Values <= 0 mean no limit.
                 trim_scope = "outer", -- Which context lines to discard if `max_lines` is exceeded. Choices: 'inner', 'outer'
@@ -183,7 +190,12 @@ return {
             },
         },
         keys = {
-            { "gp", ":lua require('neogen').generate()<CR>", desc = "Neogen: [G]enerate docstring", { noremap = true, silent = true } },
+            {
+                "gp",
+                ":lua require('neogen').generate()<CR>",
+                desc = "Neogen: [G]enerate docstring",
+                { noremap = true, silent = true },
+            },
         },
         -- Uncomment next line if you want to follow only stable versions
         -- tag = "*"
