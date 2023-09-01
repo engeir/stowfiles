@@ -72,7 +72,6 @@ return {
                 },
             })
         end,
-        lazy = false,
         keys = {
             { "dc", ":DiffviewClose<cr>", { silent = true, noremap = true, desc = "[D]iffview [C]lose" } },
             { "do", ":DiffviewOpen<cr>",  { silent = true, noremap = true, desc = "[D]iffview [O]pen" } },
@@ -88,11 +87,21 @@ return {
                     diffview = true,
                 },
             })
-            vim.keymap.set("n", "<leader>gs", neogit.open, { desc = "Neogit Open" })
-            vim.keymap.set("n", "<leader>gc", function()
-                neogit.open({ "commit" })
-            end, { desc = "Neogit Commit" })
         end,
+        cmd = "Neogit",
+        keys = {
+            {
+                "<leader>gs",
+                function()
+                    require("neogit").open()
+                end,
+                desc = "Neogit Open"
+            }, {
+            "<leader>gc", function()
+            require("neogit").open({ "commit" })
+        end, { desc = "Neogit Commit" }
+        }
+        }
     }, -- To commit quickly and view
     { "rhysd/committia.vim", enabled = IS_KNOWN },
     {

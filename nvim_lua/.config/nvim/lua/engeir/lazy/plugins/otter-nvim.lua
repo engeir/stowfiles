@@ -1,6 +1,6 @@
 return {
     "jmbuhr/otter.nvim",
-    enabled = IS_KNOWN,
+    enabled = false,
     dependencies = {
         "hrsh7th/nvim-cmp",
         "neovim/nvim-lspconfig",

@@ -1,6 +1,5 @@
 local list = [[
 << EOF
-:PackerInstall
 :Telescope find_files
 :Git blame
 EOF
@@ -10,15 +9,6 @@ return {
     {
         "nvim-telescope/telescope.nvim",
         config = function()
-            -- Define keymappings for original telescope plugin
-            local function map(mode, lhs, rhs, opts)
-                local options = { noremap = true, silent = true }
-                if opts then
-                    options = vim.tbl_extend("force", options, opts)
-                end
-                vim.api.nvim_set_keymap(mode, lhs, rhs, options)
-            end
-
             -- Don't preview binaries
             -- https://github.com/nvim-telescope/telescope.nvim/wiki/Configuration-Recipes#dont-preview-binaries
             local previewers = require("telescope.previewers")
@@ -142,7 +132,6 @@ return {
             vim.keymap.set("n", "<leader>b", function()
                 require("telescope.builtin").buffers({ sort_mru = true, ignore_current_buffer = true })
             end, { desc = "Find [B]uffers" })
-            map("n", "<leader>fb", "<cmd>Telescope bibtex<cr>", { desc = "[F]ind [B]ibtex" })
             vim.keymap.set("n", "<leader>fm", function()
                 require("telescope").extensions.media_files.media_files()
             end, { desc = "[F]ind [M]edia files" })
@@ -166,6 +155,7 @@ return {
     },
     {
         "axkirillov/easypick.nvim",
+        cmd = "Easypick",
         config = function()
             local easypick = require("easypick")
             -- only required for the example to work
@@ -213,6 +203,10 @@ return {
         config = function()
             require("telescope").load_extension("bibtex")
         end,
+        ft = "tex",
+        keys = {
+            { "<leader>fb", "<cmd>Telescope bibtex<cr>", { desc = "[F]ind [B]ibtex" } },
+        },
     },
     {
         "nvim-telescope/telescope-ui-select.nvim",
@@ -239,7 +233,7 @@ return {
     },
     {
         "nvim-telescope/telescope-file-browser.nvim",
-        enabled = IS_KNOWN,
+        enabled = false,
         dependencies = { "nvim-telescope/telescope.nvim", "nvim-lua/plenary.nvim" },
         config = function()
             require("telescope").load_extension("file_browser")
