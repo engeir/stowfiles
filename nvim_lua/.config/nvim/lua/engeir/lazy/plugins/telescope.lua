@@ -132,9 +132,6 @@ return {
             vim.keymap.set("n", "<leader>b", function()
                 require("telescope.builtin").buffers({ sort_mru = true, ignore_current_buffer = true })
             end, { desc = "Find [B]uffers" })
-            vim.keymap.set("n", "<leader>fm", function()
-                require("telescope").extensions.media_files.media_files()
-            end, { desc = "[F]ind [M]edia files" })
             vim.keymap.set("n", "<leader>fp", function()
                 require("telescope.builtin").spell_suggest()
             end, { desc = "[F]ind S[p]ell suggestions" })
@@ -214,13 +211,14 @@ return {
             require("telescope").load_extension("ui-select")
         end,
     },
-    -- {
-    --     "AckslD/nvim-neoclip.lua",
-    --     config = function()
-    --         require("neoclip").setup({ default_register = { '"', "+", "*" } })
-    --         require("telescope").load_extension("neoclip")
-    --     end,
-    -- },
+    {
+        "AckslD/nvim-neoclip.lua",
+        enabled = false,
+        config = function()
+            require("neoclip").setup({ default_register = { '"', "+", "*" } })
+            require("telescope").load_extension("neoclip")
+        end,
+    },
     "nvim-telescope/telescope-symbols.nvim",
     {
         "nvim-telescope/telescope-media-files.nvim",
@@ -230,6 +228,15 @@ return {
         config = function()
             require("telescope").load_extension("media_files")
         end,
+        keys = {
+            {
+                "<leader>fm",
+                function()
+                    require("telescope").extensions.media_files.media_files()
+                end,
+                desc = "[F]ind [M]edia files",
+            },
+        },
     },
     {
         "nvim-telescope/telescope-file-browser.nvim",
