@@ -90,7 +90,7 @@ binutils 2.38-4ubuntu2.3 [Ubuntu/jammy main]
 binutils-common 2.38-4ubuntu2.3 [Ubuntu/jammy main]
 binutils-x86-64-linux-gnu 2.38-4ubuntu2.3 [Ubuntu/jammy main]
 bison 2:3.8.2+dfsg-1build1 [Ubuntu/jammy main]
-bitwarden 2023.7.1 [local]
+bitwarden 2023.8.2 [local]
 black 21.12b0-1 [Ubuntu/jammy universe]
 blt 2.5.3+dfsg-4.1build2 [Ubuntu/jammy main]
 bluez 5.64-0ubuntu1 [Ubuntu/jammy main]
@@ -3652,10 +3652,10 @@ okular 4:21.12.3-0ubuntu1 [Ubuntu/jammy universe]
 okular-extra-backends 4:21.12.3-0ubuntu1 [Ubuntu/jammy universe]
 openconnect 8.20-1 [Ubuntu/jammy universe]
 openjade 1.4devel1-22 [Ubuntu/jammy universe]
-openjdk-11-jdk 11.0.20+8-1ubuntu1~22.04 [Ubuntu/jammy main]
-openjdk-11-jdk-headless 11.0.20+8-1ubuntu1~22.04 [Ubuntu/jammy main]
-openjdk-11-jre 11.0.20+8-1ubuntu1~22.04 [Ubuntu/jammy main]
-openjdk-11-jre-headless 11.0.20+8-1ubuntu1~22.04 [Ubuntu/jammy main]
+openjdk-11-jdk 11.0.20.1+1-0ubuntu1~22.04 [Ubuntu/jammy main]
+openjdk-11-jdk-headless 11.0.20.1+1-0ubuntu1~22.04 [Ubuntu/jammy main]
+openjdk-11-jre 11.0.20.1+1-0ubuntu1~22.04 [Ubuntu/jammy main]
+openjdk-11-jre-headless 11.0.20.1+1-0ubuntu1~22.04 [Ubuntu/jammy main]
 openprinting-ppds 20220223-0ubuntu1 [Ubuntu/jammy main]
 opensp 1.5.2-13ubuntu3 [Ubuntu/jammy universe]
 openssh-client 1:8.9p1-3ubuntu0.3 [Ubuntu/jammy main]
@@ -3760,7 +3760,7 @@ printer-driver-splix 2.0.0+svn315-7fakesync1ubuntu0.22.04.1 [Ubuntu/jammy main]
 procps 2:3.3.17-6ubuntu2 [Ubuntu/jammy main]
 proj-bin 8.2.1-1 [Ubuntu/jammy universe]
 proj-data 8.2.1-1 [Ubuntu/jammy universe]
-protonmail-bridge 3.3.2-1 [local]
+protonmail-bridge 3.4.1-1 [local]
 ps2eps 1.68+binaryfree-3 [Ubuntu/jammy universe]
 psmisc 23.4-2build3 [Ubuntu/jammy main]
 pstoedit 3.78-1 [Ubuntu/jammy universe]
@@ -4406,10 +4406,10 @@ thorium-browser 115.0.5790.172-1 [local]
 thunar 4.16.10-1 [Ubuntu/jammy universe]
 thunar-data 4.16.10-1 [Ubuntu/jammy universe]
 thunar-volman 4.16.0-1 [Ubuntu/jammy universe]
-thunderbird 1:102.13.0+build1-0ubuntu0.22.04.1 [Ubuntu/jammy main]
-thunderbird-gnome-support 1:102.13.0+build1-0ubuntu0.22.04.1 [Ubuntu/jammy main]
-thunderbird-locale-en 1:102.13.0+build1-0ubuntu0.22.04.1 [Ubuntu/jammy main]
-thunderbird-locale-en-us 1:102.13.0+build1-0ubuntu0.22.04.1 [Ubuntu/jammy main]
+thunderbird 1:102.15.0+build1-0ubuntu0.22.04.1 [Ubuntu/jammy main]
+thunderbird-gnome-support 1:102.15.0+build1-0ubuntu0.22.04.1 [Ubuntu/jammy main]
+thunderbird-locale-en 1:102.15.0+build1-0ubuntu0.22.04.1 [Ubuntu/jammy main]
+thunderbird-locale-en-us 1:102.15.0+build1-0ubuntu0.22.04.1 [Ubuntu/jammy main]
 time 1.9-0.1build2 [Ubuntu/jammy main]
 timer 1.2.0 [local]
 timgm6mb-soundfont 1.3-5 [Ubuntu/jammy universe]
@@ -4670,7 +4670,7 @@ zstd 1.4.8+dfsg-3build1 [Ubuntu/jammy main]
 
 ```txt
 name: batsignal version: 1.6.4-pacstall1
-name: bitwarden version: 2023.7.1
+name: bitwarden version: 2023.8.2
 name: brave-browser version: 1.57.53
 name: brave-keyring version: 1.13
 name: google-chrome-stable version: 116.0.5845.140-1
@@ -4678,7 +4678,7 @@ name: htop version: 3.2.2-pacstall1
 name: nala version: 0.13.0
 name: neofetch version: 7.1.0-pacstall1
 name: polybar version: 3.6.3-pacstall1
-name: protonmail-bridge version: 3.3.2-1
+name: protonmail-bridge version: 3.4.1-1
 name: quarto version: 1.3.450
 name: shfmt version: 3.7.0-pacstall1
 name: signal-desktop version: 6.29.1
@@ -4728,7 +4728,7 @@ fd-find v8.7.0:
     fd
 ffsend v0.2.76:
     ffsend
-gitui v0.24.0:
+gitui v0.24.2:
     gitui
 halp v0.1.7:
     halp
@@ -4739,7 +4739,7 @@ helix-term v0.6.0 (/home/een023/programs/helix/helix-term):
     hx
 hyperfine v1.17.0:
     hyperfine
-irust v1.71.1:
+irust v1.71.3:
     irust
 jless v0.9.0:
     jless
@@ -4770,7 +4770,7 @@ pueue v3.2.0:
     pueued
 ripgrep v13.0.0:
     rg
-rtx-cli v2023.8.9:
+rtx-cli v2023.8.10:
     rtx
 sccache v0.5.4:
     sccache
@@ -4801,7 +4801,7 @@ xh v0.18.0:
     xh
 xplr v0.21.3:
     xplr
-zellij v0.38.0:
+zellij v0.38.1:
     zellij
 zeta-note v0.1.8:
     zeta-note
@@ -4846,7 +4846,7 @@ package flake8 6.1.0, installed using Python 3.10.4
  - flake8
 package fprettify 0.3.7, installed using Python 3.10.4
  - fprettify
-package globus-cli 3.17.0, installed using Python 3.10.4
+package globus-cli 3.18.0, installed using Python 3.10.4
  - globus
 package gorps 0.9.1, installed using Python 3.10.4
  - gorps
@@ -4909,7 +4909,7 @@ package pandoc-include 1.2.0, installed using Python 3.10.4
 package pdfcropmargins 2.0.3, installed using Python 3.10.4
  - pdf-crop-margins
  - pdfcropmargins
-package pipenv 2023.8.28, installed using Python 3.10.4
+package pipenv 2023.9.1, installed using Python 3.10.4
  - pipenv
  - pipenv-resolver
 package pipreqs 0.4.13, installed using Python 3.10.4
@@ -4922,7 +4922,7 @@ package poetry2setup 1.1.0, installed using Python 3.10.4
  - poetry2setup
 package pptx2md 1.5.0, installed using Python 3.10.4
  - pptx2md
-package pre-commit 3.3.3, installed using Python 3.10.4
+package pre-commit 3.4.0, installed using Python 3.10.4
  - pre-commit
  - pre-commit-validate-config
  - pre-commit-validate-manifest
@@ -4985,7 +4985,7 @@ ascii-image-converter: github.com/TheZoraiz/ascii-image-converter@v1.13.1
                   gum: github.com/charmbracelet/gum@v0.11.0
                   gup: github.com/nao1215/gup@v0.22.0
               lazygit: github.com/jesseduffield/lazygit@v0.40.2
-                   lf: github.com/gokcehan/lf@v0.0.0-20230828013016-63d21b5a3e2d
+                   lf: github.com/gokcehan/lf@v0.0.0-20230904052241-a67e43ab664a
                   nap: github.com/maaslalani/nap@v0.1.1
                 rmapi: github.com/juruen/rmapi@(devel)
                     s: github.com/zquestz/s@v0.6.8
@@ -5000,10 +5000,10 @@ ascii-image-converter: github.com/TheZoraiz/ascii-image-converter@v1.13.1
 Name                                    Version                                 Branch
 ncspot                                  0.13.4                                  stable
 Freedesktop Platform                    21.08.21                                21.08
-Freedesktop Platform                    22.08.14                                22.08
+Freedesktop Platform                    22.08.15                                22.08
 Mesa                                    21.3.9                                  21.08
-Mesa                                    23.1.4                                  22.08
-Mesa (Extra)                            23.1.4                                  22.08-extra
+Mesa                                    23.1.6                                  22.08
+Mesa (Extra)                            23.1.6                                  22.08-extra
 Intel                                                                           21.08
 Intel                                                                           22.08
 openh264                                2.1.0                                   2.0
@@ -5051,7 +5051,7 @@ procs                      v0.13.0                     969    latest/stable    d
 remmina                    v1.4.31                     5782   latest/stable    remmina**      -
 shotcut                    23.07.29                    1178   latest/stable    meltytech**    classic
 snap-store                 41.3-71-g709398e            959    latest/stable/…  canonical**    -
-snapd                      2.60.2                      19993  latest/stable    canonical**    snapd
+snapd                      2.60.3                      20092  latest/stable    canonical**    snapd
 snapd-desktop-integration  0.9                         83     latest/stable/…  canonical**    -
 spt                        0.25.0                      289    latest/stable    popey          -
 timg                       1.4.1+pkg-67d0              16     latest/stable    simosx         -

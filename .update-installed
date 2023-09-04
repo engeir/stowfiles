@@ -24,7 +24,7 @@ run_updates() {
     fi
     if [ "Linux" = "$1" ]; then
         echo_and_run sudo snap refresh
-        echo_and_run flatpak update
+        echo_and_run flatpak update -y
         echo_and_run sudo nala upgrade -y --update
         echo_and_run pacstall -Up -P
     fi
