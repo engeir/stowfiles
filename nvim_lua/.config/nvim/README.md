@@ -45,7 +45,6 @@ all plugins I'm using:
 - [keylab.nvim](https://github.com/BooleanCube/keylab.nvim.git)
 - [lazy.nvim](https://github.com/folke/lazy.nvim.git)
 - [lazygit.nvim](https://github.com/kdheepak/lazygit.nvim.git)
-- [lsp-zero.nvim](https://github.com/VonHeikemen/lsp-zero.nvim.git)
 - [lspkind.nvim](https://github.com/onsails/lspkind.nvim.git)
 - [lualine](https://github.com/nvim-lualine/lualine.nvim.git)
 - [luasnip-latex-snippets.nvim](https://github.com/iurimateus/luasnip-latex-snippets.nvim.git)
