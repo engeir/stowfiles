@@ -7,7 +7,8 @@ export NODE_PATH='/usr/local/lib/node_modules'
 export PATH="/Applications/ConTeXtStandalone/tex/texmf-osx-64/bin:$PATH"  # ConTeXt path
 export PATH="$PATH:$HOME/.cabal/bin/"
 # Go
-export GOROOT="/usr/local/go"
+# This is weird, but it works...
+export GOROOT="/usr/local/go"  # Moved to Mac specific
 export GOPATH="$HOME/go"
 export PATH="$PATH:$GOPATH/bin"
 export PATH="$PATH:$GOROOT/bin"

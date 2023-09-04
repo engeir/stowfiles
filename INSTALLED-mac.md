@@ -3,7 +3,7 @@
 ## Brew
 
 ```txt
-abseil 20230125.3
+abseil 20230802.0
 adns 1.6.0
 adwaita-icon-theme 44.0
 aha 0.5.1
@@ -52,8 +52,8 @@ cloc 1.98
 cmake 3.27.4
 cmatrix 2.0
 cmocka 1.1.7
-composer 2.5.8
-coreutils 9.3
+composer 2.6.1
+coreutils 9.4
 cpio 2.14
 curl 8.2.1
 cython 3.0.2
@@ -67,12 +67,12 @@ docbook-xsl 1.79.2_1
 docker 24.0.5
 docker-buildx 0.11.2
 docker-completion 24.0.5
-docker-compose 2.20.3
+docker-compose 2.21.0
 docutils 0.20.1
 docx2txt 1.4
 doggo 0.5.6
 double-conversion 3.3.0
-dpkg 1.21.22
+dpkg 1.22.0
 dtc 1.7.0
 duf 0.8.1
 dust 0.8.6
@@ -100,7 +100,7 @@ frei0r 2.3.1
 fribidi 1.0.13
 fzf 0.42.0
 gawk 5.2.2
-gcc 13.1.0
+gcc 13.2.0
 gd 2.3.3_6
 gdbm 1.23
 gdk-pixbuf 2.42.10_1
@@ -112,7 +112,7 @@ giflib 5.2.1
 girara 0.4.0
 git 2.42.0
 git-lfs 3.4.0
-glib 2.76.4
+glib 2.76.5
 glow 1.5.1
 gmp 6.2.1_1
 gnu-getopt 2.39.2
@@ -142,18 +142,18 @@ has 1.5.0
 hdf5 1.14.2
 helix 23.05
 hicolor-icon-theme 0.17
-highway 1.0.6
+highway 1.0.7
 hledger 1.30
 html2text 2.2.3
 htop 3.2.2
 httpd 2.4.57_1
 hub 2.14.2
-hugo 0.117.0
+hugo 0.118.2
 hunspell 1.7.2
 hwloc 2.9.2
 icu4c 73.2
 ilmbase 2.5.8
-imagemagick 7.1.1-15
+imagemagick 7.1.1-15_1
 imath 3.1.9
 imlib2 1.12.0
 intltool 0.51.0_1
@@ -164,7 +164,7 @@ jbig2dec 0.19
 jemalloc 5.3.0
 jpeg 9e
 jpeg-turbo 3.0.0
-jpeg-xl 0.8.2
+jpeg-xl 0.8.2_1
 jpegoptim 1.5.5
 jq 1.6
 json-c 0.17
@@ -178,7 +178,7 @@ libansilove 1.4.1
 libarchive 3.7.1
 libass 0.17.1
 libassuan 2.5.6
-libavif 1.0.0
+libavif 1.0.1
 libb2 0.98.1
 libbluray 1.3.4
 libcaca 0.99b20
@@ -319,7 +319,7 @@ odt2txt 0.5
 oniguruma 6.9.8
 open-mpi 4.1.5
 opencore-amr 0.1.6
-openexr 3.1.11
+openexr 3.2.0
 openjdk 20.0.1
 openjpeg 2.5.0_1
 openldap 2.6.6
@@ -330,7 +330,7 @@ opus 1.4
 orc 0.4.34
 p11-kit 0.25.0
 p7zip 17.05
-pandoc 3.1.6.2
+pandoc 3.1.7
 pandoc-citeproc 0.17.0.2
 pandoc-include-code 1.5.0.0_2
 pango 1.50.14
@@ -340,7 +340,7 @@ pcre2 10.42
 pdftohtml 0.40a
 pdftoipe 7.2.24.1_14
 perl 5.36.1
-php 8.2.9
+php 8.2.10
 pinentry 1.2.1
 pinentry-mac 1.1.1.1
 pipx 1.2.0
@@ -355,7 +355,7 @@ potrace 1.16
 pqiv 2.12_6
 prettier 3.0.3
 proj 9.2.1
-protobuf 24.2
+protobuf 24.2_1
 pstoedit 3.78
 pueue 3.2.0
 pup 0.4.0
@@ -364,6 +364,7 @@ pyenv-virtualenv 1.2.1
 pygments 2.16.1
 pyqt@5 5.15.9
 python-certifi 2023.7.22
+python-packaging 23.1
 python@3.10 3.10.13
 python@3.11 3.11.5
 python@3.8 3.8.18
@@ -382,7 +383,7 @@ rtmpdump 2.4+20151223_2
 rubberband 3.3.0
 ruby 3.2.2_1
 ruby-install 0.9.1
-rust-analyzer 2023-07-24
+rust-analyzer 2023-08-28
 scrcpy 2.1.1
 screenresolution 1.6
 sd 0.7.6_1
@@ -405,7 +406,7 @@ soft-serve 0.6.0
 source-highlight 3.1.9_5
 speex 1.2.1
 sphinx 2.2.11_4
-sphinx-doc 7.2.4
+sphinx-doc 7.2.5
 spotify-tui v0.23.0
 sqlite 3.43.0
 srt 1.5.2
@@ -431,7 +432,7 @@ tree 2.1.1
 tree-sitter 0.20.8
 ttyd 1.7.3_1
 uchardet 0.0.8
-unbound 1.17.1_1
+unbound 1.18.0
 unibilium 2.1.1
 unixodbc 2.3.12
 unrtf 0.21.10
@@ -439,11 +440,11 @@ unzip 6.0_8
 utf8proc 2.8.0
 vapoursynth 62
 vde 2.3.3
-vips 8.14.4
+vips 8.14.4_1
 vitetris 0.59.1
 vivid 0.9.0
 w3m 0.5.3_8
-watch 4.0.3
+watch 4.0.4
 webp 1.3.1
 wget 1.21.4
 x264 r3095
@@ -518,9 +519,9 @@ cargo-info v0.7.6:
 cargo-update v13.0.4:
     cargo-install-update
     cargo-install-update-config
-cargo-watch v8.4.0:
+cargo-watch v8.4.1:
     cargo-watch
-clap v4.4.1:
+clap v4.4.2:
     stdio-fixture
 coreutils v0.0.20:
     coreutils
@@ -530,7 +531,7 @@ evcxr_jupyter v0.15.1:
     evcxr_jupyter
 exa v0.10.1:
     exa
-gitui v0.24.0:
+gitui v0.24.1:
     gitui
 halp v0.1.7:
     halp
@@ -551,7 +552,7 @@ nu v0.84.0:
     nu
 porsmo v0.2.2:
     porsmo
-rtx-cli v2023.8.9:
+rtx-cli v2023.8.10:
     rtx
 sd v0.7.6:
     sd
@@ -565,7 +566,7 @@ wiki-tui v0.8.2:
     wiki-tui
 xh v0.18.0:
     xh
-zellij v0.38.0:
+zellij v0.38.1:
     zellij
 ```
 
@@ -599,7 +600,7 @@ package pandoc-eqnos 2.5.0, installed using Python 3.11.5
  - pandoc-eqnos
 package pandoc-include 1.2.0, installed using Python 3.11.5
  - pandoc-include
-package pipenv 2023.8.28, installed using Python 3.11.5
+package pipenv 2023.9.1, installed using Python 3.11.5
  - pipenv
  - pipenv-resolver
 package pypistats 1.5.0, installed using Python 3.11.5
@@ -631,18 +632,18 @@ package whoogle-search 0.8.3, installed using Python 3.11.5
 
 ```txt
 ascii-image-converter: github.com/TheZoraiz/ascii-image-converter@v1.13.1
-                   d2: oss.terrastruct.com/d2@v0.5.1
+                   d2: oss.terrastruct.com/d2@v0.6.0
               despell: github.com/bensadeh/despell@v0.0.0-20230531131653-1c623b613b06
                  draw: github.com/maaslalani/draw@v0.1.1
                fast-p: github.com/bellecp/fast-p@v0.2.5
-        golangci-lint: github.com/golangci/golangci-lint/cmd/golangci-lint@v1.53.3
+        golangci-lint: github.com/golangci/golangci-lint/cmd/golangci-lint@v1.54.2
          gomodifytags: github.com/fatih/gomodifytags@v1.16.0
                   gum: github.com/charmbracelet/gum@v0.11.0
                   gup: github.com/nao1215/gup@v0.22.0
                   jqp: github.com/noahgorstein/jqp@v0.4.0
-              lazygit: github.com/jesseduffield/lazygit@v0.39.4
-                   lf: github.com/gokcehan/lf@v0.0.0-20230727000951-2620f492c27a
-       mandelbrot-cli: github.com/MicheleFiladelfia/mandelbrot-cli@v0.0.0-20230416100519-74781703a9e2
+              lazygit: github.com/jesseduffield/lazygit@v0.40.2
+                   lf: github.com/gokcehan/lf@v0.0.0-20230831001031-6aa3d2aa18eb
+       mandelbrot-cli: github.com/MicheleFiladelfia/mandelbrot-cli@v0.0.0-20230822145243-64ccd65c54d3
                monkey: monkey@(devel)
                   nap: github.com/maaslalani/nap@v0.1.1
                   pup: @unknown
