@@ -7,6 +7,7 @@ return {
     },
     {
         "lewis6991/gitsigns.nvim",
+        event = { "BufReadPre", "BufNewFile" },
         dependencies = { "nvim-lua/plenary.nvim" },
         opts = {
             current_line_blame = true,
@@ -74,7 +75,7 @@ return {
         end,
         keys = {
             { "dc", ":DiffviewClose<cr>", { silent = true, noremap = true, desc = "[D]iffview [C]lose" } },
-            { "do", ":DiffviewOpen<cr>",  { silent = true, noremap = true, desc = "[D]iffview [O]pen" } },
+            { "do", ":DiffviewOpen<cr>", { silent = true, noremap = true, desc = "[D]iffview [O]pen" } },
         },
     },
     {
@@ -95,13 +96,16 @@ return {
                 function()
                     require("neogit").open()
                 end,
-                desc = "Neogit Open"
-            }, {
-            "<leader>gc", function()
-            require("neogit").open({ "commit" })
-        end, { desc = "Neogit Commit" }
-        }
-        }
+                desc = "Neogit Open",
+            },
+            {
+                "<leader>gc",
+                function()
+                    require("neogit").open({ "commit" })
+                end,
+                { desc = "Neogit Commit" },
+            },
+        },
     }, -- To commit quickly and view
     { "rhysd/committia.vim", enabled = IS_KNOWN },
     {
@@ -113,11 +117,15 @@ return {
     },
     {
         "ruifm/gitlinker.nvim",
+        event = { "BufReadPre", "BufNewFile" },
         enabled = IS_KNOWN,
         config = function()
             require("gitlinker").setup()
         end,
     }, -- Quickly get a permalink to lines of code
     -- My plugins
-    "engeir/githistory-browse.nvim",
+    {
+        "engeir/githistory-browse.nvim",
+        event = { "BufReadPre", "BufNewFile" },
+    },
 }

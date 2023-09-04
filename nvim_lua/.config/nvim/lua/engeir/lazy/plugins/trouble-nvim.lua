@@ -1,11 +1,7 @@
 return {
     "folke/trouble.nvim",
     dependencies = "nvim-tree/nvim-web-devicons",
-    config = function()
-        require("trouble").setup({
-            auto_close = true,
-        })
-    end,
+    opts = { auto_close = true },
     keys = {
         { "<leader>tt", "<cmd>TroubleToggle<cr>", desc = "[T]rouble[T]oggle" },
     },

@@ -10,20 +10,25 @@ return {
     --    folke/flash.nvim        <- mini.jump
 
     -- mini.ai -------------------------------------------------------------------------
-    { "echasnovski/mini.ai",        config = true },
+    {
+        "echasnovski/mini.ai",
+        event = "VeryLazy",
+        config = true,
+    },
 
     -- mini.align ----------------------------------------------------------------------
-    { "echasnovski/mini.align",     config = true },
+    { "echasnovski/mini.align", config = true },
 
     -- mini.bracketed ------------------------------------------------------------------
     { "echasnovski/mini.bracketed", config = true },
 
     -- mini.colors ---------------------------------------------------------------------
-    { "echasnovski/mini.colors",    cofig = true },
+    { "echasnovski/mini.colors", cofig = true },
 
     -- mini.comment --------------------------------------------------------------------
     {
         "echasnovski/mini.comment",
+        event = "VeryLazy",
         init = function()
             --- Set the comment rule for a file type
             ---@param pattern string
@@ -46,7 +51,11 @@ return {
     },
 
     -- mini.cursorword -----------------------------------------------------------------
-    { "echasnovski/mini.cursorword", config = true },
+    {
+        "echasnovski/mini.cursorword",
+        event = { "BufReadPost", "BufNewFile" },
+        config = true,
+    },
 
     -- mini.files ----------------------------------------------------------------------
     {
@@ -66,10 +75,14 @@ return {
     -- mini.fuzzy ----------------------------------------------------------------------
     -- Replaces one of the sorters:
     -- https://github.com/nvim-telescope/telescope.nvim#sorters
-    { "echasnovski/mini.fuzzy",      config = true },
+    { "echasnovski/mini.fuzzy", config = true },
 
     -- mini.pairs ----------------------------------------------------------------------
-    { "echasnovski/mini.pairs",      config = true },
+    {
+        "echasnovski/mini.pairs",
+        event = "VeryLazy",
+        config = true,
+    },
 
     -- mini.indentscope ----------------------------------------------------------------
     {
@@ -110,7 +123,7 @@ return {
     { "echasnovski/mini.splitjoin", config = true },
 
     -- mini.surround -------------------------------------------------------------------
-    { "echasnovski/mini.surround",  config = true },
+    { "echasnovski/mini.surround", config = true },
 
     -- mini.starter --------------------------------------------------------------------
     {
