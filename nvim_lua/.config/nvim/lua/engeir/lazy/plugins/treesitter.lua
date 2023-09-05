@@ -123,8 +123,8 @@ return {
                 min_window_height = 0,
                 line_numbers = true,
                 multiline_threshold = 15,
-                enable = true,        -- Enable this plugin (Can be enabled/disabled later via commands)
-                max_lines = 0,        -- How many lines the window should span. Values <= 0 mean no limit.
+                enable = true, -- Enable this plugin (Can be enabled/disabled later via commands)
+                max_lines = 0, -- How many lines the window should span. Values <= 0 mean no limit.
                 trim_scope = "outer", -- Which context lines to discard if `max_lines` is exceeded. Choices: 'inner', 'outer'
                 patterns = {
                     -- Match patterns for TS nodes. These get wrapped to match at word boundaries.
@@ -157,7 +157,7 @@ return {
                 -- [!] The options below are exposed but shouldn't require your attention,
                 --     you can safely ignore them.
 
-                zindex = 20,     -- The Z-index of the context window
+                zindex = 20, -- The Z-index of the context window
                 mode = "cursor", -- Line used to calculate context. Choices: 'cursor', 'topline'
             })
         end,
@@ -165,6 +165,8 @@ return {
     "nvim-treesitter/nvim-treesitter-textobjects",
     {
         "zbirenbaum/neodim",
+        commit = "157eecd5ec9da0cbc660b168b87a7d9b973a598a",
+        event = "LspAttach",
         enabled = IS_KNOWN,
         opts = {
             alpha = 0.5, -- make the dimmed text even dimmer
