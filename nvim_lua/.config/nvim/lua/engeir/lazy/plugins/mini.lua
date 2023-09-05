@@ -17,11 +17,84 @@ return {
     },
 
     -- mini.align ----------------------------------------------------------------------
-    { "echasnovski/mini.align", config = true },
+    { "echasnovski/mini.align",     config = true },
 
     -- mini.bracketed ------------------------------------------------------------------
     { "echasnovski/mini.bracketed", config = true },
 
+    -- mini.clue -----------------------------------------------------------------------
+    {
+        "echasnovski/mini.clue",
+        config = function()
+            local miniclue = require("mini.clue")
+            miniclue.setup({
+
+                triggers = {
+                    -- Leader triggers
+                    { mode = "n", keys = "<Leader>" },
+                    { mode = "x", keys = "<Leader>" },
+                    -- Built-in completion
+                    { mode = "i", keys = "<C-x>" },
+                    -- `g` key
+                    { mode = "n", keys = "g" },
+                    { mode = "x", keys = "g" },
+                    -- Marks
+                    { mode = "n", keys = "'" },
+                    { mode = "n", keys = "`" },
+                    { mode = "x", keys = "'" },
+                    { mode = "x", keys = "`" },
+                    -- Registers
+                    { mode = "n", keys = '"' },
+                    { mode = "x", keys = '"' },
+                    { mode = "i", keys = "<C-r>" },
+                    { mode = "c", keys = "<C-r>" },
+                    -- Window commands
+                    { mode = "n", keys = "<C-w>" },
+                    -- `z` key
+                    { mode = "n", keys = "z" },
+                    { mode = "x", keys = "z" },
+                    -- Jumping stuff
+                    { mode = "n", keys = "]" },
+                    { mode = "n", keys = "[" },
+                },
+                clues = {
+                    -- Enhance this by adding descriptions for <Leader> mapping groups
+                    miniclue.gen_clues.builtin_completion(),
+                    miniclue.gen_clues.g(),
+                    miniclue.gen_clues.marks(),
+                    miniclue.gen_clues.registers(),
+                    miniclue.gen_clues.windows({ submode_resize = true }),
+                    miniclue.gen_clues.z(),
+                    { mode = "n", keys = "]b", postkeys = "]" },
+                    { mode = "n", keys = "[b", postkeys = "[" },
+                    { mode = "n", keys = "[c", postkeys = "[" },
+                    { mode = "n", keys = "]c", postkeys = "]" },
+                    { mode = "n", keys = "[d", postkeys = "[" },
+                    { mode = "n", keys = "]d", postkeys = "]" },
+                    { mode = "n", keys = "[h", postkeys = "[" },
+                    { mode = "n", keys = "]h", postkeys = "]" },
+                    { mode = "n", keys = "[m", postkeys = "[" },
+                    { mode = "n", keys = "]m", postkeys = "]" },
+                    { mode = "n", keys = "[M", postkeys = "[" },
+                    { mode = "n", keys = "]M", postkeys = "]" },
+                    { mode = "n", keys = "[n", postkeys = "[" },
+                    { mode = "n", keys = "]n", postkeys = "]" },
+                    { mode = "n", keys = "[o", postkeys = "[" },
+                    { mode = "n", keys = "]o", postkeys = "]" },
+                    { mode = "n", keys = "[q", postkeys = "[" },
+                    { mode = "n", keys = "]q", postkeys = "]" },
+                    { mode = "n", keys = "[s", postkeys = "[" },
+                    { mode = "n", keys = "]s", postkeys = "]" },
+                    { mode = "n", keys = "[t", postkeys = "[" },
+                    { mode = "n", keys = "]t", postkeys = "]" },
+                    { mode = "n", keys = "[u", postkeys = "[" },
+                    { mode = "n", keys = "]u", postkeys = "]" },
+                    { mode = "n", keys = "]w", postkeys = "]" },
+                    { mode = "n", keys = "[w", postkeys = "[" },
+                },
+            })
+        end,
+    },
     -- mini.colors ---------------------------------------------------------------------
     { "echasnovski/mini.colors", cofig = true },
 
@@ -75,7 +148,7 @@ return {
     -- mini.fuzzy ----------------------------------------------------------------------
     -- Replaces one of the sorters:
     -- https://github.com/nvim-telescope/telescope.nvim#sorters
-    { "echasnovski/mini.fuzzy", config = true },
+    { "echasnovski/mini.fuzzy",  config = true },
 
     -- mini.pairs ----------------------------------------------------------------------
     {
@@ -123,7 +196,7 @@ return {
     { "echasnovski/mini.splitjoin", config = true },
 
     -- mini.surround -------------------------------------------------------------------
-    { "echasnovski/mini.surround", config = true },
+    { "echasnovski/mini.surround",  config = true },
 
     -- mini.starter --------------------------------------------------------------------
     {

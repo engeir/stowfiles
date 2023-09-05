@@ -1,6 +1,6 @@
 return {
     "anuvyklack/hydra.nvim",
-    enabled = IS_KNOWN,
+    enabled = false,
     dependencies = {
         { "chentoast/marks.nvim" },
         { "nvim-telescope/telescope.nvim" },
