@@ -19,8 +19,10 @@ if not status_ok then
 end
 
 lazy.setup({
-    import = "engeir.lazy.plugins",
+    { import = "engeir.lazy.plugins" },
+    { import = "engeir.lazy.plugins.lsp" },
 }, {
+    checker = { enabled = true, notify = false },
     change_detection = {
         -- automatically check for config file changes and reload the ui
         enabled = true,

@@ -8,6 +8,12 @@ EOF
 return {
     {
         "nvim-telescope/telescope.nvim",
+        branch = "0.1.x",
+        dependencies = {
+            "nvim-lua/plenary.nvim",
+            { "nvim-telescope/telescope-fzf-native.nvim", build = "make" },
+            "nvim-tree/nvim-web-devicons",
+        },
         config = function()
             -- Don't preview binaries
             -- https://github.com/nvim-telescope/telescope.nvim/wiki/Configuration-Recipes#dont-preview-binaries
@@ -34,13 +40,17 @@ return {
 
             local actions = require("telescope.actions")
             local trouble = require("trouble.providers.telescope")
-            require("telescope").setup({
+            local telescope = require("telescope")
+            telescope.setup({
                 defaults = {
                     generic_sorter = require("mini.fuzzy").get_telescope_sorter,
                     file_sorter = require("mini.fuzzy").get_telescope_sorter,
                     mappings = {
                         i = {
                             ["<esc>"] = actions.close,
+                            ["<C-k>"] = actions.move_selection_previous,
+                            ["<C-j>"] = actions.move_selection_next,
+                            ["<C-q>"] = actions.send_selected_to_qflist + actions.open_qflist,
                             ["<c-t>"] = trouble.open_with_trouble,
                         },
                         n = { ["<c-t>"] = trouble.open_with_trouble },
@@ -86,8 +96,7 @@ return {
                         custom_formats = {
                             {
                                 id = "hackmd",
-                                citation_format =
-                                "[^@{{label}}]: {{author}}, '{{title}}', {{journal}}, {{year}}, vol. {{volume}}, no. {{number}}, p. {{pages}}.",
+                                citation_format = "[^@{{label}}]: {{author}}, '{{title}}', {{journal}}, {{year}}, vol. {{volume}}, no. {{number}}, p. {{pages}}.",
                                 cite_marker = "[^@%s]",
                             },
                             -- {
@@ -97,8 +106,7 @@ return {
                             -- },
                         },
                         format = "hackmd",
-                        citation_format =
-                        "{{author}}, '{{title}}', {{journal}}, {{year}}, vol. {{volume}}, no. {{number}}, p. {{pages}}.",
+                        citation_format = "{{author}}, '{{title}}', {{journal}}, {{year}}, vol. {{volume}}, no. {{number}}, p. {{pages}}.",
                         -- citation_format = '<a href="https://doi.org/{{doi}}" data-citation-key="@{{label}}">{{author}} ({{year}})</a>',
                     },
                     media_files = {
@@ -109,6 +117,8 @@ return {
                     },
                 },
             })
+
+            telescope.load_extension("fzf")
 
             vim.keymap.set("n", "<leader>ff", function()
                 require("telescope.builtin").find_files({ hidden = true })

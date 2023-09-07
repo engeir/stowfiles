@@ -93,6 +93,7 @@ all plugins I'm using:
 - [symbols-outline.nvim](https://github.com/simrat39/symbols-outline.nvim.git)
 - [syntax-tree-surfer](https://github.com/ziontee113/syntax-tree-surfer.git)
 - [telescope-bibtex.nvim](https://github.com/nvim-telescope/telescope-bibtex.nvim.git)
+- [telescope-fzf-native.nvim](https://github.com/nvim-telescope/telescope-fzf-native.nvim.git)
 - [telescope-media-files.nvim](https://github.com/nvim-telescope/telescope-media-files.nvim.git)
 - [telescope-symbols.nvim](https://github.com/nvim-telescope/telescope-symbols.nvim.git)
 - [telescope-ui-select.nvim](https://github.com/nvim-telescope/telescope-ui-select.nvim.git)
