@@ -17,7 +17,7 @@ return {
     },
 
     -- mini.align ----------------------------------------------------------------------
-    { "echasnovski/mini.align",     config = true },
+    { "echasnovski/mini.align", config = true },
 
     -- mini.bracketed ------------------------------------------------------------------
     { "echasnovski/mini.bracketed", config = true },
@@ -148,7 +148,7 @@ return {
     -- mini.fuzzy ----------------------------------------------------------------------
     -- Replaces one of the sorters:
     -- https://github.com/nvim-telescope/telescope.nvim#sorters
-    { "echasnovski/mini.fuzzy",  config = true },
+    { "echasnovski/mini.fuzzy", config = true },
 
     -- mini.pairs ----------------------------------------------------------------------
     {
@@ -192,11 +192,14 @@ return {
     -- Alternative is folke/flash.nvim
     -- require("mini.jump").setup({ delay = { highlight = 10 ^ 7 } })
 
+    -- mini.operators ------------------------------------------------------------------
+    { "echasnovski/mini.operators", event = { "BufReadPre", "BufNewFile" }, config = true },
+
     -- mini.splitjoin ------------------------------------------------------------------
     { "echasnovski/mini.splitjoin", config = true },
 
     -- mini.surround -------------------------------------------------------------------
-    { "echasnovski/mini.surround",  config = true },
+    { "echasnovski/mini.surround", config = true },
 
     -- mini.starter --------------------------------------------------------------------
     {

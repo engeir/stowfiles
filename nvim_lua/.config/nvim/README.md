@@ -60,6 +60,7 @@ all plugins I'm using:
 - [mini.files](https://github.com/echasnovski/mini.files.git)
 - [mini.fuzzy](https://github.com/echasnovski/mini.fuzzy.git)
 - [mini.indentscope](https://github.com/echasnovski/mini.indentscope.git)
+- [mini.operators](https://github.com/echasnovski/mini.operators.git)
 - [mini.pairs](https://github.com/echasnovski/mini.pairs.git)
 - [mini.splitjoin](https://github.com/echasnovski/mini.splitjoin.git)
 - [mini.starter](https://github.com/echasnovski/mini.starter.git)

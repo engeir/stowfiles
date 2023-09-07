@@ -105,7 +105,7 @@ return {
             local config = {
                 virtual_text = false, -- disable virtual text
                 signs = {
-                    active = signs,   -- show signs
+                    active = signs, -- show signs
                 },
                 update_in_insert = true,
                 underline = true,
@@ -145,11 +145,11 @@ return {
     -- Autocompletion
     {
         "hrsh7th/nvim-cmp",
-        -- event = { "BufReadPre", "BufNewFile" },
+        event = { "BufReadPre", "BufNewFile" },
         dependencies = {
             { "hrsh7th/cmp-buffer" },
             { "hrsh7th/cmp-path" },
-            { "hrsh7th/cmp-cmdline" },
+            { "hrsh7th/cmp-cmdline", event = { "CmdlineEnter" } },
             { "saadparwaiz1/cmp_luasnip" },
             { "hrsh7th/cmp-nvim-lsp" },
             { "hrsh7th/cmp-nvim-lua" },
@@ -219,7 +219,7 @@ return {
                 },
                 mapping = cmp.mapping.preset.insert({
                     ["<C-f>"] = cmp.mapping.scroll_docs(-4), -- Up
-                    ["<C-d>"] = cmp.mapping.scroll_docs(4),  -- Down
+                    ["<C-d>"] = cmp.mapping.scroll_docs(4), -- Down
                     ["<C-p>"] = cmp.mapping(function(fallback)
                         if cmp.visible() then
                             cmp.select_prev_item()
@@ -251,7 +251,7 @@ return {
                     { name = "nvim_lua" },
                     { name = "path" },
                     { name = "luasnip" }, -- For luasnip users.
-                    { name = "buffer",   keyword_length = 4 },
+                    { name = "buffer", keyword_length = 4 },
                     -- { name = "orgmode" },
                     -- { name = "cmp_tabnine" },
                 },

@@ -165,7 +165,6 @@ return {
     "nvim-treesitter/nvim-treesitter-textobjects",
     {
         "zbirenbaum/neodim",
-        commit = "157eecd5ec9da0cbc660b168b87a7d9b973a598a",
         event = "LspAttach",
         enabled = IS_KNOWN,
         opts = {
