@@ -78,7 +78,6 @@
   "plenary.nvim": { "branch": "master", "commit": "0dbe561ae023f02c2fb772b879e905055b939ce3" },
   "popup.nvim": { "branch": "master", "commit": "b7404d35d5d3548a82149238289fa71f7f6de4ac" },
   "rainbow_csv": { "branch": "master", "commit": "2dbf302ed77d40bac6d1db3028c66c301606f087" },
-  "recursive-macro.nvim": { "branch": "main", "commit": "9ecf0f9967975a61611791525e51bbc97bfff137" },
   "sxhkd-vim": { "branch": "master", "commit": "7b7937ff5c220fbef3bdd883d567513246516e06" },
   "symbols-outline.nvim": { "branch": "master", "commit": "512791925d57a61c545bc303356e8a8f7869763c" },
   "syntax-tree-surfer": { "branch": "master", "commit": "152c9ac9c42202a2583a0023ec06c0ac38b51a01" },
