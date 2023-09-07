@@ -73,11 +73,12 @@ return {
             nmap("<leader>s", "<cmd>Format<CR>", "Format")
         end
 
-        local capabilities = vim.lsp.protocol.make_client_capabilities()
+        -- local capabilities = vim.lsp.protocol.make_client_capabilities()
+        local capabilities = cmp_nvim_lsp.default_capabilities()
         local signs = {
             { name = "DiagnosticSignError", text = "" },
             { name = "DiagnosticSignWarn", text = "▲" },
-            { name = "DiagnosticSignHint", text = "" },
+            { name = "DiagnosticSignHint", text = "󰈻" },
             { name = "DiagnosticSignInfo", text = "" },
         }
 
