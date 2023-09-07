@@ -1,4 +1,4 @@
-pcall(require, "impatient")
+vim.loader.enable() -- From the impatient.nvim repo
 require("engeir.basics.globals")
 
 -- General stuff
