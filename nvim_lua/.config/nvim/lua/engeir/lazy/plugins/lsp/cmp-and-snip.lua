@@ -5,7 +5,7 @@ return {
         dependencies = {
             { "hrsh7th/cmp-buffer" },
             { "hrsh7th/cmp-path" },
-            { "hrsh7th/cmp-cmdline",     event = { "CmdlineEnter" } },
+            { "hrsh7th/cmp-cmdline", event = { "CmdlineEnter" } },
             { "L3MON4D3/LuaSnip" },
             { "saadparwaiz1/cmp_luasnip" },
             { "hrsh7th/cmp-nvim-lua" },
@@ -75,7 +75,7 @@ return {
                 },
                 mapping = cmp.mapping.preset.insert({
                     ["<C-f>"] = cmp.mapping.scroll_docs(-4), -- Up
-                    ["<C-d>"] = cmp.mapping.scroll_docs(4),  -- Down
+                    ["<C-d>"] = cmp.mapping.scroll_docs(4), -- Down
                     ["<C-p>"] = cmp.mapping(function(fallback)
                         if cmp.visible() then
                             cmp.select_prev_item()
@@ -106,9 +106,9 @@ return {
                     { name = "gh_issues" },
                     { name = "nvim_lsp" },
                     { name = "nvim_lua" },
-                    { name = "path" },
                     { name = "luasnip" }, -- For luasnip users.
-                    { name = "buffer",   keyword_length = 4 },
+                    { name = "path" },
+                    { name = "buffer", keyword_length = 4 },
                     -- { name = "orgmode" },
                     -- { name = "cmp_tabnine" },
                 },
@@ -152,7 +152,59 @@ return {
         build = "make install_jsregexp",
         dependencies = "rafamadriz/friendly-snippets",
         config = function()
-            require("engeir.lazy.lsp.luasnip-settings")
+            -- See https://github.com/L3MON4D3/LuaSnip/blob/master/Examples/snippets.lua
+            -- and teeeej's taketuesday #3 videos for more sweetness
+            local ls = require("luasnip")
+            local types = require("luasnip.util.types")
+            ls.setup({
+                history = true,
+                updateevents = "TextChanged,TextChangedI",
+                enable_autosnippets = true,
+                ext_opts = {
+                    [types.choiceNode] = {
+                        active = {
+                            virt_text = { { "<-", "Error" } },
+                        },
+                    },
+                },
+                snip_env = {
+                    parse_eval = function(...)
+                        local snip = ls.parser.parse_snipmate(...)
+                        table.insert(getfenv(2).ls_file_snippets, snip)
+                    end,
+                },
+            })
+            vim.keymap.set({ "i", "s" }, "<c-k>", function()
+                if ls.expand_or_jumpable() then
+                    ls.expand_or_jump()
+                end
+            end, { silent = true })
+            -- Jump backward <c-j> (default is just to create a newline)
+            vim.keymap.set({ "i", "s" }, "<c-j>", function()
+                if ls.jumpable(-1) then
+                    ls.jump(-1)
+                end
+            end, { silent = true })
+            -- <c-l> is for selecting within a list of options.
+            -- Useful for choice nodes (introduced in the second luasnip tutorial by teeeej)
+            vim.keymap.set("i", "<c-l>", function()
+                if ls.choice_active() then
+                    ls.change_choice(1)
+                end
+            end)
+            vim.keymap.set("n", "<leader><leader>s", function()
+                require("luasnip.loaders").edit_snippet_files()
+            end, { desc = "LuaSnip: Source Snippets File" })
+
+            -- require("luasnip.loaders.from_vscode").lazy_load({
+            --     paths = { "~/.config/nvim/lua/engeir/lazy/lsp/luasnippets" },
+            -- })
+            -- require("luasnip.loaders.from_vscode").lazy_load({
+            --     exclude = { "latex", "tex", "plaintex" },
+            -- })
+            require("luasnip.loaders.from_lua").load({
+                paths = "~/.config/nvim/lua/engeir/lazy/plugins/lsp/luasnippets/lua/",
+            })
         end,
     },
 
