@@ -2,10 +2,14 @@ return {
     "neovim/nvim-lspconfig",
     event = { "BufReadPre", "BufNewFile" },
     dependencies = {
-        { "hrsh7th/cmp-nvim-lsp" },
+        "hrsh7th/cmp-nvim-lsp",
+        -- NOTE: this must be here, so that Mason config is run before this
+        "williamboman/mason.nvim",
+        "williamboman/mason-lspconfig.nvim",
     },
     config = function()
         local lspconf = require("lspconfig")
+        local mason_lspconf = require("mason-lspconfig")
         local cmp_nvim_lsp = require("cmp_nvim_lsp")
 
         local on_attach = function(client, bufnr)
@@ -85,7 +89,46 @@ return {
         for _, sign in ipairs(signs) do
             vim.fn.sign_define(sign.name, { texthl = sign.name, text = sign.text, numhl = "" })
         end
+        local config = {
+            virtual_text = false, -- disable virtual text
+            signs = {
+                active = signs,   -- show signs
+            },
+            update_in_insert = true,
+            underline = false,
+            severity_sort = true,
+            float = {
+                focusable = true,
+                style = "minimal",
+                -- border = "rounded",
+                source = "always",
+                -- header = "",
+                -- prefix = "",
+            },
+        }
+        vim.diagnostic.config(config)
 
+        -- This takes care of all installed by Mason manually, and that use default
+        -- settings
+        mason_lspconf.setup_handlers({
+            function(server_name)
+                lspconf[server_name].setup({
+                    capabilities = capabilities,
+                    on_attach = on_attach,
+                    -- settings = servers[server_name],
+                    -- filetypes = (servers[server_name] or {}).filetypes,
+                })
+            end,
+        })
+
+        -- If some need specific setup functions, we override those here
+        -- Latex, for example, is not needed since I would just configure it like this
+        -- lspconf["texlab"].setup({
+        --     capabilities = capabilities,
+        --     on_attach = on_attach,
+        -- })
+
+        -- Lua uses some more detailed settings
         local runtime_path = vim.split(package.path, ";")
         table.insert(runtime_path, "lua/?.lua")
         table.insert(runtime_path, "lua/?/init.lua")
