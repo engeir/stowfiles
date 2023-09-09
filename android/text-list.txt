@@ -1,0 +1,406 @@
+198 Land
+	com.simengjermundsen.countriesquiz
+27 Crags
+	com.crags27.crags27
+AddyManager
+	com.khalidwar.anonaddy
+Adobe Acrobat
+	com.adobe.reader
+Aegis
+	com.beemdevelopment.aegis
+Aftenposten
+	no.cita
+Airbnb
+	com.airbnb.android
+Amaze
+	com.amaze.filemanager
+Amaze Utilities
+	com.amaze.fileutilities
+AnySoftKeyboard
+	com.menny.android.anysoftkeyboard
+Aurora Droid
+	com.aurora.adroid
+Aurora Forecast 3D
+	com.embarcadero.AuroraForecast3D
+Aurora Store
+	com.aurora.store
+Authenticator
+	com.azure.authenticator
+Based Cooking
+	np.com.binabh.basedcooking
+BeReal.
+	com.bereal.ft
+Bikely
+	no.source.safebikely
+Bilista
+	no.gmg.bilista
+Binance
+	com.binance.dev
+Bitwarden
+	com.x8bit.bitwarden
+BlackHole
+	com.shadow.blackhole
+Bolt
+	ee.mtakso.client
+Brave
+	com.brave.browser
+Broccoli
+	com.flauschcode.broccoli
+Camera
+	app.grapheneos.camera
+Canvas
+	com.oneplus.canvasresources
+Coinbase
+	com.coinbase.android
+Connect
+	com.garmin.android.apps.connectmobile
+Connect IQ
+	com.garmin.connectiq
+Coop Medlem
+	no.coop.members
+DFØ
+	no.dfo.sap.app
+Digipost
+	no.digipost.android
+Discord
+	com.discord
+discovery+
+	com.discovery.discoveryplus.mobile
+Dolphin
+	mobi.mgeek.TunnyBrowser
+Drivvo
+	br.com.ctncardoso.ctncar
+E-TUBE
+	com.shimano.etubeprojectmobile.droid.phone
+EasyPark
+	net.easypark.android
+Engangskode
+	no.SpareBank1.MobileOTP
+F-Droid
+	org.fdroid.fdroid
+Facebook
+	com.facebook.katana
+FATMAP
+	com.fatmaprn
+Filbehandler
+	com.simplemobiletools.filemanager.pro
+FINN.no
+	no.finn.android
+Firefox
+	org.mozilla.firefox
+Fjelltoppjakten
+	no.aboveapps.fjelltoppjakten
+foodora NO
+	de.foodora.android
+Forza
+	se.footballaddicts.livescore
+Foxit PDF Editor
+	com.foxit.mobile.pdf.lite
+Førerkort
+	no.vegvesen.forerkort
+Getaround
+	com.c4mprod.voiturelib
+geteduroam
+	app.eduroam.geteduroam
+GitHub
+	com.github.android
+Gneis Klatring
+	no.shortcut.rungnebuldr
+Goodreads
+	com.goodreads
+Google Connectivity Services
+	com.google.android.apps.gcs
+GoPro Quik
+	com.gopro.smarty
+GPay
+	com.google.android.apps.nbu.paisa.user
+Grocy
+	xyz.zedler.patrick.grocy
+Gumroad
+	com.gumroad.app
+Headphones
+	com.sony.songpal.mdr
+Helseboka
+	no.helseapps.helseboka
+HERE WeGo
+	com.here.app.maps
+Hjelp 113
+	com.favouritesystems.android.emergencyapp.nla113
+Home
+	com.google.android.apps.chromecast.app
+Hotels.com
+	com.hcom.android
+Hue
+	com.philips.lighting.hue2
+Hyre
+	no.hyre.demand
+Instagram
+	com.instagram.android
+iTromsø eAvis
+	no.itromso.areader
+KAYA
+	com.project9a.redpoint
+Keep Screen On
+	com.elasticrock.keepscreenon
+Keep-notater
+	com.google.android.keep
+KISS-oppstarter
+	fr.neamar.kiss
+KitchenOwl
+	com.tombursch.kitchenowl
+Kiwi.com
+	com.skypicker.main
+Klarna
+	com.myklarnamobile
+Knips
+	com.knips
+Kontakter
+	de.ritscher.simplemobiletools.contacts.pro
+Last.fm
+	fm.last.android
+Librera FD
+	com.foobnix.pro.pdf.reader
+LibreTube
+	com.github.libretube
+LinkedIn
+	com.linkedin.android
+List My Apps
+	de.onyxbits.listmyapps
+Lufthansa
+	com.lufthansa.android.lufthansa
+Mapy.cz
+	cz.seznam.mapy
+Mars Live Wallpaper
+	org.covolunablu.marswallpaper
+Mastodon
+	org.joinmastodon.android
+Messenger
+	com.facebook.orca
+MinRenovasjon
+	no.norkart.komtek.renovasjon.client
+Mobilbank
+	no.sparebank1.mobilbank
+Mullvad VPN
+	net.mullvad.mullvadvpn
+MyClimb
+	com.myclimb
+NAF
+	no.naf.medlem
+Norgeskart friluftsliv
+	no.avinet.norgeskart
+Norwegian
+	com.norwegian.travelassistant
+Norwegian for AnySoftKeyboard
+	com.anysoftkeyboard.languagepack.norwegian
+Notally
+	com.omgodse.notally
+Notater
+	com.oneplus.note
+NRK Radio
+	no.nrk.mobil.radio
+NRK TV
+	no.nrk.tv
+ntfy
+	io.heckel.ntfy
+O Relax
+	com.coloros.relax
+OneDrive
+	com.microsoft.skydrive
+OnePlus Widget
+	net.oneplus.widget
+Opptaker
+	com.oneplus.soundrecorder
+Organic Maps
+	app.organicmaps
+OsmAnd
+	net.osmand
+Outlook
+	com.microsoft.office.outlook
+park4night
+	fr.tramb.park4night
+ParkMobile
+	net.sharewire.parkmobilev2
+Parlera
+	com.enjoyingfoss.parlera
+Pass2U Wallet
+	com.passesalliance.wallet
+PayPal
+	com.paypal.android.p2pmobile
+PDF Viewer
+	app.grapheneos.pdfviewer
+Peacock
+	com.peacocktv.peacockandroid
+PeakFinder
+	org.peakfinder.area.alps
+PL
+	com.pl.premierleague
+Podme
+	podme.pme
+Posten
+	no.posten.sporing.controller
+PostNord
+	se.postnord.private
+Proton Calendar
+	me.proton.android.calendar
+Proton Drive
+	me.proton.android.drive
+Proton Mail
+	ch.protonmail.android
+Proton Pass
+	proton.android.pass
+Quik
+	com.stupeflix.replay
+Reddit
+	com.reddit.frontpage
+ResearchGate
+	net.researchgate.shellapp
+RustDesk
+	com.carriez.flutter_hbb
+Ruter
+	no.ruter.reise
+RuterBillett
+	no.ruter.mobile
+Rydde
+	no.ryddeportalen
+Ryde
+	com.ryde_android
+Samsung Food
+	com.foodient.whisk
+SAS
+	se.sas.android
+Screen Time
+	de.markusfisch.android.screentime
+Session
+	network.loki.messenger
+Shazam
+	com.shazam.android
+Signal
+	org.thoughtcrime.securesms
+Skiff Calendar
+	com.skiffcalendarmobileapp
+Skiff Drive
+	com.skiffDriveMobileApp
+Skiff Mail
+	com.skemailmobileapp
+Skiff Pages
+	com.skiffmobileapp
+Skyss billett
+	no.wtw.mobillett.skyss
+Slack
+	com.Slack
+Snapchat
+	com.snapchat.android
+Sonos
+	com.sonos.acr2
+Sound+
+	com.jabra.moments
+SoundCloud
+	com.soundcloud.android
+Spar
+	no.norgesgruppen.apps.spar
+Spark
+	com.readdle.spark
+Spond
+	com.spond.spond
+SpotiFlyer
+	com.shabinder.spotiflyer
+Spotify
+	com.spotify.music
+Spotube
+	oss.krtirtho.spotube
+Star Walk 2
+	com.vitotechnology.StarWalk2
+Status
+	im.status.ethereum
+Strava
+	com.strava
+Stumble Guys
+	com.kitkagames.fallbuddies
+Sulten
+	no.fattigstudent.sulten
+Super Retro Mega Wars
+	com.serwylo.retrowars
+Syncthing
+	com.nutomic.syncthingandroid
+Taxifix
+	dk.bnr.taxifix
+Telegram
+	org.telegram.messenger
+Telia
+	mobi.mobiletech.apps.android.netcom
+Termux
+	com.termux
+Ticketmaster
+	com.ticketmaster.tickets.international
+Tinder
+	com.tinder
+Too Good To Go
+	com.app.tgtg
+Tor Browser
+	org.torproject.torbrowser
+Tournant
+	eu.zimbelstern.tournant
+Trainline
+	com.thetrainline
+Troms Billett
+	no.fylkestrafikk.tromsbillett
+Troms Reise
+	no.bouvet.routeplanner.troms
+Trumf
+	no.norgesgruppen.apps.trumf.trumf
+Trumf Visa
+	com.evry.android.cardcompanion.ngtv
+Twitch
+	tv.twitch.android.app
+Uber
+	com.ubercab
+Untappd
+	com.untappdllc.app
+UT
+	no.bouvet.nrkut
+Varsom
+	no.nve.regobs4
+Vertical-Life
+	info.verticallife
+VG
+	com.agens.android.vgsnarvei
+Viaplay
+	com.viaplay.android
+Vinmonopolet
+	no.vinmonopolet.android
+Vipps
+	no.dnb.vipps
+ViscenarioGo
+	com.vl.viscenario
+Visual Voicemail
+	com.vna.service.vvm
+Vivino
+	vivino.web.app
+VLC
+	org.videolan.vlc
+Vy
+	com.intele.nsbmob.app
+Wallet
+	org.toshi
+Wallet of Satoshi
+	com.livingroomofsatoshi.wallet
+WhatsApp
+	com.whatsapp
+Widerøe
+	com.wideroeas.wideroe
+Windy-widgeter
+	com.windyty.android
+WolframAlpha
+	com.wolfram.android.alpha
+Wolt
+	com.wolt.android
+X
+	com.twitter.android
+YouTube TV
+	com.google.android.apps.youtube.unplugged
+Yr
+	no.nrk.yr
+Zen Space
+	com.oneplus.brickmode
+Æ
+	no.rema.bella
