@@ -4,8 +4,8 @@
 <a href="https://dotfyle.com/engeir/stowfiles-nvimlua-config-nvim"><img src="https://dotfyle.com/engeir/stowfiles-nvimlua-config-nvim/badges/leaderkey?style=for-the-badge" /></a>
 <a href="https://dotfyle.com/engeir/stowfiles-nvimlua-config-nvim"><img src="https://dotfyle.com/engeir/stowfiles-nvimlua-config-nvim/badges/plugin-manager?style=for-the-badge" /></a>
 
-This is @engeir's Neovim config, on NVIM v0.10.0-dev-1031+gc431d820e (view at [latest
-commit](https://github.com/neovim/neovim/tree/c431d820e)) installed with the [bob version
+This is @engeir's Neovim config, on NVIM v0.10.0-dev-4258f4d (view at [latest
+commit](https://github.com/neovim/neovim/tree/NVIM v0.10.0-dev-4258f4d)) installed with the [bob version
 manager for neovim](https://github.com/MordechaiHadad/bob). I am currently using the
 [lazy plugin manager](https://github.com/folke/lazy.nvim). Below is a complete list of
 all plugins I'm using:
@@ -40,6 +40,7 @@ all plugins I'm using:
 - [glow.nvim](https://github.com/ellisonleao/glow.nvim.git)
 - [gruvbox-material](https://github.com/sainnhe/gruvbox-material.git)
 - [harpoon](https://github.com/ThePrimeagen/harpoon.git)
+- [hydra.nvim](https://github.com/anuvyklack/hydra.nvim.git)
 - [jfind.nvim](https://github.com/jake-stewart/jfind.nvim.git)
 - [keylab.nvim](https://github.com/BooleanCube/keylab.nvim.git)
 - [lazy.nvim](https://github.com/folke/lazy.nvim.git)
@@ -53,7 +54,6 @@ all plugins I'm using:
 - [mini.ai](https://github.com/echasnovski/mini.ai.git)
 - [mini.align](https://github.com/echasnovski/mini.align.git)
 - [mini.bracketed](https://github.com/echasnovski/mini.bracketed.git)
-- [mini.clue](https://github.com/echasnovski/mini.clue.git)
 - [mini.colors](https://github.com/echasnovski/mini.colors.git)
 - [mini.comment](https://github.com/echasnovski/mini.comment.git)
 - [mini.cursorword](https://github.com/echasnovski/mini.cursorword.git)
@@ -115,4 +115,5 @@ all plugins I'm using:
 - [vim-rooter](https://github.com/airblade/vim-rooter.git)
 - [vim-slime](https://github.com/jpalardy/vim-slime.git)
 - [vimtex](https://github.com/lervag/vimtex.git)
+- [which-key.nvim](https://github.com/folke/which-key.nvim.git)
 - [zen-mode.nvim](https://github.com/folke/zen-mode.nvim.git)

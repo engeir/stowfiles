@@ -20,11 +20,32 @@ return {
     { "echasnovski/mini.align", config = true },
 
     -- mini.bracketed ------------------------------------------------------------------
-    { "echasnovski/mini.bracketed", config = true },
+    {
+        "echasnovski/mini.bracketed",
+        event = { "BufReadPre", "BufNewFile" },
+        -- Set using anuvyklack/hydra.nvim
+        opts = {
+            buffer = { suffix = "" },
+            comment = { suffix = "" },
+            conflict = { suffix = "" },
+            diagnostic = { suffix = "" },
+            file = { suffix = "" },
+            indent = { suffix = "" },
+            jump = { suffix = "" },
+            location = { suffix = "" },
+            oldfile = { suffix = "" },
+            quickfix = { suffix = "" },
+            treesitter = { suffix = "" },
+            undo = { suffix = "" },
+            window = { suffix = "" },
+            yank = { suffix = "" },
+        },
+    },
 
     -- mini.clue -----------------------------------------------------------------------
     {
         "echasnovski/mini.clue",
+        enabled = false,
         config = function()
             local miniclue = require("mini.clue")
             miniclue.setup({

@@ -55,7 +55,6 @@ return {
     -- Citations, references, glossaries, acronyms, etc.
     s({ name = "Text citation", trig = "citet" }, { t({ "\\citet{" }), i(1), t("}") }),
     s({ name = "Parentheses citation", trig = "citep" }, { t({ "\\citep{" }), i(1), t("}") }),
-    s("ce", { t({ "\\ce{" }), i(1), t("}") }),
     s("quote", { t({ "``" }), i(1), t("''") }),
 }, {
     -- Auto
@@ -65,4 +64,5 @@ return {
     s({ trig = "Creff" }, { t("\\Cref{fig:"), i(1, "one"), t("}") }),
     -- Replaced by iurimateus/luasnip-latex-snippets.nvim
     s({ trig = "mk" }, { t("\\("), i(1), t("\\)") }),
+    s(".ce", { t({ "\\ce{" }), i(1), t("}") }),
 }
