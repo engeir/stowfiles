@@ -20,6 +20,7 @@ end
 
 lazy.setup({
     { import = "engeir.lazy.plugins" },
+    { import = "engeir.lazy.plugins.dap" },
     { import = "engeir.lazy.plugins.lsp" },
 }, {
     checker = { enabled = true, notify = false },

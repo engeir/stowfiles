@@ -4,8 +4,8 @@
 <a href="https://dotfyle.com/engeir/stowfiles-nvimlua-config-nvim"><img src="https://dotfyle.com/engeir/stowfiles-nvimlua-config-nvim/badges/leaderkey?style=for-the-badge" /></a>
 <a href="https://dotfyle.com/engeir/stowfiles-nvimlua-config-nvim"><img src="https://dotfyle.com/engeir/stowfiles-nvimlua-config-nvim/badges/plugin-manager?style=for-the-badge" /></a>
 
-This is @engeir's Neovim config, on NVIM v0.10.0-dev-4258f4d (view at [latest
-commit](https://github.com/neovim/neovim/tree/NVIM v0.10.0-dev-4258f4d)) installed with the [bob version
+This is @engeir's Neovim config, on NVIM v0.10.0-dev-aab06ed (view [latest nightly
+build](https://github.com/neovim/neovim/tree/nightly)) installed with the [bob version
 manager for neovim](https://github.com/MordechaiHadad/bob). I am currently using the
 [lazy plugin manager](https://github.com/folke/lazy.nvim). Below is a complete list of
 all plugins I'm using:
@@ -50,6 +50,7 @@ all plugins I'm using:
 - [luasnip-latex-snippets.nvim](https://github.com/iurimateus/luasnip-latex-snippets.nvim.git)
 - [LuaSnip](https://github.com/L3MON4D3/LuaSnip.git)
 - [mason-lspconfig.nvim](https://github.com/williamboman/mason-lspconfig.nvim.git)
+- [mason-nvim-dap.nvim](https://github.com/jay-babu/mason-nvim-dap.nvim.git)
 - [mason.nvim](https://github.com/williamboman/mason.nvim.git)
 - [mini.ai](https://github.com/echasnovski/mini.ai.git)
 - [mini.align](https://github.com/echasnovski/mini.align.git)
@@ -77,6 +78,9 @@ all plugins I'm using:
 - [nui.nvim](https://github.com/MunifTanjim/nui.nvim.git)
 - [null-ls.nvim](https://github.com/jose-elias-alvarez/null-ls.nvim.git)
 - [nvim-cmp](https://github.com/hrsh7th/nvim-cmp.git)
+- [nvim-dap-python](https://github.com/mfussenegger/nvim-dap-python.git)
+- [nvim-dap-ui](https://github.com/rcarriga/nvim-dap-ui.git)
+- [nvim-dap](https://github.com/mfussenegger/nvim-dap.git)
 - [nvim-lspconfig](https://github.com/neovim/nvim-lspconfig.git)
 - [nvim-notify](https://github.com/rcarriga/nvim-notify.git)
 - [nvim-treesitter-context](https://github.com/nvim-treesitter/nvim-treesitter-context.git)

@@ -19,7 +19,7 @@ return {
             vim.g.floaterm_width = 0.45
         end,
         config = function()
-            keymap("n", "<leader>ft", "FloatermToggle", opts)
+            -- keymap("n", "<leader>ft", "<cmd>FloatermToggle<CR>", opts)
             keymap(
                 "n",
                 "<leader>to",

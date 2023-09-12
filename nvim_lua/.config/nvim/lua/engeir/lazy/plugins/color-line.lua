@@ -126,8 +126,8 @@ return {
     },
     {
         "folke/todo-comments.nvim",
-        event = {"BufReadPost", "BufNewFile"},
-        cmd = {"TodoTrouble", "TodoTelescope"},
+        event = { "BufReadPost", "BufNewFile" },
+        cmd = { "TodoTrouble", "TodoTelescope" },
         opts = {
             keywords = {
                 FIXME = {
@@ -143,6 +143,10 @@ return {
                 URGE = { icon = "‼ ", color = "#c9ff19", alt = { "IMPORTANT" } },
             },
         },
+        keys = {
+            { "<leader>tq", "<cmd>TodoQuickFix<CR>",  desc = "[T]odo[Q]uickFix" },
+            { "<leader>ft", "<cmd>TodoTelescope<CR>", desc = "[f]ind [T]odoTelescope" },
+        }
     },
     "mechatroner/rainbow_csv",
 }
