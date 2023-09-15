@@ -13,24 +13,30 @@ MINGW*) machine=MinGw ;;
 esac
 
 echo_and_run() {
+    if ! command -v "$@" &>/dev/null; then
+        return 0
+    fi
     echo ""
     echo "\$ $*"
     "$@"
 }
 run_updates() {
-    if [ "Mac" = "$1" ]; then
-        echo_and_run brew update
-        echo_and_run brew upgrade
-    fi
-    if [ "Linux" = "$1" ]; then
-        echo_and_run sudo snap refresh
-        echo_and_run flatpak update -y
-        echo_and_run sudo nala upgrade -y --update
-        echo_and_run pacstall -Up -P
-    fi
+    # Main package managers
+    echo_and_run brew update
+    echo_and_run brew upgrade
+    echo_and_run sudo snap refresh
+    echo_and_run flatpak update -y
+    echo_and_run sudo nala upgrade -y --update
+    echo_and_run pacstall -Up -P
+    # Language specific bulk upgrades
     echo_and_run cargo install-update -a
+    echo_and_run python3 -m pip install --user --upgrade pipx
     echo_and_run pipx upgrade-all
     echo_and_run gup update
+    # Single programs
+    echo_and_run rye self update
+    echo_and_run bun upgrade
+    echo_and_run bob update --all
 }
 
 try_fix_ppa() {
