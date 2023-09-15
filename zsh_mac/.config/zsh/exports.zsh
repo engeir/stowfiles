@@ -3,7 +3,6 @@ export PATH="${PATH}:${HOME}/.local/bin:$HOME/bin"
 # export PATH=/usr/local/bin:$HOME/scripts:$HOME/.local/bin:$HOME/bin:$PATH
 export NODE_PATH='/usr/local/lib/node_modules'
 # export PATH="$HOME/.poetry/bin:$PATH"
-# export PATH=/usr/local/opt/ruby/bin:$PATH  # Ruby path
 export PATH="/Applications/ConTeXtStandalone/tex/texmf-osx-64/bin:$PATH"  # ConTeXt path
 export PATH="$PATH:$HOME/.cabal/bin/"
 # Go
@@ -72,6 +71,9 @@ export AUTO_NOTIFY_IGNORE=("nv" "docker" "man" "sleep" "lf" "nnn" "hugo serve" "
 export FORGIT_FZF_DEFAULT_OPTS
 # rush
 export RUSH_CONFIG="$HOME/.config/rush/rush.ini"
+# ruby / gem
+# export PATH=/usr/local/opt/ruby/bin:$PATH  # Ruby path
+export PATH="$PATH:/home/een023/.gem/ruby/3.0.0/bin"
 # rye
 export RYE_HOME="$HOME/.local/share/rye/"
 export PATH="$PATH:$RYE_HOME/shims/"

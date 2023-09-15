@@ -192,6 +192,12 @@ my_img_magik() {
     done
 }
 
+screen-record() {
+    # From
+    # https://www.reddit.com/r/archlinux/comments/artbxd/record_a_video_with_multi_monitors/
+    read -r o g < <(slop -f '+%x,%y %wx%h'); ffmpeg -f x11grab -framerate 60 -video_size "$g" -i "${DISPLAY}${o}" output.mkv
+}
+
 # Latex compilers
 tex0() {
     pdflatex "$1".tex
