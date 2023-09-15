@@ -44,15 +44,17 @@ return {
         },
         -- callback where you can add custom code when the Zen window opens
         on_open = function(win)
-            vim.api.nvim_set_hl(0, "Normal", { bg = "#20232a" })
-            vim.api.nvim_set_hl(0, "NormalFloat", { bg = "#20232a" })
+            -- vim.api.nvim_set_hl(0, "Normal", { bg = "#20232a" })
+            -- vim.api.nvim_set_hl(0, "NormalFloat", { bg = "#20232a" })
             vim.api.nvim_set_hl(0, "ColorColumn", { bg = "none" })
+            require("gitsigns").toggle_current_line_blame()
         end,
         -- callback where you can add custom code when the Zen window closes
         on_close = function()
             vim.api.nvim_set_hl(0, "Normal", { bg = "none" })
             vim.api.nvim_set_hl(0, "NormalFloat", { bg = "none" })
             vim.api.nvim_set_hl(0, "ColorColumn", { bg = "#3c3836" })
+            require("gitsigns").toggle_current_line_blame()
         end,
     },
 }

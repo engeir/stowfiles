@@ -59,10 +59,12 @@ return {
 }, {
     -- Auto
     s({ name = "Short acronym", trig = "acrs" }, { t({ "\\acrshort{" }), i(1), t("}") }),
-    s({ trig = "acrf" }, { t({ "\\acrfull{" }), i(1), t("}") }),
+    s({ name = "Full acronym", trig = "acrf" }, { t({ "\\acrfull{" }), i(1), t("}") }),
     s({ trig = "creff" }, { t("\\cref{fig:"), i(1, "one"), t("}") }),
     s({ trig = "Creff" }, { t("\\Cref{fig:"), i(1, "one"), t("}") }),
-    -- Replaced by iurimateus/luasnip-latex-snippets.nvim
+    s({ name = "Text citation", trig = ".cit" }, { t({ "\\citet{" }), i(1), t("}") }),
+    s({ name = "Parentheses citation", trig = ".cip" }, { t({ "\\citep{" }), i(1), t("}") }),
     s({ trig = "mk" }, { t("\\("), i(1), t("\\)") }),
+    s({ trig = "mrm" }, { t("\\mathrm{"), i(1), t("}") }),
     s(".ce", { t({ "\\ce{" }), i(1), t("}") }),
 }
