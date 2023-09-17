@@ -92,7 +92,7 @@ return {
         local config = {
             virtual_text = false, -- disable virtual text
             signs = {
-                active = signs,   -- show signs
+                active = signs, -- show signs
             },
             update_in_insert = true,
             underline = false,
@@ -121,14 +121,35 @@ return {
             end,
         })
 
+        -- Not available from Mason
+        lspconf["textlsp"].setup({
+            capabilities = capabilities,
+            on_attach = on_attach,
+            settings = {
+                textLSP = {
+                    language = "en-GB",
+                },
+            },
+        })
         -- If some need specific setup functions, we override those here
-        -- Latex, for example, is not needed since I would just configure it like this
-        -- lspconf["texlab"].setup({
-        --     capabilities = capabilities,
-        --     on_attach = on_attach,
-        -- })
+        lspconf["texlab"].setup({
+            capabilities = capabilities,
+            on_attach = on_attach,
+            settings = {
+                texlab = {
+                    chktex = {
+                        onEdit = false,
+                        onOpenAndSave = true,
+                    },
+                    formatterLineLength = 88,
+                    forwardSearch = {
+                        executable = "zathura",
+                    },
+                    latexindent = { modifyLineBreaks = true },
+                },
+            },
+        })
 
-        -- Lua uses some more detailed settings
         local runtime_path = vim.split(package.path, ";")
         table.insert(runtime_path, "lua/?.lua")
         table.insert(runtime_path, "lua/?/init.lua")
