@@ -11,6 +11,68 @@ if wezterm.config_builder then
 end
 
 -- This is where you actually apply your config choices
+wezterm.on("update-right-status", function(window, pane)
+    -- window:set_right_status()
+    -- local cmd = [[wezterm cli list --format json | jq '.[] | .workspace']]
+    -- local workspace = io.popen(cmd)
+    -- if workspace == nil then
+    --     return 0
+    -- end
+    -- local leader = workspace:read("*a")
+    -- workspace:close()
+    local leader = window:active_workspace()
+    if window:leader_is_active() then
+        leader = leader .. "  LEADER"
+    end
+    window:set_right_status(leader)
+end)
+-- From https://wezfurlong.org/wezterm/config/lua/window-events/format-tab-title.html
+-- This function returns the suggested title for a tab.
+-- It prefers the title that was set via `tab:set_title()`
+-- or `wezterm cli set-tab-title`, but falls back to the
+-- title of the active pane in that tab.
+function tab_title(tab_info)
+    local title = tab_info.tab_title
+    -- if the tab title is explicitly set, take that
+    if title and #title > 0 then
+        local cmd = { "despell", title }
+        local handle = io.popen(table.concat(cmd, " "))
+        if handle == nil then
+            return title
+        end
+        local result = handle:read("*a")
+        return result .. title
+    end
+    -- Otherwise, use the title from the active pane
+    -- in that tab
+    local active_title = tab_info.active_pane.title
+    local cmd = { "despell", active_title }
+    local handle = io.popen(table.concat(cmd, " "))
+    if handle == nil then
+        return active_title
+    end
+    local result = handle:read("*a")
+    return active_title .. " " .. result
+    -- return " " .. tab_info.active_pane.title .. " "
+end
+
+wezterm.on(
+    'format-tab-title',
+    function(tab, tabs, panes, config, hover, max_width)
+        local title = tab_title(tab)
+        if tab.is_active then
+            return {
+                { Background = { Color = 'blue' } },
+                { Text = ' ' .. title .. ' ' },
+            }
+        end
+        return title
+    end
+)
+config.enable_tab_bar = true
+config.tab_bar_at_bottom = true
+config.use_fancy_tab_bar = false
+config.switch_to_last_active_tab_when_closing_tab = true
 
 -- config.window_decorations = "TITLE"
 config.audible_bell = "Disabled"
@@ -31,10 +93,10 @@ config.adjust_window_size_when_changing_font_size = false
 -- LS_COLORS and not the theme.
 -- config.color_scheme = "Gruvbox dark, medium (base16)"
 config.colors = {
+    compose_cursor = 'orange',
     background = "#282828",
 }
 config.window_background_gradient = require("configs.window_background_gradient")
-config.enable_tab_bar = false
 config.window_close_confirmation = "NeverPrompt"
 config.window_background_opacity = 0.9
 local opacity_crement = 0.02
@@ -65,7 +127,11 @@ wezterm.on("decrement-opacity", function(window, _)
     end
     window:set_config_overrides(overrides)
 end)
+config.leader = { key = 'a', mods = 'CTRL' }
 config.keys = require("configs.keys")
+for _, key in ipairs(require("configs.smart-splits")) do
+    table.insert(config.keys, key)
+end
 
 config.window_padding = {
     left = 5,
