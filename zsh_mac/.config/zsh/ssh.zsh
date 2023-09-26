@@ -3,13 +3,8 @@ SSH_ENV=$HOME/.ssh/environment
 
 # start the ssh-agent
 function start_agent {
-    echo "Initializing new SSH agent..."
-    # spawn ssh-agent
-    /usr/bin/ssh-agent | sed 's/^echo/#echo/' > "${SSH_ENV}"
-    echo succeeded
-    chmod 600 "${SSH_ENV}"
-    . "${SSH_ENV}" > /dev/null
-    /usr/bin/ssh-add
+    # Run expect script
+    /home/een023/bin/start-agent-expect
 }
 
 if [ -f "${SSH_ENV}" ]; then
