@@ -3518,18 +3518,15 @@ linux-generic-hwe-22.04 6.2.0.33.33~22.04.10 [Ubuntu/jammy main]
 linux-headers-5.15.0-84 5.15.0-84.93 [Ubuntu/jammy main]
 linux-headers-5.15.0-84-generic 5.15.0-84.93 [Ubuntu/jammy main]
 linux-headers-5.19.0-50-generic 5.19.0-50.50 [Ubuntu/jammy main]
-linux-headers-6.2.0-31-generic 6.2.0-31.31~22.04.1 [Ubuntu/jammy main]
 linux-headers-6.2.0-32-generic 6.2.0-32.32~22.04.1 [Ubuntu/jammy main]
 linux-headers-6.2.0-33-generic 6.2.0-33.33~22.04.1 [Ubuntu/jammy main]
 linux-headers-generic 5.15.0.84.81 [Ubuntu/jammy main]
 linux-headers-generic-hwe-22.04 6.2.0.33.33~22.04.10 [Ubuntu/jammy main]
 linux-hwe-5.19-headers-5.19.0-50 5.19.0-50.50 [Ubuntu/jammy main]
-linux-hwe-6.2-headers-6.2.0-31 6.2.0-31.31~22.04.1 [Ubuntu/jammy main]
 linux-hwe-6.2-headers-6.2.0-32 6.2.0-32.32~22.04.1 [Ubuntu/jammy main]
 linux-hwe-6.2-headers-6.2.0-33 6.2.0-33.33~22.04.1 [Ubuntu/jammy main]
 linux-image-5.15.0-84-generic 5.15.0-84.93 [Ubuntu/jammy main]
 linux-image-5.19.0-50-generic 5.19.0-50.50 [Ubuntu/jammy main]
-linux-image-6.2.0-31-generic 6.2.0-31.31~22.04.1 [Ubuntu/jammy main]
 linux-image-6.2.0-32-generic 6.2.0-32.32~22.04.1 [Ubuntu/jammy main]
 linux-image-6.2.0-33-generic 6.2.0-33.33~22.04.1 [Ubuntu/jammy main]
 linux-image-generic 5.15.0.84.81 [Ubuntu/jammy main]
@@ -3537,12 +3534,10 @@ linux-image-generic-hwe-22.04 6.2.0.33.33~22.04.10 [Ubuntu/jammy main]
 linux-libc-dev 5.15.0-84.93 [Ubuntu/jammy main]
 linux-modules-5.15.0-84-generic 5.15.0-84.93 [Ubuntu/jammy main]
 linux-modules-5.19.0-50-generic 5.19.0-50.50 [Ubuntu/jammy main]
-linux-modules-6.2.0-31-generic 6.2.0-31.31~22.04.1 [Ubuntu/jammy main]
 linux-modules-6.2.0-32-generic 6.2.0-32.32~22.04.1 [Ubuntu/jammy main]
 linux-modules-6.2.0-33-generic 6.2.0-33.33~22.04.1 [Ubuntu/jammy main]
 linux-modules-extra-5.15.0-84-generic 5.15.0-84.93 [Ubuntu/jammy main]
 linux-modules-extra-5.19.0-50-generic 5.19.0-50.50 [Ubuntu/jammy main]
-linux-modules-extra-6.2.0-31-generic 6.2.0-31.31~22.04.1 [Ubuntu/jammy main]
 linux-modules-extra-6.2.0-32-generic 6.2.0-32.32~22.04.1 [Ubuntu/jammy main]
 linux-modules-extra-6.2.0-33-generic 6.2.0-33.33~22.04.1 [Ubuntu/jammy main]
 linux-sound-base 1.0.25+dfsg-0ubuntu7 [Ubuntu/jammy main]
@@ -4770,7 +4765,7 @@ blindfold v1.0.7:
     blindfold
 bob-nvim v2.6.0:
     bob
-cargo-binstall v1.3.1:
+cargo-binstall v1.4.0:
     cargo-binstall
 cargo-edit v0.12.2:
     cargo-add
@@ -4842,7 +4837,7 @@ pueue v3.2.0:
     pueued
 ripgrep v13.0.0:
     rg
-rtx-cli v2023.9.1:
+rtx-cli v2023.9.2:
     rtx
 samply v0.11.0:
     samply
@@ -4908,7 +4903,7 @@ package black 23.9.1, installed using Python 3.10.4
  - blackd
 package cicero 0.2.5, installed using Python 3.10.4
  - cicero
-package cowsay 6.0, installed using Python 3.10.4
+package cowsay 6.1, installed using Python 3.10.4
  - cowsay
 package daltonlens 0.1.5, installed using Python 3.10.4
  - daltonlens-python
@@ -5091,7 +5086,6 @@ Intel                                                                           
 openh264                                2.1.0                                   2.0
 openh264                                2.1.0                                   2.2.0
 Evolution                               3.48.4                                  stable
-GNOME Application Platform version 43                                           43
 GNOME Application Platform version 44                                           44
 GNOME Application Platform version 45                                           45
 Citations                               0.6.0                                   stable
