@@ -16,7 +16,7 @@ alias nnn="nnn -derH"
 alias nv="nvim"
 alias nvl="NVIM_APPNAME=LazyNvim nvim"
 alias rm="trash-put"
-alias todo='calcurse -t --format-todo "(%p) %m\n%N"'
+alias todo='calcurse -t --format-todo "(%p) %m\n%N" | grep -v "No note file found"'
 alias yt="ytfzf -t"
 
 # It's nice with habits

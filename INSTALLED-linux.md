@@ -82,9 +82,9 @@ bc 1.07.1-3build1 [Ubuntu/jammy main]
 bibclean 2.11.4.1-4build1 [Ubuntu/jammy universe]
 biber 2.17-2 [Ubuntu/jammy universe]
 bibutils 7.2-1 [Ubuntu/jammy universe]
-bind9-dnsutils 1:9.18.12-0ubuntu0.22.04.2 [Ubuntu/jammy main]
-bind9-host 1:9.18.12-0ubuntu0.22.04.2 [Ubuntu/jammy main]
-bind9-libs 1:9.18.12-0ubuntu0.22.04.2 [Ubuntu/jammy main]
+bind9-dnsutils 1:9.18.12-0ubuntu0.22.04.3 [Ubuntu/jammy main]
+bind9-host 1:9.18.12-0ubuntu0.22.04.3 [Ubuntu/jammy main]
+bind9-libs 1:9.18.12-0ubuntu0.22.04.3 [Ubuntu/jammy main]
 binfmt-support 2.2.1-2 [Ubuntu/jammy main]
 binutils 2.38-4ubuntu2.3 [Ubuntu/jammy main]
 binutils-common 2.38-4ubuntu2.3 [Ubuntu/jammy main]
@@ -101,7 +101,7 @@ bolt 0.9.2-1 [Ubuntu/jammy main]
 borgbackup 1.2.0-1 [Ubuntu/jammy universe]
 boxes 2.1.1-2 [Ubuntu/jammy universe]
 branding-ubuntu 0.10 [Ubuntu/jammy main]
-brave-browser 1.57.53 [local]
+brave-browser 1.58.124 [local]
 brave-keyring 1.13 [local]
 brightness-udev 0.5.1-3 [Ubuntu/jammy universe]
 brightnessctl 0.5.1-3 [Ubuntu/jammy universe]
@@ -164,7 +164,7 @@ compizconfig-settings-manager 1:0.9.14.1+22.04.20220820-0ubuntu1 [Ubuntu/jammy u
 compton 1-1 [Ubuntu/jammy universe]
 console-setup 1.205ubuntu3 [Ubuntu/jammy main]
 console-setup-linux 1.205ubuntu3 [Ubuntu/jammy main]
-containerd.io 1.6.22-1 [Docker CE/ stable]
+containerd.io 1.6.24-1 [Docker CE/ stable]
 context 2021.03.05.20220211-1 [Ubuntu/jammy universe]
 context-modules 20210301-1 [Ubuntu/jammy universe]
 coreutils 8.32-4.1ubuntu1 [Ubuntu/jammy main]
@@ -178,19 +178,19 @@ cracklib-runtime 2.9.6-3.4build4 [Ubuntu/jammy main]
 cron 3.0pl1-137ubuntu3 [Ubuntu/jammy main]
 csh 20110502-7 [Ubuntu/jammy universe]
 csvtool 2.4-1build3 [Ubuntu/jammy universe]
-cups 2.4.1op1-1ubuntu4.6 [Ubuntu/jammy main]
+cups 2.4.1op1-1ubuntu4.7 [Ubuntu/jammy main]
 cups-browsed 1.28.15-0ubuntu1.2 [Ubuntu/jammy main]
-cups-bsd 2.4.1op1-1ubuntu4.6 [Ubuntu/jammy main]
-cups-client 2.4.1op1-1ubuntu4.6 [Ubuntu/jammy main]
-cups-common 2.4.1op1-1ubuntu4.6 [Ubuntu/jammy main]
-cups-core-drivers 2.4.1op1-1ubuntu4.6 [Ubuntu/jammy main]
-cups-daemon 2.4.1op1-1ubuntu4.6 [Ubuntu/jammy main]
+cups-bsd 2.4.1op1-1ubuntu4.7 [Ubuntu/jammy main]
+cups-client 2.4.1op1-1ubuntu4.7 [Ubuntu/jammy main]
+cups-common 2.4.1op1-1ubuntu4.7 [Ubuntu/jammy main]
+cups-core-drivers 2.4.1op1-1ubuntu4.7 [Ubuntu/jammy main]
+cups-daemon 2.4.1op1-1ubuntu4.7 [Ubuntu/jammy main]
 cups-filters 1.28.15-0ubuntu1.2 [Ubuntu/jammy main]
 cups-filters-core-drivers 1.28.15-0ubuntu1.2 [Ubuntu/jammy main]
-cups-ipp-utils 2.4.1op1-1ubuntu4.6 [Ubuntu/jammy main]
+cups-ipp-utils 2.4.1op1-1ubuntu4.7 [Ubuntu/jammy main]
 cups-pk-helper 0.2.6-1ubuntu5 [Ubuntu/jammy main]
-cups-ppdc 2.4.1op1-1ubuntu4.6 [Ubuntu/jammy main]
-cups-server-common 2.4.1op1-1ubuntu4.6 [Ubuntu/jammy main]
+cups-ppdc 2.4.1op1-1ubuntu4.7 [Ubuntu/jammy main]
+cups-server-common 2.4.1op1-1ubuntu4.7 [Ubuntu/jammy main]
 curl 7.81.0-1ubuntu1.13 [Ubuntu/jammy main]
 cvs 2:1.12.13+real-28 [Ubuntu/jammy universe]
 cvsps 2.1-8build2 [Ubuntu/jammy universe]
@@ -568,7 +568,7 @@ gftp 2.9.1~beta-1 [Ubuntu/jammy universe]
 gftp-common 2.9.1~beta-1 [Ubuntu/jammy universe]
 gftp-gtk 2.9.1~beta-1 [Ubuntu/jammy universe]
 gftp-text 2.9.1~beta-1 [Ubuntu/jammy universe]
-gh 2.34.0 [gh/stable main]
+gh 2.35.0 [gh/stable main]
 ghc 8.8.4-3 [Ubuntu/jammy universe]
 ghostscript 9.55.0~dfsg1-0ubuntu5.4 [Ubuntu/jammy main]
 ghostscript-x 9.55.0~dfsg1-0ubuntu5.4 [Ubuntu/jammy main]
@@ -1221,10 +1221,10 @@ libcryptsetup12 2:2.4.3-1ubuntu1.1 [Ubuntu/jammy main]
 libctf-nobfd0 2.38-4ubuntu2.3 [Ubuntu/jammy main]
 libctf0 2.38-4ubuntu2.3 [Ubuntu/jammy main]
 libcue2 2.2.1-3build3 [Ubuntu/jammy main]
-libcups2 2.4.1op1-1ubuntu4.6 [Ubuntu/jammy main]
-libcups2:i386 2.4.1op1-1ubuntu4.6 [Ubuntu/jammy main]
+libcups2 2.4.1op1-1ubuntu4.7 [Ubuntu/jammy main]
+libcups2:i386 2.4.1op1-1ubuntu4.7 [Ubuntu/jammy main]
 libcupsfilters1 1.28.15-0ubuntu1.2 [Ubuntu/jammy main]
-libcupsimage2 2.4.1op1-1ubuntu4.6 [Ubuntu/jammy main]
+libcupsimage2 2.4.1op1-1ubuntu4.7 [Ubuntu/jammy main]
 libcurl3-gnutls 7.81.0-1ubuntu1.13 [Ubuntu/jammy main]
 libcurl3-gnutls:i386 7.81.0-1ubuntu1.13 [Ubuntu/jammy main]
 libcurl4 7.81.0-1ubuntu1.13 [Ubuntu/jammy main]
@@ -2489,7 +2489,7 @@ libnss-nis:i386 3.1-0ubuntu6 [Ubuntu/jammy main]
 libnss-nisplus 1.3-0ubuntu6 [Ubuntu/jammy main]
 libnss-nisplus:i386 1.3-0ubuntu6 [Ubuntu/jammy main]
 libnss-sss 2.6.3-1ubuntu3.2 [Ubuntu/jammy main]
-libnss-systemd 249.11-0ubuntu3.9 [local]
+libnss-systemd 249.11-0ubuntu3.10 [Ubuntu/jammy main]
 libnss3 2:3.68.2-0ubuntu1.2 [Ubuntu/jammy main]
 libnss3-dev 2:3.68.2-0ubuntu1.2 [Ubuntu/jammy main]
 libnss3:i386 2:3.68.2-0ubuntu1.2 [Ubuntu/jammy main]
@@ -2580,7 +2580,7 @@ libpam-modules-bin 1.4.0-11ubuntu2.3 [Ubuntu/jammy main]
 libpam-pwquality 1.4.4-1build2 [Ubuntu/jammy main]
 libpam-runtime 1.4.0-11ubuntu2.3 [Ubuntu/jammy main]
 libpam-sss 2.6.3-1ubuntu3.2 [Ubuntu/jammy main]
-libpam-systemd 249.11-0ubuntu3.9 [local]
+libpam-systemd 249.11-0ubuntu3.10 [Ubuntu/jammy main]
 libpam0g 1.4.0-11ubuntu2.3 [Ubuntu/jammy main]
 libpam0g-dev 1.4.0-11ubuntu2.3 [Ubuntu/jammy main]
 libpango-1.0-0 1.50.6+ds-2ubuntu1 [Ubuntu/jammy main]
@@ -3030,9 +3030,9 @@ libsynctex2 2021.20210626.59705-1ubuntu0.1 [Ubuntu/jammy main]
 libsyntax-keyword-try-perl 0.26-1build1 [Ubuntu/jammy main]
 libsys-hostname-long-perl 1.5-2 [Ubuntu/jammy main]
 libsysmetrics1 1.7.1 [Ubuntu/jammy main]
-libsystemd-dev 249.11-0ubuntu3.9 [local]
-libsystemd0 249.11-0ubuntu3.9 [local]
-libsystemd0:i386 249.11-0ubuntu3.9 [local]
+libsystemd-dev 249.11-0ubuntu3.10 [Ubuntu/jammy main]
+libsystemd0 249.11-0ubuntu3.10 [Ubuntu/jammy main]
+libsystemd0:i386 249.11-0ubuntu3.10 [Ubuntu/jammy main]
 libsz2 1.0.6-1 [Ubuntu/jammy universe]
 libtachyon-mt-0 0.99~b6+dsx-10 [Ubuntu/jammy universe]
 libtag1v5 1.11.1+dfsg.1-3ubuntu3 [Ubuntu/jammy main]
@@ -3131,9 +3131,9 @@ libu2f-udev 1.1.10-3build2 [Ubuntu/jammy main]
 libubsan1 12.3.0-1ubuntu1~22.04 [Ubuntu/jammy main]
 libuchardet0 0.0.7-1build2 [Ubuntu/jammy main]
 libucx0 1.12.1~rc2-1 [Ubuntu/jammy universe]
-libudev-dev 249.11-0ubuntu3.9 [local]
-libudev1 249.11-0ubuntu3.9 [local]
-libudev1:i386 249.11-0ubuntu3.9 [local]
+libudev-dev 249.11-0ubuntu3.10 [Ubuntu/jammy main]
+libudev1 249.11-0ubuntu3.10 [Ubuntu/jammy main]
+libudev1:i386 249.11-0ubuntu3.10 [Ubuntu/jammy main]
 libudfread0 1.1.2-1 [Ubuntu/jammy universe]
 libudisks2-0 2.9.4-1ubuntu2 [Ubuntu/jammy main]
 libudunits2-0 2.2.28-3 [Ubuntu/jammy universe]
@@ -3512,34 +3512,34 @@ links 2.25-1build1 [Ubuntu/jammy universe]
 lintian 2.114.0ubuntu1.2 [Ubuntu/jammy main]
 linux-base 4.5ubuntu9 [Ubuntu/jammy main]
 linux-firmware 20220329.git681281e4-0ubuntu3.18 [Ubuntu/jammy main]
-linux-generic 5.15.0.83.80 [Ubuntu/jammy main]
-linux-generic-hwe-20.04 5.15.0.83.80 [Ubuntu/jammy main]
-linux-generic-hwe-22.04 6.2.0.32.32~22.04.9 [Ubuntu/jammy main]
-linux-headers-5.15.0-83 5.15.0-83.92 [Ubuntu/jammy main]
-linux-headers-5.15.0-83-generic 5.15.0-83.92 [Ubuntu/jammy main]
+linux-generic 5.15.0.84.81 [Ubuntu/jammy main]
+linux-generic-hwe-20.04 5.15.0.84.81 [Ubuntu/jammy main]
+linux-generic-hwe-22.04 6.2.0.33.33~22.04.10 [Ubuntu/jammy main]
+linux-headers-5.15.0-84 5.15.0-84.93 [Ubuntu/jammy main]
+linux-headers-5.15.0-84-generic 5.15.0-84.93 [Ubuntu/jammy main]
 linux-headers-5.19.0-50-generic 5.19.0-50.50 [Ubuntu/jammy main]
-linux-headers-6.2.0-31-generic 6.2.0-31.31~22.04.1 [Ubuntu/jammy main]
 linux-headers-6.2.0-32-generic 6.2.0-32.32~22.04.1 [Ubuntu/jammy main]
-linux-headers-generic 5.15.0.83.80 [Ubuntu/jammy main]
-linux-headers-generic-hwe-22.04 6.2.0.32.32~22.04.9 [Ubuntu/jammy main]
+linux-headers-6.2.0-33-generic 6.2.0-33.33~22.04.1 [Ubuntu/jammy main]
+linux-headers-generic 5.15.0.84.81 [Ubuntu/jammy main]
+linux-headers-generic-hwe-22.04 6.2.0.33.33~22.04.10 [Ubuntu/jammy main]
 linux-hwe-5.19-headers-5.19.0-50 5.19.0-50.50 [Ubuntu/jammy main]
-linux-hwe-6.2-headers-6.2.0-31 6.2.0-31.31~22.04.1 [Ubuntu/jammy main]
 linux-hwe-6.2-headers-6.2.0-32 6.2.0-32.32~22.04.1 [Ubuntu/jammy main]
-linux-image-5.15.0-83-generic 5.15.0-83.92 [Ubuntu/jammy main]
+linux-hwe-6.2-headers-6.2.0-33 6.2.0-33.33~22.04.1 [Ubuntu/jammy main]
+linux-image-5.15.0-84-generic 5.15.0-84.93 [Ubuntu/jammy main]
 linux-image-5.19.0-50-generic 5.19.0-50.50 [Ubuntu/jammy main]
-linux-image-6.2.0-31-generic 6.2.0-31.31~22.04.1 [Ubuntu/jammy main]
 linux-image-6.2.0-32-generic 6.2.0-32.32~22.04.1 [Ubuntu/jammy main]
-linux-image-generic 5.15.0.83.80 [Ubuntu/jammy main]
-linux-image-generic-hwe-22.04 6.2.0.32.32~22.04.9 [Ubuntu/jammy main]
-linux-libc-dev 5.15.0-83.92 [Ubuntu/jammy main]
-linux-modules-5.15.0-83-generic 5.15.0-83.92 [Ubuntu/jammy main]
+linux-image-6.2.0-33-generic 6.2.0-33.33~22.04.1 [Ubuntu/jammy main]
+linux-image-generic 5.15.0.84.81 [Ubuntu/jammy main]
+linux-image-generic-hwe-22.04 6.2.0.33.33~22.04.10 [Ubuntu/jammy main]
+linux-libc-dev 5.15.0-84.93 [Ubuntu/jammy main]
+linux-modules-5.15.0-84-generic 5.15.0-84.93 [Ubuntu/jammy main]
 linux-modules-5.19.0-50-generic 5.19.0-50.50 [Ubuntu/jammy main]
-linux-modules-6.2.0-31-generic 6.2.0-31.31~22.04.1 [Ubuntu/jammy main]
 linux-modules-6.2.0-32-generic 6.2.0-32.32~22.04.1 [Ubuntu/jammy main]
-linux-modules-extra-5.15.0-83-generic 5.15.0-83.92 [Ubuntu/jammy main]
+linux-modules-6.2.0-33-generic 6.2.0-33.33~22.04.1 [Ubuntu/jammy main]
+linux-modules-extra-5.15.0-84-generic 5.15.0-84.93 [Ubuntu/jammy main]
 linux-modules-extra-5.19.0-50-generic 5.19.0-50.50 [Ubuntu/jammy main]
-linux-modules-extra-6.2.0-31-generic 6.2.0-31.31~22.04.1 [Ubuntu/jammy main]
 linux-modules-extra-6.2.0-32-generic 6.2.0-32.32~22.04.1 [Ubuntu/jammy main]
+linux-modules-extra-6.2.0-33-generic 6.2.0-33.33~22.04.1 [Ubuntu/jammy main]
 linux-sound-base 1.0.25+dfsg-0ubuntu7 [Ubuntu/jammy main]
 llvm 1:14.0-55~exp2 [Ubuntu/jammy universe]
 llvm-11 1:11.1.0-6 [Ubuntu/jammy universe]
@@ -3718,9 +3718,9 @@ openjdk-11-jre 11.0.20.1+1-0ubuntu1~22.04 [Ubuntu/jammy main]
 openjdk-11-jre-headless 11.0.20.1+1-0ubuntu1~22.04 [Ubuntu/jammy main]
 openprinting-ppds 20220223-0ubuntu1 [Ubuntu/jammy main]
 opensp 1.5.2-13ubuntu3 [Ubuntu/jammy universe]
-openssh-client 1:8.9p1-3ubuntu0.3 [Ubuntu/jammy main]
-openssh-server 1:8.9p1-3ubuntu0.3 [Ubuntu/jammy main]
-openssh-sftp-server 1:8.9p1-3ubuntu0.3 [Ubuntu/jammy main]
+openssh-client 1:8.9p1-3ubuntu0.4 [Ubuntu/jammy main]
+openssh-server 1:8.9p1-3ubuntu0.4 [Ubuntu/jammy main]
+openssh-sftp-server 1:8.9p1-3ubuntu0.4 [Ubuntu/jammy main]
 openssl 3.0.2-0ubuntu1.10 [Ubuntu/jammy main]
 openvpn 2.5.5-1ubuntu3.1 [Ubuntu/jammy main]
 orca 42.0-1ubuntu2 [Ubuntu/jammy main]
@@ -4323,7 +4323,7 @@ shfmt-bin 3.4.3-1 [local]
 shim-signed 1.51.3+15.7-0ubuntu1 [Ubuntu/jammy main]
 shotwell 0.30.14-1ubuntu6 [Ubuntu/jammy main]
 shotwell-common 0.30.14-1ubuntu6 [Ubuntu/jammy main]
-signal-desktop 6.30.2 [. xenial/xenial main]
+signal-desktop 6.31.0 [. xenial/xenial main]
 signon-plugin-oauth2 0.25-2 [Ubuntu/jammy universe]
 silversearcher-ag 2.2.0+git20200805-1 [Ubuntu/jammy universe]
 simple-scan 42.0-1 [Ubuntu/jammy main]
@@ -4332,7 +4332,7 @@ singular-data 1:4.2.1-p3+ds-1 [Ubuntu/jammy universe]
 singular-doc 1:4.2.1-p3+ds-1 [Ubuntu/jammy universe]
 singular-modules 1:4.2.1-p3+ds-1 [Ubuntu/jammy universe]
 singular-ui 1:4.2.1-p3+ds-1 [Ubuntu/jammy universe]
-slack-desktop 4.33.90 [slack/jessie main]
+slack-desktop 4.34.120 [slack/jessie main]
 slirp4netns 1.0.1-2 [Ubuntu/jammy universe]
 slop 7.5-1.1build2 [Ubuntu/jammy universe]
 snapd 2.58+22.04.1 [Ubuntu/jammy main]
@@ -4382,11 +4382,11 @@ syncthing 1.18.0~ds1-3ubuntu0.2 [Ubuntu/jammy universe]
 system-config-printer 1.5.16-0ubuntu3 [Ubuntu/jammy main]
 system-config-printer-common 1.5.16-0ubuntu3 [Ubuntu/jammy main]
 system-config-printer-udev 1.5.16-0ubuntu3 [Ubuntu/jammy main]
-systemd 249.11-0ubuntu3.9 [local]
+systemd 249.11-0ubuntu3.10 [Ubuntu/jammy main]
 systemd-hwe-hwdb 249.11.3 [Ubuntu/jammy main]
-systemd-oomd 249.11-0ubuntu3.9 [local]
-systemd-sysv 249.11-0ubuntu3.9 [local]
-systemd-timesyncd 249.11-0ubuntu3.9 [local]
+systemd-oomd 249.11-0ubuntu3.10 [Ubuntu/jammy main]
+systemd-sysv 249.11-0ubuntu3.10 [Ubuntu/jammy main]
+systemd-timesyncd 249.11-0ubuntu3.10 [Ubuntu/jammy main]
 sysvinit-utils 3.01-1ubuntu1 [Ubuntu/jammy main]
 t1utils 1.41-4build2 [Ubuntu/jammy main]
 tabby-terminal 1.0.183 [local]
@@ -4462,7 +4462,7 @@ texlive-publishers-doc 2021.20220204-1 [Ubuntu/jammy universe]
 texlive-science 2021.20220204-1 [Ubuntu/jammy universe]
 texlive-science-doc 2021.20220204-1 [Ubuntu/jammy universe]
 texlive-xetex 2021.20220204-1 [Ubuntu/jammy universe]
-thermald 2.4.9-1ubuntu0.3 [local]
+thermald 2.4.9-1ubuntu0.4 [Ubuntu/jammy main]
 thorium-browser 115.0.5790.172-1 [local]
 thunar 4.16.10-1 [Ubuntu/jammy universe]
 thunar-data 4.16.10-1 [Ubuntu/jammy universe]
@@ -4503,7 +4503,7 @@ tumbler 4.16.0-1 [Ubuntu/jammy universe]
 tumbler-common 4.16.0-1 [Ubuntu/jammy universe]
 tzdata 2023c-0ubuntu0.22.04.2 [Ubuntu/jammy main]
 ubuntu-advantage-desktop-daemon 1.10~22.04.1 [Ubuntu/jammy main]
-ubuntu-advantage-tools 28.1~22.04 [Ubuntu/jammy main]
+ubuntu-advantage-tools 29.4~22.04 [Ubuntu/jammy main]
 ubuntu-docs 22.04.5 [Ubuntu/jammy main]
 ubuntu-drivers-common 1:0.9.6.2~0.22.04.4 [Ubuntu/jammy main]
 ubuntu-keyring 2021.03.26 [Ubuntu/jammy main]
@@ -4519,7 +4519,7 @@ ubuntu-touch-sounds 15.08 [Ubuntu/jammy universe]
 ubuntu-wallpapers 22.04.4-0ubuntu1 [Ubuntu/jammy main]
 ubuntu-wallpapers-jammy 22.04.4-0ubuntu1 [Ubuntu/jammy main]
 ucf 3.0043 [Ubuntu/jammy main]
-udev 249.11-0ubuntu3.9 [local]
+udev 249.11-0ubuntu3.10 [Ubuntu/jammy main]
 udisks2 2.9.4-1ubuntu2 [Ubuntu/jammy main]
 ueberzugpp 2.9.1 [local]
 ufw 0.36.1-4ubuntu0.1 [Ubuntu/jammy main]
@@ -4686,7 +4686,7 @@ xserver-xorg-input-libinput 1.2.1-1 [Ubuntu/jammy main]
 xserver-xorg-input-wacom 1:1.0.0-3ubuntu1 [Ubuntu/jammy main]
 xserver-xorg-legacy 2:21.1.4-2ubuntu1.7~22.04.1 [Ubuntu/jammy main]
 xserver-xorg-video-all 1:7.7+23ubuntu2 [Ubuntu/jammy main]
-xserver-xorg-video-amdgpu 22.0.0-1ubuntu0.1 [Ubuntu/jammy main]
+xserver-xorg-video-amdgpu 22.0.0-1ubuntu0.2 [Ubuntu/jammy main]
 xserver-xorg-video-ati 1:19.1.0-2ubuntu1 [Ubuntu/jammy main]
 xserver-xorg-video-fbdev 1:0.5.0-2build1 [Ubuntu/jammy main]
 xserver-xorg-video-intel 2:2.99.917+git20210115-1 [Ubuntu/jammy main]
@@ -4734,7 +4734,7 @@ zstd 1.4.8+dfsg-3build1 [Ubuntu/jammy main]
 ```txt
 name: batsignal version: 1.6.4-pacstall1
 name: bitwarden version: 2023.8.2
-name: brave-browser version: 1.57.53
+name: brave-browser version: 1.58.124
 name: brave-keyring version: 1.13
 name: google-chrome-stable version: 116.0.5845.140-1
 name: htop version: 3.2.2-pacstall1
@@ -4744,7 +4744,7 @@ name: polybar version: 3.6.3-pacstall1
 name: protonmail-bridge version: 3.4.1-1
 name: quarto version: 1.3.450
 name: shfmt version: 3.7.0-pacstall1
-name: signal-desktop version: 6.30.2
+name: signal-desktop version: 6.31.0
 name: thorium-browser version: 115.0.5790.172-1
 name: wezterm version: 20230712-072601-f4abf8fd-pacstall1
 name: zoom version: 5.15.7.6521
@@ -4757,15 +4757,15 @@ alacritty v0.12.2:
     alacritty
 atuin v16.0.0:
     atuin
-bacon v2.12.1:
+bacon v2.13.0:
     bacon
 bat v0.23.0:
     bat
 blindfold v1.0.7:
     blindfold
-bob-nvim v2.5.0:
+bob-nvim v2.6.0:
     bob
-cargo-binstall v1.3.0:
+cargo-binstall v1.4.0:
     cargo-binstall
 cargo-edit v0.12.2:
     cargo-add
@@ -4814,7 +4814,7 @@ lscolors v0.15.0:
     lscolors
 mdbook v0.4.34:
     mdbook
-mdbook-admonish v1.11.1:
+mdbook-admonish v1.12.1:
     mdbook-admonish
 mdbook-svgbob v0.2.1:
     mdbook-svgbob
@@ -4824,18 +4824,20 @@ menyoki v1.7.0:
     menyoki
 mprocs v0.6.4:
     mprocs
-nu v0.84.0:
+nu v0.85.0:
     nu
+numbat-cli v1.6.2:
+    numbat
 pastel v0.9.0:
     pastel
-porsmo v0.2.3:
+porsmo v0.2.4:
     porsmo
 pueue v3.2.0:
     pueue
     pueued
 ripgrep v13.0.0:
     rg
-rtx-cli v2023.9.1:
+rtx-cli v2023.9.2:
     rtx
 samply v0.11.0:
     samply
@@ -4872,7 +4874,7 @@ xh v0.18.0:
     xh
 xplr v0.21.3:
     xplr
-zellij v0.38.1:
+zellij v0.38.2:
     zellij
 zeta-note v0.1.8:
     zeta-note
@@ -4901,7 +4903,7 @@ package black 23.9.1, installed using Python 3.10.4
  - blackd
 package cicero 0.2.5, installed using Python 3.10.4
  - cicero
-package cowsay 6.0, installed using Python 3.10.4
+package cowsay 6.1, installed using Python 3.10.4
  - cowsay
 package daltonlens 0.1.5, installed using Python 3.10.4
  - daltonlens-python
@@ -4938,7 +4940,7 @@ package jupyter-client 8.3.1, installed using Python 3.10.4
  - jupyter-kernel
  - jupyter-kernelspec
  - jupyter-run
-package jupytext 1.15.1, installed using Python 3.10.4
+package jupytext 1.15.2, installed using Python 3.10.4
  - jupytext
  - jupytext-config
 package kb-manager 0.1.7, installed using Python 3.10.4
@@ -5016,7 +5018,7 @@ package rich-codex 1.2.6, installed using Python 3.10.4
  - rich-codex
 package rmview 3.0, installed using Python 3.10.4
  - rmview
-package rofimoji 6.1.0, installed using Python 3.10.4
+package rofimoji 6.2.0, installed using Python 3.10.4
  - rofimoji
 package telegram-send 0.34, installed using Python 3.10.4
  - telegram-send
@@ -5025,7 +5027,7 @@ package term-image 0.7.0, installed using Python 3.10.4
  - term-img
 package tex2svg 0.0.2, installed using Python 3.10.4
  - tex2svg
-package textual-paint 0.2.0, installed using Python 3.10.4
+package textual-paint 0.3.0, installed using Python 3.10.4
  - textual-paint
 package thefuck 3.32, installed using Python 3.10.4
  - fuck
@@ -5037,7 +5039,7 @@ package twine 4.0.2, installed using Python 3.10.4
  - twine
 package wtpython 0.1.0, installed using Python 3.10.4
  - wtpython
-package yapf 0.40.1, installed using Python 3.10.4
+package yapf 0.40.2, installed using Python 3.10.4
  - yapf
  - yapf-diff
 ```
@@ -5057,10 +5059,10 @@ ascii-image-converter: github.com/TheZoraiz/ascii-image-converter@v1.13.1
                   gum: github.com/charmbracelet/gum@v0.11.0
                   gup: github.com/nao1215/gup@v0.23.0
               lazygit: github.com/jesseduffield/lazygit@v0.40.2
-                   lf: github.com/gokcehan/lf@v0.0.0-20230911131742-ffc756c5ff2e
+                   lf: github.com/gokcehan/lf@v0.0.0-20230923013219-dddf437c42a5
                   nap: github.com/maaslalani/nap@v0.1.1
                 rmapi: github.com/juruen/rmapi@(devel)
-                    s: github.com/zquestz/s@v0.6.8
+                    s: github.com/zquestz/s@v0.6.9
                slides: github.com/maaslalani/slides@v0.9.0
             triangula: github.com/RH12503/Triangula-CLI/triangula@v0.0.0-20210520132201-603b709907d8
                   vhs: github.com/charmbracelet/vhs@v0.6.0
@@ -5076,14 +5078,17 @@ Freedesktop Platform                    22.08.15                                
 Mesa                                    21.3.9                                  21.08
 Mesa                                    23.1.6                                  22.08
 Mesa (Extra)                            23.1.6                                  22.08-extra
+Mesa                                    23.1.7                                  23.08
+Mesa (Extra)                            23.1.7                                  23.08-extra
 Intel                                                                           21.08
 Intel                                                                           22.08
+Intel                                                                           23.08
 openh264                                2.1.0                                   2.0
 openh264                                2.1.0                                   2.2.0
 Evolution                               3.48.4                                  stable
-GNOME Application Platform version 43                                           43
 GNOME Application Platform version 44                                           44
-Citations                               0.5.2                                   stable
+GNOME Application Platform version 45                                           45
+Citations                               0.6.0                                   stable
 Pika Backup                             0.6.2                                   stable
 Yaru-dark Gtk Theme                                                             3.22
 ```
@@ -5094,8 +5099,8 @@ Yaru-dark Gtk Theme                                                             
 Name                       Version                     Rev    Tracking         Publisher      Notes
 bare                       1.0                         5      latest/stable    canonical**    base
 canonical-livepatch        10.6.0                      235    latest/stable    canonical**    -
-cmake                      3.27.5                      1332   latest/stable    crascit**      classic
-core                       16-2.60.2                   15925  latest/stable    canonical**    core
+cmake                      3.27.6                      1334   latest/stable    crascit**      classic
+core                       16-2.60.3                   16091  latest/stable    canonical**    core
 core18                     20230703                    2790   latest/stable    canonical**    base
 core20                     20230801                    2015   latest/stable    canonical**    base
 core22                     20230801                    864    latest/stable    canonical**    base
@@ -5108,7 +5113,7 @@ gimp                       2.10.30                     393    latest/stable    s
 gnome-3-28-1804            3.28.0-19-g98f9e67.98f9e67  198    latest/stable    canonical**    -
 gnome-3-34-1804            0+git.3556cb3               93     latest/stable/…  canonical**    -
 gnome-3-38-2004            0+git.efb213a               143    latest/stable    canonical**    -
-gnome-42-2204              0+git.ff35a85               126    latest/stable    canonical**    -
+gnome-42-2204              0+git.ff35a85               132    latest/stable    canonical**    -
 gnome-dictionary           40.0                        59     latest/stable    canonical**    -
 gphoto2                    latest                      8      latest/stable    eberkund       -
 gtk-common-themes          0.1-81-g442e511             1535   latest/stable/…  canonical**    -
@@ -5120,7 +5125,7 @@ mojave-themes              2020-03-24-35-g2aecfbf      2      latest/stable    g
 notable                    1.8.4-2                     3      latest/stable    spampinabio    classic
 pdftk                      2.02-4                      9      latest/stable    smoser         -
 procs                      v0.13.0                     969    latest/stable    dalance        -
-remmina                    v1.4.31                     5782   latest/stable    remmina**      -
+remmina                    v1.4.32                     6117   latest/stable    remmina**      -
 shotcut                    23.07.29                    1178   latest/stable    meltytech**    classic
 snap-store                 41.3-71-g709398e            959    latest/stable/…  canonical**    -
 snapd                      2.60.3                      20092  latest/stable    canonical**    snapd

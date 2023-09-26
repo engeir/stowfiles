@@ -119,7 +119,7 @@ return {
                 -- diagnostics.pydocstyle,
                 diagnostics.shellcheck,
                 formatting.beautysh,
-                formatting.bibclean.with({ extra_args = { "--max-width", "0" } }),
+                -- formatting.bibclean.with({ extra_args = { "--max-width", "0" } }),
                 -- formatting.black.with({ extra_args = { "--fast" } }),
                 blackd,
                 dprint,
@@ -127,9 +127,9 @@ return {
                 formatting.fprettify,
                 formatting.gofmt,
                 formatting.isort,
-                formatting.latexindent.with({
-                    extra_args = { "-m" },
-                }),
+                -- formatting.latexindent.with({
+                --     extra_args = { "-m" },
+                -- }),
                 -- formatting.markdownlint.with({
                 --     extra_args = { "-c", vim.fn.expand("~") .. "/.config/mdl/.markdownlint.jsonc" },
                 -- }), -- Using `prettierd` instead
