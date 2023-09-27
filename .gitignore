@@ -8,5 +8,4 @@ calcurse/.config/calcurse/keys
 helix/.config/helix/runtime
 newsboat/.newsboat/cache.db
 nushell/**/history*
-packer_compiled.lua
 tmux/.tmux/plugins/

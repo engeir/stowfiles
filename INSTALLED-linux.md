@@ -4765,7 +4765,7 @@ blindfold v1.0.7:
     blindfold
 bob-nvim v2.6.0:
     bob
-cargo-binstall v1.4.0:
+cargo-binstall v1.4.1:
     cargo-binstall
 cargo-edit v0.12.2:
     cargo-add
@@ -4826,7 +4826,7 @@ mprocs v0.6.4:
     mprocs
 nu v0.85.0:
     nu
-numbat-cli v1.6.2:
+numbat-cli v1.6.3:
     numbat
 pastel v0.9.0:
     pastel
@@ -5005,7 +5005,7 @@ package pyqt5 5.15.9, installed using Python 3.10.4
  - pylupdate5
  - pyrcc5
  - pyuic5
-package pyright 1.1.327, installed using Python 3.10.4
+package pyright 1.1.328, installed using Python 3.10.4
  - pyright
  - pyright-langserver
  - pyright-python
@@ -5049,7 +5049,7 @@ package yapf 0.40.2, installed using Python 3.10.4
 ```txt
 ascii-image-converter: github.com/TheZoraiz/ascii-image-converter@v1.13.1
             bluetuith: github.com/darkhz/bluetuith@v0.1.7
-                   d2: oss.terrastruct.com/d2@v0.6.0
+                   d2: oss.terrastruct.com/d2@v0.6.1
                 doggo: github.com/mr-karan/doggo/cmd/doggo@v0.5.7
                  draw: github.com/maaslalani/draw@v0.1.1
                fast-p: github.com/bellecp/fast-p@v0.2.5
