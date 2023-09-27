@@ -4,8 +4,8 @@ local act = wezterm.action
 return {
     -- Panes and moving
     {
-        key = '7',
-        mods = 'LEADER|ALT',
+        key = '|',
+        mods = 'LEADER',
         action = wezterm.action.SplitHorizontal { domain = 'CurrentPaneDomain' },
     },
     {
@@ -18,6 +18,8 @@ return {
         mods = 'LEADER',
         action = wezterm.action.TogglePaneZoomState,
     },
+    -- Sync keys (like in tmux, as I have bound to leader C-x) is not yet (and not
+    -- planned to be) supported: https://github.com/wez/wezterm/issues/2658
     -- Tabs
     { key = 'LeftArrow',  mods = 'CTRL|SHIFT', action = act.ActivateTabRelative(-1) },
     { key = 'RightArrow', mods = 'CTRL|SHIFT', action = act.ActivateTabRelative(1) },
