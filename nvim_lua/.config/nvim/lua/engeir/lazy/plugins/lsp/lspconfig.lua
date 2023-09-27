@@ -122,15 +122,15 @@ return {
         })
 
         -- Not available from Mason
-        lspconf["textlsp"].setup({
-            capabilities = capabilities,
-            on_attach = on_attach,
-            settings = {
-                textLSP = {
-                    language = "en-GB",
-                },
-            },
-        })
+        -- lspconf["textlsp"].setup({
+        --     capabilities = capabilities,
+        --     on_attach = on_attach,
+        --     settings = {
+        --         textLSP = {
+        --             language = "en-GB",
+        --         },
+        --     },
+        -- })
         -- If some need specific setup functions, we override those here
         lspconf["texlab"].setup({
             capabilities = capabilities,
