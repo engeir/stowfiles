@@ -37,6 +37,7 @@ run_updates() {
     echo_and_run gup update
     # Single programs
     echo_and_run rye self update
+    echo_and_run poetry self update
     echo_and_run bun upgrade
     echo_and_run bob update --all
 }
