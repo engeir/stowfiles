@@ -11,8 +11,6 @@ alias dropbox_update="~/.dropbox-dist/dropboxd"
 alias cp='/usr/local/bin/cpg -g'
 alias lsn="ls --color=auto */ | less"
 alias mv='/usr/local/bin/mvg -g'
-# alias lcm="sudo mount -o uid=1000,gid=1000,rw /dev/sda2 /media/een023/LaCie"
-alias lcu="sudo umount /media/een023/LaCie"
 alias lcc="lsblk -e 1,7"
 alias open="xdg-open"
 alias rg='rg -g "!Dropbox" -g "!OneDrive" -g "!BoxSync" -g "!.cache" -g "!.config/nnn" -g "!.git" -g "!node_module" -g "!.npm" -g "!.mozilla" -g "!.meteor" -g "!.nv" -g "!.conda" -g "!.dropbox-dist" -g "!.vscode" -g "!.vscode-insiders" -g "!miniconda3" -g "!.virtualenvs" -g "!snap" -g "!gems" -g "!.wine" -g "!extensions" -g "!coreutils-8.32" -g "!freetype-2.10.4" -g "!.cargo" -g "!Downloads" -g "!R" -g "!.Mathematica"'
@@ -53,12 +51,6 @@ caps2esc() {
     # Make caps-lock work as esc when pressed, ctrl when hold
     setxkbmap -option ctrl:nocaps
     xcape -e 'Control_L=Escape'
-}
-
-lcm() {
-    # Mount LaCie device, optionally from specified location.
-    loc=${1:-/dev/sda2}
-    sudo mount -o uid=1000,gid=1000,rw "$loc" /media/een023/LaCie
 }
 
 pdf-reduce() {

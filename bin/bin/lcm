@@ -1,0 +1,5 @@
+#!/bin/expect -f
+
+spawn lcm-fn [lindex $argv 0]
+expect -re "password" { send -- [exec pass Hp-Ubuntu/login]\r }
+expect eof
