@@ -80,6 +80,10 @@ return {
     },
     {
         "TimUntersberger/neogit",
+        -- Issue open on https://github.com/NeogitOrg/neogit/issues/857
+        -- commit = "8727a3222a93d710a7000b750892cc25e2712937", -- Toggle issue introduced
+        -- commit = "466e801b5203d24352fbc416684aecc608c2ae77", -- Error is introduced
+        commit = "c4f4cd0116cbd969aa0f485c9f4154df1c3f3662",
         cond = IS_KNOWN,
         config = function()
             local neogit = require("neogit")
