@@ -608,7 +608,7 @@ gir1.2-ibus-1.0 1.5.26-4 [Ubuntu/jammy main]
 gir1.2-ical-3.0 3.0.14-1build1 [Ubuntu/jammy main]
 gir1.2-javascriptcoregtk-4.0 2.40.5-0ubuntu0.22.04.1 [Ubuntu/jammy main]
 gir1.2-json-1.0 1.6.6-1build1 [Ubuntu/jammy main]
-gir1.2-mutter-10 42.9-0ubuntu4 [Ubuntu/jammy main]
+gir1.2-mutter-10 42.9-0ubuntu4 [local]
 gir1.2-nm-1.0 1.36.6-0ubuntu2 [Ubuntu/jammy main]
 gir1.2-nma-1.0 1.8.34-1ubuntu1 [Ubuntu/jammy main]
 gir1.2-notify-0.7 0.7.9-3ubuntu5.22.04.1 [Ubuntu/jammy main]
@@ -2412,7 +2412,7 @@ libmtp-common 1.1.19-1build1 [Ubuntu/jammy main]
 libmtp-runtime 1.1.19-1build1 [Ubuntu/jammy main]
 libmtp9 1.1.19-1build1 [Ubuntu/jammy main]
 libmujs1 1.1.3-3 [Ubuntu/jammy universe]
-libmutter-10-0 42.9-0ubuntu4 [Ubuntu/jammy main]
+libmutter-10-0 42.9-0ubuntu4 [local]
 libmwaw-0.3-3 0.3.21-1build1 [Ubuntu/jammy main]
 libmysofa1 1.2.1~dfsg0-1 [Ubuntu/jammy universe]
 libmysqlclient21 8.0.34-0ubuntu0.22.04.1 [Ubuntu/jammy main]
@@ -3646,8 +3646,8 @@ mtr-tiny 0.95-1 [Ubuntu/jammy main]
 mullvad-vpn 2023.3 [local]
 mupdf 1.19.0+ds1-2 [Ubuntu/jammy universe]
 mupdf-tools 1.19.0+ds1-2 [Ubuntu/jammy universe]
-mutter 42.9-0ubuntu4 [Ubuntu/jammy universe]
-mutter-common 42.9-0ubuntu4 [Ubuntu/jammy main]
+mutter 42.9-0ubuntu4 [local]
+mutter-common 42.9-0ubuntu4 [local]
 mysql-client-8.0 8.0.34-0ubuntu0.22.04.1 [Ubuntu/jammy main]
 mysql-client-core-8.0 8.0.34-0ubuntu0.22.04.1 [Ubuntu/jammy main]
 mysql-common 5.8+1.0.8 [Ubuntu/jammy main]
@@ -4323,7 +4323,7 @@ shfmt-bin 3.4.3-1 [local]
 shim-signed 1.51.3+15.7-0ubuntu1 [Ubuntu/jammy main]
 shotwell 0.30.14-1ubuntu6 [Ubuntu/jammy main]
 shotwell-common 0.30.14-1ubuntu6 [Ubuntu/jammy main]
-signal-desktop 6.31.0 [. xenial/xenial main]
+signal-desktop 6.32.0 [. xenial/xenial main]
 signon-plugin-oauth2 0.25-2 [Ubuntu/jammy universe]
 silversearcher-ag 2.2.0+git20200805-1 [Ubuntu/jammy universe]
 simple-scan 42.0-1 [Ubuntu/jammy main]
@@ -4744,7 +4744,7 @@ name: polybar version: 3.6.3-pacstall1
 name: protonmail-bridge version: 3.4.1-1
 name: quarto version: 1.3.450
 name: shfmt version: 3.7.0-pacstall1
-name: signal-desktop version: 6.31.0
+name: signal-desktop version: 6.32.0
 name: thorium-browser version: 115.0.5790.172-1
 name: wezterm version: 20230712-072601-f4abf8fd-pacstall1
 name: zoom version: 5.15.7.6521
@@ -4765,7 +4765,7 @@ blindfold v1.0.7:
     blindfold
 bob-nvim v2.6.0:
     bob
-cargo-binstall v1.4.1:
+cargo-binstall v1.4.2:
     cargo-binstall
 cargo-edit v0.12.2:
     cargo-add
@@ -4774,7 +4774,7 @@ cargo-edit v0.12.2:
     cargo-upgrade
 cargo-info v0.7.6:
     cargo-info
-cargo-update v13.0.4:
+cargo-update v13.1.0:
     cargo-install-update
     cargo-install-update-config
 cargo-watch v8.4.1:
@@ -4830,7 +4830,7 @@ numbat-cli v1.6.3:
     numbat
 pastel v0.9.0:
     pastel
-porsmo v0.2.4:
+porsmo v0.2.5:
     porsmo
 pueue v3.2.0:
     pueue
@@ -5005,7 +5005,7 @@ package pyqt5 5.15.9, installed using Python 3.10.4
  - pylupdate5
  - pyrcc5
  - pyuic5
-package pyright 1.1.328, installed using Python 3.10.4
+package pyright 1.1.329, installed using Python 3.10.4
  - pyright
  - pyright-langserver
  - pyright-python
@@ -5085,10 +5085,10 @@ Intel                                                                           
 Intel                                                                           23.08
 openh264                                2.1.0                                   2.0
 openh264                                2.1.0                                   2.2.0
-Evolution                               3.48.4                                  stable
+Evolution                               3.50.0                                  stable
 GNOME Application Platform version 44                                           44
 GNOME Application Platform version 45                                           45
-Citations                               0.6.0                                   stable
+Citations                               0.6.2                                   stable
 Pika Backup                             0.6.2                                   stable
 Yaru-dark Gtk Theme                                                             3.22
 ```
@@ -5098,7 +5098,7 @@ Yaru-dark Gtk Theme                                                             
 ```txt
 Name                       Version                     Rev    Tracking         Publisher      Notes
 bare                       1.0                         5      latest/stable    canonical**    base
-canonical-livepatch        10.6.0                      235    latest/stable    canonical**    -
+canonical-livepatch        10.7.0                      246    latest/stable    canonical**    -
 cmake                      3.27.6                      1334   latest/stable    crascit**      classic
 core                       16-2.60.3                   16091  latest/stable    canonical**    core
 core18                     20230703                    2790   latest/stable    canonical**    base
@@ -5108,12 +5108,12 @@ dmd                        2.090.1                     102    latest/stable    d
 dotnet-sdk                 5.0.408                     167    5.0/stable       dotnetcore**   classic
 dub                        1.19.0                      53     latest/stable    dlang          classic
 duf-utility                v0.6.0                      1      latest/stable    muesli         -
-firefox                    117.0.1-2                   3131   latest/stable/…  mozilla**      -
+firefox                    118.0.1-1                   3206   latest/stable/…  mozilla**      -
 gimp                       2.10.30                     393    latest/stable    snapcrafters*  -
 gnome-3-28-1804            3.28.0-19-g98f9e67.98f9e67  198    latest/stable    canonical**    -
 gnome-3-34-1804            0+git.3556cb3               93     latest/stable/…  canonical**    -
 gnome-3-38-2004            0+git.efb213a               143    latest/stable    canonical**    -
-gnome-42-2204              0+git.ff35a85               132    latest/stable    canonical**    -
+gnome-42-2204              0+git.ff35a85               141    latest/stable    canonical**    -
 gnome-dictionary           40.0                        59     latest/stable    canonical**    -
 gphoto2                    latest                      8      latest/stable    eberkund       -
 gtk-common-themes          0.1-81-g442e511             1535   latest/stable/…  canonical**    -
