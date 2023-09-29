@@ -1,3 +1,5 @@
+local ts_utils = require("luasnip-latex-snippets.util.ts_utils")
+
 local rec_ls
 rec_ls = function()
     return sn(
@@ -58,14 +60,54 @@ return {
     s("quote", { t({ "``" }), i(1), t("''") }),
 }, {
     -- Auto
-    s({ name = "Short acronym", trig = "acrs" }, { t({ "\\acrshort{" }), i(1), t("}") }),
-    s({ name = "Full acronym", trig = "acrf" }, { t({ "\\acrfull{" }), i(1), t("}") }),
+    s({ trig = "..." }, { t("\\ldots") }),
+    s({ trig = "acrs", name = "Short acronym" }, { t({ "\\acrshort{" }), i(1), t("}") }),
+    s({ trig = "acrf", name = "Full acronym" }, { t({ "\\acrfull{" }), i(1), t("}") }),
     s({ trig = "creff" }, { t("\\cref{fig:"), i(1, "one"), t("}") }),
     s({ trig = "Creff" }, { t("\\Cref{fig:"), i(1, "one"), t("}") }),
-    s({ name = "Text citation", trig = ".cit" }, { t({ "\\citet{" }), i(1), t("}") }),
-    s({ name = "Parentheses citation", trig = ".cip" }, { t({ "\\citep{" }), i(1), t("}") }),
+    s({ trig = ".cit", name = "Text citation" }, { t({ "\\citet{" }), i(1), t("}") }),
+    s({ trig = ".cip", name = "Parentheses citation" }, { t({ "\\citep{" }), i(1), t("}") }),
     s({ trig = "mk" }, { t("\\("), i(1), t("\\)") }),
-    s({ trig = "mrm" }, { t("\\mathrm{"), i(1), t("}") }),
-    s(".ce", { t({ "\\ce{" }), i(1), t("}") }),
-    s(".qt", { t({ "``" }), i(1), t("''") }),
+    s({ trig = "mrm" }, { t("\\mathrm{"), i(1), t("}") }, { condition = ts_utils.in_mathzone }),
+    s({ trig = ".ce" }, { t({ "\\ce{" }), i(1), t("}") }),
+    s({ trig = ".qt" }, { t({ "``" }), i(1), t("''") }),
+    s({ trig = "sub", wordTrig = false }, { t("_{"), i(1), t("}"), i(0) }, { condition = ts_utils.in_mathzone }),
+    s({ trig = "sup", wordTrig = false }, { t("^{"), i(1), t("}"), i(0) }, { condition = ts_utils.in_mathzone }),
+    s({
+        trig = "_(%w%w)",
+        name = "auto subscript 3",
+        regTrig = true,
+        wordTrig = false,
+        -- snippetType = "autosnippet",
+    }, {
+        f(function(_, snip)
+            return string.format("_{%s", snip.captures[1])
+        end, {}),
+        i(1),
+        t("}"),
+        i(0),
+    }, { condition = ts_utils.in_mathzone }),
+    s({
+        trig = ",(%w%w)",
+        name = "auto superscript",
+        regTrig = true,
+        wordTrig = false,
+        -- snippetType = "autosnippet",
+    }, {
+        f(function(_, snip)
+            return string.format("^{%s", snip.captures[1])
+        end, {}),
+        i(1),
+        t("}"),
+        i(0),
+    }, { condition = ts_utils.in_mathzone }),
+    -- s({trig=".fig", name="Figure"}, {
+    --         t({"\\begin{figure}"})
+    --         "\\begin{figure}${2:[${1:htpb}]}",
+    --         "\t\\centering",
+    --         "\t${3:\\includegraphics[width=0.95\\linewidth]{figures/$4}}",
+    --         "\t\\caption{${5:$4}}%",
+    --         "\t\\label{fig:${6:${4/\\W+/-/g}}}",
+    --         "\\end{figure}"
+    --     }),
 }

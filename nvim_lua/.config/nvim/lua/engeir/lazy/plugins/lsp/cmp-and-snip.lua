@@ -150,7 +150,8 @@ return {
         "L3MON4D3/LuaSnip",
         event = { "BufReadPre", "BufNewFile" },
         build = "make install_jsregexp",
-        dependencies = "rafamadriz/friendly-snippets",
+        -- dependencies = "rafamadriz/friendly-snippets",
+        dependencies = "iurimateus/luasnip-latex-snippets.nvim",
         config = function()
             -- See https://github.com/L3MON4D3/LuaSnip/blob/master/Examples/snippets.lua
             -- and teeeej's taketuesday #3 videos for more sweetness
@@ -197,7 +198,7 @@ return {
             end, { desc = "LuaSnip: Source Snippets File" })
 
             -- require("luasnip.loaders.from_vscode").lazy_load({
-            --     paths = { "~/.config/nvim/lua/engeir/lazy/lsp/luasnippets" },
+            --     paths = { "~/.config/nvim/lua/engeir/lazy/plugins/lsp/luasnippets/vscode/" },
             -- })
             -- require("luasnip.loaders.from_vscode").lazy_load({
             --     exclude = { "latex", "tex", "plaintex" },
