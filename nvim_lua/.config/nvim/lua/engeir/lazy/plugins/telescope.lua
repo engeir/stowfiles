@@ -41,6 +41,21 @@ return {
             local actions = require("telescope.actions")
             local trouble = require("trouble.providers.telescope")
             local telescope = require("telescope")
+            local state = require("telescope.state")
+            local action_state = require("telescope.actions.state")
+
+            -- From https://github.com/nvim-telescope/telescope.nvim/issues/2602#issuecomment-1636809235
+            local slow_scroll = function(prompt_bufnr, direction)
+                local previewer = action_state.get_current_picker(prompt_bufnr).previewer
+                local status = state.get_status(prompt_bufnr)
+
+                -- Check if we actually have a previewer and a preview window
+                if type(previewer) ~= "table" or previewer.scroll_fn == nil or status.preview_win == nil then
+                    return
+                end
+
+                previewer:scroll_fn(1 * direction)
+            end
             telescope.setup({
                 defaults = {
                     generic_sorter = require("mini.fuzzy").get_telescope_sorter,
@@ -48,8 +63,12 @@ return {
                     mappings = {
                         i = {
                             ["<esc>"] = actions.close,
-                            ["<C-k>"] = actions.move_selection_previous,
-                            ["<C-j>"] = actions.move_selection_next,
+                            ["<C-j>"] = function(bufnr)
+                                slow_scroll(bufnr, 1)
+                            end,
+                            ["<C-k>"] = function(bufnr)
+                                slow_scroll(bufnr, -1)
+                            end,
                             ["<C-q>"] = actions.send_selected_to_qflist + actions.open_qflist,
                             ["<c-t>"] = trouble.open_with_trouble,
                         },
