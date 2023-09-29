@@ -92,7 +92,7 @@ return {
         local config = {
             virtual_text = false, -- disable virtual text
             signs = {
-                active = signs, -- show signs
+                active = signs,   -- show signs
             },
             update_in_insert = true,
             underline = false,
@@ -136,12 +136,20 @@ return {
             capabilities = capabilities,
             on_attach = on_attach,
             settings = {
+                -- https://github.com/latex-lsp/texlab/wiki/Configuration
                 texlab = {
                     chktex = {
-                        onEdit = false,
+                        onEdit = true,
                         onOpenAndSave = true,
                     },
-                    formatterLineLength = 88,
+                    experimental = {
+                        mathEnvironments = {
+                            "align*",
+                            "equation",
+
+                        },
+                    },
+                    formatterLineLength = -1,
                     forwardSearch = {
                         executable = "zathura",
                     },
