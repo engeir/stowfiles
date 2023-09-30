@@ -69,8 +69,10 @@ return {
             -- Create a command `:Format` local to the LSP buffer
             vim.api.nvim_buf_create_user_command(bufnr, "Format", function(_)
                 if vim.lsp.buf.format then
+                    require("conform").format({ timeout_ms = 5000 })
                     vim.lsp.buf.format({ timeout_ms = 5000 })
                 elseif vim.lsp.buf.formatting then
+                    require("conform").format({ timeout_ms = 5000 })
                     vim.lsp.buf.formatting({ timeout_ms = 5000 })
                 end
             end, { desc = "Format current buffer with LSP" })
