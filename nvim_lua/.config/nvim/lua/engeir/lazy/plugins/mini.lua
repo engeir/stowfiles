@@ -317,6 +317,7 @@ return {
     -- mini.trailspace -----------------------------------------------------------------
     {
         "echasnovski/mini.trailspace",
+        enabled = false,
         init = function()
             require("mini.trailspace").setup()
         end,
