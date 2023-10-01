@@ -5,14 +5,24 @@ return {
         require("conform").setup({
             -- Map of filetype to formatters
             formatters_by_ft = {
-                bash = { "shfmt", "shellharden", "shellcheck_formatter" },
-                javascript = { { "prettierd", "prettier" } },
+                bash = { "shfmt", "shellharden", "shellcheck", "beautysh" },
+                css = { "dprint" },
+                d2 = { "d2" },
+                dockerfile = { "dprint" },
+                javascript = { { "prettierd", "dprint", "prettier" } },
+                javascriptreact = { { "prettierd", "dprint", "prettier" } },
+                json = { "dprint" },
                 lua = { "stylua" },
                 markdown = { "dprint" },
-                python = { "isort", "blackd" },
-                sh = { "shfmt", "shellharden", "shellcheck_formatter" },
-                zsh = { "shfmt", "shellharden", "shellcheck_formatter" },
-                ["*"] = { "trim_whitespace" },
+                python = { "isort", "blackd", "ruff_fix", "ruff_format" },
+                rust = { "rustfmt" },
+                sh = { "shfmt", "shellharden", "shellcheck", "beautysh" },
+                go = { "gofmt" },
+                toml = { "dprint", "taplo" },
+                typescript = { { "prettierd", "dprint", "prettier" } },
+                typescriptreact = { { "prettierd", "dprint", "prettier" } },
+                zsh = { "shfmt", "shellharden", "shellcheck", "beautysh" },
+                ["_"] = { "trim_whitespace", "trim_newlines" },
             },
             format_on_save = false,
             format_after_save = false,
@@ -43,6 +53,15 @@ return {
                     -- Exit codes that indicate success (default {0})
                     exit_codes = { 0, 1 },
                 },
+                d2 = {
+                    command = "d2",
+                    args = {
+                        "fmt",
+                        "$FILENAME",
+                        "-",
+                    },
+                    stdin = true,
+                },
                 dprint = {
                     command = "dprint",
                     args = {
@@ -54,22 +73,30 @@ return {
                     },
                     stdin = true,
                 },
-                shellcheck_formatter = {
-                    command = "sh",
-                    args = { "-c", "shellcheck $0 --format=diff | patch $0 -o-", "$FILENAME" },
-                    stdin = true,
-                    stderr = true,
-                },
+                -- shellcheck_formatter = {
+                --     command = "sh",
+                --     args = { "-c", "shellcheck $0 --format=diff | patch $0 -o-", "$FILENAME" },
+                --     stdin = true,
+                --     stderr = true,
+                -- },
             },
         })
 
+        -- Extend arguments
+        local util = require("conform.util")
         local shfmt = require("conform.formatters.shfmt")
-        shfmt.args = function()
-            return { "-i=4", "-ci", "-s", "-bn" }
-        end
+        require("conform").formatters.shfmt = vim.tbl_deep_extend("force", shfmt, {
+            args = util.extend_args(shfmt.args, { "-i=4", "-ci", "-s", "-bn" }),
+            range_args = util.extend_args(shfmt.args, { "-i=4", "-ci", "-s", "-bn" }),
+        })
         local stylua = require("conform.formatters.stylua")
-        stylua.args = function()
-            return { "--indent-type=Spaces" }
-        end
+        require("conform").formatters.stylua = vim.tbl_deep_extend("force", stylua, {
+            args = util.extend_args(stylua.args, { "--indent-type=Spaces" }),
+            range_args = util.extend_args(stylua.args, { "--indent-type=Spaces" }), --"--indent-width=2"
+        })
+
+        vim.keymap.set({ "n", "v" }, "<leader>sf", function()
+            require("conform").format({ timeout_ms = 5000, async = false, lsp_fallback = true })
+        end, { desc = "Format" })
     end,
 }
