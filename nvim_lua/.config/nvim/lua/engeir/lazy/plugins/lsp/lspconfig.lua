@@ -65,18 +65,6 @@ return {
             nmap("<leader>wl", function()
                 print(vim.inspect(vim.lsp.buf.list_workspace_folders()))
             end, "[W]orkspace [L]ist Folders")
-
-            -- -- Create a command `:Format` local to the LSP buffer
-            -- vim.api.nvim_buf_create_user_command(bufnr, "Format", function(_)
-            --     if vim.lsp.buf.format then
-            --         vim.lsp.buf.format({ timeout_ms = 5000 })
-            --         require("conform").format({ timeout_ms = 5000 })
-            --     elseif vim.lsp.buf.formatting then
-            --         vim.lsp.buf.formatting({ timeout_ms = 5000 })
-            --         require("conform").format({ timeout_ms = 5000 })
-            --     end
-            -- end, { desc = "Format current buffer with LSP" })
-            -- nmap("<leader>s", "<cmd>Format<CR>", "Format")
         end
 
         -- local capabilities = vim.lsp.protocol.make_client_capabilities()
@@ -94,7 +82,7 @@ return {
         local config = {
             virtual_text = false, -- disable virtual text
             signs = {
-                active = signs,   -- show signs
+                active = signs, -- show signs
             },
             update_in_insert = true,
             underline = false,
@@ -148,7 +136,6 @@ return {
                         mathEnvironments = {
                             "align*",
                             "equation",
-
                         },
                     },
                     formatterLineLength = -1,
