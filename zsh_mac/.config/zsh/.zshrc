@@ -1,6 +1,6 @@
 #!/bin/zsh
 if command -v coreutils 1>/dev/null 2>&1; then
-    zmodload "zsh/zprof"  # Uncomment to run profiler (also last line)
+    zmodload "zsh/zprof" # Uncomment to run profiler (also last line)
     t0=$(coreutils date "+%s.%N")
 fi
 # Remove unexpected aliases
@@ -29,7 +29,9 @@ zvm_after_init_commands+=('[ -f $HOME/programs/zsh/fzf-key-bindings/key-bindings
 
 plug "$HOME/.config/zsh/aliases.zsh"
 plug "$HOME/.config/zsh/functions.zsh"
-plug "$HOME/.config/zsh/ssh.zsh"
+if [ "$MACHINE" = "Ubuntu" ]; then
+    plug "$HOME/.config/zsh/ssh.zsh"
+fi
 
 # Search history for input with the up- and down-arrow
 # bindkey "^[[A" history-beginning-search-backward
@@ -37,7 +39,8 @@ plug "$HOME/.config/zsh/ssh.zsh"
 bindkey -M vicmd 'k' history-substring-search-up
 bindkey -M vicmd 'j' history-substring-search-down
 # Edit line in vim with ctrl-v
-autoload edit-command-line; zle -N edit-command-line
+autoload edit-command-line
+zle -N edit-command-line
 bindkey '^v' edit-command-line
 
 # From https://github.com/MichaelAquilina/zshrc/blob/master/zshrc
@@ -65,10 +68,10 @@ eval "$(thefuck --alias)"
 eval "$(starship init zsh)"
 eval "$(rtx activate zsh)"
 eval "$(atuin init zsh)"
-eval "$(atuin gen-completions --shell zsh --out-dir $HOME/.config/zsh/atuin_completion)"
+eval "$(atuin gen-completions --shell zsh --out-dir "$HOME"/.config/zsh/atuin_completion)"
 
 # Completions sources
-fpath+="${ZDOTDIR:-~}/.zsh_functions"  # This must come before compinit
+fpath+="${ZDOTDIR:-~}/.zsh_functions" # This must come before compinit
 fpath+="$HOME/.config/zsh/atuin_completion"
 fpath+="$HOME/.local/share/zap/plugins/conda-zsh-completion/_conda"
 if [ "$MACHINE" = "Ubuntu" ]; then
@@ -80,6 +83,6 @@ fi
 
 if command -v coreutils 1>/dev/null 2>&1; then
     t1=$(coreutils date "+%s.%N")
-    printf "Profile took %.3f seconds to load\n" $((t1-t0))
+    printf "Profile took %.3f seconds to load\n" $((t1 - t0))
 fi
 # zprof  # Uncomment to run profiler (also first line)
