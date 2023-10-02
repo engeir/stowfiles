@@ -12,6 +12,12 @@ return {
         local mason_lspconf = require("mason-lspconfig")
         local cmp_nvim_lsp = require("cmp_nvim_lsp")
 
+        -- Diagnostics
+        vim.keymap.set("n", "gl", vim.diagnostic.open_float, { desc = "Open Float Diagnostics" })
+        vim.keymap.set("n", "[d", vim.diagnostic.goto_prev, { desc = "Goto Next Diagnostics" })
+        vim.keymap.set("n", "]d", vim.diagnostic.goto_next, { desc = "Goto Prev Diagnostics" })
+        vim.keymap.set("n", "gsl", vim.diagnostic.setloclist, { desc = "[g] [S]et[l]oclist" })
+
         local on_attach = function(client, bufnr)
             local map = function(mode, keys, func, desc)
                 if desc then
@@ -46,12 +52,6 @@ return {
             nmap("<leader>ds", require("telescope.builtin").lsp_document_symbols, "[D]ocument [S]ymbols")
             nmap("<leader>ws", require("telescope.builtin").lsp_dynamic_workspace_symbols, "[W]orkspace [S]ymbols")
 
-            -- Diagnostics
-            nmap("gl", vim.diagnostic.open_float, "Open Float Diagnostics")
-            nmap("[d", vim.diagnostic.goto_prev, "Goto Next Diagnostics")
-            nmap("]d", vim.diagnostic.goto_next, "Goto Prev Diagnostics")
-            nmap("gsl", vim.diagnostic.setloclist, "[g] [S]et[l]oclist")
-
             -- See `:help K` for why this keymap
             nmap("K", vim.lsp.buf.hover, "Hover Documentation")
             nmap("<C-h>", vim.lsp.buf.signature_help, "Signature Documentation")
@@ -65,9 +65,15 @@ return {
             nmap("<leader>wl", function()
                 print(vim.inspect(vim.lsp.buf.list_workspace_folders()))
             end, "[W]orkspace [L]ist Folders")
+
+
+            -- stevearc/conform.nvim changes the formatexpr value, but at least for lua,
+            -- this fucks up the gq<mothion> command, at least on comments. The empty
+            -- string sets the default, which hopefully works fine in other languages as
+            -- well. Let's see.
+            vim.o.formatexpr = ""
         end
 
-        -- local capabilities = vim.lsp.protocol.make_client_capabilities()
         local capabilities = cmp_nvim_lsp.default_capabilities()
         local signs = {
             { name = "DiagnosticSignError", text = "" },
@@ -82,7 +88,7 @@ return {
         local config = {
             virtual_text = false, -- disable virtual text
             signs = {
-                active = signs, -- show signs
+                active = signs,   -- show signs
             },
             update_in_insert = true,
             underline = false,
@@ -155,21 +161,33 @@ return {
             on_attach = on_attach,
             settings = {
                 Lua = {
+                    diagnostics = {
+                        globals = { "vim" },
+                        -- neededFileStatus = {
+                        --     ["codestyle-check"] = "Any"
+                        -- },
+                    },
+                    format = {
+                        enable = true,
+                        -- Put format options here
+                        -- NOTE: the value should be String!
+                        defaultConfig = {
+                            indent_style = "space",
+                            indent_size = "4",
+                        },
+                    },
                     runtime = {
                         version = "LuaJIT",
                         path = runtime_path,
                     },
-                    diagnostics = {
-                        globals = { "vim" },
+                    telemetry = {
+                        enable = false,
                     },
                     workspace = {
                         library = {
                             [vim.fn.expand("$VIMRUNTIME/lua")] = true,
                             [vim.fn.stdpath("config") .. "/lua"] = true,
                         },
-                    },
-                    telemetry = {
-                        enable = false,
                     },
                 },
             },
