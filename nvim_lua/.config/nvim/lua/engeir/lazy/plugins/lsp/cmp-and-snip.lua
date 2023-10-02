@@ -140,7 +140,7 @@ return {
                 }),
             })
             if EXECUTABLE("gh") then
-                require("engeir.lazy.lsp.cmp_gh_source")
+                require("engeir.lazy.plugins.lsp.cmp-sources.cmp_gh_source")
             end
         end,
     },
