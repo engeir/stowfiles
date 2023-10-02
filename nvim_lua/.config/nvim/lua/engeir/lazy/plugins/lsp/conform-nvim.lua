@@ -51,7 +51,7 @@ return {
                         return vim.fs.basename(ctx.filename) ~= "README.md"
                     end,
                     -- Exit codes that indicate success (default {0})
-                    exit_codes = { 0, 1 },
+                    exit_codes = { 0 },
                 },
                 d2 = {
                     command = "d2",
@@ -95,6 +95,10 @@ return {
             range_args = util.extend_args(stylua.args, { "--indent-type=Spaces" }), --"--indent-width=2"
         })
 
+        -- Create a command `:Format`
+        vim.api.nvim_create_user_command("Format", function(_)
+            require("conform").format({ timeout_ms = 5000, async = false, lsp_fallback = true })
+        end, { desc = "Format current buffer with conform.nvim or LSP" })
         vim.keymap.set({ "n", "v" }, "<leader>sf", function()
             require("conform").format({ timeout_ms = 5000, async = false, lsp_fallback = true })
         end, { desc = "Format" })
