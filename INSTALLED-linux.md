@@ -79,7 +79,6 @@ bash 5.1-6ubuntu1 [Ubuntu/jammy main]
 bash-completion 1:2.11-5ubuntu1 [Ubuntu/jammy main]
 batsignal 1.6.4-pacstall1 [local]
 bc 1.07.1-3build1 [Ubuntu/jammy main]
-bibclean 2.11.4.1-4build1 [Ubuntu/jammy universe]
 biber 2.17-2 [Ubuntu/jammy universe]
 bibutils 7.2-1 [Ubuntu/jammy universe]
 bind9-dnsutils 1:9.18.12-0ubuntu0.22.04.3 [Ubuntu/jammy main]
@@ -300,7 +299,7 @@ findutils 4.8.0-1ubuntu3 [Ubuntu/jammy main]
 finger 0.17-17 [Ubuntu/jammy universe]
 firefox 1:1snap1-0ubuntu2 [Ubuntu/jammy main]
 firefox-locale-en 1:1snap1-0ubuntu2 [Ubuntu/jammy universe]
-firefoxpwa 2.7.3 [FirefoxPWA/any main]
+firefoxpwa 2.8.0 [FirefoxPWA/any main]
 firmware-sof-signed 2.0-1ubuntu4.1 [Ubuntu/jammy restricted]
 flatpak 1.12.7-1 [Ubuntu/jammy universe]
 flex 2.6.4-8build2 [Ubuntu/jammy main]
@@ -608,7 +607,7 @@ gir1.2-ibus-1.0 1.5.26-4 [Ubuntu/jammy main]
 gir1.2-ical-3.0 3.0.14-1build1 [Ubuntu/jammy main]
 gir1.2-javascriptcoregtk-4.0 2.40.5-0ubuntu0.22.04.1 [Ubuntu/jammy main]
 gir1.2-json-1.0 1.6.6-1build1 [Ubuntu/jammy main]
-gir1.2-mutter-10 42.9-0ubuntu4 [local]
+gir1.2-mutter-10 42.9-0ubuntu5 [Ubuntu/jammy main]
 gir1.2-nm-1.0 1.36.6-0ubuntu2 [Ubuntu/jammy main]
 gir1.2-nma-1.0 1.8.34-1ubuntu1 [Ubuntu/jammy main]
 gir1.2-notify-0.7 0.7.9-3ubuntu5.22.04.1 [Ubuntu/jammy main]
@@ -728,8 +727,8 @@ grilo-plugins-0.3-base 0.3.14-1ubuntu2 [Ubuntu/jammy main]
 groff 1.22.4-8build1 [Ubuntu/jammy universe]
 groff-base 1.22.4-8build1 [Ubuntu/jammy main]
 grub-common 2.06-2ubuntu7.2 [Ubuntu/jammy main]
-grub-efi-amd64-bin 2.06-2ubuntu14.1 [Ubuntu/jammy main]
-grub-efi-amd64-signed 1.187.3~22.04.1+2.06-2ubuntu14.1 [Ubuntu/jammy main]
+grub-efi-amd64-bin 2.06-2ubuntu14.2 [Ubuntu/jammy main]
+grub-efi-amd64-signed 1.187.4~22.04.1+2.06-2ubuntu14.2 [Ubuntu/jammy main]
 grub-gfxpayload-lists 0.7 [Ubuntu/jammy main]
 grub-pc 2.06-2ubuntu7.2 [Ubuntu/jammy main]
 grub-pc-bin 2.06-2ubuntu7.2 [Ubuntu/jammy main]
@@ -2412,7 +2411,7 @@ libmtp-common 1.1.19-1build1 [Ubuntu/jammy main]
 libmtp-runtime 1.1.19-1build1 [Ubuntu/jammy main]
 libmtp9 1.1.19-1build1 [Ubuntu/jammy main]
 libmujs1 1.1.3-3 [Ubuntu/jammy universe]
-libmutter-10-0 42.9-0ubuntu4 [local]
+libmutter-10-0 42.9-0ubuntu5 [Ubuntu/jammy main]
 libmwaw-0.3-3 0.3.21-1build1 [Ubuntu/jammy main]
 libmysofa1 1.2.1~dfsg0-1 [Ubuntu/jammy universe]
 libmysqlclient21 8.0.34-0ubuntu0.22.04.1 [Ubuntu/jammy main]
@@ -3646,8 +3645,8 @@ mtr-tiny 0.95-1 [Ubuntu/jammy main]
 mullvad-vpn 2023.3 [local]
 mupdf 1.19.0+ds1-2 [Ubuntu/jammy universe]
 mupdf-tools 1.19.0+ds1-2 [Ubuntu/jammy universe]
-mutter 42.9-0ubuntu4 [local]
-mutter-common 42.9-0ubuntu4 [local]
+mutter 42.9-0ubuntu5 [Ubuntu/jammy universe]
+mutter-common 42.9-0ubuntu5 [Ubuntu/jammy main]
 mysql-client-8.0 8.0.34-0ubuntu0.22.04.1 [Ubuntu/jammy main]
 mysql-client-core-8.0 8.0.34-0ubuntu0.22.04.1 [Ubuntu/jammy main]
 mysql-common 5.8+1.0.8 [Ubuntu/jammy main]
@@ -4812,7 +4811,7 @@ languagetool-rust v2.1.4:
     ltrs
 lscolors v0.15.0:
     lscolors
-mdbook v0.4.34:
+mdbook v0.4.35:
     mdbook
 mdbook-admonish v1.12.1:
     mdbook-admonish
@@ -4943,8 +4942,6 @@ package jupyter-client 8.3.1, installed using Python 3.10.4
 package jupytext 1.15.2, installed using Python 3.10.4
  - jupytext
  - jupytext-config
-package kb-manager 0.1.7, installed using Python 3.10.4
- - kb
 package khal 0.11.2, installed using Python 3.10.4
  - ikhal
  - khal
@@ -4961,8 +4958,6 @@ package mypy 1.5.1, installed using Python 3.10.4
 package nbpreview 0.9.1, installed using Python 3.10.4
  - nbp
  - nbpreview
-package ncdump-rich 0.3.4, installed using Python 3.10.4
- - ncdump-rich
 package northern-lights-forecast 4.1.4, installed using Python 3.10.4
  - nlf
  - nlfd
@@ -5126,7 +5121,7 @@ notable                    1.8.4-2                     3      latest/stable    s
 pdftk                      2.02-4                      9      latest/stable    smoser         -
 procs                      v0.13.0                     969    latest/stable    dalance        -
 remmina                    v1.4.32                     6117   latest/stable    remmina**      -
-shotcut                    23.07.29                    1178   latest/stable    meltytech**    classic
+shotcut                    23.09.29                    1237   latest/stable    meltytech**    classic
 snap-store                 41.3-71-g709398e            959    latest/stable/…  canonical**    -
 snapd                      2.60.3                      20092  latest/stable    canonical**    snapd
 snapd-desktop-integration  0.9                         83     latest/stable/…  canonical**    -

@@ -68,7 +68,7 @@ return {
     s({ trig = ".cit", name = "Text citation" }, { t({ "\\citet{" }), i(1), t("}") }),
     s({ trig = ".cip", name = "Parentheses citation" }, { t({ "\\citep{" }), i(1), t("}") }),
     s({ trig = "mk" }, { t("\\("), i(1), t("\\)") }),
-    s({ trig = "mrm" }, { t("\\mathrm{"), i(1), t("}") }, { condition = ts_utils.in_mathzone }),
+    s({ trig = "mrm", wordTrig = false }, { t("\\mathrm{"), i(1), t("}") }, { condition = ts_utils.in_mathzone }),
     s({ trig = ".ce" }, { t({ "\\ce{" }), i(1), t("}") }),
     s({ trig = ".qt" }, { t({ "``" }), i(1), t("''") }),
     s({ trig = "sub", wordTrig = false }, { t("_{"), i(1), t("}"), i(0) }, { condition = ts_utils.in_mathzone }),
