@@ -3103,7 +3103,7 @@ libtirpc3:i386 1.3.2-2ubuntu0.1 [Ubuntu/jammy main]
 libtk8.6 8.6.12-1build1 [Ubuntu/jammy main]
 libtokyocabinet9 1.4.48-14build1 [Ubuntu/jammy main]
 libtomcrypt1 1.18.2-5 [Ubuntu/jammy universe]
-libtommath1 1.2.0-6build3 [Ubuntu/jammy main]
+libtommath1 1.2.0-6ubuntu0.22.04.1 [Ubuntu/jammy main]
 libtool 2.4.6-15build2 [Ubuntu/jammy main]
 libtool-bin 2.4.6-15build2 [Ubuntu/jammy main]
 libtotem-plparser-common 3.26.6-1build1 [Ubuntu/jammy main]
@@ -3215,9 +3215,9 @@ libvorbisenc2 1.3.7-1build2 [Ubuntu/jammy main]
 libvorbisenc2:i386 1.3.7-1build2 [Ubuntu/jammy main]
 libvorbisfile3 1.3.7-1build2 [Ubuntu/jammy main]
 libvorbisfile3:i386 1.3.7-1build2 [Ubuntu/jammy main]
-libvpx-dev 1.11.0-2ubuntu2 [Ubuntu/jammy main]
-libvpx7 1.11.0-2ubuntu2 [Ubuntu/jammy main]
-libvpx7:i386 1.11.0-2ubuntu2 [Ubuntu/jammy main]
+libvpx-dev 1.11.0-2ubuntu2.2 [Ubuntu/jammy main]
+libvpx7 1.11.0-2ubuntu2.2 [Ubuntu/jammy main]
+libvpx7:i386 1.11.0-2ubuntu2.2 [Ubuntu/jammy main]
 libvte-2.91-0 0.68.0-1 [Ubuntu/jammy main]
 libvte-2.91-common 0.68.0-1 [Ubuntu/jammy main]
 libvterm-dev 0.1.4-1 [Ubuntu/jammy universe]
@@ -3510,7 +3510,7 @@ lightdm 1.30.0-0ubuntu5 [Ubuntu/jammy universe]
 links 2.25-1build1 [Ubuntu/jammy universe]
 lintian 2.114.0ubuntu1.2 [Ubuntu/jammy main]
 linux-base 4.5ubuntu9 [Ubuntu/jammy main]
-linux-firmware 20220329.git681281e4-0ubuntu3.18 [Ubuntu/jammy main]
+linux-firmware 20220329.git681281e4-0ubuntu3.19 [Ubuntu/jammy main]
 linux-generic 5.15.0.84.81 [Ubuntu/jammy main]
 linux-generic-hwe-20.04 5.15.0.84.81 [Ubuntu/jammy main]
 linux-generic-hwe-22.04 6.2.0.33.33~22.04.10 [Ubuntu/jammy main]
@@ -4752,7 +4752,7 @@ name: zoom version: 5.15.7.6521
 ## Cargo
 
 ```txt
-alacritty v0.12.2:
+alacritty v0.12.3:
     alacritty
 atuin v16.0.0:
     atuin
@@ -5068,7 +5068,7 @@ ascii-image-converter: github.com/TheZoraiz/ascii-image-converter@v1.13.1
 ```txt
 Name                                    Version                                 Branch
 ncspot                                  0.13.4                                  stable
-Freedesktop Platform                    21.08.21                                21.08
+Freedesktop Platform                    21.08.22                                21.08
 Freedesktop Platform                    22.08.15                                22.08
 Mesa                                    21.3.9                                  21.08
 Mesa                                    23.1.6                                  22.08
