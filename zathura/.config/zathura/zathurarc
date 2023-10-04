@@ -20,7 +20,7 @@ set synctex true
 set synctex-editor-command "gvim --remote-silent +%{line} %{input}"
 
 # Transparency (same as #282828 which is set in Xresources)
-set default-bg rgba(40,40,40,0.9)
+set default-bg rgba(45,45,45,0.90)
 
 # Colors for inverse mode
 set recolor-lightcolor "rgba(0,0,0,0)"
