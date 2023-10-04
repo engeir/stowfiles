@@ -5,7 +5,11 @@
 # https://github.com/ThePrimeagen/.dotfiles/blob/master/bin/.local/bin/tmux-sessionizer
 
 if [[ $# -eq 1 ]]; then
-    selected=$1
+    if find ./"$1" -maxdepth 0 -type d 2>/dev/null; then
+        selected="$PWD/$1"
+    else
+        selected=$1
+    fi
 else
     # This should be first on any system, then the rest is added
     items=$(find "$HOME" -maxdepth 0 -type d 2>/dev/null)
@@ -34,13 +38,12 @@ else
     selected=$(echo "$items" | fzf-tmux -p)
 
     # Exit if none is chosen
-    [ -z "$selected" ] && exit
+    [ "$selected" = "" ] && exit
 fi
 
 tmux_session_name=$(basename "$selected" | tr . _)
 
-if tmux switch-client -t "$tmux_session_name/";
-then
+if tmux switch-client -t "$tmux_session_name/"; then
     exit 0
 fi
 

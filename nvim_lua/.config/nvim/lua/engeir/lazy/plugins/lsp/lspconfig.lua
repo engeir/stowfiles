@@ -66,7 +66,6 @@ return {
                 print(vim.inspect(vim.lsp.buf.list_workspace_folders()))
             end, "[W]orkspace [L]ist Folders")
 
-
             -- stevearc/conform.nvim changes the formatexpr value, but at least for lua,
             -- this fucks up the gq<mothion> command, at least on comments. The empty
             -- string sets the default, which hopefully works fine in other languages as
@@ -88,7 +87,7 @@ return {
         local config = {
             virtual_text = false, -- disable virtual text
             signs = {
-                active = signs,   -- show signs
+                active = signs, -- show signs
             },
             update_in_insert = true,
             underline = false,
@@ -117,80 +116,32 @@ return {
             end,
         })
 
-        -- Not available from Mason
+        -- If some need specific setup functions, we override those here
+
+        -- Textlsp, this is more than 5GB, so I won't bother for the time being. Also,
+        -- not available from Mason
         -- lspconf["textlsp"].setup({
         --     capabilities = capabilities,
         --     on_attach = on_attach,
-        --     settings = {
-        --         textLSP = {
-        --             language = "en-GB",
-        --         },
-        --     },
+        --     settings = require("engeir.lazy.plugins.lsp.lspconfig-settings.textlsp"),
         -- })
-        -- If some need specific setup functions, we override those here
+        -- Ltex
+        -- lspconf["ltex"].setup({
+        --     capabilities = capabilities,
+        --     on_attach = on_attach,
+        --     settings = require("engeir.lazy.plugins.lsp.lspconfig-settings.ltex"),
+        -- })
+        -- Texlab
         lspconf["texlab"].setup({
             capabilities = capabilities,
             on_attach = on_attach,
-            settings = {
-                -- https://github.com/latex-lsp/texlab/wiki/Configuration
-                texlab = {
-                    chktex = {
-                        onEdit = true,
-                        onOpenAndSave = true,
-                    },
-                    experimental = {
-                        mathEnvironments = {
-                            "align*",
-                            "equation",
-                        },
-                    },
-                    formatterLineLength = -1,
-                    forwardSearch = {
-                        executable = "zathura",
-                    },
-                    latexindent = { modifyLineBreaks = true },
-                },
-            },
+            settings = require("engeir.lazy.plugins.lsp.lspconfig-settings.texlab"),
         })
-
-        local runtime_path = vim.split(package.path, ";")
-        table.insert(runtime_path, "lua/?.lua")
-        table.insert(runtime_path, "lua/?/init.lua")
+        -- Lua_ls
         lspconf["lua_ls"].setup({
             capabilities = capabilities,
             on_attach = on_attach,
-            settings = {
-                Lua = {
-                    diagnostics = {
-                        globals = { "vim" },
-                        -- neededFileStatus = {
-                        --     ["codestyle-check"] = "Any"
-                        -- },
-                    },
-                    format = {
-                        enable = true,
-                        -- Put format options here
-                        -- NOTE: the value should be String!
-                        defaultConfig = {
-                            indent_style = "space",
-                            indent_size = "4",
-                        },
-                    },
-                    runtime = {
-                        version = "LuaJIT",
-                        path = runtime_path,
-                    },
-                    telemetry = {
-                        enable = false,
-                    },
-                    workspace = {
-                        library = {
-                            [vim.fn.expand("$VIMRUNTIME/lua")] = true,
-                            [vim.fn.stdpath("config") .. "/lua"] = true,
-                        },
-                    },
-                },
-            },
+            settings = require("engeir.lazy.plugins.lsp.lspconfig-settings.lua_ls"),
         })
     end,
 }

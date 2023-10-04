@@ -88,6 +88,7 @@ vim.keymap.set("n", "N", "Nzzzv", opts)
 -- vim.keymap.set("n", "J", "mzJ`z", opts)
 vim.keymap.set("n", "{", "{zz", opts)
 vim.keymap.set("n", "}", "}zz", opts)
+vim.keymap.set("c", "<C-s>", "\\_s", {desc="Continue search on next line"})
 
 -- Evaluate math
 vim.keymap.set("x", "<leader><leader>e", 'c<C-R>=py3eval(@")<CR><Esc>')

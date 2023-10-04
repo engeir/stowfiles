@@ -24,7 +24,8 @@ return {
             vim.fn.expand("~") .. "/.config/mdl/.markdownlint.jsonc",
         }
 
-        -- We do clear = true so that when we get this autocmd group, any pre-existing autocmd within it will get cleard
+        -- We do clear = true so that when we get this autocmd group, any pre-existing
+        -- autocmd within it will get cleard
         local lint_augroup = vim.api.nvim_create_augroup("lint", { clear = true })
         vim.api.nvim_create_autocmd({ "BufEnter", "BufWritePost", "InsertLeave" }, {
             group = lint_augroup,

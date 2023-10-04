@@ -249,6 +249,12 @@ super + alt + shift + {Left,Down,Up,Right}
 super + {h,j,k,l}
 	bspc node -v {-20 0,0 20,0 -20,20 0}
 
+# Gap presets
+super + shift + {i,o}
+	SELECT={0,2}; if [[ "$SELECT" == "2" ]]; then SELECT2=5; else SELECT2=0; fi; \
+	bspc config -d focused window_gap "$SELECT2" && \
+	bspc config -d focused border_width "$SELECT"
+
 #
 # my additions
 #
