@@ -433,6 +433,21 @@
         ],
         "prefix": "fig"
     },
+    "Subfigure environment": {
+        "body": [
+            "\\begin{figure}${2:[${1:htpb}]}",
+            "\t\\begin{subfigure}${3:{$4\\linewidth}}",
+            "\t\t\\centering",
+            "\t\t${5:\\includegraphics[width=0.95\\linewidth]{figures/$6}}",
+            "\t\t\\caption{${7:$6}}%",
+            "\t\t\\label{fig:${8:${6/\\W+/-/g}}}",
+            "\t\\end{subfigure}",
+            "\t\\caption{${9:$6}}%",
+            "\t\\label{fig:${8:${6/\\W+/-/g}}}",
+            "\\end{figure}"
+        ],
+        "prefix": "subfig"
+    },
     "integral": {
         "body": [
             "\\int_{${1:-\\infty}}^{${2:\\infty}} ${3:${VISUAL}} $0"

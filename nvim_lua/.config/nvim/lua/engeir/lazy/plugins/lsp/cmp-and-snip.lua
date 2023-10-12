@@ -197,9 +197,9 @@ return {
                 require("luasnip.loaders").edit_snippet_files()
             end, { desc = "LuaSnip: Source Snippets File" })
 
-            -- require("luasnip.loaders.from_vscode").lazy_load({
-            --     paths = { "~/.config/nvim/lua/engeir/lazy/plugins/lsp/luasnippets/vscode/" },
-            -- })
+            require("luasnip.loaders.from_vscode").lazy_load({
+                paths = { "~/.config/nvim/lua/engeir/lazy/plugins/lsp/luasnippets/vscode/" },
+            })
             -- require("luasnip.loaders.from_vscode").lazy_load({
             --     exclude = { "latex", "tex", "plaintex" },
             -- })
