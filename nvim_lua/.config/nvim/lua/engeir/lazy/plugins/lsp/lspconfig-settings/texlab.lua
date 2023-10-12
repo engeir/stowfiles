@@ -6,6 +6,11 @@ return {
             onOpenAndSave = true,
         },
         experimental = {
+            -- citationCommands is wrong, but I don't think a reference commands option
+            -- is available
+            -- citationCommands = {
+            --     "subref",
+            -- },
             mathEnvironments = {
                 "align*",
                 "equation",

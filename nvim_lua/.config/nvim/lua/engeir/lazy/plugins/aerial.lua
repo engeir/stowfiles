@@ -6,6 +6,7 @@ return {
         local air = require("aerial")
         local aira = require("aerial.actions")
         air.setup({
+            backends = { "treesitter", "lsp", "markdown", "man" },
             layout = {
                 max_width = { 100, 0.2 },
                 min_width = 40,
