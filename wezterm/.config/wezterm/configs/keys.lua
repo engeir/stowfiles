@@ -1,32 +1,46 @@
 local wezterm = require("wezterm")
 local act = wezterm.action
 
+local function pipe()
+    if wezterm.target_triple == "x86_64-apple-darwin" then
+        return "7"
+    else
+        return "|"
+    end
+end
+local function leader()
+    if wezterm.target_triple == "x86_64-apple-darwin" then
+        return "LEADER|ALT"
+    else
+        return "LEADER"
+    end
+end
 return {
     -- Panes and moving
     {
-        key = '|',
-        mods = 'LEADER',
-        action = wezterm.action.SplitHorizontal { domain = 'CurrentPaneDomain' },
+        key = pipe(),
+        mods = leader(),
+        action = wezterm.action.SplitHorizontal({ domain = "CurrentPaneDomain" }),
     },
     {
-        key = '-',
-        mods = 'LEADER',
-        action = wezterm.action.SplitVertical { domain = 'CurrentPaneDomain' },
+        key = "-",
+        mods = "LEADER",
+        action = wezterm.action.SplitVertical({ domain = "CurrentPaneDomain" }),
     },
     {
-        key = 'z',
-        mods = 'LEADER',
+        key = "z",
+        mods = "LEADER",
         action = wezterm.action.TogglePaneZoomState,
     },
     -- Sync keys (like in tmux, as I have bound to leader C-x) is not yet (and not
     -- planned to be) supported: https://github.com/wez/wezterm/issues/2658
     -- Tabs
-    { key = 'LeftArrow',  mods = 'CTRL|SHIFT', action = act.ActivateTabRelative(-1) },
-    { key = 'RightArrow', mods = 'CTRL|SHIFT', action = act.ActivateTabRelative(1) },
+    { key = "LeftArrow", mods = "CTRL|SHIFT", action = act.ActivateTabRelative(-1) },
+    { key = "RightArrow", mods = "CTRL|SHIFT", action = act.ActivateTabRelative(1) },
     {
-        key = 'c',
-        mods = 'LEADER',
-        action = act.SpawnTab 'CurrentPaneDomain',
+        key = "c",
+        mods = "LEADER",
+        action = act.SpawnTab("CurrentPaneDomain"),
     },
     -- Opacity
     {
@@ -57,20 +71,20 @@ return {
     },
     -- { key = "p",          mods = "ALT",        action = wezterm.action({ SendString = "\x1bp" }) },
     -- { key = "q",          mods = "ALT",        action = wezterm.action({ SendString = "\x1bq" }) },
-    { key = "7", mods = "ALT",       action = wezterm.action({ SendString = "|" }) },
+    { key = "7", mods = "ALT", action = wezterm.action({ SendString = "|" }) },
     { key = "/", mods = "ALT|SHIFT", action = wezterm.action({ SendString = "\\" }) },
-    { key = "8", mods = "ALT",       action = wezterm.action({ SendString = "[" }) },
-    { key = "9", mods = "ALT",       action = wezterm.action({ SendString = "]" }) },
+    { key = "8", mods = "ALT", action = wezterm.action({ SendString = "[" }) },
+    { key = "9", mods = "ALT", action = wezterm.action({ SendString = "]" }) },
     { key = "(", mods = "ALT|SHIFT", action = wezterm.action({ SendString = "{" }) },
     { key = ")", mods = "ALT|SHIFT", action = wezterm.action({ SendString = "}" }) },
-    { key = "K", mods = "ALT",       action = wezterm.action.IncreaseFontSize },
-    { key = "J", mods = "ALT",       action = wezterm.action.DecreaseFontSize },
-    { key = "=", mods = "CTRL",      action = wezterm.action.DisableDefaultAssignment },           -- default IncreaseFontSize
-    { key = "-", mods = "CTRL",      action = wezterm.action.DisableDefaultAssignment },           -- default DecreaseFontSize
+    { key = "K", mods = "ALT", action = wezterm.action.IncreaseFontSize },
+    { key = "J", mods = "ALT", action = wezterm.action.DecreaseFontSize },
+    { key = "=", mods = "CTRL", action = wezterm.action.DisableDefaultAssignment }, -- default IncreaseFontSize
+    { key = "-", mods = "CTRL", action = wezterm.action.DisableDefaultAssignment }, -- default DecreaseFontSize
     -- { key = "LeftArrow",  mods = "CTRL|SHIFT", action = wezterm.action.DisableDefaultAssignment }, -- default ActivatePaneDirection="Left" (I use this in tmux)
     -- { key = "RightArrow", mods = "CTRL|SHIFT", action = wezterm.action.DisableDefaultAssignment }, -- default ActivatePaneDirection="Right" (I use this in tmux)
     -- Workspaces
-    { key = 'p', mods = 'ALT',       action = wezterm.action.ShowLauncherArgs { flags = "FUZZY|WORKSPACES" } },
+    { key = "p", mods = "ALT", action = wezterm.action.ShowLauncherArgs({ flags = "FUZZY|WORKSPACES" }) },
     -- { key = 'q',          mods = 'ALT',        action = wezterm.action.ShowLauncherArgs {flags="FUZZY|WORKSPACES"} },
     {
         -- From https://github.com/wez/wezterm/issues/3542#issuecomment-1641568650
@@ -111,22 +125,25 @@ return {
             end
 
             window:perform_action(
-                act.InputSelector {
+                act.InputSelector({
                     title = "Workspaces",
                     choices = choices,
                     action = wezterm.action_callback(function(window, pane, id, label)
                         if label then
-                            window:perform_action(act.SwitchToWorkspace {
-                                name = label:match("([^/]+)$"),
-                                spawn = {
-                                    cwd = label,
-                                }
-                            }, pane)
+                            window:perform_action(
+                                act.SwitchToWorkspace({
+                                    name = label:match("([^/]+)$"),
+                                    spawn = {
+                                        cwd = label,
+                                    },
+                                }),
+                                pane
+                            )
                         end
                     end),
-                },
+                }),
                 pane
             )
         end),
-    }
+    },
 }

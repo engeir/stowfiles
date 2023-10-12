@@ -139,5 +139,8 @@ config.window_padding = {
     top = 0,
     bottom = 0,
 }
+
+config.ssh_domains = require("configs.ssh")
+
 -- and finally, return the configuration to wezterm
 return config
