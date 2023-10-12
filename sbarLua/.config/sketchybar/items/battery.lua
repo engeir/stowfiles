@@ -1,11 +1,11 @@
 local icons = require("icons")
 
-local battery = sbar.add("item", "battery", {
+local battery = sbar.add("item", {
   position = "right",
   icon = {
     font = {
       style = "Regular",
-      size = 19.0,
+      size = 16.0,
     }
   },
   label = { drawing = false },
@@ -38,9 +38,8 @@ local function battery_update()
     end
   end
 
-  sbar.set(battery, { icon = icon })
+  battery:set({ icon = icon })
 end
 
-sbar.subscribe(battery, "routine", battery_update)
-sbar.subscribe(battery, "power_source_change", battery_update)
-sbar.subscribe(battery, "system_woke", battery_update)
+
+battery:subscribe({"routine", "power_source_change", "system_woke"}, battery_update)
