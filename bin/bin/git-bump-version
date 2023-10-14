@@ -1,0 +1,41 @@
+#!/bin/sh
+
+# CLI to bump version based on either semver or date format, using gum to make it a
+# glamorous experience.
+#
+# Dependencies:
+# - gum: https://github.com/charmbracelet/gum
+#
+# Related:
+# - https://github.com/fsaintjacques/semver-tool
+# - https://github.com/dncrews/date-tag
+# - https://github.com/mdomke/git-semver
+
+if command -v gum 1>/dev/null 2>&1; then
+    VERSION="$(printf 'SemVer\nDate' | gum filter)"
+else
+    echo "You need to install gum at https://github.com/charmbracelet/gum"
+    exit 1
+fi
+
+if [ "$VERSION" = "SemVer" ]; then
+    # SEMVER_TYPE="$(gum choose "major" "minor" "patch")"
+    LAST_TAG="$(git tag --list | tail -n 1)"
+else
+    # SEMVER_TYPE=""
+    LAST_TAG="$(date +%Y.%m.%d)"
+fi
+
+# gum input --prompt.foregroud "#04b577"
+# NEW_TAG=
+GIVE_V="Give your new version (last tag: $LAST_TAG): "
+NEW_TAG="$(gum input --prompt.foreground "#0FF" --prompt "$GIVE_V" \
+    --placeholder "$LAST_TAG" --width 80 --value "$LAST_TAG")"
+MESSAGE="$(gum write --placeholder 'Write a message to go with the tag')"
+if [ "$MESSAGE" = "" ]; then
+    CMD="git tag -a v$NEW_TAG"
+else
+    CMD="git tag -a v$NEW_TAG -m $MESSAGE"
+fi
+gum confirm "Run \$ $CMD" && echo "Yeah" || echo "Noo"
+printf "Ready to set tag %s, with message:\n%s" "$NEW_TAG" "$MESSAGE"
