@@ -77,7 +77,7 @@
 # ############################################################### #
 
 ## Quickly restart the yabai launch agent
-ctrl + alt + cmd - r : launchctl kickstart -k "gui/${UID}/homebrew.mxcl.yabai"
+ctrl + alt + cmd - r : yabai --restart-service # launchctl kickstart -k "gui/${UID}/homebrew.mxcl.yabai"
 # And skhd
 cmd + alt - r : skhd --reload
 
