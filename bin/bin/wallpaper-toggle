@@ -1,0 +1,8 @@
+#!/bin/bash
+
+if diff "$HOME/.cache/bspwm/wallpaper.jpg" "$HOME/stowfiles/assets/black.jpg" >/dev/null; then
+    "$HOME/bin/random_wallpaper"
+else
+    cp "$HOME/stowfiles/assets/black.jpg" "$HOME/.cache/bspwm/wallpaper.jpg"
+fi
+m wallpaper "$HOME/.cache/bspwm/wallpaper.jpg"

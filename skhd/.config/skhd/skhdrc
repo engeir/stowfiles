@@ -230,3 +230,8 @@ shift + ralt - f : yabai -m window --toggle zoom-fullscreen; sketchybar --trigge
 ralt - f : yabai -m window --toggle zoom-parent; sketchybar --trigger window_focus
 
 shift + ralt - 1 : yabai -m window --space 1 && sketchybar --trigger windows_on_spaces
+
+# Toggle the sketchybar
+cmd + alt - h : sketchybar --bar hidden=toggle
+# Random/black wallpaper
+cmd + alt - w : "$HOME/bin/wallpaper-toggle"

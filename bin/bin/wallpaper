@@ -1,8 +1,6 @@
 #!/bin/bash
 
 if [[ $(uname -s) == "Darwin" ]]; then
-    # TODO: at the moment, the html-symbols file is not on my Mac, so we just exit
-    exit 0
     # Mac
     dmenu='dmenu-mac'
 else
@@ -24,5 +22,11 @@ DIR=$(ls "$HOME"/syncthing/wallpapers/* | grep "$chosen")
 # Copy the selected wallpaper to be the main wallpaper
 cp "$DIR" "$HOME"/.cache/bspwm/wallpaper.jpg
 
-# Set the new wallpaper with feh
-feh --bg-fill "$DIR"
+# Set the new wallpaper
+if [[ $(uname -s) == "Darwin" ]]; then
+    # Mac
+    m wallpaper "$DIR"
+else
+    # Linux
+    feh --bg-fill "$DIR"
+fi
