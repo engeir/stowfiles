@@ -1,8 +1,10 @@
 #!/bin/bash
 
 if diff "$HOME/.cache/bspwm/wallpaper.jpg" "$HOME/stowfiles/assets/black.jpg" >/dev/null; then
-    "$HOME/bin/random_wallpaper"
+    FILE="$(find "$HOME"/syncthing/wallpapers/*.jpg | sort -R | sed 1q)"
+    cp "$FILE" "$HOME/.cache/bspwm/wallpaper.jpg"
+    m wallpaper "$FILE"
 else
     cp "$HOME/stowfiles/assets/black.jpg" "$HOME/.cache/bspwm/wallpaper.jpg"
+    m wallpaper "$HOME/stowfiles/assets/black.jpg"
 fi
-m wallpaper "$HOME/.cache/bspwm/wallpaper.jpg"
