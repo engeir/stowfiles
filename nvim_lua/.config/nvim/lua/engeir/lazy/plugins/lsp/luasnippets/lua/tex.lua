@@ -61,11 +61,29 @@ return {
 }, {
     -- Auto
     s({ trig = "..." }, { t("\\ldots") }),
-    s({ trig = "acrs", name = "Short acronym" }, { t({ "\\acrshort{" }), i(1), t("}") }),
-    s({ trig = "acrf", name = "Full acronym" }, { t({ "\\acrfull{" }), i(1), t("}") }),
-    s({ trig = "creff" }, { t("\\cref{fig:"), i(1, "one"), t("}") }),
-    s({ trig = "Creff" }, { t("\\Cref{fig:"), i(1, "one"), t("}") }),
+    s({ trig = "acrs", name = "Short acronym (glossaries)" }, { t({ "\\acrshort{" }), i(1), t("}") }),
+    s({ trig = "acrf", name = "Full acronym (glossaries)" }, { t({ "\\acrfull{" }), i(1), t("}") }),
+    s({ trig = ".ac", name = "Short acronym (acronym)" }, { t({ "\\ac{" }), i(1), t("}") }),
+    s({ trig = "creff" }, { t("\\cref{"), i(1, "one"), t("}") }),
+    s({ trig = "Creff" }, { t("\\Cref{"), i(1, "one"), t("}") }),
     s({ trig = ".cit", name = "Text citation" }, { t({ "\\citet{" }), i(1), t("}") }),
+    -- s(
+    --     { trig = ".cit", name = "Text citation" },
+    --     {
+    --         t({ "\\citet" }),
+    --         c(2, {
+    --             t("["),
+    --             i(nil),
+    --             t("]"),
+    --             t("["),
+    --             i(nil),
+    --             t("]"),
+    --         }),
+    --         t("{"),
+    --         i(1),
+    --         t("}"),
+    --     }
+    -- ),
     s({ trig = ".cip", name = "Parentheses citation" }, { t({ "\\citep{" }), i(1), t("}") }),
     s({ trig = "mk" }, { t("\\("), i(1), t("\\)") }),
     s({ trig = "mrm", wordTrig = false }, { t("\\mathrm{"), i(1), t("}") }, { condition = ts_utils.in_mathzone }),

@@ -24,6 +24,10 @@ end
 local function getFileInfo()
     return getWords() .. ", " .. getLines() .. get_entr_compiler_status()
 end
+local function get_venv()
+    local venv = os.getenv("CONDA_DEFAULT_ENV") or os.getenv("VIRTUAL_ENV") or "NO ENV"
+    return " " .. venv
+end
 
 return {
     -- Style and colour schemes ===================================================== --
@@ -66,6 +70,16 @@ return {
                     },
                     { getFileInfo },
                 },
+                lualine_y = {
+                    -- { "swenv", icon = "" },
+                    -- {
+                    -- -- https://www.reddit.com/r/neovim/comments/16ya0fr/show_the_current_python_virtual_env_on_statusline/
+                    --     get_venv,
+                    --     cond = function()
+                    --         return vim.bo.filetype == "python"
+                    --     end,
+                    -- },
+                },
             },
             winbar = {
                 lualine_a = {},
@@ -98,20 +112,20 @@ return {
             require("colorizer").setup({
                 filetypes = { "*" },
                 user_default_options = {
-                    RGB = true,          -- #RGB hex codes
-                    RRGGBB = true,       -- #RRGGBB hex codes
-                    names = false,       -- "Name" codes like Blue or blue
-                    RRGGBBAA = true,     -- #RRGGBBAA hex codes
-                    AARRGGBB = true,     -- 0xAARRGGBB hex codes
-                    rgb_fn = true,       -- CSS rgb() and rgba() functions
-                    hsl_fn = true,       -- CSS hsl() and hsla() functions
-                    css = true,          -- Enable all CSS features: rgb_fn, hsl_fn, names, RGB, RRGGBB
-                    css_fn = true,       -- Enable all CSS *functions*: rgb_fn, hsl_fn
+                    RGB = true, -- #RGB hex codes
+                    RRGGBB = true, -- #RRGGBB hex codes
+                    names = false, -- "Name" codes like Blue or blue
+                    RRGGBBAA = true, -- #RRGGBBAA hex codes
+                    AARRGGBB = true, -- 0xAARRGGBB hex codes
+                    rgb_fn = true, -- CSS rgb() and rgba() functions
+                    hsl_fn = true, -- CSS hsl() and hsla() functions
+                    css = true, -- Enable all CSS features: rgb_fn, hsl_fn, names, RGB, RRGGBB
+                    css_fn = true, -- Enable all CSS *functions*: rgb_fn, hsl_fn
                     -- Available modes for `mode`: foreground, background,  virtualtext
                     mode = "background", -- Set the display mode.
                     -- Available methods are false / true / "normal" / "lsp" / "both"
                     -- True is same as normal
-                    tailwind = false,                               -- Enable tailwind colors
+                    tailwind = false, -- Enable tailwind colors
                     -- parsers can contain values used in |user_default_options|
                     sass = { enable = false, parsers = { "css" } }, -- Enable sass colors
                     virtualtext = "■",
@@ -144,9 +158,9 @@ return {
             },
         },
         keys = {
-            { "<leader>tq", "<cmd>TodoQuickFix<CR>",  desc = "[T]odo[Q]uickFix" },
+            { "<leader>tq", "<cmd>TodoQuickFix<CR>", desc = "[T]odo[Q]uickFix" },
             { "<leader>ft", "<cmd>TodoTelescope<CR>", desc = "[f]ind [T]odoTelescope" },
-        }
+        },
     },
     "mechatroner/rainbow_csv",
 }

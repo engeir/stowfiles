@@ -1,0 +1,8 @@
+#!/bin/bash
+
+FILE="$HOME/.config/sxhkd/sxhkdrc"
+# cat "$FILE" | sd "\n[a-z,A-Z]" "here"
+# awk '/super/,/[^$,^#,^a-z,^A-Z]/' "$FILE"
+# awk '/^[a-z,A-Z]/,/^$/' "$FILE"
+CH_LIST=$(awk '/^[a-z,A-Z]/{flag=1} flag; /^$/{flag=0}' "$FILE")
+echo "$CH_LIST" | sk --ansi --delimiter '\n' --preview "bat {$CH_LIST}"
