@@ -2,6 +2,7 @@ return {
     {
         "nvim-treesitter/nvim-treesitter",
         build = ":TSUpdate",
+        event = { "VeryLazy" },
         config = function()
             require("nvim-treesitter.configs").setup({
                 ensure_installed = {
@@ -162,7 +163,7 @@ return {
             })
         end,
     },
-    "nvim-treesitter/nvim-treesitter-textobjects",
+    { "nvim-treesitter/nvim-treesitter-textobjects", event = { "VeryLazy" } },
     {
         "zbirenbaum/neodim",
         event = "LspAttach",
