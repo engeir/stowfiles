@@ -265,6 +265,11 @@ efibootmgr 17-1ubuntu2 [Ubuntu/jammy main]
 eject 2.37.2-4ubuntu3 [Ubuntu/jammy main]
 elinks 0.13.2-1build3 [Ubuntu/jammy universe]
 elinks-data 0.13.2-1build3 [Ubuntu/jammy universe]
+emacs 1:27.1+1-3ubuntu5.1 [Ubuntu/jammy universe]
+emacs-bin-common 1:27.1+1-3ubuntu5.1 [Ubuntu/jammy universe]
+emacs-common 1:27.1+1-3ubuntu5.1 [Ubuntu/jammy universe]
+emacs-el 1:27.1+1-3ubuntu5.1 [Ubuntu/jammy universe]
+emacs-gtk 1:27.1+1-3ubuntu5.1 [Ubuntu/jammy universe]
 emacsen-common 3.0.4 [Ubuntu/jammy main]
 enchant-2 2.3.2-1ubuntu2 [Ubuntu/jammy main]
 entangle 3.0-3 [Ubuntu/jammy universe]
@@ -4299,7 +4304,7 @@ shellcheck 0.8.0-2 [Ubuntu/jammy universe]
 shfmt 3.7.0-pacstall1 [local]
 shfmt-bin 3.4.3-1 [local]
 shim-signed 1.51.3+15.7-0ubuntu1 [Ubuntu/jammy main]
-signal-desktop 6.34.0 [. xenial/xenial main]
+signal-desktop 6.34.1 [. xenial/xenial main]
 signon-plugin-oauth2 0.25-2 [Ubuntu/jammy universe]
 silversearcher-ag 2.2.0+git20200805-1 [Ubuntu/jammy universe]
 simple-scan 42.0-1 [Ubuntu/jammy main]
@@ -4699,7 +4704,7 @@ name: polybar version: 3.6.3-pacstall1
 name: protonmail-bridge version: 3.5.1-1
 name: quarto version: 1.3.450
 name: shfmt version: 3.7.0-pacstall1
-name: signal-desktop version: 6.34.0
+name: signal-desktop version: 6.34.1
 name: thorium-browser version: 115.0.5790.172-1
 name: wezterm version: 20230712-072601-f4abf8fd-pacstall1
 name: zoom version: 5.15.7.6521
@@ -5008,7 +5013,7 @@ ascii-image-converter: github.com/TheZoraiz/ascii-image-converter@v1.13.1
             git-sizer: github.com/github/git-sizer@v1.5.0
         golangci-lint: github.com/golangci/golangci-lint/cmd/golangci-lint@v1.54.2
                   gum: github.com/charmbracelet/gum@v0.11.0
-                  gup: github.com/nao1215/gup@v0.23.0
+                  gup: github.com/nao1215/gup@v0.24.0
               lazygit: github.com/jesseduffield/lazygit@v0.40.2
                    lf: github.com/gokcehan/lf@v0.0.0-20231006041247-beedda2d6708
                   nap: github.com/maaslalani/nap@v0.1.1
