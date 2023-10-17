@@ -1,0 +1,26 @@
+#!/bin/bash
+
+declare -A pomo_options
+pomo_options["work"]="45"
+pomo_options["break"]="10"
+pomodoro() {
+    val=$1
+    clear
+    echo "$val" | lolcat
+    timer "${pomo_options["$val"]}"m
+    spd-say "'$val' session done"
+    notify-send --app-name=Pomodoro🍅 "'$val' session done 🍅"
+}
+
+# Number of times to repeat the loop, default is 2
+if [ "$1" != "" ] && [ "$1" -eq "$1" ] 2>/dev/null; then
+    num_loops=$1
+else
+    # Default loops
+    num_loops=2
+fi
+
+for ((n = 0; n < num_loops; n++)); do
+    pomodoro "work"
+    pomodoro "break"
+done

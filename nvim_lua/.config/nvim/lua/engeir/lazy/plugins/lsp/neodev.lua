@@ -1,1 +1,1 @@
-return { "folke/neodev.nvim", config = true }
+return { "folke/neodev.nvim", config = true, event = { "BufReadPre", "BufNewFile" } }

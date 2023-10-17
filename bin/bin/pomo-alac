@@ -1,0 +1,3 @@
+#!/bin/bash
+
+alacritty -t "mylauncher" -o window.position.x=600 -o window.position.y=0 -o window.dimensions.lines=3 -o window.dimensions.columns=80 -o window.decorations=none --working-directory "$(pwd)" -e pomo 9

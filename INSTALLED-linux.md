@@ -98,7 +98,7 @@ bolt 0.9.2-1 [Ubuntu/jammy main]
 borgbackup 1.2.0-1 [Ubuntu/jammy universe]
 boxes 2.1.1-2 [Ubuntu/jammy universe]
 branding-ubuntu 0.10 [Ubuntu/jammy main]
-brave-browser 1.58.124 [local]
+brave-browser 1.59.117 [local]
 brave-keyring 1.13 [local]
 brightness-udev 0.5.1-3 [Ubuntu/jammy universe]
 brightnessctl 0.5.1-3 [Ubuntu/jammy universe]
@@ -265,6 +265,11 @@ efibootmgr 17-1ubuntu2 [Ubuntu/jammy main]
 eject 2.37.2-4ubuntu3 [Ubuntu/jammy main]
 elinks 0.13.2-1build3 [Ubuntu/jammy universe]
 elinks-data 0.13.2-1build3 [Ubuntu/jammy universe]
+emacs 1:27.1+1-3ubuntu5.1 [Ubuntu/jammy universe]
+emacs-bin-common 1:27.1+1-3ubuntu5.1 [Ubuntu/jammy universe]
+emacs-common 1:27.1+1-3ubuntu5.1 [Ubuntu/jammy universe]
+emacs-el 1:27.1+1-3ubuntu5.1 [Ubuntu/jammy universe]
+emacs-gtk 1:27.1+1-3ubuntu5.1 [Ubuntu/jammy universe]
 emacsen-common 3.0.4 [Ubuntu/jammy main]
 enchant-2 2.3.2-1ubuntu2 [Ubuntu/jammy main]
 entangle 3.0-3 [Ubuntu/jammy universe]
@@ -2427,7 +2432,7 @@ libnetcdff-dev 4.5.4+ds-1 [Ubuntu/jammy universe]
 libnetcdff7 4.5.4+ds-1 [Ubuntu/jammy universe]
 libnetfilter-conntrack3 1.0.9-1 [Ubuntu/jammy main]
 libnetpbm10 2:10.0-15.4 [Ubuntu/jammy universe]
-libnetplan0 0.105-0ubuntu2~22.04.3 [local]
+libnetplan0 0.106.1-7ubuntu0.22.04.2 [Ubuntu/jammy main]
 libnettle8 3.7.3-1build2 [Ubuntu/jammy main]
 libnettle8:i386 3.7.3-1build2 [Ubuntu/jammy main]
 libnewt0.52 0.52.21-5ubuntu2 [Ubuntu/jammy main]
@@ -2875,7 +2880,7 @@ libsereal-encoder-perl 4.023+ds-1 [Ubuntu/jammy main]
 libserf-1-1 1.3.9-10ubuntu2 [Ubuntu/jammy universe]
 libset-scalar-perl 1.29-2 [Ubuntu/jammy universe]
 libsexp1 1.3.1+18~git20210718-1 [Ubuntu/jammy universe]
-libsgutils2-2 1.46-1build1 [Ubuntu/jammy main]
+libsgutils2-2 1.46-1ubuntu0.22.04.1 [Ubuntu/jammy main]
 libshine3 3.1.1-2 [Ubuntu/jammy universe]
 libshout3 2.4.5-1build3 [Ubuntu/jammy main]
 libshout3:i386 2.4.5-1build3 [Ubuntu/jammy main]
@@ -3489,7 +3494,7 @@ lightdm 1.30.0-0ubuntu5 [Ubuntu/jammy universe]
 links 2.25-1build1 [Ubuntu/jammy universe]
 lintian 2.114.0ubuntu1.2 [Ubuntu/jammy main]
 linux-base 4.5ubuntu9 [Ubuntu/jammy main]
-linux-firmware 20220329.git681281e4-0ubuntu3.19 [Ubuntu/jammy main]
+linux-firmware 20220329.git681281e4-0ubuntu3.21 [Ubuntu/jammy main]
 linux-generic 5.15.0.86.83 [Ubuntu/jammy main]
 linux-generic-hwe-20.04 5.15.0.86.83 [Ubuntu/jammy main]
 linux-generic-hwe-22.04 6.2.0.34.34~22.04.11 [Ubuntu/jammy main]
@@ -3659,7 +3664,7 @@ netbase 6.3 [Ubuntu/jammy main]
 netcat-openbsd 1.218-4ubuntu1 [Ubuntu/jammy main]
 netcdf-bin 1:4.8.1-1 [Ubuntu/jammy universe]
 netpbm 2:10.0-15.4 [Ubuntu/jammy universe]
-netplan.io 0.105-0ubuntu2~22.04.3 [local]
+netplan.io 0.106.1-7ubuntu0.22.04.2 [Ubuntu/jammy main]
 nettle-dev 3.7.3-1build2 [Ubuntu/jammy main]
 network-manager 1.36.6-0ubuntu2 [Ubuntu/jammy main]
 network-manager-config-connectivity-ubuntu 1.36.6-0ubuntu2 [Ubuntu/jammy main]
@@ -4299,7 +4304,7 @@ shellcheck 0.8.0-2 [Ubuntu/jammy universe]
 shfmt 3.7.0-pacstall1 [local]
 shfmt-bin 3.4.3-1 [local]
 shim-signed 1.51.3+15.7-0ubuntu1 [Ubuntu/jammy main]
-signal-desktop 6.34.0 [. xenial/xenial main]
+signal-desktop 6.34.1 [. xenial/xenial main]
 signon-plugin-oauth2 0.25-2 [Ubuntu/jammy universe]
 silversearcher-ag 2.2.0+git20200805-1 [Ubuntu/jammy universe]
 simple-scan 42.0-1 [Ubuntu/jammy main]
@@ -4689,7 +4694,7 @@ zstd 1.4.8+dfsg-3build1 [Ubuntu/jammy main]
 ```txt
 name: batsignal version: 1.6.4-pacstall1
 name: bitwarden version: 2023.9.1
-name: brave-browser version: 1.58.124
+name: brave-browser version: 1.59.117
 name: brave-keyring version: 1.13
 name: google-chrome-stable version: 116.0.5845.140-1
 name: htop version: 3.2.2-pacstall1
@@ -4699,7 +4704,7 @@ name: polybar version: 3.6.3-pacstall1
 name: protonmail-bridge version: 3.5.1-1
 name: quarto version: 1.3.450
 name: shfmt version: 3.7.0-pacstall1
-name: signal-desktop version: 6.34.0
+name: signal-desktop version: 6.34.1
 name: thorium-browser version: 115.0.5790.172-1
 name: wezterm version: 20230712-072601-f4abf8fd-pacstall1
 name: zoom version: 5.15.7.6521
@@ -4734,7 +4739,7 @@ cargo-update v13.1.0:
     cargo-install-update-config
 cargo-watch v8.4.1:
     cargo-watch
-coreutils v0.0.21:
+coreutils v0.0.22:
     coreutils
 despell v1.0.1:
     despell
@@ -4792,7 +4797,7 @@ pueue v3.2.0:
     pueued
 ripgrep v13.0.0:
     rg
-rtx-cli v2023.10.1:
+rtx-cli v2023.10.2:
     rtx
 samply v0.11.0:
     samply
@@ -4864,7 +4869,7 @@ package daltonlens 0.1.5, installed using Python 3.10.4
  - daltonlens-python
 package ds-format 4.0.1, installed using Python 3.10.4
  - ds
-package euporie 2.4.3, installed using Python 3.10.4
+package euporie 2.5.2, installed using Python 3.10.4
  - euporie
  - euporie-console
  - euporie-hub
@@ -4944,7 +4949,7 @@ package poetry2setup 1.1.0, installed using Python 3.10.4
  - poetry2setup
 package pptx2md 1.5.0, installed using Python 3.10.4
  - pptx2md
-package pre-commit 3.4.0, installed using Python 3.10.4
+package pre-commit 3.5.0, installed using Python 3.10.4
  - pre-commit
  - pre-commit-validate-config
  - pre-commit-validate-manifest
@@ -4952,7 +4957,7 @@ package pydocstyle 6.3.0, installed using Python 3.10.4
  - pydocstyle
 package pypistats 1.5.0, installed using Python 3.10.4
  - pypistats
-package pyqt5 5.15.9, installed using Python 3.10.4
+package pyqt5 5.15.10, installed using Python 3.10.4
  - pylupdate5
  - pyrcc5
  - pyuic5
@@ -5008,7 +5013,7 @@ ascii-image-converter: github.com/TheZoraiz/ascii-image-converter@v1.13.1
             git-sizer: github.com/github/git-sizer@v1.5.0
         golangci-lint: github.com/golangci/golangci-lint/cmd/golangci-lint@v1.54.2
                   gum: github.com/charmbracelet/gum@v0.11.0
-                  gup: github.com/nao1215/gup@v0.23.0
+                  gup: github.com/nao1215/gup@v0.24.0
               lazygit: github.com/jesseduffield/lazygit@v0.40.2
                    lf: github.com/gokcehan/lf@v0.0.0-20231006041247-beedda2d6708
                   nap: github.com/maaslalani/nap@v0.1.1
@@ -5027,8 +5032,8 @@ ncspot                                  0.13.4                                  
 Freedesktop Platform                    22.08.16                                22.08
 Mesa                                    23.1.8                                  22.08
 Mesa (Extra)                            23.1.8                                  22.08-extra
-Mesa                                    23.1.8                                  23.08
-Mesa (Extra)                            23.1.8                                  23.08-extra
+Mesa                                    23.2.1                                  23.08
+Mesa (Extra)                            23.2.1                                  23.08-extra
 Intel                                                                           22.08
 Intel                                                                           23.08
 openh264                                2.1.0                                   2.0
@@ -5055,7 +5060,7 @@ core22                     20230801                    864    latest/stable    c
 dotnet-sdk                 5.0.408                     167    5.0/stable       dotnetcore**   classic
 duf-utility                v0.6.0                      1      latest/stable    muesli         -
 firefox                    118.0.2-2                   3252   latest/stable/…  mozilla**      -
-gimp                       2.10.30                     393    latest/stable    snapcrafters*  -
+gimp                       2.10.34                     405    latest/stable    snapcrafters*  -
 gnome-3-28-1804            3.28.0-19-g98f9e67.98f9e67  198    latest/stable    canonical**    -
 gnome-3-34-1804            0+git.3556cb3               93     latest/stable/…  canonical**    -
 gnome-3-38-2004            0+git.efb213a               143    latest/stable    canonical**    -
@@ -5064,6 +5069,7 @@ gnome-dictionary           40.0                        59     latest/stable    c
 gtk-common-themes          0.1-81-g442e511             1535   latest/stable/…  canonical**    -
 gtk2-common-themes         0.1                         13     latest/stable    canonical**    -
 kde-frameworks-5-core18    5.67.0                      35     latest/stable    kde**          -
+lolcat                     100.0.1                     1      latest/stable    busyloop       -
 mathpix-snipping-tool      02.07.0002                  195    latest/stable    mathpix        -
 mojave-themes              2020-03-24-35-g2aecfbf      2      latest/stable    gantonayde     -
 notable                    1.8.4-2                     3      latest/stable    spampinabio    classic
@@ -5072,6 +5078,6 @@ procs                      v0.13.0                     969    latest/stable    d
 snapd                      2.60.4                      20290  latest/stable    canonical**    snapd
 snapd-desktop-integration  0.9                         83     latest/stable/…  canonical**    -
 spt                        0.25.0                      289    latest/stable    popey          -
-vlc                        3.0.18                      3078   latest/stable    videolan**     -
+vlc                        3.0.19                      3721   latest/stable    videolan**     -
 ```
     

@@ -100,7 +100,7 @@ if [ "$MACHINE" = "Ubuntu" ]; then
             num_loops=2
         fi
 
-        for i in "$(seq 1 "$num_loops")"; do
+        for ((n = 0; n < num_loops; n++)); do
             pomodoro "work"
             pomodoro "break"
         done

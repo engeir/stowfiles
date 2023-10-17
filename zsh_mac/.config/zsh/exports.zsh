@@ -53,6 +53,8 @@ export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
 export PATH="/usr/local/opt/expat/bin:$PATH"
 export HAS_ALLOW_UNSAFE=y
 
+# auto-notify
+export AUTO_NOTIFY_IGNORE=("nv" "docker" "man" "sleep" "lf" "nnn" "hugo serve" "fg" "ga")
 # bob
 export PATH="$PATH:$HOME/.local/share/bob/nvim-bin"
 # mason bin installation
@@ -65,8 +67,8 @@ export DENO_INSTALL="$HOME/.deno"
 export PATH="$DENO_INSTALL/bin:$PATH"
 # dprint
 export DPRINT_INSTALL="$HOME/.local/bin/"
-# auto-notify
-export AUTO_NOTIFY_IGNORE=("nv" "docker" "man" "sleep" "lf" "nnn" "hugo serve" "fg" "ga")
+# emacs
+export PATH="$PATH:$HOME/.config/emacs/bin"
 # forgit
 export FORGIT_FZF_DEFAULT_OPTS
 # rush
