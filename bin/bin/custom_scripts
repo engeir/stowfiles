@@ -11,33 +11,34 @@ else
     # Linux
     MACH="Linux"
     dmenu='dmenu -i -l 20 -p "Choose a script to run:"'
-    choises="passwords\npoweroff\nopen pdf\ninspect system\nemojis\nhtml-symbols\nweather\nchange wallpaper\nlayouts\nfind word definition\nfind text\nread QR\nfram status"
+    choises="passwords\npoweroff\nopen pdf\ninspect system\nemojis\nhtml-symbols\nweather\nchange wallpaper\nlayouts\nfind word definition\nfind text\nread QR\nfram status\npomodoro"
 fi
 
 export PATH="$PATH:$HOME/bin/"
 chosen=$(echo -e "$choises" | eval "$dmenu")
 case "$chosen" in
-"change wallpaper") wallpaper ;;
-"emojis") emojis ;;
-"find text") find_txt ;;
-"find word definition") ~/programs/word-lookup/word-lookup.sh ;;
-"fram status") fram_job_status ;;
-"html-symbols") html-symbols ;;
-"inspect system") inspect_system ;;
-"layouts") layout ;;
-"launcher") launcher ;;
-"new bookmark") new-bookmark.sh ;;
-"copy bookmark") type-bookmark.sh ;;
-"delete bookmark") delete-bookmark.sh ;;
-"open pdf")
-    if [ "$MACH" = "Linux" ]; then
-        pdf_open_all
-    else
-        pdf_open
-    fi
-    ;;
-"passwords") passmenu ;;
-"poweroff") poweroff ;;
-"read QR") read_qr ;;
-"weather") weather ;;
+    "change wallpaper") wallpaper ;;
+    "emojis") emojis ;;
+    "find text") find_txt ;;
+    "find word definition") ~/programs/word-lookup/word-lookup.sh ;;
+    "fram status") fram_job_status ;;
+    "html-symbols") html-symbols ;;
+    "inspect system") inspect_system ;;
+    "layouts") layout ;;
+    "launcher") launcher ;;
+    "new bookmark") new-bookmark.sh ;;
+    "copy bookmark") type-bookmark.sh ;;
+    "delete bookmark") delete-bookmark.sh ;;
+    "open pdf")
+        if [ "$MACH" = "Linux" ]; then
+            pdf_open_all
+        else
+            pdf_open
+        fi
+        ;;
+    "passwords") passmenu ;;
+    "pomodoro") pomo-alac ;;
+    "poweroff") poweroff ;;
+    "read QR") read_qr ;;
+    "weather") weather ;;
 esac
