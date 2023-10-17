@@ -181,7 +181,7 @@ let light_theme = {
 
 
 # The default config record. This is where much of your global configuration is setup.
-let-env config = {
+$env.config = {
   # true or false to enable or disable the welcome banner at startup
   show_banner: true
   ls: {
@@ -541,9 +541,9 @@ let-env config = {
   ]
 }
 
-# let-env EDITOR = "nvim"
-# let-env VISUAL = "nvim"
-let-env LS_COLORS = (vivid generate solarized-dark | str trim)
+# $env.EDITOR = "nvim"
+# $env.VISUAL = "nvim"
+$env.LS_COLORS = (vivid generate solarized-dark | str trim)
 
 # Starship
 source ~/.cache/starship/init.nu
