@@ -9,7 +9,7 @@ return {
             go = { "golangcilint" },
             json = { "jsonlint" },
             markdown = { "vale", "markdownlint" },
-            python = { "ruff", "mypy" }, -- flake8 a bit too strict
+            python = { "mypy" }, -- ruff is run via lsp, don't need it here
             rst = { "rstcheck" },
             sh = { "shellcheck" },
             -- tex = { "chktex" },

@@ -14,7 +14,7 @@ return {
                 json = { "dprint" },
                 lua = { "stylua" },
                 markdown = { "dprint" },
-                python = { "isort", "blackd", "ruff_fix", "ruff_format" },
+                python = { "blackd", "ruff_fix", "ruff_format" },
                 rust = { "rustfmt" },
                 sh = { "shfmt", "shellharden", "shellcheck", "beautysh" },
                 go = { "gofmt" },

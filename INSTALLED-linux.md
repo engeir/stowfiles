@@ -107,7 +107,7 @@ brotli 1.0.9-2build6 [Ubuntu/jammy universe]
 bsdextrautils 2.37.2-4ubuntu3 [Ubuntu/jammy main]
 bsdutils 1:2.37.2-4ubuntu3 [Ubuntu/jammy main]
 bspwm 0.9.10-2 [Ubuntu/jammy universe]
-btop 1.2.3-2 [Ubuntu/jammy universe]
+btop 1.2.13-pacstall1 [local]
 bubblewrap 0.6.1-1 [Ubuntu/jammy main]
 build-essential 12.9ubuntu3 [Ubuntu/jammy main]
 bundler 2.3.5-2 [Ubuntu/jammy universe]
@@ -562,10 +562,10 @@ gftp 2.9.1~beta-1 [Ubuntu/jammy universe]
 gftp-common 2.9.1~beta-1 [Ubuntu/jammy universe]
 gftp-gtk 2.9.1~beta-1 [Ubuntu/jammy universe]
 gftp-text 2.9.1~beta-1 [Ubuntu/jammy universe]
-gh 2.36.0 [gh/stable main]
+gh 2.37.0 [gh/stable main]
 ghc 8.8.4-3 [Ubuntu/jammy universe]
-ghostscript 9.55.0~dfsg1-0ubuntu5.4 [Ubuntu/jammy main]
-ghostscript-x 9.55.0~dfsg1-0ubuntu5.4 [Ubuntu/jammy main]
+ghostscript 9.55.0~dfsg1-0ubuntu5.5 [Ubuntu/jammy main]
+ghostscript-x 9.55.0~dfsg1-0ubuntu5.5 [Ubuntu/jammy main]
 gir1.2-accountsservice-1.0 22.07.5-2ubuntu1.4 [Ubuntu/jammy main]
 gir1.2-adw-1 1.1.7-0ubuntu0.22.04.1 [Ubuntu/jammy main]
 gir1.2-atk-1.0 2.36.0-3build1 [Ubuntu/jammy main]
@@ -1674,8 +1674,8 @@ libgraphite2-3 1.3.14-1build2 [Ubuntu/jammy main]
 libgraphite2-3:i386 1.3.14-1build2 [Ubuntu/jammy main]
 libgraphite2-dev 1.3.14-1build2 [Ubuntu/jammy main]
 libgrilo-0.3-0 0.3.14-1build1 [Ubuntu/jammy main]
-libgs9 9.55.0~dfsg1-0ubuntu5.4 [Ubuntu/jammy main]
-libgs9-common 9.55.0~dfsg1-0ubuntu5.4 [Ubuntu/jammy main]
+libgs9 9.55.0~dfsg1-0ubuntu5.5 [Ubuntu/jammy main]
+libgs9-common 9.55.0~dfsg1-0ubuntu5.5 [Ubuntu/jammy main]
 libgsettings-qt1 0.2-4 [Ubuntu/jammy universe]
 libgsf-1-114 1.14.47-1build2 [Ubuntu/jammy main]
 libgsf-1-common 1.14.47-1build2 [Ubuntu/jammy main]
@@ -4683,7 +4683,7 @@ zip 3.0-12build2 [Ubuntu/jammy main]
 zlib1g 1:1.2.11.dfsg-2ubuntu9.2 [Ubuntu/jammy main]
 zlib1g-dev 1:1.2.11.dfsg-2ubuntu9.2 [Ubuntu/jammy main]
 zlib1g:i386 1:1.2.11.dfsg-2ubuntu9.2 [Ubuntu/jammy main]
-zoom 5.15.7.6521 [local]
+zoom 5.15.10.6882 [local]
 zsh 5.8.1-1 [Ubuntu/jammy main]
 zsh-common 5.8.1-1 [Ubuntu/jammy main]
 zstd 1.4.8+dfsg-3build1 [Ubuntu/jammy main]
@@ -4696,6 +4696,7 @@ name: batsignal version: 1.6.4-pacstall1
 name: bitwarden version: 2023.9.1
 name: brave-browser version: 1.59.117
 name: brave-keyring version: 1.13
+name: btop version: 1.2.13-pacstall1
 name: google-chrome-stable version: 116.0.5845.140-1
 name: htop version: 3.2.2-pacstall1
 name: nala version: 0.14.0
@@ -4707,7 +4708,7 @@ name: shfmt version: 3.7.0-pacstall1
 name: signal-desktop version: 6.34.1
 name: thorium-browser version: 115.0.5790.172-1
 name: wezterm version: 20230712-072601-f4abf8fd-pacstall1
-name: zoom version: 5.15.7.6521
+name: zoom version: 5.15.10.6882
 ```
 
 ## Cargo
@@ -4774,7 +4775,7 @@ lscolors v0.15.0:
     lscolors
 mdbook v0.4.35:
     mdbook
-mdbook-admonish v1.13.0:
+mdbook-admonish v1.13.1:
     mdbook-admonish
 mdbook-svgbob v0.2.1:
     mdbook-svgbob
@@ -4784,7 +4785,7 @@ menyoki v1.7.0:
     menyoki
 mprocs v0.6.4:
     mprocs
-nu v0.85.0:
+nu v0.86.0:
     nu
 numbat-cli v1.6.3:
     numbat
@@ -4857,7 +4858,7 @@ package ansible-core 2.15.5, installed using Python 3.10.4
  - ansible-vault
 package beautysh 6.2.1, installed using Python 3.10.4
  - beautysh
-package black 23.9.1, installed using Python 3.10.4
+package black 23.10.0, installed using Python 3.10.4
  - black
  - black-primer
  - blackd
@@ -4910,7 +4911,7 @@ package lookatme 2.5.5, installed using Python 3.10.4
  - lam
  - lookatme
  - witnessme
-package mypy 1.6.0, installed using Python 3.10.4
+package mypy 1.6.1, installed using Python 3.10.4
  - dmypy
  - mypy
  - mypyc
@@ -5029,9 +5030,9 @@ ascii-image-converter: github.com/TheZoraiz/ascii-image-converter@v1.13.1
 ```txt
 Name                                    Version                                 Branch
 ncspot                                  0.13.4                                  stable
-Freedesktop Platform                    22.08.16                                22.08
-Mesa                                    23.1.8                                  22.08
-Mesa (Extra)                            23.1.8                                  22.08-extra
+Freedesktop Platform                    22.08.17                                22.08
+Mesa                                    23.1.9                                  22.08
+Mesa (Extra)                            23.1.9                                  22.08-extra
 Mesa                                    23.2.1                                  23.08
 Mesa (Extra)                            23.2.1                                  23.08-extra
 Intel                                                                           22.08
@@ -5051,7 +5052,7 @@ Yaru-dark Gtk Theme                                                             
 ```txt
 Name                       Version                     Rev    Tracking         Publisher      Notes
 bare                       1.0                         5      latest/stable    canonical**    base
-canonical-livepatch        10.7.0                      246    latest/stable    canonical**    -
+canonical-livepatch        10.7.0                      248    latest/stable    canonical**    -
 cmake                      3.27.7                      1336   latest/stable    crascit**      classic
 core                       16-2.60.4                   16202  latest/stable    canonical**    core
 core18                     20230703                    2790   latest/stable    canonical**    base
