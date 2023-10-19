@@ -29,6 +29,7 @@ run_updates() {
     echo_and_run sudo snap refresh
     echo_and_run flatpak update -y
     echo_and_run sudo nala upgrade -y --update
+    echo_and_run pacstall -U -P
     echo_and_run pacstall -Up -P
     # Language specific bulk upgrades
     echo_and_run cargo install-update -a
