@@ -9,3 +9,4 @@ helix/.config/helix/runtime
 newsboat/.newsboat/cache.db
 nushell/**/history*
 tmux/.tmux/plugins/
+lazy-lock.json
