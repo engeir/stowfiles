@@ -833,7 +833,7 @@ iptables 1.8.7-1ubuntu5.1 [Ubuntu/jammy main]
 iputils-ping 3:20211215-1 [Ubuntu/jammy main]
 iputils-tracepath 3:20211215-1 [Ubuntu/jammy main]
 ipython3 7.31.1-1 [Ubuntu/jammy universe]
-irqbalance 1.8.0-1build1 [Ubuntu/jammy main]
+irqbalance 1.8.0-1ubuntu0.1 [Ubuntu/jammy main]
 isc-dhcp-client 4.4.1-2.3ubuntu2.4 [Ubuntu/jammy main]
 isc-dhcp-common 4.4.1-2.3ubuntu2.4 [Ubuntu/jammy main]
 iso-codes 4.9.0-1 [Ubuntu/jammy main]
@@ -4763,7 +4763,7 @@ halp v0.1.7:
     halp-test
 helix-term v0.6.0 (/home/een023/programs/helix/helix-term):
     hx
-hyperfine v1.17.0:
+hyperfine v1.18.0:
     hyperfine
 irust v1.71.4:
     irust
@@ -4844,7 +4844,7 @@ zeta-note v0.1.8:
 ## Pipx
 
 ```txt
-package ansible-core 2.15.5, installed using Python 3.10.4
+package ansible-core 2.15.5, installed using Python 3.10.12
  - ansible
  - ansible-config
  - ansible-connection
@@ -4856,147 +4856,142 @@ package ansible-core 2.15.5, installed using Python 3.10.4
  - ansible-pull
  - ansible-test
  - ansible-vault
-package beautysh 6.2.1, installed using Python 3.10.4
+package beautysh 6.2.1, installed using Python 3.10.12
  - beautysh
-package black 23.10.0, installed using Python 3.10.4
+package black 23.10.0, installed using Python 3.10.12
  - black
  - black-primer
  - blackd
-package cicero 0.2.6, installed using Python 3.10.4
+package cicero 0.2.6, installed using Python 3.10.12
  - cicero
-package cowsay 6.1, installed using Python 3.10.4
+package cowsay 6.1, installed using Python 3.10.12
  - cowsay
-package daltonlens 0.1.5, installed using Python 3.10.4
+package daltonlens 0.1.5, installed using Python 3.10.12
  - daltonlens-python
-package ds-format 4.0.1, installed using Python 3.10.4
+package ds-format 4.0.1, installed using Python 3.10.12
  - ds
-package euporie 2.5.2, installed using Python 3.10.4
+package euporie 2.5.2, installed using Python 3.10.12
  - euporie
  - euporie-console
  - euporie-hub
  - euporie-notebook
  - euporie-preview
-package flake8 6.1.0, installed using Python 3.10.4
+package flake8 6.1.0, installed using Python 3.10.12
  - flake8
-package fprettify 0.3.7, installed using Python 3.10.4
+package fprettify 0.3.7, installed using Python 3.10.12
  - fprettify
-package globus-cli 3.18.0, installed using Python 3.10.4
+package globus-cli 3.18.0, installed using Python 3.10.12
  - globus
-package gorps 0.9.1, installed using Python 3.10.4
+package gorps 0.9.1, installed using Python 3.10.12
  - gorps
-package howdoi 2.0.20, installed using Python 3.10.4
+package howdoi 2.0.20, installed using Python 3.10.12
  - howdoi
-package httpie 3.2.2, installed using Python 3.10.4
+package httpie 3.2.2, installed using Python 3.10.12
  - http
  - httpie
  - https
-package huge 0.1.3, installed using Python 3.10.4
+package huge 0.1.3, installed using Python 3.10.12
  - huge
-package instagram-scraper 66.0.2, installed using Python 3.10.4
- - instagram-scraper
-package intake 0.7.0, installed using Python 3.10.4
+package intake 0.7.0, installed using Python 3.10.12
  - intake
  - intake-server
-package jupyter-client 8.4.0, installed using Python 3.10.4
+package jupyter-client 8.4.0, installed using Python 3.10.12
  - jupyter-kernel
  - jupyter-kernelspec
  - jupyter-run
-package jupytext 1.15.2, installed using Python 3.10.4
+package jupytext 1.15.2, installed using Python 3.10.12
  - jupytext
  - jupytext-config
-package khal 0.11.2, installed using Python 3.10.4
+package khal 0.11.2, installed using Python 3.10.12
  - ikhal
  - khal
-package lookatme 2.5.5, installed using Python 3.10.4
+package lookatme 2.5.5, installed using Python 3.10.12
  - lam
  - lookatme
  - witnessme
-package mypy 1.6.1, installed using Python 3.10.4
+package mypy 1.6.1, installed using Python 3.10.12
  - dmypy
  - mypy
  - mypyc
  - stubgen
  - stubtest
-package nbpreview 0.9.1, installed using Python 3.10.4
+package nbpreview 0.9.1, installed using Python 3.10.12
  - nbp
  - nbpreview
-package northern-lights-forecast 4.1.4, installed using Python 3.10.4
+package northern-lights-forecast 4.1.4, installed using Python 3.10.12
  - nlf
  - nlfd
-package nox 2023.4.22, installed using Python 3.10.4
+package nox 2023.4.22, installed using Python 3.10.12
  - nox
  - tox-to-nox
-package npzviewer 0.2.0, installed using Python 3.10.4
+package npzviewer 0.2.0, installed using Python 3.10.12
  - npzviewer
-package ntfy 2.7.0, installed using Python 3.10.4
+package ntfy 2.7.0, installed using Python 3.10.12
  - ntfy
-package openconnect-sso 0.8.1, installed using Python 3.10.4
+package openconnect-sso 0.8.1, installed using Python 3.10.12
  - openconnect-sso
-package pandoc-eqnos 2.5.0, installed using Python 3.10.4
+package pandoc-eqnos 2.5.0, installed using Python 3.10.12
  - pandoc-eqnos
-package pandoc-include 1.2.0, installed using Python 3.10.4
+package pandoc-include 1.2.0, installed using Python 3.10.12
  - pandoc-include
-package pdfcropmargins 2.0.3, installed using Python 3.10.4
+package pdfcropmargins 2.0.3, installed using Python 3.10.12
  - pdf-crop-margins
  - pdfcropmargins
-package pipenv 2023.10.3, installed using Python 3.10.4
+package pipenv 2023.10.3, installed using Python 3.10.12
  - pipenv
  - pipenv-resolver
-package pipreqs 0.4.13, installed using Python 3.10.4
+package pipreqs 0.4.13, installed using Python 3.10.12
  - pipreqs
-package poetry2conda 0.3.0, installed using Python 3.10.4
+package poetry2conda 0.3.0, installed using Python 3.10.12
  - poetry2conda
-package poetry2setup 1.1.0, installed using Python 3.10.4
+package poetry2setup 1.1.0, installed using Python 3.10.12
  - poetry2setup
-package pptx2md 1.5.0, installed using Python 3.10.4
+package pptx2md 1.5.0, installed using Python 3.10.12
  - pptx2md
-package pre-commit 3.5.0, installed using Python 3.10.4
+package pre-commit 3.5.0, installed using Python 3.10.12
  - pre-commit
  - pre-commit-validate-config
  - pre-commit-validate-manifest
-package pydocstyle 6.3.0, installed using Python 3.10.4
+package pydocstyle 6.3.0, installed using Python 3.10.12
  - pydocstyle
-package pypistats 1.5.0, installed using Python 3.10.4
+package pypistats 1.5.0, installed using Python 3.10.12
  - pypistats
-package pyqt5 5.15.10, installed using Python 3.10.4
+package pyqt5 5.15.10, installed using Python 3.10.12
  - pylupdate5
  - pyrcc5
  - pyuic5
-package pyright 1.1.331, installed using Python 3.10.4
+package pyright 1.1.332, installed using Python 3.10.12
  - pyright
  - pyright-langserver
  - pyright-python
  - pyright-python-langserver
-package pywal 3.3.0, installed using Python 3.10.4
+package pywal 3.3.0, installed using Python 3.10.12
  - wal
-package rich-cli 1.8.0, installed using Python 3.10.4
+package rich-cli 1.8.0, installed using Python 3.10.12
  - rich
-package rich-codex 1.2.6, installed using Python 3.10.4
+package rich-codex 1.2.6, installed using Python 3.10.12
  - rich-codex
-package rmview 3.0, installed using Python 3.10.4
+package rmview 3.0, installed using Python 3.10.12
  - rmview
-package rofimoji 6.2.0, installed using Python 3.10.4
+package rofimoji 6.2.0, installed using Python 3.10.12
  - rofimoji
-package telegram-send 0.37, installed using Python 3.10.4
+package telegram-send 0.37, installed using Python 3.10.12
  - telegram-send
-package term-image 0.7.0, installed using Python 3.10.4
- - term-image
- - term-img
-package tex2svg 0.0.2, installed using Python 3.10.4
+package tex2svg 0.0.2, installed using Python 3.10.12
  - tex2svg
-package textual-paint 0.3.0, installed using Python 3.10.4
+package textual-paint 0.3.0, installed using Python 3.10.12
  - textual-paint
-package thefuck 3.32, installed using Python 3.10.4
+package thefuck 3.32, installed using Python 3.10.12
  - fuck
  - thefuck
-package tuiview 0.1.0, installed using Python 3.10.4
+package tuiview 0.1.0, installed using Python 3.10.12
  - tuiview
  - tv
-package twine 4.0.2, installed using Python 3.10.4
+package twine 4.0.2, installed using Python 3.10.12
  - twine
-package wtpython 0.1.0, installed using Python 3.10.4
+package wtpython 0.1.0, installed using Python 3.10.12
  - wtpython
-package yapf 0.40.2, installed using Python 3.10.4
+package yapf 0.40.2, installed using Python 3.10.12
  - yapf
  - yapf-diff
 ```
