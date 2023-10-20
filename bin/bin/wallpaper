@@ -21,7 +21,7 @@ DIR=$(ls "$HOME"/syncthing/wallpapers/* | grep "$chosen")
 
 # Copy the selected wallpaper to be the main wallpaper
 # cp "$DIR" "$HOME"/.cache/bspwm/wallpaper.jpg
-convert "$DIR" -blur 0x15 "$HOME/.cache/bspwm/wallpaper.jpg"
+convert "$DIR" -blur 0x9 "$HOME/.cache/bspwm/wallpaper.jpg"
 
 # Set the new wallpaper
 if [[ $(uname -s) == "Darwin" ]]; then
