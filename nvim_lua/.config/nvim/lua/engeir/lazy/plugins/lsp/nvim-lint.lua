@@ -8,7 +8,7 @@ return {
             bash = { "shellcheck" },
             go = { "golangcilint" },
             json = { "jsonlint" },
-            markdown = { "vale", "markdownlint" },
+            markdown = { "markdownlint" }, -- vale is run via lsp (vale_ls)
             python = { "mypy" }, -- ruff is run via lsp, don't need it here
             rst = { "rstcheck" },
             sh = { "shellcheck" },
