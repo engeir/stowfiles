@@ -320,7 +320,7 @@ plugins {
 
 // The folder in which Zellij will look for layouts
 //
-// layout_dir "/path/to/my/layout_dir"
+layout_dir "~/.config/zellij/layouts/"
 
 // The folder in which Zellij will look for themes
 //
