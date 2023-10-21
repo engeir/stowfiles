@@ -10,5 +10,5 @@ sbar.bar({
     padding_right = 4,
     padding_left = 4,
     blur_radius = 0,
-    topmost = "off",  -- Stays over YT if set to "window"
+    topmost = "off", -- Stays over YT if set to "window"
 })
