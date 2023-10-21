@@ -9,3 +9,9 @@ helix/.config/helix/runtime
 newsboat/.newsboat/cache.db
 nushell/**/history*
 tmux/.tmux/plugins/
+lazy-lock.json
+.zcompdump*
+# Annoying colors that always change
+colors.yml
+colors
+colors.rasi

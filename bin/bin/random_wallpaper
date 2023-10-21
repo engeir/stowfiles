@@ -7,7 +7,8 @@ ls "$HOME"/syncthing/wallpapers | sort -R | sed 1q | while read file; do
     DIR=$(ls ~/syncthing/wallpapers/* | grep "$file")
 
     # Copy the selected wallpaper to be the main wallpaper
-    cp "$DIR" "$HOME"/.cache/bspwm/wallpaper.jpg
+    # cp "$DIR" "$HOME"/.cache/bspwm/wallpaper.jpg
+    convert "$DIR" -blur 0x9 "$HOME"/.cache/bspwm/wallpaper.jpg
 
     # Set the new wallpaper
     if [[ $(uname -s) == "Darwin" ]]; then
@@ -15,6 +16,6 @@ ls "$HOME"/syncthing/wallpapers | sort -R | sed 1q | while read file; do
         m wallpaper "$DIR"
     else
         # Linux
-        feh --bg-fill "$DIR"
+        feh --bg-fill "$HOME"/.cache/bspwm/wallpaper.jpg
     fi
 done

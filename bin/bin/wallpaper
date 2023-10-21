@@ -20,7 +20,8 @@ DIR=$(ls "$HOME"/syncthing/wallpapers/* | grep "$chosen")
 # DIR=$(ls ~/.config/bspwm/wallpaper*/* | grep "$chosen")
 
 # Copy the selected wallpaper to be the main wallpaper
-cp "$DIR" "$HOME"/.cache/bspwm/wallpaper.jpg
+# cp "$DIR" "$HOME"/.cache/bspwm/wallpaper.jpg
+convert "$DIR" -blur 0x9 "$HOME/.cache/bspwm/wallpaper.jpg"
 
 # Set the new wallpaper
 if [[ $(uname -s) == "Darwin" ]]; then
@@ -28,5 +29,5 @@ if [[ $(uname -s) == "Darwin" ]]; then
     m wallpaper "$DIR"
 else
     # Linux
-    feh --bg-fill "$DIR"
+    feh --bg-fill "$HOME/.cache/bspwm/wallpaper.jpg"
 fi
