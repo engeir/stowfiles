@@ -167,7 +167,7 @@ return {
     {
         "zbirenbaum/neodim",
         event = "LspAttach",
-        enabled = IS_KNOWN,
+        enabled = false,
         opts = {
             alpha = 0.5, -- make the dimmed text even dimmer
             blend_color = "#282828",

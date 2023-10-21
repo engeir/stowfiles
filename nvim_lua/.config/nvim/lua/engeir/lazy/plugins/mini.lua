@@ -122,6 +122,7 @@ return {
     -- mini.comment --------------------------------------------------------------------
     {
         "echasnovski/mini.comment",
+        version = "*",
         event = "VeryLazy",
         init = function()
             --- Set the comment rule for a file type
