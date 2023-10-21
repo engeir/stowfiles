@@ -4,7 +4,7 @@ return {
     --    junegunn/vim-easy-align -> mini.align
     --    numToStr/Comment.nvim   -> mini.comment
     --    RRethy/vim-illuminate   -> mini.cursorword
-    --    windwp/nvim-autopairs   -> mini.pairs
+    --    windwp/nvim-autopairs   -> mini.pairs      -> altermo/ultimate-autopair.nvim
     --    goolord/alpha-nvim      -> mini.starter
     --    kylechui/nvim-surround  -> mini.surround
     --    folke/flash.nvim        <- mini.jump
@@ -174,7 +174,8 @@ return {
     -- mini.pairs ----------------------------------------------------------------------
     {
         "echasnovski/mini.pairs",
-        event = "VeryLazy",
+        enabled = false,
+        event = { "InsertEnter", "CmdlineEnter" },
         config = true,
     },
 
