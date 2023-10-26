@@ -38,9 +38,10 @@ map x delete
 # map bnc cd /cluster/home/een023/model/CESM/cesm2.1.3/CESM/cime/scripts
 map ba1 cd /cluster/projects/nn9817k/cesm/archive
 map ba2 cd /cluster/projects/nn9348k/cesm/archive
+map bn1 cd /nird/projects/NS9817K/
+map bn2 cd /nird/projects/NS9063K/
 map bc cd /cluster/home/een023/.config
 map bl cd /cluster/home/een023/model/CESM/cesm2.1.3/CESM/cime/cases
-map bn cd /nird/projects/nird/NS9063K/
 map bp cd /cluster/home/een023/.programs
 map bs cd /cluster/home/een023/.local/bin
 map bu cd /cluster/work/users/een023/cesm/
