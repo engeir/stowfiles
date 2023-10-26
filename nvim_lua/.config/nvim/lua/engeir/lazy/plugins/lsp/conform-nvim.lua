@@ -14,7 +14,7 @@ return {
                 json = { "dprint" },
                 lua = { "stylua" },
                 markdown = { "dprint" },
-                python = { "blackd", "ruff_fix", "ruff_format" },
+                python = { "ruff_fix", "ruff_format" }, -- Trying to remove black(d), ruff takes care of this now
                 rust = { "rustfmt" },
                 sh = { "shfmt", "shellharden", "shellcheck", "beautysh" },
                 go = { "gofmt" },
