@@ -2,10 +2,18 @@
 
 if lsblk -e 1,7 | grep een023/LaCie >/dev/null; then
     sudo umount /media/een023/LaCie
-    notify-send "Mounter" "LaCie harddisk was successfully unmounted"
+    if [ $? -eq 0 ]; then
+        notify-send --urgency=low "Mounter" "LaCie harddisk was successfully unmounted"
+    else
+        notify-send --urgency=critical "Mounter" "LaCie harddisk was not unmounted"
+    fi
 else
     # Mount LaCie device, optionally from specified location.
     loc=${1:-/dev/sda2}
     sudo mount -o uid=1000,gid=1000,rw "$loc" /media/een023/LaCie
-    notify-send "Mounter" "LaCie harddisk was successfully mounted"
+    if [ $? -eq 0 ]; then
+        notify-send --urgency=low "Mounter" "LaCie harddisk was successfully mounted"
+    else
+        notify-send --urgency=critical "Mounter" "LaCie harddisk was not mounted"
+    fi
 fi
