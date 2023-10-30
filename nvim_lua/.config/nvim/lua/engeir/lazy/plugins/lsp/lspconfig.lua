@@ -39,7 +39,7 @@ return {
             -- All default mapping set by lsp-zero:
             -- https://github.com/VonHeikemen/lsp-zero.nvim/issues/15#issuecomment-1128842548
 
-            nmap("<leader>rs", "<cmd>LspRestart", "Lsp [R]e[s]tart")
+            nmap("<leader>re", "<cmd>LspRestart<cr>", "Lsp [Re]estart")
             nmap("<leader>rn", vim.lsp.buf.rename, "[R]e[n]ame")
             nmap("<leader>ca", vim.lsp.buf.code_action, "[C]ode [A]ction")
             xmap("<leader>ca", "<cmd>lua vim.lsp.buf.range_code_action()<cr>", "Range [C]ode [A]ction")

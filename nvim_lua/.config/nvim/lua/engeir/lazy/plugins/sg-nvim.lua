@@ -1,6 +1,7 @@
 return {
     "sourcegraph/sg.nvim",
-    enabled = IS_LINUX and IS_KNOWN,
+    enabled = false,
+    -- enabled = IS_LINUX and IS_KNOWN,
     dependencies = { "nvim-lua/plenary.nvim" },
     config = true,
     event = { "BufReadPre", "BufNewFile" },

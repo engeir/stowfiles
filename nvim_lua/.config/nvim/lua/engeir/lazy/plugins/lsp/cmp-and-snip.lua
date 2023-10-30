@@ -60,7 +60,11 @@ return {
                 formatting = {
                     -- Youtube: How to set up nice formatting for your sources.
                     format = lspkind.cmp_format({
-                        with_text = true,
+                        -- with_text = true,
+                        mode = "symbol_text",
+                        maxwidth = 50,
+                        ellipsis_char = "...",
+                        symbol_map = { Codeium = "" },
                         menu = {
                             buffer = "[buf]",
                             nvim_lsp = "[LSP]",
@@ -70,6 +74,7 @@ return {
                             gh_issues = "[issues]",
                             tn = "[TabNine]",
                             eruby = "[erb]",
+                            codeium = "[ai]",
                         },
                     }),
                 },
@@ -105,6 +110,7 @@ return {
                     { name = "calc" },
                     { name = "gh_issues" },
                     { name = "nvim_lsp" },
+                    { name = "codeium" },
                     { name = "nvim_lua" },
                     { name = "luasnip" }, -- For luasnip users.
                     { name = "path" },
