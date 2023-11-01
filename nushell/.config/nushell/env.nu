@@ -92,3 +92,7 @@ $env.SHELL = ($"($env.HOME)/.cargo/bin/nu")
 # Starship
 mkdir ~/.cache/starship
 starship init nu | save -f ~/.cache/starship/init.nu
+
+$env.ATUIN_NOBIND = true
+mkdir ~/.local/share/atuin
+atuin init nu | save -f ~/.local/share/atuin/init.nu #make sure you created the directory beforehand with `mkdir ~/.local/share/atuin/init.nu`
