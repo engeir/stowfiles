@@ -41,4 +41,7 @@ return {
     s({ trig = "iplt" }, {
         t("import matplotlib.pyplot as plt"),
     }),
+    s({ trig = "inpy" }, {
+        t("import numpy as np"),
+    }),
 }
