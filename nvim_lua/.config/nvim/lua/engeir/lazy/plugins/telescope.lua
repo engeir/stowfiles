@@ -70,6 +70,8 @@ return {
                             ["<C-k>"] = function(bufnr)
                                 slow_scroll(bufnr, -1)
                             end,
+                            ["<C-f>"] = actions.results_scrolling_up,
+                            ["<C-b>"] = actions.results_scrolling_down,
                             ["<C-q>"] = actions.send_selected_to_qflist + actions.open_qflist,
                             ["<c-t>"] = trouble.open_with_trouble,
                         },
