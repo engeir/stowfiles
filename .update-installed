@@ -37,6 +37,7 @@ run_updates() {
     echo_and_run pipx upgrade-all
     echo_and_run gup update
     # Single programs
+    echo_and_run rclone selfupdate
     echo_and_run pyenv update
     echo_and_run rye self update
     echo_and_run poetry self update
