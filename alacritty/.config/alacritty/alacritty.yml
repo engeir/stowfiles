@@ -29,9 +29,9 @@ window:
   # Number of lines/columns (not pixels) in the terminal. The number of columns
   # must be at least `2`, while using a value of `0` for columns and lines will
   # fall back to the window manager's recommended size.
-  #dimensions:
-  #  columns: 0
-  #  lines: 0
+  dimensions:
+    columns: 100
+    lines: 100
 
   # Window position (changes require restart)
   #
@@ -49,7 +49,7 @@ window:
     x: 3
     y: 5
 
-  opacity: 0.8
+  opacity: 0.9
 
   # Spread additional padding evenly around the terminal content.
   #dynamic_padding: false
@@ -153,13 +153,13 @@ font:
   #style: Bold Italic
 
   # Point size
-  size: 10
+  size: 9.3
 
   # Offset is the extra space around each character. `offset.y` can be thought
   # of as modifying the line spacing, and `offset.x` as modifying the letter
   # spacing.
   offset:
-    x: 0
+    x: 1
     y: 0
 
   # Glyph offset determines the locations of the glyphs within their cells with
@@ -444,10 +444,10 @@ live_config_reload: true
 #   - (Linux/BSD) user login shell
 #   - (Windows) powershell
 shell:
- program: /home/een023/.cargo/bin/nu
- # program: /bin/zsh  # is the default when nothing is set
- args:
-   - --login
+  # program: /home/een023/.cargo/bin/nu
+  program: /bin/zsh # is the default when nothing is set
+  args:
+    - --login
 
 # Startup directory
 #
