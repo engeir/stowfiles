@@ -19,7 +19,7 @@ map <C-b> feedkeys ":exec getbib-linux-copy $FILE<Return>"
 set synctex true
 set synctex-editor-command "gvim --remote-silent +%{line} %{input}"
 
-# Transparency (same as #282828 which is set in Xresources)
+# Transparency (same as #2d2d2d which is set in Xresources)
 set default-bg rgba(45,45,45,0.90)
 
 # Colors for inverse mode

@@ -94,7 +94,7 @@ config.adjust_window_size_when_changing_font_size = false
 -- config.color_scheme = "Gruvbox dark, medium (base16)"
 config.colors = {
     compose_cursor = 'orange',
-    background = "#282828",
+    background = "#2d2d2d",
 }
 config.window_background_gradient = require("configs.window_background_gradient")
 config.window_close_confirmation = "NeverPrompt"
