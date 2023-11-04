@@ -1,5 +1,21 @@
 # Changelog
 
+## [1.1.0](https://github.com/engeir/stowfiles/compare/v1.0.0...v1.1.0) (2023-11-04)
+
+
+### Features
+
+* **nvim/tmux:** set up system copy using osc52 ([36983dc](https://github.com/engeir/stowfiles/commit/36983dc5238e93c3e6cf9c9bc37e7fcd90cd5895))
+* **nvim:** add yaml formatting with prettierd ([6df2b7a](https://github.com/engeir/stowfiles/commit/6df2b7a7b028c2aae7721a9c771a2ee263453e1e))
+* **software:** add rclone to the update script ([cf1a13e](https://github.com/engeir/stowfiles/commit/cf1a13e553ded11d7b858ba1bb0c7b97ba5b0413))
+
+
+### Bug Fixes
+
+* **nvim/tmux:** define keymaps using vim.keymap.set (not Lazy) ([8c1c73b](https://github.com/engeir/stowfiles/commit/8c1c73b79b75dfdcc365a618e2a297247e1ca655))
+* **nvim:** turn off flash search and place codium cmp lower ([9ccf2c2](https://github.com/engeir/stowfiles/commit/9ccf2c2e14347fa595f880885e9651d2ed525b79))
+* **whoogle:** POST was updated, so moving back works ([8b501be](https://github.com/engeir/stowfiles/commit/8b501beaad16fa88a315c7f765241871dfd1dda8))
+
 ## 1.0.0 (2023-10-31)
 
 
