@@ -110,11 +110,11 @@ return {
                     { name = "calc" },
                     { name = "gh_issues" },
                     { name = "nvim_lsp" },
-                    { name = "codeium" },
-                    { name = "nvim_lua" },
-                    { name = "luasnip" }, -- For luasnip users.
                     { name = "path" },
                     { name = "buffer", keyword_length = 4 },
+                    { name = "nvim_lua" },
+                    { name = "luasnip" }, -- For luasnip users.
+                    { name = "codeium" },
                     -- { name = "orgmode" },
                     -- { name = "cmp_tabnine" },
                 },
