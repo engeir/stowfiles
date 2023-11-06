@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.1.0](https://github.com/engeir/stowfiles/compare/stowfiles-v2.0.0...stowfiles-v2.1.0) (2023-11-06)
+
+
+### Features
+
+* **software:** update linux installed software list ([d332e01](https://github.com/engeir/stowfiles/commit/d332e0148f2c10278126359b402e4bcd04350ac1))
+
 ## [2.0.0](https://github.com/engeir/stowfiles/compare/stowfiles-v1.1.0...stowfiles-v2.0.0) (2023-11-06)
 
 
