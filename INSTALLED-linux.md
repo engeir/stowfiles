@@ -98,7 +98,7 @@ bolt 0.9.2-1 [Ubuntu/jammy main]
 borgbackup 1.2.0-1 [Ubuntu/jammy universe]
 boxes 2.1.1-2 [Ubuntu/jammy universe]
 branding-ubuntu 0.10 [Ubuntu/jammy main]
-brave-browser 1.59.117 [local]
+brave-browser 1.59.124 [local]
 brave-keyring 1.13 [local]
 brightness-udev 0.5.1-3 [Ubuntu/jammy universe]
 brightnessctl 0.5.1-3 [Ubuntu/jammy universe]
@@ -2912,8 +2912,8 @@ libsmbclient 2:4.15.13+dfsg-0ubuntu1.5 [Ubuntu/jammy main]
 libsmbios-c2 2.4.3-1build1 [Ubuntu/jammy main]
 libsnapd-glib1 1.60-0ubuntu1 [Ubuntu/jammy main]
 libsnappy1v5 1.1.8-1build3 [Ubuntu/jammy main]
-libsndfile1 1.0.31-2build1 [Ubuntu/jammy main]
-libsndfile1:i386 1.0.31-2build1 [Ubuntu/jammy main]
+libsndfile1 1.0.31-2ubuntu0.1 [Ubuntu/jammy main]
+libsndfile1:i386 1.0.31-2ubuntu0.1 [Ubuntu/jammy main]
 libsndio-dev 1.8.1-1.1 [Ubuntu/jammy universe]
 libsndio7.0 1.8.1-1.1 [Ubuntu/jammy universe]
 libsndio7.0:i386 1.8.1-1.1 [Ubuntu/jammy universe]
@@ -3626,7 +3626,7 @@ mpd 0.23.5-1build7 [Ubuntu/jammy universe]
 mpv 0.34.1-1ubuntu3 [Ubuntu/jammy universe]
 mscompress 0.4-9build1 [Ubuntu/jammy main]
 mtr-tiny 0.95-1 [Ubuntu/jammy main]
-mullvad-vpn 2023.3 [local]
+mullvad-vpn 2023.5 [local]
 mupdf 1.19.0+ds1-2 [Ubuntu/jammy universe]
 mupdf-tools 1.19.0+ds1-2 [Ubuntu/jammy universe]
 mutter 42.9-0ubuntu5 [Ubuntu/jammy universe]
@@ -4207,10 +4207,10 @@ quarto 1.3.450 [local]
 qutebrowser 2.5.0-1 [Ubuntu/jammy universe]
 qutebrowser-qtwebengine 2.5.0-1 [Ubuntu/jammy universe]
 qutebrowser-qtwebkit 2.5.0-1 [Ubuntu/jammy universe]
-r-base 4.3.1-4.2204.0 [CRAN/jammy-cran40 ]
-r-base-core 4.3.1-4.2204.0 [CRAN/jammy-cran40 ]
-r-base-dev 4.3.1-4.2204.0 [CRAN/jammy-cran40 ]
-r-base-html 4.3.1-4.2204.0 [CRAN/jammy-cran40 ]
+r-base 4.3.2-1.2204.0 [CRAN/jammy-cran40 ]
+r-base-core 4.3.2-1.2204.0 [CRAN/jammy-cran40 ]
+r-base-dev 4.3.2-1.2204.0 [CRAN/jammy-cran40 ]
+r-base-html 4.3.2-1.2204.0 [CRAN/jammy-cran40 ]
 r-cran-boot 1.3-28-2.2204.0 [CRAN/jammy-cran40 ]
 r-cran-class 7.3-22-2.2204.0 [CRAN/jammy-cran40 ]
 r-cran-cluster 2.1.4-1.2204.0 [CRAN/jammy-cran40 ]
@@ -4226,8 +4226,8 @@ r-cran-nnet 7.3-19-2.2204.0 [CRAN/jammy-cran40 ]
 r-cran-rpart 4.1.21-1.2204.0 [CRAN/jammy-cran40 ]
 r-cran-spatial 7.3-15-1.2204.0 [CRAN/jammy-cran40 ]
 r-cran-survival 3.5-7-1.2204.0 [CRAN/jammy-cran40 ]
-r-doc-html 4.3.1-4.2204.0 [CRAN/jammy-cran40 ]
-r-recommended 4.3.1-4.2204.0 [CRAN/jammy-cran40 ]
+r-doc-html 4.3.2-1.2204.0 [CRAN/jammy-cran40 ]
+r-recommended 4.3.2-1.2204.0 [CRAN/jammy-cran40 ]
 rake 13.0.6-2 [Ubuntu/jammy main]
 ranger 1.9.3-3ubuntu1 [Ubuntu/jammy universe]
 rclone 1.53.3-4ubuntu1.22.04.2 [Ubuntu/jammy universe]
@@ -4304,7 +4304,7 @@ shellcheck 0.8.0-2 [Ubuntu/jammy universe]
 shfmt 3.7.0-pacstall1 [local]
 shfmt-bin 3.4.3-1 [local]
 shim-signed 1.51.3+15.7-0ubuntu1 [Ubuntu/jammy main]
-signal-desktop 6.36.0 [. xenial/xenial main]
+signal-desktop 6.37.0 [. xenial/xenial main]
 signon-plugin-oauth2 0.25-2 [Ubuntu/jammy universe]
 silversearcher-ag 2.2.0+git20200805-1 [Ubuntu/jammy universe]
 simple-scan 42.0-1 [Ubuntu/jammy main]
@@ -4313,7 +4313,7 @@ singular-data 1:4.2.1-p3+ds-1 [Ubuntu/jammy universe]
 singular-doc 1:4.2.1-p3+ds-1 [Ubuntu/jammy universe]
 singular-modules 1:4.2.1-p3+ds-1 [Ubuntu/jammy universe]
 singular-ui 1:4.2.1-p3+ds-1 [Ubuntu/jammy universe]
-slack-desktop 4.34.121 [slack/jessie main]
+slack-desktop 4.35.121 [slack/jessie main]
 slirp4netns 1.0.1-2 [Ubuntu/jammy universe]
 slop 7.5-1.1build2 [Ubuntu/jammy universe]
 snapd 2.58+22.04.1 [Ubuntu/jammy main]
@@ -4694,7 +4694,7 @@ zstd 1.4.8+dfsg-3build1 [Ubuntu/jammy main]
 ```txt
 name: batsignal version: 1.6.4-pacstall1
 name: bitwarden version: 2023.9.1
-name: brave-browser version: 1.59.117
+name: brave-browser version: 1.59.124
 name: brave-keyring version: 1.13
 name: btop version: 1.2.13-pacstall1
 name: google-chrome-stable version: 116.0.5845.140-1
@@ -4705,7 +4705,7 @@ name: polybar version: 3.6.3-pacstall1
 name: protonmail-bridge version: 3.5.1-1
 name: quarto version: 1.3.450
 name: shfmt version: 3.7.0-pacstall1
-name: signal-desktop version: 6.36.0
+name: signal-desktop version: 6.37.0
 name: thorium-browser version: 115.0.5790.172-1
 name: wezterm version: 20230712-072601-f4abf8fd-pacstall1
 name: zoom version: 5.16.5.303
@@ -4765,7 +4765,7 @@ helix-term v0.6.0 (/home/een023/programs/helix/helix-term):
     hx
 hyperfine v1.18.0:
     hyperfine
-irust v1.71.4:
+irust v1.71.15:
     irust
 jless v0.9.0:
     jless
@@ -4787,7 +4787,7 @@ mprocs v0.6.4:
     mprocs
 nu v0.86.0:
     nu
-numbat-cli v1.6.3:
+numbat-cli v1.7.0:
     numbat
 pastel v0.9.0:
     pastel
@@ -4798,7 +4798,7 @@ pueue v3.3.1:
     pueued
 ripgrep v13.0.0:
     rg
-rtx-cli v2023.10.4:
+rtx-cli v2023.11.0:
     rtx
 samply v0.11.0:
     samply
@@ -4962,7 +4962,7 @@ package pyqt5 5.15.10, installed using Python 3.10.12
  - pylupdate5
  - pyrcc5
  - pyuic5
-package pyright 1.1.333, installed using Python 3.10.12
+package pyright 1.1.334, installed using Python 3.10.12
  - pyright
  - pyright-langserver
  - pyright-python
@@ -4986,11 +4986,15 @@ package textual-paint 0.3.0, installed using Python 3.10.12
 package thefuck 3.32, installed using Python 3.10.12
  - fuck
  - thefuck
-package tuiview 0.1.0, installed using Python 3.10.12
+package tuiview 0.1.1, installed using Python 3.10.12
  - tuiview
  - tv
 package twine 4.0.2, installed using Python 3.10.12
  - twine
+package visidata 2.11.1, installed using Python 3.11.6
+ - vd
+ - vgit
+ - visidata
 package wtpython 0.1.0, installed using Python 3.10.12
  - wtpython
 package yapf 0.40.2, installed using Python 3.10.12
@@ -5002,18 +5006,18 @@ package yapf 0.40.2, installed using Python 3.10.12
 
 ```txt
 ascii-image-converter: github.com/TheZoraiz/ascii-image-converter@v1.13.1
-            bluetuith: github.com/darkhz/bluetuith@v0.1.8
+            bluetuith: github.com/darkhz/bluetuith@v0.1.9
                    d2: oss.terrastruct.com/d2@v0.6.1
                 doggo: github.com/mr-karan/doggo/cmd/doggo@v0.5.7
                  draw: github.com/maaslalani/draw@v0.1.1
                fast-p: github.com/bellecp/fast-p@v0.2.5
            git-semver: github.com/mdomke/git-semver@v1.0.0
             git-sizer: github.com/github/git-sizer@v1.5.0
-        golangci-lint: github.com/golangci/golangci-lint/cmd/golangci-lint@v1.55.1
+        golangci-lint: github.com/golangci/golangci-lint/cmd/golangci-lint@v1.55.2
                   gum: github.com/charmbracelet/gum@v0.11.0
                   gup: github.com/nao1215/gup@v0.24.0
               lazygit: github.com/jesseduffield/lazygit@v0.40.2
-                   lf: github.com/gokcehan/lf@v0.0.0-20231029224039-f52fffbff69e
+                   lf: github.com/gokcehan/lf@v0.0.0-20231106031215-f6e7d0fd0e6c
                   nap: github.com/maaslalani/nap@v0.1.1
                 rmapi: github.com/juruen/rmapi@(devel)
                     s: github.com/zquestz/s@v0.6.9
@@ -5052,7 +5056,7 @@ bare                       1.0                         5      latest/stable    c
 canonical-livepatch        10.7.0                      246    latest/stable    canonical**    -
 cmake                      3.27.7                      1336   latest/stable    crascit**      classic
 core                       16-2.60.4                   16202  latest/stable    canonical**    core
-core18                     20230703                    2790   latest/stable    canonical**    base
+core18                     20230901                    2796   latest/stable    canonical**    base
 core20                     20230801                    2015   latest/stable    canonical**    base
 core22                     20230801                    864    latest/stable    canonical**    base
 dotnet-sdk                 5.0.408                     167    5.0/stable       dotnetcore**   classic
