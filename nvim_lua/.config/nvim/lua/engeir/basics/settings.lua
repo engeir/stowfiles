@@ -20,6 +20,7 @@ s.encoding = "utf-8" -- The encoding displayed
 s.errorbells = false -- No sound bc. sound is stupid
 s.expandtab = true
 s.fileencoding = "utf-8" -- The encoding written to file
+s.fileformats = "unix"
 s.fillchars.eob = " "
 s.fo = "cq"
 s.guifont = "monospace:h17" -- the font used in graphical neovim applications
