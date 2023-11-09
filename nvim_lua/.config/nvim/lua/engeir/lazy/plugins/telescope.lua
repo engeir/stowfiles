@@ -150,7 +150,7 @@ return {
             end, { desc = "[F]ind [C]ommands" })
             vim.keymap.set("n", "<leader>fd", function()
                 require("telescope.builtin").diagnostics()
-            end, { desc = "[F]ind [G]itfiles" }) -- {git_command={'git', 'grep', '--cached', '-Il', '\"\"'}}
+            end, { desc = "[F]ind [D]iagnostics" })
             vim.keymap.set("n", "<leader>ff", function()
                 require("telescope.builtin").find_files({ hidden = true })
             end, { desc = "[F]ind [F]iles" })

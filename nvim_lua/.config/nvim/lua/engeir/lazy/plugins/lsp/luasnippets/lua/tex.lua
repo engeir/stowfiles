@@ -88,6 +88,7 @@ return {
     s({ trig = "mk" }, { t("\\("), i(1), t("\\)") }),
     s({ trig = "mrm", wordTrig = false }, { t("\\mathrm{"), i(1), t("}") }, { condition = ts_utils.in_mathzone }),
     s({ trig = ".ce" }, { t({ "\\ce{" }), i(1), t("}") }),
+    s({ trig = ".gls", name = "Short acronym (acronym)" }, { t({ "\\gls{" }), i(1), t("}") }),
     s({ trig = ".qt" }, { t({ "``" }), i(1), t("''") }),
     s({ trig = "sub", wordTrig = false }, { t("_{"), i(1), t("}"), i(0) }, { condition = ts_utils.in_mathzone }),
     s({ trig = "sup", wordTrig = false }, { t("^{"), i(1), t("}"), i(0) }, { condition = ts_utils.in_mathzone }),

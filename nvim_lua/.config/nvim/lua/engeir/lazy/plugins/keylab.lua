@@ -1,6 +1,6 @@
 return {
     "BooleanCube/keylab.nvim",
-    enabled = IS_KNOWN,
+    enabled = false,
     config = true,
     keys = {
         { "<leader>kl", "<cmd>KeylabStart<cr>", desc = "Start a keylab session" },
