@@ -1,5 +1,5 @@
 return {
     "AckslD/muren.nvim",
-    enabled = IS_KNOWN,
+    enabled = false,
     config = true,
 }
