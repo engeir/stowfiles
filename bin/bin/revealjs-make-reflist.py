@@ -12,6 +12,8 @@ except IndexError:
     if hasattr(div, "contents"):
         print("---")
         print("")
+        print('<!-- .slide: id="revealjs-make-reflist-id" -->')
+        print("")
         print("## References\n")
         d_list = div.contents
         # All even-indexed elements are newline characters
