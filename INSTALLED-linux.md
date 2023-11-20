@@ -44,12 +44,12 @@ apport 2.20.11-0ubuntu82.5 [Ubuntu/jammy main]
 apport-gtk 2.20.11-0ubuntu82.5 [Ubuntu/jammy main]
 apport-symptoms 0.24 [Ubuntu/jammy main]
 appstream 0.15.2-2 [Ubuntu/jammy main]
-apt 2.4.10 [Ubuntu/jammy main]
+apt 2.4.11 [Ubuntu/jammy main]
 apt-config-icons 0.15.2-2 [Ubuntu/jammy main]
 apt-config-icons-hidpi 0.15.2-2 [Ubuntu/jammy main]
 apt-file 3.2.2 [Ubuntu/jammy universe]
-apt-transport-https 2.4.10 [Ubuntu/jammy universe]
-apt-utils 2.4.10 [Ubuntu/jammy main]
+apt-transport-https 2.4.11 [Ubuntu/jammy universe]
+apt-utils 2.4.11 [Ubuntu/jammy main]
 aptdaemon 1.1.1+bzr982-0ubuntu39 [Ubuntu/jammy main]
 aptdaemon-data 1.1.1+bzr982-0ubuntu39 [Ubuntu/jammy main]
 apturl 0.5.2ubuntu22 [Ubuntu/jammy main]
@@ -87,7 +87,7 @@ binutils 2.38-4ubuntu2.3 [Ubuntu/jammy main]
 binutils-common 2.38-4ubuntu2.3 [Ubuntu/jammy main]
 binutils-x86-64-linux-gnu 2.38-4ubuntu2.3 [Ubuntu/jammy main]
 bison 2:3.8.2+dfsg-1build1 [Ubuntu/jammy main]
-bitwarden 2023.9.1 [local]
+bitwarden 2023.10.1 [local]
 black 21.12b0-1 [Ubuntu/jammy universe]
 blt 2.5.3+dfsg-4.1build2 [Ubuntu/jammy main]
 bluez 5.64-0ubuntu1 [Ubuntu/jammy main]
@@ -98,7 +98,7 @@ bolt 0.9.2-1 [Ubuntu/jammy main]
 borgbackup 1.2.0-1 [Ubuntu/jammy universe]
 boxes 2.1.1-2 [Ubuntu/jammy universe]
 branding-ubuntu 0.10 [Ubuntu/jammy main]
-brave-browser 1.59.124 [local]
+brave-browser 1.60.118 [local]
 brave-keyring 1.13 [local]
 brightness-udev 0.5.1-3 [Ubuntu/jammy universe]
 brightnessctl 0.5.1-3 [Ubuntu/jammy universe]
@@ -302,8 +302,8 @@ findutils 4.8.0-1ubuntu3 [Ubuntu/jammy main]
 finger 0.17-17 [Ubuntu/jammy universe]
 firefox 1:1snap1-0ubuntu2 [Ubuntu/jammy main]
 firefox-locale-en 1:1snap1-0ubuntu2 [Ubuntu/jammy universe]
-firefoxpwa 2.8.0 [FirefoxPWA/any main]
-firmware-sof-signed 2.0-1ubuntu4.1 [Ubuntu/jammy restricted]
+firefoxpwa 2.9.0 [FirefoxPWA/any main]
+firmware-sof-signed 2.0-1ubuntu4.2 [Ubuntu/jammy restricted]
 flatpak 1.12.7-1 [Ubuntu/jammy universe]
 flex 2.6.4-8build2 [Ubuntu/jammy main]
 flintqs 1:1.0-3build1 [Ubuntu/jammy universe]
@@ -562,7 +562,7 @@ gftp 2.9.1~beta-1 [Ubuntu/jammy universe]
 gftp-common 2.9.1~beta-1 [Ubuntu/jammy universe]
 gftp-gtk 2.9.1~beta-1 [Ubuntu/jammy universe]
 gftp-text 2.9.1~beta-1 [Ubuntu/jammy universe]
-gh 2.38.0 [gh/stable main]
+gh 2.39.1 [gh/stable main]
 ghc 8.8.4-3 [Ubuntu/jammy universe]
 ghostscript 9.55.0~dfsg1-0ubuntu5.5 [Ubuntu/jammy main]
 ghostscript-x 9.55.0~dfsg1-0ubuntu5.5 [Ubuntu/jammy main]
@@ -706,6 +706,7 @@ gnuplot 5.4.2+dfsg2-2 [Ubuntu/jammy universe]
 gnuplot-data 5.4.2+dfsg2-2 [Ubuntu/jammy universe]
 gnuplot-qt 5.4.2+dfsg2-2 [Ubuntu/jammy universe]
 golly 3.3-1build1 [Ubuntu/jammy universe]
+google-chrome-stable 119.0.6045.159-1 [Google/stable main]
 gperf 3.1-1build1 [Ubuntu/jammy universe]
 gpg 2.2.27-3ubuntu2.1 [Ubuntu/jammy main]
 gpg-agent 2.2.27-3ubuntu2.1 [Ubuntu/jammy main]
@@ -822,7 +823,7 @@ inputattach 1:1.7.1-1build2 [Ubuntu/jammy main]
 install-info 6.8-4build1 [Ubuntu/jammy main]
 insync 3.2.6.40863-focal [local]
 intel-media-va-driver 22.3.1+dfsg1-1ubuntu2 [Ubuntu/jammy universe]
-intel-microcode 3.20230808.0ubuntu0.22.04.1 [Ubuntu/jammy main]
+intel-microcode 3.20231114.0ubuntu0.22.04.1 [Ubuntu/jammy main]
 intel-opencl-icd 22.14.22890-1 [Ubuntu/jammy universe]
 intltool 0.51.0-6 [Ubuntu/jammy universe]
 intltool-debian 0.35.0+20060710.5 [Ubuntu/jammy main]
@@ -939,7 +940,7 @@ libaprutil1 1.6.1-5ubuntu4.22.04.2 [Ubuntu/jammy main]
 libaprutil1-dbd-sqlite3 1.6.1-5ubuntu4.22.04.2 [Ubuntu/jammy main]
 libaprutil1-ldap 1.6.1-5ubuntu4.22.04.2 [Ubuntu/jammy main]
 libapt-pkg-perl 0.1.40build2 [Ubuntu/jammy main]
-libapt-pkg6.0 2.4.10 [Ubuntu/jammy main]
+libapt-pkg6.0 2.4.11 [Ubuntu/jammy main]
 libarchive-cpio-perl 0.10-1.1 [Ubuntu/jammy main]
 libarchive-dev 3.6.0-1ubuntu1 [Ubuntu/jammy main]
 libarchive-tools 3.6.0-1ubuntu1 [Ubuntu/jammy universe]
@@ -2679,7 +2680,7 @@ libpq5 14.9-0ubuntu0.22.04.1 [Ubuntu/jammy main]
 libprimecount7 7.2+ds-6 [Ubuntu/jammy universe]
 libprimesieve9 7.8+ds-1 [Ubuntu/jammy universe]
 libproc-processtable-perl 0.634-1build1 [Ubuntu/jammy main]
-libprocps8 2:3.3.17-6ubuntu2 [Ubuntu/jammy main]
+libprocps8 2:3.3.17-6ubuntu2.1 [Ubuntu/jammy main]
 libproj-dev 8.2.1-1 [Ubuntu/jammy universe]
 libproj22 8.2.1-1 [Ubuntu/jammy universe]
 libprotobuf-lite23 3.12.4-1ubuntu7.22.04.1 [Ubuntu/jammy main]
@@ -3494,7 +3495,7 @@ lightdm 1.30.0-0ubuntu5 [Ubuntu/jammy universe]
 links 2.25-1build1 [Ubuntu/jammy universe]
 lintian 2.114.0ubuntu1.2 [Ubuntu/jammy main]
 linux-base 4.5ubuntu9 [Ubuntu/jammy main]
-linux-firmware 20220329.git681281e4-0ubuntu3.21 [Ubuntu/jammy main]
+linux-firmware 20220329.git681281e4-0ubuntu3.22 [Ubuntu/jammy main]
 linux-generic 5.15.0.88.85 [Ubuntu/jammy main]
 linux-generic-hwe-20.04 5.15.0.88.85 [Ubuntu/jammy main]
 linux-generic-hwe-22.04 6.2.0.36.37~22.04.14 [Ubuntu/jammy main]
@@ -3800,7 +3801,7 @@ printer-driver-ptouch 1.6-2build1 [Ubuntu/jammy main]
 printer-driver-pxljr 1.4+repack0-6build1 [Ubuntu/jammy main]
 printer-driver-sag-gdi 0.1-8 [Ubuntu/jammy main]
 printer-driver-splix 2.0.0+svn315-7fakesync1ubuntu0.22.04.1 [Ubuntu/jammy main]
-procps 2:3.3.17-6ubuntu2 [Ubuntu/jammy main]
+procps 2:3.3.17-6ubuntu2.1 [Ubuntu/jammy main]
 proj-bin 8.2.1-1 [Ubuntu/jammy universe]
 proj-data 8.2.1-1 [Ubuntu/jammy universe]
 protonmail-bridge 3.5.1-1 [local]
@@ -4022,8 +4023,8 @@ python3-pickleshare 0.7.5-5 [Ubuntu/jammy universe]
 python3-pikepdf 5.0.1+dfsg-1 [Ubuntu/jammy universe]
 python3-pil 9.0.1-1ubuntu0.1 [Ubuntu/jammy main]
 python3-pil.imagetk 9.0.1-1ubuntu0.1 [Ubuntu/jammy universe]
-python3-pip 22.0.2+dfsg-1ubuntu0.3 [Ubuntu/jammy universe]
-python3-pip-whl 22.0.2+dfsg-1ubuntu0.3 [Ubuntu/jammy universe]
+python3-pip 22.0.2+dfsg-1ubuntu0.4 [Ubuntu/jammy universe]
+python3-pip-whl 22.0.2+dfsg-1ubuntu0.4 [Ubuntu/jammy universe]
 python3-pkg-resources 59.6.0-1.2ubuntu0.22.04.1 [Ubuntu/jammy main]
 python3-pkgconfig 1.5.5-1 [Ubuntu/jammy universe]
 python3-platformdirs 2.5.1-1 [Ubuntu/jammy universe]
@@ -4219,7 +4220,7 @@ r-cran-foreign 0.8.85-1.2204.0 [CRAN/jammy-cran40 ]
 r-cran-kernsmooth 2.23-22-1.2204.0 [CRAN/jammy-cran40 ]
 r-cran-lattice 0.22-5-1.2204.0 [CRAN/jammy-cran40 ]
 r-cran-mass 7.3-60-2.2204.0 [CRAN/jammy-cran40 ]
-r-cran-matrix 1.6-1.1-1.2204.0 [CRAN/jammy-cran40 ]
+r-cran-matrix 1.6-2-1.2204.0 [CRAN/jammy-cran40 ]
 r-cran-mgcv 1.9-0-1.2204.0 [CRAN/jammy-cran40 ]
 r-cran-nlme 3.1.163-1.2204.0 [CRAN/jammy-cran40 ]
 r-cran-nnet 7.3-19-2.2204.0 [CRAN/jammy-cran40 ]
@@ -4304,7 +4305,7 @@ shellcheck 0.8.0-2 [Ubuntu/jammy universe]
 shfmt 3.7.0-pacstall1 [local]
 shfmt-bin 3.4.3-1 [local]
 shim-signed 1.51.3+15.7-0ubuntu1 [Ubuntu/jammy main]
-signal-desktop 6.38.0 [. xenial/xenial main]
+signal-desktop 6.39.0 [. xenial/xenial main]
 signon-plugin-oauth2 0.25-2 [Ubuntu/jammy universe]
 silversearcher-ag 2.2.0+git20200805-1 [Ubuntu/jammy universe]
 simple-scan 42.0-1 [Ubuntu/jammy main]
@@ -4463,9 +4464,9 @@ tumbler 4.16.0-1 [Ubuntu/jammy universe]
 tumbler-common 4.16.0-1 [Ubuntu/jammy universe]
 tzdata 2023c-0ubuntu0.22.04.2 [Ubuntu/jammy main]
 ubuntu-advantage-desktop-daemon 1.10~22.04.1 [Ubuntu/jammy main]
-ubuntu-advantage-tools 29.4~22.04 [Ubuntu/jammy main]
+ubuntu-advantage-tools 29.4~22.04 [local]
 ubuntu-docs 22.04.5 [Ubuntu/jammy main]
-ubuntu-drivers-common 1:0.9.6.2~0.22.04.4 [Ubuntu/jammy main]
+ubuntu-drivers-common 1:0.9.6.2~0.22.04.6 [Ubuntu/jammy main]
 ubuntu-keyring 2021.03.26 [Ubuntu/jammy main]
 ubuntu-minimal 1.481.1 [Ubuntu/jammy main]
 ubuntu-mono 20.10-0ubuntu2 [Ubuntu/jammy main]
@@ -4693,11 +4694,11 @@ zstd 1.4.8+dfsg-3build1 [Ubuntu/jammy main]
 
 ```txt
 name: batsignal version: 1.6.4-pacstall1
-name: bitwarden version: 2023.9.1
-name: brave-browser version: 1.59.124
+name: bitwarden version: 2023.10.1
+name: brave-browser version: 1.60.118
 name: brave-keyring version: 1.13
 name: btop version: 1.2.13-pacstall1
-name: google-chrome-stable version: 116.0.5845.140-1
+name: google-chrome-stable version: 119.0.6045.159-1
 name: htop version: 3.2.2-pacstall1
 name: nala version: 0.14.0
 name: neofetch version: 7.1.0-pacstall1
@@ -4705,7 +4706,7 @@ name: polybar version: 3.6.3-pacstall1
 name: protonmail-bridge version: 3.5.1-1
 name: quarto version: 1.3.450
 name: shfmt version: 3.7.0-pacstall1
-name: signal-desktop version: 6.38.0
+name: signal-desktop version: 6.39.0
 name: thorium-browser version: 117.0.5938.157-1
 name: wezterm version: 20230712-072601-f4abf8fd-pacstall1
 name: zoom version: 5.16.5.303
@@ -4726,7 +4727,7 @@ blindfold v1.0.7:
     blindfold
 bob-nvim v2.6.0:
     bob
-cargo-binstall v1.4.4:
+cargo-binstall v1.4.6:
     cargo-binstall
 cargo-edit v0.12.2:
     cargo-add
@@ -4735,12 +4736,12 @@ cargo-edit v0.12.2:
     cargo-upgrade
 cargo-info v0.7.6:
     cargo-info
-cargo-update v13.2.0:
+cargo-update v13.2.1:
     cargo-install-update
     cargo-install-update-config
 cargo-watch v8.4.1:
     cargo-watch
-coreutils v0.0.22:
+coreutils v0.0.23:
     coreutils
 despell v1.0.1:
     despell
@@ -4775,7 +4776,7 @@ lscolors v0.15.0:
     lscolors
 mdbook v0.4.35:
     mdbook
-mdbook-admonish v1.13.1:
+mdbook-admonish v1.14.0:
     mdbook-admonish
 mdbook-svgbob v0.2.1:
     mdbook-svgbob
@@ -4785,26 +4786,25 @@ menyoki v1.7.0:
     menyoki
 mprocs v0.6.4:
     mprocs
-nu v0.86.0:
+nu v0.87.0:
     nu
-numbat-cli v1.7.0:
+numbat-cli v1.8.0:
     numbat
 pastel v0.9.0:
     pastel
-porsmo v0.2.5:
+porsmo v0.3.0:
     porsmo
 pueue v3.3.1:
     pueue
     pueued
 ripgrep v13.0.0:
     rg
-rtx-cli v2023.11.2:
+rtx-cli v2023.11.4:
     rtx
 samply v0.11.0:
     samply
-sccache v0.7.1:
+sccache v0.7.2:
     sccache
-    sccache-dist
 sd v1.0.0:
     sd
 shellharden v4.3.0:
@@ -4815,7 +4815,7 @@ speedtest-rs v0.1.4:
     speedtest-rs
 spotifyd v0.3.5:
     spotifyd
-stylua v0.18.2:
+stylua v0.19.1:
     stylua
 taplo-cli v0.8.1:
     taplo
@@ -4833,11 +4833,11 @@ wiki-tui v0.8.2:
     wiki-tui
 xcolor v0.5.1:
     xcolor
-xh v0.19.4:
+xh v0.20.1:
     xh
 xplr v0.21.3:
     xplr
-zellij v0.39.0:
+zellij v0.39.1:
     zellij
 zeta-note v0.1.8:
     zeta-note
@@ -4872,7 +4872,7 @@ package daltonlens 0.1.5, installed using Python 3.10.12
  - daltonlens-python
 package ds-format 4.0.1, installed using Python 3.10.12
  - ds
-package euporie 2.5.3, installed using Python 3.10.12
+package euporie 2.6.1, installed using Python 3.10.12
  - euporie
  - euporie-console
  - euporie-hub
@@ -4882,7 +4882,7 @@ package flake8 6.1.0, installed using Python 3.10.12
  - flake8
 package fprettify 0.3.7, installed using Python 3.10.12
  - fprettify
-package globus-cli 3.18.0, installed using Python 3.10.12
+package globus-cli 3.19.0, installed using Python 3.10.12
  - globus
 package gorps 0.9.1, installed using Python 3.10.12
  - gorps
@@ -4911,7 +4911,7 @@ package lookatme 2.5.5, installed using Python 3.10.12
  - lam
  - lookatme
  - witnessme
-package mypy 1.6.1, installed using Python 3.10.12
+package mypy 1.7.0, installed using Python 3.10.12
  - dmypy
  - mypy
  - mypyc
@@ -4939,7 +4939,7 @@ package pandoc-include 1.2.1, installed using Python 3.10.12
 package pdfcropmargins 2.0.3, installed using Python 3.10.12
  - pdf-crop-margins
  - pdfcropmargins
-package pipenv 2023.10.24, installed using Python 3.10.12
+package pipenv 2023.11.15, installed using Python 3.10.12
  - pipenv
  - pipenv-resolver
 package pipreqs 0.4.13, installed using Python 3.10.12
@@ -4962,7 +4962,7 @@ package pyqt5 5.15.10, installed using Python 3.10.12
  - pylupdate5
  - pyrcc5
  - pyuic5
-package pyright 1.1.335, installed using Python 3.10.12
+package pyright 1.1.336, installed using Python 3.10.12
  - pyright
  - pyright-langserver
  - pyright-python
@@ -5017,7 +5017,7 @@ ascii-image-converter: github.com/TheZoraiz/ascii-image-converter@v1.13.1
                   gum: github.com/charmbracelet/gum@v0.11.0
                   gup: github.com/nao1215/gup@v0.24.0
               lazygit: github.com/jesseduffield/lazygit@v0.40.2
-                   lf: github.com/gokcehan/lf@v0.0.0-20231108121601-ade9e986e54b
+                   lf: github.com/gokcehan/lf@v0.0.0-20231112144306-9698ecddf17c
                   nap: github.com/maaslalani/nap@v0.1.1
                 rmapi: github.com/juruen/rmapi@(devel)
                     s: github.com/zquestz/s@v0.6.9
@@ -5054,7 +5054,7 @@ Yaru-dark Gtk Theme                                                             
 Name                       Version                     Rev    Tracking         Publisher      Notes
 bare                       1.0                         5      latest/stable    canonical**    base
 canonical-livepatch        10.7.0                      246    latest/stable    canonical**    -
-cmake                      3.27.7                      1336   latest/stable    crascit**      classic
+cmake                      3.27.8                      1345   latest/stable    crascit**      classic
 core                       16-2.60.4                   16202  latest/stable    canonical**    core
 core18                     20230901                    2796   latest/stable    canonical**    base
 core20                     20230801                    2015   latest/stable    canonical**    base

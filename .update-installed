@@ -37,12 +37,13 @@ run_updates() {
     echo_and_run pipx upgrade-all
     echo_and_run gup update
     # Single programs
-    echo_and_run rclone selfupdate
-    echo_and_run pyenv update
-    echo_and_run rye self update
-    echo_and_run poetry self update
-    echo_and_run bun upgrade
     echo_and_run bob update --all
+    echo_and_run bun upgrade
+    echo_and_run dprint config --config ~/.config/dprint/dprint.jsonc update
+    echo_and_run poetry self update
+    echo_and_run pyenv update
+    echo_and_run rclone selfupdate
+    echo_and_run rye self update
 }
 
 try_fix_ppa() {

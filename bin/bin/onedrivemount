@@ -2,3 +2,5 @@
 sh -c "rclone --vfs-cache-mode writes mount onedrive: ~/OneDrive" &
 
 sh -c "rclone --vfs-cache-mode writes mount BoxSync: ~/BoxSync" &
+
+sh -c "rclone --vfs-cache-mode writes mount ProtonDrive: ~/protondrive" &
