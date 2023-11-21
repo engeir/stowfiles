@@ -5,14 +5,16 @@ return {
         require("conform").setup({
             -- Map of filetype to formatters
             formatters_by_ft = {
+                ["_"] = { "trim_whitespace", "trim_newlines" },
                 bash = { "shfmt", "shellharden", "shellcheck", "beautysh" },
-                css = { "dprint" },
+                css = {{ "dprint", "prettierd" }},
                 d2 = { "d2" },
                 dockerfile = { "dprint" },
                 go = { "gofmt" },
                 javascript = { { "prettierd", "dprint", "prettier" } },
                 javascriptreact = { { "prettierd", "dprint", "prettier" } },
                 json = { "dprint" },
+                jsonc = { "dprint" },
                 lua = { "stylua" },
                 markdown = { "dprint" },
                 python = { "ruff_fix", "ruff_format" }, -- Trying to remove black(d), ruff takes care of this now
@@ -23,7 +25,6 @@ return {
                 typescriptreact = { { "prettierd", "dprint", "prettier" } },
                 yaml = { { "prettierd", "prettier" } },
                 zsh = { "shfmt", "shellharden", "shellcheck", "beautysh" },
-                ["_"] = { "trim_whitespace", "trim_newlines" },
             },
             format_on_save = false,
             format_after_save = false,

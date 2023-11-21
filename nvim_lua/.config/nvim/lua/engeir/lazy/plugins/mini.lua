@@ -137,6 +137,7 @@ return {
                 })
             end
 
+            set_comment("jsonc", "//%s")
             set_comment("mplstyle", "#%s")
             set_comment("ncl", ";%s")
             set_comment("nu", "#%s")
