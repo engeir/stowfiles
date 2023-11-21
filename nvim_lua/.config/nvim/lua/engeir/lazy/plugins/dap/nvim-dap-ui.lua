@@ -1,5 +1,6 @@
 return {
     "rcarriga/nvim-dap-ui",
+    enabled = IS_KNOWN,
     dependencies = {
         "mfussenegger/nvim-dap",
     },

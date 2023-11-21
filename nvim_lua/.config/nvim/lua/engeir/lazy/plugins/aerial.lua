@@ -1,6 +1,5 @@
 return {
     "stevearc/aerial.nvim",
-    enabled = IS_KNOWN,
     event = { "BufReadPre", "BufNewFile" },
     dependencies = "nvim-tree/nvim-web-devicons", -- optional, for file icons
     config = function()

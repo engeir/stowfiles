@@ -1,5 +1,6 @@
 return {
     "mfussenegger/nvim-dap-python",
+    enabled = IS_KNOWN,
     ft = "python",
     dependencies = {
         "mfussenegger/nvim-dap",
