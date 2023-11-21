@@ -1,5 +1,17 @@
 # Changelog
 
+## [1.2.0](https://github.com/engeir/stowfiles/compare/v1.1.0...v1.2.0) (2023-11-21)
+
+
+### Features
+
+* **nvim:** in nvc, pass all args to nvim command ([1b3224e](https://github.com/engeir/stowfiles/commit/1b3224eff797da8278148d3c2aecbe1f5a3f954b))
+
+
+### Bug Fixes
+
+* **nvim:** update desc of telescope find diagnostics ([39042be](https://github.com/engeir/stowfiles/commit/39042bebb630b72cc686dc784cd0c5f1f488b31d))
+
 ## [1.1.0](https://github.com/engeir/stowfiles/compare/v1.0.0...v1.1.0) (2023-11-04)
 
 
