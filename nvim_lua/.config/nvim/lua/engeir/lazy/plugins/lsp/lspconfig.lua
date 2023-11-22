@@ -143,5 +143,9 @@ return {
             on_attach = on_attach,
             settings = require("engeir.lazy.plugins.lsp.lspconfig-settings.lua_ls"),
         })
+        lspconf["marksman"].setup({
+            capabilities = capabilities,
+            on_attach = on_attach,
+        })
     end,
 }
