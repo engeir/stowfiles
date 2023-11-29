@@ -27,9 +27,10 @@ end
 -- Check if the computer is one I recognise
 IS_KNOWN = (function()
     local output = vim.fn.systemlist("uname -n")
-    local known = { "ubuntu-work", "eenMBP.local" }
+    local known = { "ubuntu-work", "eenMBP" }
     for _, v in ipairs(known) do
-        if v == output[1] then
+        -- if v == output[1] then
+        if output[1]:match(v) then
             return true
         end
     end
