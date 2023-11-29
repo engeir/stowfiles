@@ -2,6 +2,7 @@
 
 if diff "$HOME/.cache/bspwm/wallpaper.jpg" "$HOME/stowfiles/assets/black.jpg" >/dev/null; then
     FILE="$(find "$HOME"/syncthing/wallpapers/*.jpg | sort -R | sed 1q)"
+    convert "$FILE" -blur 0x9 "$HOME/.cache/bspwm/wallpaper.jpg"
     cp "$FILE" "$HOME/.cache/bspwm/wallpaper.jpg"
     m wallpaper "$FILE"
 else
