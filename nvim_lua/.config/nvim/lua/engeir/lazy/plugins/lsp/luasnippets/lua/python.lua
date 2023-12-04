@@ -44,4 +44,7 @@ return {
     s({ trig = "inpy" }, {
         t("import numpy as np"),
     }),
+    s({ trig = "ixr" }, {
+        t("import xarray as xr"),
+    }),
 }

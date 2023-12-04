@@ -30,7 +30,7 @@ IS_KNOWN = (function()
     local known = { "ubuntu-work", "eenMBP" }
     for _, v in ipairs(known) do
         -- if v == output[1] then
-        if output[1]:match(v) then
+        if output[1]:match(v) or v == output[1] then
             return true
         end
     end
