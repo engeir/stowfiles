@@ -1,5 +1,17 @@
 # Changelog
 
+## [1.3.0](https://github.com/engeir/stowfiles/compare/v1.2.0...v1.3.0) (2023-12-04)
+
+
+### Features
+
+* **nvim:** add table mode plugin for markdown ([d0cf674](https://github.com/engeir/stowfiles/commit/d0cf6741e601570a329157c3967a05475b1dcd21))
+
+
+### Bug Fixes
+
+* **nvim:** find exact match as well as substring in IS_KNOWN ([82fe9e3](https://github.com/engeir/stowfiles/commit/82fe9e34ec2f15bca9b4dd95e1c2ce6b702f6595))
+
 ## [1.2.0](https://github.com/engeir/stowfiles/compare/v1.1.0...v1.2.0) (2023-11-21)
 
 
