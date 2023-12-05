@@ -1,5 +1,17 @@
 # Changelog
 
+## [1.4.0](https://github.com/engeir/stowfiles/compare/v1.3.1...v1.4.0) (2023-12-05)
+
+
+### Features
+
+* **nvim:** update to harpoon v2 ([7db5957](https://github.com/engeir/stowfiles/commit/7db5957de13b70db200680d7a6e0c38501b83234))
+
+
+### Miscellaneous
+
+* **software:** small update ([aa9c26e](https://github.com/engeir/stowfiles/commit/aa9c26e0b67584da23ef32740e679c0ebc6f521d))
+
 ## [1.3.1](https://github.com/engeir/stowfiles/compare/v1.3.0...v1.3.1) (2023-12-05)
 
 
