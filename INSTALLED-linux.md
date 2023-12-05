@@ -4799,7 +4799,7 @@ pueue v3.3.2:
     pueued
 ripgrep v14.0.3:
     rg
-rtx-cli v2023.12.7:
+rtx-cli v2023.12.8:
     rtx
 samply v0.11.0:
     samply
@@ -4847,7 +4847,7 @@ zeta-note v0.1.8:
 
 ```txt
 manual pages are exposed at /home/een023/.local/share/man
-package ansible-core 2.16.0, installed using Python 3.10.12
+package ansible-core 2.16.1, installed using Python 3.10.12
  - ansible
  - ansible-config
  - ansible-connection
