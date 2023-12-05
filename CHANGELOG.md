@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.3.1](https://github.com/engeir/stowfiles/compare/v1.3.0...v1.3.1) (2023-12-05)
+
+
+### Continuous Integration
+
+* **README:** add latest version to README ([da82cb1](https://github.com/engeir/stowfiles/commit/da82cb12f0acf5e19feba4320cfce43f3d9b3aa9))
+
 ## [1.3.0](https://github.com/engeir/stowfiles/compare/v1.2.0...v1.3.0) (2023-12-04)
 
 
