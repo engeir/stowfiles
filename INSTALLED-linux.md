@@ -90,9 +90,9 @@ bison 2:3.8.2+dfsg-1build1 [Ubuntu/jammy main]
 bitwarden 2023.10.1 [local]
 black 21.12b0-1 [Ubuntu/jammy universe]
 blt 2.5.3+dfsg-4.1build2 [Ubuntu/jammy main]
-bluez 5.64-0ubuntu1 [Ubuntu/jammy main]
-bluez-cups 5.64-0ubuntu1 [Ubuntu/jammy main]
-bluez-obexd 5.64-0ubuntu1 [Ubuntu/jammy main]
+bluez 5.64-0ubuntu1.1 [Ubuntu/jammy main]
+bluez-cups 5.64-0ubuntu1.1 [Ubuntu/jammy main]
+bluez-obexd 5.64-0ubuntu1.1 [Ubuntu/jammy main]
 bluez-tools 2.0~20170911.0.7cb788c-4 [Ubuntu/jammy universe]
 bolt 0.9.2-1 [Ubuntu/jammy main]
 borgbackup 1.2.0-1 [Ubuntu/jammy universe]
@@ -188,7 +188,7 @@ cups-ipp-utils 2.4.1op1-1ubuntu4.7 [Ubuntu/jammy main]
 cups-pk-helper 0.2.6-1ubuntu5 [Ubuntu/jammy main]
 cups-ppdc 2.4.1op1-1ubuntu4.7 [Ubuntu/jammy main]
 cups-server-common 2.4.1op1-1ubuntu4.7 [Ubuntu/jammy main]
-curl 7.81.0-1ubuntu1.14 [Ubuntu/jammy main]
+curl 7.81.0-1ubuntu1.15 [Ubuntu/jammy main]
 cvs 2:1.12.13+real-28 [Ubuntu/jammy universe]
 cvsps 2.1-8build2 [Ubuntu/jammy universe]
 cysignals-tools 1.11.2+ds-1build1 [Ubuntu/jammy universe]
@@ -280,6 +280,7 @@ evince 42.3-0ubuntu3.1 [Ubuntu/jammy main]
 evince-common 42.3-0ubuntu3.1 [Ubuntu/jammy main]
 evolution-data-server 3.44.4-0ubuntu1.1 [Ubuntu/jammy main]
 evolution-data-server-common 3.44.4-0ubuntu1.1 [Ubuntu/jammy main]
+exfatprogs 1.1.3-1 [Ubuntu/jammy universe]
 exif 0.6.22-2 [Ubuntu/jammy universe]
 exiv2 0.27.5-3ubuntu1 [Ubuntu/jammy universe]
 exo-utils 4.16.3-1 [Ubuntu/jammy universe]
@@ -706,7 +707,7 @@ gnuplot 5.4.2+dfsg2-2 [Ubuntu/jammy universe]
 gnuplot-data 5.4.2+dfsg2-2 [Ubuntu/jammy universe]
 gnuplot-qt 5.4.2+dfsg2-2 [Ubuntu/jammy universe]
 golly 3.3-1build1 [Ubuntu/jammy universe]
-google-chrome-stable 119.0.6045.199-1 [Google/stable main]
+google-chrome-stable 120.0.6099.71-1 [Google/stable main]
 gperf 3.1-1build1 [Ubuntu/jammy universe]
 gpg 2.2.27-3ubuntu2.1 [Ubuntu/jammy main]
 gpg-agent 2.2.27-3ubuntu2.1 [Ubuntu/jammy main]
@@ -1042,7 +1043,7 @@ libblockdev-swap2 2.26-1 [Ubuntu/jammy main]
 libblockdev-utils2 2.26-1 [Ubuntu/jammy main]
 libblockdev2 2.26-1 [Ubuntu/jammy main]
 libblosc1 1.21.1+ds2-2 [Ubuntu/jammy universe]
-libbluetooth3 5.64-0ubuntu1 [Ubuntu/jammy main]
+libbluetooth3 5.64-0ubuntu1.1 [Ubuntu/jammy main]
 libbluray2 1:1.3.1-1 [Ubuntu/jammy universe]
 libboost-dev 1.74.0.3ubuntu7 [Ubuntu/jammy main]
 libboost-filesystem1.74.0 1.74.0-14ubuntu3 [Ubuntu/jammy main]
@@ -1209,11 +1210,11 @@ libcups2 2.4.1op1-1ubuntu4.7 [Ubuntu/jammy main]
 libcups2:i386 2.4.1op1-1ubuntu4.7 [Ubuntu/jammy main]
 libcupsfilters1 1.28.15-0ubuntu1.2 [Ubuntu/jammy main]
 libcupsimage2 2.4.1op1-1ubuntu4.7 [Ubuntu/jammy main]
-libcurl3-gnutls 7.81.0-1ubuntu1.14 [Ubuntu/jammy main]
-libcurl3-gnutls:i386 7.81.0-1ubuntu1.14 [Ubuntu/jammy main]
-libcurl4 7.81.0-1ubuntu1.14 [Ubuntu/jammy main]
-libcurl4-openssl-dev 7.81.0-1ubuntu1.14 [Ubuntu/jammy main]
-libcurl4:i386 7.81.0-1ubuntu1.14 [Ubuntu/jammy main]
+libcurl3-gnutls 7.81.0-1ubuntu1.15 [Ubuntu/jammy main]
+libcurl3-gnutls:i386 7.81.0-1ubuntu1.15 [Ubuntu/jammy main]
+libcurl4 7.81.0-1ubuntu1.15 [Ubuntu/jammy main]
+libcurl4-openssl-dev 7.81.0-1ubuntu1.15 [Ubuntu/jammy main]
+libcurl4:i386 7.81.0-1ubuntu1.15 [Ubuntu/jammy main]
 libcxsparse3 1:5.10.1+dfsg-4build1 [Ubuntu/jammy universe]
 libdaemon0 0.14-7.1ubuntu3 [Ubuntu/jammy main]
 libdata-compare-perl 1.27-1 [Ubuntu/jammy universe]
@@ -2676,7 +2677,7 @@ libpotrace0 1.16-2 [Ubuntu/jammy universe]
 libppl-c4 1:1.2-8.1build1 [Ubuntu/jammy universe]
 libppl-dev 1:1.2-8.1build1 [Ubuntu/jammy universe]
 libppl14 1:1.2-8.1build1 [Ubuntu/jammy universe]
-libpq5 14.9-0ubuntu0.22.04.1 [Ubuntu/jammy main]
+libpq5 14.10-0ubuntu0.22.04.1 [Ubuntu/jammy main]
 libprimecount7 7.2+ds-6 [Ubuntu/jammy universe]
 libprimesieve9 7.8+ds-1 [Ubuntu/jammy universe]
 libproc-processtable-perl 0.634-1build1 [Ubuntu/jammy main]
@@ -3874,7 +3875,7 @@ python3-compizconfig 1:0.9.14.1+22.04.20220820-0ubuntu1 [Ubuntu/jammy universe]
 python3-configobj 5.0.6-5 [Ubuntu/jammy main]
 python3-cov-core 1.15.0-3build1 [Ubuntu/jammy universe]
 python3-coverage 6.2+dfsg1-2build1 [Ubuntu/jammy universe]
-python3-cryptography 3.4.8-1ubuntu2 [Ubuntu/jammy main]
+python3-cryptography 3.4.8-1ubuntu2.1 [Ubuntu/jammy main]
 python3-cups 2.0.1-5build1 [Ubuntu/jammy main]
 python3-cupshelpers 1.5.16-0ubuntu3 [Ubuntu/jammy main]
 python3-cvxopt 1.2.7+dfsg-2build2 [Ubuntu/jammy universe]
@@ -4137,7 +4138,7 @@ python3-tzlocal 2.1-1 [Ubuntu/jammy universe]
 python3-ufolib2 0.13.1+dfsg1-1 [Ubuntu/jammy universe]
 python3-unicodedata2 14.0.0+ds-8 [Ubuntu/jammy universe]
 python3-uno 1:7.3.7-0ubuntu0.22.04.3 [Ubuntu/jammy main]
-python3-update-manager 1:22.04.10 [Ubuntu/jammy main]
+python3-update-manager 1:22.04.17 [Ubuntu/jammy main]
 python3-uritemplate 3.0.1-1 [Ubuntu/jammy universe]
 python3-urllib3 1.26.5-1~exp1ubuntu0.1 [Ubuntu/jammy main]
 python3-vcversioner 2.16.0.0-6 [Ubuntu/jammy universe]
@@ -4305,7 +4306,7 @@ shellcheck 0.8.0-2 [Ubuntu/jammy universe]
 shfmt 3.7.0-pacstall1 [local]
 shfmt-bin 3.4.3-1 [local]
 shim-signed 1.51.3+15.7-0ubuntu1 [Ubuntu/jammy main]
-signal-desktop 6.40.0 [. xenial/xenial main]
+signal-desktop 6.41.0 [. xenial/xenial main]
 signon-plugin-oauth2 0.25-2 [Ubuntu/jammy universe]
 silversearcher-ag 2.2.0+git20200805-1 [Ubuntu/jammy universe]
 simple-scan 42.0-1 [Ubuntu/jammy main]
@@ -4314,7 +4315,7 @@ singular-data 1:4.2.1-p3+ds-1 [Ubuntu/jammy universe]
 singular-doc 1:4.2.1-p3+ds-1 [Ubuntu/jammy universe]
 singular-modules 1:4.2.1-p3+ds-1 [Ubuntu/jammy universe]
 singular-ui 1:4.2.1-p3+ds-1 [Ubuntu/jammy universe]
-slack-desktop 4.35.126 [slack/jessie main]
+slack-desktop 4.35.131 [slack/jessie main]
 slirp4netns 1.0.1-2 [Ubuntu/jammy universe]
 slop 7.5-1.1build2 [Ubuntu/jammy universe]
 snapd 2.58+22.04.1 [Ubuntu/jammy main]
@@ -4519,7 +4520,7 @@ unrar 1:6.1.5-1 [Ubuntu/jammy multiverse]
 unrtf 0.21.10-clean-1 [Ubuntu/jammy universe]
 unzip 6.0-26ubuntu3.1 [Ubuntu/jammy main]
 update-inetd 4.51 [Ubuntu/jammy main]
-update-manager-core 1:22.04.10 [Ubuntu/jammy main]
+update-manager-core 1:22.04.17 [Ubuntu/jammy main]
 update-notifier-common 3.192.54.6 [Ubuntu/jammy main]
 upower 0.99.17-1 [Ubuntu/jammy main]
 ure 1:7.3.7-0ubuntu0.22.04.3 [Ubuntu/jammy main]
@@ -4698,7 +4699,7 @@ name: bitwarden version: 2023.10.1
 name: brave-browser version: 1.60.118
 name: brave-keyring version: 1.13
 name: btop version: 1.2.13-pacstall1
-name: google-chrome-stable version: 119.0.6045.199-1
+name: google-chrome-stable version: 120.0.6099.71-1
 name: htop version: 3.2.2-pacstall1
 name: nala version: 0.14.0
 name: neofetch version: 7.1.0-pacstall1
@@ -4706,7 +4707,7 @@ name: polybar version: 3.6.3-pacstall1
 name: protonmail-bridge version: 3.5.1-1
 name: quarto version: 1.3.450
 name: shfmt version: 3.7.0-pacstall1
-name: signal-desktop version: 6.40.0
+name: signal-desktop version: 6.41.0
 name: thorium-browser version: 117.0.5938.157-1
 name: wezterm version: 20230712-072601-f4abf8fd-pacstall1
 name: zoom version: 5.16.10.668
@@ -4799,7 +4800,7 @@ pueue v3.3.2:
     pueued
 ripgrep v14.0.3:
     rg
-rtx-cli v2023.12.8:
+rtx-cli v2023.12.18:
     rtx
 samply v0.11.0:
     samply
@@ -4904,7 +4905,7 @@ package flake8 6.1.0, installed using Python 3.10.12
  - flake8
 package fprettify 0.3.7, installed using Python 3.10.12
  - fprettify
-package globus-cli 3.19.0, installed using Python 3.10.12
+package globus-cli 3.20.0, installed using Python 3.10.12
  - globus
 package gorps 0.9.1, installed using Python 3.10.12
  - gorps
@@ -4987,7 +4988,7 @@ package pyqt5 5.15.10, installed using Python 3.10.12
  - pylupdate5
  - pyrcc5
  - pyuic5
-package pyright 1.1.338, installed using Python 3.10.12
+package pyright 1.1.339, installed using Python 3.10.12
  - pyright
  - pyright-langserver
  - pyright-python
@@ -5034,7 +5035,7 @@ package yapf 0.40.2, installed using Python 3.10.12
 ```txt
 ascii-image-converter: github.com/TheZoraiz/ascii-image-converter@v1.13.1
             bluetuith: github.com/darkhz/bluetuith@v0.1.9
-                   d2: oss.terrastruct.com/d2@v0.6.1
+                   d2: oss.terrastruct.com/d2@v0.6.2
                 doggo: github.com/mr-karan/doggo/cmd/doggo@v0.5.7
                  draw: github.com/maaslalani/draw@v0.1.1
                fast-p: github.com/bellecp/fast-p@v0.2.5
@@ -5042,7 +5043,7 @@ ascii-image-converter: github.com/TheZoraiz/ascii-image-converter@v1.13.1
             git-sizer: github.com/github/git-sizer@v1.5.0
         golangci-lint: github.com/golangci/golangci-lint/cmd/golangci-lint@v1.55.2
                   gum: github.com/charmbracelet/gum@v0.12.0
-                  gup: github.com/nao1215/gup@v0.24.0
+                  gup: github.com/nao1215/gup@v0.24.1
               lazygit: github.com/jesseduffield/lazygit@v0.40.2
                    lf: github.com/gokcehan/lf@v0.0.0-20231128063744-6abce048550a
                   nap: github.com/maaslalani/nap@v0.1.1
@@ -5061,8 +5062,8 @@ ncspot                                  0.13.4                                  
 Freedesktop Platform                    22.08.19                                22.08
 Mesa                                    23.1.9                                  22.08
 Mesa (Extra)                            23.1.9                                  22.08-extra
-Mesa                                    23.2.1                                  23.08
-Mesa (Extra)                            23.2.1                                  23.08-extra
+Mesa                                    23.3.0                                  23.08
+Mesa (Extra)                            23.3.0                                  23.08-extra
 Intel                                                                           22.08
 Intel                                                                           23.08
 openh264                                2.1.0                                   2.0
@@ -5081,7 +5082,7 @@ Yaru-dark Gtk Theme                                                             
 Name                       Version                     Rev    Tracking         Publisher      Notes
 bare                       1.0                         5      latest/stable    canonical**    base
 canonical-livepatch        10.7.0                      246    latest/stable    canonical**    -
-cmake                      3.27.9                      1356   latest/stable    crascit**      classic
+cmake                      3.28.0                      1359   latest/stable    crascit**      classic
 core                       16-2.60.4                   16202  latest/stable    canonical**    core
 core18                     20231027                    2812   latest/stable    canonical**    base
 core20                     20230801                    2015   latest/stable    canonical**    base
@@ -5089,7 +5090,7 @@ core22                     20230801                    864    latest/stable    c
 dotnet-sdk                 5.0.408                     167    5.0/stable       dotnetcore**   classic
 duf-utility                v0.6.0                      1      latest/stable    muesli         -
 firefox                    120.0.1-1                   3504   latest/stable/…  mozilla**      -
-gimp                       2.10.34                     405    latest/stable    snapcrafters*  -
+gimp                       2.10.36                     412    latest/stable    snapcrafters*  -
 gnome-3-28-1804            3.28.0-19-g98f9e67.98f9e67  198    latest/stable    canonical**    -
 gnome-3-34-1804            0+git.3556cb3               93     latest/stable/…  canonical**    -
 gnome-3-38-2004            0+git.efb213a               143    latest/stable    canonical**    -
