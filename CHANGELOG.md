@@ -1,5 +1,17 @@
 # Changelog
 
+## [1.5.0](https://github.com/engeir/stowfiles/compare/v1.4.0...v1.5.0) (2023-12-07)
+
+
+### Features
+
+* **software:** add rush as package manager for custom scripts ([9698f73](https://github.com/engeir/stowfiles/commit/9698f73b411807758b8ef62a075dada6fbb32489))
+
+
+### Miscellaneous
+
+* **software:** update pkgs ([f1018c0](https://github.com/engeir/stowfiles/commit/f1018c04bf9647dc9d0d5684e8827fcf09431240))
+
 ## [1.4.0](https://github.com/engeir/stowfiles/compare/v1.3.1...v1.4.0) (2023-12-05)
 
 
