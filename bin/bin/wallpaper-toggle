@@ -2,9 +2,11 @@
 
 if diff "$HOME/.cache/bspwm/wallpaper.jpg" "$HOME/stowfiles/assets/black.jpg" >/dev/null; then
     FILE="$(find "$HOME"/syncthing/wallpapers/*.jpg | sort -R | sed 1q)"
-    convert "$FILE" -blur 0x9 "$HOME/.cache/bspwm/wallpaper.jpg"
-    cp "$FILE" "$HOME/.cache/bspwm/wallpaper.jpg"
-    m wallpaper "$FILE"
+    rm -rf "/tmp/wallpapers/"
+    num="$RANDOM"
+    convert "$FILE" -blur 0x25 "/tmp/$num.jpg"
+    cp "/tmp/$num.jpg" "$HOME/.cache/bspwm/wallpaper.jpg"
+    m wallpaper "/tmp/$num.jpg"
 else
     cp "$HOME/stowfiles/assets/black.jpg" "$HOME/.cache/bspwm/wallpaper.jpg"
     m wallpaper "$HOME/stowfiles/assets/black.jpg"
