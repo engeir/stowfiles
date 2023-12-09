@@ -1,4 +1,4 @@
-vim.loader.enable() -- From the impatient.nvim repo
+-- vim.loader.enable() -- From the impatient.nvim repo
 require("engeir.basics.globals")
 
 -- General stuff
