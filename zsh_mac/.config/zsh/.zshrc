@@ -64,7 +64,7 @@ fi
 # fpath=(~/programs/zsh/git $fpath)
 
 [ -s "$HOME/.bun/_bun" ] && plug "$HOME/.bun/_bun"
-eval "$(thefuck --alias)"
+# eval "$(thefuck --alias)"
 eval "$(starship init zsh)"
 eval "$(rtx activate zsh)"
 eval "$(atuin init zsh)"
