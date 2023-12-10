@@ -1,13 +1,19 @@
 #!/bin/bash
 
+function wallpaper() {
+    # https://apple.stackexchange.com/a/145174
+    sqlite3 ~/Library/Application\ Support/Dock/desktoppicture.db "update data set value = '$1'" && killall Dock 
+}
+
 if diff "$HOME/.cache/bspwm/wallpaper.jpg" "$HOME/stowfiles/assets/black.jpg" >/dev/null; then
     FILE="$(find "$HOME"/syncthing/wallpapers/*.jpg | sort -R | sed 1q)"
-    rm -rf "/tmp/wallpapers/"
     num="$RANDOM"
     convert "$FILE" -blur 0x25 "/tmp/$num.jpg"
     cp "/tmp/$num.jpg" "$HOME/.cache/bspwm/wallpaper.jpg"
-    m wallpaper "/tmp/$num.jpg"
+    # m wallpaper "/tmp/$num.jpg"
+    wallpaper "/tmp/$num.jpg"
 else
     cp "$HOME/stowfiles/assets/black.jpg" "$HOME/.cache/bspwm/wallpaper.jpg"
-    m wallpaper "$HOME/stowfiles/assets/black.jpg"
+    wallpaper "$HOME/stowfiles/assets/black.jpg"
+    # m wallpaper "$HOME/stowfiles/assets/black.jpg"
 fi

@@ -1,21 +1,23 @@
 #!/bin/bash
 
-DIR="$HOME/syncthing/wallpapers"
+function wallpaper() {
+    # https://apple.stackexchange.com/a/145174
+    sqlite3 ~/Library/Application\ Support/Dock/desktoppicture.db "update data set value = '$1'" && killall Dock 
+}
 
-ls "$HOME"/syncthing/wallpapers | sort -R | sed 1q | while read file; do
-    # echo $file
-    DIR=$(ls ~/syncthing/wallpapers/* | grep "$file")
-
-    # Copy the selected wallpaper to be the main wallpaper
-    # cp "$DIR" "$HOME"/.cache/bspwm/wallpaper.jpg
-    convert "$DIR" -blur 0x9 "$HOME"/.cache/bspwm/wallpaper.jpg
-
-    # Set the new wallpaper
+find "$HOME"/syncthing/wallpapers/*.jpg | sort -R | sed 1q | while read file; do
     if [[ $(uname -s) == "Darwin" ]]; then
         # Mac
-        m wallpaper "$DIR"
+        if ! diff "$HOME/.cache/bspwm/wallpaper.jpg" "$HOME/stowfiles/assets/black.jpg" >/dev/null; then
+            num="$RANDOM"
+            convert "$file" -blur 0x25 "/tmp/$num.jpg"
+            cp "/tmp/$num.jpg" "$HOME/.cache/bspwm/wallpaper.jpg"
+            # m wallpaper "/tmp/$num.jpg"
+            wallpaper "/tmp/$num.jpg"
+        fi
     else
         # Linux
+        convert "$file" -blur 0x9 "$HOME"/.cache/bspwm/wallpaper.jpg
         feh --bg-fill "$HOME"/.cache/bspwm/wallpaper.jpg
     fi
 done
