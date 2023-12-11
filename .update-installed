@@ -39,7 +39,7 @@ run_updates() {
     # Single programs
     echo_and_run bob update --all
     echo_and_run bun upgrade
-    echo_and_run dprint config --config ~/.config/dprint/dprint.jsonc update
+    echo_and_run dprint config --config ~/.config/dprint/dprint.jsonc update --yes
     echo_and_run poetry self update
     echo_and_run pyenv update
     echo_and_run rclone selfupdate
