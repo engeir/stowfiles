@@ -1,5 +1,25 @@
 # Changelog
 
+## [1.6.0](https://github.com/engeir/stowfiles/compare/v1.5.0...v1.6.0) (2023-12-11)
+
+
+### Features
+
+* **bin:** change all desktop wallpapers on mac ([aa013ef](https://github.com/engeir/stowfiles/commit/aa013efd9868a4e6bfa463e8003729995fa3b730))
+
+
+### Bug Fixes
+
+* **osx:** blur on mac osx works now ([125e1c8](https://github.com/engeir/stowfiles/commit/125e1c854206655943722c1d47aaf371743d4b32))
+* **software:** assume yes to dprint update which was getting stuck ([f13b382](https://github.com/engeir/stowfiles/commit/f13b382b23038a58775204627157b9096490d0ff))
+
+
+### Miscellaneous
+
+* **nvim:** remove codeium from mac setup ([0e847c1](https://github.com/engeir/stowfiles/commit/0e847c1ce5fdbcec3ed68c54e7f198ddb65c659c))
+* **software:** remove thefuck ([0d6e996](https://github.com/engeir/stowfiles/commit/0d6e9960a7eba4b9fe025f766d89881cd556ea4d))
+* **software:** update installed software ([3c2040a](https://github.com/engeir/stowfiles/commit/3c2040ac9f12c07ab532ed22161c7cf55aadacd7))
+
 ## [1.5.0](https://github.com/engeir/stowfiles/compare/v1.4.0...v1.5.0) (2023-12-07)
 
 
