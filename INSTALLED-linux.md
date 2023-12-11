@@ -83,9 +83,9 @@ bind9-dnsutils 1:9.18.18-0ubuntu0.22.04.1 [Ubuntu/jammy main]
 bind9-host 1:9.18.18-0ubuntu0.22.04.1 [Ubuntu/jammy main]
 bind9-libs 1:9.18.18-0ubuntu0.22.04.1 [Ubuntu/jammy main]
 binfmt-support 2.2.1-2 [Ubuntu/jammy main]
-binutils 2.38-4ubuntu2.3 [Ubuntu/jammy main]
-binutils-common 2.38-4ubuntu2.3 [Ubuntu/jammy main]
-binutils-x86-64-linux-gnu 2.38-4ubuntu2.3 [Ubuntu/jammy main]
+binutils 2.38-4ubuntu2.4 [Ubuntu/jammy main]
+binutils-common 2.38-4ubuntu2.4 [Ubuntu/jammy main]
+binutils-x86-64-linux-gnu 2.38-4ubuntu2.4 [Ubuntu/jammy main]
 bison 2:3.8.2+dfsg-1build1 [Ubuntu/jammy main]
 bitwarden 2023.10.1 [local]
 black 21.12b0-1 [Ubuntu/jammy universe]
@@ -98,7 +98,7 @@ bolt 0.9.2-1 [Ubuntu/jammy main]
 borgbackup 1.2.0-1 [Ubuntu/jammy universe]
 boxes 2.1.1-2 [Ubuntu/jammy universe]
 branding-ubuntu 0.10 [Ubuntu/jammy main]
-brave-browser 1.60.118 [local]
+brave-browser 1.61.101 [local]
 brave-keyring 1.13 [local]
 brightness-udev 0.5.1-3 [Ubuntu/jammy universe]
 brightnessctl 0.5.1-3 [Ubuntu/jammy universe]
@@ -161,7 +161,7 @@ compizconfig-settings-manager 1:0.9.14.1+22.04.20220820-0ubuntu1 [Ubuntu/jammy u
 compton 1-1 [Ubuntu/jammy universe]
 console-setup 1.205ubuntu3 [Ubuntu/jammy main]
 console-setup-linux 1.205ubuntu3 [Ubuntu/jammy main]
-containerd.io 1.6.25-1 [Docker CE/ stable]
+containerd.io 1.6.26-1 [Docker CE/ stable]
 context 2021.03.05.20220211-1 [Ubuntu/jammy universe]
 context-modules 20210301-1 [Ubuntu/jammy universe]
 coreutils 8.32-4.1ubuntu1 [Ubuntu/jammy main]
@@ -303,7 +303,7 @@ findutils 4.8.0-1ubuntu3 [Ubuntu/jammy main]
 finger 0.17-17 [Ubuntu/jammy universe]
 firefox 1:1snap1-0ubuntu2 [Ubuntu/jammy main]
 firefox-locale-en 1:1snap1-0ubuntu2 [Ubuntu/jammy universe]
-firefoxpwa 2.9.0 [FirefoxPWA/any main]
+firefoxpwa 2.9.1 [FirefoxPWA/any main]
 firmware-sof-signed 2.0-1ubuntu4.4 [Ubuntu/jammy restricted]
 flatpak 1.12.7-1 [Ubuntu/jammy universe]
 flex 2.6.4-8build2 [Ubuntu/jammy main]
@@ -563,7 +563,7 @@ gftp 2.9.1~beta-1 [Ubuntu/jammy universe]
 gftp-common 2.9.1~beta-1 [Ubuntu/jammy universe]
 gftp-gtk 2.9.1~beta-1 [Ubuntu/jammy universe]
 gftp-text 2.9.1~beta-1 [Ubuntu/jammy universe]
-gh 2.39.2 [gh/stable main]
+gh 2.40.0 [gh/stable main]
 ghc 8.8.4-3 [Ubuntu/jammy universe]
 ghostscript 9.55.0~dfsg1-0ubuntu5.5 [Ubuntu/jammy main]
 ghostscript-x 9.55.0~dfsg1-0ubuntu5.5 [Ubuntu/jammy main]
@@ -1028,7 +1028,7 @@ libbcprov-java 1.68-5 [Ubuntu/jammy universe]
 libbdplus0 0.2.0-1 [Ubuntu/jammy universe]
 libbibutils8 7.2-1 [Ubuntu/jammy universe]
 libbinio1v5 1.5+dfsg-0.1 [Ubuntu/jammy universe]
-libbinutils 2.38-4ubuntu2.3 [Ubuntu/jammy main]
+libbinutils 2.38-4ubuntu2.4 [Ubuntu/jammy main]
 libblas-dev 3.10.0-2ubuntu1 [Ubuntu/jammy main]
 libblas3 3.10.0-2ubuntu1 [Ubuntu/jammy main]
 libblkid-dev 2.37.2-4ubuntu3 [Ubuntu/jammy main]
@@ -1079,12 +1079,12 @@ libbz2-1.0 1.0.8-5build1 [Ubuntu/jammy main]
 libbz2-1.0:i386 1.0.8-5build1 [Ubuntu/jammy main]
 libbz2-dev 1.0.8-5build1 [Ubuntu/jammy main]
 libc-ares2 1.18.1-1ubuntu0.22.04.2 [Ubuntu/jammy main]
-libc-bin 2.35-0ubuntu3.4 [Ubuntu/jammy main]
-libc-dev-bin 2.35-0ubuntu3.4 [Ubuntu/jammy main]
-libc6 2.35-0ubuntu3.4 [Ubuntu/jammy main]
-libc6-dbg 2.35-0ubuntu3.4 [Ubuntu/jammy main]
-libc6-dev 2.35-0ubuntu3.4 [Ubuntu/jammy main]
-libc6:i386 2.35-0ubuntu3.4 [Ubuntu/jammy main]
+libc-bin 2.35-0ubuntu3.5 [Ubuntu/jammy main]
+libc-dev-bin 2.35-0ubuntu3.5 [Ubuntu/jammy main]
+libc6 2.35-0ubuntu3.5 [Ubuntu/jammy main]
+libc6-dbg 2.35-0ubuntu3.5 [Ubuntu/jammy main]
+libc6-dev 2.35-0ubuntu3.5 [Ubuntu/jammy main]
+libc6:i386 2.35-0ubuntu3.5 [Ubuntu/jammy main]
 libcaca-dev 0.99.beta19-2.2ubuntu4 [Ubuntu/jammy main]
 libcaca0 0.99.beta19-2.2ubuntu4 [Ubuntu/jammy main]
 libcaca0:i386 0.99.beta19-2.2ubuntu4 [Ubuntu/jammy main]
@@ -1203,8 +1203,8 @@ libcrypt-dev 1:4.4.27-1 [Ubuntu/jammy main]
 libcrypt1 1:4.4.27-1 [Ubuntu/jammy main]
 libcrypt1:i386 1:4.4.27-1 [Ubuntu/jammy main]
 libcryptsetup12 2:2.4.3-1ubuntu1.1 [Ubuntu/jammy main]
-libctf-nobfd0 2.38-4ubuntu2.3 [Ubuntu/jammy main]
-libctf0 2.38-4ubuntu2.3 [Ubuntu/jammy main]
+libctf-nobfd0 2.38-4ubuntu2.4 [Ubuntu/jammy main]
+libctf0 2.38-4ubuntu2.4 [Ubuntu/jammy main]
 libcue2 2.2.1-3ubuntu0.1 [Ubuntu/jammy main]
 libcups2 2.4.1op1-1ubuntu4.7 [Ubuntu/jammy main]
 libcups2:i386 2.4.1op1-1ubuntu4.7 [Ubuntu/jammy main]
@@ -3498,7 +3498,7 @@ lintian 2.114.0ubuntu1.3 [Ubuntu/jammy main]
 linux-base 4.5ubuntu9 [Ubuntu/jammy main]
 linux-firmware 20220329.git681281e4-0ubuntu3.23 [Ubuntu/jammy main]
 linux-generic 5.15.0.89.86 [Ubuntu/jammy main]
-linux-generic-hwe-20.04 5.15.0.89.86 [Ubuntu/jammy main]
+linux-generic-hwe-20.04 5.15.0.91.88 [Ubuntu/jammy main]
 linux-generic-hwe-22.04 6.2.0.37.38~22.04.15 [Ubuntu/jammy main]
 linux-headers-5.15.0-89 5.15.0-89.99 [Ubuntu/jammy main]
 linux-headers-5.15.0-89-generic 5.15.0-89.99 [Ubuntu/jammy main]
@@ -3516,7 +3516,7 @@ linux-image-6.2.0-36-generic 6.2.0-36.37~22.04.1 [Ubuntu/jammy main]
 linux-image-6.2.0-37-generic 6.2.0-37.38~22.04.1 [Ubuntu/jammy main]
 linux-image-generic 5.15.0.89.86 [Ubuntu/jammy main]
 linux-image-generic-hwe-22.04 6.2.0.37.38~22.04.15 [Ubuntu/jammy main]
-linux-libc-dev 5.15.0-89.99 [Ubuntu/jammy main]
+linux-libc-dev 5.15.0-91.101 [Ubuntu/jammy main]
 linux-modules-5.15.0-89-generic 5.15.0-89.99 [Ubuntu/jammy main]
 linux-modules-5.19.0-50-generic 5.19.0-50.50 [Ubuntu/jammy main]
 linux-modules-6.2.0-36-generic 6.2.0-36.37~22.04.1 [Ubuntu/jammy main]
@@ -3545,7 +3545,7 @@ llvm-14-tools 1:14.0.0-1ubuntu1.1 [Ubuntu/jammy universe]
 llvm-runtime 1:14.0-55~exp2 [Ubuntu/jammy universe]
 lm-sensors 1:3.6.0-7ubuntu1 [Ubuntu/jammy universe]
 lmodern 2.004.5-6.1 [Ubuntu/jammy universe]
-locales 2.35-0ubuntu3.4 [Ubuntu/jammy main]
+locales 2.35-0ubuntu3.5 [Ubuntu/jammy main]
 locate 4.8.0-1ubuntu3 [Ubuntu/jammy universe]
 login 1:4.8.1-2ubuntu2.1 [Ubuntu/jammy main]
 logrotate 3.19.0-1ubuntu1.1 [Ubuntu/jammy main]
@@ -4375,7 +4375,7 @@ t1utils 1.41-4build2 [Ubuntu/jammy main]
 tabby-terminal 1.0.183 [local]
 tachyon 0.99~b6+dsx-10 [Ubuntu/jammy universe]
 tachyon-bin-nox 0.99~b6+dsx-10 [Ubuntu/jammy universe]
-tar 1.34+dfsg-1ubuntu0.1.22.04.1 [Ubuntu/jammy main]
+tar 1.34+dfsg-1ubuntu0.1.22.04.2 [Ubuntu/jammy main]
 tcl 8.6.11+1build2 [Ubuntu/jammy main]
 tcl-dev 8.6.11+1build2 [Ubuntu/jammy main]
 tcl-expect 5.45.4-2build1 [Ubuntu/jammy universe]
@@ -4696,7 +4696,7 @@ zstd 1.4.8+dfsg-3build1 [Ubuntu/jammy main]
 ```txt
 name: batsignal version: 1.6.4-pacstall1
 name: bitwarden version: 2023.10.1
-name: brave-browser version: 1.60.118
+name: brave-browser version: 1.61.101
 name: brave-keyring version: 1.13
 name: btop version: 1.2.13-pacstall1
 name: google-chrome-stable version: 120.0.6099.71-1
@@ -4756,6 +4756,10 @@ fd-find v8.7.1:
     fd
 ffsend v0.2.76:
     ffsend
+git-cliff v1.4.0:
+    git-cliff
+    git-cliff-completions
+    git-cliff-mangen
 gitui v0.24.3:
     gitui
 halp v0.1.7:
@@ -4800,7 +4804,7 @@ pueue v3.3.2:
     pueued
 ripgrep v14.0.3:
     rg
-rtx-cli v2023.12.18:
+rtx-cli v2023.12.21:
     rtx
 samply v0.11.0:
     samply
@@ -4905,7 +4909,7 @@ package flake8 6.1.0, installed using Python 3.10.12
  - flake8
 package fprettify 0.3.7, installed using Python 3.10.12
  - fprettify
-package globus-cli 3.20.0, installed using Python 3.10.12
+package globus-cli 3.21.0, installed using Python 3.10.12
  - globus
 package gorps 0.9.1, installed using Python 3.10.12
  - gorps
@@ -4946,6 +4950,8 @@ package mypy 1.7.1, installed using Python 3.10.12
 package nbpreview 0.9.1, installed using Python 3.10.12
  - nbp
  - nbpreview
+package ncdump-rich 0.4.0, installed using Python 3.11.6
+ - ncdump-rich
 package northern-lights-forecast 4.1.4, installed using Python 3.10.12
  - nlf
  - nlfd
@@ -4976,7 +4982,7 @@ package poetry2setup 1.1.0, installed using Python 3.10.12
  - poetry2setup
 package pptx2md 1.5.0, installed using Python 3.10.12
  - pptx2md
-package pre-commit 3.5.0, installed using Python 3.10.12
+package pre-commit 3.6.0, installed using Python 3.10.12
  - pre-commit
  - pre-commit-validate-config
  - pre-commit-validate-manifest
@@ -5045,7 +5051,7 @@ ascii-image-converter: github.com/TheZoraiz/ascii-image-converter@v1.13.1
                   gum: github.com/charmbracelet/gum@v0.12.0
                   gup: github.com/nao1215/gup@v0.24.1
               lazygit: github.com/jesseduffield/lazygit@v0.40.2
-                   lf: github.com/gokcehan/lf@v0.0.0-20231128063744-6abce048550a
+                   lf: github.com/gokcehan/lf@v0.0.0-20231211045133-d8b7df87cbc0
                   nap: github.com/maaslalani/nap@v0.1.1
                 rmapi: github.com/juruen/rmapi@(devel)
                     s: github.com/zquestz/s@v0.6.9
@@ -5086,7 +5092,7 @@ cmake                      3.28.0                      1359   latest/stable    c
 core                       16-2.60.4                   16202  latest/stable    canonical**    core
 core18                     20231027                    2812   latest/stable    canonical**    base
 core20                     20230801                    2015   latest/stable    canonical**    base
-core22                     20230801                    864    latest/stable    canonical**    base
+core22                     20231123                    1033   latest/stable    canonical**    base
 dotnet-sdk                 5.0.408                     167    5.0/stable       dotnetcore**   classic
 duf-utility                v0.6.0                      1      latest/stable    muesli         -
 firefox                    120.0.1-1                   3504   latest/stable/…  mozilla**      -
