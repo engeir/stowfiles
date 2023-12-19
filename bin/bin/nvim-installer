@@ -10,7 +10,7 @@ gum style \
     --align center --width 50 --margin "1 2" --padding "2 4" \
     "Welcome to the Neovim distribution installer!" "" "Distributions are placed in ~/.config/neovim_distros/"
 URL=$(gum input --placeholder "Enter a URL to clone!")
-git ls-remote -h "$URL" &> /dev/null || exit 1
+git ls-remote -h "$URL" &>/dev/null || exit 1
 NAME=$(gum input --placeholder "What should we call the nvim distribution?")
 gum style \
     --foreground 212 --border-foreground 212 --border double \
@@ -26,10 +26,13 @@ gum style \
 echo "#!/bin/bash
 
 if ! command -v gum >/dev/null 2>&1; then
-    echo \"gum is installed.\"
+    echo \"gum is a required dependency of this scipt. See https://github.com/charmbracelet/gum.\"
 fi
 
-NVIM=\$(ls \$HOME/.config/neovim_distros/ | gum filter)
+NVIM=\$(ls \"\$HOME\"/.config/neovim_distros/ | gum filter)
 
-NVIM_APPNAME=\"neovim_distros/\$NVIM\" nvim
+if [[ \$(find \"\$HOME/.config/neovim_distros/\$NVIM\" -maxdepth 1 -name \"init.lua\") == \"\" ]]; then
+    NVIM=\$(dirname \"\$(find \"\$HOME/.config/neovim_distros/\$NVIM\" -name \"init.lua\" | grep \"nvim/init.lua\")\" | sed -n -e 's/^.*neovim_distros\\///p')
+fi
+NVIM_APPNAME=\"neovim_distros/\$NVIM\" nvim \"\$@\"
 " | gum format -t code
