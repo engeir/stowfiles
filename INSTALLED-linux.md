@@ -87,7 +87,7 @@ binutils 2.38-4ubuntu2.4 [Ubuntu/jammy main]
 binutils-common 2.38-4ubuntu2.4 [Ubuntu/jammy main]
 binutils-x86-64-linux-gnu 2.38-4ubuntu2.4 [Ubuntu/jammy main]
 bison 2:3.8.2+dfsg-1build1 [Ubuntu/jammy main]
-bitwarden 2023.10.1 [local]
+bitwarden 2023.12.1 [local]
 black 21.12b0-1 [Ubuntu/jammy universe]
 blt 2.5.3+dfsg-4.1build2 [Ubuntu/jammy main]
 bluez 5.64-0ubuntu1.1 [Ubuntu/jammy main]
@@ -98,7 +98,7 @@ bolt 0.9.2-1 [Ubuntu/jammy main]
 borgbackup 1.2.0-1 [Ubuntu/jammy universe]
 boxes 2.1.1-2 [Ubuntu/jammy universe]
 branding-ubuntu 0.10 [Ubuntu/jammy main]
-brave-browser 1.61.101 [local]
+brave-browser 1.61.109 [local]
 brave-keyring 1.13 [local]
 brightness-udev 0.5.1-3 [Ubuntu/jammy universe]
 brightnessctl 0.5.1-3 [Ubuntu/jammy universe]
@@ -707,7 +707,7 @@ gnuplot 5.4.2+dfsg2-2 [Ubuntu/jammy universe]
 gnuplot-data 5.4.2+dfsg2-2 [Ubuntu/jammy universe]
 gnuplot-qt 5.4.2+dfsg2-2 [Ubuntu/jammy universe]
 golly 3.3-1build1 [Ubuntu/jammy universe]
-google-chrome-stable 120.0.6099.109-1 [Google/stable main]
+google-chrome-stable 120.0.6099.129-1 [Google/stable main]
 gperf 3.1-1build1 [Ubuntu/jammy universe]
 gpg 2.2.27-3ubuntu2.1 [Ubuntu/jammy main]
 gpg-agent 2.2.27-3ubuntu2.1 [Ubuntu/jammy main]
@@ -2969,9 +2969,9 @@ libsratom-0-0 0.6.8-1 [Ubuntu/jammy universe]
 libsrt1.4-gnutls 1.4.4-4 [Ubuntu/jammy universe]
 libsrtp2-1 2.4.2-2 [Ubuntu/jammy universe]
 libss2 1.46.5-2ubuntu1.1 [Ubuntu/jammy main]
-libssh-4 0.9.6-2ubuntu0.22.04.1 [Ubuntu/jammy main]
-libssh-4:i386 0.9.6-2ubuntu0.22.04.1 [Ubuntu/jammy main]
-libssh-gcrypt-4 0.9.6-2ubuntu0.22.04.1 [Ubuntu/jammy main]
+libssh-4 0.9.6-2ubuntu0.22.04.2 [Ubuntu/jammy main]
+libssh-4:i386 0.9.6-2ubuntu0.22.04.2 [Ubuntu/jammy main]
+libssh-gcrypt-4 0.9.6-2ubuntu0.22.04.2 [Ubuntu/jammy main]
 libssh2-1 1.10.0-3 [Ubuntu/jammy universe]
 libssl-dev 3.0.2-0ubuntu1.12 [Ubuntu/jammy main]
 libssl1.1 1.1.1l-1ubuntu1.6 [local]
@@ -3703,9 +3703,9 @@ openjdk-11-jre 11.0.21+9-0ubuntu1~22.04 [Ubuntu/jammy main]
 openjdk-11-jre-headless 11.0.21+9-0ubuntu1~22.04 [Ubuntu/jammy main]
 openprinting-ppds 20220223-0ubuntu1 [Ubuntu/jammy main]
 opensp 1.5.2-13ubuntu3 [Ubuntu/jammy universe]
-openssh-client 1:8.9p1-3ubuntu0.4 [Ubuntu/jammy main]
-openssh-server 1:8.9p1-3ubuntu0.4 [Ubuntu/jammy main]
-openssh-sftp-server 1:8.9p1-3ubuntu0.4 [Ubuntu/jammy main]
+openssh-client 1:8.9p1-3ubuntu0.5 [Ubuntu/jammy main]
+openssh-server 1:8.9p1-3ubuntu0.5 [Ubuntu/jammy main]
+openssh-sftp-server 1:8.9p1-3ubuntu0.5 [Ubuntu/jammy main]
 openssl 3.0.2-0ubuntu1.12 [Ubuntu/jammy main]
 openvpn 2.5.9-0ubuntu0.22.04.2 [Ubuntu/jammy main]
 orca 42.0-1ubuntu2 [Ubuntu/jammy main]
@@ -3805,7 +3805,7 @@ printer-driver-splix 2.0.0+svn315-7fakesync1ubuntu0.22.04.1 [Ubuntu/jammy main]
 procps 2:3.3.17-6ubuntu2.1 [Ubuntu/jammy main]
 proj-bin 8.2.1-1 [Ubuntu/jammy universe]
 proj-data 8.2.1-1 [Ubuntu/jammy universe]
-protonmail-bridge 3.5.1-1 [local]
+protonmail-bridge 3.7.1-1 [local]
 ps2eps 1.68+binaryfree-3 [Ubuntu/jammy universe]
 psmisc 23.4-2build3 [Ubuntu/jammy main]
 pstoedit 3.78-1 [Ubuntu/jammy universe]
@@ -4215,17 +4215,17 @@ r-base-dev 4.3.2-1.2204.0 [CRAN/jammy-cran40 ]
 r-base-html 4.3.2-1.2204.0 [CRAN/jammy-cran40 ]
 r-cran-boot 1.3-28-2.2204.0 [CRAN/jammy-cran40 ]
 r-cran-class 7.3-22-2.2204.0 [CRAN/jammy-cran40 ]
-r-cran-cluster 2.1.5-1.2204.0 [CRAN/jammy-cran40 ]
+r-cran-cluster 2.1.6-1.2204.0 [CRAN/jammy-cran40 ]
 r-cran-codetools 0.2-19-1.2204.0 [CRAN/jammy-cran40 ]
 r-cran-foreign 0.8.86-1.2204.0 [CRAN/jammy-cran40 ]
 r-cran-kernsmooth 2.23-22-1.2204.0 [CRAN/jammy-cran40 ]
 r-cran-lattice 0.22-5-1.2204.0 [CRAN/jammy-cran40 ]
 r-cran-mass 7.3-60-2.2204.0 [CRAN/jammy-cran40 ]
 r-cran-matrix 1.6-3-1.2204.0 [CRAN/jammy-cran40 ]
-r-cran-mgcv 1.9-0-1.2204.0 [CRAN/jammy-cran40 ]
+r-cran-mgcv 1.9-1-1.2204.0 [CRAN/jammy-cran40 ]
 r-cran-nlme 3.1.163-1.2204.0 [CRAN/jammy-cran40 ]
 r-cran-nnet 7.3-19-2.2204.0 [CRAN/jammy-cran40 ]
-r-cran-rpart 4.1.21-1.2204.0 [CRAN/jammy-cran40 ]
+r-cran-rpart 4.1.23-1.2204.0 [CRAN/jammy-cran40 ]
 r-cran-spatial 7.3-15-1.2204.0 [CRAN/jammy-cran40 ]
 r-cran-survival 3.5-7-1.2204.0 [CRAN/jammy-cran40 ]
 r-doc-html 4.3.2-1.2204.0 [CRAN/jammy-cran40 ]
@@ -4306,7 +4306,7 @@ shellcheck 0.8.0-2 [Ubuntu/jammy universe]
 shfmt 3.7.0-pacstall1 [local]
 shfmt-bin 3.4.3-1 [local]
 shim-signed 1.51.3+15.7-0ubuntu1 [Ubuntu/jammy main]
-signal-desktop 6.42.0 [. xenial/xenial main]
+signal-desktop 6.42.1 [. xenial/xenial main]
 signon-plugin-oauth2 0.25-2 [Ubuntu/jammy universe]
 silversearcher-ag 2.2.0+git20200805-1 [Ubuntu/jammy universe]
 simple-scan 42.0-1 [Ubuntu/jammy main]
@@ -4695,19 +4695,19 @@ zstd 1.4.8+dfsg-3build1 [Ubuntu/jammy main]
 
 ```txt
 name: batsignal version: 1.6.4-pacstall1
-name: bitwarden version: 2023.10.1
-name: brave-browser version: 1.61.101
+name: bitwarden version: 2023.12.1
+name: brave-browser version: 1.61.109
 name: brave-keyring version: 1.13
 name: btop version: 1.2.13-pacstall1
-name: google-chrome-stable version: 120.0.6099.109-1
+name: google-chrome-stable version: 120.0.6099.129-1
 name: htop version: 3.2.2-pacstall1
 name: nala version: 0.14.0
 name: neofetch version: 7.1.0-pacstall1
 name: polybar version: 3.6.3-pacstall1
-name: protonmail-bridge version: 3.5.1-1
+name: protonmail-bridge version: 3.7.1-1
 name: quarto version: 1.3.450
 name: shfmt version: 3.7.0-pacstall1
-name: signal-desktop version: 6.42.0
+name: signal-desktop version: 6.42.1
 name: thorium-browser version: 117.0.5938.157-1
 name: wezterm version: 20230712-072601-f4abf8fd-pacstall1
 name: zoom version: 5.17.0.1682
@@ -4716,11 +4716,11 @@ name: zoom version: 5.17.0.1682
 ## Cargo
 
 ```txt
-alacritty v0.12.3:
+alacritty v0.13.0:
     alacritty
 atuin v17.1.0:
     atuin
-bacon v2.14.0:
+bacon v2.14.1:
     bacon
 bat v0.24.0:
     bat
@@ -4728,7 +4728,7 @@ blindfold v1.0.7:
     blindfold
 bob-nvim v2.7.0:
     bob
-cargo-binstall v1.4.8:
+cargo-binstall v1.4.9:
     cargo-binstall
 cargo-edit v0.12.2:
     cargo-add
@@ -4752,7 +4752,7 @@ evcxr_jupyter v0.17.0:
     evcxr_jupyter
 exa v0.10.1:
     exa
-fd-find v8.7.1:
+fd-find v9.0.0:
     fd
 ffsend v0.2.76:
     ffsend
@@ -4781,7 +4781,7 @@ lscolors v0.16.0:
     lscolors
 mdbook v0.4.36:
     mdbook
-mdbook-admonish v1.14.0:
+mdbook-admonish v1.15.0:
     mdbook-admonish
 mdbook-svgbob v0.2.1:
     mdbook-svgbob
@@ -4793,7 +4793,7 @@ mprocs v0.6.4:
     mprocs
 nu v0.88.1:
     nu
-numbat-cli v1.8.0:
+numbat-cli v1.9.0:
     numbat
 pastel v0.9.0:
     pastel
@@ -4804,7 +4804,7 @@ pueue v3.3.2:
     pueued
 ripgrep v14.0.3:
     rg
-rtx-cli v2023.12.30:
+rtx-cli v2024.0.0:
     rtx
 samply v0.11.0:
     samply
@@ -4866,7 +4866,7 @@ package ansible-core 2.16.2, installed using Python 3.10.12
  - ansible-vault
 package beautysh 6.2.1, installed using Python 3.10.12
  - beautysh
-package black 23.12.0, installed using Python 3.10.12
+package black 23.12.1, installed using Python 3.10.12
  - black
  - black-primer
  - blackd
@@ -4941,7 +4941,7 @@ package lookatme 2.5.5, installed using Python 3.10.12
  - lam
  - lookatme
  - witnessme
-package mypy 1.7.1, installed using Python 3.10.12
+package mypy 1.8.0, installed using Python 3.10.12
  - dmypy
  - mypy
  - mypyc
@@ -4994,7 +4994,7 @@ package pyqt5 5.15.10, installed using Python 3.10.12
  - pylupdate5
  - pyrcc5
  - pyuic5
-package pyright 1.1.341, installed using Python 3.10.12
+package pyright 1.1.344, installed using Python 3.10.12
  - pyright
  - pyright-langserver
  - pyright-python
@@ -5023,8 +5023,9 @@ package tuiview 0.1.1, installed using Python 3.10.12
  - tv
 package twine 4.0.2, installed using Python 3.10.12
  - twine
-package visidata 2.11.1, installed using Python 3.11.6
+package visidata 3.0, installed using Python 3.11.6
  - vd
+ - vd2to3.vdx
  - vgit
  - visidata
  - man1/vd.1
@@ -5040,7 +5041,7 @@ package yapf 0.40.2, installed using Python 3.10.12
 
 ```txt
 ascii-image-converter: github.com/TheZoraiz/ascii-image-converter@v1.13.1
-            bluetuith: github.com/darkhz/bluetuith@v0.1.9
+            bluetuith: github.com/darkhz/bluetuith@v0.2.0
                    d2: oss.terrastruct.com/d2@v0.6.3
                 doggo: github.com/mr-karan/doggo/cmd/doggo@v0.5.7
                  draw: github.com/maaslalani/draw@v0.1.1
@@ -5051,7 +5052,7 @@ ascii-image-converter: github.com/TheZoraiz/ascii-image-converter@v1.13.1
                   gum: github.com/charmbracelet/gum@v0.13.0
                   gup: github.com/nao1215/gup@v0.24.1
               lazygit: github.com/jesseduffield/lazygit@v0.40.2
-                   lf: github.com/gokcehan/lf@v0.0.0-20231216082616-2a4adb323f37
+                   lf: github.com/gokcehan/lf@v0.0.0-20240101230249-c88b8eaa6544
                   nap: github.com/maaslalani/nap@v0.1.1
                 rmapi: github.com/juruen/rmapi@(devel)
                     s: github.com/zquestz/s@v0.6.9
@@ -5068,8 +5069,8 @@ ncspot                                  1.0.0                                   
 Freedesktop Platform                    22.08.20                                22.08
 Mesa                                    23.3.0                                  22.08
 Mesa (Extra)                            23.3.0                                  22.08-extra
-Mesa                                    23.3.0                                  23.08
-Mesa (Extra)                            23.3.0                                  23.08-extra
+Mesa                                    23.3.1                                  23.08
+Mesa (Extra)                            23.3.1                                  23.08-extra
 Intel                                                                           22.08
 Intel                                                                           23.08
 openh264                                2.1.0                                   2.0
@@ -5095,7 +5096,7 @@ core20                     20231123                    2105   latest/stable    c
 core22                     20231123                    1033   latest/stable    canonical**    base
 dotnet-sdk                 5.0.408                     167    5.0/stable       dotnetcore**   classic
 duf-utility                v0.6.0                      1      latest/stable    muesli         -
-firefox                    120.0.1-1                   3504   latest/stable/…  mozilla**      -
+firefox                    121.0-1.1                   3600   latest/stable/…  mozilla**      -
 gimp                       2.10.36                     412    latest/stable    snapcrafters*  -
 gnome-3-28-1804            3.28.0-19-g98f9e67.98f9e67  198    latest/stable    canonical**    -
 gnome-3-34-1804            0+git.3556cb3               93     latest/stable/…  canonical**    -
