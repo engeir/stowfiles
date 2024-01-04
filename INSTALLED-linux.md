@@ -98,8 +98,6 @@ bolt 0.9.2-1 [Ubuntu/jammy main]
 borgbackup 1.2.0-1 [Ubuntu/jammy universe]
 boxes 2.1.1-2 [Ubuntu/jammy universe]
 branding-ubuntu 0.10 [Ubuntu/jammy main]
-brave-browser 1.61.109 [local]
-brave-keyring 1.13 [local]
 brightness-udev 0.5.1-3 [Ubuntu/jammy universe]
 brightnessctl 0.5.1-3 [Ubuntu/jammy universe]
 brltty 6.4-4ubuntu3 [Ubuntu/jammy main]
@@ -4696,8 +4694,6 @@ zstd 1.4.8+dfsg-3build1 [Ubuntu/jammy main]
 ```txt
 name: batsignal version: 1.6.4-pacstall1
 name: bitwarden version: 2023.12.1
-name: brave-browser version: 1.61.109
-name: brave-keyring version: 1.13
 name: btop version: 1.2.13-pacstall1
 name: google-chrome-stable version: 120.0.6099.129-1
 name: htop version: 3.2.2-pacstall1
@@ -4750,8 +4746,8 @@ du-dust v0.8.6:
     dust
 evcxr_jupyter v0.17.0:
     evcxr_jupyter
-exa v0.10.1:
-    exa
+eza v0.17.0:
+    eza
 fd-find v9.0.0:
     fd
 ffsend v0.2.76:

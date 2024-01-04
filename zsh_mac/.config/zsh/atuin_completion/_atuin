@@ -53,6 +53,8 @@ _arguments "${_arguments_options[@]}" \
 _arguments "${_arguments_options[@]}" \
 '-e+[]:EXIT: ' \
 '--exit=[]:EXIT: ' \
+'-d+[]:DURATION: ' \
+'--duration=[]:DURATION: ' \
 '-h[Print help]' \
 '--help[Print help]' \
 ':id:' \

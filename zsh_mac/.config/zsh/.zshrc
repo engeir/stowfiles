@@ -8,13 +8,14 @@ unalias -a
 source "$HOME/.config/zsh/which-machine.zsh"
 
 # Created by Zap installer
-[ -f "$HOME/.local/share/zap/zap.zsh" ] && source "$HOME/.local/share/zap/zap.zsh"
+[ -f "${XDG_DATA_HOME:-$HOME/.local/share}/zap/zap.zsh" ] && source "${XDG_DATA_HOME:-$HOME/.local/share}/zap/zap.zsh"
 plug "zap-zsh/supercharge"
 plug "zap-zsh/fzf"
 plug "zap-zsh/exa"
 plug "zap-zsh/completions"
 plug "zsh-users/zsh-autosuggestions"
 plug "zsh-users/zsh-syntax-highlighting"
+plug "olets/zsh-abbr"
 # This is overridden by atuin in insert mode, but takes precedence in vi/normal mode.
 plug "zsh-users/zsh-history-substring-search"
 plug "Aloxaf/fzf-tab"
