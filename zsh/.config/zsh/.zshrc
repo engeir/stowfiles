@@ -148,8 +148,8 @@ export PATH="$BUN_INSTALL/bin:$PATH"
 # bob
 export PATH="/home/een023/.local/share/bob/nvim-bin:$PATH"
 
-# rtx
-eval "$(rtx activate zsh)"
+# mise
+eval "$(mise activate zsh)"
 
 if command -v coreutils 1>/dev/null 2>&1; then
     t1=$(coreutils date "+%s.%N")

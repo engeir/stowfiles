@@ -224,8 +224,8 @@ dictionaries-common 1.28.14 [Ubuntu/jammy main]
 diffstat 1.64-1build2 [Ubuntu/jammy main]
 diffutils 1:3.8-0ubuntu2 [Ubuntu/jammy main]
 dirmngr 2.2.27-3ubuntu2.1 [Ubuntu/jammy main]
-distro-info 1.1ubuntu0.1 [Ubuntu/jammy main]
-distro-info-data 0.52ubuntu0.5 [Ubuntu/jammy main]
+distro-info 1.1ubuntu0.1 [local]
+distro-info-data 0.52ubuntu0.5 [local]
 djvulibre-bin 3.5.28-2build2 [Ubuntu/jammy universe]
 dkms 2.8.7-2ubuntu2.2 [Ubuntu/jammy main]
 dmidecode 3.3-3ubuntu0.1 [Ubuntu/jammy main]
@@ -707,7 +707,7 @@ gnuplot 5.4.2+dfsg2-2 [Ubuntu/jammy universe]
 gnuplot-data 5.4.2+dfsg2-2 [Ubuntu/jammy universe]
 gnuplot-qt 5.4.2+dfsg2-2 [Ubuntu/jammy universe]
 golly 3.3-1build1 [Ubuntu/jammy universe]
-google-chrome-stable 120.0.6099.129-1 [Google/stable main]
+google-chrome-stable 120.0.6099.129-1 [local]
 gperf 3.1-1build1 [Ubuntu/jammy universe]
 gpg 2.2.27-3ubuntu2.1 [Ubuntu/jammy main]
 gpg-agent 2.2.27-3ubuntu2.1 [Ubuntu/jammy main]
@@ -2962,9 +2962,9 @@ libspiro1 1:20200505-2 [Ubuntu/jammy universe]
 libspotify-dev 12.1.51-1 [local]
 libspotify12 12.1.51-1 [local]
 libspqr2 1:5.10.1+dfsg-4build1 [Ubuntu/jammy universe]
-libsqlite3-0 3.37.2-2ubuntu0.1 [Ubuntu/jammy main]
-libsqlite3-0:i386 3.37.2-2ubuntu0.1 [Ubuntu/jammy main]
-libsqlite3-dev 3.37.2-2ubuntu0.1 [Ubuntu/jammy main]
+libsqlite3-0 3.37.2-2ubuntu0.1 [local]
+libsqlite3-0:i386 3.37.2-2ubuntu0.1 [local]
+libsqlite3-dev 3.37.2-2ubuntu0.1 [local]
 libsratom-0-0 0.6.8-1 [Ubuntu/jammy universe]
 libsrt1.4-gnutls 1.4.4-4 [Ubuntu/jammy universe]
 libsrtp2-1 2.4.2-2 [Ubuntu/jammy universe]
@@ -3703,9 +3703,9 @@ openjdk-11-jre 11.0.21+9-0ubuntu1~22.04 [Ubuntu/jammy main]
 openjdk-11-jre-headless 11.0.21+9-0ubuntu1~22.04 [Ubuntu/jammy main]
 openprinting-ppds 20220223-0ubuntu1 [Ubuntu/jammy main]
 opensp 1.5.2-13ubuntu3 [Ubuntu/jammy universe]
-openssh-client 1:8.9p1-3ubuntu0.5 [Ubuntu/jammy main]
-openssh-server 1:8.9p1-3ubuntu0.5 [Ubuntu/jammy main]
-openssh-sftp-server 1:8.9p1-3ubuntu0.5 [Ubuntu/jammy main]
+openssh-client 1:8.9p1-3ubuntu0.5 [local]
+openssh-server 1:8.9p1-3ubuntu0.5 [local]
+openssh-sftp-server 1:8.9p1-3ubuntu0.5 [local]
 openssl 3.0.2-0ubuntu1.12 [Ubuntu/jammy main]
 openvpn 2.5.9-0ubuntu0.22.04.2 [Ubuntu/jammy main]
 orca 42.0-1ubuntu2 [Ubuntu/jammy main]
@@ -3894,7 +3894,7 @@ python3-dev 3.10.6-1~22.04 [Ubuntu/jammy main]
 python3-distlib 0.3.4-1 [Ubuntu/jammy universe]
 python3-distributed 2022.01.0+ds.1-1 [Ubuntu/jammy universe]
 python3-distro 1.7.0-1 [Ubuntu/jammy main]
-python3-distro-info 1.1ubuntu0.1 [Ubuntu/jammy main]
+python3-distro-info 1.1ubuntu0.1 [local]
 python3-distupgrade 1:22.04.17 [Ubuntu/jammy main]
 python3-distutils 3.10.8-1~22.04 [Ubuntu/jammy main]
 python3-distutils-extra 2.45 [Ubuntu/jammy universe]
@@ -4101,7 +4101,7 @@ python3-sip 4.19.25+dfsg-3build1 [Ubuntu/jammy universe]
 python3-six 1.16.0-3ubuntu1 [Ubuntu/jammy main]
 python3-sniffio 1.2.0-1 [Ubuntu/jammy universe]
 python3-snowballstemmer 2.2.0-1build1 [Ubuntu/jammy main]
-python3-software-properties 0.99.22.8 [Ubuntu/jammy main]
+python3-software-properties 0.99.22.8 [local]
 python3-sortedcontainers 2.1.0-2 [Ubuntu/jammy main]
 python3-soupsieve 2.3.1-1 [Ubuntu/jammy main]
 python3-speechd 0.11.1-1ubuntu3 [Ubuntu/jammy main]
@@ -4319,8 +4319,8 @@ slack-desktop 4.35.131 [slack/jessie main]
 slirp4netns 1.0.1-2 [Ubuntu/jammy universe]
 slop 7.5-1.1build2 [Ubuntu/jammy universe]
 snapd 2.58+22.04.1 [Ubuntu/jammy main]
-software-properties-common 0.99.22.8 [Ubuntu/jammy main]
-software-properties-gtk 0.99.22.8 [Ubuntu/jammy main]
+software-properties-common 0.99.22.8 [local]
+software-properties-gtk 0.99.22.8 [local]
 sonata 1.7.0-1 [Ubuntu/jammy universe]
 sonnet-plugins 5.92.0-0ubuntu1 [Ubuntu/jammy universe]
 sound-icons 0.1-8 [Ubuntu/jammy main]
@@ -4335,7 +4335,7 @@ sphinx-common 4.3.2-1 [Ubuntu/jammy main]
 sphinx-rtd-theme-common 1.0.0+dfsg-1 [Ubuntu/jammy main]
 spice-vdagent 0.22.1-1 [Ubuntu/jammy main]
 spotify-client 1:1.1.72.439.gc253025e [local]
-sqlite3 3.37.2-2ubuntu0.1 [Ubuntu/jammy main]
+sqlite3 3.37.2-2ubuntu0.1 [local]
 sqlitebrowser 3.12.1-2 [Ubuntu/jammy universe]
 squashfs-tools 1:4.5-3build1 [Ubuntu/jammy main]
 ssh-import-id 5.11-0ubuntu1 [Ubuntu/jammy main]
@@ -4429,10 +4429,10 @@ thorium-browser 117.0.5938.157-1 [local]
 thunar 4.16.10-1 [Ubuntu/jammy universe]
 thunar-data 4.16.10-1 [Ubuntu/jammy universe]
 thunar-volman 4.16.0-1 [Ubuntu/jammy universe]
-thunderbird 1:115.5.0+build1-0ubuntu0.22.04.1 [Ubuntu/jammy main]
-thunderbird-gnome-support 1:115.5.0+build1-0ubuntu0.22.04.1 [Ubuntu/jammy main]
-thunderbird-locale-en 1:115.5.0+build1-0ubuntu0.22.04.1 [Ubuntu/jammy main]
-thunderbird-locale-en-us 1:115.5.0+build1-0ubuntu0.22.04.1 [Ubuntu/jammy main]
+thunderbird 1:115.6.0+build2-0ubuntu0.22.04.1 [Ubuntu/jammy main]
+thunderbird-gnome-support 1:115.6.0+build2-0ubuntu0.22.04.1 [Ubuntu/jammy main]
+thunderbird-locale-en 1:115.6.0+build2-0ubuntu0.22.04.1 [Ubuntu/jammy main]
+thunderbird-locale-en-us 1:115.6.0+build2-0ubuntu0.22.04.1 [Ubuntu/jammy main]
 time 1.9-0.1build2 [Ubuntu/jammy main]
 timer 1.2.0 [local]
 timgm6mb-soundfont 1.3-5 [Ubuntu/jammy universe]
@@ -4685,7 +4685,7 @@ zip 3.0-12build2 [Ubuntu/jammy main]
 zlib1g 1:1.2.11.dfsg-2ubuntu9.2 [Ubuntu/jammy main]
 zlib1g-dev 1:1.2.11.dfsg-2ubuntu9.2 [Ubuntu/jammy main]
 zlib1g:i386 1:1.2.11.dfsg-2ubuntu9.2 [Ubuntu/jammy main]
-zoom 5.17.0.1682 [local]
+zoom 5.17.1.1840 [local]
 zsh 5.8.1-1 [Ubuntu/jammy main]
 zsh-common 5.8.1-1 [Ubuntu/jammy main]
 zstd 1.4.8+dfsg-3build1 [Ubuntu/jammy main]
@@ -4710,7 +4710,7 @@ name: shfmt version: 3.7.0-pacstall1
 name: signal-desktop version: 6.42.1
 name: thorium-browser version: 117.0.5938.157-1
 name: wezterm version: 20230712-072601-f4abf8fd-pacstall1
-name: zoom version: 5.17.0.1682
+name: zoom version: 5.17.1.1840
 ```
 
 ## Cargo
@@ -4718,7 +4718,7 @@ name: zoom version: 5.17.0.1682
 ```txt
 alacritty v0.13.0:
     alacritty
-atuin v17.1.0:
+atuin v17.2.1:
     atuin
 bacon v2.14.1:
     bacon
@@ -4740,7 +4740,7 @@ cargo-info v0.7.6:
 cargo-update v13.3.0:
     cargo-install-update
     cargo-install-update-config
-cargo-watch v8.4.1:
+cargo-watch v8.5.1:
     cargo-watch
 coreutils v0.0.23:
     coreutils
@@ -4789,6 +4789,8 @@ mdbook-toc v0.14.2:
     mdbook-toc
 menyoki v1.7.0:
     menyoki
+mise v2024.1.4:
+    mise
 mprocs v0.6.4:
     mprocs
 nu v0.88.1:
@@ -4804,8 +4806,6 @@ pueue v3.3.2:
     pueued
 ripgrep v14.0.3:
     rg
-rtx-cli v2024.0.0:
-    rtx
 samply v0.11.0:
     samply
 sccache v0.7.4:
@@ -4818,6 +4818,10 @@ skim v0.10.4:
     sk
 speedtest-rs v0.1.4:
     speedtest-rs
+spotify-tui v0.25.0:
+    spt
+spotify_player v0.16.3:
+    spotify_player
 spotifyd v0.3.5:
     spotifyd
 stylua v0.19.1:
@@ -4840,7 +4844,7 @@ xcolor v0.5.1:
     xcolor
 xh v0.20.1:
     xh
-xplr v0.21.3:
+xplr v0.21.5:
     xplr
 zellij v0.39.2:
     zellij
@@ -5112,7 +5116,7 @@ mojave-themes              2020-03-24-35-g2aecfbf      2      latest/stable    g
 notable                    1.8.4-2                     3      latest/stable    spampinabio    classic
 pdftk                      2.02-4                      9      latest/stable    smoser         -
 procs                      v0.13.0                     969    latest/stable    dalance        -
-snapd                      2.60.4                      20290  latest/stable    canonical**    snapd
+snapd                      2.61.1                      20671  latest/stable    canonical**    snapd
 snapd-desktop-integration  0.9                         83     latest/stable/…  canonical**    -
 spt                        0.25.0                      289    latest/stable    popey          -
 vlc                        3.0.19                      3721   latest/stable    videolan**     -

@@ -66,7 +66,7 @@ fi
 [ -s "$HOME/.bun/_bun" ] && plug "$HOME/.bun/_bun"
 # eval "$(thefuck --alias)"
 eval "$(starship init zsh)"
-eval "$(rtx activate zsh)"
+eval "$(mise activate zsh)"
 eval "$(atuin init zsh)"
 eval "$(atuin gen-completions --shell zsh --out-dir "$HOME"/.config/zsh/atuin_completion)"
 
