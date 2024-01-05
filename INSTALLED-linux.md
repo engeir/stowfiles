@@ -222,8 +222,8 @@ dictionaries-common 1.28.14 [Ubuntu/jammy main]
 diffstat 1.64-1build2 [Ubuntu/jammy main]
 diffutils 1:3.8-0ubuntu2 [Ubuntu/jammy main]
 dirmngr 2.2.27-3ubuntu2.1 [Ubuntu/jammy main]
-distro-info 1.1ubuntu0.1 [local]
-distro-info-data 0.52ubuntu0.5 [local]
+distro-info 1.1ubuntu0.2 [Ubuntu/jammy main]
+distro-info-data 0.52ubuntu0.6 [Ubuntu/jammy main]
 djvulibre-bin 3.5.28-2build2 [Ubuntu/jammy universe]
 dkms 2.8.7-2ubuntu2.2 [Ubuntu/jammy main]
 dmidecode 3.3-3ubuntu0.1 [Ubuntu/jammy main]
@@ -705,7 +705,7 @@ gnuplot 5.4.2+dfsg2-2 [Ubuntu/jammy universe]
 gnuplot-data 5.4.2+dfsg2-2 [Ubuntu/jammy universe]
 gnuplot-qt 5.4.2+dfsg2-2 [Ubuntu/jammy universe]
 golly 3.3-1build1 [Ubuntu/jammy universe]
-google-chrome-stable 120.0.6099.129-1 [local]
+google-chrome-stable 120.0.6099.199-1 [Google/stable main]
 gperf 3.1-1build1 [Ubuntu/jammy universe]
 gpg 2.2.27-3ubuntu2.1 [Ubuntu/jammy main]
 gpg-agent 2.2.27-3ubuntu2.1 [Ubuntu/jammy main]
@@ -2960,9 +2960,9 @@ libspiro1 1:20200505-2 [Ubuntu/jammy universe]
 libspotify-dev 12.1.51-1 [local]
 libspotify12 12.1.51-1 [local]
 libspqr2 1:5.10.1+dfsg-4build1 [Ubuntu/jammy universe]
-libsqlite3-0 3.37.2-2ubuntu0.1 [local]
-libsqlite3-0:i386 3.37.2-2ubuntu0.1 [local]
-libsqlite3-dev 3.37.2-2ubuntu0.1 [local]
+libsqlite3-0 3.37.2-2ubuntu0.3 [Ubuntu/jammy main]
+libsqlite3-0:i386 3.37.2-2ubuntu0.3 [Ubuntu/jammy main]
+libsqlite3-dev 3.37.2-2ubuntu0.3 [Ubuntu/jammy main]
 libsratom-0-0 0.6.8-1 [Ubuntu/jammy universe]
 libsrt1.4-gnutls 1.4.4-4 [Ubuntu/jammy universe]
 libsrtp2-1 2.4.2-2 [Ubuntu/jammy universe]
@@ -3701,9 +3701,9 @@ openjdk-11-jre 11.0.21+9-0ubuntu1~22.04 [Ubuntu/jammy main]
 openjdk-11-jre-headless 11.0.21+9-0ubuntu1~22.04 [Ubuntu/jammy main]
 openprinting-ppds 20220223-0ubuntu1 [Ubuntu/jammy main]
 opensp 1.5.2-13ubuntu3 [Ubuntu/jammy universe]
-openssh-client 1:8.9p1-3ubuntu0.5 [local]
-openssh-server 1:8.9p1-3ubuntu0.5 [local]
-openssh-sftp-server 1:8.9p1-3ubuntu0.5 [local]
+openssh-client 1:8.9p1-3ubuntu0.6 [Ubuntu/jammy main]
+openssh-server 1:8.9p1-3ubuntu0.6 [Ubuntu/jammy main]
+openssh-sftp-server 1:8.9p1-3ubuntu0.6 [Ubuntu/jammy main]
 openssl 3.0.2-0ubuntu1.12 [Ubuntu/jammy main]
 openvpn 2.5.9-0ubuntu0.22.04.2 [Ubuntu/jammy main]
 orca 42.0-1ubuntu2 [Ubuntu/jammy main]
@@ -3892,7 +3892,7 @@ python3-dev 3.10.6-1~22.04 [Ubuntu/jammy main]
 python3-distlib 0.3.4-1 [Ubuntu/jammy universe]
 python3-distributed 2022.01.0+ds.1-1 [Ubuntu/jammy universe]
 python3-distro 1.7.0-1 [Ubuntu/jammy main]
-python3-distro-info 1.1ubuntu0.1 [local]
+python3-distro-info 1.1ubuntu0.2 [Ubuntu/jammy main]
 python3-distupgrade 1:22.04.17 [Ubuntu/jammy main]
 python3-distutils 3.10.8-1~22.04 [Ubuntu/jammy main]
 python3-distutils-extra 2.45 [Ubuntu/jammy universe]
@@ -4099,7 +4099,7 @@ python3-sip 4.19.25+dfsg-3build1 [Ubuntu/jammy universe]
 python3-six 1.16.0-3ubuntu1 [Ubuntu/jammy main]
 python3-sniffio 1.2.0-1 [Ubuntu/jammy universe]
 python3-snowballstemmer 2.2.0-1build1 [Ubuntu/jammy main]
-python3-software-properties 0.99.22.8 [local]
+python3-software-properties 0.99.22.9 [Ubuntu/jammy main]
 python3-sortedcontainers 2.1.0-2 [Ubuntu/jammy main]
 python3-soupsieve 2.3.1-1 [Ubuntu/jammy main]
 python3-speechd 0.11.1-1ubuntu3 [Ubuntu/jammy main]
@@ -4304,7 +4304,7 @@ shellcheck 0.8.0-2 [Ubuntu/jammy universe]
 shfmt 3.7.0-pacstall1 [local]
 shfmt-bin 3.4.3-1 [local]
 shim-signed 1.51.3+15.7-0ubuntu1 [Ubuntu/jammy main]
-signal-desktop 6.42.1 [. xenial/xenial main]
+signal-desktop 6.43.1 [. xenial/xenial main]
 signon-plugin-oauth2 0.25-2 [Ubuntu/jammy universe]
 silversearcher-ag 2.2.0+git20200805-1 [Ubuntu/jammy universe]
 simple-scan 42.0-1 [Ubuntu/jammy main]
@@ -4317,8 +4317,8 @@ slack-desktop 4.35.131 [slack/jessie main]
 slirp4netns 1.0.1-2 [Ubuntu/jammy universe]
 slop 7.5-1.1build2 [Ubuntu/jammy universe]
 snapd 2.58+22.04.1 [Ubuntu/jammy main]
-software-properties-common 0.99.22.8 [local]
-software-properties-gtk 0.99.22.8 [local]
+software-properties-common 0.99.22.9 [Ubuntu/jammy main]
+software-properties-gtk 0.99.22.9 [Ubuntu/jammy main]
 sonata 1.7.0-1 [Ubuntu/jammy universe]
 sonnet-plugins 5.92.0-0ubuntu1 [Ubuntu/jammy universe]
 sound-icons 0.1-8 [Ubuntu/jammy main]
@@ -4333,7 +4333,7 @@ sphinx-common 4.3.2-1 [Ubuntu/jammy main]
 sphinx-rtd-theme-common 1.0.0+dfsg-1 [Ubuntu/jammy main]
 spice-vdagent 0.22.1-1 [Ubuntu/jammy main]
 spotify-client 1:1.1.72.439.gc253025e [local]
-sqlite3 3.37.2-2ubuntu0.1 [local]
+sqlite3 3.37.2-2ubuntu0.3 [Ubuntu/jammy main]
 sqlitebrowser 3.12.1-2 [Ubuntu/jammy universe]
 squashfs-tools 1:4.5-3build1 [Ubuntu/jammy main]
 ssh-import-id 5.11-0ubuntu1 [Ubuntu/jammy main]
@@ -4695,7 +4695,7 @@ zstd 1.4.8+dfsg-3build1 [Ubuntu/jammy main]
 name: batsignal version: 1.6.4-pacstall1
 name: bitwarden version: 2023.12.1
 name: btop version: 1.2.13-pacstall1
-name: google-chrome-stable version: 120.0.6099.129-1
+name: google-chrome-stable version: 120.0.6099.199-1
 name: htop version: 3.2.2-pacstall1
 name: nala version: 0.14.0
 name: neofetch version: 7.1.0-pacstall1
@@ -4703,7 +4703,7 @@ name: polybar version: 3.6.3-pacstall1
 name: protonmail-bridge version: 3.7.1-1
 name: quarto version: 1.3.450
 name: shfmt version: 3.7.0-pacstall1
-name: signal-desktop version: 6.42.1
+name: signal-desktop version: 6.43.1
 name: thorium-browser version: 117.0.5938.157-1
 name: wezterm version: 20230712-072601-f4abf8fd-pacstall1
 name: zoom version: 5.17.1.1840
@@ -4736,7 +4736,7 @@ cargo-info v0.7.6:
 cargo-update v13.3.0:
     cargo-install-update
     cargo-install-update-config
-cargo-watch v8.5.1:
+cargo-watch v8.5.2:
     cargo-watch
 coreutils v0.0.23:
     coreutils
@@ -4785,7 +4785,7 @@ mdbook-toc v0.14.2:
     mdbook-toc
 menyoki v1.7.0:
     menyoki
-mise v2024.1.4:
+mise v2024.1.6:
     mise
 mprocs v0.6.4:
     mprocs
@@ -4797,7 +4797,7 @@ pastel v0.9.0:
     pastel
 porsmo v0.3.0:
     porsmo
-pueue v3.3.2:
+pueue v3.3.3:
     pueue
     pueued
 ripgrep v14.0.3:
@@ -4905,7 +4905,7 @@ package euporie 2.6.2, installed using Python 3.10.12
  - euporie-hub
  - euporie-notebook
  - euporie-preview
-package flake8 6.1.0, installed using Python 3.10.12
+package flake8 7.0.0, installed using Python 3.10.12
  - flake8
 package fprettify 0.3.7, installed using Python 3.10.12
  - fprettify
@@ -5052,7 +5052,7 @@ ascii-image-converter: github.com/TheZoraiz/ascii-image-converter@v1.13.1
                   gum: github.com/charmbracelet/gum@v0.13.0
                   gup: github.com/nao1215/gup@v0.24.1
               lazygit: github.com/jesseduffield/lazygit@v0.40.2
-                   lf: github.com/gokcehan/lf@v0.0.0-20240101230249-c88b8eaa6544
+                   lf: github.com/gokcehan/lf@v0.0.0-20240105032151-43610eaf4056
                   nap: github.com/maaslalani/nap@v0.1.1
                 rmapi: github.com/juruen/rmapi@(devel)
                     s: github.com/zquestz/s@v0.6.9
