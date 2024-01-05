@@ -1,0 +1,97 @@
+live_config_reload = true
+
+[colors]
+draw_bold_text_with_bright_colors = true
+
+[colors.bright]
+black = "0xff0000"
+blue = "0xff9496"
+cyan = "#8bbc7a"
+green = "#b7ba26"
+magenta = "#c27d90"
+red = "#fa4934"
+white = "0xfff6e3"
+yellow = "#f9bc2f"
+
+[colors.cursor]
+cursor = "#d57d6d"
+
+[colors.normal]
+black = "#282828"
+blue = "#458588"
+cyan = "#689d6a"
+green = "#98971a"
+magenta = "#b16286"
+red = "#cc241d"
+white = "#a89984"
+yellow = "#d79921"
+
+[colors.primary]
+background = "#2d2d2d"
+bright_foreground = "#eaeaea"
+dim_foreground = "#828482"
+foreground = "#c5c8c6"
+
+[colors.vi_mode_cursor]
+cursor = "#999900"
+text = "CellBackground"
+
+[font]
+size = 7
+
+[font.bold]
+family = "Recursive"
+style = "Bold"
+
+[font.italic]
+family = "Recursive"
+style = "Italic"
+
+[font.normal]
+family = "Recursive"
+style = "Regular"
+
+[font.offset]
+x = 1
+y = 0
+
+[[keyboard.bindings]]
+action = "Paste"
+key = "Paste"
+
+[[keyboard.bindings]]
+action = "Copy"
+key = "Copy"
+
+[[keyboard.bindings]]
+action = "Paste"
+key = "V"
+mods = "Alt"
+
+[[keyboard.bindings]]
+action = "Copy"
+key = "C"
+mods = "Alt"
+
+[[keyboard.bindings]]
+action = "IncreaseFontSize"
+key = "K"
+mods = "Alt|Shift"
+
+[[keyboard.bindings]]
+action = "DecreaseFontSize"
+key = "J"
+mods = "Alt|Shift"
+
+[shell]
+args = ["--login"]
+program = "/bin/zsh"
+
+[window]
+decorations = "None"
+dynamic_title = true
+opacity = 0.9
+
+[window.padding]
+x = 3
+y = 5

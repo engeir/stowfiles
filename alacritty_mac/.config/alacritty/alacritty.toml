@@ -1,0 +1,131 @@
+live_config_reload = true
+vi_mode_style = "Block"
+
+[colors]
+draw_bold_text_with_bright_colors = false
+transparent_background_colors = true
+
+[colors.bright]
+black = "0x517f8d"
+blue = "0x7eb2dd"
+cyan = "0x00ffff"
+green = "0x9cf087"
+magenta = "0xfb94ff"
+red = "0xff5a67"
+white = "0xb7cff9"
+yellow = "0xffcc1b"
+
+[colors.cursor]
+cursor = "0xffcc1b"
+text = "0x002635"
+
+[colors.normal]
+black = "0x00384d"
+blue = "0x1c8db2"
+cyan = "0x00cccc"
+green = "0x7fc06e"
+magenta = "0xc694ff"
+red = "0xc43061"
+white = "0x77929e"
+yellow = "0xf08e48"
+
+[cursor.style]
+shape = "Beam"
+
+[env]
+TERM = "xterm-256color"
+
+[font]
+builtin_box_drawing = true
+size = 13
+
+[font.bold]
+family = "VictorMono Nerd Font Mono"
+style = "Bold"
+
+[font.bold_italic]
+family = "VictorMono Nerd Font Mono"
+style = "Bold Italic"
+
+[font.italic]
+family = "VictorMono Nerd Font Mono"
+style = "Italic"
+
+[font.normal]
+family = "VictorMono Nerd Font Mono"
+style = "Medium"
+
+[[hints.enabled]]
+command = "open"
+post_processing = true
+regex = "(mailto:|gemini:|gopher:|https:|http:|news:|file:|git:|ssh:|ftp:)[^\u0000-\u001F\u007F-<>\"\\s{-}\\^⟨⟩`]+"
+
+[hints.enabled.binding]
+key = "U"
+mods = "Control|Shift"
+
+[hints.enabled.mouse]
+enabled = true
+mods = "None"
+
+[[keyboard.bindings]]
+chars = "]"
+key = "RBracket"
+mods = "Alt"
+
+[[keyboard.bindings]]
+chars = "}"
+key = "RBracket"
+mods = "Alt|Shift"
+
+[[keyboard.bindings]]
+chars = "|"
+key = "Slash"
+mods = "Alt"
+
+[[keyboard.bindings]]
+chars = '\'
+key = "Slash"
+mods = "Alt|Shift"
+
+[[keyboard.bindings]]
+chars = "["
+key = "LBracket"
+mods = "Alt"
+
+[[keyboard.bindings]]
+chars = "{"
+key = "LBracket"
+mods = "Alt|Shift"
+
+[[keyboard.bindings]]
+chars = "\u001Bp"
+key = "P"
+mods = "Alt"
+
+[[keyboard.bindings]]
+chars = "\u001Bq"
+key = "Q"
+mods = "Alt"
+
+[[keyboard.bindings]]
+action = "IncreaseFontSize"
+key = "K"
+mods = "Alt|Shift"
+
+[[keyboard.bindings]]
+action = "DecreaseFontSize"
+key = "J"
+mods = "Alt|Shift"
+
+[shell]
+args = ["--login"]
+program = "/bin/zsh"
+
+[window]
+decorations = "buttonless"
+opacity = 0.8
+
+[window.padding]
+x = 1
+y = 1
