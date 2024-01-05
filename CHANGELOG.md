@@ -1,5 +1,27 @@
 # Changelog
 
+## [1.6.1](https://github.com/engeir/stowfiles/compare/v1.6.0...v1.6.1) (2024-01-05)
+
+
+### Bug Fixes
+
+* **alacritty:** migrate to toml config format ([f8a48e7](https://github.com/engeir/stowfiles/commit/f8a48e7b13e2ec2615f735d1a9d3ec3a47a8f166))
+* **zsh:** fzf should list all files (no git respect) ([84ca3ff](https://github.com/engeir/stowfiles/commit/84ca3ff58a0f4e31d87401bf9f9a66328c4eb55f))
+* **zsh:** use abbr over alias ([fec66e4](https://github.com/engeir/stowfiles/commit/fec66e429ada535254444802afd99075a6057a62))
+
+
+### Miscellaneous
+
+* **bin:** update to correct nvc script output ([ed15066](https://github.com/engeir/stowfiles/commit/ed150668acf282ab6ae29ba3f5de2284161ac47e))
+* **nvim:** format gets more timeout_ms ([68cd2d9](https://github.com/engeir/stowfiles/commit/68cd2d901e77cfa336fe50f8bfdefb18c3674b5c))
+* **nvim:** use fidget.nvim main rather than legacy branch ([d997237](https://github.com/engeir/stowfiles/commit/d9972372f2b1b4246a96ce6216ac33fe05996816))
+* **software:** small update ([320ce89](https://github.com/engeir/stowfiles/commit/320ce89f029bb7e20ba986f665996bf392264229))
+* **software:** update installed ([59c1419](https://github.com/engeir/stowfiles/commit/59c14193d1817232f177e5f56622e8956906afe6))
+* **software:** update rclone as root ([a8ee997](https://github.com/engeir/stowfiles/commit/a8ee997f3529edc38f880330a03637a592226092))
+* **software:** update rustup (rust toolchain) ([6185a12](https://github.com/engeir/stowfiles/commit/6185a12f118d3c8b1c55fa1fb1d6769021ac299a))
+* **software:** update to mise from old name rtx ([d20e9c3](https://github.com/engeir/stowfiles/commit/d20e9c34e05c689bc231faae2f59c6955f1cf3a4))
+* **zsh:** add abbr and update name ls alias to eza from exa ([2e8c280](https://github.com/engeir/stowfiles/commit/2e8c280758ca7b741ad6145da1909956834a5cf4))
+
 ## [1.6.0](https://github.com/engeir/stowfiles/compare/v1.5.0...v1.6.0) (2023-12-11)
 
 
