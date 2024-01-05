@@ -22,12 +22,14 @@ plug "Aloxaf/fzf-tab"
 plug "MichaelAquilina/zsh-auto-notify"
 plug "MichaelAquilina/zsh-you-should-use"
 plug "jeffreytse/zsh-vi-mode"
-plug "chivalryq/git-alias"
+# plug "chivalryq/git-alias"
 plug "wfxr/forgit"
 plug "conda-incubator/conda-zsh-completion"
 plug "$HOME/.config/zsh/exports.zsh"
 zvm_after_init_commands+=('[ -f $HOME/programs/zsh/fzf-key-bindings/key-bindings.zsh ] && source $HOME/programs/zsh/fzf-key-bindings/key-bindings.zsh')
 
+# Let's try this while we are using olets/zsh-abbr
+unalias -a
 plug "$HOME/.config/zsh/aliases.zsh"
 plug "$HOME/.config/zsh/functions.zsh"
 if [ "$MACHINE" = "Ubuntu" ]; then
