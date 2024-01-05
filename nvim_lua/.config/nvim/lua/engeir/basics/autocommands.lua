@@ -219,3 +219,21 @@ vim.api.nvim_create_autocmd("InsertCharPre", {
         vim.api.nvim_input("<Esc>m'" .. row + 1 .. "gg" .. col + 1 .. "|if<Esc>`'la")
     end,
 })
+
+-- Update the "lastmod" field (from https://neovim.io/doc/user/autocmd.html#autocmd-use)
+-- vim.api.nvim_create_autocmd({"BufWritePre", "FileWritePre"},
+--     pattern = {"html"},
+--    command =
+-- )
+vim.cmd([[
+autocmd BufWritePre,FileWritePre *.md   ks|call LastMod()|'s
+fun LastMod()
+  if line("$") > 20
+    let l = 20
+  else
+    let l = line("$")
+  endif
+  exe "1," .. l .. "g/lastmod: /s/lastmod: .*/lastmod: " ..
+  \ strftime("%Y-%m-%dT%H:%M:%S%z")
+endfun
+]])

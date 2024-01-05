@@ -16,11 +16,11 @@ apr-util 1.6.3_1
 argon2 20190702_1
 aribb24 1.0.4
 asciinema 2.4.0
-aspell 0.60.8
+aspell 0.60.8.1_1
 assimp 5.3.1
 at-spi2-core 2.50.0
 atool 0.39.0
-autoconf 2.71
+autoconf 2.72
 automake 1.16.5
 bash 5.2.21
 bash-completion 1.3_3
@@ -29,13 +29,13 @@ bdw-gc 8.2.4
 berkeley-db 18.1.40_2
 bibclean 3.07
 bison 3.8.2
-black 23.11.0_1
+black 23.12.1
 boost 1.83.0
 borgbackup-fuse 1.2.6
 brotli 1.1.0
 btop 1.2.13
-c-ares 1.23.0
-ca-certificates 2023-08-22
+c-ares 1.24.0
+ca-certificates 2023-12-12
 cabextract 1.11
 cairo 1.18.0
 calcurse 4.8.1
@@ -51,7 +51,7 @@ cjson 1.7.16
 cli11 2.3.2
 clisp 2.49.92_1
 cloc 1.98
-cmake 3.28.0
+cmake 3.28.1
 cmatrix 2.0
 cmocka 1.1.7
 composer 2.6.6
@@ -60,7 +60,7 @@ cpio 2.14
 cpp-gsl 4.0.0_1
 curl 8.5.0
 cython 3.0.6
-dav1d 1.2.1
+dav1d 1.3.0
 dbus 1.14.10
 desktop-file-utils 0.27
 despell 0.10
@@ -75,7 +75,7 @@ docutils 0.20.1_1
 docx2txt 1.4
 doggo 0.5.7
 double-conversion 3.3.0
-dpkg 1.22.1
+dpkg 1.22.2
 dtc 1.7.0
 duf 0.8.1
 duktape 2.7.0
@@ -86,10 +86,10 @@ emacs-plus@27 27.2
 entr 5.5
 expat 2.5.0
 fastjar 0.98
-fd 8.7.1
+fd 9.0.0
 feh 3.10.2
-ffmpeg 6.0_1
-ffmpeg@4 4.4.4
+ffmpeg 6.0_2
+ffmpeg@4 4.4.4_1
 ffmpegthumbnailer 2.2.2_9
 ffsend 0.2.76
 fftw 3.3.10_1
@@ -111,13 +111,13 @@ gdbm 1.23
 gdk-pixbuf 2.42.10_1
 geos 3.12.1
 gettext 0.22.4
-gh 2.40.0
+gh 2.40.1
 ghostscript 10.02.1
 giflib 5.2.1
 girara 0.4.0
 git 2.43.0
-git-lfs 3.4.0
-glib 2.78.2
+git-lfs 3.4.1
+glib 2.78.3
 glow 1.5.1
 gmp 6.3.0
 gnu-getopt 2.39.3
@@ -135,11 +135,11 @@ gping 1.16.0
 graphicsmagick 1.3.42
 graphite2 1.3.14
 grep 3.11
-groovy 4.0.16
+groovy 4.0.17
 gsettings-desktop-schemas 45.0
 gsl 2.7.1
 gtk+ 2.24.33_2
-gtk+3 3.24.38_1
+gtk+3 3.24.39
 gtk-mac-integration 3.0.1_1
 guile 3.0.9
 gumbo-parser 0.10.1
@@ -149,7 +149,7 @@ hdf5 1.14.3
 helix 23.10
 hicolor-icon-theme 0.17
 highway 1.0.7
-hledger 1.32
+hledger 1.32.1
 html2text 2.2.3
 htop 3.2.2
 httpd 2.4.58
@@ -159,7 +159,7 @@ hunspell 1.7.2
 hwloc 2.10.0
 icu4c 73.2
 ilmbase 2.5.8
-imagemagick 7.1.1-22
+imagemagick 7.1.1-23
 imath 3.1.9
 imlib2 1.12.1
 intltool 0.51.0_2
@@ -172,13 +172,13 @@ jpeg 9e
 jpeg-turbo 3.0.0
 jpeg-xl 0.8.2_1
 jpegoptim 1.5.5
-jq 1.7
+jq 1.7.1
 json-c 0.17
 jsoncpp 1.9.5
 jump 0.51.0
 krb5 1.21.2
 lame 3.100
-leptonica 1.83.1
+leptonica 1.84.0
 libaec 1.1.2
 libansilove 1.4.1
 libarchive 3.7.2
@@ -189,7 +189,7 @@ libb2 0.98.1
 libbluray 1.3.4
 libcaca 0.99b20
 libcerf 2.4
-libde265 1.0.14
+libde265 1.0.15
 libdeflate 1.19
 libdicom 1.0.5
 libepoxy 1.5.10
@@ -202,7 +202,7 @@ libgit2 1.7.1
 libgit2@1.6 1.6.4
 libgpg-error 1.47
 libgsf 1.14.51
-libheif 1.17.5
+libheif 1.17.6
 libice 1.1.1
 libidn 1.41
 libidn2 2.3.4_1
@@ -229,9 +229,9 @@ libpng 1.6.40
 libpq 16.1_1
 libproxy 0.5.3
 libpthread-stubs 0.5
-libraw 0.21.1
+libraw 0.21.2
 librist 0.2.10
-librsvg 2.57.0
+librsvg 2.57.1
 libsamplerate 0.2.2
 libsigsegv 2.14
 libsixel 1.10.3_1
@@ -269,7 +269,7 @@ libxfixes 6.0.1
 libxft 2.3.8
 libxi 1.8.1
 libxinerama 1.1.5
-libxml2 2.12.2
+libxml2 2.12.3
 libxmu 1.1.4
 libxpm 3.5.17
 libxrandr 1.5.4
@@ -302,8 +302,8 @@ mbedtls 3.5.1
 mcfly v0.8.3
 md4c 0.4.8
 media-info 23.11
-mercurial 6.6
-mesa 22.3.6_1
+mercurial 6.6.1
+mesa 23.3.1
 meson 1.3.0
 mozjpeg 4.1.5
 mpdecimal 2.5.1
@@ -315,7 +315,7 @@ mujs 1.3.4
 mupdf 1.23.7
 mysql@5.7 5.7.44_1
 nb 7.9.0
-ncspot 0.13.4
+ncspot 1.0.0
 ncurses 6.4
 neofetch 7.1.0
 netcdf 4.9.2_1
@@ -325,13 +325,13 @@ ninja 1.11.1
 nlohmann-json 3.11.3
 nmap 7.94_1
 nnn 4.9
-node 21.4.0
+node 21.5.0
 npth 1.6
 nspr 4.35
-nss 3.95
+nss 3.96.1
 odt2txt 0.5
 oniguruma 6.9.9
-open-mpi 5.0.0
+open-mpi 5.0.1
 opencore-amr 0.1.6
 openexr 3.2.1
 openjdk 21.0.1
@@ -345,7 +345,7 @@ opusfile 0.12_1
 orc 0.4.34
 p11-kit 0.25.3
 p7zip 17.05
-pandoc 3.1.9
+pandoc 3.1.11
 pandoc-citeproc 0.17.0.2
 pandoc-include-code 1.5.0.0_2
 pango 1.50.14
@@ -355,31 +355,32 @@ pcre2 10.42
 pdftohtml 0.40a
 pdftoipe 7.2.24.1_17
 perl 5.38.2
-php 8.3.0
+php 8.3.1
 pinentry 1.2.1
 pinentry-mac 1.1.1.1
 pipx 1.3.3
 pixman 0.42.2
 pkg-config 0.29.2_3
 plotutils 2.6_1
-pmix 4.2.7
+pmix 4.2.8
 poppler 23.12.0
 popt 1.19
 portaudio 19.7.0
 portmidi 2.0.4_1
 potrace 1.16
 pqiv 2.12_7
-prettier 3.1.0
+prettier 3.1.1
 proj 9.3.1
 protobuf 25.1
 pstoedit 3.78
 pueue 3.3.2
 pup 0.4.0
+pv 1.8.5
 pyenv 2.3.35
 pyenv-virtualenv 1.2.1
 pygments 2.17.2
 pyqt@5 5.15.10
-python-argcomplete 3.1.6
+python-argcomplete 3.2.1
 python-attrs 23.1.0
 python-brotli 1.1.0
 python-certifi 2023.11.17
@@ -388,19 +389,19 @@ python-idna 3.6
 python-markupsafe 2.1.3_1
 python-mutagen 1.47.0_1
 python-packaging 23.2_1
-python-pathspec 0.11.2
+python-pathspec 0.12.1
 python-platformdirs 4.1.0
-python-setuptools 69.0.2
+python-setuptools 69.0.3
 python-tabulate 0.9.0_1
 python@3.10 3.10.13_1
 python@3.11 3.11.6_1
-python@3.12 3.12.0_1
+python@3.12 3.12.1
 python@3.8 3.8.18_1
 python@3.9 3.9.18_1
-qemu 8.1.3_2
+qemu 8.2.0
 qrencode 4.1.1
-qt 6.6.0
-qt@5 5.15.10_1
+qt 6.6.1
+qt@5 5.15.11
 range-v3 0.12.0
 rav1e 0.6.6
 readline 8.2.7
@@ -412,7 +413,7 @@ rtmpdump 2.4-20151223_3
 rubberband 3.3.0
 ruby 3.2.2_1
 ruby-install 0.9.3
-rust-analyzer 2023-12-04
+rust-analyzer 2023-12-18
 scrcpy 2.3.1
 screenresolution 1.6
 sd 1.0.0
@@ -428,7 +429,7 @@ shellharden 4.3.0
 shfmt 3.7.0
 shpotify 2.1
 sk 0.10.4
-sketchybar 2.19.4
+sketchybar 2.19.5
 skhd 0.3.9
 slides 0.9.0
 snappy 1.1.10
@@ -445,7 +446,7 @@ srt 1.5.3
 st 1.1.4_1
 starship 1.16.0
 stow 2.3.1
-svt-av1 1.7.0
+svt-av1 1.8.0
 switchaudio-osx 1.2.2
 sxiv 26_1
 szip 2.1.1_1
@@ -458,10 +459,10 @@ theora 1.1.1
 tidy-html5 5.8.0
 tig 2.5.8_1
 timg 1.5.3
-tldr 1.6.0
+tldr 1.6.1
 tmux 3.3a_3
 toilet 0.3
-tree 2.1.1
+tree 2.1.1_1
 tree-sitter 0.20.8
 ttyd 1.7.4_1
 uchardet 0.0.8
@@ -474,7 +475,7 @@ utf8proc 2.9.0
 uthash 2.3.0
 vapoursynth 65
 vde 2.3.3
-vips 8.15.0_1
+vips 8.15.1
 vitetris 0.59.1
 vivid 0.9.0
 vulkan-headers 1.3.268
@@ -495,7 +496,7 @@ xterm 388
 xvid 1.3.7
 xxhash 0.8.2
 xz 5.4.5
-yabai 6.0.1
+yabai 6.0.2
 yarn 1.22.21
 youtube-dl 2021.12.17
 yt-dlp 2023.11.16
@@ -511,12 +512,11 @@ amethyst 0.15.3
 android-platform-tools 34.0.5
 basictex 2023.0314
 blackhole-16ch 0.5.0
-borg-wrapper 0.0.2
 dmenu-mac 0.7.2
 font-hack-nerd-font 3.1.1
 gimp 2.10.36
 hammerspoon 0.9.90
-librewolf 120.0.1,1
+librewolf 121.0,1
 macfuse 4.2.3
 nuclear 0.6.30
 osxfuse 3.11.2
@@ -538,9 +538,9 @@ xquartz 2.8.1
 ## Cargo
 
 ```txt
-atuin v17.0.1:
+atuin v17.1.0:
     atuin
-bacon v2.14.0:
+bacon v2.14.1:
     bacon
 blackd-client v0.1.0:
     blackd-client
@@ -548,9 +548,9 @@ blindfold v1.0.7:
     blindfold
 bob-nvim v2.7.0:
     bob
-broot v1.30.0:
+broot v1.30.2:
     broot
-cargo-binstall v1.4.6:
+cargo-binstall v1.4.8:
     cargo-binstall
 cargo-edit v0.12.2:
     cargo-add
@@ -572,7 +572,7 @@ czkawka_cli v6.1.0:
     czkawka_cli
 despell v1.0.1:
     despell
-evcxr_jupyter v0.16.0:
+evcxr_jupyter v0.17.0:
     evcxr_jupyter
 exa v0.10.1:
     exa
@@ -587,19 +587,19 @@ helix-term v0.6.0 (/Users/eirikenger/programs/helix/helix-term):
     hx
 hyperfine v1.18.0:
     hyperfine
-irust v1.71.15:
+irust v1.71.19:
     irust
 mdbook v0.4.36:
     mdbook
 mprocs v0.6.4:
     mprocs
-nu v0.87.1:
+nu v0.88.1:
     nu
-numbat-cli v1.8.0:
+numbat-cli v1.9.0:
     numbat
 porsmo v0.3.0:
     porsmo
-rtx-cli v2023.12.21:
+rtx-cli v2023.12.38:
     rtx
 sd v1.0.0:
     sd
