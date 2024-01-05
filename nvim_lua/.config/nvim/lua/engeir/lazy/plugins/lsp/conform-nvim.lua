@@ -99,10 +99,10 @@ return {
 
         -- Create a command `:Format`
         vim.api.nvim_create_user_command("Format", function(_)
-            require("conform").format({ timeout_ms = 5000, async = false, lsp_fallback = true })
+            require("conform").format({ timeout_ms = 10000, async = false, lsp_fallback = true })
         end, { desc = "Format current buffer with conform.nvim or LSP" })
         vim.keymap.set({ "n", "v" }, "<leader>sf", function()
-            require("conform").format({ timeout_ms = 5000, async = false, lsp_fallback = true })
+            require("conform").format({ timeout_ms = 10000, async = false, lsp_fallback = true })
         end, { desc = "Format" })
     end,
 }
