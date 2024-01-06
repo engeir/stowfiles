@@ -45,6 +45,7 @@ run_updates() {
     echo_and_run pyenv update
     echo_and_run sudo rclone selfupdate
     echo_and_run rye self update
+    echo_and_run zap update all
 }
 
 try_fix_ppa() {

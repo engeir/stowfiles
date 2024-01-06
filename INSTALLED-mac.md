@@ -10,7 +10,7 @@ aha 0.5.1
 amfora 1.9.2
 ansilove 4.2.0
 antiword 0.37
-aom 3.8.0
+aom 3.8.0_2
 apr 1.7.4
 apr-util 1.6.3_1
 argon2 20190702_1
@@ -27,6 +27,7 @@ bash-completion 1.3_3
 bat 0.24.0
 bdw-gc 8.2.4
 berkeley-db 18.1.40_2
+berkeley-db@5 5.3.28_1
 bibclean 3.07
 bison 3.8.2
 black 23.12.1
@@ -34,7 +35,7 @@ boost 1.83.0
 borgbackup-fuse 1.2.6
 brotli 1.1.0
 btop 1.2.13
-c-ares 1.24.0
+c-ares 1.25.0
 ca-certificates 2023-12-12
 cabextract 1.11
 cairo 1.18.0
@@ -47,7 +48,7 @@ cfitsio 4.3.1
 cgif 0.3.2
 chafa 1.12.5
 chruby 0.3.9
-cjson 1.7.16
+cjson 1.7.17
 cli11 2.3.2
 clisp 2.49.92_1
 cloc 1.98
@@ -59,7 +60,7 @@ coreutils 9.4
 cpio 2.14
 cpp-gsl 4.0.0_1
 curl 8.5.0
-cython 3.0.6
+cython 3.0.7
 dav1d 1.3.0
 dbus 1.14.10
 desktop-file-utils 0.27
@@ -74,6 +75,7 @@ docker-compose 2.23.3
 docutils 0.20.1_1
 docx2txt 1.4
 doggo 0.5.7
+dos2unix 7.5.1
 double-conversion 3.3.0
 dpkg 1.22.2
 dtc 1.7.0
@@ -88,22 +90,22 @@ expat 2.5.0
 fastjar 0.98
 fd 9.0.0
 feh 3.10.2
-ffmpeg 6.0_2
-ffmpeg@4 4.4.4_1
+ffmpeg 6.1.1_2
+ffmpeg@4 4.4.4_4
 ffmpegthumbnailer 2.2.2_9
 ffsend 0.2.76
 fftw 3.3.10_1
 figlet 2.2.5
 flac 1.4.3
 flex 2.6.4_2
-fmt 10.1.1
-fontconfig 2.14.2
+fmt 10.2.1
+fontconfig 2.15.0
 freeglut 3.4.0
 freetds 1.4.10
 freetype 2.13.2
 frei0r 2.3.2
 fribidi 1.0.13
-fzf 0.44.1
+fzf 0.45.0
 gawk 5.3.0
 gcc 13.2.0
 gd 2.3.3_6
@@ -124,7 +126,7 @@ gnu-getopt 2.39.3
 gnu-sed 4.9
 gnu-tar 1.35
 gnupg 2.4.3
-gnuplot 5.4.10
+gnuplot 6.0.0
 gnutls 3.8.2
 go 1.21.5
 gobject-introspection 1.78.1
@@ -132,7 +134,7 @@ golangci-lint 1.55.2
 gpatch 2.7.6
 gpgme 1.23.2
 gping 1.16.0
-graphicsmagick 1.3.42
+graphicsmagick 1.3.42_1
 graphite2 1.3.14
 grep 3.11
 groovy 4.0.17
@@ -149,17 +151,17 @@ hdf5 1.14.3
 helix 23.10
 hicolor-icon-theme 0.17
 highway 1.0.7
-hledger 1.32.1
+hledger 1.32.2
 html2text 2.2.3
 htop 3.2.2
 httpd 2.4.58
 hub 2.14.2
-hugo 0.121.1
+hugo 0.121.2
 hunspell 1.7.2
 hwloc 2.10.0
 icu4c 73.2
 ilmbase 2.5.8
-imagemagick 7.1.1-23
+imagemagick 7.1.1-25
 imath 3.1.9
 imlib2 1.12.1
 intltool 0.51.0_2
@@ -170,7 +172,7 @@ jbig2dec 0.20
 jemalloc 5.3.0
 jpeg 9e
 jpeg-turbo 3.0.0
-jpeg-xl 0.8.2_1
+jpeg-xl 0.9.0
 jpegoptim 1.5.5
 jq 1.7.1
 json-c 0.17
@@ -178,7 +180,7 @@ jsoncpp 1.9.5
 jump 0.51.0
 krb5 1.21.2
 lame 3.100
-leptonica 1.84.0
+leptonica 1.84.1
 libaec 1.1.2
 libansilove 1.4.1
 libarchive 3.7.2
@@ -242,7 +244,7 @@ libsodium 1.0.19
 libsoxr 0.1.3
 libspectre 0.2.12_1
 libspng 0.7.4
-libssh 0.10.5_1
+libssh 0.10.6
 libssh2 1.11.0_1
 libtasn1 4.19.0
 libtermkey 0.22
@@ -253,7 +255,7 @@ libunistring 1.1
 libusb 1.0.26
 libuv 1.47.0
 libvidstab 1.1.1
-libvmaf 2.3.1
+libvmaf 3.0.0
 libvorbis 1.3.7
 libvpx 1.13.1
 libvterm 0.3.3
@@ -281,12 +283,12 @@ libyaml 0.2.5
 libzen 0.4.41_1
 libzip 1.10.1
 links 2.29
-little-cms2 2.15
+little-cms2 2.16
 lolcat 100.0.1
 lsd 1.0.0
 lua 5.4.6
 lua@5.3 5.3.6
-luajit HEAD-03080b7 2.1.1700008891
+luajit HEAD-03080b7 2.1.1703358377
 luajit-openresty 2.1-20231117
 luarocks 3.9.2
 luv 1.45.0-0
@@ -299,12 +301,12 @@ m4 1.4.19
 mad 0.15.1b
 make 4.4.1
 mbedtls 3.5.1
-mcfly v0.8.3
+mcfly v0.8.4
 md4c 0.4.8
 media-info 23.11
 mercurial 6.6.1
-mesa 23.3.1
-meson 1.3.0
+mesa 23.3.2
+meson 1.3.1
 mozjpeg 4.1.5
 mpdecimal 2.5.1
 mpfr 4.2.1
@@ -314,7 +316,7 @@ msgpack 6.0.0
 mujs 1.3.4
 mupdf 1.23.7
 mysql@5.7 5.7.44_1
-nb 7.9.0
+nb 7.9.1
 ncspot 1.0.0
 ncurses 6.4
 neofetch 7.1.0
@@ -354,16 +356,16 @@ pcre 8.45
 pcre2 10.42
 pdftohtml 0.40a
 pdftoipe 7.2.24.1_17
-perl 5.38.2
+perl 5.38.2_1
 php 8.3.1
 pinentry 1.2.1
 pinentry-mac 1.1.1.1
-pipx 1.3.3
+pipx 1.4.1
 pixman 0.42.2
 pkg-config 0.29.2_3
 plotutils 2.6_1
 pmix 4.2.8
-poppler 23.12.0
+poppler 24.01.0
 popt 1.19
 portaudio 19.7.0
 portmidi 2.0.4_1
@@ -373,7 +375,7 @@ prettier 3.1.1
 proj 9.3.1
 protobuf 25.1
 pstoedit 3.78
-pueue 3.3.2
+pueue 3.3.3
 pup 0.4.0
 pv 1.8.5
 pyenv 2.3.35
@@ -381,7 +383,7 @@ pyenv-virtualenv 1.2.1
 pygments 2.17.2
 pyqt@5 5.15.10
 python-argcomplete 3.2.1
-python-attrs 23.1.0
+python-attrs 23.2.0
 python-brotli 1.1.0
 python-certifi 2023.11.17
 python-click 8.1.7_1
@@ -394,16 +396,16 @@ python-platformdirs 4.1.0
 python-setuptools 69.0.3
 python-tabulate 0.9.0_1
 python@3.10 3.10.13_1
-python@3.11 3.11.6_1
+python@3.11 3.11.7
 python@3.12 3.12.1
 python@3.8 3.8.18_1
 python@3.9 3.9.18_1
 qemu 8.2.0
 qrencode 4.1.1
 qt 6.6.1
-qt@5 5.15.11
+qt@5 5.15.12
 range-v3 0.12.0
-rav1e 0.6.6
+rav1e 0.7.0
 readline 8.2.7
 recode 3.7.14
 ripgrep 14.0.3
@@ -413,7 +415,7 @@ rtmpdump 2.4-20151223_3
 rubberband 3.3.0
 ruby 3.2.2_1
 ruby-install 0.9.3
-rust-analyzer 2023-12-18
+rust-analyzer 2024-01-01
 scrcpy 2.3.1
 screenresolution 1.6
 sd 1.0.0
@@ -422,7 +424,7 @@ sdl2 2.28.5
 sdl_image 1.2.12_10
 sdl_mixer 1.2.12_6
 sdl_ttf 2.0.11_2
-shaderc 2023.7
+shaderc 2023.8
 shared-mime-info 2.4
 shellcheck 0.9.0
 shellharden 4.3.0
@@ -444,7 +446,7 @@ spotify-tui v0.23.0
 sqlite 3.44.2
 srt 1.5.3
 st 1.1.4_1
-starship 1.16.0
+starship 1.17.1
 stow 2.3.1
 svt-av1 1.8.0
 switchaudio-osx 1.2.2
@@ -475,11 +477,11 @@ utf8proc 2.9.0
 uthash 2.3.0
 vapoursynth 65
 vde 2.3.3
-vips 8.15.1
+vips 8.15.1_1
 vitetris 0.59.1
 vivid 0.9.0
-vulkan-headers 1.3.268
-vulkan-loader 1.3.268
+vulkan-headers 1.3.274
+vulkan-loader 1.3.274
 w3m 0.5.3_8
 watch 4.0.4
 webp 1.3.2
@@ -491,22 +493,22 @@ xcb-util-image 0.4.1
 xmlto 0.0.28
 xorgproto 2023.2
 xpdf 4.04
-xplr 0.21.3
-xterm 388
+xplr 0.21.5
+xterm 389
 xvid 1.3.7
 xxhash 0.8.2
 xz 5.4.5
-yabai 6.0.2
+yabai 6.0.4
 yarn 1.22.21
 youtube-dl 2021.12.17
-yt-dlp 2023.11.16
+yt-dlp 2023.12.30
 zathura 0.5.2
 zathura-pdf-mupdf 0.3.9_1
 zeromq 4.3.5_1
 zimg 3.0.5
 zlib 1.3
 zstd 1.5.5
-alacritty 0.12.3
+alacritty 0.13.0
 alfred 4.5.1,1256
 amethyst 0.15.3
 android-platform-tools 34.0.5
@@ -538,7 +540,7 @@ xquartz 2.8.1
 ## Cargo
 
 ```txt
-atuin v17.1.0:
+atuin v17.2.1:
     atuin
 bacon v2.14.1:
     bacon
@@ -548,9 +550,9 @@ blindfold v1.0.7:
     blindfold
 bob-nvim v2.7.0:
     bob
-broot v1.30.2:
+broot v1.32.0:
     broot
-cargo-binstall v1.4.8:
+cargo-binstall v1.4.9:
     cargo-binstall
 cargo-edit v0.12.2:
     cargo-add
@@ -562,9 +564,9 @@ cargo-info v0.7.6:
 cargo-update v13.3.0:
     cargo-install-update
     cargo-install-update-config
-cargo-watch v8.4.1:
+cargo-watch v8.5.2:
     cargo-watch
-clap v4.4.11:
+clap v4.4.13:
     stdio-fixture
 coreutils v0.0.23:
     coreutils
@@ -574,8 +576,8 @@ despell v1.0.1:
     despell
 evcxr_jupyter v0.17.0:
     evcxr_jupyter
-exa v0.10.1:
-    exa
+eza v0.17.0:
+    eza
 gitui v0.24.3:
     gitui
 halp v0.1.7:
@@ -591,6 +593,8 @@ irust v1.71.19:
     irust
 mdbook v0.4.36:
     mdbook
+mise v2024.1.7:
+    mise
 mprocs v0.6.4:
     mprocs
 nu v0.88.1:
@@ -599,8 +603,6 @@ numbat-cli v1.9.0:
     numbat
 porsmo v0.3.0:
     porsmo
-rtx-cli v2023.12.38:
-    rtx
 sd v1.0.0:
     sd
 speedtest-rs v0.1.4:
@@ -625,7 +627,7 @@ zellij v0.39.2:
 
 ```txt
 manual pages are exposed at /Users/eirikenger/.local/share/man
-package flake8 6.1.0, installed using Python 3.12.0
+package flake8 7.0.0, installed using Python 3.12.0
  - flake8
 package gorps 0.9.1, installed using Python 3.12.0
  - gorps
