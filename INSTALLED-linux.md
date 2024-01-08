@@ -4724,7 +4724,7 @@ blindfold v1.0.7:
     blindfold
 bob-nvim v2.7.0:
     bob
-cargo-binstall v1.4.9:
+cargo-binstall v1.5.0:
     cargo-binstall
 cargo-edit v0.12.2:
     cargo-add
@@ -4785,7 +4785,7 @@ mdbook-toc v0.14.2:
     mdbook-toc
 menyoki v1.7.0:
     menyoki
-mise v2024.1.6:
+mise v2024.1.12:
     mise
 mprocs v0.6.4:
     mprocs
@@ -4800,7 +4800,7 @@ porsmo v0.3.0:
 pueue v3.3.3:
     pueue
     pueued
-ripgrep v14.0.3:
+ripgrep v14.1.0:
     rg
 samply v0.11.0:
     samply
@@ -4909,7 +4909,7 @@ package flake8 7.0.0, installed using Python 3.10.12
  - flake8
 package fprettify 0.3.7, installed using Python 3.10.12
  - fprettify
-package globus-cli 3.22.0, installed using Python 3.10.12
+package globus-cli 3.23.0, installed using Python 3.10.12
  - globus
 package gorps 0.9.1, installed using Python 3.10.12
  - gorps
@@ -5023,7 +5023,7 @@ package tuiview 0.1.1, installed using Python 3.10.12
  - tv
 package twine 4.0.2, installed using Python 3.10.12
  - twine
-package visidata 3.0, installed using Python 3.11.6
+package visidata 3.0.1, installed using Python 3.11.6
  - vd
  - vd2to3.vdx
  - vgit
@@ -5052,7 +5052,7 @@ ascii-image-converter: github.com/TheZoraiz/ascii-image-converter@v1.13.1
                   gum: github.com/charmbracelet/gum@v0.13.0
                   gup: github.com/nao1215/gup@v0.24.1
               lazygit: github.com/jesseduffield/lazygit@v0.40.2
-                   lf: github.com/gokcehan/lf@v0.0.0-20240105032151-43610eaf4056
+                   lf: github.com/gokcehan/lf@v0.0.0-20240107130025-27c71f82103f
                   nap: github.com/maaslalani/nap@v0.1.1
                 rmapi: github.com/juruen/rmapi@(devel)
                     s: github.com/zquestz/s@v0.6.9
@@ -5069,13 +5069,13 @@ ncspot                                  1.0.0                                   
 Freedesktop Platform                    22.08.20                                22.08
 Mesa                                    23.3.0                                  22.08
 Mesa (Extra)                            23.3.0                                  22.08-extra
-Mesa                                    23.3.1                                  23.08
-Mesa (Extra)                            23.3.1                                  23.08-extra
+Mesa                                    23.3.2                                  23.08
+Mesa (Extra)                            23.3.2                                  23.08-extra
 Intel                                                                           22.08
 Intel                                                                           23.08
 openh264                                2.1.0                                   2.0
 openh264                                2.1.0                                   2.2.0
-Evolution                               3.50.1                                  stable
+Evolution                               3.50.2                                  stable
 GNOME Application Platform version 44                                           44
 GNOME Application Platform version 45                                           45
 Citations                               0.6.2                                   stable
@@ -5117,4 +5117,3 @@ snapd-desktop-integration  0.9                         83     latest/stable/… 
 spt                        0.25.0                      289    latest/stable    popey          -
 vlc                        3.0.19                      3721   latest/stable    videolan**     -
 ```
-    
