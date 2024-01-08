@@ -4771,6 +4771,8 @@ irust v1.71.19:
     irust
 jless v0.9.0:
     jless
+just v1.22.0:
+    just
 languagetool-rust v2.1.4:
     ltrs
 lscolors v0.16.0:
@@ -4842,6 +4844,8 @@ xh v0.20.1:
     xh
 xplr v0.21.5:
     xplr
+yazi-fm v0.1.5:
+    yazi
 zellij v0.39.2:
     zellij
 zeta-note v0.1.8:

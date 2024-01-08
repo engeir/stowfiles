@@ -128,6 +128,7 @@ all plugins I'm using:
 - [vim-dadbod](https://github.com/tpope/vim-dadbod.git)
 - [vim-floaterm](https://github.com/voldikss/vim-floaterm.git)
 - [vim-fugitive](https://github.com/tpope/vim-fugitive.git)
+- [vim-just](https://github.com/NoahTheDuke/vim-just.git)
 - [vim-matchup](https://github.com/andymass/vim-matchup.git)
 - [vim-rooter](https://github.com/airblade/vim-rooter.git)
 - [vim-slime](https://github.com/jpalardy/vim-slime.git)
