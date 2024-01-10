@@ -54,7 +54,7 @@ yabai -m config mouse_drop_action            swap
 
 # general space settings
 yabai -m config layout                       bsp
-yabai -m config top_padding                  28 # 2
+yabai -m config top_padding                  0  # 28 # 2
 yabai -m config bottom_padding               0
 yabai -m config left_padding                 0
 yabai -m config right_padding                0
@@ -70,6 +70,9 @@ yabai -m rule --add app="^Plash$" layer=above manage=off
 yabai -m rule --add app="^ZAthura$" layer=above manage=on
 yabai -m rule --add app="^.*pner.*$" sticky=on layer=above manage=off
 yabai -m rule --add title="mylauncher" manage=off sticky=on layer=above border=off
+
+# External bar
+yabai -m config external_bar all:28:0
 
 echo "yabai configuration loaded.."
 
