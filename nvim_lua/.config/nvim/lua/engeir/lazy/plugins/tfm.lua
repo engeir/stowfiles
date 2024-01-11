@@ -1,5 +1,6 @@
 return {
     "rolv-apneseth/tfm.nvim",
+    enabled = IS_KNOWN,
     lazy = false,
     opts = {
         -- TFM to use
