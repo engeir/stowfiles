@@ -24,22 +24,24 @@ local volume_slider = sbar.add("slider", {
 local volume_icon = sbar.add("item", {
     position = "right",
     icon = {
+        padding_left = 5,
         string = icons.volume._100,
-        width = 0,
+        width = 25,
         align = "left",
         color = colors.grey,
-        font = {
-            style = "Regular",
-            size = 14.0,
-        },
+        -- font = {
+        --     style = "Regular",
+        --     size = 14.0,
+        -- },
     },
+    background = { corner_radius = 5, color = colors.bar.bg, padding_right = 2, padding_left = 2 },
     label = {
-        width = 55,
+        padding_right = 5,
         align = "left",
-        font = {
-            style = "Regular",
-            size = 14.0,
-        },
+        -- font = {
+        --     style = "Regular",
+        --     size = 12.0,
+        -- },
     },
 })
 
@@ -50,31 +52,19 @@ end)
 volume_slider:subscribe("volume_change", function(env)
     local volume = tonumber(env.INFO)
     local icon = icons.volume._0
-    local volume_width = 55
-    local volume_space = "    "
     if volume > 99 then
         icon = icons.volume._100
-        volume_width = 65
-        volume_space = " "
     elseif volume > 60 then
         icon = icons.volume._100
-        volume_width = 65
-        volume_space = "  "
     elseif volume > 30 then
         icon = icons.volume._66
-        volume_width = 60
-        volume_space = "  "
     elseif volume > 10 then
         icon = icons.volume._33
-        volume_width = 60
-        volume_space = "   "
     elseif volume > 0 then
         icon = icons.volume._10
-        volume_width = 55
-        volume_space = "    "
     end
 
-    volume_icon:set({ label = {string = icon .. volume_space .. volume .. "%", width = volume_width} })
+    volume_icon:set({ icon = { string = icon }, label = { string = volume .. "% " } })
     volume_slider:set({ slider = { percentage = volume } })
 end)
 
