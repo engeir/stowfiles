@@ -33,14 +33,14 @@ vim.keymap.set("n", "dd", function()
         return "dd"
     end
 end, { expr = true })
--- Indent similar to 'o'/'O'
-vim.keymap.set("n", "i", function()
-    if #vim.fn.getline(".") == 0 then
-        return [["_cc]]
-    else
-        return "i"
-    end
-end, { expr = true })
+-- -- Indent similar to 'o'/'O' (this is broken)
+-- vim.keymap.set("n", "i", function()
+--     if #vim.fn.getline(".") == 0 then
+--         return [["_cc]]
+--     else
+--         return "i"
+--     end
+-- end, { expr = true })
 
 -- Open/close the quickfix window
 -- vim.keymap.set("n", "<leader>cc", ":cclose<cr>", { desc = "Close Quickfix" })
