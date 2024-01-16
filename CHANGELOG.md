@@ -1,5 +1,44 @@
 # Changelog
 
+## [1.7.0](https://github.com/engeir/stowfiles/compare/v1.6.1...v1.7.0) (2024-01-16)
+
+
+### Features
+
+* **nvim:** add autocmd that updates 'lastmod' ([7f8f943](https://github.com/engeir/stowfiles/commit/7f8f943d7b789e099eafcda91543aa0125b74ddc))
+* **sbar:** add percentage to sketchybar volume item ([4892da7](https://github.com/engeir/stowfiles/commit/4892da77a83cd501fa0b56cbc1d1e1a808d21a64))
+* **sketchybar:** show icon of active program ([30c4091](https://github.com/engeir/stowfiles/commit/30c4091bf241c699067475990f1c874bf5d5a165))
+
+
+### Bug Fixes
+
+* **nvim:** properly setup obsidian vault ([e45540a](https://github.com/engeir/stowfiles/commit/e45540a98416919aecf46179cbb336319f0e25ac))
+* **software:** poetry install controlled by pipx ([5ace6b5](https://github.com/engeir/stowfiles/commit/5ace6b50775350a358a5aa32d1f2fe152590b0db))
+* **zsh:** need git alias due to some functions ([e4a4ecd](https://github.com/engeir/stowfiles/commit/e4a4ecd02821006b0a17891b10f110f5afbd7f02))
+
+
+### Miscellaneous
+
+* **font:** update nerd font, includes toml symbol ([3757823](https://github.com/engeir/stowfiles/commit/3757823dba7452c8bc5e0483431556fdbc7f55c0))
+* **mise:** install tex via mise, and use tinytex ([86382fb](https://github.com/engeir/stowfiles/commit/86382fb6a0f5da8fa8d7e3ed0a1220650c1dd5a0))
+* **mise:** update file path and split up config ([b65d727](https://github.com/engeir/stowfiles/commit/b65d727de470e861b640c24b015c5cc533e2b988))
+* **nvim:** add chatgpt.nvim plugin ([179cdd7](https://github.com/engeir/stowfiles/commit/179cdd71142efbb5b328d1b8a1d1ac58ffc82f44))
+* **nvim:** add obsidian.nvim and re-start README update ([0112be1](https://github.com/engeir/stowfiles/commit/0112be1be99f6d7c2fb5b822d35db88244827984))
+* **nvim:** add tfm and throw in the yazi file manager as well ([048536b](https://github.com/engeir/stowfiles/commit/048536b1a1f2206c96dd3af7674e5dc1c33fc113))
+* **nvim:** keep plugins only on known machines ([1a380bf](https://github.com/engeir/stowfiles/commit/1a380bf2f8773d8be8813f60460a4ff43ea18e67))
+* **nvim:** keymap to visual select to end of line ([c7accce](https://github.com/engeir/stowfiles/commit/c7accceaaa3e2d20a4ed764db6fabdb4356e4a5c))
+* **nvim:** new plugin hawtkeys ([ba95921](https://github.com/engeir/stowfiles/commit/ba95921fd900d570be751046589ca68e4e90c1fd))
+* **sketchybar:** add percentage to battery and volume ([3d496af](https://github.com/engeir/stowfiles/commit/3d496af7372b6fc58f32db85131af541550f9fee))
+* **software:** install just and add nvim plugin for it ([913f0d3](https://github.com/engeir/stowfiles/commit/913f0d3f7379655378d8c3b93fc12ed03db04681))
+* **software:** small update ([928e252](https://github.com/engeir/stowfiles/commit/928e252edbb8a9c759b885cef5f9081898d9f949))
+* **software:** small update ([56a6c01](https://github.com/engeir/stowfiles/commit/56a6c01e05449b2b48cf2e1fb3d2f2ffde691b44))
+* **zsh:** more info in long format eza (ls) output ([e4a4ecd](https://github.com/engeir/stowfiles/commit/e4a4ecd02821006b0a17891b10f110f5afbd7f02))
+
+
+### Styles
+
+* **sbar:** format lua ([4892da7](https://github.com/engeir/stowfiles/commit/4892da77a83cd501fa0b56cbc1d1e1a808d21a64))
+
 ## [1.6.1](https://github.com/engeir/stowfiles/compare/v1.6.0...v1.6.1) (2024-01-05)
 
 
