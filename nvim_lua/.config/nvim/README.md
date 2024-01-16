@@ -30,6 +30,7 @@ all plugins I'm using:
 - [colorizer](https://github.com/NvChad/nvim-colorizer.lua.git)
 - [committia.vim](https://github.com/rhysd/committia.vim.git)
 - [conform.nvim](https://github.com/stevearc/conform.nvim.git)
+- [copilot.vim](https://github.com/github/copilot.vim.git)
 - [d2-vim](https://github.com/terrastruct/d2-vim.git)
 - [diffview.nvim](https://github.com/sindrets/diffview.nvim.git)
 - [dressing.nvim](https://github.com/stevearc/dressing.nvim.git)
