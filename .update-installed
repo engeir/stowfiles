@@ -3,19 +3,19 @@
 # Updates a file called INSTALLED.md.
 unameOut="$(uname -s)"
 case "$unameOut" in
-Linux*) machine=Linux ;;
-Darwin*) machine=Mac ;;
-CYGWIN*) machine=Cygwin ;;
-MINGW*) machine=MinGw ;;
-*)
-    machine="UNKNOWN:${unameOut}"
-    ;;
+    Linux*) machine=Linux ;;
+    Darwin*) machine=Mac ;;
+    CYGWIN*) machine=Cygwin ;;
+    MINGW*) machine=MinGw ;;
+    *)
+        machine="UNKNOWN:${unameOut}"
+        ;;
 esac
 
 echo_and_run() {
     if ! command -v "$@" &>/dev/null; then
         return 0
-    elif [[ "$1" == "sudo" ]] && ! command -v "${@:2}" &>/dev/null;then
+    elif [[ $1 == "sudo" ]] && ! command -v "${@:2}" &>/dev/null; then
         return 0
     fi
     echo ""
@@ -41,7 +41,9 @@ run_updates() {
     echo_and_run bob update --all
     echo_and_run bun upgrade
     echo_and_run dprint config --config ~/.config/dprint/dprint.jsonc update --yes
-    echo_and_run poetry self update
+    # Only update poetry from itself if it was install via script, otherwise pipx does
+    # it.
+    grep -iq poetry <(pipx list) || echo_and_run poetry self update
     echo_and_run pyenv update
     echo_and_run sudo rclone selfupdate
     echo_and_run rye self update
@@ -54,7 +56,7 @@ try_fix_ppa() {
         echo "E: The repository 'https://ppa.launchpadcontent.net/fontforge/fontforge/ubuntu jammy Release' does not have a Release file."
         echo "see https://askubuntu.com/a/1163224."
         echo "You might have success trying the equivalent of"
-        echo "\$ sudo add-apt-repository --remove ppa:fontforge/fontforge"
+        echo '$ sudo add-apt-repository --remove ppa:fontforge/fontforge'
     else
         echo "This is only available on Linux-based systems."
     fi
@@ -71,21 +73,21 @@ Options:
 # Handle options
 while getopts 'ufh' OPTION; do
     case "$OPTION" in
-    u)
-        run_updates "$machine"
-        ;;
-    f)
-        try_fix_ppa
-        exit 0
-        ;;
-    h)
-        echo "$HELP_TEXT"
-        exit 0
-        ;;
-    ?)
-        echo "$HELP_TEXT"
-        exit 1
-        ;;
+        u)
+            run_updates "$machine"
+            ;;
+        f)
+            try_fix_ppa
+            exit 0
+            ;;
+        h)
+            echo "$HELP_TEXT"
+            exit 0
+            ;;
+        ?)
+            echo "$HELP_TEXT"
+            exit 1
+            ;;
     esac
 done
 # shift "$((OPTIND - 1))"
