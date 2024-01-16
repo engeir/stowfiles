@@ -40,20 +40,27 @@ text = "CellBackground"
 size = 7
 
 [font.bold]
-family = "Recursive"
+family = "SpaceMono Nerd Font Mono"
 style = "Bold"
 
 [font.italic]
-family = "Recursive"
+family = "SpaceMono Nerd Font Mono"
 style = "Italic"
 
+[font.bold_italic]
+family = "SpaceMono Nerd Font Mono"
+style = "Bold Italic"
+
 [font.normal]
-family = "Recursive"
+family = "SpaceMono Nerd Font Mono"
 style = "Regular"
 
+[font.glyph_offset]
+y = -1
+
 [font.offset]
-x = 1
-y = 0
+x = 0
+y = -3
 
 [[keyboard.bindings]]
 action = "Paste"

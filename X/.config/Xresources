@@ -13,8 +13,8 @@ These two are both from https://git.sainnhe.dev/sainnhe/icursive-nerd-font. Recu
 seems to be better, for example with displaying the tilde (~). It does, however, use
 ligatures...
 */
-*.font: Recursive:size=11:antialias=true:autohint=true;
-/* *.font: VictorMonoNerdFontMono:size=11:antialias=true:autohint=true; */
+*.font: Recursive:size=12:antialias=true:autohint=true;
+/* *.font: SpaceMono Nerd Font Mono:size=11:antialias=true:autohint=true; */
 /* *.font: Cascursive:size=11:antialias=true:autohint=true; */
 
 #define t_bg_floor     #010000

@@ -77,7 +77,7 @@ config.switch_to_last_active_tab_when_closing_tab = true
 -- config.window_decorations = "TITLE"
 config.audible_bell = "Disabled"
 -- config.font = wezterm.font("Victor Mono")
-config.font = wezterm.font("Recursive")
+config.font = wezterm.font("SpaceMono Nerd Font Mono")
 local font_size
 if wezterm.target_triple == "x86_64-apple-darwin" then
     font_size = 13.5
