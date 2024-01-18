@@ -1,5 +1,25 @@
 # Changelog
 
+## [1.7.1](https://github.com/engeir/stowfiles/compare/v1.7.0...v1.7.1) (2024-01-18)
+
+
+### Bug Fixes
+
+* **nvim:** keymap is likely source to indentation troubles ([8281b43](https://github.com/engeir/stowfiles/commit/8281b436a92770fd447bbb82da6f586d39b24c9e))
+* **sbar:** battery item update only on frequency ([50d42cb](https://github.com/engeir/stowfiles/commit/50d42cbbe9167e96345a373eaae13a00c8d53d0f))
+
+
+### Miscellaneous
+
+* **nvim:** add plugin copilot.vim ([ba409fd](https://github.com/engeir/stowfiles/commit/ba409fd11b58626ba7416bf86319a77ff3fb8037))
+* **software:** add mise commands to updater ([ef1f713](https://github.com/engeir/stowfiles/commit/ef1f713332ebb8183ced1c82ba4a8bea7a2c2d26))
+
+
+### Code Refactoring
+
+* **go:** GOROOT and GOPATH are handled by mise ([73bf5dc](https://github.com/engeir/stowfiles/commit/73bf5dcb98da7645649600136d36018cd5cd20d4))
+* **mise:** install go itself and binaries using mise ([e3b1e4b](https://github.com/engeir/stowfiles/commit/e3b1e4b400db5b114a0877474e061135dde0a0c8))
+
 ## [1.7.0](https://github.com/engeir/stowfiles/compare/v1.6.1...v1.7.0) (2024-01-16)
 
 
