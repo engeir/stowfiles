@@ -23,21 +23,21 @@ echo_and_run() {
     "$@"
 }
 run_updates() {
-    # Main package managers
+    # Main package managers ------------------------------------------------------------
     echo_and_run brew update
     echo_and_run brew upgrade
     echo_and_run sudo snap refresh
     echo_and_run flatpak update -y
     echo_and_run sudo nala upgrade -y --update
-    echo_and_run pacstall -U -P
-    echo_and_run pacstall -Up -P
-    # Language specific bulk upgrades
+    echo_and_run pacstall -U -P && echo_and_run pacstall -Up -P
+    echo_and_run mise self-update && echo_and_run mise up && echo_and_run mise prune -y
+    # Language specific bulk upgrades --------------------------------------------------
     echo_and_run rustup update
     echo_and_run cargo install-update -a
     echo_and_run python3 -m pip install --user --upgrade pipx
     echo_and_run pipx upgrade-all
     echo_and_run gup update
-    # Single programs
+    # Single programs ------------------------------------------------------------------
     echo_and_run bob update --all
     echo_and_run bun upgrade
     echo_and_run dprint config --config ~/.config/dprint/dprint.jsonc update --yes
