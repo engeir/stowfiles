@@ -10,9 +10,14 @@ local battery = sbar.add("item", {
             size = 16.0,
         },
     },
-    background = { corner_radius = 5, color = colors.bar.bg, padding_right = 2, padding_left = 2 },
+    background = {
+        corner_radius = 5,
+        color = colors.bar.bg,
+        padding_right = 2,
+        padding_left = 2,
+    },
     label = { drawing = true, padding_right = 5 },
-    update_freq = 120,
+    update_freq = 10,
 })
 
 local function battery_update()
@@ -47,4 +52,6 @@ local function battery_update()
     battery:set({ icon = { string = icon }, label = { string = charge_str } })
 end
 
-battery:subscribe({ "routine", "power_source_change", "system_woke" }, battery_update)
+battery:subscribe("routine", battery_update)
+-- battery:subscribe("power_source_change", battery_update)
+-- battery:subscribe("system_woke", battery_update)

@@ -1,7 +1,16 @@
 local whitelist = { ["Spotify"] = true, ["Music"] = true }
 
 local media = sbar.add("item", {
-    icon = { drawing = false },
+    icon = {
+        drawing = true,
+        font = {
+            family = "sketchybar-app-font",
+            style = "Regular",
+            size = "11",
+        },
+        y_offset = -1,
+        string = ":music:"
+    },
     position = "center",
     updates = true,
 })
