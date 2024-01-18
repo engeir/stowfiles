@@ -1,3 +1,8 @@
+[settings]
+experimental = true
+
 [tools]
-node = "20"
 tinytex = "latest"
+watchexec = "latest"
+go = "latest"
+node = "latest"

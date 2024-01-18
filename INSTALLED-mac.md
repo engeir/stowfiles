@@ -18,11 +18,11 @@ aribb24 1.0.4
 asciinema 2.4.0
 aspell 0.60.8.1_1
 assimp 5.3.1
-at-spi2-core 2.50.0
+at-spi2-core 2.50.1
 atool 0.39.0
 autoconf 2.72
 automake 1.16.5
-bash 5.2.21
+bash 5.2.26
 bash-completion 1.3_3
 bat 0.24.0
 bdw-gc 8.2.4
@@ -32,7 +32,7 @@ bibclean 3.07
 bison 3.8.2
 black 23.12.1
 boost 1.83.0
-borgbackup-fuse 1.2.6
+borgbackup-fuse 1.2.7
 brotli 1.1.0
 btop 1.2.13
 c-ares 1.25.0
@@ -46,7 +46,7 @@ cask 0.9.0
 cdrtools 3.02a09
 cfitsio 4.3.1
 cgif 0.3.2
-chafa 1.12.5
+chafa 1.14.0
 chruby 0.3.9
 cjson 1.7.17
 cli11 2.3.2
@@ -57,10 +57,10 @@ cmatrix 2.0
 cmocka 1.1.7
 composer 2.6.6
 coreutils 9.4
-cpio 2.14
+cpio 2.15
 cpp-gsl 4.0.0_1
 curl 8.5.0
-cython 3.0.7
+cython 3.0.8
 dav1d 1.3.0
 dbus 1.14.10
 desktop-file-utils 0.27
@@ -69,9 +69,9 @@ djvulibre 3.5.28_2
 docbook 5.1_1
 docbook-xsl 1.79.2_1
 docker 24.0.7
-docker-buildx 0.12.0
+docker-buildx 0.12.1
 docker-completion 24.0.7
-docker-compose 2.23.3
+docker-compose 2.24.1
 docutils 0.20.1_1
 docx2txt 1.4
 doggo 0.5.7
@@ -81,9 +81,9 @@ dpkg 1.22.2
 dtc 1.7.0
 duf 0.8.1
 duktape 2.7.0
-dust 0.8.6
+dust 0.9.0
 elinks 0.11.7_3
-emacs 29.1_1
+emacs 29.2
 emacs-plus@27 27.2
 entr 5.5
 expat 2.5.0
@@ -113,7 +113,7 @@ gdbm 1.23
 gdk-pixbuf 2.42.10_1
 geos 3.12.1
 gettext 0.22.4
-gh 2.40.1
+gh 2.42.1
 ghostscript 10.02.1
 giflib 5.2.1
 girara 0.4.0
@@ -127,8 +127,8 @@ gnu-sed 4.9
 gnu-tar 1.35
 gnupg 2.4.3
 gnuplot 6.0.0
-gnutls 3.8.2
-go 1.21.5
+gnutls 3.8.3
+go 1.21.6
 gobject-introspection 1.78.1
 golangci-lint 1.55.2
 gpatch 2.7.6
@@ -153,7 +153,7 @@ hicolor-icon-theme 0.17
 highway 1.0.7
 hledger 1.32.2
 html2text 2.2.3
-htop 3.2.2
+htop 3.3.0
 httpd 2.4.58
 hub 2.14.2
 hugo 0.121.2
@@ -161,18 +161,18 @@ hunspell 1.7.2
 hwloc 2.10.0
 icu4c 73.2
 ilmbase 2.5.8
-imagemagick 7.1.1-25
+imagemagick 7.1.1-26
 imath 3.1.9
 imlib2 1.12.1
 intltool 0.51.0_2
 isl 0.26
 jansson 2.14
-jasper 4.1.1
+jasper 4.1.2
 jbig2dec 0.20
 jemalloc 5.3.0
-jpeg 9e
-jpeg-turbo 3.0.0
-jpeg-xl 0.9.0
+jpeg 9f
+jpeg-turbo 3.0.1
+jpeg-xl 0.9.1
 jpegoptim 1.5.5
 jq 1.7.1
 json-c 0.17
@@ -206,7 +206,7 @@ libgpg-error 1.47
 libgsf 1.14.51
 libheif 1.17.6
 libice 1.1.1
-libidn 1.41
+libidn 1.42
 libidn2 2.3.4_1
 libimagequant 4.2.2
 libksba 1.6.5
@@ -291,7 +291,7 @@ lua@5.3 5.3.6
 luajit HEAD-03080b7 2.1.1703358377
 luajit-openresty 2.1-20231117
 luarocks 3.9.2
-luv 1.45.0-0
+luv 1.47.0-0
 lynx 2.8.9rel.1_2
 lz4 1.9.4
 lzip 1.23
@@ -302,19 +302,19 @@ mad 0.15.1b
 make 4.4.1
 mbedtls 3.5.1
 mcfly v0.8.4
-md4c 0.4.8
+md4c 0.5.0
 media-info 23.11
-mercurial 6.6.1
-mesa 23.3.2
+mercurial 6.6.2
+mesa 23.3.3
 meson 1.3.1
 mozjpeg 4.1.5
-mpdecimal 2.5.1
+mpdecimal 4.0.0
 mpfr 4.2.1
-mpg123 1.32.3
+mpg123 1.32.4
 mpv 0.37.0_1
 msgpack 6.0.0
 mujs 1.3.4
-mupdf 1.23.7
+mupdf 1.23.9
 mysql@5.7 5.7.44_1
 nb 7.9.1
 ncspot 1.0.0
@@ -327,7 +327,7 @@ ninja 1.11.1
 nlohmann-json 3.11.3
 nmap 7.94_1
 nnn 4.9
-node 21.5.0
+node 21.6.0
 npth 1.6
 nspr 4.35
 nss 3.96.1
@@ -347,7 +347,7 @@ opusfile 0.12_1
 orc 0.4.34
 p11-kit 0.25.3
 p7zip 17.05
-pandoc 3.1.11
+pandoc 3.1.11.1
 pandoc-citeproc 0.17.0.2
 pandoc-include-code 1.5.0.0_2
 pango 1.50.14
@@ -360,7 +360,7 @@ perl 5.38.2_1
 php 8.3.1
 pinentry 1.2.1
 pinentry-mac 1.1.1.1
-pipx 1.4.1
+pipx 1.4.3
 pixman 0.42.2
 pkg-config 0.29.2_3
 plotutils 2.6_1
@@ -371,9 +371,9 @@ portaudio 19.7.0
 portmidi 2.0.4_1
 potrace 1.16
 pqiv 2.12_7
-prettier 3.1.1
+prettier 3.2.4
 proj 9.3.1
-protobuf 25.1
+protobuf 25.2
 pstoedit 3.78
 pueue 3.3.3
 pup 0.4.0
@@ -395,27 +395,27 @@ python-pathspec 0.12.1
 python-platformdirs 4.1.0
 python-setuptools 69.0.3
 python-tabulate 0.9.0_1
-python@3.10 3.10.13_1
-python@3.11 3.11.7
-python@3.12 3.12.1
-python@3.8 3.8.18_1
-python@3.9 3.9.18_1
+python@3.10 3.10.13_2
+python@3.11 3.11.7_1
+python@3.12 3.12.1_1
+python@3.8 3.8.18_2
+python@3.9 3.9.18_2
 qemu 8.2.0
 qrencode 4.1.1
 qt 6.6.1
 qt@5 5.15.12
 range-v3 0.12.0
-rav1e 0.7.0
+rav1e 0.7.1
 readline 8.2.7
 recode 3.7.14
-ripgrep 14.0.3
+ripgrep 14.1.0
 rpm2cpio 1.4
 rsync 3.2.7_1
 rtmpdump 2.4-20151223_3
 rubberband 3.3.0
-ruby 3.2.2_1
+ruby 3.3.0
 ruby-install 0.9.3
-rust-analyzer 2024-01-01
+rust-analyzer 2024-01-15
 scrcpy 2.3.1
 screenresolution 1.6
 sd 1.0.0
@@ -431,7 +431,7 @@ shellharden 4.3.0
 shfmt 3.7.0
 shpotify 2.1
 sk 0.10.4
-sketchybar 2.19.5
+sketchybar 2.19.6
 skhd 0.3.9
 slides 0.9.0
 snappy 1.1.10
@@ -443,7 +443,7 @@ speex 1.2.1
 sphinx 2.2.11_4
 sphinx-doc 7.2.6_2
 spotify-tui v0.23.0
-sqlite 3.44.2
+sqlite 3.45.0
 srt 1.5.3
 st 1.1.4_1
 starship 1.17.1
@@ -454,7 +454,7 @@ sxiv 26_1
 szip 2.1.1_1
 tbb 2021.11.0
 tcl-tk 8.6.13_5
-tesseract 5.3.3
+tesseract 5.3.4
 texinfo 7.1
 texlive 20230313_2
 theora 1.1.1
@@ -480,8 +480,8 @@ vde 2.3.3
 vips 8.15.1_1
 vitetris 0.59.1
 vivid 0.9.0
-vulkan-headers 1.3.274
-vulkan-loader 1.3.274
+vulkan-headers 1.3.275
+vulkan-loader 1.3.275
 w3m 0.5.3_8
 watch 4.0.4
 webp 1.3.2
@@ -498,7 +498,7 @@ xterm 389
 xvid 1.3.7
 xxhash 0.8.2
 xz 5.4.5
-yabai 6.0.4
+yabai 6.0.6
 yarn 1.22.21
 youtube-dl 2021.12.17
 yt-dlp 2023.12.30
@@ -507,8 +507,9 @@ zathura-pdf-mupdf 0.3.9_1
 zeromq 4.3.5_1
 zimg 3.0.5
 zlib 1.3
+zsh-abbr 5.3.0
 zstd 1.5.5
-alacritty 0.13.0
+alacritty 0.13.1
 alfred 4.5.1,1256
 amethyst 0.15.3
 android-platform-tools 34.0.5
@@ -548,11 +549,11 @@ blackd-client v0.1.0:
     blackd-client
 blindfold v1.0.7:
     blindfold
-bob-nvim v2.7.0:
+bob-nvim v2.8.0:
     bob
 broot v1.32.0:
     broot
-cargo-binstall v1.4.9:
+cargo-binstall v1.6.0:
     cargo-binstall
 cargo-edit v0.12.2:
     cargo-add
@@ -566,7 +567,7 @@ cargo-update v13.3.0:
     cargo-install-update-config
 cargo-watch v8.5.2:
     cargo-watch
-clap v4.4.13:
+clap v4.4.18:
     stdio-fixture
 coreutils v0.0.23:
     coreutils
@@ -576,7 +577,7 @@ despell v1.0.1:
     despell
 evcxr_jupyter v0.17.0:
     evcxr_jupyter
-eza v0.17.0:
+eza v0.17.1:
     eza
 gitui v0.24.3:
     gitui
@@ -591,16 +592,20 @@ hyperfine v1.18.0:
     hyperfine
 irust v1.71.19:
     irust
+just v1.23.0:
+    just
 mdbook v0.4.36:
     mdbook
-mise v2024.1.7:
+mise v2024.1.22:
     mise
 mprocs v0.6.4:
     mprocs
-nu v0.88.1:
+nu v0.89.0:
     nu
 numbat-cli v1.9.0:
     numbat
+pngquant v3.0.3:
+    pngquant
 porsmo v0.3.0:
     porsmo
 sd v1.0.0:
@@ -619,6 +624,8 @@ wiki-tui v0.8.2:
     wiki-tui
 xh v0.20.1:
     xh
+yazi-fm v0.2.1:
+    yazi
 zellij v0.39.2:
     zellij
 ```
