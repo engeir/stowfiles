@@ -1,5 +1,5 @@
 # set PATH so it includes user's private bin if it exists
-if [ -d "$HOME/bin" ] ; then
+if [ -d "$HOME/bin" ]; then
     PATH="$HOME/bin:$PATH"
 fi
 
@@ -15,9 +15,6 @@ export PATH="${PATH}:${HOME}/.local/bin"
 PATH="/usr/local/bin:${PATH}"
 PATH="/usr/bin:${PATH}"
 PATH="$HOME/Documents/ReMarkableAPI:${PATH}"
-# export GOROOT="/usr/local/go"
-# export GOPATH="$HOME/go"
-# export PATH="$PATH:$GOPATH/bin"
 
 export PATH="/usr/local/opt/flex/bin:$PATH"
 export PATH="/usr/local/opt/bison/bin:$PATH"
@@ -45,7 +42,6 @@ export PATH
 # MacPorts Installer addition on 2020-06-06_at_11:28:14: adding an appropriate PATH variable for use with MacPorts.
 export PATH="/opt/local/bin:/opt/local/sbin:$PATH"
 # Finished adapting your PATH environment variable for use with MacPorts.
-
 
 # MacPorts Installer addition on 2021-01-11_at_20:53:58: adding an appropriate DISPLAY variable for use with MacPorts.
 export DISPLAY=:0

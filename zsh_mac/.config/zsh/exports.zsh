@@ -5,12 +5,6 @@ export NODE_PATH='/usr/local/lib/node_modules'
 # export PATH="$HOME/.poetry/bin:$PATH"
 export PATH="/Applications/ConTeXtStandalone/tex/texmf-osx-64/bin:$PATH"  # ConTeXt path
 export PATH="$PATH:$HOME/.cabal/bin/"
-# Go
-# This is weird, but it works...
-# export GOROOT="/usr/local/go"  # Moved to Mac specific
-# export GOPATH="$HOME/go"
-# export PATH="$PATH:$GOPATH/bin"
-# export PATH="$PATH:$GOROOT/bin"
 
 export EDITOR=nvim
 export VISUAL=nvim

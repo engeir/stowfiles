@@ -20,11 +20,8 @@ LESSOPEN="|/usr/local/bin/lesspipe.sh %s"; export LESSOPEN
 export MANPAGER="sh -c 'col -bx | bat -l man -p'"
 export LESS='-Ri '
 
-# For golang
-GOROOT=/usr/local/go
-GOPATH=~/go
 CABALPATH=~/.cabal
-PATH=$PATH:$GOROOT/bin:$GOPATH/bin:$CABALPATH/bin
+PATH=$PATH:$CABALPATH/bin
 
 fpath+=${ZDOTDIR:-~}/.zsh_functions  # This must come before compinit
 fpath+=/home/een023/programs/zsh/conda-zsh-completion
