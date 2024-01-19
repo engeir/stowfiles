@@ -1,5 +1,6 @@
 [settings]
 experimental = true
+yes = true
 
 [tools]
 tinytex = "latest"
