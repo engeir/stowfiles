@@ -122,6 +122,7 @@ return {
     -- mini.comment --------------------------------------------------------------------
     {
         "echasnovski/mini.comment",
+        enabled = false,
         version = "*",
         event = "VeryLazy",
         init = function()
@@ -176,7 +177,7 @@ return {
     -- mini.pairs ----------------------------------------------------------------------
     {
         "echasnovski/mini.pairs",
-        enabled = false,
+        enabled = true,
         event = { "InsertEnter", "CmdlineEnter" },
         config = true,
     },
