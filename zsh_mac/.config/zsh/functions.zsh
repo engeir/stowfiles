@@ -157,6 +157,10 @@ nvp() {
 }
 compdef _whereis nvp
 
+wezterm-kill-pane() {
+    wezterm cli kill-pane --pane-id "$(wezterm cli list | fzf | awk '{print $3}')"
+}
+
 # # Change cursor for vi modes:
 # zle_keymap_select() {
 #     if [[ $KEYMAP == vicmd ]] ||
