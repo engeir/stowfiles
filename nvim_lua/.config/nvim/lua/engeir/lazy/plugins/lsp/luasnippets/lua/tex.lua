@@ -67,6 +67,12 @@ return {
     s({ trig = "creff" }, { t("\\cref{"), i(1, "one"), t("}") }),
     s({ trig = "Creff" }, { t("\\Cref{"), i(1, "one"), t("}") }),
     s({ trig = ".cit", name = "Text citation" }, { t({ "\\citet{" }), i(1), t("}") }),
+    s({ trig = ".fig", name = "Figure reference" }, { t({ "Fig.~\\ref{fig:" }), i(1), t("}") }),
+    s({ trig = ".Fig", name = "Figure reference" }, { t({ "Figure~\\ref{fig:" }), i(1), t("}") }),
+    s({ trig = ".tab", name = "Table reference" }, { t({ "table~\\ref{tab:" }), i(1), t("}") }),
+    s({ trig = ".Tab", name = "Table reference" }, { t({ "Table~\\ref{tab:" }), i(1), t("}") }),
+    s({ trig = ".eq", name = "Equation reference" }, { t({ "Eq.~\\ref{eq:" }), i(1), t("}") }),
+    s({ trig = ".Eq", name = "Equation reference" }, { t({ "Equation~\\ref{eq:" }), i(1), t("}") }),
     -- s(
     --     { trig = ".cit", name = "Text citation" },
     --     {

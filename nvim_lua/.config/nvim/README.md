@@ -4,7 +4,7 @@
 <a href="https://dotfyle.com/engeir/stowfiles-nvimlua-config-nvim"><img src="https://dotfyle.com/engeir/stowfiles-nvimlua-config-nvim/badges/leaderkey?style=for-the-badge" /></a>
 <a href="https://dotfyle.com/engeir/stowfiles-nvimlua-config-nvim"><img src="https://dotfyle.com/engeir/stowfiles-nvimlua-config-nvim/badges/plugin-manager?style=for-the-badge" /></a>
 
-This is @engeir's Neovim config, on NVIM v0.10.0-dev-2129+gba9f86a9c (view [latest nightly
+This is @engeir's Neovim config, on NVIM v0.9.5 (view [latest nightly
 build](https://github.com/neovim/neovim/tree/nightly)) installed with the [bob version
 manager for neovim](https://github.com/MordechaiHadad/bob). I am currently using the
 [lazy plugin manager](https://github.com/folke/lazy.nvim). Below is a complete list of
@@ -25,6 +25,7 @@ all plugins I'm using:
 - [cmp-nvim-lsp](https://github.com/hrsh7th/cmp-nvim-lsp.git)
 - [cmp-nvim-lua](https://github.com/hrsh7th/cmp-nvim-lua.git)
 - [cmp-path](https://github.com/hrsh7th/cmp-path.git)
+- [cmp-vimtex](https://github.com/micangl/cmp-vimtex.git)
 - [cmp_luasnip](https://github.com/saadparwaiz1/cmp_luasnip.git)
 - [codeium.nvim](https://github.com/Exafunction/codeium.nvim.git)
 - [colorizer](https://github.com/NvChad/nvim-colorizer.lua.git)
@@ -49,7 +50,6 @@ all plugins I'm using:
 - [jfind.nvim](https://github.com/jake-stewart/jfind.nvim.git)
 - [lazy.nvim](https://github.com/folke/lazy.nvim.git)
 - [lazygit.nvim](https://github.com/kdheepak/lazygit.nvim.git)
-- [lsp-timeout.nvim](https://github.com/hinell/lsp-timeout.nvim.git)
 - [lspkind.nvim](https://github.com/onsails/lspkind.nvim.git)
 - [lualine](https://github.com/nvim-lualine/lualine.nvim.git)
 - [luasnip-latex-snippets.nvim](https://github.com/iurimateus/luasnip-latex-snippets.nvim.git)

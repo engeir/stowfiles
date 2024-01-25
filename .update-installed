@@ -12,6 +12,16 @@ case "$unameOut" in
         ;;
 esac
 
+print_diff() {
+    if ! command -v "riff" &>/dev/null; then
+        # Use the standard diff program
+        diff "$1" "$2" | less
+    else
+        # Use riff
+        riff "$1" "$2"
+    fi
+    return 0
+}
 echo_and_run() {
     if ! command -v "$@" &>/dev/null; then
         return 0
@@ -95,6 +105,8 @@ done
 
 # Run MacOS updates
 if [ "Mac" = "$machine" ]; then
+    # Let us first make a copy of the current installed programs into a tmp directory
+    cp ./INSTALLED-mac.md /tmp/INSTALLED-mac.md
     BREW="$(brew list --versions)"
     CARGO="$(cargo install --list)"
     PIPX="$(pipx list | sed '1,2d' | sed 's/^   //')"
@@ -125,10 +137,15 @@ $PIPX
 $GO
 \`\`\`
     " >"./INSTALLED-mac.md"
+    # Now, we print the diff between the previous installed programs and the currently
+    # installed
+    print_diff /tmp/INSTALLED-mac.md ./INSTALLED-mac.md
 fi
 
 # Run Linux updates
 if [ "Linux" = "$machine" ]; then
+    # Let us first make a copy of the current installed programs into a tmp directory
+    cp ./INSTALLED-linux.md /tmp/INSTALLED-linux.md
     APT="$(nala list -i | grep '^[a-z,A-Z]')"
     # Thanks to https://stackoverflow.com/a/18000433, formatting is removed
     PACSTALL="$(pacstall -L | xargs -L 1 pacstall -Qi 2>/dev/null | grep -E 'name|version' | paste -d ' ' - - | sed -r "s/\x1B\[([0-9]{1,3}(;[0-9]{1,2};?)?)?[mGK]//g")"
@@ -190,4 +207,7 @@ $FLAT
 $SNAP
 \`\`\`
     " >"./INSTALLED-linux.md"
+    # Now, we print the diff between the previous installed programs and the currently
+    # installed
+    print_diff /tmp/INSTALLED-linux.md ./INSTALLED-linux.md
 fi

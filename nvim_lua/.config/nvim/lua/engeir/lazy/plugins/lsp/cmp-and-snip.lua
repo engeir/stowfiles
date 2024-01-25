@@ -12,12 +12,62 @@ return {
             { "hrsh7th/cmp-calc" },
             -- Icons for the LSP cmp view
             { "onsails/lspkind.nvim" },
+            -- Latex supersupport
+            { "micangl/cmp-vimtex" },
         },
         config = function()
             local cmp = require("cmp")
             local luasnip = require("luasnip")
             local lspkind = require("lspkind")
 
+            -- default sources for all buffers
+            -- sources = {
+            --     { name = "calc" },
+            --     { name = "gh_issues" },
+            --     { name = "nvim_lsp" },
+            --     { name = "path" },
+            --     { name = "buffer", keyword_length = 4 },
+            --     { name = "nvim_lua" },
+            --     { name = "luasnip" }, -- For luasnip users.
+            --     { name = "codeium" },
+            --     -- { name = "orgmode" },
+            --     -- { name = "cmp_tabnine" },
+            -- },
+            local bufIsBig = function(bufnr)
+                local max_filesize = 100 * 1024 -- 100 KB
+                local ok, stats = pcall(vim.loop.fs_stat, vim.api.nvim_buf_get_name(bufnr))
+                if ok and stats and stats.size > max_filesize then
+                    return true
+                else
+                    return false
+                end
+            end
+            local default_cmp_sources = cmp.config.sources({
+                { name = "calc" },
+                -- { name = "vimtex" },
+                { name = "nvim_lsp" },
+                { name = "nvim_lsp_signature_help" },
+                { name = "nvim_lua" },
+                { name = "luasnip" },
+            }, {
+                { name = "path" },
+                { name = "gh_issues" },
+                { name = "buffer", keyword_length = 4 },
+                { name = "codeium" },
+            })
+            -- If a file is too large, I don't want to add to it's cmp sources treesitter, see:
+            -- https://github.com/hrsh7th/nvim-cmp/issues/1522
+            vim.api.nvim_create_autocmd("BufReadPre", {
+                callback = function(t)
+                    local sources = default_cmp_sources
+                    if not bufIsBig(t.buf) then
+                        sources[#sources + 1] = { name = "treesitter", group_index = 2 }
+                    end
+                    cmp.setup.buffer({
+                        sources = sources,
+                    })
+                end,
+            })
             local opts = {
                 completion = {
                     completeopt = "menu,menuone,preview,noselect",
@@ -75,6 +125,8 @@ return {
                             tn = "[TabNine]",
                             eruby = "[erb]",
                             codeium = "[ai]",
+                            -- vimtex = vim_item.menu,
+                            vimtex = "[Vimtex]",
                         },
                     }),
                 },
@@ -106,18 +158,19 @@ return {
                     ["<C-Space>"] = cmp.mapping.complete(),
                     ["<CR>"] = cmp.mapping.confirm({ select = false }),
                 }),
-                sources = {
-                    { name = "calc" },
-                    { name = "gh_issues" },
-                    { name = "nvim_lsp" },
-                    { name = "path" },
-                    { name = "buffer", keyword_length = 4 },
-                    { name = "nvim_lua" },
-                    { name = "luasnip" }, -- For luasnip users.
-                    { name = "codeium" },
-                    -- { name = "orgmode" },
-                    -- { name = "cmp_tabnine" },
-                },
+                sources = default_cmp_sources,
+                -- {
+                --     { name = "calc" },
+                --     { name = "gh_issues" },
+                --     { name = "nvim_lsp" },
+                --     { name = "path" },
+                --     { name = "buffer", keyword_length = 4 },
+                --     { name = "nvim_lua" },
+                --     { name = "luasnip" }, -- For luasnip users.
+                --     { name = "codeium" },
+                --     -- { name = "orgmode" },
+                --     -- { name = "cmp_tabnine" },
+                -- },
                 view = {
                     entries = "native_menu",
                 },
@@ -154,10 +207,11 @@ return {
     -- Snippets
     {
         "L3MON4D3/LuaSnip",
+        dependencies = { "iurimateus/luasnip-latex-snippets.nvim" },
         event = { "BufReadPre", "BufNewFile" },
         build = "make install_jsregexp",
         -- dependencies = "rafamadriz/friendly-snippets",
-        dependencies = "iurimateus/luasnip-latex-snippets.nvim",
+        -- dependencies = "iurimateus/luasnip-latex-snippets.nvim",
         config = function()
             -- See https://github.com/L3MON4D3/LuaSnip/blob/master/Examples/snippets.lua
             -- and teeeej's taketuesday #3 videos for more sweetness
@@ -207,6 +261,7 @@ return {
                 paths = { "~/.config/nvim/lua/engeir/lazy/plugins/lsp/luasnippets/vscode/" },
             })
             -- require("luasnip.loaders.from_vscode").lazy_load({
+            --     paths = { "~/.config/nvim/lua/engeir/lazy/plugins/lsp/luasnippets/vscode/" },
             --     exclude = { "latex", "tex", "plaintex" },
             -- })
             require("luasnip.loaders.from_lua").load({
@@ -218,11 +273,12 @@ return {
     -- Extra
     {
         "iurimateus/luasnip-latex-snippets.nvim",
+        enabled = true,
         -- replace "lervag/vimtex" with "nvim-treesitter/nvim-treesitter" if you're
         -- using treesitter.
         dependencies = { "L3MON4D3/LuaSnip", "nvim-treesitter/nvim-treesitter" },
         config = function()
-            require("luasnip-latex-snippets").setup({ use_treesitter = true })
+            require("luasnip-latex-snippets").setup({ use_treesitter = true, allow_on_markdown = false })
         end,
         -- treesitter is required for markdown
         ft = { "tex", "markdown" },
