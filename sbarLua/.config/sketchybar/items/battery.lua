@@ -26,16 +26,14 @@ local function battery_update()
     local icon = "!"
     local charge_str = ""
 
+    local found, _, charge = batt_info:find("(%d+)%%")
+    if found then
+        charge_str = charge .. " %"
+        charge = tonumber(charge)
+    end
     if string.find(batt_info, "AC Power") then
         icon = icons.battery.charging
-        charge_str = ""
     else
-        local found, _, charge = batt_info:find("(%d+)%%")
-        if found then
-            charge_str = charge .. " %"
-            charge = tonumber(charge)
-        end
-
         if found and charge > 80 then
             icon = icons.battery._100
         elseif found and charge > 60 then
