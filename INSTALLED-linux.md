@@ -86,7 +86,7 @@ binutils 2.38-4ubuntu2.5 [Ubuntu/jammy main]
 binutils-common 2.38-4ubuntu2.5 [Ubuntu/jammy main]
 binutils-x86-64-linux-gnu 2.38-4ubuntu2.5 [Ubuntu/jammy main]
 bison 2:3.8.2+dfsg-1build1 [Ubuntu/jammy main]
-bitwarden 2023.12.1 [local]
+bitwarden 2024.1.0 [local]
 black 21.12b0-1 [Ubuntu/jammy universe]
 blt 2.5.3+dfsg-4.1build2 [Ubuntu/jammy main]
 bluez 5.64-0ubuntu1.1 [Ubuntu/jammy main]
@@ -235,10 +235,10 @@ docbook-xml 4.5-11 [Ubuntu/jammy main]
 docbook-xsl 1.79.2+dfsg-1 [Ubuntu/jammy universe]
 docker 1.5-2 [Ubuntu/jammy universe]
 docker-buildx-plugin 0.12.1-1~ubuntu.20.04~focal [Docker CE/ stable]
-docker-ce 5:25.0.0-1~ubuntu.20.04~focal [Docker CE/ stable]
-docker-ce-cli 5:25.0.0-1~ubuntu.20.04~focal [Docker CE/ stable]
-docker-ce-rootless-extras 5:25.0.0-1~ubuntu.20.04~focal [Docker CE/ stable]
-docker-compose-plugin 2.24.1-1~ubuntu.20.04~focal [Docker CE/ stable]
+docker-ce 5:25.0.1-1~ubuntu.20.04~focal [Docker CE/ stable]
+docker-ce-cli 5:25.0.1-1~ubuntu.20.04~focal [Docker CE/ stable]
+docker-ce-rootless-extras 5:25.0.1-1~ubuntu.20.04~focal [Docker CE/ stable]
+docker-compose-plugin 2.24.2-1~ubuntu.20.04~focal [Docker CE/ stable]
 docutils-common 0.17.1+dfsg-2 [Ubuntu/jammy main]
 docx2txt 1.4-5 [Ubuntu/jammy universe]
 dos2unix 7.4.2-2 [Ubuntu/jammy universe]
@@ -3471,7 +3471,7 @@ lintian 2.114.0ubuntu1.3 [Ubuntu/jammy main]
 linux-base 4.5ubuntu9 [Ubuntu/jammy main]
 linux-firmware 20220329.git681281e4-0ubuntu3.24 [Ubuntu/jammy main]
 linux-generic 5.15.0.91.88 [Ubuntu/jammy main]
-linux-generic-hwe-20.04 5.15.0.91.88 [Ubuntu/jammy main]
+linux-generic-hwe-20.04 5.15.0.92.89 [Ubuntu/jammy main]
 linux-generic-hwe-22.04 6.5.0.14.14~22.04.7 [Ubuntu/jammy main]
 linux-headers-5.15.0-91 5.15.0-91.101 [Ubuntu/jammy main]
 linux-headers-5.15.0-91-generic 5.15.0-91.101 [Ubuntu/jammy main]
@@ -3489,7 +3489,7 @@ linux-image-6.2.0-39-generic 6.2.0-39.40~22.04.1 [Ubuntu/jammy main]
 linux-image-6.5.0-14-generic 6.5.0-14.14~22.04.1 [Ubuntu/jammy main]
 linux-image-generic 5.15.0.91.88 [Ubuntu/jammy main]
 linux-image-generic-hwe-22.04 6.5.0.14.14~22.04.7 [Ubuntu/jammy main]
-linux-libc-dev 5.15.0-91.101 [Ubuntu/jammy main]
+linux-libc-dev 5.15.0-92.102 [Ubuntu/jammy main]
 linux-modules-5.15.0-91-generic 5.15.0-91.101 [Ubuntu/jammy main]
 linux-modules-5.19.0-50-generic 5.19.0-50.50 [Ubuntu/jammy main]
 linux-modules-6.2.0-39-generic 6.2.0-39.40~22.04.1 [Ubuntu/jammy main]
@@ -3613,7 +3613,7 @@ mysql-server 8.0.35-0ubuntu0.22.04.1 [Ubuntu/jammy main]
 mysql-server-8.0 8.0.35-0ubuntu0.22.04.1 [Ubuntu/jammy main]
 mysql-server-core-8.0 8.0.35-0ubuntu0.22.04.1 [Ubuntu/jammy main]
 mythes-en-us 1:7.2.0-2 [Ubuntu/jammy main]
-nala 0.14.0 [local]
+nala 0.15.0 [local]
 nano 6.2-1 [Ubuntu/jammy main]
 nautilus 1:42.6-0ubuntu1 [Ubuntu/jammy main]
 nautilus-data 1:42.6-0ubuntu1 [Ubuntu/jammy main]
@@ -3745,7 +3745,6 @@ policykit-1 0.105-33 [Ubuntu/jammy main]
 policykit-1-gnome 0.105-7ubuntu3 [Ubuntu/jammy universe]
 policykit-desktop-privileges 0.21 [Ubuntu/jammy main]
 polkitd 0.105-33 [Ubuntu/jammy main]
-polybar 3.6.3-pacstall1 [local]
 poppler-data 0.4.11-1 [Ubuntu/jammy main]
 poppler-utils 22.02.0-2ubuntu0.3 [Ubuntu/jammy main]
 power-profiles-daemon 0.10.1-3 [Ubuntu/jammy main]
@@ -3776,7 +3775,7 @@ printer-driver-splix 2.0.0+svn315-7fakesync1ubuntu0.22.04.1 [Ubuntu/jammy main]
 procps 2:3.3.17-6ubuntu2.1 [Ubuntu/jammy main]
 proj-bin 8.2.1-1 [Ubuntu/jammy universe]
 proj-data 8.2.1-1 [Ubuntu/jammy universe]
-protonmail-bridge 3.7.1-1 [local]
+protonmail-bridge 3.8.1-1 [local]
 ps2eps 1.68+binaryfree-3 [Ubuntu/jammy universe]
 psmisc 23.4-2build3 [Ubuntu/jammy main]
 pstoedit 3.78-1 [Ubuntu/jammy universe]
@@ -4283,7 +4282,7 @@ singular-data 1:4.2.1-p3+ds-1 [Ubuntu/jammy universe]
 singular-doc 1:4.2.1-p3+ds-1 [Ubuntu/jammy universe]
 singular-modules 1:4.2.1-p3+ds-1 [Ubuntu/jammy universe]
 singular-ui 1:4.2.1-p3+ds-1 [Ubuntu/jammy universe]
-slack-desktop 4.35.131 [slack/jessie main]
+slack-desktop 4.36.138 [slack/jessie main]
 slirp4netns 1.0.1-2 [Ubuntu/jammy universe]
 slop 7.5-1.1build2 [Ubuntu/jammy universe]
 snapd 2.58+22.04.1 [Ubuntu/jammy main]
@@ -4373,7 +4372,7 @@ texlive-pictures 2021.20220204-1 [Ubuntu/jammy universe]
 texlive-plain-generic 2021.20220204-1 [Ubuntu/jammy universe]
 texlive-science 2021.20220204-1 [Ubuntu/jammy universe]
 thermald 2.4.9-1ubuntu0.4 [Ubuntu/jammy main]
-thorium-browser 117.0.5938.157-1 [local]
+thorium-browser 119.0.6045.214-1 [local]
 thunar 4.16.10-1 [Ubuntu/jammy universe]
 thunar-data 4.16.10-1 [Ubuntu/jammy universe]
 thunar-volman 4.16.0-1 [Ubuntu/jammy universe]
@@ -4585,6 +4584,7 @@ xorg 1:7.7+23ubuntu2 [Ubuntu/jammy main]
 xorg-dev 1:7.7+23ubuntu2 [Ubuntu/jammy main]
 xorg-docs-core 1:1.7.1-1.2 [Ubuntu/jammy main]
 xorg-sgml-doctools 1:1.11-1.1 [Ubuntu/jammy main]
+xsel 1.2.0+git9bfc13d.20180109-3 [Ubuntu/jammy universe]
 xserver-common 2:21.1.4-2ubuntu1.7~22.04.7 [Ubuntu/jammy main]
 xserver-xephyr 2:21.1.4-2ubuntu1.7~22.04.7 [Ubuntu/jammy main]
 xserver-xorg 1:7.7+23ubuntu2 [Ubuntu/jammy main]
@@ -4642,18 +4642,17 @@ zstd 1.4.8+dfsg-3build1 [Ubuntu/jammy main]
 
 ```txt
 name: batsignal version: 1.6.4-pacstall1
-name: bitwarden version: 2023.12.1
+name: bitwarden version: 2024.1.0
 name: btop version: 1.2.13-pacstall1
 name: google-chrome-stable version: 121.0.6167.85-1
 name: htop version: 3.2.2-pacstall1
-name: nala version: 0.14.0
+name: nala version: 0.15.0
 name: neofetch version: 7.1.0-pacstall1
-name: polybar version: 3.6.3-pacstall1
-name: protonmail-bridge version: 3.7.1-1
+name: protonmail-bridge version: 3.8.1-1
 name: quarto version: 1.3.450
 name: shfmt version: 3.7.0-pacstall1
 name: signal-desktop version: 6.44.1
-name: thorium-browser version: 117.0.5938.157-1
+name: thorium-browser version: 119.0.6045.214-1
 name: wezterm version: 20230712-072601-f4abf8fd-pacstall1
 name: zoom version: 5.17.5.2543
 ```
@@ -4687,7 +4686,7 @@ cargo-update v13.3.0:
     cargo-install-update-config
 cargo-watch v8.5.2:
     cargo-watch
-coreutils v0.0.23:
+coreutils v0.0.24:
     coreutils
 despell v1.0.1:
     despell
@@ -4724,7 +4723,7 @@ just v1.23.0:
     just
 languagetool-rust v2.1.4:
     ltrs
-lscolors v0.16.0:
+lscolors v0.17.0:
     lscolors
 mdbook v0.4.36:
     mdbook
@@ -4736,7 +4735,7 @@ mdbook-toc v0.14.2:
     mdbook-toc
 menyoki v1.7.0:
     menyoki
-mise v2024.1.24:
+mise v2024.1.25:
     mise
 mprocs v0.6.4:
     mprocs
@@ -4753,6 +4752,8 @@ porsmo v0.3.0:
 pueue v3.3.3:
     pueue
     pueued
+riffdiff v2.28.0:
+    riff
 ripgrep v14.1.0:
     rg
 samply v0.11.0:
