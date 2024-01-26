@@ -10,7 +10,7 @@
 export PATH="${PATH}:$HOME/.config/bspwm/bin"
 
 ## Get colors from .Xresources -------------------------------#
-xrdb ~/.Xresources
+xrdb ~/.config/Xresources
 getcolors () {
     FOREGROUND=$(xrdb -query | grep 'foreground:'| awk '{print $NF}')
     BACKGROUND=$(xrdb -query | grep 'background:'| awk '{print $NF}')
