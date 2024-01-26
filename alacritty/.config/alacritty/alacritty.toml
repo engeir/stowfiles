@@ -40,19 +40,19 @@ text = "CellBackground"
 size = 7
 
 [font.bold]
-family = "MyRecursive"
+family = "CaskaydiaMono Nerd Font Mono"
 style = "Bold"
 
-[font.italic]
-family = "MyRecursive"
-style = "Italic"
-
 [font.bold_italic]
-family = "MyRecursive"
+family = "CaskaydiaMono Nerd Font Mono"
 style = "Bold Italic"
 
+[font.italic]
+family = "CaskaydiaMono Nerd Font Mono"
+style = "Italic"
+
 [font.normal]
-family = "MyRecursive"
+family = "CaskaydiaMono Nerd Font Mono"
 style = "Regular"
 
 [font.glyph_offset]
@@ -92,7 +92,7 @@ mods = "Alt|Shift"
 
 [shell]
 args = ["--login"]
-program = "/bin/zsh"
+program = "/usr/local/bin/fish"
 
 [window]
 decorations = "None"
