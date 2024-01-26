@@ -2955,10 +2955,10 @@ libssh-4 0.9.6-2ubuntu0.22.04.3 [Ubuntu/jammy main]
 libssh-4:i386 0.9.6-2ubuntu0.22.04.3 [Ubuntu/jammy main]
 libssh-gcrypt-4 0.9.6-2ubuntu0.22.04.3 [Ubuntu/jammy main]
 libssh2-1 1.10.0-3 [Ubuntu/jammy universe]
-libssl-dev 3.0.2-0ubuntu1.12 [Ubuntu/jammy main]
+libssl-dev 3.0.2-0ubuntu1.13 [Ubuntu/jammy main]
 libssl1.1 1.1.1l-1ubuntu1.6 [local]
-libssl3 3.0.2-0ubuntu1.12 [Ubuntu/jammy main]
-libssl3:i386 3.0.2-0ubuntu1.12 [Ubuntu/jammy main]
+libssl3 3.0.2-0ubuntu1.13 [Ubuntu/jammy main]
+libssl3:i386 3.0.2-0ubuntu1.13 [Ubuntu/jammy main]
 libsss-certmap0 2.6.3-1ubuntu3.2 [Ubuntu/jammy main]
 libsss-idmap0 2.6.3-1ubuntu3.2 [Ubuntu/jammy main]
 libsss-nss-idmap0 2.6.3-1ubuntu3.2 [Ubuntu/jammy main]
@@ -3470,34 +3470,39 @@ links 2.25-1build1 [Ubuntu/jammy universe]
 lintian 2.114.0ubuntu1.3 [Ubuntu/jammy main]
 linux-base 4.5ubuntu9 [Ubuntu/jammy main]
 linux-firmware 20220329.git681281e4-0ubuntu3.24 [Ubuntu/jammy main]
-linux-generic 5.15.0.91.88 [Ubuntu/jammy main]
+linux-generic 5.15.0.92.89 [Ubuntu/jammy main]
 linux-generic-hwe-20.04 5.15.0.92.89 [Ubuntu/jammy main]
-linux-generic-hwe-22.04 6.5.0.14.14~22.04.7 [Ubuntu/jammy main]
-linux-headers-5.15.0-91 5.15.0-91.101 [Ubuntu/jammy main]
-linux-headers-5.15.0-91-generic 5.15.0-91.101 [Ubuntu/jammy main]
+linux-generic-hwe-22.04 6.5.0.15.15~22.04.8 [Ubuntu/jammy main]
+linux-headers-5.15.0-92 5.15.0-92.102 [Ubuntu/jammy main]
+linux-headers-5.15.0-92-generic 5.15.0-92.102 [Ubuntu/jammy main]
 linux-headers-5.19.0-50-generic 5.19.0-50.50 [Ubuntu/jammy main]
 linux-headers-6.2.0-39-generic 6.2.0-39.40~22.04.1 [Ubuntu/jammy main]
 linux-headers-6.5.0-14-generic 6.5.0-14.14~22.04.1 [Ubuntu/jammy main]
-linux-headers-generic 5.15.0.91.88 [Ubuntu/jammy main]
-linux-headers-generic-hwe-22.04 6.5.0.14.14~22.04.7 [Ubuntu/jammy main]
+linux-headers-6.5.0-15-generic 6.5.0-15.15~22.04.1 [Ubuntu/jammy main]
+linux-headers-generic 5.15.0.92.89 [Ubuntu/jammy main]
+linux-headers-generic-hwe-22.04 6.5.0.15.15~22.04.8 [Ubuntu/jammy main]
 linux-hwe-5.19-headers-5.19.0-50 5.19.0-50.50 [Ubuntu/jammy main]
 linux-hwe-6.2-headers-6.2.0-39 6.2.0-39.40~22.04.1 [Ubuntu/jammy main]
 linux-hwe-6.5-headers-6.5.0-14 6.5.0-14.14~22.04.1 [Ubuntu/jammy main]
-linux-image-5.15.0-91-generic 5.15.0-91.101 [Ubuntu/jammy main]
+linux-hwe-6.5-headers-6.5.0-15 6.5.0-15.15~22.04.1 [Ubuntu/jammy main]
+linux-image-5.15.0-92-generic 5.15.0-92.102 [Ubuntu/jammy main]
 linux-image-5.19.0-50-generic 5.19.0-50.50 [Ubuntu/jammy main]
 linux-image-6.2.0-39-generic 6.2.0-39.40~22.04.1 [Ubuntu/jammy main]
 linux-image-6.5.0-14-generic 6.5.0-14.14~22.04.1 [Ubuntu/jammy main]
-linux-image-generic 5.15.0.91.88 [Ubuntu/jammy main]
-linux-image-generic-hwe-22.04 6.5.0.14.14~22.04.7 [Ubuntu/jammy main]
+linux-image-6.5.0-15-generic 6.5.0-15.15~22.04.1 [Ubuntu/jammy main]
+linux-image-generic 5.15.0.92.89 [Ubuntu/jammy main]
+linux-image-generic-hwe-22.04 6.5.0.15.15~22.04.8 [Ubuntu/jammy main]
 linux-libc-dev 5.15.0-92.102 [Ubuntu/jammy main]
-linux-modules-5.15.0-91-generic 5.15.0-91.101 [Ubuntu/jammy main]
+linux-modules-5.15.0-92-generic 5.15.0-92.102 [Ubuntu/jammy main]
 linux-modules-5.19.0-50-generic 5.19.0-50.50 [Ubuntu/jammy main]
 linux-modules-6.2.0-39-generic 6.2.0-39.40~22.04.1 [Ubuntu/jammy main]
 linux-modules-6.5.0-14-generic 6.5.0-14.14~22.04.1 [Ubuntu/jammy main]
-linux-modules-extra-5.15.0-91-generic 5.15.0-91.101 [Ubuntu/jammy main]
+linux-modules-6.5.0-15-generic 6.5.0-15.15~22.04.1 [Ubuntu/jammy main]
+linux-modules-extra-5.15.0-92-generic 5.15.0-92.102 [Ubuntu/jammy main]
 linux-modules-extra-5.19.0-50-generic 5.19.0-50.50 [Ubuntu/jammy main]
 linux-modules-extra-6.2.0-39-generic 6.2.0-39.40~22.04.1 [Ubuntu/jammy main]
 linux-modules-extra-6.5.0-14-generic 6.5.0-14.14~22.04.1 [Ubuntu/jammy main]
+linux-modules-extra-6.5.0-15-generic 6.5.0-15.15~22.04.1 [Ubuntu/jammy main]
 linux-sound-base 1.0.25+dfsg-0ubuntu7 [Ubuntu/jammy main]
 llvm 1:14.0-55~exp2 [Ubuntu/jammy universe]
 llvm-11 1:11.1.0-6 [Ubuntu/jammy universe]
@@ -3678,7 +3683,7 @@ opensp 1.5.2-13ubuntu3 [Ubuntu/jammy universe]
 openssh-client 1:8.9p1-3ubuntu0.6 [Ubuntu/jammy main]
 openssh-server 1:8.9p1-3ubuntu0.6 [Ubuntu/jammy main]
 openssh-sftp-server 1:8.9p1-3ubuntu0.6 [Ubuntu/jammy main]
-openssl 3.0.2-0ubuntu1.12 [Ubuntu/jammy main]
+openssl 3.0.2-0ubuntu1.13 [Ubuntu/jammy main]
 openvpn 2.5.9-0ubuntu0.22.04.2 [Ubuntu/jammy main]
 orca 42.0-1ubuntu2 [Ubuntu/jammy main]
 os-prober 1.79ubuntu2 [Ubuntu/jammy main]
@@ -3916,7 +3921,7 @@ python3-itsdangerous 2.1.0-1 [Ubuntu/jammy main]
 python3-jdcal 1.0-1.3 [Ubuntu/jammy universe]
 python3-jedi 0.18.0-1 [Ubuntu/jammy universe]
 python3-jeepney 0.7.1-3 [Ubuntu/jammy main]
-python3-jinja2 3.0.3-1 [Ubuntu/jammy main]
+python3-jinja2 3.0.3-1ubuntu0.1 [Ubuntu/jammy main]
 python3-jsonschema 3.2.0-0ubuntu2 [Ubuntu/jammy main]
 python3-jupyter-client 7.1.2-1 [Ubuntu/jammy universe]
 python3-jupyter-core 4.9.1-1 [Ubuntu/jammy universe]
@@ -3984,7 +3989,7 @@ python3-packaging 21.3-1 [Ubuntu/jammy main]
 python3-pandas 1.3.5+dfsg-3 [Ubuntu/jammy universe]
 python3-pandas-lib 1.3.5+dfsg-3 [Ubuntu/jammy universe]
 python3-pandocfilters 1.5.0-1 [Ubuntu/jammy universe]
-python3-paramiko 2.9.3-0ubuntu1 [Ubuntu/jammy main]
+python3-paramiko 2.9.3-0ubuntu1.2 [Ubuntu/jammy main]
 python3-parso 0.8.1-1 [Ubuntu/jammy universe]
 python3-partd 1.2.0-1 [Ubuntu/jammy universe]
 python3-path 16.3.0-1 [Ubuntu/jammy universe]
@@ -4274,7 +4279,7 @@ shellcheck 0.8.0-2 [Ubuntu/jammy universe]
 shfmt 3.7.0-pacstall1 [local]
 shfmt-bin 3.4.3-1 [local]
 shim-signed 1.51.3+15.7-0ubuntu1 [Ubuntu/jammy main]
-signal-desktop 6.44.1 [. xenial/xenial main]
+signal-desktop 6.45.1 [. xenial/xenial main]
 signon-plugin-oauth2 0.25-2 [Ubuntu/jammy universe]
 silversearcher-ag 2.2.0+git20200805-1 [Ubuntu/jammy universe]
 simple-scan 42.0-1 [Ubuntu/jammy main]
@@ -4652,7 +4657,7 @@ name: neofetch version: 7.1.0-pacstall1
 name: protonmail-bridge version: 3.8.1-1
 name: quarto version: 1.3.450
 name: shfmt version: 3.7.0-pacstall1
-name: signal-desktop version: 6.44.1
+name: signal-desktop version: 6.45.1
 name: thorium-browser version: 119.0.6045.214-1
 name: wezterm version: 20230712-072601-f4abf8fd-pacstall1
 name: zoom version: 5.17.5.2543
@@ -4695,7 +4700,7 @@ du-dust v0.9.0:
     dust
 evcxr_jupyter v0.17.0:
     evcxr_jupyter
-eza v0.17.2:
+eza v0.17.3:
     eza
 fd-find v9.0.0:
     fd
@@ -4736,7 +4741,7 @@ mdbook-toc v0.14.2:
     mdbook-toc
 menyoki v1.7.0:
     menyoki
-mise v2024.1.25:
+mise v2024.1.26:
     mise
 mprocs v0.6.4:
     mprocs
@@ -4781,7 +4786,7 @@ taplo-cli v0.8.1:
     taplo
 tectonic v0.14.1:
     tectonic
-topgrade v14.0.0:
+topgrade v14.0.1:
     topgrade
 tree-sitter-cli v0.20.8:
     tree-sitter
@@ -4823,7 +4828,7 @@ package ansible-core 2.16.2, installed using Python 3.10.12
  - ansible-vault
 package beautysh 6.2.1, installed using Python 3.10.12
  - beautysh
-package black 23.12.1, installed using Python 3.10.12
+package black 24.1.0, installed using Python 3.10.12
  - black
  - black-primer
  - blackd
@@ -4872,7 +4877,7 @@ package fonttools 4.47.2, installed using Python 3.11.6
  - man1/ttx.1
 package fprettify 0.3.7, installed using Python 3.10.12
  - fprettify
-package globus-cli 3.23.0, installed using Python 3.10.12
+package globus-cli 3.24.0, installed using Python 3.10.12
  - globus
 package gorps 0.9.1, installed using Python 3.10.12
  - gorps

@@ -92,7 +92,7 @@ mods = "Alt|Shift"
 
 [shell]
 args = ["--login"]
-program = "/usr/local/bin/fish"
+program = "/bin/zsh"
 
 [window]
 decorations = "None"

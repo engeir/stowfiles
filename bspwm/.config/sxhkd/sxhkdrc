@@ -10,7 +10,8 @@
 
 super + Return
 # terminal emulator
-	st
+	alacritty
+	# st
 	# gnome-terminal
 
 super + b
