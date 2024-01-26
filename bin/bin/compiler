@@ -77,7 +77,10 @@ case "$ext" in
         # ms) preconv "$file" | refer -PS -e | groff -me -ms -p -kept -Tps | ps2pdf - "$base".pdf ;;
     ms) preconv "$file" | refer -PS -e -p ~/science/ref/bibliography | groff -me -ms -p -kept -Tps | ps2pdf - "$base".pdf ;;
     org) emacs "$file" --batch -u "$USER" -f org-latex-export-to-pdf ;;
-    py) if [ "$(sed -n 's/^#!//p' "$file")" = "" ]; then python "$file"; else "$(sed -n 's/^#!//p' "$file")" "$file"; fi ;;
+    py) if [ "$(sed -n 's/^#!//p' "$file")" = "" ]; then
+            if command -v mise >/dev/null 2>&1; then pre_cmd="mise exec -- python"; else pre_cmd="python"; fi
+            eval "$pre_cmd" "$file"
+    else "$(sed -n 's/^#!//p' "$file")" "$file"; fi ;;
     [rR]) Rscript "$file" ;;
     [rR]md) Rscript -e "rmarkdown::render('$file', quiet=TRUE)" ;;
     rs) cargo build ;;

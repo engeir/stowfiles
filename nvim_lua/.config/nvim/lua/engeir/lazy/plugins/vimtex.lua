@@ -17,7 +17,7 @@ return {
         }
         -- latexmk is the default option and seems to be the only one supporting
         -- continuous mode
-        -- vim.g.vimtex_compiler_method = "tectonic" -- latexmk, latexrun, tectonic, arara, generic
+        -- vim.g.vimtex_compiler_method = "mise exec -- latexmk" -- latexmk, latexrun, tectonic, arara, generic
     end,
     config = function()
         -- vim.keymap.set("n", "<localleader><localleader>t", ":VimtexTocOpen<CR>", { remap = false, silent = true })
