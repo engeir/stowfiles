@@ -1,5 +1,52 @@
 # Changelog
 
+## [1.8.0](https://github.com/engeir/stowfiles/compare/v1.7.1...v1.8.0) (2024-01-26)
+
+
+### Features
+
+* **fish:** add aliases and some functions to fish ([de00b0f](https://github.com/engeir/stowfiles/commit/de00b0f6a2b0bad9f491e40aff075736903b3d25))
+* **fish:** created an ssh start agent function ([c311a1a](https://github.com/engeir/stowfiles/commit/c311a1a2576851da331ad9642743bbb829a27fce))
+* **tmux:** set the fish shell to default ([4ef639b](https://github.com/engeir/stowfiles/commit/4ef639bc8d52c6d3bc71c37ed91199199db2d968))
+* **wezterm:** add function that kills a given pane ([64f94d1](https://github.com/engeir/stowfiles/commit/64f94d1a7e1d13dfb2b6312aeb028dff0859179a))
+
+
+### Bug Fixes
+
+* **despell:** update to use the toml config format ([abc7f08](https://github.com/engeir/stowfiles/commit/abc7f08df28fd0ad29ece27b404aca2b866b1f40))
+* **nvim:** issues with autopair and comment plugins ([685e0eb](https://github.com/engeir/stowfiles/commit/685e0ebb78c59b0a59c1ca4ad04bacc33ef85df5))
+* **sbar:** podcasts shows up as albums ([f7a8e6a](https://github.com/engeir/stowfiles/commit/f7a8e6a68853755c20252151e208c129ca737ce6))
+* **software:** install polybar via nala, not pacstall ([1a37155](https://github.com/engeir/stowfiles/commit/1a37155a34b2167408f2f79e86e2ffb372ae35a9))
+* **tmux:** use the -u flag to specify it should use custom config ([53d2827](https://github.com/engeir/stowfiles/commit/53d282761f87a76cd2c3ceb647b136480867bdd8))
+
+
+### Miscellaneous
+
+* **bin:** add all arguments to alacritty popup ([b7aceb3](https://github.com/engeir/stowfiles/commit/b7aceb369d24d9457366ce8fe721f461f01a82d7))
+* **bin:** add small keylogger popup ([8b79235](https://github.com/engeir/stowfiles/commit/8b79235a6adb14ee20fdf507f7bc8cb58a6ee965))
+* **fish:** update commands ([8720ff6](https://github.com/engeir/stowfiles/commit/8720ff6f3db1ce69410a3c6a13ef9423aef8dfa1))
+* **font:** update font to to self-patched ([552ddeb](https://github.com/engeir/stowfiles/commit/552ddebd325d1c986821ac50173252b5d15eeb00))
+* **font:** use the CaskadiaMono font ([466265f](https://github.com/engeir/stowfiles/commit/466265fe5dcdef38d331bae537c1a2dbc68248ee))
+* **mise:** place mise update commands after rust toolchain ([1b78cca](https://github.com/engeir/stowfiles/commit/1b78cca264e5b0d042dfc270b57ad20ac78c887a))
+* **mise:** set prompt default answer to yes ([1b78cca](https://github.com/engeir/stowfiles/commit/1b78cca264e5b0d042dfc270b57ad20ac78c887a))
+* **nvim:** add bibexport keymap to tex setup ([74aa494](https://github.com/engeir/stowfiles/commit/74aa4949c9273ad991623e62fd74c5dfb284dbc1))
+* **nvim:** remove lsp-timeout and reformat cmp and snip config ([b0960a7](https://github.com/engeir/stowfiles/commit/b0960a7e2b806bdb626d18dfc427c50cd57f937d))
+* **nvim:** update readme ([aeb414f](https://github.com/engeir/stowfiles/commit/aeb414f59934258488149cec373e85468702b9ec))
+* **sbar:** always show the battery percentage ([6e4690e](https://github.com/engeir/stowfiles/commit/6e4690e6baad583fa349127022234ea4cf6f214e))
+* **software:** small update ([f864f37](https://github.com/engeir/stowfiles/commit/f864f37be0e7e41d4f89ae18fe218cee23aef98f))
+* **software:** update list of installed software ([0abdfc2](https://github.com/engeir/stowfiles/commit/0abdfc24d9ff5cad53974199cfccf2fbd2e737d3))
+* **tmux:** add key binding to toggle status line ([ca37e1d](https://github.com/engeir/stowfiles/commit/ca37e1d6d59f0746b58dd7463df9d29aa450b250))
+
+
+### Code Refactoring
+
+* **go:** remove GOROOT and GOBIN from zshrc ([aa73323](https://github.com/engeir/stowfiles/commit/aa733233c3ef254703a60253bd432bdc0f5874d8))
+
+
+### Continuous Integration
+
+* **github:** use bot account for releases ([5f6e443](https://github.com/engeir/stowfiles/commit/5f6e443e5f9180acd1412ae5323b23b96acb73d8))
+
 ## [1.7.1](https://github.com/engeir/stowfiles/compare/v1.7.0...v1.7.1) (2024-01-18)
 
 
