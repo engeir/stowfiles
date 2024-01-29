@@ -4378,7 +4378,7 @@ texlive-pictures 2021.20220204-1 [Ubuntu/jammy universe]
 texlive-plain-generic 2021.20220204-1 [Ubuntu/jammy universe]
 texlive-science 2021.20220204-1 [Ubuntu/jammy universe]
 thermald 2.4.9-1ubuntu0.4 [Ubuntu/jammy main]
-thorium-browser 119.0.6045.214-1 [local]
+thorium-browser 120.0.6099.235-1 [local]
 thunar 4.16.10-1 [Ubuntu/jammy universe]
 thunar-data 4.16.10-1 [Ubuntu/jammy universe]
 thunar-volman 4.16.0-1 [Ubuntu/jammy universe]
@@ -4658,7 +4658,7 @@ name: protonmail-bridge version: 3.8.1-1
 name: quarto version: 1.3.450
 name: shfmt version: 3.7.0-pacstall1
 name: signal-desktop version: 6.45.1
-name: thorium-browser version: 119.0.6045.214-1
+name: thorium-browser version: 120.0.6099.235-1
 name: wezterm version: 20230712-072601-f4abf8fd-pacstall1
 name: zoom version: 5.17.5.2543
 ```
@@ -4741,7 +4741,7 @@ mdbook-toc v0.14.2:
     mdbook-toc
 menyoki v1.7.0:
     menyoki
-mise v2024.1.26:
+mise v2024.1.30:
     mise
 mprocs v0.6.4:
     mprocs
@@ -4798,7 +4798,7 @@ wiki-tui v0.8.2:
     wiki-tui
 xcolor v0.5.1:
     xcolor
-xh v0.20.1:
+xh v0.21.0:
     xh
 xplr v0.21.5:
     xplr
@@ -4828,7 +4828,7 @@ package ansible-core 2.16.2, installed using Python 3.10.12
  - ansible-vault
 package beautysh 6.2.1, installed using Python 3.10.12
  - beautysh
-package black 24.1.0, installed using Python 3.10.12
+package black 24.1.1, installed using Python 3.10.12
  - black
  - black-primer
  - blackd
@@ -5066,7 +5066,7 @@ core20                     20231123                    2105   latest/stable    c
 core22                     20231123                    1033   latest/stable    canonical**    base
 dotnet-sdk                 5.0.408                     167    5.0/stable       dotnetcore**   classic
 duf-utility                v0.6.0                      1      latest/stable    muesli         -
-firefox                    122.0-2                     3687   latest/stable/…  mozilla**      -
+firefox                    122.0-2.1                   3728   latest/stable/…  mozilla**      -
 gimp                       2.10.36                     418    latest/stable    snapcrafters*  -
 gnome-3-28-1804            3.28.0-19-g98f9e67.98f9e67  198    latest/stable    canonical**    -
 gnome-3-34-1804            0+git.3556cb3               93     latest/stable/…  canonical**    -
