@@ -1,4 +1,5 @@
 #!/bin/zsh
+/home/een023/bin/start-keychain-expect
 # setup ssh-agent
 SSH_ENV=$HOME/.ssh/environment
 
