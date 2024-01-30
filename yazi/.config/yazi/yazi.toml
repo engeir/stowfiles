@@ -6,3 +6,11 @@ sort_dir_first = true
 linemode = "size"
 show_hidden = true
 show_symlink = true
+
+[plugin]
+prepend_previewers = [
+  # HEIC previewer
+  { mime = "image/heic", exec = "heic" },
+  # exec need to be the name of a Lua plugin
+  # { mime = "application/x-netcdf", name = "*.nc", exec = "ncdump-rich" },
+]
