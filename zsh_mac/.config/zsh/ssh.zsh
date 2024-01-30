@@ -1,5 +1,8 @@
 #!/bin/zsh
-/home/een023/bin/start-keychain-expect
+# Check if command returns 0 in if statement
+if command -v "keychain -Q" &>/dev/null; then
+    /home/een023/bin/start-keychain-expect
+fi
 # setup ssh-agent
 SSH_ENV=$HOME/.ssh/environment
 
