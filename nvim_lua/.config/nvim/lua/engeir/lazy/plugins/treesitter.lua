@@ -2,7 +2,7 @@ return {
     {
         "nvim-treesitter/nvim-treesitter",
         build = ":TSUpdate",
-        event = { "VeryLazy" },
+        event = { "BufReadPre", "BufNewFile" },
         config = function()
             require("nvim-treesitter.configs").setup({
                 ensure_installed = {
@@ -119,6 +119,7 @@ return {
     },
     {
         "nvim-treesitter/nvim-treesitter-context",
+        event = { "BufReadPre", "BufNewFile" },
         config = function()
             require("treesitter-context").setup({
                 min_window_height = 0,
@@ -163,7 +164,7 @@ return {
             })
         end,
     },
-    { "nvim-treesitter/nvim-treesitter-textobjects", event = { "VeryLazy" } },
+    { "nvim-treesitter/nvim-treesitter-textobjects", event = { "BufReadPre", "BufNewFile" } },
     {
         "zbirenbaum/neodim",
         event = "LspAttach",
@@ -180,6 +181,7 @@ return {
     },
     {
         "danymat/neogen",
+        event = { "BufReadPre", "BufNewFile" },
         dependencies = "nvim-treesitter/nvim-treesitter",
         opts = {
             snippet_engine = "luasnip",
@@ -244,6 +246,7 @@ return {
     },
     {
         "ziontee113/syntax-tree-surfer",
+        event = { "BufReadPre", "BufNewFile" },
         enabled = IS_KNOWN,
         config = function()
             require("syntax-tree-surfer").setup()
@@ -260,6 +263,7 @@ return {
     },
     {
         "windwp/nvim-ts-autotag",
+        event = { "BufReadPre", "BufNewFile" },
         config = true,
     },
 }

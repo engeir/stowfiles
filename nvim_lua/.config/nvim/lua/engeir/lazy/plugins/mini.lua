@@ -17,7 +17,7 @@ return {
     },
 
     -- mini.align ----------------------------------------------------------------------
-    { "echasnovski/mini.align", config = true },
+    { "echasnovski/mini.align", config = true, event = { "BufReadPre", "BufNewFile" } },
 
     -- mini.bracketed ------------------------------------------------------------------
     {
@@ -224,7 +224,7 @@ return {
     { "echasnovski/mini.splitjoin", config = true },
 
     -- mini.surround -------------------------------------------------------------------
-    { "echasnovski/mini.surround", config = true },
+    { "echasnovski/mini.surround", config = true, event = "VeryLazy" },
 
     -- mini.starter --------------------------------------------------------------------
     {

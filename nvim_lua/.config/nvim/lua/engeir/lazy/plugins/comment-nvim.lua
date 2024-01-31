@@ -1,5 +1,6 @@
 return {
     "numToStr/Comment.nvim",
+    event = { "BufReadPre", "BufNewFile" },
     enabled = true,
     config = function()
         require("Comment").setup()

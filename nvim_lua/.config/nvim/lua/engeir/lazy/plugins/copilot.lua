@@ -31,5 +31,5 @@ return {
             })
         end,
     },
-    { "github/copilot.vim", enabled = true },
+    { "github/copilot.vim", enabled = true, event = "InsertEnter" },
 }

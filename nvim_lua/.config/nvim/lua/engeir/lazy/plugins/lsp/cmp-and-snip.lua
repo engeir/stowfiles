@@ -1,19 +1,19 @@
 return {
     {
         "hrsh7th/nvim-cmp",
-        event = { "InsertEnter" },
+        event = { "InsertEnter", "BufReadPost" },
         dependencies = {
-            { "hrsh7th/cmp-buffer" },
-            { "hrsh7th/cmp-path" },
+            { "hrsh7th/cmp-buffer", event = { "BufReadPost" } },
+            { "hrsh7th/cmp-path", event = { "BufReadPost" } },
             { "hrsh7th/cmp-cmdline", event = { "CmdlineEnter" } },
-            { "L3MON4D3/LuaSnip" },
-            { "saadparwaiz1/cmp_luasnip" },
-            { "hrsh7th/cmp-nvim-lua" },
-            { "hrsh7th/cmp-calc" },
+            { "L3MON4D3/LuaSnip", event = { "BufReadPre", "BufNewFile" } },
+            { "saadparwaiz1/cmp_luasnip", event = { "BufReadPost" } },
+            { "hrsh7th/cmp-nvim-lua", event = { "BufReadPost" } },
+            { "hrsh7th/cmp-calc", event = { "BufReadPost" } },
             -- Icons for the LSP cmp view
-            { "onsails/lspkind.nvim" },
+            { "onsails/lspkind.nvim", event = { "BufReadPost" } },
             -- Latex supersupport
-            { "micangl/cmp-vimtex" },
+            { "micangl/cmp-vimtex", event = { "BufReadPost" } },
         },
         config = function()
             local cmp = require("cmp")
@@ -274,6 +274,7 @@ return {
     {
         "iurimateus/luasnip-latex-snippets.nvim",
         enabled = true,
+        event = { "BufReadPre", "BufNewFile" },
         -- replace "lervag/vimtex" with "nvim-treesitter/nvim-treesitter" if you're
         -- using treesitter.
         dependencies = { "L3MON4D3/LuaSnip", "nvim-treesitter/nvim-treesitter" },

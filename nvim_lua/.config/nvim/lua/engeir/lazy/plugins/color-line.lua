@@ -34,7 +34,7 @@ return {
     {
         -- TODO: replace with mini.tabline?
         "akinsho/bufferline.nvim",
-        event = "VeryLazy",
+        event = { "BufEnter" },
         name = "bufferline",
         -- version = "v2.*",
         dependencies = "nvim-tree/nvim-web-devicons",
@@ -47,7 +47,7 @@ return {
     {
         -- TODO: replace with mini.statusline?
         "nvim-lualine/lualine.nvim",
-        event = "VeryLazy",
+        event = { "BufEnter" },
         name = "lualine",
         opts = {
             options = {
@@ -103,10 +103,11 @@ return {
         },
     },
     -- nvim-ts-rainbow is archived, but nvim-ts-rainbow2 is ugly
-    "p00f/nvim-ts-rainbow", -- Different colour for nested parenthesis
+    { "p00f/nvim-ts-rainbow", event = { "BufReadPre", "BufNewFile" } }, -- Different colour for nested parenthesis
     -- "HiPhish/nvim-ts-rainbow2", -- Different colour for nested parenthesis
     {
         "NvChad/nvim-colorizer.lua",
+        event = { "BufReadPre", "BufNewFile" },
         name = "colorizer",
         config = function()
             require("colorizer").setup({
