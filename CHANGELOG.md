@@ -1,5 +1,19 @@
 # Changelog
 
+## [1.8.2](https://github.com/engeir/stowfiles/compare/v1.8.1...v1.8.2) (2024-01-31)
+
+
+### Miscellaneous
+
+* **filemanager:** add plugin config to yazi and xplr ([0ea9677](https://github.com/engeir/stowfiles/commit/0ea9677df0f427290903cb4eacda969a38bd39d5))
+* **fish:** set up pyenv ([68c0c2e](https://github.com/engeir/stowfiles/commit/68c0c2eaf3fc62097a1014474a2603733462ddb8))
+* **zsh:** check if keychain was already started ([3563d68](https://github.com/engeir/stowfiles/commit/3563d68a775f067edbfbadb93253df4919544488))
+
+
+### Code Refactoring
+
+* **nvim:** reduce startup time ([e82dfc1](https://github.com/engeir/stowfiles/commit/e82dfc13e0358d9e0dba37781cf5f6409097dd67))
+
 ## [1.8.1](https://github.com/engeir/stowfiles/compare/v1.8.0...v1.8.1) (2024-01-29)
 
 
