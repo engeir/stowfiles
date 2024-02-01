@@ -1,0 +1,8 @@
+#!/usr/bin/env sh
+
+choises="No\nYes"
+chosen=$(echo "$choises" | dmenu -i -l 2 -p "Are you sure?")
+case "$chosen" in
+"No") pass ;;
+"Yes") pkill bspwm ;;
+esac
