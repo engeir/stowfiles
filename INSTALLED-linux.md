@@ -19,7 +19,7 @@ aisleriot 1:3.22.22-1 [Ubuntu/jammy main]
 alltray:i386 0.60-1 [local]
 alsa-base 1.0.25+dfsg-0ubuntu7 [Ubuntu/jammy main]
 alsa-topology-conf 1.2.5.1-2 [Ubuntu/jammy main]
-alsa-ucm-conf 1.2.6.3-1ubuntu1.9 [Ubuntu/jammy main]
+alsa-ucm-conf 1.2.6.3-1ubuntu1.9 [local]
 alsa-utils 1.2.6-1ubuntu1 [Ubuntu/jammy main]
 amd64-microcode 3.20191218.1ubuntu2.2 [Ubuntu/jammy main]
 anacron 2.3-31ubuntu2 [Ubuntu/jammy main]
@@ -157,7 +157,7 @@ compizconfig-settings-manager 1:0.9.14.1+22.04.20220820-0ubuntu1 [Ubuntu/jammy u
 compton 1-1 [Ubuntu/jammy universe]
 console-setup 1.205ubuntu3 [Ubuntu/jammy main]
 console-setup-linux 1.205ubuntu3 [Ubuntu/jammy main]
-containerd.io 1.6.27-1 [Docker CE/ stable]
+containerd.io 1.6.28-1 [Docker CE/ stable]
 context 2021.03.05.20220211-1 [Ubuntu/jammy universe]
 context-modules 20210301-1 [Ubuntu/jammy universe]
 coreutils 8.32-4.1ubuntu1 [Ubuntu/jammy main]
@@ -228,17 +228,17 @@ dmidecode 3.3-3ubuntu0.1 [Ubuntu/jammy main]
 dmsetup 2:1.02.175-2.1ubuntu4 [Ubuntu/jammy main]
 dmz-cursor-theme 0.4.5ubuntu1 [Ubuntu/jammy main]
 dns-root-data 2021011101 [Ubuntu/jammy main]
-dnsmasq-base 2.86-1.1ubuntu0.4 [Ubuntu/jammy main]
+dnsmasq-base 2.86-1.1ubuntu0.5 [Ubuntu/jammy main]
 docbook 4.5-9 [Ubuntu/jammy universe]
 docbook-to-man 1:2.0.0-45 [Ubuntu/jammy universe]
 docbook-xml 4.5-11 [Ubuntu/jammy main]
 docbook-xsl 1.79.2+dfsg-1 [Ubuntu/jammy universe]
 docker 1.5-2 [Ubuntu/jammy universe]
 docker-buildx-plugin 0.12.1-1~ubuntu.20.04~focal [Docker CE/ stable]
-docker-ce 5:25.0.1-1~ubuntu.20.04~focal [Docker CE/ stable]
-docker-ce-cli 5:25.0.1-1~ubuntu.20.04~focal [Docker CE/ stable]
-docker-ce-rootless-extras 5:25.0.1-1~ubuntu.20.04~focal [Docker CE/ stable]
-docker-compose-plugin 2.24.2-1~ubuntu.20.04~focal [Docker CE/ stable]
+docker-ce 5:25.0.2-1~ubuntu.20.04~focal [Docker CE/ stable]
+docker-ce-cli 5:25.0.2-1~ubuntu.20.04~focal [Docker CE/ stable]
+docker-ce-rootless-extras 5:25.0.2-1~ubuntu.20.04~focal [Docker CE/ stable]
+docker-compose-plugin 2.24.5-1~ubuntu.20.04~focal [Docker CE/ stable]
 docutils-common 0.17.1+dfsg-2 [Ubuntu/jammy main]
 docx2txt 1.4-5 [Ubuntu/jammy universe]
 dos2unix 7.4.2-2 [Ubuntu/jammy universe]
@@ -566,7 +566,7 @@ gftp 2.9.1~beta-1 [Ubuntu/jammy universe]
 gftp-common 2.9.1~beta-1 [Ubuntu/jammy universe]
 gftp-gtk 2.9.1~beta-1 [Ubuntu/jammy universe]
 gftp-text 2.9.1~beta-1 [Ubuntu/jammy universe]
-gh 2.42.1 [gh/stable main]
+gh 2.43.1 [gh/stable main]
 ghc 8.8.4-3 [Ubuntu/jammy universe]
 ghostscript 9.55.0~dfsg1-0ubuntu5.6 [Ubuntu/jammy main]
 ghostscript-x 9.55.0~dfsg1-0ubuntu5.6 [Ubuntu/jammy main]
@@ -710,7 +710,7 @@ gnuplot 5.4.2+dfsg2-2 [Ubuntu/jammy universe]
 gnuplot-data 5.4.2+dfsg2-2 [Ubuntu/jammy universe]
 gnuplot-qt 5.4.2+dfsg2-2 [Ubuntu/jammy universe]
 golly 3.3-1build1 [Ubuntu/jammy universe]
-google-chrome-stable 121.0.6167.85-1 [Google/stable main]
+google-chrome-stable 121.0.6167.139-1 [Google/stable main]
 gperf 3.1-1build1 [Ubuntu/jammy universe]
 gpg 2.2.27-3ubuntu2.1 [Ubuntu/jammy main]
 gpg-agent 2.2.27-3ubuntu2.1 [Ubuntu/jammy main]
@@ -892,7 +892,7 @@ language-selector-common 0.219.1 [Ubuntu/jammy main]
 language-selector-gnome 0.219.1 [Ubuntu/jammy main]
 laptop-detect 0.16 [Ubuntu/jammy main]
 lcalc 2.0.5-1 [Ubuntu/jammy universe]
-ldap-utils 2.5.16+dfsg-0ubuntu0.22.04.1 [Ubuntu/jammy main]
+ldap-utils 2.5.16+dfsg-0ubuntu0.22.04.2 [Ubuntu/jammy main]
 lemonbar 1.4-1 [Ubuntu/jammy universe]
 less 590-1ubuntu0.22.04.1 [Ubuntu/jammy main]
 lfm 3.1-2 [Ubuntu/jammy universe]
@@ -2067,9 +2067,9 @@ liblcms2-utils 2.12~rc1-2build2 [Ubuntu/jammy main]
 libldacbt-enc2 2.0.2.3+git20200429+ed310a0-4 [Ubuntu/jammy universe]
 libldap-2.4-2 2.4.57+dfsg-2ubuntu1 [local]
 libldap-2.4-2:i386 2.4.57+dfsg-2ubuntu1 [local]
-libldap-2.5-0 2.5.16+dfsg-0ubuntu0.22.04.1 [Ubuntu/jammy main]
-libldap-2.5-0:i386 2.5.16+dfsg-0ubuntu0.22.04.1 [Ubuntu/jammy main]
-libldap-common 2.5.16+dfsg-0ubuntu0.22.04.1 [Ubuntu/jammy main]
+libldap-2.5-0 2.5.16+dfsg-0ubuntu0.22.04.2 [Ubuntu/jammy main]
+libldap-2.5-0:i386 2.5.16+dfsg-0ubuntu0.22.04.2 [Ubuntu/jammy main]
+libldap-common 2.5.16+dfsg-0ubuntu0.22.04.2 [Ubuntu/jammy main]
 libldb2 2:2.4.4-0ubuntu0.22.04.2 [Ubuntu/jammy main]
 libldl2 1:5.10.1+dfsg-4build1 [Ubuntu/jammy universe]
 liblensfun-data-v1 0.3.2-6 [Ubuntu/jammy universe]
@@ -2385,7 +2385,7 @@ libmujs1 1.1.3-3 [Ubuntu/jammy universe]
 libmutter-10-0 42.9-0ubuntu5 [Ubuntu/jammy main]
 libmwaw-0.3-3 0.3.21-1build1 [Ubuntu/jammy main]
 libmysofa1 1.2.1~dfsg0-1 [Ubuntu/jammy universe]
-libmysqlclient21 8.0.35-0ubuntu0.22.04.1 [Ubuntu/jammy main]
+libmysqlclient21 8.0.36-0ubuntu0.22.04.1 [Ubuntu/jammy main]
 libmythes-1.2-0 2:1.2.4-4build1 [Ubuntu/jammy main]
 libnaga-java 3.0+svn80-4 [Ubuntu/jammy universe]
 libnamespace-autoclean-perl 0.29-1 [Ubuntu/jammy main]
@@ -3469,7 +3469,7 @@ lightdm 1.30.0-0ubuntu5 [Ubuntu/jammy universe]
 links 2.25-1build1 [Ubuntu/jammy universe]
 lintian 2.114.0ubuntu1.3 [Ubuntu/jammy main]
 linux-base 4.5ubuntu9 [Ubuntu/jammy main]
-linux-firmware 20220329.git681281e4-0ubuntu3.24 [Ubuntu/jammy main]
+linux-firmware 20220329.git681281e4-0ubuntu3.26 [Ubuntu/jammy main]
 linux-generic 5.15.0.92.89 [Ubuntu/jammy main]
 linux-generic-hwe-20.04 5.15.0.92.89 [Ubuntu/jammy main]
 linux-generic-hwe-22.04 6.5.0.15.15~22.04.8 [Ubuntu/jammy main]
@@ -3611,12 +3611,12 @@ mupdf 1.19.0+ds1-2 [Ubuntu/jammy universe]
 mupdf-tools 1.19.0+ds1-2 [Ubuntu/jammy universe]
 mutter 42.9-0ubuntu5 [Ubuntu/jammy universe]
 mutter-common 42.9-0ubuntu5 [Ubuntu/jammy main]
-mysql-client-8.0 8.0.35-0ubuntu0.22.04.1 [Ubuntu/jammy main]
-mysql-client-core-8.0 8.0.35-0ubuntu0.22.04.1 [Ubuntu/jammy main]
+mysql-client-8.0 8.0.36-0ubuntu0.22.04.1 [Ubuntu/jammy main]
+mysql-client-core-8.0 8.0.36-0ubuntu0.22.04.1 [Ubuntu/jammy main]
 mysql-common 5.8+1.0.8 [Ubuntu/jammy main]
-mysql-server 8.0.35-0ubuntu0.22.04.1 [Ubuntu/jammy main]
-mysql-server-8.0 8.0.35-0ubuntu0.22.04.1 [Ubuntu/jammy main]
-mysql-server-core-8.0 8.0.35-0ubuntu0.22.04.1 [Ubuntu/jammy main]
+mysql-server 8.0.36-0ubuntu0.22.04.1 [Ubuntu/jammy main]
+mysql-server-8.0 8.0.36-0ubuntu0.22.04.1 [Ubuntu/jammy main]
+mysql-server-core-8.0 8.0.36-0ubuntu0.22.04.1 [Ubuntu/jammy main]
 mythes-en-us 1:7.2.0-2 [Ubuntu/jammy main]
 nala 0.15.0 [local]
 nano 6.2-1 [Ubuntu/jammy main]
@@ -3997,8 +3997,8 @@ python3-pathspec 0.9.0-1 [Ubuntu/jammy universe]
 python3-pexpect 4.8.0-2ubuntu1 [Ubuntu/jammy main]
 python3-pickleshare 0.7.5-5 [Ubuntu/jammy universe]
 python3-pikepdf 5.0.1+dfsg-1 [Ubuntu/jammy universe]
-python3-pil 9.0.1-1ubuntu0.1 [Ubuntu/jammy main]
-python3-pil.imagetk 9.0.1-1ubuntu0.1 [Ubuntu/jammy universe]
+python3-pil 9.0.1-1ubuntu0.2 [Ubuntu/jammy main]
+python3-pil.imagetk 9.0.1-1ubuntu0.2 [Ubuntu/jammy universe]
 python3-pip 22.0.2+dfsg-1ubuntu0.4 [Ubuntu/jammy universe]
 python3-pip-whl 22.0.2+dfsg-1ubuntu0.4 [Ubuntu/jammy universe]
 python3-pkg-resources 59.6.0-1.2ubuntu0.22.04.1 [Ubuntu/jammy main]
@@ -4279,7 +4279,7 @@ shellcheck 0.8.0-2 [Ubuntu/jammy universe]
 shfmt 3.7.0-pacstall1 [local]
 shfmt-bin 3.4.3-1 [local]
 shim-signed 1.51.3+15.7-0ubuntu1 [Ubuntu/jammy main]
-signal-desktop 6.45.1 [. xenial/xenial main]
+signal-desktop 6.46.0 [. xenial/xenial main]
 signon-plugin-oauth2 0.25-2 [Ubuntu/jammy universe]
 silversearcher-ag 2.2.0+git20200805-1 [Ubuntu/jammy universe]
 simple-scan 42.0-1 [Ubuntu/jammy main]
@@ -4591,15 +4591,15 @@ xorg-dev 1:7.7+23ubuntu2 [Ubuntu/jammy main]
 xorg-docs-core 1:1.7.1-1.2 [Ubuntu/jammy main]
 xorg-sgml-doctools 1:1.11-1.1 [Ubuntu/jammy main]
 xsel 1.2.0+git9bfc13d.20180109-3 [Ubuntu/jammy universe]
-xserver-common 2:21.1.4-2ubuntu1.7~22.04.7 [Ubuntu/jammy main]
-xserver-xephyr 2:21.1.4-2ubuntu1.7~22.04.7 [Ubuntu/jammy main]
+xserver-common 2:21.1.4-2ubuntu1.7~22.04.8 [Ubuntu/jammy main]
+xserver-xephyr 2:21.1.4-2ubuntu1.7~22.04.8 [Ubuntu/jammy main]
 xserver-xorg 1:7.7+23ubuntu2 [Ubuntu/jammy main]
-xserver-xorg-core 2:21.1.4-2ubuntu1.7~22.04.7 [Ubuntu/jammy main]
-xserver-xorg-dev 2:21.1.4-2ubuntu1.7~22.04.7 [Ubuntu/jammy main]
+xserver-xorg-core 2:21.1.4-2ubuntu1.7~22.04.8 [Ubuntu/jammy main]
+xserver-xorg-dev 2:21.1.4-2ubuntu1.7~22.04.8 [Ubuntu/jammy main]
 xserver-xorg-input-all 1:7.7+23ubuntu2 [Ubuntu/jammy main]
 xserver-xorg-input-libinput 1.2.1-1 [Ubuntu/jammy main]
 xserver-xorg-input-wacom 1:1.0.0-3ubuntu1 [Ubuntu/jammy main]
-xserver-xorg-legacy 2:21.1.4-2ubuntu1.7~22.04.7 [Ubuntu/jammy main]
+xserver-xorg-legacy 2:21.1.4-2ubuntu1.7~22.04.8 [Ubuntu/jammy main]
 xserver-xorg-video-all 1:7.7+23ubuntu2 [Ubuntu/jammy main]
 xserver-xorg-video-amdgpu 22.0.0-1ubuntu0.2 [Ubuntu/jammy main]
 xserver-xorg-video-ati 1:19.1.0-2ubuntu1 [Ubuntu/jammy main]
@@ -4614,7 +4614,7 @@ xsltproc 1.1.34-4ubuntu0.22.04.1 [Ubuntu/jammy main]
 xterm 372-1ubuntu1 [Ubuntu/jammy universe]
 xtrans-dev 1.4.0-1 [Ubuntu/jammy main]
 xutils-dev 1:7.7+6ubuntu1 [Ubuntu/jammy universe]
-xwayland 2:22.1.1-1ubuntu0.10 [Ubuntu/jammy main]
+xwayland 2:22.1.1-1ubuntu0.11 [Ubuntu/jammy main]
 xxd 2:8.2.3995-1ubuntu2.15 [Ubuntu/jammy main]
 xz-utils 5.2.5-2ubuntu1 [Ubuntu/jammy main]
 yaru-theme-gnome-shell 22.04.5 [Ubuntu/jammy main]
@@ -4650,14 +4650,14 @@ zstd 1.4.8+dfsg-3build1 [Ubuntu/jammy main]
 name: batsignal version: 1.6.4-pacstall1
 name: bitwarden version: 2024.1.0
 name: btop version: 1.2.13-pacstall1
-name: google-chrome-stable version: 121.0.6167.85-1
+name: google-chrome-stable version: 121.0.6167.139-1
 name: htop version: 3.2.2-pacstall1
 name: nala version: 0.15.0
 name: neofetch version: 7.1.0-pacstall1
 name: protonmail-bridge version: 3.8.1-1
 name: quarto version: 1.3.450
 name: shfmt version: 3.7.0-pacstall1
-name: signal-desktop version: 6.45.1
+name: signal-desktop version: 6.46.0
 name: thorium-browser version: 120.0.6099.235-1
 name: wezterm version: 20230712-072601-f4abf8fd-pacstall1
 name: zoom version: 5.17.5.2543
@@ -4700,7 +4700,7 @@ du-dust v0.9.0:
     dust
 evcxr_jupyter v0.17.0:
     evcxr_jupyter
-eza v0.17.3:
+eza v0.18.0:
     eza
 fd-find v9.0.0:
     fd
@@ -4741,7 +4741,7 @@ mdbook-toc v0.14.2:
     mdbook-toc
 menyoki v1.7.0:
     menyoki
-mise v2024.1.30:
+mise v2024.2.2:
     mise
 mprocs v0.6.4:
     mprocs
@@ -4758,7 +4758,7 @@ porsmo v0.3.0:
 pueue v3.3.3:
     pueue
     pueued
-riffdiff v2.28.0:
+riffdiff v2.30.0:
     riff
 ripgrep v14.1.0:
     rg
@@ -4782,7 +4782,7 @@ spotifyd v0.3.5:
     spotifyd
 stylua v0.20.0:
     stylua
-taplo-cli v0.8.1:
+taplo-cli v0.9.0:
     taplo
 tectonic v0.14.1:
     tectonic
@@ -4806,15 +4806,13 @@ yazi-fm v0.2.2:
     yazi
 zellij v0.39.2:
     zellij
-zeta-note v0.1.8:
-    zeta-note
 ```
 
 ## Pipx
 
 ```txt
 manual pages are exposed at /home/een023/.local/share/man
-package ansible-core 2.16.2, installed using Python 3.10.12
+package ansible-core 2.16.3, installed using Python 3.10.12
  - ansible
  - ansible-config
  - ansible-connection
@@ -4939,7 +4937,7 @@ package pandoc-include 1.2.1, installed using Python 3.10.12
 package pdfcropmargins 2.0.3, installed using Python 3.10.12
  - pdf-crop-margins
  - pdfcropmargins
-package pipenv 2023.11.17, installed using Python 3.10.12
+package pipenv 2023.12.0, installed using Python 3.10.12
  - pipenv
  - pipenv-resolver
 package pipreqs 0.4.13, installed using Python 3.10.12
@@ -4964,7 +4962,7 @@ package pyqt5 5.15.10, installed using Python 3.10.12
  - pylupdate5
  - pyrcc5
  - pyuic5
-package pyright 1.1.348, installed using Python 3.10.12
+package pyright 1.1.349, installed using Python 3.10.12
  - pyright
  - pyright-langserver
  - pyright-python
@@ -5059,7 +5057,7 @@ Yaru-dark Gtk Theme                                                             
 Name                       Version                     Rev    Tracking         Publisher      Notes
 bare                       1.0                         5      latest/stable    canonical**    base
 canonical-livepatch        10.7.0                      246    latest/stable    canonical**    -
-cmake                      3.28.1                      1361   latest/stable    crascit**      classic
+cmake                      3.28.2                      1364   latest/stable    crascit**      classic
 core                       16-2.60.4                   16202  latest/stable    canonical**    core
 core18                     20231027                    2812   latest/stable    canonical**    base
 core20                     20231123                    2105   latest/stable    canonical**    base
