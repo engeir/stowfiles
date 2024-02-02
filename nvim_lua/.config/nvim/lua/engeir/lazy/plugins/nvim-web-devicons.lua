@@ -1,6 +1,6 @@
 return {
     "nvim-tree/nvim-web-devicons",
-    lazy = false,
+    lazy = true,
     opts = {
         default = true,
     },
