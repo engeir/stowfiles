@@ -46,7 +46,7 @@ fi
 tmux_session_name=$(basename "$selected" | tr . _)
 
 # Check if a string is a substring of another string
-if echo "$tmux_session_name" | grep -q "$(tmux list-sessions -F "#S")"; then
+if echo "$(tmux list-sessions -F "#S")" | grep -q "$tmux_session_name"; then
     # Ask the user for input
     read -rp "Session already exists. Type in a new name for it, or n to dismiss [n] " tmux_session_name
 fi
