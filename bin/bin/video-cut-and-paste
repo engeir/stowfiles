@@ -17,9 +17,6 @@ import pathlib
 import tempfile
 
 
-lines = list(sys.stdin)
-
-
 class RepetitionError(Exception):
     def __init__(self, message):
         self.msg = message
@@ -41,25 +38,12 @@ def convert_time(value: str) -> float:
     return float(total_seconds)
 
 
-def create_times_tuples() -> list[tuple[float, float]]:
-    times: list[tuple[float, float]] = []
-    prev_key = "none"
-    prev_value = 0.0
-    for line in globals()["lines"]:
-        if len(line.split()) != 2 or line.split()[0] not in ["start", "stop"]:
-            continue
-        key, value = line.split()
-        value_ = convert_time(value)
-        if prev_key == key:
-            raise RepetitionError(f"You passed two '{key}' times in a row.")
-        if prev_key == "none" and key == "stop":
-            times.append((prev_value, value_))
-        elif key == "start":
-            prev_value = value_
-        else:
-            times.append((prev_value, value_))
-            prev_value = value_
-        prev_key = key
+def create_times_tuples(
+    times: list[tuple[float, float]], next_start: str, next_stop: str
+) -> list[tuple[float, float]]:
+    prev_value = 0.0 if next_start == "none" else convert_time(next_start)
+    value = convert_time(next_stop)
+    times.append((prev_value, value))
     return times
 
 
@@ -94,31 +78,65 @@ def main() -> None:
     where file.txt contains information about what input file to use, what name the new
     video should be saved to, and all start/stops in the source file.
     """
-    times = create_times_tuples()
-    file_name = find_field("file")
-    save_name = find_field("out")
+    editor: dict[str, pathlib.Path | dict] = {}
+    save_file = None
+    current_times: list[tuple[float, float]] = []
+    next_start = "none"
+    no_files = 0
+    for line in sys.stdin:
+        match line.split():
+            case ["out", value]:
+                save_file = pathlib.Path(value)
+                editor["out"] = save_file
+            case ["file", value]:
+                if no_files:
+                    editor["files"][f"file{no_files}"]["steps"] = current_times
+                    current_times = []
+                    next_start = "none"
+                else:
+                    editor["files"] = {}
+                no_files += 1
+                current_file = pathlib.Path(value)
+                editor["files"][f"file{no_files}"] = {"name": current_file}
+            case ["start", value]:
+                if no_files == 0:
+                    raise FileNotSpecifiedError(
+                        "You must specify a 'file' before adding start and stops"
+                    )
+                next_start = value
+            case ["stop", value]:
+                if no_files == 0:
+                    raise FileNotSpecifiedError(
+                        "You must specify a 'file' before adding start and stops"
+                    )
+                current_times = create_times_tuples(current_times, next_start, value)
+            case _:
+                print("hmm", line)
+    editor["files"][f"file{no_files}"]["steps"] = current_times
+    if save_file is None:
+        raise FileNotSpecifiedError("You must specify one 'out' file to save to.")
     TMP = tempfile.TemporaryDirectory()
     tmp_dir = pathlib.Path(TMP.name)
     with open(tmp_dir / "list.txt", "w") as f:
-        for i, (start, stop) in enumerate(times):
-            start_, stop_ = float2str(start), float2str(stop)
-            # fmt: off
-            subprocess.call(
-                [
-                    "ffmpeg", "-ss", start_, "-to", stop_, "-i",
-                    file_name, "-c", "copy", tmp_dir / f"{i}.mp4",
-                ]
-            )
-            # fmt: on
-            f.write("file " + str(tmp_dir / f"{i}.mp4\n"))
-    with open(tmp_dir / "list.txt", "r") as f:
-        for line in f:
-            print(line)
+        for k_file, v_file in editor["files"].items():
+            for step_num, (start, stop) in enumerate(v_file["steps"]):
+                start_, stop_ = float2str(start), float2str(stop)
+                tmp_name = f"{k_file}-{step_num}.mp4"
+                file_name = v_file["name"]
+                # fmt: off
+                subprocess.call(
+                    [
+                        "ffmpeg", "-ss", start_, "-to", stop_, "-i",
+                        file_name, "-c", "copy", tmp_dir / tmp_name,
+                    ]
+                )
+                # fmt: on
+                f.write("file " + str(tmp_dir / f"{tmp_name}\n"))
     # fmt: off
     subprocess.call(
         [
             "ffmpeg", "-y", "-f", "concat", "-safe", "0", "-i",
-            str(tmp_dir / "list.txt"), "-c", "copy", save_name,
+            str(tmp_dir / "list.txt"), "-c", "copy", editor["out"],
         ]
     )
     # fmt: on
