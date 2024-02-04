@@ -1,0 +1,129 @@
+#!/usr/bin/env python3
+"""Cut an mp4 video into several segments.
+
+Use it by running::
+
+    python video-cut-and-paste <file.txt
+    video-cut-and-paste <file.txt
+
+where file.txt contains information about what input file to use, what name the new
+video should be saved to, and all start/stops in the source file.
+"""
+
+
+import sys
+import subprocess
+import pathlib
+import tempfile
+
+
+lines = list(sys.stdin)
+
+
+class RepetitionError(Exception):
+    def __init__(self, message):
+        self.msg = message
+        super().__init__(message)
+
+
+class FileNotSpecifiedError(Exception):
+    def __init__(self, message):
+        self.msg = message
+        super().__init__(message)
+
+
+def convert_time(value: str) -> float:
+    """Convert from HH:MM:SS to seconds."""
+    if ":" not in value:
+        return float(value)
+    h, m, s = map(int, value.split(":"))
+    total_seconds = h * 3600 + m * 60 + s
+    return float(total_seconds)
+
+
+def create_times_tuples() -> list[tuple[float, float]]:
+    times: list[tuple[float, float]] = []
+    prev_key = "none"
+    prev_value = 0.0
+    for line in globals()["lines"]:
+        if len(line.split()) != 2 or line.split()[0] not in ["start", "stop"]:
+            continue
+        key, value = line.split()
+        value_ = convert_time(value)
+        if prev_key == key:
+            raise RepetitionError(f"You passed two '{key}' times in a row.")
+        if prev_key == "none" and key == "stop":
+            times.append((prev_value, value_))
+        elif key == "start":
+            prev_value = value_
+        else:
+            times.append((prev_value, value_))
+            prev_value = value_
+        prev_key = key
+    return times
+
+
+def find_field(field: str) -> str:
+    for line in globals()["lines"]:
+        if len(line.split()) != 2 or line.split()[0] not in [field]:
+            continue
+        return line.split()[1]
+    raise FileNotSpecifiedError(f"No '{field}' field found")
+
+
+def float2str(seconds):
+    # Convert seconds to an integer
+    total_seconds = int(seconds)
+
+    # Calculate hours, minutes, and seconds
+    hours = total_seconds // 3600
+    minutes = (total_seconds % 3600) // 60
+    seconds = total_seconds % 60
+
+    # Format the time string
+    return f"{hours:02d}:{minutes:02d}:{seconds:02d}"
+
+
+def main() -> None:
+    """Cut an mp4 video into several segments.
+
+    Use it by running::
+
+        python video-cut-and-paste <file.txt
+
+    where file.txt contains information about what input file to use, what name the new
+    video should be saved to, and all start/stops in the source file.
+    """
+    times = create_times_tuples()
+    file_name = find_field("file")
+    save_name = find_field("out")
+    TMP = tempfile.TemporaryDirectory()
+    tmp_dir = pathlib.Path(TMP.name)
+    with open(tmp_dir / "list.txt", "w") as f:
+        for i, (start, stop) in enumerate(times):
+            start_, stop_ = float2str(start), float2str(stop)
+            # fmt: off
+            subprocess.call(
+                [
+                    "ffmpeg", "-ss", start_, "-to", stop_, "-i",
+                    file_name, "-c", "copy", tmp_dir / f"{i}.mp4",
+                ]
+            )
+            # fmt: on
+            f.write("file " + str(tmp_dir / f"{i}.mp4\n"))
+    with open(tmp_dir / "list.txt", "r") as f:
+        for line in f:
+            print(line)
+    # fmt: off
+    subprocess.call(
+        [
+            "ffmpeg", "-y", "-f", "concat", "-safe", "0", "-i",
+            str(tmp_dir / "list.txt"), "-c", "copy", save_name,
+        ]
+    )
+    # fmt: on
+    TMP.cleanup()
+
+
+if __name__ == "__main__":
+    main()
