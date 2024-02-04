@@ -11,7 +11,7 @@ else
     # Linux
     MACH="Linux"
     dmenu='dmenu -i -l 20 -p "Choose a script to run:"'
-    choises="passwords\npoweroff\nopen pdf\ninspect system\nemojis\nhtml-symbols\nweather\nchange wallpaper\nlayouts\nfind word definition\nfind text\nread QR\nfram status\npomodoro"
+    choises="passwords\npoweroff\nhard reset BSPWM\nopen pdf\ninspect system\nemojis\nhtml-symbols\nweather\nchange wallpaper\nlayouts\nfind word definition\nfind text\nread QR\nfram status\npomodoro"
 fi
 
 export PATH="$PATH:$HOME/bin/"
@@ -40,5 +40,6 @@ case "$chosen" in
     "pomodoro") pomo-alac ;;
     "poweroff") poweroff ;;
     "read QR") read_qr ;;
+    "hard reset BSPWM") hard-reset-bspwm ;;
     "weather") weather ;;
 esac

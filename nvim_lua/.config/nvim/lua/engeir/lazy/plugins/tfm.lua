@@ -1,7 +1,8 @@
 return {
     "rolv-apneseth/tfm.nvim",
+    event = "BufReadPost",
     enabled = IS_KNOWN,
-    lazy = false,
+    lazy = true,
     opts = {
         -- TFM to use
         -- Possible choices: "ranger" | "nnn" | "lf" | "yazi" (default)

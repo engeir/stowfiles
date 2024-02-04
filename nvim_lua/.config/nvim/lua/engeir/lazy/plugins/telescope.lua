@@ -8,6 +8,7 @@ EOF
 return {
     {
         "nvim-telescope/telescope.nvim",
+        event = "VeryLazy",
         branch = "0.1.x",
         dependencies = {
             "nvim-lua/plenary.nvim",
@@ -240,6 +241,7 @@ return {
     },
     {
         "nvim-telescope/telescope-ui-select.nvim",
+        event = "VeryLazy",
         config = function()
             require("telescope").load_extension("ui-select")
         end,

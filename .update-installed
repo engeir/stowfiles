@@ -139,7 +139,7 @@ $GO
     " >"./INSTALLED-mac.md"
     # Now, we print the diff between the previous installed programs and the currently
     # installed
-    print_diff /tmp/INSTALLED-mac.md ./INSTALLED-mac.md
+    # print_diff /tmp/INSTALLED-mac.md ./INSTALLED-mac.md
 fi
 
 # Run Linux updates
@@ -209,5 +209,5 @@ $SNAP
     " >"./INSTALLED-linux.md"
     # Now, we print the diff between the previous installed programs and the currently
     # installed
-    print_diff /tmp/INSTALLED-linux.md ./INSTALLED-linux.md
+    # print_diff /tmp/INSTALLED-linux.md ./INSTALLED-linux.md
 fi

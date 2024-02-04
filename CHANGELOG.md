@@ -1,5 +1,37 @@
 # Changelog
 
+## [1.8.2](https://github.com/engeir/stowfiles/compare/v1.8.1...v1.8.2) (2024-01-31)
+
+
+### Miscellaneous
+
+* **filemanager:** add plugin config to yazi and xplr ([0ea9677](https://github.com/engeir/stowfiles/commit/0ea9677df0f427290903cb4eacda969a38bd39d5))
+* **fish:** set up pyenv ([68c0c2e](https://github.com/engeir/stowfiles/commit/68c0c2eaf3fc62097a1014474a2603733462ddb8))
+* **zsh:** check if keychain was already started ([3563d68](https://github.com/engeir/stowfiles/commit/3563d68a775f067edbfbadb93253df4919544488))
+
+
+### Code Refactoring
+
+* **nvim:** reduce startup time ([e82dfc1](https://github.com/engeir/stowfiles/commit/e82dfc13e0358d9e0dba37781cf5f6409097dd67))
+
+## [1.8.1](https://github.com/engeir/stowfiles/compare/v1.8.0...v1.8.1) (2024-01-29)
+
+
+### Bug Fixes
+
+* **bin:** correct the path to Xresources file ([20b745e](https://github.com/engeir/stowfiles/commit/20b745e5b84448dfa2c713eeffe57933e49df39b))
+* **conda:** DO NOT activate conda by default ([8ba8b03](https://github.com/engeir/stowfiles/commit/8ba8b03c6ed75e7f9652a7adff903824ca732287))
+* **fish:** use zsh as default on ubuntu, fish in tmux ([1e4ee0f](https://github.com/engeir/stowfiles/commit/1e4ee0fcff55fb2bf1804d290d61504d21d9f018))
+* **ssh:** use keychain to get keys in fish ([68d015a](https://github.com/engeir/stowfiles/commit/68d015afbc9084076e19f249208a175682a9884e))
+
+
+### Miscellaneous
+
+* **fish:** add conda init ([9971aab](https://github.com/engeir/stowfiles/commit/9971aab2adf7426761915d6f9cd3ad55b91a3780))
+* **mise:** activate and setup mise ([2759c02](https://github.com/engeir/stowfiles/commit/2759c0290c45d3a3b7f71f01c300686bd5ad2cce))
+* **mise:** run compiler and latex behind mise (danger) ([e924ecd](https://github.com/engeir/stowfiles/commit/e924ecd82585d3a38b7af43608844839ccdaab75))
+* **software:** remove diff view ([640a035](https://github.com/engeir/stowfiles/commit/640a0350df2ea7857df362b5c130f49a95bf04b9))
+
 ## [1.8.0](https://github.com/engeir/stowfiles/compare/v1.7.1...v1.8.0) (2024-01-26)
 
 

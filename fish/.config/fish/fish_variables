@@ -5,8 +5,10 @@ SETUVAR FZF_LEGACY_KEYBINDINGS:1
 SETUVAR FZF_PREVIEW_DIR_CMD:ls
 SETUVAR FZF_PREVIEW_FILE_CMD:head\x20\x2dn\x2010
 SETUVAR FZF_TMUX_HEIGHT:40\x25
+SETUVAR --export PYENV_ROOT:/home/een023/\x2epyenv
 SETUVAR --export SSH_AGENT_PID:66261
 SETUVAR --export SSH_AUTH_SOCK:/tmp/ssh\x2dXXXXXXV3bWWF/agent\x2e66260
+SETUVAR SSH_KEYS_TO_AUTOLOAD:/home/een023/\x2essh/id_rsa\x1e/home/een023/\x2essh/id_ed25519\x1e/home/een023/\x2essh/id_sigma2\x1e/home/een023/\x2essh/id_ed25519
 SETUVAR __fish_initialized:3400
 SETUVAR _fisher_jhillyerd_2F_plugin_2D_git_files:\x7e/\x2econfig/fish/functions/__git\x2ebranch_has_wip\x2efish\x1e\x7e/\x2econfig/fish/functions/__git\x2ecurrent_branch\x2efish\x1e\x7e/\x2econfig/fish/functions/__git\x2edefault_branch\x2efish\x1e\x7e/\x2econfig/fish/functions/__git\x2edestroy\x2efish\x1e\x7e/\x2econfig/fish/functions/__git\x2einit\x2efish\x1e\x7e/\x2econfig/fish/functions/gbage\x2efish\x1e\x7e/\x2econfig/fish/functions/gbda\x2efish\x1e\x7e/\x2econfig/fish/functions/gdv\x2efish\x1e\x7e/\x2econfig/fish/functions/gignored\x2efish\x1e\x7e/\x2econfig/fish/functions/glp\x2efish\x1e\x7e/\x2econfig/fish/functions/grename\x2efish\x1e\x7e/\x2econfig/fish/functions/grt\x2efish\x1e\x7e/\x2econfig/fish/functions/gtest\x2efish\x1e\x7e/\x2econfig/fish/functions/gtl\x2efish\x1e\x7e/\x2econfig/fish/functions/gunwip\x2efish\x1e\x7e/\x2econfig/fish/functions/gwip\x2efish\x1e\x7e/\x2econfig/fish/conf\x2ed/git\x2efish
 SETUVAR _fisher_jorgebucaran_2F_fisher_files:\x7e/\x2econfig/fish/functions/fisher\x2efish\x1e\x7e/\x2econfig/fish/completions/fisher\x2efish
@@ -53,4 +55,4 @@ SETUVAR fish_pager_color_selected_background:\x2d\x2dreverse
 SETUVAR fish_pager_color_selected_completion:\x1d
 SETUVAR fish_pager_color_selected_description:\x1d
 SETUVAR fish_pager_color_selected_prefix:\x1d
-SETUVAR fish_user_paths:/home/een023/\x2elocal/share/bob/nvim\x2dbin\x1e/home/een023/\x2elocal/share/mise/shims\x1e/Users/eirikenger/bin
+SETUVAR fish_user_paths:/home/een023/\x2epyenv/bin\x1e/home/een023/\x2elocal/share/bob/nvim\x2dbin\x1e/home/een023/\x2elocal/share/mise/shims\x1e/Users/eirikenger/bin

@@ -1,0 +1,4 @@
+#!/bin/bash
+eval `keychain --eval --agents ssh id_rsa`
+eval `keychain --eval --agents ssh id_ed25519`
+eval `keychain --eval --agents ssh id_sigma2`

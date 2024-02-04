@@ -1,5 +1,6 @@
 return {
     "lervag/vimtex",
+    event = { "BufReadPre", "BufNewFile" },
     enabled = IS_KNOWN,
     init = function()
         vim.g.tex_flavor = "latex"
@@ -24,6 +25,11 @@ return {
         vim.keymap.set("n", "<localleader>t", ":VimtexTocToggle<CR>", { desc = "Vimtex: Open [T]oC (Toggle)" })
         vim.keymap.set("n", "<localleader>cw", ":VimtexCountWords<CR>", { desc = "Vimtex: [C]ount [W]ords" })
         vim.keymap.set("n", "<localleader>cl", ":VimtexCountLetters<CR>", { desc = "Vimtex: [C]ount [L]etters" })
-        vim.keymap.set("n", "<localleader>lb", "<cmd>!bibexport -o %:p:r.bib %:p:r.aux<CR>", { desc = "Vimtex: [B]ibexport" })
+        vim.keymap.set(
+            "n",
+            "<localleader>lb",
+            "<cmd>!bibexport -o %:p:r.bib %:p:r.aux<CR>",
+            { desc = "Vimtex: [B]ibexport" }
+        )
     end,
 }
