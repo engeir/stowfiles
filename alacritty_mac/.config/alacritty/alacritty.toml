@@ -125,6 +125,7 @@ program = "/usr/local/bin/fish"
 [window]
 decorations = "buttonless"
 opacity = 0.8
+option_as_alt = "OnlyRight"
 
 [window.padding]
 x = 1

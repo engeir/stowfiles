@@ -76,7 +76,8 @@ config.switch_to_last_active_tab_when_closing_tab = true
 
 -- config.window_decorations = "TITLE"
 config.audible_bell = "Disabled"
--- config.font = wezterm.font("Victor Mono")
+-- Disable ligatures
+config.harfbuzz_features = { 'calt=0', 'clig=0', 'liga=0' }
 config.font = wezterm.font("CaskaydiaMono Nerd Font Mono")
 local font_size
 if wezterm.target_triple == "x86_64-apple-darwin" then
