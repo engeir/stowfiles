@@ -19,7 +19,7 @@ aisleriot 1:3.22.22-1 [Ubuntu/jammy main]
 alltray:i386 0.60-1 [local]
 alsa-base 1.0.25+dfsg-0ubuntu7 [Ubuntu/jammy main]
 alsa-topology-conf 1.2.5.1-2 [Ubuntu/jammy main]
-alsa-ucm-conf 1.2.6.3-1ubuntu1.9 [local]
+alsa-ucm-conf 1.2.6.3-1ubuntu1.10 [Ubuntu/jammy main]
 alsa-utils 1.2.6-1ubuntu1 [Ubuntu/jammy main]
 amd64-microcode 3.20191218.1ubuntu2.2 [Ubuntu/jammy main]
 anacron 2.3-31ubuntu2 [Ubuntu/jammy main]
@@ -136,7 +136,6 @@ cinnamon-l10n 5.2.2-1 [Ubuntu/jammy universe]
 cli-common 0.10 [Ubuntu/jammy universe]
 cliquer 1.21-3 [Ubuntu/jammy universe]
 cloc 1.90-1 [Ubuntu/jammy universe]
-cm-super 0.3.4-17 [Ubuntu/jammy universe]
 cm-super-minimal 0.3.4-17 [Ubuntu/jammy universe]
 cmake 3.22.1-1ubuntu1.22.04.1 [Ubuntu/jammy main]
 cmake-data 3.22.1-1ubuntu1.22.04.1 [Ubuntu/jammy main]
@@ -3722,7 +3721,6 @@ perl 5.34.0-3ubuntu1.3 [Ubuntu/jammy main]
 perl-base 5.34.0-3ubuntu1.3 [Ubuntu/jammy main]
 perl-modules-5.34 5.34.0-3ubuntu1.3 [Ubuntu/jammy main]
 perl-openssl-defaults 5build2 [Ubuntu/jammy main]
-pfb2t1c2pfb 0.3-11 [Ubuntu/jammy universe]
 phonon4qt5 4:4.11.1-4 [Ubuntu/jammy universe]
 phonon4qt5-backend-vlc 0.11.3-1 [Ubuntu/jammy universe]
 picom 9-1 [Ubuntu/jammy universe]
@@ -4678,7 +4676,7 @@ blindfold v1.0.7:
     blindfold
 bob-nvim v2.8.0:
     bob
-cargo-binstall v1.6.1:
+cargo-binstall v1.6.2:
     cargo-binstall
 cargo-edit v0.12.2:
     cargo-add
@@ -4741,7 +4739,7 @@ mdbook-toc v0.14.2:
     mdbook-toc
 menyoki v1.7.0:
     menyoki
-mise v2024.2.2:
+mise v2024.2.4:
     mise
 mprocs v0.6.4:
     mprocs
@@ -4753,12 +4751,12 @@ pastel v0.9.0:
     pastel
 pngquant v3.0.3:
     pngquant
-porsmo v0.3.0:
+porsmo v0.3.1:
     porsmo
 pueue v3.3.3:
     pueue
     pueued
-riffdiff v2.30.0:
+riffdiff v2.30.1:
     riff
 ripgrep v14.1.0:
     rg
@@ -4784,7 +4782,7 @@ stylua v0.20.0:
     stylua
 taplo-cli v0.9.0:
     taplo
-tectonic v0.14.1:
+tectonic v0.15.0:
     tectonic
 topgrade v14.0.1:
     topgrade
@@ -4890,7 +4888,7 @@ package httpie 3.2.2, installed using Python 3.10.12
  - man1/https.1
 package huge 0.1.3, installed using Python 3.10.12
  - huge
-package intake 0.7.0, installed using Python 3.10.12
+package intake 2.0.0, installed using Python 3.10.12
  - intake
  - intake-server
 package jupyter-client 8.6.0, installed using Python 3.10.12
@@ -4937,7 +4935,7 @@ package pandoc-include 1.2.1, installed using Python 3.10.12
 package pdfcropmargins 2.0.3, installed using Python 3.10.12
  - pdf-crop-margins
  - pdfcropmargins
-package pipenv 2023.12.0, installed using Python 3.10.12
+package pipenv 2023.12.1, installed using Python 3.10.12
  - pipenv
  - pipenv-resolver
 package pipreqs 0.4.13, installed using Python 3.10.12
@@ -5009,7 +5007,7 @@ package yapf 0.40.2, installed using Python 3.10.12
 
 ```txt
 ascii-image-converter: github.com/TheZoraiz/ascii-image-converter@v1.13.1
-            bluetuith: github.com/darkhz/bluetuith@v0.2.0
+            bluetuith: github.com/darkhz/bluetuith@v0.2.1
                    d2: oss.terrastruct.com/d2@v0.6.3
                  draw: github.com/maaslalani/draw@v0.1.1
                fast-p: github.com/bellecp/fast-p@v0.2.5
@@ -5019,7 +5017,7 @@ ascii-image-converter: github.com/TheZoraiz/ascii-image-converter@v1.13.1
                   gup: github.com/nao1215/gup@v0.24.1
                   jqp: github.com/noahgorstein/jqp@v0.5.0
               lazygit: github.com/jesseduffield/lazygit@v0.40.2
-                   lf: github.com/gokcehan/lf@v0.0.0-20240118035104-8a14749154c2
+                   lf: github.com/gokcehan/lf@v0.0.0-20240204232919-8374080815a6
                   nap: github.com/maaslalani/nap@v0.1.1
                   pup: github.com/ericchiang/pup@v0.4.0
                     s: github.com/zquestz/s@v0.6.9
