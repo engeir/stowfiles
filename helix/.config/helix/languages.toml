@@ -1,3 +1,35 @@
 [[language]]
 name = "python"
 auto-format = false
+
+[[language]]
+name = "latex"
+
+# [auto-pairs]
+# '\'.'(' = '\)'
+
+[language-server.texlab.config.texlab]
+formatterLineLength = -1                  # bib files
+latexindent = { modifyLineBreaks = true }
+
+[language-server.texlab.config.texlab.build]
+onSave = true
+forwardSearchAfter = false
+
+[language-server.texlab.config.texlab.forwardSearch]
+executable = "zathura"
+args = ["--synctex-forward", "%l:1:%f", "%p"]
+# latexmk does something much more complicated that actually works
+# args = [ "-x", "nvim", "--headless", "-c", '"VimtexInverseSearch ½{line} '%{input}'"', "--synctex-forward", "%l:1:%f", "%p"]
+
+[language-server.texlab.config.texlab.chktex]
+onEdit = true
+onOpenAndSave = true
+
+[language-server.texlab.config.texlab.experimental]
+# citationCommands is wrong, but I don't think a reference commands option
+# is available
+# citationCommands = {
+#     "subref",
+# },
+mathEnvironments = ["align*", "equation"]

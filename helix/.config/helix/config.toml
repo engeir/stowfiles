@@ -1,13 +1,51 @@
-theme = "base16_transparent"
+theme = "gruvbox_dark_soft_transparent"
+
+# add something for reflow of matched text
+# add in hard wrap
 
 [editor]
+auto-completion = true
+bufferline = "always"
+cursorline = true
+cursorcolumn = true
 line-number = "relative"
-mouse = false
+mouse = true
+auto-save = true
+text-width = 88
+soft-wrap = { enable = true, wrap-at-text-width = true, wrap-indicator = "" }
+rulers = [88]
 
 [editor.cursor-shape]
 insert = "bar"
 normal = "block"
 select = "underline"
 
+[editor.statusline]
+left = ["mode", "file-name", "spacer", "diagnostics"]
+right = [
+  "position",
+  "separator",
+  "spacer",
+  "position-percentage",
+  "spacer",
+  "separator",
+  "total-line-numbers",
+  "separator",
+  "file-line-ending",
+  "separator",
+  "file-type",
+]
+
 [editor.file-picker]
 hidden = false
+
+[editor.whitespace.characters]
+space = "·"
+nbsp = "⍽"
+tab = "→"
+newline = "⏎"
+tabpad = "·"  # Tabs will look like "→···" (depending on tab width)
+
+[keys.normal.space.space]
+s = ":format"
+w = ":reflow"

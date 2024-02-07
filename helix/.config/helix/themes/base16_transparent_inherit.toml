@@ -1,0 +1,10 @@
+inherits = "base16_transparent"
+
+# Override the theming for "keyword"s:
+"keyword" = { fg = "blue" }
+
+"ui.selection" = "red"
+
+# Override colors in the palette:
+[palette]
+berry = "#2A2A4D"
