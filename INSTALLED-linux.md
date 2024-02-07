@@ -234,9 +234,9 @@ docbook-xml 4.5-11 [Ubuntu/jammy main]
 docbook-xsl 1.79.2+dfsg-1 [Ubuntu/jammy universe]
 docker 1.5-2 [Ubuntu/jammy universe]
 docker-buildx-plugin 0.12.1-1~ubuntu.20.04~focal [Docker CE/ stable]
-docker-ce 5:25.0.2-1~ubuntu.20.04~focal [Docker CE/ stable]
-docker-ce-cli 5:25.0.2-1~ubuntu.20.04~focal [Docker CE/ stable]
-docker-ce-rootless-extras 5:25.0.2-1~ubuntu.20.04~focal [Docker CE/ stable]
+docker-ce 5:25.0.3-1~ubuntu.20.04~focal [Docker CE/ stable]
+docker-ce-cli 5:25.0.3-1~ubuntu.20.04~focal [Docker CE/ stable]
+docker-ce-rootless-extras 5:25.0.3-1~ubuntu.20.04~focal [Docker CE/ stable]
 docker-compose-plugin 2.24.5-1~ubuntu.20.04~focal [Docker CE/ stable]
 docutils-common 0.17.1+dfsg-2 [Ubuntu/jammy main]
 docx2txt 1.4-5 [Ubuntu/jammy universe]
@@ -709,7 +709,7 @@ gnuplot 5.4.2+dfsg2-2 [Ubuntu/jammy universe]
 gnuplot-data 5.4.2+dfsg2-2 [Ubuntu/jammy universe]
 gnuplot-qt 5.4.2+dfsg2-2 [Ubuntu/jammy universe]
 golly 3.3-1build1 [Ubuntu/jammy universe]
-google-chrome-stable 121.0.6167.139-1 [Google/stable main]
+google-chrome-stable 121.0.6167.160-1 [Google/stable main]
 gperf 3.1-1build1 [Ubuntu/jammy universe]
 gpg 2.2.27-3ubuntu2.1 [Ubuntu/jammy main]
 gpg-agent 2.2.27-3ubuntu2.1 [Ubuntu/jammy main]
@@ -2954,10 +2954,10 @@ libssh-4 0.9.6-2ubuntu0.22.04.3 [Ubuntu/jammy main]
 libssh-4:i386 0.9.6-2ubuntu0.22.04.3 [Ubuntu/jammy main]
 libssh-gcrypt-4 0.9.6-2ubuntu0.22.04.3 [Ubuntu/jammy main]
 libssh2-1 1.10.0-3 [Ubuntu/jammy universe]
-libssl-dev 3.0.2-0ubuntu1.13 [Ubuntu/jammy main]
+libssl-dev 3.0.2-0ubuntu1.14 [Ubuntu/jammy main]
 libssl1.1 1.1.1l-1ubuntu1.6 [local]
-libssl3 3.0.2-0ubuntu1.13 [Ubuntu/jammy main]
-libssl3:i386 3.0.2-0ubuntu1.13 [Ubuntu/jammy main]
+libssl3 3.0.2-0ubuntu1.14 [Ubuntu/jammy main]
+libssl3:i386 3.0.2-0ubuntu1.14 [Ubuntu/jammy main]
 libsss-certmap0 2.6.3-1ubuntu3.2 [Ubuntu/jammy main]
 libsss-idmap0 2.6.3-1ubuntu3.2 [Ubuntu/jammy main]
 libsss-nss-idmap0 2.6.3-1ubuntu3.2 [Ubuntu/jammy main]
@@ -3682,7 +3682,7 @@ opensp 1.5.2-13ubuntu3 [Ubuntu/jammy universe]
 openssh-client 1:8.9p1-3ubuntu0.6 [Ubuntu/jammy main]
 openssh-server 1:8.9p1-3ubuntu0.6 [Ubuntu/jammy main]
 openssh-sftp-server 1:8.9p1-3ubuntu0.6 [Ubuntu/jammy main]
-openssl 3.0.2-0ubuntu1.13 [Ubuntu/jammy main]
+openssl 3.0.2-0ubuntu1.14 [Ubuntu/jammy main]
 openvpn 2.5.9-0ubuntu0.22.04.2 [Ubuntu/jammy main]
 orca 42.0-1ubuntu2 [Ubuntu/jammy main]
 os-prober 1.79ubuntu2 [Ubuntu/jammy main]
@@ -4648,7 +4648,7 @@ zstd 1.4.8+dfsg-3build1 [Ubuntu/jammy main]
 name: batsignal version: 1.6.4-pacstall1
 name: bitwarden version: 2024.1.0
 name: btop version: 1.2.13-pacstall1
-name: google-chrome-stable version: 121.0.6167.139-1
+name: google-chrome-stable version: 121.0.6167.160-1
 name: htop version: 3.2.2-pacstall1
 name: nala version: 0.15.0
 name: neofetch version: 7.1.0-pacstall1
@@ -4729,7 +4729,7 @@ languagetool-rust v2.1.4:
     ltrs
 lscolors v0.17.0:
     lscolors
-mdbook v0.4.36:
+mdbook v0.4.37:
     mdbook
 mdbook-admonish v1.15.0:
     mdbook-admonish
@@ -4739,11 +4739,11 @@ mdbook-toc v0.14.2:
     mdbook-toc
 menyoki v1.7.0:
     menyoki
-mise v2024.2.4:
+mise v2024.2.5:
     mise
 mprocs v0.6.4:
     mprocs
-nu v0.89.0:
+nu v0.90.1:
     nu
 numbat-cli v1.9.0:
     numbat
@@ -4800,7 +4800,7 @@ xh v0.21.0:
     xh
 xplr v0.21.5:
     xplr
-yazi-fm v0.2.2:
+yazi-fm v0.2.3:
     yazi
 zellij v0.39.2:
     zellij
@@ -4865,7 +4865,7 @@ package euporie 2.7.0, installed using Python 3.10.12
  - euporie-preview
 package flake8 7.0.0, installed using Python 3.10.12
  - flake8
-package fonttools 4.47.2, installed using Python 3.11.6
+package fonttools 4.48.1, installed using Python 3.11.6
  - fonttools
  - pyftmerge
  - pyftsubset
@@ -4960,7 +4960,7 @@ package pyqt5 5.15.10, installed using Python 3.10.12
  - pylupdate5
  - pyrcc5
  - pyuic5
-package pyright 1.1.349, installed using Python 3.10.12
+package pyright 1.1.350, installed using Python 3.10.12
  - pyright
  - pyright-langserver
  - pyright-python
@@ -5006,25 +5006,7 @@ package yapf 0.40.2, installed using Python 3.10.12
 ## Go
 
 ```txt
-ascii-image-converter: github.com/TheZoraiz/ascii-image-converter@v1.13.1
-            bluetuith: github.com/darkhz/bluetuith@v0.2.1
-                   d2: oss.terrastruct.com/d2@v0.6.3
-                 draw: github.com/maaslalani/draw@v0.1.1
-               fast-p: github.com/bellecp/fast-p@v0.2.5
-        golangci-lint: github.com/golangci/golangci-lint/cmd/golangci-lint@v1.55.2
-         gomodifytags: github.com/fatih/gomodifytags@v1.16.0
-                  gum: github.com/charmbracelet/gum@v0.13.0
-                  gup: github.com/nao1215/gup@v0.24.1
-                  jqp: github.com/noahgorstein/jqp@v0.5.0
-              lazygit: github.com/jesseduffield/lazygit@v0.40.2
-                   lf: github.com/gokcehan/lf@v0.0.0-20240204232919-8374080815a6
-                  nap: github.com/maaslalani/nap@v0.1.1
-                  pup: github.com/ericchiang/pup@v0.4.0
-                    s: github.com/zquestz/s@v0.6.9
-               slides: github.com/maaslalani/slides@v0.9.0
-                timer: github.com/caarlos0/timer@v1.4.1
-            triangula: github.com/RH12503/Triangula-CLI/triangula@v0.0.0-20210520132201-603b709907d8
-                  vhs: github.com/charmbracelet/vhs@v0.7.1
+
 ```
 
 ## Flatpak
@@ -5035,8 +5017,8 @@ ncspot                                  1.0.0                                   
 Freedesktop Platform                    22.08.20                                22.08
 Mesa                                    23.3.0                                  22.08
 Mesa (Extra)                            23.3.0                                  22.08-extra
-Mesa                                    23.3.2                                  23.08
-Mesa (Extra)                            23.3.2                                  23.08-extra
+Mesa                                    23.3.4                                  23.08
+Mesa (Extra)                            23.3.4                                  23.08-extra
 Intel                                                                           22.08
 Intel                                                                           23.08
 openh264                                2.1.0                                   2.0
@@ -5054,15 +5036,15 @@ Yaru-dark Gtk Theme                                                             
 ```txt
 Name                       Version                     Rev    Tracking         Publisher      Notes
 bare                       1.0                         5      latest/stable    canonical**    base
-canonical-livepatch        10.7.0                      246    latest/stable    canonical**    -
-cmake                      3.28.2                      1364   latest/stable    crascit**      classic
+canonical-livepatch        10.8.1                      264    latest/stable    canonical**    -
+cmake                      3.28.3                      1366   latest/stable    crascit**      classic
 core                       16-2.60.4                   16202  latest/stable    canonical**    core
 core18                     20231027                    2812   latest/stable    canonical**    base
 core20                     20231123                    2105   latest/stable    canonical**    base
 core22                     20231123                    1033   latest/stable    canonical**    base
 dotnet-sdk                 5.0.408                     167    5.0/stable       dotnetcore**   classic
 duf-utility                v0.6.0                      1      latest/stable    muesli         -
-firefox                    122.0-2.1                   3728   latest/stable/…  mozilla**      -
+firefox                    122.0.1-1                   3779   latest/stable/…  mozilla**      -
 gimp                       2.10.36                     418    latest/stable    snapcrafters*  -
 gnome-3-28-1804            3.28.0-19-g98f9e67.98f9e67  198    latest/stable    canonical**    -
 gnome-3-34-1804            0+git.3556cb3               93     latest/stable/…  canonical**    -
