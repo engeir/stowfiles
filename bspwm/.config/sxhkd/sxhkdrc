@@ -164,8 +164,8 @@ super + h
 super + alt + h
 	bspwm-hidden
 
-super + alt + a
-	sh ~/.config/alacritty/toggle_alacritty_opacity &
+super + alt + {a,s}
+	bash ~/.config/alacritty/toggle_alacritty_opacity {u,d} &
 
 #
 # focus/swap

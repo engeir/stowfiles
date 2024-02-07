@@ -1,23 +1,39 @@
 #!/usr/bin/env bash
 
-## If alacritty.yml does not exist, raise an alert
-[[ ! -f ~/.config/alacritty/alacritty.yml ]] && \
-    notify-send "alacritty.yml does not exist" && exit 0
+## If alacritty.toml does not exist, raise an alert
+[[ ! -f ~/.config/alacritty/alacritty.toml ]] \
+    && notify-send "alacritty.toml does not exist" && exit 0
+
+# If toml-cli is not installed, raise an alert
+# if ! command -v toml >/dev/null; then
+#     notify-send "toml-cli ($(which toml)) is not installed" && exit 0
+# fi
+toml="/home/een023/.local/share/rye//shims//toml"
 
 ## Fetch background_opacity from alacritty.yml
-opacity=$(awk '$1 == "opacity:" {print $2; exit}' \
-    ~/.config/alacritty/alacritty.yml)
+opacity="$($toml get --toml-path ~/.config/alacritty/alacritty.toml window.opacity)"
 
-## Assign toggle opacity value
-case $opacity in
-  1)
-    toggle_opacity=0.8
-    ;;
-  *)
-    toggle_opacity=1
-    ;;
-esac
+if [ $# -eq 0 ]; then
+    echo "need an argument: u for increase opacity d to decrease number 0-1.0 to specific opacity"
+    new="$opacity"
+elif [ "$1" == 'u' ]; then
+    new=$(echo "$opacity" 0.05 | awk '{print $1 + $2}')
+    if (($(echo "$new > 1.0" | bc -l))); then
+        echo "Variable is greater than 1.0"
+        new=1
+    fi
+elif [ "$1" == 'd' ]; then
+    new=$(echo "$opacity" 0.05 | awk '{print $1 - $2}')
+    if (($(echo "$new < 0.0" | bc -l))); then
+        new=0
+    fi
+elif (($(echo "$1 < 1.0" | bc -l))); then
+    new=$1
+elif [[ $1 == '1' ]]; then
+    new=$1
+else
+    new="$opacity"
+fi
 
 ## Replace opacity value in alacritty.yml
-sed -i -- "s/opacity: $opacity/opacity: $toggle_opacity/" \
-    ~/.config/alacritty/alacritty.yml
+eval "$toml" set --toml-path ~/.config/alacritty/alacritty.toml --to-float window.opacity "$new"
