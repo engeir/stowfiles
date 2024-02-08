@@ -3469,17 +3469,17 @@ links 2.25-1build1 [Ubuntu/jammy universe]
 lintian 2.114.0ubuntu1.3 [Ubuntu/jammy main]
 linux-base 4.5ubuntu9 [Ubuntu/jammy main]
 linux-firmware 20220329.git681281e4-0ubuntu3.26 [Ubuntu/jammy main]
-linux-generic 5.15.0.92.89 [Ubuntu/jammy main]
-linux-generic-hwe-20.04 5.15.0.92.89 [Ubuntu/jammy main]
-linux-generic-hwe-22.04 6.5.0.15.15~22.04.8 [Ubuntu/jammy main]
+linux-generic 5.15.0.92.89 [local]
+linux-generic-hwe-20.04 5.15.0.94.91 [Ubuntu/jammy main]
+linux-generic-hwe-22.04 6.5.0.15.15~22.04.8 [local]
 linux-headers-5.15.0-92 5.15.0-92.102 [Ubuntu/jammy main]
 linux-headers-5.15.0-92-generic 5.15.0-92.102 [Ubuntu/jammy main]
 linux-headers-5.19.0-50-generic 5.19.0-50.50 [Ubuntu/jammy main]
 linux-headers-6.2.0-39-generic 6.2.0-39.40~22.04.1 [Ubuntu/jammy main]
 linux-headers-6.5.0-14-generic 6.5.0-14.14~22.04.1 [Ubuntu/jammy main]
 linux-headers-6.5.0-15-generic 6.5.0-15.15~22.04.1 [Ubuntu/jammy main]
-linux-headers-generic 5.15.0.92.89 [Ubuntu/jammy main]
-linux-headers-generic-hwe-22.04 6.5.0.15.15~22.04.8 [Ubuntu/jammy main]
+linux-headers-generic 5.15.0.92.89 [local]
+linux-headers-generic-hwe-22.04 6.5.0.15.15~22.04.8 [local]
 linux-hwe-5.19-headers-5.19.0-50 5.19.0-50.50 [Ubuntu/jammy main]
 linux-hwe-6.2-headers-6.2.0-39 6.2.0-39.40~22.04.1 [Ubuntu/jammy main]
 linux-hwe-6.5-headers-6.5.0-14 6.5.0-14.14~22.04.1 [Ubuntu/jammy main]
@@ -3489,9 +3489,9 @@ linux-image-5.19.0-50-generic 5.19.0-50.50 [Ubuntu/jammy main]
 linux-image-6.2.0-39-generic 6.2.0-39.40~22.04.1 [Ubuntu/jammy main]
 linux-image-6.5.0-14-generic 6.5.0-14.14~22.04.1 [Ubuntu/jammy main]
 linux-image-6.5.0-15-generic 6.5.0-15.15~22.04.1 [Ubuntu/jammy main]
-linux-image-generic 5.15.0.92.89 [Ubuntu/jammy main]
-linux-image-generic-hwe-22.04 6.5.0.15.15~22.04.8 [Ubuntu/jammy main]
-linux-libc-dev 5.15.0-92.102 [Ubuntu/jammy main]
+linux-image-generic 5.15.0.92.89 [local]
+linux-image-generic-hwe-22.04 6.5.0.15.15~22.04.8 [local]
+linux-libc-dev 5.15.0-94.104 [Ubuntu/jammy main]
 linux-modules-5.15.0-92-generic 5.15.0-92.102 [Ubuntu/jammy main]
 linux-modules-5.19.0-50-generic 5.19.0-50.50 [Ubuntu/jammy main]
 linux-modules-6.2.0-39-generic 6.2.0-39.40~22.04.1 [Ubuntu/jammy main]
@@ -4277,7 +4277,7 @@ shellcheck 0.8.0-2 [Ubuntu/jammy universe]
 shfmt 3.7.0-pacstall1 [local]
 shfmt-bin 3.4.3-1 [local]
 shim-signed 1.51.3+15.7-0ubuntu1 [Ubuntu/jammy main]
-signal-desktop 6.46.0 [. xenial/xenial main]
+signal-desktop 6.47.0 [. xenial/xenial main]
 signon-plugin-oauth2 0.25-2 [Ubuntu/jammy universe]
 silversearcher-ag 2.2.0+git20200805-1 [Ubuntu/jammy universe]
 simple-scan 42.0-1 [Ubuntu/jammy main]
@@ -4286,7 +4286,7 @@ singular-data 1:4.2.1-p3+ds-1 [Ubuntu/jammy universe]
 singular-doc 1:4.2.1-p3+ds-1 [Ubuntu/jammy universe]
 singular-modules 1:4.2.1-p3+ds-1 [Ubuntu/jammy universe]
 singular-ui 1:4.2.1-p3+ds-1 [Ubuntu/jammy universe]
-slack-desktop 4.36.138 [slack/jessie main]
+slack-desktop 4.36.140 [slack/jessie main]
 slirp4netns 1.0.1-2 [Ubuntu/jammy universe]
 slop 7.5-1.1build2 [Ubuntu/jammy universe]
 snapd 2.58+22.04.1 [Ubuntu/jammy main]
@@ -4655,7 +4655,7 @@ name: neofetch version: 7.1.0-pacstall1
 name: protonmail-bridge version: 3.8.1-1
 name: quarto version: 1.3.450
 name: shfmt version: 3.7.0-pacstall1
-name: signal-desktop version: 6.46.0
+name: signal-desktop version: 6.47.0
 name: thorium-browser version: 120.0.6099.235-1
 name: wezterm version: 20230712-072601-f4abf8fd-pacstall1
 name: zoom version: 5.17.5.2543
@@ -4666,6 +4666,8 @@ name: zoom version: 5.17.5.2543
 ```txt
 alacritty v0.13.1:
     alacritty
+alacritty-opacity v0.1.1:
+    alacritty-opacity
 atuin v17.2.1:
     atuin
 bacon v2.14.1:
@@ -4698,7 +4700,7 @@ du-dust v0.9.0:
     dust
 evcxr_jupyter v0.17.0:
     evcxr_jupyter
-eza v0.18.0:
+eza v0.18.1:
     eza
 fd-find v9.0.0:
     fd
@@ -4739,7 +4741,7 @@ mdbook-toc v0.14.2:
     mdbook-toc
 menyoki v1.7.0:
     menyoki
-mise v2024.2.5:
+mise v2024.2.7:
     mise
 mprocs v0.6.4:
     mprocs
@@ -4756,13 +4758,13 @@ porsmo v0.3.1:
 pueue v3.3.3:
     pueue
     pueued
-riffdiff v2.30.1:
+riffdiff v2.31.0:
     riff
 ripgrep v14.1.0:
     rg
 samply v0.11.0:
     samply
-sccache v0.7.6:
+sccache v0.7.7:
     sccache
 sd v1.0.0:
     sd
@@ -5006,7 +5008,25 @@ package yapf 0.40.2, installed using Python 3.10.12
 ## Go
 
 ```txt
-
+ascii-image-converter: github.com/TheZoraiz/ascii-image-converter@v1.13.1
+            bluetuith: github.com/darkhz/bluetuith@v0.2.1
+                   d2: oss.terrastruct.com/d2@v0.6.3
+                 draw: github.com/maaslalani/draw@v0.1.1
+               fast-p: github.com/bellecp/fast-p@v0.2.5
+        golangci-lint: github.com/golangci/golangci-lint/cmd/golangci-lint@v1.56.0
+         gomodifytags: github.com/fatih/gomodifytags@v1.16.0
+                  gum: github.com/charmbracelet/gum@v0.13.0
+                  gup: github.com/nao1215/gup@v0.24.1
+                  jqp: github.com/noahgorstein/jqp@v0.5.0
+              lazygit: github.com/jesseduffield/lazygit@v0.40.2
+                   lf: github.com/gokcehan/lf@v0.0.0-20240208032923-d654f09885cc
+                  nap: github.com/maaslalani/nap@v0.1.1
+                  pup: github.com/ericchiang/pup@v0.4.0
+                    s: github.com/zquestz/s@v0.6.9
+               slides: github.com/maaslalani/slides@v0.9.0
+                timer: github.com/caarlos0/timer@v1.4.1
+            triangula: github.com/RH12503/Triangula-CLI/triangula@v0.0.0-20210520132201-603b709907d8
+                  vhs: github.com/charmbracelet/vhs@v0.7.1
 ```
 
 ## Flatpak
@@ -5038,7 +5058,7 @@ Name                       Version                     Rev    Tracking         P
 bare                       1.0                         5      latest/stable    canonical**    base
 canonical-livepatch        10.8.1                      264    latest/stable    canonical**    -
 cmake                      3.28.3                      1366   latest/stable    crascit**      classic
-core                       16-2.60.4                   16202  latest/stable    canonical**    core
+core                       16-2.61.1                   16574  latest/stable    canonical**    core
 core18                     20231027                    2812   latest/stable    canonical**    base
 core20                     20231123                    2105   latest/stable    canonical**    base
 core22                     20231123                    1033   latest/stable    canonical**    base
