@@ -1,8 +1,5 @@
 theme = "gruvbox_dark_soft_transparent"
 
-# add something for reflow of matched text
-# add in hard wrap
-
 [editor]
 auto-completion = true
 bufferline = "always"
@@ -45,6 +42,9 @@ nbsp = "⍽"
 tab = "→"
 newline = "⏎"
 tabpad = "·"  # Tabs will look like "→···" (depending on tab width)
+
+[keys.normal.space.h]
+r = ":reset-diff-change"
 
 [keys.normal.space.space]
 s = ":format"
