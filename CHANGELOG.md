@@ -1,5 +1,44 @@
 # Changelog
 
+## [1.9.0](https://github.com/engeir/stowfiles/compare/v1.8.2...v1.9.0) (2024-02-08)
+
+
+### Features
+
+* **alacritty:** add opacity control via sxhkd ([26259c5](https://github.com/engeir/stowfiles/commit/26259c53bce91ae84170b2ed49fb5ad97c8ca9ec))
+* **bin:** if bspwm acts up, force kill the process ([beb5416](https://github.com/engeir/stowfiles/commit/beb5416cded88c579641833c6ae8d6ef7c25083f))
+* **bin:** tms, add ability to use different names on similar basename paths ([fc7b135](https://github.com/engeir/stowfiles/commit/fc7b135341f34605e53e9addbd6231ca0650a4aa))
+* **bin:** video edit by ffmpeg scripts ([63ad1d2](https://github.com/engeir/stowfiles/commit/63ad1d24376e22f46aaf018641386e86a4e31963))
+* **bin:** video edit script v2 ([3cb39bc](https://github.com/engeir/stowfiles/commit/3cb39bc93f6ca88163ad48b56b3de976da16d314))
+
+
+### Bug Fixes
+
+* **bin:** tms, check for existing session from output, not opposite ([5dc5151](https://github.com/engeir/stowfiles/commit/5dc51518184dff208ff679a5382592c71bb4e303))
+* **eza:** update the changed `-F/--classify` option ([b76b036](https://github.com/engeir/stowfiles/commit/b76b036b3974418a7d3e27b1d1bad2f7f81217a9))
+* **fish:** abbr's need some nudging ([1d0a088](https://github.com/engeir/stowfiles/commit/1d0a088520a59e39ce652997064503eecb9ba48a))
+
+
+### Miscellaneous
+
+* dont get this ([1103575](https://github.com/engeir/stowfiles/commit/11035757ffc9a36f98a8fc5038b8bdb2ff880e8e))
+* **fish:** add abbr gcn ([5d124e6](https://github.com/engeir/stowfiles/commit/5d124e664fe803b18a21b908f73bd40c2e3976df))
+* **fish:** add mkcd function ([2944ff2](https://github.com/engeir/stowfiles/commit/2944ff22ffe991eaf630a61040c94dadb006099f))
+* **fonts:** hide ligatures in wezterm ([3a8ccdd](https://github.com/engeir/stowfiles/commit/3a8ccddc2d75c231dc58b1e11210a170ff17f0db))
+* **helix:** add keymap ([d3a07cd](https://github.com/engeir/stowfiles/commit/d3a07cd59ad503945055c27f465f4c45cecea0cd))
+* **helix:** update with simple latex config ([faec060](https://github.com/engeir/stowfiles/commit/faec0609b08e9ac78d6c1dc1257464909d7aeb0f))
+* hmm ([3b29082](https://github.com/engeir/stowfiles/commit/3b2908270b93761737f100d1ff243c8a111b2465))
+* **nvim:** lazy load icons ([3a25319](https://github.com/engeir/stowfiles/commit/3a253198c8266e8d4c6b75bf4579bd3dc6da57e4))
+* remove ([8c041e5](https://github.com/engeir/stowfiles/commit/8c041e59d1674a9b81071d2c862639872734b132))
+* **software:** update installed ([3dbf6b3](https://github.com/engeir/stowfiles/commit/3dbf6b3a57345b17adf06fc26374aacee9bbf8ec))
+* **software:** update installed ([81dddd3](https://github.com/engeir/stowfiles/commit/81dddd3d769080e8eb555ede7fe51d7900df8fea))
+* **software:** update installed ([6042076](https://github.com/engeir/stowfiles/commit/60420766e871299f0fc0e129fa13f2654277d17e))
+* **software:** update installed ([a22c5a7](https://github.com/engeir/stowfiles/commit/a22c5a72f896b73e55b2ccd717edbcb8ac82bb59))
+* **software:** update installed ([d1b2ea3](https://github.com/engeir/stowfiles/commit/d1b2ea33687158ae381173ebb84f5e861101614e))
+* think I fixed it ([ce9a496](https://github.com/engeir/stowfiles/commit/ce9a496b9e3f20eb56f1e3a36f57252b9686dccb))
+* trying my best ([687bbbf](https://github.com/engeir/stowfiles/commit/687bbbf25e840fa2b880cbcb85a5c02b46fa66cc))
+* ughh ([4654e9d](https://github.com/engeir/stowfiles/commit/4654e9d635a19da00226af9a5ec0834883259baa))
+
 ## [1.8.2](https://github.com/engeir/stowfiles/compare/v1.8.1...v1.8.2) (2024-01-31)
 
 

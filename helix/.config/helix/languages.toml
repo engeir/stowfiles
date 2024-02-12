@@ -21,6 +21,7 @@ config = { settings = { args = [] } }
 
 [[language]]
 name = "latex"
+text-width = 130
 
 # [auto-pairs]
 # '\'.'(' = '\)'
