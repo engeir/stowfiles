@@ -1,6 +1,23 @@
 [[language]]
 name = "python"
 auto-format = false
+language-servers = [
+  { name = "jedi-language-server" },
+  { name = "ruff-lsp" },
+  # { name = "ruff" },
+]
+# formatter = { command = "black", args = [ "--line-length", "88", "--quiet", "-", ] }
+# formatter = { command = "ruff", args = ["format", "-"] }
+
+[language-server.jedi-language-server]
+command = "jedi-language-server"
+args = []
+config = {}
+
+[language-server.ruff-lsp]
+command = "ruff-lsp"
+args = []
+config = { settings = { args = [] } }
 
 [[language]]
 name = "latex"
