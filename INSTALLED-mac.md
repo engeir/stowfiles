@@ -25,7 +25,7 @@ automake 1.16.5
 bash 5.2.26
 bash-completion 1.3_3
 bat 0.24.0
-bdw-gc 8.2.4
+bdw-gc 8.2.6
 berkeley-db 18.1.40_2
 berkeley-db@5 5.3.28_1
 bibclean 3.07
@@ -52,10 +52,10 @@ cjson 1.7.17
 cli11 2.3.2
 clisp 2.49.92_1
 cloc 1.98
-cmake 3.28.2
+cmake 3.28.3
 cmatrix 2.0
 cmocka 1.1.7
-composer 2.6.6
+composer 2.7.1
 coreutils 9.4
 cpio 2.15
 cpp-gsl 4.0.0_1
@@ -68,9 +68,9 @@ despell 0.10
 djvulibre 3.5.28_2
 docbook 5.1_1
 docbook-xsl 1.79.2_1
-docker 25.0.2
+docker 25.0.3
 docker-buildx 0.12.1
-docker-completion 25.0.2
+docker-completion 25.0.3
 docker-compose 2.24.5
 docutils 0.20.1_1
 docx2txt 1.4
@@ -118,7 +118,7 @@ gh 2.43.1
 ghostscript 10.02.1
 giflib 5.2.1
 girara 0.4.0
-git 2.43.0
+git 2.43.1
 git-lfs 3.4.1
 glib 2.78.4
 glow 1.5.1
@@ -200,7 +200,7 @@ libexif 0.6.24
 libffi 3.4.4
 libgcrypt 1.10.3
 libgit2 1.7.1
-libgit2@1.6 1.6.4
+libgit2@1.6 1.6.5
 libgpg-error 1.47
 libgsf 1.14.51
 libheif 1.17.6
@@ -227,7 +227,7 @@ libomp 17.0.6
 libpaper 2.1.3
 libplacebo 6.338.2
 libpng 1.6.42
-libpq 16.1_1
+libpq 16.2
 libproxy 0.5.3
 libpthread-stubs 0.5
 libraw 0.21.2
@@ -270,7 +270,7 @@ libxfixes 6.0.1
 libxft 2.3.8
 libxi 1.8.1
 libxinerama 1.1.5
-libxml2 2.12.4
+libxml2 2.12.5
 libxmu 1.1.4
 libxpm 3.5.17
 libxrandr 1.5.4
@@ -336,7 +336,7 @@ oniguruma 6.9.9
 open-mpi 5.0.1
 openblas 0.3.26
 opencore-amr 0.1.6
-openexr 3.2.1
+openexr 3.2.2
 openjdk 21.0.2
 openjpeg 2.5.0_1
 openldap 2.6.7
@@ -396,7 +396,7 @@ python-mutagen 1.47.0_1
 python-packaging 23.2_1
 python-pathspec 0.12.1
 python-platformdirs 4.2.0
-python-setuptools 69.0.3
+python-setuptools 69.1.0
 python-tabulate 0.9.0_1
 python@3.10 3.10.13_2
 python@3.11 3.11.7_1
@@ -418,7 +418,7 @@ rtmpdump 2.4-20151223_3
 rubberband 3.3.0
 ruby 3.3.0
 ruby-install 0.9.3
-rust-analyzer 2024-01-29
+rust-analyzer 2024-02-05
 samba 4.19.4
 scrcpy 2.3.1
 screenresolution 1.6
@@ -434,7 +434,7 @@ shellharden 4.3.0
 shfmt 3.7.0
 shpotify 2.1
 sk 0.10.4
-sketchybar 2.20.0
+sketchybar 2.20.1
 skhd 0.3.9
 slides 0.9.0
 snappy 1.1.10
@@ -470,6 +470,7 @@ toilet 0.3
 tree 2.1.1_1
 tree-sitter 0.20.9
 ttyd 1.7.4_1
+typst 0.10.0
 uchardet 0.0.8
 unbound 1.19.0
 unibilium 2.1.1
@@ -539,14 +540,15 @@ wezterm 20240203-110809,5046fc22
 whichspace 0.3.2
 wkhtmltopdf 0.12.6-2
 xquartz 2.8.1
+zed 0.120.6
 ```
 
 ## Cargo
 
 ```txt
-atuin v17.2.1:
+atuin v18.0.1:
     atuin
-bacon v2.14.1:
+bacon v2.14.2:
     bacon
 blackd-client v0.1.0:
     blackd-client
@@ -570,7 +572,7 @@ cargo-update v13.3.0:
     cargo-install-update-config
 cargo-watch v8.5.2:
     cargo-watch
-clap v4.4.18:
+clap v4.5.0:
     stdio-fixture
 coreutils v0.0.24:
     coreutils
@@ -580,7 +582,7 @@ despell v1.0.1:
     despell
 evcxr_jupyter v0.17.0:
     evcxr_jupyter
-eza v0.18.0:
+eza v0.18.2:
     eza
 gitui v0.24.3:
     gitui
@@ -589,23 +591,21 @@ halp v0.1.7:
     halp-completions
     halp-mangen
     halp-test
-helix-term v0.6.0 (/Users/eirikenger/programs/helix/helix-term):
-    hx
 hyperfine v1.18.0:
     hyperfine
 irust v1.71.19:
     irust
-just v1.23.0:
+just v1.24.0:
     just
-mdbook v0.4.36:
+mdbook v0.4.37:
     mdbook
-mise v2024.2.4:
+mise v2024.2.14:
     mise
 mprocs v0.6.4:
     mprocs
-nu v0.89.0:
+nu v0.90.1:
     nu
-numbat-cli v1.9.0:
+numbat-cli v1.10.0:
     numbat
 pngquant v3.0.3:
     pngquant
@@ -613,7 +613,7 @@ porsmo v0.3.1:
     porsmo
 sd v1.0.0:
     sd
-speedtest-rs v0.1.4:
+speedtest-rs v0.1.5:
     speedtest-rs
 stylua v0.20.0:
     stylua
@@ -627,7 +627,7 @@ wiki-tui v0.8.2:
     wiki-tui
 xh v0.21.0:
     xh
-yazi-fm v0.2.2:
+yazi-fm v0.2.3:
     yazi
 zellij v0.39.2:
     zellij
@@ -648,9 +648,9 @@ package ncdump-rich 0.1.0, installed using Python 3.12.0
 package nox 2023.4.22, installed using Python 3.12.0
  - nox
  - tox-to-nox
-package pandoc-include 1.2.1, installed using Python 3.12.0
+package pandoc-include 1.3.0, installed using Python 3.12.0
  - pandoc-include
-package pipenv 2023.12.0, installed using Python 3.12.0
+package pipenv 2023.12.1, installed using Python 3.12.0
  - pipenv
  - pipenv-resolver
 package poetry 1.7.1, installed using Python 3.12.0
@@ -681,14 +681,24 @@ package trash-cli 0.23.11.10, installed using Python 3.12.0
 ## Go
 
 ```txt
-ascii-image-converter: github.com/TheZoraiz/ascii-image-converter@v1.13.1
-                   d2: oss.terrastruct.com/d2@v0.6.3
-                 draw: github.com/maaslalani/draw@v0.1.1
-               fast-p: github.com/bellecp/fast-p@v0.2.5
-        golangci-lint: github.com/golangci/golangci-lint/cmd/golangci-lint@v1.55.2
-         gomodifytags: github.com/fatih/gomodifytags@v1.16.0
-                  gum: github.com/charmbracelet/gum@v0.13.0
-                  gup: github.com/nao1215/gup@v0.24.1
-                  jqp: github.com/noahgorstein/jqp@v0.5.0
+github.com/RH12503/Triangula-CLI/triangula
+github.com/TheZoraiz/ascii-image-converter
+github.com/bellecp/fast-p
+github.com/caarlos0/timer
+github.com/charmbracelet/gum
+github.com/charmbracelet/vhs
+github.com/darkhz/bluetuith
+github.com/ericchiang/pup
+github.com/fatih/gomodifytags
+github.com/gokcehan/lf
+github.com/golangci/golangci-lint/cmd/golangci-lint
+github.com/jesseduffield/lazygit
+github.com/maaslalani/draw
+github.com/maaslalani/nap
+github.com/maaslalani/slides
+github.com/nao1215/gup  # This file kind of makes gup redundant!
+github.com/noahgorstein/jqp
+github.com/zquestz/s
+oss.terrastruct.com/d2
 ```
     

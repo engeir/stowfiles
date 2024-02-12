@@ -47,7 +47,7 @@ run_updates() {
     echo_and_run mise self-update -y && echo_and_run mise up -y && echo_and_run mise prune -y
     echo_and_run python3 -m pip install --user --upgrade pipx
     echo_and_run pipx upgrade-all
-    echo_and_run gup update
+    # echo_and_run gup update
     # Single programs ------------------------------------------------------------------
     echo_and_run bob update --all
     echo_and_run bun upgrade
@@ -110,7 +110,7 @@ if [ "Mac" = "$machine" ]; then
     BREW="$(brew list --versions)"
     CARGO="$(cargo install --list)"
     PIPX="$(pipx list | sed '1,2d' | sed 's/^   //')"
-    GO="$(gup list)"
+    GO="$(cat ~/.default-go-packages)"
     echo "# Installed programs
 
 ## Brew
@@ -151,7 +151,7 @@ if [ "Linux" = "$machine" ]; then
     PACSTALL="$(pacstall -L | xargs -L 1 pacstall -Qi 2>/dev/null | grep -E 'name|version' | paste -d ' ' - - | sed -r "s/\x1B\[([0-9]{1,3}(;[0-9]{1,2};?)?)?[mGK]//g")"
     CARGO="$(cargo install --list)"
     PIPX="$(pipx list | sed '1,2d' | sed 's/^\s\s\s//')"
-    GO="$(gup list)"
+    GO="$(cat ~/.default-go-packages)"
     FLAT="$(paste <(
         echo "Name"
         flatpak list --columns=name
