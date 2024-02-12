@@ -1,5 +1,18 @@
 # Changelog
 
+## [1.9.1](https://github.com/engeir/stowfiles/compare/v1.9.0...v1.9.1) (2024-02-12)
+
+
+### Bug Fixes
+
+* **bin:** better output format of video reduce command ([c0caab1](https://github.com/engeir/stowfiles/commit/c0caab168b4bb8cd11d98683bb8a933ace98c94e))
+
+
+### Miscellaneous
+
+* **helix:** add python LSP settings ([abf480e](https://github.com/engeir/stowfiles/commit/abf480efdd9ba6461a853cfbaf3da7df6484f879))
+* **software:** update installed ([ccbf9ca](https://github.com/engeir/stowfiles/commit/ccbf9caaaa3fc2e765a6bbd2010d325954629a77))
+
 ## [1.9.0](https://github.com/engeir/stowfiles/compare/v1.8.2...v1.9.0) (2024-02-08)
 
 
