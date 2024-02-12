@@ -1,3 +1,7 @@
 #!/bin/bash
 
-ffmpeg -i "$1" -vcodec h264 -acodec mp2 "$2"
+# Original from https://gist.github.com/lukehedger/277d136f68b028e22bed
+# ffmpeg -i "$1" -vcodec h264 -acodec mp2 "$2"
+
+# Improved from https://gist.github.com/lukehedger/277d136f68b028e22bed?permalink_comment_id=4181610#gistcomment-4181610
+ffmpeg -i "$1" -c:v libx265 -preset fast -crf 28 -tag:v hvc1 -c:a eac3 -b:a 224k "$2"
