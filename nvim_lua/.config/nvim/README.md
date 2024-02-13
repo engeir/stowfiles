@@ -49,7 +49,6 @@ all plugins I'm using:
 - [hydra.nvim](https://github.com/anuvyklack/hydra.nvim.git)
 - [jfind.nvim](https://github.com/jake-stewart/jfind.nvim.git)
 - [lazy.nvim](https://github.com/folke/lazy.nvim.git)
-- [lazygit.nvim](https://github.com/kdheepak/lazygit.nvim.git)
 - [lspkind.nvim](https://github.com/onsails/lspkind.nvim.git)
 - [lualine](https://github.com/nvim-lualine/lualine.nvim.git)
 - [luasnip-latex-snippets.nvim](https://github.com/iurimateus/luasnip-latex-snippets.nvim.git)
