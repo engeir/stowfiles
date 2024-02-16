@@ -177,7 +177,7 @@ return {
     -- mini.pairs ----------------------------------------------------------------------
     {
         "echasnovski/mini.pairs",
-        enabled = true,
+        enabled = false,
         event = { "InsertEnter", "CmdlineEnter" },
         config = true,
     },

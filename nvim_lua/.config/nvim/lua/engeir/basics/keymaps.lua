@@ -5,6 +5,9 @@ local opts = { silent = true, noremap = true }
 vim.keymap.set("", "<Space>", "<Nop>", opts)
 vim.g.mapleader = " "
 
+-- Undo with "U" (the default "U" behaviour is confusing and I never use it)
+vim.keymap.set("n", "U", "<C-r>")
+
 -- Improving default keys
 vim.keymap.set("n", "J", function()
     vim.cmd("normal! mzJ")
