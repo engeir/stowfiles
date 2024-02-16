@@ -71,16 +71,16 @@ avahi-daemon 0.8-5ubuntu5.2 [Ubuntu/jammy main]
 avahi-utils 0.8-5ubuntu5.2 [Ubuntu/jammy main]
 bamfdaemon 0.5.6+22.04.20220217-0ubuntu1 [Ubuntu/jammy universe]
 baobab 41.0-2 [Ubuntu/jammy main]
-base-files 12ubuntu4.5 [Ubuntu/jammy main]
+base-files 12ubuntu4.5 [local]
 base-passwd 3.5.52build1 [Ubuntu/jammy main]
 bash 5.1-6ubuntu1 [Ubuntu/jammy main]
 bash-completion 1:2.11-5ubuntu1 [Ubuntu/jammy main]
 batsignal 1.6.4-pacstall1 [local]
 bc 1.07.1-3build1 [Ubuntu/jammy main]
 bibutils 7.2-1 [Ubuntu/jammy universe]
-bind9-dnsutils 1:9.18.18-0ubuntu0.22.04.1 [Ubuntu/jammy main]
-bind9-host 1:9.18.18-0ubuntu0.22.04.1 [Ubuntu/jammy main]
-bind9-libs 1:9.18.18-0ubuntu0.22.04.1 [Ubuntu/jammy main]
+bind9-dnsutils 1:9.18.18-0ubuntu0.22.04.2 [Ubuntu/jammy main]
+bind9-host 1:9.18.18-0ubuntu0.22.04.2 [Ubuntu/jammy main]
+bind9-libs 1:9.18.18-0ubuntu0.22.04.2 [Ubuntu/jammy main]
 binfmt-support 2.2.1-2 [Ubuntu/jammy main]
 binutils 2.38-4ubuntu2.5 [Ubuntu/jammy main]
 binutils-common 2.38-4ubuntu2.5 [Ubuntu/jammy main]
@@ -551,7 +551,7 @@ gdb 12.1-0ubuntu1~22.04 [Ubuntu/jammy main]
 gdebi 0.9.5.7+nmu6 [Ubuntu/jammy universe]
 gdebi-core 0.9.5.7+nmu6 [Ubuntu/jammy universe]
 gdisk 1.0.8-4build1 [Ubuntu/jammy main]
-gdm3 42.0-1ubuntu7.22.04.3 [local]
+gdm3 42.0-1ubuntu7.22.04.4 [Ubuntu/jammy main]
 gedit 41.0-3 [Ubuntu/jammy main]
 gedit-common 41.0-3 [Ubuntu/jammy main]
 genisoimage 9:1.1.11-3.2ubuntu1 [Ubuntu/jammy main]
@@ -565,7 +565,7 @@ gftp 2.9.1~beta-1 [Ubuntu/jammy universe]
 gftp-common 2.9.1~beta-1 [Ubuntu/jammy universe]
 gftp-gtk 2.9.1~beta-1 [Ubuntu/jammy universe]
 gftp-text 2.9.1~beta-1 [Ubuntu/jammy universe]
-gh 2.43.1 [gh/stable main]
+gh 2.44.0 [gh/stable main]
 ghc 8.8.4-3 [Ubuntu/jammy universe]
 ghostscript 9.55.0~dfsg1-0ubuntu5.6 [Ubuntu/jammy main]
 ghostscript-x 9.55.0~dfsg1-0ubuntu5.6 [Ubuntu/jammy main]
@@ -582,7 +582,7 @@ gir1.2-gck-1 3.40.0-4 [Ubuntu/jammy main]
 gir1.2-gcr-3 3.40.0-4 [Ubuntu/jammy main]
 gir1.2-gdesktopenums-3.0 42.0-1ubuntu1 [Ubuntu/jammy main]
 gir1.2-gdkpixbuf-2.0 2.42.8+dfsg-1ubuntu0.2 [Ubuntu/jammy main]
-gir1.2-gdm-1.0 42.0-1ubuntu7.22.04.3 [local]
+gir1.2-gdm-1.0 42.0-1ubuntu7.22.04.4 [Ubuntu/jammy main]
 gir1.2-geoclue-2.0 2.5.7-3ubuntu3 [Ubuntu/jammy main]
 gir1.2-gexiv2-0.10 0.14.0-1build1 [Ubuntu/jammy main]
 gir1.2-glib-2.0 1.72.0-1 [Ubuntu/jammy main]
@@ -641,7 +641,7 @@ git-mediawiki 1:2.34.1-1ubuntu1.10 [Ubuntu/jammy universe]
 git-svn 1:2.34.1-1ubuntu1.10 [Ubuntu/jammy universe]
 gitk 1:2.34.1-1ubuntu1.10 [Ubuntu/jammy universe]
 gitweb 1:2.34.1-1ubuntu1.10 [Ubuntu/jammy universe]
-gjs 1.72.4-0ubuntu0.22.04.1 [Ubuntu/jammy main]
+gjs 1.72.4-0ubuntu0.22.04.1 [local]
 gkbd-capplet 3.26.1-2 [Ubuntu/jammy main]
 glib-networking 2.72.0-1 [Ubuntu/jammy main]
 glib-networking-common 2.72.0-1 [Ubuntu/jammy main]
@@ -709,7 +709,7 @@ gnuplot 5.4.2+dfsg2-2 [Ubuntu/jammy universe]
 gnuplot-data 5.4.2+dfsg2-2 [Ubuntu/jammy universe]
 gnuplot-qt 5.4.2+dfsg2-2 [Ubuntu/jammy universe]
 golly 3.3-1build1 [Ubuntu/jammy universe]
-google-chrome-stable 121.0.6167.160-1 [Google/stable main]
+google-chrome-stable 121.0.6167.184-1 [Google/stable main]
 gperf 3.1-1build1 [Ubuntu/jammy universe]
 gpg 2.2.27-3ubuntu2.1 [Ubuntu/jammy main]
 gpg-agent 2.2.27-3ubuntu2.1 [Ubuntu/jammy main]
@@ -883,10 +883,10 @@ krb5-locales 1.19.2-2ubuntu0.3 [Ubuntu/jammy main]
 krb5-multidev 1.19.2-2ubuntu0.3 [Ubuntu/jammy main]
 kwayland-data 4:5.92.0-0ubuntu1 [Ubuntu/jammy universe]
 kwayland-integration 4:5.24.4-0ubuntu1 [Ubuntu/jammy universe]
-language-pack-en 1:22.04+20230801 [Ubuntu/jammy main]
-language-pack-en-base 1:22.04+20230801 [Ubuntu/jammy main]
-language-pack-gnome-en 1:22.04+20230801 [Ubuntu/jammy main]
-language-pack-gnome-en-base 1:22.04+20230801 [Ubuntu/jammy main]
+language-pack-en 1:22.04+20230801 [local]
+language-pack-en-base 1:22.04+20230801 [local]
+language-pack-gnome-en 1:22.04+20230801 [local]
+language-pack-gnome-en-base 1:22.04+20230801 [local]
 language-selector-common 0.219.1 [Ubuntu/jammy main]
 language-selector-gnome 0.219.1 [Ubuntu/jammy main]
 laptop-detect 0.16 [Ubuntu/jammy main]
@@ -1332,10 +1332,10 @@ libedit2:i386 3.1-20210910-1build1 [Ubuntu/jammy main]
 libefiboot1 37-6ubuntu2 [Ubuntu/jammy main]
 libefivar1 37-6ubuntu2 [Ubuntu/jammy main]
 libegl-dev 1.4.0-1 [Ubuntu/jammy main]
-libegl-mesa0 23.0.4-0ubuntu1~22.04.1 [Ubuntu/jammy main]
+libegl-mesa0 23.2.1-1ubuntu3.1~22.04.2 [Ubuntu/jammy main]
 libegl1 1.4.0-1 [Ubuntu/jammy main]
 libegl1-mesa 23.0.4-0ubuntu1~22.04.1 [Ubuntu/jammy universe]
-libegl1-mesa-dev 23.0.4-0ubuntu1~22.04.1 [Ubuntu/jammy main]
+libegl1-mesa-dev 23.2.1-1ubuntu3.1~22.04.2 [Ubuntu/jammy main]
 libelf1 0.186-1build1 [Ubuntu/jammy main]
 libelf1:i386 0.186-1build1 [Ubuntu/jammy main]
 libemail-address-xs-perl 1.04-1build6 [Ubuntu/jammy main]
@@ -1490,9 +1490,9 @@ libgamemodeauto0 1.6.1-1build2 [Ubuntu/jammy main]
 libgamemodeauto0:i386 1.6.1-1build2 [Ubuntu/jammy main]
 libgap-dev 4.11.1-1 [Ubuntu/jammy universe]
 libgap7 4.11.1-1 [Ubuntu/jammy universe]
-libgbm-dev 23.0.4-0ubuntu1~22.04.1 [Ubuntu/jammy main]
-libgbm1 23.0.4-0ubuntu1~22.04.1 [Ubuntu/jammy main]
-libgbm1:i386 23.0.4-0ubuntu1~22.04.1 [Ubuntu/jammy main]
+libgbm-dev 23.2.1-1ubuntu3.1~22.04.2 [Ubuntu/jammy main]
+libgbm1 23.2.1-1ubuntu3.1~22.04.2 [Ubuntu/jammy main]
+libgbm1:i386 23.2.1-1ubuntu3.1~22.04.2 [Ubuntu/jammy main]
 libgc-dev 1:8.0.6-1.1build1 [Ubuntu/jammy main]
 libgc1 1:8.0.6-1.1build1 [Ubuntu/jammy main]
 libgcab-1.0-0 1.4-3build2 [Ubuntu/jammy main]
@@ -1532,7 +1532,7 @@ libgdk-pixbuf2.0-0 2.40.2-2build4 [Ubuntu/jammy universe]
 libgdk-pixbuf2.0-bin 2.42.8+dfsg-1ubuntu0.2 [Ubuntu/jammy main]
 libgdk-pixbuf2.0-common 2.42.8+dfsg-1ubuntu0.2 [Ubuntu/jammy main]
 libgdk-pixbuf2.0-dev 2.40.2-2build4 [Ubuntu/jammy main]
-libgdm1 42.0-1ubuntu7.22.04.3 [local]
+libgdm1 42.0-1ubuntu7.22.04.4 [Ubuntu/jammy main]
 libgee-0.8-2 0.20.5-2 [Ubuntu/jammy main]
 libgeis1 2.2.17+16.04.20160126-0ubuntu8 [Ubuntu/jammy universe]
 libgeoclue-2-0 2.5.7-3ubuntu3 [Ubuntu/jammy main]
@@ -1562,18 +1562,18 @@ libgirepository-1.0-1 1.72.0-1 [Ubuntu/jammy main]
 libgit2-1.1 1.1.0+dfsg.1-4.1build1 [Ubuntu/jammy universe]
 libgivaro-dev 4.2.0-1 [Ubuntu/jammy universe]
 libgivaro9 4.2.0-1 [Ubuntu/jammy universe]
-libgjs0g 1.72.4-0ubuntu0.22.04.1 [Ubuntu/jammy main]
+libgjs0g 1.72.4-0ubuntu0.22.04.1 [local]
 libgl-dev 1.4.0-1 [Ubuntu/jammy main]
 libgl1 1.4.0-1 [Ubuntu/jammy main]
 libgl1-amber-dri 21.3.9-0ubuntu1~22.04.1 [Ubuntu/jammy main]
-libgl1-mesa-dev 23.0.4-0ubuntu1~22.04.1 [Ubuntu/jammy main]
-libgl1-mesa-dri 23.0.4-0ubuntu1~22.04.1 [Ubuntu/jammy main]
-libgl1-mesa-dri:i386 23.0.4-0ubuntu1~22.04.1 [Ubuntu/jammy main]
+libgl1-mesa-dev 23.2.1-1ubuntu3.1~22.04.2 [Ubuntu/jammy main]
+libgl1-mesa-dri 23.2.1-1ubuntu3.1~22.04.2 [Ubuntu/jammy main]
+libgl1-mesa-dri:i386 23.2.1-1ubuntu3.1~22.04.2 [Ubuntu/jammy main]
 libgl1-mesa-glx 23.0.4-0ubuntu1~22.04.1 [Ubuntu/jammy universe]
 libgl1:i386 1.4.0-1 [Ubuntu/jammy main]
 libgl2ps1.4 1.4.2+dfsg1-2 [Ubuntu/jammy universe]
-libglapi-mesa 23.0.4-0ubuntu1~22.04.1 [Ubuntu/jammy main]
-libglapi-mesa:i386 23.0.4-0ubuntu1~22.04.1 [Ubuntu/jammy main]
+libglapi-mesa 23.2.1-1ubuntu3.1~22.04.2 [Ubuntu/jammy main]
+libglapi-mesa:i386 23.2.1-1ubuntu3.1~22.04.2 [Ubuntu/jammy main]
 libgles-dev 1.4.0-1 [Ubuntu/jammy main]
 libgles1 1.4.0-1 [Ubuntu/jammy main]
 libgles2 1.4.0-1 [Ubuntu/jammy main]
@@ -1601,8 +1601,8 @@ libglvnd-dev 1.4.0-1 [Ubuntu/jammy main]
 libglvnd0 1.4.0-1 [Ubuntu/jammy main]
 libglvnd0:i386 1.4.0-1 [Ubuntu/jammy main]
 libglx-dev 1.4.0-1 [Ubuntu/jammy main]
-libglx-mesa0 23.0.4-0ubuntu1~22.04.1 [Ubuntu/jammy main]
-libglx-mesa0:i386 23.0.4-0ubuntu1~22.04.1 [Ubuntu/jammy main]
+libglx-mesa0 23.2.1-1ubuntu3.1~22.04.2 [Ubuntu/jammy main]
+libglx-mesa0:i386 23.2.1-1ubuntu3.1~22.04.2 [Ubuntu/jammy main]
 libglx0 1.4.0-1 [Ubuntu/jammy main]
 libglx0:i386 1.4.0-1 [Ubuntu/jammy main]
 libgme0 0.6.3-2 [Ubuntu/jammy universe]
@@ -2526,8 +2526,8 @@ liborc-0.4-0 1:0.4.32-2 [Ubuntu/jammy main]
 liborc-0.4-0:i386 1:0.4.32-2 [Ubuntu/jammy main]
 liborcus-0.17-0 0.17.2-2 [Ubuntu/jammy main]
 liborcus-parser-0.17-0 0.17.2-2 [Ubuntu/jammy main]
-libosmesa6 23.0.4-0ubuntu1~22.04.1 [Ubuntu/jammy main]
-libosmesa6:i386 23.0.4-0ubuntu1~22.04.1 [Ubuntu/jammy main]
+libosmesa6 23.2.1-1ubuntu3.1~22.04.2 [Ubuntu/jammy main]
+libosmesa6:i386 23.2.1-1ubuntu3.1~22.04.2 [Ubuntu/jammy main]
 libosmgpsmap-1.0-1 1.2.0-1build1 [Ubuntu/jammy universe]
 libosp5 1.5.2-13ubuntu3 [Ubuntu/jammy universe]
 libostree-1-1 2022.2-3 [Ubuntu/jammy universe]
@@ -3255,7 +3255,7 @@ libx265-199 3.5-2 [Ubuntu/jammy universe]
 libx265-dev 3.5-2 [Ubuntu/jammy universe]
 libxapian30 1.4.18-4 [Ubuntu/jammy universe]
 libxapp1 2.2.8-1 [Ubuntu/jammy universe]
-libxatracker2 23.0.4-0ubuntu1~22.04.1 [Ubuntu/jammy main]
+libxatracker2 23.2.1-1ubuntu3.1~22.04.2 [Ubuntu/jammy main]
 libxau-dev 1:1.0.9-1build5 [Ubuntu/jammy main]
 libxau6 1:1.0.9-1build5 [Ubuntu/jammy main]
 libxau6:i386 1:1.0.9-1build5 [Ubuntu/jammy main]
@@ -3471,7 +3471,7 @@ linux-base 4.5ubuntu9 [Ubuntu/jammy main]
 linux-firmware 20220329.git681281e4-0ubuntu3.26 [Ubuntu/jammy main]
 linux-generic 5.15.0.94.91 [Ubuntu/jammy main]
 linux-generic-hwe-20.04 5.15.0.94.91 [Ubuntu/jammy main]
-linux-generic-hwe-22.04 6.5.0.17.17~22.04.9 [Ubuntu/jammy main]
+linux-generic-hwe-22.04 6.5.0.17.17~22.04.9 [local]
 linux-headers-5.15.0-94 5.15.0-94.104 [Ubuntu/jammy main]
 linux-headers-5.15.0-94-generic 5.15.0-94.104 [Ubuntu/jammy main]
 linux-headers-5.19.0-50-generic 5.19.0-50.50 [Ubuntu/jammy main]
@@ -3479,7 +3479,7 @@ linux-headers-6.2.0-39-generic 6.2.0-39.40~22.04.1 [Ubuntu/jammy main]
 linux-headers-6.5.0-15-generic 6.5.0-15.15~22.04.1 [Ubuntu/jammy main]
 linux-headers-6.5.0-17-generic 6.5.0-17.17~22.04.1 [Ubuntu/jammy main]
 linux-headers-generic 5.15.0.94.91 [Ubuntu/jammy main]
-linux-headers-generic-hwe-22.04 6.5.0.17.17~22.04.9 [Ubuntu/jammy main]
+linux-headers-generic-hwe-22.04 6.5.0.17.17~22.04.9 [local]
 linux-hwe-5.19-headers-5.19.0-50 5.19.0-50.50 [Ubuntu/jammy main]
 linux-hwe-6.2-headers-6.2.0-39 6.2.0-39.40~22.04.1 [Ubuntu/jammy main]
 linux-hwe-6.5-headers-6.5.0-15 6.5.0-15.15~22.04.1 [Ubuntu/jammy main]
@@ -3490,7 +3490,7 @@ linux-image-6.2.0-39-generic 6.2.0-39.40~22.04.1 [Ubuntu/jammy main]
 linux-image-6.5.0-15-generic 6.5.0-15.15~22.04.1 [Ubuntu/jammy main]
 linux-image-6.5.0-17-generic 6.5.0-17.17~22.04.1 [Ubuntu/jammy main]
 linux-image-generic 5.15.0.94.91 [Ubuntu/jammy main]
-linux-image-generic-hwe-22.04 6.5.0.17.17~22.04.9 [Ubuntu/jammy main]
+linux-image-generic-hwe-22.04 6.5.0.17.17~22.04.9 [local]
 linux-libc-dev 5.15.0-94.104 [Ubuntu/jammy main]
 linux-modules-5.15.0-94-generic 5.15.0-94.104 [Ubuntu/jammy main]
 linux-modules-5.19.0-50-generic 5.19.0-50.50 [Ubuntu/jammy main]
@@ -3524,7 +3524,7 @@ lm-sensors 1:3.6.0-7ubuntu1 [Ubuntu/jammy universe]
 lmodern 2.004.5-6.1 [Ubuntu/jammy universe]
 locales 2.35-0ubuntu3.6 [Ubuntu/jammy main]
 locate 4.8.0-1ubuntu3 [Ubuntu/jammy universe]
-login 1:4.8.1-2ubuntu2.1 [Ubuntu/jammy main]
+login 1:4.8.1-2ubuntu2.2 [Ubuntu/jammy main]
 logrotate 3.19.0-1ubuntu1.1 [Ubuntu/jammy main]
 logsave 1.46.5-2ubuntu1.1 [Ubuntu/jammy main]
 lp-solve 5.5.2.5-2build2 [Ubuntu/jammy main]
@@ -3564,13 +3564,13 @@ media-player-info 24-2 [Ubuntu/jammy main]
 media-types 7.0.0 [Ubuntu/jammy main]
 mediainfo 22.03-1 [Ubuntu/jammy universe]
 memtest86+ 5.31b+dfsg-4 [Ubuntu/jammy main]
-mesa-common-dev 23.0.4-0ubuntu1~22.04.1 [Ubuntu/jammy main]
+mesa-common-dev 23.2.1-1ubuntu3.1~22.04.2 [Ubuntu/jammy main]
 mesa-utils 8.4.0-1ubuntu1 [Ubuntu/jammy universe]
 mesa-utils-bin 8.4.0-1ubuntu1 [Ubuntu/jammy universe]
-mesa-va-drivers 23.0.4-0ubuntu1~22.04.1 [Ubuntu/jammy universe]
-mesa-vdpau-drivers 23.0.4-0ubuntu1~22.04.1 [Ubuntu/jammy main]
-mesa-vulkan-drivers 23.0.4-0ubuntu1~22.04.1 [Ubuntu/jammy main]
-mesa-vulkan-drivers:i386 23.0.4-0ubuntu1~22.04.1 [Ubuntu/jammy main]
+mesa-va-drivers 23.2.1-1ubuntu3.1~22.04.2 [Ubuntu/jammy universe]
+mesa-vdpau-drivers 23.2.1-1ubuntu3.1~22.04.2 [Ubuntu/jammy main]
+mesa-vulkan-drivers 23.2.1-1ubuntu3.1~22.04.2 [Ubuntu/jammy main]
+mesa-vulkan-drivers:i386 23.2.1-1ubuntu3.1~22.04.2 [Ubuntu/jammy main]
 meson 0.61.2-1 [Ubuntu/jammy universe]
 metacity-common 1:3.44.0-1ubuntu1 [Ubuntu/jammy universe]
 mime-support 3.66 [Ubuntu/jammy main]
@@ -3704,7 +3704,7 @@ pari-gp2c 0.0.12-2 [Ubuntu/jammy universe]
 pari-seadata 0.20090618-3 [Ubuntu/jammy universe]
 parted 3.4-2build1 [Ubuntu/jammy main]
 pass 1.7.4-5 [Ubuntu/jammy universe]
-passwd 1:4.8.1-2ubuntu2.1 [Ubuntu/jammy main]
+passwd 1:4.8.1-2ubuntu2.2 [Ubuntu/jammy main]
 pastebinit 1.5.1-1ubuntu1 [Ubuntu/jammy main]
 patch 2.7.6-7build2 [Ubuntu/jammy main]
 patchutils 0.4.2-1build2 [Ubuntu/jammy main]
@@ -3790,7 +3790,7 @@ pulseaudio-module-bluetooth 1:15.99.1+dfsg1-1ubuntu2.1 [Ubuntu/jammy main]
 pulseaudio-utils 1:15.99.1+dfsg1-1ubuntu2.1 [Ubuntu/jammy main]
 pulsemixer 1.5.1-1 [Ubuntu/jammy universe]
 pyflakes3 2.4.0-2 [Ubuntu/jammy universe]
-python-apt-common 2.4.0ubuntu2 [Ubuntu/jammy main]
+python-apt-common 2.4.0ubuntu3 [Ubuntu/jammy main]
 python-babel-localedata 2.8.0+dfsg.1-7 [Ubuntu/jammy main]
 python-gmpy2-common 2.1.2-1build1 [Ubuntu/jammy universe]
 python-is-python3 3.9.2-2 [Ubuntu/jammy main]
@@ -3810,7 +3810,7 @@ python3-alabaster 0.7.12-1 [Ubuntu/jammy main]
 python3-anyio 3.5.0-3ubuntu2 [Ubuntu/jammy universe]
 python3-appdirs 1.4.4-2 [Ubuntu/jammy main]
 python3-apport 2.20.11-0ubuntu82.5 [Ubuntu/jammy main]
-python3-apt 2.4.0ubuntu2 [Ubuntu/jammy main]
+python3-apt 2.4.0ubuntu3 [Ubuntu/jammy main]
 python3-aptdaemon 1.1.1+bzr982-0ubuntu39 [Ubuntu/jammy main]
 python3-aptdaemon.gtk3widgets 1.1.1+bzr982-0ubuntu39 [Ubuntu/jammy main]
 python3-argon2 21.1.0-1 [Ubuntu/jammy universe]
@@ -3868,7 +3868,7 @@ python3-distlib 0.3.4-1 [Ubuntu/jammy universe]
 python3-distributed 2022.01.0+ds.1-1 [Ubuntu/jammy universe]
 python3-distro 1.7.0-1 [Ubuntu/jammy main]
 python3-distro-info 1.1ubuntu0.2 [Ubuntu/jammy main]
-python3-distupgrade 1:22.04.17 [Ubuntu/jammy main]
+python3-distupgrade 1:22.04.17 [local]
 python3-distutils 3.10.8-1~22.04 [Ubuntu/jammy main]
 python3-distutils-extra 2.45 [Ubuntu/jammy universe]
 python3-docutils 0.17.1+dfsg-2 [Ubuntu/jammy main]
@@ -4277,7 +4277,7 @@ shellcheck 0.8.0-2 [Ubuntu/jammy universe]
 shfmt 3.7.0-pacstall1 [local]
 shfmt-bin 3.4.3-1 [local]
 shim-signed 1.51.3+15.7-0ubuntu1 [Ubuntu/jammy main]
-signal-desktop 6.47.0 [. xenial/xenial main]
+signal-desktop 6.47.1 [. xenial/xenial main]
 signon-plugin-oauth2 0.25-2 [Ubuntu/jammy universe]
 silversearcher-ag 2.2.0+git20200805-1 [Ubuntu/jammy universe]
 simple-scan 42.0-1 [Ubuntu/jammy main]
@@ -4422,7 +4422,7 @@ ubuntu-drivers-common 1:0.9.6.2~0.22.04.6 [Ubuntu/jammy main]
 ubuntu-keyring 2021.03.26 [Ubuntu/jammy main]
 ubuntu-minimal 1.481.1 [Ubuntu/jammy main]
 ubuntu-mono 20.10-0ubuntu2 [Ubuntu/jammy main]
-ubuntu-release-upgrader-core 1:22.04.17 [Ubuntu/jammy main]
+ubuntu-release-upgrader-core 1:22.04.17 [local]
 ubuntu-report 1.7.1 [Ubuntu/jammy main]
 ubuntu-restricted-addons 26 [Ubuntu/jammy multiverse]
 ubuntu-session 42.0-1ubuntu2 [Ubuntu/jammy main]
@@ -4469,7 +4469,7 @@ uno-libs-private 1:7.3.7-0ubuntu0.22.04.4 [Ubuntu/jammy main]
 unoconv 0.7-2ubuntu1 [Ubuntu/jammy universe]
 unrar 1:6.1.5-1 [Ubuntu/jammy multiverse]
 unrtf 0.21.10-clean-1 [Ubuntu/jammy universe]
-unzip 6.0-26ubuntu3.1 [Ubuntu/jammy main]
+unzip 6.0-26ubuntu3.2 [Ubuntu/jammy main]
 update-inetd 4.51 [Ubuntu/jammy main]
 update-manager-core 1:22.04.18 [Ubuntu/jammy main]
 update-notifier-common 3.192.54.6 [Ubuntu/jammy main]
@@ -4502,9 +4502,9 @@ vim-gui-common 2:8.2.3995-1ubuntu2.15 [Ubuntu/jammy universe]
 vim-nox 2:8.2.3995-1ubuntu2.15 [Ubuntu/jammy universe]
 vim-runtime 2:8.2.3995-1ubuntu2.15 [Ubuntu/jammy main]
 vim-tiny 2:8.2.3995-1ubuntu2.15 [Ubuntu/jammy main]
-virtualbox 6.1.48-dfsg-1~ubuntu1.22.04.1 [Ubuntu/jammy multiverse]
-virtualbox-dkms 6.1.48-dfsg-1~ubuntu1.22.04.1 [Ubuntu/jammy multiverse]
-virtualbox-qt 6.1.48-dfsg-1~ubuntu1.22.04.1 [Ubuntu/jammy multiverse]
+virtualbox 6.1.48-dfsg-1~ubuntu1.22.04.1 [local]
+virtualbox-dkms 6.1.48-dfsg-1~ubuntu1.22.04.1 [local]
+virtualbox-qt 6.1.48-dfsg-1~ubuntu1.22.04.1 [local]
 vlc-data 3.0.16-1build7 [Ubuntu/jammy universe]
 vlc-plugin-base 3.0.16-1build7 [Ubuntu/jammy universe]
 vlc-plugin-video-output 3.0.16-1build7 [Ubuntu/jammy universe]
@@ -4648,14 +4648,14 @@ zstd 1.4.8+dfsg-3build1 [Ubuntu/jammy main]
 name: batsignal version: 1.6.4-pacstall1
 name: bitwarden version: 2024.1.0
 name: btop version: 1.2.13-pacstall1
-name: google-chrome-stable version: 121.0.6167.160-1
+name: google-chrome-stable version: 121.0.6167.184-1
 name: htop version: 3.2.2-pacstall1
 name: nala version: 0.15.0
 name: neofetch version: 7.1.0-pacstall1
 name: protonmail-bridge version: 3.8.1-1
 name: quarto version: 1.3.450
 name: shfmt version: 3.7.0-pacstall1
-name: signal-desktop version: 6.47.0
+name: signal-desktop version: 6.47.1
 name: thorium-browser version: 120.0.6099.235-1
 name: wezterm version: 20230712-072601-f4abf8fd-pacstall1
 name: zoom version: 5.17.5.2543
@@ -4700,7 +4700,7 @@ du-dust v0.9.0:
     dust
 evcxr_jupyter v0.17.0:
     evcxr_jupyter
-eza v0.18.2:
+eza v0.18.3:
     eza
 fd-find v9.0.0:
     fd
@@ -4741,13 +4741,13 @@ mdbook-toc v0.14.2:
     mdbook-toc
 menyoki v1.7.0:
     menyoki
-mise v2024.2.14:
+mise v2024.2.16:
     mise
 mprocs v0.6.4:
     mprocs
 nu v0.90.1:
     nu
-numbat-cli v1.10.0:
+numbat-cli v1.10.1:
     numbat
 pastel v0.9.0:
     pastel
@@ -4758,7 +4758,7 @@ porsmo v0.3.1:
 pueue v3.3.3:
     pueue
     pueued
-riffdiff v2.31.1:
+riffdiff v2.32.0:
     riff
 ripgrep v14.1.0:
     rg
@@ -4867,7 +4867,7 @@ package euporie 2.7.0, installed using Python 3.10.12
  - euporie-preview
 package flake8 7.0.0, installed using Python 3.10.12
  - flake8
-package fonttools 4.48.1, installed using Python 3.11.6
+package fonttools 4.49.0, installed using Python 3.11.6
  - fonttools
  - pyftmerge
  - pyftsubset
@@ -5028,9 +5028,9 @@ oss.terrastruct.com/d2
 ```txt
 Name                                    Version                                 Branch
 ncspot                                  1.0.0                                   stable
-Freedesktop Platform                    22.08.20                                22.08
-Mesa                                    23.3.0                                  22.08
-Mesa (Extra)                            23.3.0                                  22.08-extra
+Freedesktop Platform                    22.08.21                                22.08
+Mesa                                    23.3.5                                  22.08
+Mesa (Extra)                            23.3.5                                  22.08-extra
 Mesa                                    23.3.4                                  23.08
 Mesa (Extra)                            23.3.4                                  23.08-extra
 Intel                                                                           22.08
@@ -5055,7 +5055,7 @@ cmake                      3.28.3                      1366   latest/stable    c
 core                       16-2.61.1                   16574  latest/stable    canonical**    core
 core18                     20231027                    2812   latest/stable    canonical**    base
 core20                     20231123                    2105   latest/stable    canonical**    base
-core22                     20231123                    1033   latest/stable    canonical**    base
+core22                     20240111                    1122   latest/stable    canonical**    base
 dotnet-sdk                 5.0.408                     167    5.0/stable       dotnetcore**   classic
 duf-utility                v0.6.0                      1      latest/stable    muesli         -
 firefox                    122.0.1-1                   3779   latest/stable/…  mozilla**      -
