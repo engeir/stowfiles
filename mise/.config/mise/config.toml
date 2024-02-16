@@ -1,6 +1,7 @@
 [settings]
 experimental = true
 yes = true
+go_set_gopath = true
 
 [tools]
 tinytex = "latest"
