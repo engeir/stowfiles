@@ -71,7 +71,7 @@ avahi-daemon 0.8-5ubuntu5.2 [Ubuntu/jammy main]
 avahi-utils 0.8-5ubuntu5.2 [Ubuntu/jammy main]
 bamfdaemon 0.5.6+22.04.20220217-0ubuntu1 [Ubuntu/jammy universe]
 baobab 41.0-2 [Ubuntu/jammy main]
-base-files 12ubuntu4.5 [local]
+base-files 12ubuntu4.6 [Ubuntu/jammy main]
 base-passwd 3.5.52build1 [Ubuntu/jammy main]
 bash 5.1-6ubuntu1 [Ubuntu/jammy main]
 bash-completion 1:2.11-5ubuntu1 [Ubuntu/jammy main]
@@ -565,7 +565,7 @@ gftp 2.9.1~beta-1 [Ubuntu/jammy universe]
 gftp-common 2.9.1~beta-1 [Ubuntu/jammy universe]
 gftp-gtk 2.9.1~beta-1 [Ubuntu/jammy universe]
 gftp-text 2.9.1~beta-1 [Ubuntu/jammy universe]
-gh 2.44.0 [gh/stable main]
+gh 2.44.1 [gh/stable main]
 ghc 8.8.4-3 [Ubuntu/jammy universe]
 ghostscript 9.55.0~dfsg1-0ubuntu5.6 [Ubuntu/jammy main]
 ghostscript-x 9.55.0~dfsg1-0ubuntu5.6 [Ubuntu/jammy main]
@@ -883,10 +883,10 @@ krb5-locales 1.19.2-2ubuntu0.3 [Ubuntu/jammy main]
 krb5-multidev 1.19.2-2ubuntu0.3 [Ubuntu/jammy main]
 kwayland-data 4:5.92.0-0ubuntu1 [Ubuntu/jammy universe]
 kwayland-integration 4:5.24.4-0ubuntu1 [Ubuntu/jammy universe]
-language-pack-en 1:22.04+20230801 [local]
-language-pack-en-base 1:22.04+20230801 [local]
-language-pack-gnome-en 1:22.04+20230801 [local]
-language-pack-gnome-en-base 1:22.04+20230801 [local]
+language-pack-en 1:22.04+20240212 [Ubuntu/jammy main]
+language-pack-en-base 1:22.04+20240212 [Ubuntu/jammy main]
+language-pack-gnome-en 1:22.04+20240212 [Ubuntu/jammy main]
+language-pack-gnome-en-base 1:22.04+20240212 [Ubuntu/jammy main]
 language-selector-common 0.219.1 [Ubuntu/jammy main]
 language-selector-gnome 0.219.1 [Ubuntu/jammy main]
 laptop-detect 0.16 [Ubuntu/jammy main]
@@ -3471,37 +3471,37 @@ linux-base 4.5ubuntu9 [Ubuntu/jammy main]
 linux-firmware 20220329.git681281e4-0ubuntu3.26 [Ubuntu/jammy main]
 linux-generic 5.15.0.94.91 [Ubuntu/jammy main]
 linux-generic-hwe-20.04 5.15.0.94.91 [Ubuntu/jammy main]
-linux-generic-hwe-22.04 6.5.0.17.17~22.04.9 [local]
+linux-generic-hwe-22.04 6.5.0.18.18~22.04.10 [Ubuntu/jammy main]
 linux-headers-5.15.0-94 5.15.0-94.104 [Ubuntu/jammy main]
 linux-headers-5.15.0-94-generic 5.15.0-94.104 [Ubuntu/jammy main]
 linux-headers-5.19.0-50-generic 5.19.0-50.50 [Ubuntu/jammy main]
 linux-headers-6.2.0-39-generic 6.2.0-39.40~22.04.1 [Ubuntu/jammy main]
-linux-headers-6.5.0-15-generic 6.5.0-15.15~22.04.1 [Ubuntu/jammy main]
 linux-headers-6.5.0-17-generic 6.5.0-17.17~22.04.1 [Ubuntu/jammy main]
+linux-headers-6.5.0-18-generic 6.5.0-18.18~22.04.1 [Ubuntu/jammy main]
 linux-headers-generic 5.15.0.94.91 [Ubuntu/jammy main]
-linux-headers-generic-hwe-22.04 6.5.0.17.17~22.04.9 [local]
+linux-headers-generic-hwe-22.04 6.5.0.18.18~22.04.10 [Ubuntu/jammy main]
 linux-hwe-5.19-headers-5.19.0-50 5.19.0-50.50 [Ubuntu/jammy main]
 linux-hwe-6.2-headers-6.2.0-39 6.2.0-39.40~22.04.1 [Ubuntu/jammy main]
-linux-hwe-6.5-headers-6.5.0-15 6.5.0-15.15~22.04.1 [Ubuntu/jammy main]
 linux-hwe-6.5-headers-6.5.0-17 6.5.0-17.17~22.04.1 [Ubuntu/jammy main]
+linux-hwe-6.5-headers-6.5.0-18 6.5.0-18.18~22.04.1 [Ubuntu/jammy main]
 linux-image-5.15.0-94-generic 5.15.0-94.104 [Ubuntu/jammy main]
 linux-image-5.19.0-50-generic 5.19.0-50.50 [Ubuntu/jammy main]
 linux-image-6.2.0-39-generic 6.2.0-39.40~22.04.1 [Ubuntu/jammy main]
-linux-image-6.5.0-15-generic 6.5.0-15.15~22.04.1 [Ubuntu/jammy main]
 linux-image-6.5.0-17-generic 6.5.0-17.17~22.04.1 [Ubuntu/jammy main]
+linux-image-6.5.0-18-generic 6.5.0-18.18~22.04.1 [Ubuntu/jammy main]
 linux-image-generic 5.15.0.94.91 [Ubuntu/jammy main]
-linux-image-generic-hwe-22.04 6.5.0.17.17~22.04.9 [local]
+linux-image-generic-hwe-22.04 6.5.0.18.18~22.04.10 [Ubuntu/jammy main]
 linux-libc-dev 5.15.0-94.104 [Ubuntu/jammy main]
 linux-modules-5.15.0-94-generic 5.15.0-94.104 [Ubuntu/jammy main]
 linux-modules-5.19.0-50-generic 5.19.0-50.50 [Ubuntu/jammy main]
 linux-modules-6.2.0-39-generic 6.2.0-39.40~22.04.1 [Ubuntu/jammy main]
-linux-modules-6.5.0-15-generic 6.5.0-15.15~22.04.1 [Ubuntu/jammy main]
 linux-modules-6.5.0-17-generic 6.5.0-17.17~22.04.1 [Ubuntu/jammy main]
+linux-modules-6.5.0-18-generic 6.5.0-18.18~22.04.1 [Ubuntu/jammy main]
 linux-modules-extra-5.15.0-94-generic 5.15.0-94.104 [Ubuntu/jammy main]
 linux-modules-extra-5.19.0-50-generic 5.19.0-50.50 [Ubuntu/jammy main]
 linux-modules-extra-6.2.0-39-generic 6.2.0-39.40~22.04.1 [Ubuntu/jammy main]
-linux-modules-extra-6.5.0-15-generic 6.5.0-15.15~22.04.1 [Ubuntu/jammy main]
 linux-modules-extra-6.5.0-17-generic 6.5.0-17.17~22.04.1 [Ubuntu/jammy main]
+linux-modules-extra-6.5.0-18-generic 6.5.0-18.18~22.04.1 [Ubuntu/jammy main]
 linux-sound-base 1.0.25+dfsg-0ubuntu7 [Ubuntu/jammy main]
 llvm 1:14.0-55~exp2 [Ubuntu/jammy universe]
 llvm-11 1:11.1.0-6 [Ubuntu/jammy universe]
@@ -3868,7 +3868,7 @@ python3-distlib 0.3.4-1 [Ubuntu/jammy universe]
 python3-distributed 2022.01.0+ds.1-1 [Ubuntu/jammy universe]
 python3-distro 1.7.0-1 [Ubuntu/jammy main]
 python3-distro-info 1.1ubuntu0.2 [Ubuntu/jammy main]
-python3-distupgrade 1:22.04.17 [local]
+python3-distupgrade 1:22.04.19 [Ubuntu/jammy main]
 python3-distutils 3.10.8-1~22.04 [Ubuntu/jammy main]
 python3-distutils-extra 2.45 [Ubuntu/jammy universe]
 python3-docutils 0.17.1+dfsg-2 [Ubuntu/jammy main]
@@ -4422,7 +4422,7 @@ ubuntu-drivers-common 1:0.9.6.2~0.22.04.6 [Ubuntu/jammy main]
 ubuntu-keyring 2021.03.26 [Ubuntu/jammy main]
 ubuntu-minimal 1.481.1 [Ubuntu/jammy main]
 ubuntu-mono 20.10-0ubuntu2 [Ubuntu/jammy main]
-ubuntu-release-upgrader-core 1:22.04.17 [local]
+ubuntu-release-upgrader-core 1:22.04.19 [Ubuntu/jammy main]
 ubuntu-report 1.7.1 [Ubuntu/jammy main]
 ubuntu-restricted-addons 26 [Ubuntu/jammy multiverse]
 ubuntu-session 42.0-1ubuntu2 [Ubuntu/jammy main]
@@ -4502,9 +4502,9 @@ vim-gui-common 2:8.2.3995-1ubuntu2.15 [Ubuntu/jammy universe]
 vim-nox 2:8.2.3995-1ubuntu2.15 [Ubuntu/jammy universe]
 vim-runtime 2:8.2.3995-1ubuntu2.15 [Ubuntu/jammy main]
 vim-tiny 2:8.2.3995-1ubuntu2.15 [Ubuntu/jammy main]
-virtualbox 6.1.48-dfsg-1~ubuntu1.22.04.1 [local]
-virtualbox-dkms 6.1.48-dfsg-1~ubuntu1.22.04.1 [local]
-virtualbox-qt 6.1.48-dfsg-1~ubuntu1.22.04.1 [local]
+virtualbox 6.1.50-dfsg-1~ubuntu1.22.04.1 [Ubuntu/jammy multiverse]
+virtualbox-dkms 6.1.50-dfsg-1~ubuntu1.22.04.1 [Ubuntu/jammy multiverse]
+virtualbox-qt 6.1.50-dfsg-1~ubuntu1.22.04.1 [Ubuntu/jammy multiverse]
 vlc-data 3.0.16-1build7 [Ubuntu/jammy universe]
 vlc-plugin-base 3.0.16-1build7 [Ubuntu/jammy universe]
 vlc-plugin-video-output 3.0.16-1build7 [Ubuntu/jammy universe]
@@ -4666,8 +4666,6 @@ name: zoom version: 5.17.5.2543
 ```txt
 alacritty v0.13.1:
     alacritty
-alacritty-opacity v0.1.1:
-    alacritty-opacity
 atuin v18.0.1:
     atuin
 bacon v2.14.2:
@@ -4836,7 +4834,7 @@ package cowsay 6.1, installed using Python 3.10.12
  - cowsay
 package daltonlens 0.1.5, installed using Python 3.10.12
  - daltonlens-python
-package ds-format 4.0.1, installed using Python 3.10.12
+package ds-format 4.1.0, installed using Python 3.10.12
  - ds
  - man1/ds-attrs.1
  - man1/ds-cat.1
@@ -4935,7 +4933,7 @@ package pandoc-include 1.3.0, installed using Python 3.10.12
 package pdfcropmargins 2.0.3, installed using Python 3.10.12
  - pdf-crop-margins
  - pdfcropmargins
-package pipreqs 0.4.13, installed using Python 3.10.12
+package pipreqs 0.5.0, installed using Python 3.10.12
  - pipreqs
 package poetry 1.7.1, installed using Python 3.11.6
  - poetry
@@ -4945,7 +4943,7 @@ package poetry2setup 1.1.0, installed using Python 3.10.12
  - poetry2setup
 package pptx2md 1.5.0, installed using Python 3.10.12
  - pptx2md
-package pre-commit 3.6.1, installed using Python 3.10.12
+package pre-commit 3.6.2, installed using Python 3.10.12
  - pre-commit
  - pre-commit-validate-config
  - pre-commit-validate-manifest
@@ -5054,7 +5052,7 @@ canonical-livepatch        10.8.1                      264    latest/stable    c
 cmake                      3.28.3                      1366   latest/stable    crascit**      classic
 core                       16-2.61.1                   16574  latest/stable    canonical**    core
 core18                     20231027                    2812   latest/stable    canonical**    base
-core20                     20231123                    2105   latest/stable    canonical**    base
+core20                     20240111                    2182   latest/stable    canonical**    base
 core22                     20240111                    1122   latest/stable    canonical**    base
 dotnet-sdk                 5.0.408                     167    5.0/stable       dotnetcore**   classic
 duf-utility                v0.6.0                      1      latest/stable    muesli         -
