@@ -1,3 +1,4 @@
+#!/bin/sh
 export PATH="${PATH}:${HOME}/.local/bin:$HOME/bin"
 # If you come from bash you might have to change your $PATH.
 # export PATH=/usr/local/bin:$HOME/scripts:$HOME/.local/bin:$HOME/bin:$PATH
@@ -26,11 +27,11 @@ export NNN_FCOLORS="$BLK$CHR$DIR$EXE$REG$HARDLINK$SYMLINK$MISSING$ORPHAN$FIFO$SO
 export NNN_FIFO=/tmp/nnn.fifo nnn
 export NNN_TRASH=1
 export NNN_TERMINAL="wezterm"
-if [ "$MACHINE" = "Darwin" ]; then
-    plug "$HOME/.config/zsh/mac-specific.zsh"
+if [[ $(uname) == "Darwin" ]]; then
+    source "$HOME/.config/zsh/mac-specific.zsh"
 fi
-if [ "$MACHINE" = "Ubuntu" ]; then
-    plug "$HOME/.config/zsh/linux-specific.zsh"
+if [[ $(uname) == "Ubuntu" ]]; then
+    source "$HOME/.config/zsh/linux-specific.zsh"
 fi
 
 # FZF settings
