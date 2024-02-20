@@ -1,5 +1,27 @@
 # Changelog
 
+## [1.9.2](https://github.com/engeir/stowfiles/compare/v1.9.1...v1.9.2) (2024-02-20)
+
+
+### Bug Fixes
+
+* **mise:** set GOPATH ([cb45b0a](https://github.com/engeir/stowfiles/commit/cb45b0afd13df9fc5e29b7667e6d8ce7e3d6b77c))
+
+
+### Miscellaneous
+
+* **env:** specify bash shebang due to non-posix features ([2b6b38b](https://github.com/engeir/stowfiles/commit/2b6b38b52b3b03c22e6f3be62c05075e244041d0))
+* **fish:** update path ([f183f42](https://github.com/engeir/stowfiles/commit/f183f42b9d00cdce74d90c02fbcd11ea3ebd4c4e))
+* **nvim:** go back to ultimate-autopair, much better ([8aca1f1](https://github.com/engeir/stowfiles/commit/8aca1f18e830a527ed8680aff0a548f70d585dad))
+* **software:** remove gup and update installed ([4fd92b6](https://github.com/engeir/stowfiles/commit/4fd92b6ee5a1c7172b947aa2559b08a3678d721b))
+* **software:** update installed ([d5345f5](https://github.com/engeir/stowfiles/commit/d5345f58c353b53ce482d1b04f8609b078a2ac8d))
+* **software:** update installed ([a5a335f](https://github.com/engeir/stowfiles/commit/a5a335f39fb5445b013c07d585bd7afc0245a891))
+
+
+### Code Refactoring
+
+* **mise:** use mise to control env variables ([b743f47](https://github.com/engeir/stowfiles/commit/b743f47dc71f3d91c2d6ba57b05bf698206c1aa5))
+
 ## [1.9.1](https://github.com/engeir/stowfiles/compare/v1.9.0...v1.9.1) (2024-02-12)
 
 
