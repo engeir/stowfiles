@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 export PATH="${PATH}:${HOME}/.local/bin:$HOME/bin"
 # If you come from bash you might have to change your $PATH.
 # export PATH=/usr/local/bin:$HOME/scripts:$HOME/.local/bin:$HOME/bin:$PATH
@@ -17,7 +17,8 @@ LESSOPEN="|/usr/local/bin/lesspipe.sh %s"; export LESSOPEN
 export MANPAGER="sh -c 'col -bx | bat -l man -p'"
 export BAT_PAGER="less -R"
 export LESS='-Ri '
-export LS_COLORS="$(vivid generate solarized-dark)"
+LS_COLORS="$(vivid generate solarized-dark)"
+export LS_COLORS="$LS_COLORS"
 
 # NNN
 export NNN_USE_EDITOR=1
