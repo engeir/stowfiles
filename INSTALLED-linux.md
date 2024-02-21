@@ -709,7 +709,7 @@ gnuplot 5.4.2+dfsg2-2 [Ubuntu/jammy universe]
 gnuplot-data 5.4.2+dfsg2-2 [Ubuntu/jammy universe]
 gnuplot-qt 5.4.2+dfsg2-2 [Ubuntu/jammy universe]
 golly 3.3-1build1 [Ubuntu/jammy universe]
-google-chrome-stable 121.0.6167.184-1 [Google/stable main]
+google-chrome-stable 122.0.6261.57-1 [Google/stable main]
 gperf 3.1-1build1 [Ubuntu/jammy universe]
 gpg 2.2.27-3ubuntu2.1 [Ubuntu/jammy main]
 gpg-agent 2.2.27-3ubuntu2.1 [Ubuntu/jammy main]
@@ -4277,7 +4277,7 @@ shellcheck 0.8.0-2 [Ubuntu/jammy universe]
 shfmt 3.7.0-pacstall1 [local]
 shfmt-bin 3.4.3-1 [local]
 shim-signed 1.51.3+15.7-0ubuntu1 [Ubuntu/jammy main]
-signal-desktop 6.47.1 [. xenial/xenial main]
+signal-desktop 6.48.0 [. xenial/xenial main]
 signon-plugin-oauth2 0.25-2 [Ubuntu/jammy universe]
 silversearcher-ag 2.2.0+git20200805-1 [Ubuntu/jammy universe]
 simple-scan 42.0-1 [Ubuntu/jammy main]
@@ -4648,14 +4648,14 @@ zstd 1.4.8+dfsg-3build1 [Ubuntu/jammy main]
 name: batsignal version: 1.6.4-pacstall1
 name: bitwarden version: 2024.1.0
 name: btop version: 1.2.13-pacstall1
-name: google-chrome-stable version: 121.0.6167.184-1
+name: google-chrome-stable version: 122.0.6261.57-1
 name: htop version: 3.2.2-pacstall1
 name: nala version: 0.15.0
 name: neofetch version: 7.1.0-pacstall1
 name: protonmail-bridge version: 3.8.1-1
 name: quarto version: 1.3.450
 name: shfmt version: 3.7.0-pacstall1
-name: signal-desktop version: 6.47.1
+name: signal-desktop version: 6.48.0
 name: thorium-browser version: 120.0.6099.235-1
 name: wezterm version: 20230712-072601-f4abf8fd-pacstall1
 name: zoom version: 5.17.5.2543
@@ -4674,7 +4674,7 @@ bat v0.24.0:
     bat
 blindfold v1.0.7:
     blindfold
-bob-nvim v2.8.0:
+bob-nvim v2.8.1:
     bob
 cargo-binstall v1.6.3:
     cargo-binstall
@@ -4694,6 +4694,8 @@ coreutils v0.0.24:
     coreutils
 despell v1.0.1:
     despell
+diskus v0.7.0:
+    diskus
 du-dust v0.9.0:
     dust
 evcxr_jupyter v0.17.0:
@@ -4704,7 +4706,7 @@ fd-find v9.0.0:
     fd
 ffsend v0.2.76:
     ffsend
-git-cliff v1.4.0:
+git-cliff v2.0.2:
     git-cliff
     git-cliff-completions
     git-cliff-mangen
@@ -4810,7 +4812,7 @@ zellij v0.39.2:
 
 ```txt
 manual pages are exposed at /home/een023/.local/share/man
-package ansible-core 2.16.3, installed using Python 3.10.12
+package ansible-core 2.16.3, installed using Python 3.12.2
  - ansible
  - ansible-config
  - ansible-connection
@@ -4822,19 +4824,9 @@ package ansible-core 2.16.3, installed using Python 3.10.12
  - ansible-pull
  - ansible-test
  - ansible-vault
-package beautysh 6.2.1, installed using Python 3.10.12
- - beautysh
-package black 24.2.0, installed using Python 3.10.12
- - black
- - black-primer
- - blackd
-package cicero 0.2.6, installed using Python 3.10.12
- - cicero
-package cowsay 6.1, installed using Python 3.10.12
- - cowsay
-package daltonlens 0.1.5, installed using Python 3.10.12
+package daltonlens 0.1.5, installed using Python 3.12.2
  - daltonlens-python
-package ds-format 4.1.0, installed using Python 3.10.12
+package ds-format 4.1.0, installed using Python 3.12.2
  - ds
  - man1/ds-attrs.1
  - man1/ds-cat.1
@@ -4857,145 +4849,66 @@ package ds-format 4.1.0, installed using Python 3.10.12
  - man1/ds-type.1
  - man1/ds-write.1
  - man1/ds.1
-package euporie 2.7.0, installed using Python 3.10.12
+package euporie 2.7.0, installed using Python 3.12.2
  - euporie
  - euporie-console
  - euporie-hub
  - euporie-notebook
  - euporie-preview
-package flake8 7.0.0, installed using Python 3.10.12
+package flake8 7.0.0, installed using Python 3.12.2
  - flake8
-package fonttools 4.49.0, installed using Python 3.11.6
+package fonttools 4.49.0, installed using Python 3.12.2
  - fonttools
  - pyftmerge
  - pyftsubset
  - ttx
  - man1/ttx.1
-package fprettify 0.3.7, installed using Python 3.10.12
- - fprettify
-package globus-cli 3.24.0, installed using Python 3.10.12
+package globus-cli 3.25.0, installed using Python 3.12.2
  - globus
-package gorps 0.9.1, installed using Python 3.10.12
+package gorps 0.9.1, installed using Python 3.12.2
  - gorps
-package howdoi 2.0.20, installed using Python 3.10.12
- - howdoi
-package httpie 3.2.2, installed using Python 3.10.12
+package httpie 3.2.2, installed using Python 3.12.2
  - http
  - httpie
  - https
  - man1/http.1
  - man1/httpie.1
  - man1/https.1
-package huge 0.1.3, installed using Python 3.10.12
+package huge 0.1.3, installed using Python 3.12.2
  - huge
-package intake 2.0.1, installed using Python 3.10.12
- - intake
- - intake-server
-package jupyter-client 8.6.0, installed using Python 3.10.12
+package jupyter-client 8.6.0, installed using Python 3.12.2
  - jupyter-kernel
  - jupyter-kernelspec
  - jupyter-run
-package jupytext 1.16.1, installed using Python 3.10.12
- - jupytext
- - jupytext-config
-package khal 0.11.3, installed using Python 3.10.12
+package khal 0.11.3, installed using Python 3.12.2
  - ikhal
  - khal
-package lookatme 2.5.5, installed using Python 3.10.12
- - lam
- - lookatme
- - witnessme
-package mypy 1.8.0, installed using Python 3.10.12
- - dmypy
- - mypy
- - mypyc
- - stubgen
- - stubtest
-package nbpreview 0.9.1, installed using Python 3.10.12
- - nbp
- - nbpreview
-package northern-lights-forecast 4.1.4, installed using Python 3.10.12
- - nlf
- - nlfd
-package nox 2023.4.22, installed using Python 3.10.12
- - nox
- - tox-to-nox
-package npzviewer 0.2.0, installed using Python 3.10.12
+package npzviewer 0.2.0, installed using Python 3.12.2
  - npzviewer
-package ntfy 2.7.0, installed using Python 3.10.12
- - ntfy
-package openconnect-sso 0.8.1, installed using Python 3.10.12
- - openconnect-sso
-package pandoc-eqnos 2.5.0, installed using Python 3.10.12
- - pandoc-eqnos
-package pandoc-include 1.3.0, installed using Python 3.10.12
- - pandoc-include
-package pdfcropmargins 2.0.3, installed using Python 3.10.12
+package pdfcropmargins 2.0.3, installed using Python 3.12.2
  - pdf-crop-margins
  - pdfcropmargins
-package pipreqs 0.5.0, installed using Python 3.10.12
- - pipreqs
-package poetry 1.7.1, installed using Python 3.11.6
+package poetry 1.7.1, installed using Python 3.12.2
  - poetry
-package poetry2conda 0.3.0, installed using Python 3.10.12
- - poetry2conda
-package poetry2setup 1.1.0, installed using Python 3.10.12
- - poetry2setup
-package pptx2md 1.5.0, installed using Python 3.10.12
- - pptx2md
-package pre-commit 3.6.2, installed using Python 3.10.12
+package pre-commit 3.6.2, installed using Python 3.12.2
  - pre-commit
  - pre-commit-validate-config
  - pre-commit-validate-manifest
-package pydocstyle 6.3.0, installed using Python 3.10.12
- - pydocstyle
-package pypistats 1.5.0, installed using Python 3.10.12
- - pypistats
-package pyqt5 5.15.10, installed using Python 3.10.12
- - pylupdate5
- - pyrcc5
- - pyuic5
-package pyright 1.1.350, installed using Python 3.10.12
- - pyright
- - pyright-langserver
- - pyright-python
- - pyright-python-langserver
-package pywal 3.3.0, installed using Python 3.10.12
- - wal
-package rich-cli 1.8.0, installed using Python 3.10.12
+package rich-cli 1.8.0, installed using Python 3.12.2
  - rich
-package rich-codex 1.2.7, installed using Python 3.10.12
+package rich-codex 1.2.7, installed using Python 3.12.2
  - rich-codex
-package rmview 3.1.3, installed using Python 3.10.12
- - rmview
-package rofimoji 6.2.0, installed using Python 3.10.12
+package rofimoji 6.2.0, installed using Python 3.12.2
  - rofimoji
-package telegram-send 0.37, installed using Python 3.10.12
- - telegram-send
-package tex2svg 0.0.2, installed using Python 3.10.12
- - tex2svg
-package textual-paint 0.4.0, installed using Python 3.10.12
- - textual-paint
-package thefuck 3.32, installed using Python 3.10.12
- - fuck
- - thefuck
-package tuiview 0.1.1, installed using Python 3.10.12
+package tuiview 0.1.1, installed using Python 3.12.2
  - tuiview
  - tv
-package twine 5.0.0, installed using Python 3.10.12
- - twine
-package visidata 3.0.2, installed using Python 3.11.6
- - vd
- - vd2to3.vdx
- - vgit
- - visidata
- - man1/vd.1
- - man1/visidata.1
-package wtpython 0.1.0, installed using Python 3.10.12
+package volcano-cooking 0.12.0, installed using Python 3.12.2
+ - sfrc-sparse2lin
+ - view-frc
+ - volcano-cooking
+package wtpython 0.1.0, installed using Python 3.12.2
  - wtpython
-package yapf 0.40.2, installed using Python 3.10.12
- - yapf
- - yapf-diff
 ```
 
 ## Go
@@ -5056,7 +4969,7 @@ core20                     20240111                    2182   latest/stable    c
 core22                     20240111                    1122   latest/stable    canonical**    base
 dotnet-sdk                 5.0.408                     167    5.0/stable       dotnetcore**   classic
 duf-utility                v0.6.0                      1      latest/stable    muesli         -
-firefox                    122.0.1-1                   3779   latest/stable/…  mozilla**      -
+firefox                    123.0-3                     3836   latest/stable/…  mozilla**      -
 gimp                       2.10.36                     418    latest/stable    snapcrafters*  -
 gnome-3-28-1804            3.28.0-19-g98f9e67.98f9e67  198    latest/stable    canonical**    -
 gnome-3-34-1804            0+git.3556cb3               93     latest/stable/…  canonical**    -
