@@ -315,7 +315,7 @@ _forgit_cherry_pick() {
     [[ -z $1 ]] && echo "Please specify target branch" && return 1
     target="$1"
 
-    # in this function, we do something interesting to maintain proper ordering as it's assumed 
+    # in this function, we do something interesting to maintain proper ordering as it's assumed
     # you generally want to cherry pick oldest->newest when you multiselect
     # The instances of "cut", "nl" and "sort" all serve this purpose
     # Please see https://github.com/wfxr/forgit/issues/253 for more details
@@ -338,7 +338,7 @@ _forgit_cherry_pick() {
     ${IFS+"false"} && unset old_IFS || old_IFS="$IFS"
     IFS=$'\n'
     # shellcheck disable=2207
-    commits=($(echo "$fzf_selection" | sort --numeric-sort --key=1 | cut -f2 | cut -d' ' -f1 | _forgit_reverse_lines))
+    commits=($(echo "$fzf_selection" | sort -n -k 1 | cut -f2 | cut -d' ' -f1 | _forgit_reverse_lines))
     ${old_IFS+"false"} && unset IFS || IFS="$old_IFS"
     [ ${#commits[@]} -eq 0 ] && return 1
 
@@ -568,7 +568,7 @@ _forgit_revert_commit() {
         $FORGIT_REVERT_COMMIT_FZF_OPTS
     "
 
-    # in this function, we do something interesting to maintain proper ordering as it's assumed 
+    # in this function, we do something interesting to maintain proper ordering as it's assumed
     # you generally want to revert newest->oldest when you multiselect
     # The instances of "cut", "nl" and "sort" all serve this purpose
     # Please see https://github.com/wfxr/forgit/issues/253 for more details
@@ -579,10 +579,10 @@ _forgit_revert_commit() {
     ${IFS+"false"} && unset old_IFS || old_IFS="$IFS"
     IFS=$'\n'
     # shellcheck disable=2207
-    commits=($(eval "$cmd" | 
+    commits=($(eval "$cmd" |
         nl |
-        FZF_DEFAULT_OPTS="$opts" fzf --preview="$preview" -m | 
-        sort --numeric-sort --key=1 | 
+        FZF_DEFAULT_OPTS="$opts" fzf --preview="$preview" -m |
+        sort -n -k 1 |
         cut -f2- |
         sed 's/^[^a-f^0-9]*\([a-f0-9]*\).*/\1/'))
     ${old_IFS+"false"} && unset IFS || IFS="$old_IFS"
@@ -634,7 +634,7 @@ _forgit_ignore() {
     ${IFS+"false"} && unset old_IFS || old_IFS="$IFS"
     IFS=$'\n'
     # shellcheck disable=SC2206,2207
-    args=($@) && [[ $# -eq 0 ]] && args=($(_forgit_ignore_list | nl -nrn -w4 -s'  ' |
+    args=($@) && [[ $# -eq 0 ]] && args=($(_forgit_ignore_list | nl -w4 -s'  ' |
         FZF_DEFAULT_OPTS="$opts" fzf | awk '{print $2}'))
     ${old_IFS+"false"} && unset IFS || IFS="$old_IFS"
     [ ${#args[@]} -eq 0 ] && return 1
