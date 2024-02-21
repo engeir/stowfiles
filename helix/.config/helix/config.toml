@@ -49,3 +49,7 @@ r = ":reset-diff-change"
 [keys.normal.space.space]
 s = ":format"
 w = ":reflow"
+
+[keys.normal]
+"H" = ":buffer-previous"
+"L" = ":buffer-next"
