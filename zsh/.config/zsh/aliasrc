@@ -71,8 +71,6 @@ alias saGITHUB="ssh-add ~/.ssh/id_github"
 alias saVULTR="ssh-add ~/.ssh/id_vultr"
 
 # Tab-completions CLIs
-# alias epynv='eval "$(pyenv init -)"'
-# alias epynvv='eval "$(pyenv virtualenv-init -)"'
 alias pipcomplete='eval "$(pip completion --zsh)"'
 alias buncomplete='[ -s "/home/een023/.bun/_bun" ] && source "/home/een023/.bun/_bun"'
 

@@ -31,9 +31,3 @@ export PATH="$PATH:/home/een023/.local/bin"
 # Make caps-lock work as esc when pressed, ctrl when hold
 setxkbmap -option ctrl:nocaps
 xcape -e 'Control_L=Escape'
-
-# If you want pyenv to be available in noninteractive shells, let the below be
-# uncommented.
-export PATH="$HOME/.pyenv/bin:$PATH"
-eval "$(pyenv init -)"
-eval "$(pyenv virtualenv-init -)"

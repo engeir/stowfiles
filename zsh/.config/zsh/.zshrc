@@ -14,7 +14,6 @@ export VISUAL="nvim"
 export TERMINAL="st"
 export TERM=screen-256color  # Needed for italics to work in tmux
 export LD_PRELOAD=/usr/lib/x86_64-linux-gnu/libgtk3-nocsd.so.0
-export PYENV_VIRTUALENV_DISABLE_PROMPT=1
 export PAGER=less  # Suggested at https://github.com/jarun/nnn/wiki/Advanced-use-cases#pager-as-opener
 LESSOPEN="|/usr/local/bin/lesspipe.sh %s"; export LESSOPEN
 export MANPAGER="sh -c 'col -bx | bat -l man -p'"
@@ -61,12 +60,6 @@ bindkey "^[[B" history-beginning-search-forward
 # Edit line in vim with ctrl-v
 autoload edit-command-line; zle -N edit-command-line
 bindkey '^v' edit-command-line
-
-# Config for pyenv and pip (slows down the prompt, move to aliasrc)
-export PATH="$HOME/.pyenv/bin:$PATH"
-eval "$(pyenv init -)"
-eval "$(pyenv virtualenv-init -)"
-# eval "$(pip completion --zsh)"  # This slows down the prompt!
 
 # Speedy keys
 xset r rate 210 40
