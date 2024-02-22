@@ -4700,17 +4700,17 @@ du-dust v0.9.0:
     dust
 evcxr_jupyter v0.17.0:
     evcxr_jupyter
-eza v0.18.3:
+eza v0.18.4:
     eza
 fd-find v9.0.0:
     fd
 ffsend v0.2.76:
     ffsend
-git-cliff v2.0.2:
+git-cliff v2.0.3:
     git-cliff
     git-cliff-completions
     git-cliff-mangen
-gitui v0.24.3:
+gitui v0.25.0:
     gitui
 halp v0.1.7:
     halp
@@ -4741,7 +4741,7 @@ mdbook-toc v0.14.2:
     mdbook-toc
 menyoki v1.7.0:
     menyoki
-mise v2024.2.16:
+mise v2024.2.17:
     mise
 mprocs v0.6.4:
     mprocs
@@ -4788,7 +4788,7 @@ tectonic v0.15.0:
     tectonic
 topgrade v14.0.1:
     topgrade
-tree-sitter-cli v0.20.8:
+tree-sitter-cli v0.21.0:
     tree-sitter
 viu v1.5.0:
     viu

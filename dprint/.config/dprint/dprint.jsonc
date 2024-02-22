@@ -55,7 +55,7 @@
         "**/target"
     ],
     "plugins": [
-        "https://plugins.dprint.dev/typescript-0.89.1.wasm",
+        "https://plugins.dprint.dev/typescript-0.89.2.wasm",
         "https://plugins.dprint.dev/json-0.19.1.wasm",
         "https://plugins.dprint.dev/markdown-0.16.3.wasm",
         // "/Users/salomon/dev/dprint-plugin-markdown/target/wasm32-unknown-unknown/release/dprint_plugin_markdown.wasm",
