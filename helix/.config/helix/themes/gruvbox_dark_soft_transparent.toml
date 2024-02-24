@@ -1,3 +1,4 @@
 inherits = "gruvbox_dark_soft"
 
+# "ui.virtual.ruler" = "red"
 "ui.background" = "#00000000"

@@ -51,5 +51,4 @@ s = ":format"
 w = ":reflow"
 
 [keys.normal]
-"H" = ":buffer-previous"
-"L" = ":buffer-next"
+D = "kill_to_line_end"
