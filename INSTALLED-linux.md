@@ -136,8 +136,8 @@ cli-common 0.10 [Ubuntu/jammy universe]
 cliquer 1.21-3 [Ubuntu/jammy universe]
 cloc 1.90-1 [Ubuntu/jammy universe]
 cm-super-minimal 0.3.4-17 [Ubuntu/jammy universe]
-cmake 3.22.1-1ubuntu1.22.04.1 [local]
-cmake-data 3.22.1-1ubuntu1.22.04.1 [local]
+cmake 3.22.1-1ubuntu1.22.04.2 [Ubuntu/jammy main]
+cmake-data 3.22.1-1ubuntu1.22.04.2 [Ubuntu/jammy main]
 cmatrix 2.0-3 [Ubuntu/jammy universe]
 cmdtest 0.32.14.gcdfe14e-2 [Ubuntu/jammy universe]
 code 1.65.1-1646706496 [local]
@@ -298,7 +298,7 @@ finger 0.17-17 [Ubuntu/jammy universe]
 firefox 1:1snap1-0ubuntu2 [Ubuntu/jammy main]
 firefox-locale-en 1:1snap1-0ubuntu2 [Ubuntu/jammy universe]
 firefoxpwa 2.10.1 [FirefoxPWA/any main]
-firmware-sof-signed 2.0-1ubuntu4.4 [Ubuntu/jammy restricted]
+firmware-sof-signed 2.0-1ubuntu4.5 [Ubuntu/jammy restricted]
 flatpak 1.12.7-1 [Ubuntu/jammy universe]
 flex 2.6.4-8build2 [Ubuntu/jammy main]
 flintqs 1:1.0-3build1 [Ubuntu/jammy universe]
@@ -4350,7 +4350,7 @@ tcl-expect 5.45.4-2build1 [Ubuntu/jammy universe]
 tcl8.6 8.6.12+dfsg-1build1 [Ubuntu/jammy main]
 tcl8.6-dev 8.6.12+dfsg-1build1 [Ubuntu/jammy main]
 tcllib 1.20+dfsg-1 [Ubuntu/jammy universe]
-tcpdump 4.99.1-3ubuntu0.1 [local]
+tcpdump 4.99.1-3ubuntu0.2 [Ubuntu/jammy main]
 teams 1.5.00.23861 [local]
 telnet 0.17-44build1 [Ubuntu/jammy main]
 tesseract-ocr 4.1.1-2.1build1 [Ubuntu/jammy universe]
@@ -4373,7 +4373,7 @@ texlive-pictures 2021.20220204-1 [Ubuntu/jammy universe]
 texlive-plain-generic 2021.20220204-1 [Ubuntu/jammy universe]
 texlive-science 2021.20220204-1 [Ubuntu/jammy universe]
 thermald 2.4.9-1ubuntu0.4 [Ubuntu/jammy main]
-thorium-browser 120.0.6099.235-1 [local]
+thorium-browser 121.0.6167.204-1 [local]
 thunar 4.16.10-1 [Ubuntu/jammy universe]
 thunar-data 4.16.10-1 [Ubuntu/jammy universe]
 thunar-volman 4.16.0-1 [Ubuntu/jammy universe]
@@ -4401,8 +4401,8 @@ totem-plugins 42.0-1ubuntu1 [Ubuntu/jammy main]
 tox 3.21.4-1ubuntu1 [Ubuntu/jammy universe]
 tpm-udev 0.6 [Ubuntu/jammy main]
 tracker 3.3.0-1 [Ubuntu/jammy main]
-tracker-extract 3.3.3-0ubuntu0.20.04.1 [Ubuntu/jammy main]
-tracker-miner-fs 3.3.3-0ubuntu0.20.04.1 [Ubuntu/jammy main]
+tracker-extract 3.3.3-0ubuntu0.20.04.2 [Ubuntu/jammy main]
+tracker-miner-fs 3.3.3-0ubuntu0.20.04.2 [Ubuntu/jammy main]
 translate-shell 0.9.6.12-1 [Ubuntu/jammy multiverse]
 trash-cli 0.17.1.14-5build1 [Ubuntu/jammy universe]
 tree 2.0.2-1 [Ubuntu/jammy universe]
@@ -4652,7 +4652,7 @@ name: protonmail-bridge version: 3.8.1-1
 name: quarto version: 1.3.450
 name: shfmt version: 3.7.0-pacstall1
 name: signal-desktop version: 6.48.1
-name: thorium-browser version: 120.0.6099.235-1
+name: thorium-browser version: 121.0.6167.204-1
 name: wezterm version: 20230712-072601-f4abf8fd-pacstall1
 name: zoom version: 5.17.5.2543
 ```
@@ -4706,7 +4706,7 @@ git-cliff v2.0.4:
     git-cliff
     git-cliff-completions
     git-cliff-mangen
-gitui v0.25.0:
+gitui v0.25.1:
     gitui
 halp v0.1.7:
     halp
@@ -4737,7 +4737,7 @@ mdbook-toc v0.14.2:
     mdbook-toc
 menyoki v1.7.0:
     menyoki
-mise v2024.2.17:
+mise v2024.2.18:
     mise
 mprocs v0.6.4:
     mprocs
@@ -4884,7 +4884,7 @@ package npzviewer 0.2.0, installed using Python 3.12.2
 package pdfcropmargins 2.0.3, installed using Python 3.12.2
  - pdf-crop-margins
  - pdfcropmargins
-package poetry 1.7.1, installed using Python 3.12.2
+package poetry 1.8.0, installed using Python 3.12.2
  - poetry
 package pre-commit 3.6.2, installed using Python 3.12.2
  - pre-commit
