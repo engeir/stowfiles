@@ -1,5 +1,24 @@
 # Changelog
 
+## [1.9.3](https://github.com/engeir/stowfiles/compare/v1.9.2...v1.9.3) (2024-02-26)
+
+
+### Miscellaneous
+
+* **fish:** automatic stuff ([d99867d](https://github.com/engeir/stowfiles/commit/d99867ddeef5cf2c6bcb700d14c1457f206efeb5))
+* **helix:** add buffer move keymaps ([3a0d868](https://github.com/engeir/stowfiles/commit/3a0d8683736a90612136335a3251404c665594bb))
+* **helix:** add keymap to delete to EOL ([a469472](https://github.com/engeir/stowfiles/commit/a469472d0ced3c8d160917c0023aa95088978cd5))
+* **nvim:** add/remove plugins ([340ea76](https://github.com/engeir/stowfiles/commit/340ea7603577f4cb4085f01eb19cdf59c4f03e45))
+* **software:** update installed ([30c1d9f](https://github.com/engeir/stowfiles/commit/30c1d9f60a6f64a7c2dc05e8144203fb956840ad))
+* **software:** update installed ([ee6822b](https://github.com/engeir/stowfiles/commit/ee6822bbe3d3f1333e9727b8564941ed431ded82))
+* **software:** update installed ([17424b8](https://github.com/engeir/stowfiles/commit/17424b8284d0b60cef3ba9c623bfbc947a836bbf))
+* **software:** update installed ([9f0dcfd](https://github.com/engeir/stowfiles/commit/9f0dcfd4cc075bad4a16ad11949c6f27c3202393))
+
+
+### Code Refactoring
+
+* **pyenv:** remove pyenv ([fae343f](https://github.com/engeir/stowfiles/commit/fae343f81db53f9236b6bbf037b6473c3bae2f0b))
+
 ## [1.9.2](https://github.com/engeir/stowfiles/compare/v1.9.1...v1.9.2) (2024-02-20)
 
 
