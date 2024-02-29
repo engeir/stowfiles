@@ -1,3 +1,2 @@
 [env]
 _.source = "~/.config/zsh/exports.zsh"
-#_.source = ".envrc"
