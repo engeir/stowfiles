@@ -11,6 +11,7 @@ return {
         event = "VeryLazy",
         branch = "0.1.x",
         dependencies = {
+            "nvim-telescope/telescope-bibtex.nvim",
             "nvim-lua/plenary.nvim",
             { "nvim-telescope/telescope-fzf-native.nvim", build = "make" },
             "nvim-tree/nvim-web-devicons",
@@ -44,6 +45,7 @@ return {
             local telescope = require("telescope")
             local state = require("telescope.state")
             local action_state = require("telescope.actions.state")
+            local bibtex_actions = require("telescope-bibtex.actions")
 
             -- From https://github.com/nvim-telescope/telescope.nvim/issues/2602#issuecomment-1636809235
             local slow_scroll = function(prompt_bufnr, direction)
@@ -63,6 +65,9 @@ return {
                     generic_sorter = require("mini.fuzzy").get_telescope_sorter,
                     file_sorter = require("mini.fuzzy").get_telescope_sorter,
                     mappings = {
+                        i = {},
+                    },
+                    mappings = {
                         i = {
                             ["<esc>"] = actions.close,
                             ["<C-j>"] = function(bufnr)
@@ -75,6 +80,20 @@ return {
                             ["<C-b>"] = actions.results_scrolling_down,
                             ["<C-q>"] = actions.send_selected_to_qflist + actions.open_qflist,
                             ["<c-t>"] = trouble.open_with_trouble,
+                            -- Bibtex
+                            -- CR, C-c and C-e are already mapped
+                            -- <C-m>_ is a mark for the given format
+                            -- <C-r>_ is a reference for the given format
+                            ["<C-m>h"] = bibtex_actions.key_append([[^@%s]]),
+                            ["<C-r>h"] = bibtex_actions.citation_append(
+                                "[^@{{label}}]: {{author}}, '{{title}}', {{journal}}, {{year}}, vol. {{volume}}, no. {{number}}, p. {{pages}}."
+                            ),
+                            ["<C-m>r"] = bibtex_actions.citation_append(
+                                '<a href="https://doi.org/{{doi}}" data-citation-key="@{{label}}">{{author}} ({{year}})</a>'
+                            ),
+                            ["<C-r>r"] = bibtex_actions.citation_append(
+                                '<div class="csl-entry" id="ref-{{label}}" role="doc-biblioentry"> {{author}}, {{title}}, {{journal}}, {{year}}, vol. {{volume}}, no. {{number}}, p. {{pages}}.</div>'
+                            ),
                         },
                         n = { ["<c-t>"] = trouble.open_with_trouble },
                     },
@@ -115,22 +134,6 @@ return {
                         -- Fallback to global/directory .bib files if context not found
                         -- This setting has no effect if context = false
                         context_fallback = true,
-                        -- Custom format for HTML referencing
-                        custom_formats = {
-                            {
-                                id = "hackmd",
-                                citation_format = "[^@{{label}}]: {{author}}, '{{title}}', {{journal}}, {{year}}, vol. {{volume}}, no. {{number}}, p. {{pages}}.",
-                                cite_marker = "[^@%s]",
-                            },
-                            -- {
-                            --     id = "revealjs",
-                            --     cite_marker = '<a href="https://doi.org/{{doi}}" data-citation-key="@{{label}}">{{author}} ({{year}})</a>',
-                            --     citation_format = '<div class="csl-entry" id="ref-smith2010" role="doc-biblioentry"> {{author}}, {{title}}, {{journal}}, {{year}}, vol. {{volume}}, no. {{number}}, p. {{pages}}.</div>',
-                            -- },
-                        },
-                        format = "hackmd",
-                        citation_format = "{{author}}, '{{title}}', {{journal}}, {{year}}, vol. {{volume}}, no. {{number}}, p. {{pages}}.",
-                        -- citation_format = '<a href="https://doi.org/{{doi}}" data-citation-key="@{{label}}">{{author}} ({{year}})</a>',
                     },
                     media_files = {
                         -- filetypes whitelist
