@@ -47,6 +47,7 @@ run_updates() {
     echo_and_run mise self-update -y && echo_and_run mise up -y && echo_and_run mise prune -y
     echo_and_run python3 -m pip install --user --upgrade pipx
     echo_and_run pipx upgrade-all
+    echo_and_run tlmgr update --all
     # echo_and_run gup update
     # Single programs ------------------------------------------------------------------
     echo_and_run bob update --all
@@ -111,6 +112,7 @@ if [ "Mac" = "$machine" ]; then
     CARGO="$(cargo install --list)"
     PIPX="$(pipx list | sed '1,2d' | sed 's/^   //')"
     GO="$(cat ~/.default-go-packages)"
+    TEX="$(tlmgr list --only-installed)"
     echo "# Installed programs
 
 ## Brew
@@ -136,6 +138,12 @@ $PIPX
 \`\`\`txt
 $GO
 \`\`\`
+
+## Tex
+
+\`\`\`txt
+$TEX
+\`\`\`
     " >"./INSTALLED-mac.md"
     # Now, we print the diff between the previous installed programs and the currently
     # installed
@@ -152,6 +160,7 @@ if [ "Linux" = "$machine" ]; then
     CARGO="$(cargo install --list)"
     PIPX="$(pipx list | sed '1,2d' | sed 's/^\s\s\s//')"
     GO="$(cat ~/.default-go-packages)"
+    TEX="$(tlmgr list --only-installed)"
     FLAT="$(paste <(
         echo "Name"
         flatpak list --columns=name
@@ -193,6 +202,12 @@ $PIPX
 
 \`\`\`txt
 $GO
+\`\`\`
+
+## Tex
+
+\`\`\`txt
+$TEX
 \`\`\`
 
 ## Flatpak
