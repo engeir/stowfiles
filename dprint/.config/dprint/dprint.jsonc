@@ -64,6 +64,6 @@
         // "https://plugins.dprint.dev/disrupted/css-0.1.3.wasm"
         // "/Users/salomon/dev/dprint-plugin-css/target/wasm32-unknown-unknown/release/dprint_plugin_css.wasm"
         "https://plugins.dprint.dev/exec-0.4.4.json@c207bf9b9a4ee1f0ecb75c594f774924baf62e8e53a2ce9d873816a408cecbf7",
-        "https://plugins.dprint.dev/prettier-0.38.1.json@ae9b60b1ca7e22223cb47325b3d42c681444b46863d28ed92edc426f8a177e58"
+        "https://plugins.dprint.dev/prettier-0.39.0.json@896b70f29ef8213c1b0ba81a93cee9c2d4f39ac2194040313cd433906db7bc7c"
     ]
 }

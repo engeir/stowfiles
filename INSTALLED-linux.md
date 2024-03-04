@@ -3622,7 +3622,7 @@ mysql-server 8.0.36-0ubuntu0.22.04.1 [Ubuntu/jammy main]
 mysql-server-8.0 8.0.36-0ubuntu0.22.04.1 [Ubuntu/jammy main]
 mysql-server-core-8.0 8.0.36-0ubuntu0.22.04.1 [Ubuntu/jammy main]
 mythes-en-us 1:7.2.0-2 [Ubuntu/jammy main]
-nala 0.15.0 [local]
+nala 0.15.1 [local]
 nano 6.2-1 [Ubuntu/jammy main]
 nautilus 1:42.6-0ubuntu1 [Ubuntu/jammy main]
 nautilus-data 1:42.6-0ubuntu1 [Ubuntu/jammy main]
@@ -3783,7 +3783,7 @@ printer-driver-splix 2.0.0+svn315-7fakesync1ubuntu0.22.04.1 [Ubuntu/jammy main]
 procps 2:3.3.17-6ubuntu2.1 [Ubuntu/jammy main]
 proj-bin 8.2.1-1 [Ubuntu/jammy universe]
 proj-data 8.2.1-1 [Ubuntu/jammy universe]
-protonmail-bridge 3.8.1-1 [local]
+protonmail-bridge 3.9.1-1 [local]
 ps2eps 1.68+binaryfree-3 [Ubuntu/jammy universe]
 psmisc 23.4-2build3 [Ubuntu/jammy main]
 pstoedit 3.78-1 [Ubuntu/jammy universe]
@@ -4184,10 +4184,10 @@ quarto 1.3.450 [local]
 qutebrowser 2.5.0-1 [Ubuntu/jammy universe]
 qutebrowser-qtwebengine 2.5.0-1 [Ubuntu/jammy universe]
 qutebrowser-qtwebkit 2.5.0-1 [Ubuntu/jammy universe]
-r-base 4.3.2-1.2204.0 [CRAN/jammy-cran40 ]
-r-base-core 4.3.2-1.2204.0 [CRAN/jammy-cran40 ]
-r-base-dev 4.3.2-1.2204.0 [CRAN/jammy-cran40 ]
-r-base-html 4.3.2-1.2204.0 [CRAN/jammy-cran40 ]
+r-base 4.3.3-1.2204.0 [CRAN/jammy-cran40 ]
+r-base-core 4.3.3-1.2204.0 [CRAN/jammy-cran40 ]
+r-base-dev 4.3.3-1.2204.0 [CRAN/jammy-cran40 ]
+r-base-html 4.3.3-1.2204.0 [CRAN/jammy-cran40 ]
 r-cran-boot 1.3-28-2.2204.0 [CRAN/jammy-cran40 ]
 r-cran-class 7.3-22-2.2204.0 [CRAN/jammy-cran40 ]
 r-cran-cluster 2.1.6-1.2204.0 [CRAN/jammy-cran40 ]
@@ -4203,8 +4203,8 @@ r-cran-nnet 7.3-19-2.2204.0 [CRAN/jammy-cran40 ]
 r-cran-rpart 4.1.23-1.2204.0 [CRAN/jammy-cran40 ]
 r-cran-spatial 7.3-15-1.2204.0 [CRAN/jammy-cran40 ]
 r-cran-survival 3.5-7-1.2204.0 [CRAN/jammy-cran40 ]
-r-doc-html 4.3.2-1.2204.0 [CRAN/jammy-cran40 ]
-r-recommended 4.3.2-1.2204.0 [CRAN/jammy-cran40 ]
+r-doc-html 4.3.3-1.2204.0 [CRAN/jammy-cran40 ]
+r-recommended 4.3.3-1.2204.0 [CRAN/jammy-cran40 ]
 rake 13.0.6-2 [Ubuntu/jammy main]
 ranger 1.9.3-3ubuntu1 [Ubuntu/jammy universe]
 rclone 1.53.3-4ubuntu1.22.04.2 [Ubuntu/jammy universe]
@@ -4382,10 +4382,10 @@ thorium-browser 121.0.6167.204-1 [local]
 thunar 4.16.10-1 [Ubuntu/jammy universe]
 thunar-data 4.16.10-1 [Ubuntu/jammy universe]
 thunar-volman 4.16.0-1 [Ubuntu/jammy universe]
-thunderbird 1:115.6.0+build2-0ubuntu0.22.04.1 [Ubuntu/jammy main]
-thunderbird-gnome-support 1:115.6.0+build2-0ubuntu0.22.04.1 [Ubuntu/jammy main]
-thunderbird-locale-en 1:115.6.0+build2-0ubuntu0.22.04.1 [Ubuntu/jammy main]
-thunderbird-locale-en-us 1:115.6.0+build2-0ubuntu0.22.04.1 [Ubuntu/jammy main]
+thunderbird 1:115.8.1+build1-0ubuntu0.22.04.1 [Ubuntu/jammy main]
+thunderbird-gnome-support 1:115.8.1+build1-0ubuntu0.22.04.1 [Ubuntu/jammy main]
+thunderbird-locale-en 1:115.8.1+build1-0ubuntu0.22.04.1 [Ubuntu/jammy main]
+thunderbird-locale-en-us 1:115.8.1+build1-0ubuntu0.22.04.1 [Ubuntu/jammy main]
 time 1.9-0.1build2 [Ubuntu/jammy main]
 timer 1.2.0 [local]
 timgm6mb-soundfont 1.3-5 [Ubuntu/jammy universe]
@@ -4415,7 +4415,7 @@ ttf-bitstream-vera 1.10-8.2 [Ubuntu/jammy universe]
 ttf-mscorefonts-installer 3.8ubuntu2 [Ubuntu/jammy multiverse]
 tumbler 4.16.0-1 [Ubuntu/jammy universe]
 tumbler-common 4.16.0-1 [Ubuntu/jammy universe]
-tzdata 2023d-0ubuntu0.22.04 [Ubuntu/jammy main]
+tzdata 2024a-0ubuntu0.22.04 [Ubuntu/jammy main]
 ubuntu-advantage-desktop-daemon 1.10~22.04.1 [Ubuntu/jammy main]
 ubuntu-advantage-tools 29.4~22.04 [local]
 ubuntu-docs 22.04.5 [Ubuntu/jammy main]
@@ -4651,9 +4651,9 @@ name: bitwarden version: 2024.1.0
 name: btop version: 1.2.13-pacstall1
 name: google-chrome-stable version: 122.0.6261.94-1
 name: htop version: 3.2.2-pacstall1
-name: nala version: 0.15.0
+name: nala version: 0.15.1
 name: neofetch version: 7.1.0-pacstall1
-name: protonmail-bridge version: 3.8.1-1
+name: protonmail-bridge version: 3.9.1-1
 name: quarto version: 1.3.450
 name: shfmt version: 3.7.0-pacstall1
 name: signal-desktop version: 7.0.0
@@ -4709,7 +4709,7 @@ fd-find v9.0.0:
     fd
 ffsend v0.2.76:
     ffsend
-git-cliff v2.0.4:
+git-cliff v2.1.2:
     git-cliff
     git-cliff-completions
     git-cliff-mangen
@@ -4761,7 +4761,7 @@ porsmo v0.3.1:
 pueue v3.3.3:
     pueue
     pueued
-riffdiff v2.32.0:
+riffdiff v3.0.0:
     riff
 ripgrep v14.1.0:
     rg
@@ -4779,7 +4779,7 @@ speedtest-rs v0.1.5:
     speedtest-rs
 spotify-tui v0.25.0:
     spt
-spotify_player v0.16.3:
+spotify_player v0.17.0:
     spotify_player
 spotifyd v0.3.5:
     spotifyd
@@ -4852,7 +4852,7 @@ package ds-format 4.1.0, installed using Python 3.12.2
  - man1/ds-type.1
  - man1/ds-write.1
  - man1/ds.1
-package euporie 2.7.0, installed using Python 3.12.2
+package euporie 2.8.1, installed using Python 3.12.2
  - euporie
  - euporie-console
  - euporie-hub
@@ -4866,7 +4866,7 @@ package fonttools 4.49.0, installed using Python 3.12.2
  - pyftsubset
  - ttx
  - man1/ttx.1
-package globus-cli 3.25.0, installed using Python 3.12.2
+package globus-cli 3.26.0, installed using Python 3.12.2
  - globus
 package gorps 0.9.1, installed using Python 3.12.2
  - gorps
@@ -4886,7 +4886,7 @@ package jupyter-client 8.6.0, installed using Python 3.12.2
 package khal 0.11.3, installed using Python 3.12.2
  - ikhal
  - khal
-package nox 2023.4.22, installed using Python 3.12.2
+package nox 2024.3.2, installed using Python 3.12.2
  - nox
  - tox-to-nox
 package npzviewer 0.2.0, installed using Python 3.12.2
@@ -4894,7 +4894,7 @@ package npzviewer 0.2.0, installed using Python 3.12.2
 package pdfcropmargins 2.0.3, installed using Python 3.12.2
  - pdf-crop-margins
  - pdfcropmargins
-package poetry 1.8.1, installed using Python 3.12.2
+package poetry 1.8.2, installed using Python 3.12.2
  - poetry
 package pre-commit 3.6.2, installed using Python 3.12.2
  - pre-commit
@@ -4948,8 +4948,8 @@ ncspot                                  1.0.0                                   
 Freedesktop Platform                    22.08.21                                22.08
 Mesa                                    23.3.5                                  22.08
 Mesa (Extra)                            23.3.5                                  22.08-extra
-Mesa                                    23.3.4                                  23.08
-Mesa (Extra)                            23.3.4                                  23.08-extra
+Mesa                                    24.0.1                                  23.08
+Mesa (Extra)                            24.0.1                                  23.08-extra
 Intel                                                                           22.08
 Intel                                                                           23.08
 openh264                                2.1.0                                   2.0
@@ -4958,7 +4958,7 @@ Evolution                               3.50.4                                  
 GNOME Application Platform version 44                                           44
 GNOME Application Platform version 45                                           45
 Citations                               0.6.2                                   stable
-Pika Backup                             0.6.2                                   stable
+Small Mammal Collective                 0.7.0                                   stable
 Yaru-dark Gtk Theme                                                             3.22
 ```
 
