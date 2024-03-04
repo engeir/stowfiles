@@ -1,5 +1,7 @@
 return {
-    textLSP = {
-        language = "en-GB",
+    settings = {
+        textLSP = {
+            language = "en-GB",
+        },
     },
 }

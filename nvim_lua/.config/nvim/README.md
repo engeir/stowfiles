@@ -55,6 +55,7 @@ all plugins I'm using:
 - [luasnip-latex-snippets.nvim](https://github.com/iurimateus/luasnip-latex-snippets.nvim.git)
 - [LuaSnip](https://github.com/L3MON4D3/LuaSnip.git)
 - [mason-lspconfig.nvim](https://github.com/williamboman/mason-lspconfig.nvim.git)
+- [mason-tool-installer.nvim](https://github.com/WhoIsSethDaniel/mason-tool-installer.nvim.git)
 - [mason.nvim](https://github.com/williamboman/mason.nvim.git)
 - [mini.ai](https://github.com/echasnovski/mini.ai.git)
 - [mini.align](https://github.com/echasnovski/mini.align.git)
