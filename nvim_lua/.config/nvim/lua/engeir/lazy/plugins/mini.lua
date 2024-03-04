@@ -28,7 +28,7 @@ return {
             buffer = { suffix = "" },
             comment = { suffix = "" },
             conflict = { suffix = "" },
-            diagnostic = { suffix = "" },
+            -- diagnostic = { suffix = "" },
             file = { suffix = "" },
             indent = { suffix = "" },
             jump = { suffix = "" },

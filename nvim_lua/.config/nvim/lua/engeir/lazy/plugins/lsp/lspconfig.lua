@@ -57,6 +57,8 @@ return {
                 nmap("<leader>wl", function()
                     print(vim.inspect(vim.lsp.buf.list_workspace_folders()))
                 end, "[W]orkspace [L]ist Folders")
+                -- Diagnostic
+                nmap("<leader>dl", vim.diagnostic.setloclist, "[D]iagnostic Setloc[l]ist")
 
                 -- The following two autocommands are used to highlight references of the
                 -- word under your cursor when your cursor rests there for a little while.
@@ -92,34 +94,34 @@ return {
         capabilities = vim.tbl_deep_extend("force", capabilities, require("cmp_nvim_lsp").default_capabilities())
         -- TODO: Maybe include this, maybe not
 
-        -- local signs = {
-        --     { name = "DiagnosticSignError", text = "" },
-        --     { name = "DiagnosticSignWarn", text = "▲" },
-        --     { name = "DiagnosticSignHint", text = "󰈻" },
-        --     { name = "DiagnosticSignInfo", text = "" },
-        -- }
-        --
-        -- for _, sign in ipairs(signs) do
-        --     vim.fn.sign_define(sign.name, { texthl = sign.name, text = sign.text, numhl = "" })
-        -- end
-        -- local config = {
-        --     virtual_text = false, -- disable virtual text
-        --     signs = {
-        --         active = signs, -- show signs
-        --     },
-        --     update_in_insert = true,
-        --     underline = false,
-        --     severity_sort = true,
-        --     float = {
-        --         focusable = true,
-        --         style = "minimal",
-        --         -- border = "rounded",
-        --         source = "always",
-        --         -- header = "",
-        --         -- prefix = "",
-        --     },
-        -- }
-        -- vim.diagnostic.config(config)
+        local signs = {
+            { name = "DiagnosticSignError", text = "" },
+            { name = "DiagnosticSignWarn", text = "▲" },
+            { name = "DiagnosticSignHint", text = "󰈻" },
+            { name = "DiagnosticSignInfo", text = "" },
+        }
+
+        for _, sign in ipairs(signs) do
+            vim.fn.sign_define(sign.name, { texthl = sign.name, text = sign.text, numhl = "" })
+        end
+        local config = {
+            virtual_text = true, -- disable virtual text
+            signs = {
+                active = signs, -- show signs
+            },
+            update_in_insert = true,
+            underline = false,
+            severity_sort = true,
+            float = {
+                focusable = true,
+                style = "minimal",
+                -- border = "rounded",
+                source = "always",
+                -- header = "",
+                -- prefix = "",
+            },
+        }
+        vim.diagnostic.config(config)
 
         -- Enable the following language servers
         --  Feel free to add/remove any LSPs that you want here. They will automatically be installed.
