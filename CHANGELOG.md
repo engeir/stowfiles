@@ -1,5 +1,19 @@
 # Changelog
 
+## [1.10.0](https://github.com/engeir/stowfiles/compare/v1.9.3...v1.10.0) (2024-03-04)
+
+
+### Features
+
+* **nvim:** add custom mappings to control telescope -bibtex ([4958b45](https://github.com/engeir/stowfiles/commit/4958b45323ea88197d8bcacf1354c8c18d4f3a93))
+* **nvim:** update LSP config after the recent kickstart.nvim update ([4553a70](https://github.com/engeir/stowfiles/commit/4553a70b4f5186d4915ee1e99c96df9b13d525d1))
+
+
+### Miscellaneous
+
+* **software:** update installed ([0959b0d](https://github.com/engeir/stowfiles/commit/0959b0d474ce4d24bee92f5d6c9274b2f54d0056))
+* **software:** update installed ([acb2e30](https://github.com/engeir/stowfiles/commit/acb2e30b3d55983487dbd63c72c70333cc14f8eb))
+
 ## [1.9.3](https://github.com/engeir/stowfiles/compare/v1.9.2...v1.9.3) (2024-02-26)
 
 
