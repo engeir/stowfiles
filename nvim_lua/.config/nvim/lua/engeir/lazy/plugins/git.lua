@@ -11,6 +11,11 @@ return {
         dependencies = { "nvim-lua/plenary.nvim" },
         opts = {
             current_line_blame = true,
+            current_line_blame_opts = {
+                virt_text = true,
+                virt_text_pos = "right_align",
+                delay = 0,
+            },
             on_attach = function(bufnr)
                 local gs = package.loaded.gitsigns
 
