@@ -30,6 +30,8 @@ s.inccommand = "split" -- Adds a split when you do substitutions
 s.incsearch = true
 s.iskeyword:append("-")
 s.laststatus = 3 -- Always display the status line (0 for vim, 2 for lua... or something idk)
+s.list = true
+s.listchars = { tab = '» ', trail = '·', nbsp = '␣' }
 s.ma = true -- Modifiable on
 s.mouse = "a" -- Enable your mouse
 s.number = true

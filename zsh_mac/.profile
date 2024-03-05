@@ -72,3 +72,4 @@ if [[ $(uname) == "Linux" ]]; then
 fi
 
 . "$HOME/.cargo/env"
+. "$HOME/.local/share/rye/env"

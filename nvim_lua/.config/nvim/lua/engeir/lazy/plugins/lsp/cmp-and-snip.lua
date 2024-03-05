@@ -1,7 +1,7 @@
 return {
     {
         "hrsh7th/nvim-cmp",
-        event = { "InsertEnter", "BufReadPost" },
+        event = { "InsertEnter" },
         dependencies = {
             { "hrsh7th/cmp-buffer", event = { "BufReadPost" } },
             { "hrsh7th/cmp-path", event = { "BufReadPost" } },
@@ -19,6 +19,11 @@ return {
             local cmp = require("cmp")
             local luasnip = require("luasnip")
             local lspkind = require("lspkind")
+            local has_words_before = function()
+                local line, col = unpack(vim.api.nvim_win_get_cursor(0))
+                return col ~= 0
+                    and vim.api.nvim_buf_get_lines(0, line - 1, line, true)[1]:sub(col, col):match("%s") == nil
+            end
 
             -- default sources for all buffers
             -- sources = {
@@ -130,9 +135,11 @@ return {
                         },
                     }),
                 },
+                -- :h ins-completion
                 mapping = cmp.mapping.preset.insert({
-                    ["<C-f>"] = cmp.mapping.scroll_docs(-4), -- Up
-                    ["<C-d>"] = cmp.mapping.scroll_docs(4), -- Down
+                    ["<C-f>"] = cmp.mapping.scroll_docs(-4), -- Foreword
+                    ["<C-b>"] = cmp.mapping.scroll_docs(4), -- Backward
+                    -- ["<C-p>"] = cmp.mapping.select_prev_item(),
                     ["<C-p>"] = cmp.mapping(function(fallback)
                         if cmp.visible() then
                             cmp.select_prev_item()
@@ -142,6 +149,7 @@ return {
                             fallback()
                         end
                     end, { "i", "s" }),
+                    -- ["<C-n>"] = cmp.mapping.select_next_item(),
                     ["<C-n>"] = cmp.mapping(function(fallback)
                         if cmp.visible() then
                             cmp.select_next_item()
@@ -156,7 +164,16 @@ return {
                     ["<C-y>"] = cmp.mapping.confirm({ select = true }),
                     ["<C-e>"] = cmp.mapping.abort(),
                     ["<C-Space>"] = cmp.mapping.complete(),
-                    ["<CR>"] = cmp.mapping.confirm({ select = false }),
+                    -- ["<C-l>"] = cmp.mapping(function()
+                    --     if luasnip.expand_or_locally_jumpable() then
+                    --         luasnip.expand_or_jump()
+                    --     end
+                    -- end, { "i", "s" }),
+                    -- ["<C-h>"] = cmp.mapping(function()
+                    --     if luasnip.locally_jumpable(-1) then
+                    --         luasnip.jump(-1)
+                    --     end
+                    -- end, { "i", "s" }),
                 }),
                 sources = default_cmp_sources,
                 -- {
