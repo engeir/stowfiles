@@ -564,7 +564,7 @@ gftp 2.9.1~beta-1 [Ubuntu/jammy universe]
 gftp-common 2.9.1~beta-1 [Ubuntu/jammy universe]
 gftp-gtk 2.9.1~beta-1 [Ubuntu/jammy universe]
 gftp-text 2.9.1~beta-1 [Ubuntu/jammy universe]
-gh 2.44.1 [gh/stable main]
+gh 2.45.0 [gh/stable main]
 ghc 8.8.4-3 [Ubuntu/jammy universe]
 ghostscript 9.55.0~dfsg1-0ubuntu5.6 [Ubuntu/jammy main]
 ghostscript-x 9.55.0~dfsg1-0ubuntu5.6 [Ubuntu/jammy main]
@@ -709,7 +709,7 @@ gnuplot-data 5.4.2+dfsg2-2 [Ubuntu/jammy universe]
 gnuplot-qt 5.4.2+dfsg2-2 [Ubuntu/jammy universe]
 gobject-introspection 1.72.0-1 [Ubuntu/jammy main]
 golly 3.3-1build1 [Ubuntu/jammy universe]
-google-chrome-stable 122.0.6261.94-1 [Google/stable main]
+google-chrome-stable 122.0.6261.111-1 [Google/stable main]
 gperf 3.1-1build1 [Ubuntu/jammy universe]
 gpg 2.2.27-3ubuntu2.1 [Ubuntu/jammy main]
 gpg-agent 2.2.27-3ubuntu2.1 [Ubuntu/jammy main]
@@ -1246,8 +1246,8 @@ libdbusmenu-qt5-2 0.9.3+16.04.20160218-2build1 [Ubuntu/jammy universe]
 libdc1394-25 2.2.6-4 [Ubuntu/jammy universe]
 libdca0 0.0.7-2 [Ubuntu/jammy universe]
 libdconf1 0.40.0-3 [Ubuntu/jammy main]
-libde265-0 1.0.8-1ubuntu0.2 [Ubuntu/jammy universe]
-libde265-dev 1.0.8-1ubuntu0.2 [Ubuntu/jammy universe]
+libde265-0 1.0.8-1ubuntu0.3 [Ubuntu/jammy universe]
+libde265-dev 1.0.8-1ubuntu0.3 [Ubuntu/jammy universe]
 libdebconfclient0 0.261ubuntu1 [Ubuntu/jammy main]
 libdebhelper-perl 13.6ubuntu1 [Ubuntu/jammy main]
 libdebuginfod-common 0.186-1build1 [Ubuntu/jammy main]
@@ -1560,7 +1560,7 @@ libgirara-dev 0.3.7-1 [Ubuntu/jammy universe]
 libgirara-gtk3-3 0.3.7-1 [Ubuntu/jammy universe]
 libgirepository-1.0-1 1.72.0-1 [Ubuntu/jammy main]
 libgirepository1.0-dev 1.72.0-1 [Ubuntu/jammy main]
-libgit2-1.1 1.1.0+dfsg.1-4.1build1 [Ubuntu/jammy universe]
+libgit2-1.1 1.1.0+dfsg.1-4.1ubuntu0.1 [Ubuntu/jammy universe]
 libgivaro-dev 4.2.0-1 [Ubuntu/jammy universe]
 libgivaro9 4.2.0-1 [Ubuntu/jammy universe]
 libgjs0g 1.72.4-0ubuntu0.22.04.1 [local]
@@ -1639,8 +1639,8 @@ libgpg-error-dev 1.43-3 [Ubuntu/jammy main]
 libgpg-error-l10n 1.43-3 [Ubuntu/jammy main]
 libgpg-error0 1.43-3 [Ubuntu/jammy main]
 libgpg-error0:i386 1.43-3 [Ubuntu/jammy main]
-libgpgme11 1.16.0-1.2ubuntu4.1 [Ubuntu/jammy main]
-libgpgmepp6 1.16.0-1.2ubuntu4.1 [Ubuntu/jammy main]
+libgpgme11 1.16.0-1.2ubuntu4.1 [local]
+libgpgmepp6 1.16.0-1.2ubuntu4.1 [local]
 libgphoto2-6 2.5.27-1build2 [Ubuntu/jammy main]
 libgphoto2-6:i386 2.5.27-1build2 [Ubuntu/jammy main]
 libgphoto2-l10n 2.5.27-1build2 [Ubuntu/jammy main]
@@ -3852,7 +3852,7 @@ python3-compizconfig 1:0.9.14.1+22.04.20220820-0ubuntu1 [Ubuntu/jammy universe]
 python3-configobj 5.0.6-5 [Ubuntu/jammy main]
 python3-cov-core 1.15.0-3build1 [Ubuntu/jammy universe]
 python3-coverage 6.2+dfsg1-2build1 [Ubuntu/jammy universe]
-python3-cryptography 3.4.8-1ubuntu2.1 [Ubuntu/jammy main]
+python3-cryptography 3.4.8-1ubuntu2.2 [Ubuntu/jammy main]
 python3-cups 2.0.1-5build1 [Ubuntu/jammy main]
 python3-cupshelpers 1.5.16-0ubuntu3 [Ubuntu/jammy main]
 python3-cvxopt 1.2.7+dfsg-2build2 [Ubuntu/jammy universe]
@@ -4649,7 +4649,7 @@ zstd 1.4.8+dfsg-3build1 [Ubuntu/jammy main]
 name: batsignal version: 1.6.4-pacstall1
 name: bitwarden version: 2024.1.0
 name: btop version: 1.2.13-pacstall1
-name: google-chrome-stable version: 122.0.6261.94-1
+name: google-chrome-stable version: 122.0.6261.111-1
 name: htop version: 3.2.2-pacstall1
 name: nala version: 0.15.1
 name: neofetch version: 7.1.0-pacstall1
@@ -4669,7 +4669,7 @@ alacritty v0.13.1:
     alacritty
 atuin v18.0.2:
     atuin
-bacon v2.14.2:
+bacon v2.15.0:
     bacon
 bat v0.24.0:
     bat
@@ -4703,7 +4703,7 @@ du-dust v0.9.0:
     dust
 evcxr_jupyter v0.17.0:
     evcxr_jupyter
-eza v0.18.5:
+eza v0.18.6:
     eza
 fd-find v9.0.0:
     fd
@@ -4744,11 +4744,11 @@ mdbook-toc v0.14.2:
     mdbook-toc
 menyoki v1.7.0:
     menyoki
-mise v2024.2.19:
+mise v2024.3.1:
     mise
 mprocs v0.6.4:
     mprocs
-nu v0.90.1:
+nu v0.91.0:
     nu
 numbat-cli v1.10.1:
     numbat
@@ -5271,8 +5271,8 @@ ncspot                                  1.0.0                                   
 Freedesktop Platform                    22.08.21                                22.08
 Mesa                                    23.3.5                                  22.08
 Mesa (Extra)                            23.3.5                                  22.08-extra
-Mesa                                    24.0.1                                  23.08
-Mesa (Extra)                            24.0.1                                  23.08-extra
+Mesa                                    24.0.2                                  23.08
+Mesa (Extra)                            24.0.2                                  23.08-extra
 Intel                                                                           22.08
 Intel                                                                           23.08
 openh264                                2.1.0                                   2.0
@@ -5298,7 +5298,7 @@ core20                     20240111                    2182   latest/stable    c
 core22                     20240111                    1122   latest/stable    canonical**    base
 dotnet-sdk                 5.0.408                     167    5.0/stable       dotnetcore**   classic
 duf-utility                v0.6.0                      1      latest/stable    muesli         -
-firefox                    123.0-3                     3836   latest/stable/…  mozilla**      -
+firefox                    123.0.1-1                   3941   latest/stable/…  mozilla**      -
 gimp                       2.10.36                     428    latest/stable    snapcrafters*  -
 gnome-3-28-1804            3.28.0-19-g98f9e67.98f9e67  198    latest/stable    canonical**    -
 gnome-3-34-1804            0+git.3556cb3               93     latest/stable/…  canonical**    -
