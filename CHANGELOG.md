@@ -1,5 +1,17 @@
 # Changelog
 
+## [1.10.1](https://github.com/engeir/stowfiles/compare/v1.10.0...v1.10.1) (2024-03-06)
+
+
+### Miscellaneous
+
+* **mise:** always install the five latest python minor versions ([2c27bb8](https://github.com/engeir/stowfiles/commit/2c27bb8ea17f3c2f26721320296cfba2b3c506c1))
+* **nvim:** add back in custom diagnostics symbols ([ee33aa4](https://github.com/engeir/stowfiles/commit/ee33aa48d5dd2cbcbfe93f7e5a8e27d5c55b39dc))
+* **nvim:** esc in dressing-nvim.lua goes to vim mode instead of close ([a4f2076](https://github.com/engeir/stowfiles/commit/a4f2076309c58f593e9f07477ce5e7199c826dae))
+* **nvim:** improve gitsigns settings for current_line_blame ([95845f5](https://github.com/engeir/stowfiles/commit/95845f596b3cf37d901dcfc6b15ad3ecc175bc3b))
+* **nvim:** remove &lt;CR&gt; to accept cmp choice ([e2daa61](https://github.com/engeir/stowfiles/commit/e2daa618ca2ab3fc6f3d8f4b0a224a5a9114a4da))
+* **software:** add tex packages to list of installed software ([4ba25a7](https://github.com/engeir/stowfiles/commit/4ba25a79386eeff1bbbbe5fd19384b91ef223224))
+
 ## [1.10.0](https://github.com/engeir/stowfiles/compare/v1.9.3...v1.10.0) (2024-03-04)
 
 
