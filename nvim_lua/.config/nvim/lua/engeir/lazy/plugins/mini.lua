@@ -42,6 +42,13 @@ return {
         },
     },
 
+    -- mini.bufremove ------------------------------------------------------------------
+    {
+        "echasnovski/mini.bufremove",
+        event = { "BufReadPre", "BufNewFile" },
+        config = true,
+    },
+
     -- mini.clue -----------------------------------------------------------------------
     {
         "echasnovski/mini.clue",

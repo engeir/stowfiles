@@ -137,8 +137,8 @@ return {
                 },
                 -- :h ins-completion
                 mapping = cmp.mapping.preset.insert({
-                    ["<C-f>"] = cmp.mapping.scroll_docs(-4), -- Foreword
-                    ["<C-b>"] = cmp.mapping.scroll_docs(4), -- Backward
+                    ["<C-f>"] = cmp.mapping.scroll_docs(4), -- Forward
+                    ["<C-b>"] = cmp.mapping.scroll_docs(-4), -- Backward
                     -- ["<C-p>"] = cmp.mapping.select_prev_item(),
                     ["<C-p>"] = cmp.mapping(function(fallback)
                         if cmp.visible() then

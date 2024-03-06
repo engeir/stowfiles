@@ -60,6 +60,7 @@ all plugins I'm using:
 - [mini.ai](https://github.com/echasnovski/mini.ai.git)
 - [mini.align](https://github.com/echasnovski/mini.align.git)
 - [mini.bracketed](https://github.com/echasnovski/mini.bracketed.git)
+- [mini.bufremove](https://github.com/echasnovski/mini.bufremove.git)
 - [mini.colors](https://github.com/echasnovski/mini.colors.git)
 - [mini.cursorword](https://github.com/echasnovski/mini.cursorword.git)
 - [mini.files](https://github.com/echasnovski/mini.files.git)
