@@ -1,15 +1,16 @@
 return {
     {
         "3rd/image.nvim",
-        enabled = false,
+        enabled = true,
+        build = "luarocks --local --lua-version=5.1 install magick",
+        event = "BufReadPre",
         init = function()
             -- For image.nvim
-            package.path = package.path .. ";~/.luarocks/share/lua/5.1/?/init.lua;"
-            package.path = package.path .. ";~/.luarocks/share/lua/5.1/magick/init.lua;"
-            package.path = package.path .. ";~/.luarocks/share/lua/5.1/magick/;"
+            package.path = package.path .. ";" .. vim.fn.expand("$HOME") .. "/.luarocks.share/lua/5.1/?/init.lua;"
+            package.path = package.path .. ";" .. vim.fn.expand("$HOME") .. "/.luarocks/share/lua/5.1/?/init.lua;"
+            package.path = package.path .. ";" .. vim.fn.expand("$HOME") .. "/.luarocks/share/lua/5.1/?.lua;"
         end,
         config = function()
-            -- default config
             require("image").setup({
                 backend = "ueberzug",
                 integrations = {
@@ -18,7 +19,7 @@ return {
                         sizing_strategy = "auto",
                         download_remote_images = true,
                         clear_in_insert_mode = false,
-                        only_render_image_at_cursor = false,
+                        only_render_image_at_cursor = true,
                     },
                     neorg = {
                         enabled = false,
@@ -27,14 +28,14 @@ return {
                         only_render_image_at_cursor = false,
                     },
                 },
-                editor_only_render_when_focused = false, -- auto show/hide images when the editor gains/looses focus
+                editor_only_render_when_focused = true, -- auto show/hide images when the editor gains/looses focus
                 hijack_file_patterns = { "*.png", "*.jpg", "*.jpeg", "*.gif", "*.webp" }, -- render image files as images when opened
                 max_height = nil,
                 max_height_window_percentage = 50,
                 max_width = nil,
                 max_width_window_percentage = nil,
-                tmux_show_only_in_active_window = false, -- auto show/hide images in the correct Tmux window (needs visual-activity off)
-                window_overlap_clear_enabled = false, -- toggles images when windows are overlapped
+                tmux_show_only_in_active_window = true, -- auto show/hide images in the correct Tmux window (needs visual-activity off)
+                window_overlap_clear_enabled = true, -- toggles images when windows are overlapped
                 window_overlap_clear_ft_ignore = { "cmp_menu", "cmp_docs", "" },
             })
         end,

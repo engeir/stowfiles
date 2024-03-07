@@ -47,6 +47,7 @@ all plugins I'm using:
 - [harpoon](https://github.com/ThePrimeagen/harpoon.git)
 - [hawtkeys.nvim](https://github.com/tris203/hawtkeys.nvim.git)
 - [hydra.nvim](https://github.com/anuvyklack/hydra.nvim.git)
+- [image.nvim](https://github.com/3rd/image.nvim.git)
 - [jfind.nvim](https://github.com/jake-stewart/jfind.nvim.git)
 - [lazy.nvim](https://github.com/folke/lazy.nvim.git)
 - [lazygit.nvim](https://github.com/kdheepak/lazygit.nvim.git)
