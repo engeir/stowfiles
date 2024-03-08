@@ -6,7 +6,7 @@ end
 
 LAZY_PLUGINS = function()
     for _, value in pairs(require("lazy").plugins()) do
-        print("[" .. value.name .. "](" .. value.url .. ")")
+        print("- [" .. value.name .. "](" .. value.url .. ")")
     end
 end
 PACKER_PLUGINS = function()

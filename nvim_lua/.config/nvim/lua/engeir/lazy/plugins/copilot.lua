@@ -1,13 +1,14 @@
 return {
     {
         "zbirenbaum/copilot.lua",
-        enabled = false,
+        enabled = true,
         cmd = "Copilot",
         event = "InsertEnter",
         config = function()
             require("copilot").setup({
+                filetypes = { markdown = true },
                 panel = {
-                    enabled = true,
+                    enabled = false,
                     auto_refresh = true,
                     keymap = {
                         jump_prev = "[[",
@@ -17,11 +18,12 @@ return {
                         open = "<M-CR>",
                     },
                     layout = {
-                        position = "bottom", -- | top | left | right
+                        position = "right", -- | bottom | top | left | right
                         ratio = 0.4,
                     },
                 },
                 suggestion = {
+                    enabled = true,
                     autotrigger = true,
                     keymap = {
                         next = "<M-k>",
@@ -31,5 +33,12 @@ return {
             })
         end,
     },
-    { "github/copilot.vim", enabled = true, event = "InsertEnter" },
+    { "github/copilot.vim", enabled = false, event = "InsertEnter" },
+    {
+        "zbirenbaum/copilot-cmp",
+        enabled = true,
+        config = function()
+            require("copilot_cmp").setup()
+        end,
+    },
 }

@@ -10,6 +10,7 @@ return {
             { "saadparwaiz1/cmp_luasnip", event = { "BufReadPost" } },
             { "hrsh7th/cmp-nvim-lua", event = { "BufReadPost" } },
             { "hrsh7th/cmp-calc", event = { "BufReadPost" } },
+            { "zbirenbaum/copilot-cmp", event = { "InsertEnter" } },
             -- Icons for the LSP cmp view
             { "onsails/lspkind.nvim", event = { "BufReadPost" } },
             -- Latex supersupport
@@ -50,6 +51,7 @@ return {
             local default_cmp_sources = cmp.config.sources({
                 { name = "calc" },
                 -- { name = "vimtex" },
+                { name = "copilot" },
                 { name = "nvim_lsp" },
                 { name = "nvim_lsp_signature_help" },
                 { name = "nvim_lua" },
@@ -119,7 +121,10 @@ return {
                         mode = "symbol_text",
                         maxwidth = 50,
                         ellipsis_char = "...",
-                        symbol_map = { Codeium = "" },
+                        symbol_map = {
+                            Copilot = "",
+                            Codeium = "",
+                        },
                         menu = {
                             buffer = "[buf]",
                             nvim_lsp = "[LSP]",
@@ -130,6 +135,7 @@ return {
                             tn = "[TabNine]",
                             eruby = "[erb]",
                             codeium = "[ai]",
+                            copilot = "[ai]",
                             -- vimtex = vim_item.menu,
                             vimtex = "[Vimtex]",
                         },
@@ -195,6 +201,7 @@ return {
                     ghost_text = true,
                 },
             }
+            vim.api.nvim_set_hl(0, "CmpItemKindCopilot", { fg = "#6CC644" })
             cmp.setup(opts)
             cmp.setup.cmdline({ "/", "?" }, {
                 mapping = cmp.mapping.preset.cmdline(),

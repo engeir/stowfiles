@@ -31,8 +31,8 @@ return {
                 editor_only_render_when_focused = true, -- auto show/hide images when the editor gains/looses focus
                 hijack_file_patterns = { "*.png", "*.jpg", "*.jpeg", "*.gif", "*.webp" }, -- render image files as images when opened
                 max_height = nil,
-                max_height_window_percentage = 50,
-                max_width = nil,
+                max_height_window_percentage = 40,
+                max_width = 87,
                 max_width_window_percentage = nil,
                 tmux_show_only_in_active_window = true, -- auto show/hide images in the correct Tmux window (needs visual-activity off)
                 window_overlap_clear_enabled = true, -- toggles images when windows are overlapped
