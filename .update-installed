@@ -110,6 +110,8 @@ done
 if [ "Mac" = "$machine" ]; then
     # Let us first make a copy of the current installed programs into a tmp directory
     cp ./INSTALLED-mac.md /tmp/INSTALLED-mac.md
+    # TODO: consider using `brew bundle dump --force` to get a Brewfile, or `brew
+    # leaves` to get a list of top-level packages installed by brew (not dependencies)
     BREW="$(brew list --versions)"
     CARGO="$(cargo install --list)"
     PIPX="$(pipx list | sed '1,2d' | sed 's/^   //')"

@@ -1072,7 +1072,7 @@ libbusiness-isbn-perl 3.006-1 [Ubuntu/jammy universe]
 libbz2-1.0 1.0.8-5build1 [Ubuntu/jammy main]
 libbz2-1.0:i386 1.0.8-5build1 [Ubuntu/jammy main]
 libbz2-dev 1.0.8-5build1 [Ubuntu/jammy main]
-libc-ares2 1.18.1-1ubuntu0.22.04.2 [Ubuntu/jammy main]
+libc-ares2 1.18.1-1ubuntu0.22.04.3 [Ubuntu/jammy main]
 libc-bin 2.35-0ubuntu3.6 [Ubuntu/jammy main]
 libc-dev-bin 2.35-0ubuntu3.6 [Ubuntu/jammy main]
 libc6 2.35-0ubuntu3.6 [Ubuntu/jammy main]
@@ -4279,7 +4279,7 @@ shellcheck 0.8.0-2 [Ubuntu/jammy universe]
 shfmt 3.7.0-pacstall1 [local]
 shfmt-bin 3.4.3-1 [local]
 shim-signed 1.51.3+15.7-0ubuntu1 [Ubuntu/jammy main]
-signal-desktop 7.0.0 [. xenial/xenial main]
+signal-desktop 7.1.1 [. xenial/xenial main]
 signon-plugin-oauth2 0.25-2 [Ubuntu/jammy universe]
 silversearcher-ag 2.2.0+git20200805-1 [Ubuntu/jammy universe]
 simple-scan 42.0-1 [Ubuntu/jammy main]
@@ -4656,7 +4656,7 @@ name: neofetch version: 7.1.0-pacstall1
 name: protonmail-bridge version: 3.9.1-1
 name: quarto version: 1.3.450
 name: shfmt version: 3.7.0-pacstall1
-name: signal-desktop version: 7.0.0
+name: signal-desktop version: 7.1.1
 name: thorium-browser version: 121.0.6167.204-1
 name: wezterm version: 20230712-072601-f4abf8fd-pacstall1
 name: zoom version: 5.17.10.3512
@@ -5314,7 +5314,7 @@ mojave-themes              2020-03-24-35-g2aecfbf      2      latest/stable    g
 notable                    1.8.4-2                     3      latest/stable    spampinabio    classic
 pdftk                      2.02-4                      9      latest/stable    smoser         -
 procs                      v0.13.0                     969    latest/stable    dalance        -
-snapd                      2.61.1                      20671  latest/stable    canonical**    snapd
+snapd                      2.61.2                      21184  latest/stable    canonical**    snapd
 snapd-desktop-integration  0.9                         83     latest/stable/…  canonical**    -
 spt                        0.25.0                      289    latest/stable    popey          -
 vlc                        3.0.19                      3721   latest/stable    videolan**     -
