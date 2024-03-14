@@ -1,5 +1,38 @@
 # Changelog
 
+## [1.11.0](https://github.com/engeir/stowfiles/compare/v1.10.1...v1.11.0) (2024-03-14)
+
+
+### Features
+
+* **nvim:** add mini.bufremove ([2005b23](https://github.com/engeir/stowfiles/commit/2005b23d5688a6093632e1b4a571089bc5c2e86b))
+* **nvim:** finally make 3rd/image.nvim work ([b8b1519](https://github.com/engeir/stowfiles/commit/b8b1519966235140a61cb8def776a7389c4859d2))
+* **software:** adds a reinstall script that installs from INSTALLED-&lt;machine&gt;.md ([5d6617f](https://github.com/engeir/stowfiles/commit/5d6617fcf54dc87f6d219734fbc8802d5e5c857c))
+
+
+### Miscellaneous
+
+* **fish:** update plugins ([a48e3bc](https://github.com/engeir/stowfiles/commit/a48e3bcbd31cfa214bca6fd673aeaca51dcbbcce))
+* **mise:** add ruby as an installed global ([f4f6487](https://github.com/engeir/stowfiles/commit/f4f648716796dda6828847067d3756830d160908))
+* **nnn:** use custom preview-tui2 plugin ([2432378](https://github.com/engeir/stowfiles/commit/2432378548daa55375de1860c6f84aa1e8201db5))
+* **nvim:** add base16 plugin ([9e56450](https://github.com/engeir/stowfiles/commit/9e56450aca9d0256b2960fb0230ce68d8413b045))
+* **nvim:** add vim-markdown-toc plugin ([9e56450](https://github.com/engeir/stowfiles/commit/9e56450aca9d0256b2960fb0230ce68d8413b045))
+* **nvim:** small adjustment of image.nvim config ([a06ca5f](https://github.com/engeir/stowfiles/commit/a06ca5f27c8cea4bb742e1f7de76ea27743c6e94))
+* **nvim:** small changes ([9e56450](https://github.com/engeir/stowfiles/commit/9e56450aca9d0256b2960fb0230ce68d8413b045))
+* **nvim:** swap scroll direction in cmp preview windows ([2005b23](https://github.com/engeir/stowfiles/commit/2005b23d5688a6093632e1b4a571089bc5c2e86b))
+* **software:** update installed ([b4bc755](https://github.com/engeir/stowfiles/commit/b4bc755e2c3fe1ca47a2936d9559c7289f5ede9c))
+
+
+### Styles
+
+* **nvim:** format lua code ([2005b23](https://github.com/engeir/stowfiles/commit/2005b23d5688a6093632e1b4a571089bc5c2e86b))
+* **zsh:** format ([2432378](https://github.com/engeir/stowfiles/commit/2432378548daa55375de1860c6f84aa1e8201db5))
+
+
+### Code Refactoring
+
+* **nvim:** use copilot.lua over .vim, and cmp add-on ([a06ca5f](https://github.com/engeir/stowfiles/commit/a06ca5f27c8cea4bb742e1f7de76ea27743c6e94))
+
 ## [1.10.1](https://github.com/engeir/stowfiles/compare/v1.10.0...v1.10.1) (2024-03-06)
 
 
