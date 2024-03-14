@@ -4,15 +4,16 @@ export PATH="${PATH}:${HOME}/.local/bin:$HOME/bin"
 # export PATH=/usr/local/bin:$HOME/scripts:$HOME/.local/bin:$HOME/bin:$PATH
 export NODE_PATH='/usr/local/lib/node_modules'
 # export PATH="$HOME/.poetry/bin:$PATH"
-export PATH="/Applications/ConTeXtStandalone/tex/texmf-osx-64/bin:$PATH"  # ConTeXt path
+export PATH="/Applications/ConTeXtStandalone/tex/texmf-osx-64/bin:$PATH" # ConTeXt path
 export PATH="$PATH:$HOME/.cabal/bin/"
 
 export EDITOR=nvim
 export VISUAL=nvim
 export TERMINAL="alacritty"
-export TERM=screen-256color  # Needed for italics to work in tmux
-export PAGER=less  # Suggested at https://github.com/jarun/nnn/wiki/Advanced-use-cases#pager-as-opener
-LESSOPEN="|/usr/local/bin/lesspipe.sh %s"; export LESSOPEN
+export TERM=screen-256color # Needed for italics to work in tmux
+export PAGER=less           # Suggested at https://github.com/jarun/nnn/wiki/Advanced-use-cases#pager-as-opener
+LESSOPEN="|/usr/local/bin/lesspipe.sh %s"
+export LESSOPEN
 export MANPAGER="sh -c 'col -bx | bat -l man -p'"
 export BAT_PAGER="less -R"
 export LESS='-Ri '
@@ -27,10 +28,11 @@ export NNN_FCOLORS="$BLK$CHR$DIR$EXE$REG$HARDLINK$SYMLINK$MISSING$ORPHAN$FIFO$SO
 export NNN_FIFO=/tmp/nnn.fifo nnn
 export NNN_TRASH=1
 export NNN_TERMINAL="wezterm"
+# export NNN_OPENER="/home/een023/bin/xdg-open-awsm"
 if [[ $(uname) == "Darwin" ]]; then
     source "$HOME/.config/zsh/mac-specific.zsh"
 fi
-if [[ $(uname) == "Ubuntu" ]]; then
+if [[ "$(uname)" == "Ubuntu" || "$(uname)" == "Linux" ]]; then
     source "$HOME/.config/zsh/linux-specific.zsh"
 fi
 
