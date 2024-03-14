@@ -3,6 +3,7 @@ if status is-interactive
     starship init fish | source
     atuin init fish | source
     mise activate fish | source
+    source ~/.config/fish/conf.d/forgit.plugin.fish
     set -g fish_key_bindings fish_vi_key_bindings
     set fish_cursor_default block
     set fish_cursor_insert line

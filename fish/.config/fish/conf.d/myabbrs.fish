@@ -164,4 +164,4 @@ abbr -a -- gwtrm 'git worktree remove'
 abbr -a -- gwtulo 'git worktree unlock'
 abbr -a -- gmr 'git push origin (__git.current_branch) --set-upstream -o merge_request.create'
 abbr -a -- gmwps 'git push origin (__git.current_branch) --set-upstream -o merge_request.create -o merge_request.merge_when_pipeline_succeeds'
-abbr -a -- ga forgit::add
+# abbr -a -- ga forgit::add
