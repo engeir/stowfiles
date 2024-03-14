@@ -1,5 +1,21 @@
 #!/usr/bin/env bash
 
+usage() {
+    echo "Usage: $0 <package-manager>"
+    echo "Supported package managers:"
+    echo "  tlmgr"
+    echo "  cargo"
+    echo "  pipx"
+    echo "  apt"
+    echo "  pacstall"
+    echo "  go"
+    echo "  flatpak"
+    echo "  snap"
+    exit 0
+}
+# If -h or --help is passed as an argument, print usage and exit
+[[ $1 == "-h" || $1 == "--help" ]] && usage
+[[ $# -eq 0 ]] && usage
 # Check if an accepted language package provider is used as first argument
 run-installer() {
     echo "No installer has been set up yet."
