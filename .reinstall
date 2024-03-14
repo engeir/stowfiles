@@ -1,0 +1,48 @@
+#!/usr/bin/env bash
+
+# Check if an accepted language package provider is used as first argument
+run-installer() {
+    echo "No installer has been set up yet."
+}
+case "$1" in
+    "tlmgr")
+        run-installer() {
+            tlmgr-install
+        }
+        ;;
+    "cargo") ;;
+    "pipx") ;;
+    "apt") ;;
+    "pacstall") ;;
+    "go") ;;
+    "flatpak") ;;
+    "snap") ;;
+    *)
+        exit 0
+        ;;
+esac
+unameOut="$(uname -s)"
+case "$unameOut" in
+    Linux*) file=INSTALLED-linux.md ;;
+    Darwin*) file=INSTALLED-mac.md ;;
+    *)
+        echo "No INSTALLED file for $unameOut"
+        exit 0
+        ;;
+esac
+
+list="$(sed -n '/^```txt {'"$1"'}/,/^```/ p' <"$file" | sed '/^```/ d')"
+tlmgr-install() {
+    # Do shit
+    present="$(tlmgr list --only-installed)"
+    not_installed="$(diff <(echo "$list") <(echo "$present") | grep -E '^<' | sed 's/^< //')"
+    # Check if list is empty
+    [[ -z $not_installed ]] && exit 0
+    # Loop over each line of the list
+    while IFS= read -r line; do
+        package="$(echo "$line" | awk '{print $2}' | sed 's/://')"
+        echo "Installing $package"
+        tlmgr install "$package"
+    done <<<"$not_installed"
+}
+run-installer

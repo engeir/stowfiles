@@ -121,31 +121,31 @@ if [ "Mac" = "$machine" ]; then
 
 ## Brew
 
-\`\`\`txt
+\`\`\`txt {brew}
 $BREW
 \`\`\`
 
 ## Cargo
 
-\`\`\`txt
+\`\`\`txt {cargo}
 $CARGO
 \`\`\`
 
 ## Pipx
 
-\`\`\`txt
+\`\`\`txt {pipx}
 $PIPX
 \`\`\`
 
 ## Go
 
-\`\`\`txt
+\`\`\`txt {go}
 $GO
 \`\`\`
 
 ## Tex
 
-\`\`\`txt
+\`\`\`txt {tlmgr}
 $TEX
 \`\`\`
     " >"./INSTALLED-mac.md"
@@ -180,49 +180,49 @@ if [ "Linux" = "$machine" ]; then
 
 ## Apt
 
-\`\`\`txt
+\`\`\`txt {apt}
 $APT
 \`\`\`
 
 ## Pacstall
 
-\`\`\`txt
+\`\`\`txt {pacstall}
 $PACSTALL
 \`\`\`
 
 ## Cargo
 
-\`\`\`txt
+\`\`\`txt {cargo}
 $CARGO
 \`\`\`
 
 ## Pipx
 
-\`\`\`txt
+\`\`\`txt {pipx}
 $PIPX
 \`\`\`
 
 ## Go
 
-\`\`\`txt
+\`\`\`txt {go}
 $GO
 \`\`\`
 
 ## Tex
 
-\`\`\`txt
+\`\`\`txt {tlmgr}
 $TEX
 \`\`\`
 
 ## Flatpak
 
-\`\`\`txt
+\`\`\`txt {flatpak}
 $FLAT
 \`\`\`
 
 ## Snap
 
-\`\`\`txt
+\`\`\`txt {snap}
 $SNAP
 \`\`\`
     " >"./INSTALLED-linux.md"
