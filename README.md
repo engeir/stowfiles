@@ -27,7 +27,7 @@ NVIM_APPNAME=engeir/stowfiles/nvim_lua/.config/nvim nvim --headless +Lazy! sync 
 NVIM_APPNAME=engeir/stowfiles/nvim_lua/.config/nvim nvim
 ```
 
-## Install
+## Config installation
 
 > Uses [GNU Stow](http://www.gnu.org/software/stow/).
 
@@ -47,10 +47,28 @@ stow -D nvim_lua
 ...
 ```
 
-## Other
+## Program installation
 
 A list of packages and binaries installed on my Linux machine is found in
 [INSTALLED-linux.md](./INSTALLED-linux.md).
 
 A list of packages and binaries installed on my Mac machine is found in
 [INSTALLED-mac.md](./INSTALLED-mac.md).
+
+### Auto update
+
+The script [`.update-installed`](./.update-installed) can be used to update the
+installed packages and binaries listed in the `INSTALLED-<machine>.md` files.
+
+```bash
+.update-installed -h
+```
+
+### Re-install
+
+If you want to (re-)install a program that is listed in the `INSTALLED-<machine>.md`
+files, this can be done using the [`.reinstall`](./.reinstall) script.
+
+```bash
+.reinstall -h
+```
