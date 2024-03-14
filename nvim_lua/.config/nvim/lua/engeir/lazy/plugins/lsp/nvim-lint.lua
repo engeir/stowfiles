@@ -10,7 +10,7 @@ return {
             json = { "jsonlint" },
             markdown = { "markdownlint" }, -- vale is run via lsp (vale_ls)
             python = { "mypy" }, -- ruff is run via lsp, don't need it here
-            rst = { "rstcheck" },
+            -- rst = { "rstcheck" },  -- rstcheck doesn't seem to work
             sh = { "shellcheck" },
             -- tex = { "chktex" },
             zsh = { "shellcheck" },

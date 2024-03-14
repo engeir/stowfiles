@@ -19,6 +19,9 @@ return {
     -- mini.align ----------------------------------------------------------------------
     { "echasnovski/mini.align", config = true, event = { "BufReadPre", "BufNewFile" } },
 
+    -- mini.base16 ---------------------------------------------------------------------
+    { "echasnovski/mini.base16", event = { "VimEnter" } },
+
     -- mini.bracketed ------------------------------------------------------------------
     {
         "echasnovski/mini.bracketed",
@@ -124,7 +127,7 @@ return {
         end,
     },
     -- mini.colors ---------------------------------------------------------------------
-    { "echasnovski/mini.colors", cofig = true },
+    { "echasnovski/mini.colors", version = "*", cofig = true, event = { "VimEnter" } },
 
     -- mini.comment --------------------------------------------------------------------
     {
@@ -181,12 +184,11 @@ return {
     -- https://github.com/nvim-telescope/telescope.nvim#sorters
     { "echasnovski/mini.fuzzy", config = true },
 
-    -- mini.pairs ----------------------------------------------------------------------
+    -- mini.hues -----------------------------------------------------------------------
     {
-        "echasnovski/mini.pairs",
+        "echasnovski/mini.hues",
         enabled = false,
-        event = { "InsertEnter", "CmdlineEnter" },
-        config = true,
+        opts = { background = "#002734", foreground = "#c0c8cc", saturation = "low" },
     },
 
     -- mini.indentscope ----------------------------------------------------------------
@@ -226,6 +228,14 @@ return {
 
     -- mini.operators ------------------------------------------------------------------
     { "echasnovski/mini.operators", event = { "BufReadPre", "BufNewFile" }, config = true },
+
+    -- mini.pairs ----------------------------------------------------------------------
+    {
+        "echasnovski/mini.pairs",
+        enabled = false,
+        event = { "InsertEnter", "CmdlineEnter" },
+        config = true,
+    },
 
     -- mini.splitjoin ------------------------------------------------------------------
     { "echasnovski/mini.splitjoin", config = true },

@@ -109,6 +109,9 @@ return {
                     },
                 },
                 pickers = {
+                    colorscheme = {
+                        enable_preview = true,
+                    },
                     grep_string = {
                         -- theme = "dropdown",
                         layout_strategy = "vertical",

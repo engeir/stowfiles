@@ -49,18 +49,18 @@ return {
                 end
             end
             local default_cmp_sources = cmp.config.sources({
+                { name = "gh_issues" },
                 { name = "calc" },
-                -- { name = "vimtex" },
+                { name = "path" },
+                { name = "buffer", keyword_length = 4 },
                 { name = "copilot" },
                 { name = "nvim_lsp" },
                 { name = "nvim_lsp_signature_help" },
                 { name = "nvim_lua" },
                 { name = "luasnip" },
             }, {
-                { name = "path" },
-                { name = "gh_issues" },
-                { name = "buffer", keyword_length = 4 },
                 { name = "codeium" },
+                { name = "vimtex" },
             })
             -- If a file is too large, I don't want to add to it's cmp sources treesitter, see:
             -- https://github.com/hrsh7th/nvim-cmp/issues/1522
