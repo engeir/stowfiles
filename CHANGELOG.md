@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.11.1](https://github.com/engeir/stowfiles/compare/v1.11.0...v1.11.1) (2024-03-14)
+
+
+### Documentation
+
+* **software:** add usage string to reinstall script ([87ec021](https://github.com/engeir/stowfiles/commit/87ec021eb28be3990be81805cbec67fc117a0db2))
+
 ## [1.11.0](https://github.com/engeir/stowfiles/compare/v1.10.1...v1.11.0) (2024-03-14)
 
 
