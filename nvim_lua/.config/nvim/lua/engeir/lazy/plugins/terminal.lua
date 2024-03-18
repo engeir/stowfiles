@@ -28,7 +28,12 @@ return {
             )
             keymap("n", "<leader>pv", ":FloatermNew --wintype=float --position=right --autoclose=2 nnn -dH<CR>", opts)
             keymap("n", "<leader>H", ":/%%<CR>VN", opts)
-            keymap("v", "<C-r>", ":'<,'>FloatermSend <CR>", {desc = "Run visual select in Floaterm" })
+            keymap(
+                "v",
+                "<C-r>",
+                ":'<,'>FloatermSend <CR>",
+                { desc = "Run visual select in Floaterm", noremap = true, silent = true }
+            )
             keymap(
                 "n",
                 "<leader>tr",

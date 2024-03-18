@@ -227,7 +227,15 @@ return {
     -- require("mini.jump").setup({ delay = { highlight = 10 ^ 7 } })
 
     -- mini.operators ------------------------------------------------------------------
-    { "echasnovski/mini.operators", event = { "BufReadPre", "BufNewFile" }, config = true },
+    {
+        "echasnovski/mini.operators",
+        event = { "BufReadPre", "BufNewFile" },
+        opts = {
+            exchange = { prefix = "" },
+            multiply = { prefix = "" },
+            replace = { prefix = "" },
+        },
+    },
 
     -- mini.pairs ----------------------------------------------------------------------
     {

@@ -100,8 +100,8 @@ vim.keymap.set("x", "<leader><leader>e", 'c<C-R>=py3eval(@")<CR><Esc>')
 
 -- Running and compiling code
 if EXECUTABLE("autocomp") then
-    vim.keymap.set("n", "<leader>ac", "<Cmd>!setsid autocomp % &<CR>", { desc = "Toggle custom [a]uto [c]ompiler" })
+    vim.keymap.set("n", "<leader>ac", "<Cmd>!setsid autocomp % &<CR><CR>", { desc = "Toggle custom [a]uto [c]ompiler" })
 end
 if EXECUTABLE("open_output") then
-    vim.keymap.set("n", "<leader><leader>o", "<Cmd>!open_output % &<CR>", { desc = "[O]pen compiled output (not robust)" })
+    vim.keymap.set("n", "<leader><leader>o", "<Cmd>!open_output % &<CR><CR>", { desc = "[O]pen compiled output (not robust)" })
 end
