@@ -4,7 +4,7 @@
 <a href="https://dotfyle.com/engeir/stowfiles-nvimlua-config-nvim"><img src="https://dotfyle.com/engeir/stowfiles-nvimlua-config-nvim/badges/leaderkey?style=for-the-badge" /></a>
 <a href="https://dotfyle.com/engeir/stowfiles-nvimlua-config-nvim"><img src="https://dotfyle.com/engeir/stowfiles-nvimlua-config-nvim/badges/plugin-manager?style=for-the-badge" /></a>
 
-This is @engeir's Neovim config, on NVIM v0.10.0-dev-2626+g9d315fb8b (view [latest nightly
+This is @engeir's Neovim config, on NVIM v0.9.5 (view [latest nightly
 build](https://github.com/neovim/neovim/tree/nightly)) installed with the [bob version
 manager for neovim](https://github.com/MordechaiHadad/bob). I am currently using the
 [lazy plugin manager](https://github.com/folke/lazy.nvim). Below is a complete list of
@@ -41,6 +41,8 @@ all plugins I'm using:
 - [f-string-toggle.nvim](https://github.com/roobert/f-string-toggle.nvim.git)
 - [fidget.nvim](https://github.com/j-hui/fidget.nvim.git)
 - [flash.nvim](https://github.com/folke/flash.nvim.git)
+- [fzfx.nvim](https://github.com/linrongbin16/fzfx.nvim.git)
+- [fzf](https://github.com/junegunn/fzf.git)
 - [githistory-browse.nvim](https://github.com/engeir/githistory-browse.nvim.git)
 - [gitlinker.nvim](https://github.com/ruifm/gitlinker.nvim.git)
 - [gitsigns.nvim](https://github.com/lewis6991/gitsigns.nvim.git)

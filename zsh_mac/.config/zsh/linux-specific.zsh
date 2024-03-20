@@ -45,8 +45,8 @@ export PATH="/usr/local/texlive/2023/bin/x86_64-linux:$PATH"
 export NNN_PLUG='a:bookmarks;b:bibfinder;c:diffs;d:dragdrop;f:fzcd;i:ipinfo;j:autojump;m:viewmedia;o:organize;p:preview-tui2;r:rm-send;s:fzplug;u:upload'
 export NNN_BMS='b:~/Pictures/;c:~/.config/;d:~/Downloads/;l:~/.local;n:~/Documents/notes_papers/;m:~/stowfiles/;o:~/OneDrive/;p:~/programs/;r:~/science/ref/;s:~/bin/;t:~/Documents/teaching/;w:~/Documents/work/'
 # IMPORTANT: without this, images are sometimes not opened, other times opened in Brave
-export NNN_OPENER="/home/een023/bin/xdg-open-awsm"
-# export NNN_OPENER="/home/een023/.config/nnn/plugins/nuke"
+# export NNN_OPENER="/home/een023/bin/xdg-open-awsm"
+export NNN_OPENER="/home/een023/.config/nnn/plugins/nuke"
 
 caps2esc() {
     # Make caps-lock work as esc when pressed, ctrl when hold
