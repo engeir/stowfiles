@@ -156,12 +156,12 @@ super + {t,shift + t,s,f}
 super + ctrl + {m,x,y,z}
 	bspc node -g {marked,locked,sticky,private}
 
-# Hide/Unhide Window
-super + h
+# Hide Window
+super + u
 	bspc node focused -g hidden=on
 	# winmask
 
-super + alt + h
+super + alt + u
 	bspwm-hidden
 
 super + alt + {a,s}
@@ -172,7 +172,7 @@ super + alt + {a,s}
 #
 
 # focus the node in the given direction
-super + {_,shift + }{Left,Down,Up,Right}
+super + {_,shift + }{h,j,k,l}
 	bspc node -{f,s} {west,south,north,east}
 
 # focus the node for the given path jump
