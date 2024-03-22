@@ -1,5 +1,24 @@
 # Changelog
 
+## [1.11.2](https://github.com/engeir/stowfiles/compare/v1.11.1...v1.11.2) (2024-03-22)
+
+
+### Miscellaneous
+
+* **fzf:** bind C-b and C-f to preview up/down ([14f7023](https://github.com/engeir/stowfiles/commit/14f702302a33de9a20a067b98c24ea995b209b99))
+* **nvim:** add some unimportant plugins ([e62a282](https://github.com/engeir/stowfiles/commit/e62a2829eb1eec511f103f0f80b5f7a40055af9c))
+* **nvim:** small fixes ([46046c9](https://github.com/engeir/stowfiles/commit/46046c96a56070fa50c090ae2d229bb5ac0fd429))
+
+
+### Styles
+
+* **dprint:** format the repo with dprint during pre-commit ([6f5aef9](https://github.com/engeir/stowfiles/commit/6f5aef945cd85e9b82e4bada74599fbfab15fbb4)), closes [#33](https://github.com/engeir/stowfiles/issues/33)
+
+
+### Documentation
+
+* **software:** add usage for update and reinstall scripts ([62de21a](https://github.com/engeir/stowfiles/commit/62de21a2906d745eb654417453356ef5ad5127af))
+
 ## [1.11.1](https://github.com/engeir/stowfiles/compare/v1.11.0...v1.11.1) (2024-03-14)
 
 
