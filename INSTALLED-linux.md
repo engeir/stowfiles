@@ -233,9 +233,9 @@ docbook-xml 4.5-11 [Ubuntu/jammy main]
 docbook-xsl 1.79.2+dfsg-1 [Ubuntu/jammy universe]
 docker 1.5-2 [Ubuntu/jammy universe]
 docker-buildx-plugin 0.13.1-1~ubuntu.20.04~focal [Docker CE/ stable]
-docker-ce 5:25.0.5-1~ubuntu.20.04~focal [Docker CE/ stable]
-docker-ce-cli 5:25.0.5-1~ubuntu.20.04~focal [Docker CE/ stable]
-docker-ce-rootless-extras 5:25.0.5-1~ubuntu.20.04~focal [Docker CE/ stable]
+docker-ce 5:26.0.0-1~ubuntu.20.04~focal [Docker CE/ stable]
+docker-ce-cli 5:26.0.0-1~ubuntu.20.04~focal [Docker CE/ stable]
+docker-ce-rootless-extras 5:26.0.0-1~ubuntu.20.04~focal [Docker CE/ stable]
 docker-compose-plugin 2.25.0-1~ubuntu.20.04~focal [Docker CE/ stable]
 docutils-common 0.17.1+dfsg-2 [Ubuntu/jammy main]
 docx2txt 1.4-5 [Ubuntu/jammy universe]
@@ -297,7 +297,7 @@ findutils 4.8.0-1ubuntu3 [Ubuntu/jammy main]
 finger 0.17-17 [Ubuntu/jammy universe]
 firefox 1:1snap1-0ubuntu2 [Ubuntu/jammy main]
 firefox-locale-en 1:1snap1-0ubuntu2 [Ubuntu/jammy universe]
-firefoxpwa 2.11.0 [FirefoxPWA/any main]
+firefoxpwa 2.11.1 [FirefoxPWA/any main]
 firmware-sof-signed 2.0-1ubuntu4.5 [Ubuntu/jammy restricted]
 flatpak 1.12.7-1 [Ubuntu/jammy universe]
 flex 2.6.4-8build2 [Ubuntu/jammy main]
@@ -564,8 +564,9 @@ gftp 2.9.1~beta-1 [Ubuntu/jammy universe]
 gftp-common 2.9.1~beta-1 [Ubuntu/jammy universe]
 gftp-gtk 2.9.1~beta-1 [Ubuntu/jammy universe]
 gftp-text 2.9.1~beta-1 [Ubuntu/jammy universe]
-gh 2.45.0 [gh/stable main]
+gh 2.46.0 [gh/stable main]
 ghc 8.8.4-3 [Ubuntu/jammy universe]
+ghc-prof 8.8.4-3 [Ubuntu/jammy universe]
 ghostscript 9.55.0~dfsg1-0ubuntu5.6 [Ubuntu/jammy main]
 ghostscript-x 9.55.0~dfsg1-0ubuntu5.6 [Ubuntu/jammy main]
 gir1.2-accountsservice-1.0 22.07.5-2ubuntu1.5 [Ubuntu/jammy main]
@@ -1552,6 +1553,14 @@ libgf2x-dev 1.3.0-2 [Ubuntu/jammy universe]
 libgf2x3 1.3.0-2 [Ubuntu/jammy universe]
 libgfortran-11-dev 11.4.0-1ubuntu1~22.04 [Ubuntu/jammy main]
 libgfortran5 12.3.0-1ubuntu1~22.04 [Ubuntu/jammy main]
+libghc-juicypixels-dev 3.3.5-1build3 [Ubuntu/jammy universe]
+libghc-juicypixels-prof 3.3.5-1build3 [Ubuntu/jammy universe]
+libghc-primitive-dev 0.7.0.1-1build2 [Ubuntu/jammy universe]
+libghc-primitive-prof 0.7.0.1-1build2 [Ubuntu/jammy universe]
+libghc-vector-dev 0.12.1.2-2build2 [Ubuntu/jammy universe]
+libghc-vector-prof 0.12.1.2-2build2 [Ubuntu/jammy universe]
+libghc-zlib-dev 0.6.2.2-1build1 [Ubuntu/jammy universe]
+libghc-zlib-prof 0.6.2.2-1build1 [Ubuntu/jammy universe]
 libgiac-dev 1.7.0.39+dfsg2-1build2 [Ubuntu/jammy universe]
 libgiac0 1.7.0.39+dfsg2-1build2 [Ubuntu/jammy universe]
 libgif-dev 5.1.9-2build2 [Ubuntu/jammy main]
@@ -3474,39 +3483,39 @@ links 2.25-1build1 [Ubuntu/jammy universe]
 lintian 2.114.0ubuntu1.3 [Ubuntu/jammy main]
 linux-base 4.5ubuntu9 [Ubuntu/jammy main]
 linux-firmware 20220329.git681281e4-0ubuntu3.29 [Ubuntu/jammy main]
-linux-generic 5.15.0.100.97 [local]
+linux-generic 5.15.0.101.98 [Ubuntu/jammy main]
 linux-generic-hwe-20.04 5.15.0.101.98 [Ubuntu/jammy main]
-linux-generic-hwe-22.04 6.5.0.25.25~22.04.12 [local]
-linux-headers-5.15.0-100 5.15.0-100.110 [Ubuntu/jammy main]
-linux-headers-5.15.0-100-generic 5.15.0-100.110 [Ubuntu/jammy main]
+linux-generic-hwe-22.04 6.5.0.26.26~22.04.13 [Ubuntu/jammy main]
+linux-headers-5.15.0-101 5.15.0-101.111 [Ubuntu/jammy main]
+linux-headers-5.15.0-101-generic 5.15.0-101.111 [Ubuntu/jammy main]
 linux-headers-5.19.0-50-generic 5.19.0-50.50 [Ubuntu/jammy main]
 linux-headers-6.2.0-39-generic 6.2.0-39.40~22.04.1 [Ubuntu/jammy main]
-linux-headers-6.5.0-21-generic 6.5.0-21.21~22.04.1 [Ubuntu/jammy main]
 linux-headers-6.5.0-25-generic 6.5.0-25.25~22.04.1 [Ubuntu/jammy main]
-linux-headers-generic 5.15.0.100.97 [local]
-linux-headers-generic-hwe-22.04 6.5.0.25.25~22.04.12 [local]
+linux-headers-6.5.0-26-generic 6.5.0-26.26~22.04.1 [Ubuntu/jammy main]
+linux-headers-generic 5.15.0.101.98 [Ubuntu/jammy main]
+linux-headers-generic-hwe-22.04 6.5.0.26.26~22.04.13 [Ubuntu/jammy main]
 linux-hwe-5.19-headers-5.19.0-50 5.19.0-50.50 [Ubuntu/jammy main]
 linux-hwe-6.2-headers-6.2.0-39 6.2.0-39.40~22.04.1 [Ubuntu/jammy main]
-linux-hwe-6.5-headers-6.5.0-21 6.5.0-21.21~22.04.1 [Ubuntu/jammy main]
 linux-hwe-6.5-headers-6.5.0-25 6.5.0-25.25~22.04.1 [Ubuntu/jammy main]
-linux-image-5.15.0-100-generic 5.15.0-100.110 [Ubuntu/jammy main]
+linux-hwe-6.5-headers-6.5.0-26 6.5.0-26.26~22.04.1 [Ubuntu/jammy main]
+linux-image-5.15.0-101-generic 5.15.0-101.111 [Ubuntu/jammy main]
 linux-image-5.19.0-50-generic 5.19.0-50.50 [Ubuntu/jammy main]
 linux-image-6.2.0-39-generic 6.2.0-39.40~22.04.1 [Ubuntu/jammy main]
-linux-image-6.5.0-21-generic 6.5.0-21.21~22.04.1 [Ubuntu/jammy main]
 linux-image-6.5.0-25-generic 6.5.0-25.25~22.04.1 [Ubuntu/jammy main]
-linux-image-generic 5.15.0.100.97 [local]
-linux-image-generic-hwe-22.04 6.5.0.25.25~22.04.12 [local]
+linux-image-6.5.0-26-generic 6.5.0-26.26~22.04.1 [Ubuntu/jammy main]
+linux-image-generic 5.15.0.101.98 [Ubuntu/jammy main]
+linux-image-generic-hwe-22.04 6.5.0.26.26~22.04.13 [Ubuntu/jammy main]
 linux-libc-dev 5.15.0-101.111 [Ubuntu/jammy main]
-linux-modules-5.15.0-100-generic 5.15.0-100.110 [Ubuntu/jammy main]
+linux-modules-5.15.0-101-generic 5.15.0-101.111 [Ubuntu/jammy main]
 linux-modules-5.19.0-50-generic 5.19.0-50.50 [Ubuntu/jammy main]
 linux-modules-6.2.0-39-generic 6.2.0-39.40~22.04.1 [Ubuntu/jammy main]
-linux-modules-6.5.0-21-generic 6.5.0-21.21~22.04.1 [Ubuntu/jammy main]
 linux-modules-6.5.0-25-generic 6.5.0-25.25~22.04.1 [Ubuntu/jammy main]
-linux-modules-extra-5.15.0-100-generic 5.15.0-100.110 [Ubuntu/jammy main]
+linux-modules-6.5.0-26-generic 6.5.0-26.26~22.04.1 [Ubuntu/jammy main]
+linux-modules-extra-5.15.0-101-generic 5.15.0-101.111 [Ubuntu/jammy main]
 linux-modules-extra-5.19.0-50-generic 5.19.0-50.50 [Ubuntu/jammy main]
 linux-modules-extra-6.2.0-39-generic 6.2.0-39.40~22.04.1 [Ubuntu/jammy main]
-linux-modules-extra-6.5.0-21-generic 6.5.0-21.21~22.04.1 [Ubuntu/jammy main]
 linux-modules-extra-6.5.0-25-generic 6.5.0-25.25~22.04.1 [Ubuntu/jammy main]
+linux-modules-extra-6.5.0-26-generic 6.5.0-26.26~22.04.1 [Ubuntu/jammy main]
 linux-sound-base 1.0.25+dfsg-0ubuntu7 [Ubuntu/jammy main]
 llvm 1:14.0-55~exp2 [Ubuntu/jammy universe]
 llvm-11 1:11.1.0-6 [Ubuntu/jammy universe]
@@ -4280,7 +4289,7 @@ shellcheck 0.8.0-2 [Ubuntu/jammy universe]
 shfmt 3.7.0-pacstall1 [local]
 shfmt-bin 3.4.3-1 [local]
 shim-signed 1.51.3+15.7-0ubuntu1 [Ubuntu/jammy main]
-signal-desktop 7.2.1 [. xenial/xenial main]
+signal-desktop 7.3.0 [. xenial/xenial main]
 signon-plugin-oauth2 0.25-2 [Ubuntu/jammy universe]
 silversearcher-ag 2.2.0+git20200805-1 [Ubuntu/jammy universe]
 simple-scan 42.0-1 [Ubuntu/jammy main]
@@ -4657,7 +4666,7 @@ name: neofetch version: 7.1.0-pacstall1
 name: protonmail-bridge version: 3.9.1-1
 name: quarto version: 1.3.450
 name: shfmt version: 3.7.0-pacstall1
-name: signal-desktop version: 7.2.1
+name: signal-desktop version: 7.3.0
 name: thorium-browser version: 122.0.6261.132-1
 name: wezterm version: 20230712-072601-f4abf8fd-pacstall1
 name: zoom version: 5.17.11.3835
@@ -4704,7 +4713,7 @@ du-dust v0.9.0:
     dust
 evcxr_jupyter v0.17.0:
     evcxr_jupyter
-eza v0.18.7:
+eza v0.18.8:
     eza
 fd-find v9.0.0:
     fd
@@ -4747,7 +4756,7 @@ mdbook-toc v0.14.2:
     mdbook-toc
 menyoki v1.7.0:
     menyoki
-mise v2024.3.6:
+mise v2024.3.7:
     mise
 mprocs v0.6.4:
     mprocs
@@ -4761,7 +4770,7 @@ pngquant v3.0.3:
     pngquant
 porsmo v0.3.2:
     porsmo
-pueue v3.3.3:
+pueue v3.4.0:
     pueue
     pueued
 riffdiff v3.1.0:
@@ -5285,10 +5294,12 @@ Intel                                                                           
 Intel                                                                           23.08
 openh264                                2.1.0                                   2.0
 openh264                                2.1.0                                   2.2.0
+openh264                                2.4.1                                   2.4.1
 Evolution                               3.50.4                                  stable
 GNOME Application Platform version 44                                           44
 GNOME Application Platform version 45                                           45
-Citations                               0.6.2                                   stable
+GNOME Application Platform version 46                                           46
+Maximiliano Sandoval                    0.6.2                                   stable
 Small Mammal Collective                 0.7.1                                   stable
 Yaru-dark Gtk Theme                                                             3.22
 ```
@@ -5299,7 +5310,7 @@ Yaru-dark Gtk Theme                                                             
 Name                       Version                     Rev    Tracking         Publisher      Notes
 bare                       1.0                         5      latest/stable    canonical**    base
 canonical-livepatch        10.8.1                      264    latest/stable    canonical**    -
-cmake                      3.28.3                      1366   latest/stable    crascit**      classic
+cmake                      3.29.0                      1378   latest/stable    crascit**      classic
 core                       16-2.61.2                   16928  latest/stable    canonical**    core
 core18                     20231027                    2812   latest/stable    canonical**    base
 core20                     20240111                    2182   latest/stable    canonical**    base

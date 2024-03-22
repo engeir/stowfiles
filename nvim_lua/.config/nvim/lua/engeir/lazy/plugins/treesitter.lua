@@ -250,12 +250,12 @@ return {
         enabled = IS_KNOWN,
         config = function()
             require("syntax-tree-surfer").setup()
-            vim.keymap.set("n", "]s", function()
+            vim.keymap.set("n", "]a", function()
                 vim.opt.opfunc = "v:lua.STSSwapCurrentNodeNextNormal_Dot"
                 return "g@l"
             end, { silent = true, expr = true, desc = "Right sibling [s]wap" })
 
-            vim.keymap.set("n", "[s", function()
+            vim.keymap.set("n", "[a", function()
                 vim.opt.opfunc = "v:lua.STSSwapCurrentNodePrevNormal_Dot"
                 return "g@l"
             end, { silent = true, expr = true, desc = "Left sibling [s]wap" })

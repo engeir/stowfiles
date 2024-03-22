@@ -47,7 +47,9 @@
     "excludes": [
         "**/node_modules",
         "**/*-lock.json",
-        "**/target"
+        "**/target",
+        "CHANGELOG.md",
+        "nvim_lua/.config/nvim/README.md"
     ],
     "plugins": [
         "https://plugins.dprint.dev/typescript-0.89.3.wasm",

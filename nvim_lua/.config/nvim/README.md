@@ -106,6 +106,7 @@ all plugins I'm using:
 - [rainbow_csv](https://github.com/mechatroner/rainbow_csv.git)
 - [replacer.nvim](https://github.com/gabrielpoca/replacer.nvim.git)
 - [scrollEOF.nvim](https://github.com/Aasim-A/scrollEOF.nvim.git)
+- [shell.nvim](https://github.com/siadat/shell.nvim.git)
 - [smart-splits.nvim](https://github.com/mrjones2014/smart-splits.nvim.git)
 - [sxhkd-vim](https://github.com/kovetskiy/sxhkd-vim.git)
 - [symbols-outline.nvim](https://github.com/simrat39/symbols-outline.nvim.git)

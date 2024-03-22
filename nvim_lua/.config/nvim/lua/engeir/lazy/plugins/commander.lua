@@ -1,6 +1,7 @@
 return {
     "FeiyouG/commander.nvim",
     dependencies = { "nvim-telescope/telescope.nvim" },
+    cmd = { "Telescope commander" },
     opts = {
         integration = {
             lazy = {

@@ -100,7 +100,7 @@ when = "sudo -vn &>/dev/null"
 style = "bold #8dbf7b"
 truncation_length = 8
 truncation_symbol = "…/"
-format=" in [$path]($style)[$read_only]($read_only_style) "
+format = " in [$path]($style)[$read_only]($read_only_style) "
 
 [fill]
 symbol = " ~"

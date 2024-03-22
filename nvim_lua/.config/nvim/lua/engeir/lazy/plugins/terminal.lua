@@ -15,6 +15,7 @@ local keymap = vim.keymap.set
 return {
     {
         "voldikss/vim-floaterm",
+        events = { "BufReadPre" },
         init = function()
             vim.g.floaterm_width = 0.45
         end,
@@ -48,6 +49,7 @@ return {
     {
         "akinsho/toggleterm.nvim",
         enabled = false,
+        events = { "BufReadPre" },
         version = "*",
         opts = { shade_terminals = true },
         config = function()
@@ -63,5 +65,10 @@ return {
             keymap("v", "<C-r>", ":'<,'>ToggleTermSendVisualLines <CR>", opts)
             keymap("n", "<leader>tr", ":TermExec direction=float go_back=0 cmd='compiler %'<CR>", opts)
         end,
+    },
+    {
+        "siadat/shell.nvim",
+        events = { "BufReadPre" },
+        opts = {},
     },
 }

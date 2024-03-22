@@ -4,6 +4,8 @@ yes = true
 go_set_gobin = true
 
 [tools]
+cabal = "latest" # ghcup is a meta-tool that installs the Haskell toolchain (cabal)
+pandoc = "latest"
 tinytex = "latest"
 watchexec = "latest"
 go = "latest"

@@ -1,67 +1,59 @@
 {
-    "boldsymbol": {
-        "luasnip": {
-            "autotrigger": true
-        },
-        "body": [
-            "\\boldsymbol{$1}$0"
-        ],
-        "prefix": "bbs"
+  "boldsymbol": {
+    "luasnip": {
+      "autotrigger": true
     },
-    "formatted comment block": {
-        "body": [
-            "header-includes: |",
-            "   \\usepackage{tcolorbox}",
-            "   \\usepackage{tikz}",
-            "   \\usetikzlibrary{calc}",
-            "   \\tcbuselibrary{skins,xparse,breakable}",
-            "   \\tcbset{%",
-            "       % enhanced jigsaw,  % Makes the breakpoint sharp",
-            "       colback=white,",
-            "       colframe=black,",
-            "       title=Answer,  % Title of the block",
-            "   %   bookmark={Q\\arabic{\\tcbcounter}}",
-            "   }",
-            "   \\newtcolorbox{myquote}{%",
-            "       breakable,",
-            "       pad at break*=1.5pc,",
-            "       colback=gray!15!white,",
-            "       colframe=gray!75!black,",
-            "       overlay first and middle={",
-            "         \\coordinate (A1) at ($(interior.south east) + (-10pt,5pt)$);",
-            "         \\coordinate (C1) at ($(interior.south east) + (-6pt,7.5pt)$);",
-            "         \\draw[fill=gray] (A1) -- +(0,5pt) -- (C1) -- cycle;",
-            "       }",
-            "   }",
-            "   \\renewenvironment{quote}{\\begin{NoHyper}\\begin{myquote}}{\\end{myquote}\\end{NoHyper}}"
-        ],
-        "prefix": "comments"
+    "body": ["\\boldsymbol{$1}$0"],
+    "prefix": "bbs"
+  },
+  "formatted comment block": {
+    "body": [
+      "header-includes: |",
+      "   \\usepackage{tcolorbox}",
+      "   \\usepackage{tikz}",
+      "   \\usetikzlibrary{calc}",
+      "   \\tcbuselibrary{skins,xparse,breakable}",
+      "   \\tcbset{%",
+      "       % enhanced jigsaw,  % Makes the breakpoint sharp",
+      "       colback=white,",
+      "       colframe=black,",
+      "       title=Answer,  % Title of the block",
+      "   %   bookmark={Q\\arabic{\\tcbcounter}}",
+      "   }",
+      "   \\newtcolorbox{myquote}{%",
+      "       breakable,",
+      "       pad at break*=1.5pc,",
+      "       colback=gray!15!white,",
+      "       colframe=gray!75!black,",
+      "       overlay first and middle={",
+      "         \\coordinate (A1) at ($(interior.south east) + (-10pt,5pt)$);",
+      "         \\coordinate (C1) at ($(interior.south east) + (-6pt,7.5pt)$);",
+      "         \\draw[fill=gray] (A1) -- +(0,5pt) -- (C1) -- cycle;",
+      "       }",
+      "   }",
+      "   \\renewenvironment{quote}{\\begin{NoHyper}\\begin{myquote}}{\\end{myquote}\\end{NoHyper}}"
+    ],
+    "prefix": "comments"
+  },
+  "mathrm": {
+    "prefix": "mrm",
+    "luasnip": {
+      "autotrigger": true
     },
-    "mathrm": {
-        "prefix": "mrm",
-        "luasnip": {
-            "autotrigger": true
-        },
-        "body": [
-            "\\mathrm{$1}$0"
-        ]
+    "body": ["\\mathrm{$1}$0"]
+  },
+  "derivative": {
+    "luasnip": {
+      "autotrigger": true
     },
-    "derivative": {
-        "luasnip": {
-            "autotrigger": true
-        },
-        "body": [
-            "\\frac{\\mathrm{d}$1}{\\mathrm{d}$2}$0"
-        ],
-        "prefix": "ddt"
+    "body": ["\\frac{\\mathrm{d}$1}{\\mathrm{d}$2}$0"],
+    "prefix": "ddt"
+  },
+  "fraction": {
+    "luasnip": {
+      "autotrigger": true
     },
-    "fraction": {
-        "luasnip": {
-            "autotrigger": true
-        },
-        "body": [
-            "\\frac{$1}{$2}$0"
-        ],
-        "prefix": "fracc"
-    }
+    "body": ["\\frac{$1}{$2}$0"],
+    "prefix": "fracc"
+  }
 }

@@ -47,4 +47,5 @@ Suggested config:
     bind-key -n 'M-~' run -b     './session-finder.bash prev'
     bind-key -n 'M-q' run -b     './session-finder.bash last'
 
-Read [my blog post](https://siadat.github.io/post/tmux-session-management) for more information.
+Read [my blog post](https://siadat.github.io/post/tmux-session-management) for more
+information.
