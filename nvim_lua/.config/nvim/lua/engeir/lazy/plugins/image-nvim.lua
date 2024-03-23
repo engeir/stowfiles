@@ -1,7 +1,7 @@
 return {
     {
         "3rd/image.nvim",
-        enabled = true,
+        enabled = IS_KNOWN and IS_LINUX,
         build = "luarocks --local --lua-version=5.1 install magick",
         event = "BufReadPre",
         init = function()
