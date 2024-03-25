@@ -25,3 +25,9 @@ repos:
         language: node
         pass_filenames: false
         additional_dependencies: ["dprint"]
+
+      - id: stylua
+        name: stylua
+        entry: stylua nvim_lua/.config/nvim/
+        language: system
+        pass_filenames: false

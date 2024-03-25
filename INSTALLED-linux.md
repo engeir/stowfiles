@@ -3707,6 +3707,7 @@ p7zip-full 16.02+dfsg-8 [Ubuntu/jammy universe]
 packagekit 1.2.5-2ubuntu2 [Ubuntu/jammy main]
 packagekit-tools 1.2.5-2ubuntu2 [Ubuntu/jammy main]
 palp 2.20-2 [Ubuntu/jammy universe]
+pandoc 3.1.12.3-1 [local]
 pango1.0-tools 1.50.6+ds-2ubuntu1 [Ubuntu/jammy main]
 papirus-icon-theme 20220204-1 [Ubuntu/jammy universe]
 pari-doc 2.13.3-1 [Ubuntu/jammy universe]
@@ -4289,7 +4290,7 @@ shellcheck 0.8.0-2 [Ubuntu/jammy universe]
 shfmt 3.7.0-pacstall1 [local]
 shfmt-bin 3.4.3-1 [local]
 shim-signed 1.51.3+15.7-0ubuntu1 [Ubuntu/jammy main]
-signal-desktop 7.3.0 [. xenial/xenial main]
+signal-desktop 7.3.1 [. xenial/xenial main]
 signon-plugin-oauth2 0.25-2 [Ubuntu/jammy universe]
 silversearcher-ag 2.2.0+git20200805-1 [Ubuntu/jammy universe]
 simple-scan 42.0-1 [Ubuntu/jammy main]
@@ -4666,7 +4667,7 @@ name: neofetch version: 7.1.0-pacstall1
 name: protonmail-bridge version: 3.9.1-1
 name: quarto version: 1.3.450
 name: shfmt version: 3.7.0-pacstall1
-name: signal-desktop version: 7.3.0
+name: signal-desktop version: 7.3.1
 name: thorium-browser version: 122.0.6261.132-1
 name: wezterm version: 20230712-072601-f4abf8fd-pacstall1
 name: zoom version: 5.17.11.3835
@@ -4675,7 +4676,7 @@ name: zoom version: 5.17.11.3835
 ## Cargo
 
 ```txt {cargo}
-alacritty v0.13.1:
+alacritty v0.13.2:
     alacritty
 atuin v18.1.0:
     atuin
@@ -4696,12 +4697,12 @@ cargo-edit v0.12.2:
     cargo-upgrade
 cargo-info v0.7.6:
     cargo-info
-cargo-update v13.3.0:
+cargo-update v13.4.0:
     cargo-install-update
     cargo-install-update-config
 cargo-watch v8.5.2:
     cargo-watch
-coreutils v0.0.24:
+coreutils v0.0.25:
     coreutils
 czkawka_gui v7.0.0:
     czkawka_gui
@@ -4725,7 +4726,7 @@ git-cliff v2.1.2:
     git-cliff-mangen
 git-delta v0.17.0:
     delta
-gitui v0.25.1:
+gitui v0.25.2:
     gitui
 halp v0.1.7:
     halp
@@ -4736,7 +4737,7 @@ helix-term v0.6.0 (/home/een023/programs/helix/helix-term):
     hx
 hyperfine v1.18.0:
     hyperfine
-irust v1.71.19:
+irust v1.71.21:
     irust
 jless v0.9.0:
     jless
@@ -4756,7 +4757,7 @@ mdbook-toc v0.14.2:
     mdbook-toc
 menyoki v1.7.0:
     menyoki
-mise v2024.3.7:
+mise v2024.3.9:
     mise
 mprocs v0.6.4:
     mprocs
@@ -4783,7 +4784,7 @@ sccache v0.7.7:
     sccache
 sd v1.0.0:
     sd
-shellharden v4.3.0:
+shellharden v4.3.1:
     shellharden
 skim v0.10.4:
     sk
@@ -4916,7 +4917,7 @@ package pdfcropmargins 2.0.3, installed using Python 3.12.2
  - pdfcropmargins
 package poetry 1.8.2, installed using Python 3.12.2
  - poetry
-package pre-commit 3.6.2, installed using Python 3.12.2
+package pre-commit 3.7.0, installed using Python 3.12.2
  - pre-commit
  - pre-commit-validate-config
  - pre-commit-validate-manifest
@@ -5284,7 +5285,7 @@ i zref: A new reference scheme for LaTeX
 ```txt {flatpak}
 Name                                    Version                                 Branch
 hrkfdn                                  1.1.0                                   stable
-Freedesktop Platform                    22.08.22                                22.08
+Freedesktop Platform                    22.08.23                                22.08
 Freedesktop Platform                    23.08.14                                23.08
 Mesa                                    24.0.3                                  22.08
 Mesa (Extra)                            24.0.3                                  22.08-extra
@@ -5295,7 +5296,7 @@ Intel                                                                           
 openh264                                2.1.0                                   2.0
 openh264                                2.1.0                                   2.2.0
 openh264                                2.4.1                                   2.4.1
-Evolution                               3.50.4                                  stable
+The Evolution Team                      3.52.0                                  stable
 GNOME Application Platform version 44                                           44
 GNOME Application Platform version 45                                           45
 GNOME Application Platform version 46                                           46
@@ -5317,7 +5318,7 @@ core20                     20240111                    2182   latest/stable    c
 core22                     20240111                    1122   latest/stable    canonical**    base
 dotnet-sdk                 5.0.408                     167    5.0/stable       dotnetcore**   classic
 duf-utility                v0.6.0                      1      latest/stable    muesli         -
-firefox                    124.0-1                     3972   latest/stable/…  mozilla**      -
+firefox                    124.0.1-1                   4033   latest/stable/…  mozilla**      -
 gimp                       2.10.36                     428    latest/stable    snapcrafters*  -
 gnome-3-28-1804            3.28.0-19-g98f9e67.98f9e67  198    latest/stable    canonical**    -
 gnome-3-34-1804            0+git.3556cb3               93     latest/stable/…  canonical**    -

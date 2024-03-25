@@ -1,5 +1,5 @@
 return {
-    "AckslD/muren.nvim",
-    enabled = false,
-    config = true,
+  "AckslD/muren.nvim",
+  enabled = false,
+  config = true,
 }

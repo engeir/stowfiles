@@ -1,6 +1,6 @@
 return {
-    "https://git.sr.ht/~swaits/thethethe.nvim",
-    lazy = true,
-    event = "VeryLazy",
-    opts = {},
+  "https://git.sr.ht/~swaits/thethethe.nvim",
+  lazy = true,
+  event = "VeryLazy",
+  opts = {},
 }

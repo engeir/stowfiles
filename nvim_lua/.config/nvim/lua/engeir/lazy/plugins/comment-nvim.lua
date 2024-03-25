@@ -1,15 +1,15 @@
 return {
-    "numToStr/Comment.nvim",
-    event = { "BufReadPre", "BufNewFile" },
-    enabled = true,
-    config = function()
-        require("Comment").setup()
+  "numToStr/Comment.nvim",
+  event = { "BufReadPre", "BufNewFile" },
+  enabled = true,
+  config = function()
+    require("Comment").setup()
 
-        local ft = require("Comment.ft")
-        ft.set("ncl", ";%s")
-        ft.set("sent", "#%s")
-        ft.set("jsonc", "//%s")
-        ft.set("mplstyle", "#%s")
-        ft.set("nu", "#%s")
-    end,
+    local ft = require("Comment.ft")
+    ft.set("ncl", ";%s")
+    ft.set("sent", "#%s")
+    ft.set("jsonc", "//%s")
+    ft.set("mplstyle", "#%s")
+    ft.set("nu", "#%s")
+  end,
 }

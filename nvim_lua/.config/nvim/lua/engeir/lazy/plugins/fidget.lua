@@ -1,5 +1,5 @@
 return {
-    "j-hui/fidget.nvim",
-    event = "BufReadPost",
-    config = true,
+  "j-hui/fidget.nvim",
+  event = "BufReadPost",
+  config = true,
 }

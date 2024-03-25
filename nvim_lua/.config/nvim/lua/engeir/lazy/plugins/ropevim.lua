@@ -1,5 +1,5 @@
 return {
-    "python-rope/ropevim",
-    enabled = false,
-    ft = "python",
+  "python-rope/ropevim",
+  enabled = false,
+  ft = "python",
 }

@@ -1,5 +1,5 @@
 return {
-    "fredeeb/tardis.nvim",
-    dependencies = { "nvim-lua/plenary.nvim" },
-    config = true,
+  "fredeeb/tardis.nvim",
+  dependencies = { "nvim-lua/plenary.nvim" },
+  config = true,
 }

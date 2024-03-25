@@ -10,31 +10,31 @@ vim.keymap.set("n", "U", "<C-r>")
 
 -- Improving default keys
 vim.keymap.set("n", "J", function()
-    vim.cmd("normal! mzJ")
+  vim.cmd("normal! mzJ")
 
-    local col = vim.fn.col(".")
-    local context = string.sub(vim.fn.getline("."), col - 1, col + 1)
-    if
-        context == ") ."
-        or context == ") :"
-        or context:match("%( .")
-        or context:match(". ,")
-        or context:match("%w %.")
-    then
-        vim.cmd("undojoin | normal! x")
-    elseif context == ",)" then
-        vim.cmd("undojoin | normal! hx")
-    end
+  local col = vim.fn.col(".")
+  local context = string.sub(vim.fn.getline("."), col - 1, col + 1)
+  if
+    context == ") ."
+    or context == ") :"
+    or context:match("%( .")
+    or context:match(". ,")
+    or context:match("%w %.")
+  then
+    vim.cmd("undojoin | normal! x")
+  elseif context == ",)" then
+    vim.cmd("undojoin | normal! hx")
+  end
 
-    vim.cmd("normal! `z")
+  vim.cmd("normal! `z")
 end)
 -- Never yank empty lines
 vim.keymap.set("n", "dd", function()
-    if vim.api.nvim_get_current_line():match("^%s*$") then
-        return '"_dd'
-    else
-        return "dd"
-    end
+  if vim.api.nvim_get_current_line():match("^%s*$") then
+    return '"_dd'
+  else
+    return "dd"
+  end
 end, { expr = true })
 -- -- Indent similar to 'o'/'O' (this is broken)
 -- vim.keymap.set("n", "i", function()
@@ -71,27 +71,41 @@ vim.keymap.set("v", "<", "<gv")
 vim.keymap.set("v", ">", ">gv")
 
 -- Add newline below or above
-vim.keymap.set("n", "<leader>n", ':<C-u>call append(line("."),   repeat([""], v:count1))<CR>', opts)
-vim.keymap.set("n", "<leader>N", ':<C-u>call append(line(".")-1, repeat([""], v:count1))<CR>', opts)
+vim.keymap.set(
+  "n",
+  "<leader>n",
+  ':<C-u>call append(line("."),   repeat([""], v:count1))<CR>',
+  opts
+)
+vim.keymap.set(
+  "n",
+  "<leader>N",
+  ':<C-u>call append(line(".")-1, repeat([""], v:count1))<CR>',
+  opts
+)
 
 -- Spelling
 -- nnoremap <silent><leader>s :set spell spelllang=en_gb<CR>
 -- nnoremap <silent><leader>S :set spell!<CR>
-vim.keymap.set(
-    "i",
-    "<C-s>",
-    "<C-G>u<Esc>[s1z=`]a<C-G>u",
-    { silent = true, noremap = true, desc = "Accept first spelling on previous misspelled word." }
-)
+vim.keymap.set("i", "<C-s>", "<C-G>u<Esc>[s1z=`]a<C-G>u", {
+  silent = true,
+  noremap = true,
+  desc = "Accept first spelling on previous misspelled word.",
+})
 
 -- Search, highlight and move
-vim.keymap.set("n", "<leader>zw", "<Cmd>%s/\\<<C-r><C-w>\\>/<C-r><C-w>/gI<Left><Left><Left>", { desc = "[Z]wap [W]ords" })
+vim.keymap.set(
+  "n",
+  "<leader>zw",
+  "<Cmd>%s/\\<<C-r><C-w>\\>/<C-r><C-w>/gI<Left><Left><Left>",
+  { desc = "[Z]wap [W]ords" }
+)
 vim.keymap.set("n", "n", "nzzzv", opts)
 vim.keymap.set("n", "N", "Nzzzv", opts)
 -- vim.keymap.set("n", "J", "mzJ`z", opts)
 vim.keymap.set("n", "{", "{zz", opts)
 vim.keymap.set("n", "}", "}zz", opts)
-vim.keymap.set("c", "<C-s>", "\\_s", {desc="Continue search on next line"})
+vim.keymap.set("c", "<C-s>", "\\_s", { desc = "Continue search on next line" })
 vim.keymap.set("n", "<leader>v", "<C-v>$")
 
 -- Evaluate math
@@ -100,8 +114,18 @@ vim.keymap.set("x", "<leader><leader>e", 'c<C-R>=py3eval(@")<CR><Esc>')
 
 -- Running and compiling code
 if EXECUTABLE("autocomp") then
-    vim.keymap.set("n", "<leader>ac", "<Cmd>!setsid autocomp % &<CR><CR>", { desc = "Toggle custom [a]uto [c]ompiler" })
+  vim.keymap.set(
+    "n",
+    "<leader>ac",
+    "<Cmd>!setsid autocomp % &<CR><CR>",
+    { desc = "Toggle custom [a]uto [c]ompiler" }
+  )
 end
 if EXECUTABLE("open_output") then
-    vim.keymap.set("n", "<leader><leader>o", "<Cmd>!open_output % &<CR><CR>", { desc = "[O]pen compiled output (not robust)" })
+  vim.keymap.set(
+    "n",
+    "<leader><leader>o",
+    "<Cmd>!open_output % &<CR><CR>",
+    { desc = "[O]pen compiled output (not robust)" }
+  )
 end

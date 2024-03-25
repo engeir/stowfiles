@@ -1,4 +1,4 @@
 return {
-    "mrjones2014/smart-splits.nvim",
-    event = { "BufReadPre", "BufNewFile" },
+  "mrjones2014/smart-splits.nvim",
+  event = { "BufReadPre", "BufNewFile" },
 }

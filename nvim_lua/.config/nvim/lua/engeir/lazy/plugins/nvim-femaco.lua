@@ -1,5 +1,5 @@
 return {
-    "AckslD/nvim-FeMaco.lua",
-    enabled = false,
-    config = true,
+  "AckslD/nvim-FeMaco.lua",
+  enabled = false,
+  config = true,
 }
