@@ -50,7 +50,7 @@ run_updates() {
     echo_and_run python3 -m pip install --user --upgrade pipx
     echo_and_run pipx upgrade-all
     echo_and_run tlmgr update --all
-    # echo_and_run gup update
+    echo_and_run gup update
     # Single programs ------------------------------------------------------------------
     echo_and_run bob update --all
     echo_and_run bun upgrade
