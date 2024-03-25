@@ -1,5 +1,32 @@
 # Changelog
 
+## [1.11.3](https://github.com/engeir/stowfiles/compare/v1.11.2...v1.11.3) (2024-03-25)
+
+
+### Bug Fixes
+
+* **software:** gup is nice to have so all Go binaries are up to date ([7f761d9](https://github.com/engeir/stowfiles/commit/7f761d94345d51708b42a09087e620b0746038a9))
+* **tmux:** C-H also matches C-h, which I use in nvim ([c032b69](https://github.com/engeir/stowfiles/commit/c032b691add3258577e70e8679777dbfeb16ee36))
+* **zathura:** keep horisontal/x position when following links ([acc2cc0](https://github.com/engeir/stowfiles/commit/acc2cc07a655fbac8cc84b7d1d7d406cdf19d53a))
+
+
+### Miscellaneous
+
+* **dprint:** rename to use the hidden file type ([e9ceb41](https://github.com/engeir/stowfiles/commit/e9ceb410ee5272bbe70fc38bfbe24e09f520bb1f))
+* **nvim:** add LSP config for pylsp ([db1486a](https://github.com/engeir/stowfiles/commit/db1486a8ccd3f46a3bd4a4930625fd348d41cc3f))
+* **software:** update installed ([6293807](https://github.com/engeir/stowfiles/commit/6293807f4f2615526730b0677b26a01cd9b92cbb))
+* **tmux:** adjust keymaps to use the home row more ([60eac7c](https://github.com/engeir/stowfiles/commit/60eac7cfd8cb612faef251419f20cfbe4c964712))
+
+
+### Styles
+
+* **lua:** add stylua format as pre commit hook ([e6c8ecc](https://github.com/engeir/stowfiles/commit/e6c8ecc0888af506f99a376401337fb8d69b55f4))
+
+
+### Code Refactoring
+
+* **sxhkd:** stay closer to the home row ([1989883](https://github.com/engeir/stowfiles/commit/19898832793e75d9a17ea35eb155c28cb5a1e641))
+
 ## [1.11.2](https://github.com/engeir/stowfiles/compare/v1.11.1...v1.11.2) (2024-03-22)
 
 
