@@ -5,6 +5,8 @@ set sandbox none
 
 # Clipboard
 set selection-clipboard clipboard
+# Internal links (only jump vertically)
+set link-hadjust "false"
 
 # Open file in a viewer that support annotations
 map <C-a> feedkeys ":exec okular $FILE<Return>"
