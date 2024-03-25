@@ -179,6 +179,7 @@ return {
 
       lua_ls = require("engeir.lazy.plugins.lsp.lspconfig-settings.lua_ls"),
       texlab = require("engeir.lazy.plugins.lsp.lspconfig-settings.texlab"),
+      pylsp = require("engeir.lazy.plugins.lsp.lspconfig-settings.pylsp"),
     }
 
     -- Ensure the servers and tools above are installed
