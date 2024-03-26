@@ -1,5 +1,18 @@
 # Changelog
 
+## [1.11.4](https://github.com/engeir/stowfiles/compare/v1.11.3...v1.11.4) (2024-03-26)
+
+
+### Bug Fixes
+
+* **alacritty:** update alt keycodes to work with recent tmux keymaps ([871f3d7](https://github.com/engeir/stowfiles/commit/871f3d74496a85406b0388e74620fdf104943c8f))
+
+
+### Miscellaneous
+
+* **pandoc:** add custom option for shifting header level and change TOC generator ([ed06734](https://github.com/engeir/stowfiles/commit/ed067347ce1e4b4c5064488f92ff45e300a4bc5e))
+* **software:** try "usage" and add mise as a software source ([611a9f1](https://github.com/engeir/stowfiles/commit/611a9f1e3ed33200f2ad31169c38cc099379ede1))
+
 ## [1.11.3](https://github.com/engeir/stowfiles/compare/v1.11.2...v1.11.3) (2024-03-25)
 
 
