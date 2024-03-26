@@ -117,12 +117,17 @@ if [ "Mac" = "$machine" ]; then
     PIPX="$(pipx list | sed '1,2d' | sed 's/^   //')"
     GO="$(cat ~/.default-go-packages)"
     TEX="$(tlmgr list --only-installed)"
+    MISE="$(mise ls)"
     echo "# Installed programs
 
 ## Brew
 
 \`\`\`txt {brew}
 $BREW
+\`\`\`
+
+\`\`\`txt {mise}
+$MISE
 \`\`\`
 
 ## Cargo
@@ -176,6 +181,7 @@ if [ "Linux" = "$machine" ]; then
         flatpak list --columns=branch
     ) | pr -t -e40)"
     SNAP="$(snap list)"
+    MISE="$(mise ls)"
     echo "# Installed programs
 
 ## Apt
@@ -188,6 +194,12 @@ $APT
 
 \`\`\`txt {pacstall}
 $PACSTALL
+\`\`\`
+
+## Mise
+
+\`\`\`txt {mise}
+$MISE
 \`\`\`
 
 ## Cargo

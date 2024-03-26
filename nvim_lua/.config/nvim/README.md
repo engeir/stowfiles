@@ -53,6 +53,7 @@ all plugins I'm using:
 - [hydra.nvim](https://github.com/anuvyklack/hydra.nvim.git)
 - [image.nvim](https://github.com/3rd/image.nvim.git)
 - [jfind.nvim](https://github.com/jake-stewart/jfind.nvim.git)
+- [kdl.vim](https://github.com/imsnif/kdl.vim.git)
 - [lazy.nvim](https://github.com/folke/lazy.nvim.git)
 - [lazygit.nvim](https://github.com/kdheepak/lazygit.nvim.git)
 - [lspkind.nvim](https://github.com/onsails/lspkind.nvim.git)

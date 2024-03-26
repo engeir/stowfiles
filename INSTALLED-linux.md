@@ -4673,6 +4673,24 @@ name: wezterm version: 20230712-072601-f4abf8fd-pacstall1
 name: zoom version: 5.17.11.3835
 ```
 
+## Mise
+
+```txt {mise}
+cabal      3.10.3.0    ~/.config/mise/config.toml latest
+go         1.22.1      ~/.config/mise/config.toml latest
+node       21.7.1      ~/.config/mise/config.toml latest
+pandoc     3.1.12.3    ~/.config/mise/config.toml latest
+python     3.8.19      ~/.config/mise/config.toml sub-0.4:latest
+python     3.9.19      ~/.config/mise/config.toml sub-0.3:latest
+python     3.10.14     ~/.config/mise/config.toml sub-0.2:latest
+python     3.11.8      ~/.config/mise/config.toml sub-0.1:latest
+python     3.12.2      ~/.config/mise/config.toml latest
+ruby       3.3.0       ~/.config/mise/config.toml latest
+tinytex    2024.03.13  ~/.config/mise/config.toml latest
+usage      0.1.17      ~/.config/mise/config.toml latest
+watchexec  1.25.1      ~/.config/mise/config.toml latest
+```
+
 ## Cargo
 
 ```txt {cargo}
@@ -4686,7 +4704,7 @@ bat v0.24.0:
     bat
 blindfold v1.0.7:
     blindfold
-bob-nvim v2.8.1:
+bob-nvim v2.8.2:
     bob
 cargo-binstall v1.6.4:
     cargo-binstall
@@ -4710,7 +4728,7 @@ despell v1.0.1:
     despell
 diskus v0.7.0:
     diskus
-du-dust v0.9.0:
+du-dust v1.0.0:
     dust
 evcxr_jupyter v0.17.0:
     evcxr_jupyter
@@ -4828,7 +4846,7 @@ zellij v0.39.2:
 
 ```txt {pipx}
 manual pages are exposed at /home/een023/.local/share/man
-package ansible-core 2.16.4, installed using Python 3.12.2
+package ansible-core 2.16.5, installed using Python 3.12.2
  - ansible
  - ansible-config
  - ansible-connection
@@ -4956,6 +4974,7 @@ github.com/jesseduffield/lazygit
 github.com/maaslalani/draw
 github.com/maaslalani/nap
 github.com/maaslalani/slides
+github.com/nao1215/gup
 github.com/noahgorstein/jqp
 github.com/zquestz/s
 oss.terrastruct.com/d2
@@ -5337,5 +5356,5 @@ procs                      v0.13.0                     969    latest/stable    d
 snapd                      2.61.2                      21184  latest/stable    canonical**    snapd
 snapd-desktop-integration  0.9                         83     latest/stable/…  canonical**    -
 spt                        0.25.0                      289    latest/stable    popey          -
-vlc                        3.0.19                      3721   latest/stable    videolan**     -
+vlc                        3.0.20-1-g2617de71b6        3777   latest/stable    videolan**     -
 ```

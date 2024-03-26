@@ -11,5 +11,6 @@ return {
     ft.set("jsonc", "//%s")
     ft.set("mplstyle", "#%s")
     ft.set("nu", "#%s")
+    ft.set("kdl", "#%s")
   end,
 }
