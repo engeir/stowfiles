@@ -57,12 +57,14 @@ case "$ext" in
     m) octave "$file" ;;
     md) # pandoc -t ms --highlight-style=kate -s -o "$base".pdf "$file" ;;
         choice=$(sed -n '/---/,/---/p' "$file" | grep kind | awk '{print $2}')
+        shift=$(sed -n '/---/,/---/p' "$file" | grep shiftheadinglevelby | awk '{print $2}')
+        if [ -z "$shift" ]; then shift=0; fi
         if [ "$choice" = "beamer" ]; then
             pandoc "$file" -t beamer -o "$base".pdf
         else
             # Not stopping the compilation just because of some warnings:
             # pandoc --citeproc --bibliography=/home/een023/science/ref/ref.bib "$file" --filter pandoc-eqnos --filter pandoc-include-code -s -o "$base".pdf > /dev/null 2>&1
-            pandoc --citeproc --bibliography=/home/een023/science/ref/ref.bib "$file" --filter pandoc-include --filter pandoc-eqnos -s -o "$base".pdf >/dev/null 2>&1
+            pandoc --citeproc --bibliography=/home/een023/science/ref/ref.bib "$file" --shift-heading-level-by="$shift" --filter pandoc-include --filter pandoc-eqnos -s -o "$base".pdf >/dev/null 2>&1
         fi
         ;;
         # if  [ -x "$(command -v lowdown)" ]; then
