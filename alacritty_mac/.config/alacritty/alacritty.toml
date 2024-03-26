@@ -68,35 +68,37 @@ mods = "Control|Shift"
 enabled = true
 mods = "None"
 
+# https://eastmanreference.com/complete-list-of-applescript-key-codes
+
 [[keyboard.bindings]]
-chars = "]"
-key = "RBracket"
+chars = "\u001Bh"
+key = "H"
 mods = "Alt"
 
 [[keyboard.bindings]]
-chars = "}"
-key = "RBracket"
-mods = "Alt|Shift"
-
-[[keyboard.bindings]]
-chars = "|"
-key = "Slash"
+chars = "\u001Bj"
+key = "J"
 mods = "Alt"
 
 [[keyboard.bindings]]
-chars = '\'
-key = "Slash"
-mods = "Alt|Shift"
-
-[[keyboard.bindings]]
-chars = "["
-key = "LBracket"
+chars = "\u001Bk"
+key = "K"
 mods = "Alt"
 
 [[keyboard.bindings]]
-chars = "{"
-key = "LBracket"
-mods = "Alt|Shift"
+chars = "\u001Bl"
+key = "L"
+mods = "Alt"
+
+[[keyboard.bindings]]
+chars = "\u001Bi"
+key = "I"
+mods = "Alt"
+
+[[keyboard.bindings]]
+chars = "\u001Bo"
+key = "O"
+mods = "Alt"
 
 [[keyboard.bindings]]
 chars = "\u001Bp"

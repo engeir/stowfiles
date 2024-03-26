@@ -76,16 +76,16 @@ double-conversion 3.3.0
 dpkg 1.22.6
 duf 0.8.1
 duktape 2.7.0
-dust 0.9.0
+dust 1.0.0
 elinks 0.11.7_3
-emacs 29.2
+emacs 29.3
 emacs-plus@27 27.2
 entr 5.5
 expat 2.6.2
 fastjar 0.98
 fd 9.0.0
 feh 3.10.2
-ffmpeg 6.1.1_5
+ffmpeg 6.1.1_6
 ffmpeg@4 4.4.4_4
 ffmpegthumbnailer 2.2.2_9
 ffsend 0.2.76
@@ -126,7 +126,7 @@ gobject-introspection 1.78.1
 gpatch 2.7.6
 gpgme 1.23.2
 gping 1.16.1
-graphicsmagick 1.3.42_2
+graphicsmagick 1.3.43
 graphite2 1.3.14
 grep 3.11
 groovy 4.0.20
@@ -138,7 +138,7 @@ guile 3.0.9_1
 gumbo-parser 0.10.1
 harfbuzz 8.3.1
 has 1.5.0
-hdf5 1.14.3
+hdf5 1.14.3_1
 helix 23.10
 hicolor-icon-theme 0.17
 highway 1.1.0
@@ -185,7 +185,7 @@ libbluray 1.3.4
 libcaca 0.99b20
 libcerf 2.4
 libde265 1.0.15
-libdeflate 1.19
+libdeflate 1.20
 libdicom 1.0.5
 libepoxy 1.5.10
 libev 4.33
@@ -259,7 +259,7 @@ libxft 2.3.8
 libxi 1.8.1
 libxinerama 1.1.5
 libxml2 2.12.6
-libxmu 1.1.4
+libxmu 1.2.0
 libxpm 3.5.17
 libxrender 0.9.11
 libxt 1.3.0
@@ -270,7 +270,7 @@ libzip 1.10.1
 links 2.29
 little-cms2 2.16
 lolcat 100.0.1
-lsd 1.1.0
+lsd 1.1.2
 lua 5.4.6
 luajit HEAD-03080b7 2.1.1710088188
 luarocks 3.11.0
@@ -325,7 +325,7 @@ openldap 2.6.7
 openslide 4.0.0
 openssl@1.1 1.1.1w
 openssl@3 3.2.1
-openvino 2023.3.0
+openvino 2024.0.0
 opus 1.5.1
 opusfile 0.12_1
 orc 0.4.38
@@ -393,7 +393,7 @@ rtmpdump 2.4-20151223_3
 rubberband 3.3.0
 ruby 3.3.0
 ruby-install 0.9.3
-rust-analyzer 2024-03-18
+rust-analyzer 2024-03-25
 samba 4.19.5_1
 scrcpy 2.4
 screenresolution 1.6
@@ -405,7 +405,7 @@ sdl_ttf 2.0.11_2
 shaderc 2024.0
 shared-mime-info 2.4
 shellcheck 0.10.0
-shellharden 4.3.0
+shellharden 4.3.1
 shfmt 3.8.0
 shpotify 2.1
 sk 0.10.4
@@ -424,7 +424,7 @@ spotify-tui v0.23.0
 sqlite 3.45.2
 srt 1.5.3
 st 1.1.4_1
-starship 1.18.0
+starship 1.18.1
 stow 2.3.1
 svt-av1 2.0.0
 switchaudio-osx 1.2.2
@@ -435,7 +435,7 @@ tcl-tk 8.6.14
 tectonic 0.15.0_1
 tesseract 5.3.4_1
 texinfo 7.1
-texlab 5.13.1
+texlab 5.14.0
 theora 1.1.1
 tidy-html5 5.8.0
 tig 2.5.8_1
@@ -487,16 +487,16 @@ zimg 3.0.5
 zlib 1.3.1
 zsh-abbr 5.4.1
 zstd 1.5.5
-alacritty 0.13.1
+alacritty 0.13.2
 alfred 4.5.1,1256
 amethyst 0.15.3
-android-platform-tools 35.0.0
+android-platform-tools 35.0.1
 blackhole-16ch 0.5.0
 dmenu-mac 0.7.2
 font-hack-nerd-font 3.1.1
 gimp 2.10.36
 hammerspoon 0.9.90
-librewolf 123.0.1,1
+librewolf 124.0.1,1
 macfuse 4.2.3
 nuclear 0.6.30
 osxfuse 3.11.2
@@ -518,6 +518,22 @@ xquartz 2.8.1
 zed 0.120.6
 ```
 
+```txt {mise}
+cabal      3.10.3.0    ~/.config/mise/config.toml latest
+go         1.22.1      ~/.config/mise/config.toml latest
+node       21.7.1      ~/.config/mise/config.toml latest
+pandoc     3.1.12.3    ~/.config/mise/config.toml latest
+python     3.8.19      ~/.config/mise/config.toml sub-0.4:latest
+python     3.9.19      ~/.config/mise/config.toml sub-0.3:latest
+python     3.10.14     ~/.config/mise/config.toml sub-0.2:latest
+python     3.11.8      ~/.config/mise/config.toml sub-0.1:latest
+python     3.12.2      ~/.config/mise/config.toml latest
+ruby       3.3.0       ~/.config/mise/config.toml latest
+tinytex    2024.03.13  ~/.config/mise/config.toml latest
+usage      0.1.17      ~/.config/mise/config.toml latest
+watchexec  1.25.1      ~/.config/mise/config.toml latest
+```
+
 ## Cargo
 
 ```txt {cargo}
@@ -529,7 +545,7 @@ blackd-client v0.1.0:
     blackd-client
 blindfold v1.0.7:
     blindfold
-bob-nvim v2.8.1:
+bob-nvim v2.8.3:
     bob
 broot v1.36.1:
     broot
@@ -542,14 +558,14 @@ cargo-edit v0.12.2:
     cargo-upgrade
 cargo-info v0.7.6:
     cargo-info
-cargo-update v13.3.0:
+cargo-update v13.4.0:
     cargo-install-update
     cargo-install-update-config
 cargo-watch v8.5.2:
     cargo-watch
-clap v4.5.3:
+clap v4.5.4:
     stdio-fixture
-coreutils v0.0.24:
+coreutils v0.0.25:
     coreutils
 czkawka_cli v7.0.0:
     czkawka_cli
@@ -568,15 +584,15 @@ halp v0.1.7:
     halp-test
 hyperfine v1.18.0:
     hyperfine
-irust v1.71.20:
+irust v1.71.21:
     irust
-jnv v0.1.2:
+jnv v0.2.0:
     jnv
 just v1.25.2:
     just
 mdbook v0.4.37:
     mdbook
-mise v2024.3.7:
+mise v2024.3.9:
     mise
 mprocs v0.6.4:
     mprocs
@@ -632,7 +648,7 @@ package pipenv 2023.12.1, installed using Python 3.12.0
  - pipenv-resolver
 package poetry 1.8.2, installed using Python 3.12.0
  - poetry
-package pre-commit 3.6.2, installed using Python 3.12.2
+package pre-commit 3.7.0, installed using Python 3.12.2
  - pre-commit
 package pypistats 1.5.0, installed using Python 3.12.0
  - pypistats
@@ -675,6 +691,7 @@ github.com/jesseduffield/lazygit
 github.com/maaslalani/draw
 github.com/maaslalani/nap
 github.com/maaslalani/slides
+github.com/nao1215/gup
 github.com/noahgorstein/jqp
 github.com/zquestz/s
 oss.terrastruct.com/d2
