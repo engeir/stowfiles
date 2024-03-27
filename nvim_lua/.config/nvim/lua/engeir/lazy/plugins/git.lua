@@ -123,7 +123,6 @@ return {
   },
   {
     "TimUntersberger/neogit",
-    cond = IS_KNOWN,
     config = function()
       local neogit = require("neogit")
       neogit.setup({
