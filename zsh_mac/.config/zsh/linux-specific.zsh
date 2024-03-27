@@ -67,14 +67,14 @@ p() {
     # open=zathura -
     # open=xdg-open
     # shellcheck disable=SC2016
-    ag --ignore Dropbox --ignore OneDrive --ignore BoxSync -U -g ".pdf$" |
-        fast-p |
-        fzf --read0 --reverse -e -d $'\t' \
+    ag --ignore Dropbox --ignore OneDrive --ignore BoxSync -U -g ".pdf$" \
+        | fast-p \
+        | fzf --read0 --reverse -e -d $'\t' \
             --preview-window down:80% --preview '
             v=$(echo {q} | tr " " "|");
             echo -e {1}"\n"{2} | grep -E "^|$v" -i --color=always;
-            ' |
-        cut -z -f 1 -d $'\t' | tr -d '\n' | xargs -r --null zathura - >/dev/null 2>/dev/null
+            ' \
+        | cut -z -f 1 -d $'\t' | tr -d '\n' | xargs -r --null zathura - >/dev/null 2>/dev/null
 }
 
 fopen() {
@@ -88,11 +88,11 @@ rmbd() {
     echo "Are you sure you want to delete ""$c"" files from ""$PWD""?"
     select yn in "Yes" "No"; do
         case "$yn" in
-        Yes)
-            find . -print0 ! -newermt "$1 $2" | xargs -0 rm -rf
-            break
-            ;;
-        No) break ;;
+            Yes)
+                find . -print0 ! -newermt "$1 $2" | xargs -0 rm -rf
+                break
+                ;;
+            No) break ;;
         esac
     done
 }
@@ -104,11 +104,11 @@ rmad() {
     echo "Are you sure you want to delete ""$c"" files from ""$PWD""?"
     select yn in "Yes" "No"; do
         case "$yn" in
-        Yes)
-            find . -print0 -newermt "$1 $2" | xargs -0 rm -rf
-            break
-            ;;
-        No) break ;;
+            Yes)
+                find . -print0 -newermt "$1 $2" | xargs -0 rm -rf
+                break
+                ;;
+            No) break ;;
         esac
     done
 }
@@ -194,7 +194,8 @@ my_img_magik() {
 screen-record() {
     # From
     # https://www.reddit.com/r/archlinux/comments/artbxd/record_a_video_with_multi_monitors/
-    read -r o g < <(slop -f '+%x,%y %wx%h'); ffmpeg -f x11grab -framerate 60 -video_size "$g" -i "${DISPLAY}${o}" output.mkv
+    read -r o g < <(slop -f '+%x,%y %wx%h')
+    ffmpeg -f x11grab -framerate 60 -video_size "$g" -i "${DISPLAY}${o}" output.mkv
 }
 
 # Latex compilers
