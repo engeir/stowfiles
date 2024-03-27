@@ -252,7 +252,6 @@ return {
   },
   {
     "nvim-telescope/telescope-bibtex.nvim",
-    enabled = IS_KNOWN,
     config = function()
       require("telescope").load_extension("bibtex")
     end,
