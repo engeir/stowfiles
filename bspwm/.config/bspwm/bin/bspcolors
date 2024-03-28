@@ -27,7 +27,7 @@ getcolors () {
 }
 
 bspbar () {
-	cat > $DIR/polybar/colors <<- EOF	
+	cat > $DIR/polybar/colors <<- EOF
 	[color]
 
 	FOREGROUND = ${FOREGROUND}
@@ -85,7 +85,7 @@ bspterm () {
 }
 
 bsprofi () {
-	cat > $DIR/rofi/themes/colors.rasi <<- EOF	
+	cat > $DIR/rofi/themes/colors.rasi <<- EOF
 	* {
 		background:			${BACKGROUND};
 		foreground:			${FOREGROUND};
