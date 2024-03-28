@@ -11,7 +11,7 @@ version=current
 
 trap interrupt SIGINT
 
-shopt -s expand_aliases 
+shopt -s expand_aliases
 
 alias cp='cp -f'                      # -p flag for interactive
 alias ln='ln -f'
@@ -63,7 +63,7 @@ DESCRIPTION:
     cryptic names like 'bchri8a.pfa', which becomes 'CharterBT-Italic.pfa'.
     In all cases, the original file is preserved with its original
     name in the directory from which the font is being installed.
-    
+
     The .pfa and groff fonts are moved to site-font/devps/ and
     registered in the 'download' file.  If the font is to be
     available to gropdf, symlinks are made in site-font/devpdf/ to
@@ -122,14 +122,14 @@ OPTIONS
 
         If -F is not given, a prompt asks for the family name.
 
-    -f  \033[4mname\033[0m or +\033[4mSTYLE\033[0m 
+    -f  \033[4mname\033[0m or +\033[4mSTYLE\033[0m
         Name by which to access the font with calls to .ft or
         .FT (mom macros).  \033[4mname\033[0m may be arbitrary, or
         a '+' sign prefixed to an uppercase fontstyle recognized
         by groff, eg +R, +I, +B, +BI, which respectively stand for
         regular, italic, bold, and bold italic.  The mom macros
         provide additional styles, which may also be used.
-        
+
         +\033[4mSTYLE\033[0m is affixed to the family name to arrive at the
         groff fontname.
 
@@ -143,7 +143,7 @@ OPTIONS
         or
 
             .ft GaramondR
-        
+
         -f is not compatible with batch processing.  \033[4minstall-font\033[0m
         will abort if the -f option is given and multiple files are
         named on the command line.
@@ -166,7 +166,7 @@ esac
 
 # if fontforge not installed, no point going any further
 
-type fontforge > /dev/null 2>&1 || { 
+type fontforge > /dev/null 2>&1 || {
   printf "fontforge not installed. Aborting.\n" >&2
   exit 1
 }
@@ -206,14 +206,14 @@ Aborting.\n" >&2
     no_arg)
       printf \
 "[install-font]: Option \"-${option}\" requires an argument.  \
-Aborting.\n" >&2 
+Aborting.\n" >&2
       show_usage
       exit 1
     ;;
     filename_arg)
       printf \
 "[install-font]: Option \"-${option}\" requires a non-filename argument.  \
-Aborting.\n" >&2 
+Aborting.\n" >&2
       show_usage
       exit 1
     ;;
@@ -253,7 +253,7 @@ generate_t42()
 {
 cat <<EOF  > ${tmp_dir}/generate-t42.pe
 # generate-t42.pe
-                                                                                             
+
 Open(\$1);
 Generate(\$fontname + ".pfa");
 Generate(\$fontname + ".t42");
@@ -264,7 +264,7 @@ generate_pfa()
 {
 cat <<EOF  > ${tmp_dir}/generate-pfa.pe
 # generate-pfa.pe
-                                                                                             
+
 Open(\$1);
 Generate(\$fontname + ".pfa");
 EOF
@@ -361,7 +361,7 @@ install_to_devpdf()
         }
 
         printf "\t${font}\t${font}.pfa\n" >> ${site_font_devpdf}/download
-        
+
         printf "Done.\n"
       else
         printf \
@@ -443,10 +443,10 @@ convert_install()
 
 copy_file()
 {
-  [ -d ${copy_dir} ] || { 
-    echo "${copy_dir} not found; creating." 
-    mkdir ${copy_dir} 
-    chmod 755 ${copy_dir} ; 
+  [ -d ${copy_dir} ] || {
+    echo "${copy_dir} not found; creating."
+    mkdir ${copy_dir}
+    chmod 755 ${copy_dir} ;
   }
   [ -d ${copy_dir}/${family} ] || {
     mkdir ${copy_dir}/${family}
@@ -504,7 +504,7 @@ do
       dont_copy=yes
     ;;
     d)
-      install_in_devpdf=yes 
+      install_in_devpdf=yes
     ;;
     D)
       skip_devpdf=yes
@@ -553,7 +553,7 @@ do
       loc_or_sysdir=/usr/share/groff
     ;;
     \?)
-      printf "Option \"-${OPTARG}\" not valid. Aborting.\n" >&2 
+      printf "Option \"-${OPTARG}\" not valid. Aborting.\n" >&2
       show_usage
       exit 1
     ;;
@@ -595,22 +595,22 @@ site_font_devpdf=${loc_or_sysdir}/site-font/devpdf
 # create site-font and site-font/devps and site-font/devpdf
 # if not present
 
-[ -d ${loc_or_sysdir}/site-font ] || { 
-  printf "${loc_or_sysdir}/site-font not found; creating.\n" 
-  mkdir ${loc_or_sysdir}/site-font 
-  chmod 755 ${loc_or_sysdir}/site-font 
+[ -d ${loc_or_sysdir}/site-font ] || {
+  printf "${loc_or_sysdir}/site-font not found; creating.\n"
+  mkdir ${loc_or_sysdir}/site-font
+  chmod 755 ${loc_or_sysdir}/site-font
 }
 
-[ -d ${site_font_devps} ] || { 
-  printf "${site_font_devps} not found; creating.\n" 
-  mkdir ${site_font_devps} 
-  chmod 755 ${site_font_devps} 
+[ -d ${site_font_devps} ] || {
+  printf "${site_font_devps} not found; creating.\n"
+  mkdir ${site_font_devps}
+  chmod 755 ${site_font_devps}
 }
 
-[ -d ${site_font_devpdf} ] || { 
-  printf "${site_font_devpdf} not found; creating.\n" 
-  mkdir ${site_font_devpdf} 
-  chmod 755 ${site_font_devpdf} 
+[ -d ${site_font_devpdf} ] || {
+  printf "${site_font_devpdf} not found; creating.\n"
+  mkdir ${site_font_devpdf}
+  chmod 755 ${site_font_devpdf}
 }
 
 # process files

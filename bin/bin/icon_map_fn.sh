@@ -414,4 +414,3 @@ function icon_map() {
     ;;
   esac
 }
-
