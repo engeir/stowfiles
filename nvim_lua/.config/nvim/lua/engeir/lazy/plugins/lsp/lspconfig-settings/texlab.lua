@@ -24,7 +24,14 @@ return {
       latexindent = { modifyLineBreaks = true },
       build = {
         executable = "tectonic",
-        args = { "-X", "compile", "%f", "--synctex", "--keep-logs", "--keep-intermediates" },
+        args = {
+          "-X",
+          "compile",
+          "%f",
+          "--synctex",
+          "--keep-logs",
+          "--keep-intermediates",
+        },
       },
     },
   },
