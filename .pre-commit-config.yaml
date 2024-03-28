@@ -2,7 +2,7 @@
 # See https://pre-commit.com/ for usage and config
 
 ci:
-    skip: [update-nvim]
+  - skip: [update-nvim]
 
 repos:
   - repo: https://github.com/pre-commit/pre-commit-hooks
@@ -17,13 +17,13 @@ repos:
 
 
 
-- repo: https://github.com/JohnnyMorganz/StyLua
-  rev: v0.20.0
-  hooks:
-    - id: stylua-github
-      name: stylua
-      entry: stylua nvim_lua/.config/nvim/
-      pass_filenames: false
+  - repo: https://github.com/JohnnyMorganz/StyLua
+    rev: v0.20.0
+    hooks:
+      - id: stylua-github
+        name: stylua
+        entry: stylua nvim_lua/.config/nvim/
+        pass_filenames: false
 
   - repo: local
     hooks:
