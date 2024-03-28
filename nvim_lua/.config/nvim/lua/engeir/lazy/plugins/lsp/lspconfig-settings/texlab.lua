@@ -22,7 +22,7 @@ return {
         executable = "zathura",
       },
       latexindent = { modifyLineBreaks = true },
-build = {executable = "tectonic", args = {"-X","compile","%f","--synctex","--keep-logs","--keep-intermediates}},
+build = {executable = "tectonic", args = {"-X","compile","%f","--synctex","--keep-logs","--keep-intermediates},},
     },
   },
 }
