@@ -75,4 +75,3 @@ yabai -m rule --add title="mylauncher" manage=off sticky=on layer=above border=o
 yabai -m config external_bar all:28:0
 
 echo "yabai configuration loaded.."
-

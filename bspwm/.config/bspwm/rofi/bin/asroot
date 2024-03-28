@@ -39,5 +39,3 @@ case $chosen in
         apps_as_root 'alacritty --class alacritty-float,alacritty-float --config-file /root/.config/bspwm/alacritty/alacritty.yml -e vim'
         ;;
 esac
-
-

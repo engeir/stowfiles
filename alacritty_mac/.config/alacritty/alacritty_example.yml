@@ -848,7 +848,7 @@
 # #  - { key: Key0,      mods: Alt,          chars: "\x7D"                  }
 # #  - { key: Minus,     mods: Alt,          chars: "\x5C"                  }
 # #  - { key: Grave,     mods: Alt,          chars: "\x7C"                  }
-  
+
   # - { key: Key1,      mods: Alt|Shift,    chars: "\xA1"                  }
   # - { key: Key2,      mods: Alt|Shift,    chars: "Ó"                     }
   # - { key: Key3,      mods: Alt|Shift,    chars: "\xA5"                  }
