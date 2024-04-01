@@ -1,3 +1,7 @@
+on: push
+
+name: dprint-check
+
 jobs:
   style:
     runs-on: ubuntu-latest
