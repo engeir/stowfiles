@@ -12,9 +12,3 @@ jobs:
         run: |
           curl -fsSL https://dprint.dev/install.sh | sh -s 0.45.0 > /dev/null 2>&1
           $HOME/.dprint/bin/dprint check --incremental=false --allow-no-files
-      # - uses: dprint/check@v2.2
-      #   # with:
-      #   #   config-path: .dprint.jsonc
-      #   run: |
-      #     ls
-      #     ~/.dprint/bin/dprint check --config .dprint.jsonc
