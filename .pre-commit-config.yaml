@@ -1,12 +1,14 @@
+# .pre-commit-config.yaml
+# See https://pre-commit.com/ for usage and config
+
 ci:
-  skip: [update-nvim]
+  skip: [update-nvim,check-yaml,dprint]
 
 repos:
   - repo: https://github.com/pre-commit/pre-commit-hooks
     rev: v4.5.0
     hooks:
       - id: check-yaml
-        args: [--unsafe]
       - id: check-json
       - id: end-of-file-fixer
       - id: trailing-whitespace
@@ -21,13 +23,6 @@ repos:
         entry: stylua nvim_lua/.config/nvim/
         pass_filenames: false
 
-  - repo: https://github.com/spinergie/pre-commit-dprint
-    rev: v0.45.0
-    hooks:
-      - id: dprint
-        entry: dprint fmt --incremental=false --allow-no-files
-        pass_filenames: false
-
   - repo: local
     hooks:
       - id: update-nvim
@@ -35,3 +30,10 @@ repos:
         language: script
         pass_filenames: false
         entry: .update-nvim
+
+      - id: dprint
+        name: dprint
+        entry: dprint fmt --incremental=false --allow-no-files
+        language: node
+        pass_filenames: false
+        additional_dependencies: ["dprint"]
