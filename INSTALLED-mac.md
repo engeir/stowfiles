@@ -33,7 +33,7 @@ boost 1.84.0_1
 borgbackup-fuse 1.2.7
 brotli 1.1.0
 btop 1.3.2
-c-ares 1.27.0
+c-ares 1.28.1
 ca-certificates 2024-03-11
 cabextract 1.11
 cairo 1.18.0
@@ -52,11 +52,11 @@ cloc 2.00
 cmake 3.29.0
 cmatrix 2.0
 composer 2.7.2
-coreutils 9.4
+coreutils 9.5
 cpio 2.15
 cpp-gsl 4.0.0_1
-curl 8.6.0
-cython 3.0.9
+curl 8.7.1
+cython 3.0.10
 dav1d 1.4.1
 dbus 1.14.10
 desktop-file-utils 0.27
@@ -67,7 +67,7 @@ docbook-xsl 1.79.2_1
 docker 26.0.0
 docker-buildx 0.13.1
 docker-completion 26.0.0
-docker-compose 2.26.0
+docker-compose 2.26.1
 docutils 0.20.1_1
 docx2txt 1.4
 doggo 0.5.7
@@ -96,7 +96,7 @@ flac 1.4.3
 flex 2.6.4_2
 fmt 10.2.1_1
 fontconfig 2.15.0
-freetds 1.4.10
+freetds 1.4.12
 freetype 2.13.2
 frei0r 2.3.2
 fribidi 1.0.13
@@ -114,17 +114,17 @@ giflib 5.2.1
 girara 0.4.0
 git 2.44.0
 git-lfs 3.5.1
-glib 2.80.0_1
+glib 2.80.0_2
 gmp 6.3.0
-gnu-getopt 2.39.3
+gnu-getopt 2.40
 gnu-sed 4.9
 gnu-tar 1.35
 gnupg 2.4.5
 gnuplot 6.0.0
 gnutls 3.8.4
-gobject-introspection 1.78.1
+gobject-introspection 1.80.1
 gpatch 2.7.6
-gpgme 1.23.2
+gpgme 1.23.2_1
 gping 1.16.1
 graphicsmagick 1.3.43
 graphite2 1.3.14
@@ -136,10 +136,10 @@ gtk+3 3.24.41
 gtk-mac-integration 3.0.1_1
 guile 3.0.9_1
 gumbo-parser 0.10.1
-harfbuzz 8.3.1
+harfbuzz 8.4.0
 has 1.5.0
 hdf5 1.14.3_1
-helix 23.10
+helix 24.03
 hicolor-icon-theme 0.17
 highway 1.1.0
 hledger 1.32.3
@@ -159,7 +159,7 @@ imlib2 1.12.2
 intltool 0.51.0_2
 isl 0.26
 jansson 2.14
-jasper 4.2.2
+jasper 4.2.3
 jbig2dec 0.20
 jemalloc 5.3.0
 jpeg 9f
@@ -176,7 +176,7 @@ lame 3.100
 leptonica 1.84.1
 libaec 1.1.3
 libansilove 1.4.1
-libarchive 3.7.2
+libarchive 3.7.2_1
 libass 0.17.1_1
 libassuan 2.5.7
 libavif 1.0.4
@@ -186,7 +186,7 @@ libcaca 0.99b20
 libcerf 2.4
 libde265 1.0.15
 libdeflate 1.20
-libdicom 1.0.5
+libdicom 1.1.0
 libepoxy 1.5.10
 libev 4.33
 libevent 2.1.12_1
@@ -207,7 +207,7 @@ liblqr 0.4.2_1
 libmagic 5.45
 libmatio 1.5.26
 libmd 1.1.0
-libmediainfo 24.01
+libmediainfo 24.03
 libmicrohttpd 1.0.1
 libmikmod 3.3.11.1
 libmms 0.6.4
@@ -223,7 +223,7 @@ libpq 16.2_1
 libproxy 0.5.4
 libpthread-stubs 0.5
 libraw 0.21.2
-librist 0.2.10
+librist 0.2.10_1
 librsvg 2.58.0
 libsamplerate 0.2.2
 libsixel 1.10.3_1
@@ -247,7 +247,7 @@ libvmaf 3.0.0
 libvorbis 1.3.7
 libvpx 1.13.1
 libwebsockets 4.3.3
-libx11 1.8.7
+libx11 1.8.8
 libxau 1.0.11
 libxaw 1.0.16
 libxcb 1.16.1
@@ -282,12 +282,12 @@ m-cli 0.3.0
 m4 1.4.19
 mad 0.15.1b
 make 4.4.1
-mbedtls 3.5.2
+mbedtls 3.6.0
 mcfly v0.8.4
 md4c 0.5.2
-media-info 24.01
-mercurial 6.7.1
-mesa 24.0.3
+media-info 24.03
+mercurial 6.7.2
+mesa 24.0.4
 meson 1.4.0
 mozjpeg 4.1.5
 mpdecimal 4.0.0
@@ -315,10 +315,10 @@ nss 3.99
 numpy 1.26.4
 odt2txt 0.5
 oniguruma 6.9.9
-open-mpi 5.0.2
+open-mpi 5.0.2_1
 openblas 0.3.26
 opencore-amr 0.1.6
-openexr 3.2.3
+openexr 3.2.4
 openjdk 21.0.2
 openjpeg 2.5.2
 openldap 2.6.7
@@ -334,28 +334,28 @@ p7zip 17.05
 pandoc 3.1.12.3
 pandoc-citeproc 0.17.0.2
 pandoc-include-code 1.5.0.0_2
-pango 1.52.1
+pango 1.52.2
 pass 1.7.4
 pcre 8.45
 pcre2 10.43
 pdftohtml 0.40a
-pdftoipe 7.2.24.1_19
+pdftoipe 7.2.24.1_20
 perl 5.38.2_1
 php 8.3.4
 pinentry 1.3.0
 pinentry-mac 1.1.1.1
-pipx 1.4.3
+pipx 1.5.0
 pixman 0.42.2
 pkg-config 0.29.2_3
-pmix 4.2.9
-poppler 24.03.0
+pmix 5.0.2
+poppler 24.04.0
 popt 1.19
 portaudio 19.7.0
 portmidi 2.0.4_1
 pqiv 2.13.1
 prettier 3.2.5
 proj 9.4.0
-protobuf 25.3_1
+protobuf 26.1
 pueue 3.4.0
 pugixml 1.14
 pup 0.4.0
@@ -375,7 +375,7 @@ python-platformdirs 4.2.0
 python-setuptools 69.2.0
 python-tabulate 0.9.0_1
 python@3.10 3.10.14
-python@3.11 3.11.8
+python@3.11 3.11.9
 python@3.12 3.12.2_1
 python@3.8 3.8.19
 python@3.9 3.9.19
@@ -393,12 +393,12 @@ rtmpdump 2.4-20151223_3
 rubberband 3.3.0
 ruby 3.3.0
 ruby-install 0.9.3
-rust-analyzer 2024-03-25
-samba 4.19.5_1
+rust-analyzer 2024-04-01
+samba 4.20.0
 scrcpy 2.4
 screenresolution 1.6
 sdl12-compat 1.2.68
-sdl2 2.30.1
+sdl2 2.30.2
 sdl_image 1.2.12_10
 sdl_mixer 1.2.12_6
 sdl_ttf 2.0.11_2
@@ -424,7 +424,7 @@ spotify-tui v0.23.0
 sqlite 3.45.2
 srt 1.5.3
 st 1.1.4_1
-starship 1.18.1
+starship 1.18.2
 stow 2.3.1
 svt-av1 2.0.0
 switchaudio-osx 1.2.2
@@ -435,17 +435,17 @@ tcl-tk 8.6.14
 tectonic 0.15.0_1
 tesseract 5.3.4_1
 texinfo 7.1
-texlab 5.14.0
+texlab 5.14.1
 theora 1.1.1
 tidy-html5 5.8.0
-tig 2.5.8_1
+tig 2.5.9
 timg 1.6.0
 tldr 1.6.1
 tmux 3.4
 toilet 0.3
 tree 2.1.1_1
 tree-sitter 0.22.2
-ttyd 1.7.4_1
+ttyd 1.7.7
 typst 0.11.0
 uchardet 0.0.8
 ueberzugpp 2.9.2
@@ -470,13 +470,13 @@ x265 3.5
 xcb-util 0.4.1
 xcb-util-image 0.4.1
 xmlto 0.0.28
-xorgproto 2023.2
+xorgproto 2024.1
 xplr 0.21.7
 xterm 390
 xvid 1.3.7
 xxhash 0.8.2
-xz 5.6.1
-yabai 7.0.3
+xz 5.4.6
+yabai 7.0.4
 yarn 1.22.22
 youtube-dl 2021.12.17
 yt-dlp 2024.03.10
@@ -486,7 +486,7 @@ zeromq 4.3.5_1
 zimg 3.0.5
 zlib 1.3.1
 zsh-abbr 5.4.1
-zstd 1.5.5
+zstd 1.5.6
 alacritty 0.13.2
 alfred 4.5.1,1256
 amethyst 0.15.3
@@ -518,20 +518,22 @@ xquartz 2.8.1
 zed 0.120.6
 ```
 
+## Mise
+
 ```txt {mise}
-cabal      3.10.3.0    ~/.config/mise/config.toml latest
-go         1.22.1      ~/.config/mise/config.toml latest
-node       21.7.1      ~/.config/mise/config.toml latest
-pandoc     3.1.12.3    ~/.config/mise/config.toml latest
-python     3.8.19      ~/.config/mise/config.toml sub-0.4:latest
-python     3.9.19      ~/.config/mise/config.toml sub-0.3:latest
-python     3.10.14     ~/.config/mise/config.toml sub-0.2:latest
-python     3.11.8      ~/.config/mise/config.toml sub-0.1:latest
-python     3.12.2      ~/.config/mise/config.toml latest
-ruby       3.3.0       ~/.config/mise/config.toml latest
-tinytex    2024.03.13  ~/.config/mise/config.toml latest
-usage      0.1.17      ~/.config/mise/config.toml latest
-watchexec  1.25.1      ~/.config/mise/config.toml latest
+cabal      3.10.3.0  ~/.config/mise/config.toml latest        
+go         1.22.2    ~/.config/mise/config.toml latest        
+node       21.7.2    ~/.config/mise/config.toml latest        
+pandoc     3.1.12.3  ~/.config/mise/config.toml latest        
+python     3.8.19    ~/.config/mise/config.toml sub-0.4:latest
+python     3.9.19    ~/.config/mise/config.toml sub-0.3:latest
+python     3.10.14   ~/.config/mise/config.toml sub-0.2:latest
+python     3.11.9    ~/.config/mise/config.toml sub-0.1:latest
+python     3.12.2    ~/.config/mise/config.toml latest        
+ruby       3.3.0     ~/.config/mise/config.toml latest        
+tinytex    2024.04   ~/.config/mise/config.toml latest        
+usage      0.1.17    ~/.config/mise/config.toml latest        
+watchexec  1.25.1    ~/.config/mise/config.toml latest        
 ```
 
 ## Cargo
@@ -539,7 +541,7 @@ watchexec  1.25.1      ~/.config/mise/config.toml latest
 ```txt {cargo}
 atuin v18.1.0:
     atuin
-bacon v2.15.0:
+bacon v2.16.0:
     bacon
 blackd-client v0.1.0:
     blackd-client
@@ -573,7 +575,7 @@ despell v1.0.1:
     despell
 evcxr_jupyter v0.17.0:
     evcxr_jupyter
-eza v0.18.8:
+eza v0.18.9:
     eza
 gitui v0.25.2:
     gitui
@@ -586,17 +588,17 @@ hyperfine v1.18.0:
     hyperfine
 irust v1.71.21:
     irust
-jnv v0.2.0:
+jnv v0.2.1:
     jnv
 just v1.25.2:
     just
 mdbook v0.4.37:
     mdbook
-mise v2024.3.9:
+mise v2024.4.0:
     mise
 mprocs v0.6.4:
     mprocs
-nu v0.91.0:
+nu v0.92.0:
     nu
 numbat-cli v1.11.0:
     numbat
@@ -725,6 +727,7 @@ i biber.universal-darwin: universal-darwin files of biber
 i biblatex: Sophisticated Bibliographies in LaTeX
 i bibtex: Process bibliographies (bib files) for LaTeX or other formats
 i bibtex.universal-darwin: universal-darwin files of bibtex
+i bigfoot: Footnotes for critical editions
 i bigintcalc: Integer calculations on very large numbers
 i bitset: Handle bit-vector datatype
 i bookmark: A new bookmark (outline) organization for hyperref
@@ -740,6 +743,7 @@ i chemgreek: Upright Greek letters in chemistry
 i cite: Improved citation handling in LaTeX
 i cleveref: Intelligent cross-referencing
 i cm: Computer Modern fonts
+i cm-super: CM-Super family of fonts
 i collectbox: Collect and process macro arguments as boxes
 i colortbl: Add colour to LaTeX tables
 i comment: Selectively include/exclude portions of text
@@ -813,6 +817,7 @@ i hyperxmp: Embed XMP metadata within a LaTeX document
 i hyperxmp.universal-darwin: universal-darwin files of hyperxmp
 i hyph-utf8: Hyphenation patterns expressed in UTF-8
 i hyphen-base: core hyphenation support files
+i hyphen-english: English hyphenation patterns.
 i hyphen-french: French hyphenation patterns.
 i hyphenat: Disable/enable hypenation
 i ifmtarg: If-then-else command for processing potentially empty arguments
@@ -979,8 +984,10 @@ i totpages: Count pages in a document, and report last page number
 i translator: Easy translation of strings in LaTeX
 i trimspaces: Trim spaces around an argument or within a macro
 i tufte-latex: Document classes inspired by the work of Edward Tufte
+i type1cm: Arbitrary size font selection in LaTeX
 i ucs: Extended UTF-8 input encoding support for LaTeX
 i ulem: Package for underlining
+i underscore: Control the behaviour of "_" in text
 i unicode-data: Unicode data and loaders for TeX
 i unicode-math: Unicode mathematics support for XeTeX and LuaTeX
 i uniquecounter: Provides unlimited unique counter
@@ -1011,3 +1018,4 @@ i zapfchan: URW 'Base 35' font pack for LaTeX
 i zapfding: URW 'Base 35' font pack for LaTeX
 i zref: A new reference scheme for LaTeX
 ```
+    

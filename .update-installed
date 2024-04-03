@@ -126,6 +126,8 @@ if [ "Mac" = "$machine" ]; then
 $BREW
 \`\`\`
 
+## Mise
+
 \`\`\`txt {mise}
 $MISE
 \`\`\`

@@ -10,3 +10,11 @@ if status is-interactive
     set fish_cursor_replace_one underscore
     set fish_cursor_visual line
 end
+
+# bun
+set --export BUN_INSTALL "$HOME/.bun"
+set --export PATH $BUN_INSTALL/bin $PATH
+
+# Wasmer
+export WASMER_DIR="/Users/eirikenger/.wasmer"
+[ -s "$WASMER_DIR/wasmer.sh" ] && source "$WASMER_DIR/wasmer.sh"
