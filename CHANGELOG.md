@@ -1,5 +1,27 @@
 # Changelog
 
+## [1.11.5](https://github.com/engeir/stowfiles/compare/v1.11.4...v1.11.5) (2024-04-01)
+
+
+### Bug Fixes
+
+* **tmux:** only set fish if available ([470a44c](https://github.com/engeir/stowfiles/commit/470a44cce1afbb58e693635849a236b170481f01))
+
+
+### Miscellaneous
+
+* **bspwm:** keep mappings to the home row ([d8e4c26](https://github.com/engeir/stowfiles/commit/d8e4c26637d83453027dead728a0159cba5bd012))
+* **nvim:** add tectonic build config to texlab ([#42](https://github.com/engeir/stowfiles/issues/42)) ([442509b](https://github.com/engeir/stowfiles/commit/442509b7dde4d9d0af0cfe6242562d368061fe08))
+* **nvim:** allow neogit on FRAM ([5ee4d82](https://github.com/engeir/stowfiles/commit/5ee4d8295f34e498fcf581857d70de859952a40a))
+* **nvim:** allow telescope-bibtex on FRAM (any computer) ([009cfd8](https://github.com/engeir/stowfiles/commit/009cfd87a4c31b4ce9866e559c9ab8cbadceadc9))
+
+
+### Continuous Integration
+
+* **pre-commit:** run stylua from its official repo ([#41](https://github.com/engeir/stowfiles/issues/41)) ([5b2b282](https://github.com/engeir/stowfiles/commit/5b2b28261541a6976f312a9684294810a4d75520))
+* **pre-commit:** skip local pre-commit ([725ee68](https://github.com/engeir/stowfiles/commit/725ee68543ce64ca4906d3fb715c1d9deb2b5ca9))
+* **pre-commit:** use remote dprint hook ([#43](https://github.com/engeir/stowfiles/issues/43)) ([fb7b5d3](https://github.com/engeir/stowfiles/commit/fb7b5d31deb6b2adf908e9f769dcd7b2ddd414b5))
+
 ## [1.11.4](https://github.com/engeir/stowfiles/compare/v1.11.3...v1.11.4) (2024-03-26)
 
 
