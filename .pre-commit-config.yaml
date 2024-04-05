@@ -42,5 +42,6 @@ repos:
 exclude: |
   (?x)(
     ^INSTALLED-|
-    ^nvim_lua\/\.config\/nvim\/README\.md
+    ^nvim_lua\/\.config\/nvim\/README\.md|
+    ^fish\/\.config\/fish\/completions\/*
   )
