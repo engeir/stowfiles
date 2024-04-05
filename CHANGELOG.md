@@ -1,5 +1,19 @@
 # Changelog
 
+## [1.11.6](https://github.com/engeir/stowfiles/compare/v1.11.5...v1.11.6) (2024-04-05)
+
+
+### Miscellaneous
+
+* **software:** update installed ([1bc2364](https://github.com/engeir/stowfiles/commit/1bc236435ae13900abe336fca20cbeb59d5ba7c2))
+* **software:** update installed ([baa4f73](https://github.com/engeir/stowfiles/commit/baa4f731e2c6bd19402a389703ba140b3db03657))
+
+
+### Continuous Integration
+
+* **pre-commit:** exclude files that are generated ([6f91437](https://github.com/engeir/stowfiles/commit/6f914375b04d6fa98811f698ade17d13d333f1ad))
+* **pre-commit:** ignore generated fish directories ([348bfe0](https://github.com/engeir/stowfiles/commit/348bfe0bd6fcb1183a2c60dcd0d829aa821a9145))
+
 ## [1.11.5](https://github.com/engeir/stowfiles/compare/v1.11.4...v1.11.5) (2024-04-01)
 
 
