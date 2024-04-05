@@ -2,7 +2,7 @@
 # See https://pre-commit.com/ for usage and config
 
 ci:
-  skip: [update-nvim,check-yaml,dprint]
+  skip: [update-nvim, check-yaml, dprint]
 
 repos:
   - repo: https://github.com/pre-commit/pre-commit-hooks
@@ -33,7 +33,14 @@ repos:
 
       - id: dprint
         name: dprint
-        entry: dprint fmt --incremental=false --allow-no-files
+        entry: dprint fmt --incremental=true --allow-no-files
         language: node
         pass_filenames: false
         additional_dependencies: ["dprint"]
+
+# Exclude files that are generated
+exclude: |
+  (?x)(
+    ^INSTALLED-|
+    ^nvim_lua\/\.config\/nvim\/README\.md
+  )
