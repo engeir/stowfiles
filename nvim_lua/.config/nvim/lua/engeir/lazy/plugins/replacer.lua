@@ -1,7 +1,7 @@
-local opts = { save_on_write = false, rename_files = false }
+local opts = { save_on_write = true, rename_files = true }
 return {
   "gabrielpoca/replacer.nvim",
-  opts = { rename_files = false },
+  opts = { rename_files = true },
   keys = {
     {
       "<leader>rs",

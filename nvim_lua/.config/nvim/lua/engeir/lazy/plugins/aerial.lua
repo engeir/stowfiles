@@ -4,7 +4,7 @@ return {
   dependencies = "nvim-tree/nvim-web-devicons", -- optional, for file icons
   config = function()
     local air = require("aerial")
-    local aira = require("aerial.actions")
+    -- local aira = require("aerial.actions")
     air.setup({
       backends = { "treesitter", "lsp", "markdown", "man" },
       layout = {
@@ -25,7 +25,10 @@ return {
       close_on_select = false,
       -- Show box drawing characters for the tree hierarchy
       show_guides = true,
+      -- Options for the floating nav windows
       nav = {
+        height = 0.6,
+        preview = true,
         keymaps = {
           ["<C-c>"] = "actions.close",
           ["q"] = "actions.close",
