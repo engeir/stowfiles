@@ -3484,7 +3484,7 @@ lintian 2.114.0ubuntu1.3 [Ubuntu/jammy main]
 linux-base 4.5ubuntu9 [Ubuntu/jammy main]
 linux-firmware 20220329.git681281e4-0ubuntu3.29 [Ubuntu/jammy main]
 linux-generic 5.15.0.101.98 [Ubuntu/jammy main]
-linux-generic-hwe-20.04 5.15.0.101.98 [Ubuntu/jammy main]
+linux-generic-hwe-20.04 5.15.0.102.99 [Ubuntu/jammy main]
 linux-generic-hwe-22.04 6.5.0.26.26~22.04.13 [Ubuntu/jammy main]
 linux-headers-5.15.0-101 5.15.0-101.111 [Ubuntu/jammy main]
 linux-headers-5.15.0-101-generic 5.15.0-101.111 [Ubuntu/jammy main]
@@ -3505,7 +3505,7 @@ linux-image-6.5.0-25-generic 6.5.0-25.25~22.04.1 [Ubuntu/jammy main]
 linux-image-6.5.0-26-generic 6.5.0-26.26~22.04.1 [Ubuntu/jammy main]
 linux-image-generic 5.15.0.101.98 [Ubuntu/jammy main]
 linux-image-generic-hwe-22.04 6.5.0.26.26~22.04.13 [Ubuntu/jammy main]
-linux-libc-dev 5.15.0-101.111 [Ubuntu/jammy main]
+linux-libc-dev 5.15.0-102.112 [Ubuntu/jammy main]
 linux-modules-5.15.0-101-generic 5.15.0-101.111 [Ubuntu/jammy main]
 linux-modules-5.19.0-50-generic 5.19.0-50.50 [Ubuntu/jammy main]
 linux-modules-6.2.0-39-generic 6.2.0-39.40~22.04.1 [Ubuntu/jammy main]
@@ -4676,19 +4676,19 @@ name: zoom version: 5.17.11.3835
 ## Mise
 
 ```txt {mise}
-cabal      3.10.3.0  ~/.config/mise/config.toml latest
-go         1.22.2    ~/.config/mise/config.toml latest
-node       21.7.2    ~/.config/mise/config.toml latest
-pandoc     3.1.12.3  ~/.config/mise/config.toml latest
+cabal      3.10.3.0  ~/.config/mise/config.toml latest        
+go         1.22.2    ~/.config/mise/config.toml latest        
+node       21.7.2    ~/.config/mise/config.toml latest        
+pandoc     3.1.13    ~/.config/mise/config.toml latest        
 python     3.8.19    ~/.config/mise/config.toml sub-0.4:latest
 python     3.9.19    ~/.config/mise/config.toml sub-0.3:latest
 python     3.10.14   ~/.config/mise/config.toml sub-0.2:latest
 python     3.11.9    ~/.config/mise/config.toml sub-0.1:latest
-python     3.12.2    ~/.config/mise/config.toml latest
-ruby       3.3.0     ~/.config/mise/config.toml latest
-tinytex    2024.04   ~/.config/mise/config.toml latest
-usage      0.1.17    ~/.config/mise/config.toml latest
-watchexec  1.25.1    ~/.config/mise/config.toml latest
+python     3.12.2    ~/.config/mise/config.toml latest        
+ruby       3.3.0     ~/.config/mise/config.toml latest        
+tinytex    2024.04   ~/.config/mise/config.toml latest        
+usage      0.1.18    ~/.config/mise/config.toml latest        
+watchexec  1.25.1    ~/.config/mise/config.toml latest        
 ```
 
 ## Cargo
@@ -4775,7 +4775,7 @@ mdbook-toc v0.14.2:
     mdbook-toc
 menyoki v1.7.0:
     menyoki
-mise v2024.4.0:
+mise v2024.4.1:
     mise
 mprocs v0.6.4:
     mprocs
@@ -4895,7 +4895,7 @@ package euporie 2.8.1, installed using Python 3.12.2
  - euporie-preview
 package flake8 7.0.0, installed using Python 3.12.2
  - flake8
-package fonttools 4.50.0, installed using Python 3.12.2
+package fonttools 4.51.0, installed using Python 3.12.2
  - fonttools
  - pyftmerge
  - pyftsubset
@@ -5359,3 +5359,4 @@ snapd-desktop-integration  0.9                         157    latest/stable/… 
 spt                        0.25.0                      289    latest/stable    popey          -
 vlc                        3.0.20-1-g2617de71b6        3777   latest/stable    videolan**     -
 ```
+    
