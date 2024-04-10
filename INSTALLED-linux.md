@@ -3483,17 +3483,17 @@ links 2.25-1build1 [Ubuntu/jammy universe]
 lintian 2.114.0ubuntu1.3 [Ubuntu/jammy main]
 linux-base 4.5ubuntu9 [Ubuntu/jammy main]
 linux-firmware 20220329.git681281e4-0ubuntu3.29 [Ubuntu/jammy main]
-linux-generic 5.15.0.101.98 [Ubuntu/jammy main]
+linux-generic 5.15.0.101.98 [local]
 linux-generic-hwe-20.04 5.15.0.102.99 [Ubuntu/jammy main]
-linux-generic-hwe-22.04 6.5.0.26.26~22.04.13 [Ubuntu/jammy main]
+linux-generic-hwe-22.04 6.5.0.26.26~22.04.13 [local]
 linux-headers-5.15.0-101 5.15.0-101.111 [Ubuntu/jammy main]
 linux-headers-5.15.0-101-generic 5.15.0-101.111 [Ubuntu/jammy main]
 linux-headers-5.19.0-50-generic 5.19.0-50.50 [Ubuntu/jammy main]
 linux-headers-6.2.0-39-generic 6.2.0-39.40~22.04.1 [Ubuntu/jammy main]
 linux-headers-6.5.0-25-generic 6.5.0-25.25~22.04.1 [Ubuntu/jammy main]
 linux-headers-6.5.0-26-generic 6.5.0-26.26~22.04.1 [Ubuntu/jammy main]
-linux-headers-generic 5.15.0.101.98 [Ubuntu/jammy main]
-linux-headers-generic-hwe-22.04 6.5.0.26.26~22.04.13 [Ubuntu/jammy main]
+linux-headers-generic 5.15.0.101.98 [local]
+linux-headers-generic-hwe-22.04 6.5.0.26.26~22.04.13 [local]
 linux-hwe-5.19-headers-5.19.0-50 5.19.0-50.50 [Ubuntu/jammy main]
 linux-hwe-6.2-headers-6.2.0-39 6.2.0-39.40~22.04.1 [Ubuntu/jammy main]
 linux-hwe-6.5-headers-6.5.0-25 6.5.0-25.25~22.04.1 [Ubuntu/jammy main]
@@ -3503,8 +3503,8 @@ linux-image-5.19.0-50-generic 5.19.0-50.50 [Ubuntu/jammy main]
 linux-image-6.2.0-39-generic 6.2.0-39.40~22.04.1 [Ubuntu/jammy main]
 linux-image-6.5.0-25-generic 6.5.0-25.25~22.04.1 [Ubuntu/jammy main]
 linux-image-6.5.0-26-generic 6.5.0-26.26~22.04.1 [Ubuntu/jammy main]
-linux-image-generic 5.15.0.101.98 [Ubuntu/jammy main]
-linux-image-generic-hwe-22.04 6.5.0.26.26~22.04.13 [Ubuntu/jammy main]
+linux-image-generic 5.15.0.101.98 [local]
+linux-image-generic-hwe-22.04 6.5.0.26.26~22.04.13 [local]
 linux-libc-dev 5.15.0-102.112 [Ubuntu/jammy main]
 linux-modules-5.15.0-101-generic 5.15.0-101.111 [Ubuntu/jammy main]
 linux-modules-5.19.0-50-generic 5.19.0-50.50 [Ubuntu/jammy main]
@@ -4948,10 +4948,6 @@ package rofimoji 6.2.0, installed using Python 3.12.2
 package tuiview 0.1.1, installed using Python 3.12.2
  - tuiview
  - tv
-package volcano-cooking 0.12.0, installed using Python 3.12.2
- - sfrc-sparse2lin
- - view-frc
- - volcano-cooking
 package wtpython 0.1.0, installed using Python 3.12.2
  - wtpython
 ```
@@ -5334,7 +5330,7 @@ canonical-livepatch        10.8.1                      264    latest/stable    c
 cmake                      3.29.1                      1379   latest/stable    crascit**      classic
 core                       16-2.61.2                   16928  latest/stable    canonical**    core
 core18                     20231027                    2812   latest/stable    canonical**    base
-core20                     20240111                    2182   latest/stable    canonical**    base
+core20                     20240227                    2264   latest/stable    canonical**    base
 core22                     20240111                    1122   latest/stable    canonical**    base
 dotnet-sdk                 5.0.408                     167    5.0/stable       dotnetcore**   classic
 duf-utility                v0.6.0                      1      latest/stable    muesli         -
