@@ -101,8 +101,8 @@ brightness-udev 0.5.1-3 [Ubuntu/jammy universe]
 brightnessctl 0.5.1-3 [Ubuntu/jammy universe]
 brltty 6.4-4ubuntu3 [Ubuntu/jammy main]
 brotli 1.0.9-2build6 [Ubuntu/jammy universe]
-bsdextrautils 2.37.2-4ubuntu3.3 [Ubuntu/jammy main]
-bsdutils 1:2.37.2-4ubuntu3.3 [Ubuntu/jammy main]
+bsdextrautils 2.37.2-4ubuntu3.4 [Ubuntu/jammy main]
+bsdutils 1:2.37.2-4ubuntu3.4 [Ubuntu/jammy main]
 bspwm 0.9.10-2 [Ubuntu/jammy universe]
 btop 1.2.13-pacstall1 [local]
 bubblewrap 0.6.1-1 [Ubuntu/jammy main]
@@ -256,7 +256,7 @@ ecl 21.2.1+ds-4 [Ubuntu/jammy universe]
 eclib-tools 20210625-1build1 [Ubuntu/jammy universe]
 ed 1.18-1 [Ubuntu/jammy main]
 efibootmgr 17-1ubuntu2 [Ubuntu/jammy main]
-eject 2.37.2-4ubuntu3.3 [Ubuntu/jammy main]
+eject 2.37.2-4ubuntu3.4 [Ubuntu/jammy main]
 elinks 0.13.2-1build3 [Ubuntu/jammy universe]
 elinks-data 0.13.2-1build3 [Ubuntu/jammy universe]
 emacs 1:27.1+1-3ubuntu5.1 [Ubuntu/jammy universe]
@@ -282,7 +282,7 @@ expect 5.45.4-2build1 [Ubuntu/jammy universe]
 fakeroot 1.28-1ubuntu1 [Ubuntu/jammy main]
 falkon 3.2.0+dfsg1-1 [Ubuntu/jammy universe]
 fastjar 2:0.98-7 [Ubuntu/jammy universe]
-fdisk 2.37.2-4ubuntu3.3 [Ubuntu/jammy main]
+fdisk 2.37.2-4ubuntu3.4 [Ubuntu/jammy main]
 feh 3.6.3-1 [Ubuntu/jammy universe]
 feynmf 1.08-13 [Ubuntu/jammy universe]
 fflas-ffpack 2.5.0-1 [Ubuntu/jammy universe]
@@ -710,7 +710,7 @@ gnuplot-data 5.4.2+dfsg2-2 [Ubuntu/jammy universe]
 gnuplot-qt 5.4.2+dfsg2-2 [Ubuntu/jammy universe]
 gobject-introspection 1.72.0-1 [Ubuntu/jammy main]
 golly 3.3-1build1 [Ubuntu/jammy universe]
-google-chrome-stable 123.0.6312.105-1 [Google/stable main]
+google-chrome-stable 123.0.6312.122-1 [Google/stable main]
 gperf 3.1-1build1 [Ubuntu/jammy universe]
 gpg 2.2.27-3ubuntu2.1 [Ubuntu/jammy main]
 gpg-agent 2.2.27-3ubuntu2.1 [Ubuntu/jammy main]
@@ -1029,9 +1029,9 @@ libbinio1v5 1.5+dfsg-0.1 [Ubuntu/jammy universe]
 libbinutils 2.38-4ubuntu2.6 [Ubuntu/jammy main]
 libblas-dev 3.10.0-2ubuntu1 [Ubuntu/jammy main]
 libblas3 3.10.0-2ubuntu1 [Ubuntu/jammy main]
-libblkid-dev 2.37.2-4ubuntu3.3 [Ubuntu/jammy main]
-libblkid1 2.37.2-4ubuntu3.3 [Ubuntu/jammy main]
-libblkid1:i386 2.37.2-4ubuntu3.3 [Ubuntu/jammy main]
+libblkid-dev 2.37.2-4ubuntu3.4 [Ubuntu/jammy main]
+libblkid1 2.37.2-4ubuntu3.4 [Ubuntu/jammy main]
+libblkid1:i386 2.37.2-4ubuntu3.4 [Ubuntu/jammy main]
 libblockdev-crypto2 2.26-1 [Ubuntu/jammy main]
 libblockdev-fs2 2.26-1 [Ubuntu/jammy main]
 libblockdev-loop2 2.26-1 [Ubuntu/jammy main]
@@ -1403,7 +1403,7 @@ libfcgi0ldbl 2.4.2-2build2 [Ubuntu/jammy main]
 libfcitx-config4 1:4.2.9.8-5 [Ubuntu/jammy universe]
 libfcitx-gclient1 1:4.2.9.8-5 [Ubuntu/jammy universe]
 libfcitx-utils0 1:4.2.9.8-5 [Ubuntu/jammy universe]
-libfdisk1 2.37.2-4ubuntu3.3 [Ubuntu/jammy main]
+libfdisk1 2.37.2-4ubuntu3.4 [Ubuntu/jammy main]
 libffi-dev 3.4.2-4 [Ubuntu/jammy main]
 libffi6 3.2.1-8 [local]
 libffi7 3.3-5ubuntu1 [Ubuntu/jammy universe]
@@ -2359,9 +2359,9 @@ libmonosgen-2.0-1 6.8.0.105+dfsg-3.2 [Ubuntu/jammy universe]
 libmonosgen-2.0-dev 6.8.0.105+dfsg-3.2 [Ubuntu/jammy universe]
 libmoo-perl 2.005004-3 [Ubuntu/jammy main]
 libmoox-aliases-perl 0.001006-1.1 [Ubuntu/jammy main]
-libmount-dev 2.37.2-4ubuntu3.3 [Ubuntu/jammy main]
-libmount1 2.37.2-4ubuntu3.3 [Ubuntu/jammy main]
-libmount1:i386 2.37.2-4ubuntu3.3 [Ubuntu/jammy main]
+libmount-dev 2.37.2-4ubuntu3.4 [Ubuntu/jammy main]
+libmount1 2.37.2-4ubuntu3.4 [Ubuntu/jammy main]
+libmount1:i386 2.37.2-4ubuntu3.4 [Ubuntu/jammy main]
 libmouse-perl 2.5.10-1build4 [Ubuntu/jammy main]
 libmozjs-91-0 91.10.0-0ubuntu1 [Ubuntu/jammy main]
 libmp3lame0 3.100-3build2 [Ubuntu/jammy main]
@@ -2461,9 +2461,9 @@ libnpth0 1.6-3build2 [Ubuntu/jammy main]
 libnsl-dev 1.3.0-2build2 [Ubuntu/jammy main]
 libnsl2 1.3.0-2build2 [Ubuntu/jammy main]
 libnsl2:i386 1.3.0-2build2 [Ubuntu/jammy main]
-libnspr4 2:4.32-3build1 [Ubuntu/jammy main]
-libnspr4-dev 2:4.32-3build1 [Ubuntu/jammy main]
-libnspr4:i386 2:4.32-3build1 [Ubuntu/jammy main]
+libnspr4 2:4.35-0ubuntu0.22.04.1 [Ubuntu/jammy main]
+libnspr4-dev 2:4.35-0ubuntu0.22.04.1 [Ubuntu/jammy main]
+libnspr4:i386 2:4.35-0ubuntu0.22.04.1 [Ubuntu/jammy main]
 libnss-mdns 0.15.1-1ubuntu1 [Ubuntu/jammy main]
 libnss-nis 3.1-0ubuntu6 [Ubuntu/jammy main]
 libnss-nis:i386 3.1-0ubuntu6 [Ubuntu/jammy main]
@@ -2471,9 +2471,9 @@ libnss-nisplus 1.3-0ubuntu6 [Ubuntu/jammy main]
 libnss-nisplus:i386 1.3-0ubuntu6 [Ubuntu/jammy main]
 libnss-sss 2.6.3-1ubuntu3.2 [Ubuntu/jammy main]
 libnss-systemd 249.11-0ubuntu3.12 [Ubuntu/jammy main]
-libnss3 2:3.68.2-0ubuntu1.2 [Ubuntu/jammy main]
-libnss3-dev 2:3.68.2-0ubuntu1.2 [Ubuntu/jammy main]
-libnss3:i386 2:3.68.2-0ubuntu1.2 [Ubuntu/jammy main]
+libnss3 2:3.98-0ubuntu0.22.04.1 [Ubuntu/jammy main]
+libnss3-dev 2:3.98-0ubuntu0.22.04.1 [Ubuntu/jammy main]
+libnss3:i386 2:3.98-0ubuntu0.22.04.1 [Ubuntu/jammy main]
 libntfs-3g89 1:2021.8.22-3ubuntu1.2 [Ubuntu/jammy main]
 libntl-dev 11.5.1-1 [Ubuntu/jammy universe]
 libntl44 11.5.1-1 [Ubuntu/jammy universe]
@@ -2903,7 +2903,7 @@ libsliplu1 1:5.10.1+dfsg-4build1 [Ubuntu/jammy universe]
 libslirp0 4.6.1-1build1 [Ubuntu/jammy main]
 libsm-dev 2:1.2.3-1build2 [Ubuntu/jammy main]
 libsm6 2:1.2.3-1build2 [Ubuntu/jammy main]
-libsmartcols1 2.37.2-4ubuntu3.3 [Ubuntu/jammy main]
+libsmartcols1 2.37.2-4ubuntu3.4 [Ubuntu/jammy main]
 libsmbclient 2:4.15.13+dfsg-0ubuntu1.6 [Ubuntu/jammy main]
 libsmbios-c2 2.4.3-1build1 [Ubuntu/jammy main]
 libsnapd-glib1 1.60-0ubuntu1 [Ubuntu/jammy main]
@@ -3153,8 +3153,8 @@ libutempter-dev 1.2.1-2build2 [Ubuntu/jammy main]
 libutempter0 1.2.1-2build2 [Ubuntu/jammy main]
 libutf8proc-dev 2.7.0-3 [Ubuntu/jammy universe]
 libutf8proc2 2.7.0-3 [Ubuntu/jammy universe]
-libuuid1 2.37.2-4ubuntu3.3 [Ubuntu/jammy main]
-libuuid1:i386 2.37.2-4ubuntu3.3 [Ubuntu/jammy main]
+libuuid1 2.37.2-4ubuntu3.4 [Ubuntu/jammy main]
+libuuid1:i386 2.37.2-4ubuntu3.4 [Ubuntu/jammy main]
 libuv1 1.43.0-1ubuntu0.1 [Ubuntu/jammy main]
 libuv1-dev 1.43.0-1ubuntu0.1 [Ubuntu/jammy main]
 libv4l-0 1.22.1-2build1 [Ubuntu/jammy main]
@@ -3483,39 +3483,39 @@ links 2.25-1build1 [Ubuntu/jammy universe]
 lintian 2.114.0ubuntu1.3 [Ubuntu/jammy main]
 linux-base 4.5ubuntu9 [Ubuntu/jammy main]
 linux-firmware 20220329.git681281e4-0ubuntu3.29 [Ubuntu/jammy main]
-linux-generic 5.15.0.101.98 [local]
+linux-generic 5.15.0.102.99 [Ubuntu/jammy main]
 linux-generic-hwe-20.04 5.15.0.102.99 [Ubuntu/jammy main]
-linux-generic-hwe-22.04 6.5.0.26.26~22.04.13 [local]
-linux-headers-5.15.0-101 5.15.0-101.111 [Ubuntu/jammy main]
-linux-headers-5.15.0-101-generic 5.15.0-101.111 [Ubuntu/jammy main]
+linux-generic-hwe-22.04 6.5.0.27.28~22.04.1 [Ubuntu/jammy main]
+linux-headers-5.15.0-102 5.15.0-102.112 [Ubuntu/jammy main]
+linux-headers-5.15.0-102-generic 5.15.0-102.112 [Ubuntu/jammy main]
 linux-headers-5.19.0-50-generic 5.19.0-50.50 [Ubuntu/jammy main]
 linux-headers-6.2.0-39-generic 6.2.0-39.40~22.04.1 [Ubuntu/jammy main]
-linux-headers-6.5.0-25-generic 6.5.0-25.25~22.04.1 [Ubuntu/jammy main]
 linux-headers-6.5.0-26-generic 6.5.0-26.26~22.04.1 [Ubuntu/jammy main]
-linux-headers-generic 5.15.0.101.98 [local]
-linux-headers-generic-hwe-22.04 6.5.0.26.26~22.04.13 [local]
+linux-headers-6.5.0-27-generic 6.5.0-27.28~22.04.1 [Ubuntu/jammy main]
+linux-headers-generic 5.15.0.102.99 [Ubuntu/jammy main]
+linux-headers-generic-hwe-22.04 6.5.0.27.28~22.04.1 [Ubuntu/jammy main]
 linux-hwe-5.19-headers-5.19.0-50 5.19.0-50.50 [Ubuntu/jammy main]
 linux-hwe-6.2-headers-6.2.0-39 6.2.0-39.40~22.04.1 [Ubuntu/jammy main]
-linux-hwe-6.5-headers-6.5.0-25 6.5.0-25.25~22.04.1 [Ubuntu/jammy main]
 linux-hwe-6.5-headers-6.5.0-26 6.5.0-26.26~22.04.1 [Ubuntu/jammy main]
-linux-image-5.15.0-101-generic 5.15.0-101.111 [Ubuntu/jammy main]
+linux-hwe-6.5-headers-6.5.0-27 6.5.0-27.28~22.04.1 [Ubuntu/jammy main]
+linux-image-5.15.0-102-generic 5.15.0-102.112 [Ubuntu/jammy main]
 linux-image-5.19.0-50-generic 5.19.0-50.50 [Ubuntu/jammy main]
 linux-image-6.2.0-39-generic 6.2.0-39.40~22.04.1 [Ubuntu/jammy main]
-linux-image-6.5.0-25-generic 6.5.0-25.25~22.04.1 [Ubuntu/jammy main]
 linux-image-6.5.0-26-generic 6.5.0-26.26~22.04.1 [Ubuntu/jammy main]
-linux-image-generic 5.15.0.101.98 [local]
-linux-image-generic-hwe-22.04 6.5.0.26.26~22.04.13 [local]
+linux-image-6.5.0-27-generic 6.5.0-27.28~22.04.1 [Ubuntu/jammy main]
+linux-image-generic 5.15.0.102.99 [Ubuntu/jammy main]
+linux-image-generic-hwe-22.04 6.5.0.27.28~22.04.1 [Ubuntu/jammy main]
 linux-libc-dev 5.15.0-102.112 [Ubuntu/jammy main]
-linux-modules-5.15.0-101-generic 5.15.0-101.111 [Ubuntu/jammy main]
+linux-modules-5.15.0-102-generic 5.15.0-102.112 [Ubuntu/jammy main]
 linux-modules-5.19.0-50-generic 5.19.0-50.50 [Ubuntu/jammy main]
 linux-modules-6.2.0-39-generic 6.2.0-39.40~22.04.1 [Ubuntu/jammy main]
-linux-modules-6.5.0-25-generic 6.5.0-25.25~22.04.1 [Ubuntu/jammy main]
 linux-modules-6.5.0-26-generic 6.5.0-26.26~22.04.1 [Ubuntu/jammy main]
-linux-modules-extra-5.15.0-101-generic 5.15.0-101.111 [Ubuntu/jammy main]
+linux-modules-6.5.0-27-generic 6.5.0-27.28~22.04.1 [Ubuntu/jammy main]
+linux-modules-extra-5.15.0-102-generic 5.15.0-102.112 [Ubuntu/jammy main]
 linux-modules-extra-5.19.0-50-generic 5.19.0-50.50 [Ubuntu/jammy main]
 linux-modules-extra-6.2.0-39-generic 6.2.0-39.40~22.04.1 [Ubuntu/jammy main]
-linux-modules-extra-6.5.0-25-generic 6.5.0-25.25~22.04.1 [Ubuntu/jammy main]
 linux-modules-extra-6.5.0-26-generic 6.5.0-26.26~22.04.1 [Ubuntu/jammy main]
+linux-modules-extra-6.5.0-27-generic 6.5.0-27.28~22.04.1 [Ubuntu/jammy main]
 linux-sound-base 1.0.25+dfsg-0ubuntu7 [Ubuntu/jammy main]
 llvm 1:14.0-55~exp2 [Ubuntu/jammy universe]
 llvm-11 1:11.1.0-6 [Ubuntu/jammy universe]
@@ -3612,7 +3612,7 @@ monodoc-manual 6.8.0.105+dfsg-3.2 [Ubuntu/jammy universe]
 mopidy 3.2.0-1 [Ubuntu/jammy universe]
 mopidy-mpd 3.1.0-1 [Ubuntu/jammy universe]
 mosh 1.3.2-2.1ubuntu1 [Ubuntu/jammy universe]
-mount 2.37.2-4ubuntu3.3 [Ubuntu/jammy main]
+mount 2.37.2-4ubuntu3.4 [Ubuntu/jammy main]
 mousetweaks 3.32.0-3build2 [Ubuntu/jammy main]
 mpc 0.34-1 [Ubuntu/jammy universe]
 mpd 0.23.5-1build7 [Ubuntu/jammy universe]
@@ -3793,7 +3793,7 @@ printer-driver-splix 2.0.0+svn315-7fakesync1ubuntu0.22.04.1 [Ubuntu/jammy main]
 procps 2:3.3.17-6ubuntu2.1 [Ubuntu/jammy main]
 proj-bin 8.2.1-1 [Ubuntu/jammy universe]
 proj-data 8.2.1-1 [Ubuntu/jammy universe]
-protonmail-bridge 3.9.1-1 [local]
+proton-mail 1.0.1 [local]
 ps2eps 1.68+binaryfree-3 [Ubuntu/jammy universe]
 psmisc 23.4-2build3 [Ubuntu/jammy main]
 pstoedit 3.78-1 [Ubuntu/jammy universe]
@@ -4225,7 +4225,7 @@ recordmydesktop 0.4.0-1 [Ubuntu/jammy universe]
 remarkable-linux-client 1.0.0 [local]
 remind 03.04.01-1 [Ubuntu/jammy universe]
 rename 1.30-1 [Ubuntu/jammy universe]
-rfkill 2.37.2-4ubuntu3.3 [Ubuntu/jammy main]
+rfkill 2.37.2-4ubuntu3.4 [Ubuntu/jammy main]
 rhythmbox 3.4.4-5ubuntu1 [Ubuntu/jammy main]
 rhythmbox-data 3.4.4-5ubuntu1 [Ubuntu/jammy main]
 rhythmbox-plugin-alternative-toolbar 0.20.2-1 [Ubuntu/jammy main]
@@ -4496,9 +4496,9 @@ usbmuxd 1.1.1-2build2 [Ubuntu/jammy main]
 usbutils 1:014-1build1 [Ubuntu/jammy main]
 usrmerge 25ubuntu2 [Ubuntu/jammy main]
 uthash-dev 2.3.0-1 [Ubuntu/jammy universe]
-util-linux 2.37.2-4ubuntu3.3 [Ubuntu/jammy main]
-uuid-dev 2.37.2-4ubuntu3.3 [Ubuntu/jammy main]
-uuid-runtime 2.37.2-4ubuntu3.3 [Ubuntu/jammy main]
+util-linux 2.37.2-4ubuntu3.4 [Ubuntu/jammy main]
+uuid-dev 2.37.2-4ubuntu3.4 [Ubuntu/jammy main]
+uuid-runtime 2.37.2-4ubuntu3.4 [Ubuntu/jammy main]
 v4l-utils 1.22.1-2build1 [Ubuntu/jammy universe]
 v4l2loopback-dkms 0.12.7-2ubuntu2~22.04.1 [Ubuntu/jammy universe]
 v4l2loopback-utils 0.12.7-2ubuntu2~22.04.1 [Ubuntu/jammy universe]
@@ -4601,15 +4601,15 @@ xorg-dev 1:7.7+23ubuntu2 [Ubuntu/jammy main]
 xorg-docs-core 1:1.7.1-1.2 [Ubuntu/jammy main]
 xorg-sgml-doctools 1:1.11-1.1 [Ubuntu/jammy main]
 xsel 1.2.0+git9bfc13d.20180109-3 [Ubuntu/jammy universe]
-xserver-common 2:21.1.4-2ubuntu1.7~22.04.9 [Ubuntu/jammy main]
-xserver-xephyr 2:21.1.4-2ubuntu1.7~22.04.9 [Ubuntu/jammy main]
+xserver-common 2:21.1.4-2ubuntu1.7~22.04.10 [Ubuntu/jammy main]
+xserver-xephyr 2:21.1.4-2ubuntu1.7~22.04.10 [Ubuntu/jammy main]
 xserver-xorg 1:7.7+23ubuntu2 [Ubuntu/jammy main]
-xserver-xorg-core 2:21.1.4-2ubuntu1.7~22.04.9 [Ubuntu/jammy main]
-xserver-xorg-dev 2:21.1.4-2ubuntu1.7~22.04.9 [Ubuntu/jammy main]
+xserver-xorg-core 2:21.1.4-2ubuntu1.7~22.04.10 [Ubuntu/jammy main]
+xserver-xorg-dev 2:21.1.4-2ubuntu1.7~22.04.10 [Ubuntu/jammy main]
 xserver-xorg-input-all 1:7.7+23ubuntu2 [Ubuntu/jammy main]
 xserver-xorg-input-libinput 1.2.1-1 [Ubuntu/jammy main]
 xserver-xorg-input-wacom 1:1.0.0-3ubuntu1 [Ubuntu/jammy main]
-xserver-xorg-legacy 2:21.1.4-2ubuntu1.7~22.04.9 [Ubuntu/jammy main]
+xserver-xorg-legacy 2:21.1.4-2ubuntu1.7~22.04.10 [Ubuntu/jammy main]
 xserver-xorg-video-all 1:7.7+23ubuntu2 [Ubuntu/jammy main]
 xserver-xorg-video-amdgpu 22.0.0-1ubuntu0.2 [Ubuntu/jammy main]
 xserver-xorg-video-ati 1:19.1.0-2ubuntu1 [Ubuntu/jammy main]
@@ -4624,7 +4624,7 @@ xsltproc 1.1.34-4ubuntu0.22.04.1 [Ubuntu/jammy main]
 xterm 372-1ubuntu1 [Ubuntu/jammy universe]
 xtrans-dev 1.4.0-1 [Ubuntu/jammy main]
 xutils-dev 1:7.7+6ubuntu1 [Ubuntu/jammy universe]
-xwayland 2:22.1.1-1ubuntu0.12 [Ubuntu/jammy main]
+xwayland 2:22.1.1-1ubuntu0.13 [Ubuntu/jammy main]
 xxd 2:8.2.3995-1ubuntu2.16 [Ubuntu/jammy main]
 xz-utils 5.2.5-2ubuntu1 [Ubuntu/jammy main]
 yaru-theme-gnome-shell 22.04.5 [Ubuntu/jammy main]
@@ -4660,11 +4660,10 @@ zstd 1.4.8+dfsg-3build1 [Ubuntu/jammy main]
 name: batsignal version: 1.6.4-pacstall1
 name: bitwarden version: 2024.1.0
 name: btop version: 1.2.13-pacstall1
-name: google-chrome-stable version: 123.0.6312.105-1
+name: google-chrome-stable version: 123.0.6312.122-1
 name: htop version: 3.2.2-pacstall1
 name: nala version: 0.15.1
 name: neofetch version: 7.1.0-pacstall1
-name: protonmail-bridge version: 3.9.1-1
 name: quarto version: 1.3.450
 name: shfmt version: 3.7.0-pacstall1
 name: signal-desktop version: 7.4.0
@@ -4678,13 +4677,13 @@ name: zoom version: 5.17.11.3835
 ```txt {mise}
 cabal      3.10.3.0  ~/.config/mise/config.toml latest        
 go         1.22.2    ~/.config/mise/config.toml latest        
-node       21.7.2    ~/.config/mise/config.toml latest        
+node       21.7.3    ~/.config/mise/config.toml latest        
 pandoc     3.1.13    ~/.config/mise/config.toml latest        
 python     3.8.19    ~/.config/mise/config.toml sub-0.4:latest
 python     3.9.19    ~/.config/mise/config.toml sub-0.3:latest
 python     3.10.14   ~/.config/mise/config.toml sub-0.2:latest
 python     3.11.9    ~/.config/mise/config.toml sub-0.1:latest
-python     3.12.2    ~/.config/mise/config.toml latest        
+python     3.12.3    ~/.config/mise/config.toml latest        
 ruby       3.3.0     ~/.config/mise/config.toml latest        
 tinytex    2024.04   ~/.config/mise/config.toml latest        
 usage      0.1.18    ~/.config/mise/config.toml latest        
@@ -4732,13 +4731,13 @@ du-dust v1.0.0:
     dust
 evcxr_jupyter v0.17.0:
     evcxr_jupyter
-eza v0.18.9:
+eza v0.18.10:
     eza
 fd-find v9.0.0:
     fd
 ffsend v0.2.76:
     ffsend
-git-cliff v2.2.0:
+git-cliff v2.2.1:
     git-cliff
     git-cliff-completions
     git-cliff-mangen
@@ -4775,11 +4774,11 @@ mdbook-toc v0.14.2:
     mdbook-toc
 menyoki v1.7.0:
     menyoki
-mise v2024.4.1:
+mise v2024.4.3:
     mise
 mprocs v0.6.4:
     mprocs
-nu v0.92.1:
+nu v0.92.2:
     nu
 numbat-cli v1.11.0:
     numbat
@@ -5302,11 +5301,11 @@ i zref: A new reference scheme for LaTeX
 Name                                    Version                                 Branch
 hrkfdn                                  1.1.0                                   stable
 Freedesktop Platform                    22.08.24                                22.08
-Freedesktop Platform                    23.08.14                                23.08
+Freedesktop Platform                    23.08.15                                23.08
 Mesa                                    24.0.4                                  22.08
 Mesa (Extra)                            24.0.4                                  22.08-extra
-Mesa                                    24.0.3                                  23.08
-Mesa (Extra)                            24.0.3                                  23.08-extra
+Mesa                                    24.0.4                                  23.08
+Mesa (Extra)                            24.0.4                                  23.08-extra
 Intel                                                                           22.08
 Intel                                                                           23.08
 openh264                                2.1.0                                   2.0
@@ -5352,7 +5351,7 @@ pdftk                      2.02-4                      9      latest/stable    s
 procs                      v0.13.0                     969    latest/stable    dalance        -
 snapd                      2.61.2                      21184  latest/stable    canonical**    snapd
 snapd-desktop-integration  0.9                         157    latest/stable/…  canonical**    -
-spt                        0.25.0                      289    latest/stable    popey          -
+spt                        0.25.0                      289    latest/stable    popey*         -
 vlc                        3.0.20-1-g2617de71b6        3777   latest/stable    videolan**     -
 ```
     
