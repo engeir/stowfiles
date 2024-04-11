@@ -44,11 +44,11 @@ family = "CaskaydiaMono Nerd Font Mono"
 style = "Bold"
 
 [font.bold_italic]
-family = "CaskaydiaMono Nerd Font Mono"
+family = "Cartograph CF" # CaskaydiaMono Nerd Font Mono
 style = "Bold Italic"
 
 [font.italic]
-family = "CaskaydiaMono Nerd Font Mono"
+family = "Cartograph CF" # CaskaydiaMono Nerd Font Mono
 style = "Italic"
 
 [font.normal]
