@@ -1,3 +1,6 @@
+[env]
+_.source = "~/.config/zsh/exports.zsh"
+
 [settings]
 experimental = true
 yes = true
