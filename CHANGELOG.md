@@ -1,5 +1,41 @@
 # Changelog
 
+## [1.12.0](https://github.com/engeir/stowfiles/compare/v1.11.6...v1.12.0) (2024-04-12)
+
+
+### Features
+
+* **nvim:** add vim-tmux-navigator, using M-&lt;hjlk&gt; ([051ac4e](https://github.com/engeir/stowfiles/commit/051ac4ecbc1aa9b0ce6730b28c2aaba269ff26d2))
+* **tmux:** add vim-tmux-navigator, using M-&lt;hjlk&gt; ([051ac4e](https://github.com/engeir/stowfiles/commit/051ac4ecbc1aa9b0ce6730b28c2aaba269ff26d2))
+
+
+### Bug Fixes
+
+* **fish:** remove old zsh command from my custom fish commands ([463686a](https://github.com/engeir/stowfiles/commit/463686a6fde16b623cf6d63bf3c5140cb884a5e7))
+* **tex matplotlib:** plotting with tex works from a clean cache ([569b2f9](https://github.com/engeir/stowfiles/commit/569b2f918b9bdc8a30987781a337a35f86261305))
+
+
+### Miscellaneous
+
+* **dprint:** add css plugin and remove comments ([845a6ec](https://github.com/engeir/stowfiles/commit/845a6ecef475ab24ee61c21e48deaff031cfdc48))
+* **mise/fish:** add alias x="mise x --" ([69e3069](https://github.com/engeir/stowfiles/commit/69e3069859dcdcb90c59271c57a218a4ad91ead0))
+* **nvim:** small adjust of plugin configs ([f2cbe32](https://github.com/engeir/stowfiles/commit/f2cbe32a1adc6de3c6d33604fad4144c046eb1a1))
+* **nvim:** update deprecated harpoon command ([26694cd](https://github.com/engeir/stowfiles/commit/26694cd3f3dc2c8439b3a50396b5d6ba545c9ce6))
+* **software:** update installed ([d2eb673](https://github.com/engeir/stowfiles/commit/d2eb673a347898e36cc820a8560f8f76e2ff90ad))
+* **software:** update installed ([13375da](https://github.com/engeir/stowfiles/commit/13375da50bf88c626726e4855b77ae24df167a99))
+* **software:** update installed ([594f5ca](https://github.com/engeir/stowfiles/commit/594f5cabaa4b5a56091fcef30ab7dc9eb2357efb))
+* **software:** update installed ([e13ec24](https://github.com/engeir/stowfiles/commit/e13ec2458c2bc71d8fff55d3c05197e9d06c47e9))
+
+
+### Styles
+
+* **alacritty:** change italic font to Cartograph CF, a cursive font ([8244623](https://github.com/engeir/stowfiles/commit/8244623e7fcef9af50a17a89d28a39b5ec82b715))
+
+
+### Code Refactoring
+
+* **mise:** specify env source file in the common config.toml file ([69e3069](https://github.com/engeir/stowfiles/commit/69e3069859dcdcb90c59271c57a218a4ad91ead0))
+
 ## [1.11.6](https://github.com/engeir/stowfiles/compare/v1.11.5...v1.11.6) (2024-04-05)
 
 
