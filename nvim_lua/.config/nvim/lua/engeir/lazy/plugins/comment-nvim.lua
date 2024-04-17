@@ -1,7 +1,15 @@
+local version
+if vim.fn.has("nvim-0.10") == 1 then
+  -- We don't need a commenting plugin any more!
+  version = false
+else
+  version = true
+end
+
 return {
   "numToStr/Comment.nvim",
   event = { "BufReadPre", "BufNewFile" },
-  enabled = true,
+  enabled = version,
   config = function()
     require("Comment").setup()
 
