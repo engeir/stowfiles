@@ -66,6 +66,7 @@ return {
       { "paste", "cut", "yank" },
       { "push", "pop" },
       { "read", "write" },
+      { "real", "fake" },
       { "reference", "dereference" },
       { "register", "deregister" },
       { "resume", "suspend" },
