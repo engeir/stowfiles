@@ -570,7 +570,7 @@ gir1.2-handy-1 1.6.1-1 [Ubuntu/jammy main]
 gir1.2-harfbuzz-0.0 2.7.4-1ubuntu3.1 [Ubuntu/jammy main]
 gir1.2-ibus-1.0 1.5.26-4 [Ubuntu/jammy main]
 gir1.2-ical-3.0 3.0.14-1build1 [Ubuntu/jammy main]
-gir1.2-javascriptcoregtk-4.0 2.42.5-0ubuntu0.22.04.2 [Ubuntu/jammy main]
+gir1.2-javascriptcoregtk-4.0 2.44.0-0ubuntu0.22.04.1 [Ubuntu/jammy main]
 gir1.2-json-1.0 1.6.6-1build1 [Ubuntu/jammy main]
 gir1.2-mutter-10 42.9-0ubuntu7 [Ubuntu/jammy main]
 gir1.2-nm-1.0 1.36.6-0ubuntu2 [Ubuntu/jammy main]
@@ -591,7 +591,7 @@ gir1.2-udisks-2.0 2.9.4-1ubuntu2 [Ubuntu/jammy main]
 gir1.2-unity-7.0 7.1.4+19.04.20190319-6build1 [Ubuntu/jammy main]
 gir1.2-upowerglib-1.0 0.99.17-1 [Ubuntu/jammy main]
 gir1.2-vte-2.91 0.68.0-1 [Ubuntu/jammy main]
-gir1.2-webkit2-4.0 2.42.5-0ubuntu0.22.04.2 [Ubuntu/jammy main]
+gir1.2-webkit2-4.0 2.44.0-0ubuntu0.22.04.1 [Ubuntu/jammy main]
 gir1.2-wnck-3.0 40.1-1 [Ubuntu/jammy main]
 gir1.2-zeitgeist-2.0 1.0.3-4ubuntu1 [Ubuntu/jammy universe]
 git 1:2.34.1-1ubuntu1.10 [Ubuntu/jammy main]
@@ -830,7 +830,7 @@ kio 5.92.0-0ubuntu1 [Ubuntu/jammy universe]
 kitty 0.21.2-1ubuntu0.22.04.1 [Ubuntu/jammy universe]
 kitty-doc 0.21.2-1ubuntu0.22.04.1 [Ubuntu/jammy universe]
 kitty-terminfo 0.21.2-1ubuntu0.22.04.1 [Ubuntu/jammy universe]
-klibc-utils 2.0.10-4 [Ubuntu/jammy main]
+klibc-utils 2.0.10-4ubuntu0.1 [Ubuntu/jammy main]
 kmod 29-1ubuntu1 [Ubuntu/jammy main]
 kpackagelauncherqml 5.92.0-0ubuntu1 [Ubuntu/jammy universe]
 kpackagetool5 5.92.0-0ubuntu1 [Ubuntu/jammy universe]
@@ -1525,12 +1525,12 @@ libgnome-menu-3-0 3.36.0-1ubuntu3 [Ubuntu/jammy main]
 libgnome-todo 3.28.1-6ubuntu1 [Ubuntu/jammy main]
 libgnomekbd-common 3.26.1-2 [Ubuntu/jammy main]
 libgnomekbd8 3.26.1-2 [Ubuntu/jammy main]
-libgnutls-dane0 3.7.3-4ubuntu1.4 [Ubuntu/jammy main]
-libgnutls-openssl27 3.7.3-4ubuntu1.4 [Ubuntu/jammy main]
-libgnutls28-dev 3.7.3-4ubuntu1.4 [Ubuntu/jammy main]
-libgnutls30 3.7.3-4ubuntu1.4 [Ubuntu/jammy main]
-libgnutls30:i386 3.7.3-4ubuntu1.4 [Ubuntu/jammy main]
-libgnutlsxx28 3.7.3-4ubuntu1.4 [Ubuntu/jammy main]
+libgnutls-dane0 3.7.3-4ubuntu1.5 [Ubuntu/jammy main]
+libgnutls-openssl27 3.7.3-4ubuntu1.5 [Ubuntu/jammy main]
+libgnutls28-dev 3.7.3-4ubuntu1.5 [Ubuntu/jammy main]
+libgnutls30 3.7.3-4ubuntu1.5 [Ubuntu/jammy main]
+libgnutls30:i386 3.7.3-4ubuntu1.5 [Ubuntu/jammy main]
+libgnutlsxx28 3.7.3-4ubuntu1.5 [Ubuntu/jammy main]
 libgoa-1.0-0b 3.44.0-1ubuntu1 [Ubuntu/jammy main]
 libgoa-1.0-common 3.44.0-1ubuntu1 [Ubuntu/jammy main]
 libgoa-backend-1.0-1 3.44.0-1ubuntu1 [Ubuntu/jammy main]
@@ -1736,8 +1736,8 @@ libjack-jackd2-0 1.9.20~dfsg-1 [Ubuntu/jammy main]
 libjack-jackd2-0:i386 1.9.20~dfsg-1 [Ubuntu/jammy main]
 libjansson-dev 2.13.1-1.1build3 [Ubuntu/jammy main]
 libjansson4 2.13.1-1.1build3 [Ubuntu/jammy main]
-libjavascriptcoregtk-4.0-18 2.42.5-0ubuntu0.22.04.2 [Ubuntu/jammy main]
-libjavascriptcoregtk-4.1-0 2.42.5-0ubuntu0.22.04.2 [Ubuntu/jammy main]
+libjavascriptcoregtk-4.0-18 2.44.0-0ubuntu0.22.04.1 [Ubuntu/jammy main]
+libjavascriptcoregtk-4.1-0 2.44.0-0ubuntu0.22.04.1 [Ubuntu/jammy main]
 libjbig-dev 2.1-3.1ubuntu0.22.04.1 [Ubuntu/jammy main]
 libjbig0 2.1-3.1ubuntu0.22.04.1 [Ubuntu/jammy main]
 libjbig0:i386 2.1-3.1ubuntu0.22.04.1 [Ubuntu/jammy main]
@@ -1907,7 +1907,7 @@ libkf5windowsystem5 5.92.0-0ubuntu1 [Ubuntu/jammy universe]
 libkf5xmlgui-bin 5.92.0-0ubuntu2 [Ubuntu/jammy universe]
 libkf5xmlgui-data 5.92.0-0ubuntu2 [Ubuntu/jammy universe]
 libkf5xmlgui5 5.92.0-0ubuntu2 [Ubuntu/jammy universe]
-libklibc 2.0.10-4 [Ubuntu/jammy main]
+libklibc 2.0.10-4ubuntu0.1 [Ubuntu/jammy main]
 libkmlbase1 1.3.0-9 [Ubuntu/jammy universe]
 libkmldom1 1.3.0-9 [Ubuntu/jammy universe]
 libkmlengine1 1.3.0-9 [Ubuntu/jammy universe]
@@ -2984,8 +2984,8 @@ libwayland-egl1:i386 1.20.0-1ubuntu0.1 [Ubuntu/jammy main]
 libwayland-server0 1.20.0-1ubuntu0.1 [Ubuntu/jammy main]
 libwayland-server0:i386 1.20.0-1ubuntu0.1 [Ubuntu/jammy main]
 libwbclient0 2:4.15.13+dfsg-0ubuntu1.6 [Ubuntu/jammy main]
-libwebkit2gtk-4.0-37 2.42.5-0ubuntu0.22.04.2 [Ubuntu/jammy main]
-libwebkit2gtk-4.1-0 2.42.5-0ubuntu0.22.04.2 [Ubuntu/jammy universe]
+libwebkit2gtk-4.0-37 2.44.0-0ubuntu0.22.04.1 [Ubuntu/jammy main]
+libwebkit2gtk-4.1-0 2.44.0-0ubuntu0.22.04.1 [Ubuntu/jammy universe]
 libwebp-dev 1.2.2-2ubuntu0.22.04.2 [Ubuntu/jammy main]
 libwebp7 1.2.2-2ubuntu0.22.04.2 [Ubuntu/jammy main]
 libwebp7:i386 1.2.2-2ubuntu0.22.04.2 [Ubuntu/jammy main]
@@ -3011,8 +3011,6 @@ libwnck-3-0 40.1-1 [Ubuntu/jammy main]
 libwnck-3-common 40.1-1 [Ubuntu/jammy main]
 libwoff1 1.0.2-1build4 [Ubuntu/jammy main]
 libwpd-0.10-10 0.10.3-2build1 [Ubuntu/jammy main]
-libwpe-1.0-1 1.14.0-0ubuntu0.22.04.1 [Ubuntu/jammy main]
-libwpebackend-fdo-1.0-1 1.14.2-0ubuntu0.22.04.1 [Ubuntu/jammy main]
 libwpg-0.3-3 0.3.3-1build3 [Ubuntu/jammy main]
 libwps-0.4-4 0.4.12-2build1 [Ubuntu/jammy main]
 libwrap0 7.6.q-31build2 [Ubuntu/jammy main]
@@ -3995,9 +3993,10 @@ shellcheck 0.8.0-2 [Ubuntu/jammy universe]
 shfmt 3.7.0-pacstall1 [local]
 shfmt-bin 3.4.3-1 [local]
 shim-signed 1.51.3+15.7-0ubuntu1 [Ubuntu/jammy main]
-signal-desktop 7.4.0 [. xenial/xenial main]
+signal-desktop 7.5.0 [. xenial/xenial main]
 signon-plugin-oauth2 0.25-2 [Ubuntu/jammy universe]
 silversearcher-ag 2.2.0+git20200805-1 [Ubuntu/jammy universe]
+slack-desktop 4.37.101 [slack/jessie main]
 slirp4netns 1.0.1-2 [Ubuntu/jammy universe]
 slop 7.5-1.1build2 [Ubuntu/jammy universe]
 snapd 2.61.3+22.04 [Ubuntu/jammy main]
@@ -4212,7 +4211,7 @@ w3m-img 0.5.3+git20210102-6ubuntu0.2 [Ubuntu/jammy universe]
 wamerican 2020.12.07-2 [Ubuntu/jammy main]
 wayland-protocols 1.25-1 [Ubuntu/jammy main]
 wbritish 2020.12.07-2 [Ubuntu/jammy main]
-webkit2gtk-driver 2.42.5-0ubuntu0.22.04.2 [Ubuntu/jammy universe]
+webkit2gtk-driver 2.44.0-0ubuntu0.22.04.1 [Ubuntu/jammy universe]
 webp 1.2.2-2ubuntu0.22.04.2 [Ubuntu/jammy universe]
 wezterm 20230712-072601-f4abf8fd-pacstall1 [local]
 wget 1.21.2-2ubuntu1 [Ubuntu/jammy main]
@@ -4323,7 +4322,7 @@ zip 3.0-12build2 [Ubuntu/jammy main]
 zlib1g 1:1.2.11.dfsg-2ubuntu9.2 [Ubuntu/jammy main]
 zlib1g-dev 1:1.2.11.dfsg-2ubuntu9.2 [Ubuntu/jammy main]
 zlib1g:i386 1:1.2.11.dfsg-2ubuntu9.2 [Ubuntu/jammy main]
-zoom 5.17.11.3835 [local]
+zoom 6.0.0.4563 [local]
 zsh 5.8.1-1 [Ubuntu/jammy main]
 zsh-common 5.8.1-1 [Ubuntu/jammy main]
 zstd 1.4.8+dfsg-3build1 [Ubuntu/jammy main]
@@ -4341,10 +4340,10 @@ name: nala version: 0.15.1
 name: neofetch version: 7.1.0-pacstall1
 name: quarto version: 1.3.450
 name: shfmt version: 3.7.0-pacstall1
-name: signal-desktop version: 7.4.0
+name: signal-desktop version: 7.5.0
 name: thorium-browser version: 122.0.6261.132-1
 name: wezterm version: 20230712-072601-f4abf8fd-pacstall1
-name: zoom version: 5.17.11.3835
+name: zoom version: 6.0.0.4563
 ```
 
 ## Mise
@@ -4370,7 +4369,7 @@ watchexec  1.25.1    ~/.config/mise/config.toml latest
 ```txt {cargo}
 alacritty v0.13.2:
     alacritty
-atuin v18.1.0:
+atuin v18.2.0:
     atuin
 bacon v2.16.0:
     bacon
@@ -4378,7 +4377,7 @@ bat v0.24.0:
     bat
 blindfold v1.0.7:
     blindfold
-bob-nvim v2.8.3:
+bob-nvim v2.9.0:
     bob
 cargo-binstall v1.6.4:
     cargo-binstall
@@ -4418,7 +4417,7 @@ git-cliff v2.2.1:
     git-cliff-mangen
 git-delta v0.17.0:
     delta
-gitui v0.25.2:
+gitui v0.26.1:
     gitui
 halp v0.1.7:
     halp
@@ -4451,7 +4450,7 @@ mdbook-toc v0.14.2:
     mdbook-toc
 menyoki v1.7.0:
     menyoki
-mise v2024.4.4:
+mise v2024.4.5:
     mise
 mprocs v0.6.4:
     mprocs
@@ -4472,7 +4471,7 @@ riffdiff v3.1.0:
     riff
 ripgrep v14.1.0:
     rg
-samply v0.11.0:
+samply v0.12.0:
     samply
 sccache v0.7.7:
     sccache
@@ -4498,7 +4497,7 @@ tectonic v0.15.0:
     tectonic
 topgrade v14.0.1:
     topgrade
-tree-sitter-cli v0.22.2:
+tree-sitter-cli v0.22.5:
     tree-sitter
 viu v1.5.0:
     viu
@@ -4508,13 +4507,13 @@ wiki-tui v0.8.2:
     wiki-tui
 xcolor v0.5.1:
     xcolor
-xh v0.21.0:
+xh v0.22.0:
     xh
 xplr v0.21.7:
     xplr
 yazi-fm v0.2.4:
     yazi
-zellij v0.39.2:
+zellij v0.40.0:
     zellij
 ```
 
@@ -4522,7 +4521,7 @@ zellij v0.39.2:
 
 ```txt {pipx}
 manual pages are exposed at /home/een023/.local/share/man
-package ansible-core 2.16.5, installed using Python 3.12.2
+package ansible-core 2.16.6, installed using Python 3.12.2
  - ansible
  - ansible-config
  - ansible-connection
@@ -4534,7 +4533,7 @@ package ansible-core 2.16.5, installed using Python 3.12.2
  - ansible-pull
  - ansible-test
  - ansible-vault
-package black 24.3.0, installed using Python 3.12.2
+package black 24.4.0, installed using Python 3.12.2
  - black
  - black-primer
  - blackd
@@ -4597,7 +4596,7 @@ package jupyter-client 8.6.1, installed using Python 3.12.2
 package khal 0.11.3, installed using Python 3.12.2
  - ikhal
  - khal
-package nox 2024.3.2, installed using Python 3.12.2
+package nox 2024.4.15, installed using Python 3.12.2
  - nox
  - tox-to-nox
 package npzviewer 0.2.0, installed using Python 3.12.2
@@ -4606,7 +4605,7 @@ package pandoc-eqnos 2.5.0, installed using Python 3.12.2
  - pandoc-eqnos
 package pandoc-include 1.3.0, installed using Python 3.12.2
  - pandoc-include
-package pdfcropmargins 2.1.1, installed using Python 3.12.2
+package pdfcropmargins 2.1.2, installed using Python 3.12.2
  - pdf-crop-margins
  - pdfcropmargins
 package poetry 1.8.2, installed using Python 3.12.2
@@ -4978,11 +4977,11 @@ i zref: A new reference scheme for LaTeX
 Name                                    Version                                 Branch
 hrkfdn                                  1.1.0                                   stable
 Freedesktop Platform                    22.08.24                                22.08
-Freedesktop Platform                    23.08.15                                23.08
+Freedesktop Platform                    23.08.16                                23.08
 Mesa                                    24.0.4                                  22.08
 Mesa (Extra)                            24.0.4                                  22.08-extra
-Mesa                                    24.0.4                                  23.08
-Mesa (Extra)                            24.0.4                                  23.08-extra
+Mesa                                    24.0.5                                  23.08
+Mesa (Extra)                            24.0.5                                  23.08-extra
 Intel                                                                           22.08
 Intel                                                                           23.08
 openh264                                2.1.0                                   2.0
@@ -4993,7 +4992,7 @@ GNOME Application Platform version 44                                           
 GNOME Application Platform version 45                                           45
 GNOME Application Platform version 46                                           46
 Maximiliano Sandoval                    0.6.2                                   stable
-Small Mammal Collective                 0.7.1                                   stable
+Small Mammal Collective                 0.7.2                                   stable
 Yaru-dark Gtk Theme                                                             3.22
 ```
 
@@ -5010,7 +5009,7 @@ core20                     20240227                    2264   latest/stable    c
 core22                     20240111                    1122   latest/stable    canonical**    base
 dotnet-sdk                 5.0.408                     167    5.0/stable       dotnetcore**   classic
 duf-utility                v0.6.0                      1      latest/stable    muesli         -
-firefox                    124.0.2-1                   4090   latest/stable/…  mozilla**      -
+firefox                    125.0-1                     4136   latest/stable/…  mozilla**      -
 gimp                       2.10.36                     428    latest/stable    snapcrafters*  -
 gnome-3-28-1804            3.28.0-19-g98f9e67.98f9e67  198    latest/stable    canonical**    -
 gnome-3-34-1804            0+git.3556cb3               93     latest/stable/…  canonical**    -
@@ -5026,7 +5025,7 @@ mojave-themes              2020-03-24-35-g2aecfbf      2      latest/stable    g
 notable                    1.8.4-2                     3      latest/stable    spampinabio    classic
 pdftk                      2.02-4                      9      latest/stable    smoser         -
 procs                      v0.13.0                     969    latest/stable    dalance        -
-snapd                      2.61.2                      21184  latest/stable    canonical**    snapd
+snapd                      2.62                        21465  latest/stable    canonical**    snapd
 snapd-desktop-integration  0.9                         157    latest/stable/…  canonical**    -
 spt                        0.25.0                      289    latest/stable    popey*         -
 vlc                        3.0.20-1-g2617de71b6        3777   latest/stable    videolan**     -

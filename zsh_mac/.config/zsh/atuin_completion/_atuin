@@ -738,6 +738,12 @@ _arguments "${_arguments_options[@]}" \
 '--help[Print help]' \
 && ret=0
 ;;
+(import)
+_arguments "${_arguments_options[@]}" \
+'-h[Print help]' \
+'--help[Print help]' \
+&& ret=0
+;;
 (help)
 _arguments "${_arguments_options[@]}" \
 ":: :_atuin__dotfiles__alias__help_commands" \
@@ -759,6 +765,10 @@ _arguments "${_arguments_options[@]}" \
 && ret=0
 ;;
 (list)
+_arguments "${_arguments_options[@]}" \
+&& ret=0
+;;
+(import)
 _arguments "${_arguments_options[@]}" \
 && ret=0
 ;;
@@ -807,6 +817,10 @@ _arguments "${_arguments_options[@]}" \
 && ret=0
 ;;
 (list)
+_arguments "${_arguments_options[@]}" \
+&& ret=0
+;;
+(import)
 _arguments "${_arguments_options[@]}" \
 && ret=0
 ;;
@@ -1224,6 +1238,10 @@ _arguments "${_arguments_options[@]}" \
 _arguments "${_arguments_options[@]}" \
 && ret=0
 ;;
+(import)
+_arguments "${_arguments_options[@]}" \
+&& ret=0
+;;
         esac
     ;;
 esac
@@ -1310,13 +1328,13 @@ _atuin_commands() {
 'register:Register with the configured server' \
 'key:Print the encryption key for transfer to another machine' \
 'status:Display the sync status' \
-'account:' \
-'kv:' \
-'store:' \
-'dotfiles:' \
-'init:' \
+'account:Manage your sync account' \
+'kv:Get or set small key-value pairs' \
+'store:Manage the atuin data store' \
+'dotfiles:Manage your dotfiles with Atuin' \
+'init:Print Atuin'\''s shell init script' \
 'info:Information about dotfiles locations and ENV vars' \
-'doctor:' \
+'doctor:Run the doctor to check for common issues' \
 'default-config:Print example configuration' \
 'server:Start an atuin server' \
 'uuid:Generate a UUID' \
@@ -1332,8 +1350,8 @@ _atuin__account_commands() {
 'login:Login to the configured server' \
 'register:' \
 'logout:Log out' \
-'delete:' \
-'change-password:' \
+'delete:Delete your account, and all synced data' \
+'change-password:Change your password' \
 'help:Print this message or the help of the given subcommand(s)' \
     )
     _describe -t commands 'atuin account commands' commands "$@"
@@ -1344,17 +1362,18 @@ _atuin__help__account_commands() {
 'login:Login to the configured server' \
 'register:' \
 'logout:Log out' \
-'delete:' \
-'change-password:' \
+'delete:Delete your account, and all synced data' \
+'change-password:Change your password' \
     )
     _describe -t commands 'atuin help account commands' commands "$@"
 }
 (( $+functions[_atuin__dotfiles__alias_commands] )) ||
 _atuin__dotfiles__alias_commands() {
     local commands; commands=(
-'set:' \
-'delete:' \
-'list:' \
+'set:Set an alias' \
+'delete:Delete an alias' \
+'list:List all aliases' \
+'import:Import aliases set in the current shell' \
 'help:Print this message or the help of the given subcommand(s)' \
     )
     _describe -t commands 'atuin dotfiles alias commands' commands "$@"
@@ -1362,18 +1381,20 @@ _atuin__dotfiles__alias_commands() {
 (( $+functions[_atuin__dotfiles__help__alias_commands] )) ||
 _atuin__dotfiles__help__alias_commands() {
     local commands; commands=(
-'set:' \
-'delete:' \
-'list:' \
+'set:Set an alias' \
+'delete:Delete an alias' \
+'list:List all aliases' \
+'import:Import aliases set in the current shell' \
     )
     _describe -t commands 'atuin dotfiles help alias commands' commands "$@"
 }
 (( $+functions[_atuin__help__dotfiles__alias_commands] )) ||
 _atuin__help__dotfiles__alias_commands() {
     local commands; commands=(
-'set:' \
-'delete:' \
-'list:' \
+'set:Set an alias' \
+'delete:Delete an alias' \
+'list:List all aliases' \
+'import:Import aliases set in the current shell' \
     )
     _describe -t commands 'atuin help dotfiles alias commands' commands "$@"
 }
@@ -1505,7 +1526,7 @@ _atuin__help__doctor_commands() {
 (( $+functions[_atuin__dotfiles_commands] )) ||
 _atuin__dotfiles_commands() {
     local commands; commands=(
-'alias:' \
+'alias:Manage shell aliases with Atuin' \
 'help:Print this message or the help of the given subcommand(s)' \
     )
     _describe -t commands 'atuin dotfiles commands' commands "$@"
@@ -1513,7 +1534,7 @@ _atuin__dotfiles_commands() {
 (( $+functions[_atuin__help__dotfiles_commands] )) ||
 _atuin__help__dotfiles_commands() {
     local commands; commands=(
-'alias:' \
+'alias:Manage shell aliases with Atuin' \
     )
     _describe -t commands 'atuin help dotfiles commands' commands "$@"
 }
@@ -1578,8 +1599,8 @@ _atuin__account__help_commands() {
 'login:Login to the configured server' \
 'register:' \
 'logout:Log out' \
-'delete:' \
-'change-password:' \
+'delete:Delete your account, and all synced data' \
+'change-password:Change your password' \
 'help:Print this message or the help of the given subcommand(s)' \
     )
     _describe -t commands 'atuin account help commands' commands "$@"
@@ -1592,9 +1613,10 @@ _atuin__account__help__help_commands() {
 (( $+functions[_atuin__dotfiles__alias__help_commands] )) ||
 _atuin__dotfiles__alias__help_commands() {
     local commands; commands=(
-'set:' \
-'delete:' \
-'list:' \
+'set:Set an alias' \
+'delete:Delete an alias' \
+'list:List all aliases' \
+'import:Import aliases set in the current shell' \
 'help:Print this message or the help of the given subcommand(s)' \
     )
     _describe -t commands 'atuin dotfiles alias help commands' commands "$@"
@@ -1607,7 +1629,7 @@ _atuin__dotfiles__alias__help__help_commands() {
 (( $+functions[_atuin__dotfiles__help_commands] )) ||
 _atuin__dotfiles__help_commands() {
     local commands; commands=(
-'alias:' \
+'alias:Manage shell aliases with Atuin' \
 'help:Print this message or the help of the given subcommand(s)' \
     )
     _describe -t commands 'atuin dotfiles help commands' commands "$@"
@@ -1630,13 +1652,13 @@ _atuin__help_commands() {
 'register:Register with the configured server' \
 'key:Print the encryption key for transfer to another machine' \
 'status:Display the sync status' \
-'account:' \
-'kv:' \
-'store:' \
-'dotfiles:' \
-'init:' \
+'account:Manage your sync account' \
+'kv:Get or set small key-value pairs' \
+'store:Manage the atuin data store' \
+'dotfiles:Manage your dotfiles with Atuin' \
+'init:Print Atuin'\''s shell init script' \
 'info:Information about dotfiles locations and ENV vars' \
-'doctor:' \
+'doctor:Run the doctor to check for common issues' \
 'default-config:Print example configuration' \
 'server:Start an atuin server' \
 'uuid:Generate a UUID' \
@@ -1763,6 +1785,26 @@ _atuin__history_commands() {
 'help:Print this message or the help of the given subcommand(s)' \
     )
     _describe -t commands 'atuin history commands' commands "$@"
+}
+(( $+functions[_atuin__dotfiles__alias__help__import_commands] )) ||
+_atuin__dotfiles__alias__help__import_commands() {
+    local commands; commands=()
+    _describe -t commands 'atuin dotfiles alias help import commands' commands "$@"
+}
+(( $+functions[_atuin__dotfiles__alias__import_commands] )) ||
+_atuin__dotfiles__alias__import_commands() {
+    local commands; commands=()
+    _describe -t commands 'atuin dotfiles alias import commands' commands "$@"
+}
+(( $+functions[_atuin__dotfiles__help__alias__import_commands] )) ||
+_atuin__dotfiles__help__alias__import_commands() {
+    local commands; commands=()
+    _describe -t commands 'atuin dotfiles help alias import commands' commands "$@"
+}
+(( $+functions[_atuin__help__dotfiles__alias__import_commands] )) ||
+_atuin__help__dotfiles__alias__import_commands() {
+    local commands; commands=()
+    _describe -t commands 'atuin help dotfiles alias import commands' commands "$@"
 }
 (( $+functions[_atuin__help__import_commands] )) ||
 _atuin__help__import_commands() {
