@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.13.1](https://github.com/engeir/stowfiles/compare/v1.13.0...v1.13.1) (2024-04-18)
+
+
+### Miscellaneous
+
+* **tmux:** lets also add tmux-continuum to automatically save every 15min ([928aba4](https://github.com/engeir/stowfiles/commit/928aba4af9b84a3ae2eac8921b4f19b3d59fa425))
+* **tmux:** lets also automatically restore sessions when starting tmux ([1f58923](https://github.com/engeir/stowfiles/commit/1f58923bc571573e31d582c9c4fbff360eb7c6ef))
+
 ## [1.13.0](https://github.com/engeir/stowfiles/compare/v1.12.0...v1.13.0) (2024-04-18)
 
 
