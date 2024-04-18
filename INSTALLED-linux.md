@@ -531,7 +531,7 @@ gftp 2.9.1~beta-1 [Ubuntu/jammy universe]
 gftp-common 2.9.1~beta-1 [Ubuntu/jammy universe]
 gftp-gtk 2.9.1~beta-1 [Ubuntu/jammy universe]
 gftp-text 2.9.1~beta-1 [Ubuntu/jammy universe]
-gh 2.47.0 [gh/stable main]
+gh 2.48.0 [gh/stable main]
 ghc 8.8.4-3 [Ubuntu/jammy universe]
 ghc-prof 8.8.4-3 [Ubuntu/jammy universe]
 ghostscript 9.55.0~dfsg1-0ubuntu5.6 [Ubuntu/jammy main]
@@ -3443,9 +3443,9 @@ openjdk-11-jre 11.0.22+7-0ubuntu2~22.04.1 [Ubuntu/jammy main]
 openjdk-11-jre-headless 11.0.22+7-0ubuntu2~22.04.1 [Ubuntu/jammy main]
 openprinting-ppds 20220223-0ubuntu1 [Ubuntu/jammy main]
 opensp 1.5.2-13ubuntu3 [Ubuntu/jammy universe]
-openssh-client 1:8.9p1-3ubuntu0.6 [Ubuntu/jammy main]
-openssh-server 1:8.9p1-3ubuntu0.6 [Ubuntu/jammy main]
-openssh-sftp-server 1:8.9p1-3ubuntu0.6 [Ubuntu/jammy main]
+openssh-client 1:8.9p1-3ubuntu0.7 [Ubuntu/jammy main]
+openssh-server 1:8.9p1-3ubuntu0.7 [Ubuntu/jammy main]
+openssh-sftp-server 1:8.9p1-3ubuntu0.7 [Ubuntu/jammy main]
 openssl 3.0.2-0ubuntu1.15 [Ubuntu/jammy main]
 openvpn 2.5.9-0ubuntu0.22.04.2 [Ubuntu/jammy main]
 orca 42.0-1ubuntu2 [Ubuntu/jammy main]
@@ -4377,7 +4377,7 @@ bat v0.24.0:
     bat
 blindfold v1.0.7:
     blindfold
-bob-nvim v2.9.0:
+bob-nvim v2.9.1:
     bob
 cargo-binstall v1.6.4:
     cargo-binstall
@@ -5001,7 +5001,7 @@ Yaru-dark Gtk Theme                                                             
 ```txt {snap}
 Name                       Version                     Rev    Tracking         Publisher      Notes
 bare                       1.0                         5      latest/stable    canonical**    base
-canonical-livepatch        10.8.1                      264    latest/stable    canonical**    -
+canonical-livepatch        10.8.2                      278    latest/stable    canonical**    -
 cmake                      3.29.2                      1381   latest/stable    crascit**      classic
 core                       16-2.61.2                   16928  latest/stable    canonical**    core
 core18                     20231027                    2812   latest/stable    canonical**    base
