@@ -1,5 +1,22 @@
 # Changelog
 
+## [1.13.0](https://github.com/engeir/stowfiles/compare/v1.12.0...v1.13.0) (2024-04-18)
+
+
+### Features
+
+* **tmux:** add tmux-resurrect plugin since I lost my sessions on my remote machine lol ([8af97eb](https://github.com/engeir/stowfiles/commit/8af97ebb20889bac0addcc6307140dc7925aa9fd))
+
+
+### Miscellaneous
+
+* **nvim:** add boole value "real/fake" ([7bdb691](https://github.com/engeir/stowfiles/commit/7bdb6910ba8213630503f26fad294d31ef26e1e3))
+* **nvim:** conditionally remove comment.nvim if we run nvim 0.10+ ([b8d526f](https://github.com/engeir/stowfiles/commit/b8d526fd619195586ae432eaebe0ceeb3b324920))
+* **sioyek:** update colors in dark and custom mode ([82766a8](https://github.com/engeir/stowfiles/commit/82766a8d0506256c4d2e68bb60b6f10288727bad))
+* **software:** update installed ([732469d](https://github.com/engeir/stowfiles/commit/732469d060a3335e56205ffea0cc2bfce7ad42cf))
+* **software:** update installed ([10172a8](https://github.com/engeir/stowfiles/commit/10172a8e21f211376c2f16b86433fde2cbf38b59))
+* **software:** update installed ([15c1cd7](https://github.com/engeir/stowfiles/commit/15c1cd7d3ae6d0cf6160b3407400de4a81d55c68))
+
 ## [1.12.0](https://github.com/engeir/stowfiles/compare/v1.11.6...v1.12.0) (2024-04-12)
 
 
