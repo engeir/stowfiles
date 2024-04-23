@@ -22,3 +22,5 @@ python = [
   "sub-0.4:latest",
 ]
 usage = "latest"
+"ubi:goreleaser/goreleaser" = "latest"
+"ubi:filosottile/age" = "1.1.1"

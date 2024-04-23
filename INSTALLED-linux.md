@@ -3743,8 +3743,8 @@ python3-pathspec 0.9.0-1 [Ubuntu/jammy universe]
 python3-pexpect 4.8.0-2ubuntu1 [Ubuntu/jammy main]
 python3-pickleshare 0.7.5-5 [Ubuntu/jammy universe]
 python3-pikepdf 5.0.1+dfsg-1 [Ubuntu/jammy universe]
-python3-pil 9.0.1-1ubuntu0.2 [local]
-python3-pil.imagetk 9.0.1-1ubuntu0.2 [local]
+python3-pil 9.0.1-1ubuntu0.3 [Ubuntu/jammy main]
+python3-pil.imagetk 9.0.1-1ubuntu0.3 [Ubuntu/jammy universe]
 python3-pip 22.0.2+dfsg-1ubuntu0.4 [Ubuntu/jammy universe]
 python3-pip-whl 22.0.2+dfsg-1ubuntu0.4 [Ubuntu/jammy universe]
 python3-pkg-resources 59.6.0-1.2ubuntu0.22.04.1 [Ubuntu/jammy main]
@@ -4349,19 +4349,21 @@ name: zoom version: 6.0.0.4563
 ## Mise
 
 ```txt {mise}
-cabal      3.10.3.0  ~/.config/mise/config.toml latest        
-go         1.22.2    ~/.config/mise/config.toml latest        
-node       21.7.3    ~/.config/mise/config.toml latest        
-pandoc     3.1.13    ~/.config/mise/config.toml latest        
-python     3.8.19    ~/.config/mise/config.toml sub-0.4:latest
-python     3.9.19    ~/.config/mise/config.toml sub-0.3:latest
-python     3.10.14   ~/.config/mise/config.toml sub-0.2:latest
-python     3.11.9    ~/.config/mise/config.toml sub-0.1:latest
-python     3.12.3    ~/.config/mise/config.toml latest        
-ruby       3.3.0     ~/.config/mise/config.toml latest        
-tinytex    2024.04   ~/.config/mise/config.toml latest        
-usage      0.1.18    ~/.config/mise/config.toml latest        
-watchexec  2.0.0     ~/.config/mise/config.toml latest        
+cabal                      3.10.3.0  ~/.config/mise/config.toml latest        
+go                         1.22.2    ~/.config/mise/config.toml latest        
+node                       21.7.3    ~/.config/mise/config.toml latest        
+pandoc                     3.1.13    ~/.config/mise/config.toml latest        
+python                     3.8.19    ~/.config/mise/config.toml sub-0.4:latest
+python                     3.9.19    ~/.config/mise/config.toml sub-0.3:latest
+python                     3.10.14   ~/.config/mise/config.toml sub-0.2:latest
+python                     3.11.9    ~/.config/mise/config.toml sub-0.1:latest
+python                     3.12.3    ~/.config/mise/config.toml latest        
+ruby                       3.3.0     ~/.config/mise/config.toml latest        
+tinytex                    2024.04   ~/.config/mise/config.toml latest        
+ubi:filosottile/age        1.1.1     ~/.config/mise/config.toml 1.1.1         
+ubi:goreleaser/goreleaser  1.13.0    ~/.config/mise/config.toml latest        
+usage                      0.1.18    ~/.config/mise/config.toml latest        
+watchexec                  2.0.0     ~/.config/mise/config.toml latest        
 ```
 
 ## Cargo
@@ -4535,6 +4537,8 @@ package ansible-core 2.16.6, installed using Python 3.12.2
  - ansible-pull
  - ansible-test
  - ansible-vault
+package bibfish 0.3.0, installed using Python 3.12.3
+ - bibfish
 package black 24.4.0, installed using Python 3.12.2
  - black
  - black-primer
