@@ -4,7 +4,7 @@
 <a href="https://dotfyle.com/engeir/stowfiles-nvimlua-config-nvim"><img src="https://dotfyle.com/engeir/stowfiles-nvimlua-config-nvim/badges/leaderkey?style=for-the-badge" /></a>
 <a href="https://dotfyle.com/engeir/stowfiles-nvimlua-config-nvim"><img src="https://dotfyle.com/engeir/stowfiles-nvimlua-config-nvim/badges/plugin-manager?style=for-the-badge" /></a>
 
-This is @engeir's Neovim config, on NVIM v0.10.0-dev-2947+ge1ca7a7bf (view [latest nightly
+This is @engeir's Neovim config, on NVIM v0.9.5 (view [latest nightly
 build](https://github.com/neovim/neovim/tree/nightly)) installed with the [bob version
 manager for neovim](https://github.com/MordechaiHadad/bob). I am currently using the
 [lazy plugin manager](https://github.com/folke/lazy.nvim). Below is a complete list of
@@ -29,6 +29,7 @@ all plugins I'm using:
 - [codeium.nvim](https://github.com/Exafunction/codeium.nvim.git)
 - [colorizer](https://github.com/NvChad/nvim-colorizer.lua.git)
 - [commander.nvim](https://github.com/FeiyouG/commander.nvim.git)
+- [Comment.nvim](https://github.com/numToStr/Comment.nvim.git)
 - [committia.vim](https://github.com/rhysd/committia.vim.git)
 - [conform.nvim](https://github.com/stevearc/conform.nvim.git)
 - [copilot-cmp](https://github.com/zbirenbaum/copilot-cmp.git)

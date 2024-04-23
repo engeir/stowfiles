@@ -225,10 +225,10 @@ docbook-to-man 1:2.0.0-45 [Ubuntu/jammy universe]
 docbook-xml 4.5-11 [Ubuntu/jammy main]
 docbook-xsl 1.79.2+dfsg-1 [Ubuntu/jammy universe]
 docker 1.5-2 [Ubuntu/jammy universe]
-docker-buildx-plugin 0.13.1-1~ubuntu.20.04~focal [Docker CE/ stable]
-docker-ce 5:26.0.1-1~ubuntu.20.04~focal [Docker CE/ stable]
-docker-ce-cli 5:26.0.1-1~ubuntu.20.04~focal [Docker CE/ stable]
-docker-ce-rootless-extras 5:26.0.1-1~ubuntu.20.04~focal [Docker CE/ stable]
+docker-buildx-plugin 0.14.0-1~ubuntu.20.04~focal [Docker CE/ stable]
+docker-ce 5:26.0.2-1~ubuntu.20.04~focal [Docker CE/ stable]
+docker-ce-cli 5:26.0.2-1~ubuntu.20.04~focal [Docker CE/ stable]
+docker-ce-rootless-extras 5:26.0.2-1~ubuntu.20.04~focal [Docker CE/ stable]
 docker-compose-plugin 2.26.1-1~ubuntu.20.04~focal [Docker CE/ stable]
 docutils-common 0.17.1+dfsg-2 [Ubuntu/jammy main]
 docx2txt 1.4-5 [Ubuntu/jammy universe]
@@ -1017,12 +1017,12 @@ libbz2-1.0 1.0.8-5build1 [Ubuntu/jammy main]
 libbz2-1.0:i386 1.0.8-5build1 [Ubuntu/jammy main]
 libbz2-dev 1.0.8-5build1 [Ubuntu/jammy main]
 libc-ares2 1.18.1-1ubuntu0.22.04.3 [Ubuntu/jammy main]
-libc-bin 2.35-0ubuntu3.6 [Ubuntu/jammy main]
-libc-dev-bin 2.35-0ubuntu3.6 [Ubuntu/jammy main]
-libc6 2.35-0ubuntu3.6 [Ubuntu/jammy main]
-libc6-dbg 2.35-0ubuntu3.6 [Ubuntu/jammy main]
-libc6-dev 2.35-0ubuntu3.6 [Ubuntu/jammy main]
-libc6:i386 2.35-0ubuntu3.6 [Ubuntu/jammy main]
+libc-bin 2.35-0ubuntu3.7 [Ubuntu/jammy main]
+libc-dev-bin 2.35-0ubuntu3.7 [Ubuntu/jammy main]
+libc6 2.35-0ubuntu3.7 [Ubuntu/jammy main]
+libc6-dbg 2.35-0ubuntu3.7 [Ubuntu/jammy main]
+libc6-dev 2.35-0ubuntu3.7 [Ubuntu/jammy main]
+libc6:i386 2.35-0ubuntu3.7 [Ubuntu/jammy main]
 libcaca-dev 0.99.beta19-2.2ubuntu4 [Ubuntu/jammy main]
 libcaca0 0.99.beta19-2.2ubuntu4 [Ubuntu/jammy main]
 libcaca0:i386 0.99.beta19-2.2ubuntu4 [Ubuntu/jammy main]
@@ -3241,39 +3241,39 @@ links 2.25-1build1 [Ubuntu/jammy universe]
 lintian 2.114.0ubuntu1.3 [Ubuntu/jammy main]
 linux-base 4.5ubuntu9 [Ubuntu/jammy main]
 linux-firmware 20220329.git681281e4-0ubuntu3.29 [Ubuntu/jammy main]
-linux-generic 5.15.0.102.99 [Ubuntu/jammy main]
-linux-generic-hwe-20.04 5.15.0.102.99 [Ubuntu/jammy main]
-linux-generic-hwe-22.04 6.5.0.27.28~22.04.1 [Ubuntu/jammy main]
-linux-headers-5.15.0-102 5.15.0-102.112 [Ubuntu/jammy main]
-linux-headers-5.15.0-102-generic 5.15.0-102.112 [Ubuntu/jammy main]
+linux-generic 5.15.0.105.102 [Ubuntu/jammy main]
+linux-generic-hwe-20.04 5.15.0.105.102 [Ubuntu/jammy main]
+linux-generic-hwe-22.04 6.5.0.28.29~22.04.1 [Ubuntu/jammy main]
+linux-headers-5.15.0-105 5.15.0-105.115 [Ubuntu/jammy main]
+linux-headers-5.15.0-105-generic 5.15.0-105.115 [Ubuntu/jammy main]
 linux-headers-5.19.0-50-generic 5.19.0-50.50 [Ubuntu/jammy main]
 linux-headers-6.2.0-39-generic 6.2.0-39.40~22.04.1 [Ubuntu/jammy main]
-linux-headers-6.5.0-26-generic 6.5.0-26.26~22.04.1 [Ubuntu/jammy main]
 linux-headers-6.5.0-27-generic 6.5.0-27.28~22.04.1 [Ubuntu/jammy main]
-linux-headers-generic 5.15.0.102.99 [Ubuntu/jammy main]
-linux-headers-generic-hwe-22.04 6.5.0.27.28~22.04.1 [Ubuntu/jammy main]
+linux-headers-6.5.0-28-generic 6.5.0-28.29~22.04.1 [Ubuntu/jammy main]
+linux-headers-generic 5.15.0.105.102 [Ubuntu/jammy main]
+linux-headers-generic-hwe-22.04 6.5.0.28.29~22.04.1 [Ubuntu/jammy main]
 linux-hwe-5.19-headers-5.19.0-50 5.19.0-50.50 [Ubuntu/jammy main]
 linux-hwe-6.2-headers-6.2.0-39 6.2.0-39.40~22.04.1 [Ubuntu/jammy main]
-linux-hwe-6.5-headers-6.5.0-26 6.5.0-26.26~22.04.1 [Ubuntu/jammy main]
 linux-hwe-6.5-headers-6.5.0-27 6.5.0-27.28~22.04.1 [Ubuntu/jammy main]
-linux-image-5.15.0-102-generic 5.15.0-102.112 [Ubuntu/jammy main]
+linux-hwe-6.5-headers-6.5.0-28 6.5.0-28.29~22.04.1 [Ubuntu/jammy main]
+linux-image-5.15.0-105-generic 5.15.0-105.115 [Ubuntu/jammy main]
 linux-image-5.19.0-50-generic 5.19.0-50.50 [Ubuntu/jammy main]
 linux-image-6.2.0-39-generic 6.2.0-39.40~22.04.1 [Ubuntu/jammy main]
-linux-image-6.5.0-26-generic 6.5.0-26.26~22.04.1 [Ubuntu/jammy main]
 linux-image-6.5.0-27-generic 6.5.0-27.28~22.04.1 [Ubuntu/jammy main]
-linux-image-generic 5.15.0.102.99 [Ubuntu/jammy main]
-linux-image-generic-hwe-22.04 6.5.0.27.28~22.04.1 [Ubuntu/jammy main]
-linux-libc-dev 5.15.0-102.112 [Ubuntu/jammy main]
-linux-modules-5.15.0-102-generic 5.15.0-102.112 [Ubuntu/jammy main]
+linux-image-6.5.0-28-generic 6.5.0-28.29~22.04.1 [Ubuntu/jammy main]
+linux-image-generic 5.15.0.105.102 [Ubuntu/jammy main]
+linux-image-generic-hwe-22.04 6.5.0.28.29~22.04.1 [Ubuntu/jammy main]
+linux-libc-dev 5.15.0-105.115 [Ubuntu/jammy main]
+linux-modules-5.15.0-105-generic 5.15.0-105.115 [Ubuntu/jammy main]
 linux-modules-5.19.0-50-generic 5.19.0-50.50 [Ubuntu/jammy main]
 linux-modules-6.2.0-39-generic 6.2.0-39.40~22.04.1 [Ubuntu/jammy main]
-linux-modules-6.5.0-26-generic 6.5.0-26.26~22.04.1 [Ubuntu/jammy main]
 linux-modules-6.5.0-27-generic 6.5.0-27.28~22.04.1 [Ubuntu/jammy main]
-linux-modules-extra-5.15.0-102-generic 5.15.0-102.112 [Ubuntu/jammy main]
+linux-modules-6.5.0-28-generic 6.5.0-28.29~22.04.1 [Ubuntu/jammy main]
+linux-modules-extra-5.15.0-105-generic 5.15.0-105.115 [Ubuntu/jammy main]
 linux-modules-extra-5.19.0-50-generic 5.19.0-50.50 [Ubuntu/jammy main]
 linux-modules-extra-6.2.0-39-generic 6.2.0-39.40~22.04.1 [Ubuntu/jammy main]
-linux-modules-extra-6.5.0-26-generic 6.5.0-26.26~22.04.1 [Ubuntu/jammy main]
 linux-modules-extra-6.5.0-27-generic 6.5.0-27.28~22.04.1 [Ubuntu/jammy main]
+linux-modules-extra-6.5.0-28-generic 6.5.0-28.29~22.04.1 [Ubuntu/jammy main]
 linux-sound-base 1.0.25+dfsg-0ubuntu7 [Ubuntu/jammy main]
 llvm 1:14.0-55~exp2 [Ubuntu/jammy universe]
 llvm-11 1:11.1.0-6 [Ubuntu/jammy universe]
@@ -3294,7 +3294,7 @@ llvm-14-tools 1:14.0.0-1ubuntu1.1 [Ubuntu/jammy universe]
 llvm-runtime 1:14.0-55~exp2 [Ubuntu/jammy universe]
 lm-sensors 1:3.6.0-7ubuntu1 [Ubuntu/jammy universe]
 lmodern 2.004.5-6.1 [Ubuntu/jammy universe]
-locales 2.35-0ubuntu3.6 [Ubuntu/jammy main]
+locales 2.35-0ubuntu3.7 [Ubuntu/jammy main]
 locate 4.8.0-1ubuntu3 [Ubuntu/jammy universe]
 login 1:4.8.1-2ubuntu2.2 [Ubuntu/jammy main]
 logrotate 3.19.0-1ubuntu1.1 [Ubuntu/jammy main]
@@ -3743,8 +3743,8 @@ python3-pathspec 0.9.0-1 [Ubuntu/jammy universe]
 python3-pexpect 4.8.0-2ubuntu1 [Ubuntu/jammy main]
 python3-pickleshare 0.7.5-5 [Ubuntu/jammy universe]
 python3-pikepdf 5.0.1+dfsg-1 [Ubuntu/jammy universe]
-python3-pil 9.0.1-1ubuntu0.2 [Ubuntu/jammy main]
-python3-pil.imagetk 9.0.1-1ubuntu0.2 [Ubuntu/jammy universe]
+python3-pil 9.0.1-1ubuntu0.2 [local]
+python3-pil.imagetk 9.0.1-1ubuntu0.2 [local]
 python3-pip 22.0.2+dfsg-1ubuntu0.4 [Ubuntu/jammy universe]
 python3-pip-whl 22.0.2+dfsg-1ubuntu0.4 [Ubuntu/jammy universe]
 python3-pkg-resources 59.6.0-1.2ubuntu0.22.04.1 [Ubuntu/jammy main]
@@ -3993,7 +3993,7 @@ shellcheck 0.8.0-2 [Ubuntu/jammy universe]
 shfmt 3.7.0-pacstall1 [local]
 shfmt-bin 3.4.3-1 [local]
 shim-signed 1.51.3+15.7-0ubuntu1 [Ubuntu/jammy main]
-signal-desktop 7.5.0 [. xenial/xenial main]
+signal-desktop 7.5.1 [. xenial/xenial main]
 signon-plugin-oauth2 0.25-2 [Ubuntu/jammy universe]
 silversearcher-ag 2.2.0+git20200805-1 [Ubuntu/jammy universe]
 slack-desktop 4.37.101 [slack/jessie main]
@@ -4340,7 +4340,7 @@ name: nala version: 0.15.1
 name: neofetch version: 7.1.0-pacstall1
 name: quarto version: 1.3.450
 name: shfmt version: 3.7.0-pacstall1
-name: signal-desktop version: 7.5.0
+name: signal-desktop version: 7.5.1
 name: thorium-browser version: 122.0.6261.132-1
 name: wezterm version: 20230712-072601-f4abf8fd-pacstall1
 name: zoom version: 6.0.0.4563
@@ -4361,7 +4361,7 @@ python     3.12.3    ~/.config/mise/config.toml latest
 ruby       3.3.0     ~/.config/mise/config.toml latest        
 tinytex    2024.04   ~/.config/mise/config.toml latest        
 usage      0.1.18    ~/.config/mise/config.toml latest        
-watchexec  1.25.1    ~/.config/mise/config.toml latest        
+watchexec  2.0.0     ~/.config/mise/config.toml latest        
 ```
 
 ## Cargo
@@ -4405,7 +4405,7 @@ du-dust v1.0.0:
     dust
 evcxr_jupyter v0.17.0:
     evcxr_jupyter
-eza v0.18.10:
+eza v0.18.11:
     eza
 fd-find v9.0.0:
     fd
@@ -4432,7 +4432,7 @@ irust v1.71.21:
     irust
 jless v0.9.0:
     jless
-jnv v0.2.1:
+jnv v0.2.2:
     jnv
 just v1.25.2:
     just
@@ -4450,7 +4450,7 @@ mdbook-toc v0.14.2:
     mdbook-toc
 menyoki v1.7.0:
     menyoki
-mise v2024.4.5:
+mise v2024.4.8:
     mise
 mprocs v0.6.4:
     mprocs
@@ -4473,7 +4473,7 @@ ripgrep v14.1.0:
     rg
 samply v0.12.0:
     samply
-sccache v0.7.7:
+sccache v0.8.0:
     sccache
 sd v1.0.0:
     sd
@@ -4485,7 +4485,7 @@ speedtest-rs v0.1.5:
     speedtest-rs
 spotify-tui v0.25.0:
     spt
-spotify_player v0.17.2:
+spotify_player v0.18.0:
     spotify_player
 spotifyd v0.3.5:
     spotifyd
@@ -4499,6 +4499,8 @@ topgrade v14.0.1:
     topgrade
 tree-sitter-cli v0.22.5:
     tree-sitter
+ubi v0.0.29:
+    ubi
 viu v1.5.0:
     viu
 vivid v0.9.0:
@@ -5009,7 +5011,7 @@ core20                     20240227                    2264   latest/stable    c
 core22                     20240111                    1122   latest/stable    canonical**    base
 dotnet-sdk                 5.0.408                     167    5.0/stable       dotnetcore**   classic
 duf-utility                v0.6.0                      1      latest/stable    muesli         -
-firefox                    125.0-1                     4136   latest/stable/…  mozilla**      -
+firefox                    125.0.2-1                   4173   latest/stable/…  mozilla**      -
 gimp                       2.10.36                     428    latest/stable    snapcrafters*  -
 gnome-3-28-1804            3.28.0-19-g98f9e67.98f9e67  198    latest/stable    canonical**    -
 gnome-3-34-1804            0+git.3556cb3               93     latest/stable/…  canonical**    -
