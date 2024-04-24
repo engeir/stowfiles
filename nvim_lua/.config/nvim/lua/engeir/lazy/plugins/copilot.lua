@@ -6,7 +6,7 @@ return {
     event = "InsertEnter",
     config = function()
       require("copilot").setup({
-        filetypes = { markdown = true },
+        filetypes = { markdown = true, tex = false },
         panel = {
           enabled = false,
           auto_refresh = true,
