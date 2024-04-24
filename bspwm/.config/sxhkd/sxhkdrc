@@ -54,9 +54,23 @@ super + Escape
 super + alt + Escape
 	tabbed -c surf -e
 
-# start zathura in tabbed
-super + alt + z
-	tabbed -c zathura -e
+##---------- Tabbed Containers ----------##
+# See https://github.com/albertored11/bsptab
+
+# add to tabbed container
+ctrl + alt + {Left,Down,Up,Right}
+	tabc attach $(bspc query -N -n) {$(bspc query -N -n west),$(bspc query -N -n south),$(bspc query -N -n north),$(bspc query -N -n east)}
+
+# create/remove from tabbed container
+super + z
+	id=$(bspc query -N -n); \
+	[[ "$(tabc printclass $id)" == "tabbed" ]] \
+	&& tabc detach $id \
+	|| tabc create $id
+
+# toggle autoattach in tabbed container
+super + shift + z
+	tabc autoattach $(bspc query -N -n)
 
 ##---------- Rofi Launcher & Menus ----------##
 
