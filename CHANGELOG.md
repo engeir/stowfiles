@@ -1,5 +1,23 @@
 # Changelog
 
+## [1.14.0](https://github.com/engeir/stowfiles/compare/v1.13.1...v1.14.0) (2024-04-24)
+
+
+### Features
+
+* **bspwm:** add bsptab to workflow ([f8354a5](https://github.com/engeir/stowfiles/commit/f8354a5df404f2e7c52b419262e482a731d06739))
+
+
+### Miscellaneous
+
+* **fish:** add ubi and zathura aliases ([2495f40](https://github.com/engeir/stowfiles/commit/2495f40a1f8719c8a755b8065eb1d6ca3edc5b56))
+* **mise:** install age using ubi via mise ([003f599](https://github.com/engeir/stowfiles/commit/003f599ca6b00b7ead41e1e7164311fcf8a40725))
+* **nvim:** replace bibexport with bibfish to generate bib files ([886813c](https://github.com/engeir/stowfiles/commit/886813cfbbbba988a1cdce3a9641f5c6e5b715b8))
+* **sioyek:** rewrite default colors so nvim-colorizer can highlight them ([f167fb3](https://github.com/engeir/stowfiles/commit/f167fb3940b0cfa186ecde5785e0e85d47d0d6a9))
+* **sioyek:** update custom mode text color ([aa90a5f](https://github.com/engeir/stowfiles/commit/aa90a5f9dea6a40a22fb67a7cd6526658e741745))
+* **software:** update installed ([1a32ab3](https://github.com/engeir/stowfiles/commit/1a32ab37edf4e8336b66b1de8806579b16bedde1))
+* **software:** update installed ([483781f](https://github.com/engeir/stowfiles/commit/483781f5b70890be0d403e7b908a558bccbc6640))
+
 ## [1.13.1](https://github.com/engeir/stowfiles/compare/v1.13.0...v1.13.1) (2024-04-18)
 
 
