@@ -50,6 +50,15 @@ return {
     "echasnovski/mini.bufremove",
     event = { "BufReadPre", "BufNewFile" },
     config = true,
+    keys = {
+      {
+        "<leader>bd",
+        function()
+          require("mini.bufremove").delete()
+        end,
+      },
+      desc = "[B]uf[D]elete",
+    },
   },
 
   -- mini.clue -----------------------------------------------------------------------
