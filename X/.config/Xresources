@@ -26,7 +26,7 @@ ligatures...
 #define t_fg_highlight #9D9EA2
 #define t_fg_ceiling   #FEFFFF
 
-Nsxiv.window.background: t_background
+Nsxiv.window.background: #2d2d2d
 Nsxiv.window.foreground: #fff
 ! Nsxiv.bar.font
 Nsxiv.bar.background: #193421
