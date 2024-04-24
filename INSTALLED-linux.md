@@ -226,9 +226,9 @@ docbook-xml 4.5-11 [Ubuntu/jammy main]
 docbook-xsl 1.79.2+dfsg-1 [Ubuntu/jammy universe]
 docker 1.5-2 [Ubuntu/jammy universe]
 docker-buildx-plugin 0.14.0-1~ubuntu.20.04~focal [Docker CE/ stable]
-docker-ce 5:26.0.2-1~ubuntu.20.04~focal [Docker CE/ stable]
-docker-ce-cli 5:26.0.2-1~ubuntu.20.04~focal [Docker CE/ stable]
-docker-ce-rootless-extras 5:26.0.2-1~ubuntu.20.04~focal [Docker CE/ stable]
+docker-ce 5:26.1.0-1~ubuntu.20.04~focal [Docker CE/ stable]
+docker-ce-cli 5:26.1.0-1~ubuntu.20.04~focal [Docker CE/ stable]
+docker-ce-rootless-extras 5:26.1.0-1~ubuntu.20.04~focal [Docker CE/ stable]
 docker-compose-plugin 2.26.1-1~ubuntu.20.04~focal [Docker CE/ stable]
 docutils-common 0.17.1+dfsg-2 [Ubuntu/jammy main]
 docx2txt 1.4-5 [Ubuntu/jammy universe]
@@ -4322,7 +4322,7 @@ zip 3.0-12build2 [Ubuntu/jammy main]
 zlib1g 1:1.2.11.dfsg-2ubuntu9.2 [Ubuntu/jammy main]
 zlib1g-dev 1:1.2.11.dfsg-2ubuntu9.2 [Ubuntu/jammy main]
 zlib1g:i386 1:1.2.11.dfsg-2ubuntu9.2 [Ubuntu/jammy main]
-zoom 6.0.0.4563 [local]
+zoom 6.0.2.4680 [local]
 zsh 5.8.1-1 [Ubuntu/jammy main]
 zsh-common 5.8.1-1 [Ubuntu/jammy main]
 zstd 1.4.8+dfsg-3build1 [Ubuntu/jammy main]
@@ -4343,7 +4343,7 @@ name: shfmt version: 3.7.0-pacstall1
 name: signal-desktop version: 7.5.1
 name: thorium-browser version: 122.0.6261.132-1
 name: wezterm version: 20230712-072601-f4abf8fd-pacstall1
-name: zoom version: 6.0.0.4563
+name: zoom version: 6.0.2.4680
 ```
 
 ## Mise
@@ -4358,7 +4358,7 @@ python                     3.9.19    ~/.config/mise/config.toml sub-0.3:latest
 python                     3.10.14   ~/.config/mise/config.toml sub-0.2:latest
 python                     3.11.9    ~/.config/mise/config.toml sub-0.1:latest
 python                     3.12.3    ~/.config/mise/config.toml latest        
-ruby                       3.3.0     ~/.config/mise/config.toml latest        
+ruby                       3.3.1     ~/.config/mise/config.toml latest        
 tinytex                    2024.04   ~/.config/mise/config.toml latest        
 ubi:filosottile/age        1.1.1     ~/.config/mise/config.toml 1.1.1         
 ubi:goreleaser/goreleaser  1.13.0    ~/.config/mise/config.toml latest        
@@ -4515,7 +4515,7 @@ xh v0.22.0:
     xh
 xplr v0.21.7:
     xplr
-yazi-fm v0.2.4:
+yazi-fm v0.2.5:
     yazi
 zellij v0.40.0:
     zellij
@@ -5012,7 +5012,7 @@ cmake                      3.29.2                      1381   latest/stable    c
 core                       16-2.61.2                   16928  latest/stable    canonical**    core
 core18                     20231027                    2812   latest/stable    canonical**    base
 core20                     20240227                    2264   latest/stable    canonical**    base
-core22                     20240111                    1122   latest/stable    canonical**    base
+core22                     20240408                    1380   latest/stable    canonical**    base
 dotnet-sdk                 5.0.408                     167    5.0/stable       dotnetcore**   classic
 duf-utility                v0.6.0                      1      latest/stable    muesli         -
 firefox                    125.0.2-1                   4173   latest/stable/…  mozilla**      -
