@@ -3,3 +3,5 @@ defaultIndent: "  "
 modifyLineBreaks:
   textWrapOptions:
     columns: 89
+    blocksBeginWith:
+      other: \\\w+
