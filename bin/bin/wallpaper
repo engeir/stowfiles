@@ -14,7 +14,7 @@ chosen=$(ls "$HOME"/syncthing/wallpapers/* | sed 's:.*/::' | eval "$dmenu")
 # chosen=$(ls ~/.config/bspwm/wallpaper*/* | sed 's:.*/::' | dmenu -i -l 20)
 
 # Exit if none is chosen
-[ -z "$chosen" ] && exit
+[ "$chosen" = "" ] && exit
 
 DIR=$(ls "$HOME"/syncthing/wallpapers/* | grep "$chosen")
 # DIR=$(ls ~/.config/bspwm/wallpaper*/* | grep "$chosen")

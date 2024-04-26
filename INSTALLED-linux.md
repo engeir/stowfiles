@@ -741,6 +741,7 @@ hicolor-icon-theme 0.17-2 [Ubuntu/jammy main]
 hostname 3.23ubuntu2 [Ubuntu/jammy main]
 hplip 3.21.12+dfsg0-1 [Ubuntu/jammy main]
 hplip-data 3.21.12+dfsg0-1 [Ubuntu/jammy main]
+hsetroot 1.0.5-1 [Ubuntu/jammy universe]
 html2text 1.3.2a-28 [Ubuntu/jammy universe]
 htop 3.2.2-pacstall1 [local]
 hud 14.10+17.10.20170619-0ubuntu4 [Ubuntu/jammy universe]
@@ -1369,9 +1370,9 @@ libframe6 2.5.0daily13.06.05+16.10.20160809-0ubuntu3 [Ubuntu/jammy universe]
 libfreeaptx0 0.1.1-1 [Ubuntu/jammy universe]
 libfreehand-0.1-1 0.1.2-3build2 [Ubuntu/jammy main]
 libfreeimage3 3.18.0+ds2-6ubuntu5.1 [Ubuntu/jammy universe]
-libfreerdp-client2-2 2.6.1+dfsg1-3ubuntu2.5 [Ubuntu/jammy main]
-libfreerdp-server2-2 2.6.1+dfsg1-3ubuntu2.5 [Ubuntu/jammy main]
-libfreerdp2-2 2.6.1+dfsg1-3ubuntu2.5 [Ubuntu/jammy main]
+libfreerdp-client2-2 2.6.1+dfsg1-3ubuntu2.7 [Ubuntu/jammy main]
+libfreerdp-server2-2 2.6.1+dfsg1-3ubuntu2.7 [Ubuntu/jammy main]
+libfreerdp2-2 2.6.1+dfsg1-3ubuntu2.7 [Ubuntu/jammy main]
 libfreetype-dev 2.11.1+dfsg-1ubuntu0.2 [Ubuntu/jammy main]
 libfreetype6 2.11.1+dfsg-1ubuntu0.2 [Ubuntu/jammy main]
 libfreetype6-dev 2.11.1+dfsg-1ubuntu0.2 [Ubuntu/jammy main]
@@ -2266,8 +2267,8 @@ libnfs13 4.0.0-1build2 [Ubuntu/jammy main]
 libnfsidmap1 1:2.6.1-1ubuntu1.2 [Ubuntu/jammy main]
 libnftables1 1.0.2-1ubuntu3 [Ubuntu/jammy main]
 libnftnl11 1.2.1-1build1 [Ubuntu/jammy main]
-libnghttp2-14 1.43.0-1ubuntu0.1 [Ubuntu/jammy main]
-libnghttp2-14:i386 1.43.0-1ubuntu0.1 [Ubuntu/jammy main]
+libnghttp2-14 1.43.0-1ubuntu0.2 [Ubuntu/jammy main]
+libnghttp2-14:i386 1.43.0-1ubuntu0.2 [Ubuntu/jammy main]
 libnice10 0.1.18-2 [Ubuntu/jammy universe]
 libnl-3-200 3.5.0-0.1 [Ubuntu/jammy main]
 libnl-3-dev 3.5.0-0.1 [Ubuntu/jammy main]
@@ -2999,7 +3000,7 @@ libwhoopsie0 0.2.77 [Ubuntu/jammy main]
 libwildmidi2 0.4.3-1 [Ubuntu/jammy universe]
 libwine 6.0.3~repack-1 [Ubuntu/jammy universe]
 libwine:i386 6.0.3~repack-1 [Ubuntu/jammy universe]
-libwinpr2-2 2.6.1+dfsg1-3ubuntu2.5 [Ubuntu/jammy main]
+libwinpr2-2 2.6.1+dfsg1-3ubuntu2.7 [Ubuntu/jammy main]
 libwmf-0.2-7 0.2.12-5ubuntu1 [Ubuntu/jammy main]
 libwmf-0.2-7-gtk 0.2.12-5ubuntu1 [Ubuntu/jammy main]
 libwmf-bin 0.2.12-5ubuntu1 [Ubuntu/jammy universe]
@@ -3993,7 +3994,7 @@ shellcheck 0.8.0-2 [Ubuntu/jammy universe]
 shfmt 3.7.0-pacstall1 [local]
 shfmt-bin 3.4.3-1 [local]
 shim-signed 1.51.3+15.7-0ubuntu1 [Ubuntu/jammy main]
-signal-desktop 7.5.1 [. xenial/xenial main]
+signal-desktop 7.6.0 [. xenial/xenial main]
 signon-plugin-oauth2 0.25-2 [Ubuntu/jammy universe]
 silversearcher-ag 2.2.0+git20200805-1 [Ubuntu/jammy universe]
 slack-desktop 4.37.101 [slack/jessie main]
@@ -4078,13 +4079,14 @@ texlive-pictures 2021.20220204-1 [Ubuntu/jammy universe]
 texlive-plain-generic 2021.20220204-1 [Ubuntu/jammy universe]
 texlive-science 2021.20220204-1 [Ubuntu/jammy universe]
 thermald 2.4.9-1ubuntu0.4 [Ubuntu/jammy main]
+thorium-browser 123.0.6312.133-1 [local]
 thunar 4.16.10-1 [Ubuntu/jammy universe]
 thunar-data 4.16.10-1 [Ubuntu/jammy universe]
 thunar-volman 4.16.0-1 [Ubuntu/jammy universe]
-thunderbird 1:115.9.0+build1-0ubuntu0.22.04.1 [Ubuntu/jammy main]
-thunderbird-gnome-support 1:115.9.0+build1-0ubuntu0.22.04.1 [Ubuntu/jammy main]
-thunderbird-locale-en 1:115.9.0+build1-0ubuntu0.22.04.1 [Ubuntu/jammy main]
-thunderbird-locale-en-us 1:115.9.0+build1-0ubuntu0.22.04.1 [Ubuntu/jammy main]
+thunderbird 1:115.10.1+build1-0ubuntu0.22.04.1 [Ubuntu/jammy main]
+thunderbird-gnome-support 1:115.10.1+build1-0ubuntu0.22.04.1 [Ubuntu/jammy main]
+thunderbird-locale-en 1:115.10.1+build1-0ubuntu0.22.04.1 [Ubuntu/jammy main]
+thunderbird-locale-en-us 1:115.10.1+build1-0ubuntu0.22.04.1 [Ubuntu/jammy main]
 time 1.9-0.1build2 [Ubuntu/jammy main]
 timer 1.2.0 [local]
 timgm6mb-soundfont 1.3-5 [Ubuntu/jammy universe]
@@ -4102,8 +4104,8 @@ totem-common 42.0-1ubuntu1 [Ubuntu/jammy main]
 totem-plugins 42.0-1ubuntu1 [Ubuntu/jammy main]
 tpm-udev 0.6 [Ubuntu/jammy main]
 tracker 3.3.0-1 [Ubuntu/jammy main]
-tracker-extract 3.3.3-0ubuntu0.20.04.2 [Ubuntu/jammy main]
-tracker-miner-fs 3.3.3-0ubuntu0.20.04.2 [Ubuntu/jammy main]
+tracker-extract 3.3.3-0ubuntu0.20.04.2 [local]
+tracker-miner-fs 3.3.3-0ubuntu0.20.04.2 [local]
 translate-shell 0.9.6.12-1 [Ubuntu/jammy multiverse]
 trash-cli 0.17.1.14-5build1 [Ubuntu/jammy universe]
 tree 2.0.2-1 [Ubuntu/jammy universe]
@@ -4340,8 +4342,8 @@ name: nala version: 0.15.1
 name: neofetch version: 7.1.0-pacstall1
 name: quarto version: 1.3.450
 name: shfmt version: 3.7.0-pacstall1
-name: signal-desktop version: 7.5.1
-name: thorium-browser version: 122.0.6261.132-1
+name: signal-desktop version: 7.6.0
+name: thorium-browser version: 123.0.6312.133-1
 name: wezterm version: 20230712-072601-f4abf8fd-pacstall1
 name: zoom version: 6.0.2.4680
 ```
@@ -4351,7 +4353,7 @@ name: zoom version: 6.0.2.4680
 ```txt {mise}
 cabal                      3.10.3.0  ~/.config/mise/config.toml latest        
 go                         1.22.2    ~/.config/mise/config.toml latest        
-node                       21.7.3    ~/.config/mise/config.toml latest        
+node                       22.0.0    ~/.config/mise/config.toml latest        
 pandoc                     3.1.13    ~/.config/mise/config.toml latest        
 python                     3.8.19    ~/.config/mise/config.toml sub-0.4:latest
 python                     3.9.19    ~/.config/mise/config.toml sub-0.3:latest
@@ -4407,7 +4409,7 @@ du-dust v1.0.0:
     dust
 evcxr_jupyter v0.17.0:
     evcxr_jupyter
-eza v0.18.11:
+eza v0.18.13:
     eza
 fd-find v9.0.0:
     fd
@@ -4539,7 +4541,7 @@ package ansible-core 2.16.6, installed using Python 3.12.2
  - ansible-vault
 package bibfish 0.3.0, installed using Python 3.12.3
  - bibfish
-package black 24.4.0, installed using Python 3.12.2
+package black 24.4.2, installed using Python 3.12.2
  - black
  - black-primer
  - blackd
