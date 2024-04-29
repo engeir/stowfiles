@@ -2617,7 +2617,7 @@ librtmp1:i386 2.4+20151223.gitfa8646d.1-2build4 [Ubuntu/jammy main]
 librttopo1 1.1.0-2 [Ubuntu/jammy universe]
 librubberband2 2.0.0-2 [Ubuntu/jammy universe]
 libruby2.7 2.7.4-1ubuntu3.2 [local]
-libruby3.0 3.0.2-7ubuntu2.4 [Ubuntu/jammy main]
+libruby3.0 3.0.2-7ubuntu2.5 [Ubuntu/jammy main]
 librygel-core-2.6-2 0.40.3-1ubuntu2 [Ubuntu/jammy main]
 librygel-db-2.6-2 0.40.3-1ubuntu2 [Ubuntu/jammy main]
 librygel-renderer-2.6-2 0.40.3-1ubuntu2 [Ubuntu/jammy main]
@@ -3965,9 +3965,9 @@ ruby-power-assert 1.1.7-2 [Ubuntu/jammy universe]
 ruby-rubygems 3.3.5-2 [Ubuntu/jammy main]
 ruby-test-unit 3.3.9-1 [Ubuntu/jammy universe]
 ruby-xmlrpc 0.3.2-1ubuntu0.1 [Ubuntu/jammy main]
-ruby3.0 3.0.2-7ubuntu2.4 [Ubuntu/jammy main]
-ruby3.0-dev 3.0.2-7ubuntu2.4 [Ubuntu/jammy main]
-ruby3.0-doc 3.0.2-7ubuntu2.4 [Ubuntu/jammy main]
+ruby3.0 3.0.2-7ubuntu2.5 [Ubuntu/jammy main]
+ruby3.0-dev 3.0.2-7ubuntu2.5 [Ubuntu/jammy main]
+ruby3.0-doc 3.0.2-7ubuntu2.5 [Ubuntu/jammy main]
 rubygems-integration 1.18 [Ubuntu/jammy main]
 rustdesk 1.2.1 [local]
 rxvt-unicode 9.30-2build1 [Ubuntu/jammy universe]
@@ -4104,8 +4104,8 @@ totem-common 42.0-1ubuntu1 [Ubuntu/jammy main]
 totem-plugins 42.0-1ubuntu1 [Ubuntu/jammy main]
 tpm-udev 0.6 [Ubuntu/jammy main]
 tracker 3.3.0-1 [Ubuntu/jammy main]
-tracker-extract 3.3.3-0ubuntu0.20.04.2 [local]
-tracker-miner-fs 3.3.3-0ubuntu0.20.04.2 [local]
+tracker-extract 3.3.3-0ubuntu0.20.04.3 [Ubuntu/jammy main]
+tracker-miner-fs 3.3.3-0ubuntu0.20.04.3 [Ubuntu/jammy main]
 translate-shell 0.9.6.12-1 [Ubuntu/jammy multiverse]
 trash-cli 0.17.1.14-5build1 [Ubuntu/jammy universe]
 tree 2.0.2-1 [Ubuntu/jammy universe]
@@ -4365,7 +4365,7 @@ tinytex                    2024.04   ~/.config/mise/config.toml latest
 ubi:filosottile/age        1.1.1     ~/.config/mise/config.toml 1.1.1         
 ubi:goreleaser/goreleaser  1.13.0    ~/.config/mise/config.toml latest        
 usage                      0.1.18    ~/.config/mise/config.toml latest        
-watchexec                  2.0.0     ~/.config/mise/config.toml latest        
+watchexec                  2.1.0     ~/.config/mise/config.toml latest        
 ```
 
 ## Cargo
@@ -4397,7 +4397,7 @@ cargo-update v13.4.0:
     cargo-install-update-config
 cargo-watch v8.5.2:
     cargo-watch
-coreutils v0.0.25:
+coreutils v0.0.26:
     coreutils
 czkawka_gui v7.0.0:
     czkawka_gui
@@ -4489,7 +4489,7 @@ speedtest-rs v0.1.5:
     speedtest-rs
 spotify-tui v0.25.0:
     spt
-spotify_player v0.18.0:
+spotify_player v0.18.1:
     spotify_player
 spotifyd v0.3.5:
     spotifyd
@@ -4539,7 +4539,7 @@ package ansible-core 2.16.6, installed using Python 3.12.2
  - ansible-pull
  - ansible-test
  - ansible-vault
-package bibfish 0.3.0, installed using Python 3.12.3
+package bibfish 0.3.1, installed using Python 3.12.3
  - bibfish
 package black 24.4.2, installed using Python 3.12.2
  - black
@@ -4985,18 +4985,17 @@ i zref: A new reference scheme for LaTeX
 Name                                    Version                                 Branch
 hrkfdn                                  1.1.0                                   stable
 Freedesktop Platform                    22.08.24                                22.08
-Freedesktop Platform                    23.08.16                                23.08
+Freedesktop Platform                    23.08.17                                23.08
 Mesa                                    24.0.4                                  22.08
 Mesa (Extra)                            24.0.4                                  22.08-extra
-Mesa                                    24.0.5                                  23.08
-Mesa (Extra)                            24.0.5                                  23.08-extra
+Mesa                                    24.0.6                                  23.08
+Mesa (Extra)                            24.0.6                                  23.08-extra
 Intel                                                                           22.08
 Intel                                                                           23.08
 openh264                                2.1.0                                   2.0
 openh264                                2.1.0                                   2.2.0
 openh264                                2.4.1                                   2.4.1
 The Evolution Team                      3.52.0                                  stable
-GNOME Application Platform version 44                                           44
 GNOME Application Platform version 45                                           45
 GNOME Application Platform version 46                                           46
 Maximiliano Sandoval                    0.6.2                                   stable
@@ -5012,7 +5011,7 @@ bare                       1.0                         5      latest/stable    c
 canonical-livepatch        10.8.2                      278    latest/stable    canonical**    -
 cmake                      3.29.2                      1381   latest/stable    crascit**      classic
 core                       16-2.61.2                   16928  latest/stable    canonical**    core
-core18                     20231027                    2812   latest/stable    canonical**    base
+core18                     20240416                    2823   latest/stable    canonical**    base
 core20                     20240227                    2264   latest/stable    canonical**    base
 core22                     20240408                    1380   latest/stable    canonical**    base
 dotnet-sdk                 5.0.408                     167    5.0/stable       dotnetcore**   classic
