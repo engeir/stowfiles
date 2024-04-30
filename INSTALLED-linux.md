@@ -152,7 +152,7 @@ console-setup 1.205ubuntu3 [Ubuntu/jammy main]
 console-setup-linux 1.205ubuntu3 [Ubuntu/jammy main]
 containerd.io 1.6.31-1 [Docker CE/ stable]
 coreutils 8.32-4.1ubuntu1.2 [Ubuntu/jammy main]
-cpio 2.13+dfsg-7 [Ubuntu/jammy main]
+cpio 2.13+dfsg-7ubuntu0.1 [Ubuntu/jammy main]
 cpp 4:11.2.0-1ubuntu1 [Ubuntu/jammy main]
 cpp-10 10.5.0-1ubuntu1~22.04 [Ubuntu/jammy universe]
 cpp-11 11.4.0-1ubuntu1~22.04 [Ubuntu/jammy main]
@@ -849,7 +849,7 @@ language-selector-gnome 0.219.1 [Ubuntu/jammy main]
 laptop-detect 0.16 [Ubuntu/jammy main]
 ldap-utils 2.5.17+dfsg-0ubuntu0.22.04.1 [Ubuntu/jammy main]
 lemonbar 1.4-1 [Ubuntu/jammy universe]
-less 590-1ubuntu0.22.04.2 [Ubuntu/jammy main]
+less 590-1ubuntu0.22.04.3 [Ubuntu/jammy main]
 lfm 3.1-2 [Ubuntu/jammy universe]
 lib2geom1.1.0 1.1-2build1 [Ubuntu/jammy universe]
 liba52-0.7.4 0.7.4-20 [Ubuntu/jammy universe]
@@ -4351,21 +4351,26 @@ name: zoom version: 6.0.2.4680
 ## Mise
 
 ```txt {mise}
-cabal                      3.10.3.0  ~/.config/mise/config.toml latest        
-go                         1.22.2    ~/.config/mise/config.toml latest        
-node                       22.0.0    ~/.config/mise/config.toml latest        
-pandoc                     3.1.13    ~/.config/mise/config.toml latest        
-python                     3.8.19    ~/.config/mise/config.toml sub-0.4:latest
-python                     3.9.19    ~/.config/mise/config.toml sub-0.3:latest
-python                     3.10.14   ~/.config/mise/config.toml sub-0.2:latest
-python                     3.11.9    ~/.config/mise/config.toml sub-0.1:latest
-python                     3.12.3    ~/.config/mise/config.toml latest        
-ruby                       3.3.1     ~/.config/mise/config.toml latest        
-tinytex                    2024.04   ~/.config/mise/config.toml latest        
-ubi:filosottile/age        1.1.1     ~/.config/mise/config.toml 1.1.1         
-ubi:goreleaser/goreleaser  1.13.0    ~/.config/mise/config.toml latest        
-usage                      0.1.18    ~/.config/mise/config.toml latest        
-watchexec                  2.1.0     ~/.config/mise/config.toml latest        
+cabal                         3.10.3.0  ~/.config/mise/config.toml latest        
+go                            1.22.2    ~/.config/mise/config.toml latest        
+node                          22.0.0    ~/.config/mise/config.toml latest        
+pandoc                        3.1.13    ~/.config/mise/config.toml latest        
+python                        3.8.19    ~/.config/mise/config.toml sub-0.4:latest
+python                        3.9.19    ~/.config/mise/config.toml sub-0.3:latest
+python                        3.10.14   ~/.config/mise/config.toml sub-0.2:latest
+python                        3.11.9    ~/.config/mise/config.toml sub-0.1:latest
+python                        3.12.3    ~/.config/mise/config.toml latest        
+ruby                          3.3.1     ~/.config/mise/config.toml latest        
+tinytex                       2024.04   ~/.config/mise/config.toml latest        
+ubi:PaulJuliusMartinez/jless  0.7.0     ~/.config/mise/config.toml latest        
+ubi:etcd-io/etcd              3.3.27    ~/.config/mise/config.toml latest        
+ubi:filosottile/age           1.1.1     ~/.config/mise/config.toml 1.1.1         
+ubi:goreleaser/goreleaser     1.13.0    ~/.config/mise/config.toml latest        
+ubi:ismaelgv/rnr              0.1.6     ~/.config/mise/config.toml latest        
+ubi:mgdm/htmlq                0.2.0     ~/.config/mise/config.toml latest        
+ubi:pvolok/mprocs             0.0.1     ~/.config/mise/config.toml latest        
+usage                         0.1.18    ~/.config/mise/config.toml latest        
+watchexec                     2.1.0     ~/.config/mise/config.toml latest        
 ```
 
 ## Cargo
@@ -4403,6 +4408,8 @@ czkawka_gui v7.0.0:
     czkawka_gui
 despell v1.0.1:
     despell
+difftastic v0.57.0:
+    difft
 diskus v0.7.0:
     diskus
 du-dust v1.0.0:
@@ -4454,7 +4461,7 @@ mdbook-toc v0.14.2:
     mdbook-toc
 menyoki v1.7.0:
     menyoki
-mise v2024.4.8:
+mise v2024.4.10:
     mise
 mprocs v0.6.4:
     mprocs
@@ -4995,7 +5002,7 @@ Intel                                                                           
 openh264                                2.1.0                                   2.0
 openh264                                2.1.0                                   2.2.0
 openh264                                2.4.1                                   2.4.1
-The Evolution Team                      3.52.0                                  stable
+The Evolution Team                      3.52.1                                  stable
 GNOME Application Platform version 45                                           45
 GNOME Application Platform version 46                                           46
 Maximiliano Sandoval                    0.6.2                                   stable
@@ -5016,7 +5023,7 @@ core20                     20240227                    2264   latest/stable    c
 core22                     20240408                    1380   latest/stable    canonical**    base
 dotnet-sdk                 5.0.408                     167    5.0/stable       dotnetcore**   classic
 duf-utility                v0.6.0                      1      latest/stable    muesli         -
-firefox                    125.0.2-1                   4173   latest/stable/…  mozilla**      -
+firefox                    125.0.3-1                   4209   latest/stable/…  mozilla**      -
 gimp                       2.10.36                     428    latest/stable    snapcrafters*  -
 gnome-3-28-1804            3.28.0-19-g98f9e67.98f9e67  198    latest/stable    canonical**    -
 gnome-3-34-1804            0+git.3556cb3               93     latest/stable/…  canonical**    -
