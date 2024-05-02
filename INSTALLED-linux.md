@@ -52,6 +52,8 @@ apt-transport-https 2.4.12 [Ubuntu/jammy universe]
 apt-utils 2.4.12 [Ubuntu/jammy main]
 aptdaemon 1.1.1+bzr982-0ubuntu39 [Ubuntu/jammy main]
 aptdaemon-data 1.1.1+bzr982-0ubuntu39 [Ubuntu/jammy main]
+aptitude 0.8.13-3ubuntu1 [Ubuntu/jammy universe]
+aptitude-common 0.8.13-3ubuntu1 [Ubuntu/jammy universe]
 apturl 0.5.2ubuntu22 [Ubuntu/jammy main]
 apturl-common 0.5.2ubuntu22 [Ubuntu/jammy main]
 arandr 0.1.10-1.1 [Ubuntu/jammy universe]
@@ -226,10 +228,10 @@ docbook-xml 4.5-11 [Ubuntu/jammy main]
 docbook-xsl 1.79.2+dfsg-1 [Ubuntu/jammy universe]
 docker 1.5-2 [Ubuntu/jammy universe]
 docker-buildx-plugin 0.14.0-1~ubuntu.20.04~focal [Docker CE/ stable]
-docker-ce 5:26.1.0-1~ubuntu.20.04~focal [Docker CE/ stable]
-docker-ce-cli 5:26.1.0-1~ubuntu.20.04~focal [Docker CE/ stable]
-docker-ce-rootless-extras 5:26.1.0-1~ubuntu.20.04~focal [Docker CE/ stable]
-docker-compose-plugin 2.26.1-1~ubuntu.20.04~focal [Docker CE/ stable]
+docker-ce 5:26.1.1-1~ubuntu.20.04~focal [Docker CE/ stable]
+docker-ce-cli 5:26.1.1-1~ubuntu.20.04~focal [Docker CE/ stable]
+docker-ce-rootless-extras 5:26.1.1-1~ubuntu.20.04~focal [Docker CE/ stable]
+docker-compose-plugin 2.27.0-1~ubuntu.20.04~focal [Docker CE/ stable]
 docutils-common 0.17.1+dfsg-2 [Ubuntu/jammy main]
 docx2txt 1.4-5 [Ubuntu/jammy universe]
 dos2unix 7.4.2-2 [Ubuntu/jammy universe]
@@ -286,7 +288,7 @@ findutils 4.8.0-1ubuntu3 [Ubuntu/jammy main]
 finger 0.17-17 [Ubuntu/jammy universe]
 firefox 1:1snap1-0ubuntu2 [Ubuntu/jammy main]
 firefox-locale-en 1:1snap1-0ubuntu2 [Ubuntu/jammy universe]
-firefoxpwa 2.11.1 [FirefoxPWA/any main]
+firefoxpwa 2.12.0 [FirefoxPWA/any main]
 firmware-sof-signed 2.0-1ubuntu4.7 [Ubuntu/jammy restricted]
 flatpak 1.12.7-1 [Ubuntu/jammy universe]
 flex 2.6.4-8build2 [Ubuntu/jammy main]
@@ -531,7 +533,7 @@ gftp 2.9.1~beta-1 [Ubuntu/jammy universe]
 gftp-common 2.9.1~beta-1 [Ubuntu/jammy universe]
 gftp-gtk 2.9.1~beta-1 [Ubuntu/jammy universe]
 gftp-text 2.9.1~beta-1 [Ubuntu/jammy universe]
-gh 2.48.0 [gh/stable main]
+gh 2.49.0 [gh/stable main]
 ghc 8.8.4-3 [Ubuntu/jammy universe]
 ghc-prof 8.8.4-3 [Ubuntu/jammy universe]
 ghostscript 9.55.0~dfsg1-0ubuntu5.6 [Ubuntu/jammy main]
@@ -1141,6 +1143,7 @@ libcurl3-gnutls 7.81.0-1ubuntu1.16 [Ubuntu/jammy main]
 libcurl4 7.81.0-1ubuntu1.16 [Ubuntu/jammy main]
 libcurl4-openssl-dev 7.81.0-1ubuntu1.16 [Ubuntu/jammy main]
 libcurl4:i386 7.81.0-1ubuntu1.16 [Ubuntu/jammy main]
+libcwidget4 0.5.18-5build1 [Ubuntu/jammy universe]
 libdaemon0 0.14-7.1ubuntu3 [Ubuntu/jammy main]
 libdata-dpath-perl 0.58-1 [Ubuntu/jammy main]
 libdata-dump-perl 1.25-1 [Ubuntu/jammy main]
@@ -3994,7 +3997,7 @@ shellcheck 0.8.0-2 [Ubuntu/jammy universe]
 shfmt 3.7.0-pacstall1 [local]
 shfmt-bin 3.4.3-1 [local]
 shim-signed 1.51.3+15.7-0ubuntu1 [Ubuntu/jammy main]
-signal-desktop 7.6.0 [. xenial/xenial main]
+signal-desktop 7.7.0 [. xenial/xenial main]
 signon-plugin-oauth2 0.25-2 [Ubuntu/jammy universe]
 silversearcher-ag 2.2.0+git20200805-1 [Ubuntu/jammy universe]
 slack-desktop 4.37.101 [slack/jessie main]
@@ -4342,7 +4345,7 @@ name: nala version: 0.15.1
 name: neofetch version: 7.1.0-pacstall1
 name: quarto version: 1.3.450
 name: shfmt version: 3.7.0-pacstall1
-name: signal-desktop version: 7.6.0
+name: signal-desktop version: 7.7.0
 name: thorium-browser version: 123.0.6312.133-1
 name: wezterm version: 20230712-072601-f4abf8fd-pacstall1
 name: zoom version: 6.0.2.4680
@@ -4361,7 +4364,7 @@ python                        3.10.14   ~/.config/mise/config.toml sub-0.2:lates
 python                        3.11.9    ~/.config/mise/config.toml sub-0.1:latest
 python                        3.12.3    ~/.config/mise/config.toml latest        
 ruby                          3.3.1     ~/.config/mise/config.toml latest        
-tinytex                       2024.04   ~/.config/mise/config.toml latest        
+tinytex                       2024.05   ~/.config/mise/config.toml latest        
 ubi:PaulJuliusMartinez/jless  0.7.0     ~/.config/mise/config.toml latest        
 ubi:etcd-io/etcd              3.3.27    ~/.config/mise/config.toml latest        
 ubi:filosottile/age           1.1.1     ~/.config/mise/config.toml 1.1.1         
@@ -4370,7 +4373,7 @@ ubi:ismaelgv/rnr              0.1.6     ~/.config/mise/config.toml latest
 ubi:mgdm/htmlq                0.2.0     ~/.config/mise/config.toml latest        
 ubi:pvolok/mprocs             0.0.1     ~/.config/mise/config.toml latest        
 usage                         0.1.18    ~/.config/mise/config.toml latest        
-watchexec                     2.1.0     ~/.config/mise/config.toml latest        
+watchexec                     2.1.1     ~/.config/mise/config.toml latest        
 ```
 
 ## Cargo
@@ -4416,7 +4419,7 @@ du-dust v1.0.0:
     dust
 evcxr_jupyter v0.17.0:
     evcxr_jupyter
-eza v0.18.13:
+eza v0.18.14:
     eza
 fd-find v9.0.0:
     fd
@@ -4461,11 +4464,11 @@ mdbook-toc v0.14.2:
     mdbook-toc
 menyoki v1.7.0:
     menyoki
-mise v2024.4.10:
+mise v2024.5.2:
     mise
 mprocs v0.6.4:
     mprocs
-nu v0.92.2:
+nu v0.93.0:
     nu
 numbat-cli v1.11.0:
     numbat
@@ -4633,7 +4636,7 @@ package rich-cli 1.8.0, installed using Python 3.12.2
  - rich
 package rich-codex 1.2.7, installed using Python 3.12.2
  - rich-codex
-package rofimoji 6.2.0, installed using Python 3.12.2
+package rofimoji 6.3.0, installed using Python 3.12.2
  - rofimoji
 package tuiview 0.1.1, installed using Python 3.12.2
  - tuiview
@@ -5021,7 +5024,7 @@ core                       16-2.61.2                   16928  latest/stable    c
 core18                     20240416                    2823   latest/stable    canonical**    base
 core20                     20240227                    2264   latest/stable    canonical**    base
 core22                     20240408                    1380   latest/stable    canonical**    base
-dotnet-sdk                 5.0.408                     167    5.0/stable       dotnetcore**   classic
+dotnet-sdk                 5.0.408                     167    5.0/stable       canonical**    classic
 duf-utility                v0.6.0                      1      latest/stable    muesli         -
 firefox                    125.0.3-1                   4209   latest/stable/…  mozilla**      -
 gimp                       2.10.36                     428    latest/stable    snapcrafters*  -
