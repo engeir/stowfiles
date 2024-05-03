@@ -49,6 +49,8 @@
         "**/*-lock.json",
         "**/target",
         "CHANGELOG.md",
+        "helix/.config/helix/snippets/",
+        "helix/.config/helix/runtime/",
         "nvim_lua/.config/nvim/README.md",
         "INSTALLED-*.md"
     ],

@@ -3,13 +3,13 @@
 ## Brew
 
 ```txt {brew}
-abseil 20240116.1
+abseil 20240116.2
 adwaita-icon-theme 46.0
 aha 0.5.1
 amfora 1.10.0
 ansilove 4.2.0
 antiword 0.37
-aom 3.8.2
+aom 3.9.0
 apr 1.7.4
 apr-util 1.6.3_1
 argon2 20190702_1
@@ -17,7 +17,7 @@ aribb24 1.0.4
 asciidoctor 2.0.22
 asciinema 2.4.0
 aspell 0.60.8.1_1
-assimp 5.3.1
+assimp 5.4.0
 at-spi2-core 2.52.0
 atool 0.39.0
 autoconf 2.72
@@ -28,9 +28,9 @@ bdw-gc 8.2.6
 berkeley-db@5 5.3.28_1
 bibclean 3.07
 bison 3.8.2
-black 24.3.0 24.2.0_1
-boost 1.84.0_1
-borgbackup-fuse 1.2.7
+black 24.4.2 24.2.0_1
+boost 1.85.0
+borgbackup-fuse 1.2.8
 brotli 1.1.0
 btop 1.3.2
 c-ares 1.28.1
@@ -43,15 +43,15 @@ cask 0.9.0
 cdrtools 3.02a09
 certifi 2024.2.2
 cfitsio 4.4.0
-cgif 0.3.2
+cgif 0.4.0
 chafa 1.14.0
 chruby 0.3.9
 cjson 1.7.17
 cli11 2.4.1
 cloc 2.00
-cmake 3.29.0
+cmake 3.29.2
 cmatrix 2.0
-composer 2.7.2
+composer 2.7.5
 coreutils 9.5
 cpio 2.15
 cpp-gsl 4.0.0_1
@@ -64,11 +64,11 @@ despell 0.10
 djvulibre 3.5.28_2
 docbook 5.1_1
 docbook-xsl 1.79.2_1
-docker 26.0.0
-docker-buildx 0.13.1
-docker-completion 26.0.0
-docker-compose 2.26.1
-docutils 0.20.1_1
+docker 26.1.1
+docker-buildx 0.14.0
+docker-completion 26.1.1
+docker-compose 2.27.0
+docutils 0.21.2
 docx2txt 1.4
 doggo 0.5.7
 dos2unix 7.5.2
@@ -85,9 +85,9 @@ expat 2.6.2
 fastjar 0.98
 fd 9.0.0
 feh 3.10.2
-ffmpeg 6.1.1_6
-ffmpeg@4 4.4.4_4
-ffmpegthumbnailer 2.2.2_9
+ffmpeg 7.0_1
+ffmpeg@4 4.4.4_5
+ffmpegthumbnailer 2.2.2_10
 ffsend 0.2.76
 fftw 3.3.10_1
 figlet 2.2.5
@@ -99,20 +99,20 @@ fontconfig 2.15.0
 freetds 1.4.12
 freetype 2.13.2
 frei0r 2.3.2
-fribidi 1.0.13
-fzf 0.48.1
+fribidi 1.0.14
+fzf 0.51.0
 gawk 5.3.0
 gcc 13.2.0
 gd 2.3.3_6
 gdbm 1.23
-gdk-pixbuf 2.42.10_1
+gdk-pixbuf 2.42.11
 geos 3.12.1
 gettext 0.22.5
-gh 2.46.0
+gh 2.49.0
 ghostscript 10.03.0
-giflib 5.2.1
+giflib 5.2.2
 girara 0.4.0
-git 2.44.0
+git 2.45.0
 git-lfs 3.5.1
 glib 2.80.0_2
 gmp 6.3.0
@@ -129,7 +129,7 @@ gping 1.16.1
 graphicsmagick 1.3.43
 graphite2 1.3.14
 grep 3.11
-groovy 4.0.20
+groovy 4.0.21
 gsettings-desktop-schemas 46.0
 gsl 2.7.1
 gtk+3 3.24.41
@@ -142,24 +142,24 @@ hdf5 1.14.3_1
 helix 24.03
 hicolor-icon-theme 0.17
 highway 1.1.0
-hledger 1.32.3
+hledger 1.33.1
 html2text 2.2.3
 htop 3.3.0
-httpd 2.4.58
+httpd 2.4.59
 hub 2.14.2
-hugo 0.124.1
+hugo 0.125.5
 hunspell 1.7.2
 hwloc 2.10.0
 icu4c 74.2
 ilmbase 2.5.8
-imagemagick 7.1.1-29_1
+imagemagick 7.1.1-31
 imap-uw 2007f_1
 imath 3.1.11
 imlib2 1.12.2
 intltool 0.51.0_2
 isl 0.26
 jansson 2.14
-jasper 4.2.3
+jasper 4.2.4
 jbig2dec 0.20
 jemalloc 5.3.0
 jpeg 9f
@@ -176,7 +176,7 @@ lame 3.100
 leptonica 1.84.1
 libaec 1.1.3
 libansilove 1.4.1
-libarchive 3.7.2_1
+libarchive 3.7.4
 libass 0.17.1_1
 libassuan 2.5.7
 libavif 1.0.4
@@ -194,33 +194,33 @@ libexif 0.6.24
 libffi 3.4.6
 libgcrypt 1.10.3
 libgit2 1.7.2
-libgpg-error 1.48
+libgpg-error 1.49
 libgsf 1.14.52
-libheif 1.17.6
+libheif 1.17.6_1
 libice 1.1.1
 libidn 1.42
 libidn2 2.3.7
-libimagequant 4.3.0
+libimagequant 4.3.1
 libksba 1.6.6
 liblinear 2.47
 liblqr 0.4.2_1
 libmagic 5.45
-libmatio 1.5.26
+libmatio 1.5.27
 libmd 1.1.0
-libmediainfo 24.03
+libmediainfo 24.04
 libmicrohttpd 1.0.1
 libmikmod 3.3.11.1
 libmms 0.6.4
 libmng 2.0.3_1
 libmpc 1.3.1
-libnghttp2 1.60.0
+libnghttp2 1.61.0
 libnotify 0.8.3
 libogg 1.3.5
-libomp 18.1.2
+libomp 18.1.5
 libplacebo 6.338.2
 libpng 1.6.43
 libpq 16.2_1
-libproxy 0.5.4
+libproxy 0.5.6
 libpthread-stubs 0.5
 libraw 0.21.2
 librist 0.2.10_1
@@ -247,10 +247,10 @@ libvmaf 3.0.0
 libvorbis 1.3.7
 libvpx 1.13.1
 libwebsockets 4.3.3
-libx11 1.8.8
+libx11 1.8.9
 libxau 1.0.11
 libxaw 1.0.16
-libxcb 1.16.1
+libxcb 1.17.0
 libxdamage 1.1.6
 libxdmcp 1.1.5
 libxext 1.3.6
@@ -259,7 +259,7 @@ libxft 2.3.8
 libxi 1.8.1
 libxinerama 1.1.5
 libxml2 2.12.6
-libxmu 1.2.0
+libxmu 1.2.1
 libxpm 3.5.17
 libxrender 0.9.11
 libxt 1.3.0
@@ -272,7 +272,7 @@ little-cms2 2.16
 lolcat 100.0.1
 lsd 1.1.2
 lua 5.4.6
-luajit HEAD-03080b7 2.1.1710088188
+luajit 2.1.1713773202 HEAD-03080b7
 luarocks 3.11.0
 lynx 2.8.9rel.1_2
 lz4 1.9.4
@@ -285,53 +285,53 @@ make 4.4.1
 mbedtls 3.6.0
 mcfly v0.8.4
 md4c 0.5.2
-media-info 24.03
+media-info 24.04
 mercurial 6.7.2
-mesa 24.0.4
+mesa 24.0.6
 meson 1.4.0
 mozjpeg 4.1.5
 mpdecimal 4.0.0
 mpfr 4.2.1
-mpg123 1.32.5
-mpv 0.37.0_1
+mpg123 1.32.6
+mpv 0.38.0
 mujs 1.3.4
 mupdf 1.23.11
 mysql@5.7 5.7.44_1
 nb 7.12.1
 ncspot 1.1.0
-ncurses 6.4
+ncurses 6.5
 neofetch 7.1.0
 netcdf 4.9.2_1
 nettle 3.9.1
-nghttp2 1.60.0
-ninja 1.11.1
+nghttp2 1.61.0
+ninja 1.12.0
 nlohmann-json 3.11.3
-nmap 7.94_1
+nmap 7.95
 nnn 4.9
-node 21.7.1
+node 22.1.0
 npth 1.7
 nspr 4.35
 nss 3.99
 numpy 1.26.4
 odt2txt 0.5
 oniguruma 6.9.9
-open-mpi 5.0.2_1
-openblas 0.3.26
+open-mpi 5.0.3
+openblas 0.3.27
 opencore-amr 0.1.6
 openexr 3.2.4
-openjdk 21.0.2
+openjdk 21.0.3
 openjpeg 2.5.2
 openldap 2.6.7
 openslide 4.0.0
 openssl@1.1 1.1.1w
-openssl@3 3.2.1
-openvino 2024.0.0
-opus 1.5.1
+openssl@3 3.3.0
+openvino 2024.1.0
+opus 1.5.2
 opusfile 0.12_1
 orc 0.4.38
 p11-kit 0.25.3
 p7zip 17.05
-pandoc 3.1.12.3
+pandoc 3.1.13
 pandoc-citeproc 0.17.0.2
 pandoc-include-code 1.5.0.0_2
 pango 1.52.2
@@ -341,7 +341,7 @@ pcre2 10.43
 pdftohtml 0.40a
 pdftoipe 7.2.24.1_20
 perl 5.38.2_1
-php 8.3.4
+php 8.3.6
 pinentry 1.3.0
 pinentry-mac 1.1.1.1
 pipx 1.5.0
@@ -359,10 +359,10 @@ protobuf 26.1
 pueue 3.4.0
 pugixml 1.14
 pup 0.4.0
-pv 1.8.5
+pv 1.8.9
 pygments 2.17.2
 pyqt@5 5.15.10
-python-argcomplete 3.2.3
+python-argcomplete 3.3.0
 python-attrs 23.2.0
 python-brotli 1.1.0
 python-click 8.1.7_1
@@ -372,33 +372,33 @@ python-mutagen 1.47.0_1
 python-packaging 24.0
 python-pathspec 0.12.1
 python-platformdirs 4.2.0
-python-setuptools 69.2.0
+python-setuptools 69.5.1
 python-tabulate 0.9.0_1
 python@3.10 3.10.14
 python@3.11 3.11.9
-python@3.12 3.12.2_1
+python@3.12 3.12.3 3.12.2_1
 python@3.8 3.8.19
 python@3.9 3.9.19
 qrencode 4.1.1
-qt 6.6.2_1
-qt@5 5.15.13
+qt 6.7.0_1
+qt@5 5.15.13_1
 range-v3 0.12.0
 rav1e 0.7.1
 readline 8.2.10
 recode 3.7.14
 ripgrep 14.1.0
 rpm2cpio 1.4
-rsync 3.2.7_1
+rsync 3.3.0
 rtmpdump 2.4-20151223_3
 rubberband 3.3.0
-ruby 3.3.0
+ruby 3.3.1
 ruby-install 0.9.3
-rust-analyzer 2024-04-01
+rust-analyzer 2024-04-29
 samba 4.20.0
-scrcpy 2.4
+scrcpy 2.4_1
 screenresolution 1.6
 sdl12-compat 1.2.68
-sdl2 2.30.2
+sdl2 2.30.3
 sdl_image 1.2.12_10
 sdl_mixer 1.2.12_6
 sdl_ttf 2.0.11_2
@@ -412,39 +412,39 @@ sk 0.10.4
 sketchybar 2.21.0
 skhd 0.3.9
 slides 0.9.0
-snappy 1.1.10
+snappy 1.2.0
 soft-serve 0.7.4
 source-highlight 3.1.9_5
 sox 14.4.2_5
 spdlog 1.13.0
 speex 1.2.1
 sphinx 2.2.11_4
-sphinx-doc 7.2.6_2
+sphinx-doc 7.3.7
 spotify-tui v0.23.0
-sqlite 3.45.2
+sqlite 3.45.3
 srt 1.5.3
 st 1.1.4_1
 starship 1.18.2
-stow 2.3.1
+stow 2.4.0
 svt-av1 2.0.0
 switchaudio-osx 1.2.2
 sxiv 26_1
 talloc 2.4.2
-tbb 2021.11.0
+tbb 2021.12.0
 tcl-tk 8.6.14
 tectonic 0.15.0_1
 tesseract 5.3.4_1
 texinfo 7.1
-texlab 5.14.1
+texlab 5.16.0
 theora 1.1.1
 tidy-html5 5.8.0
 tig 2.5.9
-timg 1.6.0
+timg 1.6.0_1
 tldr 1.6.1
-tmux 3.4
+tmux 3.4_1
 toilet 0.3
 tree 2.1.1_1
-tree-sitter 0.22.2
+tree-sitter 0.22.5
 ttyd 1.7.7
 typst 0.11.0
 uchardet 0.0.8
@@ -456,17 +456,17 @@ unzip 6.0_8
 utf8proc 2.9.0
 uthash 2.3.0
 vapoursynth 66
-vips 8.15.2
+vips 8.15.2_1
 vitetris 0.59.1
 vivid 0.9.0
 vulkan-headers 1.3.280
 vulkan-loader 1.3.280
 w3m 0.5.3_8
 watch 4.0.4
-webp 1.3.2
+webp 1.4.0
 wget 1.24.5
 x264 r3108
-x265 3.5
+x265 3.6
 xcb-util 0.4.1
 xcb-util-image 0.4.1
 xmlto 0.0.28
@@ -476,10 +476,10 @@ xterm 390
 xvid 1.3.7
 xxhash 0.8.2
 xz 5.4.6
-yabai 7.0.4
+yabai 7.1.0
 yarn 1.22.22
 youtube-dl 2021.12.17
-yt-dlp 2024.03.10
+yt-dlp 2024.4.9_1
 zathura 0.5.2
 zathura-pdf-mupdf 0.3.9_1
 zeromq 4.3.5_1
@@ -491,55 +491,63 @@ alacritty 0.13.2
 alfred 4.5.1,1256
 amethyst 0.15.3
 android-platform-tools 35.0.1
-blackhole-16ch 0.5.0
 dmenu-mac 0.7.2
-font-hack-nerd-font 3.1.1
+font-hack-nerd-font 3.2.1
 gimp 2.10.36
 hammerspoon 0.9.90
-librewolf 124.0.1,1
+imageoptim 1.9.3
+librewolf 125.0.3,1
 macfuse 4.2.3
 nuclear 0.6.30
 osxfuse 3.11.2
 penc 1.0.0
+phoenix-slides 1.5.7
 platypus 5.3,1113
 qtpass 1.4.0
 qutebrowser 3.1.0
+qview 6.1
 rar 7.00
 raycast 1.62.1
 sf-symbols 5
 sioyek 2.0.0
 skim 1.6.18
 vlc 3.0.20
-warp 0.2024.02.13.08.02.stable_00
 wezterm 20240203-110809,5046fc22
 whichspace 0.3.2
 wkhtmltopdf 0.12.6-2
 xquartz 2.8.1
-zed 0.120.6
+zed 0.132.5
 ```
 
 ## Mise
 
 ```txt {mise}
-cabal      3.10.3.0  ~/.config/mise/config.toml latest        
-go         1.22.2    ~/.config/mise/config.toml latest        
-node       21.7.2    ~/.config/mise/config.toml latest        
-pandoc     3.1.12.3  ~/.config/mise/config.toml latest        
-python     3.8.19    ~/.config/mise/config.toml sub-0.4:latest
-python     3.9.19    ~/.config/mise/config.toml sub-0.3:latest
-python     3.10.14   ~/.config/mise/config.toml sub-0.2:latest
-python     3.11.9    ~/.config/mise/config.toml sub-0.1:latest
-python     3.12.2    ~/.config/mise/config.toml latest        
-ruby       3.3.0     ~/.config/mise/config.toml latest        
-tinytex    2024.04   ~/.config/mise/config.toml latest        
-usage      0.1.17    ~/.config/mise/config.toml latest        
-watchexec  1.25.1    ~/.config/mise/config.toml latest        
+cabal                         3.10.3.0  ~/.config/mise/config.toml latest        
+go                            1.22.2    ~/.config/mise/config.toml latest        
+node                          22.1.0    ~/.config/mise/config.toml latest        
+pandoc                        3.1.13    ~/.config/mise/config.toml latest        
+python                        3.8.19    ~/.config/mise/config.toml sub-0.4:latest
+python                        3.9.19    ~/.config/mise/config.toml sub-0.3:latest
+python                        3.10.14   ~/.config/mise/config.toml sub-0.2:latest
+python                        3.11.9    ~/.config/mise/config.toml sub-0.1:latest
+python                        3.12.3    ~/.config/mise/config.toml latest        
+tinytex                       2024.05   ~/.config/mise/config.toml latest        
+ubi:PaulJuliusMartinez/jless  0.7.0     ~/.config/mise/config.toml latest        
+ubi:etcd-io/etcd              3.3.27    ~/.config/mise/config.toml latest        
+ubi:filosottile/age           1.1.1     ~/.config/mise/config.toml 1.1.1         
+ubi:goreleaser/goreleaser     1.13.0    ~/.config/mise/config.toml latest        
+ubi:ismaelgv/rnr              0.1.6     ~/.config/mise/config.toml latest        
+ubi:mgdm/htmlq                0.2.0     ~/.config/mise/config.toml latest        
+ubi:pvolok/mprocs             0.0.1     ~/.config/mise/config.toml latest        
+usage                         0.1.18    ~/.config/mise/config.toml latest        
+watchexec                     2.1.1     ~/.config/mise/config.toml latest        
+zig                           0.12.0                                             
 ```
 
 ## Cargo
 
 ```txt {cargo}
-atuin v18.1.0:
+atuin v18.2.0:
     atuin
 bacon v2.16.0:
     bacon
@@ -547,11 +555,11 @@ blackd-client v0.1.0:
     blackd-client
 blindfold v1.0.7:
     blindfold
-bob-nvim v2.8.3:
+bob-nvim v2.9.1:
     bob
-broot v1.36.1:
+broot v1.37.0:
     broot
-cargo-binstall v1.6.4:
+cargo-binstall v1.6.5:
     cargo-binstall
 cargo-edit v0.12.2:
     cargo-add
@@ -567,7 +575,7 @@ cargo-watch v8.5.2:
     cargo-watch
 clap v4.5.4:
     stdio-fixture
-coreutils v0.0.25:
+coreutils v0.0.26:
     coreutils
 czkawka_cli v7.0.0:
     czkawka_cli
@@ -575,9 +583,9 @@ despell v1.0.1:
     despell
 evcxr_jupyter v0.17.0:
     evcxr_jupyter
-eza v0.18.9:
+eza v0.18.14:
     eza
-gitui v0.25.2:
+gitui v0.26.1:
     gitui
 halp v0.1.7:
     halp
@@ -588,17 +596,17 @@ hyperfine v1.18.0:
     hyperfine
 irust v1.71.21:
     irust
-jnv v0.2.1:
+jnv v0.2.2:
     jnv
 just v1.25.2:
     just
 mdbook v0.4.37:
     mdbook
-mise v2024.4.0:
+mise v2024.5.2:
     mise
 mprocs v0.6.4:
     mprocs
-nu v0.92.0:
+nu v0.93.0:
     nu
 numbat-cli v1.11.0:
     numbat
@@ -616,15 +624,17 @@ tidy-viewer v1.5.2:
     tidy-viewer
 topgrade v14.0.1:
     topgrade
+ubi v0.0.29:
+    ubi
 viu v1.5.0:
     viu
 wiki-tui v0.8.2:
     wiki-tui
-xh v0.21.0:
+xh v0.22.0:
     xh
-yazi-fm v0.2.4:
+yazi-fm v0.2.5:
     yazi
-zellij v0.39.2:
+zellij v0.40.1:
     zellij
 ```
 
@@ -640,7 +650,7 @@ package howdoi 2.0.20, installed using Python 3.12.0
  - howdoi
 package ncdump-rich 0.5.2, installed using Python 3.12.0
  - ncdump-rich
-package nox 2024.3.2, installed using Python 3.12.0
+package nox 2024.4.15, installed using Python 3.12.0
  - nox
  - tox-to-nox
 package pandoc-include 1.3.0, installed using Python 3.12.0
@@ -660,7 +670,7 @@ package rich-cli 1.8.0, installed using Python 3.12.0
  - rich
 package rich-codex 1.2.7, installed using Python 3.12.0
  - rich-codex
-package trash-cli 0.23.11.10, installed using Python 3.12.0
+package trash-cli 0.24.4.17, installed using Python 3.12.0
  - trash
  - trash-empty
  - trash-list
@@ -724,9 +734,11 @@ i bbm-macros: LaTeX support for "blackboard-style" cm fonts
 i beamer: A LaTeX class for producing presentations and slides
 i biber: A BibTeX replacement for users of BibLaTeX
 i biber.universal-darwin: universal-darwin files of biber
+i biber.x86_64-linux: x86_64-linux files of biber
 i biblatex: Sophisticated Bibliographies in LaTeX
 i bibtex: Process bibliographies (bib files) for LaTeX or other formats
 i bibtex.universal-darwin: universal-darwin files of bibtex
+i bibtex.x86_64-linux: x86_64-linux files of bibtex
 i bigfoot: Footnotes for critical editions
 i bigintcalc: Integer calculations on very large numbers
 i bitset: Handle bit-vector datatype
@@ -759,8 +771,10 @@ i doclicense: Support for putting documents under a license
 i draftwatermark: Put a grey textual watermark on document pages
 i dvipdfmx: An extended version of dvipdfm
 i dvipdfmx.universal-darwin: universal-darwin files of dvipdfmx
+i dvipdfmx.x86_64-linux: x86_64-linux files of dvipdfmx
 i dvips: A DVI to PostScript driver
 i dvips.universal-darwin: universal-darwin files of dvips
+i dvips.x86_64-linux: x86_64-linux files of dvips
 i ec: Computer modern fonts in T1 and TS1 encodings
 i eepic: Extensions to epic and the LaTeX drawing tools
 i endfloat: Move floats to the end, leaving markers where they belong
@@ -771,6 +785,7 @@ i epsf: Simple macros for EPS inclusion
 i epstopdf: Convert EPS to PDF using Ghostscript
 i epstopdf-pkg: Call epstopdf "on the fly"
 i epstopdf.universal-darwin: universal-darwin files of epstopdf
+i epstopdf.x86_64-linux: x86_64-linux files of epstopdf
 i eso-pic: Add picture commands (or backgrounds) to every page
 i esvect: Vector arrows
 i etex: An extended version of TeX, from the NTS project
@@ -815,6 +830,7 @@ i hycolor: Implements colour for packages hyperref and bookmark
 i hyperref: Extensive support for hypertext in LaTeX
 i hyperxmp: Embed XMP metadata within a LaTeX document
 i hyperxmp.universal-darwin: universal-darwin files of hyperxmp
+i hyperxmp.x86_64-linux: x86_64-linux files of hyperxmp
 i hyph-utf8: Hyphenation patterns expressed in UTF-8
 i hyphen-base: core hyphenation support files
 i hyphen-english: English hyphenation patterns.
@@ -831,6 +847,7 @@ i knuth-lib: Core TeX and Metafont sources from Knuth
 i koma-script: A bundle of versatile classes and packages
 i kpathsea: Path searching library for TeX-related files
 i kpathsea.universal-darwin: universal-darwin files of kpathsea
+i kpathsea.x86_64-linux: x86_64-linux files of kpathsea
 i kvdefinekeys: Define keys for use in the kvsetkeys package
 i kvoptions: Key value format for package options
 i kvsetkeys: Key value parser with default handler support
@@ -843,13 +860,16 @@ i latex: A TeX macro package that defines LaTeX
 i latex-amsmath-dev: Development pre-release of the LaTeX amsmath bundle
 i latex-bin: LaTeX executables and man pages
 i latex-bin.universal-darwin: universal-darwin files of latex-bin
+i latex-bin.x86_64-linux: x86_64-linux files of latex-bin
 i latex-fonts: A collection of fonts used in LaTeX distributions
 i latex-tools-dev: Development pre-release of the LaTeX tools bundle
 i latexconfig: configuration files for LaTeX-related formats
 i latexindent: Indent a LaTeX document, highlighting the programming structure
 i latexindent.universal-darwin: universal-darwin files of latexindent
+i latexindent.x86_64-linux: x86_64-linux files of latexindent
 i latexmk: Fully automated LaTeX document generation
 i latexmk.universal-darwin: universal-darwin files of latexmk
+i latexmk.x86_64-linux: x86_64-linux files of latexmk
 i letltxmacro: Let assignment for LaTeX macros
 i lettrine: Typeset dropped capitals
 i libertine: Use of Linux Libertine and Biolinum fonts with LaTeX
@@ -865,18 +885,22 @@ i lua-alt-getopt: Process application arguments the same way as getopt_long
 i lua-uni-algos: Unicode algorithms for LuaTeX
 i luahbtex: LuaTeX with HarfBuzz library for glyph shaping
 i luahbtex.universal-darwin: universal-darwin files of luahbtex
+i luahbtex.x86_64-linux: x86_64-linux files of luahbtex
 i lualatex-math: Fixes for mathematics-related LuaLaTeX issues
 i lualibs: Additional Lua functions for LuaTeX macro programmers
 i luaotfload: OpenType 'loader' for Plain TeX and LaTeX
 i luaotfload.universal-darwin: universal-darwin files of luaotfload
+i luaotfload.x86_64-linux: x86_64-linux files of luaotfload
 i luatex: The LuaTeX engine
 i luatex.universal-darwin: universal-darwin files of luatex
+i luatex.x86_64-linux: x86_64-linux files of luatex
 i luatexbase: Basic resource management for LuaTeX code
 i ly1: Support for LY1 LaTeX encoding
 i makecell: Tabular column heads and multilined cells
 i makecmds: The new \makecommand command always (re)defines a command
 i makeindex: Makeindex development sources
 i makeindex.universal-darwin: universal-darwin files of makeindex
+i makeindex.x86_64-linux: x86_64-linux files of makeindex
 i marginnote: Notes in the margin, even where \marginpar fails
 i marvosym: Martin Vogel's Symbols (marvosym) font
 i mathalpha: General package for loading maths alphabets in LaTeX
@@ -888,9 +912,11 @@ i mdwtools: Miscellaneous tools by Mark Wooding
 i memoir: Typeset fiction, non-fiction and mathematical books
 i metafont: A system for specifying fonts
 i metafont.universal-darwin: universal-darwin files of metafont
+i metafont.x86_64-linux: x86_64-linux files of metafont
 i metalogo: Extended TeX logo macros
 i mfware: Supporting tools for use with Metafont
 i mfware.universal-darwin: universal-darwin files of mfware
+i mfware.x86_64-linux: x86_64-linux files of mfware
 i mhchem: Typeset chemical formulae/equations and H and P statements
 i microtype: Subliminal refinements towards typographical perfection
 i minifp: Fixed-point real computations to 8 decimals
@@ -919,6 +945,7 @@ i pdfpages: Include PDF documents in LaTeX
 i pdfsync: Provide links between source and PDF
 i pdftex: A TeX extension for direct creation of PDF
 i pdftex.universal-darwin: universal-darwin files of pdftex
+i pdftex.x86_64-linux: x86_64-linux files of pdftex
 i pdftexcmds: LuaTeX support for pdfTeX utility functions
 i pgf: Create PostScript and PDF graphics in TeX
 i picinpar: Insert pictures into paragraphs
@@ -962,18 +989,23 @@ i tex: A sophisticated typesetting engine
 i tex-gyre: TeX Fonts extending freely available URW fonts
 i tex-ini-files: Model TeX format creation files
 i tex.universal-darwin: universal-darwin files of tex
+i tex.x86_64-linux: x86_64-linux files of tex
 i texcount: Count words in a LaTeX document
 i texcount.universal-darwin: universal-darwin files of texcount
+i texcount.x86_64-linux: x86_64-linux files of texcount
 i texlive-scripts: TeX Live infrastructure programs
 i texlive-scripts.universal-darwin: universal-darwin files of texlive-scripts
+i texlive-scripts.x86_64-linux: x86_64-linux files of texlive-scripts
 i texlive.infra: basic TeX Live infrastructure
 i texlive.infra.universal-darwin: universal-darwin files of texlive.infra
+i texlive.infra.x86_64-linux: x86_64-linux files of texlive.infra
 i textcase: Case conversion ignoring mathematics, etc
 i thmtools: Extensions to theorem environments
 i threeparttable: Tables with captions and notes all the same width
 i threeparttablex: Notes in longtables
 i thumbpdf: Thumbnails for pdfTeX and dvips/ps2pdf
 i thumbpdf.universal-darwin: universal-darwin files of thumbpdf
+i thumbpdf.x86_64-linux: x86_64-linux files of thumbpdf
 i tikzfill: TikZ libraries for filling with images and patterns
 i times: URW 'Base 35' font pack for LaTeX
 i tipa: Fonts and macros for IPA phonetics characters
@@ -996,6 +1028,7 @@ i upquote: Show "realistic" quotes in verbatim
 i url: Verbatim with URL-sensitive line breaks
 i urlbst: Web support for BibTeX
 i urlbst.universal-darwin: universal-darwin files of urlbst
+i urlbst.x86_64-linux: x86_64-linux files of urlbst
 i varwidth: A variable-width minipage
 i vmargin: Set various page dimensions
 i vruler: Numbering text
@@ -1005,6 +1038,7 @@ i xargs: Define commands with many optional arguments
 i xcolor: Driver-independent color extensions for LaTeX and pdfLaTeX
 i xetex: An extended variant of TeX for use with Unicode sources
 i xetex.universal-darwin: universal-darwin files of xetex
+i xetex.x86_64-linux: x86_64-linux files of xetex
 i xetexconfig: crop.cfg for XeLaTeX
 i xifthen: Extended conditional commands
 i xkeyval: Extension of the keyval package

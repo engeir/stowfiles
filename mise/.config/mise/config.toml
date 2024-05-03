@@ -13,7 +13,6 @@ tinytex = "latest"
 watchexec = "latest"
 go = "latest"
 node = "latest"
-ruby = "latest"
 python = [
   "latest",
   "sub-0.1:latest",
