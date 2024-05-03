@@ -1,5 +1,27 @@
 # Changelog
 
+## [1.15.0](https://github.com/engeir/stowfiles/compare/v1.14.0...v1.15.0) (2024-05-03)
+
+
+### Features
+
+* **helix:** add snippets support via LSP ([7fb44e9](https://github.com/engeir/stowfiles/commit/7fb44e9a828157e12a14aee8175b7a18ea9a69ff))
+
+
+### Miscellaneous
+
+* **bspwm:** small change to rc file ([91286db](https://github.com/engeir/stowfiles/commit/91286dbc6d2388bbb4b97c30aeb734e01cd012db))
+* **helix:** add snippets source ([5713204](https://github.com/engeir/stowfiles/commit/57132045e9bfc5e0329da3b4e52d69d16a29e753))
+* **nsxiv:** change background color ([ac18b18](https://github.com/engeir/stowfiles/commit/ac18b18c8d6629abb530453ed2536e522d615320))
+* **nvim:** copilot is just annoying when writing text ([928f5b4](https://github.com/engeir/stowfiles/commit/928f5b4665050a7868a2d1d0987a69884b6d366d))
+* **nvim:** use &lt;leader&gt;bd instead of :bd (MiniBufremove.delete()) ([adf6169](https://github.com/engeir/stowfiles/commit/adf6169817faf9b4b8a75d1bebe9f0d6206423bd))
+* **software:** update installed ([e5ea3e5](https://github.com/engeir/stowfiles/commit/e5ea3e53f981af7c72a59f33f7b306290254cd52))
+* **software:** update installed ([a142130](https://github.com/engeir/stowfiles/commit/a1421300d0d31d5427bd028c993d56e7a3a167f8))
+* **software:** update installed ([1d7cc98](https://github.com/engeir/stowfiles/commit/1d7cc982874121b2012513cd51c9fe0bfbe22ad3))
+* **software:** update installed ([2206841](https://github.com/engeir/stowfiles/commit/220684102d4f1153824a2f5e0e8682ecd7b4d3d4))
+* **software:** update installed (and add some rust CLIs) ([178b36a](https://github.com/engeir/stowfiles/commit/178b36a4456e998c364ec0f223a686089fbd8d57))
+* **tex:** update lsp settings ([a1bb164](https://github.com/engeir/stowfiles/commit/a1bb1642a562de0a3fc162d4e17d61a4ab3d16f7))
+
 ## [1.14.0](https://github.com/engeir/stowfiles/compare/v1.13.1...v1.14.0) (2024-04-24)
 
 
