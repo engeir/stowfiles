@@ -6,9 +6,9 @@ git = "https://github.com/rafamadriz/friendly-snippets.git" # git repo with snip
 # scope = ["python"]                   # optional scopes for current snippets
 # path = "snippets/python/python.json" # where snippet file or dir located in repo
 
-[[sources.paths]]
-scope = ["latex"]
-path = "snippets/latex.json"
+# [[sources.paths]]
+# scope = ["latex"]
+# path = "snippets/latex.json"
 [[sources.paths]]
 scope = ["latex"]
 path = "snippets/latex/latex-snippets.json"

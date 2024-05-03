@@ -214,7 +214,7 @@ diffstat 1.64-1build2 [Ubuntu/jammy main]
 diffutils 1:3.8-0ubuntu2 [Ubuntu/jammy main]
 dirmngr 2.2.27-3ubuntu2.1 [Ubuntu/jammy main]
 distro-info 1.1ubuntu0.2 [Ubuntu/jammy main]
-distro-info-data 0.52ubuntu0.6 [Ubuntu/jammy main]
+distro-info-data 0.52ubuntu0.6 [local]
 djvulibre-bin 3.5.28-2build2 [Ubuntu/jammy universe]
 dkms 2.8.7-2ubuntu2.2 [Ubuntu/jammy main]
 dmidecode 3.3-3ubuntu0.1 [Ubuntu/jammy main]
@@ -3244,7 +3244,7 @@ lightdm 1.30.0-0ubuntu5 [Ubuntu/jammy universe]
 links 2.25-1build1 [Ubuntu/jammy universe]
 lintian 2.114.0ubuntu1.3 [Ubuntu/jammy main]
 linux-base 4.5ubuntu9 [Ubuntu/jammy main]
-linux-firmware 20220329.git681281e4-0ubuntu3.29 [Ubuntu/jammy main]
+linux-firmware 20220329.git681281e4-0ubuntu3.30 [Ubuntu/jammy main]
 linux-generic 5.15.0.105.102 [Ubuntu/jammy main]
 linux-generic-hwe-20.04 5.15.0.105.102 [Ubuntu/jammy main]
 linux-generic-hwe-22.04 6.5.0.28.29~22.04.1 [Ubuntu/jammy main]
@@ -4356,7 +4356,7 @@ name: zoom version: 6.0.2.4680
 ```txt {mise}
 cabal                         3.10.3.0  ~/.config/mise/config.toml latest        
 go                            1.22.2    ~/.config/mise/config.toml latest        
-node                          22.0.0    ~/.config/mise/config.toml latest        
+node                          22.1.0    ~/.config/mise/config.toml latest        
 pandoc                        3.1.13    ~/.config/mise/config.toml latest        
 python                        3.8.19    ~/.config/mise/config.toml sub-0.4:latest
 python                        3.9.19    ~/.config/mise/config.toml sub-0.3:latest
@@ -4493,6 +4493,8 @@ sd v1.0.0:
     sd
 shellharden v4.3.1:
     shellharden
+simple-completion-language-server v0.1.0 (https://github.com/estin/simple-completion-language-server.git#ff9f90bc):
+    simple-completion-language-server
 skim v0.10.4:
     sk
 speedtest-rs v0.1.5:
@@ -4529,7 +4531,7 @@ xplr v0.21.7:
     xplr
 yazi-fm v0.2.5:
     yazi
-zellij v0.40.0:
+zellij v0.40.1:
     zellij
 ```
 
@@ -4594,7 +4596,7 @@ package fonttools 4.51.0, installed using Python 3.12.2
  - pyftsubset
  - ttx
  - man1/ttx.1
-package globus-cli 3.27.0, installed using Python 3.12.2
+package globus-cli 3.28.2, installed using Python 3.12.2
  - globus
 package gorps 0.9.1, installed using Python 3.12.2
  - gorps

@@ -7,6 +7,7 @@ calcurse/.local/share/*
 calcurse/.config/calcurse/keys
 helix/.config/helix/runtime
 helix/.config/helix/external-snippets/
+helix/.config/helix/snippets/
 newsboat/.newsboat/cache.db
 nushell/**/history*
 tmux/.tmux/plugins/
