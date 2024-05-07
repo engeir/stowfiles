@@ -58,8 +58,12 @@ return {
           "[W]orkspace [S]ymbols"
         )
         nmap("<leader>re", "<cmd>LspRestart<cr>", "Lsp [Re]estart")
-        nmap("<leader>rn", vim.lsp.buf.rename, "[R]e[n]ame")
-        nmap("<leader>ca", vim.lsp.buf.code_action, "[C]ode [A]ction")
+        nmap("crn", vim.lsp.buf.rename, "[C]ode [R]efactor re[n]ame") -- default since nvim0.10.0
+        nmap(
+          "crr",
+          vim.lsp.buf.code_action,
+          "[C]ode [R]efacotr [R]efactor (code action)"
+        ) -- default since nvim0.10.0
         -- xmap("<leader>ca", vim.lsp.buf.range_code_action, "Range [C]ode [A]ction")
         xmap(
           "<leader>ca",
@@ -67,8 +71,8 @@ return {
           "Range [C]ode [A]ction"
         )
         nmap("K", vim.lsp.buf.hover, "Hover Documentation")
-        nmap("<C-h>", vim.lsp.buf.signature_help, "Signature Documentation")
-        imap("<C-h>", vim.lsp.buf.signature_help, "Signature Documentation")
+        imap("<C-s>", vim.lsp.buf.signature_help, "Signature Documentation") -- default since nvim0.10.0
+        imap("<C-s>", vim.lsp.buf.signature_help, "Signature Documentation") -- default since nvim0.10.0
         -- Lesser used LSP functionality
         nmap("gD", vim.lsp.buf.declaration, "[G]oto [D]eclaration")
         nmap("<leader>wa", vim.lsp.buf.add_workspace_folder, "[W]orkspace [A]dd Folder")
