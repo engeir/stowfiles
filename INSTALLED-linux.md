@@ -214,7 +214,7 @@ diffstat 1.64-1build2 [Ubuntu/jammy main]
 diffutils 1:3.8-0ubuntu2 [Ubuntu/jammy main]
 dirmngr 2.2.27-3ubuntu2.1 [Ubuntu/jammy main]
 distro-info 1.1ubuntu0.2 [Ubuntu/jammy main]
-distro-info-data 0.52ubuntu0.6 [local]
+distro-info-data 0.52ubuntu0.7 [Ubuntu/jammy main]
 djvulibre-bin 3.5.28-2build2 [Ubuntu/jammy universe]
 dkms 2.8.7-2ubuntu2.2 [Ubuntu/jammy main]
 dmidecode 3.3-3ubuntu0.1 [Ubuntu/jammy main]
@@ -4363,12 +4363,12 @@ python                        3.9.19    ~/.config/mise/config.toml sub-0.3:lates
 python                        3.10.14   ~/.config/mise/config.toml sub-0.2:latest
 python                        3.11.9    ~/.config/mise/config.toml sub-0.1:latest
 python                        3.12.3    ~/.config/mise/config.toml latest        
-ruby                          3.3.1     ~/.config/mise/config.toml latest        
 tinytex                       2024.05   ~/.config/mise/config.toml latest        
 ubi:PaulJuliusMartinez/jless  0.7.0     ~/.config/mise/config.toml latest        
 ubi:etcd-io/etcd              3.3.27    ~/.config/mise/config.toml latest        
 ubi:filosottile/age           1.1.1     ~/.config/mise/config.toml 1.1.1         
 ubi:goreleaser/goreleaser     1.13.0    ~/.config/mise/config.toml latest        
+ubi:houseabsolute/precious    0.0.7     ~/.config/mise/config.toml latest        
 ubi:ismaelgv/rnr              0.1.6     ~/.config/mise/config.toml latest        
 ubi:mgdm/htmlq                0.2.0     ~/.config/mise/config.toml latest        
 ubi:pvolok/mprocs             0.0.1     ~/.config/mise/config.toml latest        
@@ -4383,7 +4383,7 @@ alacritty v0.13.2:
     alacritty
 atuin v18.2.0:
     atuin
-bacon v2.16.0:
+bacon v2.17.0:
     bacon
 bat v0.24.0:
     bat
@@ -4391,7 +4391,7 @@ blindfold v1.0.7:
     blindfold
 bob-nvim v2.9.1:
     bob
-cargo-binstall v1.6.4:
+cargo-binstall v1.6.5:
     cargo-binstall
 cargo-edit v0.12.2:
     cargo-add
@@ -4421,7 +4421,7 @@ evcxr_jupyter v0.17.0:
     evcxr_jupyter
 eza v0.18.14:
     eza
-fd-find v9.0.0:
+fd-find v10.0.0:
     fd
 ffsend v0.2.76:
     ffsend
@@ -4442,7 +4442,7 @@ helix-term v0.6.0 (/home/een023/programs/helix/helix-term):
     hx
 hyperfine v1.18.0:
     hyperfine
-irust v1.71.21:
+irust v1.71.22:
     irust
 jless v0.9.0:
     jless
@@ -4464,7 +4464,7 @@ mdbook-toc v0.14.2:
     mdbook-toc
 menyoki v1.7.0:
     menyoki
-mise v2024.5.2:
+mise v2024.5.3:
     mise
 mprocs v0.6.4:
     mprocs
@@ -4493,7 +4493,7 @@ sd v1.0.0:
     sd
 shellharden v4.3.1:
     shellharden
-simple-completion-language-server v0.1.0 (https://github.com/estin/simple-completion-language-server.git#ff9f90bc):
+simple-completion-language-server v0.1.0 (https://github.com/estin/simple-completion-language-server.git#65fe6561):
     simple-completion-language-server
 skim v0.10.4:
     sk
@@ -4513,7 +4513,7 @@ tectonic v0.15.0:
     tectonic
 topgrade v14.0.1:
     topgrade
-tree-sitter-cli v0.22.5:
+tree-sitter-cli v0.22.6:
     tree-sitter
 ubi v0.0.29:
     ubi
@@ -4527,7 +4527,7 @@ xcolor v0.5.1:
     xcolor
 xh v0.22.0:
     xh
-xplr v0.21.7:
+xplr v0.21.8:
     xplr
 yazi-fm v0.2.5:
     yazi
