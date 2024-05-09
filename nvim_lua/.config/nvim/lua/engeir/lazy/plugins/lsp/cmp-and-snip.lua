@@ -300,7 +300,7 @@ return {
 
   -- Extra
   {
-    "iurimateus/luasnip-latex-snippets.nvim",
+    dir = "/home/een023/projects/luasnip-latex-snippets.nvim",
     enabled = true,
     event = { "BufReadPre", "BufNewFile" },
     -- replace "lervag/vimtex" with "nvim-treesitter/nvim-treesitter" if you're
