@@ -25,6 +25,7 @@ return {
       },
       latexindent = { modifyLineBreaks = true },
       build = {
+        onSave = true,
         executable = "tectonic",
         args = {
           "-X",
