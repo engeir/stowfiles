@@ -59,7 +59,7 @@ all plugins I'm using:
 - [lspkind.nvim](https://github.com/onsails/lspkind.nvim.git)
 - [lsplinks.nvim](https://github.com/icholy/lsplinks.nvim.git)
 - [lualine](https://github.com/nvim-lualine/lualine.nvim.git)
-- [luasnip-latex-snippets.nvim](https://github.com/iurimateus/luasnip-latex-snippets.nvim.git)
+- [luasnip-latex-snippets.nvim](https://github.com/engeir/luasnip-latex-snippets.nvim.git)
 - [LuaSnip](https://github.com/L3MON4D3/LuaSnip.git)
 - [markdown-toc.nvim](https://github.com/hedyhli/markdown-toc.nvim.git)
 - [mason-lspconfig.nvim](https://github.com/williamboman/mason-lspconfig.nvim.git)
