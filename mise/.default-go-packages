@@ -7,13 +7,16 @@ github.com/charmbracelet/vhs
 github.com/darkhz/bluetuith
 github.com/ericchiang/pup
 github.com/fatih/gomodifytags
+github.com/go-delve/delve/cmd/dlv
 github.com/gokcehan/lf
 github.com/golangci/golangci-lint/cmd/golangci-lint
 github.com/jesseduffield/lazygit
 github.com/maaslalani/draw
 github.com/maaslalani/nap
 github.com/maaslalani/slides
+github.com/nametake/golangci-lint-langserver
 github.com/nao1215/gup
 github.com/noahgorstein/jqp
 github.com/zquestz/s
+golang.org/x/tools/gopls
 oss.terrastruct.com/d2

@@ -47,11 +47,11 @@ cgif 0.4.0
 chafa 1.14.0
 chruby 0.3.9
 cjson 1.7.17
-cli11 2.4.1
+cli11 2.4.2
 cloc 2.00
 cmake 3.29.2
 cmatrix 2.0
-composer 2.7.5
+composer 2.7.6
 coreutils 9.5
 cpio 2.15
 cpp-gsl 4.0.0_1
@@ -282,6 +282,7 @@ m-cli 0.3.0
 m4 1.4.19
 mad 0.15.1b
 make 4.4.1
+marksman 2023-12-09
 mbedtls 3.6.0
 mcfly v0.8.4
 md4c 0.5.2
@@ -360,7 +361,7 @@ pueue 3.4.0
 pugixml 1.14
 pup 0.4.0
 pv 1.8.9
-pygments 2.17.2
+pygments 2.18.0
 pyqt@5 5.15.10
 python-argcomplete 3.3.0
 python-attrs 23.2.0
@@ -455,7 +456,7 @@ unrtf 0.21.10
 unzip 6.0_8
 utf8proc 2.9.0
 uthash 2.3.0
-vapoursynth 66
+vapoursynth 67
 vips 8.15.2_1
 vitetris 0.59.1
 vivid 0.9.0
@@ -541,7 +542,6 @@ ubi:mgdm/htmlq                0.2.0     ~/.config/mise/config.toml latest
 ubi:pvolok/mprocs             0.0.1     ~/.config/mise/config.toml latest        
 usage                         0.1.18    ~/.config/mise/config.toml latest        
 watchexec                     2.1.1     ~/.config/mise/config.toml latest        
-zig                           0.12.0                                             
 ```
 
 ## Cargo
@@ -600,6 +600,8 @@ jnv v0.2.2:
     jnv
 just v1.25.2:
     just
+markdown-oxide v0.0.21:
+    markdown-oxide
 mdbook v0.4.37:
     mdbook
 mise v2024.5.2:
@@ -616,6 +618,8 @@ porsmo v0.3.2:
     porsmo
 sd v1.0.0:
     sd
+simple-completion-language-server v0.1.0 (https://github.com/estin/simple-completion-language-server.git#ff9f90bc):
+    simple-completion-language-server
 speedtest-rs v0.1.5:
     speedtest-rs
 stylua v0.20.0:
@@ -697,15 +701,18 @@ github.com/charmbracelet/vhs
 github.com/darkhz/bluetuith
 github.com/ericchiang/pup
 github.com/fatih/gomodifytags
+github.com/go-delve/delve/cmd/dlv
 github.com/gokcehan/lf
 github.com/golangci/golangci-lint/cmd/golangci-lint
 github.com/jesseduffield/lazygit
 github.com/maaslalani/draw
 github.com/maaslalani/nap
 github.com/maaslalani/slides
+github.com/nametake/golangci-lint-langserver
 github.com/nao1215/gup
 github.com/noahgorstein/jqp
 github.com/zquestz/s
+golang.org/x/tools/gopls
 oss.terrastruct.com/d2
 ```
 

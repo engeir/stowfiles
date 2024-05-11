@@ -50,6 +50,14 @@ labelReferenceCommands = ["subref"]
 citationCommands = ["citeA"]
 mathEnvironments = ["align*", "equation"]
 
+[[language]]
+name = "markdown"
+formatter = { command = "dprint", args = ["fmt", "--stdin", "md"] }
+
+[[language]]
+name = "go"
+auto-format = false
+
 # introduce new language server
 [language-server.scls]
 command = "simple-completion-language-server"
