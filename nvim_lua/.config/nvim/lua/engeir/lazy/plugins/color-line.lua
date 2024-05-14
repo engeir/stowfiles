@@ -36,13 +36,25 @@ return {
     "akinsho/bufferline.nvim",
     event = { "BufEnter" },
     name = "bufferline",
-    -- version = "v2.*",
-    dependencies = "nvim-tree/nvim-web-devicons",
+    dependencies = {
+      "nvim-tree/nvim-web-devicons",
+      { "tiagovla/scope.nvim", config = true },
+    },
     keys = {
       { "H", ":BufferLineCyclePrev<CR>", desc = "BufferLine Previous" },
       { "L", ":BufferLineCycleNext<CR>", desc = "BufferLine Next" },
     },
-    config = true,
+    opts = {
+      highlights = {
+        tab_separator_selected = {
+          bg = "#262626",
+        },
+        tab_selected = {
+          fg = "#ea6962",
+          bg = "#262626",
+        },
+      },
+    },
   },
   {
     -- TODO: replace with mini.statusline?

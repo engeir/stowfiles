@@ -42,9 +42,9 @@ return {
           "[G]oto [I]mplementation"
         )
         nmap(
-          "gt",
+          "gh",
           require("telescope.builtin").lsp_type_definitions,
-          "[G]oto [T]ype Definition"
+          "[G]oto Type Definition ([H]int)"
         )
         -- nmap("gt", vim.lsp.buf.type_definition, "[G]oto [T]ype Definition")
         nmap(
