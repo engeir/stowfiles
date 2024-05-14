@@ -533,7 +533,7 @@ gftp 2.9.1~beta-1 [Ubuntu/jammy universe]
 gftp-common 2.9.1~beta-1 [Ubuntu/jammy universe]
 gftp-gtk 2.9.1~beta-1 [Ubuntu/jammy universe]
 gftp-text 2.9.1~beta-1 [Ubuntu/jammy universe]
-gh 2.49.1 [gh/stable main]
+gh 2.49.2 [gh/stable main]
 ghc 8.8.4-3 [Ubuntu/jammy universe]
 ghc-prof 8.8.4-3 [Ubuntu/jammy universe]
 ghostscript 9.55.0~dfsg1-0ubuntu5.6 [Ubuntu/jammy main]
@@ -3246,7 +3246,7 @@ lintian 2.114.0ubuntu1.3 [Ubuntu/jammy main]
 linux-base 4.5ubuntu9 [Ubuntu/jammy main]
 linux-firmware 20220329.git681281e4-0ubuntu3.30 [Ubuntu/jammy main]
 linux-generic 5.15.0.106.106 [Ubuntu/jammy main]
-linux-generic-hwe-20.04 5.15.0.106.106 [Ubuntu/jammy main]
+linux-generic-hwe-20.04 5.15.0.107.107 [Ubuntu/jammy main]
 linux-generic-hwe-22.04 6.5.0.28.29~22.04.1 [Ubuntu/jammy main]
 linux-headers-5.15.0-106 5.15.0-106.116 [Ubuntu/jammy main]
 linux-headers-5.15.0-106-generic 5.15.0-106.116 [Ubuntu/jammy main]
@@ -3267,7 +3267,7 @@ linux-image-6.5.0-27-generic 6.5.0-27.28~22.04.1 [Ubuntu/jammy main]
 linux-image-6.5.0-28-generic 6.5.0-28.29~22.04.1 [Ubuntu/jammy main]
 linux-image-generic 5.15.0.106.106 [Ubuntu/jammy main]
 linux-image-generic-hwe-22.04 6.5.0.28.29~22.04.1 [Ubuntu/jammy main]
-linux-libc-dev 5.15.0-106.116 [Ubuntu/jammy main]
+linux-libc-dev 5.15.0-107.117 [Ubuntu/jammy main]
 linux-modules-5.15.0-106-generic 5.15.0-106.116 [Ubuntu/jammy main]
 linux-modules-5.19.0-50-generic 5.19.0-50.50 [Ubuntu/jammy main]
 linux-modules-6.2.0-39-generic 6.2.0-39.40~22.04.1 [Ubuntu/jammy main]
@@ -4365,14 +4365,14 @@ python                        3.10.14   ~/.config/mise/config.toml sub-0.2:lates
 python                        3.11.9    ~/.config/mise/config.toml sub-0.1:latest
 python                        3.12.3    ~/.config/mise/config.toml latest        
 tinytex                       2024.05   ~/.config/mise/config.toml latest        
-ubi:PaulJuliusMartinez/jless  0.7.0     ~/.config/mise/config.toml latest        
-ubi:etcd-io/etcd              3.3.27    ~/.config/mise/config.toml latest        
+ubi:PaulJuliusMartinez/jless  v0.7.0    ~/.config/mise/config.toml latest        
+ubi:etcd-io/etcd              v3.3.27   ~/.config/mise/config.toml latest        
 ubi:filosottile/age           1.1.1     ~/.config/mise/config.toml 1.1.1         
-ubi:goreleaser/goreleaser     1.13.0    ~/.config/mise/config.toml latest        
-ubi:houseabsolute/precious    0.0.7     ~/.config/mise/config.toml latest        
-ubi:ismaelgv/rnr              0.1.6     ~/.config/mise/config.toml latest        
-ubi:mgdm/htmlq                0.2.0     ~/.config/mise/config.toml latest        
-ubi:pvolok/mprocs             0.0.1     ~/.config/mise/config.toml latest        
+ubi:goreleaser/goreleaser     v1.13.0   ~/.config/mise/config.toml latest        
+ubi:houseabsolute/precious    v0.0.7    ~/.config/mise/config.toml latest        
+ubi:ismaelgv/rnr              v0.1.6    ~/.config/mise/config.toml latest        
+ubi:mgdm/htmlq                v0.2.0    ~/.config/mise/config.toml latest        
+ubi:pvolok/mprocs             v0.0.1    ~/.config/mise/config.toml latest        
 usage                         0.2.0     ~/.config/mise/config.toml latest        
 watchexec                     2.1.1     ~/.config/mise/config.toml latest        
 ```
@@ -4449,7 +4449,7 @@ jless v0.9.0:
     jless
 jnv v0.2.2:
     jnv
-just v1.25.2:
+just v1.26.0:
     just
 languagetool-rust v2.1.4:
     ltrs
@@ -4465,7 +4465,7 @@ mdbook-toc v0.14.2:
     mdbook-toc
 menyoki v1.7.0:
     menyoki
-mise v2024.5.9:
+mise v2024.5.14:
     mise
 mprocs v0.6.4:
     mprocs
@@ -4583,7 +4583,7 @@ package ds-format 4.1.0, installed using Python 3.12.2
  - man1/ds-type.1
  - man1/ds-write.1
  - man1/ds.1
-package euporie 2.8.1, installed using Python 3.12.2
+package euporie 2.8.2, installed using Python 3.12.2
  - euporie
  - euporie-console
  - euporie-hub
@@ -4624,7 +4624,7 @@ package npzviewer 0.2.0, installed using Python 3.12.2
  - npzviewer
 package pandoc-eqnos 2.5.0, installed using Python 3.12.2
  - pandoc-eqnos
-package pandoc-include 1.3.0, installed using Python 3.12.2
+package pandoc-include 1.3.2, installed using Python 3.12.2
  - pandoc-include
 package pdfcropmargins 2.1.2, installed using Python 3.12.2
  - pdf-crop-margins
@@ -4660,15 +4660,18 @@ github.com/charmbracelet/vhs
 github.com/darkhz/bluetuith
 github.com/ericchiang/pup
 github.com/fatih/gomodifytags
+github.com/go-delve/delve/cmd/dlv
 github.com/gokcehan/lf
 github.com/golangci/golangci-lint/cmd/golangci-lint
 github.com/jesseduffield/lazygit
 github.com/maaslalani/draw
 github.com/maaslalani/nap
 github.com/maaslalani/slides
+github.com/nametake/golangci-lint-langserver
 github.com/nao1215/gup
 github.com/noahgorstein/jqp
 github.com/zquestz/s
+golang.org/x/tools/gopls
 oss.terrastruct.com/d2
 ```
 
