@@ -3245,39 +3245,39 @@ links 2.25-1build1 [Ubuntu/jammy universe]
 lintian 2.114.0ubuntu1.3 [Ubuntu/jammy main]
 linux-base 4.5ubuntu9 [Ubuntu/jammy main]
 linux-firmware 20220329.git681281e4-0ubuntu3.30 [Ubuntu/jammy main]
-linux-generic 5.15.0.106.106 [Ubuntu/jammy main]
+linux-generic 5.15.0.107.107 [Ubuntu/jammy main]
 linux-generic-hwe-20.04 5.15.0.107.107 [Ubuntu/jammy main]
-linux-generic-hwe-22.04 6.5.0.28.29~22.04.1 [Ubuntu/jammy main]
-linux-headers-5.15.0-106 5.15.0-106.116 [Ubuntu/jammy main]
-linux-headers-5.15.0-106-generic 5.15.0-106.116 [Ubuntu/jammy main]
+linux-generic-hwe-22.04 6.5.0.35.35~22.04.1 [Ubuntu/jammy main]
+linux-headers-5.15.0-107 5.15.0-107.117 [Ubuntu/jammy main]
+linux-headers-5.15.0-107-generic 5.15.0-107.117 [Ubuntu/jammy main]
 linux-headers-5.19.0-50-generic 5.19.0-50.50 [Ubuntu/jammy main]
 linux-headers-6.2.0-39-generic 6.2.0-39.40~22.04.1 [Ubuntu/jammy main]
-linux-headers-6.5.0-27-generic 6.5.0-27.28~22.04.1 [Ubuntu/jammy main]
 linux-headers-6.5.0-28-generic 6.5.0-28.29~22.04.1 [Ubuntu/jammy main]
-linux-headers-generic 5.15.0.106.106 [Ubuntu/jammy main]
-linux-headers-generic-hwe-22.04 6.5.0.28.29~22.04.1 [Ubuntu/jammy main]
+linux-headers-6.5.0-35-generic 6.5.0-35.35~22.04.1 [Ubuntu/jammy main]
+linux-headers-generic 5.15.0.107.107 [Ubuntu/jammy main]
+linux-headers-generic-hwe-22.04 6.5.0.35.35~22.04.1 [Ubuntu/jammy main]
 linux-hwe-5.19-headers-5.19.0-50 5.19.0-50.50 [Ubuntu/jammy main]
 linux-hwe-6.2-headers-6.2.0-39 6.2.0-39.40~22.04.1 [Ubuntu/jammy main]
-linux-hwe-6.5-headers-6.5.0-27 6.5.0-27.28~22.04.1 [Ubuntu/jammy main]
 linux-hwe-6.5-headers-6.5.0-28 6.5.0-28.29~22.04.1 [Ubuntu/jammy main]
-linux-image-5.15.0-106-generic 5.15.0-106.116 [Ubuntu/jammy main]
+linux-hwe-6.5-headers-6.5.0-35 6.5.0-35.35~22.04.1 [Ubuntu/jammy main]
+linux-image-5.15.0-107-generic 5.15.0-107.117 [Ubuntu/jammy main]
 linux-image-5.19.0-50-generic 5.19.0-50.50 [Ubuntu/jammy main]
 linux-image-6.2.0-39-generic 6.2.0-39.40~22.04.1 [Ubuntu/jammy main]
-linux-image-6.5.0-27-generic 6.5.0-27.28~22.04.1 [Ubuntu/jammy main]
 linux-image-6.5.0-28-generic 6.5.0-28.29~22.04.1 [Ubuntu/jammy main]
-linux-image-generic 5.15.0.106.106 [Ubuntu/jammy main]
-linux-image-generic-hwe-22.04 6.5.0.28.29~22.04.1 [Ubuntu/jammy main]
+linux-image-6.5.0-35-generic 6.5.0-35.35~22.04.1 [Ubuntu/jammy main]
+linux-image-generic 5.15.0.107.107 [Ubuntu/jammy main]
+linux-image-generic-hwe-22.04 6.5.0.35.35~22.04.1 [Ubuntu/jammy main]
 linux-libc-dev 5.15.0-107.117 [Ubuntu/jammy main]
-linux-modules-5.15.0-106-generic 5.15.0-106.116 [Ubuntu/jammy main]
+linux-modules-5.15.0-107-generic 5.15.0-107.117 [Ubuntu/jammy main]
 linux-modules-5.19.0-50-generic 5.19.0-50.50 [Ubuntu/jammy main]
 linux-modules-6.2.0-39-generic 6.2.0-39.40~22.04.1 [Ubuntu/jammy main]
-linux-modules-6.5.0-27-generic 6.5.0-27.28~22.04.1 [Ubuntu/jammy main]
 linux-modules-6.5.0-28-generic 6.5.0-28.29~22.04.1 [Ubuntu/jammy main]
-linux-modules-extra-5.15.0-106-generic 5.15.0-106.116 [Ubuntu/jammy main]
+linux-modules-6.5.0-35-generic 6.5.0-35.35~22.04.1 [Ubuntu/jammy main]
+linux-modules-extra-5.15.0-107-generic 5.15.0-107.117 [Ubuntu/jammy main]
 linux-modules-extra-5.19.0-50-generic 5.19.0-50.50 [Ubuntu/jammy main]
 linux-modules-extra-6.2.0-39-generic 6.2.0-39.40~22.04.1 [Ubuntu/jammy main]
-linux-modules-extra-6.5.0-27-generic 6.5.0-27.28~22.04.1 [Ubuntu/jammy main]
 linux-modules-extra-6.5.0-28-generic 6.5.0-28.29~22.04.1 [Ubuntu/jammy main]
+linux-modules-extra-6.5.0-35-generic 6.5.0-35.35~22.04.1 [Ubuntu/jammy main]
 linux-sound-base 1.0.25+dfsg-0ubuntu7 [Ubuntu/jammy main]
 llvm 1:14.0-55~exp2 [Ubuntu/jammy universe]
 llvm-11 1:11.1.0-6 [Ubuntu/jammy universe]
@@ -4465,7 +4465,7 @@ mdbook-toc v0.14.2:
     mdbook-toc
 menyoki v1.7.0:
     menyoki
-mise v2024.5.14:
+mise v2024.5.16:
     mise
 mprocs v0.6.4:
     mprocs
@@ -5032,7 +5032,7 @@ core20                     20240416                    2318   latest/stable    c
 core22                     20240408                    1380   latest/stable    canonical**    base
 dotnet-sdk                 5.0.408                     167    5.0/stable       canonical**    classic
 duf-utility                v0.6.0                      1      latest/stable    muesli         -
-firefox                    125.0.3-1                   4209   latest/stable/…  mozilla**      -
+firefox                    126.0-2                     4259   latest/stable/…  mozilla**      -
 gimp                       2.10.38                     436    latest/stable    snapcrafters*  -
 gnome-3-28-1804            3.28.0-19-g98f9e67.98f9e67  198    latest/stable    canonical**    -
 gnome-3-34-1804            0+git.3556cb3               93     latest/stable/…  canonical**    -
