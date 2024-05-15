@@ -1,5 +1,24 @@
 # Changelog
 
+## [1.15.1](https://github.com/engeir/stowfiles/compare/v1.15.0...v1.15.1) (2024-05-14)
+
+
+### Miscellaneous
+
+* **helix:** add formatting support in markdown ([e7dc738](https://github.com/engeir/stowfiles/commit/e7dc7383b95e2c430d70b4205e4ae5dfdfd5bc64))
+* **nvim:** improve use of tabs ([9b91a34](https://github.com/engeir/stowfiles/commit/9b91a3400e29dca12abc790e54d6c83319cbb04e))
+* **nvim:** nvim seems to run slow when autocomp with vimtex, so we now build on save ([b0dd545](https://github.com/engeir/stowfiles/commit/b0dd545bfb0216bbe505816569d7801785ae27a8))
+* **nvim:** use remote version of luasnippets fork ([b8a6c40](https://github.com/engeir/stowfiles/commit/b8a6c405a635c1e6f3a364c1302a854ad52c2625))
+* **software:** install zoxide and simple-completion-language-server ([e7dc738](https://github.com/engeir/stowfiles/commit/e7dc7383b95e2c430d70b4205e4ae5dfdfd5bc64))
+* **software:** update installed ([a6e7960](https://github.com/engeir/stowfiles/commit/a6e79608b7d4d90ae4aa16f2d7682d9dd0513a8a))
+* **software:** update installed ([c077472](https://github.com/engeir/stowfiles/commit/c077472c33e4a3e1a4c951f88f7628a3857b8125))
+
+
+### Code Refactoring
+
+* **nvim:** move tex snip sub/sup overwrites to my fork ([20c1868](https://github.com/engeir/stowfiles/commit/20c1868f270a8dc1bdcf8b08d27ebb5232e7edd6))
+* **nvim:** use what will be new default keymaps ([c6927d5](https://github.com/engeir/stowfiles/commit/c6927d58d8dbcbc6d4aa05cb97b99cf1f695f812))
+
 ## [1.15.0](https://github.com/engeir/stowfiles/compare/v1.14.0...v1.15.0) (2024-05-03)
 
 
