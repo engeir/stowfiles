@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.15.2](https://github.com/engeir/stowfiles/compare/stowfiles-v1.15.1...stowfiles-v1.15.2) (2024-05-15)
+
+
+### Continuous Integration
+
+* **release-please:** update to version 4 ([5aff7da](https://github.com/engeir/stowfiles/commit/5aff7dade138ee0c2c6a7470bdf9b4f125e54b01))
+
+
 ## [1.15.1](https://github.com/engeir/stowfiles/compare/v1.15.0...v1.15.1) (2024-05-14)
 
 
