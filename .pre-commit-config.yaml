@@ -25,11 +25,11 @@ repos:
 
   - repo: local
     hooks:
-      - id: update-nvim
-        name: Update nvim README
-        language: script
-        pass_filenames: false
-        entry: .update-nvim
+      # - id: update-nvim
+      #   name: Update nvim README
+      #   language: script
+      #   pass_filenames: false
+      #   entry: .update-nvim
 
       - id: dprint
         name: dprint

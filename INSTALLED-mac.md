@@ -14,10 +14,10 @@ apr 1.7.4
 apr-util 1.6.3_1
 argon2 20190702_1
 aribb24 1.0.4
-asciidoctor 2.0.22
+asciidoctor 2.0.23
 asciinema 2.4.0
 aspell 0.60.8.1_1
-assimp 5.4.0
+assimp 5.4.1
 at-spi2-core 2.52.0
 atool 0.39.0
 autoconf 2.72
@@ -46,10 +46,10 @@ cfitsio 4.4.0
 cgif 0.4.0
 chafa 1.14.0
 chruby 0.3.9
-cjson 1.7.17
+cjson 1.7.18
 cli11 2.4.2
 cloc 2.00
-cmake 3.29.2
+cmake 3.29.3
 cmatrix 2.0
 composer 2.7.6
 coreutils 9.5
@@ -64,9 +64,9 @@ despell 0.10
 djvulibre 3.5.28_2
 docbook 5.1_1
 docbook-xsl 1.79.2_1
-docker 26.1.1
+docker 26.1.3
 docker-buildx 0.14.0
-docker-completion 26.1.1
+docker-completion 26.1.3
 docker-compose 2.27.0
 docutils 0.21.2
 docx2txt 1.4
@@ -83,7 +83,7 @@ emacs-plus@27 27.2
 entr 5.5
 expat 2.6.2
 fastjar 0.98
-fd 9.0.0
+fd 10.1.0
 feh 3.10.2
 ffmpeg 7.0_1
 ffmpeg@4 4.4.4_5
@@ -96,27 +96,27 @@ flac 1.4.3
 flex 2.6.4_2
 fmt 10.2.1_1
 fontconfig 2.15.0
-freetds 1.4.12
+freetds 1.4.14
 freetype 2.13.2
 frei0r 2.3.2
 fribidi 1.0.14
-fzf 0.51.0
+fzf 0.52.1
 gawk 5.3.0
-gcc 13.2.0
+gcc 14.1.0
 gd 2.3.3_6
 gdbm 1.23
-gdk-pixbuf 2.42.11
+gdk-pixbuf 2.42.12
 geos 3.12.1
 gettext 0.22.5
-gh 2.49.0
+gh 2.49.2
 ghostscript 10.03.0
 giflib 5.2.2
 girara 0.4.0
-git 2.45.0
+git 2.45.1
 git-lfs 3.5.1
-glib 2.80.0_2
+glib 2.80.2
 gmp 6.3.0
-gnu-getopt 2.40
+gnu-getopt 2.40.1
 gnu-sed 4.9
 gnu-tar 1.35
 gnupg 2.4.5
@@ -132,7 +132,7 @@ grep 3.11
 groovy 4.0.21
 gsettings-desktop-schemas 46.0
 gsl 2.7.1
-gtk+3 3.24.41
+gtk+3 3.24.42
 gtk-mac-integration 3.0.1_1
 guile 3.0.9_1
 gumbo-parser 0.10.1
@@ -147,13 +147,12 @@ html2text 2.2.3
 htop 3.3.0
 httpd 2.4.59
 hub 2.14.2
-hugo 0.125.5
+hugo 0.126.1
 hunspell 1.7.2
 hwloc 2.10.0
 icu4c 74.2
 ilmbase 2.5.8
-imagemagick 7.1.1-31
-imap-uw 2007f_1
+imagemagick 7.1.1-32
 imath 3.1.11
 imlib2 1.12.2
 intltool 0.51.0_2
@@ -163,7 +162,7 @@ jasper 4.2.4
 jbig2dec 0.20
 jemalloc 5.3.0
 jpeg 9f
-jpeg-turbo 3.0.2
+jpeg-turbo 3.0.3
 jpeg-xl 0.10.2
 jpegoptim 1.5.5
 jq 1.7.1
@@ -216,10 +215,10 @@ libmpc 1.3.1
 libnghttp2 1.61.0
 libnotify 0.8.3
 libogg 1.3.5
-libomp 18.1.5
+libomp 18.1.6
 libplacebo 6.338.2
 libpng 1.6.43
-libpq 16.2_1
+libpq 16.3
 libproxy 0.5.6
 libpthread-stubs 0.5
 libraw 0.21.2
@@ -258,7 +257,7 @@ libxfixes 6.0.1
 libxft 2.3.8
 libxi 1.8.1
 libxinerama 1.1.5
-libxml2 2.12.6
+libxml2 2.12.7
 libxmu 1.2.1
 libxpm 3.5.17
 libxrender 0.9.11
@@ -284,11 +283,10 @@ mad 0.15.1b
 make 4.4.1
 marksman 2023-12-09
 mbedtls 3.6.0
-mcfly v0.8.4
 md4c 0.5.2
 media-info 24.04
-mercurial 6.7.2
-mesa 24.0.6
+mercurial 6.7.3
+mesa 24.0.7
 meson 1.4.0
 mozjpeg 4.1.5
 mpdecimal 4.0.0
@@ -298,25 +296,24 @@ mpv 0.38.0
 mujs 1.3.4
 mupdf 1.23.11
 mysql@5.7 5.7.44_1
-nb 7.12.1
-ncspot 1.1.0
+ncspot 1.1.1
 ncurses 6.5
 neofetch 7.1.0
 netcdf 4.9.2_1
 nettle 3.9.1
 nghttp2 1.61.0
-ninja 1.12.0
+ninja 1.12.1
 nlohmann-json 3.11.3
 nmap 7.95
 nnn 4.9
-node 22.1.0
+node 22.2.0
 npth 1.7
 nspr 4.35
-nss 3.99
+nss 3.100
 numpy 1.26.4
 odt2txt 0.5
 oniguruma 6.9.9
-open-mpi 5.0.3
+open-mpi 5.0.3_1
 openblas 0.3.27
 opencore-amr 0.1.6
 openexr 3.2.4
@@ -332,9 +329,7 @@ opusfile 0.12_1
 orc 0.4.38
 p11-kit 0.25.3
 p7zip 17.05
-pandoc 3.1.13
 pandoc-citeproc 0.17.0.2
-pandoc-include-code 1.5.0.0_2
 pango 1.52.2
 pass 1.7.4
 pcre 8.45
@@ -342,7 +337,7 @@ pcre2 10.43
 pdftohtml 0.40a
 pdftoipe 7.2.24.1_20
 perl 5.38.2_1
-php 8.3.6
+php 8.3.7
 pinentry 1.3.0
 pinentry-mac 1.1.1.1
 pipx 1.5.0
@@ -363,18 +358,8 @@ pup 0.4.0
 pv 1.8.9
 pygments 2.18.0
 pyqt@5 5.15.10
-python-argcomplete 3.3.0
-python-attrs 23.2.0
-python-brotli 1.1.0
-python-click 8.1.7_1
-python-idna 3.6
 python-markupsafe 2.1.5
-python-mutagen 1.47.0_1
 python-packaging 24.0
-python-pathspec 0.12.1
-python-platformdirs 4.2.0
-python-setuptools 69.5.1
-python-tabulate 0.9.0_1
 python@3.10 3.10.14
 python@3.11 3.11.9
 python@3.12 3.12.3 3.12.2_1
@@ -387,15 +372,14 @@ range-v3 0.12.0
 rav1e 0.7.1
 readline 8.2.10
 recode 3.7.14
-ripgrep 14.1.0
 rpm2cpio 1.4
 rsync 3.3.0
 rtmpdump 2.4-20151223_3
 rubberband 3.3.0
 ruby 3.3.1
 ruby-install 0.9.3
-rust-analyzer 2024-04-29
-samba 4.20.0
+rust-analyzer 2024-05-13
+samba 4.20.1
 scrcpy 2.4_1
 screenresolution 1.6
 sdl12-compat 1.2.68
@@ -420,12 +404,12 @@ sox 14.4.2_5
 spdlog 1.13.0
 speex 1.2.1
 sphinx 2.2.11_4
-sphinx-doc 7.3.7
+sphinx-doc 7.3.7_1
 spotify-tui v0.23.0
 sqlite 3.45.3
 srt 1.5.3
 st 1.1.4_1
-starship 1.18.2
+starship 1.19.0
 stow 2.4.0
 svt-av1 2.0.0
 switchaudio-osx 1.2.2
@@ -439,24 +423,24 @@ texinfo 7.1
 texlab 5.16.0
 theora 1.1.1
 tidy-html5 5.8.0
-tig 2.5.9
+tig 2.5.10
 timg 1.6.0_1
 tldr 1.6.1
 tmux 3.4_1
 toilet 0.3
 tree 2.1.1_1
-tree-sitter 0.22.5
+tree-sitter 0.22.6
 ttyd 1.7.7
-typst 0.11.0
+typst 0.11.1
 uchardet 0.0.8
 ueberzugpp 2.9.2
-unbound 1.19.3
+unbound 1.20.0
 unixodbc 2.3.12
 unrtf 0.21.10
 unzip 6.0_8
 utf8proc 2.9.0
 uthash 2.3.0
-vapoursynth 67
+vapoursynth 68
 vips 8.15.2_1
 vitetris 0.59.1
 vivid 0.9.0
@@ -472,12 +456,12 @@ xcb-util 0.4.1
 xcb-util-image 0.4.1
 xmlto 0.0.28
 xorgproto 2024.1
-xplr 0.21.7
-xterm 390
+xplr 0.21.8
+xterm 391
 xvid 1.3.7
 xxhash 0.8.2
 xz 5.4.6
-yabai 7.1.0
+yabai 7.1.1
 yarn 1.22.22
 youtube-dl 2021.12.17
 yt-dlp 2024.4.9_1
@@ -486,7 +470,7 @@ zathura-pdf-mupdf 0.3.9_1
 zeromq 4.3.5_1
 zimg 3.0.5
 zlib 1.3.1
-zsh-abbr 5.4.1
+zsh-abbr 5.7.1
 zstd 1.5.6
 alacritty 0.13.2
 alfred 4.5.1,1256
@@ -494,20 +478,19 @@ amethyst 0.15.3
 android-platform-tools 35.0.1
 dmenu-mac 0.7.2
 font-hack-nerd-font 3.2.1
-gimp 2.10.36
 hammerspoon 0.9.90
 imageoptim 1.9.3
-librewolf 125.0.3,1
+librewolf 126.0,1
 macfuse 4.2.3
 nuclear 0.6.30
 osxfuse 3.11.2
 penc 1.0.0
-phoenix-slides 1.5.7
+phoenix-slides 1.5.9
 platypus 5.3,1113
 qtpass 1.4.0
 qutebrowser 3.1.0
 qview 6.1
-rar 7.00
+rar 7.01
 raycast 1.62.1
 sf-symbols 5
 sioyek 2.0.0
@@ -524,9 +507,9 @@ zed 0.132.5
 
 ```txt {mise}
 cabal                         3.10.3.0  ~/.config/mise/config.toml latest        
-go                            1.22.2    ~/.config/mise/config.toml latest        
-node                          22.1.0    ~/.config/mise/config.toml latest        
-pandoc                        3.1.13    ~/.config/mise/config.toml latest        
+go                            1.22.3    ~/.config/mise/config.toml latest        
+node                          22.2.0    ~/.config/mise/config.toml latest        
+pandoc                        3.2       ~/.config/mise/config.toml latest        
 python                        3.8.19    ~/.config/mise/config.toml sub-0.4:latest
 python                        3.9.19    ~/.config/mise/config.toml sub-0.3:latest
 python                        3.10.14   ~/.config/mise/config.toml sub-0.2:latest
@@ -537,10 +520,11 @@ ubi:PaulJuliusMartinez/jless  0.7.0     ~/.config/mise/config.toml latest
 ubi:etcd-io/etcd              3.3.27    ~/.config/mise/config.toml latest        
 ubi:filosottile/age           1.1.1     ~/.config/mise/config.toml 1.1.1         
 ubi:goreleaser/goreleaser     1.13.0    ~/.config/mise/config.toml latest        
+ubi:houseabsolute/precious    0.0.7     ~/.config/mise/config.toml latest        
 ubi:ismaelgv/rnr              0.1.6     ~/.config/mise/config.toml latest        
 ubi:mgdm/htmlq                0.2.0     ~/.config/mise/config.toml latest        
 ubi:pvolok/mprocs             0.0.1     ~/.config/mise/config.toml latest        
-usage                         0.1.18    ~/.config/mise/config.toml latest        
+usage                         0.2.0     ~/.config/mise/config.toml latest        
 watchexec                     2.1.1     ~/.config/mise/config.toml latest        
 ```
 
@@ -616,6 +600,8 @@ pngquant v3.0.3:
     pngquant
 porsmo v0.3.2:
     porsmo
+ripgrep v14.1.0:
+    rg
 sd v1.0.0:
     sd
 simple-completion-language-server v0.1.0 (https://github.com/estin/simple-completion-language-server.git#ff9f90bc):
@@ -657,14 +643,14 @@ package ncdump-rich 0.5.2, installed using Python 3.12.0
 package nox 2024.4.15, installed using Python 3.12.0
  - nox
  - tox-to-nox
-package pandoc-include 1.3.0, installed using Python 3.12.0
+package pandoc-include 1.3.2, installed using Python 3.12.0
  - pandoc-include
 package pipenv 2023.12.1, installed using Python 3.12.0
  - pipenv
  - pipenv-resolver
-package poetry 1.8.2, installed using Python 3.12.0
+package poetry 1.8.3, installed using Python 3.12.0
  - poetry
-package pre-commit 3.7.0, installed using Python 3.12.2
+package pre-commit 3.7.1, installed using Python 3.12.2
  - pre-commit
 package pypistats 1.5.0, installed using Python 3.12.0
  - pypistats
