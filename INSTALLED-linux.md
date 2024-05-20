@@ -137,7 +137,7 @@ cmake 3.22.1-1ubuntu1.22.04.2 [Ubuntu/jammy main]
 cmake-data 3.22.1-1ubuntu1.22.04.2 [Ubuntu/jammy main]
 cmatrix 2.0-3 [Ubuntu/jammy universe]
 cmdtest 0.32.14.gcdfe14e-2 [Ubuntu/jammy universe]
-code 1.65.1-1646706496 [local]
+code 1.89.1-1715060508 [code stable/stable main]
 colord 1.4.6-1 [Ubuntu/jammy main]
 colord-data 1.4.6-1 [Ubuntu/jammy main]
 comerr-dev 2.1-1.46.5-2ubuntu1.1 [Ubuntu/jammy main]
@@ -228,9 +228,9 @@ docbook-xml 4.5-11 [Ubuntu/jammy main]
 docbook-xsl 1.79.2+dfsg-1 [Ubuntu/jammy universe]
 docker 1.5-2 [Ubuntu/jammy universe]
 docker-buildx-plugin 0.14.0-1~ubuntu.20.04~focal [Docker CE/ stable]
-docker-ce 5:26.1.2-1~ubuntu.20.04~focal [Docker CE/ stable]
-docker-ce-cli 5:26.1.2-1~ubuntu.20.04~focal [Docker CE/ stable]
-docker-ce-rootless-extras 5:26.1.2-1~ubuntu.20.04~focal [Docker CE/ stable]
+docker-ce 5:26.1.3-1~ubuntu.20.04~focal [Docker CE/ stable]
+docker-ce-cli 5:26.1.3-1~ubuntu.20.04~focal [Docker CE/ stable]
+docker-ce-rootless-extras 5:26.1.3-1~ubuntu.20.04~focal [Docker CE/ stable]
 docker-compose-plugin 2.27.0-1~ubuntu.20.04~focal [Docker CE/ stable]
 docutils-common 0.17.1+dfsg-2 [Ubuntu/jammy main]
 docx2txt 1.4-5 [Ubuntu/jammy universe]
@@ -3997,10 +3997,10 @@ shellcheck 0.8.0-2 [Ubuntu/jammy universe]
 shfmt 3.7.0-pacstall1 [local]
 shfmt-bin 3.4.3-1 [local]
 shim-signed 1.51.3+15.7-0ubuntu1 [Ubuntu/jammy main]
-signal-desktop 7.8.0 [. xenial/xenial main]
+signal-desktop 7.9.0 [. xenial/xenial main]
 signon-plugin-oauth2 0.25-2 [Ubuntu/jammy universe]
 silversearcher-ag 2.2.0+git20200805-1 [Ubuntu/jammy universe]
-slack-desktop 4.37.101 [slack/jessie main]
+slack-desktop 4.38.121 [slack/jessie main]
 slirp4netns 1.0.1-2 [Ubuntu/jammy universe]
 slop 7.5-1.1build2 [Ubuntu/jammy universe]
 snapd 2.62+22.04 [Ubuntu/jammy main]
@@ -4346,7 +4346,7 @@ name: nala version: 0.15.2
 name: neofetch version: 7.1.0-pacstall1
 name: quarto version: 1.3.450
 name: shfmt version: 3.7.0-pacstall1
-name: signal-desktop version: 7.8.0
+name: signal-desktop version: 7.9.0
 name: thorium-browser version: 123.0.6312.133-1
 name: wezterm version: 20230712-072601-f4abf8fd-pacstall1
 name: zoom version: 6.0.2.4680
@@ -4357,7 +4357,7 @@ name: zoom version: 6.0.2.4680
 ```txt {mise}
 cabal                         3.10.3.0  ~/.config/mise/config.toml latest        
 go                            1.22.3    ~/.config/mise/config.toml latest        
-node                          22.1.0    ~/.config/mise/config.toml latest        
+node                          22.2.0    ~/.config/mise/config.toml latest        
 pandoc                        3.2       ~/.config/mise/config.toml latest        
 python                        3.8.19    ~/.config/mise/config.toml sub-0.4:latest
 python                        3.9.19    ~/.config/mise/config.toml sub-0.3:latest
@@ -4365,14 +4365,15 @@ python                        3.10.14   ~/.config/mise/config.toml sub-0.2:lates
 python                        3.11.9    ~/.config/mise/config.toml sub-0.1:latest
 python                        3.12.3    ~/.config/mise/config.toml latest        
 tinytex                       2024.05   ~/.config/mise/config.toml latest        
-ubi:PaulJuliusMartinez/jless  v0.7.0    ~/.config/mise/config.toml latest        
-ubi:etcd-io/etcd              v3.3.27   ~/.config/mise/config.toml latest        
+ubi:PaulJuliusMartinez/jless  v0.9.0    ~/.config/mise/config.toml latest        
+ubi:ajeetdsouza/zoxide        v0.9.4    ~/.config/mise/config.toml latest        
+ubi:etcd-io/etcd              v3.4.32   ~/.config/mise/config.toml latest        
 ubi:filosottile/age           1.1.1     ~/.config/mise/config.toml 1.1.1         
-ubi:goreleaser/goreleaser     v1.13.0   ~/.config/mise/config.toml latest        
-ubi:houseabsolute/precious    v0.0.7    ~/.config/mise/config.toml latest        
-ubi:ismaelgv/rnr              v0.1.6    ~/.config/mise/config.toml latest        
-ubi:mgdm/htmlq                v0.2.0    ~/.config/mise/config.toml latest        
-ubi:pvolok/mprocs             v0.0.1    ~/.config/mise/config.toml latest        
+ubi:goreleaser/goreleaser     v1.26.1   ~/.config/mise/config.toml latest        
+ubi:houseabsolute/precious    v0.7.2    ~/.config/mise/config.toml latest        
+ubi:ismaelgv/rnr              v0.4.2    ~/.config/mise/config.toml latest        
+ubi:mgdm/htmlq                v0.4.0    ~/.config/mise/config.toml latest        
+ubi:pvolok/mprocs             v0.6.4    ~/.config/mise/config.toml latest        
 usage                         0.2.0     ~/.config/mise/config.toml latest        
 watchexec                     2.1.1     ~/.config/mise/config.toml latest        
 ```
@@ -4384,7 +4385,7 @@ alacritty v0.13.2:
     alacritty
 atuin v18.2.0:
     atuin
-bacon v2.17.0:
+bacon v2.18.0:
     bacon
 bat v0.24.0:
     bat
@@ -4392,7 +4393,7 @@ blindfold v1.0.7:
     blindfold
 bob-nvim v2.9.1:
     bob
-cargo-binstall v1.6.6:
+cargo-binstall v1.6.7:
     cargo-binstall
 cargo-edit v0.12.2:
     cargo-add
@@ -4420,7 +4421,7 @@ du-dust v1.0.0:
     dust
 evcxr_jupyter v0.17.0:
     evcxr_jupyter
-eza v0.18.15:
+eza v0.18.16:
     eza
 fd-find v10.1.0:
     fd
@@ -4432,7 +4433,7 @@ git-cliff v2.2.2:
     git-cliff-mangen
 git-delta v0.17.0:
     delta
-gitui v0.26.1:
+gitui v0.26.2:
     gitui
 halp v0.1.7:
     halp
@@ -4455,9 +4456,9 @@ languagetool-rust v2.1.4:
     ltrs
 lscolors v0.17.0:
     lscolors
-mdbook v0.4.37:
+mdbook v0.4.40:
     mdbook
-mdbook-admonish v1.15.0:
+mdbook-admonish v1.16.0:
     mdbook-admonish
 mdbook-svgbob v0.2.1:
     mdbook-svgbob
@@ -4465,7 +4466,7 @@ mdbook-toc v0.14.2:
     mdbook-toc
 menyoki v1.7.0:
     menyoki
-mise v2024.5.16:
+mise v2024.5.18:
     mise
 mprocs v0.6.4:
     mprocs
@@ -4482,7 +4483,7 @@ porsmo v0.3.2:
 pueue v3.4.0:
     pueue
     pueued
-riffdiff v3.1.3:
+riffdiff v3.2.0:
     riff
 ripgrep v14.1.0:
     rg
@@ -4999,7 +5000,7 @@ i zref: A new reference scheme for LaTeX
 
 ```txt {flatpak}
 Name                                    Version                                 Branch
-hrkfdn                                  1.1.0                                   stable
+hrkfdn                                  1.1.1                                   stable
 Freedesktop Platform                    22.08.24                                22.08
 Freedesktop Platform                    23.08.17                                23.08
 Mesa                                    24.0.4                                  22.08

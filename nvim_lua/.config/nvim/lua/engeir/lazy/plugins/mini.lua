@@ -162,6 +162,7 @@ return {
       set_comment("ncl", ";%s")
       set_comment("nu", "#%s")
       set_comment("sent", "#%s")
+      set_comment("kdl", "#%s")
     end,
     config = true,
   },

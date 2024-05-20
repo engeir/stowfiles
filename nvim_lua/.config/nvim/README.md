@@ -4,14 +4,13 @@
 <a href="https://dotfyle.com/engeir/stowfiles-nvimlua-config-nvim"><img src="https://dotfyle.com/engeir/stowfiles-nvimlua-config-nvim/badges/leaderkey?style=for-the-badge" /></a>
 <a href="https://dotfyle.com/engeir/stowfiles-nvimlua-config-nvim"><img src="https://dotfyle.com/engeir/stowfiles-nvimlua-config-nvim/badges/plugin-manager?style=for-the-badge" /></a>
 
-This is @engeir's Neovim config, on NVIM v0.9.5 (view [latest nightly
+This is @engeir's Neovim config, on NVIM v0.10.0 (view [latest nightly
 build](https://github.com/neovim/neovim/tree/nightly)) installed with the [bob version
 manager for neovim](https://github.com/MordechaiHadad/bob). I am currently using the
 [lazy plugin manager](https://github.com/folke/lazy.nvim). Below is a complete list of
 all plugins I'm using:
 
 - [aerial.nvim](https://github.com/stevearc/aerial.nvim.git)
-- [auto-hlsearch.nvim](https://github.com/asiryk/auto-hlsearch.nvim.git)
 - [autolist.nvim](https://github.com/gaoDean/autolist.nvim.git)
 - [boole.nvim](https://github.com/nat-418/boole.nvim.git)
 - [bufferline](https://github.com/akinsho/bufferline.nvim.git)
@@ -97,6 +96,7 @@ all plugins I'm using:
 - [nvim-treesitter-textobjects](https://github.com/nvim-treesitter/nvim-treesitter-textobjects.git)
 - [nvim-treesitter](https://github.com/nvim-treesitter/nvim-treesitter.git)
 - [nvim-ts-autotag](https://github.com/windwp/nvim-ts-autotag.git)
+- [nvim-ts-context-commentstring](https://github.com/JoosepAlviste/nvim-ts-context-commentstring.git)
 - [nvim-ts-rainbow](https://github.com/p00f/nvim-ts-rainbow.git)
 - [nvim-web-devicons](https://github.com/nvim-tree/nvim-web-devicons.git)
 - [obsidian.nvim](https://github.com/epwalsh/obsidian.nvim.git)
