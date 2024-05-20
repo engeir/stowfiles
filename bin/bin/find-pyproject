@@ -1,0 +1,35 @@
+#!/usr/bin/env bash
+
+# Function to find a file in the current directory.
+findfile() {
+    if find . -maxdepth 1 -type f -name "$1" >/dev/null; then
+        return 0
+    else
+        return 1
+    fi
+}
+# Function to look for a word in a file.
+findword() {
+    if grep -q "$1" "$2"; then
+        echo "$1"
+        exit 0
+    fi
+}
+
+if findfile "pyproject.toml"; then
+    findword "poetry" "pyproject.toml"
+    findword "rye" "pyproject.toml"
+fi
+if findfile "poetry.lock"; then
+    echo "poetry" && exit 0
+fi
+if findfile "requirements.txt"; then
+    fidnword "rye" "requirements.txt"
+fi
+if findfile "requirements.lock"; then
+    fidnword "rye" "requirements.txt"
+fi
+if findfile "Pipfile"; then
+    echo "pipenv" && exit 0
+fi
+echo "" && exit 0

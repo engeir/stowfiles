@@ -1,5 +1,5 @@
 format = """
-$custom\
+${custom.sudo}\
 $username\
 $hostname\
 $shlvl\
@@ -37,6 +37,7 @@ $php\
 $pulumi\
 $purescript\
 $python\
+${custom.python-project}\
 $rlang\
 $red\
 $ruby\
@@ -95,6 +96,19 @@ command = "echo -n '!'"
 format = "[$symbol$output]($style) "
 style = "bold fg:bright-red"
 when = "sudo -vn &>/dev/null"
+
+[custom.python-project]
+description = "print the python package manager"
+command = "find-pyproject"
+format = "[using $symbol$output]($style) "
+style = "dimmed fg:yellow"
+detect_files = [
+  "pyproject.toml",
+  "poetry.lock",
+  "requirements.txt",
+  "requirements.lock",
+  "Pipfile",
+]
 
 [directory]
 style = "bold #8dbf7b"
