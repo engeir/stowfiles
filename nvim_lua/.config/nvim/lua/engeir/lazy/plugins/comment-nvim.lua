@@ -2,7 +2,7 @@ local version
 if vim.fn.has("nvim-0.10") == 1 then
   -- We don't need a commenting plugin any more! But maybe we do, since I don't think we
   -- can configure custom comment rules yet.
-  version = true -- false
+  version = false -- false
 else
   version = true
 end
