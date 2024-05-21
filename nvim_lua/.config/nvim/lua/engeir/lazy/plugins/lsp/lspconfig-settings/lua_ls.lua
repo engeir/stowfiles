@@ -26,6 +26,7 @@ return {
           max_line_length = 88,
         },
       },
+      hint = { enable = true },
       runtime = {
         version = "LuaJIT",
         -- path = runtime_path,

@@ -46,6 +46,9 @@ return {
           require("telescope.builtin").lsp_type_definitions,
           "[G]oto Type Definition ([H]int)"
         )
+        nmap("gH", function()
+          vim.lsp.inlay_hint.enable(not vim.lsp.inlay_hint.is_enabled({}))
+        end, "Toggle inlay [H]int")
         -- nmap("gt", vim.lsp.buf.type_definition, "[G]oto [T]ype Definition")
         nmap(
           "<leader>ds",

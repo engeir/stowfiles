@@ -8,6 +8,7 @@ return {
       bash = { "shellcheck" },
       go = { "golangcilint" },
       json = { "jsonlint" },
+      -- lua = { "selene", "luacheck" },
       markdown = { "markdownlint" }, -- vale is run via lsp (vale_ls)
       python = { "mypy" }, -- ruff is run via lsp, don't need it here
       -- rst = { "rstcheck" },  -- rstcheck doesn't seem to work
