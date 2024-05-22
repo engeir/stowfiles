@@ -90,7 +90,6 @@ all plugins I'm using:
 - [nvim-nu](https://github.com/LhKipp/nvim-nu.git)
 - [nvim-osc52](https://github.com/ojroques/nvim-osc52.git)
 - [nvim-rulebook](https://github.com/chrisgrieser/nvim-rulebook.git)
-- [nvim-spider](https://github.com/chrisgrieser/nvim-spider.git)
 - [nvim-treesitter-context](https://github.com/nvim-treesitter/nvim-treesitter-context.git)
 - [nvim-treesitter-textobjects](https://github.com/nvim-treesitter/nvim-treesitter-textobjects.git)
 - [nvim-treesitter](https://github.com/nvim-treesitter/nvim-treesitter.git)
