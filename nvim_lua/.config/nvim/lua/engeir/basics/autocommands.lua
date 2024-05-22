@@ -9,6 +9,17 @@ vim.api.nvim_create_autocmd({ "FileType" }, {
   end,
 })
 
+-- Save buffers with tex files if focus is lost. Mimics the behaviour in helix.
+vim.api.nvim_create_autocmd({ "FocusLost" }, {
+  pattern = { "*.tex" },
+  callback = function()
+    if vim.bo.modified then
+      vim.cmd("silent! wa")
+      vim.cmd("silent! TexlabBuild") -- Might be too much
+    end
+  end,
+})
+
 -- Close quickfix menu after selecting choice
 vim.api.nvim_create_autocmd("FileType", {
   pattern = { "qf" },

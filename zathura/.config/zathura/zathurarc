@@ -19,7 +19,7 @@ map <C-b> feedkeys ":exec getbib-linux-copy $FILE<Return>"
 
 # Backward search for tex editing
 set synctex true
-set synctex-editor-command "gvim --remote-silent +%{line} %{input}"
+set synctex-editor-command "texlab inverse-search -i %{input} -l %{line}"
 
 # Transparency (same as #2d2d2d which is set in Xresources)
 set default-bg rgba(45,45,45,0.90)
