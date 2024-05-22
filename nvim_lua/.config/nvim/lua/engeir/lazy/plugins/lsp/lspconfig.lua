@@ -73,7 +73,6 @@ return {
           "<cmd>lua vim.lsp.buf.range_code_action()<cr>",
           "Range [C]ode [A]ction"
         )
-        nmap("K", vim.lsp.buf.hover, "Hover Documentation")
         imap("<C-s>", vim.lsp.buf.signature_help, "Signature Documentation") -- default since nvim0.10.0
         imap("<C-s>", vim.lsp.buf.signature_help, "Signature Documentation") -- default since nvim0.10.0
         -- Lesser used LSP functionality
