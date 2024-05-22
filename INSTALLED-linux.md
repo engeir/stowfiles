@@ -3242,7 +3242,7 @@ libzxingcore1 1.2.0-1 [Ubuntu/jammy universe]
 libzzip-0-13 0.13.72+dfsg.1-1.1 [Ubuntu/jammy universe]
 lightdm 1.30.0-0ubuntu5 [Ubuntu/jammy universe]
 links 2.25-1build1 [Ubuntu/jammy universe]
-lintian 2.114.0ubuntu1.3 [Ubuntu/jammy main]
+lintian 2.114.0ubuntu1.3 [local]
 linux-base 4.5ubuntu9 [Ubuntu/jammy main]
 linux-firmware 20220329.git681281e4-0ubuntu3.30 [Ubuntu/jammy main]
 linux-generic 5.15.0.107.107 [Ubuntu/jammy main]
@@ -3659,7 +3659,7 @@ python3-httpcore 0.14.5-1 [Ubuntu/jammy universe]
 python3-httplib2 0.20.2-2 [Ubuntu/jammy main]
 python3-httpx 0.22.0-1 [Ubuntu/jammy universe]
 python3-ibus-1.0 1.5.26-4 [Ubuntu/jammy main]
-python3-idna 3.3-1 [Ubuntu/jammy main]
+python3-idna 3.3-1ubuntu0.1 [Ubuntu/jammy main]
 python3-imagesize 1.3.0-1 [Ubuntu/jammy main]
 python3-img2pdf 0.4.2-2 [Ubuntu/jammy universe]
 python3-importlib-metadata 4.6.4-1 [Ubuntu/jammy main]
@@ -4000,7 +4000,7 @@ shim-signed 1.51.3+15.7-0ubuntu1 [Ubuntu/jammy main]
 signal-desktop 7.9.0 [. xenial/xenial main]
 signon-plugin-oauth2 0.25-2 [Ubuntu/jammy universe]
 silversearcher-ag 2.2.0+git20200805-1 [Ubuntu/jammy universe]
-slack-desktop 4.38.121 [slack/jessie main]
+slack-desktop 4.38.125 [slack/jessie main]
 slirp4netns 1.0.1-2 [Ubuntu/jammy universe]
 slop 7.5-1.1build2 [Ubuntu/jammy universe]
 snapd 2.62+22.04 [Ubuntu/jammy main]
@@ -4385,7 +4385,7 @@ alacritty v0.13.2:
     alacritty
 atuin v18.2.0:
     atuin
-bacon v2.18.0:
+bacon v2.18.1:
     bacon
 bat v0.24.0:
     bat
@@ -4466,7 +4466,7 @@ mdbook-toc v0.14.2:
     mdbook-toc
 menyoki v1.7.0:
     menyoki
-mise v2024.5.18:
+mise v2024.5.20:
     mise
 mprocs v0.6.4:
     mprocs
@@ -4541,7 +4541,7 @@ zellij v0.40.1:
 
 ```txt {pipx}
 manual pages are exposed at /home/een023/.local/share/man
-package ansible-core 2.16.6, installed using Python 3.12.2
+package ansible-core 2.17.0, installed using Python 3.12.2
  - ansible
  - ansible-config
  - ansible-connection
@@ -4645,6 +4645,10 @@ package rofimoji 6.3.1, installed using Python 3.12.2
 package tuiview 0.1.1, installed using Python 3.12.2
  - tuiview
  - tv
+package volcano-cooking 0.12.1, installed using Python 3.12.3
+ - sfrc-sparse2lin
+ - view-frc
+ - volcano-cooking
 package wtpython 0.1.0, installed using Python 3.12.2
  - wtpython
 ```
