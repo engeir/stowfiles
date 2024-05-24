@@ -17,7 +17,7 @@ return {
         jsonc = { "dprint" },
         lua = { "stylua" },
         markdown = { "dprint" },
-        python = { "ruff_fix", "ruff_format" }, -- Trying to remove black(d), ruff takes care of this now
+        python = { "ruff_format", "ruff_fix" },
         rust = { "rustfmt" },
         sh = { "shfmt", "shellharden", "shellcheck", "beautysh" },
         toml = { "dprint", "taplo" },
