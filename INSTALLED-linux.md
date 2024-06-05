@@ -4353,27 +4353,26 @@ name: zoom version: 6.0.10.5325
 ## Mise
 
 ```txt {mise}
-cabal                         3.10.3.0  ~/.config/mise/config.toml latest        
-go                            1.22.3    ~/.config/mise/config.toml latest        
-node                          22.2.0    ~/.config/mise/config.toml latest        
-pandoc                        3.2       ~/.config/mise/config.toml latest        
-python                        3.8.19    ~/.config/mise/config.toml sub-0.4:latest
-python                        3.9.19    ~/.config/mise/config.toml sub-0.3:latest
-python                        3.10.14   ~/.config/mise/config.toml sub-0.2:latest
-python                        3.11.9    ~/.config/mise/config.toml sub-0.1:latest
-python                        3.12.3    ~/.config/mise/config.toml latest        
-tinytex                       2024.06   ~/.config/mise/config.toml latest        
-ubi:PaulJuliusMartinez/jless  v0.9.0    ~/.config/mise/config.toml latest        
-ubi:ajeetdsouza/zoxide        v0.9.4    ~/.config/mise/config.toml latest        
-ubi:etcd-io/etcd              v3.4.32   ~/.config/mise/config.toml latest        
-ubi:filosottile/age           v1.1.1    ~/.config/mise/config.toml latest        
-ubi:goreleaser/goreleaser     v1.26.1   ~/.config/mise/config.toml latest        
-ubi:houseabsolute/precious    v0.7.2    ~/.config/mise/config.toml latest        
-ubi:ismaelgv/rnr              v0.4.2    ~/.config/mise/config.toml latest        
-ubi:mgdm/htmlq                v0.4.0    ~/.config/mise/config.toml latest        
-ubi:pvolok/mprocs             v0.6.4    ~/.config/mise/config.toml latest        
-usage                         0.3.0     ~/.config/mise/config.toml latest        
-watchexec                     2.1.1     ~/.config/mise/config.toml latest        
+cabal                       3.10.3.0  ~/.config/mise/config.toml latest        
+go                          1.22.3    ~/.config/mise/config.toml latest        
+node                        22.2.0    ~/.config/mise/config.toml latest        
+pandoc                      3.2       ~/.config/mise/config.toml latest        
+python                      3.8.19    ~/.config/mise/config.toml sub-0.4:latest
+python                      3.9.19    ~/.config/mise/config.toml sub-0.3:latest
+python                      3.10.14   ~/.config/mise/config.toml sub-0.2:latest
+python                      3.11.9    ~/.config/mise/config.toml sub-0.1:latest
+python                      3.12.3    ~/.config/mise/config.toml latest        
+tinytex                     2024.06   ~/.config/mise/config.toml latest        
+ubi:ajeetdsouza/zoxide      v0.9.4    ~/.config/mise/config.toml latest        
+ubi:etcd-io/etcd            v3.4.32   ~/.config/mise/config.toml latest        
+ubi:filosottile/age         v1.1.1    ~/.config/mise/config.toml latest        
+ubi:goreleaser/goreleaser   v1.26.1   ~/.config/mise/config.toml latest        
+ubi:houseabsolute/precious  v0.7.2    ~/.config/mise/config.toml latest        
+ubi:ismaelgv/rnr            v0.4.2    ~/.config/mise/config.toml latest        
+ubi:mgdm/htmlq              v0.4.0    ~/.config/mise/config.toml latest        
+ubi:pvolok/mprocs           v0.6.4    ~/.config/mise/config.toml latest        
+usage                       0.3.0     ~/.config/mise/config.toml latest        
+watchexec                   2.1.1     ~/.config/mise/config.toml latest        
 ```
 
 ## Cargo
