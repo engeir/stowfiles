@@ -68,6 +68,8 @@ export DPRINT_INSTALL="$HOME/.local/bin/"
 export PATH="$PATH:$HOME/.config/emacs/bin"
 # forgit
 export FORGIT_FZF_DEFAULT_OPTS
+# ripgrep
+export RIPGREP_CONFIG_PATH="$HOME/.config/ripgrep/ripgreprc"
 # rush
 export RUSH_CONFIG="$HOME/.config/rush/rush.ini"
 # ruby / gem
