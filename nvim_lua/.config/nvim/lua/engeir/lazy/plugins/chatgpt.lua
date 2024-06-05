@@ -1,7 +1,7 @@
 return {
   "jackMort/ChatGPT.nvim",
   enabled = IS_KNOWN,
-  event = "VeryLazy",
+  event = { "BufReadPre", "BufNewFile" },
   opts = {
     api_key_cmd = "pass ChatGPT/nvim-api-key",
   },

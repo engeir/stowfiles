@@ -12,7 +12,7 @@ return {
   -- mini.ai -------------------------------------------------------------------------
   {
     "echasnovski/mini.ai",
-    event = "VeryLazy",
+    event = "InsertEnter",
     config = true,
   },
 
@@ -259,7 +259,7 @@ return {
   { "echasnovski/mini.splitjoin", config = true },
 
   -- mini.surround -------------------------------------------------------------------
-  { "echasnovski/mini.surround", config = true, event = "VeryLazy" },
+  { "echasnovski/mini.surround", config = true, event = "InsertEnter" },
 
   -- mini.starter --------------------------------------------------------------------
   {
@@ -272,7 +272,8 @@ return {
         -- local fortune = handle:read("*a")
         -- handle:close()
         -- return fortune
-        local handle = io.popen("nvim --version")
+        local handle = nil
+        -- local handle = io.popen("nvim --version")
         if handle == nil then
           return "Nvim Config by @engeir"
         end

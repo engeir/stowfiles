@@ -1,6 +1,6 @@
 return {
   "neovim/nvim-lspconfig",
-  -- event = { "BufReadPre", "BufNewFile" },
+  event = { "BufReadPre", "BufNewFile" },
   dependencies = {
     "hrsh7th/cmp-nvim-lsp",
     -- NOTE: this must be here, so that Mason config is run before this

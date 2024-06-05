@@ -85,7 +85,7 @@ return {
   },
   {
     "sainnhe/gruvbox-material",
-    event = "VimEnter",
+    event = "VeryLazy",
     enabled = true,
     lazy = true,
     priority = 1000,

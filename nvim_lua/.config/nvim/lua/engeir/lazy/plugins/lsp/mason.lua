@@ -1,5 +1,6 @@
 return {
   "williamboman/mason.nvim",
+  event = { "BufReadPre", "BufNewFile" },
   build = ":MasonUpdate",
   cmd = { "Mason" },
   dependencies = {

@@ -1,6 +1,6 @@
 return {
   "LhKipp/nvim-nu",
   build = ":TSInstall nu",
-  event = { "VeryLazy" },
+  event = { "BufReadPre", "BufNewFile" },
   ft = { "nu" },
 }

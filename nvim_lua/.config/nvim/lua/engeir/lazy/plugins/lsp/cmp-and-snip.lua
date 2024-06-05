@@ -6,7 +6,7 @@ return {
       { "hrsh7th/cmp-nvim-lsp" },
       { "hrsh7th/cmp-buffer", event = { "BufReadPost" } },
       { "hrsh7th/cmp-path", event = { "BufReadPost" } },
-      { "hrsh7th/cmp-cmdline", event = { "CmdlineEnter" } },
+      { "hrsh7th/cmp-cmdline", event = { "BufReadPre", "BufNewFile" } },
       { "L3MON4D3/LuaSnip", event = { "BufReadPre", "BufNewFile" } },
       { "saadparwaiz1/cmp_luasnip", event = { "BufReadPost" } },
       { "hrsh7th/cmp-nvim-lua", event = { "BufReadPost" } },

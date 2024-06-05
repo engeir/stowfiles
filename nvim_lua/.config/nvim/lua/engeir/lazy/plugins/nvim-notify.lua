@@ -1,6 +1,6 @@
 return {
   "rcarriga/nvim-notify",
-  event = { "VeryLazy" },
+  event = { "BufReadPre", "BufNewFile" },
   enabled = IS_KNOWN,
   config = function()
     require("notify").setup({

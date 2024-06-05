@@ -8,10 +8,13 @@ EOF
 return {
   {
     "nvim-telescope/telescope.nvim",
-    event = "VimEnter",
     branch = "0.1.x",
+    event = { "BufReadPre", "BufNewFile" },
     dependencies = {
-      "nvim-telescope/telescope-bibtex.nvim",
+      {
+        "nvim-telescope/telescope-bibtex.nvim",
+        event = { "BufReadPre", "BufNewFile" },
+      },
       "nvim-lua/plenary.nvim",
       { "nvim-telescope/telescope-fzf-native.nvim", build = "make" },
       "nvim-tree/nvim-web-devicons",
@@ -252,6 +255,7 @@ return {
   },
   {
     "nvim-telescope/telescope-bibtex.nvim",
+    event = { "BufReadPre", "BufNewFile" },
     config = function()
       require("telescope").load_extension("bibtex")
     end,
@@ -262,7 +266,7 @@ return {
   },
   {
     "nvim-telescope/telescope-ui-select.nvim",
-    event = "VimEnter",
+    event = "InsertEnter",
     config = function()
       require("telescope").load_extension("ui-select")
     end,

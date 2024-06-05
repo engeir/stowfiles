@@ -34,7 +34,7 @@ return {
   {
     -- TODO: replace with mini.tabline?
     "akinsho/bufferline.nvim",
-    event = { "BufEnter" },
+    event = { "BufReadPre", "BufNewFile" },
     name = "bufferline",
     dependencies = {
       "nvim-tree/nvim-web-devicons",
@@ -59,7 +59,7 @@ return {
   {
     -- TODO: replace with mini.statusline?
     "nvim-lualine/lualine.nvim",
-    event = { "BufEnter" },
+    event = { "BufReadPre", "BufNewFile" },
     name = "lualine",
     opts = {
       options = {
