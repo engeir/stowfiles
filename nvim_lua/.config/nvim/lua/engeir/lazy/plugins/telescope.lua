@@ -177,17 +177,15 @@ return {
             },
             -- find_cmd = "fd", -- find command (defaults to `fd`)
           },
+          smart_open = {
+            match_algorithm = "fzf",
+            disable_devicons = false,
+          },
         },
       })
 
       telescope.load_extension("fzf")
 
-      vim.keymap.set("n", "<leader>b", function()
-        require("telescope.builtin").buffers({
-          sort_mru = true,
-          ignore_current_buffer = true,
-        })
-      end, { desc = "Find [B]uffers" })
       vim.keymap.set("n", "<leader>fc", function()
         require("telescope.builtin").commands()
       end, { desc = "[F]ind [C]ommands" })
@@ -197,9 +195,6 @@ return {
       vim.keymap.set("n", "<leader>ff", function()
         require("telescope.builtin").find_files({ hidden = true })
       end, { desc = "[F]ind [F]iles" })
-      vim.keymap.set("n", "<leader>fg", function()
-        require("telescope.builtin").git_files()
-      end, { desc = "[F]ind [G]itfiles" }) -- {git_command={'git', 'grep', '--cached', '-Il', '\"\"'}}
       vim.keymap.set("n", "<leader>fh", function()
         require("telescope.builtin").help_tags()
       end, { desc = "[F]ind [H]elp tags" })
@@ -271,6 +266,30 @@ return {
         },
       })
     end,
+  },
+  {
+    "danielfalk/smart-open.nvim",
+    event = { "BufReadPre", "BufNewFile" },
+    branch = "0.2.x",
+    config = function()
+      require("telescope").load_extension("smart_open")
+    end,
+    dependencies = {
+      "kkharji/sqlite.lua",
+      -- Only required if using match_algorithm fzf
+      { "nvim-telescope/telescope-fzf-native.nvim", build = "make" },
+      -- Optional.  If installed, native fzy will be used when match_algorithm is fzy
+      -- { "nvim-telescope/telescope-fzy-native.nvim" },
+    },
+    keys = {
+      {
+        "<leader>fg",
+        function()
+          require("telescope").extensions.smart_open.smart_open()
+        end,
+        { desc = "[F]find [F]files", noremap = true, silent = true },
+      },
+    },
   },
   {
     "nvim-telescope/telescope-bibtex.nvim",
