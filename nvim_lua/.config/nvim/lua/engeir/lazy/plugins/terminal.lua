@@ -33,7 +33,11 @@ return {
         ":FloatermNew --wintype=float --position=right --autoclose=2 nnn -dH<CR>",
         opts
       )
-      keymap("n", "<leader>H", ":/%%<CR>VN", opts)
+      keymap("n", "<leader>H", ":/%%<CR>VN", {
+        desc = "Notebook: Jump to next [H]ighligh region",
+        silent = true,
+        noremap = true,
+      })
       keymap(
         "v",
         "<C-r>",

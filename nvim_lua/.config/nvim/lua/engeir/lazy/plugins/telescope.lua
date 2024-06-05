@@ -287,7 +287,9 @@ return {
         function()
           require("telescope").extensions.smart_open.smart_open()
         end,
-        { desc = "[F]find [F]files", noremap = true, silent = true },
+        desc = "[F]find [F]files",
+        noremap = true,
+        silent = true,
       },
     },
   },
@@ -299,7 +301,7 @@ return {
     end,
     ft = "tex",
     keys = {
-      { "<leader>fb", "<cmd>Telescope bibtex<cr>", { desc = "[F]ind [B]ibtex" } },
+      { "<leader>fb", "<cmd>Telescope bibtex<cr>", desc = "[F]ind [B]ibtex" },
     },
   },
   {

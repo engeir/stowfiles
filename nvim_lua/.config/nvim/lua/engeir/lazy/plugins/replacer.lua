@@ -4,18 +4,18 @@ return {
   opts = { rename_files = true },
   keys = {
     {
-      "<leader>rs",
+      "crs",
       function()
         require("replacer").save(opts)
       end,
       desc = "[r]eplacer.nvim [S]ave",
     },
     {
-      "<leader>rr",
+      "cre",
       function()
         require("replacer").run(opts)
       end,
-      desc = "[r]eplacer.nvim [R]eplace",
+      desc = "[r]eplacer.nvim [E]dit",
     },
   },
 }

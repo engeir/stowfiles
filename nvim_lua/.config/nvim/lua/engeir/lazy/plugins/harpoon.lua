@@ -4,6 +4,90 @@ return {
   enabled = IS_KNOWN,
   branch = "harpoon2",
   dependencies = { "nvim-lua/plenary.nvim" },
+  keys = {
+    {
+      "<leader>hf",
+      function()
+        local harpoon = require("harpoon")
+        harpoon.ui:toggle_quick_menu(harpoon:list())
+      end,
+      desc = "[H]arpoon [M]ark",
+    },
+    {
+      "<leader>hm",
+      function()
+        local harpoon = require("harpoon")
+        harpoon:list():add()
+      end,
+      desc = "[H]arpoon [M]ark",
+    },
+    {
+      "<leader>hn",
+      function()
+        local harpoon = require("harpoon")
+        local HarpoonList = harpoon:list()
+        function HarpoonList:next()
+          self._index = self._index + 1
+          if self._index > #self.items then
+            self._index = 1
+          end
+
+          self:select(self._index)
+        end
+        HarpoonList:next()
+      end,
+      desc = "[H]arpoon [N]ext",
+    },
+    {
+      "<leader>hN",
+      function()
+        local harpoon = require("harpoon")
+        local HarpoonList = harpoon:list()
+        function HarpoonList:prev()
+          self._index = self._index - 1
+          if self._index < 1 then
+            self._index = #self.items
+          end
+
+          self:select(self._index)
+        end
+        HarpoonList:prev()
+      end,
+      desc = "[H]arpoon previous",
+    },
+    {
+      "<leader>1",
+      function()
+        local harpoon = require("harpoon")
+        harpoon:list():select(1)
+      end,
+      desc = "[H]arpoon first",
+    },
+    {
+      "<leader>2",
+      function()
+        local harpoon = require("harpoon")
+        harpoon:list():select(2)
+      end,
+      desc = "[H]arpoon second",
+    },
+    {
+      "<leader>3",
+      function()
+        local harpoon = require("harpoon")
+        harpoon:list():select(3)
+      end,
+      desc = "[H]arpoon third",
+    },
+    {
+      "<leader>4",
+      function()
+        local harpoon = require("harpoon")
+        harpoon:list():select(4)
+      end,
+      desc = "[H]arpoon fourth",
+    },
+  },
   config = function()
     local opts = {
       settings = { save_on_toggle = true },
@@ -13,47 +97,5 @@ return {
     }
     local harpoon = require("harpoon")
     harpoon:setup(opts)
-    vim.keymap.set("n", "<leader>hm", function()
-      harpoon:list():add()
-    end)
-    vim.keymap.set("n", "<leader>hf", function()
-      harpoon.ui:toggle_quick_menu(harpoon:list())
-    end)
-    local HarpoonList = harpoon:list()
-    function HarpoonList:next()
-      self._index = self._index + 1
-      if self._index > #self.items then
-        self._index = 1
-      end
-
-      self:select(self._index)
-    end
-
-    function HarpoonList:prev()
-      self._index = self._index - 1
-      if self._index < 1 then
-        self._index = #self.items
-      end
-
-      self:select(self._index)
-    end
-    vim.keymap.set("n", "<leader>hn", function()
-      HarpoonList:next()
-    end)
-    vim.keymap.set("n", "<leader>hN", function()
-      HarpoonList:prev()
-    end)
-    vim.keymap.set("n", "<leader>1", function()
-      harpoon:list():select(1)
-    end)
-    vim.keymap.set("n", "<leader>2", function()
-      harpoon:list():select(2)
-    end)
-    vim.keymap.set("n", "<leader>3", function()
-      harpoon:list():select(3)
-    end)
-    vim.keymap.set("n", "<leader>4", function()
-      harpoon:list():select(4)
-    end)
   end,
 }

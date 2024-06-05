@@ -20,7 +20,7 @@ return {
       function()
         require("oil").open()
       end,
-      "[P]ath explorer with [O]il",
+      desc = "[P]ath explorer with [O]il",
     },
   },
   opts = function(_, o)

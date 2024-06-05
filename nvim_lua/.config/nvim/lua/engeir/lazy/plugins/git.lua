@@ -3,7 +3,7 @@ return {
     "tpope/vim-fugitive",
     enabled = IS_KNOWN,
     cmd = "Git",
-    keys = { { "gb", ":Git blame<CR>", desc = "[G]it [B]lame" } },
+    -- keys = { { "gb", ":Git blame<CR>", desc = "[G]it [B]lame" } }, -- Duplicate with gitsigns
   },
   {
     "lewis6991/gitsigns.nvim",
@@ -49,49 +49,49 @@ return {
         -- Actions
         map(
           { "n", "v" },
-          "<leader>hs",
+          "<leader>gs",
           ":Gitsigns stage_hunk<CR>",
           { desc = "Gitsigns: Stage Hunk" }
         )
         map(
           { "n", "v" },
-          "<leader>hr",
+          "<leader>gr",
           ":Gitsigns reset_hunk<CR>",
           { desc = "Gitsigns: Reset Hunk" }
         )
         map(
           "n",
-          "<leader>hS",
+          "<leader>gS",
           gs.stage_buffer,
           { desc = "Gitsigns: Stage Buffer Hunks" }
         )
         map(
           "n",
-          "<leader>hu",
+          "<leader>gu",
           gs.undo_stage_hunk,
           { desc = "Gitsigns: Undo Stage Hunk" }
         )
         map(
           "n",
-          "<leader>hR",
+          "<leader>gR",
           gs.reset_buffer,
           { desc = "Gitsigns: Reset Buffer Hunks" }
         )
-        map("n", "<leader>hp", gs.preview_hunk, { desc = "Gitsigns: Preview Hunks" })
-        map("n", "<leader>hb", function()
+        map("n", "<leader>gp", gs.preview_hunk, { desc = "Gitsigns: Preview Hunks" })
+        map("n", "<leader>gb", function()
           gs.blame_line({ full = true })
-        end, { desc = "Gitsigns: Blame Line" })
+        end, { desc = "Gitsigns: Show Hover Blame Line" })
         map(
           "n",
-          "<leader>hB",
+          "<leader>gB",
           gs.toggle_current_line_blame,
-          { desc = "Gitsigns: Toggle Line Blame" }
+          { desc = "Gitsigns: Toggle Inline Blame" }
         )
-        map("n", "<leader>hd", gs.diffthis, { desc = "Gitsigns: Diff This" })
-        map("n", "<leader>hD", function()
+        map("n", "<leader>gv", gs.diffthis, { desc = "Gitsigns: Diff View" })
+        map("n", "<leader>gV", function()
           gs.diffthis("~")
-        end, { desc = "Gitsigns: Diff This from HOME" })
-        map("n", "<leader>td", gs.toggle_deleted, { desc = "Gitsigns: Toggle Deleted" })
+        end, { desc = "Gitsigns: Diff View from HOME" })
+        map("n", "<leader>gd", gs.toggle_deleted, { desc = "Gitsigns: Toggle Deleted" })
 
         -- Text object
         map({ "o", "x" }, "ih", ":<C-U>Gitsigns select_hunk<CR>")
@@ -110,14 +110,18 @@ return {
     end,
     keys = {
       {
-        "dc",
+        "<leader>gq",
         ":DiffviewClose<cr>",
-        { silent = true, noremap = true, desc = "[D]iffview [C]lose" },
+        silent = true,
+        noremap = true,
+        desc = "Diffview [Q]uit",
       },
       {
-        "do",
+        "<leader>go",
         ":DiffviewOpen<cr>",
-        { silent = true, noremap = true, desc = "[D]iffview [O]pen" },
+        silent = true,
+        noremap = true,
+        desc = "Diffview [O]pen",
       },
     },
   },
@@ -134,7 +138,7 @@ return {
     cmd = "Neogit",
     keys = {
       {
-        "<leader>gs",
+        "<leader>gg",
         function()
           require("neogit").open()
         end,
@@ -145,7 +149,7 @@ return {
         function()
           require("neogit").open({ "commit" })
         end,
-        { desc = "Neogit Commit" },
+        desc = "Neogit Commit",
       },
     },
   }, -- To commit quickly and view
@@ -161,6 +165,15 @@ return {
     "ruifm/gitlinker.nvim",
     event = { "BufReadPre", "BufNewFile" },
     enabled = IS_KNOWN,
+    keys = {
+      {
+        "<leader>gy",
+        function()
+          require("gitlinker").get_buf_range_url("n")
+        end,
+        desc = "[G]itlinker [Y]ank URL",
+      },
+    },
     config = function()
       require("gitlinker").setup()
     end,
