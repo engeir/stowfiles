@@ -22,7 +22,7 @@ python = [
 ]
 usage = "latest"
 "ubi:goreleaser/goreleaser" = "latest"
-"ubi:filosottile/age" = "1.1.1"
+"ubi:filosottile/age" = "latest"
 "ubi:etcd-io/etcd" = "latest"
 "ubi:PaulJuliusMartinez/jless" = "latest"
 "ubi:mgdm/htmlq" = "latest"
