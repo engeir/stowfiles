@@ -8,7 +8,6 @@ EOF
 return {
   {
     "nvim-telescope/telescope.nvim",
-    branch = "0.1.x",
     event = { "BufReadPre", "BufNewFile" },
     dependencies = {
       {
@@ -44,13 +43,29 @@ return {
       end
 
       local actions = require("telescope.actions")
-      local trouble = require("trouble.providers.telescope")
+      local trouble = require("trouble.sources.telescope")
       local telescope = require("telescope")
       local state = require("telescope.state")
       local action_state = require("telescope.actions.state")
       local bibtex_actions = require("telescope-bibtex.actions")
+      -- https://github.com/nvim-telescope/telescope.nvim/issues/1048#issuecomment-1679797700
+      local select_one_or_multi = function(prompt_bufnr)
+        local picker =
+          require("telescope.actions.state").get_current_picker(prompt_bufnr)
+        local multi = picker:get_multi_selection()
+        if not vim.tbl_isempty(multi) then
+          require("telescope.actions").close(prompt_bufnr)
+          for _, j in pairs(multi) do
+            if j.path ~= nil then
+              vim.cmd(string.format("%s %s", "edit", j.path))
+            end
+          end
+        else
+          require("telescope.actions").select_default(prompt_bufnr)
+        end
+      end
 
-      -- From https://github.com/nvim-telescope/telescope.nvim/issues/2602#issuecomment-1636809235
+      -- https://github.com/nvim-telescope/telescope.nvim/issues/2602#issuecomment-1636809235
       local slow_scroll = function(prompt_bufnr, direction)
         local previewer = action_state.get_current_picker(prompt_bufnr).previewer
         local status = state.get_status(prompt_bufnr)
@@ -74,6 +89,7 @@ return {
           mappings = {
             i = {
               ["<esc>"] = actions.close,
+              ["<cr>"] = select_one_or_multi,
               ["<C-j>"] = function(bufnr)
                 slow_scroll(bufnr, 1)
               end,
@@ -83,7 +99,7 @@ return {
               ["<C-f>"] = actions.results_scrolling_up,
               ["<C-b>"] = actions.results_scrolling_down,
               ["<C-q>"] = actions.send_selected_to_qflist + actions.open_qflist,
-              ["<c-t>"] = trouble.open_with_trouble,
+              ["<c-t>"] = trouble.open,
               -- Bibtex
               -- CR, C-c and C-e are already mapped
               -- <C-m>_ is a mark for the given format
@@ -99,10 +115,13 @@ return {
                 '<div class="csl-entry" id="ref-{{label}}" role="doc-biblioentry"> {{author}}, {{title}}, {{journal}}, {{year}}, vol. {{volume}}, no. {{number}}, p. {{pages}}.</div>'
               ),
             },
-            n = { ["<c-t>"] = trouble.open_with_trouble },
+            n = { ["<c-t>"] = trouble.open },
           },
           buffer_previewer_maker = new_maker,
-          path_display = { shorten = 4 },
+          path_display = {
+            filename_first = { reverse_dirs = true },
+            shorten = 4,
+          },
           vimgrep_arguments = {
             "rg",
             "--color=never",
