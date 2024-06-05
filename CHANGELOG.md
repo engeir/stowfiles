@@ -1,5 +1,51 @@
 # Changelog
 
+## [1.16.0](https://github.com/engeir/stowfiles/compare/stowfiles-v1.15.2...stowfiles-v1.16.0) (2024-06-05)
+
+
+### Features
+
+* **nvim:** make &lt;cr&gt; open all marked files, or current if no marks ([4ce1d15](https://github.com/engeir/stowfiles/commit/4ce1d154166245bfbffb261c35fb040f5838f63d))
+* **starship,bin:** detect if rye, poetry or unknown python manager is used ([0bbefc6](https://github.com/engeir/stowfiles/commit/0bbefc638c193b9694b5af767878ff894cd0e762))
+
+
+### Miscellaneous
+
+* **nvim:** add lsp source to cmp ([2ae9594](https://github.com/engeir/stowfiles/commit/2ae9594fb024ab96ea3ae583c7cafb815c053c62))
+* **nvim:** create autocmd to save and build when tex files loose focus ([bfc6f81](https://github.com/engeir/stowfiles/commit/bfc6f81fb4b4608f8c0168e2d191c29d563d856b))
+* **nvim:** create custom texlab LSP command to clean artefacts ([bfc6f81](https://github.com/engeir/stowfiles/commit/bfc6f81fb4b4608f8c0168e2d191c29d563d856b))
+* **nvim:** improve oil.nvim config with nicer keymaps ([024f813](https://github.com/engeir/stowfiles/commit/024f813a78b1d66e559935b5cbdfb5436fa751cb))
+* **nvim:** improved texlab integration with zathura ([bfc6f81](https://github.com/engeir/stowfiles/commit/bfc6f81fb4b4608f8c0168e2d191c29d563d856b))
+* **nvim:** remove nvim-spider ([e5318bc](https://github.com/engeir/stowfiles/commit/e5318bc197be9ceb9162cbd3c555b8aba823e518))
+* **nvim:** small commenting update ([2ab8f2e](https://github.com/engeir/stowfiles/commit/2ab8f2ef71dbe91e64eeb2a3ccdad2e4baa16852))
+* **nvim:** toggle inlay hints ([294a844](https://github.com/engeir/stowfiles/commit/294a8442ed9339a5e74b5790242b71b3f4406af9))
+* **nvim:** update load events to try and make nvim snappier ([fd85038](https://github.com/engeir/stowfiles/commit/fd850383d2e1c15239e6eb51b6f126fea77b36e9))
+* **nvim:** use custom commenting and turn on filetype detection ([494c9d3](https://github.com/engeir/stowfiles/commit/494c9d3fdc3d643afa48019d32cf43870ed37080))
+* **ripgrep:** add config file ([07a3d2b](https://github.com/engeir/stowfiles/commit/07a3d2b638c6e4dc69d8f18f8ece9404d4c60fc9))
+* **software:** update installed ([86dc3cc](https://github.com/engeir/stowfiles/commit/86dc3ccf3525617f43cde55e056b9d4f571f29a0))
+* **software:** update installed ([a1ac3d8](https://github.com/engeir/stowfiles/commit/a1ac3d8dce09857f6fc980682ec25bba324dab67))
+* **software:** update installed ([12f4abe](https://github.com/engeir/stowfiles/commit/12f4abe3ed3bde016e59dbec3a37823224da8a98))
+* **software:** update installed ([5f1a78d](https://github.com/engeir/stowfiles/commit/5f1a78d106336f04ddf8d6cd0629db5413dc5d43))
+
+
+### Styles
+
+* **nvim:** reorder ruff format and lint fix in conform-nvim settings ([32f2e65](https://github.com/engeir/stowfiles/commit/32f2e6571d68d1fe64975e46f04b818e5588b848))
+
+
+### Code Refactoring
+
+* **nvim:** [plugin] open git files, buffers and recent with smart-open ([cc9d222](https://github.com/engeir/stowfiles/commit/cc9d222079dd50d88e3d5ed0c6f473d81ab4155f))
+* **nvim:** [plugin] remove neodev, add lazydev ([0cb3d56](https://github.com/engeir/stowfiles/commit/0cb3d5631a72dbc8489a13ae213954fb67688d5e))
+* **nvim:** remove auto-hlsearch plugin for autocommand ([9ac5483](https://github.com/engeir/stowfiles/commit/9ac54839f6791de0514bdabd555d2e1fd936976f))
+* **nvim:** remove keymap K which is now default (nvim0.10.0) ([f6633fc](https://github.com/engeir/stowfiles/commit/f6633fc4be8297c1375f9dc6685bd0524a8cfe45))
+
+
+### Continuous Integration
+
+* **pre-commit:** remove update-nvim hook id ([1b0f5e4](https://github.com/engeir/stowfiles/commit/1b0f5e47ee5071731125aedf382dca4d405b86fb))
+* **pre-commit:** stop updating nvim README on every commit ([12f4abe](https://github.com/engeir/stowfiles/commit/12f4abe3ed3bde016e59dbec3a37823224da8a98))
+
 ## [1.15.2](https://github.com/engeir/stowfiles/compare/stowfiles-v1.15.1...stowfiles-v1.15.2) (2024-05-15)
 
 
