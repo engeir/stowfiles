@@ -54,6 +54,7 @@ return {
         end
       end
       local default_cmp_sources = cmp.config.sources({
+        { name = "lazydev", group_index = 0 }, -- set group index to 0 to skip loading LuaLS completions
         { name = "gh_issues" },
         { name = "calc" },
         { name = "path" },
