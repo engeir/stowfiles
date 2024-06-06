@@ -1,5 +1,26 @@
 # Changelog
 
+## [1.16.1](https://github.com/engeir/stowfiles/compare/stowfiles-v1.16.0...stowfiles-v1.16.1) (2024-06-06)
+
+
+### Bug Fixes
+
+* **software:** remove jless from mise:ubi installation, already in cargo ([5fdab1a](https://github.com/engeir/stowfiles/commit/5fdab1ade025c1c89d4a41ff3cfba112c3a2ba02))
+
+
+### Miscellaneous
+
+* **mise,nvim:** add ruby nvim host to default gems ([3352d53](https://github.com/engeir/stowfiles/commit/3352d53a9c631a422e84d90872f818263292a3f7))
+* **nvim:** [plugin] add just.nvim ([5587654](https://github.com/engeir/stowfiles/commit/5587654d01986be3d2e4efb9c241e47e6d8b8e03))
+* **nvim:** improve and structure lots of keymaps ([5ac422c](https://github.com/engeir/stowfiles/commit/5ac422c27e16bdec8a8f5940f80c90ba2dcea016))
+* **nvim:** move chatgpt config to dir, and add action file ([1ffe3ff](https://github.com/engeir/stowfiles/commit/1ffe3ff51f1518a508c03226fac21c2f788e02bc))
+* **software:** update installed ([6cf3179](https://github.com/engeir/stowfiles/commit/6cf3179c34a127622a5b4cc5d72cceb7fd492809))
+
+
+### Code Refactoring
+
+* **nvim:** reduce startuptime ([68a096d](https://github.com/engeir/stowfiles/commit/68a096dc7f90122245115b05d012d10311e0c67d))
+
 ## [1.16.0](https://github.com/engeir/stowfiles/compare/stowfiles-v1.15.2...stowfiles-v1.16.0) (2024-06-05)
 
 
