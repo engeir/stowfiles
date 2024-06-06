@@ -91,9 +91,9 @@ bison 2:3.8.2+dfsg-1build1 [Ubuntu/jammy main]
 bitwarden 2024.4.3 [local]
 black 21.12b0-1 [Ubuntu/jammy universe]
 blt 2.5.3+dfsg-4.1build2 [Ubuntu/jammy main]
-bluez 5.64-0ubuntu1.1 [Ubuntu/jammy main]
-bluez-cups 5.64-0ubuntu1.1 [Ubuntu/jammy main]
-bluez-obexd 5.64-0ubuntu1.1 [Ubuntu/jammy main]
+bluez 5.64-0ubuntu1.3 [Ubuntu/jammy main]
+bluez-cups 5.64-0ubuntu1.3 [Ubuntu/jammy main]
+bluez-obexd 5.64-0ubuntu1.3 [Ubuntu/jammy main]
 bluez-tools 2.0~20170911.0.7cb788c-4 [Ubuntu/jammy universe]
 bolt 0.9.2-1 [Ubuntu/jammy main]
 borgbackup 1.2.0-1 [Ubuntu/jammy universe]
@@ -137,7 +137,7 @@ cmake 3.22.1-1ubuntu1.22.04.2 [Ubuntu/jammy main]
 cmake-data 3.22.1-1ubuntu1.22.04.2 [Ubuntu/jammy main]
 cmatrix 2.0-3 [Ubuntu/jammy universe]
 cmdtest 0.32.14.gcdfe14e-2 [Ubuntu/jammy universe]
-code 1.89.1-1715060508 [code stable/stable main]
+code 1.90.0-1717531825 [code stable/stable main]
 colord 1.4.6-1 [Ubuntu/jammy main]
 colord-data 1.4.6-1 [Ubuntu/jammy main]
 comerr-dev 2.1-1.46.5-2ubuntu1.1 [Ubuntu/jammy main]
@@ -152,7 +152,7 @@ compizconfig-settings-manager 1:0.9.14.1+22.04.20220820-0ubuntu1 [Ubuntu/jammy u
 compton 1-1 [Ubuntu/jammy universe]
 console-setup 1.205ubuntu3 [Ubuntu/jammy main]
 console-setup-linux 1.205ubuntu3 [Ubuntu/jammy main]
-containerd.io 1.6.32-1 [Docker CE/ stable]
+containerd.io 1.6.33-1 [Docker CE/ stable]
 coreutils 8.32-4.1ubuntu1.2 [Ubuntu/jammy main]
 cpio 2.13+dfsg-7ubuntu0.1 [Ubuntu/jammy main]
 cpp 4:11.2.0-1ubuntu1 [Ubuntu/jammy main]
@@ -227,11 +227,11 @@ docbook-to-man 1:2.0.0-45 [Ubuntu/jammy universe]
 docbook-xml 4.5-11 [Ubuntu/jammy main]
 docbook-xsl 1.79.2+dfsg-1 [Ubuntu/jammy universe]
 docker 1.5-2 [Ubuntu/jammy universe]
-docker-buildx-plugin 0.14.0-1~ubuntu.20.04~focal [Docker CE/ stable]
-docker-ce 5:26.1.3-1~ubuntu.20.04~focal [Docker CE/ stable]
-docker-ce-cli 5:26.1.3-1~ubuntu.20.04~focal [Docker CE/ stable]
-docker-ce-rootless-extras 5:26.1.3-1~ubuntu.20.04~focal [Docker CE/ stable]
-docker-compose-plugin 2.27.0-1~ubuntu.20.04~focal [Docker CE/ stable]
+docker-buildx-plugin 0.14.1-1~ubuntu.20.04~focal [Docker CE/ stable]
+docker-ce 5:26.1.4-1~ubuntu.20.04~focal [Docker CE/ stable]
+docker-ce-cli 5:26.1.4-1~ubuntu.20.04~focal [Docker CE/ stable]
+docker-ce-rootless-extras 5:26.1.4-1~ubuntu.20.04~focal [Docker CE/ stable]
+docker-compose-plugin 2.27.1-1~ubuntu.20.04~focal [Docker CE/ stable]
 docutils-common 0.17.1+dfsg-2 [Ubuntu/jammy main]
 docx2txt 1.4-5 [Ubuntu/jammy universe]
 dos2unix 7.4.2-2 [Ubuntu/jammy universe]
@@ -550,7 +550,7 @@ gir1.2-freedesktop 1.72.0-1 [Ubuntu/jammy main]
 gir1.2-gck-1 3.40.0-4 [Ubuntu/jammy main]
 gir1.2-gcr-3 3.40.0-4 [Ubuntu/jammy main]
 gir1.2-gdesktopenums-3.0 42.0-1ubuntu1 [Ubuntu/jammy main]
-gir1.2-gdkpixbuf-2.0 2.42.8+dfsg-1ubuntu0.2 [Ubuntu/jammy main]
+gir1.2-gdkpixbuf-2.0 2.42.8+dfsg-1ubuntu0.3 [Ubuntu/jammy main]
 gir1.2-gdm-1.0 42.0-1ubuntu7.22.04.4 [Ubuntu/jammy main]
 gir1.2-geoclue-2.0 2.5.7-3ubuntu3 [Ubuntu/jammy main]
 gir1.2-gexiv2-0.10 0.14.0-1build1 [Ubuntu/jammy main]
@@ -992,7 +992,7 @@ libblockdev-swap2 2.26-1 [Ubuntu/jammy main]
 libblockdev-utils2 2.26-1 [Ubuntu/jammy main]
 libblockdev2 2.26-1 [Ubuntu/jammy main]
 libblosc1 1.21.1+ds2-2 [Ubuntu/jammy universe]
-libbluetooth3 5.64-0ubuntu1.1 [Ubuntu/jammy main]
+libbluetooth3 5.64-0ubuntu1.3 [Ubuntu/jammy main]
 libbluray2 1:1.3.1-1 [Ubuntu/jammy universe]
 libboost-dev 1.74.0.3ubuntu7 [Ubuntu/jammy main]
 libboost-filesystem1.74.0 1.74.0-14ubuntu3 [Ubuntu/jammy main]
@@ -1431,13 +1431,13 @@ libgdbm-dev 1.23-1 [Ubuntu/jammy main]
 libgdbm6 1.23-1 [Ubuntu/jammy main]
 libgdcm3.0 3.0.10-1build2 [Ubuntu/jammy universe]
 libgdiplus 6.0.4+dfsg-2 [Ubuntu/jammy universe]
-libgdk-pixbuf-2.0-0 2.42.8+dfsg-1ubuntu0.2 [Ubuntu/jammy main]
-libgdk-pixbuf-2.0-0:i386 2.42.8+dfsg-1ubuntu0.2 [Ubuntu/jammy main]
-libgdk-pixbuf-2.0-dev 2.42.8+dfsg-1ubuntu0.2 [Ubuntu/jammy main]
+libgdk-pixbuf-2.0-0 2.42.8+dfsg-1ubuntu0.3 [Ubuntu/jammy main]
+libgdk-pixbuf-2.0-0:i386 2.42.8+dfsg-1ubuntu0.3 [Ubuntu/jammy main]
+libgdk-pixbuf-2.0-dev 2.42.8+dfsg-1ubuntu0.3 [Ubuntu/jammy main]
 libgdk-pixbuf-xlib-2.0-0 2.40.2-2build4 [Ubuntu/jammy main]
 libgdk-pixbuf-xlib-2.0-dev 2.40.2-2build4 [Ubuntu/jammy main]
-libgdk-pixbuf2.0-bin 2.42.8+dfsg-1ubuntu0.2 [Ubuntu/jammy main]
-libgdk-pixbuf2.0-common 2.42.8+dfsg-1ubuntu0.2 [Ubuntu/jammy main]
+libgdk-pixbuf2.0-bin 2.42.8+dfsg-1ubuntu0.3 [Ubuntu/jammy main]
+libgdk-pixbuf2.0-common 2.42.8+dfsg-1ubuntu0.3 [Ubuntu/jammy main]
 libgdk-pixbuf2.0-dev 2.40.2-2build4 [Ubuntu/jammy main]
 libgdm1 42.0-1ubuntu7.22.04.4 [Ubuntu/jammy main]
 libgee-0.8-2 0.20.5-2 [Ubuntu/jammy main]
@@ -3440,10 +3440,10 @@ ofono 1.31-3ubuntu1 [Ubuntu/jammy universe]
 okular 4:21.12.3-0ubuntu1 [Ubuntu/jammy universe]
 okular-extra-backends 4:21.12.3-0ubuntu1 [Ubuntu/jammy universe]
 openconnect 8.20-1 [Ubuntu/jammy universe]
-openjdk-11-jdk 11.0.22+7-0ubuntu2~22.04.1 [Ubuntu/jammy main]
-openjdk-11-jdk-headless 11.0.22+7-0ubuntu2~22.04.1 [Ubuntu/jammy main]
-openjdk-11-jre 11.0.22+7-0ubuntu2~22.04.1 [Ubuntu/jammy main]
-openjdk-11-jre-headless 11.0.22+7-0ubuntu2~22.04.1 [Ubuntu/jammy main]
+openjdk-11-jdk 11.0.23+9-1ubuntu1~22.04.1 [Ubuntu/jammy main]
+openjdk-11-jdk-headless 11.0.23+9-1ubuntu1~22.04.1 [Ubuntu/jammy main]
+openjdk-11-jre 11.0.23+9-1ubuntu1~22.04.1 [Ubuntu/jammy main]
+openjdk-11-jre-headless 11.0.23+9-1ubuntu1~22.04.1 [Ubuntu/jammy main]
 openprinting-ppds 20220223-0ubuntu1 [Ubuntu/jammy main]
 opensp 1.5.2-13ubuntu3 [Ubuntu/jammy universe]
 openssh-client 1:8.9p1-3ubuntu0.7 [Ubuntu/jammy main]
@@ -4386,7 +4386,7 @@ bacon v2.18.2:
     bacon
 bat v0.24.0:
     bat
-bend-lang v0.2.27:
+bend-lang v0.2.33:
     bend
 blindfold v1.0.7:
     blindfold
@@ -4420,7 +4420,7 @@ du-dust v1.0.0:
     dust
 evcxr_jupyter v0.17.0:
     evcxr_jupyter
-eza v0.18.16:
+eza v0.18.17:
     eza
 fd-find v10.1.0:
     fd
@@ -4451,7 +4451,7 @@ jless v0.9.0:
     jless
 jnv v0.3.0:
     jnv
-just v1.27.0:
+just v1.28.0:
     just
 languagetool-rust v2.1.4:
     ltrs
@@ -4628,7 +4628,7 @@ package pandoc-eqnos 2.5.0, installed using Python 3.12.2
  - pandoc-eqnos
 package pandoc-include 1.3.2, installed using Python 3.12.2
  - pandoc-include
-package pdfcropmargins 2.1.2, installed using Python 3.12.2
+package pdfcropmargins 2.1.3, installed using Python 3.12.2
  - pdf-crop-margins
  - pdfcropmargins
 package poetry 1.8.3, installed using Python 3.12.2
