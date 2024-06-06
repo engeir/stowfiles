@@ -1,1 +1,1 @@
-return { "imsnif/kdl.vim" }
+return { "imsnif/kdl.vim", enabled = false }

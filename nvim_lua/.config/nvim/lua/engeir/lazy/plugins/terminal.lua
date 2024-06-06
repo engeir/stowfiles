@@ -15,45 +15,63 @@ local keymap = vim.keymap.set
 return {
   {
     "voldikss/vim-floaterm",
-    events = { "BufReadPre" },
     init = function()
       vim.g.floaterm_width = 0.45
     end,
-    config = function()
-      -- keymap("n", "<leader>ft", "<cmd>FloatermToggle<CR>", opts)
-      keymap(
-        "n",
+    keys = {
+      {
         "<leader>to",
         ":FloatermNew --wintype=vsplit --autohide=0 python<CR><C-\\><C-n><C-w>h",
-        { desc = "[T]erm [O]pen (Python)" }
-      )
-      keymap(
-        "n",
+        desc = "[T]erm [O]pen (Python)",
+      },
+      {
         "<leader>pv",
         ":FloatermNew --wintype=float --position=right --autoclose=2 nnn -dH<CR>",
-        opts
-      )
-      keymap("n", "<leader>H", ":/%%<CR>VN", {
+        silent = true,
+        noremap = true,
+        desc = "Open Floaterm [P]ath [V]iewer",
+      },
+      {
+        "<leader>H",
+        ":/%%<CR>VN",
         desc = "Notebook: Jump to next [H]ighligh region",
         silent = true,
         noremap = true,
-      })
-      keymap(
-        "v",
+      },
+      {
         "<C-r>",
         ":'<,'>FloatermSend <CR>",
-        { desc = "Run visual select in Floaterm", noremap = true, silent = true }
-      )
-      keymap(
-        "n",
+        desc = "Run visual select in Floaterm",
+        noremap = true,
+        silent = true,
+      },
+      {
         "<leader>tr",
         ":FloatermNew --wintype=float --position=right --autoclose=0 compiler %<CR>",
-        { desc = "[R]un compiler on script" }
-      )
-      keymap("n", "<leader>tn", ":FloatermNext <CR>", opts)
-      keymap("n", "<leader>tp", ":FloatermPrev <CR>", opts)
-      keymap("n", "<leader>th", ":FloatermHide <CR>", opts)
-    end,
+        desc = "[R]un compiler on script",
+      },
+      {
+        "<leader>tn",
+        ":FloatermNext <CR>",
+        silent = true,
+        noremap = true,
+        desc = "[T]erm [N]ext",
+      },
+      {
+        "<leader>tp",
+        ":FloatermPrev <CR>",
+        silent = true,
+        noremap = true,
+        desc = "[T]erm [P]revious",
+      },
+      {
+        "<leader>th",
+        ":FloatermHide <CR>",
+        silent = true,
+        noremap = true,
+        desc = "[T]erm [H]ide",
+      },
+    },
   },
   {
     "akinsho/toggleterm.nvim",
@@ -84,10 +102,5 @@ return {
         opts
       )
     end,
-  },
-  {
-    "siadat/shell.nvim",
-    events = { "BufReadPre" },
-    opts = {},
   },
 }

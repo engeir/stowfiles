@@ -179,5 +179,5 @@ return {
       { "<leader>ft", "<cmd>TodoTelescope<CR>", desc = "[f]ind [T]odoTelescope" },
     },
   },
-  "mechatroner/rainbow_csv",
+  { "mechatroner/rainbow_csv", ft = "csv" },
 }

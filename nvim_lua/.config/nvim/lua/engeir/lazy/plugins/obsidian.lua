@@ -1,6 +1,5 @@
 return {
   "epwalsh/obsidian.nvim",
-  enabled = IS_KNOWN,
   version = "*", -- recommended, use latest release instead of latest commit
   lazy = true,
   cmd = { "ObsidianQuickSwitch" }, -- "ObsidianWorkspace"

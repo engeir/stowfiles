@@ -2,7 +2,7 @@ local dap_enabled = false
 return {
   {
     "mfussenegger/nvim-dap",
-    enabled = IS_KNOWN and dap_enabled,
+    enabled = dap_enabled,
     cmd = { "DapToggleBreakpoint" },
     keys = {
       {
@@ -14,7 +14,7 @@ return {
   },
   {
     "mfussenegger/nvim-dap-python",
-    enabled = IS_KNOWN and dap_enabled,
+    enabled = dap_enabled,
     ft = "python",
     dependencies = {
       "mfussenegger/nvim-dap",
@@ -36,7 +36,7 @@ return {
   },
   {
     "rcarriga/nvim-dap-ui",
-    enabled = IS_KNOWN and dap_enabled,
+    enabled = dap_enabled,
     dependencies = {
       "mfussenegger/nvim-dap",
     },
@@ -56,7 +56,7 @@ return {
   },
   {
     "jay-babu/mason-nvim-dap.nvim",
-    enabled = IS_KNOWN and dap_enabled,
+    enabled = dap_enabled,
     event = { "BufReadPre", "BufNewFile" },
     dependencies = {
       "williamboman/mason.nvim",

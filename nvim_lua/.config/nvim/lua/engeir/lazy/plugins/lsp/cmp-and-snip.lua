@@ -228,7 +228,7 @@ return {
           },
         }),
       })
-      if EXECUTABLE("gh") then
+      if vim.fn.executable("gh") then
         require("engeir.lazy.plugins.lsp.cmp-sources.cmp_gh_source")
       end
     end,
@@ -237,7 +237,7 @@ return {
   -- Snippets
   {
     "L3MON4D3/LuaSnip",
-    dependencies = { "iurimateus/luasnip-latex-snippets.nvim" },
+    dependencies = { "engeir/luasnip-latex-snippets.nvim" },
     event = { "BufReadPre", "BufNewFile" },
     build = "make install_jsregexp",
     -- dependencies = "rafamadriz/friendly-snippets",

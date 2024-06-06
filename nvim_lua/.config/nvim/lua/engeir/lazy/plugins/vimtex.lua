@@ -1,10 +1,9 @@
 return {
   "lervag/vimtex",
   event = { "BufReadPre", "BufNewFile" },
-  enabled = IS_KNOWN,
   init = function()
     vim.g.tex_flavor = "latex"
-    if IS_MAC then
+    if vim.fn.has("macunix") then
       vim.g.vimtex_view_method = "sioyek"
     else
       vim.g.vimtex_view_method = "zathura"

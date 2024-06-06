@@ -3,14 +3,14 @@ return {
   event = { "BufReadPre", "BufNewFile" },
   keys = {
     {
-      "<leader>i",
+      "cri",
       function()
         require("rulebook").ignoreRule()
       end,
       desc = "Rulebook [I]gnore",
     },
     {
-      "<leader>l",
+      "crl",
       function()
         require("rulebook").lookupRule()
       end,

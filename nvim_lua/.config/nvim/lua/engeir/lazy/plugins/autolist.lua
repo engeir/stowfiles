@@ -1,6 +1,5 @@
 return {
   "gaoDean/autolist.nvim",
-  enabled = IS_KNOWN,
   ft = {
     "markdown",
     "text",

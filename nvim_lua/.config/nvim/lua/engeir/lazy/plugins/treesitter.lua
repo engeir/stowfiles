@@ -12,16 +12,18 @@ return {
           "fortran",
           "go",
           "html",
+          "just",
           "latex",
           "lua",
           "markdown",
           "markdown_inline",
-          -- "norg",
-          -- "org",
           "python",
           "scss",
           "toml",
           "vim",
+          "vimdoc",
+          -- "norg",
+          -- "org",
         },
         sync_install = false,
         auto_install = false,
@@ -210,7 +212,6 @@ return {
   {
     "ThePrimeagen/refactoring.nvim",
     enabled = false,
-    cond = IS_KNOWN,
     config = function()
       require("refactoring").setup({
         prompt_func_return_type = {
@@ -250,7 +251,6 @@ return {
   {
     "ziontee113/syntax-tree-surfer",
     event = { "BufReadPre", "BufNewFile" },
-    enabled = IS_KNOWN,
     config = function()
       require("syntax-tree-surfer").setup()
       vim.keymap.set("n", "]a", function()

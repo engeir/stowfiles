@@ -17,6 +17,7 @@ return {
       "nvim-lua/plenary.nvim",
       { "nvim-telescope/telescope-fzf-native.nvim", build = "make" },
       "nvim-tree/nvim-web-devicons",
+      "echasnovski/mini.fuzzy",
     },
     config = function()
       -- Don't preview binaries
@@ -161,22 +162,6 @@ return {
             -- This setting has no effect if context = false
             context_fallback = true,
           },
-          media_files = {
-            -- filetypes whitelist
-            -- defaults to {"png", "jpg", "mp4", "webm", "pdf"}
-            filetypes = {
-              "png",
-              "jpg",
-              "jpeg",
-              "webp",
-              "webm",
-              "svg",
-              "mp4",
-              "mov",
-              "epub",
-            },
-            -- find_cmd = "fd", -- find command (defaults to `fd`)
-          },
           smart_open = {
             match_algorithm = "fzf",
             disable_devicons = false,
@@ -185,41 +170,86 @@ return {
       })
 
       telescope.load_extension("fzf")
-
-      vim.keymap.set("n", "<leader>fc", function()
-        require("telescope.builtin").commands()
-      end, { desc = "[F]ind [C]ommands" })
-      vim.keymap.set("n", "<leader>fd", function()
-        require("telescope.builtin").diagnostics()
-      end, { desc = "[F]ind [D]iagnostics" })
-      vim.keymap.set("n", "<leader>ff", function()
-        require("telescope.builtin").find_files({ hidden = true })
-      end, { desc = "[F]ind [F]iles" })
-      vim.keymap.set("n", "<leader>fh", function()
-        require("telescope.builtin").help_tags()
-      end, { desc = "[F]ind [H]elp tags" })
-      vim.keymap.set("n", "<leader>fk", function()
-        require("telescope.builtin").keymaps()
-      end, { desc = "[F]ind [K]eymaps" })
-      vim.keymap.set("n", "<leader>fl", function()
-        require("telescope.builtin").current_buffer_fuzzy_find()
-      end, { desc = "[F]ind [L]ines" })
-      vim.keymap.set("n", "<leader>fo", function()
-        require("telescope.builtin").git_commits()
-      end, { desc = "[F]ind C[o]mmits" })
-      vim.keymap.set("n", "<leader>fp", function()
-        require("telescope.builtin").spell_suggest()
-      end, { desc = "[F]ind S[p]ell suggestions" })
-      vim.keymap.set("n", "<leader>fr", function()
-        require("telescope.builtin").grep_string({ search = "" })
-      end, { desc = "[F]ind [R]ipgrep (find string)" })
-      vim.keymap.set("n", "<leader>fs", function()
-        require("telescope.builtin").git_files({ cwd = "~/stowfiles/" })
-      end, { desc = "[F]ind [S]towfiles" })
-      vim.keymap.set("n", "<leader>fw", function()
-        require("telescope.builtin").grep_string()
-      end, { desc = "[F]ind [W]ord under cursor" })
     end,
+    keys = {
+      {
+        "<leader>fc",
+        function()
+          require("telescope.builtin").commands()
+        end,
+        desc = "[F]ind [C]ommands",
+      },
+      {
+        "<leader>fd",
+        function()
+          require("telescope.builtin").diagnostics()
+        end,
+        desc = "[F]ind [D]iagnostics",
+      },
+      {
+        "<leader>ff",
+        function()
+          require("telescope.builtin").find_files({ hidden = true })
+        end,
+        desc = "[F]ind [F]iles",
+      },
+      {
+        "<leader>fh",
+        function()
+          require("telescope.builtin").help_tags()
+        end,
+        desc = "[F]ind [H]elp tags",
+      },
+      {
+        "<leader>fk",
+        function()
+          require("telescope.builtin").keymaps()
+        end,
+        desc = "[F]ind [K]eymaps",
+      },
+      {
+        "<leader>fl",
+        function()
+          require("telescope.builtin").current_buffer_fuzzy_find()
+        end,
+        desc = "[F]ind [L]ines",
+      },
+      {
+        "<leader>fo",
+        function()
+          require("telescope.builtin").git_commits()
+        end,
+        desc = "[F]ind C[o]mmits",
+      },
+      {
+        "<leader>fp",
+        function()
+          require("telescope.builtin").spell_suggest()
+        end,
+        desc = "[F]ind S[p]ell suggestions",
+      },
+      {
+        "<leader>fr",
+        function()
+          require("telescope.builtin").grep_string({ search = "" })
+        end,
+        desc = "[F]ind [R]ipgrep (find string)",
+      },
+      {
+        "<leader>fs",
+        function()
+          require("telescope.builtin").git_files({ cwd = "~/stowfiles/" })
+        end,
+        desc = "[F]ind [S]towfiles",
+      },
+      {
+        "<leader>fw",
+        function()
+          require("telescope.builtin").grep_string()
+        end,
+        desc = "[F]ind [W]ord under cursor",
+      },
+    },
   },
   {
     "axkirillov/easypick.nvim",
@@ -319,25 +349,7 @@ return {
       require("telescope").load_extension("neoclip")
     end,
   },
-  "nvim-telescope/telescope-symbols.nvim",
-  {
-    "nvim-telescope/telescope-media-files.nvim",
-    dependencies = { "nvim-lua/popup.nvim" },
-    enabled = IS_KNOWN,
-    cond = IS_LINUX,
-    config = function()
-      require("telescope").load_extension("media_files")
-    end,
-    keys = {
-      {
-        "<leader>fm",
-        function()
-          require("telescope").extensions.media_files.media_files()
-        end,
-        desc = "[F]ind [M]edia files",
-      },
-    },
-  },
+  { "nvim-telescope/telescope-symbols.nvim", cmd = "Telescope symbols" },
   {
     "nvim-telescope/telescope-file-browser.nvim",
     enabled = false,

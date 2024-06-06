@@ -1,7 +1,6 @@
 local opts = { noremap = true, silent = true }
 return {
   "uga-rosa/ccc.nvim",
-  enabled = IS_KNOWN,
   config = function()
     -- Three at once
     local ccc = require("ccc")

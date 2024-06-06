@@ -1,11 +1,5 @@
 return {
   {
-    "tpope/vim-fugitive",
-    enabled = IS_KNOWN,
-    cmd = "Git",
-    -- keys = { { "gb", ":Git blame<CR>", desc = "[G]it [B]lame" } }, -- Duplicate with gitsigns
-  },
-  {
     "lewis6991/gitsigns.nvim",
     event = { "BufReadPre", "BufNewFile" },
     dependencies = { "nvim-lua/plenary.nvim" },
@@ -100,7 +94,6 @@ return {
   },
   {
     "sindrets/diffview.nvim",
-    enabled = IS_KNOWN,
     config = function()
       require("diffview").setup({
         file_panel = {
@@ -153,10 +146,10 @@ return {
       },
     },
   }, -- To commit quickly and view
-  { "rhysd/committia.vim", enabled = IS_KNOWN },
+  { "rhysd/committia.vim", ft = "gitcommit" },
   {
     "kdheepak/lazygit.nvim",
-    enabled = IS_KNOWN and EXECUTABLE("lazygit"),
+    enabled = vim.fn.executable("lazygit"),
     keys = {
       { "<leader>lg", "<cmd>LazyGit<cr>", desc = "Open [L]azy[G]it" },
     },
@@ -164,7 +157,6 @@ return {
   {
     "ruifm/gitlinker.nvim",
     event = { "BufReadPre", "BufNewFile" },
-    enabled = IS_KNOWN,
     keys = {
       {
         "<leader>gy",

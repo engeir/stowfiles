@@ -20,7 +20,7 @@ return {
   { "echasnovski/mini.align", config = true, event = { "BufReadPre", "BufNewFile" } },
 
   -- mini.base16 ---------------------------------------------------------------------
-  { "echasnovski/mini.base16", event = { "VimEnter" } },
+  { "echasnovski/mini.base16", event = { "VeryLazy" }, enabled = false },
 
   -- mini.bracketed ------------------------------------------------------------------
   {
@@ -136,7 +136,13 @@ return {
     end,
   },
   -- mini.colors ---------------------------------------------------------------------
-  { "echasnovski/mini.colors", version = "*", cofig = true, event = { "VimEnter" } },
+  {
+    "echasnovski/mini.colors",
+    version = "*",
+    cofig = true,
+    event = { "VeryLazy" },
+    enabled = false,
+  },
 
   -- mini.comment --------------------------------------------------------------------
   {
@@ -204,6 +210,7 @@ return {
   -- mini.indentscope ----------------------------------------------------------------
   {
     "echasnovski/mini.indentscope",
+    enabled = false,
     version = false, -- wait till new 0.7.0 release to put it back on semver
     event = { "BufReadPre", "BufNewFile" },
     opts = {
@@ -256,7 +263,7 @@ return {
   },
 
   -- mini.splitjoin ------------------------------------------------------------------
-  { "echasnovski/mini.splitjoin", config = true },
+  { "echasnovski/mini.splitjoin", config = true, enabled = false },
 
   -- mini.surround -------------------------------------------------------------------
   { "echasnovski/mini.surround", config = true, event = "InsertEnter" },

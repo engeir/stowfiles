@@ -55,8 +55,7 @@ vim.keymap.set("x", "<leader>p", '"_dP')
 -- vim.keymap.set("n", "<leader>y", "\"+y")
 -- vim.keymap.set("v", "<leader>y", "\"+y")
 -- vim.keymap.set("n", "<leader>Y", "\"+Y")
-vim.keymap.set("n", "<leader>d", '"_d')
-vim.keymap.set("v", "<leader>d", '"_d')
+vim.keymap.set({ "v", "n" }, "<leader>d", '"_d')
 
 -- Move lines
 vim.keymap.set("x", "J", ":move '>+1<CR>gv=gv")
@@ -113,7 +112,7 @@ vim.keymap.set("x", "<leader><leader>e", 'c<C-R>=py3eval(@")<CR><Esc>')
 -- vim.keymap.set("x", "<leader><leader>e", 'c<C-R>=eval(@")<CR><Esc>')
 
 -- Running and compiling code
-if EXECUTABLE("autocomp") then
+if vim.fn.executable("autocomp") then
   vim.keymap.set(
     "n",
     "<leader>ac",
@@ -121,7 +120,7 @@ if EXECUTABLE("autocomp") then
     { desc = "Toggle custom [a]uto [c]ompiler" }
   )
 end
-if EXECUTABLE("open_output") then
+if vim.fn.executable("open_output") then
   vim.keymap.set(
     "n",
     "<leader><leader>o",

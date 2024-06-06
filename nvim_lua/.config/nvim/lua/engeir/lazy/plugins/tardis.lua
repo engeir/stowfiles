@@ -1,6 +1,6 @@
 return {
   "fredeeb/tardis.nvim",
-  event = "BufReadPost",
+  cmd = "Tardis",
   dependencies = { "nvim-lua/plenary.nvim" },
   config = true,
 }

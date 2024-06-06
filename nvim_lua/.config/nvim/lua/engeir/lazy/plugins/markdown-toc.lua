@@ -1,14 +1,5 @@
 return {
   {
-    "mzlogin/vim-markdown-toc",
-    enabled = false,
-    config = function()
-      vim.g.vmt_list_item_char = "-"
-      -- vim.g.vmt_list_item_char = "1."
-      -- vim.g.vmt_list_indent_text = "   "
-    end,
-  },
-  {
     "hedyhli/markdown-toc.nvim",
     init = function()
       if vim.fn.has("nvim-0.9") == 1 then
@@ -57,5 +48,4 @@ return {
       },
     },
   },
-  { "richardbizik/nvim-toc", enabled = false, config = true },
 }
