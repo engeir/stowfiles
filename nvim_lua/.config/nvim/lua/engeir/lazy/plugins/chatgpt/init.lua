@@ -1,9 +1,12 @@
 return {
   "jackMort/ChatGPT.nvim",
-  enabled = IS_KNOWN,
   event = { "BufReadPre", "BufNewFile" },
   opts = {
-    api_key_cmd = "pass ChatGPT/nvim-api-key",
+    api_key_cmd = "pass ChatGPT/nvim-api-key-project",
+    actions_paths = {
+      vim.fn.stdpath("config")
+        .. "/lua/engeir/lazy/plugins/chatgpt/english-grammar-bot.json",
+    },
   },
   dependencies = {
     "MunifTanjim/nui.nvim",

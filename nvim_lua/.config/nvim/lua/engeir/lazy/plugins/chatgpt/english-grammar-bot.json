@@ -1,0 +1,19 @@
+{
+  "mine": {
+    "type": "chat",
+    "opts": {
+      "template": "Improve the grammar and sentences used in the following paragraph, and remember that it is part of an academic paper. Use active voice. Don't hype. Don't use clichés. Avoid negatives. Make the reply follow British English standards, with concise wording and sentences. Avoid rare words and latinisms, do not use superfluous words or words that can be made simpler (for example avoid 'utilise' and try to use 'use' instead). The following is the paragraph to consider:\n\n{{input}}",
+      "strategy": "edit",
+      "params": {
+        "model": "gpt-4o"
+      }
+    },
+    "args": {
+      "lang": {
+        "type": "string",
+        "optional": "true",
+        "default": "english"
+      }
+    }
+  }
+}
