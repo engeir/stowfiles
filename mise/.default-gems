@@ -1,3 +1,4 @@
 # Install asciidoctor CLIs
 asciidoctor
 kramdown-asciidoc
+neovim-ruby-host
