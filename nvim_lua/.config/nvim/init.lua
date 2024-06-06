@@ -1,4 +1,3 @@
--- vim.loader.enable() -- From the impatient.nvim repo
 vim.env.PATH = vim.env.HOME .. "/.local/share/mise/shims:" .. vim.env.PATH
 require("engeir.basics.globals")
 
