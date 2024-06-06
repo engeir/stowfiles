@@ -1,16 +1,7 @@
--- NOTE: This check is very slow (about 200 ms), but i'm not sure how else to
--- enable/disable the plugin conditionally without checking before the build process
--- starts. Disabling it for now.
-
--- local is_wsl = (function()
---   local output = vim.fn.systemlist("uname -r")
---   return not not string.find(output[1] or "", "WSL")
--- end)()
--- local is_linux = not is_wsl and not vim.fn.has("macunix")
 return {
   {
     "3rd/image.nvim",
-    enabled = false,
+    enabled = vim.loop.os_homedir() == "/home/een023",
     build = "luarocks --local --lua-version=5.1 install magick",
     event = "BufReadPre",
     init = function()
