@@ -253,15 +253,15 @@ return {
     event = { "BufReadPre", "BufNewFile" },
     config = function()
       require("syntax-tree-surfer").setup()
-      vim.keymap.set("n", "]a", function()
+      vim.keymap.set("n", "]9", function()
         vim.opt.opfunc = "v:lua.STSSwapCurrentNodeNextNormal_Dot"
         return "g@l"
-      end, { silent = true, expr = true, desc = "Right sibling [s]wap" })
+      end, { silent = true, expr = true, desc = "Right sibling swap" })
 
-      vim.keymap.set("n", "[a", function()
+      vim.keymap.set("n", "[8", function()
         vim.opt.opfunc = "v:lua.STSSwapCurrentNodePrevNormal_Dot"
         return "g@l"
-      end, { silent = true, expr = true, desc = "Left sibling [s]wap" })
+      end, { silent = true, expr = true, desc = "Left sibling swap" })
     end,
   },
   {
