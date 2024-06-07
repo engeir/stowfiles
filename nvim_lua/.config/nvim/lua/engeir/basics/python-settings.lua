@@ -12,6 +12,6 @@ elseif homedir == "/cluster/home/een023" then
   vim.g.python3_host_prog =
     vim.fn.expand("/cluster/software/Python/3.10.8-GCCcore-12.2.0/bin/python3")
   -- vim.cmd("source $HOME/.config/nvim/other-resources/add_ncl_complete_to_your_vimrc")
-elseif vim.fn.has("macunix") then
+elseif vim.fn.has("macunix") == 1 then
   vim.g.python3_host_prog = vim.fn.expand("$HOME/.pyenv/versions/py3nvim/bin/python")
 end

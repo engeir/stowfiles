@@ -3,7 +3,7 @@ return {
   event = { "BufReadPre", "BufNewFile" },
   init = function()
     vim.g.tex_flavor = "latex"
-    if vim.fn.has("macunix") then
+    if vim.fn.has("macunix") == 1 then
       vim.g.vimtex_view_method = "sioyek"
     else
       vim.g.vimtex_view_method = "zathura"
