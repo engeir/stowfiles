@@ -1,6 +1,21 @@
 return {
   "stevearc/conform.nvim",
-  event = { "BufReadPre", "BufNewFile" },
+  event = { "BufWritePre" },
+  cmd = { "ConformInfo" },
+  keys = {
+    {
+      "<leader>sf",
+      function()
+        require("conform").format({
+          async = false,
+          lsp_fallback = true,
+          timeout_ms = 500,
+        })
+      end,
+      mode = { "n", "v" },
+      desc = "Format buffer",
+    },
+  },
   config = function()
     require("conform").setup({
       -- Map of filetype to formatters
@@ -11,6 +26,7 @@ return {
         d2 = { "d2" },
         dockerfile = { "dprint" },
         go = { "gofmt" },
+        just = { "just" },
         javascript = { { "prettierd", "dprint", "prettier" } },
         javascriptreact = { { "prettierd", "dprint", "prettier" } },
         json = { "dprint" },
@@ -26,8 +42,8 @@ return {
         yaml = { { "prettierd", "prettier" } },
         zsh = { "shfmt", "shellharden", "shellcheck", "beautysh" },
       },
-      format_on_save = false,
-      format_after_save = false,
+      format_on_save = nil,
+      format_after_save = nil,
       -- Set the log level. Use `:ConformInfo` to see the location of the log file.
       log_level = vim.log.levels.ERROR,
       -- Conform will notify you when a formatter errors
@@ -58,15 +74,6 @@ return {
           end,
           -- Exit codes that indicate success (default {0})
           exit_codes = { 0 },
-        },
-        d2 = {
-          command = "d2",
-          args = {
-            "fmt",
-            "$FILENAME",
-            "-",
-          },
-          stdin = true,
         },
         dprint = {
           command = "dprint",
@@ -100,21 +107,5 @@ return {
       args = util.extend_args(stylua.args, { "--indent-type=Spaces" }),
       range_args = util.extend_args(stylua.args, { "--indent-type=Spaces" }), --"--indent-width=2"
     })
-
-    -- Create a command `:Format`
-    vim.api.nvim_create_user_command("Format", function(_)
-      require("conform").format({
-        timeout_ms = 10000,
-        async = false,
-        lsp_fallback = true,
-      })
-    end, { desc = "Format current buffer with conform.nvim or LSP" })
-    vim.keymap.set({ "n", "v" }, "<leader>sf", function()
-      require("conform").format({
-        timeout_ms = 10000,
-        async = false,
-        lsp_fallback = true,
-      })
-    end, { desc = "Format" })
   end,
 }
