@@ -96,4 +96,19 @@ return {
       description = "Show the texlab dependency graph",
     },
   },
+  on_attach = function(_, bufnr)
+    -- Set up keymap that forward searches
+    vim.keymap.set(
+      "n",
+      "<localleader>tv",
+      "<cmd>TexlabForward<CR>",
+      { buffer = bufnr, desc = "Texlab forward search doc" }
+    )
+    vim.keymap.set(
+      "n",
+      "<localleader>tb",
+      "<cmd>TexlabBuild<CR>",
+      { buffer = bufnr, desc = "Texlab build doc" }
+    )
+  end,
 }

@@ -23,7 +23,7 @@ return {
     -- vim.keymap.set("n", "<localleader><localleader>t", ":VimtexTocOpen<CR>", { remap = false, silent = true })
     vim.keymap.set(
       "n",
-      "<localleader>t",
+      "<localleader>lt",
       ":VimtexTocToggle<CR>",
       { desc = "Vimtex: Open [T]oC (Toggle)" }
     )
