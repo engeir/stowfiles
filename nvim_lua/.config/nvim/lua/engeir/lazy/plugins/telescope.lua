@@ -186,13 +186,13 @@ return {
         end,
         desc = "[F]ind [D]iagnostics",
       },
-      {
-        "<leader>ff",
-        function()
-          require("telescope.builtin").find_files({ hidden = true })
-        end,
-        desc = "[F]ind [F]iles",
-      },
+      -- {
+      --   "<leader>ff",
+      --   function()
+      --     require("telescope.builtin").find_files({ hidden = true })
+      --   end,
+      --   desc = "[F]ind [F]iles",
+      -- },
       {
         "<leader>fh",
         function()
