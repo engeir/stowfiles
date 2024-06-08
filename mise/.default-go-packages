@@ -10,6 +10,7 @@ github.com/fatih/gomodifytags
 github.com/go-delve/delve/cmd/dlv
 github.com/gokcehan/lf
 github.com/golangci/golangci-lint/cmd/golangci-lint
+github.com/jesseduffield/lazydocker
 github.com/jesseduffield/lazygit
 github.com/maaslalani/draw
 github.com/maaslalani/nap
