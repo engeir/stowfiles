@@ -88,14 +88,6 @@ vim.api.nvim_create_autocmd("CursorMoved", {
   end,
 })
 
--- Enable treesitter highlighting
--- https://this-week-in-neovim.org/2023/Feb/20#core
-vim.api.nvim_create_autocmd("FileType", {
-  pattern = { "lua", "help", "python" }, -- or { 'lua', 'help' },
-  callback = function()
-    vim.treesitter.start()
-  end,
-})
 -- -- Give syntax highlight to `.ncl` files
 -- local set_filetype_ncl = function()
 --     vim.opt.filetype:append("ncl")
