@@ -24,13 +24,14 @@ return {
         _ = "which_key_ignore",
         t = { "<cmd>tabnew<cr>", "Create new tab" },
       },
-      w = {
-        name = "Workspace",
-        s = { "<cmd>source %<cr>", "Source file" },
-      },
+      w = { name = "Workspace", s = { "<cmd>source %<cr>", "Source file" } },
     }, { prefix = "<leader>" })
     wkr({
       r = { name = "Refactor", _ = "which_key_ignore" },
     }, { prefix = "c" })
+    wkr({
+      l = { name = "Vimtex", _ = "which_key_ignore" },
+      t = { name = "Texlab", _ = "which_key_ignore" },
+    }, { prefix = "<localleader>" })
   end,
 }

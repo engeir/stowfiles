@@ -3,16 +3,25 @@ return {
   event = { "BufWritePre" },
   cmd = { "ConformInfo" },
   keys = {
-    {
-      "<leader>sf",
+    { -- copy/pasta from https://github.com/stevearc/dotfiles/blob/master/.config/nvim/lua/plugins/format.lua#L8-L21
+      "=",
       function()
-        require("conform").format({
-          async = false,
-          lsp_fallback = true,
-          timeout_ms = 500,
-        })
+        require("conform").format(
+          { timeout_ms = 500, async = false, lsp_fallback = true },
+          function(err)
+            if not err then
+              if vim.startswith(vim.api.nvim_get_mode().mode:lower(), "v") then
+                vim.api.nvim_feedkeys(
+                  vim.api.nvim_replace_termcodes("<Esc>", true, false, true),
+                  "n",
+                  true
+                )
+              end
+            end
+          end
+        )
       end,
-      mode = { "n", "v" },
+      mode = "",
       desc = "Format buffer",
     },
   },
@@ -26,20 +35,22 @@ return {
         d2 = { "d2" },
         dockerfile = { "dprint" },
         go = { "gofmt" },
-        just = { "just" },
         javascript = { { "prettierd", "dprint", "prettier" } },
         javascriptreact = { { "prettierd", "dprint", "prettier" } },
         json = { "dprint" },
         jsonc = { "dprint" },
-        lua = { "stylua" },
-        markdown = { "dprint" },
+        just = { "just" },
+        lua = { "stylua", "injected" },
+        markdown = { "dprint", "injected" },
         python = { "ruff_format", "ruff_fix" },
         rust = { "rustfmt" },
         sh = { "shfmt", "shellharden", "shellcheck", "beautysh" },
+        tex = { "llf" },
         toml = { "dprint", "taplo" },
         typescript = { { "prettierd", "dprint", "prettier" } },
         typescriptreact = { { "prettierd", "dprint", "prettier" } },
-        yaml = { { "prettierd", "prettier" } },
+        vim = { "vimfmt", "injected" },
+        yaml = { { "yamlfmt", "prettierd", "prettier" }, "injected" },
         zsh = { "shfmt", "shellharden", "shellcheck", "beautysh" },
       },
       format_on_save = nil,
