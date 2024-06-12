@@ -133,6 +133,11 @@ return {
     { t("\\mathrm{"), i(1), t("}") },
     { condition = ts_utils.in_mathzone }
   ),
+  s(
+    { trig = "txt", wordTrig = false },
+    { t("\\text{"), i(1), t("}") },
+    { condition = ts_utils.in_mathzone }
+  ),
   s({ trig = ".ce" }, { t({ "\\ce{" }), i(1), t("}") }),
   s(
     { trig = ".gls", name = "Short acronym (acronym)" },

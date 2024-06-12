@@ -13,7 +13,6 @@ return {
           "go",
           "html",
           "just",
-          "latex",
           "lua",
           "markdown",
           "markdown_inline",
@@ -22,6 +21,7 @@ return {
           "toml",
           "vim",
           "vimdoc",
+          -- "latex", -- see vimtex-faq-treesitter for an explanation of why this is difficult with tree-sitter
           -- "norg",
           -- "org",
         },
@@ -40,7 +40,7 @@ return {
         indent = { enable = true },
         highlight = {
           enable = true,
-          -- disable = {"markdown"},
+          disable = { "latex" }, -- see vimtex-faq-treesitter for an explanation of why this is difficult with tree-sitter
           custom_captures = {
             -- Highlight the @foo.bar capture group with the "Identifier" highlight group.
             ["foo.bar"] = "Identifier",

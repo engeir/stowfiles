@@ -1,4 +1,6 @@
 local util = require("lspconfig.util")
+vim.g.texlab_auto_build = false
+local wk = require("which-key")
 
 local function buf_clean(bufnr)
   bufnr = util.validate_bufnr(bufnr)
@@ -46,8 +48,14 @@ return {
   settings = {
     texlab = {
       chktex = {
-        onEdit = true,
+        onEdit = false,
         onOpenAndSave = true,
+      },
+      diagnostics = {
+        ignoredPatterns = {
+          "Underfull",
+          "Overfull",
+        },
       },
       experimental = {
         followPackageLinks = true,
@@ -69,7 +77,8 @@ return {
       },
       latexindent = { modifyLineBreaks = true },
       build = {
-        onSave = true,
+        onSave = false, -- i'd rather control this with autocommands, so i can more easily toggle it
+        forwardSearchAfter = false,
         executable = "tectonic",
         args = {
           "-X",
@@ -95,20 +104,52 @@ return {
       end,
       description = "Show the texlab dependency graph",
     },
+    TexlabBuildToggle = {
+      function()
+        vim.g.texlab_auto_build = not vim.g.texlab_auto_build
+      end,
+      description = "Toggle the auto build feature for texlab",
+    },
   },
   on_attach = function(_, bufnr)
+    wk.register({
+      t = {
+        name = "Texlab",
+        a = {
+          "<cmd>TexlabBuildToggle<cr>",
+          "Toggle auto building (Texlab)",
+          buffer = bufnr,
+        },
+        b = {
+          "<cmd>TexlabBuild<cr>",
+          "Build doc (Texlab)",
+          buffer = bufnr,
+        },
+        v = {
+          "<cmd>TexlabForward<cr>",
+          "Forward search doc (Texlab)",
+          buffer = bufnr,
+        },
+      },
+    }, { prefix = "<localleader>" })
     -- Set up keymap that forward searches
-    vim.keymap.set(
-      "n",
-      "<localleader>tv",
-      "<cmd>TexlabForward<CR>",
-      { buffer = bufnr, desc = "Texlab forward search doc" }
-    )
-    vim.keymap.set(
-      "n",
-      "<localleader>tb",
-      "<cmd>TexlabBuild<CR>",
-      { buffer = bufnr, desc = "Texlab build doc" }
-    )
+    -- vim.keymap.set(
+    --   "n",
+    --   "<localleader>ta",
+    --   "<cmd>TexlabBuildToggle<CR>",
+    --   { buffer = bufnr, desc = "Texlab toggle auto building" }
+    -- )
+    -- vim.keymap.set(
+    --   "n",
+    --   "<localleader>tb",
+    --   "<cmd>TexlabBuild<CR>",
+    --   { buffer = bufnr, desc = "Texlab build doc" }
+    -- )
+    -- vim.keymap.set(
+    --   "n",
+    --   "<localleader>tv",
+    --   "<cmd>TexlabForward<CR>",
+    --   { buffer = bufnr, desc = "Texlab forward search doc" }
+    -- )
   end,
 }

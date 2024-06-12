@@ -13,9 +13,18 @@ vim.api.nvim_create_autocmd({ "FileType" }, {
 vim.api.nvim_create_autocmd({ "FocusLost" }, {
   pattern = { "*.tex" },
   callback = function()
-    if vim.bo.modified then
+    if vim.bo.modified and vim.g.texlab_auto_build then
       vim.cmd("silent! wa")
       vim.cmd("silent! TexlabBuild") -- Might be too much
+    end
+  end,
+})
+-- Build on save
+vim.api.nvim_create_autocmd({ "BufWritePost" }, {
+  pattern = { "*.tex" },
+  callback = function()
+    if vim.g.texlab_auto_build then
+      vim.cmd("silent! TexlabBuild")
     end
   end,
 })
@@ -102,7 +111,7 @@ vim.api.nvim_create_autocmd("CursorMoved", {
 --     callback = vim_set_ncl,
 -- })
 vim.cmd("au BufRead,BufNewFile *.ncl set filetype=ncl")
-vim.cmd("au! Syntax newlang source $HOME/.config/nvim/syntax/ncl.vim")
+vim.cmd("au! Syntax newlang source $HOME/.config/nvim/after/syntax/ncl.vim")
 -- au BufRead,BufNewFile *.ncl set filetype=ncl
 -- au! Syntax newlang source $VIM/ncl.vim
 

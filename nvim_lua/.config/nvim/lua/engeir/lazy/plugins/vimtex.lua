@@ -1,6 +1,6 @@
 return {
   "lervag/vimtex",
-  event = { "BufReadPre", "BufNewFile" },
+  lazy = false,
   init = function()
     vim.g.tex_flavor = "latex"
     if vim.fn.has("macunix") == 1 then
@@ -25,26 +25,26 @@ return {
       "n",
       "<localleader>lt",
       ":VimtexTocToggle<CR>",
-      { desc = "Vimtex: Open [T]oC (Toggle)" }
+      { desc = "Toggle ToC (Vimtex)" }
     )
     vim.keymap.set(
       "n",
-      "<localleader>cw",
-      ":VimtexCountWords<CR>",
-      { desc = "Vimtex: [C]ount [W]ords" }
+      "<localleader>lw",
+      "<cmd>VimtexCountWords<CR>",
+      { desc = "Count Words (Vimtex)" }
     )
     vim.keymap.set(
       "n",
-      "<localleader>cl",
-      ":VimtexCountLetters<CR>",
-      { desc = "Vimtex: [C]ount [L]etters" }
+      "<localleader>lh",
+      "<cmd>VimtexCountLetters<CR>",
+      { desc = "Count Characters (Vimtex)" }
     )
     vim.keymap.set(
       "n",
       "<localleader>lb",
       -- "<cmd>!bibexport -o %:p:r.bib %:p:r.aux<CR>",
-      "<cmd>!bibfish -f % ~/science/ref/ref.bib %:p:r.bib<CR><CR>",
-      { desc = "Vimtex: [B]ibexport" }
+      "<cmd>!bibfish -c 'cite,citet,citep,citeA' -f % ~/science/ref/ref.bib %:p:r.bib<CR><CR>",
+      { desc = "Bibexport (Vimtex)" }
     )
   end,
 }

@@ -307,10 +307,10 @@ return {
     event = { "BufReadPre", "BufNewFile" },
     -- replace "lervag/vimtex" with "nvim-treesitter/nvim-treesitter" if you're
     -- using treesitter.
-    dependencies = { "L3MON4D3/LuaSnip", "nvim-treesitter/nvim-treesitter" },
+    dependencies = { "L3MON4D3/LuaSnip", "lervag/vimtex" },
     config = function()
       require("luasnip-latex-snippets").setup({
-        use_treesitter = true,
+        use_treesitter = false, -- see vimtex-faq-treesitter for an explanation of why this is difficult with tree-sitter
         allow_on_markdown = false,
       })
     end,
