@@ -7,6 +7,7 @@ return {
     "williamboman/mason.nvim",
     "williamboman/mason-lspconfig.nvim",
     "WhoIsSethDaniel/mason-tool-installer.nvim",
+    "b0o/schemastore.nvim",
   },
   config = function()
     vim.api.nvim_create_autocmd("LspAttach", {
@@ -185,6 +186,8 @@ return {
 
       lua_ls = require("engeir.lazy.plugins.lsp.lspconfig-settings.lua_ls"),
       texlab = require("engeir.lazy.plugins.lsp.lspconfig-settings.texlab"),
+      jsonls = require("engeir.lazy.plugins.lsp.lspconfig-settings.jsonls"),
+      yamlls = require("engeir.lazy.plugins.lsp.lspconfig-settings.yamlls"),
       -- pylsp = require("engeir.lazy.plugins.lsp.lspconfig-settings.pylsp"),
     }
 
