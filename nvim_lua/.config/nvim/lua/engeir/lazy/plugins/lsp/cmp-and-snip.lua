@@ -315,6 +315,6 @@ return {
       })
     end,
     -- treesitter is required for markdown
-    ft = { "tex", "markdown" },
+    ft = { "tex" },
   },
 }

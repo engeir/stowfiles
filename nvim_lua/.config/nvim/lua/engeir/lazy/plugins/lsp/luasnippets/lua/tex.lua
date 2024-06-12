@@ -1,4 +1,13 @@
-local ts_utils = require("luasnip-latex-snippets.util.ts_utils")
+local utils = require("luasnip-latex-snippets.util.utils")
+
+-- This is actually not necessary, but lua_ls complains otherwise.
+local ls = require("luasnip")
+local s = ls.snippet
+local sn = ls.snippet_node
+local t = ls.text_node
+local i = ls.insert_node
+local c = ls.choice_node
+local d = ls.dynamic_node
 
 local rec_ls
 rec_ls = function()
@@ -131,12 +140,12 @@ return {
   s(
     { trig = "mrm", wordTrig = false },
     { t("\\mathrm{"), i(1), t("}") },
-    { condition = ts_utils.in_mathzone }
+    { condition = utils.is_math() }
   ),
   s(
     { trig = "txt", wordTrig = false },
     { t("\\text{"), i(1), t("}") },
-    { condition = ts_utils.in_mathzone }
+    { condition = utils.is_math() }
   ),
   s({ trig = ".ce" }, { t({ "\\ce{" }), i(1), t("}") }),
   s(
