@@ -1,5 +1,5 @@
 return {
-  { "xiyaowong/transparent.nvim", config = true },
+  { "xiyaowong/transparent.nvim", config = true, enabled = false },
   {
     "tjdevries/colorbuddy.vim",
     enabled = false,
@@ -41,13 +41,13 @@ return {
       },
       disable = {
         colored_cursor = true, -- Disable the colored cursor
-        borders = false, -- Disable borders between verticaly split windows
-        background = false, -- Prevent the theme from setting the background (Neovim then uses your teminal background)
+        borders = false, -- Disable borders between vertically split windows
+        background = false, -- Prevent the theme from setting the background (Neovim then uses your terminal background)
         term_colors = false, -- Prevent the theme from setting terminal colors
         eob_lines = false, -- Hide the end-of-buffer lines
       },
       lualine_style = "default", -- Lualine style ( can be 'stealth' or 'default' )
-      async_loading = true, -- Load parts of the theme asyncronously for faster startup (turned on by default)
+      async_loading = true, -- Load parts of the theme asynchronously for faster startup (turned on by default)
       custom_highlights = {}, -- Overwrite highlights with your own
       custom_colors = nil, -- If you want to everride the default colors, set this to a function
       plugins = {
@@ -87,9 +87,9 @@ return {
     "sainnhe/gruvbox-material",
     event = "VeryLazy",
     enabled = true,
-    lazy = true,
+    lazy = false,
     priority = 1000,
-    init = function()
+    config = function()
       vim.g.gruvbox_material_contrast = "soft"
       vim.g.gruvbox_material_enable_italic = 1
       vim.g.gruvbox_material_enable_bold = 1
@@ -97,17 +97,30 @@ return {
       vim.g.gruvbox_material_background = "soft"
       vim.g.gruvbox_material_cursor = "green"
       vim.g.gruvbox_material_transparent_background = 1
-      vim.cmd("colorscheme gruvbox-material")
+      -- vim.cmd.colorscheme("gruvbox-material")
       -- vim.opt.bg="dark"
     end,
   },
   {
+    "sainnhe/sonokai",
+    event = "VeryLazy",
+    enabled = true,
+    lazy = false,
+    priority = 1000,
+    config = function()
+      -- vim.g.sonokai_style = "shusia"
+      vim.g.sonokai_style = "maia"
+      vim.g.sonokai_transparent_background = 1
+      vim.cmd.colorscheme("sonokai")
+    end,
+  },
+  {
     "catppuccin/nvim",
-    enabled = false,
+    enabled = true,
     name = "catppuccin",
     init = function()
       vim.g.catppuccin_flavour = "frappe" -- latte, frappe, macchiato, mocha
-      vim.cmd([[colorscheme catppuccin]])
+      -- vim.cmd([[colorscheme catppuccin]])
     end,
     opts = {
       transparent_background = false,
@@ -141,5 +154,36 @@ return {
       color_overrides = {},
       highlight_overrides = {},
     },
+  },
+  {
+    "rebelot/kanagawa.nvim",
+    enabled = true,
+    init = function()
+      require("kanagawa").setup({
+        theme = "dragon",
+        colors = {
+          theme = {
+            all = {
+              ui = {
+                bg = "none",
+                bg_gutter = "none",
+              },
+            },
+          },
+        },
+      })
+      -- vim.cmd("colorscheme kanagawa-dragon")
+    end,
+  },
+  {
+    "AlexvZyl/nordic.nvim",
+    lazy = false,
+    priority = 1000,
+    config = function()
+      require("nordic").setup({
+        transparent_bg = true,
+      })
+      -- vim.cmd.colorscheme("nordic")
+    end,
   },
 }

@@ -67,8 +67,8 @@ return {
         globalstatus = true,
         component_separators = { "", "" },
         section_separators = { left = "", right = "" },
-        theme = "gruvbox",
-        -- theme = "auto",
+        -- theme = "gruvbox",
+        theme = "auto",
       },
       sections = {
         lualine_c = {
