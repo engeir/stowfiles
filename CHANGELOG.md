@@ -1,5 +1,49 @@
 # Changelog
 
+## [1.17.0](https://github.com/engeir/stowfiles/compare/stowfiles-v1.16.1...stowfiles-v1.17.0) (2024-06-16)
+
+
+### Features
+
+* **llf:** set up llf config for latex formatting ([ad7f568](https://github.com/engeir/stowfiles/commit/ad7f568dd28176b96a102c853ba297900e6a79a1))
+
+
+### Bug Fixes
+
+* **nvim:** check has macunix value is 1 ([036ef87](https://github.com/engeir/stowfiles/commit/036ef87faca9a5c36ec26de671923835af3f0b7d))
+* **nvim:** forgot to both go to cmd mode and to cr the commands ([f061153](https://github.com/engeir/stowfiles/commit/f06115309b09b6cf22b059bc0549167d9d20487a))
+* **nvim:** my bug fix of vim-angry-reviewer is merged ([06ae4ca](https://github.com/engeir/stowfiles/commit/06ae4cae8385469aabb9eadf7f9f7d2559a46b65))
+* **nvim:** tex snippets should check math from utils, not ts_utils ([ab29f7a](https://github.com/engeir/stowfiles/commit/ab29f7a0240c45b96a0b3ba94546682e997542fa))
+* **nvim:** use vimtex over treesitter for latex ([36a7424](https://github.com/engeir/stowfiles/commit/36a7424a650d17addc62f8141f109f8b3c31ddf3))
+
+
+### Miscellaneous
+
+* **mise,go:** add lazydocker to default programs ([9917229](https://github.com/engeir/stowfiles/commit/9917229e47db7eb053890468cb9514f3de4c3071))
+* **nvim:** [plugin] add schemastore.nvim ([98f12d2](https://github.com/engeir/stowfiles/commit/98f12d2773b6142ae1b9af4c7ecc056866d41af6))
+* **nvim:** [plugin] add snap to do searching ([b7307ed](https://github.com/engeir/stowfiles/commit/b7307ed67e05869e80f4bfffe9e569902817c509))
+* **nvim:** add just formatter and d2 is now available from source ([9a86ae4](https://github.com/engeir/stowfiles/commit/9a86ae41287378da302a379394c86db2df2eb1e3))
+* **nvim:** add yaml and json schema store and set LSPs ([c59dafd](https://github.com/engeir/stowfiles/commit/c59dafd7dd8ce4b6ad07241516041c232ffefb67))
+* **nvim:** map all vimtex to local-l and use local-t for texlab keymaps ([8aefca0](https://github.com/engeir/stowfiles/commit/8aefca093ebedd514467339576d110091608af5d))
+* **nvim:** move syntax file to after ([1ef9f62](https://github.com/engeir/stowfiles/commit/1ef9f62981abdaf31a4a423c8563cc91c93f2f10))
+* **nvim:** remove autocmd for treesitter highlighting ([9004756](https://github.com/engeir/stowfiles/commit/9004756c26fe4be2e813dfa6246a6ebaa677b7d6))
+* **nvim:** small changes to plugins ([ea3378c](https://github.com/engeir/stowfiles/commit/ea3378cf2e39bb158e671d36bbc9668a2ccc6efd))
+* **nvim:** update colorscheme ([56abdee](https://github.com/engeir/stowfiles/commit/56abdeec0d9ab4b33b425ecb5eb64852797d72c4))
+* **nvim:** update plugin list ([a52480f](https://github.com/engeir/stowfiles/commit/a52480f1567420a26cd2118b71cd667bd3a65b94))
+* **nvim:** update some keymaps ([d852c0e](https://github.com/engeir/stowfiles/commit/d852c0e8dc2f6f8368bcef2ba5cd2bb282a00cb5))
+* **software:** update installed ([f95be25](https://github.com/engeir/stowfiles/commit/f95be25c523a5dac1ecbdb364047a21fc8e71952))
+* **yazi:** update deprecated config value ([55cda96](https://github.com/engeir/stowfiles/commit/55cda9617a395e2c73827be9e0237e13bd49c35c))
+
+
+### Styles
+
+* **typo:** fix English grammar ([7c1d3be](https://github.com/engeir/stowfiles/commit/7c1d3be4b55fe51a3fb82a6f92f796c8a630a8ff))
+
+
+### Code Refactoring
+
+* **nvim:** swap treesitter siblings with [8 and ]9, not [a and ]a ([d1210d8](https://github.com/engeir/stowfiles/commit/d1210d8b97ec4ee2fa5cbdb5e6bddce02ea276d8))
+
 ## [1.16.1](https://github.com/engeir/stowfiles/compare/stowfiles-v1.16.0...stowfiles-v1.16.1) (2024-06-06)
 
 
