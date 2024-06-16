@@ -10,7 +10,7 @@ show_symlink = true
 [plugin]
 prepend_previewers = [
   # HEIC previewer
-  { mime = "image/heic", exec = "heic" },
-  # exec need to be the name of a Lua plugin
-  # { mime = "application/x-netcdf", name = "*.nc", exec = "ncdump-rich" },
+  { mime = "image/heic", run = "heic" },
+  # run need to be the name of a Lua plugin
+  # { mime = "application/x-netcdf", name = "*.nc", run = "ncdump-rich" },
 ]
