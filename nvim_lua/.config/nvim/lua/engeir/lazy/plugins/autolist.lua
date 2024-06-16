@@ -1,5 +1,6 @@
 return {
   "gaoDean/autolist.nvim",
+  enabled = false,
   ft = {
     "markdown",
     "text",
@@ -16,7 +17,7 @@ return {
     vim.keymap.set("n", "o", "o<cmd>AutolistNewBullet<cr>")
     vim.keymap.set("n", "O", "O<cmd>AutolistNewBulletBefore<cr>")
     vim.keymap.set("n", "<leader>x", "<cmd>AutolistToggleCheckbox<cr>")
-    vim.keymap.set("v", "<C-r>", "<cmd>AutolistRecalculate<cr>")
+    -- vim.keymap.set("v", "<C-r>", "<cmd>AutolistRecalculate<cr>")
 
     -- cycle list types with dot-repeat
     vim.keymap.set(

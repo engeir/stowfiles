@@ -1,5 +1,5 @@
 -- https://github.com/elbkind/nvim/blob/main/lua/plugins/oil.lua
-local default_coloumns = function(detailed)
+local default_columns = function(detailed)
   return detailed
       and {
         { "permissions", highlight = "String" },
@@ -14,6 +14,7 @@ return {
   -- IMPORTANT: do not Lazy load this, since I want this to be default when opening
   -- vim in a directory.
   "stevearc/oil.nvim",
+  lazy = false,
   keys = {
     {
       "<leader>po",
@@ -24,6 +25,7 @@ return {
     },
   },
   opts = function(_, o)
+    o.delete_to_trash = false
     o.view_options = {
       -- Show files and directories that start with "."
       show_hidden = true,
@@ -33,7 +35,7 @@ return {
       end,
       -- This function defines what will never be shown, even when `show_hidden` is set
       is_always_hidden = function(name, _)
-        return vim.startswith(name, ".git/")
+        return vim.startswith(name, "..")
       end,
     }
     o.float = {
@@ -51,10 +53,10 @@ return {
         callback = function()
           local oil = require("oil")
           local config = require("oil.config")
-          if #config.columns == #default_coloumns(false) then
-            oil.set_columns(default_coloumns(true))
+          if #config.columns == #default_columns(false) then
+            oil.set_columns(default_columns(true))
           else
-            oil.set_columns(default_coloumns(false))
+            oil.set_columns(default_columns(false))
           end
         end,
       },

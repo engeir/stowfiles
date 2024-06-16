@@ -44,6 +44,7 @@ return {
         desc = "Run visual select in Floaterm",
         noremap = true,
         silent = true,
+        mode = { "v" },
       },
       {
         "<leader>tr",
