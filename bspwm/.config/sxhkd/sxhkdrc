@@ -108,7 +108,7 @@ alt + Print
 	scrot -d 5 'Screenshot_%Y-%m-%d-%S_$wx$h.png' -e 'mv $f $$(xdg-user-dir PICTURES)/Pictures/Screenshots ; nsxiv $$(xdg-user-dir PICTURES)/Pictures/Screenshots/$f'
 	# scrot -d 5 'Screenshot_%Y-%m-%d-%S_$wx$h.png' -e 'mv $f $$(xdg-user-dir PICTURES)/Pictures/Screenshots ; viewnior $$(xdg-user-dir PICTURES)/Pictures/Screenshots/$f'
 
-# # Brighness control
+# # Brightness control
 # XF86MonBrightness{Up,Down}
 # 	backlight{-up,-down}
 
