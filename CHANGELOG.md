@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.17.3](https://github.com/engeir/stowfiles/compare/stowfiles-v1.17.2...stowfiles-v1.17.3) (2024-06-19)
+
+
+### Documentation
+
+* **alacritty:** symlink CHANGELOG to README ([5c4c0f5](https://github.com/engeir/stowfiles/commit/5c4c0f5ceb641c5f44b2717a5f908c29b8f08d85))
+* symlink CHANGELOG to README in packages ([45c3aac](https://github.com/engeir/stowfiles/commit/45c3aacf6c1c60ed559a8c394b4f4873fe9e806d))
+
 ## [1.17.2](https://github.com/engeir/stowfiles/compare/stowfiles-v1.17.1...stowfiles-v1.17.2) (2024-06-19)
 
 
