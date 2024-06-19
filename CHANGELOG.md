@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.17.1](https://github.com/engeir/stowfiles/compare/stowfiles-v1.17.0...stowfiles-v1.17.1) (2024-06-19)
+
+
+### Continuous Integration
+
+* try again to set up monorepo releases ([cba682e](https://github.com/engeir/stowfiles/commit/cba682e494a43b3b0d30b4c85b8b98c23d33bd41))
+
 ## [1.17.0](https://github.com/engeir/stowfiles/compare/stowfiles-v1.16.1...stowfiles-v1.17.0) (2024-06-16)
 
 
