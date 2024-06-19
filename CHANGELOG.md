@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.17.5](https://github.com/engeir/stowfiles/compare/stowfiles-v1.17.4...stowfiles-v1.17.5) (2024-06-19)
+
+
+### Miscellaneous
+
+* release main ([#62](https://github.com/engeir/stowfiles/issues/62)) ([666fcbe](https://github.com/engeir/stowfiles/commit/666fcbe3a5988368eafcbf732d1c9421ab1a3300))
+
 ## [1.17.4](https://github.com/engeir/stowfiles/compare/stowfiles-v1.17.3...stowfiles-v1.17.4) (2024-06-19)
 
 
