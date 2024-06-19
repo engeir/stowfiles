@@ -139,7 +139,7 @@ return {
   {
     "echasnovski/mini.colors",
     version = "*",
-    cofig = true,
+    config = true,
     event = { "VeryLazy" },
     enabled = false,
   },
@@ -186,9 +186,9 @@ return {
     config = true,
     keys = {
       {
-        "<leader>pm",
+        "-",
         function()
-          MiniFiles.open(vim.api.nvim_buf_get_name(0))
+          require("mini.files").open(vim.api.nvim_buf_get_name(0))
         end,
         desc = "[P]ath explorer with [M]iniFiles",
       },
@@ -271,6 +271,7 @@ return {
   -- mini.starter --------------------------------------------------------------------
   {
     "echasnovski/mini.starter",
+    lazy = false,
     config = function()
       local starter = require("mini.starter")
       local function footer()
