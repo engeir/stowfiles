@@ -93,6 +93,7 @@ vimcmd_symbol = "[👓](bold #8dbf7c) "
 [custom.sudo]
 description = "valid sudo timestamp marker"
 command = "echo -n '!'"
+ignore_timeout = true
 format = "[$symbol$output]($style) "
 style = "bold fg:bright-red"
 when = "sudo -vn &>/dev/null"
