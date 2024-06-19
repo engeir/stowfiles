@@ -1,5 +1,31 @@
 # Changelog
 
+## [1.17.2](https://github.com/engeir/stowfiles/compare/stowfiles-v1.17.1...stowfiles-v1.17.2) (2024-06-19)
+
+
+### Bug Fixes
+
+* **starship:** ignore timeout in custom command ([919b563](https://github.com/engeir/stowfiles/commit/919b563ceb1c17e86c2937b6e5d2230fd0b69bfa))
+
+
+### Miscellaneous
+
+* **fish:** add abbr mr for mise run ([29dd235](https://github.com/engeir/stowfiles/commit/29dd235b742fec6a58ed46559eb78775dd2b2111))
+* **nvim:** add command to format with timeout_ms optional arg ([1f0ff5c](https://github.com/engeir/stowfiles/commit/1f0ff5c353b80c7a0131ac507f3a9e8cf808432c))
+* **nvim:** fix typos and map mini.files to - ([0c39232](https://github.com/engeir/stowfiles/commit/0c392327ea613d22d74eff3ebcfcd4ff8c329eea))
+* **software:** update installed ([97e592f](https://github.com/engeir/stowfiles/commit/97e592fe6ad9c88593727a98230f393ce9156da8))
+
+
+### Continuous Integration
+
+* **release:** add package names ([db5cd17](https://github.com/engeir/stowfiles/commit/db5cd17ef0b0879e05d715f2ae0c622db545ae64))
+* **release:** try to remove bootstrap sha ([3625292](https://github.com/engeir/stowfiles/commit/3625292602183230219a2d9c75d2a3687d740757))
+
+
+### Documentation
+
+* **nvim:** simpler keymap description for just ([0e204a8](https://github.com/engeir/stowfiles/commit/0e204a85d884402040e829e7c60936dd3c28a754))
+
 ## [1.17.1](https://github.com/engeir/stowfiles/compare/stowfiles-v1.17.0...stowfiles-v1.17.1) (2024-06-19)
 
 

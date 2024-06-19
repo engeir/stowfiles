@@ -1,0 +1,26 @@
+# Changelog
+
+## 1.15.2 (2024-06-19)
+
+
+### Features
+
+* **starship,bin:** detect if rye, poetry or unknown python manager is used ([0bbefc6](https://github.com/engeir/stowfiles/commit/0bbefc638c193b9694b5af767878ff894cd0e762))
+* **starship:** custom script for sudo session ([aa49dcf](https://github.com/engeir/stowfiles/commit/aa49dcff56e1181df4f78db291e17987d3d5cfe8))
+
+
+### Bug Fixes
+
+* **starship:** ignore timeout in custom command ([919b563](https://github.com/engeir/stowfiles/commit/919b563ceb1c17e86c2937b6e5d2230fd0b69bfa))
+
+
+### Miscellaneous
+
+* release 1.15.1 ([8ae5a50](https://github.com/engeir/stowfiles/commit/8ae5a506399c8574fd780fa48e6df75e7bf92946))
+* release 1.15.2 ([a56e2b3](https://github.com/engeir/stowfiles/commit/a56e2b3e1a6a859ad6b0b3953832b88fd87ecfcb))
+* release 1.15.2 ([35e368a](https://github.com/engeir/stowfiles/commit/35e368a1bf125ca33b6acc36d32f86ed88ca87be))
+
+
+### Styles
+
+* **dprint:** format the repo with dprint during pre-commit ([6f5aef9](https://github.com/engeir/stowfiles/commit/6f5aef945cd85e9b82e4bada74599fbfab15fbb4)), closes [#33](https://github.com/engeir/stowfiles/issues/33)
