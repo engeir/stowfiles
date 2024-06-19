@@ -17,13 +17,13 @@ return {
         "JustCreateTemplate", -- Creates template justdfile with included "cheatsheet".
       },
       keys = {
-        { "<leader>jd", "<cmd>JustDefault<cr>", desc = "[J]ust[D]efault" },
-        { "<leader>jb", "<cmd>JustBuild<cr>", desc = "[J]ust[B]uild" },
-        { "<leader>jr", "<cmd>JustRun<cr>", desc = "[J]ust[R]un" },
-        { "<leader>jt", "<cmd>JustTest<cr>", desc = "[J]ust[T]est" },
-        { "<leader>js", "<cmd>JustSelect<cr>", desc = "[J]ust[S]elect" },
-        { "<leader>jk", "<cmd>JustStop<cr>", desc = "[J]ust[K]ill" },
-        { "<leader>jc", "<cmd>JustCreateTemplate<cr>", desc = "[J]ust[C]reate" },
+        { "<leader>jd", "<cmd>JustDefault<cr>", desc = "Just: Default" },
+        { "<leader>jb", "<cmd>JustBuild<cr>", desc = "Just: Build" },
+        { "<leader>jr", "<cmd>JustRun<cr>", desc = "Just: Run" },
+        { "<leader>jt", "<cmd>JustTest<cr>", desc = "Just: Test" },
+        { "<leader>js", "<cmd>JustSelect<cr>", desc = "Just: Select" },
+        { "<leader>jk", "<cmd>JustStop<cr>", desc = "Just: Kill" },
+        { "<leader>jc", "<cmd>JustCreateTemplate<cr>", desc = "Just: Create" },
       },
       dependencies = {
         "nvim-lua/plenary.nvim",
