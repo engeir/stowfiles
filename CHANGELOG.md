@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.17.4](https://github.com/engeir/stowfiles/compare/stowfiles-v1.17.3...stowfiles-v1.17.4) (2024-06-19)
+
+
+### Miscellaneous
+
+* **spt:** delete spotify-tui directory ([d73b27f](https://github.com/engeir/stowfiles/commit/d73b27fbcbff73cc378a2c63c0f995ae71c10ded))
+
 ## [1.17.3](https://github.com/engeir/stowfiles/compare/stowfiles-v1.17.2...stowfiles-v1.17.3) (2024-06-19)
 
 
