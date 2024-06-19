@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.15.3](https://github.com/engeir/stowfiles/compare/whoogle-v1.15.2...whoogle-v1.15.3) (2024-06-19)
+
+
+### Documentation
+
+* symlink CHANGELOG to README in packages ([45c3aac](https://github.com/engeir/stowfiles/commit/45c3aacf6c1c60ed559a8c394b4f4873fe9e806d))
+
 ## 1.15.2 (2024-06-19)
 
 

@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.15.3](https://github.com/engeir/stowfiles/compare/alacritty-v1.15.2...alacritty-v1.15.3) (2024-06-19)
+
+
+### Documentation
+
+* **alacritty:** symlink CHANGELOG to README ([5c4c0f5](https://github.com/engeir/stowfiles/commit/5c4c0f5ceb641c5f44b2717a5f908c29b8f08d85))
+
 ## 1.15.2 (2024-06-19)
 
 
