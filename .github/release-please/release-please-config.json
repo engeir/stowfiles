@@ -165,7 +165,6 @@
       "path": "skhd",
       "release-type": "simple"
     },
-    "spt": { "package-name": "spt", "path": "spt", "release-type": "simple" },
     "starship": {
       "package-name": "starship",
       "path": "starship",
