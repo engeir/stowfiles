@@ -1,9 +1,7 @@
 {
   "$schema": "https://raw.githubusercontent.com/googleapis/release-please/main/schemas/config.json",
-  "bootstrap-sha": "8c13b589ab4bb4fbcc6bb45c2d11599bb058cdcf",
   "packages": {
     ".": {
-      "release-as": "1.17.1",
       "release-type": "simple",
       "extra-files": ["README.md"],
       "package-name": "stowfiles",
