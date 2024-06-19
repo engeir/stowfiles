@@ -118,5 +118,14 @@ return {
       args = util.extend_args(stylua.args, { "--indent-type=Spaces" }),
       range_args = util.extend_args(stylua.args, { "--indent-type=Spaces" }), --"--indent-width=2"
     })
+
+    -- Set up a custom function that takes the timeout as an argument
+    vim.api.nvim_create_user_command("Format", function(opts)
+      require("conform").format({
+        timeout_ms = opts.fargs[1] or 1500,
+        async = false,
+        lsp_fallback = true,
+      })
+    end, { desc = "Format buffer", nargs = "?" })
   end,
 }
