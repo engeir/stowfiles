@@ -7,3 +7,5 @@ source "$HOME/.cargo/env"
 
 # bun completions
 [ -s "/home/een023/.bun/_bun" ] && source "/home/een023/.bun/_bun"
+
+. "$HOME/.atuin/bin/env"
