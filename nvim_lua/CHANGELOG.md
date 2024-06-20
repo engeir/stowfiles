@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.15.3](https://github.com/engeir/stowfiles/compare/nvim-v1.15.2...nvim-v1.15.3) (2024-06-20)
+
+
+### Miscellaneous
+
+* **nvim:** run floaterm python behind mise exec ([e23979e](https://github.com/engeir/stowfiles/commit/e23979eb810a5a9f04cbe47267d74d0b1d8e91d8))
+
 ## [1.15.2](https://github.com/engeir/stowfiles/compare/nvim-v1.15.2...nvim-v1.15.2) (2024-06-19)
 
 
