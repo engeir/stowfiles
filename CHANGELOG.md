@@ -1,5 +1,27 @@
 # Changelog
 
+## [1.17.6](https://github.com/engeir/stowfiles/compare/stowfiles-v1.17.5...stowfiles-v1.17.6) (2024-06-20)
+
+
+### Miscellaneous
+
+* **atuin:** force add completion sources ([fbecb17](https://github.com/engeir/stowfiles/commit/fbecb172f33063b1cd4836c94f55e29c902782ab))
+* **main:** release fish 1.15.4 ([#65](https://github.com/engeir/stowfiles/issues/65)) ([0536e2c](https://github.com/engeir/stowfiles/commit/0536e2c907752c2d41bf3b1bf139c0d615e06757))
+* **main:** release nvim 1.15.3 ([#68](https://github.com/engeir/stowfiles/issues/68)) ([6bfa215](https://github.com/engeir/stowfiles/commit/6bfa21507f725730cd40da3b55e3174514d8e1cb))
+* **main:** release zsh_mac 1.15.3 ([#67](https://github.com/engeir/stowfiles/issues/67)) ([03bb084](https://github.com/engeir/stowfiles/commit/03bb084bdeeb30abfa9cffc6259319dbd865f539))
+* **nvim:** run floaterm python behind mise exec ([e23979e](https://github.com/engeir/stowfiles/commit/e23979eb810a5a9f04cbe47267d74d0b1d8e91d8))
+* **software:** update installed ([f534c2f](https://github.com/engeir/stowfiles/commit/f534c2f663dfe66d2bf3599d9cdc64c06a1ae368))
+
+
+### Code Refactoring
+
+* **atuin:** move all fish aliases to atuin ([d0efc6d](https://github.com/engeir/stowfiles/commit/d0efc6de1ea43cd593b41c87759658042ac69df2))
+
+
+### Continuous Integration
+
+* **release:** use separate PR for each package ([ccacf0e](https://github.com/engeir/stowfiles/commit/ccacf0e138fccff389f866cdaf6a4eadea4a776b))
+
 ## [1.17.5](https://github.com/engeir/stowfiles/compare/stowfiles-v1.17.4...stowfiles-v1.17.5) (2024-06-19)
 
 
