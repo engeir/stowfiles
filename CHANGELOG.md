@@ -1,5 +1,19 @@
 # Changelog
 
+## [1.17.6](https://github.com/engeir/stowfiles/compare/stowfiles-v1.17.5...stowfiles-v1.17.6) (2024-06-20)
+
+
+### Miscellaneous
+
+* **atuin:** force add completion sources ([fbecb17](https://github.com/engeir/stowfiles/commit/fbecb172f33063b1cd4836c94f55e29c902782ab))
+* **nvim:** run floaterm python behind mise exec ([e23979e](https://github.com/engeir/stowfiles/commit/e23979eb810a5a9f04cbe47267d74d0b1d8e91d8))
+* **software:** update installed ([f534c2f](https://github.com/engeir/stowfiles/commit/f534c2f663dfe66d2bf3599d9cdc64c06a1ae368))
+
+
+### Code Refactoring
+
+* **atuin:** move all fish aliases to atuin ([d0efc6d](https://github.com/engeir/stowfiles/commit/d0efc6de1ea43cd593b41c87759658042ac69df2))
+
 ## [1.17.5](https://github.com/engeir/stowfiles/compare/stowfiles-v1.17.4...stowfiles-v1.17.5) (2024-06-19)
 
 

@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.15.3](https://github.com/engeir/stowfiles/compare/zsh_mac-v1.15.2...zsh_mac-v1.15.3) (2024-06-20)
+
+
+### Miscellaneous
+
+* **atuin:** force add completion sources ([fbecb17](https://github.com/engeir/stowfiles/commit/fbecb172f33063b1cd4836c94f55e29c902782ab))
+
 ## [1.15.2](https://github.com/engeir/stowfiles/compare/zsh_mac-v1.15.2...zsh_mac-v1.15.2) (2024-06-19)
 
 
