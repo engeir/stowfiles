@@ -1,5 +1,17 @@
 # Changelog
 
+## [1.15.4](https://github.com/engeir/stowfiles/compare/fish-v1.15.3...fish-v1.15.4) (2024-06-20)
+
+
+### Miscellaneous
+
+* **atuin:** force add completion sources ([fbecb17](https://github.com/engeir/stowfiles/commit/fbecb172f33063b1cd4836c94f55e29c902782ab))
+
+
+### Code Refactoring
+
+* **atuin:** move all fish aliases to atuin ([d0efc6d](https://github.com/engeir/stowfiles/commit/d0efc6de1ea43cd593b41c87759658042ac69df2))
+
 ## [1.15.3](https://github.com/engeir/stowfiles/compare/fish-v1.15.2...fish-v1.15.3) (2024-06-19)
 
 
