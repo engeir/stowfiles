@@ -1,3 +1,0 @@
-function ll --wraps='eza --icons -FalhOg --group-directories-first' --description 'alias ll=eza --icons -FalhOg --group-directories-first'
-  eza --icons -alhOg -F=always --group-directories-first $argv
-end
