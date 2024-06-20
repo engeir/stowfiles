@@ -21,7 +21,7 @@ return {
     keys = {
       {
         "<leader>to",
-        ":FloatermNew --wintype=vsplit --autohide=0 python<CR><C-\\><C-n><C-w>h",
+        ":FloatermNew --wintype=vsplit --autohide=0 mise x -- python<CR><C-\\><C-n><C-w>h",
         desc = "[T]erm [O]pen (Python)",
       },
       {
