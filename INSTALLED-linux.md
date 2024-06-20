@@ -137,7 +137,7 @@ cmake 3.22.1-1ubuntu1.22.04.2 [Ubuntu/jammy main]
 cmake-data 3.22.1-1ubuntu1.22.04.2 [Ubuntu/jammy main]
 cmatrix 2.0-3 [Ubuntu/jammy universe]
 cmdtest 0.32.14.gcdfe14e-2 [Ubuntu/jammy universe]
-code 1.90.1-1718141439 [code stable/stable main]
+code 1.90.2-1718751586 [code stable/stable main]
 colord 1.4.6-1 [Ubuntu/jammy main]
 colord-data 1.4.6-1 [Ubuntu/jammy main]
 comerr-dev 2.1-1.46.5-2ubuntu1.1 [Ubuntu/jammy main]
@@ -3248,37 +3248,37 @@ linux-base 4.5ubuntu9 [Ubuntu/jammy main]
 linux-firmware 20220329.git681281e4-0ubuntu3.31 [Ubuntu/jammy main]
 linux-generic 5.15.0.112.112 [Ubuntu/jammy main]
 linux-generic-hwe-20.04 5.15.0.112.112 [Ubuntu/jammy main]
-linux-generic-hwe-22.04 6.5.0.35.35~22.04.1 [local]
+linux-generic-hwe-22.04 6.5.0.41.41~22.04.2 [Ubuntu/jammy main]
 linux-headers-5.15.0-112 5.15.0-112.122 [Ubuntu/jammy main]
 linux-headers-5.15.0-112-generic 5.15.0-112.122 [Ubuntu/jammy main]
 linux-headers-5.19.0-50-generic 5.19.0-50.50 [Ubuntu/jammy main]
 linux-headers-6.2.0-39-generic 6.2.0-39.40~22.04.1 [Ubuntu/jammy main]
-linux-headers-6.5.0-28-generic 6.5.0-28.29~22.04.1 [Ubuntu/jammy main]
 linux-headers-6.5.0-35-generic 6.5.0-35.35~22.04.1 [Ubuntu/jammy main]
+linux-headers-6.5.0-41-generic 6.5.0-41.41~22.04.2 [Ubuntu/jammy main]
 linux-headers-generic 5.15.0.112.112 [Ubuntu/jammy main]
-linux-headers-generic-hwe-22.04 6.5.0.35.35~22.04.1 [local]
+linux-headers-generic-hwe-22.04 6.5.0.41.41~22.04.2 [Ubuntu/jammy main]
 linux-hwe-5.19-headers-5.19.0-50 5.19.0-50.50 [Ubuntu/jammy main]
 linux-hwe-6.2-headers-6.2.0-39 6.2.0-39.40~22.04.1 [Ubuntu/jammy main]
-linux-hwe-6.5-headers-6.5.0-28 6.5.0-28.29~22.04.1 [Ubuntu/jammy main]
 linux-hwe-6.5-headers-6.5.0-35 6.5.0-35.35~22.04.1 [Ubuntu/jammy main]
+linux-hwe-6.5-headers-6.5.0-41 6.5.0-41.41~22.04.2 [Ubuntu/jammy main]
 linux-image-5.15.0-112-generic 5.15.0-112.122 [Ubuntu/jammy main]
 linux-image-5.19.0-50-generic 5.19.0-50.50 [Ubuntu/jammy main]
 linux-image-6.2.0-39-generic 6.2.0-39.40~22.04.1 [Ubuntu/jammy main]
-linux-image-6.5.0-28-generic 6.5.0-28.29~22.04.1 [Ubuntu/jammy main]
 linux-image-6.5.0-35-generic 6.5.0-35.35~22.04.1 [Ubuntu/jammy main]
+linux-image-6.5.0-41-generic 6.5.0-41.41~22.04.2 [Ubuntu/jammy main]
 linux-image-generic 5.15.0.112.112 [Ubuntu/jammy main]
-linux-image-generic-hwe-22.04 6.5.0.35.35~22.04.1 [local]
+linux-image-generic-hwe-22.04 6.5.0.41.41~22.04.2 [Ubuntu/jammy main]
 linux-libc-dev 5.15.0-112.122 [Ubuntu/jammy main]
 linux-modules-5.15.0-112-generic 5.15.0-112.122 [Ubuntu/jammy main]
 linux-modules-5.19.0-50-generic 5.19.0-50.50 [Ubuntu/jammy main]
 linux-modules-6.2.0-39-generic 6.2.0-39.40~22.04.1 [Ubuntu/jammy main]
-linux-modules-6.5.0-28-generic 6.5.0-28.29~22.04.1 [Ubuntu/jammy main]
 linux-modules-6.5.0-35-generic 6.5.0-35.35~22.04.1 [Ubuntu/jammy main]
+linux-modules-6.5.0-41-generic 6.5.0-41.41~22.04.2 [Ubuntu/jammy main]
 linux-modules-extra-5.15.0-112-generic 5.15.0-112.122 [Ubuntu/jammy main]
 linux-modules-extra-5.19.0-50-generic 5.19.0-50.50 [Ubuntu/jammy main]
 linux-modules-extra-6.2.0-39-generic 6.2.0-39.40~22.04.1 [Ubuntu/jammy main]
-linux-modules-extra-6.5.0-28-generic 6.5.0-28.29~22.04.1 [Ubuntu/jammy main]
 linux-modules-extra-6.5.0-35-generic 6.5.0-35.35~22.04.1 [Ubuntu/jammy main]
+linux-modules-extra-6.5.0-41-generic 6.5.0-41.41~22.04.2 [Ubuntu/jammy main]
 linux-sound-base 1.0.25+dfsg-0ubuntu7 [Ubuntu/jammy main]
 llvm 1:14.0-55~exp2 [Ubuntu/jammy universe]
 llvm-11 1:11.1.0-6 [Ubuntu/jammy universe]
@@ -4425,7 +4425,7 @@ du-dust v1.0.0:
     dust
 evcxr_jupyter v0.17.0:
     evcxr_jupyter
-eza v0.18.18:
+eza v0.18.19:
     eza
 fd-find v10.1.0:
     fd
@@ -4619,6 +4619,9 @@ package httpie 3.2.2, installed using Python 3.12.4
  - man1/https.1
 package huge 0.1.3, installed using Python 3.12.4
  - huge
+package icloudpd 1.20.1, installed using Python 3.12.4
+ - icloud
+ - icloudpd
 package jupyter-client 8.6.2, installed using Python 3.12.4
  - jupyter-kernel
  - jupyter-kernelspec
@@ -5042,7 +5045,7 @@ core20                     20240416                    2318   latest/stable    c
 core22                     20240408                    1380   latest/stable    canonical**    base
 dotnet-sdk                 5.0.408                     167    5.0/stable       canonical**    classic
 duf-utility                v0.6.0                      1      latest/stable    muesli         -
-firefox                    127.0-2.1                   4424   latest/stable/…  mozilla**      -
+firefox                    127.0.1-1                   4451   latest/stable/…  mozilla**      -
 gimp                       2.10.38                     436    latest/stable    snapcrafters*  -
 gnome-3-28-1804            3.28.0-19-g98f9e67.98f9e67  198    latest/stable    canonical**    -
 gnome-3-34-1804            0+git.3556cb3               93     latest/stable/…  canonical**    -
