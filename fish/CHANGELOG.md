@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.15.5](https://github.com/engeir/stowfiles/compare/fish-v1.15.4...fish-v1.15.5) (2024-06-21)
+
+
+### Miscellaneous
+
+* **atuin:** install atuin via cargo again ([6a99e46](https://github.com/engeir/stowfiles/commit/6a99e46639fbd6aaec5d329989eac4c898a7e73a))
+
 ## [1.15.4](https://github.com/engeir/stowfiles/compare/fish-v1.15.3...fish-v1.15.4) (2024-06-20)
 
 
