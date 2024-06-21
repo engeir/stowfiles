@@ -517,7 +517,7 @@ gconf2 3.2.6-7ubuntu2 [Ubuntu/jammy universe]
 gconf2-common 3.2.6-7ubuntu2 [Ubuntu/jammy universe]
 gcr 3.40.0-4 [Ubuntu/jammy main]
 gdal-data 3.4.1+dfsg-1build4 [Ubuntu/jammy universe]
-gdb 12.1-0ubuntu1~22.04 [Ubuntu/jammy main]
+gdb 12.1-0ubuntu1~22.04.2 [Ubuntu/jammy main]
 gdebi 0.9.5.7+nmu6 [Ubuntu/jammy universe]
 gdebi-core 0.9.5.7+nmu6 [Ubuntu/jammy universe]
 gdisk 1.0.8-4build1 [Ubuntu/jammy main]
@@ -2479,8 +2479,10 @@ libproc-processtable-perl 0.634-1build1 [Ubuntu/jammy main]
 libprocps8 2:3.3.17-6ubuntu2.1 [Ubuntu/jammy main]
 libproj-dev 8.2.1-1 [Ubuntu/jammy universe]
 libproj22 8.2.1-1 [Ubuntu/jammy universe]
+libprotobuf-dev 3.12.4-1ubuntu7.22.04.1 [Ubuntu/jammy main]
 libprotobuf-lite23 3.12.4-1ubuntu7.22.04.1 [Ubuntu/jammy main]
 libprotobuf23 3.12.4-1ubuntu7.22.04.1 [Ubuntu/jammy main]
+libprotoc23 3.12.4-1ubuntu7.22.04.1 [Ubuntu/jammy main]
 libproxy-tools 0.4.17-2 [Ubuntu/jammy universe]
 libproxy1-plugin-gsettings 0.4.17-2 [Ubuntu/jammy main]
 libproxy1-plugin-networkmanager 0.4.17-2 [Ubuntu/jammy main]
@@ -3536,6 +3538,7 @@ printer-driver-splix 2.0.0+svn315-7fakesync1ubuntu0.22.04.1 [Ubuntu/jammy main]
 procps 2:3.3.17-6ubuntu2.1 [Ubuntu/jammy main]
 proj-bin 8.2.1-1 [Ubuntu/jammy universe]
 proj-data 8.2.1-1 [Ubuntu/jammy universe]
+protobuf-compiler 3.12.4-1ubuntu7.22.04.1 [Ubuntu/jammy universe]
 ps2eps 1.68+binaryfree-3 [Ubuntu/jammy universe]
 psmisc 23.4-2build3 [Ubuntu/jammy main]
 pstoedit 3.78-1 [Ubuntu/jammy universe]
@@ -3998,7 +4001,7 @@ shellcheck 0.8.0-2 [Ubuntu/jammy universe]
 shfmt 3.7.0-pacstall1 [local]
 shfmt-bin 3.4.3-1 [local]
 shim-signed 1.51.3+15.7-0ubuntu1 [Ubuntu/jammy main]
-signal-desktop 7.12.0 [. xenial/xenial main]
+signal-desktop 7.13.0 [. xenial/xenial main]
 signon-plugin-oauth2 0.25-2 [Ubuntu/jammy universe]
 silversearcher-ag 2.2.0+git20200805-1 [Ubuntu/jammy universe]
 slack-desktop 4.38.125 [slack/jessie main]
@@ -4346,7 +4349,7 @@ name: nala version: 0.15.3
 name: neofetch version: 7.1.0-pacstall1
 name: quarto version: 1.3.450
 name: shfmt version: 3.7.0-pacstall1
-name: signal-desktop version: 7.12.0
+name: signal-desktop version: 7.13.0
 name: thorium-browser version: 124.0.6367.218-1
 name: wezterm version: 20230712-072601-f4abf8fd-pacstall1
 name: zoom version: 6.0.10.5325
@@ -4385,7 +4388,7 @@ watchexec                   2.1.1               ~/.config/mise/config.toml lates
 ```txt {cargo}
 alacritty v0.13.2:
     alacritty
-atuin v18.2.0:
+atuin v18.3.0:
     atuin
 bacon v2.18.2:
     bacon
@@ -4397,7 +4400,7 @@ blindfold v1.0.7:
     blindfold
 bob-nvim v3.0.1:
     bob
-cargo-binstall v1.7.1:
+cargo-binstall v1.7.2:
     cargo-binstall
 cargo-edit v0.12.3:
     cargo-add
@@ -4439,7 +4442,7 @@ git-delta v0.17.0:
     delta
 gitui v0.26.3:
     gitui
-halp v0.1.7:
+halp v0.2.0:
     halp
     halp-completions
     halp-mangen
@@ -4464,7 +4467,7 @@ lscolors v0.17.0:
     lscolors
 mdbook v0.4.40:
     mdbook
-mdbook-admonish v1.17.1:
+mdbook-admonish v1.18.0:
     mdbook-admonish
 mdbook-svgbob v0.2.1:
     mdbook-svgbob
@@ -4472,7 +4475,7 @@ mdbook-toc v0.14.2:
     mdbook-toc
 menyoki v1.7.0:
     menyoki
-mise v2024.6.5:
+mise v2024.6.6:
     mise
 mprocs v0.6.4:
     mprocs
