@@ -73,5 +73,3 @@ fi
 
 . "$HOME/.cargo/env"
 . "$HOME/.local/share/rye/env"
-
-. "$HOME/.atuin/bin/env"
