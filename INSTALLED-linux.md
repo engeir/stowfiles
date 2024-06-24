@@ -493,7 +493,6 @@ ftp 20210827-4build1 [Ubuntu/jammy main]
 fuse3 3.10.5-1build1 [Ubuntu/jammy main]
 fwupd 1.7.9-1~22.04.3 [Ubuntu/jammy main]
 fwupd-signed 1.51.1~22.04.1+1.4-0ubuntu0.1 [Ubuntu/jammy main]
-fzf 0.29.0-1 [Ubuntu/jammy universe]
 g++ 4:11.2.0-1ubuntu1 [Ubuntu/jammy main]
 g++-10 10.5.0-1ubuntu1~22.04 [Ubuntu/jammy universe]
 g++-11 11.4.0-1ubuntu1~22.04 [Ubuntu/jammy main]
@@ -740,7 +739,7 @@ gzip 1.10-4ubuntu4.1 [Ubuntu/jammy main]
 hdf5-helpers 1.10.7+repack-4ubuntu2 [Ubuntu/jammy universe]
 hdf5-tools 1.10.7+repack-4ubuntu2 [Ubuntu/jammy universe]
 hdparm 9.60+ds-1build3 [Ubuntu/jammy main]
-helix 24.03-1~ubuntu22.04~ppa1 [Helix/jammy main]
+helix 24.03-4~ubuntu22.04~ppa1 [Helix/jammy main]
 hicolor-icon-theme 0.17-2 [Ubuntu/jammy main]
 hostname 3.23ubuntu2 [Ubuntu/jammy main]
 hplip 3.21.12+dfsg0-1 [Ubuntu/jammy main]
@@ -4331,7 +4330,7 @@ zip 3.0-12build2 [Ubuntu/jammy main]
 zlib1g 1:1.2.11.dfsg-2ubuntu9.2 [Ubuntu/jammy main]
 zlib1g-dev 1:1.2.11.dfsg-2ubuntu9.2 [Ubuntu/jammy main]
 zlib1g:i386 1:1.2.11.dfsg-2ubuntu9.2 [Ubuntu/jammy main]
-zoom 6.0.10.5325 [local]
+zoom 6.1.0.198 [local]
 zsh 5.8.1-1 [Ubuntu/jammy main]
 zsh-common 5.8.1-1 [Ubuntu/jammy main]
 zstd 1.4.8+dfsg-3build1 [Ubuntu/jammy main]
@@ -4352,15 +4351,19 @@ name: shfmt version: 3.7.0-pacstall1
 name: signal-desktop version: 7.13.0
 name: thorium-browser version: 124.0.6367.218-1
 name: wezterm version: 20230712-072601-f4abf8fd-pacstall1
-name: zoom version: 6.0.10.5325
+name: zoom version: 6.1.0.198
 ```
 
 ## Mise
 
 ```txt {mise}
 cabal                       3.10.3.0            ~/.config/mise/config.toml latest        
+cargo:mdbook                0.4.40                                                       
+fzf                         0.53.0              ~/.config/mise/config.toml latest        
 go                          1.22.4              ~/.config/mise/config.toml latest        
+jq                          1.7.1                                                        
 node                        22.3.0              ~/.config/mise/config.toml latest        
+npm:cwebp                   3.1.0                                                        
 pandoc                      3.2                 ~/.config/mise/config.toml latest        
 pipx:volcano-cooking        0.12.2              ~/.config/mise/config.toml latest        
 python                      3.6.15                                                       
@@ -4400,7 +4403,7 @@ blindfold v1.0.7:
     blindfold
 bob-nvim v3.0.1:
     bob
-cargo-binstall v1.7.2:
+cargo-binstall v1.7.3:
     cargo-binstall
 cargo-edit v0.12.3:
     cargo-add
@@ -4414,7 +4417,7 @@ cargo-update v13.4.0:
     cargo-install-update-config
 cargo-watch v8.5.2:
     cargo-watch
-coreutils v0.0.26:
+coreutils v0.0.27:
     coreutils
 czkawka_gui v7.0.0:
     czkawka_gui
@@ -4463,7 +4466,7 @@ just v1.29.1:
     just
 languagetool-rust v2.1.4:
     ltrs
-lscolors v0.17.0:
+lscolors v0.18.0:
     lscolors
 mdbook v0.4.40:
     mdbook
@@ -4530,7 +4533,7 @@ ubi v0.0.32:
     ubi
 viu v1.5.0:
     viu
-vivid v0.9.0:
+vivid v0.10.1:
     vivid
 wiki-tui v0.8.2:
     wiki-tui
