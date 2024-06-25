@@ -7,6 +7,8 @@ vim.g.mapleader = " "
 
 -- Undo with "U" (the default "U" behaviour is confusing and I never use it)
 vim.keymap.set("n", "U", "<C-r>")
+-- Save the file with update
+vim.keymap.set("n", "<C-s>", "<cmd>update<CR>")
 
 -- Improving default keys
 vim.keymap.set("n", "J", function()
@@ -36,14 +38,14 @@ vim.keymap.set("n", "dd", function()
     return "dd"
   end
 end, { expr = true })
--- -- Indent similar to 'o'/'O' (this is broken)
--- vim.keymap.set("n", "i", function()
---     if #vim.fn.getline(".") == 0 then
---         return [["_cc]]
---     else
---         return "i"
---     end
--- end, { expr = true })
+-- Indent similar to 'o'/'O'
+vim.keymap.set("n", "i", function()
+  if #vim.fn.getline(".") == 0 then
+    return [["_cc]]
+  else
+    return "i"
+  end
+end, { expr = true })
 
 -- Open/close the quickfix window
 -- vim.keymap.set("n", "<leader>cc", ":cclose<cr>", { desc = "Close Quickfix" })
