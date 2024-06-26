@@ -1,5 +1,32 @@
 # Changelog
 
+## [1.18.0](https://github.com/engeir/stowfiles/compare/stowfiles-v1.17.6...stowfiles-v1.18.0) (2024-06-26)
+
+
+### Features
+
+* **fzf:** add in-file-search function with vim integration ([0ee3f5e](https://github.com/engeir/stowfiles/commit/0ee3f5e5cad16063bb129492dac3f973912e2db3))
+
+
+### Miscellaneous
+
+* **atuin:** install atuin via cargo again ([6a99e46](https://github.com/engeir/stowfiles/commit/6a99e46639fbd6aaec5d329989eac4c898a7e73a))
+* **main:** release fish 1.15.5 ([#70](https://github.com/engeir/stowfiles/issues/70)) ([80cc9f4](https://github.com/engeir/stowfiles/commit/80cc9f43e68f02b163e1320ed9fc8032e3f87e2f))
+* **main:** release fish 1.16.0 ([#73](https://github.com/engeir/stowfiles/issues/73)) ([7d0d420](https://github.com/engeir/stowfiles/commit/7d0d4206059926170ee177a48563f1c92207619a))
+* **main:** release mise 1.16.0 ([#74](https://github.com/engeir/stowfiles/issues/74)) ([3eb0db1](https://github.com/engeir/stowfiles/commit/3eb0db18aa89c19113d752fc62e0bd52e2a2886f))
+* **main:** release nvim 1.15.4 ([#71](https://github.com/engeir/stowfiles/issues/71)) ([52896a5](https://github.com/engeir/stowfiles/commit/52896a5e0df0b19bea1e72319424e424a0b06fff))
+* **main:** release zsh_mac 1.16.0 ([#72](https://github.com/engeir/stowfiles/issues/72)) ([e91715f](https://github.com/engeir/stowfiles/commit/e91715fc355aa71ce92df4b65d123d65b62d418a))
+* **main:** update installed ([51cef78](https://github.com/engeir/stowfiles/commit/51cef78a77b459bfd272829e4cc6c0c7d90f2150))
+* **nvim:** add keymap &lt;C-s&gt; to :update ([15822fd](https://github.com/engeir/stowfiles/commit/15822fdc5b20958a540ee16c44e295c5910a85a5))
+* **software:** install update ([28fd080](https://github.com/engeir/stowfiles/commit/28fd080b330caf571bd83381dccb9a1e844f8dfe))
+* **software:** install update ([04e6687](https://github.com/engeir/stowfiles/commit/04e668736e17ee561249c8c64eba99481f51df5f))
+* **zsh:** update atuin zsh completions ([d0939a3](https://github.com/engeir/stowfiles/commit/d0939a38d49c6906a5612f28b7dcffd26518ac7d))
+
+
+### Documentation
+
+* **nvim:** update plugins list in README ([af430bf](https://github.com/engeir/stowfiles/commit/af430bf1176043d77a5d0bead15fc4883f3e9d3f))
+
 ## [1.17.6](https://github.com/engeir/stowfiles/compare/stowfiles-v1.17.5...stowfiles-v1.17.6) (2024-06-20)
 
 
