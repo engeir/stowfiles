@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.16.0](https://github.com/engeir/stowfiles/compare/fish-v1.15.5...fish-v1.16.0) (2024-06-26)
+
+
+### Features
+
+* **fzf:** add in-file-search function with vim integration ([0ee3f5e](https://github.com/engeir/stowfiles/commit/0ee3f5e5cad16063bb129492dac3f973912e2db3))
+
 ## [1.15.5](https://github.com/engeir/stowfiles/compare/fish-v1.15.4...fish-v1.15.5) (2024-06-21)
 
 
