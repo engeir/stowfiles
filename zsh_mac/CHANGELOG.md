@@ -1,5 +1,17 @@
 # Changelog
 
+## [1.16.0](https://github.com/engeir/stowfiles/compare/zsh_mac-v1.15.3...zsh_mac-v1.16.0) (2024-06-26)
+
+
+### Features
+
+* **fzf:** add in-file-search function with vim integration ([0ee3f5e](https://github.com/engeir/stowfiles/commit/0ee3f5e5cad16063bb129492dac3f973912e2db3))
+
+
+### Miscellaneous
+
+* **zsh:** update atuin zsh completions ([d0939a3](https://github.com/engeir/stowfiles/commit/d0939a38d49c6906a5612f28b7dcffd26518ac7d))
+
 ## [1.15.3](https://github.com/engeir/stowfiles/compare/zsh_mac-v1.15.2...zsh_mac-v1.15.3) (2024-06-20)
 
 
