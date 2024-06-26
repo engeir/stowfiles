@@ -152,7 +152,7 @@ compizconfig-settings-manager 1:0.9.14.1+22.04.20220820-0ubuntu1 [Ubuntu/jammy u
 compton 1-1 [Ubuntu/jammy universe]
 console-setup 1.205ubuntu3 [Ubuntu/jammy main]
 console-setup-linux 1.205ubuntu3 [Ubuntu/jammy main]
-containerd.io 1.6.33-1 [Docker CE/ stable]
+containerd.io 1.7.18-1 [Docker CE/ stable]
 coreutils 8.32-4.1ubuntu1.2 [Ubuntu/jammy main]
 cpio 2.13+dfsg-7ubuntu0.1 [Ubuntu/jammy main]
 cpp 4:11.2.0-1ubuntu1 [Ubuntu/jammy main]
@@ -164,19 +164,19 @@ cracklib-runtime 2.9.6-3.4build4 [Ubuntu/jammy main]
 cron 3.0pl1-137ubuntu3 [Ubuntu/jammy main]
 csh 20110502-7 [Ubuntu/jammy universe]
 csvtool 2.4-1build3 [Ubuntu/jammy universe]
-cups 2.4.1op1-1ubuntu4.8 [Ubuntu/jammy main]
+cups 2.4.1op1-1ubuntu4.9 [Ubuntu/jammy main]
 cups-browsed 1.28.15-0ubuntu1.2 [Ubuntu/jammy main]
-cups-bsd 2.4.1op1-1ubuntu4.8 [Ubuntu/jammy main]
-cups-client 2.4.1op1-1ubuntu4.8 [Ubuntu/jammy main]
-cups-common 2.4.1op1-1ubuntu4.8 [Ubuntu/jammy main]
-cups-core-drivers 2.4.1op1-1ubuntu4.8 [Ubuntu/jammy main]
-cups-daemon 2.4.1op1-1ubuntu4.8 [Ubuntu/jammy main]
+cups-bsd 2.4.1op1-1ubuntu4.9 [Ubuntu/jammy main]
+cups-client 2.4.1op1-1ubuntu4.9 [Ubuntu/jammy main]
+cups-common 2.4.1op1-1ubuntu4.9 [Ubuntu/jammy main]
+cups-core-drivers 2.4.1op1-1ubuntu4.9 [Ubuntu/jammy main]
+cups-daemon 2.4.1op1-1ubuntu4.9 [Ubuntu/jammy main]
 cups-filters 1.28.15-0ubuntu1.2 [Ubuntu/jammy main]
 cups-filters-core-drivers 1.28.15-0ubuntu1.2 [Ubuntu/jammy main]
-cups-ipp-utils 2.4.1op1-1ubuntu4.8 [Ubuntu/jammy main]
+cups-ipp-utils 2.4.1op1-1ubuntu4.9 [Ubuntu/jammy main]
 cups-pk-helper 0.2.6-1ubuntu5 [Ubuntu/jammy main]
-cups-ppdc 2.4.1op1-1ubuntu4.8 [Ubuntu/jammy main]
-cups-server-common 2.4.1op1-1ubuntu4.8 [Ubuntu/jammy main]
+cups-ppdc 2.4.1op1-1ubuntu4.9 [Ubuntu/jammy main]
+cups-server-common 2.4.1op1-1ubuntu4.9 [Ubuntu/jammy main]
 curl 7.81.0-1ubuntu1.16 [Ubuntu/jammy main]
 cvs 2:1.12.13+real-28 [Ubuntu/jammy universe]
 cvsps 2.1-8build2 [Ubuntu/jammy universe]
@@ -227,11 +227,11 @@ docbook-to-man 1:2.0.0-45 [Ubuntu/jammy universe]
 docbook-xml 4.5-11 [Ubuntu/jammy main]
 docbook-xsl 1.79.2+dfsg-1 [Ubuntu/jammy universe]
 docker 1.5-2 [Ubuntu/jammy universe]
-docker-buildx-plugin 0.14.1-1~ubuntu.20.04~focal [Docker CE/ stable]
-docker-ce 5:26.1.4-1~ubuntu.20.04~focal [Docker CE/ stable]
-docker-ce-cli 5:26.1.4-1~ubuntu.20.04~focal [Docker CE/ stable]
-docker-ce-rootless-extras 5:26.1.4-1~ubuntu.20.04~focal [Docker CE/ stable]
-docker-compose-plugin 2.27.1-1~ubuntu.20.04~focal [Docker CE/ stable]
+docker-buildx-plugin 0.15.1-1~ubuntu.20.04~focal [Docker CE/ stable]
+docker-ce 5:27.0.1-1~ubuntu.20.04~focal [Docker CE/ stable]
+docker-ce-cli 5:27.0.1-1~ubuntu.20.04~focal [Docker CE/ stable]
+docker-ce-rootless-extras 5:27.0.1-1~ubuntu.20.04~focal [Docker CE/ stable]
+docker-compose-plugin 2.28.1-1~ubuntu.20.04~focal [Docker CE/ stable]
 docutils-common 0.17.1+dfsg-2 [Ubuntu/jammy main]
 docx2txt 1.4-5 [Ubuntu/jammy universe]
 dos2unix 7.4.2-2 [Ubuntu/jammy universe]
@@ -241,8 +241,6 @@ dpkg-dev 1.21.1ubuntu2.3 [Ubuntu/jammy main]
 dunst 20210810-1 [local]
 duplicity 0.8.21-1build1 [Ubuntu/jammy main]
 dvidvi 1.0-8.2 [Ubuntu/jammy universe]
-dvipng 1.15-1.1 [Ubuntu/jammy universe]
-dvisvgm 2.13.1-1 [Ubuntu/jammy universe]
 dvtm 0.15+40.g311a8c0-1build1 [Ubuntu/jammy universe]
 dwz 0.14-1build2 [Ubuntu/jammy main]
 e2fsprogs 1.46.5-2ubuntu1.1 [Ubuntu/jammy main]
@@ -277,7 +275,6 @@ falkon 3.2.0+dfsg1-1 [Ubuntu/jammy universe]
 fastjar 2:0.98-7 [Ubuntu/jammy universe]
 fdisk 2.37.2-4ubuntu3.4 [Ubuntu/jammy main]
 feh 3.6.3-1 [Ubuntu/jammy universe]
-feynmf 1.08-13 [Ubuntu/jammy universe]
 ffmpeg 7:4.4.2-0ubuntu0.22.04.1 [Ubuntu/jammy universe]
 ffmpegthumbnailer 2.2.2+dfsg-1 [Ubuntu/jammy universe]
 fig2dev 1:3.2.8b-1 [Ubuntu/jammy universe]
@@ -332,7 +329,6 @@ fonts-freefont-otf 20120503-10build1 [Ubuntu/jammy universe]
 fonts-freefont-ttf 20120503-10build1 [Ubuntu/jammy main]
 fonts-gargi 2.0-5 [Ubuntu/jammy main]
 fonts-gfs-artemisia 1.1-6 [Ubuntu/jammy universe]
-fonts-gfs-baskerville 1.1-6 [Ubuntu/jammy universe]
 fonts-gfs-bodoni-classic 1.1-6 [Ubuntu/jammy universe]
 fonts-gfs-complutum 1.1-7 [Ubuntu/jammy universe]
 fonts-gfs-didot 1.1-7 [Ubuntu/jammy universe]
@@ -340,7 +336,6 @@ fonts-gfs-didot-classic 1.1-6 [Ubuntu/jammy universe]
 fonts-gfs-gazis 1.1-6 [Ubuntu/jammy universe]
 fonts-gfs-neohellenic 1.1-7 [Ubuntu/jammy universe]
 fonts-gfs-olga 1.1-6 [Ubuntu/jammy universe]
-fonts-gfs-porson 1.1-7 [Ubuntu/jammy universe]
 fonts-gfs-solomos 1.1-6 [Ubuntu/jammy universe]
 fonts-gfs-theokritos 1.1-6 [Ubuntu/jammy universe]
 fonts-glyphicons-halflings 1.009~3.4.1+dfsg-2 [Ubuntu/jammy universe]
@@ -370,7 +365,6 @@ fonts-liberation 1:1.07.4-11 [Ubuntu/jammy main]
 fonts-liberation2 2.1.5-1 [Ubuntu/jammy main]
 fonts-linuxlibertine 5.3.0-6 [Ubuntu/jammy universe]
 fonts-lklug-sinhala 0.6-4 [Ubuntu/jammy main]
-fonts-lmodern 2.004.5-6.1 [Ubuntu/jammy universe]
 fonts-lobster 2.0-2.1 [Ubuntu/jammy universe]
 fonts-lobstertwo 2.0-2.1 [Ubuntu/jammy universe]
 fonts-lohit-beng-assamese 2.91.5-2 [Ubuntu/jammy main]
@@ -533,7 +527,7 @@ gftp 2.9.1~beta-1 [Ubuntu/jammy universe]
 gftp-common 2.9.1~beta-1 [Ubuntu/jammy universe]
 gftp-gtk 2.9.1~beta-1 [Ubuntu/jammy universe]
 gftp-text 2.9.1~beta-1 [Ubuntu/jammy universe]
-gh 2.51.0 [gh/stable main]
+gh 2.52.0 [gh/stable main]
 ghc 8.8.4-3 [Ubuntu/jammy universe]
 ghc-prof 8.8.4-3 [Ubuntu/jammy universe]
 ghostscript 9.55.0~dfsg1-0ubuntu5.7 [Ubuntu/jammy main]
@@ -949,6 +943,7 @@ libaudiofile1 0.3.6-5+deb10u1build0.22.04.1 [Ubuntu/jammy universe]
 libaudit-common 1:3.0.7-1build1 [Ubuntu/jammy main]
 libaudit1 1:3.0.7-1build1 [Ubuntu/jammy main]
 libauthen-sasl-perl 2.1600-1.1 [Ubuntu/jammy main]
+libautovivification-perl 0.18-1build4 [Ubuntu/jammy universe]
 libavahi-client3 0.8-5ubuntu5.2 [Ubuntu/jammy main]
 libavahi-client3:i386 0.8-5ubuntu5.2 [Ubuntu/jammy main]
 libavahi-common-data 0.8-5ubuntu5.2 [Ubuntu/jammy main]
@@ -1015,8 +1010,11 @@ libbs2b0 3.1.0+dfsg-2.2build1 [Ubuntu/jammy universe]
 libbsd-dev 0.11.5-1 [Ubuntu/jammy main]
 libbsd0 0.11.5-1 [Ubuntu/jammy main]
 libbsd0:i386 0.11.5-1 [Ubuntu/jammy main]
+libbtparse2 0.88-3build3 [Ubuntu/jammy universe]
 libbusiness-isbn-data-perl 20210112.006-1 [Ubuntu/jammy universe]
 libbusiness-isbn-perl 3.006-1 [Ubuntu/jammy universe]
+libbusiness-ismn-perl 1.202-1 [Ubuntu/jammy universe]
+libbusiness-issn-perl 1.005-1 [Ubuntu/jammy universe]
 libbz2-1.0 1.0.8-5build1 [Ubuntu/jammy main]
 libbz2-1.0:i386 1.0.8-5build1 [Ubuntu/jammy main]
 libbz2-dev 1.0.8-5build1 [Ubuntu/jammy main]
@@ -1087,6 +1085,7 @@ libclang-cpp11 1:11.1.0-6 [Ubuntu/jammy universe]
 libclang-cpp12 1:12.0.1-19ubuntu3 [Ubuntu/jammy universe]
 libclang-cpp13 1:13.0.1-2ubuntu2.2 [Ubuntu/jammy main]
 libclang-cpp14 1:14.0.0-1ubuntu1.1 [Ubuntu/jammy universe]
+libclass-accessor-perl 0.51-1 [Ubuntu/jammy universe]
 libclass-c3-perl 0.35-1 [Ubuntu/jammy universe]
 libclass-c3-xs-perl 0.15-1build2 [Ubuntu/jammy universe]
 libclass-data-inheritable-perl 0.08-3 [Ubuntu/jammy main]
@@ -1117,7 +1116,6 @@ libcom-err2 1.46.5-2ubuntu1.1 [Ubuntu/jammy main]
 libcom-err2:i386 1.46.5-2ubuntu1.1 [Ubuntu/jammy main]
 libcommon-sense-perl 3.75-2build1 [Ubuntu/jammy main]
 libcommons-lang3-java 3.11-1 [Ubuntu/jammy universe]
-libcommons-logging-java 1.2-2 [Ubuntu/jammy universe]
 libcommons-parent-java 43-1 [Ubuntu/jammy universe]
 libcompizconfig0 1:0.9.14.1+22.04.20220820-0ubuntu1 [Ubuntu/jammy universe]
 libconfig-dev 1.5-0.4build1 [Ubuntu/jammy universe]
@@ -1136,23 +1134,27 @@ libcryptsetup12 2:2.4.3-1ubuntu1.2 [Ubuntu/jammy main]
 libctf-nobfd0 2.38-4ubuntu2.6 [Ubuntu/jammy main]
 libctf0 2.38-4ubuntu2.6 [Ubuntu/jammy main]
 libcue2 2.2.1-3ubuntu0.1 [Ubuntu/jammy main]
-libcups2 2.4.1op1-1ubuntu4.8 [Ubuntu/jammy main]
-libcups2:i386 2.4.1op1-1ubuntu4.8 [Ubuntu/jammy main]
+libcups2 2.4.1op1-1ubuntu4.9 [Ubuntu/jammy main]
+libcups2:i386 2.4.1op1-1ubuntu4.9 [Ubuntu/jammy main]
 libcupsfilters1 1.28.15-0ubuntu1.2 [Ubuntu/jammy main]
-libcupsimage2 2.4.1op1-1ubuntu4.8 [Ubuntu/jammy main]
+libcupsimage2 2.4.1op1-1ubuntu4.9 [Ubuntu/jammy main]
 libcurl3-gnutls 7.81.0-1ubuntu1.16 [Ubuntu/jammy main]
 libcurl4 7.81.0-1ubuntu1.16 [Ubuntu/jammy main]
 libcurl4-openssl-dev 7.81.0-1ubuntu1.16 [Ubuntu/jammy main]
 libcurl4:i386 7.81.0-1ubuntu1.16 [Ubuntu/jammy main]
 libcwidget4 0.5.18-5build1 [Ubuntu/jammy universe]
 libdaemon0 0.14-7.1ubuntu3 [Ubuntu/jammy main]
+libdata-compare-perl 1.27-1 [Ubuntu/jammy universe]
 libdata-dpath-perl 0.58-1 [Ubuntu/jammy main]
 libdata-dump-perl 1.25-1 [Ubuntu/jammy main]
 libdata-messagepack-perl 1.01-2build1 [Ubuntu/jammy main]
 libdata-optlist-perl 0.112-1 [Ubuntu/jammy main]
+libdata-uniqid-perl 0.12-1.1 [Ubuntu/jammy universe]
 libdata-validate-domain-perl 0.10-1.1 [Ubuntu/jammy main]
 libdata-validate-ip-perl 0.30-1 [Ubuntu/jammy main]
 libdata-validate-uri-perl 0.07-2 [Ubuntu/jammy main]
+libdate-simple-perl 3.0300-3build2 [Ubuntu/jammy universe]
+libdatetime-calendar-julian-perl 0.107-1 [Ubuntu/jammy universe]
 libdatetime-format-builder-perl 0.8300-1 [Ubuntu/jammy universe]
 libdatetime-format-iso8601-perl 0.16-1 [Ubuntu/jammy universe]
 libdatetime-format-strptime-perl 1.7900-1 [Ubuntu/jammy universe]
@@ -1200,7 +1202,6 @@ libdeflate0 1.10-2 [Ubuntu/jammy main]
 libdeflate0:i386 1.10-2 [Ubuntu/jammy main]
 libdevel-callchecker-perl 0.008-1ubuntu4 [Ubuntu/jammy main]
 libdevel-caller-perl 2.06-2build4 [Ubuntu/jammy universe]
-libdevel-globaldestruction-perl 0.14-1.1 [Ubuntu/jammy universe]
 libdevel-lexalias-perl 0.05-2build4 [Ubuntu/jammy universe]
 libdevel-size-perl 0.83-1build4 [Ubuntu/jammy main]
 libdevel-stacktrace-perl 2.0400-1 [Ubuntu/jammy main]
@@ -1208,7 +1209,6 @@ libdevmapper1.02.1 2:1.02.175-2.1ubuntu4 [Ubuntu/jammy main]
 libdhash1 0.6.2-1 [Ubuntu/jammy main]
 libdigest-bubblebabble-perl 0.02-2.1 [Ubuntu/jammy main]
 libdigest-hmac-perl 1.04+dfsg-1 [Ubuntu/jammy main]
-libdist-checkconflicts-perl 0.11-1.1 [Ubuntu/jammy universe]
 libdjvulibre-dev 3.5.28-2build2 [Ubuntu/jammy main]
 libdjvulibre-text 3.5.28-2build2 [Ubuntu/jammy main]
 libdjvulibre21 3.5.28-2build2 [Ubuntu/jammy main]
@@ -1267,12 +1267,13 @@ libegl1-mesa-dev 23.2.1-1ubuntu3.1~22.04.2 [Ubuntu/jammy main]
 libelf1 0.186-1build1 [Ubuntu/jammy main]
 libelf1:i386 0.186-1build1 [Ubuntu/jammy main]
 libemail-address-xs-perl 1.04-1build6 [Ubuntu/jammy main]
-libemail-date-format-perl 1.005-1.1 [Ubuntu/jammy main]
 libemail-valid-perl 1.202-1 [Ubuntu/jammy universe]
 libemf1 1.0.13-3 [Ubuntu/jammy universe]
 libenca0 1.19-1 [Ubuntu/jammy universe]
 libenchant-2-2 2.3.2-1ubuntu2 [Ubuntu/jammy main]
+libencode-eucjpms-perl 0.07-3build9 [Ubuntu/jammy universe]
 libencode-hanextra-perl 0.23-5build4 [Ubuntu/jammy universe]
+libencode-jis2k-perl 0.03-1build7 [Ubuntu/jammy universe]
 libencode-locale-perl 1.05-1.1 [Ubuntu/jammy main]
 libencode-perl 3.16-1build1 [Ubuntu/jammy universe]
 libeot0 0.01-5build2 [Ubuntu/jammy main]
@@ -1343,12 +1344,11 @@ libfile-basedir-perl 0.09-1 [Ubuntu/jammy main]
 libfile-desktopentry-perl 0.22-2 [Ubuntu/jammy main]
 libfile-fcntllock-perl 0.22-3build7 [Ubuntu/jammy main]
 libfile-find-rule-perl 0.34-1 [Ubuntu/jammy main]
-libfile-homedir-perl 1.006-1 [Ubuntu/jammy main]
 libfile-listing-perl 6.14-1 [Ubuntu/jammy main]
 libfile-mimeinfo-perl 0.31-1 [Ubuntu/jammy main]
 libfile-sharedir-perl 1.118-1 [Ubuntu/jammy universe]
+libfile-slurper-perl 0.013-1 [Ubuntu/jammy main]
 libfile-stripnondeterminism-perl 1.13.0-1 [Ubuntu/jammy main]
-libfile-which-perl 1.23-1 [Ubuntu/jammy main]
 libfl-dev 2.6.4-8build2 [Ubuntu/jammy main]
 libfl2 2.6.4-8build2 [Ubuntu/jammy main]
 libflac8 1.3.3-2ubuntu0.2 [Ubuntu/jammy main]
@@ -1358,7 +1358,6 @@ libfluidsynth3 2.2.5-1 [Ubuntu/jammy universe]
 libfmt8 8.1.1+ds1-2 [Ubuntu/jammy universe]
 libfont-afm-perl 1.20-3 [Ubuntu/jammy main]
 libfont-ttf-perl 1.06-1.1 [Ubuntu/jammy main]
-libfontbox-java 1:1.8.16-2 [Ubuntu/jammy universe]
 libfontconfig-dev 2.13.1-4.2ubuntu5 [Ubuntu/jammy main]
 libfontconfig1 2.13.1-4.2ubuntu5 [Ubuntu/jammy main]
 libfontconfig1-dev 2.13.1-4.2ubuntu5 [Ubuntu/jammy main]
@@ -1724,7 +1723,6 @@ libip4tc2 1.8.7-1ubuntu5.2 [Ubuntu/jammy main]
 libip6tc2 1.8.7-1ubuntu5.2 [Ubuntu/jammy main]
 libipa-hbac0 2.6.3-1ubuntu3.3 [Ubuntu/jammy main]
 libipc-run3-perl 0.048-2 [Ubuntu/jammy main]
-libipc-shareable-perl 1.06-2 [Ubuntu/jammy universe]
 libipc-system-simple-perl 1.30-1 [Ubuntu/jammy main]
 libipt2 2.0.5-1 [Ubuntu/jammy main]
 libisc-export1105 1:9.11.19+dfsg-2.1ubuntu3 [Ubuntu/jammy main]
@@ -1944,7 +1942,9 @@ liblept5 1.82.0-3build1 [Ubuntu/jammy universe]
 libleptonica-dev 1.82.0-3build1 [Ubuntu/jammy universe]
 liblightdm-gobject-1-0 1.30.0-0ubuntu5 [Ubuntu/jammy universe]
 liblilv-0-0 0.24.12-2 [Ubuntu/jammy universe]
+liblingua-translit-perl 0.28-1 [Ubuntu/jammy universe]
 liblirc-client0 0.10.1-6.3ubuntu1 [Ubuntu/jammy main]
+liblist-allutils-perl 0.19-1 [Ubuntu/jammy universe]
 liblist-compare-perl 0.55-1 [Ubuntu/jammy main]
 liblist-moreutils-perl 0.430-2 [Ubuntu/jammy main]
 liblist-moreutils-xs-perl 0.430-2build2 [Ubuntu/jammy main]
@@ -1960,8 +1960,6 @@ libllvm15:i386 1:15.0.7-0ubuntu0.22.04.3 [Ubuntu/jammy main]
 libllvmspirvlib12 12.0.0-3 [Ubuntu/jammy universe]
 liblmdb0 0.9.24-1build2 [Ubuntu/jammy main]
 liblocale-gettext-perl 1.07-4build3 [Ubuntu/jammy main]
-liblog-dispatch-perl 2.70-1 [Ubuntu/jammy universe]
-liblog-log4perl-perl 1.54-1 [Ubuntu/jammy universe]
 liblouis-data 3.20.0-2ubuntu0.2 [Ubuntu/jammy main]
 liblouis20 3.20.0-2ubuntu0.2 [Ubuntu/jammy main]
 liblouisutdml-bin 2.10.0-4 [Ubuntu/jammy main]
@@ -2039,8 +2037,6 @@ libmfx1 22.3.0-1 [Ubuntu/jammy universe]
 libmhash2 0.9.9.9-9build2 [Ubuntu/jammy main]
 libmikmod3 3.3.11.1-6 [Ubuntu/jammy universe]
 libmime-charset-perl 1.012.2-1 [Ubuntu/jammy universe]
-libmime-lite-perl 3.033-1 [Ubuntu/jammy main]
-libmime-types-perl 2.22-1 [Ubuntu/jammy main]
 libminizip1 1.1-8build1 [Ubuntu/jammy universe]
 libmjpegutils-2.1-0 1:2.1.0+debian-6build1 [Ubuntu/jammy universe]
 libmm-glib0 1.20.0-1~ubuntu22.04.3 [Ubuntu/jammy main]
@@ -2364,6 +2360,7 @@ libosmesa6:i386 23.2.1-1ubuntu3.1~22.04.2 [Ubuntu/jammy main]
 libosmgpsmap-1.0-1 1.2.0-1build1 [Ubuntu/jammy universe]
 libosp5 1.5.2-13ubuntu3 [Ubuntu/jammy universe]
 libostree-1-1 2022.2-3 [Ubuntu/jammy universe]
+libostyle1c2 1.4devel1-22 [Ubuntu/jammy universe]
 libotf1 0.9.16-3build1 [Ubuntu/jammy main]
 libp11-kit-dev 0.24.0-6build1 [Ubuntu/jammy main]
 libp11-kit0 0.24.0-6build1 [Ubuntu/jammy main]
@@ -2405,6 +2402,7 @@ libparams-util-perl 1.102-1build3 [Ubuntu/jammy main]
 libparams-validate-perl 1.30-1build3 [Ubuntu/jammy universe]
 libparams-validationcompiler-perl 0.30-1 [Ubuntu/jammy universe]
 libpari-gmp-tls7 2.13.3-1 [Ubuntu/jammy universe]
+libparse-recdescent-perl 1.967015+dfsg-2 [Ubuntu/jammy universe]
 libparted-fs-resize0 3.4-2build1 [Ubuntu/jammy main]
 libparted2 3.4-2build1 [Ubuntu/jammy main]
 libpath-tiny-perl 0.122-1 [Ubuntu/jammy main]
@@ -2430,7 +2428,6 @@ libpcre32-3 2:8.39-13ubuntu0.22.04.1 [Ubuntu/jammy main]
 libpcre3:i386 2:8.39-13ubuntu0.22.04.1 [Ubuntu/jammy main]
 libpcrecpp0v5 2:8.39-13ubuntu0.22.04.1 [Ubuntu/jammy main]
 libpcsclite1 1.9.5-3ubuntu1 [Ubuntu/jammy main]
-libpdfbox-java 1:1.8.16-2 [Ubuntu/jammy universe]
 libpeas-1.0-0 1.32.0-1 [Ubuntu/jammy main]
 libpeas-common 1.32.0-1 [Ubuntu/jammy main]
 libperl4-corelibs-perl 0.004-2 [Ubuntu/jammy main]
@@ -2493,7 +2490,6 @@ libpsl5:i386 0.21.0-1.2build2 [Ubuntu/jammy main]
 libpsm-infinipath1 3.3+20.604758e7-6.1 [Ubuntu/jammy universe]
 libpsm2-2 11.2.185-1 [Ubuntu/jammy universe]
 libpstoedit0c2a 3.78-1 [Ubuntu/jammy universe]
-libptexenc1 2021.20210626.59705-1ubuntu0.2 [Ubuntu/jammy main]
 libpthread-stubs0-dev 0.4-1build2 [Ubuntu/jammy main]
 libptytty0 2.0-1 [Ubuntu/jammy universe]
 libpugixml1v5 1.12.1-1 [Ubuntu/jammy universe]
@@ -2704,6 +2700,7 @@ libsodium23 1.0.18-1build2 [Ubuntu/jammy main]
 libsombok3 2.4.0-2 [Ubuntu/jammy universe]
 libsonic0 0.2.0-11build1 [Ubuntu/jammy main]
 libsord-0-0 0.16.8-2 [Ubuntu/jammy universe]
+libsort-key-perl 1.33-2build5 [Ubuntu/jammy universe]
 libsort-versions-perl 1.62-1 [Ubuntu/jammy main]
 libsoundtouch1 2.3.1+ds1-1 [Ubuntu/jammy universe]
 libsoup-3.0-0 3.0.7-0ubuntu1 [Ubuntu/jammy universe]
@@ -2765,7 +2762,6 @@ libstemmer0d 2.2.0-1build1 [Ubuntu/jammy main]
 libstfl0 0.22-3build1 [Ubuntu/jammy universe]
 libstoken1 0.92-1 [Ubuntu/jammy universe]
 libstrictures-perl 2.000006-1 [Ubuntu/jammy main]
-libstring-crc32-perl 2.100-1build1 [Ubuntu/jammy universe]
 libsub-exporter-perl 0.988-1 [Ubuntu/jammy main]
 libsub-exporter-progressive-perl 0.001013-1 [Ubuntu/jammy main]
 libsub-identify-perl 0.14-1build5 [Ubuntu/jammy main]
@@ -2805,7 +2801,6 @@ libtcl8.6 8.6.12+dfsg-1build1 [Ubuntu/jammy main]
 libtdb1 1.4.5-2build1 [Ubuntu/jammy main]
 libtdb1:i386 1.4.5-2build1 [Ubuntu/jammy main]
 libteamdctl0 1.31-1build2 [Ubuntu/jammy main]
-libteckit0 2.5.11+ds1-1 [Ubuntu/jammy universe]
 libtelepathy-glib0 0.24.1-3 [Ubuntu/jammy universe]
 libterm-readkey-perl 2.38-1build4 [Ubuntu/jammy main]
 libtermkey-dev 0.22-1 [Ubuntu/jammy universe]
@@ -2814,13 +2809,16 @@ libterralib3 4.3.0+dfsg.2-12.1build2 [Ubuntu/jammy universe]
 libtesseract-dev 4.1.1-2.1build1 [Ubuntu/jammy universe]
 libtesseract4 4.1.1-2.1build1 [Ubuntu/jammy universe]
 libtevent0 0.11.0-1build1 [Ubuntu/jammy main]
-libtexlua53 2021.20210626.59705-1ubuntu0.2 [Ubuntu/jammy main]
-libtexluajit2 2021.20210626.59705-1ubuntu0.2 [Ubuntu/jammy main]
+libtext-bibtex-perl 0.88-3build3 [Ubuntu/jammy universe]
 libtext-charwidth-perl 0.04-10build3 [Ubuntu/jammy main]
+libtext-csv-perl 2.01-1 [Ubuntu/jammy universe]
+libtext-csv-xs-perl 1.47-1build1 [Ubuntu/jammy universe]
 libtext-glob-perl 0.11-2 [Ubuntu/jammy main]
 libtext-iconv-perl 1.7-7build3 [Ubuntu/jammy main]
 libtext-levenshteinxs-perl 0.03-4build10 [Ubuntu/jammy main]
 libtext-markdown-discount-perl 0.13-1build1 [Ubuntu/jammy main]
+libtext-roman-perl 3.5-2.1 [Ubuntu/jammy universe]
+libtext-unidecode-perl 1.30-1 [Ubuntu/jammy universe]
 libtext-wrapi18n-perl 0.06-9 [Ubuntu/jammy main]
 libtext-xslate-perl 3.5.9-1build1 [Ubuntu/jammy main]
 libthai-data 0.1.29-1build1 [Ubuntu/jammy main]
@@ -2830,6 +2828,7 @@ libthai0:i386 0.1.29-1build1 [Ubuntu/jammy main]
 libtheora0 1.1.1+dfsg.1-15ubuntu4 [Ubuntu/jammy main]
 libtheora0:i386 1.1.1+dfsg.1-15ubuntu4 [Ubuntu/jammy main]
 libthunarx-3-0 4.16.10-1 [Ubuntu/jammy universe]
+libtie-cycle-perl 1.226-1 [Ubuntu/jammy universe]
 libtie-ixhash-perl 1.23-2.1 [Ubuntu/jammy main]
 libtiff-dev 4.3.0-6ubuntu0.9 [Ubuntu/jammy main]
 libtiff5 4.3.0-6ubuntu0.9 [Ubuntu/jammy main]
@@ -3156,12 +3155,15 @@ libxkbfile1 1:1.1.0-1build3 [Ubuntu/jammy main]
 libxkbregistry0 1.4.0-1 [Ubuntu/jammy main]
 libxklavier16 5.4-4build2 [Ubuntu/jammy main]
 libxml-libxml-perl 2.0207+dfsg+really+2.0134-1 [Ubuntu/jammy main]
+libxml-libxml-simple-perl 1.01-1 [Ubuntu/jammy universe]
+libxml-libxslt-perl 1.99-1build2 [Ubuntu/jammy universe]
 libxml-namespacesupport-perl 1.12-1.1 [Ubuntu/jammy main]
 libxml-parser-perl 2.46-3build1 [Ubuntu/jammy main]
 libxml-sax-base-perl 1.09-1.1 [Ubuntu/jammy main]
 libxml-sax-expat-perl 0.51-1 [Ubuntu/jammy main]
 libxml-sax-perl 1.02+dfsg-3 [Ubuntu/jammy main]
 libxml-twig-perl 1:3.52-1 [Ubuntu/jammy main]
+libxml-writer-perl 0.900-1 [Ubuntu/jammy universe]
 libxml-xpathengine-perl 0.14-1 [Ubuntu/jammy main]
 libxml2 2.9.13+dfsg-1ubuntu0.4 [Ubuntu/jammy main]
 libxml2-dev 2.9.13+dfsg-1ubuntu0.4 [Ubuntu/jammy main]
@@ -3224,7 +3226,6 @@ libyaml-0-2 0.2.2-1build2 [Ubuntu/jammy main]
 libyaml-dev 0.2.2-1build2 [Ubuntu/jammy main]
 libyaml-libyaml-perl 0.83+ds-1build1 [Ubuntu/jammy main]
 libyaml-perl 1.30-1 [Ubuntu/jammy main]
-libyaml-tiny-perl 1.73-1 [Ubuntu/jammy main]
 libyelp0 42.1-1 [Ubuntu/jammy main]
 libz-mingw-w64 1.2.11+dfsg-4 [Ubuntu/jammy universe]
 libz3-4 4.8.12-1 [Ubuntu/jammy universe]
@@ -3248,7 +3249,7 @@ lintian 2.114.0ubuntu1.4 [Ubuntu/jammy main]
 linux-base 4.5ubuntu9 [Ubuntu/jammy main]
 linux-firmware 20220329.git681281e4-0ubuntu3.31 [Ubuntu/jammy main]
 linux-generic 5.15.0.112.112 [Ubuntu/jammy main]
-linux-generic-hwe-20.04 5.15.0.112.112 [Ubuntu/jammy main]
+linux-generic-hwe-20.04 5.15.0.113.113 [Ubuntu/jammy main]
 linux-generic-hwe-22.04 6.5.0.41.41~22.04.2 [Ubuntu/jammy main]
 linux-headers-5.15.0-112 5.15.0-112.122 [Ubuntu/jammy main]
 linux-headers-5.15.0-112-generic 5.15.0-112.122 [Ubuntu/jammy main]
@@ -3269,7 +3270,7 @@ linux-image-6.5.0-35-generic 6.5.0-35.35~22.04.1 [Ubuntu/jammy main]
 linux-image-6.5.0-41-generic 6.5.0-41.41~22.04.2 [Ubuntu/jammy main]
 linux-image-generic 5.15.0.112.112 [Ubuntu/jammy main]
 linux-image-generic-hwe-22.04 6.5.0.41.41~22.04.2 [Ubuntu/jammy main]
-linux-libc-dev 5.15.0-112.122 [Ubuntu/jammy main]
+linux-libc-dev 5.15.0-113.123 [Ubuntu/jammy main]
 linux-modules-5.15.0-112-generic 5.15.0-112.122 [Ubuntu/jammy main]
 linux-modules-5.19.0-50-generic 5.19.0-50.50 [Ubuntu/jammy main]
 linux-modules-6.2.0-39-generic 6.2.0-39.40~22.04.1 [Ubuntu/jammy main]
@@ -3299,7 +3300,6 @@ llvm-14-runtime 1:14.0.0-1ubuntu1.1 [Ubuntu/jammy universe]
 llvm-14-tools 1:14.0.0-1ubuntu1.1 [Ubuntu/jammy universe]
 llvm-runtime 1:14.0-55~exp2 [Ubuntu/jammy universe]
 lm-sensors 1:3.6.0-7ubuntu1 [Ubuntu/jammy universe]
-lmodern 2.004.5-6.1 [Ubuntu/jammy universe]
 locales 2.35-0ubuntu3.8 [Ubuntu/jammy main]
 locate 4.8.0-1ubuntu3 [Ubuntu/jammy universe]
 login 1:4.8.1-2ubuntu2.2 [Ubuntu/jammy main]
@@ -3443,6 +3443,7 @@ ofono 1.31-3ubuntu1 [Ubuntu/jammy universe]
 okular 4:21.12.3-0ubuntu1 [Ubuntu/jammy universe]
 okular-extra-backends 4:21.12.3-0ubuntu1 [Ubuntu/jammy universe]
 openconnect 8.20-1 [Ubuntu/jammy universe]
+openjade 1.4devel1-22 [Ubuntu/jammy universe]
 openjdk-11-jdk 11.0.23+9-1ubuntu1~22.04.1 [Ubuntu/jammy main]
 openjdk-11-jdk-headless 11.0.23+9-1ubuntu1~22.04.1 [Ubuntu/jammy main]
 openjdk-11-jre 11.0.23+9-1ubuntu1~22.04.1 [Ubuntu/jammy main]
@@ -3519,7 +3520,6 @@ ppa-purge 0.2.8+bzr63-0ubuntu1 [Ubuntu/jammy universe]
 ppp 2.4.9-1+1ubuntu3 [Ubuntu/jammy main]
 pptp-linux 1.10.0-1build3 [Ubuntu/jammy main]
 preload 0.6.4-5 [Ubuntu/jammy universe]
-preview-latex-style 12.2-1ubuntu1 [Ubuntu/jammy universe]
 prince 20201029-1 [local]
 printer-driver-brlaser 6-3 [Ubuntu/jammy main]
 printer-driver-c2esp 27-11build1 [Ubuntu/jammy main]
@@ -3538,7 +3538,6 @@ procps 2:3.3.17-6ubuntu2.1 [Ubuntu/jammy main]
 proj-bin 8.2.1-1 [Ubuntu/jammy universe]
 proj-data 8.2.1-1 [Ubuntu/jammy universe]
 protobuf-compiler 3.12.4-1ubuntu7.22.04.1 [Ubuntu/jammy universe]
-ps2eps 1.68+binaryfree-3 [Ubuntu/jammy universe]
 psmisc 23.4-2build3 [Ubuntu/jammy main]
 pstoedit 3.78-1 [Ubuntu/jammy universe]
 psutils 1.17.dfsg-4 [Ubuntu/jammy universe]
@@ -4067,22 +4066,6 @@ telnet 0.17-44build1 [Ubuntu/jammy main]
 tesseract-ocr 4.1.1-2.1build1 [Ubuntu/jammy universe]
 tesseract-ocr-eng 1:4.00~git30-7274cfa-1.1 [Ubuntu/jammy universe]
 tesseract-ocr-osd 1:4.00~git30-7274cfa-1.1 [Ubuntu/jammy universe]
-tex-common 6.17 [Ubuntu/jammy universe]
-tex-gyre 20180621-3.1 [Ubuntu/jammy universe]
-texlive-base 2021.20220204-1 [Ubuntu/jammy universe]
-texlive-binaries 2021.20210626.59705-1ubuntu0.2 [Ubuntu/jammy universe]
-texlive-extra-utils 2021.20220204-1 [Ubuntu/jammy universe]
-texlive-font-utils 2021.20220204-1 [Ubuntu/jammy universe]
-texlive-fonts-recommended 2021.20220204-1 [Ubuntu/jammy universe]
-texlive-lang-greek 2021.20220204-1 [Ubuntu/jammy universe]
-texlive-latex-base 2021.20220204-1 [Ubuntu/jammy universe]
-texlive-latex-extra 2021.20220204-1 [Ubuntu/jammy universe]
-texlive-latex-recommended 2021.20220204-1 [Ubuntu/jammy universe]
-texlive-luatex 2021.20220204-1 [Ubuntu/jammy universe]
-texlive-metapost 2021.20220204-1 [Ubuntu/jammy universe]
-texlive-pictures 2021.20220204-1 [Ubuntu/jammy universe]
-texlive-plain-generic 2021.20220204-1 [Ubuntu/jammy universe]
-texlive-science 2021.20220204-1 [Ubuntu/jammy universe]
 thermald 2.4.9-1ubuntu0.4 [Ubuntu/jammy main]
 thorium-browser 124.0.6367.218-1 [local]
 thunar 4.16.10-1 [Ubuntu/jammy universe]
@@ -4092,11 +4075,9 @@ thunderbird 1:115.12.0+build3-0ubuntu0.22.04.1 [Ubuntu/jammy main]
 thunderbird-gnome-support 1:115.12.0+build3-0ubuntu0.22.04.1 [Ubuntu/jammy main]
 thunderbird-locale-en 1:115.12.0+build3-0ubuntu0.22.04.1 [Ubuntu/jammy main]
 thunderbird-locale-en-us 1:115.12.0+build3-0ubuntu0.22.04.1 [Ubuntu/jammy main]
-tikzit 2.1.6-2 [Ubuntu/jammy universe]
 time 1.9-0.1build2 [Ubuntu/jammy main]
 timer 1.2.0 [local]
 timgm6mb-soundfont 1.3-5 [Ubuntu/jammy universe]
-tipa 2:1.3-21 [Ubuntu/jammy universe]
 tk 8.6.11+1build2 [Ubuntu/jammy main]
 tk-dev 8.6.11+1build2 [Ubuntu/jammy main]
 tk8.6 8.6.12-1build1 [Ubuntu/jammy main]
@@ -4121,12 +4102,14 @@ tumbler 4.16.0-1 [Ubuntu/jammy universe]
 tumbler-common 4.16.0-1 [Ubuntu/jammy universe]
 tzdata 2024a-0ubuntu0.22.04 [Ubuntu/jammy main]
 ubuntu-advantage-desktop-daemon 1.10~22.04.1 [Ubuntu/jammy main]
-ubuntu-advantage-tools 29.4~22.04 [local]
+ubuntu-advantage-tools 32.3~22.04 [Ubuntu/jammy main]
 ubuntu-docs 22.04.5 [Ubuntu/jammy main]
 ubuntu-drivers-common 1:0.9.6.2~0.22.04.6 [Ubuntu/jammy main]
 ubuntu-keyring 2021.03.26 [Ubuntu/jammy main]
 ubuntu-minimal 1.481.1 [Ubuntu/jammy main]
 ubuntu-mono 20.10-0ubuntu2 [Ubuntu/jammy main]
+ubuntu-pro-client 32.3~22.04 [Ubuntu/jammy main]
+ubuntu-pro-client-l10n 32.3~22.04 [Ubuntu/jammy main]
 ubuntu-release-upgrader-core 1:22.04.19 [Ubuntu/jammy main]
 ubuntu-report 1.7.1 [Ubuntu/jammy main]
 ubuntu-restricted-addons 26 [Ubuntu/jammy multiverse]
@@ -4364,7 +4347,7 @@ go                          1.22.4              ~/.config/mise/config.toml lates
 jq                          1.7.1                                                        
 node                        22.3.0              ~/.config/mise/config.toml latest        
 npm:cwebp                   3.1.0                                                        
-pandoc                      3.2                 ~/.config/mise/config.toml latest        
+pandoc                      3.2.1               ~/.config/mise/config.toml latest        
 pipx:volcano-cooking        0.12.2              ~/.config/mise/config.toml latest        
 python                      3.6.15                                                       
 python                      3.8.19              ~/.config/mise/config.toml sub-0.4:latest
@@ -4482,7 +4465,7 @@ mise v2024.6.6:
     mise
 mprocs v0.6.4:
     mprocs
-nu v0.94.2:
+nu v0.95.0:
     nu
 numbat-cli v1.12.0:
     numbat
@@ -4730,6 +4713,7 @@ i booktabs: Publication quality tables in LaTeX
 i breakurl: Line-breakable \url-like links in hyperref when compiling via dvips/ps2pdf
 i caption: Customising captions in floating environments
 i carlisle: David Carlisle's small packages
+i catchfile: Catch an external file into a macro
 i catoptions: Preserving and recalling standard catcodes
 i ccicons: LaTeX support for Creative Commons icons
 i changepage: Margin adjustment and detection of odd/even pages
@@ -4739,6 +4723,7 @@ i cite: Improved citation handling in LaTeX
 i cleveref: Intelligent cross-referencing
 i cm: Computer Modern fonts
 i cm-super: CM-Super family of fonts
+i cmap: Make PDF files searchable and copyable
 i collectbox: Collect and process macro arguments as boxes
 i colortbl: Add colour to LaTeX tables
 i comment: Selectively include/exclude portions of text
@@ -4747,6 +4732,7 @@ i crop: Support for cropmarks
 i csquotes: Context sensitive quotation facilities
 i ctablestack: Catcode table stable support
 i currfile: Provide file name and path of input files
+i datatool: Tools to load and manipulate data
 i datetime: Change format of \today with commands for current time
 i dblfloatfix: Fixes for twocolumn floats
 i dehyph: German hyphenation patterns for traditional orthography
@@ -4754,6 +4740,8 @@ i doclicense: Support for putting documents under a license
 i draftwatermark: Put a grey textual watermark on document pages
 i dvipdfmx: An extended version of dvipdfm
 i dvipdfmx.x86_64-linux: x86_64-linux files of dvipdfmx
+i dvipng: A fast DVI to PNG/GIF converter
+i dvipng.x86_64-linux: x86_64-linux files of dvipng
 i dvips: A DVI to PostScript driver
 i dvips.x86_64-linux: x86_64-linux files of dvips
 i ec: Computer modern fonts in T1 and TS1 encodings
@@ -4798,6 +4786,8 @@ i framed: Framed or shaded regions that can break across pages
 i geometry: Flexible and complete interface to document dimensions
 i gettitlestring: Clean up title references
 i gincltex: Include TeX files as graphics (.tex support for \includegraphics)
+i glossaries: Create glossaries and lists of acronyms
+i glossaries.x86_64-linux: x86_64-linux files of glossaries
 i glyphlist: Adobe Glyph List and TeX extensions
 i graphics: The LaTeX standard graphics bundle
 i graphics-cfg: Sample configuration files for LaTeX color and graphics
@@ -4884,6 +4874,7 @@ i memoir: Typeset fiction, non-fiction and mathematical books
 i metafont: A system for specifying fonts
 i metafont.x86_64-linux: x86_64-linux files of metafont
 i metalogo: Extended TeX logo macros
+i mfirstuc: Uppercase the first letter of a word
 i mfware: Supporting tools for use with Metafont
 i mfware.x86_64-linux: x86_64-linux files of mfware
 i mhchem: Typeset chemical formulae/equations and H and P statements
@@ -4901,8 +4892,10 @@ i ncntrsbk: URW 'Base 35' font pack for LaTeX
 i needspace: Insert pagebreak if not enough space
 i newfloat: Define new floating environments
 i newtx: Alternative uses of the TX fonts, with improved metrics
+i noto: Support for Noto fonts
 i ntgclass: "European" versions of standard classes
 i oberdiek: A bundle of packages submitted by Heiko Oberdiek
+i opensans: The Open Sans font family, and LaTeX support
 i palatino: URW 'Base 35' font pack for LaTeX
 i paralist: Enumerate and itemize within paragraphs
 i parskip: Layout with zero \parindent, non-zero \parskip
@@ -4917,9 +4910,11 @@ i pdftex.x86_64-linux: x86_64-linux files of pdftex
 i pdftexcmds: LuaTeX support for pdfTeX utility functions
 i pgf: Create PostScript and PDF graphics in TeX
 i picinpar: Insert pictures into paragraphs
+i picture: Dimens for picture macros
 i placeins: Control float placement
 i plain: The Plain TeX format
 i polyglossia: An alternative to babel for XeLaTeX and LuaLaTeX
+i poormanlog: Logarithms and powers with (almost) 9 digits
 i preprint: A bundle of packages provided "as is"
 i preview: Extract bits of a LaTeX source for output
 i psfrag: Replace strings in encapsulated PostScript figures
@@ -4939,6 +4934,7 @@ i seqsplit: Split long sequences of characters in a neutral way
 i setspace: Set space between lines
 i sidecap: Typeset captions sideways
 i sidenotes: Typeset notes containing rich content, in the margin
+i silence: Selective filtering of error messages and warnings
 i siunitx: A comprehensive (SI) units package
 i soul: Hyphenation for letterspacing, underlining, and more
 i srcltx: Jump between DVI and TeX files
@@ -4949,6 +4945,7 @@ i stringenc: Converting a string between different encodings
 i sttools: Various macros
 i subfig: Figures broken into subfigures
 i subfigure: Deprecated: Figures divided into subfigures
+i substr: Deal with substrings in strings
 i symbol: URW 'Base 35' font pack for LaTeX
 i tabto-ltx: "Tab" to a measured position in the line
 i tabu: Flexible LaTeX tabulars
@@ -4973,9 +4970,13 @@ i tikzfill: TikZ libraries for filling with images and patterns
 i times: URW 'Base 35' font pack for LaTeX
 i tipa: Fonts and macros for IPA phonetics characters
 i titlesec: Select alternative section titles
+i tocbibind: Add bibliography/index/contents to Table of Contents
+i tocloft: Control table of contents, figures, etc
 i tools: The LaTeX standard tools bundle
+i totalcount: Commands for typesetting total values of counters
 i totcount: Find the last value of a counter
 i totpages: Count pages in a document, and report last page number
+i tracklang: Language and dialect tracker
 i translator: Easy translation of strings in LaTeX
 i trimspaces: Trim spaces around an argument or within a macro
 i tufte-latex: Document classes inspired by the work of Edward Tufte
@@ -4997,11 +4998,14 @@ i vruler: Numbering text
 i wallpaper: Easy addition of wallpapers (background images) to LaTeX documents, including tiling
 i wrapfig: Produces figures which text can flow around
 i xargs: Define commands with many optional arguments
+i xcharter: Extension of Bitstream Charter fonts
 i xcolor: Driver-independent color extensions for LaTeX and pdfLaTeX
 i xetex: An extended variant of TeX for use with Unicode sources
 i xetex.x86_64-linux: x86_64-linux files of xetex
 i xetexconfig: crop.cfg for XeLaTeX
+i xfor: A reimplementation of the LaTeX for-loop macro
 i xifthen: Extended conditional commands
+i xint: Expandable operations on long numbers
 i xkeyval: Extension of the keyval package
 i xltxtra: "Extras" for LaTeX users of XeTeX
 i xpatch: Extending etoolbox patching commands
@@ -5045,13 +5049,13 @@ Name                       Version                     Rev    Tracking         P
 bare                       1.0                         5      latest/stable    canonical**    base
 canonical-livepatch        10.8.3                      282    latest/stable    canonical**    -
 cmake                      3.29.6                      1399   latest/stable    crascit**      classic
-core                       16-2.61.2                   16928  latest/stable    canonical**    core
-core18                     20240416                    2823   latest/stable    canonical**    base
+core                       16-2.61.4-20240607          17200  latest/stable    canonical**    core
+core18                     20240612                    2829   latest/stable    canonical**    base
 core20                     20240416                    2318   latest/stable    canonical**    base
 core22                     20240408                    1380   latest/stable    canonical**    base
 dotnet-sdk                 5.0.408                     167    5.0/stable       canonical**    classic
 duf-utility                v0.6.0                      1      latest/stable    muesli         -
-firefox                    127.0.1-1                   4451   latest/stable/…  mozilla**      -
+firefox                    127.0.2-1                   4483   latest/stable/…  mozilla**      -
 gimp                       2.10.38                     436    latest/stable    snapcrafters*  -
 gnome-3-28-1804            3.28.0-19-g98f9e67.98f9e67  198    latest/stable    canonical**    -
 gnome-3-34-1804            0+git.3556cb3               93     latest/stable/…  canonical**    -
