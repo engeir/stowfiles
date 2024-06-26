@@ -1,5 +1,17 @@
 # Changelog
 
+## [1.15.4](https://github.com/engeir/stowfiles/compare/nvim-v1.15.3...nvim-v1.15.4) (2024-06-26)
+
+
+### Miscellaneous
+
+* **nvim:** add keymap &lt;C-s&gt; to :update ([15822fd](https://github.com/engeir/stowfiles/commit/15822fdc5b20958a540ee16c44e295c5910a85a5))
+
+
+### Documentation
+
+* **nvim:** update plugins list in README ([af430bf](https://github.com/engeir/stowfiles/commit/af430bf1176043d77a5d0bead15fc4883f3e9d3f))
+
 ## [1.15.3](https://github.com/engeir/stowfiles/compare/nvim-v1.15.2...nvim-v1.15.3) (2024-06-20)
 
 
