@@ -1,12 +1,12 @@
 return {
   {
     "zbirenbaum/copilot.lua",
-    enabled = true,
+    enabled = false,
     cmd = "Copilot",
     event = "InsertEnter",
     config = function()
       require("copilot").setup({
-        filetypes = { markdown = true, tex = false },
+        filetypes = { markdown = true, tex = false, python = false },
         panel = {
           enabled = false,
           auto_refresh = true,
@@ -33,10 +33,9 @@ return {
       })
     end,
   },
-  { "github/copilot.vim", enabled = false, event = "InsertEnter" },
   {
     "zbirenbaum/copilot-cmp",
-    enabled = true,
+    enabled = false,
     config = function()
       require("copilot_cmp").setup()
     end,

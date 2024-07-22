@@ -183,7 +183,19 @@ return {
   -- mini.files ----------------------------------------------------------------------
   {
     "echasnovski/mini.files",
-    config = true,
+    config = function()
+      require("mini.files").setup({
+        content = {
+          filter = function(file)
+            if vim.endswith(file.name, ".pyi") then
+              return false
+            else
+              return true
+            end
+          end,
+        },
+      })
+    end,
     keys = {
       {
         "-",
