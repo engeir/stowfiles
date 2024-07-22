@@ -2,18 +2,17 @@ on:
   push:
     branches:
       - main
-
 permissions:
   contents: write
   pull-requests: write
-
 name: release-please
-
 jobs:
   release-please:
     runs-on: ubuntu-latest
     steps:
-      - uses: googleapis/release-please-action@v4
+      - name: Release please
+        uses: googleapis/release-please-action@v4
+        id: release
         with:
           token: ${{ secrets.RELEASE_TOKEN }}
           config-file: .github/release-please/release-please-config.json

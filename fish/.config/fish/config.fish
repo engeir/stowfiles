@@ -16,6 +16,8 @@ end
 # bun
 set --export BUN_INSTALL "$HOME/.bun"
 set --export PATH $BUN_INSTALL/bin $PATH
+# small test of context
+set --export PATH /home/een023/context/tex/texmf-linux-64/bin $PATH
 
 # Wasmer
 export WASMER_DIR="/Users/eirikenger/.wasmer"
