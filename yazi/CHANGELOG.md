@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.15.4](https://github.com/engeir/stowfiles/compare/yazi-v1.15.3...yazi-v1.15.4) (2024-07-22)
+
+
+### Miscellaneous
+
+* **yazi:** add seek forward and backward commands ([7a99df7](https://github.com/engeir/stowfiles/commit/7a99df79611339e4035ea46ed40643090cec2aec))
+
 ## [1.15.3](https://github.com/engeir/stowfiles/compare/yazi-v1.15.2...yazi-v1.15.3) (2024-06-19)
 
 
