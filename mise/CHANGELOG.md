@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.16.1](https://github.com/engeir/stowfiles/compare/mise-v1.16.0...mise-v1.16.1) (2024-07-22)
+
+
+### Miscellaneous
+
+* **software:** update installed ([8a04760](https://github.com/engeir/stowfiles/commit/8a0476062e7bb3148bfb9418bb89e08c3054c020))
+
 ## [1.16.0](https://github.com/engeir/stowfiles/compare/mise-v1.15.3...mise-v1.16.0) (2024-06-26)
 
 
