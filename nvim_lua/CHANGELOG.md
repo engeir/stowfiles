@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.15.5](https://github.com/engeir/stowfiles/compare/nvim-v1.15.4...nvim-v1.15.5) (2024-07-26)
+
+
+### Miscellaneous
+
+* **nvim:** add resession plugin ([e8a9f3e](https://github.com/engeir/stowfiles/commit/e8a9f3ead1554ac85156a2d5cf10b400f170b72d))
+* **nvim:** adjust python settings ([114d073](https://github.com/engeir/stowfiles/commit/114d073ea7afc0cf58f828989194f09b067466d8))
+
 ## [1.15.4](https://github.com/engeir/stowfiles/compare/nvim-v1.15.3...nvim-v1.15.4) (2024-06-26)
 
 
