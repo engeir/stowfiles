@@ -112,26 +112,27 @@ return {
     },
   },
   on_attach = function(_, bufnr)
-    wk.register({
-      t = {
-        name = "Texlab",
-        a = {
-          "<cmd>TexlabBuildToggle<cr>",
-          "Toggle auto building (Texlab)",
-          buffer = bufnr,
-        },
-        b = {
-          "<cmd>TexlabBuild<cr>",
-          "Build doc (Texlab)",
-          buffer = bufnr,
-        },
-        v = {
-          "<cmd>TexlabForward<cr>",
-          "Forward search doc (Texlab)",
-          buffer = bufnr,
-        },
+    wk.add({
+      { "<localleader>t", group = "Texlab" },
+      {
+        "<localleader>ta",
+        "<cmd>TexlabBuildToggle<cr>",
+        buffer = bufnr,
+        desc = "Toggle auto building (Texlab)",
       },
-    }, { prefix = "<localleader>" })
+      {
+        "<localleader>tb",
+        "<cmd>TexlabBuild<cr>",
+        buffer = bufnr,
+        desc = "Build doc (Texlab)",
+      },
+      {
+        "<localleader>tv",
+        "<cmd>TexlabForward<cr>",
+        buffer = bufnr,
+        desc = "Forward search doc (Texlab)",
+      },
+    })
     -- Set up keymap that forward searches
     -- vim.keymap.set(
     --   "n",

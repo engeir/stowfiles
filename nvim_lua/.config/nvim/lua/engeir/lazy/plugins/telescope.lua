@@ -177,77 +177,77 @@ return {
         function()
           require("telescope.builtin").commands()
         end,
-        desc = "[F]ind [C]ommands",
+        desc = "Find Commands",
       },
       {
         "<leader>fd",
         function()
           require("telescope.builtin").diagnostics()
         end,
-        desc = "[F]ind [D]iagnostics",
+        desc = "Find Diagnostics",
       },
       -- {
       --   "<leader>ff",
       --   function()
       --     require("telescope.builtin").find_files({ hidden = true })
       --   end,
-      --   desc = "[F]ind [F]iles",
+      --   desc = "Find Files",
       -- },
       {
         "<leader>fh",
         function()
           require("telescope.builtin").help_tags()
         end,
-        desc = "[F]ind [H]elp tags",
+        desc = "Find Help tags",
       },
       {
         "<leader>fk",
         function()
           require("telescope.builtin").keymaps()
         end,
-        desc = "[F]ind [K]eymaps",
+        desc = "Find Keymaps",
       },
       {
         "<leader>fl",
         function()
           require("telescope.builtin").current_buffer_fuzzy_find()
         end,
-        desc = "[F]ind [L]ines",
+        desc = "Find Lines",
       },
       {
         "<leader>fo",
         function()
           require("telescope.builtin").git_commits()
         end,
-        desc = "[F]ind C[o]mmits",
+        desc = "Find Commits",
       },
       {
         "<leader>fp",
         function()
           require("telescope.builtin").spell_suggest()
         end,
-        desc = "[F]ind S[p]ell suggestions",
+        desc = "Find Spell suggestions",
       },
       {
         "<leader>fr",
         function()
           require("telescope.builtin").grep_string({ search = "" })
         end,
-        desc = "[F]ind [R]ipgrep (find string)",
+        desc = "Find Ripgrep (find string)",
       },
       {
         "<leader>fs",
         function()
           require("telescope.builtin").git_files({ cwd = "~/stowfiles/" })
         end,
-        desc = "[F]ind [S]towfiles",
+        desc = "Find Stowfiles",
       },
       {
         "<leader>fw",
         function()
           require("telescope.builtin").grep_string()
         end,
-        desc = "[F]ind [W]ord under cursor",
+        desc = "Find Word under cursor",
       },
     },
   },
@@ -317,7 +317,7 @@ return {
         function()
           require("telescope").extensions.smart_open.smart_open()
         end,
-        desc = "[F]find [F]files",
+        desc = "Find Files",
         noremap = true,
         silent = true,
       },
@@ -331,7 +331,7 @@ return {
     end,
     ft = "tex",
     keys = {
-      { "<leader>fb", "<cmd>Telescope bibtex<cr>", desc = "[F]ind [B]ibtex" },
+      { "<leader>fb", "<cmd>Telescope bibtex<cr>", desc = "Find Bibtex" },
     },
   },
   {
@@ -349,7 +349,6 @@ return {
       require("telescope").load_extension("neoclip")
     end,
   },
-  { "nvim-telescope/telescope-symbols.nvim", cmd = "Telescope symbols" },
   {
     "nvim-telescope/telescope-file-browser.nvim",
     enabled = false,

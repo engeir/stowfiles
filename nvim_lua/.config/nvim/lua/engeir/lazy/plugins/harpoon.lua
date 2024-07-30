@@ -10,7 +10,7 @@ return {
         local harpoon = require("harpoon")
         harpoon.ui:toggle_quick_menu(harpoon:list())
       end,
-      desc = "[H]arpoon [M]ark",
+      desc = "Harpoon Find",
     },
     {
       "<leader>hm",
@@ -18,7 +18,7 @@ return {
         local harpoon = require("harpoon")
         harpoon:list():add()
       end,
-      desc = "[H]arpoon [M]ark",
+      desc = "Harpoon Mark",
     },
     {
       "<leader>hn",
@@ -35,7 +35,7 @@ return {
         end
         HarpoonList:next()
       end,
-      desc = "[H]arpoon [N]ext",
+      desc = "Harpoon Next",
     },
     {
       "<leader>hN",
@@ -52,7 +52,7 @@ return {
         end
         HarpoonList:prev()
       end,
-      desc = "[H]arpoon previous",
+      desc = "Harpoon previous",
     },
     {
       "<leader>1",
@@ -60,7 +60,7 @@ return {
         local harpoon = require("harpoon")
         harpoon:list():select(1)
       end,
-      desc = "[H]arpoon first",
+      desc = "Harpoon first",
     },
     {
       "<leader>2",
@@ -68,7 +68,7 @@ return {
         local harpoon = require("harpoon")
         harpoon:list():select(2)
       end,
-      desc = "[H]arpoon second",
+      desc = "Harpoon second",
     },
     {
       "<leader>3",
@@ -76,7 +76,7 @@ return {
         local harpoon = require("harpoon")
         harpoon:list():select(3)
       end,
-      desc = "[H]arpoon third",
+      desc = "Harpoon third",
     },
     {
       "<leader>4",
@@ -84,7 +84,7 @@ return {
         local harpoon = require("harpoon")
         harpoon:list():select(4)
       end,
-      desc = "[H]arpoon fourth",
+      desc = "Harpoon fourth",
     },
   },
   config = function()

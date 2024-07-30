@@ -107,14 +107,14 @@ return {
         ":DiffviewClose<cr>",
         silent = true,
         noremap = true,
-        desc = "Diffview [Q]uit",
+        desc = "Diffview Quit",
       },
       {
         "<leader>go",
         ":DiffviewOpen<cr>",
         silent = true,
         noremap = true,
-        desc = "Diffview [O]pen",
+        desc = "Diffview Open",
       },
     },
   },
@@ -151,7 +151,7 @@ return {
     "kdheepak/lazygit.nvim",
     enabled = vim.fn.executable("lazygit"),
     keys = {
-      { "<leader>lg", "<cmd>LazyGit<cr>", desc = "Open [L]azy[G]it" },
+      { "<leader>gl", "<cmd>LazyGit<cr>", desc = "LazyGit" },
     },
   },
   {
@@ -163,7 +163,7 @@ return {
         function()
           require("gitlinker").get_buf_range_url("n")
         end,
-        desc = "[G]itlinker [Y]ank URL",
+        desc = "Gitlinker Yank URL",
       },
     },
     config = function()

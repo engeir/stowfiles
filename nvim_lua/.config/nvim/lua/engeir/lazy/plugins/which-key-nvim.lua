@@ -6,32 +6,43 @@ return {
   --     vim.o.timeout = true
   --     vim.o.timeoutlen = 300
   -- end,
+  keys = {
+    {
+      "<leader>?",
+      function()
+        require("which-key").show({ global = false })
+      end,
+      desc = "Buffer Local Keymaps (which-key)",
+    },
+  },
   config = function() -- This is the function that runs, AFTER loading
     require("which-key").setup()
 
-    local wkr = require("which-key").register
-    -- Document existing key chains
-    wkr({
-      -- c = { name = "[C]ode", _ = "which_key_ignore" },
-      -- ["d"] = { name = "[D]ocument", _ = "which_key_ignore" },
-      f = { name = "Find", _ = "which_key_ignore" },
-      g = { name = "Git", _ = "which_key_ignore" },
-      h = { name = "Harpoon", _ = "which_key_ignore" },
-      j = { name = "Just", _ = "which_key_ignore" },
-      t = { name = "Terminal", _ = "which_key_ignore" },
-      u = {
-        name = "Ui",
-        _ = "which_key_ignore",
-        t = { "<cmd>tabnew<cr>", "Create new tab" },
-      },
-      w = { name = "Workspace", s = { "<cmd>source %<cr>", "Source file" } },
-    }, { prefix = "<leader>" })
-    wkr({
-      r = { name = "Refactor", _ = "which_key_ignore" },
-    }, { prefix = "c" })
-    wkr({
-      l = { name = "Vimtex", _ = "which_key_ignore" },
-      t = { name = "Texlab", _ = "which_key_ignore" },
-    }, { prefix = "<localleader>" })
+    local wk = require("which-key")
+    wk.add({
+      { "<leader>b", group = "Buffer" },
+      { "<leader>f", group = "Find" },
+      { "<leader>g", group = "Git" },
+      { "<leader>h", group = "Harpoon", icon = "󱡀" },
+      { "<leader>j", group = "Just", icon = "󰖷" },
+      { "<leader>t", group = "Terminal" },
+      { "<leader>u", group = "Ui" },
+      { "<leader>ut", "<cmd>tabnew<cr>", desc = "Create new tab" },
+      { "<leader>w", group = "Workspace" },
+      { "<leader>ws", "<cmd>source %<cr>", desc = "Source file" },
+      { "cr", group = "Refactor" },
+    })
+    -- wk.show({
+    --   keys = "<c-w>",
+    --   loop = true, -- this will keep the popup open until you hit <esc>
+    -- })
+    -- wk.show({
+    --   keys = "]",
+    --   loop = true, -- this will keep the popup open until you hit <esc>
+    -- })
+    -- wk.show({
+    --   keys = "[",
+    --   loop = true, -- this will keep the popup open until you hit <esc>
+    -- })
   end,
 }
