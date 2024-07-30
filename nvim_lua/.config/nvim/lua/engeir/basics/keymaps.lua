@@ -10,6 +10,14 @@ vim.keymap.set("n", "U", "<C-r>")
 -- Save the file with update
 vim.keymap.set("n", "<C-s>", "<cmd>update<CR>")
 
+-- Close all but the current buffer
+vim.keymap.set(
+  "n",
+  "<leader>bc",
+  "<cmd>%bd|e#|bd#<cr>",
+  { desc = "Close all but the current buffer" }
+)
+
 -- Improving default keys
 vim.keymap.set("n", "J", function()
   vim.cmd("normal! mzJ")
