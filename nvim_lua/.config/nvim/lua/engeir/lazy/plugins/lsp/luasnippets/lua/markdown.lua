@@ -17,4 +17,13 @@ return {
     i(2),
     t("}"),
   }),
+  s({ trig = "mk" }, { t("\\("), i(1), t("\\)") }),
+  s(
+    { trig = "sub", wordTrig = false, name = "auto subscript" },
+    { t("_{"), i(1), t("}"), i(0) }
+  ),
+  s(
+    { trig = "sup", wordTrig = false, name = "auto superscript" },
+    { t("^{"), i(1), t("}"), i(0) }
+  ),
 }
