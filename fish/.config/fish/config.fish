@@ -22,3 +22,5 @@ set --export PATH /home/een023/context/tex/texmf-linux-64/bin $PATH
 # Wasmer
 export WASMER_DIR="/Users/eirikenger/.wasmer"
 [ -s "$WASMER_DIR/wasmer.sh" ] && source "$WASMER_DIR/wasmer.sh"
+fish_add_path /home/een023/.pixi/bin
+pixi completion --shell fish | source
