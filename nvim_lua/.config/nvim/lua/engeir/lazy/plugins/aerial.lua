@@ -1,7 +1,15 @@
 return {
   "stevearc/aerial.nvim",
   event = { "BufReadPre", "BufNewFile" },
-  dependencies = "nvim-tree/nvim-web-devicons", -- optional, for file icons
+  dependencies = {
+    {
+      "echasnovski/mini.icons",
+      config = function()
+        require("mini.icons").setup()
+        MiniIcons.mock_nvim_web_devicons()
+      end,
+    },
+  },
   config = function()
     local air = require("aerial")
     -- local aira = require("aerial.actions")

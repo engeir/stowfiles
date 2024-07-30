@@ -1,13 +1,14 @@
 return {
   -- mini.nvim
   -- Replaces:
-  --    junegunn/vim-easy-align -> mini.align
-  --    numToStr/Comment.nvim   -> mini.comment
-  --    RRethy/vim-illuminate   -> mini.cursorword
-  --    windwp/nvim-autopairs   -> mini.pairs      -> altermo/ultimate-autopair.nvim
-  --    goolord/alpha-nvim      -> mini.starter
-  --    kylechui/nvim-surround  -> mini.surround
-  --    folke/flash.nvim        <- mini.jump
+  --    junegunn/vim-easy-align     -> mini.align
+  --    numToStr/Comment.nvim       -> mini.comment
+  --    RRethy/vim-illuminate       -> mini.cursorword
+  --    nvim-tree/nvim-web-devicons -> mini.icons
+  --    windwp/nvim-autopairs       -> mini.pairs      -> altermo/ultimate-autopair.nvim
+  --    goolord/alpha-nvim          -> mini.starter
+  --    kylechui/nvim-surround      -> mini.surround
+  --    folke/flash.nvim            <- mini.jump
 
   -- mini.ai -------------------------------------------------------------------------
   {
@@ -56,8 +57,8 @@ return {
         function()
           require("mini.bufremove").delete()
         end,
+        desc = "Buffer Delete",
       },
-      desc = "[B]uf[D]elete",
     },
   },
 
@@ -218,6 +219,9 @@ return {
     enabled = false,
     opts = { background = "#002734", foreground = "#c0c8cc", saturation = "low" },
   },
+
+  -- mini.icons ----------------------------------------------------------------------
+  { "echasnovski/mini.icons" },
 
   -- mini.indentscope ----------------------------------------------------------------
   {

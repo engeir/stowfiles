@@ -37,8 +37,14 @@ return {
     event = { "BufReadPre", "BufNewFile" },
     name = "bufferline",
     dependencies = {
-      "nvim-tree/nvim-web-devicons",
-      { "tiagovla/scope.nvim", config = true },
+      {
+        "echasnovski/mini.icons",
+        config = function()
+          require("mini.icons").setup()
+          MiniIcons.mock_nvim_web_devicons()
+        end,
+        { "tiagovla/scope.nvim", config = true },
+      },
     },
     keys = {
       { "H", ":BufferLineCyclePrev<CR>", desc = "BufferLine Previous" },
