@@ -1,5 +1,6 @@
-vim.cmd([[
-syntax match texCmdRef nextgroup=texRefOpt,texRefArg skipwhite skipnl "\\[Ee]dcite[pt]\?\>\*\?"
-syntax match texCmdRef nextgroup=texRefOpt,texRefArg skipwhite skipnl "\\[Tt]ranscite[pt]\?\>\*\?"
-syntax match texCmdRef nextgroup=texRefOpt,texRefArg skipwhite skipnl "\\citeA[pt]\?\>\*\?"
-]])
+-- Should be fixed by https://github.com/lervag/vimtex/commit/5ac62e0315c6f54f53a7d6da7c485cf8e9cf7240
+-- vim.cmd([[
+-- syntax match texCmdRef nextgroup=texRefOpt,texRefArg skipwhite skipnl "\\[Ee]dcite[pt]\?\>\*\?"
+-- syntax match texCmdRef nextgroup=texRefOpt,texRefArg skipwhite skipnl "\\[Tt]ranscite[pt]\?\>\*\?"
+-- syntax match texCmdRef nextgroup=texRefOpt,texRefArg skipwhite skipnl "\\citeA[pt]\?\>\*\?"
+-- ]])

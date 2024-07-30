@@ -42,7 +42,6 @@ return {
     vim.keymap.set(
       "n",
       "<localleader>lb",
-      -- "<cmd>!bibexport -o %:p:r.bib %:p:r.aux<CR>",
       "<cmd>!bibfish -c 'cite,citet,citep,citeA' -f % ~/science/ref/ref.bib %:p:r.bib<CR><CR>",
       { desc = "Bibexport (Vimtex)" }
     )
