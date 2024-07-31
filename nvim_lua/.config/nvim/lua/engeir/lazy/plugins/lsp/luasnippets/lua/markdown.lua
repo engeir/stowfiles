@@ -10,20 +10,23 @@ return {
   s({ trig = "dpie" }, { t("<!-- dprint-ignore-end -->") }),
 }, {
   -- Auto
-  s({ trig = "!frac" }, {
+  s({ trig = ".fr" }, {
     t("\\frac{"),
     i(1),
     t("}{"),
     i(2),
     t("}"),
   }),
+  s({ trig = ".sq" }, { t("\\sqrt{"), i(1), t("}") }),
   s({ trig = "mk" }, { t("\\("), i(1), t("\\)") }),
+  s({ trig = ".eq" }, { t("\\[ "), i(1), t(" \\]") }),
   s(
-    { trig = "sub", wordTrig = false, name = "auto subscript" },
+    { trig = ".sub", wordTrig = false, name = "auto subscript" },
     { t("_{"), i(1), t("}"), i(0) }
   ),
   s(
-    { trig = "sup", wordTrig = false, name = "auto superscript" },
+    { trig = ".sup", wordTrig = false, name = "auto superscript" },
     { t("^{"), i(1), t("}"), i(0) }
   ),
+  s({ trig = ".SI" }, { i(1), t("\\,\\mathrm{"), i(2), t("}") }),
 }
