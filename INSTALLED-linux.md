@@ -2518,10 +2518,10 @@ libpython2.7-minimal 2.7.18-13ubuntu1.2 [Ubuntu/jammy universe]
 libpython2.7-stdlib 2.7.18-13ubuntu1.2 [Ubuntu/jammy universe]
 libpython3-dev 3.10.6-1~22.04 [Ubuntu/jammy main]
 libpython3-stdlib 3.10.6-1~22.04 [Ubuntu/jammy main]
-libpython3.10 3.10.12-1~22.04.4 [Ubuntu/jammy main]
-libpython3.10-dev 3.10.12-1~22.04.4 [Ubuntu/jammy main]
-libpython3.10-minimal 3.10.12-1~22.04.4 [Ubuntu/jammy main]
-libpython3.10-stdlib 3.10.12-1~22.04.4 [Ubuntu/jammy main]
+libpython3.10 3.10.12-1~22.04.5 [Ubuntu/jammy main]
+libpython3.10-dev 3.10.12-1~22.04.5 [Ubuntu/jammy main]
+libpython3.10-minimal 3.10.12-1~22.04.5 [Ubuntu/jammy main]
+libpython3.10-stdlib 3.10.12-1~22.04.5 [Ubuntu/jammy main]
 libqalculate-data 3.22.0-3build1 [Ubuntu/jammy universe]
 libqalculate22 3.22.0-3build1 [Ubuntu/jammy universe]
 libqca-qt5-2 2.3.4-1build1 [Ubuntu/jammy universe]
@@ -3463,10 +3463,10 @@ okular 4:21.12.3-0ubuntu1 [Ubuntu/jammy universe]
 okular-extra-backends 4:21.12.3-0ubuntu1 [Ubuntu/jammy universe]
 openconnect 8.20-1 [Ubuntu/jammy universe]
 openjade 1.4devel1-22 [Ubuntu/jammy universe]
-openjdk-11-jdk 11.0.23+9-1ubuntu1~22.04.1 [Ubuntu/jammy main]
-openjdk-11-jdk-headless 11.0.23+9-1ubuntu1~22.04.1 [Ubuntu/jammy main]
-openjdk-11-jre 11.0.23+9-1ubuntu1~22.04.1 [Ubuntu/jammy main]
-openjdk-11-jre-headless 11.0.23+9-1ubuntu1~22.04.1 [Ubuntu/jammy main]
+openjdk-11-jdk 11.0.24+8-1ubuntu3~22.04 [Ubuntu/jammy main]
+openjdk-11-jdk-headless 11.0.24+8-1ubuntu3~22.04 [Ubuntu/jammy main]
+openjdk-11-jre 11.0.24+8-1ubuntu3~22.04 [Ubuntu/jammy main]
+openjdk-11-jre-headless 11.0.24+8-1ubuntu3~22.04 [Ubuntu/jammy main]
 openprinting-ppds 20220223-0ubuntu1 [Ubuntu/jammy main]
 opensp 1.5.2-13ubuntu3 [Ubuntu/jammy universe]
 openssh-client 1:8.9p1-3ubuntu0.10 [Ubuntu/jammy main]
@@ -3907,10 +3907,10 @@ python3-zict 2.0.0-1 [Ubuntu/jammy universe]
 python3-zipp 1.0.0-3ubuntu0.1 [Ubuntu/jammy main]
 python3-zmq 22.3.0-1build1 [Ubuntu/jammy universe]
 python3-zope.interface 5.4.0-1build1 [Ubuntu/jammy main]
-python3.10 3.10.12-1~22.04.4 [Ubuntu/jammy main]
-python3.10-dev 3.10.12-1~22.04.4 [Ubuntu/jammy main]
-python3.10-minimal 3.10.12-1~22.04.4 [Ubuntu/jammy main]
-python3.10-venv 3.10.12-1~22.04.4 [Ubuntu/jammy universe]
+python3.10 3.10.12-1~22.04.5 [Ubuntu/jammy main]
+python3.10-dev 3.10.12-1~22.04.5 [Ubuntu/jammy main]
+python3.10-minimal 3.10.12-1~22.04.5 [Ubuntu/jammy main]
+python3.10-venv 3.10.12-1~22.04.5 [Ubuntu/jammy universe]
 qalc 3.22.0-3build1 [Ubuntu/jammy universe]
 qml-module-org-kde-bluezqt 5.92.0-0ubuntu1 [Ubuntu/jammy universe]
 qml-module-org-kde-kconfig 5.92.0-0ubuntu1 [Ubuntu/jammy universe]
@@ -4354,8 +4354,8 @@ zstd 1.4.8+dfsg-3build1 [Ubuntu/jammy main]
 ```txt {pacstall}
 name: batsignal version: 1.6.4-pacstall1
 name: bitwarden version: 2024.6.4
+name: brave-keyring version: 1.13
 name: btop version: 1.3.2-pacstall1
-name: google-chrome-stable version: 123.0.6312.122-1
 name: htop version: 3.2.2-pacstall1
 name: nala version: 0.15.3
 name: neofetch version: 7.1.0-pacstall1
@@ -4373,6 +4373,10 @@ name: zoom version: 6.1.1.443
 ```txt {mise}
 cabal                       3.12.1.0            ~/.config/mise/config.toml latest        
 cargo:mdbook                0.4.40                                                       
+cargo:mdbook-alerts         0.6.1                                                        
+cargo:mdbook-embedify       0.2.9                                                        
+cargo:mdbook-katex          0.9.0                                                        
+cargo:mdbook-repl           0.2.4                                                        
 fzf                         0.53.0              ~/.config/mise/config.toml 0.53          
 go                          1.22.5              ~/.config/mise/config.toml latest        
 jq                          1.7.1                                                        
@@ -4467,7 +4471,7 @@ jless v0.9.0:
     jless
 jnv v0.3.0:
     jnv
-just v1.32.0:
+just v1.33.0:
     just
 languagetool-rust v2.1.4:
     ltrs
