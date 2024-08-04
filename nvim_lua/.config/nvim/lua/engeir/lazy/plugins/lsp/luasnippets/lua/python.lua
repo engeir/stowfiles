@@ -37,6 +37,7 @@ return {
   --     t({ ":", "\t" }),
   --     i(0, "pass"),
   -- }),
+  s("anchor", fmt("# ANCHOR: {}\n{}\n# ANCHOR_END: {}", { i(1), i(0), rep(1) })),
 }, {
   s({ trig = "iplt" }, {
     t("import matplotlib.pyplot as plt"),

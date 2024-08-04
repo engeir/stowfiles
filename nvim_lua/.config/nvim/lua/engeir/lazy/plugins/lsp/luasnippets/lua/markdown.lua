@@ -8,6 +8,17 @@ return {
   s({ trig = "Alpha-raw" }, { t("𝛢") }),
   s({ trig = "dpis" }, { t("<!-- dprint-ignore-start -->") }),
   s({ trig = "dpie" }, { t("<!-- dprint-ignore-end -->") }),
+  s(
+    "fig-screen",
+    fmt(
+      '<figure><img src="{}" />\n  <figcaption>\n  {}\n  </figcaption>\n</figure>',
+      { i(1), i(2) }
+    )
+  ),
+  s(
+    "fig-svg",
+    fmt('<div class="svgfig">\n\n{{{{#include {}}}}}\n\n{}\n\n</div>', { i(1), i(2) })
+  ),
 }, {
   -- Auto
   s({ trig = ".fr" }, {

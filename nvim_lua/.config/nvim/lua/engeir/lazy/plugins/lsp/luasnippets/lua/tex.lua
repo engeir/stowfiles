@@ -142,11 +142,6 @@ return {
     { t("\\mathrm{"), i(1), t("}") },
     { condition = utils.is_math() }
   ),
-  s(
-    { trig = "txt", wordTrig = false },
-    { t("\\text{"), i(1), t("}") },
-    { condition = utils.is_math() }
-  ),
   s({ trig = ".ce" }, { t({ "\\ce{" }), i(1), t("}") }),
   s(
     { trig = ".gls", name = "Short acronym (acronym)" },
