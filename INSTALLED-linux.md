@@ -137,7 +137,7 @@ cmake 3.22.1-1ubuntu1.22.04.2 [Ubuntu/jammy main]
 cmake-data 3.22.1-1ubuntu1.22.04.2 [Ubuntu/jammy main]
 cmatrix 2.0-3 [Ubuntu/jammy universe]
 cmdtest 0.32.14.gcdfe14e-2 [Ubuntu/jammy universe]
-code 1.91.1-1720564633 [code stable/stable main]
+code 1.92.0-1722473020 [code stable/stable main]
 colord 1.4.6-1 [Ubuntu/jammy main]
 colord-data 1.4.6-1 [Ubuntu/jammy main]
 comerr-dev 2.1-1.46.5-2ubuntu1.1 [Ubuntu/jammy main]
@@ -529,7 +529,7 @@ gftp 2.9.1~beta-1 [Ubuntu/jammy universe]
 gftp-common 2.9.1~beta-1 [Ubuntu/jammy universe]
 gftp-gtk 2.9.1~beta-1 [Ubuntu/jammy universe]
 gftp-text 2.9.1~beta-1 [Ubuntu/jammy universe]
-gh 2.53.0 [gh/stable main]
+gh 2.54.0 [gh/stable main]
 ghc 8.8.4-3 [Ubuntu/jammy universe]
 ghc-prof 8.8.4-3 [Ubuntu/jammy universe]
 ghostscript 9.55.0~dfsg1-0ubuntu5.9 [Ubuntu/jammy main]
@@ -2238,7 +2238,7 @@ libmujs1 1.1.3-3 [Ubuntu/jammy universe]
 libmutter-10-0 42.9-0ubuntu8 [Ubuntu/jammy main]
 libmwaw-0.3-3 0.3.21-1build1 [Ubuntu/jammy main]
 libmysofa1 1.2.1~dfsg0-1 [Ubuntu/jammy universe]
-libmysqlclient21 8.0.37-0ubuntu0.22.04.3 [Ubuntu/jammy main]
+libmysqlclient21 8.0.39-0ubuntu0.22.04.1 [Ubuntu/jammy main]
 libmythes-1.2-0 2:1.2.4-4build1 [Ubuntu/jammy main]
 libnamespace-autoclean-perl 0.29-1 [Ubuntu/jammy main]
 libnamespace-clean-perl 0.27-1 [Ubuntu/jammy main]
@@ -2756,10 +2756,10 @@ libssh-4 0.9.6-2ubuntu0.22.04.3 [Ubuntu/jammy main]
 libssh-4:i386 0.9.6-2ubuntu0.22.04.3 [Ubuntu/jammy main]
 libssh-gcrypt-4 0.9.6-2ubuntu0.22.04.3 [Ubuntu/jammy main]
 libssh2-1 1.10.0-3 [Ubuntu/jammy universe]
-libssl-dev 3.0.2-0ubuntu1.16 [Ubuntu/jammy main]
+libssl-dev 3.0.2-0ubuntu1.17 [Ubuntu/jammy main]
 libssl1.1 1.1.1l-1ubuntu1.6 [local]
-libssl3 3.0.2-0ubuntu1.16 [Ubuntu/jammy main]
-libssl3:i386 3.0.2-0ubuntu1.16 [Ubuntu/jammy main]
+libssl3 3.0.2-0ubuntu1.17 [Ubuntu/jammy main]
+libssl3:i386 3.0.2-0ubuntu1.17 [Ubuntu/jammy main]
 libsss-certmap0 2.6.3-1ubuntu3.3 [Ubuntu/jammy main]
 libsss-idmap0 2.6.3-1ubuntu3.3 [Ubuntu/jammy main]
 libsss-nss-idmap0 2.6.3-1ubuntu3.3 [Ubuntu/jammy main]
@@ -3404,12 +3404,12 @@ mupdf 1.19.0+ds1-2 [Ubuntu/jammy universe]
 mupdf-tools 1.19.0+ds1-2 [Ubuntu/jammy universe]
 mutter 42.9-0ubuntu8 [Ubuntu/jammy universe]
 mutter-common 42.9-0ubuntu8 [Ubuntu/jammy main]
-mysql-client-8.0 8.0.37-0ubuntu0.22.04.3 [Ubuntu/jammy main]
-mysql-client-core-8.0 8.0.37-0ubuntu0.22.04.3 [Ubuntu/jammy main]
+mysql-client-8.0 8.0.39-0ubuntu0.22.04.1 [Ubuntu/jammy main]
+mysql-client-core-8.0 8.0.39-0ubuntu0.22.04.1 [Ubuntu/jammy main]
 mysql-common 5.8+1.0.8 [Ubuntu/jammy main]
-mysql-server 8.0.37-0ubuntu0.22.04.3 [Ubuntu/jammy main]
-mysql-server-8.0 8.0.37-0ubuntu0.22.04.3 [Ubuntu/jammy main]
-mysql-server-core-8.0 8.0.37-0ubuntu0.22.04.3 [Ubuntu/jammy main]
+mysql-server 8.0.39-0ubuntu0.22.04.1 [Ubuntu/jammy main]
+mysql-server-8.0 8.0.39-0ubuntu0.22.04.1 [Ubuntu/jammy main]
+mysql-server-core-8.0 8.0.39-0ubuntu0.22.04.1 [Ubuntu/jammy main]
 mythes-en-us 1:7.2.0-2 [Ubuntu/jammy main]
 nala 0.15.3 [local]
 nano 6.2-1 [Ubuntu/jammy main]
@@ -3472,7 +3472,7 @@ opensp 1.5.2-13ubuntu3 [Ubuntu/jammy universe]
 openssh-client 1:8.9p1-3ubuntu0.10 [Ubuntu/jammy main]
 openssh-server 1:8.9p1-3ubuntu0.10 [Ubuntu/jammy main]
 openssh-sftp-server 1:8.9p1-3ubuntu0.10 [Ubuntu/jammy main]
-openssl 3.0.2-0ubuntu1.16 [Ubuntu/jammy main]
+openssl 3.0.2-0ubuntu1.17 [Ubuntu/jammy main]
 openvpn 2.5.9-0ubuntu0.22.04.3 [Ubuntu/jammy main]
 orca 42.0-1ubuntu2 [Ubuntu/jammy main]
 os-prober 1.79ubuntu2 [Ubuntu/jammy main]
@@ -3532,6 +3532,7 @@ polkitd 0.105-33 [Ubuntu/jammy main]
 polybar 3.5.7-1build1 [Ubuntu/jammy universe]
 poppler-data 0.4.11-1 [Ubuntu/jammy main]
 poppler-utils 22.02.0-2ubuntu0.5 [Ubuntu/jammy main]
+potrace 1.16-2 [Ubuntu/jammy universe]
 power-profiles-daemon 0.10.1-3 [Ubuntu/jammy main]
 powerline 2.8.2-1 [Ubuntu/jammy universe]
 powermgmt-base 1.36 [Ubuntu/jammy main]
@@ -4018,14 +4019,14 @@ shellcheck 0.8.0-2 [Ubuntu/jammy universe]
 shfmt 3.7.0-pacstall1 [local]
 shfmt-bin 3.4.3-1 [local]
 shim-signed 1.51.3+15.7-0ubuntu1 [Ubuntu/jammy main]
-signal-desktop 7.17.0 [. xenial/xenial main]
+signal-desktop 7.18.0 [. xenial/xenial main]
 signon-plugin-oauth2 0.25-2 [Ubuntu/jammy universe]
 silversearcher-ag 2.2.0+git20200805-1 [Ubuntu/jammy universe]
 simplex-desktop 5.8.0-pacstall1 [local]
 slack-desktop 4.39.90 [slack/jessie main]
 slirp4netns 1.0.1-2 [Ubuntu/jammy universe]
 slop 7.5-1.1build2 [Ubuntu/jammy universe]
-snapd 2.63+22.04 [Ubuntu/jammy main]
+snapd 2.63+22.04ubuntu0.1 [Ubuntu/jammy main]
 software-properties-common 0.99.22.9 [Ubuntu/jammy main]
 software-properties-gtk 0.99.22.9 [Ubuntu/jammy main]
 sonata 1.7.0-1 [Ubuntu/jammy universe]
@@ -4361,7 +4362,7 @@ name: nala version: 0.15.3
 name: neofetch version: 7.1.0-pacstall1
 name: quarto version: 1.3.450
 name: shfmt version: 3.7.0-pacstall1
-name: signal-desktop version: 7.17.0
+name: signal-desktop version: 7.18.0
 name: simplex-desktop version: 5.8.0-pacstall1
 name: thorium-browser version: 124.0.6367.218-1
 name: wezterm version: 20230712-072601-f4abf8fd-pacstall1
@@ -4371,38 +4372,39 @@ name: zoom version: 6.1.1.443
 ## Mise
 
 ```txt {mise}
-cabal                       3.12.1.0            ~/.config/mise/config.toml latest        
-cargo:mdbook                0.4.40                                                       
-cargo:mdbook-alerts         0.6.1                                                        
-cargo:mdbook-embedify       0.2.9                                                        
-cargo:mdbook-katex          0.9.0                                                        
-cargo:mdbook-repl           0.2.4                                                        
-fzf                         0.53.0              ~/.config/mise/config.toml 0.53          
-go                          1.22.5              ~/.config/mise/config.toml latest        
-jq                          1.7.1                                                        
-node                        22.5.1              ~/.config/mise/config.toml latest        
-npm:cwebp                   3.1.0               ~/.config/mise/config.toml latest        
-pandoc                      3.3                 ~/.config/mise/config.toml latest        
-pipx:volcano-cooking        0.12.2              ~/.config/mise/config.toml latest        
-python                      3.6.15                                                       
-python                      3.8.19              ~/.config/mise/config.toml sub-0.4:latest
-python                      3.9.19              ~/.config/mise/config.toml sub-0.3:latest
-python                      3.10.14             ~/.config/mise/config.toml sub-0.2:latest
-python                      3.11.9              ~/.config/mise/config.toml sub-0.1:latest
-python                      3.12.4              ~/.config/mise/config.toml latest        
-tinytex                     2024.07.03          ~/.config/mise/config.toml latest        
-ubi:ajeetdsouza/zoxide      v0.9.4              ~/.config/mise/config.toml latest        
-ubi:etcd-io/etcd            v3.5.14 (outdated)  ~/.config/mise/config.toml latest        
-ubi:filosottile/age         v1.1.1              ~/.config/mise/config.toml latest        
-ubi:goreleaser/goreleaser   v2.0.0 (outdated)   ~/.config/mise/config.toml latest        
-ubi:houseabsolute/precious  v0.7.2              ~/.config/mise/config.toml latest        
-ubi:ismaelgv/rnr            v0.4.2              ~/.config/mise/config.toml latest        
-ubi:junegunn/fzf            v0.54.1             ~/.config/mise/config.toml latest        
-ubi:mgdm/htmlq              v0.4.0              ~/.config/mise/config.toml latest        
-ubi:pvolok/mprocs           v0.6.4              ~/.config/mise/config.toml latest        
-ubi:pythops/bluetui         v0.4                ~/.config/mise/config.toml latest        
-usage                       0.3.0               ~/.config/mise/config.toml latest        
-watchexec                   2.1.2               ~/.config/mise/config.toml latest        
+cabal                       3.12.1.0    ~/.config/mise/config.toml latest        
+cargo:mdbook                0.4.40                                               
+cargo:mdbook-alerts         0.6.1                                                
+cargo:mdbook-embedify       0.2.11                                               
+cargo:mdbook-katex          0.9.0                                                
+cargo:mdbook-repl           0.2.4                                                
+cargo:mdbook-tera           0.5.1                                                
+fzf                         0.53.0      ~/.config/mise/config.toml 0.53          
+go                          1.22.5      ~/.config/mise/config.toml latest        
+jq                          1.7.1                                                
+node                        22.5.1      ~/.config/mise/config.toml latest        
+npm:cwebp                   3.1.0       ~/.config/mise/config.toml latest        
+pandoc                      3.3         ~/.config/mise/config.toml latest        
+pipx:volcano-cooking        1.0.0       ~/.config/mise/config.toml latest        
+python                      3.6.15                                               
+python                      3.8.19      ~/.config/mise/config.toml sub-0.4:latest
+python                      3.9.19      ~/.config/mise/config.toml sub-0.3:latest
+python                      3.10.14     ~/.config/mise/config.toml sub-0.2:latest
+python                      3.11.9      ~/.config/mise/config.toml sub-0.1:latest
+python                      3.12.4      ~/.config/mise/config.toml latest        
+tinytex                     2024.07.03  ~/.config/mise/config.toml latest        
+ubi:ajeetdsouza/zoxide      v0.9.4      ~/.config/mise/config.toml latest        
+ubi:etcd-io/etcd            v3.5.15     ~/.config/mise/config.toml latest        
+ubi:filosottile/age         v1.2.0      ~/.config/mise/config.toml latest        
+ubi:goreleaser/goreleaser   v2.1.0      ~/.config/mise/config.toml latest        
+ubi:houseabsolute/precious  v0.7.3      ~/.config/mise/config.toml latest        
+ubi:ismaelgv/rnr            v0.4.2      ~/.config/mise/config.toml latest        
+ubi:junegunn/fzf            v0.54.3     ~/.config/mise/config.toml latest        
+ubi:mgdm/htmlq              v0.4.0      ~/.config/mise/config.toml latest        
+ubi:pvolok/mprocs           v0.7.1      ~/.config/mise/config.toml latest        
+ubi:pythops/bluetui         v0.5.1      ~/.config/mise/config.toml latest        
+usage                       0.3.0       ~/.config/mise/config.toml latest        
+watchexec                   2.1.2       ~/.config/mise/config.toml latest        
 ```
 
 ## Cargo
@@ -4420,7 +4422,7 @@ blindfold v1.0.7:
     blindfold
 bob-nvim v3.0.1:
     bob
-cargo-binstall v1.8.0:
+cargo-binstall v1.9.0:
     cargo-binstall
 cargo-edit v0.12.3:
     cargo-add
@@ -4438,11 +4440,11 @@ coreutils v0.0.27:
     coreutils
 despell v1.0.1:
     despell
-difftastic v0.59.0:
+difftastic v0.60.0:
     difft
 du-dust v1.1.1:
     dust
-eza v0.18.23:
+eza v0.18.24:
     eza
 fd-find v10.1.0:
     fd
@@ -4471,7 +4473,7 @@ jless v0.9.0:
     jless
 jnv v0.3.0:
     jnv
-just v1.33.0:
+just v1.34.0:
     just
 languagetool-rust v2.1.4:
     ltrs
@@ -4481,10 +4483,8 @@ mdbook v0.4.40:
     mdbook
 mdbook-admonish v1.18.0:
     mdbook-admonish
-mdbook-alerts v0.6.1:
+mdbook-alerts v0.6.2:
     mdbook-alerts
-mdbook-embedify v0.2.9:
-    mdbook-embedify
 mdbook-katex v0.9.0:
     mdbook-katex
 mdbook-repl v0.2.4:
@@ -4495,7 +4495,7 @@ mdbook-toc v0.14.2:
     mdbook-toc
 menyoki v1.7.0:
     menyoki
-mise v2024.7.5:
+mise v2024.8.5:
     mise
 mprocs v0.7.1:
     mprocs
@@ -4534,7 +4534,7 @@ spotifyd v0.3.5:
     spotifyd
 stylua v0.20.0:
     stylua
-taplo-cli v0.9.0:
+taplo-cli v0.9.3:
     taplo
 topgrade v15.0.0:
     topgrade
@@ -4578,7 +4578,7 @@ package beautysh 6.2.1, installed using Python 3.12.4
  - beautysh
 package bibfish 0.3.2, installed using Python 3.12.4
  - bibfish
-package black 24.4.2, installed using Python 3.12.4
+package black 24.8.0, installed using Python 3.12.4
  - black
  - black-primer
  - blackd
@@ -4621,7 +4621,7 @@ package fonttools 4.53.1, installed using Python 3.12.4
  - pyftsubset
  - ttx
  - man1/ttx.1
-package globus-cli 3.29.0, installed using Python 3.12.4
+package globus-cli 3.30.0, installed using Python 3.12.4
  - globus
 package gorps 0.9.1, installed using Python 3.12.4
  - gorps
@@ -5079,13 +5079,14 @@ Yaru-dark Gtk Theme                                                             
 Name                       Version                     Rev    Tracking         Publisher      Notes
 bare                       1.0                         5      latest/stable    canonical**    base
 canonical-livepatch        10.8.3                      282    latest/stable    canonical**    -
-cmake                      3.30.1                      1408   latest/stable    crascit**      classic
+cmake                      3.30.2                      1409   latest/stable    crascit**      classic
 core                       16-2.61.4-20240607          17200  latest/stable    canonical**    core
 core18                     20240612                    2829   latest/stable    canonical**    base
 core20                     20240416                    2318   latest/stable    canonical**    base
 core22                     20240408                    1380   latest/stable    canonical**    base
 dotnet-sdk                 5.0.408                     167    5.0/stable       canonical**    classic
 duf-utility                v0.6.0                      1      latest/stable    muesli         -
+ffsend                     0.2.74                      49     latest/stable    timvisee       -
 firefox                    128.0.3-1                   4650   latest/stable/…  mozilla**      -
 gimp                       2.10.38                     436    latest/stable    snapcrafters*  -
 gnome-3-28-1804            3.28.0-19-g98f9e67.98f9e67  198    latest/stable    canonical**    -
