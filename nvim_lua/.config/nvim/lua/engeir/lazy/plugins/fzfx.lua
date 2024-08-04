@@ -1,5 +1,6 @@
 return {
   "linrongbin16/fzfx.nvim",
+  enabled = false,
   dependencies = {
     {
       "echasnovski/mini.icons",
