@@ -543,7 +543,7 @@ $env.config = {
 
 # $env.EDITOR = "nvim"
 # $env.VISUAL = "nvim"
-$env.LS_COLORS = (vivid generate solarized-dark | str trim)
+$env.LS_COLORS = (vivid generate jellybeans | str trim)
 
 # Starship
 source ~/.cache/starship/init.nu

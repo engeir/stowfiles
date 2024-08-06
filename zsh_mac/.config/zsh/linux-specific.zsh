@@ -3,10 +3,6 @@
 alias screenkey="screenkey --opacity 0.3 --bak-mode normal -M -f 'DejaVu Sans Mono Bold'"
 alias tex2png="pnglatex -b Black -F White -d 2000"
 
-# Update file indexing
-alias u="sudo updatedb"
-alias dropbox_update="~/.dropbox-dist/dropboxd"
-
 # File handling
 alias cp='/usr/local/bin/cpg -g'
 alias lsn="ls --color=auto */ | less"
@@ -17,13 +13,6 @@ alias rg='rg -g "!Dropbox" -g "!OneDrive" -g "!BoxSync" -g "!.cache" -g "!.confi
 alias skbat='sk --preview="bat {} --color=always"'
 # alias f='cd ~ && cd $(fd --type d --type f --hidden --exclude .git --exclude .config/nnn --exclude node_module --exclude .cache --exclude .npm --exclude .mozilla --exclude .meteor --exclude .nv --exclude .conda --exclude .dropbox-dist --exclude .vscode --exclude .vscode-insiders --exclude miniconda3 --exclude .virtualenvs --exclude snap --exclude gems --exclude .wine --exclude extensions --exclude coreutils-8.32 --exclude freetype-2.10.4 --exclude .cargo --exclude Downloads --exclude R --exclude .Mathematica --exclude OneDrive --exclude BoxSync --exclude Dropbox | fzf)'
 
-# Open programs
-alias nikkerud="~/betty/main.rb"
-alias nvb="nvim ~/.local/share/bookmarks/bookmarks.sh"
-alias vpn="/opt/cisco/anyconnect/bin/vpnui"
-# Only activate when installing wezterm from flatpak. But never do that.
-# alias wezterm='flatpak run org.wezfurlong.wezterm'
-
 # reMarkable related
 alias rmv="rmview ~/programs/rmview/rmview.json"
 # alias rmapi="~/./rmapi"
@@ -32,21 +21,10 @@ alias saRM="ssh-add ~/rM_share"
 alias skRM="ssh-keygen -R 10.11.99.1"
 alias remouse="/home/een023/remousable_program/./remousable"
 
-# FRAM
-alias sfram="ssh -X -Y een023@fram.sigma2.no"
-alias saFRAM="ssh-add ~/.ssh/id_sigma2"
-
 # More SSH
 alias saVULTR="ssh-add ~/.ssh/id_vultr"
 
 alias condainit=". ~/.config/zsh/condainit"
-
-export PATH="/usr/local/texlive/2023/bin/x86_64-linux:$PATH"
-export NNN_PLUG='a:bookmarks;b:bibfinder;c:diffs;d:dragdrop;f:fzcd;i:ipinfo;j:autojump;m:viewmedia;o:organize;p:preview-tui2;r:rm-send;s:fzplug;u:upload'
-export NNN_BMS='b:~/Pictures/;c:~/.config/;d:~/Downloads/;l:~/.local;n:~/Documents/notes_papers/;m:~/stowfiles/;o:~/OneDrive/;p:~/programs/;r:~/science/ref/;s:~/bin/;t:~/Documents/teaching/;w:~/Documents/work/'
-# IMPORTANT: without this, images are sometimes not opened, other times opened in Brave
-# export NNN_OPENER="/home/een023/bin/xdg-open-awsm"
-export NNN_OPENER="/home/een023/.config/nnn/plugins/nuke"
 
 caps2esc() {
     # Make caps-lock work as esc when pressed, ctrl when hold
@@ -81,148 +59,9 @@ fopen() {
     open "$(locate -i "$1")"
 }
 
-rmbd() {
-    # Delete everything in current path before <date>
-    # Format: YYYY-MM-DD HH:MM:SS
-    c=$(find . ! -newermt "$1 $2" -printf '.' | wc -c)
-    echo "Are you sure you want to delete ""$c"" files from ""$PWD""?"
-    select yn in "Yes" "No"; do
-        case "$yn" in
-            Yes)
-                find . -print0 ! -newermt "$1 $2" | xargs -0 rm -rf
-                break
-                ;;
-            No) break ;;
-        esac
-    done
-}
-
-rmad() {
-    # Delete everything in current path after <date>
-    # Format: YYYY-MM-DD HH:MM:SS
-    c=$(find . -newermt "$1 $2" -printf '.' | wc -c)
-    echo "Are you sure you want to delete ""$c"" files from ""$PWD""?"
-    select yn in "Yes" "No"; do
-        case "$yn" in
-            Yes)
-                find . -print0 -newermt "$1 $2" | xargs -0 rm -rf
-                break
-                ;;
-            No) break ;;
-        esac
-    done
-}
-
-# Github-related
-giit() {
-    git clone https://github.com/engeir/"$1".git
-}
-
-wgit() {
-    wget https://github.com/engeir/"$1"/archive/master.zip && unzip master && rm -rf master.zip
-}
-
-git_get() {
-    curl -u engeir -L -o delete_me_now https://github.com/engeir/"$1"/archive/master.zip && unzip delete_me_now && rm -rf delete_me_now
-}
-
-# ImageMagick
-remove_menu() {
-    convert "$1" -fill white -draw "rectangle 20,100 100,10" "$1"
-}
-
-remove_page() {
-    convert "$1" -fill white -draw "rectangle 610,1810 800,1850" "$1"
-}
-
-transparent() {
-    out=${2:-$1}
-    col=${3:-white}
-    convert "$1" -transparent "$col" "$out"
-}
-
-invert() {
-    out=${2:-$1}
-    convert "$1" -channel RGB -negate "$out"
-}
-
-crop() {
-    # Crop image. (Default remove white)
-    for file in "$@"; do
-        convert -trim "$file" "$file"
-    done
-}
-
-cropv() {
-    # Crop image in the vertical direction.
-    # (Default remove white.)
-    for file in "$@"; do
-        croptop "$file"
-        cropbottom "$file"
-    done
-}
-
-croptop() {
-    for file in "$@"; do
-        convert "$file" -background white -splice 0x1 -background black -splice 0x1 -trim +repage -chop 0x1 "$file"
-    done
-}
-
-cropbottom() {
-    for file in "$@"; do
-        convert "$file" -gravity South -background white -splice 0x1 -background black -splice 0x1 -trim +repage -chop 0x1 "$file"
-    done
-}
-
-trinv() {
-    # Make transparent and invert.
-    for file in "$@"; do
-        transparent "$file" "$file"
-        invert "$file" "$file"
-    done
-}
-
-my_img_magik() {
-    # Remove menu and page number, invert and make transparent.
-    for file in "$@"; do
-        remove_menu "$file"
-        remove_page "$file"
-        trinv "$file"
-    done
-}
-
 screen-record() {
     # From
     # https://www.reddit.com/r/archlinux/comments/artbxd/record_a_video_with_multi_monitors/
     read -r o g < <(slop -f '+%x,%y %wx%h')
     ffmpeg -f x11grab -framerate 60 -video_size "$g" -i "${DISPLAY}${o}" output.mkv
-}
-
-# Latex compilers
-tex0() {
-    pdflatex "$1".tex
-    pdflatex "$1".tex
-    pdflatex "$1".tex
-}
-
-tex_bib() {
-    pdflatex "$1".tex
-    bibtex "$1"
-    pdflatex "$1".tex
-    pdflatex "$1".tex
-}
-
-tex_gls() {
-    pdflatex "$1".tex
-    makeglossaries "$1"
-    pdflatex "$1".tex
-    pdflatex "$1".tex
-}
-
-tex_full() {
-    pdflatex "$1".tex
-    bibtex "$1"
-    makeglossaries "$1"
-    pdflatex "$1".tex
-    pdflatex "$1".tex
 }
