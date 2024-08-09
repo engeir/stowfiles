@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.15.4](https://github.com/engeir/stowfiles/compare/bin-v1.15.3...bin-v1.15.4) (2024-08-09)
+
+
+### Miscellaneous
+
+* **bin,tmux:** add preview-window hidden flag ([b905621](https://github.com/engeir/stowfiles/commit/b90562135b5ba459d0ba27cc2f39322eed1c3223))
+
 ## [1.15.3](https://github.com/engeir/stowfiles/compare/bin-v1.15.2...bin-v1.15.3) (2024-06-19)
 
 
