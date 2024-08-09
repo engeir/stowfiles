@@ -167,7 +167,7 @@ if [ "Linux" = "$machine" ]; then
     cp ./INSTALLED-linux.md /tmp/INSTALLED-linux.md
     APT="$(nala list -i | grep '^[a-z,A-Z]')"
     # Thanks to https://stackoverflow.com/a/18000433, formatting is removed
-    PACSTALL="$(pacstall -L | xargs -L 1 pacstall -Qi 2>/dev/null | grep -E 'name|version' | paste -d ' ' - - | sed -r "s/\x1B\[([0-9]{1,3}(;[0-9]{1,2};?)?)?[mGK]//g")"
+    PACSTALL="$(pacstall -L | xargs -L 1 pacstall -Ci 2>/dev/null | grep -E 'name|version' | paste -d ' ' - - | sed -r "s/\x1B\[([0-9]{1,3}(;[0-9]{1,2};?)?)?[mGK]//g")"
     CARGO="$(cargo install --list)"
     PIPX="$(pipx list | sed '1,2d' | sed 's/^\s\s\s//')"
     GO="$(cat ~/.default-go-packages)"
