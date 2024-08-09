@@ -1,5 +1,22 @@
 # Changelog
 
+## [1.16.0](https://github.com/engeir/stowfiles/compare/nvim-v1.15.5...nvim-v1.16.0) (2024-08-09)
+
+
+### Features
+
+* **nvim:** add keymap to clear all but the current buffer, &lt;leader&gt;bc ([5c43520](https://github.com/engeir/stowfiles/commit/5c4352098545e51d0ebbb41d6338e651b143821f))
+* **nvim:** update vimtex with recent apacite support ([0bd08d1](https://github.com/engeir/stowfiles/commit/0bd08d1079c59cd61d6c1796b6ccc9045d6dc1fb))
+
+
+### Miscellaneous
+
+* **nvim:** add snippets to markdown for tex support ([95bb3d3](https://github.com/engeir/stowfiles/commit/95bb3d3397baa08a03620a75656fb873fe2215f8))
+* **nvim:** avoid unintentional snippet trigger ([9508fbf](https://github.com/engeir/stowfiles/commit/9508fbff96f4cc97409efe09ed5fe57f62cdafd5))
+* **nvim:** update keymap descriptions ([436551c](https://github.com/engeir/stowfiles/commit/436551c96b0133c17b353cc807a210103a9115f9))
+* **nvim:** update snippets ([cf533f0](https://github.com/engeir/stowfiles/commit/cf533f02c7e28b7ddaa042ce6a5a5d4b1720f107))
+* **nvim:** use mini.icons over nvim-web-devicons ([5d553f5](https://github.com/engeir/stowfiles/commit/5d553f570ccc98a126d70b070d1b60ff37c7b279))
+
 ## [1.15.5](https://github.com/engeir/stowfiles/compare/nvim-v1.15.4...nvim-v1.15.5) (2024-07-26)
 
 
