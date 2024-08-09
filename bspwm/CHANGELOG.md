@@ -1,5 +1,17 @@
 # Changelog
 
+## [1.16.0](https://github.com/engeir/stowfiles/compare/bspwm-v1.15.3...bspwm-v1.16.0) (2024-08-09)
+
+
+### Features
+
+* **compositor:** update name from compton to picom and add global opacity ([51e75b4](https://github.com/engeir/stowfiles/commit/51e75b498a81c24b1d2e2bdf5fbd074c53c541de))
+
+
+### Bug Fixes
+
+* **compositor:** inactive window opacity need mark-ovredir-focused = false ([0a5a581](https://github.com/engeir/stowfiles/commit/0a5a58150b2a5a98140b43a8e4671478c2092c98))
+
 ## [1.15.3](https://github.com/engeir/stowfiles/compare/bspwm-v1.15.2...bspwm-v1.15.3) (2024-06-19)
 
 
