@@ -37,7 +37,7 @@ else
     # items+=("$HOME/work")
     # items+=("$HOME/.dotfiles")
     # items+=("$HOME/ansible")
-    selected=$(echo "$items" | fzf-tmux -p)
+    selected=$(echo "$items" | fzf-tmux -p --preview-window="hidden")
 
     # Exit if none is chosen
     [ "$selected" = "" ] && exit

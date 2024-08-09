@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+
 set -e
 cmd=$1
 prompt="find/create session> "
@@ -53,7 +54,7 @@ session_finder() {
 	fzf_out=$($tmux ls -F '#{?session_attached,0,1} #{?session_last_attached,,0}#{session_last_attached} #{?session_attached,*, } #{session_name}' \
     | sort -r \
     | perl -pe 's/^[01] [0-9]+ //' \
-    | fzf-tmux -p --print-query --prompt="$prompt" \
+    | fzf-tmux -p --preview-window="hidden" --print-query --prompt="$prompt" \
     || true)
 	line_count=$(echo "$fzf_out" | wc -l)
 	session_name="$(echo "$fzf_out" | tail -n1 | perl -pe 's/^[\* ] //')"
