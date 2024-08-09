@@ -1,5 +1,17 @@
 # Changelog
 
+## [1.17.0](https://github.com/engeir/stowfiles/compare/mise-v1.16.1...mise-v1.17.0) (2024-08-09)
+
+
+### Features
+
+* **zsh:** update zsh and set it to be the default interactive shell ([89190c4](https://github.com/engeir/stowfiles/commit/89190c4d24db1d5c382fbd5153119f919a5cbfc8))
+
+
+### Bug Fixes
+
+* **mise:** pin fzf to version that installs consistently ([e10ec96](https://github.com/engeir/stowfiles/commit/e10ec96f8d4af8b0471dc7e0e9883fdf4e874585))
+
 ## [1.16.1](https://github.com/engeir/stowfiles/compare/mise-v1.16.0...mise-v1.16.1) (2024-07-22)
 
 
