@@ -26,32 +26,63 @@ return {
     },
   },
   config = function()
+    ---@param bufnr integer
+    ---@param ... string
+    ---@return string
+    local function first(bufnr, ...)
+      local conform = require("conform")
+      for i = 1, select("#", ...) do
+        local formatter = select(i, ...)
+        if conform.get_formatter_info(formatter, bufnr).available then
+          return formatter
+        end
+      end
+      return select(1, ...)
+    end
+
     require("conform").setup({
       -- Map of filetype to formatters
       formatters_by_ft = {
         ["_"] = { "trim_whitespace", "trim_newlines" },
-        bash = { "shfmt", "shellharden", "shellcheck", "beautysh" },
-        css = { { "dprint", "prettierd" } },
+        bash = function(bufnr)
+          return {
+            first(bufnr, "shfmt", "shellharden", "shellcheck", "beautysh"),
+            "injected",
+          }
+        end,
+        css = { "dprint", "prettierd", stop_after_first = true },
         d2 = { "d2" },
         dockerfile = { "dprint" },
         go = { "gofmt" },
-        javascript = { { "prettierd", "dprint", "prettier" } },
-        javascriptreact = { { "prettierd", "dprint", "prettier" } },
+        javascript = { "prettierd", "dprint", "prettier", stop_after_first = true },
+        javascriptreact = { "prettierd", "dprint", "prettier", stop_after_first = true },
         json = { "dprint" },
         jsonc = { "dprint" },
         just = { "just" },
         lua = { "stylua", "injected" },
         markdown = { "dprint", "injected" },
-        python = { "ruff_format", "ruff_fix" },
+        python = { "ruff_format", "ruff_fix", lsp_format = "first" },
         rust = { "rustfmt" },
-        sh = { "shfmt", "shellharden", "shellcheck", "beautysh" },
+        sh = function(bufnr)
+          return {
+            first(bufnr, "shfmt", "shellharden", "shellcheck", "beautysh"),
+            "injected",
+          }
+        end,
         tex = { "llf" },
-        toml = { "dprint", "taplo" },
-        typescript = { { "prettierd", "dprint", "prettier" } },
-        typescriptreact = { { "prettierd", "dprint", "prettier" } },
+        toml = { "dprint", "taplo", stop_after_first = true },
+        typescript = { "prettierd", "dprint", "prettier", stop_after_first = true },
+        typescriptreact = { "prettierd", "dprint", "prettier", stop_after_first = true },
         vim = { "vimfmt", "injected" },
-        yaml = { { "yamlfmt", "prettierd", "prettier" }, "injected" },
-        zsh = { "shfmt", "shellharden", "shellcheck", "beautysh" },
+        yaml = function(bufnr)
+          return { first(bufnr, "yamlfmt", "prettierd", "prettier"), "injected" }
+        end,
+        zsh = function(bufnr)
+          return {
+            first(bufnr, "shfmt", "shellharden", "shellcheck", "beautysh"),
+            "injected",
+          }
+        end,
       },
       format_on_save = nil,
       format_after_save = nil,
