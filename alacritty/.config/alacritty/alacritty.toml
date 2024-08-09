@@ -97,7 +97,7 @@ program = "/bin/zsh"
 [window]
 decorations = "None"
 dynamic_title = true
-opacity = 0.9
+opacity = 1.0
 
 [window.padding]
 x = 3

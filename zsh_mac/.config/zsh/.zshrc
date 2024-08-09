@@ -94,7 +94,7 @@ zstyle ':fzf-tab:complete:__zoxide_z:*' fzf-preview 'eza -1 --color=always $real
 
 # Source some other configs
 . "$HOME/.config/zsh/functions.zsh"
-if [ "$MACHINE" = "ubuntu" ]; then
+if [ "$MACHINE" = "UBUNTU" ]; then
     . "$HOME/.config/zsh/ssh.zsh"
     . "$HOME/.local/share/rye/env"
     xset r rate 210 40
@@ -105,7 +105,6 @@ fi
 eval "$(fzf --zsh)"
 eval "$(zoxide init --cmd cd zsh)"
 eval "$(atuin init zsh)"
-eval "$(atuin gen-completions --shell zsh --out-dir "$HOME"/.config/zsh/atuin_completion)"
 
 # OLD ----------------------------------------------------------------------------------
 

@@ -34,15 +34,17 @@ export GH_PAT_POLYBAR=$(pass API/polybar_github)
 fpath+=${ZDOTDIR:-~}/.zsh_functions
 
 # Config for fzf
-FD_OPTIONS="--follow --exclude .git --exclude node_modules"
+# FD_OPTIONS="--follow --exclude .git --exclude node_modules"
 
 export BAT_PAGER="less -R"
-if [[ $(uname) == "Linux" ]]; then
-    sh /home/een023/stowfiles/bspwm/.config/bspwm/bin/bspcomp &
-    if [ -e /home/een023/.nix-profile/etc/profile.d/nix.sh ]; then . /home/een023/.nix-profile/etc/profile.d/nix.sh; fi # added by Nix installer
-fi
+# if [[ $(uname) == "Linux" ]]; then
+#     sh /home/een023/stowfiles/bspwm/.config/bspwm/bin/bspcomp &
+#     if [ -e /home/een023/.nix-profile/etc/profile.d/nix.sh ]; then . /home/een023/.nix-profile/etc/profile.d/nix.sh; fi # added by Nix installer
+# fi
 
 . "$HOME/.cargo/env"
 . "$HOME/.local/share/rye/env"
-
 . "$HOME/.atuin/bin/env"
+eval "$(atuin gen-completions --shell zsh --out-dir "$HOME"/.config/zsh/.zsh_functions)"
+eval "$(just --completions zsh >"$HOME"/.config/zsh/.zsh_functions/_just)"
+eval "$(bw completion --shell zsh >"$HOME"/.config/zsh/.zsh_functions/_bitwarden)"
