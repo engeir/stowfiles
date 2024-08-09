@@ -184,9 +184,11 @@ return {
       -- tsserver = {},
       --
 
+      harper_ls = require("engeir.lazy.plugins.lsp.lspconfig-settings.harper-ls"),
+      jsonls = require("engeir.lazy.plugins.lsp.lspconfig-settings.jsonls"),
       lua_ls = require("engeir.lazy.plugins.lsp.lspconfig-settings.lua_ls"),
       texlab = require("engeir.lazy.plugins.lsp.lspconfig-settings.texlab"),
-      jsonls = require("engeir.lazy.plugins.lsp.lspconfig-settings.jsonls"),
+      tinymist = require("engeir.lazy.plugins.lsp.lspconfig-settings.tinymist"),
       yamlls = require("engeir.lazy.plugins.lsp.lspconfig-settings.yamlls"),
       -- pylsp = require("engeir.lazy.plugins.lsp.lspconfig-settings.pylsp"),
     }
