@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.16.1](https://github.com/engeir/stowfiles/compare/bspwm-v1.16.0...bspwm-v1.16.1) (2024-08-11)
+
+
+### Code Refactoring
+
+* **picom:** complete the rename from compton to picom ([5b81f8c](https://github.com/engeir/stowfiles/commit/5b81f8c9bb5b1c5a67ffbc178d07a7ca563b42d0))
+
 ## [1.16.0](https://github.com/engeir/stowfiles/compare/bspwm-v1.15.3...bspwm-v1.16.0) (2024-08-11)
 
 
