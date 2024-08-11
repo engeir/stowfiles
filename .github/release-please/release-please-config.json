@@ -36,11 +36,6 @@
       "path": "calcurse",
       "release-type": "simple"
     },
-    "compton": {
-      "package-name": "compton",
-      "path": "compton",
-      "release-type": "simple"
-    },
     "despell": {
       "package-name": "despell",
       "path": "despell",
@@ -124,6 +119,11 @@
     "nvim_lua": {
       "path": "nvim_lua",
       "package-name": "nvim",
+      "release-type": "simple"
+    },
+    "picom": {
+      "package-name": "picom",
+      "path": "picom",
       "release-type": "simple"
     },
     "prettierd": {

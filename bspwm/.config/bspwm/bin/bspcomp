@@ -10,4 +10,8 @@ killall -q picom
 while pgrep -u $UID -x picom >/dev/null; do sleep 1; done
 
 # Launch picom
-picom --config ~/.config/bspwm/picom.conf &
+if [[ -f "$HOME/.config/picom/picom.conf" ]]; then
+    picom --config "$HOME/.config/picom/picom.conf" &
+else
+    picom &
+fi
