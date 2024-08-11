@@ -113,8 +113,6 @@ fi
 eval "$(fzf --zsh)"
 eval "$(zoxide init --cmd cd zsh)"
 eval "$(atuin init zsh)"
-eval "$(atuin gen-completions --shell zsh --out-dir "$HOME"/.config/zsh/atuin_completion)"
-# eval "$(bw completion --shell zsh >"$HOME/.config/zsh/.zsh_functions/_bitwarden")"
 eval "$(batpipe)"
 
 # OLD ----------------------------------------------------------------------------------
