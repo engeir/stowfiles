@@ -2,7 +2,6 @@
 
 name_getter() {
     uname -a | grep -i "$1" >/dev/null 2>&1
-    return 0
 }
 # What OS are we running?
 if [[ $(uname) == "Darwin" ]]; then
@@ -29,6 +28,6 @@ elif [[ $MACHINE == "darwin" ]]; then
     export NNN_PLUG='a:bookmarks;b:bibfinder;c:diffs;d:dragdrop;f:fzcd;i:ipinfo;j:autojump;m:viewmedia;o:organize;p:preview-tui;r:rm-send;s:fzplug;u:upload'
 elif [[ $MACHINE == "arch" ]]; then
     export NNN_PLUG=
-    export NNN_BMS=
+    export NNN_BMS='b:~/Pictures/;c:~/.config/;d:~/Downloads/;l:~/.local;m:~/stowfiles/;p:~/programs/;s:~/bin/'
     export NNN_OPENER=
 fi

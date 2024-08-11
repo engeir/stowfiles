@@ -19,8 +19,9 @@ VISUAL = "{{env.EDITOR}}"
 TERMINAL = "alacritty"
 TERM = "screen-256color" # Needed for italics to work in tmux
 PAGER = "less" # Suggested at https://github.com/jarun/nnn/wiki/Advanced-use-cases#pager-as-opener
-LESSOPEN = "|/usr/local/bin/lesspipe.sh %s"
-MANPAGER = "sh -c 'col -bx | bat -l man -p'"
+# LESSOPEN = "|/usr/local/bin/lesspipe.sh %s"  # I'm testing if batpipe from bat-extras is good (instead of lesspipe)
+# MANROFFOPT = "-c"  # Fix formatting issue (or just use batman from bat-extras)
+# MANPAGER = "sh -c 'col -bx | bat -l man -p'"
 BAT_PAGER = "less -R"
 LESS = '-Ri '
 
@@ -56,7 +57,7 @@ HAS_ALLOW_UNSAFE = "y"
 # wezterm complains about
 # ERROR: ld.so: object 'libgtk3-nocsd.so.0' from LD_PRELOAD cannot be preloaded (failed to map segment from shared object): ignored.
 # See https://stackoverflow.com/a/53825858
-LD_PRELOAD = "/usr/lib/x86_64-linux-gnu/libgtk3-nocsd.so.0"
+# LD_PRELOAD = "/usr/lib/x86_64-linux-gnu/libgtk3-nocsd.so.0"
 
 [settings]
 experimental = true

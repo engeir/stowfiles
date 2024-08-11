@@ -43,8 +43,13 @@ zinit light wfxr/forgit
 zinit light wintermi/zsh-mise
 # zinit light olets/zsh-abbr
 # This is overridden by atuin in insert mode, but takes precedence in vi/normal mode.
- zinit load zsh-users/zsh-history-substring-search
- zinit ice wait atload'_history_substring_search_config'
+zinit load zsh-users/zsh-history-substring-search
+zinit ice wait atload'_history_substring_search_config'
+# atuin
+zinit ice as"command" from"gh-r" bpick"atuin-*.tar.gz" mv"atuin*/atuin -> atuin" \
+    atclone"./atuin init zsh > init.zsh; ./atuin gen-completions --shell zsh > _atuin" \
+    atpull"%atclone" src"init.zsh"
+zinit light atuinsh/atuin
 
 fpath+="${ZDOTDIR:-~}/.zsh_functions" # This must come before compinit
 autoload -Uz compinit
@@ -105,6 +110,8 @@ fi
 eval "$(fzf --zsh)"
 eval "$(zoxide init --cmd cd zsh)"
 eval "$(atuin init zsh)"
+eval "$(atuin gen-completions --shell zsh --out-dir "$HOME"/.config/zsh/atuin_completion)"
+eval "$(batpipe)"
 
 # OLD ----------------------------------------------------------------------------------
 
