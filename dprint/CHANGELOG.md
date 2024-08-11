@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.15.5](https://github.com/engeir/stowfiles/compare/dprint-v1.15.4...dprint-v1.15.5) (2024-08-11)
+
+
+### Miscellaneous
+
+* **software:** update installed ([7546efa](https://github.com/engeir/stowfiles/commit/7546efa9ec9b10b8f8de043252635e2ce183e44d))
+* **software:** update installed ([420004d](https://github.com/engeir/stowfiles/commit/420004d79edbc71da37863138f26acae31bbc2cc))
+
 ## [1.15.4](https://github.com/engeir/stowfiles/compare/dprint-v1.15.3...dprint-v1.15.4) (2024-07-22)
 
 
