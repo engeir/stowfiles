@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.16.0](https://github.com/engeir/stowfiles/compare/nushell-v1.15.3...nushell-v1.16.0) (2024-08-11)
+
+
+### Features
+
+* **zsh:** update zsh and set it to be the default interactive shell ([89190c4](https://github.com/engeir/stowfiles/commit/89190c4d24db1d5c382fbd5153119f919a5cbfc8))
+
 ## [1.15.3](https://github.com/engeir/stowfiles/compare/nushell-v1.15.2...nushell-v1.15.3) (2024-06-19)
 
 

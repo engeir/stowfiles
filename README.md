@@ -72,3 +72,9 @@ files, this can be done using the [`.reinstall`](./.reinstall) script.
 ```bash
 .reinstall -h
 ```
+
+## Arch
+
+### Resources
+
+- <https://ejmastnak.com/tutorials/arch/about/>
