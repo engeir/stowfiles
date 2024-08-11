@@ -26,7 +26,7 @@ if [[ $MACHINE == "UBUNTU" ]]; then
 elif [[ $MACHINE == "DARWIN" ]]; then
     export NNN_BMS="b:~/photos/Bilder/Canon EOS M50;c:~/.config;d:~/Downloads;m:~/stowfiles;p:~/programs;s:~/.local/bin;w:~/OneDrive - UiT Office 365/Skole"
     export NNN_PLUG='a:bookmarks;b:bibfinder;c:diffs;d:dragdrop;f:fzcd;i:ipinfo;j:autojump;m:viewmedia;o:organize;p:preview-tui;r:rm-send;s:fzplug;u:upload'
-elif [[ $MACHINE == "arch" ]]; then
+elif [[ $MACHINE == "ARCH" ]]; then
     # export NNN_PLUG=
     export NNN_BMS='b:~/Pictures/;c:~/.config/;d:~/Downloads/;l:~/.local;m:~/stowfiles/;p:~/programs/;s:~/bin/'
     # export NNN_OPENER=
