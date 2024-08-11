@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
-# Terminate if compton is already running
-if ! command -v picom; then
+# Terminate if picom is already running
+if command -v picom; then
     exit 0
 fi
 killall -q picom

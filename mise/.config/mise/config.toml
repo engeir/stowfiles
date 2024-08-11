@@ -44,26 +44,30 @@ NNN_FCOLORS = "{{env.BLK}}{{env.CHR}}{{env.DIR}}{{env.EXE}}{{env.REG}}{{env.HARD
 NNN_FIFO = "/tmp/nnn.fifo nnn"
 NNN_TRASH = 1
 NNN_TERMINAL = "{{env.TERMINAL}}"
+# HEY = "YOU"
+# YOU_ONE = "two"
+# VERI = "{{ env.YOU_ONE }}"
+# YOU_TWO = "{{ get_env(name=env.HEY ~ '_ONE') }}"
 # # ubuntu
-# NNN_PLUG_ubuntu = 'a:bookmarks;b:bibfinder;c:diffs;d:dragdrop;f:fzcd;i:ipinfo;j:autojump;m:viewmedia;o:organize;p:preview-tui2;r:rm-send;s:fzplug;u:upload'
-# NNN_BMS_ubuntu = 'b:~/Pictures/;c:~/.config/;d:~/Downloads/;l:~/.local;n:~/Documents/notes_papers/;m:~/stowfiles/;o:~/OneDrive/;p:~/programs/;r:~/science/ref/;s:~/bin/;t:~/Documents/teaching/;w:~/Documents/work/'
-# NNN_OPENER_ubuntu = "/home/een023/.config/nnn/plugins/nuke"
-# # mac
-# NNN_BMS_darwin = "b:~/photos/Bilder/Canon EOS M50;c:~/.config;d:~/Downloads;m:~/stowfiles;p:~/programs;s:~/.local/bin;w:~/OneDrive - UiT Office 365/Skole"
-# NNN_PLUG_darwin = 'a:bookmarks;b:bibfinder;c:diffs;d:dragdrop;f:fzcd;i:ipinfo;j:autojump;m:viewmedia;o:organize;p:preview-tui;r:rm-send;s:fzplug;u:upload'
-# NNN_OPENER_darwin = ""
+# NNN_PLUG_UBUNTU = 'a:bookmarks;b:bibfinder;c:diffs;d:dragdrop;f:fzcd;i:ipinfo;j:autojump;m:viewmedia;o:organize;p:preview-tui2;r:rm-send;s:fzplug;u:upload'
+# NNN_BMS_UBUNTU = 'b:~/Pictures/;c:~/.config/;d:~/Downloads/;l:~/.local;n:~/Documents/notes_papers/;m:~/stowfiles/;o:~/OneDrive/;p:~/programs/;r:~/science/ref/;s:~/bin/;t:~/Documents/teaching/;w:~/Documents/work/'
+# NNN_OPENER_UBUNTU = "/home/een023/.config/nnn/plugins/nuke"
+# # darwin (macos)
+# NNN_BMS_DARWIN = "b:~/photos/Bilder/Canon EOS M50;c:~/.config;d:~/Downloads;m:~/stowfiles;p:~/programs;s:~/.local/bin;w:~/OneDrive - UiT Office 365/Skole"
+# NNN_PLUG_DARWIN = 'a:bookmarks;b:bibfinder;c:diffs;d:dragdrop;f:fzcd;i:ipinfo;j:autojump;m:viewmedia;o:organize;p:preview-tui;r:rm-send;s:fzplug;u:upload'
+# NNN_OPENER_DARWIN = ""
 # # arch
-# NNN_PLUG_arch = ""
-# NNN_BMS_arch = 'b:~/Pictures/;c:~/.config/;d:~/Downloads/;l:~/.local;m:~/stowfiles/;p:~/programs/;s:~/bin/'
-# NNN_OPENER_arch = ""
-# NNN_PLUG = "{{get_env(name='NNN_PLUG_{{env.MACHINE}}')}}"
-# NNN_BMS = "{{get_env(name='NNN_BMS_{{env.MACHINE}}')}}"
-# NNN_OPENER = "{{get_env(name='NNN_OPENER_{{env.MACHINE}}')}}"
+# NNN_PLUG_ARCH = ""
+# NNN_BMS_ARCH = ""
+# NNN_OPENER_ARCH = ""
+# NNN_PLUG = "{{ get_env(name='NNN_PLUG_' ~ env.MACHINE) }}"
+# NNN_BMS = "{{ get_env(name='NNN_BMS_' ~ env.MACHINE) }}"
+# NNN_OPENER = "{{ get_env(name='NNN_OPENER_' ~ env.MACHINE) }}"
 
 # FZF settings
 FD_OPTIONS = "--follow --exclude .git --exclude node_modules"
 FZF_ALT_C_COMMAND = "fd --type d {{env.FD_OPTIONS}}"
-FZF_DEFAULT_OPTS = "--no-mouse --layout=reverse --height 100% -1 --multi --inline-info --preview='[[ $(file --mime {}) =~ binary ]] && echo {} is a binary file || (bat --style=numbers --color=always {} || cat {}) 2> /dev/null | head -300' --preview-window='right:wrap' --bind='f3:execute(bat --style=numbers {} || less -f {}),f2:toggle-preview,ctrl-f:preview-down,ctrl-b:preview-up,ctrl-d:half-page-down,ctrl-u:half-page-up,ctrl-a:select-all+accept,ctrl-y:execute-silent(echo {+} | pbcopy)'"
+FZF_DEFAULT_OPTS = "--no-mouse --layout=reverse --height 100% -1 --multi --inline-info --preview='[[ $(file --mime {}) =~ binary ]] && echo {} is a binary file || (bat --style=numbers --color=always {} || cat {}) 2> /dev/null | head -300' --preview-window='right:hidden:wrap' --bind='f3:execute(bat --style=numbers {} || less -f {}),f2:toggle-preview,ctrl-f:preview-down,ctrl-b:preview-up,ctrl-d:half-page-down,ctrl-u:half-page-up,ctrl-a:select-all+accept,ctrl-y:execute-silent(echo {+} | pbcopy)'"
 FZF_DEFAULT_COMMAND = 'fd --type f -I'
 FZF_CTRL_T_COMMAND = "{{env.FZF_DEFAULT_COMMAND}}"
 
@@ -94,15 +98,18 @@ python = [
   "sub-0.4:latest",
 ]
 usage = "latest"
-"ubi:goreleaser/goreleaser" = "latest"
-"ubi:filosottile/age" = "latest"
-"ubi:etcd-io/etcd" = "latest"
-"ubi:mgdm/htmlq" = "latest"
-"ubi:ismaelgv/rnr" = "latest"
-"ubi:pvolok/mprocs" = "latest"
-"ubi:houseabsolute/precious" = "latest"
-"ubi:ajeetdsouza/zoxide" = "latest"
-"ubi:pythops/bluetui" = "latest"
-"pipx:volcano-cooking" = "latest"
 "npm:cwebp" = "latest"
+"pipx:volcano-cooking" = "latest"
+"ubi:Enter-tainer/typstyle" = "latest"
+"ubi:ajeetdsouza/zoxide" = "latest"
+"ubi:azzamsa/zman" = "latest"
+"ubi:etcd-io/etcd" = "latest"
+"ubi:filosottile/age" = "latest"
+"ubi:goreleaser/goreleaser" = "latest"
+"ubi:houseabsolute/precious" = "latest"
+"ubi:ismaelgv/rnr" = "latest"
 "ubi:junegunn/fzf" = "latest"
+"ubi:mgdm/htmlq" = "latest"
+"ubi:pvolok/mprocs" = "latest"
+"ubi:pythops/bluetui" = "latest"
+"ubi:typst/typst" = "latest"
