@@ -30,8 +30,4 @@ elif [[ $MACHINE == "ARCH" ]]; then
     # export NNN_PLUG=
     export NNN_BMS='b:~/Pictures/;c:~/.config/;d:~/Downloads/;l:~/.local;m:~/stowfiles/;p:~/programs/;s:~/bin/'
     # export NNN_OPENER=
-elif [[ $MACHINE == "arch" ]]; then
-    export NNN_PLUG=
-    export NNN_BMS=
-    export NNN_OPENER=
 fi
