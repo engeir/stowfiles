@@ -1,5 +1,17 @@
 # Changelog
 
+## [1.16.0](https://github.com/engeir/stowfiles/compare/alacritty-v1.15.3...alacritty-v1.16.0) (2024-08-11)
+
+
+### Features
+
+* **compositor:** update name from compton to picom and add global opacity ([51e75b4](https://github.com/engeir/stowfiles/commit/51e75b498a81c24b1d2e2bdf5fbd074c53c541de))
+
+
+### Miscellaneous
+
+* **alacritty:** remove comment ([b81e500](https://github.com/engeir/stowfiles/commit/b81e5005c31552e29392b05afec945ad4d047cf4))
+
 ## [1.15.3](https://github.com/engeir/stowfiles/compare/alacritty-v1.15.2...alacritty-v1.15.3) (2024-06-19)
 
 

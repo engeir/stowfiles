@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.15.4](https://github.com/engeir/stowfiles/compare/X-v1.15.3...X-v1.15.4) (2024-08-11)
+
+
+### Miscellaneous
+
+* **X:** add xinitrc and xprofile ([9869d44](https://github.com/engeir/stowfiles/commit/9869d4433e31d78cc207e7625ea7e5644ce8f12a))
+
 ## [1.15.3](https://github.com/engeir/stowfiles/compare/X-v1.15.2...X-v1.15.3) (2024-06-19)
 
 

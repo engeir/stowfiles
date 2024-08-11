@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.15.4](https://github.com/engeir/stowfiles/compare/firefox-v1.15.3...firefox-v1.15.4) (2024-08-11)
+
+
+### Miscellaneous
+
+* **arch:** add arch settings ([730a639](https://github.com/engeir/stowfiles/commit/730a639ab45e0c596a54a9128f1773058d8742d6))
+
 ## [1.15.3](https://github.com/engeir/stowfiles/compare/firefox-v1.15.2...firefox-v1.15.3) (2024-06-19)
 
 
