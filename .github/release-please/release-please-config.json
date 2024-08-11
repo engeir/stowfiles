@@ -14,6 +14,11 @@
       "path": "alacritty",
       "release-type": "simple"
     },
+    "alacritty_arch": {
+      "package-name": "alacritty_arch",
+      "path": "alacritty_arch",
+      "release-type": "simple"
+    },
     "alacritty_mac": {
       "package-name": "alacritty_mac",
       "path": "alacritty_mac",
