@@ -44,11 +44,11 @@ family = "CaskaydiaMono Nerd Font Mono"
 style = "Bold"
 
 [font.bold_italic]
-family = "CaskaydiaMono Nerd Font Mono"
+family = "CartographCF Nerd Font"
 style = "Bold Italic"
 
 [font.italic]
-family = "CaskaydiaMono Nerd Font Mono"
+family = "CartographCF Nerd Font"
 style = "Italic"
 
 [font.normal]
@@ -136,7 +136,7 @@ program = "/usr/bin/zsh"
 
 [window]
 decorations = "buttonless"
-opacity = 0.95
+opacity = 1.0
 option_as_alt = "OnlyRight"
 
 [window.padding]

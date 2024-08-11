@@ -1,6 +1,9 @@
 #!/usr/bin/env bash
 
-# Terminate if picom is already running
+# Terminate if compton is already running
+if ! command -v picom; then
+    exit 0
+fi
 killall -q picom
 
 # Wait until the processes have been shut down

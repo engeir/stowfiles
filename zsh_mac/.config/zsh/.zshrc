@@ -99,11 +99,15 @@ zstyle ':fzf-tab:complete:__zoxide_z:*' fzf-preview 'eza -1 --color=always $real
 
 # Source some other configs
 . "$HOME/.config/zsh/functions.zsh"
-if [ "$MACHINE" = "UBUNTU" ]; then
-    . "$HOME/.config/zsh/ssh.zsh"
+if [ "$MACHINE" = "ubuntu" ]; then
+    # . "$HOME/.config/zsh/ssh.zsh"
+    "$HOME/bin/start-agent-expect"
     . "$HOME/.local/share/rye/env"
     xset r rate 210 40
     xrdb "$HOME/.config/Xresources"
+if [ "$MACHINE" = "arch" ]; then
+    "$HOME/bin/start-keychain-arch-expect"
+    . "$HOME/.local/share/rye/env"
 fi
 
 # Shell integrations
@@ -111,6 +115,7 @@ eval "$(fzf --zsh)"
 eval "$(zoxide init --cmd cd zsh)"
 eval "$(atuin init zsh)"
 eval "$(atuin gen-completions --shell zsh --out-dir "$HOME"/.config/zsh/atuin_completion)"
+# eval "$(bw completion --shell zsh >"$HOME/.config/zsh/.zsh_functions/_bitwarden")"
 eval "$(batpipe)"
 
 # OLD ----------------------------------------------------------------------------------
