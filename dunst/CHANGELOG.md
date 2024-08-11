@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.15.4](https://github.com/engeir/stowfiles/compare/dunst-v1.15.3...dunst-v1.15.4) (2024-08-11)
+
+
+### Miscellaneous
+
+* **dunst:** update font to CaskadiaMono Nerd Font Mono ([2f1ed18](https://github.com/engeir/stowfiles/commit/2f1ed180e2fe60d293582c2e6f955e596c9a2912))
+
 ## [1.15.3](https://github.com/engeir/stowfiles/compare/dunst-v1.15.2...dunst-v1.15.3) (2024-06-19)
 
 

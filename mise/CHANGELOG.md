@@ -1,5 +1,26 @@
 # Changelog
 
+## [1.17.0](https://github.com/engeir/stowfiles/compare/mise-v1.16.1...mise-v1.17.0) (2024-08-11)
+
+
+### Features
+
+* **zsh:** update zsh and set it to be the default interactive shell ([89190c4](https://github.com/engeir/stowfiles/commit/89190c4d24db1d5c382fbd5153119f919a5cbfc8))
+
+
+### Bug Fixes
+
+* **mise:** pin fzf to version that installs consistently ([e10ec96](https://github.com/engeir/stowfiles/commit/e10ec96f8d4af8b0471dc7e0e9883fdf4e874585))
+
+
+### Miscellaneous
+
+* **alacritty:** add arch linux settings ([d5625e1](https://github.com/engeir/stowfiles/commit/d5625e1eafbaf13bccecdd6879fb82be0e0df817))
+* **arch:** add arch settings ([730a639](https://github.com/engeir/stowfiles/commit/730a639ab45e0c596a54a9128f1773058d8742d6))
+* **mise:** update machine specific exports ([4ae88c2](https://github.com/engeir/stowfiles/commit/4ae88c26431c64373d718ad5aecd6d0d6d97f954))
+* **zsh:** fix capitalized env var ([825d792](https://github.com/engeir/stowfiles/commit/825d79281b62d9316b98c34ca03f60106bc61749))
+* **zsh:** run ssh keygen directly ([db14087](https://github.com/engeir/stowfiles/commit/db140877472330a659c6a05b5dda7ebf9b7cd9a3))
+
 ## [1.16.1](https://github.com/engeir/stowfiles/compare/mise-v1.16.0...mise-v1.16.1) (2024-07-22)
 
 
