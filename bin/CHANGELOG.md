@@ -1,5 +1,15 @@
 # Changelog
 
+## [1.15.4](https://github.com/engeir/stowfiles/compare/bin-v1.15.3...bin-v1.15.4) (2024-08-11)
+
+
+### Miscellaneous
+
+* **arch:** add arch settings ([730a639](https://github.com/engeir/stowfiles/commit/730a639ab45e0c596a54a9128f1773058d8742d6))
+* **bin,tmux:** add preview-window hidden flag ([b905621](https://github.com/engeir/stowfiles/commit/b90562135b5ba459d0ba27cc2f39322eed1c3223))
+* **gpg:** set up arch linux gpg keychain ([384657a](https://github.com/engeir/stowfiles/commit/384657ad233b13ad8023af3732f4855d70016522))
+* **zsh:** run ssh keygen directly ([db14087](https://github.com/engeir/stowfiles/commit/db140877472330a659c6a05b5dda7ebf9b7cd9a3))
+
 ## [1.15.3](https://github.com/engeir/stowfiles/compare/bin-v1.15.2...bin-v1.15.3) (2024-06-19)
 
 

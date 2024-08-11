@@ -1,5 +1,18 @@
 # Changelog
 
+## [1.16.0](https://github.com/engeir/stowfiles/compare/tmux-v1.15.2...tmux-v1.16.0) (2024-08-11)
+
+
+### Features
+
+* **zsh:** update zsh and set it to be the default interactive shell ([89190c4](https://github.com/engeir/stowfiles/commit/89190c4d24db1d5c382fbd5153119f919a5cbfc8))
+
+
+### Miscellaneous
+
+* **bin,tmux:** add preview-window hidden flag ([b905621](https://github.com/engeir/stowfiles/commit/b90562135b5ba459d0ba27cc2f39322eed1c3223))
+* **zsh:** run ssh keygen directly ([db14087](https://github.com/engeir/stowfiles/commit/db140877472330a659c6a05b5dda7ebf9b7cd9a3))
+
 ## [1.15.2](https://github.com/engeir/stowfiles/compare/tmux-v1.15.2...tmux-v1.15.2) (2024-06-19)
 
 

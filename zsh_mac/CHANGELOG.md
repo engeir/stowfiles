@@ -1,5 +1,22 @@
 # Changelog
 
+## [1.17.0](https://github.com/engeir/stowfiles/compare/zsh_mac-v1.16.0...zsh_mac-v1.17.0) (2024-08-11)
+
+
+### Features
+
+* **compositor:** update name from compton to picom and add global opacity ([51e75b4](https://github.com/engeir/stowfiles/commit/51e75b498a81c24b1d2e2bdf5fbd074c53c541de))
+* **zsh:** update zsh and set it to be the default interactive shell ([89190c4](https://github.com/engeir/stowfiles/commit/89190c4d24db1d5c382fbd5153119f919a5cbfc8))
+
+
+### Miscellaneous
+
+* **alacritty:** add arch linux settings ([d5625e1](https://github.com/engeir/stowfiles/commit/d5625e1eafbaf13bccecdd6879fb82be0e0df817))
+* **arch:** add arch settings ([730a639](https://github.com/engeir/stowfiles/commit/730a639ab45e0c596a54a9128f1773058d8742d6))
+* **software:** update installed ([7546efa](https://github.com/engeir/stowfiles/commit/7546efa9ec9b10b8f8de043252635e2ce183e44d))
+* **zsh:** remove completion generation from interactive rc ([22ae56f](https://github.com/engeir/stowfiles/commit/22ae56f70587bd35cb4deddf816de5559ac02bc4))
+* **zsh:** run ssh keygen directly ([db14087](https://github.com/engeir/stowfiles/commit/db140877472330a659c6a05b5dda7ebf9b7cd9a3))
+
 ## [1.16.0](https://github.com/engeir/stowfiles/compare/zsh_mac-v1.15.3...zsh_mac-v1.16.0) (2024-06-26)
 
 

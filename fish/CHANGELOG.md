@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.16.2](https://github.com/engeir/stowfiles/compare/fish-v1.16.1...fish-v1.16.2) (2024-08-11)
+
+
+### Miscellaneous
+
+* **fish:** update config ([787a3c0](https://github.com/engeir/stowfiles/commit/787a3c0ad9c8b6ac1f3827ba13a6453dc2febbd9))
+* **software:** update installed ([7546efa](https://github.com/engeir/stowfiles/commit/7546efa9ec9b10b8f8de043252635e2ce183e44d))
+
 ## [1.16.1](https://github.com/engeir/stowfiles/compare/fish-v1.16.0...fish-v1.16.1) (2024-07-22)
 
 
