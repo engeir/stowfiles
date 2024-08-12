@@ -1,7 +1,7 @@
 #!/usr/bin/env zsh
 
 skip_global_compinit=1
-ZDOTDIR="${XDG_CONFIG_HOME:-${HOME}/.config}/zsh/"
+ZDOTDIR="${XDG_CONFIG_HOME:-${HOME}/.config}/zsh"
 source "$HOME/.cargo/env"
 . "$HOME/.cargo/env"
 
