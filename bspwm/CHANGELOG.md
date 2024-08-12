@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.16.2](https://github.com/engeir/stowfiles/compare/bspwm-v1.16.1...bspwm-v1.16.2) (2024-08-12)
+
+
+### Bug Fixes
+
+* **bspwm:** if picom does NOT exist ... exit 0 ([c18db03](https://github.com/engeir/stowfiles/commit/c18db0354bb5061d1d401d6374e562daccfa117a))
+
 ## [1.16.1](https://github.com/engeir/stowfiles/compare/bspwm-v1.16.0...bspwm-v1.16.1) (2024-08-11)
 
 
