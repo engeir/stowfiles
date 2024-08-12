@@ -1,5 +1,17 @@
 # Changelog
 
+## [1.17.1](https://github.com/engeir/stowfiles/compare/zsh_mac-v1.17.0...zsh_mac-v1.17.1) (2024-08-12)
+
+
+### Miscellaneous
+
+* **zsh:** ignore the zsh_functions directory ([4b8d4aa](https://github.com/engeir/stowfiles/commit/4b8d4aa254eee236354692d2d3c84eadacfef554))
+
+
+### Code Refactoring
+
+* **zsh:** move keychain calls to .profile and just source in .zshrc ([edf84d8](https://github.com/engeir/stowfiles/commit/edf84d8d6389447f28a1d8c408ad6f0cad89c34f))
+
 ## [1.17.0](https://github.com/engeir/stowfiles/compare/zsh_mac-v1.16.0...zsh_mac-v1.17.0) (2024-08-11)
 
 
