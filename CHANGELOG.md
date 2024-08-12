@@ -1,5 +1,22 @@
 # Changelog
 
+## [1.18.1](https://github.com/engeir/stowfiles/compare/stowfiles-v1.18.0...stowfiles-v1.18.1) (2024-08-12)
+
+
+### Bug Fixes
+
+* **bspwm:** if picom does NOT exist ... exit 0 ([c18db03](https://github.com/engeir/stowfiles/commit/c18db0354bb5061d1d401d6374e562daccfa117a))
+
+
+### Miscellaneous
+
+* **zsh:** ignore the zsh_functions directory ([4b8d4aa](https://github.com/engeir/stowfiles/commit/4b8d4aa254eee236354692d2d3c84eadacfef554))
+
+
+### Code Refactoring
+
+* **zsh:** move keychain calls to .profile and just source in .zshrc ([edf84d8](https://github.com/engeir/stowfiles/commit/edf84d8d6389447f28a1d8c408ad6f0cad89c34f))
+
 ## [1.18.0](https://github.com/engeir/stowfiles/compare/stowfiles-v1.17.6...stowfiles-v1.18.0) (2024-08-11)
 
 
