@@ -99,15 +99,7 @@ zstyle ':fzf-tab:complete:__zoxide_z:*' fzf-preview 'eza -1 --color=always $real
 
 # Source some other configs
 . "$HOME/.config/zsh/functions.zsh"
-if [ "$MACHINE" = "UBUNTU" ]; then
-    "$HOME/bin/start-keychain-expect"
-    . "$HOME/.local/share/rye/env"
-    xset r rate 210 40
-    xrdb "$HOME/.config/Xresources"
-if [ "$MACHINE" = "ARCH" ]; then
-    "$HOME/bin/start-keychain-arch-expect"
-    . "$HOME/.local/share/rye/env"
-fi
+. "$HOME/.keychain/ubuntu-work-sh"
 
 # Shell integrations
 eval "$(fzf --zsh)"

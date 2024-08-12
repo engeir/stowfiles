@@ -20,11 +20,12 @@ fi
 if [ -d "$HOME/bin" ]; then
     PATH="$HOME/bin:$PATH"
 fi
-PATH="$HOME/bin:$PATH"
-
 # set PATH so it includes user's private bin if it exists
 if [ -d "$HOME/.local/bin" ]; then
     PATH="$HOME/.local/bin:$PATH"
+fi
+if [ -d "$HOME/.cargo/bin" ]; then
+    PATH="$HOME/.cargo/bin:$PATH"
 fi
 export GPG_TTY=$(tty)
 
@@ -32,6 +33,17 @@ export GPG_TTY=$(tty)
 # export GH_PAT_POLYBAR=$(pass API/polybar_github)
 
 fpath+=${ZDOTDIR:-~}/.zsh_functions
+
+# Start keychain
+if command -v /usr/bin/keychain >/dev/null 2>&1; then
+    if uname -a | grep -i ubuntu >/dev/null 2>&1; then
+        "$HOME/bin/start-keychain-expect"
+    elif uname -a | grep -i arch >/dev/null 2>&1; then
+        "$HOME/bin/start-keychain-arch-expect"
+    fi
+fi
+xset r rate 210 40
+xrdb "$HOME/.config/Xresources"
 
 # Config for fzf
 # FD_OPTIONS="--follow --exclude .git --exclude node_modules"
@@ -45,6 +57,6 @@ fpath+=${ZDOTDIR:-~}/.zsh_functions
 # . "$HOME/.cargo/env"
 . "$HOME/.local/share/rye/env"
 . "$HOME/.atuin/bin/env"
-eval "$(atuin gen-completions --shell zsh --out-dir "$HOME"/.config/zsh/.zsh_functions)"
-eval "$(just --completions zsh >"$HOME"/.config/zsh/.zsh_functions/_just)"
-eval "$(bw completion --shell zsh >"$HOME"/.config/zsh/.zsh_functions/_bitwarden)"
+eval "$(atuin gen-completions --shell zsh --out-dir "$HOME/.config/zsh/.zsh_functions")"
+eval "$(just --completions zsh >"$HOME/.config/zsh/.zsh_functions/_just")"
+eval "$(bw completion --shell zsh >"$HOME/.config/zsh/.zsh_functions/_bitwarden")"
