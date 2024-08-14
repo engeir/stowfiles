@@ -88,17 +88,17 @@ bspc rule -r -- *:*
 # bspc rule -a Alacritty desktop='^1' follow=on focus=on
 
 # 2 > web
-# bspc rule -a firefox desktop='^2' follow=on focus=on
+bspc rule -a firefox desktop='^4' follow=off focus=on
 
-# 3 > file
-# bspc rule -a Pcmanfm desktop='^3' follow=on focus=on
+# 10 > slack
+bspc rule -a Slack desktop='^10' follow=on focus=on
 
-# # 4 > office
-# declare -a office=(Geany Gucharmap Evince \
-# libreoffice-writer libreoffice-calc libreoffice-impress \
-# libreoffice-startcenter libreoffice Soffice *:libreofficedev *:soffice)
-# for i in ${office[@]}; do
-#    bspc rule -a $i desktop='^4' follow=on focus=on; done
+# 7 > office
+declare -a office=(Geany Gucharmap Evince sioyek \
+libreoffice-writer libreoffice-calc libreoffice-impress \
+libreoffice-startcenter libreoffice Soffice *:libreofficedev *:soffice)
+for i in ${office[@]}; do
+   bspc rule -a $i desktop='^7' follow=off focus=on; done
 
 # # 5 > media
 # declare -a media=(Audacity mpv mplayer lxmusic Gimp Gimp-2.8)
