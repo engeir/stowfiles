@@ -5,7 +5,7 @@ function wallpaper() {
     sqlite3 ~/Library/Application\ Support/Dock/desktoppicture.db "update data set value = '$1'" && killall Dock
 }
 
-fd -e jpg . '/home/eirikre/syncthing/wallpapers' | sort -R | sed 1q | while read file; do
+fd -e jpg . "$HOME/syncthing/wallpapers" | sort -R | sed 1q | while read -r file; do
     if [[ $(uname -s) == "Darwin" ]]; then
         # Mac
         if ! diff "$HOME/.cache/bspwm/wallpaper.jpg" "$HOME/stowfiles/assets/black.jpg" >/dev/null; then
