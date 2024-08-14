@@ -67,7 +67,7 @@ NNN_TERMINAL = "{{env.TERMINAL}}"
 # FZF settings
 FD_OPTIONS = "--follow --exclude .git --exclude node_modules"
 FZF_ALT_C_COMMAND = "fd --type d {{env.FD_OPTIONS}}"
-FZF_DEFAULT_OPTS = "--no-mouse --layout=reverse --height 100% -1 --multi --inline-info --preview='[[ $(file --mime {}) =~ binary ]] && echo {} is a binary file || (bat --style=numbers --color=always {} || cat {}) 2> /dev/null | head -300' --preview-window='right:hidden:wrap' --bind='f3:execute(bat --style=numbers {} || less -f {}),f2:toggle-preview,ctrl-f:preview-down,ctrl-b:preview-up,ctrl-d:half-page-down,ctrl-u:half-page-up,ctrl-a:select-all+accept,ctrl-y:execute-silent(echo {+} | pbcopy)'"
+FZF_DEFAULT_OPTS = "--layout=reverse --height 100% -1 --multi --inline-info --preview='[[ $(file --mime {}) =~ binary ]] && echo {} is a binary file || (bat --style=numbers --color=always {} || cat {}) 2> /dev/null | head -300' --bind='f3:execute(bat --style=numbers {} || less -f {}),f2:toggle-preview,ctrl-f:preview-down,ctrl-b:preview-up,ctrl-d:half-page-down,ctrl-u:half-page-up,ctrl-s:select-all+accept,ctrl-y:execute-silent(echo {+} | xclip -sel clip)'"
 FZF_DEFAULT_COMMAND = 'fd --type f -I'
 FZF_CTRL_T_COMMAND = "{{env.FZF_DEFAULT_COMMAND}}"
 
