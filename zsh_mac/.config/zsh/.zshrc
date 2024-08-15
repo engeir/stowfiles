@@ -106,6 +106,7 @@ eval "$(fzf --zsh)"
 eval "$(zoxide init --cmd cd zsh)"
 eval "$(atuin init zsh)"
 eval "$(batpipe)"
+eval "$(batman --export-env)"
 
 # OLD ----------------------------------------------------------------------------------
 
