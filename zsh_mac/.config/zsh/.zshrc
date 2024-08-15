@@ -99,7 +99,7 @@ zstyle ':fzf-tab:complete:__zoxide_z:*' fzf-preview 'eza -1 --color=always $real
 
 # Source some other configs
 . "$HOME/.config/zsh/functions.zsh"
-. "$HOME/.keychain/ubuntu-work-sh"
+. "$HOME/.keychain/$(hostnamectl --static)-sh"
 
 # Shell integrations
 eval "$(fzf --zsh)"
