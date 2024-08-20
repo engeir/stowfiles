@@ -5,15 +5,24 @@ function wallpaper() {
     sqlite3 ~/Library/Application\ Support/Dock/desktoppicture.db "update data set value = '$1'" && killall Dock
 }
 
-if diff "$HOME/.cache/bspwm/wallpaper.jpg" "$HOME/stowfiles/assets/black.jpg" >/dev/null; then
-    FILE="$(find "$HOME"/syncthing/wallpapers/*.jpg | sort -R | sed 1q)"
-    num="$RANDOM"
-    convert "$FILE" -blur 0x25 "/tmp/$num.jpg"
-    cp "/tmp/$num.jpg" "$HOME/.cache/bspwm/wallpaper.jpg"
-    # m wallpaper "/tmp/$num.jpg"
-    wallpaper "/tmp/$num.jpg"
+if [[ $(uname -s) == "Darwin" ]]; then
+    if diff "$HOME/.cache/bspwm/wallpaper.jpg" "$HOME/stowfiles/assets/black.jpg" >/dev/null; then
+        FILE="$(find "$HOME"/syncthing/wallpapers/*.jpg | sort -R | sed 1q)"
+        num="$RANDOM"
+        convert "$FILE" -blur 0x25 "/tmp/$num.jpg"
+        cp "/tmp/$num.jpg" "$HOME/.cache/bspwm/wallpaper.jpg"
+        wallpaper "/tmp/$num.jpg"
+    else
+        cp "$HOME/stowfiles/assets/black.jpg" "$HOME/.cache/bspwm/wallpaper.jpg"
+        wallpaper "$HOME/stowfiles/assets/black.jpg"
+    fi
 else
-    cp "$HOME/stowfiles/assets/black.jpg" "$HOME/.cache/bspwm/wallpaper.jpg"
-    wallpaper "$HOME/stowfiles/assets/black.jpg"
-    # m wallpaper "$HOME/stowfiles/assets/black.jpg"
+    if diff "$HOME/.cache/bspwm/wallpaper.jpg" "$HOME/stowfiles/assets/black.jpg" >/dev/null; then
+        FILE="$(fd -e jpg . "$HOME/syncthing/wallpapers" | sort -R | sed 1q)"
+        convert "$FILE" -blur 0x9 "$HOME"/.cache/bspwm/wallpaper.jpg
+        feh --bg-fill "$HOME/.cache/bspwm/wallpaper.jpg"
+    else
+        cp "$HOME/stowfiles/assets/black.jpg" "$HOME/.cache/bspwm/wallpaper.jpg"
+        feh --bg-fill "$HOME/.cache/bspwm/wallpaper.jpg"
+    fi
 fi

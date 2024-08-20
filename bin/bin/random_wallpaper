@@ -16,8 +16,10 @@ fd -e jpg . "$HOME/syncthing/wallpapers" | sort -R | sed 1q | while read -r file
             wallpaper "/tmp/$num.jpg"
         fi
     else
-        # Linux
-        convert "$file" -blur 0x9 "$HOME"/.cache/bspwm/wallpaper.jpg
-        feh --bg-fill "$HOME"/.cache/bspwm/wallpaper.jpg
+        if ! diff "$HOME/.cache/bspwm/wallpaper.jpg" "$HOME/stowfiles/assets/black.jpg" >/dev/null; then
+            # Linux
+            convert "$file" -blur 0x9 "$HOME"/.cache/bspwm/wallpaper.jpg
+            feh --bg-fill "$HOME"/.cache/bspwm/wallpaper.jpg
+        fi
     fi
 done
