@@ -1,0 +1,2 @@
+# Start locking program (https://www.reddit.com/r/archlinux/comments/vaougf/how_to_lock_on_suspendclosed_lid/)
+xss-lock slock &
