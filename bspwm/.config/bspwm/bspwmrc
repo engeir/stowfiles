@@ -42,6 +42,7 @@ elif [ "$(bspc query -M | wc -l)" -eq "2" ]; then
 else
     bspc monitor eDP-1 -d 1 2 3 4 5 6 7 8 9 0
 fi
+"$HOME/.config/autorandr/startup"
 
 # Used to make polybar maintain proper workspaces per monitor when going from 2
 # to 1 monitor again.. This may include some monitor re-ordering issues
@@ -181,7 +182,8 @@ bspcolors
 bspcomp
 # bspbar
 sleep 2
-bash "$HOME/polybar-collection/launch.sh"
+# bash "$HOME/polybar-collection/launch.sh"
+# bash "$HOME/polybar-collection/themes/kneipp/launch.sh"
 # bspfloat &
 
 ## Adjust backlight (AMD)

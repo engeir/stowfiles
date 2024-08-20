@@ -1,0 +1,18 @@
+[project]
+name = "music"
+version = "0.1.0"
+description = "Add your description here"
+authors = [
+    { name = "engeir", email = "engeir@pm.me" }
+]
+dependencies = [
+    "dbus-python>=1.3.2",
+    "pygobject>=3.48.2",
+]
+readme = "README.md"
+requires-python = ">= 3.8"
+
+[tool.rye]
+managed = true
+virtual = true
+dev-dependencies = []
