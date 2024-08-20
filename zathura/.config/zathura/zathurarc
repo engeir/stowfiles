@@ -17,6 +17,12 @@ map <C-s> feedkeys ":exec rmapi put $FILE<Return>"
 # Try getting a documents bibtex representation
 map <C-b> feedkeys ":exec getbib-linux-copy $FILE<Return>"
 
+# Presentyation keymaps
+map [presentation] j scroll full-down
+map [presentation] k scroll full-up
+map [presentation] g scroll top
+map [presentation] G scroll bottom
+
 # Backward search for tex editing
 set synctex true
 set synctex-editor-command "texlab inverse-search -i %{input} -l %{line}"
