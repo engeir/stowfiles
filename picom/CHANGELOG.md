@@ -5,6 +5,7 @@
 
 ### Miscellaneous
 
+* **main:** release picom 1.15.3 ([#112](https://github.com/engeir/stowfiles/issues/112)) ([913aeae](https://github.com/engeir/stowfiles/commit/913aeaed2d48141469eadc647455672786b84e50))
 * **picom:** 100% opacity on Figure windows of matplotlib ([d528abd](https://github.com/engeir/stowfiles/commit/d528abd57f2dd2fb4eea3fef6a3553edde968cbd))
 
 ## 1.15.2 (2024-08-11)
