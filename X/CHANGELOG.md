@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.15.5](https://github.com/engeir/stowfiles/compare/X-v1.15.4...X-v1.15.5) (2024-08-21)
+
+
+### Miscellaneous
+
+* **X:** try auto lock screen ([44733f2](https://github.com/engeir/stowfiles/commit/44733f289f17575fb67cc9d513ece664ddf4ba46))
+
 ## [1.15.4](https://github.com/engeir/stowfiles/compare/X-v1.15.3...X-v1.15.4) (2024-08-11)
 
 
