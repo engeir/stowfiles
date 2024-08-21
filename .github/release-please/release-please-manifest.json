@@ -5,7 +5,7 @@
   "alacritty_mac": "1.15.3",
   "android": "1.15.3",
   "bin": "1.15.5",
-  "bspwm": "1.16.2",
+  "bspwm": "1.17.0",
   "bun": "1.15.3",
   "calcurse": "1.15.3",
   "compton": "1.15.3",
@@ -52,6 +52,6 @@
   "zellij": "1.15.3",
   "zsh": "1.15.3",
   "zsh_mac": "1.17.1",
-  "picom": "1.15.2",
+  "picom": "1.15.3",
   "alacritty_arch": "1.15.2"
 }
