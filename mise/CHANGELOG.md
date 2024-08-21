@@ -1,5 +1,21 @@
 # Changelog
 
+## [1.17.2](https://github.com/engeir/stowfiles/compare/mise-v1.17.1...mise-v1.17.2) (2024-08-21)
+
+
+### Miscellaneous
+
+* **main:** release mise 1.17.1 ([#114](https://github.com/engeir/stowfiles/issues/114)) ([8af2ac3](https://github.com/engeir/stowfiles/commit/8af2ac351f5685354f379124f20b08fe22f04cd2))
+
+## [1.17.1](https://github.com/engeir/stowfiles/compare/mise-v1.17.0...mise-v1.17.1) (2024-08-21)
+
+
+### Miscellaneous
+
+* **fzf:** accept mouse control and don't set preview window settings ([a8b1af2](https://github.com/engeir/stowfiles/commit/a8b1af2c020aec56c643dcf52ec1a4a122caead4))
+* **main:** release mise 1.17.1 ([#101](https://github.com/engeir/stowfiles/issues/101)) ([c49c74a](https://github.com/engeir/stowfiles/commit/c49c74aaf922df1bd2822a14b399ed31ecdb70a1))
+* **mise,software:** add sshs and shiroa ([9d3a3e6](https://github.com/engeir/stowfiles/commit/9d3a3e69534ec354aff8511565d5ed83e8ff5476))
+
 ## [1.17.0](https://github.com/engeir/stowfiles/compare/mise-v1.16.1...mise-v1.17.0) (2024-08-11)
 
 

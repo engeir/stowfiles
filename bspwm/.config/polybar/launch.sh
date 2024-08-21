@@ -14,6 +14,11 @@ pkill -f 'hideIt.sh'
 
 # Wait until the processes have been shut down
 while pgrep -u "$UID" -x polybar >/dev/null; do sleep 1; done
+SOUND="$HOME/.config/polybar/modules/sound-$(hostnamectl --static).ini"
+export SOUND
+# For Polybar
+DEFAULT_NETWORK_INTERFACE=$(ip route | grep '^default' | awk '{print $5}' | head -n1)
+export DEFAULT_NETWORK_INTERFACE
 
 # Launch Polybar
 polybar top &

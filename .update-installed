@@ -47,17 +47,17 @@ run_updates() {
     echo_and_run mise self-update -y
     echo_and_run mise up -y
     echo_and_run mise prune -y
-    echo_and_run python3 -m pip install --user --upgrade pipx
-    echo_and_run pipx upgrade-all
+    echo_and_run uv self update
+    echo_and_run uv tool upgrade --all
     echo_and_run tlmgr update --all
     echo_and_run gup update
     # Single programs ------------------------------------------------------------------
     echo_and_run bob update --all
     echo_and_run bun upgrade
     echo_and_run dprint config --config ~/.config/dprint/dprint.jsonc update --yes
-    # Only update poetry from itself if it was install via script, otherwise pipx does
+    # Only update poetry from itself if it was install via script, otherwise uv does
     # it.
-    grep -iq poetry <(pipx list) || echo_and_run poetry self update
+    grep -iq poetry <(uv tool list) || echo_and_run poetry self update
     echo_and_run pyenv update
     echo_and_run sudo rclone selfupdate
     echo_and_run rye self update
@@ -114,7 +114,7 @@ if [ "Mac" = "$machine" ]; then
     # leaves` to get a list of top-level packages installed by brew (not dependencies)
     BREW="$(brew list --versions)"
     CARGO="$(cargo install --list)"
-    PIPX="$(pipx list | sed '1,2d' | sed 's/^   //')"
+    UV="$(uv tool list | sed 's/- .*//' | sed '/^$/d')"
     GO="$(cat ~/.default-go-packages)"
     TEX="$(tlmgr list --only-installed)"
     MISE="$(mise ls)"
@@ -138,10 +138,10 @@ $MISE
 $CARGO
 \`\`\`
 
-## Pipx
+## Uv
 
-\`\`\`txt {pipx}
-$PIPX
+\`\`\`txt {uv}
+$UV
 \`\`\`
 
 ## Go
@@ -169,7 +169,7 @@ if [ "Linux" = "$machine" ]; then
     # Thanks to https://stackoverflow.com/a/18000433, formatting is removed
     PACSTALL="$(pacstall -L | xargs -L 1 pacstall -Ci 2>/dev/null | grep -E 'name|version' | paste -d ' ' - - | sed -r "s/\x1B\[([0-9]{1,3}(;[0-9]{1,2};?)?)?[mGK]//g")"
     CARGO="$(cargo install --list)"
-    PIPX="$(pipx list | sed '1,2d' | sed 's/^\s\s\s//')"
+    UV="$(uv tool list | sed 's/- .*//' | sed '/^$/d')"
     GO="$(cat ~/.default-go-packages)"
     TEX="$(tlmgr list --only-installed)"
     FLAT="$(paste <(
@@ -210,10 +210,10 @@ $MISE
 $CARGO
 \`\`\`
 
-## Pipx
+## Uv
 
-\`\`\`txt {pipx}
-$PIPX
+\`\`\`txt {uv}
+$UV
 \`\`\`
 
 ## Go

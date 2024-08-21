@@ -528,7 +528,7 @@ gftp 2.9.1~beta-1 [Ubuntu/jammy universe]
 gftp-common 2.9.1~beta-1 [Ubuntu/jammy universe]
 gftp-gtk 2.9.1~beta-1 [Ubuntu/jammy universe]
 gftp-text 2.9.1~beta-1 [Ubuntu/jammy universe]
-gh 2.54.0 [gh/stable main]
+gh 2.54.0 [local]
 ghc 8.8.4-3 [Ubuntu/jammy universe]
 ghc-prof 8.8.4-3 [Ubuntu/jammy universe]
 ghostscript 9.55.0~dfsg1-0ubuntu5.9 [Ubuntu/jammy main]
@@ -3253,8 +3253,8 @@ links 2.25-1build1 [Ubuntu/jammy universe]
 lintian 2.114.0ubuntu1.4 [Ubuntu/jammy main]
 linux-base 4.5ubuntu9 [Ubuntu/jammy main]
 linux-firmware 20220329.git681281e4-0ubuntu3.31 [Ubuntu/jammy main]
-linux-generic 5.15.0.118.118 [Ubuntu/jammy main]
-linux-generic-hwe-20.04 5.15.0.118.118 [Ubuntu/jammy main]
+linux-generic 5.15.0.118.118 [local]
+linux-generic-hwe-20.04 5.15.0.118.118 [local]
 linux-generic-hwe-22.04 6.8.0-40.40~22.04.3 [Ubuntu/jammy main]
 linux-headers-5.15.0-118 5.15.0-118.128 [Ubuntu/jammy main]
 linux-headers-5.15.0-118-generic 5.15.0-118.128 [Ubuntu/jammy main]
@@ -3262,7 +3262,7 @@ linux-headers-5.19.0-50-generic 5.19.0-50.50 [Ubuntu/jammy main]
 linux-headers-6.2.0-39-generic 6.2.0-39.40~22.04.1 [Ubuntu/jammy main]
 linux-headers-6.5.0-45-generic 6.5.0-45.45~22.04.1 [Ubuntu/jammy main]
 linux-headers-6.8.0-40-generic 6.8.0-40.40~22.04.3 [Ubuntu/jammy main]
-linux-headers-generic 5.15.0.118.118 [Ubuntu/jammy main]
+linux-headers-generic 5.15.0.118.118 [local]
 linux-headers-generic-hwe-22.04 6.8.0-40.40~22.04.3 [Ubuntu/jammy main]
 linux-hwe-5.19-headers-5.19.0-50 5.19.0-50.50 [Ubuntu/jammy main]
 linux-hwe-6.2-headers-6.2.0-39 6.2.0-39.40~22.04.1 [Ubuntu/jammy main]
@@ -3274,9 +3274,9 @@ linux-image-5.19.0-50-generic 5.19.0-50.50 [Ubuntu/jammy main]
 linux-image-6.2.0-39-generic 6.2.0-39.40~22.04.1 [Ubuntu/jammy main]
 linux-image-6.5.0-45-generic 6.5.0-45.45~22.04.1 [Ubuntu/jammy main]
 linux-image-6.8.0-40-generic 6.8.0-40.40~22.04.3 [Ubuntu/jammy main]
-linux-image-generic 5.15.0.118.118 [Ubuntu/jammy main]
+linux-image-generic 5.15.0.118.118 [local]
 linux-image-generic-hwe-22.04 6.8.0-40.40~22.04.3 [Ubuntu/jammy main]
-linux-libc-dev 5.15.0-118.128 [Ubuntu/jammy main]
+linux-libc-dev 5.15.0-118.128 [local]
 linux-modules-5.15.0-118-generic 5.15.0-118.128 [Ubuntu/jammy main]
 linux-modules-5.19.0-50-generic 5.19.0-50.50 [Ubuntu/jammy main]
 linux-modules-6.2.0-39-generic 6.2.0-39.40~22.04.1 [Ubuntu/jammy main]
@@ -3518,7 +3518,7 @@ policykit-1 0.105-33 [Ubuntu/jammy main]
 policykit-1-gnome 0.105-7ubuntu3 [Ubuntu/jammy universe]
 policykit-desktop-privileges 0.21 [Ubuntu/jammy main]
 polkitd 0.105-33 [Ubuntu/jammy main]
-polybar 3.5.7-1build1 [Ubuntu/jammy universe]
+polybar 3.7.1-pacstall1 [local]
 poppler-data 0.4.11-1 [Ubuntu/jammy main]
 poppler-utils 22.02.0-2ubuntu0.5 [Ubuntu/jammy main]
 potrace 1.16-2 [Ubuntu/jammy universe]
@@ -4349,6 +4349,7 @@ name: btop version: 1.3.2-pacstall1
 name: htop version: 3.2.2-pacstall1
 name: nala version: 0.15.3
 name: neofetch version: 7.1.0-pacstall1
+name: polybar version: 3.7.1-pacstall1
 name: quarto version: 1.3.450
 name: shfmt version: 3.7.0-pacstall1
 name: signal-desktop version: 7.20.1
@@ -4379,6 +4380,7 @@ python                      3.8.19           ~/.config/mise/config.toml sub-0.4:
 python                      3.9.19           ~/.config/mise/config.toml sub-0.3:latest
 python                      3.10.14          ~/.config/mise/config.toml sub-0.2:latest
 python                      3.11.9           ~/.config/mise/config.toml sub-0.1:latest
+python                      3.12.4                                                    
 python                      3.12.5           ~/.config/mise/config.toml latest        
 tinytex                     2024.07.03       ~/.config/mise/config.toml latest        
 ubi:Enter-tainer/typstyle   v0.11.31         ~/.config/mise/config.toml latest        
@@ -4553,127 +4555,40 @@ zellij v0.40.1:
     zellij
 ```
 
-## Pipx
+## Uv
 
-```txt {pipx}
-manual pages are exposed at /home/een023/.local/share/man
-package ansible-core 2.17.3, installed using Python 3.12.5
- - ansible
- - ansible-config
- - ansible-connection
- - ansible-console
- - ansible-doc
- - ansible-galaxy
- - ansible-inventory
- - ansible-playbook
- - ansible-pull
- - ansible-test
- - ansible-vault
-package beautysh 6.2.1, installed using Python 3.12.5
- - beautysh
-package bibfish 0.3.2, installed using Python 3.12.5
- - bibfish
-package black 24.8.0, installed using Python 3.12.5
- - black
- - black-primer
- - blackd
-package daltonlens 0.1.5, installed using Python 3.12.5
- - daltonlens-python
-package ds-format 4.1.1, installed using Python 3.12.5
- - ds
- - man1/ds-attrs.1
- - man1/ds-cat.1
- - man1/ds-dims.1
- - man1/ds-get.1
- - man1/ds-ls.1
- - man1/ds-merge.1
- - man1/ds-meta.1
- - man1/ds-rename.1
- - man1/ds-rename_attr.1
- - man1/ds-rename_dim.1
- - man1/ds-rm.1
- - man1/ds-rm_attr.1
- - man1/ds-select.1
- - man1/ds-set.1
- - man1/ds-set_attrs.1
- - man1/ds-set_dims.1
- - man1/ds-size.1
- - man1/ds-stats.1
- - man1/ds-type.1
- - man1/ds-write.1
- - man1/ds.1
-package euporie 2.8.2, installed using Python 3.12.5
- - euporie
- - euporie-console
- - euporie-hub
- - euporie-notebook
- - euporie-preview
-package flake8 7.1.1, installed using Python 3.12.5
- - flake8
-package fonttools 4.53.1, installed using Python 3.12.5
- - fonttools
- - pyftmerge
- - pyftsubset
- - ttx
- - man1/ttx.1
-package globus-cli 3.30.0, installed using Python 3.12.5
- - globus
-package gorps 0.9.1, installed using Python 3.12.5
- - gorps
-package httpie 3.2.3, installed using Python 3.12.5
- - http
- - httpie
- - https
- - man1/http.1
- - man1/httpie.1
- - man1/https.1
-package huge 0.1.3, installed using Python 3.12.5
- - huge
-package icloudpd 1.23.0, installed using Python 3.12.5
- - icloud
- - icloudpd
-package jupyter-client 8.6.2, installed using Python 3.12.5
- - jupyter-kernel
- - jupyter-kernelspec
- - jupyter-run
-package khal 0.11.3, installed using Python 3.12.5
- - ikhal
- - khal
-package mypy 1.11.1, installed using Python 3.12.5
- - dmypy
- - mypy
- - mypyc
- - stubgen
- - stubtest
-package nox 2024.4.15, installed using Python 3.12.5
- - nox
- - tox-to-nox
-package npzviewer 0.2.0, installed using Python 3.12.5
- - npzviewer
-package pandoc-eqnos 2.5.0, installed using Python 3.12.5
- - pandoc-eqnos
-package pandoc-include 1.4.0, installed using Python 3.12.5
- - pandoc-include
-package pdfcropmargins 2.1.4, installed using Python 3.12.5
- - pdf-crop-margins
- - pdfcropmargins
-package poetry 1.8.3, installed using Python 3.12.5
- - poetry
-package pre-commit 3.8.0, installed using Python 3.12.5
- - pre-commit
- - pre-commit-validate-config
- - pre-commit-validate-manifest
-package rich-cli 1.8.0, installed using Python 3.12.5
- - rich
-package rich-codex 1.2.7, installed using Python 3.12.5
- - rich-codex
-package rofimoji 6.3.2, installed using Python 3.12.5
- - rofimoji
-package tuiview 0.1.1, installed using Python 3.12.5
- - tuiview
- - tv
-package wtpython 0.1.0, installed using Python 3.12.5
- - wtpython
+```txt {uv}
+ansible-core v2.17.3
+beautysh v6.2.1
+bibfish v0.3.2
+daltonlens v0.1.5
+ds-format v4.1.1
+euporie v2.8.2
+flake8 v7.1.1
+fonttools v4.53.1
+globus-cli v3.30.1
+gorps v0.9.1
+httpie v3.2.3
+huge v0.1.3
+icloudpd v1.23.0
+jupyter-client v8.6.2
+khal v0.11.3
+mypy v1.11.1
+ncdump-rich v0.5.2
+nox v2024.4.15
+npzviewer v0.2.0
+pandoc-eqnos v2.5.0
+pandoc-include v1.4.0
+pdfcropmargins v2.1.4
+poetry v1.8.3
+pre-commit v3.8.0
+rich-cli v1.8.0
+rich-codex v1.2.7
+rofimoji v6.3.2
+toml-cli v0.7.0
+tuiview v0.1.1
+wtpython v0.1
+yt-dlp v2024.8.6
 ```
 
 ## Go
@@ -4861,6 +4776,8 @@ i latex-bin.x86_64-linux: x86_64-linux files of latex-bin
 i latex-fonts: A collection of fonts used in LaTeX distributions
 i latex-tools-dev: Development pre-release of the LaTeX tools bundle
 i latexconfig: configuration files for LaTeX-related formats
+i latexdiff: Determine and mark up significant differences between LaTeX files
+i latexdiff.x86_64-linux: x86_64-linux files of latexdiff
 i latexindent: Indent a LaTeX document, highlighting the programming structure
 i latexindent.x86_64-linux: x86_64-linux files of latexindent
 i latexmk: Fully automated LaTeX document generation

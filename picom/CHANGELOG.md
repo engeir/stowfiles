@@ -1,5 +1,20 @@
 # Changelog
 
+## [1.15.4](https://github.com/engeir/stowfiles/compare/picom-v1.15.3...picom-v1.15.4) (2024-08-21)
+
+
+### Miscellaneous
+
+* **main:** release picom 1.15.3 ([#113](https://github.com/engeir/stowfiles/issues/113)) ([b2f8001](https://github.com/engeir/stowfiles/commit/b2f800184798879f5ee305cb60f78c2358da231e))
+
+## [1.15.3](https://github.com/engeir/stowfiles/compare/picom-v1.15.2...picom-v1.15.3) (2024-08-21)
+
+
+### Miscellaneous
+
+* **main:** release picom 1.15.3 ([#112](https://github.com/engeir/stowfiles/issues/112)) ([913aeae](https://github.com/engeir/stowfiles/commit/913aeaed2d48141469eadc647455672786b84e50))
+* **picom:** 100% opacity on Figure windows of matplotlib ([d528abd](https://github.com/engeir/stowfiles/commit/d528abd57f2dd2fb4eea3fef6a3553edde968cbd))
+
 ## 1.15.2 (2024-08-11)
 
 

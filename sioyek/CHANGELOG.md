@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.15.4](https://github.com/engeir/stowfiles/compare/sioyek-v1.15.3...sioyek-v1.15.4) (2024-08-21)
+
+
+### Styles
+
+* **sioyek:** set nicer colours for status bar and update font ([b362720](https://github.com/engeir/stowfiles/commit/b362720e22ae43c6468cfaaf99a038fd7396fff6))
+
 ## [1.15.3](https://github.com/engeir/stowfiles/compare/sioyek-v1.15.2...sioyek-v1.15.3) (2024-06-19)
 
 

@@ -1,4 +1,10 @@
-#!/home/eirikre/.config/polybar/scripts/music/.venv/bin/python
+# /// script
+# requires-python = ">=3.12"
+# dependencies = [
+#   "dbus-python>=1.3.2",
+#   "pygobject>=3.48.2",
+# ]
+# ///
 
 import sys
 import dbus
