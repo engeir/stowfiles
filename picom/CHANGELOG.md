@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.15.3](https://github.com/engeir/stowfiles/compare/picom-v1.15.2...picom-v1.15.3) (2024-08-21)
+
+
+### Miscellaneous
+
+* **picom:** 100% opacity on Figure windows of matplotlib ([d528abd](https://github.com/engeir/stowfiles/commit/d528abd57f2dd2fb4eea3fef6a3553edde968cbd))
+
 ## 1.15.2 (2024-08-11)
 
 
