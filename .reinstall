@@ -5,7 +5,7 @@ usage() {
     echo "Supported package managers:"
     echo "  tlmgr"
     echo "  cargo"
-    echo "  pipx"
+    echo "  uv"
     echo "  apt"
     echo "  pacstall"
     echo "  go"
@@ -27,14 +27,19 @@ case "$1" in
         }
         ;;
     "cargo") ;;
-    "pipx") ;;
+    "uv")
+        run-installer() {
+            uv-install
+        }
+        ;;
     "apt") ;;
     "pacstall") ;;
     "go") ;;
     "flatpak") ;;
     "snap") ;;
     *)
-        exit 0
+        echo "$1 is not a valid package manager"
+        exit 1
         ;;
 esac
 unameOut="$(uname -s)"
@@ -59,6 +64,19 @@ tlmgr-install() {
         package="$(echo "$line" | awk '{print $2}' | sed 's/://')"
         echo "Installing $package"
         tlmgr install "$package"
+    done <<<"$not_installed"
+}
+uv-install() {
+    # present="$(uv tool list | sed 's/- .*//' | sed '/^$/d' | sed 's/\s.*//')"
+    present="$(uv tool list | sed 's/- .*//' | sed '/^$/d')"
+    not_installed="$(diff <(echo "$list") <(echo "$present") | grep -E '^<' | sed 's/^< //')"
+    # Check if list is empty
+    [[ -z $not_installed ]] && exit 0
+    # Loop over each line of the list
+    while IFS= read -r line; do
+        package="$(echo "$line" | awk '{print $1}' | sed 's/://')"
+        echo "Installing $package"
+        uv tool install "$package"
     done <<<"$not_installed"
 }
 run-installer
