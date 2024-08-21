@@ -6,7 +6,7 @@
 # https://gitlab.com/protesilaos/dotfiles/-/tree/4363c3bf0b8e9c1dc10f1344993277cc7eaca178
 #
 
-## Environtment
+## Environment
 export PATH="${PATH}:$HOME/.config/bspwm/bin"
 
 ## Get colors from .Xresources -------------------------------#
@@ -32,12 +32,12 @@ if [ "$(bspc query -M | wc -l)" -eq "3" ]; then
     bspc monitor "$(bspc query -M | sed -n 2p)" -d 4 5 6
     bspc monitor "$(bspc query -M | sed -n 3p)" -d 7 8 9 0
 elif [ "$(bspc query -M | wc -l)" -eq "2" ]; then
-    bspc monitor eDP-1 -d 1
+    bspc monitor eDP-1 -d 1 2 3
     if [ "$(bspc query -M --names | sed -n 1p)" = "eDP-1" ]; then
-        bspc monitor "$(bspc query -M --names | sed -n 2p)" -d 2 3 4 5 6 7 8 9 0
+        bspc monitor "$(bspc query -M --names | sed -n 2p)" -d 4 5 6 7 8 9 0
     else
         bspc monitor ^2 -s ^1
-        bspc monitor "$(bspc query -M --names | sed -n 2p)" -d 2 3 4 5 6 7 8 9 0
+        bspc monitor "$(bspc query -M --names | sed -n 2p)" -d 4 5 6 7 8 9 0
     fi
 else
     bspc monitor eDP-1 -d 1 2 3 4 5 6 7 8 9 0

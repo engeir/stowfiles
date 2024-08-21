@@ -1,4 +1,4 @@
-#!/home/eirikre/.config/polybar/scripts/music/.venv/bin/python
+#!/usr/bin/env PATH=/home/eirikre/.config/polybar/scripts/music/.venv/bin:/home/een023/.config/polybar/scripts/music/.venv/bin python
 
 import sys
 import dbus
