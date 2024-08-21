@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.15.4](https://github.com/engeir/stowfiles/compare/picom-v1.15.3...picom-v1.15.4) (2024-08-21)
+
+
+### Miscellaneous
+
+* **main:** release picom 1.15.3 ([#113](https://github.com/engeir/stowfiles/issues/113)) ([b2f8001](https://github.com/engeir/stowfiles/commit/b2f800184798879f5ee305cb60f78c2358da231e))
+
 ## [1.15.3](https://github.com/engeir/stowfiles/compare/picom-v1.15.2...picom-v1.15.3) (2024-08-21)
 
 
