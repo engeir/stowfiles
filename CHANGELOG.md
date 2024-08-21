@@ -1,5 +1,62 @@
 # Changelog
 
+## [1.19.0](https://github.com/engeir/stowfiles/compare/stowfiles-v1.18.1...stowfiles-v1.19.0) (2024-08-21)
+
+
+### Features
+
+* **bspwm:** add rules for where certain programs should open ([c6dfc27](https://github.com/engeir/stowfiles/commit/c6dfc27d6a8db13d07ea58e0bb7e74974c5ccaf6))
+* **bspwm:** fix dynamic monitor swap and re-set polybar ([794c111](https://github.com/engeir/stowfiles/commit/794c111a2dcebb6750c759e0433d8c63e753a79d))
+* **polybar:** improved machine generalisation ([6061fe9](https://github.com/engeir/stowfiles/commit/6061fe9f73f271e2e9fea0e16e649d08f92a572b))
+* **polybar:** use uv to run a script with dependencies ([2a96b49](https://github.com/engeir/stowfiles/commit/2a96b496ceb741bfafd0d34da886f78b8f7843f3))
+* **software:** move from pipx to uv ([15e05f5](https://github.com/engeir/stowfiles/commit/15e05f54e46754111c3764f7df9707897ad5eaf5))
+* **zathura:** add keymaps to the presentation mode ([2858acc](https://github.com/engeir/stowfiles/commit/2858accba15368ac63bc5565c19980a70f3269b2))
+
+
+### Bug Fixes
+
+* **bin:** find wallpapers in $HOME ([36b9a29](https://github.com/engeir/stowfiles/commit/36b9a29e239a076fa2db90132b1dea15fe31fce6))
+* **bin:** make toggle wallpaper to black work also on linux ([256ee3f](https://github.com/engeir/stowfiles/commit/256ee3fbc54ead6d69d2eda1211dd0883c7e43b1))
+* **bspwm:** use $HOME, not hard coded path ([855655a](https://github.com/engeir/stowfiles/commit/855655a38ae77db1f19c0f356d94ef653e1dd0ad))
+
+
+### Miscellaneous
+
+* **bin:** use aerial-views wallpaper store ([fffcb7a](https://github.com/engeir/stowfiles/commit/fffcb7ae560be93b7d346c7a36f2d3aca9c27179))
+* **fzf:** accept mouse control and don't set preview window settings ([a8b1af2](https://github.com/engeir/stowfiles/commit/a8b1af2c020aec56c643dcf52ec1a4a122caead4))
+* **main:** release bin 1.15.5 ([#104](https://github.com/engeir/stowfiles/issues/104)) ([402080e](https://github.com/engeir/stowfiles/commit/402080e75a7d67cc331643f06ee5fae8e109f603))
+* **main:** release bspwm 1.17.0 ([#105](https://github.com/engeir/stowfiles/issues/105)) ([f5297f0](https://github.com/engeir/stowfiles/commit/f5297f093b1a90ec0d33c8a03d1c33a501afff3d))
+* **main:** release dprint 1.15.6 ([#107](https://github.com/engeir/stowfiles/issues/107)) ([c7aef97](https://github.com/engeir/stowfiles/commit/c7aef97e8d89050ffc4f204c4568dad35e143605))
+* **main:** release fish 1.16.3 ([#108](https://github.com/engeir/stowfiles/issues/108)) ([b608f2b](https://github.com/engeir/stowfiles/commit/b608f2b1682336443fad36a571b6358f571fffbc))
+* **main:** release mise 1.17.1 ([#101](https://github.com/engeir/stowfiles/issues/101)) ([c49c74a](https://github.com/engeir/stowfiles/commit/c49c74aaf922df1bd2822a14b399ed31ecdb70a1))
+* **main:** release mise 1.17.1 ([#114](https://github.com/engeir/stowfiles/issues/114)) ([8af2ac3](https://github.com/engeir/stowfiles/commit/8af2ac351f5685354f379124f20b08fe22f04cd2))
+* **main:** release mise 1.17.2 ([#115](https://github.com/engeir/stowfiles/issues/115)) ([8d6d5a1](https://github.com/engeir/stowfiles/commit/8d6d5a102b41cc6fc3b27d08250e959cf8fb7d5f))
+* **main:** release picom 1.15.3 ([#112](https://github.com/engeir/stowfiles/issues/112)) ([913aeae](https://github.com/engeir/stowfiles/commit/913aeaed2d48141469eadc647455672786b84e50))
+* **main:** release picom 1.15.3 ([#113](https://github.com/engeir/stowfiles/issues/113)) ([b2f8001](https://github.com/engeir/stowfiles/commit/b2f800184798879f5ee305cb60f78c2358da231e))
+* **main:** release picom 1.15.4 ([#116](https://github.com/engeir/stowfiles/issues/116)) ([7372932](https://github.com/engeir/stowfiles/commit/7372932d7fc6da6520440128710315e490e15cad))
+* **main:** release sioyek 1.15.4 ([#106](https://github.com/engeir/stowfiles/issues/106)) ([eeb5f15](https://github.com/engeir/stowfiles/commit/eeb5f153b7b9e43d3c19f49f5a997e368bdd3cd8))
+* **main:** release tmux 1.16.1 ([#111](https://github.com/engeir/stowfiles/issues/111)) ([7ae9dfb](https://github.com/engeir/stowfiles/commit/7ae9dfbba446cf05d1379d79bb77b8712eed9d57))
+* **main:** release X 1.15.5 ([#110](https://github.com/engeir/stowfiles/issues/110)) ([8acb2de](https://github.com/engeir/stowfiles/commit/8acb2dea2703d0c644dbc5cedde90d856bd70788))
+* **main:** release zathura 1.16.0 ([#109](https://github.com/engeir/stowfiles/issues/109)) ([f012b63](https://github.com/engeir/stowfiles/commit/f012b63b5d9a080a6ff6f87f875049d8435ad863))
+* **mise,software:** add sshs and shiroa ([9d3a3e6](https://github.com/engeir/stowfiles/commit/9d3a3e69534ec354aff8511565d5ed83e8ff5476))
+* **nvim:** create Flameshot cutom command ([67b031e](https://github.com/engeir/stowfiles/commit/67b031ee1e30ff1c421e5533511203fa0e6fa33a))
+* **nvim:** use image.nvim also on my arch system ([3e09555](https://github.com/engeir/stowfiles/commit/3e095551d96d6a542351d634484c60216e732187))
+* **picom:** 100% opacity on Figure windows of matplotlib ([d528abd](https://github.com/engeir/stowfiles/commit/d528abd57f2dd2fb4eea3fef6a3553edde968cbd))
+* **polybar:** remove resource intensive music module ([e3df5c0](https://github.com/engeir/stowfiles/commit/e3df5c0cb9a94eab715283339ffb410f7c58fe29))
+* remove slash ([0389c4f](https://github.com/engeir/stowfiles/commit/0389c4fea75d7a63854c0a0f12b938256fb89586))
+* **software:** update installed ([285a2fa](https://github.com/engeir/stowfiles/commit/285a2fae8483e5ad4de85978be75e87858c99f37))
+* **tmux:** bootstrap TPM ([b843841](https://github.com/engeir/stowfiles/commit/b8438413d87474f7ba3afede3b44b958b7569ab0))
+* **X:** try auto lock screen ([44733f2](https://github.com/engeir/stowfiles/commit/44733f289f17575fb67cc9d513ece664ddf4ba46))
+* **zathura:** update font ([d27e52b](https://github.com/engeir/stowfiles/commit/d27e52b5dd56246d9a2f1e5e6af565cb7a04e7ed))
+* **zsh:** source keychain based on hostname ([5d6c01e](https://github.com/engeir/stowfiles/commit/5d6c01e8913a4246537b4cdb67c1be0014442c6e))
+* **zsh:** use batman over man ([c020c43](https://github.com/engeir/stowfiles/commit/c020c4318cf99ba0afc94b8450a461b7a17bba7c))
+
+
+### Styles
+
+* **bspwm:** format with dprint ([d5f441d](https://github.com/engeir/stowfiles/commit/d5f441d383508b1ab8537e7c10d7470bc8ef9e52))
+* **sioyek:** set nicer colours for status bar and update font ([b362720](https://github.com/engeir/stowfiles/commit/b362720e22ae43c6468cfaaf99a038fd7396fff6))
+
 ## [1.18.1](https://github.com/engeir/stowfiles/compare/stowfiles-v1.18.0...stowfiles-v1.18.1) (2024-08-12)
 
 
