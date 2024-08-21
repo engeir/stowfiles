@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.17.2](https://github.com/engeir/stowfiles/compare/mise-v1.17.1...mise-v1.17.2) (2024-08-21)
+
+
+### Miscellaneous
+
+* **main:** release mise 1.17.1 ([#114](https://github.com/engeir/stowfiles/issues/114)) ([8af2ac3](https://github.com/engeir/stowfiles/commit/8af2ac351f5685354f379124f20b08fe22f04cd2))
+
 ## [1.17.1](https://github.com/engeir/stowfiles/compare/mise-v1.17.0...mise-v1.17.1) (2024-08-21)
 
 
