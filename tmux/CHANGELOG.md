@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.16.1](https://github.com/engeir/stowfiles/compare/tmux-v1.16.0...tmux-v1.16.1) (2024-08-21)
+
+
+### Miscellaneous
+
+* **tmux:** bootstrap TPM ([b843841](https://github.com/engeir/stowfiles/commit/b8438413d87474f7ba3afede3b44b958b7569ab0))
+
 ## [1.16.0](https://github.com/engeir/stowfiles/compare/tmux-v1.15.2...tmux-v1.16.0) (2024-08-11)
 
 
