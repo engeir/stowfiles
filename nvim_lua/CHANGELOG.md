@@ -1,5 +1,22 @@
 # Changelog
 
+## [1.16.1](https://github.com/engeir/stowfiles/compare/nvim-v1.16.0...nvim-v1.16.1) (2024-08-21)
+
+
+### Miscellaneous
+
+* **main:** release bin 1.15.5 ([#104](https://github.com/engeir/stowfiles/issues/104)) ([402080e](https://github.com/engeir/stowfiles/commit/402080e75a7d67cc331643f06ee5fae8e109f603))
+* **main:** release dprint 1.15.6 ([#107](https://github.com/engeir/stowfiles/issues/107)) ([c7aef97](https://github.com/engeir/stowfiles/commit/c7aef97e8d89050ffc4f204c4568dad35e143605))
+* **main:** release fish 1.16.3 ([#108](https://github.com/engeir/stowfiles/issues/108)) ([b608f2b](https://github.com/engeir/stowfiles/commit/b608f2b1682336443fad36a571b6358f571fffbc))
+* **main:** release mise 1.17.1 ([#101](https://github.com/engeir/stowfiles/issues/101)) ([c49c74a](https://github.com/engeir/stowfiles/commit/c49c74aaf922df1bd2822a14b399ed31ecdb70a1))
+* **main:** release picom 1.15.3 ([#112](https://github.com/engeir/stowfiles/issues/112)) ([913aeae](https://github.com/engeir/stowfiles/commit/913aeaed2d48141469eadc647455672786b84e50))
+* **main:** release sioyek 1.15.4 ([#106](https://github.com/engeir/stowfiles/issues/106)) ([eeb5f15](https://github.com/engeir/stowfiles/commit/eeb5f153b7b9e43d3c19f49f5a997e368bdd3cd8))
+* **main:** release tmux 1.16.1 ([#111](https://github.com/engeir/stowfiles/issues/111)) ([7ae9dfb](https://github.com/engeir/stowfiles/commit/7ae9dfbba446cf05d1379d79bb77b8712eed9d57))
+* **main:** release X 1.15.5 ([#110](https://github.com/engeir/stowfiles/issues/110)) ([8acb2de](https://github.com/engeir/stowfiles/commit/8acb2dea2703d0c644dbc5cedde90d856bd70788))
+* **main:** release zathura 1.16.0 ([#109](https://github.com/engeir/stowfiles/issues/109)) ([f012b63](https://github.com/engeir/stowfiles/commit/f012b63b5d9a080a6ff6f87f875049d8435ad863))
+* **nvim:** create Flameshot cutom command ([67b031e](https://github.com/engeir/stowfiles/commit/67b031ee1e30ff1c421e5533511203fa0e6fa33a))
+* **nvim:** use image.nvim also on my arch system ([3e09555](https://github.com/engeir/stowfiles/commit/3e095551d96d6a542351d634484c60216e732187))
+
 ## [1.16.0](https://github.com/engeir/stowfiles/compare/nvim-v1.15.5...nvim-v1.16.0) (2024-08-11)
 
 
