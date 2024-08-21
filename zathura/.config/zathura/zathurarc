@@ -1,6 +1,7 @@
 # Some nice defaults from someone else's config.
 include extra
 
+set font "CaskaydiaMono Nerd Font Mono 12"
 set sandbox none
 
 # Clipboard
