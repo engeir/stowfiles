@@ -1,5 +1,18 @@
 # Changelog
 
+## [1.15.5](https://github.com/engeir/stowfiles/compare/bin-v1.15.4...bin-v1.15.5) (2024-08-21)
+
+
+### Bug Fixes
+
+* **bin:** find wallpapers in $HOME ([36b9a29](https://github.com/engeir/stowfiles/commit/36b9a29e239a076fa2db90132b1dea15fe31fce6))
+* **bin:** make toggle wallpaper to black work also on linux ([256ee3f](https://github.com/engeir/stowfiles/commit/256ee3fbc54ead6d69d2eda1211dd0883c7e43b1))
+
+
+### Miscellaneous
+
+* **bin:** use aerial-views wallpaper store ([fffcb7a](https://github.com/engeir/stowfiles/commit/fffcb7ae560be93b7d346c7a36f2d3aca9c27179))
+
 ## [1.15.4](https://github.com/engeir/stowfiles/compare/bin-v1.15.3...bin-v1.15.4) (2024-08-11)
 
 
