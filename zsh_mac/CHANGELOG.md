@@ -1,5 +1,14 @@
 # Changelog
 
+## [1.17.2](https://github.com/engeir/stowfiles/compare/zsh_mac-v1.17.1...zsh_mac-v1.17.2) (2024-08-21)
+
+
+### Miscellaneous
+
+* remove slash ([0389c4f](https://github.com/engeir/stowfiles/commit/0389c4fea75d7a63854c0a0f12b938256fb89586))
+* **zsh:** source keychain based on hostname ([5d6c01e](https://github.com/engeir/stowfiles/commit/5d6c01e8913a4246537b4cdb67c1be0014442c6e))
+* **zsh:** use batman over man ([c020c43](https://github.com/engeir/stowfiles/commit/c020c4318cf99ba0afc94b8450a461b7a17bba7c))
+
 ## [1.17.1](https://github.com/engeir/stowfiles/compare/zsh_mac-v1.17.0...zsh_mac-v1.17.1) (2024-08-12)
 
 
