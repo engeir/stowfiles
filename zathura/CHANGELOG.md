@@ -1,5 +1,17 @@
 # Changelog
 
+## [1.16.0](https://github.com/engeir/stowfiles/compare/zathura-v1.15.3...zathura-v1.16.0) (2024-08-21)
+
+
+### Features
+
+* **zathura:** add keymaps to the presentation mode ([2858acc](https://github.com/engeir/stowfiles/commit/2858accba15368ac63bc5565c19980a70f3269b2))
+
+
+### Miscellaneous
+
+* **zathura:** update font ([d27e52b](https://github.com/engeir/stowfiles/commit/d27e52b5dd56246d9a2f1e5e6af565cb7a04e7ed))
+
 ## [1.15.3](https://github.com/engeir/stowfiles/compare/zathura-v1.15.2...zathura-v1.15.3) (2024-06-19)
 
 
