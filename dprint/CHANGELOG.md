@@ -5,6 +5,15 @@
 
 ### Miscellaneous
 
+* **main:** release dprint 1.15.7 ([#126](https://github.com/engeir/stowfiles/issues/126)) ([ddf3e76](https://github.com/engeir/stowfiles/commit/ddf3e76bbe12f386a4d01ae91e4083ba1de7b4fa))
+* **main:** release fish 1.16.3 ([#124](https://github.com/engeir/stowfiles/issues/124)) ([5799516](https://github.com/engeir/stowfiles/commit/57995166b1597d7e1fc2387e92309afc0a2b617f))
+* **software:** update installed ([1c0a2af](https://github.com/engeir/stowfiles/commit/1c0a2af1c581fef2c60b537b4c0a30a112e34449))
+
+## [1.15.7](https://github.com/engeir/stowfiles/compare/dprint-v1.15.6...dprint-v1.15.7) (2024-08-22)
+
+
+### Miscellaneous
+
 * **software:** update installed ([1c0a2af](https://github.com/engeir/stowfiles/commit/1c0a2af1c581fef2c60b537b4c0a30a112e34449))
 
 ## [1.15.6](https://github.com/engeir/stowfiles/compare/dprint-v1.15.5...dprint-v1.15.6) (2024-08-21)
