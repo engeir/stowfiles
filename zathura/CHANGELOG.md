@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.16.1](https://github.com/engeir/stowfiles/compare/zathura-v1.16.0...zathura-v1.16.1) (2024-08-22)
+
+
+### Miscellaneous
+
+* **main:** release fish 1.16.3 ([#124](https://github.com/engeir/stowfiles/issues/124)) ([5799516](https://github.com/engeir/stowfiles/commit/57995166b1597d7e1fc2387e92309afc0a2b617f))
+
 ## [1.16.0](https://github.com/engeir/stowfiles/compare/zathura-v1.15.3...zathura-v1.16.0) (2024-08-21)
 
 
