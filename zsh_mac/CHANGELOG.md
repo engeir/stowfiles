@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.17.3](https://github.com/engeir/stowfiles/compare/zsh_mac-v1.17.2...zsh_mac-v1.17.3) (2024-08-22)
+
+
+### Miscellaneous
+
+* **main:** release fish 1.16.3 ([#124](https://github.com/engeir/stowfiles/issues/124)) ([5799516](https://github.com/engeir/stowfiles/commit/57995166b1597d7e1fc2387e92309afc0a2b617f))
+* **zsh:** add uv completion generation to .profile ([24cded7](https://github.com/engeir/stowfiles/commit/24cded7c6055c972dcb03718be57441d01ea5fd9))
+
 ## [1.17.2](https://github.com/engeir/stowfiles/compare/zsh_mac-v1.17.1...zsh_mac-v1.17.2) (2024-08-21)
 
 
