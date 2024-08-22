@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.15.5](https://github.com/engeir/stowfiles/compare/mdl-v1.15.4...mdl-v1.15.5) (2024-08-22)
+
+
+### Miscellaneous
+
+* **main:** release mdl 1.15.4 ([#183](https://github.com/engeir/stowfiles/issues/183)) ([5fb6052](https://github.com/engeir/stowfiles/commit/5fb6052ff0c0a19d4901e121ef4ac1dc06229c83))
+
 ## [1.15.4](https://github.com/engeir/stowfiles/compare/mdl-v1.15.3...mdl-v1.15.4) (2024-08-22)
 
 
