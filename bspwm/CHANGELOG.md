@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.17.4](https://github.com/engeir/stowfiles/compare/bspwm-v1.17.3...bspwm-v1.17.4) (2024-08-22)
+
+
+### Miscellaneous
+
+* **main:** release bspwm 1.17.3 ([#189](https://github.com/engeir/stowfiles/issues/189)) ([76e049c](https://github.com/engeir/stowfiles/commit/76e049c4fa7d126f4f0b5761424b7ba36d62ab59))
+
 ## [1.17.3](https://github.com/engeir/stowfiles/compare/bspwm-v1.17.2...bspwm-v1.17.3) (2024-08-22)
 
 
