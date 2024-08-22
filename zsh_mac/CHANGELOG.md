@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.15.4](https://github.com/engeir/stowfiles/compare/zsh_mac-v1.15.3...zsh_mac-v1.15.4) (2024-08-22)
+
+
+### Miscellaneous
+
+* **main:** release zsh_mac 1.15.2 ([#178](https://github.com/engeir/stowfiles/issues/178)) ([e68e407](https://github.com/engeir/stowfiles/commit/e68e407f10c94053d2937c2a70288b7ea30f944a))
+* **main:** release zsh_mac 1.15.3 ([#206](https://github.com/engeir/stowfiles/issues/206)) ([182410e](https://github.com/engeir/stowfiles/commit/182410ed69107137ab6620e43f5fd3b1dc19b33b))
+
 ## [1.15.3](https://github.com/engeir/stowfiles/compare/zsh_mac-v1.15.2...zsh_mac-v1.15.3) (2024-08-22)
 
 
