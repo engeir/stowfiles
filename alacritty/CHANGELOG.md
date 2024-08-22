@@ -1,5 +1,19 @@
 # Changelog
 
+## [1.16.2](https://github.com/engeir/stowfiles/compare/alacritty-v1.16.1...alacritty-v1.16.2) (2024-08-22)
+
+
+### Miscellaneous
+
+* **main:** release alacritty 1.16.1 ([#179](https://github.com/engeir/stowfiles/issues/179)) ([25eba5a](https://github.com/engeir/stowfiles/commit/25eba5a8bc1ed39cad82d9a612945018860ffdfe))
+
+## [1.16.1](https://github.com/engeir/stowfiles/compare/alacritty-v1.16.0...alacritty-v1.16.1) (2024-08-22)
+
+
+### Miscellaneous
+
+* **main:** release fish 1.16.3 ([#124](https://github.com/engeir/stowfiles/issues/124)) ([5799516](https://github.com/engeir/stowfiles/commit/57995166b1597d7e1fc2387e92309afc0a2b617f))
+
 ## [1.16.0](https://github.com/engeir/stowfiles/compare/alacritty-v1.15.3...alacritty-v1.16.0) (2024-08-11)
 
 

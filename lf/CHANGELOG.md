@@ -1,5 +1,19 @@
 # Changelog
 
+## [1.15.5](https://github.com/engeir/stowfiles/compare/lf-v1.15.4...lf-v1.15.5) (2024-08-22)
+
+
+### Miscellaneous
+
+* **main:** release lf 1.15.4 ([#188](https://github.com/engeir/stowfiles/issues/188)) ([7569fc6](https://github.com/engeir/stowfiles/commit/7569fc6a1ee567042418c030a81798e78f65a4e6))
+
+## [1.15.4](https://github.com/engeir/stowfiles/compare/lf-v1.15.3...lf-v1.15.4) (2024-08-22)
+
+
+### Miscellaneous
+
+* **main:** release fish 1.16.3 ([#124](https://github.com/engeir/stowfiles/issues/124)) ([5799516](https://github.com/engeir/stowfiles/commit/57995166b1597d7e1fc2387e92309afc0a2b617f))
+
 ## [1.15.3](https://github.com/engeir/stowfiles/compare/lf-v1.15.2...lf-v1.15.3) (2024-06-19)
 
 
