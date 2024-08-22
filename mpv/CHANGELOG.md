@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.15.5](https://github.com/engeir/stowfiles/compare/mpv-v1.15.4...mpv-v1.15.5) (2024-08-22)
+
+
+### Miscellaneous
+
+* **main:** release mpv 1.15.4 ([#193](https://github.com/engeir/stowfiles/issues/193)) ([d1c8c4d](https://github.com/engeir/stowfiles/commit/d1c8c4dc12f60d30b95b3688fb9231744133d9db))
+
 ## [1.15.4](https://github.com/engeir/stowfiles/compare/mpv-v1.15.3...mpv-v1.15.4) (2024-08-22)
 
 
