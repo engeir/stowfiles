@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.15.5](https://github.com/engeir/stowfiles/compare/picom-v1.15.4...picom-v1.15.5) (2024-08-22)
+
+
+### Bug Fixes
+
+* **picom:** missing comma in opaticty rule ([2992f64](https://github.com/engeir/stowfiles/commit/2992f64d2c509f7d531d746484f17c3cee078a3e))
+* **picom:** no trailing comma ([9cbcdf0](https://github.com/engeir/stowfiles/commit/9cbcdf012293406349ff6df7e6134d9366896839))
+
 ## [1.15.4](https://github.com/engeir/stowfiles/compare/picom-v1.15.3...picom-v1.15.4) (2024-08-21)
 
 
