@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.15.7](https://github.com/engeir/stowfiles/compare/X-v1.15.6...X-v1.15.7) (2024-08-22)
+
+
+### Miscellaneous
+
+* **main:** release X 1.15.6 ([#180](https://github.com/engeir/stowfiles/issues/180)) ([43a8f79](https://github.com/engeir/stowfiles/commit/43a8f79dd98f9019c7f82cc86465731fe1bf8232))
+
 ## [1.15.6](https://github.com/engeir/stowfiles/compare/X-v1.15.5...X-v1.15.6) (2024-08-22)
 
 
