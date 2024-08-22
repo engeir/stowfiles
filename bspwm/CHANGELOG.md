@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.17.2](https://github.com/engeir/stowfiles/compare/bspwm-v1.17.1...bspwm-v1.17.2) (2024-08-22)
+
+
+### Bug Fixes
+
+* **polybar:** correct name of machine specific file ([c403a01](https://github.com/engeir/stowfiles/commit/c403a01b90f4fa265394cd06140cee21f370b82e))
+
 ## [1.17.1](https://github.com/engeir/stowfiles/compare/bspwm-v1.17.0...bspwm-v1.17.1) (2024-08-21)
 
 
