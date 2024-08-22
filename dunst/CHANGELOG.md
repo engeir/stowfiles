@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.15.6](https://github.com/engeir/stowfiles/compare/dunst-v1.15.5...dunst-v1.15.6) (2024-08-22)
+
+
+### Miscellaneous
+
+* **main:** release dunst 1.15.5 ([#190](https://github.com/engeir/stowfiles/issues/190)) ([ba1ea45](https://github.com/engeir/stowfiles/commit/ba1ea4522b3a3bb7b8614e19b5ea05ca528a2819))
+
 ## [1.15.5](https://github.com/engeir/stowfiles/compare/dunst-v1.15.4...dunst-v1.15.5) (2024-08-22)
 
 
