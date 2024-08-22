@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.15.5](https://github.com/engeir/stowfiles/compare/latexindent-v1.15.4...latexindent-v1.15.5) (2024-08-22)
+
+
+### Miscellaneous
+
+* **main:** release latexindent 1.15.4 ([#181](https://github.com/engeir/stowfiles/issues/181)) ([32ccd13](https://github.com/engeir/stowfiles/commit/32ccd1355828681aa696478f1dd443faa6b19a38))
+
 ## [1.15.4](https://github.com/engeir/stowfiles/compare/latexindent-v1.15.3...latexindent-v1.15.4) (2024-08-22)
 
 
