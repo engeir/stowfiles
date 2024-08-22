@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.15.5](https://github.com/engeir/stowfiles/compare/calcurse-v1.15.4...calcurse-v1.15.5) (2024-08-22)
+
+
+### Miscellaneous
+
+* **main:** release calcurse 1.15.4 ([#182](https://github.com/engeir/stowfiles/issues/182)) ([2c52140](https://github.com/engeir/stowfiles/commit/2c52140ae709f18b3b6f3aff111646063328d430))
+
 ## [1.15.4](https://github.com/engeir/stowfiles/compare/calcurse-v1.15.3...calcurse-v1.15.4) (2024-08-22)
 
 
