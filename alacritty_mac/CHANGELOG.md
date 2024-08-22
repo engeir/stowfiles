@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.15.5](https://github.com/engeir/stowfiles/compare/alacritty_mac-v1.15.4...alacritty_mac-v1.15.5) (2024-08-22)
+
+
+### Miscellaneous
+
+* **main:** release alacritty_mac 1.15.4 ([#184](https://github.com/engeir/stowfiles/issues/184)) ([6743afe](https://github.com/engeir/stowfiles/commit/6743afe2a7f95b6666fa1b053705aae7f8212c99))
+
 ## [1.15.4](https://github.com/engeir/stowfiles/compare/alacritty_mac-v1.15.3...alacritty_mac-v1.15.4) (2024-08-22)
 
 
