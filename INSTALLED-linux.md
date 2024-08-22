@@ -265,7 +265,7 @@ evince 42.3-0ubuntu3.1 [Ubuntu/jammy main]
 evince-common 42.3-0ubuntu3.1 [Ubuntu/jammy main]
 evolution-data-server 3.44.4-0ubuntu1.1 [Ubuntu/jammy main]
 evolution-data-server-common 3.44.4-0ubuntu1.1 [Ubuntu/jammy main]
-exfatprogs 1.1.3-1 [Ubuntu/jammy universe]
+exfatprogs 1.1.3-1ubuntu0.1 [Ubuntu/jammy universe]
 exif 0.6.22-2 [Ubuntu/jammy universe]
 exiv2 0.27.5-3ubuntu1 [Ubuntu/jammy universe]
 exo-utils 4.16.3-1 [Ubuntu/jammy universe]
@@ -528,7 +528,7 @@ gftp 2.9.1~beta-1 [Ubuntu/jammy universe]
 gftp-common 2.9.1~beta-1 [Ubuntu/jammy universe]
 gftp-gtk 2.9.1~beta-1 [Ubuntu/jammy universe]
 gftp-text 2.9.1~beta-1 [Ubuntu/jammy universe]
-gh 2.54.0 [local]
+gh 2.55.0 [gh/stable main]
 ghc 8.8.4-3 [Ubuntu/jammy universe]
 ghc-prof 8.8.4-3 [Ubuntu/jammy universe]
 ghostscript 9.55.0~dfsg1-0ubuntu5.9 [Ubuntu/jammy main]
@@ -3254,7 +3254,7 @@ lintian 2.114.0ubuntu1.4 [Ubuntu/jammy main]
 linux-base 4.5ubuntu9 [Ubuntu/jammy main]
 linux-firmware 20220329.git681281e4-0ubuntu3.31 [Ubuntu/jammy main]
 linux-generic 5.15.0.118.118 [local]
-linux-generic-hwe-20.04 5.15.0.118.118 [local]
+linux-generic-hwe-20.04 5.15.0.119.119 [Ubuntu/jammy main]
 linux-generic-hwe-22.04 6.8.0-40.40~22.04.3 [Ubuntu/jammy main]
 linux-headers-5.15.0-118 5.15.0-118.128 [Ubuntu/jammy main]
 linux-headers-5.15.0-118-generic 5.15.0-118.128 [Ubuntu/jammy main]
@@ -3276,7 +3276,7 @@ linux-image-6.5.0-45-generic 6.5.0-45.45~22.04.1 [Ubuntu/jammy main]
 linux-image-6.8.0-40-generic 6.8.0-40.40~22.04.3 [Ubuntu/jammy main]
 linux-image-generic 5.15.0.118.118 [local]
 linux-image-generic-hwe-22.04 6.8.0-40.40~22.04.3 [Ubuntu/jammy main]
-linux-libc-dev 5.15.0-118.128 [local]
+linux-libc-dev 5.15.0-119.129 [Ubuntu/jammy main]
 linux-modules-5.15.0-118-generic 5.15.0-118.128 [Ubuntu/jammy main]
 linux-modules-5.19.0-50-generic 5.19.0-50.50 [Ubuntu/jammy main]
 linux-modules-6.2.0-39-generic 6.2.0-39.40~22.04.1 [Ubuntu/jammy main]
@@ -3289,7 +3289,7 @@ linux-modules-extra-6.5.0-45-generic 6.5.0-45.45~22.04.1 [Ubuntu/jammy main]
 linux-modules-extra-6.8.0-40-generic 6.8.0-40.40~22.04.3 [Ubuntu/jammy main]
 linux-sound-base 1.0.25+dfsg-0ubuntu7 [Ubuntu/jammy main]
 linux-tools-6.8.0-40-generic 6.8.0-40.40~22.04.3 [Ubuntu/jammy main]
-linux-tools-common 5.15.0-118.128 [Ubuntu/jammy main]
+linux-tools-common 5.15.0-119.129 [Ubuntu/jammy main]
 llvm 1:14.0-55~exp2 [Ubuntu/jammy universe]
 llvm-11 1:11.1.0-6 [Ubuntu/jammy universe]
 llvm-11-dev 1:11.1.0-6 [Ubuntu/jammy universe]
@@ -4007,7 +4007,7 @@ shellcheck 0.8.0-2 [Ubuntu/jammy universe]
 shfmt 3.7.0-pacstall1 [local]
 shfmt-bin 3.4.3-1 [local]
 shim-signed 1.51.3+15.7-0ubuntu1 [Ubuntu/jammy main]
-signal-desktop 7.20.1 [. xenial/xenial main]
+signal-desktop 7.21.0 [. xenial/xenial main]
 signon-plugin-oauth2 0.25-2 [Ubuntu/jammy universe]
 silversearcher-ag 2.2.0+git20200805-1 [Ubuntu/jammy universe]
 simplex-desktop 5.8.0-pacstall1 [local]
@@ -4352,7 +4352,7 @@ name: neofetch version: 7.1.0-pacstall1
 name: polybar version: 3.7.1-pacstall1
 name: quarto version: 1.3.450
 name: shfmt version: 3.7.0-pacstall1
-name: signal-desktop version: 7.20.1
+name: signal-desktop version: 7.21.0
 name: simplex-desktop version: 5.8.0-pacstall1
 name: thorium-browser version: 124.0.6367.218-1
 name: wezterm version: 20230712-072601-f4abf8fd-pacstall1
@@ -4492,11 +4492,11 @@ mdbook-toc v0.14.2:
     mdbook-toc
 menyoki v1.7.0:
     menyoki
-mise v2024.8.11:
+mise v2024.8.12:
     mise
 mprocs v0.7.1:
     mprocs
-nu v0.96.1:
+nu v0.97.1:
     nu
 numbat-cli v1.13.0:
     numbat
@@ -5007,7 +5007,7 @@ core22                     20240419                    1439   latest/stable    c
 dotnet-sdk                 5.0.408                     167    5.0/stable       canonical**    classic
 duf-utility                v0.6.0                      1      latest/stable    muesli         -
 ffsend                     0.2.74                      49     latest/stable    timvisee       -
-firefox                    129.0.1-1                   4757   latest/stable/…  mozilla**      -
+firefox                    129.0.2-1                   4793   latest/stable/…  mozilla**      -
 gimp                       2.10.38                     436    latest/stable    snapcrafters*  -
 gnome-3-28-1804            3.28.0-19-g98f9e67.98f9e67  198    latest/stable    canonical**    -
 gnome-3-34-1804            0+git.3556cb3               93     latest/stable/…  canonical**    -
