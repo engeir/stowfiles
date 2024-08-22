@@ -1,5 +1,14 @@
 # Changelog
 
+## [1.16.4](https://github.com/engeir/stowfiles/compare/fish-v1.16.3...fish-v1.16.4) (2024-08-22)
+
+
+### Miscellaneous
+
+* **fish:** add uv env source ([9ffe5b5](https://github.com/engeir/stowfiles/commit/9ffe5b5399714ba8dfee2fae1467d8d3f422294c))
+* **main:** release fish 1.16.3 ([#118](https://github.com/engeir/stowfiles/issues/118)) ([b5c0fdd](https://github.com/engeir/stowfiles/commit/b5c0fdd6cf4fe66d5181ecc184246d88e1818222))
+* **main:** release fish 1.16.3 ([#119](https://github.com/engeir/stowfiles/issues/119)) ([8f080a3](https://github.com/engeir/stowfiles/commit/8f080a3f94568621f41b3daebd8e9196e46c52cd))
+
 ## [1.16.3](https://github.com/engeir/stowfiles/compare/fish-v1.16.2...fish-v1.16.3) (2024-08-22)
 
 
