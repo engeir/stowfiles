@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.15.5](https://github.com/engeir/stowfiles/compare/newsboat-v1.15.4...newsboat-v1.15.5) (2024-08-22)
+
+
+### Miscellaneous
+
+* **main:** release newsboat 1.15.4 ([#192](https://github.com/engeir/stowfiles/issues/192)) ([ecb90c2](https://github.com/engeir/stowfiles/commit/ecb90c20d28b138366bbb6245dcc0247b8634db0))
+
 ## [1.15.4](https://github.com/engeir/stowfiles/compare/newsboat-v1.15.3...newsboat-v1.15.4) (2024-08-22)
 
 
