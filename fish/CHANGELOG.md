@@ -1,5 +1,14 @@
 # Changelog
 
+## [1.16.3](https://github.com/engeir/stowfiles/compare/fish-v1.16.2...fish-v1.16.3) (2024-08-22)
+
+
+### Miscellaneous
+
+* **main:** release fish 1.16.3 ([#108](https://github.com/engeir/stowfiles/issues/108)) ([b608f2b](https://github.com/engeir/stowfiles/commit/b608f2b1682336443fad36a571b6358f571fffbc))
+* **main:** release fish 1.16.3 ([#118](https://github.com/engeir/stowfiles/issues/118)) ([b5c0fdd](https://github.com/engeir/stowfiles/commit/b5c0fdd6cf4fe66d5181ecc184246d88e1818222))
+* **software:** update installed ([285a2fa](https://github.com/engeir/stowfiles/commit/285a2fae8483e5ad4de85978be75e87858c99f37))
+
 ## [1.16.3](https://github.com/engeir/stowfiles/compare/fish-v1.16.2...fish-v1.16.3) (2024-08-21)
 
 
