@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.17.3](https://github.com/engeir/stowfiles/compare/bspwm-v1.17.2...bspwm-v1.17.3) (2024-08-22)
+
+
+### Miscellaneous
+
+* **main:** release fish 1.16.3 ([#124](https://github.com/engeir/stowfiles/issues/124)) ([5799516](https://github.com/engeir/stowfiles/commit/57995166b1597d7e1fc2387e92309afc0a2b617f))
+
 ## [1.17.2](https://github.com/engeir/stowfiles/compare/bspwm-v1.17.1...bspwm-v1.17.2) (2024-08-22)
 
 
