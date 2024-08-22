@@ -1,5 +1,19 @@
 # Changelog
 
+## [1.15.5](https://github.com/engeir/stowfiles/compare/nsxiv-v1.15.4...nsxiv-v1.15.5) (2024-08-22)
+
+
+### Miscellaneous
+
+* **main:** release nsxiv 1.15.4 ([#186](https://github.com/engeir/stowfiles/issues/186)) ([42c3ce0](https://github.com/engeir/stowfiles/commit/42c3ce00828dd2201312fcf2c7161a215f005154))
+
+## [1.15.4](https://github.com/engeir/stowfiles/compare/nsxiv-v1.15.3...nsxiv-v1.15.4) (2024-08-22)
+
+
+### Miscellaneous
+
+* **main:** release fish 1.16.3 ([#124](https://github.com/engeir/stowfiles/issues/124)) ([5799516](https://github.com/engeir/stowfiles/commit/57995166b1597d7e1fc2387e92309afc0a2b617f))
+
 ## [1.15.3](https://github.com/engeir/stowfiles/compare/nsxiv-v1.15.2...nsxiv-v1.15.3) (2024-06-19)
 
 

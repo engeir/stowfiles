@@ -1,5 +1,19 @@
 # Changelog
 
+## [1.15.5](https://github.com/engeir/stowfiles/compare/skhd-v1.15.4...skhd-v1.15.5) (2024-08-22)
+
+
+### Miscellaneous
+
+* **main:** release skhd 1.15.4 ([#191](https://github.com/engeir/stowfiles/issues/191)) ([86472d3](https://github.com/engeir/stowfiles/commit/86472d3791d4628aa37524db1d42dafb84a616e0))
+
+## [1.15.4](https://github.com/engeir/stowfiles/compare/skhd-v1.15.3...skhd-v1.15.4) (2024-08-22)
+
+
+### Miscellaneous
+
+* **main:** release fish 1.16.3 ([#124](https://github.com/engeir/stowfiles/issues/124)) ([5799516](https://github.com/engeir/stowfiles/commit/57995166b1597d7e1fc2387e92309afc0a2b617f))
+
 ## [1.15.3](https://github.com/engeir/stowfiles/compare/skhd-v1.15.2...skhd-v1.15.3) (2024-06-19)
 
 
