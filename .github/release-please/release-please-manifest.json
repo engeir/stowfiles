@@ -10,7 +10,7 @@
   "calcurse": "1.15.3",
   "compton": "1.15.3",
   "despell": "1.15.3",
-  "dprint": "1.15.7",
+  "dprint": "1.15.6",
   "dunst": "1.15.4",
   "emojis": "1.15.3",
   "firefox": "1.15.4",
@@ -39,7 +39,7 @@
   "sketchybar": "1.15.3",
   "skhd": "1.15.3",
   "spt": "1.15.2",
-  "starship": "1.15.3",
+  "starship": "1.15.4",
   "tmux": "1.16.1",
   "topgrade": "1.15.3",
   "vale": "1.15.3",
@@ -51,7 +51,7 @@
   "zathura": "1.16.0",
   "zellij": "1.15.3",
   "zsh": "1.15.3",
-  "zsh_mac": "1.17.2",
+  "zsh_mac": "1.17.3",
   "picom": "1.15.5",
   "alacritty_arch": "1.15.2"
 }
