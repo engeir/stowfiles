@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.17.5](https://github.com/engeir/stowfiles/compare/mise-v1.17.4...mise-v1.17.5) (2024-08-22)
+
+
+### Code Refactoring
+
+* **mise:** move all python over to uv ([e2d7296](https://github.com/engeir/stowfiles/commit/e2d729671fe36cc89096d9248533a9cd6bad3294))
+
 ## [1.17.4](https://github.com/engeir/stowfiles/compare/mise-v1.17.3...mise-v1.17.4) (2024-08-22)
 
 
