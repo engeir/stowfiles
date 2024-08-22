@@ -10,7 +10,7 @@
   "calcurse": "1.15.3",
   "compton": "1.15.3",
   "despell": "1.15.3",
-  "dprint": "1.15.6",
+  "dprint": "1.15.7",
   "dunst": "1.15.4",
   "emojis": "1.15.3",
   "firefox": "1.15.4",
@@ -29,7 +29,7 @@
   "newsboat": "1.15.3",
   "nsxiv": "1.15.3",
   "nushell": "1.16.0",
-  "nvim_lua": "1.16.1",
+  "nvim_lua": "1.16.2",
   "prettierd": "1.15.3",
   "ripgrep": "1.15.3",
   "rush": "1.15.3",
@@ -51,7 +51,7 @@
   "zathura": "1.16.0",
   "zellij": "1.15.3",
   "zsh": "1.15.3",
-  "zsh_mac": "1.17.3",
+  "zsh_mac": "1.17.2",
   "picom": "1.15.5",
   "alacritty_arch": "1.15.2"
 }
