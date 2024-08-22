@@ -2,7 +2,7 @@
   ".": "1.19.0",
   "X": "1.15.5",
   "alacritty": "1.16.0",
-  "alacritty_mac": "1.15.3",
+  "alacritty_mac": "1.15.4",
   "android": "1.15.3",
   "bin": "1.15.5",
   "bspwm": "1.17.2",
@@ -10,7 +10,7 @@
   "calcurse": "1.15.3",
   "compton": "1.15.3",
   "despell": "1.15.3",
-  "dprint": "1.15.7",
+  "dprint": "1.15.6",
   "dunst": "1.15.4",
   "emojis": "1.15.3",
   "firefox": "1.15.4",
@@ -51,7 +51,7 @@
   "zathura": "1.16.0",
   "zellij": "1.15.3",
   "zsh": "1.15.3",
-  "zsh_mac": "1.17.2",
+  "zsh_mac": "1.17.3",
   "picom": "1.15.5",
   "alacritty_arch": "1.15.2"
 }
