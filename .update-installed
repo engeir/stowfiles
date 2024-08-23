@@ -30,7 +30,7 @@ echo_and_run() {
     fi
     echo ""
     echo "\$ $*"
-    "$@"
+    /usr/bin/time --format="==> Running '$*' took %e seconds." "$@"
 }
 run_updates() {
     # Main package managers ------------------------------------------------------------
