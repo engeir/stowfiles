@@ -4,6 +4,7 @@ if command -v coreutils 1>/dev/null 2>&1; then
     zmodload "zsh/zprof" # Uncomment to run profiler (also last line)
     t0=$(coreutils date "+%s.%N")
 fi
+
 unalias -a
 
 # Paths (set with mise)
@@ -33,7 +34,9 @@ zinit light zsh-users/zsh-completions
 zinit light zsh-users/zsh-autosuggestions
 zinit light Aloxaf/fzf-tab
 zinit light ryanccn/vivid-zsh  # Sets LS_COLORS
-zi ice wait lucid has'eza' atinit'AUTOCD=1'
+zi ice from'gh-r' as'program' sbin'**/eza -> eza' atclone'cp -vf completions/eza.zsh _eza'  # Install
+zi light eza-community/eza
+zi ice wait lucid has'eza' atinit'AUTOCD=1'  # Setup plugin
 zi light z-shell/zsh-eza
 zinit ice depth=1
 zinit light jeffreytse/zsh-vi-mode

@@ -16,6 +16,7 @@ adwaita-icon-theme 41.0-1ubuntu1 [Ubuntu/jammy main]
 aglfn 1.7+git20191031.4036a9c-2 [Ubuntu/jammy universe]
 airport-utils 2-8 [Ubuntu/jammy universe]
 aisleriot 1:3.22.22-1 [Ubuntu/jammy main]
+alacritty-dummy-builddeps 0.13.2-pacstall1 [local]
 alltray:i386 0.60-1 [local]
 alsa-base 1.0.25+dfsg-0ubuntu7 [Ubuntu/jammy main]
 alsa-topology-conf 1.2.5.1-2 [Ubuntu/jammy main]
@@ -121,6 +122,7 @@ cabal-install 3.0.0.0-3build1.1 [Ubuntu/jammy universe]
 cabextract 1.9-3 [Ubuntu/jammy universe]
 caca-utils 0.99.beta19-2.2ubuntu4 [Ubuntu/jammy universe]
 calcurse 4.6.0-2 [Ubuntu/jammy universe]
+cargo 1.75.0+dfsg0ubuntu1~bpo0-0ubuntu0.22.04 [Ubuntu/jammy universe]
 catimg 2.7.0-1 [Ubuntu/jammy universe]
 cb2bib 2.0.1-2 [Ubuntu/jammy universe]
 cdo 2.0.4-1 [Ubuntu/jammy universe]
@@ -239,6 +241,7 @@ dpkg 1.21.1ubuntu2.3 [Ubuntu/jammy main]
 dpkg-dev 1.21.1ubuntu2.3 [Ubuntu/jammy main]
 dunst 20210810-1 [local]
 duplicity 0.8.21-1build1 [Ubuntu/jammy main]
+dust 0.8.6-pacstall1 [local]
 dvidvi 1.0-8.2 [Ubuntu/jammy universe]
 dvisvgm 2.13.1-1 [Ubuntu/jammy universe]
 dvtm 0.15+40.g311a8c0-1build1 [Ubuntu/jammy universe]
@@ -2755,6 +2758,8 @@ libsss-nss-idmap0 2.6.3-1ubuntu3.3 [Ubuntu/jammy main]
 libstartup-notification0 0.12-6build2 [Ubuntu/jammy main]
 libstb0 0.0~git20210910.af1a5bc+ds-1 [Ubuntu/jammy universe]
 libstb0:i386 0.0~git20210910.af1a5bc+ds-1 [Ubuntu/jammy universe]
+libstd-rust-1.75 1.75.0+dfsg0ubuntu1~bpo0-0ubuntu0.22.04 [Ubuntu/jammy main]
+libstd-rust-dev 1.75.0+dfsg0ubuntu1~bpo0-0ubuntu0.22.04 [Ubuntu/jammy main]
 libstdc++-10-dev 10.5.0-1ubuntu1~22.04 [Ubuntu/jammy universe]
 libstdc++-11-dev 11.4.0-1ubuntu1~22.04 [Ubuntu/jammy main]
 libstdc++-9-dev 9.5.0-1ubuntu1~22.04 [Ubuntu/jammy universe]
@@ -3253,36 +3258,36 @@ links 2.25-1build1 [Ubuntu/jammy universe]
 lintian 2.114.0ubuntu1.4 [Ubuntu/jammy main]
 linux-base 4.5ubuntu9 [Ubuntu/jammy main]
 linux-firmware 20220329.git681281e4-0ubuntu3.31 [Ubuntu/jammy main]
-linux-generic 5.15.0.118.118 [local]
+linux-generic 5.15.0.119.119 [Ubuntu/jammy main]
 linux-generic-hwe-20.04 5.15.0.119.119 [Ubuntu/jammy main]
 linux-generic-hwe-22.04 6.8.0-40.40~22.04.3 [Ubuntu/jammy main]
-linux-headers-5.15.0-118 5.15.0-118.128 [Ubuntu/jammy main]
-linux-headers-5.15.0-118-generic 5.15.0-118.128 [Ubuntu/jammy main]
+linux-headers-5.15.0-119 5.15.0-119.129 [Ubuntu/jammy main]
+linux-headers-5.15.0-119-generic 5.15.0-119.129 [Ubuntu/jammy main]
 linux-headers-5.19.0-50-generic 5.19.0-50.50 [Ubuntu/jammy main]
 linux-headers-6.2.0-39-generic 6.2.0-39.40~22.04.1 [Ubuntu/jammy main]
 linux-headers-6.5.0-45-generic 6.5.0-45.45~22.04.1 [Ubuntu/jammy main]
 linux-headers-6.8.0-40-generic 6.8.0-40.40~22.04.3 [Ubuntu/jammy main]
-linux-headers-generic 5.15.0.118.118 [local]
+linux-headers-generic 5.15.0.119.119 [Ubuntu/jammy main]
 linux-headers-generic-hwe-22.04 6.8.0-40.40~22.04.3 [Ubuntu/jammy main]
 linux-hwe-5.19-headers-5.19.0-50 5.19.0-50.50 [Ubuntu/jammy main]
 linux-hwe-6.2-headers-6.2.0-39 6.2.0-39.40~22.04.1 [Ubuntu/jammy main]
 linux-hwe-6.5-headers-6.5.0-45 6.5.0-45.45~22.04.1 [Ubuntu/jammy main]
 linux-hwe-6.8-headers-6.8.0-40 6.8.0-40.40~22.04.3 [Ubuntu/jammy main]
 linux-hwe-6.8-tools-6.8.0-40 6.8.0-40.40~22.04.3 [Ubuntu/jammy main]
-linux-image-5.15.0-118-generic 5.15.0-118.128 [Ubuntu/jammy main]
+linux-image-5.15.0-119-generic 5.15.0-119.129 [Ubuntu/jammy main]
 linux-image-5.19.0-50-generic 5.19.0-50.50 [Ubuntu/jammy main]
 linux-image-6.2.0-39-generic 6.2.0-39.40~22.04.1 [Ubuntu/jammy main]
 linux-image-6.5.0-45-generic 6.5.0-45.45~22.04.1 [Ubuntu/jammy main]
 linux-image-6.8.0-40-generic 6.8.0-40.40~22.04.3 [Ubuntu/jammy main]
-linux-image-generic 5.15.0.118.118 [local]
+linux-image-generic 5.15.0.119.119 [Ubuntu/jammy main]
 linux-image-generic-hwe-22.04 6.8.0-40.40~22.04.3 [Ubuntu/jammy main]
 linux-libc-dev 5.15.0-119.129 [Ubuntu/jammy main]
-linux-modules-5.15.0-118-generic 5.15.0-118.128 [Ubuntu/jammy main]
+linux-modules-5.15.0-119-generic 5.15.0-119.129 [Ubuntu/jammy main]
 linux-modules-5.19.0-50-generic 5.19.0-50.50 [Ubuntu/jammy main]
 linux-modules-6.2.0-39-generic 6.2.0-39.40~22.04.1 [Ubuntu/jammy main]
 linux-modules-6.5.0-45-generic 6.5.0-45.45~22.04.1 [Ubuntu/jammy main]
 linux-modules-6.8.0-40-generic 6.8.0-40.40~22.04.3 [Ubuntu/jammy main]
-linux-modules-extra-5.15.0-118-generic 5.15.0-118.128 [Ubuntu/jammy main]
+linux-modules-extra-5.15.0-119-generic 5.15.0-119.129 [Ubuntu/jammy main]
 linux-modules-extra-5.19.0-50-generic 5.19.0-50.50 [Ubuntu/jammy main]
 linux-modules-extra-6.2.0-39-generic 6.2.0-39.40~22.04.1 [Ubuntu/jammy main]
 linux-modules-extra-6.5.0-45-generic 6.5.0-45.45~22.04.1 [Ubuntu/jammy main]
@@ -3983,6 +3988,7 @@ ruby3.0 3.0.2-7ubuntu2.7 [Ubuntu/jammy main]
 ruby3.0-dev 3.0.2-7ubuntu2.7 [Ubuntu/jammy main]
 ruby3.0-doc 3.0.2-7ubuntu2.7 [Ubuntu/jammy main]
 rubygems-integration 1.18 [Ubuntu/jammy main]
+rustc 1.75.0+dfsg0ubuntu1~bpo0-0ubuntu0.22.04 [Ubuntu/jammy main]
 rxvt-unicode 9.30-2build1 [Ubuntu/jammy universe]
 rygel 0.40.3-1ubuntu2 [Ubuntu/jammy main]
 samba-libs 2:4.15.13+dfsg-0ubuntu1.6 [Ubuntu/jammy main]
@@ -3991,6 +3997,7 @@ sane-utils 1.1.1-5 [Ubuntu/jammy main]
 sassc 3.6.1+20201027-2 [Ubuntu/jammy universe]
 sbsigntool 0.9.4-2ubuntu2 [Ubuntu/jammy main]
 sc 7.16-4ubuntu3 [Ubuntu/jammy universe]
+scdoc 1.11.2-1 [Ubuntu/jammy universe]
 scrcpy 1.21-1 [Ubuntu/jammy universe]
 scrcpy-server 1.21-1 [Ubuntu/jammy universe]
 scrot 1.7-1 [Ubuntu/jammy universe]
@@ -4346,6 +4353,7 @@ name: batsignal version: 1.6.4-pacstall1
 name: bitwarden version: 2024.6.4
 name: brave-keyring version: 1.13
 name: btop version: 1.3.2-pacstall1
+name: dust version: 0.8.6-pacstall1
 name: htop version: 3.2.2-pacstall1
 name: nala version: 0.15.3
 name: neofetch version: 7.1.0-pacstall1
@@ -4362,44 +4370,39 @@ name: zoom version: 6.1.1.443
 ## Mise
 
 ```txt {mise}
-cabal                       3.12.1.0         ~/.config/mise/config.toml latest        
-cargo:mdbook                0.4.40                                                    
-cargo:mdbook-alerts         0.6.1                                                     
-cargo:mdbook-embedify       0.2.11                                                    
-cargo:mdbook-katex          0.9.0                                                     
-cargo:mdbook-repl           0.2.4                                                     
-cargo:mdbook-tera           0.5.1                                                     
-go                          1.23.0           ~/.config/mise/config.toml latest        
-jq                          1.7.1                                                     
-node                        22.6.0           ~/.config/mise/config.toml latest        
-npm:cwebp                   3.1.0            ~/.config/mise/config.toml latest        
-pandoc                      3.3              ~/.config/mise/config.toml latest        
-pipx:volcano-cooking        1.0.0            ~/.config/mise/config.toml latest        
-python                      3.6.15                                                    
-python                      3.8.19           ~/.config/mise/config.toml sub-0.4:latest
-python                      3.9.19           ~/.config/mise/config.toml sub-0.3:latest
-python                      3.10.14          ~/.config/mise/config.toml sub-0.2:latest
-python                      3.11.9           ~/.config/mise/config.toml sub-0.1:latest
-python                      3.12.4                                                    
-python                      3.12.5           ~/.config/mise/config.toml latest        
-tinytex                     2024.07.03       ~/.config/mise/config.toml latest        
-ubi:Enter-tainer/typstyle   v0.11.31         ~/.config/mise/config.toml latest        
-ubi:Myriad-Dreamin/shiroa   v0.2.0-nightly1  ~/.config/mise/config.toml latest        
-ubi:ajeetdsouza/zoxide      v0.9.4           ~/.config/mise/config.toml latest        
-ubi:azzamsa/zman            v3.1.2           ~/.config/mise/config.toml latest        
-ubi:etcd-io/etcd            v3.5.15          ~/.config/mise/config.toml latest        
-ubi:filosottile/age         v1.2.0           ~/.config/mise/config.toml latest        
-ubi:goreleaser/goreleaser   v2.2.0           ~/.config/mise/config.toml latest        
-ubi:houseabsolute/precious  v0.7.3           ~/.config/mise/config.toml latest        
-ubi:ismaelgv/rnr            v0.4.2           ~/.config/mise/config.toml latest        
-ubi:junegunn/fzf            v0.54.3          ~/.config/mise/config.toml latest        
-ubi:mgdm/htmlq              v0.4.0           ~/.config/mise/config.toml latest        
-ubi:pvolok/mprocs           v0.7.1           ~/.config/mise/config.toml latest        
-ubi:pythops/bluetui         v0.5.1           ~/.config/mise/config.toml latest        
-ubi:quantumsheep/sshs       4.5.1            ~/.config/mise/config.toml latest        
-ubi:typst/typst             v0.11.1          ~/.config/mise/config.toml latest        
-usage                       0.3.0            ~/.config/mise/config.toml latest        
-watchexec                   2.1.2            ~/.config/mise/config.toml latest        
+cabal                       3.12.1.0         ~/.config/mise/config.toml latest
+cargo:mdbook                0.4.40                                            
+cargo:mdbook-alerts         0.6.1                                             
+cargo:mdbook-embedify       0.2.11                                            
+cargo:mdbook-katex          0.9.0                                             
+cargo:mdbook-repl           0.2.4                                             
+cargo:mdbook-tera           0.5.1                                             
+go                          1.23.0           ~/.config/mise/config.toml latest
+jq                          1.7.1                                             
+node                        22.7.0           ~/.config/mise/config.toml latest
+npm:cwebp                   3.1.0            ~/.config/mise/config.toml latest
+pandoc                      3.3              ~/.config/mise/config.toml latest
+tinytex                     2024.07.03       ~/.config/mise/config.toml latest
+ubi:Enter-tainer/typstyle   v0.11.31         ~/.config/mise/config.toml latest
+ubi:Eoin-McMahon/blindfold  v1.0.6           ~/.config/mise/config.toml latest
+ubi:Myriad-Dreamin/shiroa   v0.2.0-nightly1  ~/.config/mise/config.toml latest
+ubi:ajeetdsouza/zoxide      v0.9.4           ~/.config/mise/config.toml latest
+ubi:azzamsa/zman            v3.1.2           ~/.config/mise/config.toml latest
+ubi:etcd-io/etcd            v3.5.15          ~/.config/mise/config.toml latest
+ubi:filosottile/age         v1.2.0           ~/.config/mise/config.toml latest
+ubi:goreleaser/goreleaser   v2.2.0           ~/.config/mise/config.toml latest
+ubi:houseabsolute/precious  v0.7.3           ~/.config/mise/config.toml latest
+ubi:ismaelgv/rnr            v0.4.2           ~/.config/mise/config.toml latest
+ubi:junegunn/fzf            v0.54.3          ~/.config/mise/config.toml latest
+ubi:mgdm/htmlq              v0.4.0           ~/.config/mise/config.toml latest
+ubi:pvolok/mprocs           v0.7.1           ~/.config/mise/config.toml latest
+ubi:pythops/bluetui         v0.5.1           ~/.config/mise/config.toml latest
+ubi:quantumsheep/sshs       4.5.1            ~/.config/mise/config.toml latest
+ubi:sharkdp/bat             v0.24.0          ~/.config/mise/config.toml latest
+ubi:typst/typst             v0.11.1          ~/.config/mise/config.toml latest
+ubi:uutils/coreutils        0.0.27           ~/.config/mise/config.toml latest
+usage                       0.3.0            ~/.config/mise/config.toml latest
+watchexec                   2.1.2            ~/.config/mise/config.toml latest
 ```
 
 ## Cargo
@@ -4407,15 +4410,9 @@ watchexec                   2.1.2            ~/.config/mise/config.toml latest
 ```txt {cargo}
 alacritty v0.13.2:
     alacritty
-atuin v18.3.0:
-    atuin
 bacon v2.20.0:
     bacon
-bat v0.24.0:
-    bat
-blindfold v1.0.7:
-    blindfold
-bob-nvim v3.0.1:
+bob-nvim v4.0.1:
     bob
 cargo-binstall v1.10.2:
     cargo-binstall
@@ -4431,17 +4428,11 @@ cargo-update v14.0.2:
     cargo-install-update-config
 cargo-watch v8.5.2:
     cargo-watch
-coreutils v0.0.27:
-    coreutils
 despell v1.0.1:
     despell
 difftastic v0.60.0:
     difft
-du-dust v1.1.1:
-    dust
-eza v0.19.0:
-    eza
-fd-find v10.1.0:
+fd-find v10.2.0:
     fd
 ffsend v0.2.76:
     ffsend
@@ -4570,7 +4561,7 @@ globus-cli v3.30.1
 gorps v0.9.1
 httpie v3.2.3
 huge v0.1.3
-icloudpd v1.23.0
+icloudpd v1.23.1
 jupyter-client v8.6.2
 khal v0.11.3
 mypy v1.11.1
@@ -4587,6 +4578,7 @@ rich-codex v1.2.7
 rofimoji v6.3.2
 toml-cli v0.7.0
 tuiview v0.1.1
+volcano-cooking v1.0.0
 wtpython v0.1
 yt-dlp v2024.8.6
 ```
@@ -4997,13 +4989,13 @@ Yaru-dark Gtk Theme                                                             
 ```txt {snap}
 Name                       Version                     Rev    Tracking         Publisher      Notes
 bare                       1.0                         5      latest/stable    canonical**    base
-bw                         2024.7.2                    67     latest/stable    bitwarden**    -
+bw                         2024.8.0                    68     latest/stable    bitwarden**    -
 canonical-livepatch        10.8.3                      282    latest/stable    canonical**    -
 cmake                      3.30.2                      1409   latest/stable    crascit**      classic
 core                       16-2.61.4-20240607          17200  latest/stable    canonical**    core
 core18                     20240612                    2829   latest/stable    canonical**    base
 core20                     20240416                    2318   latest/stable    canonical**    base
-core22                     20240419                    1439   latest/stable    canonical**    base
+core22                     20240731                    1564   latest/stable    canonical**    base
 dotnet-sdk                 5.0.408                     167    5.0/stable       canonical**    classic
 duf-utility                v0.6.0                      1      latest/stable    muesli         -
 ffsend                     0.2.74                      49     latest/stable    timvisee       -
