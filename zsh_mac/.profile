@@ -56,7 +56,7 @@ xrdb "$HOME/.config/Xresources"
 
 # . "$HOME/.cargo/env"
 . "$HOME/.local/share/rye/env"
-. "$HOME/.atuin/bin/env"
+export PATH="$HOME/.local/share/zinit/plugins/atuinsh---atuin:$PATH"
 mkdir -p "$HOME/.config/zsh/.zsh_functions"
 eval "$(atuin gen-completions --shell zsh --out-dir "$HOME/.config/zsh/.zsh_functions")"
 eval "$(just --completions zsh >"$HOME/.config/zsh/.zsh_functions/_just")"
