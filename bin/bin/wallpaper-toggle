@@ -18,7 +18,7 @@ if [[ $(uname -s) == "Darwin" ]]; then
     fi
 else
     if diff "$HOME/.cache/bspwm/wallpaper.jpg" "$HOME/stowfiles/assets/black.jpg" >/dev/null; then
-        FILE="$(fd -e jpg . "$HOME/syncthing/wallpapers" | sort -R | sed 1q)"
+        FILE="$(fd -e png -e jpg . "$HOME/syncthing/aerial-views" | sort -R | sed 1q)"
         convert "$FILE" -blur 0x9 "$HOME"/.cache/bspwm/wallpaper.jpg
         feh --bg-fill "$HOME/.cache/bspwm/wallpaper.jpg"
     else
