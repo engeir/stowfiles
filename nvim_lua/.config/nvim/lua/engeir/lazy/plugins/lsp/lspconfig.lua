@@ -33,7 +33,7 @@ return {
           vim.diagnostic.show()
         end, "LSP: Show")
         nmap("<leader>wh", function()
-          vim.diagnostic.show()
+          vim.diagnostic.hide()
         end, "LSP: Hide")
         nmap("gd", require("telescope.builtin").lsp_definitions, "Goto Definition")
         nmap("gD", vim.lsp.buf.declaration, "Goto Declaration")
