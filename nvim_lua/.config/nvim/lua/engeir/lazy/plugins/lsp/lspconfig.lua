@@ -17,7 +17,6 @@ return {
           if desc then
             desc = "LSP: " .. desc
           end
-          -- vim.keymap.set(mode, keys, func, { noremap = true, silent = true, buffer = bufnr, desc = desc })
           vim.keymap.set(mode, keys, func, { buffer = event.buf, desc = desc })
         end
         local nmap = function(keys, func, desc)
@@ -29,73 +28,70 @@ return {
         local xmap = function(keys, func, desc)
           map("x", keys, func, desc)
         end
-        -- local map = function(keys, func, desc)
-        --     vim.keymap.set("n", keys, func, { buffer = event.buf, desc = "LSP: " .. desc })
-        -- end
 
-        nmap("gd", require("telescope.builtin").lsp_definitions, "[G]oto [D]efinition")
-        -- nmap("gd", vim.lsp.buf.definition, "[G]oto [D]efinition")
-        nmap("gD", vim.lsp.buf.declaration, "[G]oto [D]eclaration")
-        nmap("gr", require("telescope.builtin").lsp_references, "[G]oto [R]eferences")
+        nmap("<leader>wH", function()
+          vim.diagnostic.show()
+        end, "LSP: Show")
+        nmap("<leader>wh", function()
+          vim.diagnostic.show()
+        end, "LSP: Hide")
+        nmap("gd", require("telescope.builtin").lsp_definitions, "Goto Definition")
+        nmap("gD", vim.lsp.buf.declaration, "Goto Declaration")
+        nmap("gr", require("telescope.builtin").lsp_references, "Goto References")
         nmap(
           "gI",
           require("telescope.builtin").lsp_implementations,
-          "[G]oto [I]mplementation"
+          "Goto Implementation"
         )
         nmap(
           "gh",
           require("telescope.builtin").lsp_type_definitions,
-          "[G]oto Type Definition ([H]int)"
+          "Goto Type Definition (Hint)"
         )
         nmap("gH", function()
           vim.lsp.inlay_hint.enable(not vim.lsp.inlay_hint.is_enabled({}))
-        end, "Toggle inlay [H]int")
-        -- nmap("gt", vim.lsp.buf.type_definition, "[G]oto [T]ype Definition")
+        end, "Toggle inlay Hint")
         nmap(
           "<leader>ds",
           require("telescope.builtin").lsp_document_symbols,
-          "[D]ocument [S]ymbols"
+          "Document Symbols"
         )
         nmap(
           "<leader>ws",
           require("telescope.builtin").lsp_dynamic_workspace_symbols,
-          "[W]orkspace [S]ymbols"
+          "Workspace Symbols"
         )
         nmap("<leader>re", "<cmd>LspRestart<cr>", "Lsp [Re]estart")
-        nmap("crn", vim.lsp.buf.rename, "[C]ode [R]efactor re[n]ame") -- default since nvim0.10.0
-        nmap(
-          "crr",
-          vim.lsp.buf.code_action,
-          "[C]ode [R]efacotr [R]efactor (code action)"
-        ) -- default since nvim0.10.0
-        -- xmap("<leader>ca", vim.lsp.buf.range_code_action, "Range [C]ode [A]ction")
+        nmap("crn", vim.lsp.buf.rename, "Code Refactor rename") -- Default since nvim0.10.0
+        nmap("crr", vim.lsp.buf.code_action, "Code Refacotr Refactor (code action)") -- Default since nvim0.10.0
+        -- xmap("<leader>ca", vim.lsp.buf.range_code_action, "Range Code Action")
         xmap(
           "<leader>ca",
           "<cmd>lua vim.lsp.buf.range_code_action()<cr>",
-          "Range [C]ode [A]ction"
+          "Range Code Action"
         )
-        imap("<C-s>", vim.lsp.buf.signature_help, "Signature Documentation") -- default since nvim0.10.0
-        imap("<C-s>", vim.lsp.buf.signature_help, "Signature Documentation") -- default since nvim0.10.0
+        imap("<C-s>", vim.lsp.buf.signature_help, "Signature Documentation") -- Default since nvim0.10.0
+        imap("<C-s>", vim.lsp.buf.signature_help, "Signature Documentation") -- Default since nvim0.10.0
         -- Lesser used LSP functionality
-        nmap("gD", vim.lsp.buf.declaration, "[G]oto [D]eclaration")
-        nmap("<leader>wa", vim.lsp.buf.add_workspace_folder, "[W]orkspace [A]dd Folder")
+        nmap("gD", vim.lsp.buf.declaration, "Goto Declaration")
+        nmap("<leader>wa", vim.lsp.buf.add_workspace_folder, "Workspace Add Folder")
         nmap(
           "<leader>wr",
           vim.lsp.buf.remove_workspace_folder,
-          "[W]orkspace [R]emove Folder"
+          "Workspace Remove Folder"
         )
-        nmap("<leader>ws", vim.lsp.buf.workspace_symbol, "[W]orkspace [S]ymbol")
+        nmap("<leader>ws", vim.lsp.buf.workspace_symbol, "Workspace Symbol")
         nmap("<leader>wl", function()
           print(vim.inspect(vim.lsp.buf.list_workspace_folders()))
-        end, "[W]orkspace [L]ist Folders")
+        end, "Workspace List Folders")
         -- Diagnostic
-        nmap("<leader>dl", vim.diagnostic.setloclist, "[D]iagnostic Setloc[l]ist")
+        nmap("<leader>dl", vim.diagnostic.setloclist, "Diagnostic Setloclist")
 
-        -- The following two autocommands are used to highlight references of the
+        -- The following two `autocommands` are used to highlight references of the
         -- word under your cursor when your cursor rests there for a little while.
         --    See `:help CursorHold` for information about when this is executed
         --
-        -- When you move your cursor, the highlights will be cleared (the second autocommand).
+        -- When you move your cursor, the highlights will be cleared (the second `autocommand`).
         local client = vim.lsp.get_client_by_id(event.data.client_id)
         if client and client.server_capabilities.documentHighlightProvider then
           vim.api.nvim_create_autocmd({ "CursorHold", "CursorHoldI" }, {
@@ -109,18 +105,19 @@ return {
           })
         end
 
-        -- stevearc/conform.nvim changes the formatexpr value, but at least for lua,
-        -- this fucks up the gq<mothion> command, at least on comments. The empty
-        -- string sets the default, which hopefully works fine in other languages as
-        -- well. Let's see.
+        -- `stevearc/conform.nvim` changes the `formatexpr` value, but at least for
+        -- `lua`, this fucks up the `gq<mothion>` command, at least on comments. The
+        -- empty string sets the default, which hopefully works fine in other languages
+        -- as well. Let's see.
         vim.o.formatexpr = ""
       end,
     })
 
     -- LSP servers and clients are able to communicate to each other what features they support.
     --  By default, Neovim doesn't support everything that is in the LSP Specification.
-    --  When you add nvim-cmp, luasnip, etc. Neovim now has *more* capabilities.
-    --  So, we create new capabilities with nvim cmp, and then broadcast that to the servers.
+    --  When you add `nvim-cmp`, `luasnip`, etc. Neovim now has *more* capabilities. So,
+    --  we create new capabilities with `nvim-cmp`, and then broadcast that to the
+    --  servers.
     local capabilities = vim.lsp.protocol.make_client_capabilities()
     capabilities = vim.tbl_deep_extend(
       "force",
@@ -143,9 +140,9 @@ return {
       )
     end
     local config = {
-      virtual_text = true, -- disable virtual text
+      virtual_text = true,
       signs = {
-        active = signs, -- show signs
+        active = signs,
       },
       update_in_insert = true,
       underline = false,
@@ -153,10 +150,7 @@ return {
       float = {
         focusable = true,
         style = "minimal",
-        -- border = "rounded",
         source = "always",
-        -- header = "",
-        -- prefix = "",
       },
     }
     vim.diagnostic.config(config)
@@ -205,7 +199,7 @@ return {
     -- for you, so that they are available from within Neovim.
     local ensure_installed = vim.tbl_keys(servers or {})
     vim.list_extend(ensure_installed, {
-      "stylua", -- Used to format lua code
+      "stylua", -- Used to format `lua` code
     })
     require("mason-tool-installer").setup({ ensure_installed = ensure_installed })
 
@@ -213,9 +207,9 @@ return {
       handlers = {
         function(server_name)
           local server = servers[server_name] or {}
-          -- This handles overriding only values explicitly passed
-          -- by the server configuration above. Useful when disabling
-          -- certain features of an LSP (for example, turning off formatting for tsserver)
+          -- This handles overriding only values explicitly passed by the server
+          -- configuration above. Useful when disabling certain features of an LSP (for
+          -- example, turning off formatting for `tsserver`)
           server.capabilities =
             vim.tbl_deep_extend("force", {}, capabilities, server.capabilities or {})
           require("lspconfig")[server_name].setup(server)
