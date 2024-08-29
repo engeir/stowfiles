@@ -28,6 +28,7 @@ if [ -d "$HOME/.cargo/bin" ]; then
     PATH="$HOME/.cargo/bin:$PATH"
 fi
 export GPG_TTY=$(tty)
+export LD_PRELOAD=/usr/lib/x86_64-linux-gnu/libgtk3-nocsd.so.0
 
 # export PATH=$HOME/.config/rofi/bin:$PATH
 # export GH_PAT_POLYBAR=$(pass API/polybar_github)
@@ -57,6 +58,7 @@ xrdb "$HOME/.config/Xresources"
 # . "$HOME/.cargo/env"
 . "$HOME/.local/share/rye/env"
 export PATH="$HOME/.local/share/zinit/plugins/atuinsh---atuin:$PATH"
+eval "$("$HOME/.local/bin/mise" activate zsh)"
 mkdir -p "$HOME/.config/zsh/.zsh_functions"
 eval "$(atuin gen-completions --shell zsh --out-dir "$HOME/.config/zsh/.zsh_functions")"
 eval "$(just --completions zsh >"$HOME/.config/zsh/.zsh_functions/_just")"
