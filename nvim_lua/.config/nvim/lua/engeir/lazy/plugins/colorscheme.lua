@@ -1,5 +1,5 @@
 return {
-  { "xiyaowong/transparent.nvim", config = true, enabled = false },
+  { "xiyaowong/transparent.nvim", config = true, enabled = true },
   {
     "tjdevries/colorbuddy.vim",
     enabled = false,

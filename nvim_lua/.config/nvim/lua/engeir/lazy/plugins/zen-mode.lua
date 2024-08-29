@@ -1,7 +1,7 @@
 return {
   "folke/zen-mode.nvim",
   cmd = { "ZenMode" },
-  enabled = false,
+  enabled = true,
   opts = {
     window = {
       backdrop = 0.95, -- shade the backdrop of the Zen window. Set to 1 to keep the same as Normal
@@ -48,6 +48,8 @@ return {
       -- vim.api.nvim_set_hl(0, "Normal", { bg = "#20232a" })
       -- vim.api.nvim_set_hl(0, "NormalFloat", { bg = "#20232a" })
       vim.api.nvim_set_hl(0, "ColorColumn", { bg = "none" })
+      vim.diagnostic.disable()
+      vim.g.transparent_enabled = false
       require("gitsigns").toggle_current_line_blame()
     end,
     -- callback where you can add custom code when the Zen window closes
@@ -55,6 +57,8 @@ return {
       vim.api.nvim_set_hl(0, "Normal", { bg = "none" })
       vim.api.nvim_set_hl(0, "NormalFloat", { bg = "none" })
       vim.api.nvim_set_hl(0, "ColorColumn", { bg = "#3c3836" })
+      vim.diagnostic.enable()
+      vim.g.transparent_enabled = true
       require("gitsigns").toggle_current_line_blame()
     end,
   },
