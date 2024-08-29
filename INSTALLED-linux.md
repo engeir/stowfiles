@@ -45,6 +45,7 @@ apport 2.20.11-0ubuntu82.6 [Ubuntu/jammy main]
 apport-gtk 2.20.11-0ubuntu82.6 [Ubuntu/jammy main]
 apport-symptoms 0.24 [Ubuntu/jammy main]
 appstream 0.15.2-2 [Ubuntu/jammy main]
+apptainer 1.3.3 [local]
 apt 2.4.12 [Ubuntu/jammy main]
 apt-config-icons 0.15.2-2 [Ubuntu/jammy main]
 apt-config-icons-hidpi 0.15.2-2 [Ubuntu/jammy main]
@@ -141,7 +142,7 @@ cmdtest 0.32.14.gcdfe14e-2 [Ubuntu/jammy universe]
 code 1.92.2-1723660989 [code stable/stable main]
 colord 1.4.6-1 [Ubuntu/jammy main]
 colord-data 1.4.6-1 [Ubuntu/jammy main]
-comerr-dev 2.1-1.46.5-2ubuntu1.1 [Ubuntu/jammy main]
+comerr-dev 2.1-1.46.5-2ubuntu1.2 [Ubuntu/jammy main]
 command-not-found 22.04.0 [Ubuntu/jammy main]
 compiz 1:0.9.14.1+22.04.20220820-0ubuntu1 [Ubuntu/jammy universe]
 compiz-core 1:0.9.14.1+22.04.20220820-0ubuntu1 [Ubuntu/jammy universe]
@@ -153,7 +154,7 @@ compizconfig-settings-manager 1:0.9.14.1+22.04.20220820-0ubuntu1 [Ubuntu/jammy u
 compton 1-1 [Ubuntu/jammy universe]
 console-setup 1.205ubuntu3 [Ubuntu/jammy main]
 console-setup-linux 1.205ubuntu3 [Ubuntu/jammy main]
-containerd.io 1.7.20-1 [Docker CE/ stable]
+containerd.io 1.7.21-1 [Docker CE/ stable]
 coreutils 8.32-4.1ubuntu1.2 [Ubuntu/jammy main]
 cpio 2.13+dfsg-7ubuntu0.1 [Ubuntu/jammy main]
 cpp 4:11.2.0-1ubuntu1 [Ubuntu/jammy main]
@@ -229,10 +230,10 @@ docbook-xml 4.5-11 [Ubuntu/jammy main]
 docbook-xsl 1.79.2+dfsg-1 [Ubuntu/jammy universe]
 docker 1.5-2 [Ubuntu/jammy universe]
 docker-buildx-plugin 0.16.2-1~ubuntu.20.04~focal [Docker CE/ stable]
-docker-ce 5:27.1.2-1~ubuntu.20.04~focal [Docker CE/ stable]
-docker-ce-cli 5:27.1.2-1~ubuntu.20.04~focal [Docker CE/ stable]
-docker-ce-rootless-extras 5:27.1.2-1~ubuntu.20.04~focal [Docker CE/ stable]
-docker-compose-plugin 2.29.1-1~ubuntu.20.04~focal [Docker CE/ stable]
+docker-ce 5:27.2.0-1~ubuntu.20.04~focal [Docker CE/ stable]
+docker-ce-cli 5:27.2.0-1~ubuntu.20.04~focal [Docker CE/ stable]
+docker-ce-rootless-extras 5:27.2.0-1~ubuntu.20.04~focal [Docker CE/ stable]
+docker-compose-plugin 2.29.2-1~ubuntu.20.04~focal [Docker CE/ stable]
 docutils-common 0.17.1+dfsg-2 [Ubuntu/jammy main]
 docx2txt 1.4-5 [Ubuntu/jammy universe]
 dos2unix 7.4.2-2 [Ubuntu/jammy universe]
@@ -246,7 +247,7 @@ dvidvi 1.0-8.2 [Ubuntu/jammy universe]
 dvisvgm 2.13.1-1 [Ubuntu/jammy universe]
 dvtm 0.15+40.g311a8c0-1build1 [Ubuntu/jammy universe]
 dwz 0.14-1build2 [Ubuntu/jammy main]
-e2fsprogs 1.46.5-2ubuntu1.1 [Ubuntu/jammy main]
+e2fsprogs 1.46.5-2ubuntu1.2 [Ubuntu/jammy main]
 earlyoom 1.6.2-1 [Ubuntu/jammy universe]
 ed 1.18-1 [Ubuntu/jammy main]
 efibootmgr 17-1ubuntu2 [Ubuntu/jammy main]
@@ -1117,8 +1118,8 @@ libcolord2 1.4.6-1 [Ubuntu/jammy main]
 libcolorhug2 1.4.6-1 [Ubuntu/jammy main]
 libcolumbus1-common 1.1.0+15.10.20150806-0ubuntu26 [Ubuntu/jammy universe]
 libcolumbus1v5 1.1.0+15.10.20150806-0ubuntu26 [Ubuntu/jammy universe]
-libcom-err2 1.46.5-2ubuntu1.1 [Ubuntu/jammy main]
-libcom-err2:i386 1.46.5-2ubuntu1.1 [Ubuntu/jammy main]
+libcom-err2 1.46.5-2ubuntu1.2 [Ubuntu/jammy main]
+libcom-err2:i386 1.46.5-2ubuntu1.2 [Ubuntu/jammy main]
 libcommon-sense-perl 3.75-2build1 [Ubuntu/jammy main]
 libcommons-lang3-java 3.11-1 [Ubuntu/jammy universe]
 libcommons-parent-java 43-1 [Ubuntu/jammy universe]
@@ -1318,7 +1319,7 @@ libexpat1 2.4.7-1ubuntu0.3 [Ubuntu/jammy main]
 libexpat1-dev 2.4.7-1ubuntu0.3 [Ubuntu/jammy main]
 libexpat1:i386 2.4.7-1ubuntu0.3 [Ubuntu/jammy main]
 libexporter-tiny-perl 1.002002-1 [Ubuntu/jammy main]
-libext2fs2 1.46.5-2ubuntu1.1 [Ubuntu/jammy main]
+libext2fs2 1.46.5-2ubuntu1.2 [Ubuntu/jammy main]
 libexttextcat-2.0-0 3.4.5-1build2 [Ubuntu/jammy main]
 libexttextcat-data 3.4.5-1build2 [Ubuntu/jammy main]
 libextutils-depends-perl 0.8001-1 [Ubuntu/jammy main]
@@ -2508,8 +2509,8 @@ libpwquality1 1.4.4-1build2 [Ubuntu/jammy main]
 libpython2-stdlib 2.7.18-3 [Ubuntu/jammy universe]
 libpython2.7-minimal 2.7.18-13ubuntu1.2 [Ubuntu/jammy universe]
 libpython2.7-stdlib 2.7.18-13ubuntu1.2 [Ubuntu/jammy universe]
-libpython3-dev 3.10.6-1~22.04 [Ubuntu/jammy main]
-libpython3-stdlib 3.10.6-1~22.04 [Ubuntu/jammy main]
+libpython3-dev 3.10.6-1~22.04.1 [Ubuntu/jammy main]
+libpython3-stdlib 3.10.6-1~22.04.1 [Ubuntu/jammy main]
 libpython3.10 3.10.12-1~22.04.5 [Ubuntu/jammy main]
 libpython3.10-dev 3.10.12-1~22.04.5 [Ubuntu/jammy main]
 libpython3.10-minimal 3.10.12-1~22.04.5 [Ubuntu/jammy main]
@@ -2743,7 +2744,7 @@ libsqlite3-dev 3.37.2-2ubuntu0.3 [Ubuntu/jammy main]
 libsratom-0-0 0.6.8-1 [Ubuntu/jammy universe]
 libsrt1.4-gnutls 1.4.4-4 [Ubuntu/jammy universe]
 libsrtp2-1 2.4.2-2 [Ubuntu/jammy universe]
-libss2 1.46.5-2ubuntu1.1 [Ubuntu/jammy main]
+libss2 1.46.5-2ubuntu1.2 [Ubuntu/jammy main]
 libssh-4 0.9.6-2ubuntu0.22.04.3 [Ubuntu/jammy main]
 libssh-4:i386 0.9.6-2ubuntu0.22.04.3 [Ubuntu/jammy main]
 libssh-gcrypt-4 0.9.6-2ubuntu0.22.04.3 [Ubuntu/jammy main]
@@ -3318,7 +3319,7 @@ locales 2.35-0ubuntu3.8 [Ubuntu/jammy main]
 locate 4.8.0-1ubuntu3 [Ubuntu/jammy universe]
 login 1:4.8.1-2ubuntu2.2 [Ubuntu/jammy main]
 logrotate 3.19.0-1ubuntu1.1 [Ubuntu/jammy main]
-logsave 1.46.5-2ubuntu1.1 [Ubuntu/jammy main]
+logsave 1.46.5-2ubuntu1.2 [Ubuntu/jammy main]
 lp-solve 5.5.2.5-2build2 [Ubuntu/jammy main]
 lsb-base 11.1.0ubuntu4 [Ubuntu/jammy main]
 lsb-release 11.1.0ubuntu4 [Ubuntu/jammy main]
@@ -3575,7 +3576,7 @@ python2 2.7.18-3 [Ubuntu/jammy universe]
 python2-minimal 2.7.18-3 [Ubuntu/jammy universe]
 python2.7 2.7.18-13ubuntu1.2 [Ubuntu/jammy universe]
 python2.7-minimal 2.7.18-13ubuntu1.2 [Ubuntu/jammy universe]
-python3 3.10.6-1~22.04 [Ubuntu/jammy main]
+python3 3.10.6-1~22.04.1 [Ubuntu/jammy main]
 python3-alabaster 0.7.12-1 [Ubuntu/jammy main]
 python3-anyio 3.5.0-3ubuntu2 [Ubuntu/jammy universe]
 python3-appdirs 1.4.4-2 [Ubuntu/jammy main]
@@ -3633,7 +3634,7 @@ python3-debian 0.1.43ubuntu1.1 [Ubuntu/jammy main]
 python3-decorator 4.4.2-0ubuntu1 [Ubuntu/jammy main]
 python3-defer 1.0.6-2.1ubuntu1 [Ubuntu/jammy main]
 python3-defusedxml 0.7.1-1 [Ubuntu/jammy main]
-python3-dev 3.10.6-1~22.04 [Ubuntu/jammy main]
+python3-dev 3.10.6-1~22.04.1 [Ubuntu/jammy main]
 python3-distlib 0.3.4-1 [Ubuntu/jammy universe]
 python3-distributed 2022.01.0+ds.1-1 [Ubuntu/jammy universe]
 python3-distro 1.7.0-1 [Ubuntu/jammy main]
@@ -3720,7 +3721,7 @@ python3-matplotlib 3.5.1-2build1 [Ubuntu/jammy universe]
 python3-matplotlib-inline 0.1.3-1 [Ubuntu/jammy universe]
 python3-mccabe 0.6.1-3 [Ubuntu/jammy universe]
 python3-mechanize 1:0.4.7-1 [Ubuntu/jammy universe]
-python3-minimal 3.10.6-1~22.04 [Ubuntu/jammy main]
+python3-minimal 3.10.6-1~22.04.1 [Ubuntu/jammy main]
 python3-mistune 2.0.0-1+really0.8.4-1 [Ubuntu/jammy universe]
 python3-monotonic 1.6-2 [Ubuntu/jammy main]
 python3-more-itertools 8.10.0-2 [Ubuntu/jammy main]
@@ -3879,7 +3880,7 @@ python3-update-manager 1:22.04.20 [Ubuntu/jammy main]
 python3-uritemplate 3.0.1-1 [Ubuntu/jammy universe]
 python3-urllib3 1.26.5-1~exp1ubuntu0.1 [Ubuntu/jammy main]
 python3-vcversioner 2.16.0.0-6 [Ubuntu/jammy universe]
-python3-venv 3.10.6-1~22.04 [Ubuntu/jammy universe]
+python3-venv 3.10.6-1~22.04.1 [Ubuntu/jammy universe]
 python3-virtualenv 20.13.0+ds-2 [Ubuntu/jammy universe]
 python3-virtualenv-clone 0.3.0-2 [Ubuntu/jammy universe]
 python3-wadllib 1.3.6-1 [Ubuntu/jammy main]
@@ -4150,6 +4151,7 @@ udev 249.11-0ubuntu3.12 [Ubuntu/jammy main]
 udisks2 2.9.4-1ubuntu2 [Ubuntu/jammy main]
 ueberzugpp 2.9.1 [local]
 ufw 0.36.1-4ubuntu0.1 [Ubuntu/jammy main]
+uidmap 1:4.8.1-2ubuntu2.2 [Ubuntu/jammy universe]
 uim 1:1.8.8-9build1 [Ubuntu/jammy universe]
 uim-data 1:1.8.8-9build1 [Ubuntu/jammy universe]
 uim-fep 1:1.8.8-9build1 [Ubuntu/jammy universe]
@@ -4349,6 +4351,7 @@ zstd 1.4.8+dfsg-3build1 [Ubuntu/jammy main]
 ## Pacstall
 
 ```txt {pacstall}
+name: apptainer version: 1.3.3
 name: batsignal version: 1.6.4-pacstall1
 name: bitwarden version: 2024.6.4
 name: brave-keyring version: 1.13
@@ -4378,14 +4381,47 @@ cargo:mdbook-katex          0.9.0
 cargo:mdbook-repl           0.2.4                                             
 cargo:mdbook-tera           0.5.1                                             
 go                          1.23.0           ~/.config/mise/config.toml latest
-jq                          1.7.1                                             
+jq                          1.7.1            ~/.config/mise/config.toml latest
 node                        22.7.0           ~/.config/mise/config.toml latest
 npm:cwebp                   3.1.0            ~/.config/mise/config.toml latest
 pandoc                      3.3              ~/.config/mise/config.toml latest
+pipx:ansible-core           2.17.3           ~/.config/mise/config.toml latest
+pipx:beautysh               6.2.1            ~/.config/mise/config.toml latest
+pipx:bibfish                0.3.2            ~/.config/mise/config.toml latest
+pipx:black                  24.8.0           ~/.config/mise/config.toml latest
+pipx:daltonlens             0.1.5            ~/.config/mise/config.toml latest
+pipx:ds-format              4.1.1            ~/.config/mise/config.toml latest
+pipx:euporie                2.8.2            ~/.config/mise/config.toml latest
+pipx:flake8                 7.1.1            ~/.config/mise/config.toml latest
+pipx:fonttools              4.53.1           ~/.config/mise/config.toml latest
+pipx:globus-cli             3.30.1           ~/.config/mise/config.toml latest
+pipx:gorps                  0.9.1            ~/.config/mise/config.toml latest
+pipx:httpie                 3.2.3            ~/.config/mise/config.toml latest
+pipx:huge                   0.1.3            ~/.config/mise/config.toml latest
+pipx:icloudpd               1.23.1           ~/.config/mise/config.toml latest
+pipx:jupyter-client         8.6.2            ~/.config/mise/config.toml latest
+pipx:khal                   0.11.3           ~/.config/mise/config.toml latest
+pipx:mypy                   1.11.2           ~/.config/mise/config.toml latest
+pipx:ncdump-rich            0.5.2            ~/.config/mise/config.toml latest
+pipx:nox                    2024.4.15        ~/.config/mise/config.toml latest
+pipx:npzviewer              0.2.0            ~/.config/mise/config.toml latest
+pipx:pandoc-eqnos           2.5.0            ~/.config/mise/config.toml latest
+pipx:pandoc-include         1.4.0            ~/.config/mise/config.toml latest
+pipx:pdfcropmargins         2.1.4            ~/.config/mise/config.toml latest
+pipx:poetry                 1.8.3            ~/.config/mise/config.toml latest
+pipx:pre-commit             3.8.0            ~/.config/mise/config.toml latest
+pipx:rich-cli               1.8.0            ~/.config/mise/config.toml latest
+pipx:rich-codex             1.2.7            ~/.config/mise/config.toml latest
+pipx:rofimoji               6.4.0            ~/.config/mise/config.toml latest
+pipx:toml-cli               0.7.0            ~/.config/mise/config.toml latest
+pipx:tuiview                0.1.1            ~/.config/mise/config.toml latest
+pipx:volcano-cooking        1.0.0            ~/.config/mise/config.toml latest
+pipx:wtpython               0.1              ~/.config/mise/config.toml latest
+pipx:yt-dlp                 2024.8.6         ~/.config/mise/config.toml latest
 tinytex                     2024.07.03       ~/.config/mise/config.toml latest
-ubi:Enter-tainer/typstyle   v0.11.31         ~/.config/mise/config.toml latest
+ubi:Enter-tainer/typstyle   v0.11.32         ~/.config/mise/config.toml latest
 ubi:Eoin-McMahon/blindfold  v1.0.6           ~/.config/mise/config.toml latest
-ubi:Myriad-Dreamin/shiroa   v0.2.0-nightly1  ~/.config/mise/config.toml latest
+ubi:Myriad-Dreamin/shiroa   v0.2.0-nightly4  ~/.config/mise/config.toml latest
 ubi:ajeetdsouza/zoxide      v0.9.4           ~/.config/mise/config.toml latest
 ubi:azzamsa/zman            v3.1.2           ~/.config/mise/config.toml latest
 ubi:etcd-io/etcd            v3.5.15          ~/.config/mise/config.toml latest
@@ -4393,7 +4429,7 @@ ubi:filosottile/age         v1.2.0           ~/.config/mise/config.toml latest
 ubi:goreleaser/goreleaser   v2.2.0           ~/.config/mise/config.toml latest
 ubi:houseabsolute/precious  v0.7.3           ~/.config/mise/config.toml latest
 ubi:ismaelgv/rnr            v0.4.2           ~/.config/mise/config.toml latest
-ubi:junegunn/fzf            v0.54.3          ~/.config/mise/config.toml latest
+ubi:junegunn/fzf            v0.55.0          ~/.config/mise/config.toml latest
 ubi:mgdm/htmlq              v0.4.0           ~/.config/mise/config.toml latest
 ubi:pvolok/mprocs           v0.7.1           ~/.config/mise/config.toml latest
 ubi:pythops/bluetui         v0.5.1           ~/.config/mise/config.toml latest
@@ -4401,7 +4437,8 @@ ubi:quantumsheep/sshs       4.5.1            ~/.config/mise/config.toml latest
 ubi:sharkdp/bat             v0.24.0          ~/.config/mise/config.toml latest
 ubi:typst/typst             v0.11.1          ~/.config/mise/config.toml latest
 ubi:uutils/coreutils        0.0.27           ~/.config/mise/config.toml latest
-usage                       0.3.0            ~/.config/mise/config.toml latest
+usage                       0.3.1            ~/.config/mise/config.toml latest
+uv                          0.4.0            ~/.config/mise/config.toml latest
 watchexec                   2.1.2            ~/.config/mise/config.toml latest
 ```
 
@@ -4423,7 +4460,7 @@ cargo-edit v0.12.3:
     cargo-upgrade
 cargo-info v0.7.6:
     cargo-info
-cargo-update v14.0.2:
+cargo-update v14.1.1:
     cargo-install-update
     cargo-install-update-config
 cargo-watch v8.5.2:
@@ -4436,11 +4473,11 @@ fd-find v10.2.0:
     fd
 ffsend v0.2.76:
     ffsend
-git-cliff v2.4.0:
+git-cliff v2.5.0:
     git-cliff
     git-cliff-completions
     git-cliff-mangen
-git-delta v0.18.0:
+git-delta v0.18.1:
     delta
 gitui v0.26.3:
     gitui
@@ -4461,7 +4498,7 @@ jless v0.9.0:
     jless
 jnv v0.4.0:
     jnv
-just v1.34.0:
+just v1.35.0:
     just
 languagetool-rust v2.1.4:
     ltrs
@@ -4471,7 +4508,7 @@ mdbook v0.4.40:
     mdbook
 mdbook-admonish v1.18.0:
     mdbook-admonish
-mdbook-alerts v0.6.3:
+mdbook-alerts v0.6.4:
     mdbook-alerts
 mdbook-katex v0.9.0:
     mdbook-katex
@@ -4551,7 +4588,6 @@ zellij v0.40.1:
 ```txt {uv}
 ansible-core v2.17.3
 beautysh v6.2.1
-bibfish v0.3.2
 daltonlens v0.1.5
 ds-format v4.1.1
 euporie v2.8.2
@@ -4564,7 +4600,7 @@ huge v0.1.3
 icloudpd v1.23.1
 jupyter-client v8.6.2
 khal v0.11.3
-mypy v1.11.1
+mypy v1.11.2
 ncdump-rich v0.5.2
 nox v2024.4.15
 npzviewer v0.2.0
@@ -4575,7 +4611,7 @@ poetry v1.8.3
 pre-commit v3.8.0
 rich-cli v1.8.0
 rich-codex v1.2.7
-rofimoji v6.3.2
+rofimoji v6.4.0
 toml-cli v0.7.0
 tuiview v0.1.1
 volcano-cooking v1.0.0
@@ -4989,13 +5025,13 @@ Yaru-dark Gtk Theme                                                             
 ```txt {snap}
 Name                       Version                     Rev    Tracking         Publisher      Notes
 bare                       1.0                         5      latest/stable    canonical**    base
-bw                         2024.8.0                    68     latest/stable    bitwarden**    -
+bw                         2024.8.1                    69     latest/stable    bitwarden**    -
 canonical-livepatch        10.8.3                      282    latest/stable    canonical**    -
 cmake                      3.30.2                      1409   latest/stable    crascit**      classic
 core                       16-2.61.4-20240607          17200  latest/stable    canonical**    core
 core18                     20240612                    2829   latest/stable    canonical**    base
 core20                     20240416                    2318   latest/stable    canonical**    base
-core22                     20240731                    1564   latest/stable    canonical**    base
+core22                     20240809                    1586   latest/stable    canonical**    base
 dotnet-sdk                 5.0.408                     167    5.0/stable       canonical**    classic
 duf-utility                v0.6.0                      1      latest/stable    muesli         -
 ffsend                     0.2.74                      49     latest/stable    timvisee       -
@@ -5008,7 +5044,7 @@ gnome-42-2204              0+git.510a601               176    latest/stable    c
 gnome-dictionary           40.0                        59     latest/stable    canonical**    -
 gtk-common-themes          0.1-81-g442e511             1535   latest/stable/…  canonical**    -
 gtk2-common-themes         0.1                         13     latest/stable    canonical**    -
-jami                       20240813.0                  315    latest/stable    sfljami        -
+jami                       20240823.0                  317    latest/stable    sfljami        -
 kde-frameworks-5-core18    5.67.0                      35     latest/stable    kde**          -
 lolcat                     100.0.1                     1      latest/stable    busyloop       -
 mathpix-snipping-tool      02.07.0002                  195    latest/stable    mathpix        -
