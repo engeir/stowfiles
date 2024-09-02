@@ -57,8 +57,8 @@ run_updates() {
     echo_and_run dprint config --config ~/.config/dprint/dprint.jsonc update --yes
     # Only update poetry from itself if it was install via script, otherwise uv does
     # it.
-    grep -iq poetry <(uv tool list) || echo_and_run poetry self update
-    echo_and_run pyenv update
+    # grep -iq poetry <(uv tool list) || echo_and_run poetry self update
+    # echo_and_run pyenv update
     echo_and_run sudo rclone selfupdate
 }
 

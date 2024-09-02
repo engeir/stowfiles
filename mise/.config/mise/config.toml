@@ -9,6 +9,7 @@ _.path = [
   "{{env.HOME}}/.local/share/bob/nvim-bin/",
   "{{env.HOME}}/.local/share/nvim/mason/bin",
   "{{env.HOME}}/.config/emacs/bin",
+  "{{env.HOME}}/.pixi/bin",
   "{{env.BUN_INSTALL}}/bin",
   "{{env.DENO_INSTALL}}/bin",
   "{{env.RYE_HOME}}/shims/",
@@ -63,6 +64,8 @@ NNN_TERMINAL = "{{env.TERMINAL}}"
 # NNN_PLUG = "{{ get_env(name='NNN_PLUG_' ~ env.MACHINE) }}"
 # NNN_BMS = "{{ get_env(name='NNN_BMS_' ~ env.MACHINE) }}"
 # NNN_OPENER = "{{ get_env(name='NNN_OPENER_' ~ env.MACHINE) }}"
+# TEST = "{{ get_env(name='NNN_OPENER_' ~ exec(command='cat /etc/os-release | grep \"^ID\" | sed \"s/.*=//\" | tr a-z A-Z')) }}"
+# TEST = "{{ env.NNN_OPENER_ ~ exec(command='cat /etc/os-release | grep \"^ID\" | sed \"s/.*=//\" | tr a-z A-Z') }}"
 
 # FZF settings
 FD_OPTIONS = "--follow --exclude .git --exclude node_modules"
@@ -131,7 +134,7 @@ watchexec = "latest"
 "ubi:Eoin-McMahon/blindfold" = "latest"
 "ubi:Myriad-Dreamin/shiroa" = "latest"
 "ubi:ajeetdsouza/zoxide" = "latest"
-"ubi:azzamsa/zman" = "latest"
+# "ubi:azzamsa/zman" = "latest"
 "ubi:etcd-io/etcd" = "latest"
 "ubi:filosottile/age" = "latest"
 "ubi:goreleaser/goreleaser" = "latest"
@@ -141,7 +144,7 @@ watchexec = "latest"
 "ubi:mgdm/htmlq" = "latest"
 "ubi:pvolok/mprocs" = "latest"
 "ubi:pythops/bluetui" = "latest"
-"ubi:quantumsheep/sshs" = "latest"
+# "ubi:quantumsheep/sshs" = "latest"
 "ubi:sharkdp/bat" = "latest"
 "ubi:typst/typst" = "latest"
 "ubi:uutils/coreutils" = "latest"
