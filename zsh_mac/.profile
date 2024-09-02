@@ -64,3 +64,4 @@ eval "$(atuin gen-completions --shell zsh --out-dir "$HOME/.config/zsh/.zsh_func
 eval "$(just --completions zsh >"$HOME/.config/zsh/.zsh_functions/_just")"
 eval "$(uv generate-shell-completion zsh >"$HOME/.config/zsh/.zsh_functions/_uv")"
 eval "$(bw completion --shell zsh >"$HOME/.config/zsh/.zsh_functions/_bitwarden")"
+eval "$(pixi completion --shell zsh >"$HOME/.config/zsh/.zsh_functions/_pixi")"
