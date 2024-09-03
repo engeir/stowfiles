@@ -37,7 +37,7 @@ super + alt + p
 	~/bin/pdf_open &
 	# ~/.config/sxhkd/display.sh
 super + alt + w
-	~/programs/word-lookup/word-lookup.sh &
+	~/bin/word-lookup.sh &
 super + alt + b
 	~/bin/new-bookmark.sh &
 super + alt + t
