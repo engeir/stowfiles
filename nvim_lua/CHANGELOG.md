@@ -1,5 +1,24 @@
 # Changelog
 
+## [1.17.0](https://github.com/engeir/stowfiles/compare/nvim-v1.16.1...nvim-v1.17.0) (2024-09-03)
+
+
+### Features
+
+* **nvim:** [plugin] add python-import.nvim ([e59daeb](https://github.com/engeir/stowfiles/commit/e59daebe0deffefce75232f1067a73ad0c6a6b51))
+* **nvim:** add keymaps to show/hide diagnostics ([2da9790](https://github.com/engeir/stowfiles/commit/2da979030714c75a79b4fe2b2b9561e3de22be15))
+
+
+### Bug Fixes
+
+* **nvim:** forgot to update `show` to `hide` ([f817c80](https://github.com/engeir/stowfiles/commit/f817c80d9b5ad5ac33f7ce9caf043f7fb9bc3043))
+* **nvim:** toggle diagnostic enabled, not show/hide ([c428cb8](https://github.com/engeir/stowfiles/commit/c428cb8bacadff8522e792f375d1b7b1e2f48a50))
+
+
+### Miscellaneous
+
+* merge ([fb868b6](https://github.com/engeir/stowfiles/commit/fb868b6ece10b7ed65e0039eec0ac219cf12a871))
+
 ## [1.16.1](https://github.com/engeir/stowfiles/compare/nvim-v1.16.0...nvim-v1.16.1) (2024-08-21)
 
 
