@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.16.3](https://github.com/engeir/stowfiles/compare/alacritty-v1.16.2...alacritty-v1.16.3) (2024-09-03)
+
+
+### Code Refactoring
+
+* **alacritty:** toggle opacity uses toml cli directly ([9544963](https://github.com/engeir/stowfiles/commit/9544963f44a9c90dff5a2ee80cb9af8d1540edbb))
+
 ## [1.16.2](https://github.com/engeir/stowfiles/compare/alacritty-v1.16.1...alacritty-v1.16.2) (2024-08-22)
 
 
