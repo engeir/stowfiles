@@ -1,5 +1,20 @@
 # Changelog
 
+## [1.15.5](https://github.com/engeir/stowfiles/compare/zsh_mac-v1.15.4...zsh_mac-v1.15.5) (2024-09-03)
+
+
+### Bug Fixes
+
+* **zsh:** hide some ubuntu related stuff ([6284344](https://github.com/engeir/stowfiles/commit/6284344fb2b4c9961ad0d1965c027d7a95a8841a))
+
+
+### Miscellaneous
+
+* **mise:** mose some stuff over from cargo to mise:ubi and zinit ([31f45a1](https://github.com/engeir/stowfiles/commit/31f45a120d66dc25692f79cc7388c386f687ebe6))
+* **zsh:** add pixi completion ([3c98a1d](https://github.com/engeir/stowfiles/commit/3c98a1d46f6e70e0236624363e560105709039f5))
+* **zsh:** move export to .profile ([b7777c1](https://github.com/engeir/stowfiles/commit/b7777c19a08948e599e9228c9b1fa75be67d0d45))
+* **zsh:** use the zinit installed atuin ([afd74c0](https://github.com/engeir/stowfiles/commit/afd74c0173a779fe7ce841be4f26bdda856ad871))
+
 ## [1.15.4](https://github.com/engeir/stowfiles/compare/zsh_mac-v1.15.3...zsh_mac-v1.15.4) (2024-08-22)
 
 
