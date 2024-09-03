@@ -1,5 +1,20 @@
 # Changelog
 
+## [1.15.5](https://github.com/engeir/stowfiles/compare/zsh-v1.15.4...zsh-v1.15.5) (2024-09-03)
+
+
+### Miscellaneous
+
+* **main:** release zsh 1.15.4 ([#221](https://github.com/engeir/stowfiles/issues/221)) ([3d32f55](https://github.com/engeir/stowfiles/commit/3d32f555846e76ca41798db8c53d1986b5e779e2))
+
+## [1.15.4](https://github.com/engeir/stowfiles/compare/zsh-v1.15.3...zsh-v1.15.4) (2024-09-03)
+
+
+### Miscellaneous
+
+* **main:** release zsh 1.15.4 ([#219](https://github.com/engeir/stowfiles/issues/219)) ([7451f8b](https://github.com/engeir/stowfiles/commit/7451f8b230b998322e73f368802658b53fd63096))
+* **zsh:** move export to .profile ([b7777c1](https://github.com/engeir/stowfiles/commit/b7777c19a08948e599e9228c9b1fa75be67d0d45))
+
 ## [1.15.3](https://github.com/engeir/stowfiles/compare/zsh-v1.15.2...zsh-v1.15.3) (2024-06-19)
 
 

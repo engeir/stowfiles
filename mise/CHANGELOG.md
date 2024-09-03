@@ -1,5 +1,16 @@
 # Changelog
 
+## [1.17.6](https://github.com/engeir/stowfiles/compare/mise-v1.17.5...mise-v1.17.6) (2024-09-03)
+
+
+### Miscellaneous
+
+* merge ([fb868b6](https://github.com/engeir/stowfiles/commit/fb868b6ece10b7ed65e0039eec0ac219cf12a871))
+* **mise:** add python-import ([4d495c5](https://github.com/engeir/stowfiles/commit/4d495c5f93d46bc41eaedc2912bcb324bedb01ff))
+* **mise:** mose some stuff over from cargo to mise:ubi and zinit ([31f45a1](https://github.com/engeir/stowfiles/commit/31f45a120d66dc25692f79cc7388c386f687ebe6))
+* **mise:** move uv and uvx installs to mise ([c572fab](https://github.com/engeir/stowfiles/commit/c572fab7f374698e449c18c000536f40d2e508f0))
+* **mise:** set plugins for arch ([9b92fec](https://github.com/engeir/stowfiles/commit/9b92fec28dabf50cf43c373067c3fe3650cc65fa))
+
 ## [1.17.5](https://github.com/engeir/stowfiles/compare/mise-v1.17.4...mise-v1.17.5) (2024-08-22)
 
 
