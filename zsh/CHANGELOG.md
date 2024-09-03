@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.15.4](https://github.com/engeir/stowfiles/compare/zsh-v1.15.3...zsh-v1.15.4) (2024-09-03)
+
+
+### Miscellaneous
+
+* **zsh:** move export to .profile ([b7777c1](https://github.com/engeir/stowfiles/commit/b7777c19a08948e599e9228c9b1fa75be67d0d45))
+
 ## [1.15.3](https://github.com/engeir/stowfiles/compare/zsh-v1.15.2...zsh-v1.15.3) (2024-06-19)
 
 
