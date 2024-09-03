@@ -1,5 +1,55 @@
 # Changelog
 
+## [1.20.0](https://github.com/engeir/stowfiles/compare/stowfiles-v1.19.1...stowfiles-v1.20.0) (2024-09-03)
+
+
+### Features
+
+* **nvim:** [plugin] add python-import.nvim ([e59daeb](https://github.com/engeir/stowfiles/commit/e59daebe0deffefce75232f1067a73ad0c6a6b51))
+* **nvim:** add keymaps to show/hide diagnostics ([2da9790](https://github.com/engeir/stowfiles/commit/2da979030714c75a79b4fe2b2b9561e3de22be15))
+
+
+### Bug Fixes
+
+* **alacritty:** use similar settings as on ubuntu ([78b756d](https://github.com/engeir/stowfiles/commit/78b756dc053494ab8c18efb94f233bb5be7b1411))
+* **bin:** use aerial-views dir to store wallpapers and set png and jpgs ([20c4bf2](https://github.com/engeir/stowfiles/commit/20c4bf25683f21e40206589410af28a72cdbdfd9))
+* **nvim:** forgot to update `show` to `hide` ([f817c80](https://github.com/engeir/stowfiles/commit/f817c80d9b5ad5ac33f7ce9caf043f7fb9bc3043))
+* **nvim:** toggle diagnostic enabled, not show/hide ([c428cb8](https://github.com/engeir/stowfiles/commit/c428cb8bacadff8522e792f375d1b7b1e2f48a50))
+* **software:** small formatting error in pacstall listing ([92ec497](https://github.com/engeir/stowfiles/commit/92ec497e90c9196900ea621e1e46ed5677cab1ad))
+* **zsh:** hide some ubuntu related stuff ([6284344](https://github.com/engeir/stowfiles/commit/6284344fb2b4c9961ad0d1965c027d7a95a8841a))
+
+
+### Miscellaneous
+
+* **dprint:** update ([356c18f](https://github.com/engeir/stowfiles/commit/356c18f9ee8afed1ba958795984b71608de207a7))
+* **main:** release alacritty 1.16.3 ([#213](https://github.com/engeir/stowfiles/issues/213)) ([5864b7e](https://github.com/engeir/stowfiles/commit/5864b7ed863cca5f5925f4303b45de0eb0d2f2d5))
+* **main:** release alacritty_arch 1.15.3 ([#220](https://github.com/engeir/stowfiles/issues/220)) ([2c2c53d](https://github.com/engeir/stowfiles/commit/2c2c53de96e91814e208383c743ccaded2039abd))
+* **main:** release bin 1.15.6 ([#216](https://github.com/engeir/stowfiles/issues/216)) ([9dadf9e](https://github.com/engeir/stowfiles/commit/9dadf9edd002918065b7d195cb48d699bfe4e5f0))
+* **main:** release dprint 1.15.8 ([#218](https://github.com/engeir/stowfiles/issues/218)) ([493dc8f](https://github.com/engeir/stowfiles/commit/493dc8f142eb5c42060a8f3faae98844066815a5))
+* **main:** release mise 1.17.5 ([#212](https://github.com/engeir/stowfiles/issues/212)) ([9e67884](https://github.com/engeir/stowfiles/commit/9e67884c5126209cb8325e8b1780d9c329cee231))
+* **main:** release mise 1.17.6 ([#214](https://github.com/engeir/stowfiles/issues/214)) ([8cc0308](https://github.com/engeir/stowfiles/commit/8cc0308128df4af24916cdbd22bfe4116ac404d4))
+* **main:** release nvim 1.17.0 ([#217](https://github.com/engeir/stowfiles/issues/217)) ([446f324](https://github.com/engeir/stowfiles/commit/446f3244bf760342250a1cbed47c112896deab2b))
+* **main:** release zsh 1.15.4 ([#219](https://github.com/engeir/stowfiles/issues/219)) ([7451f8b](https://github.com/engeir/stowfiles/commit/7451f8b230b998322e73f368802658b53fd63096))
+* **main:** release zsh 1.15.4 ([#221](https://github.com/engeir/stowfiles/issues/221)) ([3d32f55](https://github.com/engeir/stowfiles/commit/3d32f555846e76ca41798db8c53d1986b5e779e2))
+* **main:** release zsh 1.15.5 ([#222](https://github.com/engeir/stowfiles/issues/222)) ([f94cccc](https://github.com/engeir/stowfiles/commit/f94cccca7769c8eb75eb1d3359a4d37401b2b78d))
+* **main:** release zsh_mac 1.15.5 ([#215](https://github.com/engeir/stowfiles/issues/215)) ([41ab22d](https://github.com/engeir/stowfiles/commit/41ab22d812eb1871786d346970b6605b3abbae25))
+* merge ([fb868b6](https://github.com/engeir/stowfiles/commit/fb868b6ece10b7ed65e0039eec0ac219cf12a871))
+* **mise:** add python-import ([4d495c5](https://github.com/engeir/stowfiles/commit/4d495c5f93d46bc41eaedc2912bcb324bedb01ff))
+* **mise:** mose some stuff over from cargo to mise:ubi and zinit ([31f45a1](https://github.com/engeir/stowfiles/commit/31f45a120d66dc25692f79cc7388c386f687ebe6))
+* **mise:** move uv and uvx installs to mise ([c572fab](https://github.com/engeir/stowfiles/commit/c572fab7f374698e449c18c000536f40d2e508f0))
+* **mise:** set plugins for arch ([9b92fec](https://github.com/engeir/stowfiles/commit/9b92fec28dabf50cf43c373067c3fe3650cc65fa))
+* **software:** time the commands in the updater script ([662b1bd](https://github.com/engeir/stowfiles/commit/662b1bd4253a817cb25affcf369e8a829f6c3e87))
+* **software:** update installed ([1b37d8b](https://github.com/engeir/stowfiles/commit/1b37d8b89ac000578d9384780e0367eedbc7667c))
+* **zsh:** add pixi completion ([3c98a1d](https://github.com/engeir/stowfiles/commit/3c98a1d46f6e70e0236624363e560105709039f5))
+* **zsh:** move export to .profile ([b7777c1](https://github.com/engeir/stowfiles/commit/b7777c19a08948e599e9228c9b1fa75be67d0d45))
+* **zsh:** use the zinit installed atuin ([afd74c0](https://github.com/engeir/stowfiles/commit/afd74c0173a779fe7ce841be4f26bdda856ad871))
+
+
+### Code Refactoring
+
+* **alacritty:** toggle opacity uses toml cli directly ([9544963](https://github.com/engeir/stowfiles/commit/9544963f44a9c90dff5a2ee80cb9af8d1540edbb))
+* **mise:** move all python over to uv ([e2d7296](https://github.com/engeir/stowfiles/commit/e2d729671fe36cc89096d9248533a9cd6bad3294))
+
 ## [1.19.1](https://github.com/engeir/stowfiles/compare/stowfiles-v1.19.0...stowfiles-v1.19.1) (2024-08-22)
 
 
