@@ -71,53 +71,21 @@ mods = "None"
 # https://eastmanreference.com/complete-list-of-applescript-key-codes
 
 [[keyboard.bindings]]
-chars = "\u001Bc"
-key = "C"
-mods = "Alt"
+action = "Paste"
+key = "Paste"
 
 [[keyboard.bindings]]
-chars = "\u001Bv"
+action = "Copy"
+key = "Copy"
+
+[[keyboard.bindings]]
+action = "Paste"
 key = "V"
 mods = "Alt"
 
 [[keyboard.bindings]]
-chars = "\u001Bh"
-key = "H"
-mods = "Alt"
-
-[[keyboard.bindings]]
-chars = "\u001Bj"
-key = "J"
-mods = "Alt"
-
-[[keyboard.bindings]]
-chars = "\u001Bk"
-key = "K"
-mods = "Alt"
-
-[[keyboard.bindings]]
-chars = "\u001Bl"
-key = "L"
-mods = "Alt"
-
-[[keyboard.bindings]]
-chars = "\u001Bi"
-key = "I"
-mods = "Alt"
-
-[[keyboard.bindings]]
-chars = "\u001Bo"
-key = "O"
-mods = "Alt"
-
-[[keyboard.bindings]]
-chars = "\u001Bp"
-key = "P"
-mods = "Alt"
-
-[[keyboard.bindings]]
-chars = "\u001Bq"
-key = "Q"
+action = "Copy"
+key = "C"
 mods = "Alt"
 
 [[keyboard.bindings]]
@@ -135,9 +103,9 @@ args = ["--login"]
 program = "/usr/bin/zsh"
 
 [window]
-decorations = "buttonless"
+decorations = "None"
+dynamic_title = true
 opacity = 1.0
-option_as_alt = "OnlyRight"
 
 [window.padding]
 x = 1
