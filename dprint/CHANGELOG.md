@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.15.8](https://github.com/engeir/stowfiles/compare/dprint-v1.15.7...dprint-v1.15.8) (2024-09-03)
+
+
+### Miscellaneous
+
+* **dprint:** update ([356c18f](https://github.com/engeir/stowfiles/commit/356c18f9ee8afed1ba958795984b71608de207a7))
+
 ## [1.15.7](https://github.com/engeir/stowfiles/compare/dprint-v1.15.6...dprint-v1.15.7) (2024-08-22)
 
 
