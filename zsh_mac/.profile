@@ -28,7 +28,6 @@ if [ -d "$HOME/.cargo/bin" ]; then
     PATH="$HOME/.cargo/bin:$PATH"
 fi
 export GPG_TTY=$(tty)
-export LD_PRELOAD=/usr/lib/x86_64-linux-gnu/libgtk3-nocsd.so.0
 
 # export PATH=$HOME/.config/rofi/bin:$PATH
 # export GH_PAT_POLYBAR=$(pass API/polybar_github)
@@ -36,12 +35,15 @@ export LD_PRELOAD=/usr/lib/x86_64-linux-gnu/libgtk3-nocsd.so.0
 fpath+=${ZDOTDIR:-~}/.zsh_functions
 
 # Start keychain
-if command -v /usr/bin/keychain >/dev/null 2>&1; then
-    if uname -a | grep -i ubuntu >/dev/null 2>&1; then
-        "$HOME/bin/start-keychain-expect"
-    elif uname -a | grep -i arch >/dev/null 2>&1; then
-        "$HOME/bin/start-keychain-arch-expect"
+if [[ -d "/home/een023/" ]]; then
+    if command -v /usr/bin/keychain >/dev/null 2>&1; then
+        if uname -a | grep -i ubuntu >/dev/null 2>&1; then
+            "$HOME/bin/start-keychain-expect"
+        elif uname -a | grep -i arch >/dev/null 2>&1; then
+            "$HOME/bin/start-keychain-arch-expect"
+        fi
     fi
+    export LD_PRELOAD=/usr/lib/x86_64-linux-gnu/libgtk3-nocsd.so.0
 fi
 xset r rate 210 40
 xrdb "$HOME/.config/Xresources"
