@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.15.3](https://github.com/engeir/stowfiles/compare/alacritty_arch-v1.15.2...alacritty_arch-v1.15.3) (2024-09-03)
+
+
+### Bug Fixes
+
+* **alacritty:** use similar settings as on ubuntu ([78b756d](https://github.com/engeir/stowfiles/commit/78b756dc053494ab8c18efb94f233bb5be7b1411))
+
 ## 1.15.2 (2024-08-11)
 
 
