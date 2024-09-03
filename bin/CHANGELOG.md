@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.15.6](https://github.com/engeir/stowfiles/compare/bin-v1.15.5...bin-v1.15.6) (2024-09-03)
+
+
+### Bug Fixes
+
+* **bin:** use aerial-views dir to store wallpapers and set png and jpgs ([20c4bf2](https://github.com/engeir/stowfiles/commit/20c4bf25683f21e40206589410af28a72cdbdfd9))
+
 ## [1.15.5](https://github.com/engeir/stowfiles/compare/bin-v1.15.4...bin-v1.15.5) (2024-08-21)
 
 
