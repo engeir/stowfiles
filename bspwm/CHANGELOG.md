@@ -1,5 +1,17 @@
 # Changelog
 
+## [1.18.0](https://github.com/engeir/stowfiles/compare/bspwm-v1.17.4...bspwm-v1.18.0) (2024-09-04)
+
+
+### Features
+
+* **picom:** adjust global opacity with picom ([36a4baf](https://github.com/engeir/stowfiles/commit/36a4baf9f7266f2cb905006d24ed929e55ea4eae))
+
+
+### Miscellaneous
+
+* **bspwm:** add work-lookup.sh to arch ([899b8e0](https://github.com/engeir/stowfiles/commit/899b8e020138dabe5193090eaa92fc2e0d1b3d72))
+
 ## [1.17.4](https://github.com/engeir/stowfiles/compare/bspwm-v1.17.3...bspwm-v1.17.4) (2024-08-22)
 
 
