@@ -178,8 +178,11 @@ super + u
 super + alt + u
 	bspwm-hidden
 
-super + alt + {a,s}
-	bash ~/.config/alacritty/toggle_alacritty_opacity {u,d} &
+super + alt + {a,s,0}
+	bash ~/.config/picom/adjust-opacity {u,d,1} &
+
+super + alt + {1-9}
+	bash ~/.config/picom/adjust-opacity 0.{1-9} &
 
 #
 # focus/swap
