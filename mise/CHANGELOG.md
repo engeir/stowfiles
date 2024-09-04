@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.18.0](https://github.com/engeir/stowfiles/compare/mise-v1.17.6...mise-v1.18.0) (2024-09-04)
+
+
+### Features
+
+* **picom:** adjust global opacity with picom ([36a4baf](https://github.com/engeir/stowfiles/commit/36a4baf9f7266f2cb905006d24ed929e55ea4eae))
+
 ## [1.17.6](https://github.com/engeir/stowfiles/compare/mise-v1.17.5...mise-v1.17.6) (2024-09-03)
 
 
