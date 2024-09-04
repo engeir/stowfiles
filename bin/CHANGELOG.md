@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.15.7](https://github.com/engeir/stowfiles/compare/bin-v1.15.6...bin-v1.15.7) (2024-09-04)
+
+
+### Miscellaneous
+
+* **bspwm:** add work-lookup.sh to arch ([899b8e0](https://github.com/engeir/stowfiles/commit/899b8e020138dabe5193090eaa92fc2e0d1b3d72))
+
 ## [1.15.6](https://github.com/engeir/stowfiles/compare/bin-v1.15.5...bin-v1.15.6) (2024-09-03)
 
 

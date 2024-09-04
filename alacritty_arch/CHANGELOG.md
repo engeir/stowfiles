@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.15.4](https://github.com/engeir/stowfiles/compare/alacritty_arch-v1.15.3...alacritty_arch-v1.15.4) (2024-09-04)
+
+
+### Bug Fixes
+
+* **alacritty:** fix the alacritty adjust opacity script ([d84b9d1](https://github.com/engeir/stowfiles/commit/d84b9d1f156fc349d40c54ebc768c8e31e3dc640))
+
 ## [1.15.3](https://github.com/engeir/stowfiles/compare/alacritty_arch-v1.15.2...alacritty_arch-v1.15.3) (2024-09-03)
 
 
