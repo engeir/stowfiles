@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.16.0](https://github.com/engeir/stowfiles/compare/picom-v1.15.7...picom-v1.16.0) (2024-09-04)
+
+
+### Features
+
+* **picom:** adjust global opacity with picom ([36a4baf](https://github.com/engeir/stowfiles/commit/36a4baf9f7266f2cb905006d24ed929e55ea4eae))
+
 ## [1.15.7](https://github.com/engeir/stowfiles/compare/picom-v1.15.6...picom-v1.15.7) (2024-08-22)
 
 
