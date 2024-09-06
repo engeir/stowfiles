@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.17.1](https://github.com/engeir/stowfiles/compare/zathura-v1.17.0...zathura-v1.17.1) (2024-09-06)
+
+
+### Code Refactoring
+
+* **zathura:** change "open copy" keymap from &lt;C-s&gt; to <C-t> (new tab) ([1beab7b](https://github.com/engeir/stowfiles/commit/1beab7b05d9f1041888009344792256c4e54bffd))
+
 ## [1.17.0](https://github.com/engeir/stowfiles/compare/zathura-v1.16.0...zathura-v1.17.0) (2024-09-06)
 
 
