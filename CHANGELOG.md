@@ -1,5 +1,44 @@
 # Changelog
 
+## [1.21.0](https://github.com/engeir/stowfiles/compare/stowfiles-v1.20.0...stowfiles-v1.21.0) (2024-09-06)
+
+
+### Features
+
+* **picom:** adjust global opacity with picom ([36a4baf](https://github.com/engeir/stowfiles/commit/36a4baf9f7266f2cb905006d24ed929e55ea4eae))
+* **zathura:** add keymap to a copy of the current file ([1db1d66](https://github.com/engeir/stowfiles/commit/1db1d66df0fe1aaece9be53900cb1b4eb5e2fca8))
+
+
+### Bug Fixes
+
+* **alacritty:** fix the alacritty adjust opacity script ([d84b9d1](https://github.com/engeir/stowfiles/commit/d84b9d1f156fc349d40c54ebc768c8e31e3dc640))
+* **nvim:** mini.surround should be enabled on buf enter ([bc7e3e6](https://github.com/engeir/stowfiles/commit/bc7e3e6981181c975586d1009de45ebad5dc0d67))
+* **picom:** fullscreen windows should always be fully opaqe ([3d76979](https://github.com/engeir/stowfiles/commit/3d7697999aeb2f81a81b7f741e6112b13f5b0b1c))
+
+
+### Miscellaneous
+
+* **alacritty:** let us leave opacity intierly up to picom ([cc3ce2d](https://github.com/engeir/stowfiles/commit/cc3ce2ddac35b8e5c95264a3cf6b925e8cac9959))
+* **bspwm:** add work-lookup.sh to arch ([899b8e0](https://github.com/engeir/stowfiles/commit/899b8e020138dabe5193090eaa92fc2e0d1b3d72))
+* **main:** release alacritty_arch 1.15.4 ([#226](https://github.com/engeir/stowfiles/issues/226)) ([69319e8](https://github.com/engeir/stowfiles/commit/69319e8aec62228d9f88997c0edc1e3b32ed4471))
+* **main:** release alacritty_arch 1.15.5 ([#229](https://github.com/engeir/stowfiles/issues/229)) ([6f7262c](https://github.com/engeir/stowfiles/commit/6f7262c685a4f0e319d9eb8ba82adfec990959e1))
+* **main:** release alacritty_arch 1.15.5 ([#233](https://github.com/engeir/stowfiles/issues/233)) ([2745fb8](https://github.com/engeir/stowfiles/commit/2745fb889ac1898f6fd64d4411bd090ae7b22af5))
+* **main:** release alacritty_arch 1.15.6 ([#234](https://github.com/engeir/stowfiles/issues/234)) ([ba3f3c1](https://github.com/engeir/stowfiles/commit/ba3f3c1575a8aea9673d3286306bee4a24734419))
+* **main:** release bin 1.15.7 ([#224](https://github.com/engeir/stowfiles/issues/224)) ([f8dec12](https://github.com/engeir/stowfiles/commit/f8dec121aec78ab6c0e42802ba3ee3ee59802f9e))
+* **main:** release bspwm 1.18.0 ([#223](https://github.com/engeir/stowfiles/issues/223)) ([3ecf5c9](https://github.com/engeir/stowfiles/commit/3ecf5c995d8a0367ca2a0214c022bad95bf53d57))
+* **main:** release mise 1.18.0 ([#227](https://github.com/engeir/stowfiles/issues/227)) ([6d13049](https://github.com/engeir/stowfiles/commit/6d13049bb5e25cf9fdb67585467d384812622397))
+* **main:** release nvim 1.17.1 ([#232](https://github.com/engeir/stowfiles/issues/232)) ([aab7297](https://github.com/engeir/stowfiles/commit/aab729756ce18c127c216aaa70c1a11bbdb295ed))
+* **main:** release picom 1.16.0 ([#228](https://github.com/engeir/stowfiles/issues/228)) ([f659a01](https://github.com/engeir/stowfiles/commit/f659a019cd6dfc5531d56b1bc8eb611eac6235ba))
+* **main:** release picom 1.16.1 ([#230](https://github.com/engeir/stowfiles/issues/230)) ([7706b8e](https://github.com/engeir/stowfiles/commit/7706b8e163de950190a120fb039865d7b93b0678))
+* **main:** release zathura 1.17.0 ([#231](https://github.com/engeir/stowfiles/issues/231)) ([872e61a](https://github.com/engeir/stowfiles/commit/872e61a1742ab7f73ec8e710e0f184cee922e9c5))
+* **main:** release zathura 1.17.1 ([#235](https://github.com/engeir/stowfiles/issues/235)) ([af1c938](https://github.com/engeir/stowfiles/commit/af1c9388dab4dd728e60af2491d3ed6ec0162854))
+* **nvim:** improve comment style ([d06bb14](https://github.com/engeir/stowfiles/commit/d06bb148a16a06ab9f072b25ecc077ee88e4ac75))
+
+
+### Code Refactoring
+
+* **zathura:** change "open copy" keymap from &lt;C-s&gt; to <C-t> (new tab) ([1beab7b](https://github.com/engeir/stowfiles/commit/1beab7b05d9f1041888009344792256c4e54bffd))
+
 ## [1.20.0](https://github.com/engeir/stowfiles/compare/stowfiles-v1.19.1...stowfiles-v1.20.0) (2024-09-03)
 
 
