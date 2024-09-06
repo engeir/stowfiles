@@ -1,5 +1,17 @@
 # Changelog
 
+## [1.17.1](https://github.com/engeir/stowfiles/compare/nvim-v1.17.0...nvim-v1.17.1) (2024-09-06)
+
+
+### Bug Fixes
+
+* **nvim:** mini.surround should be enabled on buf enter ([bc7e3e6](https://github.com/engeir/stowfiles/commit/bc7e3e6981181c975586d1009de45ebad5dc0d67))
+
+
+### Miscellaneous
+
+* **nvim:** improve comment style ([d06bb14](https://github.com/engeir/stowfiles/commit/d06bb148a16a06ab9f072b25ecc077ee88e4ac75))
+
 ## [1.17.0](https://github.com/engeir/stowfiles/compare/nvim-v1.16.1...nvim-v1.17.0) (2024-09-03)
 
 
