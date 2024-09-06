@@ -13,9 +13,9 @@ set link-hadjust "false"
 map <C-a> feedkeys ":exec okular $FILE<Return>"
 # Open file in a viewer that support annotations
 map <C-c> feedkeys ":exec sioyek $FILE --new-window<Return>"
-# Open a second (sibling) copy of the same file (easy figure referencing and stuff,
-# although power users will complain "just use marks")
-map <C-s> feedkeys ":exec zathura $FILE<Return>"
+# Open a second (tab) copy of the same file (easy figure referencing and stuff, although
+# power users will complain "just use marks")
+map <C-t> feedkeys ":exec zathura $FILE<Return>"
 # Send document to reMarkable
 # map <C-s> feedkeys ":exec rmapi put $FILE<Return>"
 # Try getting a documents bibtex representation
