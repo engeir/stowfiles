@@ -6,6 +6,7 @@
 ### Miscellaneous
 
 * **alacritty:** let us leave opacity intierly up to picom ([cc3ce2d](https://github.com/engeir/stowfiles/commit/cc3ce2ddac35b8e5c95264a3cf6b925e8cac9959))
+* **main:** release alacritty_arch 1.15.5 ([#229](https://github.com/engeir/stowfiles/issues/229)) ([6f7262c](https://github.com/engeir/stowfiles/commit/6f7262c685a4f0e319d9eb8ba82adfec990959e1))
 
 ## [1.15.4](https://github.com/engeir/stowfiles/compare/alacritty_arch-v1.15.3...alacritty_arch-v1.15.4) (2024-09-04)
 
