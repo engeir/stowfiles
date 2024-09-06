@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.15.6](https://github.com/engeir/stowfiles/compare/alacritty_arch-v1.15.5...alacritty_arch-v1.15.6) (2024-09-06)
+
+
+### Miscellaneous
+
+* **main:** release alacritty_arch 1.15.5 ([#233](https://github.com/engeir/stowfiles/issues/233)) ([2745fb8](https://github.com/engeir/stowfiles/commit/2745fb889ac1898f6fd64d4411bd090ae7b22af5))
+
 ## [1.15.5](https://github.com/engeir/stowfiles/compare/alacritty_arch-v1.15.4...alacritty_arch-v1.15.5) (2024-09-06)
 
 
