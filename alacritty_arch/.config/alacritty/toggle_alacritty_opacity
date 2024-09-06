@@ -2,15 +2,15 @@
 
 # I install toml (toml-cli) using mise, so lets add the shims to path!
 export PATH="$HOME/.local/share/mise/shims:$PATH"
-## If alacritty.toml does not exist, raise an alert
+# If alacritty.toml does not exist, raise an alert
 [[ ! -f ~/.config/alacritty/alacritty.toml ]] \
     && dunst "alacritty.toml does not exist" && exit 0
 
-## If toml does not exist, raise an alert
+# If toml does not exist, raise an alert
 if ! command -v toml >/dev/null 2>&1; then
     notify-send "toml-cli does not exist" && exit 0
 fi
-## Fetch background_opacity from alacritty.yml
+# Fetch background_opacity from alacritty.yml
 opacity="$(toml get --toml-path ~/.config/alacritty/alacritty.toml window.opacity)"
 
 if [ $# -eq 0 ]; then
@@ -35,5 +35,5 @@ else
     new="$opacity"
 fi
 
-## Replace opacity value in alacritty.yml
+# Replace opacity value in alacritty.yml
 toml set --toml-path ~/.config/alacritty/alacritty.toml --to-float window.opacity "$new"
