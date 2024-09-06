@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.16.1](https://github.com/engeir/stowfiles/compare/picom-v1.16.0...picom-v1.16.1) (2024-09-06)
+
+
+### Bug Fixes
+
+* **picom:** fullscreen windows should always be fully opaqe ([3d76979](https://github.com/engeir/stowfiles/commit/3d7697999aeb2f81a81b7f741e6112b13f5b0b1c))
+
 ## [1.16.0](https://github.com/engeir/stowfiles/compare/picom-v1.15.7...picom-v1.16.0) (2024-09-04)
 
 
