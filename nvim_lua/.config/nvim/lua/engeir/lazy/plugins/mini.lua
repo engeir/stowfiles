@@ -1,33 +1,33 @@
 return {
-  -- mini.nvim
+  -- `mini.nvim`
   -- Replaces:
-  --    junegunn/vim-easy-align     -> mini.align
-  --    numToStr/Comment.nvim       -> mini.comment
-  --    RRethy/vim-illuminate       -> mini.cursorword
-  --    nvim-tree/nvim-web-devicons -> mini.icons
-  --    windwp/nvim-autopairs       -> mini.pairs      -> altermo/ultimate-autopair.nvim
-  --    goolord/alpha-nvim          -> mini.starter
-  --    kylechui/nvim-surround      -> mini.surround
-  --    folke/flash.nvim            <- mini.jump
+  --    `junegunn/vim-easy-align`     -> `mini.align`
+  --    `numToStr/Comment.nvim`       -> `mini.comment`
+  --    `RRethy/vim-illuminate`       -> `mini.cursorword`
+  --    `nvim-tree/nvim-web-devicons` -> `mini.icons`
+  --    `windwp/nvim-autopairs`       -> `mini.pairs`      -> `altermo/ultimate-autopair.nvim`
+  --    `goolord/alpha-nvim`          -> `mini.starter`
+  --    `kylechui/nvim-surround`      -> `mini.surround`
+  --    `folke/flash.nvim`            <- `mini.jump`
 
-  -- mini.ai -------------------------------------------------------------------------
+  -- `mini.ai` -------------------------------------------------------------------------
   {
     "echasnovski/mini.ai",
-    event = "InsertEnter",
+    event = { "BufReadPre", "BufNewFile" },
     config = true,
   },
 
-  -- mini.align ----------------------------------------------------------------------
+  -- `mini.align` ----------------------------------------------------------------------
   { "echasnovski/mini.align", config = true, event = { "BufReadPre", "BufNewFile" } },
 
-  -- mini.base16 ---------------------------------------------------------------------
+  -- `mini.base16` ---------------------------------------------------------------------
   { "echasnovski/mini.base16", event = { "VeryLazy" }, enabled = false },
 
-  -- mini.bracketed ------------------------------------------------------------------
+  -- `mini.bracketed` ------------------------------------------------------------------
   {
     "echasnovski/mini.bracketed",
     event = { "BufReadPre", "BufNewFile" },
-    -- Set using anuvyklack/hydra.nvim
+    -- Set using `anuvyklack/hydra.nvim`
     opts = {
       buffer = { suffix = "" },
       comment = { suffix = "" },
@@ -46,7 +46,7 @@ return {
     },
   },
 
-  -- mini.bufremove ------------------------------------------------------------------
+  -- `mini.bufremove` ------------------------------------------------------------------
   {
     "echasnovski/mini.bufremove",
     event = { "BufReadPre", "BufNewFile" },
@@ -62,7 +62,7 @@ return {
     },
   },
 
-  -- mini.clue -----------------------------------------------------------------------
+  -- `mini.clue` -----------------------------------------------------------------------
   {
     "echasnovski/mini.clue",
     enabled = false,
@@ -99,7 +99,7 @@ return {
           { mode = "n", keys = "[" },
         },
         clues = {
-          -- Enhance this by adding descriptions for <Leader> mapping groups
+          -- Enhance this by adding descriptions for `<Leader>` mapping groups
           miniclue.gen_clues.builtin_completion(),
           miniclue.gen_clues.g(),
           miniclue.gen_clues.marks(),
@@ -136,7 +136,7 @@ return {
       })
     end,
   },
-  -- mini.colors ---------------------------------------------------------------------
+  -- `mini.colors` ---------------------------------------------------------------------
   {
     "echasnovski/mini.colors",
     version = "*",
@@ -145,7 +145,7 @@ return {
     enabled = false,
   },
 
-  -- mini.comment --------------------------------------------------------------------
+  -- `mini.comment` --------------------------------------------------------------------
   {
     "echasnovski/mini.comment",
     enabled = false,
@@ -174,14 +174,14 @@ return {
     config = true,
   },
 
-  -- mini.cursorword -----------------------------------------------------------------
+  -- `mini.cursorword` -----------------------------------------------------------------
   {
     "echasnovski/mini.cursorword",
     event = { "BufReadPost", "BufNewFile" },
     config = true,
   },
 
-  -- mini.files ----------------------------------------------------------------------
+  -- `mini.files` ----------------------------------------------------------------------
   {
     "echasnovski/mini.files",
     config = function()
@@ -208,26 +208,25 @@ return {
     },
   },
 
-  -- mini.fuzzy ----------------------------------------------------------------------
+  -- `mini.fuzzy` ----------------------------------------------------------------------
   -- Replaces one of the sorters:
   -- https://github.com/nvim-telescope/telescope.nvim#sorters
   { "echasnovski/mini.fuzzy", config = true },
 
-  -- mini.hues -----------------------------------------------------------------------
+  -- `mini.hues` -----------------------------------------------------------------------
   {
     "echasnovski/mini.hues",
     enabled = false,
     opts = { background = "#002734", foreground = "#c0c8cc", saturation = "low" },
   },
 
-  -- mini.icons ----------------------------------------------------------------------
+  -- `mini.icons` ----------------------------------------------------------------------
   { "echasnovski/mini.icons" },
 
-  -- mini.indentscope ----------------------------------------------------------------
+  -- `mini.indentscope` ----------------------------------------------------------------
   {
     "echasnovski/mini.indentscope",
     enabled = false,
-    version = false, -- wait till new 0.7.0 release to put it back on semver
     event = { "BufReadPre", "BufNewFile" },
     opts = {
       -- symbol = "▏",
@@ -255,11 +254,11 @@ return {
     end,
   },
 
-  -- mini.jump -----------------------------------------------------------------------
+  -- `mini.jump` -----------------------------------------------------------------------
   -- Alternative is folke/flash.nvim
   -- require("mini.jump").setup({ delay = { highlight = 10 ^ 7 } })
 
-  -- mini.operators ------------------------------------------------------------------
+  -- `mini.operators` ------------------------------------------------------------------
   {
     "echasnovski/mini.operators",
     event = { "BufReadPre", "BufNewFile" },
@@ -270,7 +269,7 @@ return {
     },
   },
 
-  -- mini.pairs ----------------------------------------------------------------------
+  -- `mini.pairs` ----------------------------------------------------------------------
   {
     "echasnovski/mini.pairs",
     enabled = false,
@@ -278,13 +277,17 @@ return {
     config = true,
   },
 
-  -- mini.splitjoin ------------------------------------------------------------------
+  -- `mini.splitjoin` ------------------------------------------------------------------
   { "echasnovski/mini.splitjoin", config = true, enabled = false },
 
-  -- mini.surround -------------------------------------------------------------------
-  { "echasnovski/mini.surround", config = true, event = "InsertEnter" },
+  -- `mini.surround` -------------------------------------------------------------------
+  {
+    "echasnovski/mini.surround",
+    config = true,
+    event = { "BufReadPre", "BufNewFile" },
+  },
 
-  -- mini.starter --------------------------------------------------------------------
+  -- `mini.starter` --------------------------------------------------------------------
   {
     "echasnovski/mini.starter",
     lazy = false,
@@ -379,7 +382,7 @@ return {
     end,
   },
 
-  -- mini.trailspace -----------------------------------------------------------------
+  -- `mini.trailspace` -----------------------------------------------------------------
   {
     "echasnovski/mini.trailspace",
     enabled = false,
