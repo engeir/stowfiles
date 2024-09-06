@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.17.0](https://github.com/engeir/stowfiles/compare/zathura-v1.16.0...zathura-v1.17.0) (2024-09-06)
+
+
+### Features
+
+* **zathura:** add keymap to a copy of the current file ([1db1d66](https://github.com/engeir/stowfiles/commit/1db1d66df0fe1aaece9be53900cb1b4eb5e2fca8))
+
 ## [1.16.0](https://github.com/engeir/stowfiles/compare/zathura-v1.15.3...zathura-v1.16.0) (2024-08-21)
 
 
