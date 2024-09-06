@@ -70,14 +70,14 @@ return {
           "equation",
         },
       },
-      formatterLineLength = -1, -- bib files
+      formatterLineLength = -1, -- For `bib` files
       forwardSearch = {
         executable = "zathura",
         args = { "--synctex-forward", "%l:1:%f", "%p" },
       },
       latexindent = { modifyLineBreaks = true },
       build = {
-        onSave = false, -- i'd rather control this with autocommands, so i can more easily toggle it
+        onSave = false, -- I'd rather control this with auto-commands, so I can more easily toggle it
         forwardSearchAfter = false,
         executable = "tectonic",
         args = {
