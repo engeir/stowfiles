@@ -14,6 +14,27 @@ return {
       end,
       desc = "Buffer Local Keymaps (which-key)",
     },
+    {
+      "[<space>",
+      function()
+        require("which-key").show({ keys = "[", loop = true })
+      end,
+      desc = "Hydra Mode (which-key)",
+    },
+    {
+      "]<space>",
+      function()
+        require("which-key").show({ keys = "]", loop = true })
+      end,
+      desc = "Hydra Mode (which-key)",
+    },
+    {
+      "<c-w><space>",
+      function()
+        require("which-key").show({ keys = "<c-w>", loop = true })
+      end,
+      desc = "Window Hydra Mode (which-key)",
+    },
   },
   config = function() -- This is the function that runs, AFTER loading
     require("which-key").setup()
@@ -31,6 +52,8 @@ return {
       { "<leader>w", group = "Workspace" },
       { "<leader>ws", "<cmd>source %<cr>", desc = "Source file" },
       { "cr", group = "Refactor" },
+      { "]", group = "Next/Prev" },
+      { "[", group = "Last/First" },
     })
     -- wk.show({
     --   keys = "<c-w>",

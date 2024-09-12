@@ -27,12 +27,81 @@ return {
   {
     "echasnovski/mini.bracketed",
     event = { "BufReadPre", "BufNewFile" },
-    -- Set using `anuvyklack/hydra.nvim`
+    keys = {
+      { "]b", "<Cmd>lua MiniBracketed.buffer('forward')<CR>", desc = "Buffer Next" },
+      { "]B", "<Cmd>lua MiniBracketed.buffer('backward')<CR>", desc = "Buffer Prev" },
+      { "]c", "<Cmd>lua MiniBracketed.comment('forward')<CR>", desc = "Comment Next" },
+      { "]C", "<Cmd>lua MiniBracketed.comment('backward')<CR>", desc = "Comment Prev" },
+      {
+        "]x",
+        "<Cmd>lua MiniBracketed.conflict('forward')<CR>",
+        desc = "Conflict Next",
+      },
+      {
+        "]X",
+        "<Cmd>lua MiniBracketed.conflict('backward')<CR>",
+        desc = "Conflict Prev",
+      },
+      -- { "d", function()
+      --     vim.diagnostic.goto_next()
+      --     -- vim.diagnostic.open_float()
+      -- end },
+      -- { "D", function ()
+      --     vim.diagnostic.goto_prev()
+      --     -- vim.diagnostic.open_float()
+      -- end,                            { desc = "Diagnostic" } },
+      -- { "d", "<Cmd>lua MiniBracketed.diagnostic('forward')<CR>" },
+      -- { "D", "<Cmd>lua MiniBracketed.diagnostic('backward')<CR>", { desc = "Diagnostic" } },
+      { "]f", "<Cmd>lua MiniBracketed.file('forward')<CR>", desc = "File Next" },
+      { "]F", "<Cmd>lua MiniBracketed.file('backward')<CR>", desc = "File Prev" },
+      { "]i", "<Cmd>lua MiniBracketed.indent('forward')<CR>", desc = "Indent Next" },
+      { "]I", "<Cmd>lua MiniBracketed.indent('backward')<CR>", desc = "Indent Prev" },
+      { "]j", "<Cmd>lua MiniBracketed.jump('forward')<CR>", desc = "Jump Next" },
+      { "]J", "<Cmd>lua MiniBracketed.jump('forward')<CR>", desc = "Jump Prev" },
+      {
+        "]l",
+        "<Cmd>lua MiniBracketed.location('forward')<CR>",
+        desc = "Location Next",
+      },
+      {
+        "]L",
+        "<Cmd>lua MiniBracketed.location('backward')<CR>",
+        desc = "Location Prev",
+      },
+      { "]o", "<Cmd>lua MiniBracketed.oldfile('forward')<CR>", desc = "Oldfile Next" },
+      { "]O", "<Cmd>lua MiniBracketed.oldfile('backward')<CR>", desc = "Oldfile Prev" },
+      {
+        "]q",
+        "<Cmd>lua MiniBracketed.quickfix('forward')<CR>",
+        desc = "Quickfix Next",
+      },
+      {
+        "]Q",
+        "<Cmd>lua MiniBracketed.quickfix('backward')<CR>",
+        desc = "Quickfix Prev",
+      },
+      {
+        "]t",
+        "<Cmd>lua MiniBracketed.treesitter('forward')<CR>",
+        desc = "Treesitter Next",
+      },
+      {
+        "]T",
+        "<Cmd>lua MiniBracketed.treesitter('backward')<CR>",
+        desc = "Treesitter Prev",
+      },
+      { "]u", "<Cmd>lua MiniBracketed.undo('forward')<CR>", desc = "Undo" },
+      { "]U", "<Cmd>lua MiniBracketed.undo('backward')<CR>", desc = "Redo" },
+      { "]w", "<Cmd>lua MiniBracketed.window('forward')<CR>", desc = "Window Next" },
+      { "]W", "<Cmd>lua MiniBracketed.window('backward')<CR>", desc = "Window Prev" },
+      { "]y", "<Cmd>lua MiniBracketed.yank('forward')<CR>", desc = "Yank Next" },
+      { "]Y", "<Cmd>lua MiniBracketed.yank('backward')<CR>", desc = "Yank Prev" },
+    },
     opts = {
       buffer = { suffix = "" },
       comment = { suffix = "" },
       conflict = { suffix = "" },
-      -- diagnostic = { suffix = "" },
+      diagnostic = { suffix = "" },
       file = { suffix = "" },
       indent = { suffix = "" },
       jump = { suffix = "" },
