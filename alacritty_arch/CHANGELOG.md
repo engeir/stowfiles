@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.15.7](https://github.com/engeir/stowfiles/compare/alacritty_arch-v1.15.6...alacritty_arch-v1.15.7) (2024-09-12)
+
+
+### Miscellaneous
+
+* **alacritty:** specify color ([ba63c2e](https://github.com/engeir/stowfiles/commit/ba63c2e4a341148cd219302da222ea4165bb0f6a))
+
 ## [1.15.6](https://github.com/engeir/stowfiles/compare/alacritty_arch-v1.15.5...alacritty_arch-v1.15.6) (2024-09-06)
 
 
