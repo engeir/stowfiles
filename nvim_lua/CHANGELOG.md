@@ -1,5 +1,18 @@
 # Changelog
 
+## [1.17.2](https://github.com/engeir/stowfiles/compare/nvim-v1.17.1...nvim-v1.17.2) (2024-09-12)
+
+
+### Miscellaneous
+
+* **nvim:** small fixes ([155aef3](https://github.com/engeir/stowfiles/commit/155aef3d84c9f55ca7310dd5a7e78a05a26a2f60))
+
+
+### Code Refactoring
+
+* **nvim:** disable J in visual vertical move ([afa66ec](https://github.com/engeir/stowfiles/commit/afa66eca7c0958f9b3fe63929b31cc0f56bcc083))
+* **nvim:** remove hydra.nvim and replace with which-key.nvim ([b35851c](https://github.com/engeir/stowfiles/commit/b35851c71098e8725616d8cc66011ee7725bb503))
+
 ## [1.17.1](https://github.com/engeir/stowfiles/compare/nvim-v1.17.0...nvim-v1.17.1) (2024-09-06)
 
 
