@@ -32,7 +32,7 @@ set synctex true
 set synctex-editor-command "texlab inverse-search -i %{input} -l %{line}"
 
 # Transparency (same as #2d2d2d which is set in Xresources)
-set default-bg rgba(45,45,45,0.90)
+set default-bg rgba(45,45,45,1.00)
 
 # Colors for inverse mode
 set recolor-lightcolor "rgba(0,0,0,0)"

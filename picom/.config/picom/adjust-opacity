@@ -35,3 +35,13 @@ elif [[ $1 == '1' ]]; then
     new=$1
     crudini --set ~/.config/picom/picom.conf "" inactive-opacity "$new"
 fi
+
+# For some reason, when nvim is open, the alacritty opacity is taking precedence, even
+# though alacritty otherwise has the same opacity as that given in `picom.conf`.
+# Strange! But we just update it here so its fine.
+
+# If toml does not exist, raise an alert
+if ! command -v toml >/dev/null 2>&1; then
+    notify-send "toml-cli does not exist" && exit 0
+fi
+# toml set --toml-path ~/.config/alacritty/alacritty.toml --to-float window.opacity "$new"
