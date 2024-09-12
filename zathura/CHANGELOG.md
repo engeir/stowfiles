@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.17.2](https://github.com/engeir/stowfiles/compare/zathura-v1.17.1...zathura-v1.17.2) (2024-09-12)
+
+
+### Miscellaneous
+
+* **picom,zathura:** only use picom to control opacity ([490ca9d](https://github.com/engeir/stowfiles/commit/490ca9da1ee9a669c2d54a2b82761b026410a7fe))
+
 ## [1.17.1](https://github.com/engeir/stowfiles/compare/zathura-v1.17.0...zathura-v1.17.1) (2024-09-06)
 
 
