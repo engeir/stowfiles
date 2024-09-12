@@ -68,7 +68,7 @@ vim.keymap.set("x", "<leader>p", '"_dP')
 vim.keymap.set({ "v", "n" }, "<leader>d", '"_d')
 
 -- Move lines
-vim.keymap.set("x", "J", ":move '>+1<CR>gv=gv")
+-- vim.keymap.set("x", "J", ":move '>+1<CR>gv=gv")
 vim.keymap.set("x", "K", ":move '<-2<CR>gv=gv")
 -- vim.keymap.set("i", "<C-j>", ":m .+1<CR>==")
 -- vim.keymap.set("i", "<C-k>", ":m .-2<CR>==")
