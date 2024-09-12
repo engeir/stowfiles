@@ -70,7 +70,7 @@ return {
           }
         end,
         tex = { "llf" },
-        toml = { "dprint", "taplo", stop_after_first = true },
+        toml = { "dprint", "taplo", stop_after_first = false },
         typescript = { "prettierd", "dprint", "prettier", stop_after_first = true },
         typescriptreact = { "prettierd", "dprint", "prettier", stop_after_first = true },
         typst = { "typstyle", lsp_format = "first" },

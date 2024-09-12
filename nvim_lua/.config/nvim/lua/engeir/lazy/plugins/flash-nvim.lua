@@ -2,7 +2,7 @@ return {
   "folke/flash.nvim",
   -- Probably a good plugin, but I don't know how to use it. It breaks ct<character>
   -- and the dot repeat of the motion, for example.
-  event = "InsertEnter",
+  event = { "BufReadPre", "BufNewFile" },
   ---@type Flash.Config
   opts = {
     modes = {

@@ -148,13 +148,6 @@ return {
   }, -- To commit quickly and view
   { "rhysd/committia.vim", ft = "gitcommit" },
   {
-    "kdheepak/lazygit.nvim",
-    enabled = vim.fn.executable("lazygit"),
-    keys = {
-      { "<leader>gl", "<cmd>LazyGit<cr>", desc = "LazyGit" },
-    },
-  },
-  {
     "ruifm/gitlinker.nvim",
     event = { "BufReadPre", "BufNewFile" },
     keys = {
