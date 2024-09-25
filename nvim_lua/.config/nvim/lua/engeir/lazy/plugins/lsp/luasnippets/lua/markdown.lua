@@ -8,6 +8,7 @@ return {
   s({ trig = "Alpha-raw" }, { t("𝛢") }),
   s({ trig = "dpis" }, { t("<!-- dprint-ignore-start -->") }),
   s({ trig = "dpie" }, { t("<!-- dprint-ignore-end -->") }),
+  s({ trig = "beg" }, fmt("\\begin{{{}}}\n{}\n\\end{{{}}}\n", { i(1), i(2), rep(1) })),
   s(
     "fig-screen",
     fmt(

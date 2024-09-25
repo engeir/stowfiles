@@ -6,6 +6,6 @@ vim.api.nvim_create_user_command(
 
 vim.api.nvim_create_user_command(
   "FlameshotSvg",
-  "!mkdir %:p:h/svg/ && flameshot gui -p %:p:h/svg/",
+  "!mkdir -p %:p:h/svg/ && flameshot gui -p %:p:h/svg/",
   { desc = "Create a screenshot with Flameshot and place it in an svg directory" }
 )
