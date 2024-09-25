@@ -5,6 +5,7 @@
 
 ### Miscellaneous
 
+* **main:** release mise 1.18.1 ([#245](https://github.com/engeir/stowfiles/issues/245)) ([793d016](https://github.com/engeir/stowfiles/commit/793d016c0929129ecbb91c2ce6dbbd9dd2cca888))
 * **zsh,mise:** control keychain sourcing with mise ([f036d95](https://github.com/engeir/stowfiles/commit/f036d9504cca070c52ce02f2672e604aa905200e))
 
 ## [1.18.0](https://github.com/engeir/stowfiles/compare/mise-v1.17.6...mise-v1.18.0) (2024-09-04)
