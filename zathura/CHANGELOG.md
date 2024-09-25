@@ -5,6 +5,7 @@
 
 ### Miscellaneous
 
+* **main:** release zathura 1.17.2 ([#239](https://github.com/engeir/stowfiles/issues/239)) ([bacfd9d](https://github.com/engeir/stowfiles/commit/bacfd9d201c00110197527b7935ff0ab21b689f5))
 * **picom,zathura:** only use picom to control opacity ([490ca9d](https://github.com/engeir/stowfiles/commit/490ca9da1ee9a669c2d54a2b82761b026410a7fe))
 
 ## [1.17.1](https://github.com/engeir/stowfiles/compare/zathura-v1.17.0...zathura-v1.17.1) (2024-09-06)
