@@ -29,5 +29,8 @@ elif [[ $MACHINE == "DARWIN" ]]; then
 elif [[ $MACHINE == "ARCH" ]]; then
     export NNN_PLUG='d:dragdrop;f:fzcd;i:ipinfo;m:viewmedia;p:preview-tui2;u:upload'
     export NNN_BMS='b:~/Pictures/;c:~/.config/;d:~/Downloads/;l:~/.local;m:~/stowfiles/;p:~/programs/;s:~/bin/'
-    # export NNN_OPENER=
+    export NNN_OPENER="/home/eirikre/.config/nnn/plugins/nuke"
 fi
+
+# Source some other configs
+. "$HOME/.keychain/$(hostnamectl --static)-sh"
