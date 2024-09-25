@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.15.6](https://github.com/engeir/stowfiles/compare/zsh_mac-v1.15.5...zsh_mac-v1.15.6) (2024-09-25)
+
+
+### Miscellaneous
+
+* **zsh,mise:** control keychain sourcing with mise ([f036d95](https://github.com/engeir/stowfiles/commit/f036d9504cca070c52ce02f2672e604aa905200e))
+
 ## [1.15.5](https://github.com/engeir/stowfiles/compare/zsh_mac-v1.15.4...zsh_mac-v1.15.5) (2024-09-03)
 
 
