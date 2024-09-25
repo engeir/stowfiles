@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.17.3](https://github.com/engeir/stowfiles/compare/zathura-v1.17.2...zathura-v1.17.3) (2024-09-25)
+
+
+### Miscellaneous
+
+* **main:** release zathura 1.17.2 ([#241](https://github.com/engeir/stowfiles/issues/241)) ([613f8b4](https://github.com/engeir/stowfiles/commit/613f8b42ccd16026d4f2c9c1c1b7bd48293b9eae))
+
 ## [1.17.2](https://github.com/engeir/stowfiles/compare/zathura-v1.17.1...zathura-v1.17.2) (2024-09-12)
 
 
