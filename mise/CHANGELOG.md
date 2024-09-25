@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.18.1](https://github.com/engeir/stowfiles/compare/mise-v1.18.0...mise-v1.18.1) (2024-09-25)
+
+
+### Miscellaneous
+
+* **zsh,mise:** control keychain sourcing with mise ([f036d95](https://github.com/engeir/stowfiles/commit/f036d9504cca070c52ce02f2672e604aa905200e))
+
 ## [1.18.0](https://github.com/engeir/stowfiles/compare/mise-v1.17.6...mise-v1.18.0) (2024-09-04)
 
 
