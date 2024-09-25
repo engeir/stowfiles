@@ -1,17 +1,17 @@
 #!/usr/bin/env bash
 
-ALL="$(bspc query --monitors --names)"
-if grep -q "^eDP" <(echo "$ALL"); then
-    internal_monitor=$(grep "^eDP" <(echo "$ALL"))
-fi
-if grep -q "^DP" <(echo "$ALL"); then
-    external_monitor=$(grep "^DP" <(echo "$ALL"))
-fi
-if grep -q "^HDMI" <(echo "$ALL"); then
-    external_monitor=$(grep "^HDMI" <(echo "$ALL"))
-fi
-# internal_monitor=eDP1
-# external_monitor=DP-2
+# ALL="$(bspc query --monitors --names)"
+# if grep -q "^eDP" <(echo "$ALL"); then
+#     internal_monitor=$(grep "^eDP" <(echo "$ALL"))
+# fi
+# if grep -q "^DP" <(echo "$ALL"); then
+#     external_monitor=$(grep "^DP" <(echo "$ALL"))
+# fi
+# if grep -q "^HDMI" <(echo "$ALL"); then
+#     external_monitor=$(grep "^HDMI" <(echo "$ALL"))
+# fi
+internal_monitor=eDP1
+external_monitor=DP-2
 
 monitor_add() {
     desktops=7 # How many desktops to move to the second monitor
