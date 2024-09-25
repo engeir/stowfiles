@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.17.3](https://github.com/engeir/stowfiles/compare/nvim-v1.17.2...nvim-v1.17.3) (2024-09-25)
+
+
+### Miscellaneous
+
+* **nvim:** [plugin] deprecation warning ([c1e732c](https://github.com/engeir/stowfiles/commit/c1e732cf26fb8bc2bd02ceb0f615f601b6f3c902))
+* **nvim:** add some custom commands ([b7b03a3](https://github.com/engeir/stowfiles/commit/b7b03a356b28204afa4a284c5b078bd7dd9eca59))
+
 ## [1.17.2](https://github.com/engeir/stowfiles/compare/nvim-v1.17.1...nvim-v1.17.2) (2024-09-12)
 
 
