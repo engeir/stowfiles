@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.18.1](https://github.com/engeir/stowfiles/compare/bspwm-v1.18.0...bspwm-v1.18.1) (2024-09-25)
+
+
+### Bug Fixes
+
+* **bspwm:** the autorandr script need static vars ([1d8f67d](https://github.com/engeir/stowfiles/commit/1d8f67d3050ca8260304bb26f13efbe06b88cbcb))
+
 ## [1.18.0](https://github.com/engeir/stowfiles/compare/bspwm-v1.17.4...bspwm-v1.18.0) (2024-09-04)
 
 
