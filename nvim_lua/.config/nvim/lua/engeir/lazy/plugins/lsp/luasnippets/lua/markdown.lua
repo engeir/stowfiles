@@ -20,6 +20,7 @@ return {
     "fig-svg",
     fmt('<div class="svgfig">\n\n{{{{#include {}}}}}\n\n{}\n\n</div>', { i(1), i(2) })
   ),
+  s("divans", fmt('<div class="answer">\n\n{}\n\n</div>', { i(1) })),
 }, {
   -- Auto
   s({ trig = ".fr" }, {
@@ -30,8 +31,8 @@ return {
     t("}"),
   }),
   s({ trig = ".sq" }, { t("\\sqrt{"), i(1), t("}") }),
-  s({ trig = "mk" }, { t("\\("), i(1), t("\\)") }),
-  s({ trig = ".eq" }, { t("\\[ "), i(1), t(" \\]") }),
+  s({ trig = "mk" }, { t("$"), i(1), t("$") }),
+  s({ trig = ".eq" }, { t({ "$$", "" }), i(1), t({ "", "$$" }) }),
   s(
     { trig = ".sub", wordTrig = false, name = "auto subscript" },
     { t("_{"), i(1), t("}"), i(0) }
@@ -41,4 +42,7 @@ return {
     { t("^{"), i(1), t("}"), i(0) }
   ),
   s({ trig = ".SI" }, { i(1), t("\\,\\mathrm{"), i(2), t("}") }),
+  s({ trig = ".ce" }, { t("\\ce{"), i(1), t("}") }),
+  s({ trig = "mcl" }, { t("\\mathcal{"), i(1), t("}") }),
+  s({ trig = "stf", wordTrig = false }, { t("\\cdot 10^{"), i(1), t("}") }),
 }
