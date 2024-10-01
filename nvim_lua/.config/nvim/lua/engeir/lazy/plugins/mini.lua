@@ -42,16 +42,21 @@ return {
         "<Cmd>lua MiniBracketed.conflict('backward')<CR>",
         desc = "Conflict Prev",
       },
-      -- { "d", function()
-      --     vim.diagnostic.goto_next()
-      --     -- vim.diagnostic.open_float()
-      -- end },
-      -- { "D", function ()
-      --     vim.diagnostic.goto_prev()
-      --     -- vim.diagnostic.open_float()
-      -- end,                            { desc = "Diagnostic" } },
-      -- { "d", "<Cmd>lua MiniBracketed.diagnostic('forward')<CR>" },
-      -- { "D", "<Cmd>lua MiniBracketed.diagnostic('backward')<CR>", { desc = "Diagnostic" } },
+      {
+        "]d",
+        function()
+          vim.diagnostic.goto_next()
+          vim.diagnostic.open_float()
+        end,
+      },
+      {
+        "]D",
+        function()
+          vim.diagnostic.goto_prev()
+          vim.diagnostic.open_float()
+        end,
+        { desc = "Diagnostic" },
+      },
       { "]f", "<Cmd>lua MiniBracketed.file('forward')<CR>", desc = "File Next" },
       { "]F", "<Cmd>lua MiniBracketed.file('backward')<CR>", desc = "File Prev" },
       { "]i", "<Cmd>lua MiniBracketed.indent('forward')<CR>", desc = "Indent Next" },
