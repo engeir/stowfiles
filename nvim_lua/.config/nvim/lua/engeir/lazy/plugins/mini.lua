@@ -46,6 +46,7 @@ return {
         "]d",
         function()
           vim.diagnostic.goto_next()
+          vim.cmd([[norm zz]])
           vim.diagnostic.open_float()
         end,
       },

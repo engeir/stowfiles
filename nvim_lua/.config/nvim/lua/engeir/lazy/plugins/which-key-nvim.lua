@@ -15,13 +15,6 @@ return {
       desc = "Buffer Local Keymaps (which-key)",
     },
     {
-      "[<space>",
-      function()
-        require("which-key").show({ keys = "[", loop = true })
-      end,
-      desc = "Hydra Mode (which-key)",
-    },
-    {
       "]<space>",
       function()
         require("which-key").show({ keys = "]", loop = true })
