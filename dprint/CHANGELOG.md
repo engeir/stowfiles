@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.15.9](https://github.com/engeir/stowfiles/compare/dprint-v1.15.8...dprint-v1.15.9) (2024-10-04)
+
+
+### Miscellaneous
+
+* **dprint:** update plugins ([f814d30](https://github.com/engeir/stowfiles/commit/f814d307d482c5b85d397a510381c84e7430624e))
+* **main:** release dprint 1.15.9 ([#247](https://github.com/engeir/stowfiles/issues/247)) ([a7a3c18](https://github.com/engeir/stowfiles/commit/a7a3c1871321d55ed6263ef9489f50a7eee9affa))
+
 ## [1.15.9](https://github.com/engeir/stowfiles/compare/dprint-v1.15.8...dprint-v1.15.9) (2024-09-25)
 
 
