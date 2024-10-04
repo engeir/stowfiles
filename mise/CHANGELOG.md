@@ -1,5 +1,15 @@
 # Changelog
 
+## [1.18.1](https://github.com/engeir/stowfiles/compare/mise-v1.18.0...mise-v1.18.1) (2024-10-04)
+
+
+### Miscellaneous
+
+* **main:** release mise 1.18.1 ([#245](https://github.com/engeir/stowfiles/issues/245)) ([793d016](https://github.com/engeir/stowfiles/commit/793d016c0929129ecbb91c2ce6dbbd9dd2cca888))
+* **main:** release mise 1.18.1 ([#249](https://github.com/engeir/stowfiles/issues/249)) ([7f982c6](https://github.com/engeir/stowfiles/commit/7f982c6f5355760085ea9d6ab8eb741c0330910f))
+* **mise:** standalone uv install and uvx deps ([4870831](https://github.com/engeir/stowfiles/commit/48708316aa62a3beb23969cf02b385043d9e57d3))
+* **zsh,mise:** control keychain sourcing with mise ([f036d95](https://github.com/engeir/stowfiles/commit/f036d9504cca070c52ce02f2672e604aa905200e))
+
 ## [1.18.1](https://github.com/engeir/stowfiles/compare/mise-v1.18.0...mise-v1.18.1) (2024-09-25)
 
 
