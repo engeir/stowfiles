@@ -240,7 +240,7 @@ return {
     dependencies = { "engeir/luasnip-latex-snippets.nvim" },
     event = { "BufReadPre", "BufNewFile" },
     build = "make install_jsregexp",
-    -- dependencies = "rafamadriz/friendly-snippets",
+    dependencies = "rafamadriz/friendly-snippets",
     -- dependencies = "iurimateus/luasnip-latex-snippets.nvim",
     config = function()
       -- See https://github.com/L3MON4D3/LuaSnip/blob/master/Examples/snippets.lua
@@ -287,6 +287,7 @@ return {
         require("luasnip.loaders").edit_snippet_files()
       end, { desc = "LuaSnip: Source Snippets File" })
 
+      require("luasnip.loaders.from_vscode").lazy_load()
       require("luasnip.loaders.from_vscode").lazy_load({
         paths = { "~/.config/nvim/lua/engeir/lazy/plugins/lsp/luasnippets/vscode/" },
       })
