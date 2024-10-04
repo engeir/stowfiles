@@ -1,6 +1,5 @@
 return {
   "stevearc/aerial.nvim",
-  event = { "BufReadPre", "BufNewFile" },
   dependencies = {
     {
       "echasnovski/mini.icons",

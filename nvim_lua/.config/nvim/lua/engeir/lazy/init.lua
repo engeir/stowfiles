@@ -29,4 +29,5 @@ lazy.setup({
     enabled = true,
     notify = false, -- get a notification when changes are found
   },
+  default = { lazy = true },
 })

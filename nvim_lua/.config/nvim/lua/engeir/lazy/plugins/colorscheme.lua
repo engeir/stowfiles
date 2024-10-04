@@ -3,6 +3,8 @@ return {
   {
     "tjdevries/colorbuddy.vim",
     enabled = false,
+    lazy = false,
+    priority = 1000,
     config = function()
       require("colorbuddy").colorscheme("engeir.lazy.colorschemes.mycolorscheme")
     end,
@@ -11,6 +13,8 @@ return {
   {
     "marko-cerovac/material.nvim",
     enabled = false,
+    lazy = false,
+    priority = 1000,
     opts = {
       contrast = {
         terminal = false, -- Enable contrast for the built-in terminal
@@ -85,7 +89,6 @@ return {
   },
   {
     "sainnhe/gruvbox-material",
-    event = "VeryLazy",
     enabled = true,
     lazy = false,
     priority = 1000,
@@ -103,7 +106,6 @@ return {
   },
   {
     "sainnhe/sonokai",
-    event = "VeryLazy",
     enabled = true,
     lazy = false,
     priority = 1000,
@@ -117,6 +119,8 @@ return {
   {
     "catppuccin/nvim",
     enabled = true,
+    lazy = false,
+    priority = 1000,
     name = "catppuccin",
     init = function()
       vim.g.catppuccin_flavour = "frappe" -- latte, frappe, macchiato, mocha
@@ -158,6 +162,8 @@ return {
   {
     "rebelot/kanagawa.nvim",
     enabled = true,
+    lazy = false,
+    priority = 1000,
     init = function()
       require("kanagawa").setup({
         theme = "dragon",

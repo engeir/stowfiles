@@ -1,7 +1,7 @@
 local opts = { noremap = true, silent = true }
 return {
   "uga-rosa/ccc.nvim",
-  config = function()
+  opts = function()
     -- Three at once
     local ccc = require("ccc")
     local ColorInput = require("ccc.input")
@@ -85,7 +85,7 @@ return {
       end
     end
 
-    ccc.setup({
+    return {
       highlighter = {
         auto_enable = true,
         lsp = true,
@@ -106,7 +106,7 @@ return {
         -- ccc.input.okhsv,
         -- ccc.input.xyz,
       },
-    })
+    }
   end,
   keys = {
     { "<C-c>", "<cmd>CccPick<cr>", opts },
