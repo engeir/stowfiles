@@ -47,8 +47,8 @@ return {
       },
     },
     keys = {
-      { "H", ":BufferLineCyclePrev<CR>", desc = "BufferLine Previous" },
-      { "L", ":BufferLineCycleNext<CR>", desc = "BufferLine Next" },
+      { "<S-tab>", ":BufferLineCyclePrev<CR>", desc = "BufferLine Previous" },
+      { "<tab>", ":BufferLineCycleNext<CR>", desc = "BufferLine Next" },
     },
     opts = {
       highlights = {
