@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.16.2](https://github.com/engeir/stowfiles/compare/tmux-v1.16.1...tmux-v1.16.2) (2024-10-04)
+
+
+### Bug Fixes
+
+* **tmux:** explicitly set an escape time so tmux does not hang ([8a8f997](https://github.com/engeir/stowfiles/commit/8a8f997ce7516a7c398494b1f60b28c78131c692))
+
 ## [1.16.1](https://github.com/engeir/stowfiles/compare/tmux-v1.16.0...tmux-v1.16.1) (2024-08-21)
 
 
