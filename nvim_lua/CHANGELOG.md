@@ -1,5 +1,26 @@
 # Changelog
 
+## [1.17.4](https://github.com/engeir/stowfiles/compare/nvim-v1.17.3...nvim-v1.17.4) (2024-10-04)
+
+
+### Bug Fixes
+
+* **nvim:** tree-sitter config setup is abnormal:( ([92fa16c](https://github.com/engeir/stowfiles/commit/92fa16cdfab74a7da9dbf74a63d79a5751e3af83))
+
+
+### Miscellaneous
+
+* **nvim:** [plugin] add minty ([d2dad9e](https://github.com/engeir/stowfiles/commit/d2dad9ef926cb09b6c31765647fd70e98cee9ea8))
+* **nvim:** add some more markdown snippets ([ff98f47](https://github.com/engeir/stowfiles/commit/ff98f470bf9c485473799d2551ee0f925284185e))
+* **nvim:** centre cursor when goto_next diagnostic ([dc1cdc8](https://github.com/engeir/stowfiles/commit/dc1cdc8edc249725fb8a9671a5f839ad3b23db9b))
+* **nvim:** dont auto install all these lsp's ([2450c79](https://github.com/engeir/stowfiles/commit/2450c79d833ed4ae4a85afa988172bf900d810aa))
+* **nvim:** open diagnostics float on goto_next ([f4ac504](https://github.com/engeir/stowfiles/commit/f4ac504aa7c2727be845b4b1ed7c3690865c9063))
+
+
+### Code Refactoring
+
+* **nvim:** lazy load, but not the colorschemes ([77a8b48](https://github.com/engeir/stowfiles/commit/77a8b485b06d72fb1f0bbfdde19231dccf55ed62))
+
 ## [1.17.3](https://github.com/engeir/stowfiles/compare/nvim-v1.17.2...nvim-v1.17.3) (2024-09-25)
 
 
