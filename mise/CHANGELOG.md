@@ -7,6 +7,7 @@
 
 * **main:** release mise 1.18.1 ([#249](https://github.com/engeir/stowfiles/issues/249)) ([7f982c6](https://github.com/engeir/stowfiles/commit/7f982c6f5355760085ea9d6ab8eb741c0330910f))
 * **main:** release mise 1.18.1 ([#252](https://github.com/engeir/stowfiles/issues/252)) ([8f17999](https://github.com/engeir/stowfiles/commit/8f179996a17c5b5d27c445e02bd244707ec16a5c))
+* **main:** release mise 1.18.2 ([#255](https://github.com/engeir/stowfiles/issues/255)) ([ae45708](https://github.com/engeir/stowfiles/commit/ae45708f8b424376bea73922b565dc782ad08f83))
 * **mise:** standalone uv install and uvx deps ([4870831](https://github.com/engeir/stowfiles/commit/48708316aa62a3beb23969cf02b385043d9e57d3))
 
 ## [1.18.1](https://github.com/engeir/stowfiles/compare/mise-v1.18.0...mise-v1.18.1) (2024-10-04)
