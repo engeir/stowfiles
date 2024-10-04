@@ -237,11 +237,13 @@ return {
   -- Snippets
   {
     "L3MON4D3/LuaSnip",
-    dependencies = { "engeir/luasnip-latex-snippets.nvim" },
+    dependencies = {
+      "rafamadriz/friendly-snippets",
+      "engeir/luasnip-latex-snippets.nvim",
+      -- "iurimateus/luasnip-latex-snippets.nvim",
+    },
     event = { "BufReadPre", "BufNewFile" },
     build = "make install_jsregexp",
-    dependencies = "rafamadriz/friendly-snippets",
-    -- dependencies = "iurimateus/luasnip-latex-snippets.nvim",
     config = function()
       -- See https://github.com/L3MON4D3/LuaSnip/blob/master/Examples/snippets.lua
       -- and teeeej's taketuesday #3 videos for more sweetness
