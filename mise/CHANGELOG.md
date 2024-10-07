@@ -1,5 +1,14 @@
 # Changelog
 
+## [1.18.3](https://github.com/engeir/stowfiles/compare/mise-v1.18.2...mise-v1.18.3) (2024-10-07)
+
+
+### Miscellaneous
+
+* **main:** release mise 1.18.2 ([#257](https://github.com/engeir/stowfiles/issues/257)) ([19daa8e](https://github.com/engeir/stowfiles/commit/19daa8ea2e4fb484308d3602952f06d9a6d660b6))
+* **main:** release mise 1.18.2 ([#259](https://github.com/engeir/stowfiles/issues/259)) ([0b0fddc](https://github.com/engeir/stowfiles/commit/0b0fddc2e455e1984ee6083007860ffe8bcac831))
+* **mise:** add usage ([0c8e781](https://github.com/engeir/stowfiles/commit/0c8e781bb3d439fdefb22e6a41fe8ce94316bc3d))
+
 ## [1.18.2](https://github.com/engeir/stowfiles/compare/mise-v1.18.1...mise-v1.18.2) (2024-10-04)
 
 
