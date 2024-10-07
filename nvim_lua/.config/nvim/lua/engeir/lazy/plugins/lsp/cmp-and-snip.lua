@@ -256,7 +256,7 @@ return {
         ext_opts = {
           [types.choiceNode] = {
             active = {
-              virt_text = { { "<-", "Error" } },
+              virt_text = { { "Toggle (<C-l>)", "Error" } },
             },
           },
         },
@@ -268,8 +268,8 @@ return {
         },
       })
       vim.keymap.set({ "i", "s" }, "<c-k>", function()
-        if ls.expand_or_jumpable() then
-          ls.expand_or_jump()
+        if ls.jumpable(1) then
+          ls.jump(1)
         end
       end, { silent = true })
       -- Jump backward <c-j> (default is just to create a newline)
