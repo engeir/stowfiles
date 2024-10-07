@@ -31,7 +31,7 @@ return {
 
         vim.keymap.set("n", "<leader>wh", function()
           vim.diagnostic.enable(not vim.diagnostic.is_enabled())
-        end, { silent = true, noremap = true })
+        end, { silent = true, noremap = true, desc = "LSP: Toggle virtual text" })
         nmap("gd", require("telescope.builtin").lsp_definitions, "Goto Definition")
         nmap("gD", vim.lsp.buf.declaration, "Goto Declaration")
         nmap("gr", require("telescope.builtin").lsp_references, "Goto References")
