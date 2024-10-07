@@ -94,7 +94,6 @@ jq = "latest"
 node = "latest"
 pandoc = "latest"
 tinytex = "latest"
-usage = "latest"
 watchexec = "latest"
 python = [
   "latest",
@@ -120,6 +119,7 @@ python = [
 "ubi:sharkdp/bat" = "latest"
 "ubi:typst/typst" = "latest"
 "ubi:uutils/coreutils" = "latest"
+usage = "latest"
 # "pipx:ansible-core" = "latest"
 # "pipx:beautysh" = "latest"
 # "pipx:bibfish" = "latest"
