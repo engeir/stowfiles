@@ -7,6 +7,8 @@ return {
     {
       "al1-ce/just.nvim",
       ft = { "just" },
+      -- An update seem to be in the works, where a more general `runme` command is used.
+      commit = "c32dc02",
       cmd = {
         "JustDefault", -- Builds current file/project using default task.
         "JustBuild", -- Builds current file/project using build task.
