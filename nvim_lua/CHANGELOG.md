@@ -1,5 +1,22 @@
 # Changelog
 
+## [1.17.5](https://github.com/engeir/stowfiles/compare/nvim-v1.17.4...nvim-v1.17.5) (2024-10-07)
+
+
+### Miscellaneous
+
+* **nvim:** [plugin] add showkeys ([cfd0ea6](https://github.com/engeir/stowfiles/commit/cfd0ea628e98708761b1dc110ec13bb08cd36813))
+* **nvim:** [plugin] pin just.nvim which is being re-written ([1593f82](https://github.com/engeir/stowfiles/commit/1593f820b5e04e6b657241aee39a0d10a4dab758))
+* **nvim:** [plugin] try rafamadriz/friendly-snippets again ([b05ef66](https://github.com/engeir/stowfiles/commit/b05ef66fab5f6e773be505d220deef7df62f1958))
+* **nvim:** add description to keymap toggle lsp diagnostic ([9320607](https://github.com/engeir/stowfiles/commit/93206071b86ea5d2cd4c19b982699c2f06f0f33f))
+* **nvim:** don't accept first snippets with c-k, only with c-y ([fa6d349](https://github.com/engeir/stowfiles/commit/fa6d349bc93650bf474b2fa7d3baca191cdfcf1d))
+* **nvim:** small change ([4e0d735](https://github.com/engeir/stowfiles/commit/4e0d73593320f9520f5b3e6e0d3ff240d81a2485))
+
+
+### Code Refactoring
+
+* **nvim:** keymap (s)-tab for prev and next buffer ([576ed83](https://github.com/engeir/stowfiles/commit/576ed836801655a0fd8037245c115e47bb72cb0a))
+
 ## [1.17.4](https://github.com/engeir/stowfiles/compare/nvim-v1.17.3...nvim-v1.17.4) (2024-10-04)
 
 
