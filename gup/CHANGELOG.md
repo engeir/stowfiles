@@ -6,6 +6,14 @@
 ### Miscellaneous
 
 * **main:** release fish 1.16.3 ([#124](https://github.com/engeir/stowfiles/issues/124)) ([5799516](https://github.com/engeir/stowfiles/commit/57995166b1597d7e1fc2387e92309afc0a2b617f))
+* **main:** release gup 1.15.4 ([#285](https://github.com/engeir/stowfiles/issues/285)) ([5a8af96](https://github.com/engeir/stowfiles/commit/5a8af96f190eb581e6a44906d0ed5c705deb9d2d))
+
+## [1.15.4](https://github.com/engeir/stowfiles/compare/gup-v1.15.3...gup-v1.15.4) (2024-10-08)
+
+
+### Miscellaneous
+
+* **main:** release fish 1.16.3 ([#124](https://github.com/engeir/stowfiles/issues/124)) ([5799516](https://github.com/engeir/stowfiles/commit/57995166b1597d7e1fc2387e92309afc0a2b617f))
 
 ## [1.15.3](https://github.com/engeir/stowfiles/compare/gup-v1.15.2...gup-v1.15.3) (2024-06-19)
 
