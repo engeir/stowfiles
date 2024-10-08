@@ -6,6 +6,7 @@
 ### Miscellaneous
 
 * **main:** release fish 1.16.3 ([#124](https://github.com/engeir/stowfiles/issues/124)) ([5799516](https://github.com/engeir/stowfiles/commit/57995166b1597d7e1fc2387e92309afc0a2b617f))
+* **main:** release rush_linux 1.15.4 ([#291](https://github.com/engeir/stowfiles/issues/291)) ([ac83617](https://github.com/engeir/stowfiles/commit/ac8361747fc9e6ddb84ed472d6426ddf314c306d))
 
 ## [1.15.3](https://github.com/engeir/stowfiles/compare/rush_linux-v1.15.2...rush_linux-v1.15.3) (2024-06-19)
 
