@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.18.2](https://github.com/engeir/stowfiles/compare/bspwm-v1.18.1...bspwm-v1.18.2) (2024-10-08)
+
+
+### Code Refactoring
+
+* **bspwm:** change hostname ([962ccf3](https://github.com/engeir/stowfiles/commit/962ccf3f2b01b7365aba4a49f3e3039e271259f4))
+
 ## [1.18.1](https://github.com/engeir/stowfiles/compare/bspwm-v1.18.0...bspwm-v1.18.1) (2024-09-25)
 
 
