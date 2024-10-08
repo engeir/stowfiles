@@ -5,6 +5,14 @@
 
 ### Miscellaneous
 
+* **main:** release despell 1.15.4 ([#272](https://github.com/engeir/stowfiles/issues/272)) ([a7209e9](https://github.com/engeir/stowfiles/commit/a7209e917dce31f203a5497363bbaeba1f2f633f))
+* **main:** release fish 1.16.3 ([#124](https://github.com/engeir/stowfiles/issues/124)) ([5799516](https://github.com/engeir/stowfiles/commit/57995166b1597d7e1fc2387e92309afc0a2b617f))
+
+## [1.15.4](https://github.com/engeir/stowfiles/compare/despell-v1.15.3...despell-v1.15.4) (2024-10-08)
+
+
+### Miscellaneous
+
 * **main:** release fish 1.16.3 ([#124](https://github.com/engeir/stowfiles/issues/124)) ([5799516](https://github.com/engeir/stowfiles/commit/57995166b1597d7e1fc2387e92309afc0a2b617f))
 
 ## [1.15.3](https://github.com/engeir/stowfiles/compare/despell-v1.15.2...despell-v1.15.3) (2024-06-19)
