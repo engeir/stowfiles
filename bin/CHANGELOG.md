@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.16.0](https://github.com/engeir/stowfiles/compare/bin-v1.15.7...bin-v1.16.0) (2024-10-08)
+
+
+### Features
+
+* **bin:** bash git ignore generator ([2a2e7a6](https://github.com/engeir/stowfiles/commit/2a2e7a6762ac8abeeca05d242173e75821279362))
+
 ## [1.15.7](https://github.com/engeir/stowfiles/compare/bin-v1.15.6...bin-v1.15.7) (2024-09-04)
 
 
