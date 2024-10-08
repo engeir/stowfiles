@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.15.5](https://github.com/engeir/stowfiles/compare/xplr-v1.15.4...xplr-v1.15.5) (2024-10-08)
+
+
+### Miscellaneous
+
+* **main:** release xplr 1.15.4 ([#294](https://github.com/engeir/stowfiles/issues/294)) ([cab1195](https://github.com/engeir/stowfiles/commit/cab11958f86e9c6da1c0e5cf72414d8700a9a83f))
+
 ## [1.15.4](https://github.com/engeir/stowfiles/compare/xplr-v1.15.3...xplr-v1.15.4) (2024-10-08)
 
 
