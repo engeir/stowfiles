@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.15.5](https://github.com/engeir/stowfiles/compare/bun-v1.15.4...bun-v1.15.5) (2024-10-08)
+
+
+### Miscellaneous
+
+* **main:** release bun 1.15.4 ([#304](https://github.com/engeir/stowfiles/issues/304)) ([ddf84ac](https://github.com/engeir/stowfiles/commit/ddf84ac97209c2c261275fdc8a10eebd584f9550))
+
 ## [1.15.4](https://github.com/engeir/stowfiles/compare/bun-v1.15.3...bun-v1.15.4) (2024-10-08)
 
 
