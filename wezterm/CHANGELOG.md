@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.15.6](https://github.com/engeir/stowfiles/compare/wezterm-v1.15.5...wezterm-v1.15.6) (2024-10-08)
+
+
+### Miscellaneous
+
+* **main:** release wezterm 1.15.5 ([#309](https://github.com/engeir/stowfiles/issues/309)) ([f5c871d](https://github.com/engeir/stowfiles/commit/f5c871db1c6cf42dbb1a9fbc9585393af8429452))
+
 ## [1.15.5](https://github.com/engeir/stowfiles/compare/wezterm-v1.15.4...wezterm-v1.15.5) (2024-10-08)
 
 
