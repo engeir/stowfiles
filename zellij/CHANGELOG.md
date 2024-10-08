@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.15.5](https://github.com/engeir/stowfiles/compare/zellij-v1.15.4...zellij-v1.15.5) (2024-10-08)
+
+
+### Miscellaneous
+
+* **main:** release zellij 1.15.4 ([#307](https://github.com/engeir/stowfiles/issues/307)) ([fd07d8f](https://github.com/engeir/stowfiles/commit/fd07d8f71c17eb4b1406af645a2910281e5c3e04))
+
 ## [1.15.4](https://github.com/engeir/stowfiles/compare/zellij-v1.15.3...zellij-v1.15.4) (2024-10-08)
 
 
