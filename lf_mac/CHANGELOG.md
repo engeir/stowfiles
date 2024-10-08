@@ -1,5 +1,20 @@
 # Changelog
 
+## [1.15.4](https://github.com/engeir/stowfiles/compare/lf_mac-v1.15.3...lf_mac-v1.15.4) (2024-10-08)
+
+
+### Miscellaneous
+
+* **main:** release fish 1.16.3 ([#124](https://github.com/engeir/stowfiles/issues/124)) ([5799516](https://github.com/engeir/stowfiles/commit/57995166b1597d7e1fc2387e92309afc0a2b617f))
+* **main:** release lf_mac 1.15.4 ([#279](https://github.com/engeir/stowfiles/issues/279)) ([5927d3e](https://github.com/engeir/stowfiles/commit/5927d3eee36e0b492d67443ad8fd9c0931c779b0))
+
+## [1.15.4](https://github.com/engeir/stowfiles/compare/lf_mac-v1.15.3...lf_mac-v1.15.4) (2024-10-08)
+
+
+### Miscellaneous
+
+* **main:** release fish 1.16.3 ([#124](https://github.com/engeir/stowfiles/issues/124)) ([5799516](https://github.com/engeir/stowfiles/commit/57995166b1597d7e1fc2387e92309afc0a2b617f))
+
 ## [1.15.3](https://github.com/engeir/stowfiles/compare/lf_mac-v1.15.2...lf_mac-v1.15.3) (2024-06-19)
 
 
