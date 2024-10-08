@@ -1,5 +1,123 @@
 # Changelog
 
+## [1.22.0](https://github.com/engeir/stowfiles/compare/stowfiles-v1.21.0...stowfiles-v1.22.0) (2024-10-08)
+
+
+### Features
+
+* **bin:** bash git ignore generator ([2a2e7a6](https://github.com/engeir/stowfiles/commit/2a2e7a6762ac8abeeca05d242173e75821279362))
+
+
+### Bug Fixes
+
+* **bspwm:** the autorandr script need static vars ([1d8f67d](https://github.com/engeir/stowfiles/commit/1d8f67d3050ca8260304bb26f13efbe06b88cbcb))
+* **nvim:** tree-sitter config setup is abnormal:( ([92fa16c](https://github.com/engeir/stowfiles/commit/92fa16cdfab74a7da9dbf74a63d79a5751e3af83))
+* **tmux:** explicitly set an escape time so tmux does not hang ([8a8f997](https://github.com/engeir/stowfiles/commit/8a8f997ce7516a7c398494b1f60b28c78131c692))
+
+
+### Miscellaneous
+
+* **alacritty:** specify color ([ba63c2e](https://github.com/engeir/stowfiles/commit/ba63c2e4a341148cd219302da222ea4165bb0f6a))
+* **dprint:** update plugins ([f814d30](https://github.com/engeir/stowfiles/commit/f814d307d482c5b85d397a510381c84e7430624e))
+* **fish:** update ([6cc586d](https://github.com/engeir/stowfiles/commit/6cc586d1b6df8c8fd20c2f5c20fa0746f392f9de))
+* **main:** release alacritty_arch 1.15.7 ([#237](https://github.com/engeir/stowfiles/issues/237)) ([39666cb](https://github.com/engeir/stowfiles/commit/39666cb95c5ee9f808b08d1e527107acb4280cde))
+* **main:** release android 1.15.4 ([#273](https://github.com/engeir/stowfiles/issues/273)) ([2058349](https://github.com/engeir/stowfiles/commit/205834925d10f9e26d87ed4266069c92babd5b2c))
+* **main:** release android 1.15.4 ([#300](https://github.com/engeir/stowfiles/issues/300)) ([ecb0b80](https://github.com/engeir/stowfiles/commit/ecb0b8043c1d7b5124934751620b816b7f80a1f6))
+* **main:** release android 1.15.4 ([#306](https://github.com/engeir/stowfiles/issues/306)) ([31b4cb4](https://github.com/engeir/stowfiles/commit/31b4cb41daafc3e7b657ad6dba521cb6bc2539af))
+* **main:** release bspwm 1.18.1 ([#243](https://github.com/engeir/stowfiles/issues/243)) ([8b49912](https://github.com/engeir/stowfiles/commit/8b49912ed91a63e6158e18fcac44898811709d71))
+* **main:** release bspwm 1.18.2 ([#262](https://github.com/engeir/stowfiles/issues/262)) ([56b69df](https://github.com/engeir/stowfiles/commit/56b69df9524828d65025c2692c5489d892ea73ef))
+* **main:** release bun 1.15.4 ([#271](https://github.com/engeir/stowfiles/issues/271)) ([d236b4c](https://github.com/engeir/stowfiles/commit/d236b4c8c34597bccf4a47f28a8ae5cc00c7f6f6))
+* **main:** release bun 1.15.4 ([#299](https://github.com/engeir/stowfiles/issues/299)) ([68508bd](https://github.com/engeir/stowfiles/commit/68508bda43859267fe03778a7ace6eaa5c435486))
+* **main:** release bun 1.15.4 ([#304](https://github.com/engeir/stowfiles/issues/304)) ([ddf84ac](https://github.com/engeir/stowfiles/commit/ddf84ac97209c2c261275fdc8a10eebd584f9550))
+* **main:** release despell 1.15.4 ([#272](https://github.com/engeir/stowfiles/issues/272)) ([a7209e9](https://github.com/engeir/stowfiles/commit/a7209e917dce31f203a5497363bbaeba1f2f633f))
+* **main:** release despell 1.15.4 ([#301](https://github.com/engeir/stowfiles/issues/301)) ([17d678a](https://github.com/engeir/stowfiles/commit/17d678a6d448754bbd3d1dc494a9edabe6406f86))
+* **main:** release dprint 1.15.10 ([#256](https://github.com/engeir/stowfiles/issues/256)) ([dad0fe9](https://github.com/engeir/stowfiles/commit/dad0fe95b2cfc896e8846a0261aeeea0837b97de))
+* **main:** release dprint 1.15.9 ([#247](https://github.com/engeir/stowfiles/issues/247)) ([a7a3c18](https://github.com/engeir/stowfiles/commit/a7a3c1871321d55ed6263ef9489f50a7eee9affa))
+* **main:** release dprint 1.15.9 ([#248](https://github.com/engeir/stowfiles/issues/248)) ([ad81ec4](https://github.com/engeir/stowfiles/commit/ad81ec4c44be9562bbf31e3cdc5783012d9f498a))
+* **main:** release dprint 1.15.9 ([#250](https://github.com/engeir/stowfiles/issues/250)) ([73e19e7](https://github.com/engeir/stowfiles/commit/73e19e715b0d360aab37c84aa996cf8618baeaac))
+* **main:** release dprint 1.15.9 ([#254](https://github.com/engeir/stowfiles/issues/254)) ([e959936](https://github.com/engeir/stowfiles/commit/e959936e5778f172d09c62f07e0061dcf409c88f))
+* **main:** release emojis 1.15.4 ([#290](https://github.com/engeir/stowfiles/issues/290)) ([39e2229](https://github.com/engeir/stowfiles/commit/39e22299abc841a5d411a826474302525860736b))
+* **main:** release firefox 1.15.5 ([#282](https://github.com/engeir/stowfiles/issues/282)) ([3b1964a](https://github.com/engeir/stowfiles/commit/3b1964aa908ec39474d7071b03de7fa18d62bfbc))
+* **main:** release fish 1.16.5 ([#261](https://github.com/engeir/stowfiles/issues/261)) ([2e60cac](https://github.com/engeir/stowfiles/commit/2e60cac73213a4193857513d0352b3c345f03409))
+* **main:** release gup 1.15.4 ([#285](https://github.com/engeir/stowfiles/issues/285)) ([5a8af96](https://github.com/engeir/stowfiles/commit/5a8af96f190eb581e6a44906d0ed5c705deb9d2d))
+* **main:** release gup 1.15.4 ([#297](https://github.com/engeir/stowfiles/issues/297)) ([2c9ceba](https://github.com/engeir/stowfiles/commit/2c9ceba808b9515377b93ca029ed98d71752990b))
+* **main:** release gup 1.15.4 ([#310](https://github.com/engeir/stowfiles/issues/310)) ([e883143](https://github.com/engeir/stowfiles/commit/e883143cdc52df931791a7538ae7f319a8dbb71e))
+* **main:** release lf_mac 1.15.4 ([#279](https://github.com/engeir/stowfiles/issues/279)) ([5927d3e](https://github.com/engeir/stowfiles/commit/5927d3eee36e0b492d67443ad8fd9c0931c779b0))
+* **main:** release lf_mac 1.15.4 ([#298](https://github.com/engeir/stowfiles/issues/298)) ([9cf38ac](https://github.com/engeir/stowfiles/commit/9cf38ace08da7bae779e683c44cc2bcae5bc66c9))
+* **main:** release lf_mac 1.15.4 ([#308](https://github.com/engeir/stowfiles/issues/308)) ([293a67a](https://github.com/engeir/stowfiles/commit/293a67a62d65621512462d5130d082b623a44632))
+* **main:** release mimi 1.15.4 ([#269](https://github.com/engeir/stowfiles/issues/269)) ([33b9789](https://github.com/engeir/stowfiles/commit/33b9789abc3a5c86182e43f7e70d8e8d9467eb83))
+* **main:** release mimi 1.15.4 ([#302](https://github.com/engeir/stowfiles/issues/302)) ([3dd83e7](https://github.com/engeir/stowfiles/commit/3dd83e788a99bced85195dd0eafa3dbc8f70026a))
+* **main:** release mise 1.18.1 ([#245](https://github.com/engeir/stowfiles/issues/245)) ([793d016](https://github.com/engeir/stowfiles/commit/793d016c0929129ecbb91c2ce6dbbd9dd2cca888))
+* **main:** release mise 1.18.1 ([#249](https://github.com/engeir/stowfiles/issues/249)) ([7f982c6](https://github.com/engeir/stowfiles/commit/7f982c6f5355760085ea9d6ab8eb741c0330910f))
+* **main:** release mise 1.18.1 ([#252](https://github.com/engeir/stowfiles/issues/252)) ([8f17999](https://github.com/engeir/stowfiles/commit/8f179996a17c5b5d27c445e02bd244707ec16a5c))
+* **main:** release mise 1.18.2 ([#255](https://github.com/engeir/stowfiles/issues/255)) ([ae45708](https://github.com/engeir/stowfiles/commit/ae45708f8b424376bea73922b565dc782ad08f83))
+* **main:** release mise 1.18.2 ([#257](https://github.com/engeir/stowfiles/issues/257)) ([19daa8e](https://github.com/engeir/stowfiles/commit/19daa8ea2e4fb484308d3602952f06d9a6d660b6))
+* **main:** release mise 1.18.2 ([#259](https://github.com/engeir/stowfiles/issues/259)) ([0b0fddc](https://github.com/engeir/stowfiles/commit/0b0fddc2e455e1984ee6083007860ffe8bcac831))
+* **main:** release mise 1.18.3 ([#260](https://github.com/engeir/stowfiles/issues/260)) ([4e3ec5a](https://github.com/engeir/stowfiles/commit/4e3ec5a7e2b607bcc2e43196b8fc080f051a5970))
+* **main:** release nushell 1.16.1 ([#280](https://github.com/engeir/stowfiles/issues/280)) ([2188501](https://github.com/engeir/stowfiles/commit/2188501841812c84820e72afcac07f0554f69b91))
+* **main:** release nvim 1.17.2 ([#238](https://github.com/engeir/stowfiles/issues/238)) ([f17be6a](https://github.com/engeir/stowfiles/commit/f17be6a622e50397649781bb39feb62a8f315c09))
+* **main:** release nvim 1.17.3 ([#242](https://github.com/engeir/stowfiles/issues/242)) ([a1326d9](https://github.com/engeir/stowfiles/commit/a1326d9a10adf81b1986becf9f8bcce20eb91665))
+* **main:** release nvim 1.17.4 ([#251](https://github.com/engeir/stowfiles/issues/251)) ([087040a](https://github.com/engeir/stowfiles/commit/087040a8cf1e2ed883b8bb6ccea4891b78ef084b))
+* **main:** release nvim 1.17.5 ([#258](https://github.com/engeir/stowfiles/issues/258)) ([9c759c3](https://github.com/engeir/stowfiles/commit/9c759c36968b6f6b603be68bf3611e4f11e93aed))
+* **main:** release picom 1.16.2 ([#240](https://github.com/engeir/stowfiles/issues/240)) ([6004596](https://github.com/engeir/stowfiles/commit/6004596aff379f2d3d8a2d8624a4cda991e33022))
+* **main:** release ripgrep 1.15.4 ([#270](https://github.com/engeir/stowfiles/issues/270)) ([35a69d2](https://github.com/engeir/stowfiles/commit/35a69d2d5ade138018c9f84d05124356621699eb))
+* **main:** release rush 1.15.4 ([#286](https://github.com/engeir/stowfiles/issues/286)) ([0379b31](https://github.com/engeir/stowfiles/commit/0379b3132372ad7d091b7e30188ca6b4d73df055))
+* **main:** release rush_linux 1.15.4 ([#291](https://github.com/engeir/stowfiles/issues/291)) ([ac83617](https://github.com/engeir/stowfiles/commit/ac8361747fc9e6ddb84ed472d6426ddf314c306d))
+* **main:** release rush_linux 1.15.4 ([#296](https://github.com/engeir/stowfiles/issues/296)) ([9bf99a7](https://github.com/engeir/stowfiles/commit/9bf99a7f153f828f8f215c378a1d2c412b03d130))
+* **main:** release rush_linux 1.15.5 ([#303](https://github.com/engeir/stowfiles/issues/303)) ([c671727](https://github.com/engeir/stowfiles/commit/c671727504a1965fdf607610f723a329a97f9cb4))
+* **main:** release sioyek 1.15.5 ([#275](https://github.com/engeir/stowfiles/issues/275)) ([0a33d98](https://github.com/engeir/stowfiles/commit/0a33d983d1d7c275c065bf902bee3f204d2ff56b))
+* **main:** release starship 1.15.4 ([#277](https://github.com/engeir/stowfiles/issues/277)) ([226cb05](https://github.com/engeir/stowfiles/commit/226cb056a7862a92d1a9d64ec1fa222ce257f1ce))
+* **main:** release tmux 1.16.2 ([#253](https://github.com/engeir/stowfiles/issues/253)) ([1c278da](https://github.com/engeir/stowfiles/commit/1c278da1230369401696fadd2241a377ad981e99))
+* **main:** release topgrade 1.15.4 ([#274](https://github.com/engeir/stowfiles/issues/274)) ([bd88038](https://github.com/engeir/stowfiles/commit/bd880389ac2c912580af0c629086a3865c3fe844))
+* **main:** release wezterm 1.15.5 ([#292](https://github.com/engeir/stowfiles/issues/292)) ([534e44a](https://github.com/engeir/stowfiles/commit/534e44a74ce12adb82614525d4ca847747b136c5))
+* **main:** release wezterm 1.15.5 ([#295](https://github.com/engeir/stowfiles/issues/295)) ([9e39b31](https://github.com/engeir/stowfiles/commit/9e39b31036b69ff2993696a16b0cfd9c71b436bd))
+* **main:** release wezterm 1.15.5 ([#309](https://github.com/engeir/stowfiles/issues/309)) ([f5c871d](https://github.com/engeir/stowfiles/commit/f5c871db1c6cf42dbb1a9fbc9585393af8429452))
+* **main:** release whoogle 1.15.4 ([#289](https://github.com/engeir/stowfiles/issues/289)) ([2442108](https://github.com/engeir/stowfiles/commit/2442108dac81cbf46b81df08a8f579fdeff758b5))
+* **main:** release whoogle 1.15.4 ([#305](https://github.com/engeir/stowfiles/issues/305)) ([e8b0794](https://github.com/engeir/stowfiles/commit/e8b07945df69b5bb71a2827ac987047b6341abce))
+* **main:** release xplr 1.15.4 ([#287](https://github.com/engeir/stowfiles/issues/287)) ([11d8c3c](https://github.com/engeir/stowfiles/commit/11d8c3c896443624dbc6b35d36f44cf4c8bc0192))
+* **main:** release xplr 1.15.4 ([#294](https://github.com/engeir/stowfiles/issues/294)) ([cab1195](https://github.com/engeir/stowfiles/commit/cab11958f86e9c6da1c0e5cf72414d8700a9a83f))
+* **main:** release yazi 1.15.5 ([#283](https://github.com/engeir/stowfiles/issues/283)) ([907f4e6](https://github.com/engeir/stowfiles/commit/907f4e6af691b513016491ee14004363b5fc6b4e))
+* **main:** release zathura 1.17.2 ([#239](https://github.com/engeir/stowfiles/issues/239)) ([bacfd9d](https://github.com/engeir/stowfiles/commit/bacfd9d201c00110197527b7935ff0ab21b689f5))
+* **main:** release zathura 1.17.2 ([#241](https://github.com/engeir/stowfiles/issues/241)) ([613f8b4](https://github.com/engeir/stowfiles/commit/613f8b42ccd16026d4f2c9c1c1b7bd48293b9eae))
+* **main:** release zathura 1.17.3 ([#244](https://github.com/engeir/stowfiles/issues/244)) ([6520710](https://github.com/engeir/stowfiles/commit/6520710125b6b0ed80f7e64fa62de3a760bbc994))
+* **main:** release zellij 1.15.4 ([#281](https://github.com/engeir/stowfiles/issues/281)) ([97d6714](https://github.com/engeir/stowfiles/commit/97d6714a6b2ab0c956f2a415861f8e89b59275ad))
+* **main:** release zellij 1.15.4 ([#293](https://github.com/engeir/stowfiles/issues/293)) ([6ae6bb1](https://github.com/engeir/stowfiles/commit/6ae6bb104c757a9801f4d0d5c125c70a03acc0c2))
+* **main:** release zellij 1.15.4 ([#307](https://github.com/engeir/stowfiles/issues/307)) ([fd07d8f](https://github.com/engeir/stowfiles/commit/fd07d8f71c17eb4b1406af645a2910281e5c3e04))
+* **main:** release zsh_mac 1.15.6 ([#246](https://github.com/engeir/stowfiles/issues/246)) ([750a4cd](https://github.com/engeir/stowfiles/commit/750a4cd0478752e9602a9dc95371fe8ccc432687))
+* **mise:** add usage ([0c8e781](https://github.com/engeir/stowfiles/commit/0c8e781bb3d439fdefb22e6a41fe8ce94316bc3d))
+* **mise:** standalone uv install and uvx deps ([4870831](https://github.com/engeir/stowfiles/commit/48708316aa62a3beb23969cf02b385043d9e57d3))
+* **nvim:** [plugin] add minty ([d2dad9e](https://github.com/engeir/stowfiles/commit/d2dad9ef926cb09b6c31765647fd70e98cee9ea8))
+* **nvim:** [plugin] add showkeys ([cfd0ea6](https://github.com/engeir/stowfiles/commit/cfd0ea628e98708761b1dc110ec13bb08cd36813))
+* **nvim:** [plugin] deprecation warning ([c1e732c](https://github.com/engeir/stowfiles/commit/c1e732cf26fb8bc2bd02ceb0f615f601b6f3c902))
+* **nvim:** [plugin] pin just.nvim which is being re-written ([1593f82](https://github.com/engeir/stowfiles/commit/1593f820b5e04e6b657241aee39a0d10a4dab758))
+* **nvim:** [plugin] try rafamadriz/friendly-snippets again ([b05ef66](https://github.com/engeir/stowfiles/commit/b05ef66fab5f6e773be505d220deef7df62f1958))
+* **nvim:** add description to keymap toggle lsp diagnostic ([9320607](https://github.com/engeir/stowfiles/commit/93206071b86ea5d2cd4c19b982699c2f06f0f33f))
+* **nvim:** add some custom commands ([b7b03a3](https://github.com/engeir/stowfiles/commit/b7b03a356b28204afa4a284c5b078bd7dd9eca59))
+* **nvim:** add some more markdown snippets ([ff98f47](https://github.com/engeir/stowfiles/commit/ff98f470bf9c485473799d2551ee0f925284185e))
+* **nvim:** centre cursor when goto_next diagnostic ([dc1cdc8](https://github.com/engeir/stowfiles/commit/dc1cdc8edc249725fb8a9671a5f839ad3b23db9b))
+* **nvim:** don't accept first snippets with c-k, only with c-y ([fa6d349](https://github.com/engeir/stowfiles/commit/fa6d349bc93650bf474b2fa7d3baca191cdfcf1d))
+* **nvim:** dont auto install all these lsp's ([2450c79](https://github.com/engeir/stowfiles/commit/2450c79d833ed4ae4a85afa988172bf900d810aa))
+* **nvim:** open diagnostics float on goto_next ([f4ac504](https://github.com/engeir/stowfiles/commit/f4ac504aa7c2727be845b4b1ed7c3690865c9063))
+* **nvim:** small change ([4e0d735](https://github.com/engeir/stowfiles/commit/4e0d73593320f9520f5b3e6e0d3ff240d81a2485))
+* **nvim:** small fixes ([155aef3](https://github.com/engeir/stowfiles/commit/155aef3d84c9f55ca7310dd5a7e78a05a26a2f60))
+* **picom,zathura:** only use picom to control opacity ([490ca9d](https://github.com/engeir/stowfiles/commit/490ca9da1ee9a669c2d54a2b82761b026410a7fe))
+* small change ([c6b8ecb](https://github.com/engeir/stowfiles/commit/c6b8ecb6de7436fcc7367562a995d44b2e61c0e1))
+* **zsh,mise:** control keychain sourcing with mise ([f036d95](https://github.com/engeir/stowfiles/commit/f036d9504cca070c52ce02f2672e604aa905200e))
+
+
+### Code Refactoring
+
+* **bspwm:** change hostname ([962ccf3](https://github.com/engeir/stowfiles/commit/962ccf3f2b01b7365aba4a49f3e3039e271259f4))
+* **nvim:** disable J in visual vertical move ([afa66ec](https://github.com/engeir/stowfiles/commit/afa66eca7c0958f9b3fe63929b31cc0f56bcc083))
+* **nvim:** keymap (s)-tab for prev and next buffer ([576ed83](https://github.com/engeir/stowfiles/commit/576ed836801655a0fd8037245c115e47bb72cb0a))
+* **nvim:** lazy load, but not the colorschemes ([77a8b48](https://github.com/engeir/stowfiles/commit/77a8b485b06d72fb1f0bbfdde19231dccf55ed62))
+* **nvim:** remove hydra.nvim and replace with which-key.nvim ([b35851c](https://github.com/engeir/stowfiles/commit/b35851c71098e8725616d8cc66011ee7725bb503))
+
+
+### Continuous Integration
+
+* cannot get the monorepo to work ([f870376](https://github.com/engeir/stowfiles/commit/f8703763b5463b9334c548bc1e8ee70d2a89e33e))
+
 ## [1.21.0](https://github.com/engeir/stowfiles/compare/stowfiles-v1.20.0...stowfiles-v1.21.0) (2024-09-06)
 
 
