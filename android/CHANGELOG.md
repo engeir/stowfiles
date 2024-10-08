@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.15.5](https://github.com/engeir/stowfiles/compare/android-v1.15.4...android-v1.15.5) (2024-10-08)
+
+
+### Miscellaneous
+
+* **main:** release android 1.15.4 ([#306](https://github.com/engeir/stowfiles/issues/306)) ([31b4cb4](https://github.com/engeir/stowfiles/commit/31b4cb41daafc3e7b657ad6dba521cb6bc2539af))
+
 ## [1.15.4](https://github.com/engeir/stowfiles/compare/android-v1.15.3...android-v1.15.4) (2024-10-08)
 
 
