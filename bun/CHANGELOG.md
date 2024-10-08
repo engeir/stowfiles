@@ -1,5 +1,20 @@
 # Changelog
 
+## [1.15.4](https://github.com/engeir/stowfiles/compare/bun-v1.15.3...bun-v1.15.4) (2024-10-08)
+
+
+### Miscellaneous
+
+* **main:** release bun 1.15.4 ([#271](https://github.com/engeir/stowfiles/issues/271)) ([d236b4c](https://github.com/engeir/stowfiles/commit/d236b4c8c34597bccf4a47f28a8ae5cc00c7f6f6))
+* **main:** release fish 1.16.3 ([#124](https://github.com/engeir/stowfiles/issues/124)) ([5799516](https://github.com/engeir/stowfiles/commit/57995166b1597d7e1fc2387e92309afc0a2b617f))
+
+## [1.15.4](https://github.com/engeir/stowfiles/compare/bun-v1.15.3...bun-v1.15.4) (2024-10-08)
+
+
+### Miscellaneous
+
+* **main:** release fish 1.16.3 ([#124](https://github.com/engeir/stowfiles/issues/124)) ([5799516](https://github.com/engeir/stowfiles/commit/57995166b1597d7e1fc2387e92309afc0a2b617f))
+
 ## [1.15.3](https://github.com/engeir/stowfiles/compare/bun-v1.15.2...bun-v1.15.3) (2024-06-19)
 
 

@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.15.4](https://github.com/engeir/stowfiles/compare/xplr-v1.15.3...xplr-v1.15.4) (2024-10-08)
+
+
+### Miscellaneous
+
+* **main:** release fish 1.16.3 ([#124](https://github.com/engeir/stowfiles/issues/124)) ([5799516](https://github.com/engeir/stowfiles/commit/57995166b1597d7e1fc2387e92309afc0a2b617f))
+* **main:** release xplr 1.15.4 ([#287](https://github.com/engeir/stowfiles/issues/287)) ([11d8c3c](https://github.com/engeir/stowfiles/commit/11d8c3c896443624dbc6b35d36f44cf4c8bc0192))
+
 ## [1.15.3](https://github.com/engeir/stowfiles/compare/xplr-v1.15.2...xplr-v1.15.3) (2024-06-19)
 
 
