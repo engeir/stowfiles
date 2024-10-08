@@ -1,0 +1,21 @@
+#!/usr/bin/env bash
+
+# From https://mts.io/2014/09/06/generate-gitignore-files-bash-function/
+result=$(curl "https://www.toptal.com/developers/gitignore/api/$1" 2>/dev/null)
+
+if [[ $result =~ ERROR ]]; then
+  echo "Query '$1' has no match. See a list of possible queries with 'gi list'"
+elif [[ $1 == list ]]; then
+  echo "$result"
+elif [[ -z $1 ]]; then
+  echo "$result"
+  exit 1
+else
+  if [[ -f .gitignore ]]; then
+    result=$(echo "$result" | grep -v "# Created by http://www.gitignore.io")
+    echo ".gitignore already exists, appending"
+    echo "$result" >>.gitignore
+  else
+    echo "$result" >.gitignore
+  fi
+fi
