@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.15.5](https://github.com/engeir/stowfiles/compare/rush_linux-v1.15.4...rush_linux-v1.15.5) (2024-10-08)
+
+
+### Miscellaneous
+
+* **main:** release rush_linux 1.15.4 ([#296](https://github.com/engeir/stowfiles/issues/296)) ([9bf99a7](https://github.com/engeir/stowfiles/commit/9bf99a7f153f828f8f215c378a1d2c412b03d130))
+
 ## [1.15.4](https://github.com/engeir/stowfiles/compare/rush_linux-v1.15.3...rush_linux-v1.15.4) (2024-10-08)
 
 
