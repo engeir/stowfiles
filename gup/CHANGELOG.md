@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.15.5](https://github.com/engeir/stowfiles/compare/gup-v1.15.4...gup-v1.15.5) (2024-10-08)
+
+
+### Miscellaneous
+
+* **main:** release gup 1.15.4 ([#310](https://github.com/engeir/stowfiles/issues/310)) ([e883143](https://github.com/engeir/stowfiles/commit/e883143cdc52df931791a7538ae7f319a8dbb71e))
+
 ## [1.15.4](https://github.com/engeir/stowfiles/compare/gup-v1.15.3...gup-v1.15.4) (2024-10-08)
 
 
