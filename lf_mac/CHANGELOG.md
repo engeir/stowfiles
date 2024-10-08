@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.15.5](https://github.com/engeir/stowfiles/compare/lf_mac-v1.15.4...lf_mac-v1.15.5) (2024-10-08)
+
+
+### Miscellaneous
+
+* **main:** release lf_mac 1.15.4 ([#308](https://github.com/engeir/stowfiles/issues/308)) ([293a67a](https://github.com/engeir/stowfiles/commit/293a67a62d65621512462d5130d082b623a44632))
+
 ## [1.15.4](https://github.com/engeir/stowfiles/compare/lf_mac-v1.15.3...lf_mac-v1.15.4) (2024-10-08)
 
 
