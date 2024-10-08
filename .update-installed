@@ -1,14 +1,15 @@
 #!/bin/bash
 
 # Updates a file called INSTALLED.md.
-unameOut="$(uname -s)"
-case "$unameOut" in
-    Linux*) machine=Linux ;;
-    Darwin*) machine=Mac ;;
-    CYGWIN*) machine=Cygwin ;;
+# unameOut="$(uname -s)"
+osOut="$(grep "^ID" /etc/os-release | awk -F "=" '{print $2}' | tr '[:lower:]' '[:upper:]')"
+case "$osOut" in
+    UBUNTU*) machine=UBUNTU ;;
+    Darwin*) machine=MAC ;;
+    ARCH*) machine=ARCH ;;
     MINGW*) machine=MinGw ;;
     *)
-        machine="UNKNOWN:${unameOut}"
+        machine="UNKNOWN:${osOut}"
         ;;
 esac
 
@@ -63,7 +64,7 @@ run_updates() {
 }
 
 try_fix_ppa() {
-    if [ "$machine" = "Linux" ]; then
+    if [ "$machine" = "UBUNTU" ]; then
         echo "If you have an issue with apt/apt-get, where you get something like:"
         echo "E: The repository 'https://ppa.launchpadcontent.net/fontforge/fontforge/ubuntu jammy Release' does not have a Release file."
         echo "see https://askubuntu.com/a/1163224."
@@ -105,7 +106,7 @@ done
 # shift "$((OPTIND - 1))"
 
 # Run MacOS updates
-if [ "Mac" = "$machine" ]; then
+if [ "MAC" = "$machine" ]; then
     # Let us first make a copy of the current installed programs into a tmp directory
     cp ./INSTALLED-mac.md /tmp/INSTALLED-mac.md
     # TODO: consider using `brew bundle dump --force` to get a Brewfile, or `brew
@@ -159,8 +160,8 @@ $TEX
     # print_diff /tmp/INSTALLED-mac.md ./INSTALLED-mac.md
 fi
 
-# Run Linux updates
-if [ "Linux" = "$machine" ]; then
+# Run Ubuntu Linux updates
+if [ "UBUNTU" = "$machine" ]; then
     # Let us first make a copy of the current installed programs into a tmp directory
     cp ./INSTALLED-linux.md /tmp/INSTALLED-linux.md
     APT="$(nala list -i | grep '^[a-z,A-Z]')"
@@ -242,4 +243,51 @@ $SNAP
     # Now, we print the diff between the previous installed programs and the currently
     # installed
     # print_diff /tmp/INSTALLED-linux.md ./INSTALLED-linux.md
+fi
+
+# Run Arch Linux updates
+if [ "ARCH" = "$machine" ]; then
+    # Let us first make a copy of the current installed programs into a tmp directory
+    cp ./INSTALLED-arch.md /tmp/INSTALLED-arch.md
+    # PARU="$(nala list -i | grep '^[a-z,A-Z]')"
+    CARGO="$(cargo install --list)"
+    UV="$(uv tool list | sed 's/- .*//' | sed '/^$/d')"
+    GO="$(cat ~/.default-go-packages)"
+    TEX="$(tlmgr list --only-installed)"
+    MISE="$(mise ls)"
+    echo "# Installed programs
+
+## Mise
+
+\`\`\`txt {mise}
+$MISE
+\`\`\`
+
+## Cargo
+
+\`\`\`txt {cargo}
+$CARGO
+\`\`\`
+
+## Uv
+
+\`\`\`txt {uv}
+$UV
+\`\`\`
+
+## Go
+
+\`\`\`txt {go}
+$GO
+\`\`\`
+
+## Tex
+
+\`\`\`txt {tlmgr}
+$TEX
+\`\`\`
+    " >"./INSTALLED-arch.md"
+    # Now, we print the diff between the previous installed programs and the currently
+    # installed
+    # print_diff /tmp/INSTALLED-arch.md ./INSTALLED-arch.md
 fi
