@@ -1,5 +1,15 @@
 # Changelog
 
+## [1.22.1](https://github.com/engeir/stowfiles/compare/stowfiles-v1.22.0...stowfiles-v1.22.1) (2024-10-10)
+
+
+### Miscellaneous
+
+* **bin:** better fzf picker for git ignore script ([4cdc2a6](https://github.com/engeir/stowfiles/commit/4cdc2a6c08134f4ecd8716dd7e69086efe016e5e))
+* **bin:** use HOME env var, not explicit directory ([2a20406](https://github.com/engeir/stowfiles/commit/2a2040617613174c02043b58187396af491dcb7a))
+* **fish:** update ([7f25a8a](https://github.com/engeir/stowfiles/commit/7f25a8a87f267763eaf42a26c7d2ff41d42a1984))
+* **uv:** let mise handle python installs ([6cac5a0](https://github.com/engeir/stowfiles/commit/6cac5a0c17f643f59d42d43ad4b9f25c9481ec76))
+
 ## [1.22.0](https://github.com/engeir/stowfiles/compare/stowfiles-v1.21.0...stowfiles-v1.22.0) (2024-10-08)
 
 
