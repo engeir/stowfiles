@@ -1,11 +1,26 @@
 #!/bin/env bash
 # From: https://github.com/naelstrof/slop
 
+has() {
+    if ! command -v "$1" >/dev/null 2>&1; then
+        echo "$1 not found"
+        notify-send "$1 is not installed."
+        exit 1
+    fi
+}
+has "slop"
+has "tesseract"
+if ! grep "eng" <(tesseract --list-langs) >/dev/null 2>&1; then
+    echo "Install tesseract english trained data, or edit $0."
+    notify-send "Install tesseract english trained data, or edit $0."
+    exit 1
+fi
+
 imagefile="/tmp/sloppy.$RANDOM.png"
 text="/tmp/translation"
 echo "$imagefile"
 slop=$(slop -f "%g") || exit 1
-read -r G < <(echo "$slop")
-import -window root -crop "$G" "$imagefile"
-tesseract "$imagefile" "$text" 2>/dev/null
-cat "$text.txt" | xclip -selection c
+read -r G <<<$slop
+import -window root -crop $G $imagefile
+tesseract $imagefile $text 2>/dev/null
+cat $text".txt" | xclip -selection c
