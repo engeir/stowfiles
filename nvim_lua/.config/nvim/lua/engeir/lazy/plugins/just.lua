@@ -6,9 +6,10 @@ return {
   {
     {
       "al1-ce/just.nvim",
+      enabled = false,
       ft = { "just" },
       -- An update seem to be in the works, where a more general `runme` command is used.
-      commit = "c32dc02",
+      -- commit = "c32dc02",
       cmd = {
         "JustDefault", -- Builds current file/project using default task.
         "JustBuild", -- Builds current file/project using build task.
@@ -28,10 +29,11 @@ return {
         { "<leader>jc", "<cmd>JustCreateTemplate<cr>", desc = "Just: Create" },
       },
       dependencies = {
-        "nvim-lua/plenary.nvim",
-        "nvim-telescope/telescope.nvim",
-        "rcarriga/nvim-notify",
-        "j-hui/fidget.nvim",
+        "nvim-lua/plenary.nvim", -- async jobs
+        "nvim-telescope/telescope.nvim", -- task picker
+        "rcarriga/nvim-notify", -- general notifications (optional)
+        "j-hui/fidget.nvim", -- task progress
+        "al1-ce/jsfunc.nvim", -- extension library
       },
       config = true,
     },
