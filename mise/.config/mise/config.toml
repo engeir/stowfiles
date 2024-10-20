@@ -1,4 +1,5 @@
 [env]
+ZDOTDIR = "{{env.HOME}}/.config/zsh/"
 BUN_INSTALL = "{{env.HOME}}/.bun"
 DENO_INSTALL = "{{env.HOME}}/.deno"
 DPRINT_INSTALL = "{{env.HOME}}/.local/bin/"
@@ -94,6 +95,8 @@ jq = "latest"
 node = "latest"
 pandoc = "latest"
 tinytex = "latest"
+usage = "latest"
+uv = "latest"
 watchexec = "latest"
 python = [
   "latest",
@@ -119,7 +122,7 @@ python = [
 "ubi:sharkdp/bat" = "latest"
 "ubi:typst/typst" = "latest"
 "ubi:uutils/coreutils" = "latest"
-usage = "latest"
+lazygit = "latest"
 # "pipx:ansible-core" = "latest"
 # "pipx:beautysh" = "latest"
 # "pipx:bibfish" = "latest"

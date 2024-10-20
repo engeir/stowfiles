@@ -32,7 +32,10 @@ case "$1" in
             uv-install
         }
         ;;
-    "apt") ;;
+    "apt")
+        run-installer() {
+            apt-get-install
+        };;
     "pacstall") ;;
     "go") ;;
     "flatpak") ;;
@@ -77,6 +80,36 @@ uv-install() {
         package="$(echo "$line" | awk '{print $1}' | sed 's/://')"
         echo "Installing $package"
         uv tool install "$package"
+    done <<<"$not_installed"
+}
+nala-install-search() {
+    package_name=$1
+    if sudo nala install -y "$package_name"; then
+        echo "Package '$package_name' installed successfully."
+    else
+        echo "Package '$package_name' not found. Searching for similar..."
+        closest_match="$(apt-cache search "$package_name" | awk '{print $1}' | head -n 1)"
+        if [ -n "$closest_match" ];then
+            read -p "Did you mean '$closest_match'? [Y/n] " response
+            response=${response,,}
+            if [[ "$response" == "y" || "$response" == "" ]]; then
+                sudo nala install -y "$closest_match"
+            else
+                echo "No package installed"
+            fi
+        else
+            echo "No similar package found."
+        fi
+    fi
+}
+apt-get-install() {
+    present="$(nala list -i | grep '^[a-z,A-Z]' | awk '{print $1}')"
+    not_installed="$(diff <(echo "$list" | awk '{print $1}') <(echo "$present") | grep -E '^<' | sed 's/^< //')"
+    [[ -z $not_installed ]] && exit 0
+    # sudo nala install "$not_installed"
+    while IFS= read -r line; do
+        echo "Installing $line"
+        nala-install-search "$line"
     done <<<"$not_installed"
 }
 run-installer

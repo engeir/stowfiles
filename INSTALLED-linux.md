@@ -254,12 +254,6 @@ efibootmgr 17-1ubuntu2 [Ubuntu/jammy main]
 eject 2.37.2-4ubuntu3.4 [Ubuntu/jammy main]
 elinks 0.13.2-1build3 [Ubuntu/jammy universe]
 elinks-data 0.13.2-1build3 [Ubuntu/jammy universe]
-emacs 1:27.1+1-3ubuntu5.1 [Ubuntu/jammy universe]
-emacs-bin-common 1:27.1+1-3ubuntu5.1 [Ubuntu/jammy universe]
-emacs-common 1:27.1+1-3ubuntu5.1 [Ubuntu/jammy universe]
-emacs-el 1:27.1+1-3ubuntu5.1 [Ubuntu/jammy universe]
-emacs-gtk 1:27.1+1-3ubuntu5.1 [Ubuntu/jammy universe]
-emacsen-common 3.0.4 [Ubuntu/jammy main]
 enchant-2 2.3.2-1ubuntu2 [Ubuntu/jammy main]
 entangle 3.0-3 [Ubuntu/jammy universe]
 entr 5.1-1 [Ubuntu/jammy universe]
@@ -678,7 +672,6 @@ gperf 3.1-1build1 [Ubuntu/jammy universe]
 gpg 2.2.27-3ubuntu2.1 [Ubuntu/jammy main]
 gpg-agent 2.2.27-3ubuntu2.1 [Ubuntu/jammy main]
 gpg-wks-client 2.2.27-3ubuntu2.1 [Ubuntu/jammy main]
-gpg-wks-server 2.2.27-3ubuntu2.1 [Ubuntu/jammy main]
 gpgconf 2.2.27-3ubuntu2.1 [Ubuntu/jammy main]
 gpgsm 2.2.27-3ubuntu2.1 [Ubuntu/jammy main]
 gpgv 2.2.27-3ubuntu2.1 [Ubuntu/jammy main]
@@ -4015,7 +4008,7 @@ shellcheck 0.8.0-2 [Ubuntu/jammy universe]
 shfmt 3.7.0-pacstall1 [local]
 shfmt-bin 3.4.3-1 [local]
 shim-signed 1.51.3+15.7-0ubuntu1 [Ubuntu/jammy main]
-signal-desktop 7.21.0 [. xenial/xenial main]
+signal-desktop 7.22.2 [. xenial/xenial main]
 signon-plugin-oauth2 0.25-2 [Ubuntu/jammy universe]
 silversearcher-ag 2.2.0+git20200805-1 [Ubuntu/jammy universe]
 simplex-desktop 5.8.0-pacstall1 [local]
@@ -4123,19 +4116,18 @@ translate-shell 0.9.6.12-1 [Ubuntu/jammy multiverse]
 trash-cli 0.17.1.14-5build1 [Ubuntu/jammy universe]
 tree 2.0.2-1 [Ubuntu/jammy universe]
 ttf-bitstream-vera 1.10-8.2 [Ubuntu/jammy universe]
-ttf-mscorefonts-installer 3.8ubuntu2 [Ubuntu/jammy multiverse]
 tumbler 4.16.0-1 [Ubuntu/jammy universe]
 tumbler-common 4.16.0-1 [Ubuntu/jammy universe]
 tzdata 2024a-0ubuntu0.22.04.1 [Ubuntu/jammy main]
 ubuntu-advantage-desktop-daemon 1.10~22.04.1 [Ubuntu/jammy main]
-ubuntu-advantage-tools 32.3.1~22.04 [Ubuntu/jammy main]
+ubuntu-advantage-tools 32.3.1~22.04 [local]
 ubuntu-docs 22.04.5 [Ubuntu/jammy main]
 ubuntu-drivers-common 1:0.9.6.2~0.22.04.6 [Ubuntu/jammy main]
 ubuntu-keyring 2021.03.26 [Ubuntu/jammy main]
 ubuntu-minimal 1.481.3 [Ubuntu/jammy main]
 ubuntu-mono 20.10-0ubuntu2 [Ubuntu/jammy main]
-ubuntu-pro-client 32.3.1~22.04 [Ubuntu/jammy main]
-ubuntu-pro-client-l10n 32.3.1~22.04 [Ubuntu/jammy main]
+ubuntu-pro-client 32.3.1~22.04 [local]
+ubuntu-pro-client-l10n 32.3.1~22.04 [local]
 ubuntu-release-upgrader-core 1:22.04.19 [Ubuntu/jammy main]
 ubuntu-release-upgrader-gtk 1:22.04.19 [Ubuntu/jammy main]
 ubuntu-report 1.7.1 [Ubuntu/jammy main]
@@ -4279,7 +4271,6 @@ xdg-desktop-portal-gtk 1.14.0-1build1 [Ubuntu/jammy main]
 xdg-user-dirs 0.17-2ubuntu4 [Ubuntu/jammy main]
 xdg-user-dirs-gtk 0.10-3build2 [Ubuntu/jammy main]
 xdg-utils 1.1.3-4.1ubuntu3~22.04.1 [Ubuntu/jammy main]
-xdm 1:1.1.11-3ubuntu2 [Ubuntu/jammy universe]
 xdo 0.5.7-1 [Ubuntu/jammy universe]
 xdotool 1:3.20160805.1-4 [Ubuntu/jammy universe]
 xfconf 4.16.0-2 [Ubuntu/jammy universe]
@@ -4363,7 +4354,7 @@ name: neofetch version: 7.1.0-pacstall1
 name: polybar version: 3.7.1-pacstall1
 name: quarto version: 1.3.450
 name: shfmt version: 3.7.0-pacstall1
-name: signal-desktop version: 7.21.0
+name: signal-desktop version: 7.22.2
 name: simplex-desktop version: 5.8.0-pacstall1
 name: thorium-browser version: 124.0.6367.218-1
 name: wezterm version: 20230712-072601-f4abf8fd-pacstall1
@@ -4451,7 +4442,7 @@ bacon v2.20.0:
     bacon
 bob-nvim v4.0.1:
     bob
-cargo-binstall v1.10.2:
+cargo-binstall v1.10.3:
     cargo-binstall
 cargo-edit v0.12.3:
     cargo-add
@@ -4520,8 +4511,6 @@ mdbook-toc v0.14.2:
     mdbook-toc
 menyoki v1.7.0:
     menyoki
-mise v2024.8.12:
-    mise
 mprocs v0.7.1:
     mprocs
 nu v0.97.1:
@@ -4563,7 +4552,7 @@ taplo-cli v0.9.3:
     taplo
 topgrade v15.0.0:
     topgrade
-tree-sitter-cli v0.22.6:
+tree-sitter-cli v0.23.0:
     tree-sitter
 ubi v0.1.1:
     ubi
@@ -4577,7 +4566,7 @@ xcolor v0.5.1:
     xcolor
 xh v0.22.2:
     xh
-yazi-fm v0.3.1:
+yazi-fm v0.3.2:
     yazi
 zellij v0.40.1:
     zellij
@@ -5027,7 +5016,7 @@ Name                       Version                     Rev    Tracking         P
 bare                       1.0                         5      latest/stable    canonical**    base
 bw                         2024.8.1                    69     latest/stable    bitwarden**    -
 canonical-livepatch        10.8.3                      282    latest/stable    canonical**    -
-cmake                      3.30.2                      1409   latest/stable    crascit**      classic
+cmake                      3.30.3                      1413   latest/stable    crascit**      classic
 core                       16-2.61.4-20240607          17200  latest/stable    canonical**    core
 core18                     20240612                    2829   latest/stable    canonical**    base
 core20                     20240416                    2318   latest/stable    canonical**    base
