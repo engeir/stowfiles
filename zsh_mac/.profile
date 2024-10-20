@@ -35,7 +35,7 @@ export GPG_TTY=$(tty)
 fpath+=${ZDOTDIR:-~}/.zsh_functions
 
 # Start keychain
-if [[ -d "/home/een023/" ]]; then
+if [[ -d "/home/een023-noo/" ]]; then
     if command -v /usr/bin/keychain >/dev/null 2>&1; then
         if uname -a | grep -i ubuntu >/dev/null 2>&1; then
             "$HOME/bin/start-keychain-expect"
