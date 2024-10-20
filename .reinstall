@@ -26,7 +26,11 @@ case "$1" in
             tlmgr-install
         }
         ;;
-    "cargo") ;;
+    "cargo")
+        run-installer() {
+            cargo-install
+        }
+        ;;
     "uv")
         run-installer() {
             uv-install
@@ -35,8 +39,13 @@ case "$1" in
     "apt")
         run-installer() {
             apt-get-install
-        };;
-    "pacstall") ;;
+        }
+        ;;
+    "pacstall")
+        run-installer() {
+            pacstall-install
+        }
+        ;;
     "go") ;;
     "flatpak") ;;
     "snap") ;;
@@ -79,7 +88,7 @@ uv-install() {
     while IFS= read -r line; do
         package="$(echo "$line" | awk '{print $1}' | sed 's/://')"
         echo "Installing $package"
-        uv tool install "$package"
+        uv tool install "$package" --force
     done <<<"$not_installed"
 }
 nala-install-search() {
@@ -89,10 +98,10 @@ nala-install-search() {
     else
         echo "Package '$package_name' not found. Searching for similar..."
         closest_match="$(apt-cache search "$package_name" | awk '{print $1}' | head -n 1)"
-        if [ -n "$closest_match" ];then
-            read -p "Did you mean '$closest_match'? [Y/n] " response
+        if [ -n "$closest_match" ]; then
+            read -p "Did you mean '$closest_match'? [Y or n] " response
             response=${response,,}
-            if [[ "$response" == "y" || "$response" == "" ]]; then
+            if [[ $response == "y" || $response == "" ]]; then
                 sudo nala install -y "$closest_match"
             else
                 echo "No package installed"
@@ -111,5 +120,34 @@ apt-get-install() {
         echo "Installing $line"
         nala-install-search "$line"
     done <<<"$not_installed"
+}
+pacstall-install-search() {
+    package_name=$1
+    if pacstall -P -I "$package_name"; then
+        echo "Package '$package_name' installed successfully."
+    elif pacstall -P -I "$package_name"-bin; then
+        echo "Package '$package_name-bin' installed successfully."
+    else
+        echo "Package '$package_name' not found. Searching for similar..."
+        closest_match="$(pacstall -S "$package_name" | sed -r "s/\x1B\[([0-9]{1,3}(;[0-9]{1,2};?)?)?[mGK]//g" | awk '{print $1}' | head -n 1)"
+        if [ -n "$closest_match" ]; then
+            pacstall -P -I "$closest_match"
+        else
+            echo "No similar package found."
+        fi
+    fi
+}
+pacstall-install() {
+    present="$(pacstall -L | xargs -L 1 pacstall -Ci 2>/dev/null | sed -r "s/\x1B\[([0-9]{1,3}(;[0-9]{1,2};?)?)?[mGK]//g" | grep -E '^(name|version)' | paste -d ' ' - -)"
+    not_installed="$(diff <(echo "$list" | awk '{print $2}') <(echo "$present" | awk '{print $2}') | grep -E '^<' | sed 's/^< //')"
+    [[ -z $not_installed ]] && exit 0
+    # sudo nala install "$not_installed"
+    while IFS= read -r line; do
+        echo "Installing $line"
+        pacstall-install-search "$line"
+    done <<<"$not_installed"
+}
+cargo-install() {
+    echo "Not implemented!"
 }
 run-installer
