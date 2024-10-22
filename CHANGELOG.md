@@ -1,5 +1,34 @@
 # Changelog
 
+## [1.23.0](https://github.com/engeir/stowfiles/compare/stowfiles-v1.22.0...stowfiles-v1.23.0) (2024-10-22)
+
+
+### Features
+
+* **bin:** check for deps when running find_txt ([a1739f7](https://github.com/engeir/stowfiles/commit/a1739f743e387ded582a6f02d2fe7fc6214f8be6))
+* **software:** implement pacstall re-install function ([50dd331](https://github.com/engeir/stowfiles/commit/50dd33179b93bd9041203e3f2c13e2b501a42289))
+
+
+### Miscellaneous
+
+* **bin:** better fzf picker for git ignore script ([4cdc2a6](https://github.com/engeir/stowfiles/commit/4cdc2a6c08134f4ecd8716dd7e69086efe016e5e))
+* **bin:** use HOME env var, not explicit directory ([2a20406](https://github.com/engeir/stowfiles/commit/2a2040617613174c02043b58187396af491dcb7a))
+* **firefox:** specify how to get compact mode ([beb1d54](https://github.com/engeir/stowfiles/commit/beb1d54e3d6a3956ef4e3a2c8503278f0497ec90))
+* **fish:** don't track all those generated files ([409ac44](https://github.com/engeir/stowfiles/commit/409ac44bd88aacaf9df848a33e80a402a04ecc91))
+* **fish:** untrack files ([8c41bdd](https://github.com/engeir/stowfiles/commit/8c41bddddf8719792bd797c6ab1d5ea26288cf4d))
+* **fish:** update ([7f25a8a](https://github.com/engeir/stowfiles/commit/7f25a8a87f267763eaf42a26c7d2ff41d42a1984))
+* **nvim:** ueberzugpp isn't working yet on ubuntu ([ceb2ad7](https://github.com/engeir/stowfiles/commit/ceb2ad715dcce5bb041511c9945ac55f663bd368))
+* sync mise ([5a23f20](https://github.com/engeir/stowfiles/commit/5a23f20f94715247d2d58918a7060000b4551b30))
+* update ([b9e16f4](https://github.com/engeir/stowfiles/commit/b9e16f412393959082bdfc08ddc22ef7a1e181d2))
+* **uv:** let mise handle python installs ([6cac5a0](https://github.com/engeir/stowfiles/commit/6cac5a0c17f643f59d42d43ad4b9f25c9481ec76))
+* **zsh:** add zoxide to zshrc ([cd1fa32](https://github.com/engeir/stowfiles/commit/cd1fa3286872684ef4b11fb346a3a54660f44456))
+
+
+### Code Refactoring
+
+* **bspwm:** move bsp-layout into bspwm bin dir ([d4d0795](https://github.com/engeir/stowfiles/commit/d4d0795e4384bab27b31e771308e851d868e9f06))
+* **bspwm:** rename ubuntu machine scripts ([679b657](https://github.com/engeir/stowfiles/commit/679b6573723e26b9a2a9c37461d1edf730c12fd5))
+
 ## [1.22.0](https://github.com/engeir/stowfiles/compare/stowfiles-v1.21.0...stowfiles-v1.22.0) (2024-10-08)
 
 
