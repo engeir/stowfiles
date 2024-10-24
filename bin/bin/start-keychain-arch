@@ -1,4 +1,4 @@
 #!/bin/bash
 
-eval "$(keychain --eval id_rsa)"
+# eval "$(keychain --eval id_rsa)"
 eval "$(keychain --eval id_ed25519)"

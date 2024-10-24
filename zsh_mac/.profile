@@ -35,16 +35,16 @@ export GPG_TTY=$(tty)
 fpath+=${ZDOTDIR:-~}/.zsh_functions
 
 # Start keychain
-if [[ -d "/home/een023-noo/" ]]; then
-    if command -v /usr/bin/keychain >/dev/null 2>&1; then
-        if uname -a | grep -i ubuntu >/dev/null 2>&1; then
-            "$HOME/bin/start-keychain-expect"
-        elif uname -a | grep -i arch >/dev/null 2>&1; then
-            "$HOME/bin/start-keychain-arch-expect"
-        fi
+# if [[ -d "/home/een023/" ]]; then
+if command -v /usr/bin/keychain >/dev/null 2>&1; then
+    if uname -a | grep -i ubuntu >/dev/null 2>&1; then
+        "$HOME/bin/start-keychain-expect"
+    elif uname -a | grep -i arch >/dev/null 2>&1; then
+        "$HOME/bin/start-keychain-arch-expect"
     fi
-    export LD_PRELOAD=/usr/lib/x86_64-linux-gnu/libgtk3-nocsd.so.0
 fi
+# export LD_PRELOAD=/usr/lib/x86_64-linux-gnu/libgtk3-nocsd.so.0
+# fi
 xset r rate 210 40
 xrdb "$HOME/.config/Xresources"
 

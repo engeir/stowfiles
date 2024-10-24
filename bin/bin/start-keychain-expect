@@ -4,8 +4,8 @@
 
 set timeout -1
 spawn /home/een023/bin/start-keychain
-expect -re "passphrase" { send -- [exec pass SSH/id_rsa]\r }
+#expect -re "passphrase" { send -- [exec pass SSH/id_rsa]\r }
 expect -re "passphrase" { send -- [exec pass Github/SSH/passphrase]\r }
-expect -re "passphrase" { send -- [exec pass SSH/id_sigma2]\r }
+#expect -re "passphrase" { send -- [exec pass SSH/id_sigma2]\r }
 
 expect eof
