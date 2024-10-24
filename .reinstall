@@ -3,6 +3,7 @@
 usage() {
     echo "Usage: $0 <package-manager>"
     echo "Supported package managers:"
+    echo "  fonts"
     echo "  tlmgr"
     echo "  cargo"
     echo "  uv"
@@ -21,29 +22,40 @@ run-installer() {
     echo "No installer has been set up yet."
 }
 case "$1" in
+    "fonts")
+        run-installer() {
+            fonts-install
+            exit 0
+        }
+        ;;
     "tlmgr")
         run-installer() {
             tlmgr-install
+            exit 0
         }
         ;;
     "cargo")
         run-installer() {
             cargo-install
+            exit 0
         }
         ;;
     "uv")
         run-installer() {
             uv-install
+            exit 0
         }
         ;;
     "apt")
         run-installer() {
             apt-get-install
+            exit 0
         }
         ;;
     "pacstall")
         run-installer() {
             pacstall-install
+            exit 0
         }
         ;;
     "go") ;;
@@ -65,6 +77,41 @@ case "$unameOut" in
 esac
 
 list="$(sed -n '/^```txt {'"$1"'}/,/^```/ p' <"$file" | sed '/^```/ d')"
+font-caskaydia-install() {
+    if ! command -v getnf >/dev/null 2>&1; then
+        echo "To install fonts, first install 'getnf' from"
+        echo "https://github.com/getnf/getnf"
+        exit 1
+    fi
+    getnf -i CascadiaMono
+}
+font-cartograph-install() {
+    if ! grep -q "$HOME/.local/share/fonts" <(fc-list); then
+        echo "I am only able to install fonts into $HOME/.local/share/fonts/. Sorry!"
+        exit 1
+    fi
+    TMPDIR="/tmp/font-$RANDOM"
+    mkdir -p "$TMPDIR"
+    cd "$TMPDIR" || exit
+    git clone https://github.com/g5becks/Cartograph.git
+    rm -rf Cartograph/.git/
+    mv Cartograph "$HOME/.local/share/fonts/"
+    fc-cache
+}
+fonts-install() {
+    if ! grep "Cartograph CF.*Italic" -q <(fc-list); then
+        echo "Cartograph CF, Italic style is not installed."
+        font-cartograph-install
+    fi
+    if ! grep "CaskaydiaMono Nerd Font Mono.*Bold" -q <(fc-list); then
+        echo "CaskaydiaMono Nerd Font Mono, Bold style is not installed."
+        font-caskaydia-install
+    fi
+    if ! grep "CaskaydiaMono Nerd Font Mono.*Regular" -q <(fc-list); then
+        echo "CaskaydiaMono Nerd Font Mono, Regular style is not installed."
+        font-caskaydia-install
+    fi
+}
 tlmgr-install() {
     # Do shit
     present="$(tlmgr list --only-installed)"
