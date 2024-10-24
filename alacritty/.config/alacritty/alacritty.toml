@@ -1,5 +1,3 @@
-live_config_reload = true
-
 [colors]
 draw_bold_text_with_bright_colors = true
 
@@ -90,15 +88,17 @@ action = "DecreaseFontSize"
 key = "J"
 mods = "Alt|Shift"
 
-[shell]
-args = ["--login"]
-program = "/bin/zsh"
-
 [window]
 decorations = "None"
 dynamic_title = true
-opacity = 1.0
 
 [window.padding]
 x = 3
 y = 5
+
+[general]
+live_config_reload = true
+
+[terminal.shell]
+args = ["--login"]
+program = "/bin/zsh"
