@@ -1,5 +1,28 @@
 # Changelog
 
+## [1.24.0](https://github.com/engeir/stowfiles/compare/stowfiles-v1.23.0...stowfiles-v1.24.0) (2024-10-24)
+
+
+### Features
+
+* **fonts:** re-install fonts ([1360be9](https://github.com/engeir/stowfiles/commit/1360be931867072775de5ea00f2fd8e5cd9a1771))
+
+
+### Bug Fixes
+
+* **polybar:** update pulseaudio-control after v3 ([9360376](https://github.com/engeir/stowfiles/commit/936037667142f34385164282e4c3a75f70ea849e))
+
+
+### Miscellaneous
+
+* **alacritty:** update config syntax ([a2e3609](https://github.com/engeir/stowfiles/commit/a2e3609efce24be5a31b41c4115961656b641029))
+* **zsh:** set keychain ed25519 in .profile ([548b665](https://github.com/engeir/stowfiles/commit/548b665b5cdcf55e534d637d84835bd75aac3dcb))
+
+
+### Code Refactoring
+
+* **bspwm:** move polybar script to the polybar dir ([ff4dfda](https://github.com/engeir/stowfiles/commit/ff4dfdacb9debdc398edb7db4548ef5617c526fe))
+
 ## [1.23.0](https://github.com/engeir/stowfiles/compare/stowfiles-v1.22.0...stowfiles-v1.23.0) (2024-10-22)
 
 
