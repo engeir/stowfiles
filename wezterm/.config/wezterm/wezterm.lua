@@ -10,7 +10,7 @@ if wezterm.config_builder then
   config = wezterm.config_builder()
 end
 -- Spawn a fish shell in login mode
-config.default_prog = { "/usr/bin/fish", "-l" }
+-- config.default_prog = { "/usr/bin/fish", "-l" }
 
 -- This is where you actually apply your config choices
 wezterm.on("update-right-status", function(window, pane)
