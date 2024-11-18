@@ -2,7 +2,7 @@ return {
   {
     "3rd/image.nvim",
     enabled = (
-      vim.loop.os_homedir() == "/home/een023-noo"
+      vim.loop.os_homedir() == "/home/een023"
       or vim.loop.os_homedir() == "/home/eirikre"
     ),
     build = "luarocks --local --lua-version=5.1 install magick",

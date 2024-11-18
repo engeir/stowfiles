@@ -11,6 +11,7 @@ return {
   "folke/snacks.nvim",
   priority = 1000,
   lazy = false,
+  ---@type snacks.Config
   opts = {
     terminal = {
       win = {
@@ -46,6 +47,11 @@ return {
         },
       },
     },
+    bigfile = { enabled = true },
+    notifier = { enabled = true },
+    quickfile = { enabled = true },
+    statuscolumn = { enabled = true },
+    words = { enabled = true },
   },
   keys = {
     {
@@ -61,6 +67,13 @@ return {
         Snacks.terminal()
       end,
       desc = "Toggle Terminal",
+    },
+    {
+      "crf",
+      function()
+        Snacks.rename.rename_file()
+      end,
+      desc = "Rename File",
     },
   },
   dependencies = {
