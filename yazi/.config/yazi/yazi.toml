@@ -7,6 +7,14 @@ linemode = "size"
 show_hidden = true
 show_symlink = true
 
+[opener]
+nuke = [
+  { run = '~/.config/nnn/plugins/nuke "$1"', desc = "Open", for = "linux" },
+]
+
+[open]
+prepend_rules = [{ mime = "image/*", use = "nuke" }]
+
 [preview]
 max_width = 1000
 
@@ -14,6 +22,6 @@ max_width = 1000
 prepend_previewers = [
   # HEIC previewer
   { mime = "image/heic", run = "heic" },
-  # run need to be the name of a Lua plugin
+  # `run` need to be the name of a Lua plugin
   # { mime = "application/x-netcdf", name = "*.nc", run = "ncdump-rich" },
 ]
