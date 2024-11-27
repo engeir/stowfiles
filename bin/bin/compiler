@@ -64,7 +64,7 @@ case "$ext" in
         else
             # Not stopping the compilation just because of some warnings:
             # pandoc --citeproc --bibliography=/home/een023/science/ref/ref.bib "$file" --filter pandoc-eqnos --filter pandoc-include-code -s -o "$base".pdf > /dev/null 2>&1
-            pandoc --citeproc --bibliography="$HOME"/science/ref/ref.bib "$file" --shift-heading-level-by="$shift" --filter pandoc-include --filter pandoc-eqnos -s -o "$base".pdf >/dev/null 2>&1
+            pandoc --citeproc --bibliography="$HOME"/science/ref/ref.bib "$file" --shift-heading-level-by="$shift" --filter pandoc-include -s -o "$base".pdf
         fi
         ;;
         # if  [ -x "$(command -v lowdown)" ]; then
