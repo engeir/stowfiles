@@ -164,6 +164,7 @@ C.verbatim_like_environments = {
 
 -- Control sequences which should be on their own paragraphs
 C.own_paragraphs = {
+  "clearpage",
   "documentclass",
   "newpage",
   "section",
