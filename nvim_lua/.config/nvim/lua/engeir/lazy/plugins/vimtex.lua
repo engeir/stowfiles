@@ -43,7 +43,7 @@ return {
       "n",
       "<localleader>lb",
       "<cmd>!bibfish -c 'cite,citet,citep,citeA' -f % ~/science/ref/ref.bib %:p:r.bib<CR><CR>",
-      { desc = "Bibexport (Vimtex)" }
+      { desc = "Bibfish export (Vimtex)" }
     )
   end,
 }
