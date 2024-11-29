@@ -1,23 +1,24 @@
+# Annoying colors that always change
+**/.zsh_functions/**
 **/spell/**
 .luarc.json
 .zcompdump
+.zcompdump*
 .zsh_history
 .zsh_sessions
-**/.zsh_functions/**
-calcurse/.local/share/*
 calcurse/.config/calcurse/keys
-helix/.config/helix/runtime
-helix/.config/helix/external-snippets/
-helix/.config/helix/snippets/
-newsboat/.newsboat/cache.db
-nushell/**/history*
-tmux/.tmux/plugins/
-lazy-lock.json
-.zcompdump*
-# Annoying colors that always change
-colors.yml
+calcurse/.local/share/*
 colors
 colors.rasi
+colors.yml
 fish/.config/fish/completions/
 fish/.config/fish/conf.d/
 fish/.config/fish/functions/
+helix/.config/helix/external-snippets/
+helix/.config/helix/runtime
+helix/.config/helix/snippets/
+lazy-lock.json
+newsboat/.newsboat/cache.db
+nushell/**/history*
+tmux/.tmux/plugins/
+yazi/.config/yazi/plugins/
