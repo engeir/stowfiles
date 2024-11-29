@@ -12,3 +12,35 @@ run = "plugin --sync smart-enter"
 # For upcoming Yazi 0.4 (nightly version):
 # run  = "plugin smart-enter"
 desc = "Enter the child directory, or open the file"
+[[manager.prepend_keymap]]
+on = "t"
+run = "plugin --sync smart-tab"
+desc = "Create a tab and enter the hovered directory"
+[[manager.prepend_keymap]]
+on = "<C-n>"
+run = '''
+	shell 'dragon -a -T "$@"' --confirm
+'''
+# run = '''
+#     shell 'ripdrag "$@" -x 2>/dev/null &' --confirm
+# '''
+[[manager.prepend_keymap]]
+on = ["g", "r"]
+run = '''
+	shell 'ya pub dds-cd --str "$(git rev-parse --show-toplevel)"' --confirm
+'''
+desc = "Go to Git root"
+[[manager.prepend_keymap]]
+on = "T"
+run = "plugin --sync max-preview"
+# For upcoming Yazi 0.4 (nightly version):
+# run  = "plugin max-preview"
+desc = "Maximize or restore preview"
+[[manager.prepend_keymap]]
+on = ["c", "m"]
+run = "plugin chmod"
+desc = "Chmod on selected files"
+[[manager.prepend_keymap]]
+on = "F"
+run = "plugin smart-filter"
+desc = "Smart filter"

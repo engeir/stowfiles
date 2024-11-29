@@ -25,3 +25,12 @@ prepend_previewers = [
   # `run` need to be the name of a Lua plugin
   # { mime = "application/x-netcdf", name = "*.nc", run = "ncdump-rich" },
 ]
+[[plugin.prepend_fetchers]]
+id = "git"
+name = "*"
+run = "git"
+
+[[plugin.prepend_fetchers]]
+id = "git"
+name = "*/"
+run = "git"
