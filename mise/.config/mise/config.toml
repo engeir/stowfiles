@@ -25,6 +25,7 @@ PAGER = "less" # Suggested at https://github.com/jarun/nnn/wiki/Advanced-use-cas
 # MANROFFOPT = "-c"  # Fix formatting issue (or just use batman from bat-extras)
 # MANPAGER = "sh -c 'col -bx | bat -l man -p'"
 BAT_PAGER = "less -R"
+BAT_THEME = "Catppuccin Mocha"
 LESS = '-Ri '
 
 # NNN
