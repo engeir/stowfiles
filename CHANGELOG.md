@@ -1,5 +1,65 @@
 # Changelog
 
+## [1.24.0](https://github.com/engeir/stowfiles/compare/stowfiles-v1.23.0...stowfiles-v1.24.0) (2024-12-06)
+
+
+### Features
+
+* **fonts:** re-install fonts ([1360be9](https://github.com/engeir/stowfiles/commit/1360be931867072775de5ea00f2fd8e5cd9a1771))
+* **nvim:** [plugin] add sniprun ([8f818a4](https://github.com/engeir/stowfiles/commit/8f818a45157020bfda2933220754eac51494f2fd))
+* **nvim:** add snack.nvim and edgy.nvim from folke ([4e22294](https://github.com/engeir/stowfiles/commit/4e222947041b2ece9b487790e890fafa948ef62a))
+* **yazi:** make yazi awesome with some plugins ([82312de](https://github.com/engeir/stowfiles/commit/82312de93e391910ed2d7d72a5187670b163d66f))
+* **yazi:** open files (and enter dirs) with `l` ([3676ad0](https://github.com/engeir/stowfiles/commit/3676ad02f58112365cd59b73c7a1958f3f6210ae))
+* **yazi:** open images with nuke (from nnn) ([4824e04](https://github.com/engeir/stowfiles/commit/4824e0475966cd7f23f7cf93c668872f08aad309))
+
+
+### Bug Fixes
+
+* **polybar:** update pulseaudio-control after v3 ([9360376](https://github.com/engeir/stowfiles/commit/936037667142f34385164282e4c3a75f70ea849e))
+
+
+### Miscellaneous
+
+* **alacritty:** update config syntax ([a2e3609](https://github.com/engeir/stowfiles/commit/a2e3609efce24be5a31b41c4115961656b641029))
+* **bin:** update pandoc command in compiler script ([94ec7da](https://github.com/engeir/stowfiles/commit/94ec7daa0ca9f92a93e23e56675d0aba8bb1e8d5))
+* **kitty:** add basic config to make it feel like home ([ad9d387](https://github.com/engeir/stowfiles/commit/ad9d387807a192bfc38d881415cf5fbe522fda72))
+* **llf:** place `clearpage` as its own paragraph ([471ff82](https://github.com/engeir/stowfiles/commit/471ff82f5472a312b7f559394c0008a9faefbda7))
+* **mise,bat:** set a bat theme ([019124f](https://github.com/engeir/stowfiles/commit/019124fd0b02f2cfb642723b6ca35e04f560955d))
+* **mise:** add dprint and sequin as installed tools ([f4d1fc8](https://github.com/engeir/stowfiles/commit/f4d1fc8ebb4bfb5bb3a91c718613bc4b22cb1a53))
+* **mise:** install zoxide with zinit ([e448fb0](https://github.com/engeir/stowfiles/commit/e448fb00a00bb237e711d6ae516b610ca904e949))
+* **mise:** small update of installed tools ([5f13792](https://github.com/engeir/stowfiles/commit/5f1379261afed5673f4313142d04d9ae0a4e76a7))
+* **nvim:** away with nvim terminals, but use edgy ([f97117d](https://github.com/engeir/stowfiles/commit/f97117da0b97457b53c363725c66cedd841674cf))
+* **nvim:** i want to run all shell formatters ([62e5917](https://github.com/engeir/stowfiles/commit/62e59178206432f723543ba2a92b8438c3106287))
+* **nvim:** more snacks.nvim stuff ([6422b0d](https://github.com/engeir/stowfiles/commit/6422b0d3b4c61ad6bf01d5bc5359f66d43316366))
+* **nvim:** nicer and less cluttered diagnostics ([c94c3a1](https://github.com/engeir/stowfiles/commit/c94c3a16787b7cc2d67080e67a8ddb88c1b29c7c))
+* **nvim:** remove harpoon, i never use it ([bdc2efe](https://github.com/engeir/stowfiles/commit/bdc2efec5c46674f03d54d86fdfd692fee8b40e6))
+* **nvim:** small updates to plugins ([bdf3758](https://github.com/engeir/stowfiles/commit/bdf3758732ff620824b9b0f87fafe803c799c81b))
+* small changes ([69448c9](https://github.com/engeir/stowfiles/commit/69448c904fe92490af8c9207a32eab1d0f0a51f0))
+* **software:** update installed ([a4ad203](https://github.com/engeir/stowfiles/commit/a4ad203af37f10d2217c7b3e9f0c6962d5e707c9))
+* **software:** update installed ([5e67353](https://github.com/engeir/stowfiles/commit/5e67353c3f3b7c0a41ca34e0150abcc68960faad))
+* **tmux:** add simpler for my keyboard next and prev (back) ([dfebf7b](https://github.com/engeir/stowfiles/commit/dfebf7b0160ceb61d883d0f801d31d0e32121ff9))
+* **yazi:** add catpuccin theme ([7bad3a9](https://github.com/engeir/stowfiles/commit/7bad3a9efc02282b0987a203e92593e3a49ebb1d))
+* **yazi:** add git settings ([41a222f](https://github.com/engeir/stowfiles/commit/41a222f90333e60fd223a408ac6491f6d3d72df9))
+* **yazi:** add shortcut function ([b016bd7](https://github.com/engeir/stowfiles/commit/b016bd75fb9837bead5daeaffc2b8eb894a431dd))
+* **yazi:** allow wider preview images ([1444293](https://github.com/engeir/stowfiles/commit/14442939cddd8ca3c7ccacec91ac80284b320757))
+* **yazi:** maybe not smart-tab, unsure ([ae94ac9](https://github.com/engeir/stowfiles/commit/ae94ac9ac190e44ee53d69320cabd84b886bb94d))
+* **zsh:** set keychain ed25519 in .profile ([548b665](https://github.com/engeir/stowfiles/commit/548b665b5cdcf55e534d637d84835bd75aac3dcb))
+
+
+### Styles
+
+* **bin:** format some bash ([dd994b7](https://github.com/engeir/stowfiles/commit/dd994b75e4be0ad193969020395e193045843b05))
+
+
+### Code Refactoring
+
+* **bspwm:** move polybar script to the polybar dir ([ff4dfda](https://github.com/engeir/stowfiles/commit/ff4dfdacb9debdc398edb7db4548ef5617c526fe))
+
+
+### Documentation
+
+* **nvim:** give more precise description ([8d28386](https://github.com/engeir/stowfiles/commit/8d2838684e70100f18fad27552233ce27048c6bd))
+
 ## [1.23.0](https://github.com/engeir/stowfiles/compare/stowfiles-v1.22.0...stowfiles-v1.23.0) (2024-10-22)
 
 
