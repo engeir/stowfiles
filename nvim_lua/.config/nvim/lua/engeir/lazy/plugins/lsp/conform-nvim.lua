@@ -65,13 +65,8 @@ return {
         markdown = { "dprint", "injected", stop_after_first = false },
         python = { "ruff_format", "ruff_fix", lsp_format = "first" },
         rust = { "rustfmt" },
-        sh = function(bufnr)
-          return {
-            first(bufnr, "shfmt", "shellharden", "shellcheck", "beautysh"),
-            "injected",
-          }
-        end,
-        tex = { "llf" },
+        sh = { "shfmt", "shellharden", "shellcheck", "injected" },
+        tex = { "llf", "tex-fmt", stop_after_first = true },
         toml = { "dprint", "taplo", stop_after_first = false },
         typescript = { "prettierd", "dprint", "prettier", stop_after_first = true },
         typescriptreact = { "prettierd", "dprint", "prettier", stop_after_first = true },
@@ -80,12 +75,7 @@ return {
         yaml = function(bufnr)
           return { first(bufnr, "yamlfmt", "prettierd", "prettier"), "injected" }
         end,
-        zsh = function(bufnr)
-          return {
-            first(bufnr, "shfmt", "shellharden", "shellcheck", "beautysh"),
-            "injected",
-          }
-        end,
+        zsh = { "shfmt", "shellharden", "shellcheck", "injected" },
       },
       format_on_save = nil,
       format_after_save = nil,
@@ -152,6 +142,7 @@ return {
       args = util.extend_args(stylua.args, { "--indent-type=Spaces" }),
       range_args = util.extend_args(stylua.args, { "--indent-type=Spaces" }), --"--indent-width=2"
     })
+    require("conform").formatters["tex-fmt"] = { prepend_args = { "--wrap", "88" } }
 
     -- Set up a custom function that takes the timeout as an argument
     vim.api.nvim_create_user_command("Format", function(opts)
