@@ -1,5 +1,6 @@
 return {
   "ThePrimeagen/harpoon",
+  enabled = false,
   event = { "BufReadPre", "BufNewFile" },
   branch = "harpoon2",
   dependencies = { "nvim-lua/plenary.nvim" },
