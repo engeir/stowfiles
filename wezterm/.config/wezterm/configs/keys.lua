@@ -96,6 +96,7 @@ return {
   -- { key = 'q',          mods = 'ALT',        action = wezterm.action.ShowLauncherArgs {flags="FUZZY|WORKSPACES"} },
   {
     -- From https://github.com/wez/wezterm/issues/3542#issuecomment-1641568650
+    -- Also see: https://fredrikaverpil.github.io/blog/2024/10/20/session-management-in-wezterm-without-tmux/
     key = "h",
     mods = "LEADER",
     action = wezterm.action_callback(function(window, pane)
