@@ -1,5 +1,18 @@
 # Changelog
 
+## [1.25.0](https://github.com/engeir/stowfiles/compare/stowfiles-v1.24.0...stowfiles-v1.25.0) (2024-12-10)
+
+
+### Features
+
+* **ghostty:** make keymaps more familiar ([ffd5bdb](https://github.com/engeir/stowfiles/commit/ffd5bdb35ef1ed5e50e6a9edb87bc38eed1fb811))
+* **ghostty:** start adding my config ([953a7f3](https://github.com/engeir/stowfiles/commit/953a7f3ce82c8b451e3b57779adc501774a0ab96))
+
+
+### Miscellaneous
+
+* **wezterm:** add comment on sessionizer setup ([9e80c4e](https://github.com/engeir/stowfiles/commit/9e80c4e7e07669cdc04d5ae3133fad3fe5dfd487))
+
 ## [1.24.0](https://github.com/engeir/stowfiles/compare/stowfiles-v1.23.0...stowfiles-v1.24.0) (2024-12-06)
 
 
