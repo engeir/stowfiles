@@ -1,10 +1,3 @@
-local list = [[
-<< EOF
-:Telescope find_files
-:Git blame
-EOF
-]]
-
 return {
   {
     "nvim-telescope/telescope.nvim",
@@ -140,10 +133,6 @@ return {
             enable_preview = true,
           },
           grep_string = {
-            -- theme = "dropdown",
-            layout_strategy = "vertical",
-          },
-          live_grep = {
             layout_strategy = "vertical",
           },
         },
@@ -252,52 +241,6 @@ return {
     },
   },
   {
-    "axkirillov/easypick.nvim",
-    cmd = "Easypick",
-    config = function()
-      local easypick = require("easypick")
-      -- only required for the example to work
-      local base_branch = "develop"
-      -- a list of commands that you want to pick from
-      easypick.setup({
-        pickers = {
-          -- add your custom pickers here
-          -- below you can find some examples of what those can look like
-
-          {
-            name = "nobin",
-            command = 'git grep --cached -Il ""',
-            previewer = easypick.previewers.default(),
-          },
-          {
-            name = "command_palette",
-            command = "cat " .. list,
-            -- pass a pre-configured action that runs the command
-            action = easypick.actions.run_nvim_command,
-            -- you can specify any theme you want, but the dropdown looks good for this example =)
-            opts = require("telescope.themes").get_dropdown({}),
-          },
-
-          -- diff current branch with base_branch and show files that changed with respective diffs in preview
-          {
-            name = "changed_files",
-            command = "git diff --name-only $(git merge-base HEAD "
-              .. base_branch
-              .. " )",
-            previewer = easypick.previewers.branch_diff({ base_branch = base_branch }),
-          },
-
-          -- list files that have conflicts with diffs in preview
-          {
-            name = "conflicts",
-            command = "git diff --name-only --diff-filter=U --relative",
-            previewer = easypick.previewers.file_diff(),
-          },
-        },
-      })
-    end,
-  },
-  {
     "danielfalk/smart-open.nvim",
     event = { "BufReadPre", "BufNewFile" },
     branch = "0.2.x",
@@ -326,6 +269,7 @@ return {
   {
     "nvim-telescope/telescope-bibtex.nvim",
     event = { "BufReadPre", "BufNewFile" },
+    enabled = false, -- I'm just using either vimtex or texlab to complete this now.
     config = function()
       require("telescope").load_extension("bibtex")
     end,
@@ -339,22 +283,6 @@ return {
     event = "InsertEnter",
     config = function()
       require("telescope").load_extension("ui-select")
-    end,
-  },
-  {
-    "AckslD/nvim-neoclip.lua",
-    enabled = false,
-    config = function()
-      require("neoclip").setup({ default_register = { '"', "+", "*" } })
-      require("telescope").load_extension("neoclip")
-    end,
-  },
-  {
-    "nvim-telescope/telescope-file-browser.nvim",
-    enabled = false,
-    dependencies = { "nvim-telescope/telescope.nvim", "nvim-lua/plenary.nvim" },
-    config = function()
-      require("telescope").load_extension("file_browser")
     end,
   },
 }
