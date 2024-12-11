@@ -41,7 +41,7 @@ return {
       local telescope = require("telescope")
       local state = require("telescope.state")
       local action_state = require("telescope.actions.state")
-      local bibtex_actions = require("telescope-bibtex.actions")
+      -- local bibtex_actions = require("telescope-bibtex.actions")
       -- https://github.com/nvim-telescope/telescope.nvim/issues/1048#issuecomment-1679797700
       local select_one_or_multi = function(prompt_bufnr)
         local picker =
@@ -98,16 +98,16 @@ return {
               -- CR, C-c and C-e are already mapped
               -- <C-m>_ is a mark for the given format
               -- <C-r>_ is a reference for the given format
-              ["<C-m>h"] = bibtex_actions.key_append([[^@%s]]),
-              ["<C-r>h"] = bibtex_actions.citation_append(
-                "[^@{{label}}]: {{author}}, '{{title}}', {{journal}}, {{year}}, vol. {{volume}}, no. {{number}}, p. {{pages}}."
-              ),
-              ["<C-m>r"] = bibtex_actions.citation_append(
-                '<a href="https://doi.org/{{doi}}" data-citation-key="@{{label}}">{{author}} ({{year}})</a>'
-              ),
-              ["<C-r>r"] = bibtex_actions.citation_append(
-                '<div class="csl-entry" id="ref-{{label}}" role="doc-biblioentry"> {{author}}, {{title}}, {{journal}}, {{year}}, vol. {{volume}}, no. {{number}}, p. {{pages}}.</div>'
-              ),
+              -- ["<C-m>h"] = bibtex_actions.key_append([[^@%s]]),
+              -- ["<C-r>h"] = bibtex_actions.citation_append(
+              --   "[^@{{label}}]: {{author}}, '{{title}}', {{journal}}, {{year}}, vol. {{volume}}, no. {{number}}, p. {{pages}}."
+              -- ),
+              -- ["<C-m>r"] = bibtex_actions.citation_append(
+              --   '<a href="https://doi.org/{{doi}}" data-citation-key="@{{label}}">{{author}} ({{year}})</a>'
+              -- ),
+              -- ["<C-r>r"] = bibtex_actions.citation_append(
+              --   '<div class="csl-entry" id="ref-{{label}}" role="doc-biblioentry"> {{author}}, {{title}}, {{journal}}, {{year}}, vol. {{volume}}, no. {{number}}, p. {{pages}}.</div>'
+              -- ),
             },
             n = { ["<c-t>"] = trouble.open },
           },
