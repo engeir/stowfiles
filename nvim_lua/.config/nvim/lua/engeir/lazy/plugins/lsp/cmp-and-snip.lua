@@ -1,237 +1,66 @@
 return {
   {
-    "hrsh7th/nvim-cmp",
-    event = { "InsertEnter" },
-    dependencies = {
-      { "hrsh7th/cmp-nvim-lsp" },
-      { "hrsh7th/cmp-buffer", event = { "BufReadPost" } },
-      { "hrsh7th/cmp-path", event = { "BufReadPost" } },
-      { "hrsh7th/cmp-cmdline", event = { "BufReadPre", "BufNewFile" } },
-      { "L3MON4D3/LuaSnip", event = { "BufReadPre", "BufNewFile" } },
-      { "saadparwaiz1/cmp_luasnip", event = { "BufReadPost" } },
-      { "hrsh7th/cmp-nvim-lua", event = { "BufReadPost" } },
-      { "hrsh7th/cmp-calc", event = { "BufReadPost" } },
-      { "zbirenbaum/copilot-cmp", event = { "InsertEnter" } },
-      -- Icons for the LSP cmp view
-      { "onsails/lspkind.nvim", event = { "BufReadPost" } },
-      -- Latex supersupport
-      { "micangl/cmp-vimtex", event = { "BufReadPost" } },
-    },
-    config = function()
-      local cmp = require("cmp")
-      local luasnip = require("luasnip")
-      local lspkind = require("lspkind")
-      local has_words_before = function()
-        local line, col = unpack(vim.api.nvim_win_get_cursor(0))
-        return col ~= 0
-          and vim.api
-              .nvim_buf_get_lines(0, line - 1, line, true)[1]
-              :sub(col, col)
-              :match("%s")
-            == nil
-      end
+    "saghen/blink.cmp",
+    lazy = false, -- lazy loading handled internally
+    -- optional: provides snippets for the snippet source
+    dependencies = "rafamadriz/friendly-snippets",
 
-      -- default sources for all buffers
-      -- sources = {
-      --     { name = "calc" },
-      --     { name = "gh_issues" },
-      --     { name = "nvim_lsp" },
-      --     { name = "path" },
-      --     { name = "buffer", keyword_length = 4 },
-      --     { name = "nvim_lua" },
-      --     { name = "luasnip" }, -- For luasnip users.
-      --     { name = "codeium" },
-      --     -- { name = "orgmode" },
-      --     -- { name = "cmp_tabnine" },
-      -- },
-      local bufIsBig = function(bufnr)
-        local max_filesize = 100 * 1024 -- 100 KB
-        local ok, stats = pcall(vim.loop.fs_stat, vim.api.nvim_buf_get_name(bufnr))
-        if ok and stats and stats.size > max_filesize then
-          return true
-        else
-          return false
-        end
-      end
-      local default_cmp_sources = cmp.config.sources({
-        { name = "lazydev", group_index = 0 }, -- set group index to 0 to skip loading LuaLS completions
-        { name = "gh_issues" },
-        { name = "calc" },
-        { name = "path" },
-        { name = "buffer", keyword_length = 4 },
-        { name = "copilot" },
-        { name = "nvim_lsp" },
-        { name = "nvim_lsp_signature_help" },
-        { name = "nvim_lua" },
-        { name = "luasnip" },
-      }, {
-        { name = "codeium" },
-        { name = "vimtex" },
-      })
-      -- If a file is too large, I don't want to add to it's cmp sources treesitter, see:
-      -- https://github.com/hrsh7th/nvim-cmp/issues/1522
-      vim.api.nvim_create_autocmd("BufReadPre", {
-        callback = function(t)
-          local sources = default_cmp_sources
-          if not bufIsBig(t.buf) then
-            sources[#sources + 1] = { name = "treesitter", group_index = 2 }
-          end
-          cmp.setup.buffer({
-            sources = sources,
-          })
+    -- use a release tag to download pre-built binaries
+    version = "v0.*",
+    -- OR build from source, requires nightly: https://rust-lang.github.io/rustup/concepts/channels.html#working-with-nightly-rust
+    -- build = 'cargo build --release',
+    -- If you use nix, you can build from source using latest nightly rust with:
+    -- build = 'nix run .#build-plugin',
+
+    ---@module 'blink.cmp'
+    ---@type blink.cmp.Config
+    opts = {
+      -- 'default' for mappings similar to built-in completion
+      -- 'super-tab' for mappings similar to vscode (tab to accept, arrow keys to navigate)
+      -- 'enter' for mappings similar to 'super-tab' but with 'enter' to accept
+      -- see the "default configuration" section below for full documentation on how to define
+      -- your own keymap.
+      keymap = { preset = "default" },
+
+      appearance = {
+        -- Sets the fallback highlight groups to nvim-cmp's highlight groups
+        -- Useful for when your theme doesn't support blink.cmp
+        -- will be removed in a future release
+        use_nvim_cmp_as_default = true,
+        -- Set to 'mono' for 'Nerd Font Mono' or 'normal' for 'Nerd Font'
+        -- Adjusts spacing to ensure icons are aligned
+        nerd_font_variant = "mono",
+      },
+
+      completion = {
+        documentation = { auto_show = true },
+      },
+      -- experimental auto-brackets support
+      -- completion = { accept = { auto_brackets = { enabled = true } } }
+
+      -- experimental signature help support
+      signature = { enabled = true },
+      snippets = {
+        expand = function(snippet)
+          require("luasnip").lsp_expand(snippet)
         end,
-      })
-      local opts = {
-        completion = {
-          completeopt = "menu,menuone,preview,noselect",
-        },
-        -- From TJ
-        -- https://github.com/tjdevries/config_manager/blob/78608334a7803a0de1a08a9a4bd1b03ad2a5eb11/xdg_config/nvim/after/plugin/completion.lua#L129
-        sorting = {
-          -- TODO: Would be cool to add stuff like "See variable names before method
-          -- names" in rust, or something like that.
-          comparators = {
-            cmp.config.compare.offset,
-            cmp.config.compare.exact,
-            cmp.config.compare.score,
-
-            -- copied from cmp-under, but I don't think I need the plugin for this. I
-            -- might add some more of my own.
-            function(entry1, entry2)
-              local _, entry1_under = entry1.completion_item.label:find("^_+")
-              local _, entry2_under = entry2.completion_item.label:find("^_+")
-              entry1_under = entry1_under or 0
-              entry2_under = entry2_under or 0
-              if entry1_under > entry2_under then
-                return false
-              elseif entry1_under < entry2_under then
-                return true
-              end
-            end,
-
-            cmp.config.compare.kind,
-            cmp.config.compare.sort_text,
-            cmp.config.compare.length,
-            cmp.config.compare.order,
-          },
-        },
-        snippet = {
-          expand = function(args)
-            luasnip.lsp_expand(args.body)
-          end,
-        },
-        formatting = {
-          -- Youtube: How to set up nice formatting for your sources.
-          format = lspkind.cmp_format({
-            -- with_text = true,
-            mode = "symbol_text",
-            maxwidth = 50,
-            ellipsis_char = "...",
-            symbol_map = {
-              Copilot = "",
-              Codeium = "",
-            },
-            menu = {
-              buffer = "[buf]",
-              nvim_lsp = "[LSP]",
-              nvim_lua = "[api]",
-              path = "[path]",
-              luasnip = "[snip]",
-              gh_issues = "[issues]",
-              tn = "[TabNine]",
-              eruby = "[erb]",
-              codeium = "[ai]",
-              copilot = "[ai]",
-              -- vimtex = vim_item.menu,
-              vimtex = "[Vimtex]",
-            },
-          }),
-        },
-        -- :h ins-completion
-        mapping = cmp.mapping.preset.insert({
-          ["<C-f>"] = cmp.mapping.scroll_docs(4), -- Forward
-          ["<C-b>"] = cmp.mapping.scroll_docs(-4), -- Backward
-          -- ["<C-p>"] = cmp.mapping.select_prev_item(),
-          ["<C-p>"] = cmp.mapping(function(fallback)
-            if cmp.visible() then
-              cmp.select_prev_item()
-            elseif luasnip.jumpable(-1) then
-              luasnip.jump(-1)
-            else
-              fallback()
-            end
-          end, { "i", "s" }),
-          -- ["<C-n>"] = cmp.mapping.select_next_item(),
-          ["<C-n>"] = cmp.mapping(function(fallback)
-            if cmp.visible() then
-              cmp.select_next_item()
-            elseif luasnip.expand_or_jumpable() then
-              luasnip.expand_or_jump()
-            elseif has_words_before() then
-              cmp.complete()
-            else
-              fallback()
-            end
-          end, { "i", "s" }),
-          ["<C-y>"] = cmp.mapping.confirm({ select = true }),
-          ["<C-e>"] = cmp.mapping.abort(),
-          ["<C-Space>"] = cmp.mapping.complete(),
-          -- ["<C-l>"] = cmp.mapping(function()
-          --     if luasnip.expand_or_locally_jumpable() then
-          --         luasnip.expand_or_jump()
-          --     end
-          -- end, { "i", "s" }),
-          -- ["<C-h>"] = cmp.mapping(function()
-          --     if luasnip.locally_jumpable(-1) then
-          --         luasnip.jump(-1)
-          --     end
-          -- end, { "i", "s" }),
-        }),
-        sources = default_cmp_sources,
-        -- {
-        --     { name = "calc" },
-        --     { name = "gh_issues" },
-        --     { name = "nvim_lsp" },
-        --     { name = "path" },
-        --     { name = "buffer", keyword_length = 4 },
-        --     { name = "nvim_lua" },
-        --     { name = "luasnip" }, -- For luasnip users.
-        --     { name = "codeium" },
-        --     -- { name = "orgmode" },
-        --     -- { name = "cmp_tabnine" },
-        -- },
-        view = {
-          entries = "native_menu",
-        },
-        experimental = {
-          ghost_text = true,
-        },
-      }
-      vim.api.nvim_set_hl(0, "CmpItemKindCopilot", { fg = "#6CC644" })
-      cmp.setup(opts)
-      cmp.setup.cmdline({ "/", "?" }, {
-        mapping = cmp.mapping.preset.cmdline(),
-        sources = {
-          { name = "buffer" },
-        },
-      })
-      cmp.setup.cmdline(":", {
-        mapping = cmp.mapping.preset.cmdline(),
-        sources = cmp.config.sources({
-          { name = "path" },
-        }, {
-          {
-            name = "cmdline",
-            option = {
-              ignore_cmds = { "Man", "!" },
-            },
-          },
-        }),
-      })
-      if vim.fn.executable("gh") then
-        require("engeir.lazy.plugins.lsp.cmp-sources.cmp_gh_source")
-      end
-    end,
+        active = function(filter)
+          if filter and filter.direction then
+            return require("luasnip").jumpable(filter.direction)
+          end
+          return require("luasnip").in_snippet()
+        end,
+        jump = function(direction)
+          require("luasnip").jump(direction)
+        end,
+      },
+      sources = {
+        default = { "lsp", "path", "luasnip", "buffer" },
+      },
+    },
+    -- allows extending the providers array elsewhere in your config
+    -- without having to redefine it
+    opts_extend = { "sources.default" },
   },
 
   -- Snippets

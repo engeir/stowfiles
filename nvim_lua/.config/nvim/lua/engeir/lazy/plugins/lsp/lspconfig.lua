@@ -2,7 +2,7 @@ return {
   "neovim/nvim-lspconfig",
   event = { "BufReadPre", "BufNewFile" },
   dependencies = {
-    "hrsh7th/cmp-nvim-lsp",
+    "saghen/blink.cmp",
     -- NOTE: this must be here, so that Mason config is run before this
     "williamboman/mason.nvim",
     "williamboman/mason-lspconfig.nvim",
@@ -119,7 +119,7 @@ return {
     capabilities = vim.tbl_deep_extend(
       "force",
       capabilities,
-      require("cmp_nvim_lsp").default_capabilities()
+      require("blink.cmp").get_lsp_capabilities(capabilities)
     )
     -- TODO: Maybe include this, maybe not
 
