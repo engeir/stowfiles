@@ -1,14 +1,15 @@
 return {
   -- `mini.nvim`
   -- Replaces:
-  --    `junegunn/vim-easy-align`     -> `mini.align`
-  --    `numToStr/Comment.nvim`       -> `mini.comment`
-  --    `RRethy/vim-illuminate`       -> `mini.cursorword`
-  --    `nvim-tree/nvim-web-devicons` -> `mini.icons`
-  --    `windwp/nvim-autopairs`       -> `mini.pairs`      -> `altermo/ultimate-autopair.nvim`
-  --    `goolord/alpha-nvim`          -> `mini.starter`
-  --    `kylechui/nvim-surround`      -> `mini.surround`
-  --    `folke/flash.nvim`            <- `mini.jump`
+  --    `junegunn/vim-easy-align     -> mini.align`
+  --    `numToStr/Comment.nvim       -> mini.comment`
+  --    `RRethy/vim-illuminate       -> mini.cursorword`
+  --    `nvim-tree/nvim-web-devicons -> mini.icons`
+  --    `windwp/nvim-autopairs       -> mini.pairs      -> altermo/ultimate-autopair.nvim`
+  --    `goolord/alpha-nvim          -> mini.starter`
+  --    `nvim-lualine/lualine.nvim   -> echasnovski/mini.surround`
+  --    `kylechui/nvim-surround      -> mini.surround`
+  --    `folke/flash.nvim            <- mini.jump`
 
   -- `mini.ai` -------------------------------------------------------------------------
   {
@@ -28,8 +29,12 @@ return {
     "echasnovski/mini.bracketed",
     event = { "BufReadPre", "BufNewFile" },
     keys = {
-      { "]b", "<Cmd>lua MiniBracketed.buffer('forward')<CR>", desc = "Buffer Next" },
-      { "]B", "<Cmd>lua MiniBracketed.buffer('backward')<CR>", desc = "Buffer Prev" },
+      { "<tab>", "<Cmd>lua MiniBracketed.buffer('forward')<CR>", desc = "Buffer Next" },
+      {
+        "<S-tab>",
+        "<Cmd>lua MiniBracketed.buffer('backward')<CR>",
+        desc = "Buffer Prev",
+      },
       { "]c", "<Cmd>lua MiniBracketed.comment('forward')<CR>", desc = "Comment Next" },
       { "]C", "<Cmd>lua MiniBracketed.comment('backward')<CR>", desc = "Comment Prev" },
       {
@@ -356,6 +361,9 @@ return {
   -- `mini.splitjoin` ------------------------------------------------------------------
   { "echasnovski/mini.splitjoin", config = true, enabled = false },
 
+  -- `echasnovski/mini.statusline`
+  { "echasnovski/mini.statusline", config = true },
+
   -- `mini.surround` -------------------------------------------------------------------
   {
     "echasnovski/mini.surround",
@@ -456,6 +464,20 @@ return {
       }
       starter.setup(starter_opts)
     end,
+  },
+
+  -- `echasnovski/mini.tabline`
+  {
+    "echasnovski/mini.tabline",
+    opts = {
+      tabpage_section = "right",
+      format = function(buf_id, label)
+        local suffix = vim.bo[buf_id].modified and "+ " or ""
+        ---@diagnostic disable-next-line: undefined-global
+        return MiniTabline.default_format(buf_id, label) .. suffix
+      end,
+    },
+    -- Next and previous buffer is controlled with `mini.bracketed`.
   },
 
   -- `mini.trailspace` -----------------------------------------------------------------
