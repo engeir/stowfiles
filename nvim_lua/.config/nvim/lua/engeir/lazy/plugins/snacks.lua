@@ -14,6 +14,7 @@ return {
   ---@type snacks.Config
   opts = {
     bigfile = { enabled = true },
+    dim = { animate = { enabled = false } },
     notifier = { enabled = false },
     quickfile = { enabled = true },
     statuscolumn = { enabled = true },
@@ -49,6 +50,7 @@ return {
         vim.print = _G.dd -- Override print to use snacks for `:=` command
 
         -- Create some toggle mappings
+        Snacks.toggle.dim():map("<leader>uf")
         Snacks.toggle.option("spell", { name = "Spelling" }):map("<leader>us")
         Snacks.toggle.option("wrap", { name = "Wrap" }):map("<leader>uw")
         Snacks.toggle
