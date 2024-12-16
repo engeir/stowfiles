@@ -1,14 +1,16 @@
--- Silent keymap option
-local opts = { silent = true, noremap = true }
-
 -- Remap space as leader key
-vim.keymap.set("", "<Space>", "<Nop>", opts)
+vim.keymap.set("", "<Space>", "<Nop>")
 vim.g.mapleader = " "
 
 -- Undo with "U" (the default "U" behaviour is confusing and I never use it)
-vim.keymap.set("n", "U", "<C-r>")
+vim.keymap.set("n", "U", "<C-r>", { desc = "Undo" })
 -- Save the file with update
-vim.keymap.set("n", "<C-s>", "<cmd>update<CR>")
+vim.keymap.set(
+  "n",
+  "<C-s>",
+  "<cmd>update<CR>",
+  { desc = "Save if changes has been made" }
+)
 
 -- Close all but the current buffer
 vim.keymap.set(
@@ -60,22 +62,27 @@ end, { expr = true })
 vim.keymap.set("n", "<leader>co", ":copen<cr>", { desc = "Open Quickfix" })
 
 -- Paste, yank, delete with(out) global clipboard (theprimeagen and asbjornHaland)
-vim.keymap.set("x", "<leader>p", '"_dP')
+vim.keymap.set("x", "<leader>p", '"_dP', { desc = "Paste without registering" })
 -- These are useful only if you don't have global clipboard by default (I think!)
 -- vim.keymap.set("n", "<leader>y", "\"+y")
 -- vim.keymap.set("v", "<leader>y", "\"+y")
 -- vim.keymap.set("n", "<leader>Y", "\"+Y")
-vim.keymap.set({ "v", "n" }, "<leader>d", '"_d')
+vim.keymap.set(
+  { "v", "n" },
+  "<leader>d",
+  '"_d',
+  { desc = "Delete without registering" }
+)
 
 -- Move lines
--- vim.keymap.set("x", "J", ":move '>+1<CR>gv=gv")
-vim.keymap.set("x", "K", ":move '<-2<CR>gv=gv")
+vim.keymap.set("x", "<C-j>", ":move '>+1<CR>gv=gv", { desc = "Move line down" })
+vim.keymap.set("x", "<C-k>", ":move '<-2<CR>gv=gv", { desc = "Move line up" })
 -- vim.keymap.set("i", "<C-j>", ":m .+1<CR>==")
 -- vim.keymap.set("i", "<C-k>", ":m .-2<CR>==")
 -- vim.keymap.set("n", "<leader>j", ":m .+1<CR>==")
 -- vim.keymap.set("n", "<leader>k", ":m .-2<CR>==")
 
--- Tabs
+-- Indentation
 vim.keymap.set("v", "<", "<gv")
 vim.keymap.set("v", ">", ">gv")
 
@@ -83,14 +90,12 @@ vim.keymap.set("v", ">", ">gv")
 vim.keymap.set(
   "n",
   "<leader>n",
-  ':<C-u>call append(line("."),   repeat([""], v:count1))<CR>',
-  opts
+  ':<C-u>call append(line("."),   repeat([""], v:count1))<CR>'
 )
 vim.keymap.set(
   "n",
   "<leader>N",
-  ':<C-u>call append(line(".")-1, repeat([""], v:count1))<CR>',
-  opts
+  ':<C-u>call append(line(".")-1, repeat([""], v:count1))<CR>'
 )
 
 -- Spelling
@@ -109,11 +114,11 @@ vim.keymap.set(
   "<Cmd>%s/\\<<C-r><C-w>\\>/<C-r><C-w>/gI<Left><Left><Left>",
   { desc = "[Z]wap [W]ords" }
 )
-vim.keymap.set("n", "n", "nzzzv", opts)
-vim.keymap.set("n", "N", "Nzzzv", opts)
--- vim.keymap.set("n", "J", "mzJ`z", opts)
-vim.keymap.set("n", "{", "{zz", opts)
-vim.keymap.set("n", "}", "}zz", opts)
+vim.keymap.set("n", "n", "nzzzv")
+vim.keymap.set("n", "N", "Nzzzv")
+-- vim.keymap.set("n", "J", "mzJ`z")
+vim.keymap.set("n", "{", "{zz")
+vim.keymap.set("n", "}", "}zz")
 vim.keymap.set(
   "c",
   "<C-s>",
