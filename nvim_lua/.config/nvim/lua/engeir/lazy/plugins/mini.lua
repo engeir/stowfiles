@@ -362,7 +362,52 @@ return {
   { "echasnovski/mini.splitjoin", config = true, enabled = false },
 
   -- `echasnovski/mini.statusline`
-  { "echasnovski/mini.statusline", config = true },
+  {
+    "echasnovski/mini.statusline",
+    config = function()
+      local statuslne = require("mini.statusline")
+      statuslne.setup()
+
+      statuslne.section_mode = function()
+        local CTRL_S = vim.api.nvim_replace_termcodes("<C-S>", true, true, true)
+        local CTRL_V = vim.api.nvim_replace_termcodes("<C-V>", true, true, true)
+        local H = {}
+        H.modes = setmetatable({
+          ["n"] = { long = "Normal", short = "N", hl = "MiniStatuslineModeNormal" },
+          ["v"] = { long = "Visual", short = "V", hl = "MiniStatuslineModeVisual" },
+          ["V"] = { long = "V-Line", short = "V-L", hl = "MiniStatuslineModeVisual" },
+          [CTRL_V] = {
+            long = "V-Block",
+            short = "V-B",
+            hl = "MiniStatuslineModeVisual",
+          },
+          ["s"] = { long = "Select", short = "S", hl = "MiniStatuslineModeSelect" },
+          ["S"] = { long = "S-Line", short = "S-L", hl = "MiniStatuslineModeSelect" },
+          [CTRL_S] = {
+            long = "S-Block",
+            short = "S-B",
+            hl = "MiniStatuslineModeSelect",
+          },
+          ["i"] = { long = "Insert", short = "I", hl = "MiniStatuslineModeInsert" },
+          ["R"] = { long = "Replace", short = "R", hl = "MiniStatuslineModeReplace" },
+          ["c"] = { long = "Command", short = "C", hl = "MiniStatuslineModeCommand" },
+          ["r"] = { long = "Normal", short = "N", hl = "MiniStatuslineModeOther" },
+          ["!"] = { long = "Shell", short = "Sh", hl = "MiniStatuslineModeOther" },
+          ["t"] = { long = "Terminal", short = "T", hl = "MiniStatuslineModeOther" },
+        }, {
+          __index = function()
+            return { long = "Unknown", short = "U", hl = "%#MiniStatuslineModeOther#" }
+          end,
+        })
+        local mode_info = H.modes[vim.fn.mode()]
+        return mode_info.short, mode_info.hl
+      end
+      ---@diagnostic ldisable-next-line: aduplicate-set-field
+      statuslne.section_location = function()
+        return "%2l:%-2v %P"
+      end
+    end,
+  },
 
   -- `mini.surround` -------------------------------------------------------------------
   {
