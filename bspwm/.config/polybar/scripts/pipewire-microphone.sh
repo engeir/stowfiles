@@ -20,7 +20,7 @@ listen() {
     get_mic_status
     LANG=EN
     pactl subscribe | while read -r event; do
-        if printf "%s\n" "${event}" | grep -qE '(source|server)'; then
+        if printf "%s\n" "$event" | grep -qE '(source|server)'; then
             get_mic_status
         fi
     done
