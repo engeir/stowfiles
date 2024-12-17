@@ -14,6 +14,7 @@ pkill -f 'hideIt.sh'
 
 # Wait until the processes have been shut down
 while pgrep -u "$UID" -x polybar >/dev/null; do sleep 1; done
+pulseaudio --start
 SOUND="$HOME/.config/polybar/modules/sound-$(hostnamectl --static).ini"
 export SOUND
 # For Polybar
