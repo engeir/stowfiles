@@ -1,5 +1,49 @@
 # Changelog
 
+## [2.0.0](https://github.com/engeir/stowfiles/compare/stowfiles-v1.24.0...stowfiles-v2.0.0) (2024-12-17)
+
+
+### ⚠ BREAKING CHANGES
+
+* **nvim:** remove lualine, bufferline, add mini.{tabline,statusline}
+* **nvim:** remove hrsh7th/nvim-cmp, add saghen/blink.cmp
+* **yazi:** sync was removed from the plugin command
+
+### Features
+
+* **ghostty:** make keymaps more familiar ([ffd5bdb](https://github.com/engeir/stowfiles/commit/ffd5bdb35ef1ed5e50e6a9edb87bc38eed1fb811))
+* **ghostty:** start adding my config ([953a7f3](https://github.com/engeir/stowfiles/commit/953a7f3ce82c8b451e3b57779adc501774a0ab96))
+* **kitty:** i hate ligatures ([b774294](https://github.com/engeir/stowfiles/commit/b7742945397b817e261629e8c637e9db7bd40939))
+* **nvim:** remove hrsh7th/nvim-cmp, add saghen/blink.cmp ([62bb627](https://github.com/engeir/stowfiles/commit/62bb62783f1a7cb527df776511aff25b5216ab9a))
+* **nvim:** remove lualine, bufferline, add mini.{tabline,statusline} ([bd8f162](https://github.com/engeir/stowfiles/commit/bd8f162cda525c044633190ad72e4663d0f65d75))
+
+
+### Bug Fixes
+
+* **nvim:** comment out telescope keymaps using disabled bibtex plugin ([8f2a983](https://github.com/engeir/stowfiles/commit/8f2a98351e9e7ba86d5e0462e0548b5be654ac64))
+* **polybar:** start pulseaudio when restarting the bar ([df8b821](https://github.com/engeir/stowfiles/commit/df8b821ae1a8bb67f48cb1c5f8021713d72f718c))
+
+
+### Miscellaneous
+
+* **dprint:** update global config ([1aa059c](https://github.com/engeir/stowfiles/commit/1aa059cb45ef7764b276f163754eaea9099d3b9c))
+* **mise,zig:** add zig since i'm compiling ghostty, btw ([9e25e05](https://github.com/engeir/stowfiles/commit/9e25e0520e8303bcf55d554e015061c3707f50f0))
+* **nvim:** add desc to keymaps ([1a7dba7](https://github.com/engeir/stowfiles/commit/1a7dba701c2fc7a8b7f6daf41103e5e35bc1fb02))
+* **nvim:** add keymap to source/run lua code ([326fd0c](https://github.com/engeir/stowfiles/commit/326fd0c7082c5bdb5e1856320ae5793048d4f9a6))
+* **nvim:** blink.cmp auto accept braces ([9e4bb89](https://github.com/engeir/stowfiles/commit/9e4bb89843a52ffbec8545183585aedb9c99f251))
+* **nvim:** enable just plugin ([8a1d3a1](https://github.com/engeir/stowfiles/commit/8a1d3a197fd54f7fc8de0ad4dedd733b92c5491e))
+* **nvim:** enable toggling of dim focused scope ([f48cc35](https://github.com/engeir/stowfiles/commit/f48cc3510c4d084edaf01a843438a2e59b6d8949))
+* **nvim:** force short mode in mini.statusline ([cb7d2fe](https://github.com/engeir/stowfiles/commit/cb7d2fee1110c11257219ba06317a8d05894d980))
+* **nvim:** remove easypick and delete old disabled telescope plugins ([713cbd3](https://github.com/engeir/stowfiles/commit/713cbd35ccde0d8a85806f79026ad841b2a5bf3f))
+* **wezterm:** add comment on sessionizer setup ([9e80c4e](https://github.com/engeir/stowfiles/commit/9e80c4e7e07669cdc04d5ae3133fad3fe5dfd487))
+* **yazi:** sync was removed from the plugin command ([af93a8a](https://github.com/engeir/stowfiles/commit/af93a8a5fb5247bd7bd8f9568ffcc058bbbce456))
+* **yazi:** the git plugin isn't a nice experience ([f745ec7](https://github.com/engeir/stowfiles/commit/f745ec729d214bf7cfde709b53f666eb5f0419dd))
+
+
+### Styles
+
+* **polybar:** format some scripts ([4069ae9](https://github.com/engeir/stowfiles/commit/4069ae9975c13af16bbabe3441d3588d8981a5b0))
+
 ## [1.24.0](https://github.com/engeir/stowfiles/compare/stowfiles-v1.23.0...stowfiles-v1.24.0) (2024-12-06)
 
 
