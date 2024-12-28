@@ -10,7 +10,7 @@
 
 super + Return
 # terminal emulator
-	alacritty
+	ghostty
 	# st
 	# gnome-terminal
 
