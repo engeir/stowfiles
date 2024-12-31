@@ -6,6 +6,7 @@ DPRINT_INSTALL = "{{env.HOME}}/.local/bin/"
 RIPGREP_CONFIG_PATH = "{{env.HOME}}/.config/ripgrep/ripgreprc"
 RUSH_CONFIG = "{{env.HOME}}/.config/rush/rush.ini"
 RYE_HOME = "{{env.HOME}}/.local/share/rye"
+HELIX_RUNTIME = "{{env.HOME}}/programs/helix/runtime"
 _.path = [
   "{{env.HOME}}/.local/share/bob/nvim-bin/",
   "{{env.HOME}}/.local/share/nvim/mason/bin",
@@ -15,7 +16,7 @@ _.path = [
   "{{env.DENO_INSTALL}}/bin",
   "{{env.RYE_HOME}}/shims/",
 ]
-_.source = "./machine_specific.sh"
+_.source = "{{env.HOME}}/.config/mise/machine_specific.sh"
 EDITOR = "nvim"
 VISUAL = "{{env.EDITOR}}"
 TERMINAL = "alacritty"
@@ -129,6 +130,8 @@ tinytex = "latest"
 "ubi:charmbracelet/sequin" = "latest"
 dprint = "latest"
 zig = "latest"
+"npm:tldr" = "latest"
+npm = "latest"
 # "pipx:ansible-core" = "latest"
 # "pipx:beautysh" = "latest"
 # "pipx:bibfish" = "latest"
