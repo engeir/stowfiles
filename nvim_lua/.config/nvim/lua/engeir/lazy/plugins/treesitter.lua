@@ -123,7 +123,7 @@ return {
   {
     "nvim-treesitter/nvim-treesitter-context",
     event = { "BufReadPre", "BufNewFile" },
-    config = {
+    opts = {
       min_window_height = 0,
       line_numbers = true,
       multiline_threshold = 15,
