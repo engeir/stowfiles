@@ -31,7 +31,7 @@ NVIM_APPNAME=engeir/stowfiles/nvim_lua/.config/nvim nvim
 
 > Uses [GNU Stow](http://www.gnu.org/software/stow/).
 
-Install any one directory or file: (see `stow --help`)
+Install any directory or file: (see `stow --help`)
 
 ```bash
 stow zsh
@@ -67,10 +67,13 @@ installed packages and binaries listed in the `INSTALLED-<machine>.md` files.
 ### Re-install
 
 If you want to (re-)install a program that is listed in the `INSTALLED-<machine>.md`
-files, this can be done using the [`.reinstall`](./.reinstall) script.
+files, this can be done using the [`reinstall`](./.mise/tasks/reinstall) script, either
+with [mise] (including auto-complete) or directly:
 
 ```bash
-.reinstall -h
+mise run reinstall
+# OR
+./.mise/tasks/reinstall -h
 ```
 
 ## Arch
@@ -78,3 +81,5 @@ files, this can be done using the [`.reinstall`](./.reinstall) script.
 ### Resources
 
 - <https://ejmastnak.com/tutorials/arch/about/>
+
+[mise]: https://mise.jdx.dev/

@@ -1,5 +1,10 @@
 #!/usr/bin/env bash
 
+#USAGE flag "-h --help" help="Print this help message and exit"
+#USAGE arg "[package-manager]" help="The package manager to install from" {
+#USAGE   choices "fonts" "tlmgr" "cargo" "uv" "apt" "pacstall" "go" "flatpak" "snap"
+#USAGE }
+
 usage() {
     echo "Usage: $0 <package-manager>"
     echo "Supported package managers:"
@@ -135,7 +140,7 @@ uv-install() {
     while IFS= read -r line; do
         package="$(echo "$line" | awk '{print $1}' | sed 's/://')"
         echo "Installing $package"
-        uv tool install "$package" --force
+        uv tool install --reinstall "$package" --force
     done <<<"$not_installed"
 }
 nala-install-search() {
@@ -145,7 +150,7 @@ nala-install-search() {
     else
         echo "Package '$package_name' not found. Searching for similar..."
         closest_match="$(apt-cache search "$package_name" | awk '{print $1}' | head -n 1)"
-        if [ -n "$closest_match" ]; then
+        if [ "$closest_match" != "" ]; then
             read -p "Did you mean '$closest_match'? [Y or n] " response
             response=${response,,}
             if [[ $response == "y" || $response == "" ]]; then
@@ -177,7 +182,7 @@ pacstall-install-search() {
     else
         echo "Package '$package_name' not found. Searching for similar..."
         closest_match="$(pacstall -S "$package_name" | sed -r "s/\x1B\[([0-9]{1,3}(;[0-9]{1,2};?)?)?[mGK]//g" | awk '{print $1}' | head -n 1)"
-        if [ -n "$closest_match" ]; then
+        if [ "$closest_match" != "" ]; then
             pacstall -P -I "$closest_match"
         else
             echo "No similar package found."
