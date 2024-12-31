@@ -10,7 +10,6 @@ where file.txt contains information about what input file to use, what name the 
 video should be saved to, and all start/stops in the source file.
 """
 
-
 import sys
 import subprocess
 import pathlib
@@ -131,12 +130,12 @@ def main() -> None:
                     ]
                 )
                 # fmt: on
-                f.write("file " + str(tmp_dir / f"{tmp_name}\n"))
+                f.write(f'file {str(tmp_dir / f"{tmp_name}\n")}')
     # fmt: off
     subprocess.call(
         [
             "ffmpeg", "-y", "-f", "concat", "-safe", "0", "-i",
-            str(tmp_dir / "list.txt"), "-c", "copy", editor["out"],
+            str(tmp_dir / "list.txt"), "-c", "copy", str(editor["out"]),
         ]
     )
     # fmt: on
