@@ -140,8 +140,13 @@ uv-install() {
     while IFS= read -r line; do
         package="$(echo "$line" | awk '{print $1}' | sed 's/://')"
         echo "Installing $package"
-        uv tool install --reinstall "$package" --force
+        uv tool install --force-reinstall "$package"
     done <<<"$not_installed"
+    errored="$(uv tool upgrade --force-reinstall --all 2>&1 | grep '^error' | sed 's/.*[[:blank:]]//')"
+    while IFS= read -r line; do
+        echo "Re-installing $line"
+        uv tool install --force-reinstall "$line"
+    done <<<"$errored"
 }
 nala-install-search() {
     package_name=$1
