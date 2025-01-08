@@ -1,9 +1,12 @@
+---@module "lazy"
+---@type LazySpec
 return {
   {
     "saghen/blink.cmp",
     lazy = false, -- lazy loading handled internally
     dependencies = {
       "rafamadriz/friendly-snippets",
+      "folke/lazydev.nvim",
       { "L3MON4D3/LuaSnip", version = "v2.*" },
     },
     version = "v0.*", -- use a release tag to download pre-built binaries
@@ -35,7 +38,15 @@ return {
       signature = { enabled = true },
       snippets = { preset = "luasnip" },
       sources = {
-        default = { "lsp", "path", "snippets", "buffer" },
+        default = { "lazydev", "lsp", "path", "snippets", "buffer" },
+        providers = {
+          lazydev = {
+            name = "LazyDev",
+            module = "lazydev.integrations.blink",
+            -- make lazydev completions top priority (see `:h blink.cmp`)
+            score_offset = 100,
+          },
+        },
       },
     },
     opts_extend = { "sources.default" },
