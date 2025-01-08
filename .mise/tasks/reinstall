@@ -1,6 +1,10 @@
 #!/usr/bin/env bash
 
+#MISE description="Re-install software listed in the repo."
 #USAGE flag "-h --help" help="Print this help message and exit"
+#USAGE flag "-f --from <system>" help="Choose which system list to install from" {
+#USAGE   choices "INSTALLED-linux" "INSTALLED-mac"
+#USAGE }
 #USAGE arg "[package-manager]" help="The package manager to install from" {
 #USAGE   choices "fonts" "tlmgr" "cargo" "uv" "apt" "pacstall" "go" "flatpak" "snap"
 #USAGE }

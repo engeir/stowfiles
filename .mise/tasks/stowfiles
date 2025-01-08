@@ -1,5 +1,9 @@
 #!/usr/bin/env bash
 
+#MISE description="List and update all installed software"
+#USAGE flag "-u --update" help="Update the software before listing them"
+#USAGE flag "-f --fix" help="Print steps to fix APT error and exit"
+
 osOut="$(grep "^ID" /etc/os-release | awk -F "=" '{print $2}' | tr '[:lower:]' '[:upper:]')"
 case "$osOut" in
     UBUNTU*) machine=UBUNTU ;;
@@ -69,7 +73,7 @@ try_fix_ppa() {
         echo "You might have success trying the equivalent of"
         echo '$ sudo add-apt-repository --remove ppa:fontforge/fontforge'
     else
-        echo "This is only available on Linux-based systems."
+        echo "This is only available on systems with apt (Debian/Ubuntu I guess?)."
     fi
 }
 
@@ -82,26 +86,15 @@ Options:
     -f  Print steps to fix APT error and exit
     -h  Print this help and exit"
 # Handle options
-while getopts 'ufh' OPTION; do
-    case "$OPTION" in
-        u)
-            run_updates "$machine"
-            ;;
-        f)
-            try_fix_ppa
-            exit 0
-            ;;
-        h)
-            echo "$HELP_TEXT"
-            exit 0
-            ;;
-        ?)
-            echo "$HELP_TEXT"
-            exit 1
-            ;;
-    esac
-done
-# shift "$((OPTIND - 1))"
+# shellcheck disable=2154
+if [ "$usage_update" = "true" ]; then
+    run_updates
+elif [ "$usage_fix" = "true" ]; then
+    try_fix_ppa
+else
+    echo "$HELP_TEXT"
+    exit 1
+fi
 
 # Run MacOS updates
 if [ "MAC" = "$machine" ]; then
