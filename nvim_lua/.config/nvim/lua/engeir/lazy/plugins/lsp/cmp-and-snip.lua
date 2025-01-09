@@ -8,6 +8,17 @@ return {
       "rafamadriz/friendly-snippets",
       "folke/lazydev.nvim",
       { "L3MON4D3/LuaSnip", version = "v2.*" },
+      {
+        "saghen/blink.compat",
+        dependencies = {
+          "micangl/cmp-vimtex",
+          "dmitmel/cmp-digraphs",
+          "hrsh7th/cmp-calc",
+        },
+        version = "*",
+        lazy = true,
+        opts = {},
+      },
     },
     version = "v0.*", -- use a release tag to download pre-built binaries
 
@@ -38,13 +49,41 @@ return {
       signature = { enabled = true },
       snippets = { preset = "luasnip" },
       sources = {
-        default = { "lazydev", "lsp", "path", "snippets", "buffer" },
+        default = {
+          "calc",
+          "lazydev",
+          "lsp",
+          "path",
+          "snippets",
+          "buffer",
+          "vimtex",
+          "digraphs",
+        },
         providers = {
           lazydev = {
             name = "LazyDev",
             module = "lazydev.integrations.blink",
-            -- make lazydev completions top priority (see `:h blink.cmp`)
             score_offset = 100,
+          },
+          vimtex = {
+            name = "vimtex",
+            module = "blink.compat.source",
+            score_offset = 10,
+            opts = {},
+          },
+          calc = {
+            name = "calc",
+            module = "blink.compat.source",
+            score_offset = 20,
+            opts = {},
+          },
+          digraphs = {
+            name = "digraphs",
+            module = "blink.compat.source",
+            score_offset = -3,
+            opts = {
+              cache_digraphs_on_start = true,
+            },
           },
         },
       },

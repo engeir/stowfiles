@@ -8,6 +8,7 @@ return {
     else
       vim.g.vimtex_view_method = "zathura"
     end
+    vim.g.vimtex_complete_close_braces = 1
     vim.g.vimtex_quickfix_mode = 2
     vim.g.vimtex_log_ignore = {
       "Underfull",
@@ -15,12 +16,8 @@ return {
       "specifier changed to",
       "Token not allowed in a PDF string",
     }
-    -- latexmk is the default option and seems to be the only one supporting
-    -- continuous mode
-    -- vim.g.vimtex_compiler_method = "mise exec -- latexmk" -- latexmk, latexrun, tectonic, arara, generic
   end,
   config = function()
-    -- vim.keymap.set("n", "<localleader><localleader>t", ":VimtexTocOpen<CR>", { remap = false, silent = true })
     vim.keymap.set(
       "n",
       "<localleader>lt",
