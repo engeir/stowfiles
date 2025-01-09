@@ -1,7 +1,11 @@
+[tasks.update-auto]
+description = "Run a system update passwordless."
+run = """
 #!/usr/bin/expect -f
 
 set timeout -1
-spawn ~/stowfiles/.mise/tasks/stowfiles --update
+spawn mise run stowfiles -u
 expect -re "password" { send -- [exec pass Hp-Ubuntu/login]\r }
 
 expect eof
+"""

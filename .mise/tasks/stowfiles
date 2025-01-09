@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-#MISE description="List and update all installed software"
+#MISE description="List and update all installed software."
 #USAGE flag "-u --update" help="Update the software before listing them"
 #USAGE flag "-f --fix" help="Print steps to fix APT error and exit"
 

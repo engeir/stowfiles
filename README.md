@@ -57,18 +57,18 @@ A list of packages and binaries installed on my Mac machine is found in
 
 ### Auto update
 
-The script [`.update-installed`](./.update-installed) can be used to update the
-installed packages and binaries listed in the `INSTALLED-<machine>.md` files.
+The script and [mise] task [`stowfiles`](./.mise/tasks/stowfiles) can be used to update
+the installed packages and binaries listed in the `INSTALLED-<machine>.md` files.
 
 ```bash
-.update-installed -h
+mise run stowfiles --help
 ```
 
 ### Re-install
 
 If you want to (re-)install a program that is listed in the `INSTALLED-<machine>.md`
-files, this can be done using the [`reinstall`](./.mise/tasks/reinstall) script, either
-with [mise] (including auto-complete) or directly:
+files, this can be done using the [`reinstall`](./.mise/tasks/reinstall) script/task,
+either with [mise] (including auto-complete) or directly:
 
 ```bash
 mise run reinstall
