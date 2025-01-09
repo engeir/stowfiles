@@ -57,13 +57,21 @@ xrdb "$HOME/.config/Xresources"
 #     if [ -e /home/een023/.nix-profile/etc/profile.d/nix.sh ]; then . /home/een023/.nix-profile/etc/profile.d/nix.sh; fi # added by Nix installer
 # fi
 
+gen-comps() {
+    if command -v "$1" &>/dev/null; then
+        eval "$1 $2" >"$HOME/.config/zsh/.zsh_functions/_$3"
+        eval "$(cat "$HOME/.config/zsh/.zsh_functions/_$3")"
+    fi
+}
+
 # . "$HOME/.cargo/env"
 . "$HOME/.local/share/rye/env"
 export PATH="$HOME/.local/share/zinit/plugins/atuinsh---atuin:$PATH"
 eval "$("$HOME/.local/bin/mise" activate zsh)"
 mkdir -p "$HOME/.config/zsh/.zsh_functions"
-eval "$(atuin gen-completions --shell zsh --out-dir "$HOME/.config/zsh/.zsh_functions")"
-eval "$(just --completions zsh >"$HOME/.config/zsh/.zsh_functions/_just")"
-eval "$(uv generate-shell-completion zsh >"$HOME/.config/zsh/.zsh_functions/_uv")"
-eval "$(bw completion --shell zsh >"$HOME/.config/zsh/.zsh_functions/_bitwarden")"
-eval "$(pixi completion --shell zsh >"$HOME/.config/zsh/.zsh_functions/_pixi")"
+gen-comps aqua "completion zsh" "aqua"
+gen-comps atuin "gen-completions --shell zsh" "atuin"
+gen-comps bw "completion --shell zsh" "bitwarden"
+gen-comps just "--completions zsh" "just"
+gen-comps pixi "completion --shell zsh" "pixi"
+gen-comps uv "generate-shell-completion zsh" "uv"

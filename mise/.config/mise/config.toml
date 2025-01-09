@@ -15,11 +15,12 @@ _.path = [
   "{{env.BUN_INSTALL}}/bin",
   "{{env.DENO_INSTALL}}/bin",
   "{{env.RYE_HOME}}/shims/",
+  "{{env.HOME}}/.local/share/aquaproj-aqua",
 ]
 _.source = "{{env.HOME}}/.config/mise/machine_specific.sh"
 EDITOR = "nvim"
 VISUAL = "{{env.EDITOR}}"
-TERMINAL = "alacritty"
+TERMINAL = "ghostty"
 TERM = "screen-256color" # Needed for italics to work in tmux
 PAGER = "less" # Suggested at https://github.com/jarun/nnn/wiki/Advanced-use-cases#pager-as-opener
 # LESSOPEN = "|/usr/local/bin/lesspipe.sh %s"  # I'm testing if batpipe from bat-extras is good (instead of lesspipe)
