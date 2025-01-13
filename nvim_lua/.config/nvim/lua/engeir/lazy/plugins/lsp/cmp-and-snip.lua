@@ -12,7 +12,6 @@ return {
         "saghen/blink.compat",
         dependencies = {
           "micangl/cmp-vimtex",
-          "dmitmel/cmp-digraphs",
           "hrsh7th/cmp-calc",
         },
         version = "*",
@@ -57,7 +56,6 @@ return {
           "snippets",
           "buffer",
           "vimtex",
-          "digraphs",
         },
         providers = {
           lazydev = {
@@ -76,14 +74,6 @@ return {
             module = "blink.compat.source",
             score_offset = 20,
             opts = {},
-          },
-          digraphs = {
-            name = "digraphs",
-            module = "blink.compat.source",
-            score_offset = -3,
-            opts = {
-              cache_digraphs_on_start = true,
-            },
           },
         },
       },
