@@ -28,7 +28,10 @@ ext="${file##*.}"
 if [ "$ext" != "py" ]; then
     cd "$dir" || exit 1
 fi
-
+if head -n1 "$file" | grep -q "^#!/"; then
+    "$file"
+    exit 0
+fi
 textype() {
     command="pdflatex"
     (head -n5 "$file" | grep -qi 'xelatex') && command="xelatex"
@@ -58,7 +61,7 @@ case "$ext" in
     md) # pandoc -t ms --highlight-style=kate -s -o "$base".pdf "$file" ;;
         choice=$(sed -n '/---/,/---/p' "$file" | grep kind | awk '{print $2}')
         shift=$(sed -n '/---/,/---/p' "$file" | grep shiftheadinglevelby | awk '{print $2}')
-        if [ -z "$shift" ]; then shift=0; fi
+        if [ "$shift" = "" ]; then shift=0; fi
         if [ "$choice" = "beamer" ]; then
             pandoc "$file" -t beamer -o "$base".pdf
         else
@@ -80,8 +83,8 @@ case "$ext" in
     ms) preconv "$file" | refer -PS -e -p ~/science/ref/bibliography | groff -me -ms -p -kept -Tps | ps2pdf - "$base".pdf ;;
     org) emacs "$file" --batch -u "$USER" -f org-latex-export-to-pdf ;;
     py) if [ "$(sed -n 's/^#!//p' "$file")" = "" ]; then
-            if command -v mise >/dev/null 2>&1; then pre_cmd="mise exec -- python"; else pre_cmd="python"; fi
-            eval "$pre_cmd" "$file"
+        if command -v mise >/dev/null 2>&1; then pre_cmd="mise exec -- python"; else pre_cmd="python"; fi
+        eval "$pre_cmd" "$file"
     else "$(sed -n 's/^#!//p' "$file")" "$file"; fi ;;
     [rR]) Rscript "$file" ;;
     [rR]md) Rscript -e "rmarkdown::render('$file', quiet=TRUE)" ;;
