@@ -1,16 +1,17 @@
 font-family = "CaskaydiaMono Nerd Font Mono"
-
 font-family-bold = "CaskaydiaMono Nerd Font Mono"
-font-family-italic = "Cartograph CF"
-font-family-bold-italic = "Cartograph CF"
+font-family-italic = "Cartograph CF Regular Italic Nerd Font Complete"
+font-family-bold-italic = "Cartograph CF Bold Italic Nerd Font Complete"
+font-feature = -calt
+font-feature = -liga
+font-feature = -dlig
 
 theme = tokyonight
 
 background = #2d2d2d
 
 cursor-color = yellow
-
-cursor-opacity = 0.8
+cursor-opacity = 0.7
 
 mouse-hide-while-typing = true
 
