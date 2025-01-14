@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 # From: https://github.com/naelstrof/slop
 
 slop=$(slop -f "%g") || exit 1

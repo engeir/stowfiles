@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 # If the coreutils rust command is installed, use its version of sort (for better cross
 # platform compatibility), otherwise use the standard sort command

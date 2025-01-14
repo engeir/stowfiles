@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 function wallpaper() {
     # https://apple.stackexchange.com/a/145174

@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 readonly CONFIG="$HOME/.config/mimi/mime.conf"
 

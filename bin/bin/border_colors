@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 bspc subscribe node_flag | while read -a msg; do
     [ "${msg[4]}" = "urgent" -a "${msg[5]}" = "on" ] && chwb -c 0xff5555 "${msg[3]}"

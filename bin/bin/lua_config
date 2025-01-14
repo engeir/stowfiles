@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 # If argument is 1:
 cd "$HOME/stowfiles" || exit

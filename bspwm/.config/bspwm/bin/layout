@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 if ! command -v bsp-layout >/dev/null 2>&1; then
     notify-send "bsp-layout not installed" "Install from https://github.com/phenax/bsp-layout"

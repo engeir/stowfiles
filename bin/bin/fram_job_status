@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 # Check if any jobs are running (R)
 job_id=$(ssh fram squeue -u een023 | sed -n 's/ \([^ ]\+\).* R .*/\1/p' | sed 's/^ *//g' | sort | sed 1q)

@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 #
 # From ThePrimeagen:
 # https://www.youtube.com/watch?v=hJzqEAf2U4I

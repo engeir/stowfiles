@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 # Read from bookmarks file but strip all comments and empty lines
 FILE="$HOME/.local/share/bookmarks/bookmarks.sh"

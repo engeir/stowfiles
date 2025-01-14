@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 # A script to get colours from xrdb & deploy it to polybar, alacritty & rofi.
 

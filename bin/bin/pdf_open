@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 #
 # Search through and open any file matching pattern *.pdf inside directories:

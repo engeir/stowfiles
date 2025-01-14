@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 # This file is part of pnglatex <https://github.com/mneri/pnglatex>.
 # Copyright Massimo Neri <hello@mneri.me> and all the contributors.

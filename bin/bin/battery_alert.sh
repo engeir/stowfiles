@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 percent=$(upower -i "$(upower -e | grep 'BAT')" | grep -E "percentage" | sed -n 's/ .* \([^ ]\+\)%.*/\1/p')
 if ((percent < 10)); then

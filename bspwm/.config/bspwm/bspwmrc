@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 #
 # Check out this repo for how to dynamically change desktops and possibly also handle dual

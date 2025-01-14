@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 # bspwm_dynamic_desktops --- Dynamic desktops (work spaces) for BSPWM.
 #

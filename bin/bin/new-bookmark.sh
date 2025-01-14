@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 # Create new bookmarks by placing the highlighted text in
 # "$HOME/.local/bookmarks/bookmarks.md"

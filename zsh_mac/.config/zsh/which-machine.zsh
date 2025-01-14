@@ -1,4 +1,4 @@
-# #!/bin/bash
+# #!/usr/bin/env bash
 # # What OS are we running?
 # if [[ $(uname) == "Darwin" ]]; then
 #     export MACHINE="Darwin"

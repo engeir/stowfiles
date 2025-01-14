@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 if [[ $(uname -s) == "Darwin" ]]; then
     # TODO: at the moment, the html-symbols file is not on my Mac, so we just exit

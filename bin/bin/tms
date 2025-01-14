@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 # This script is a somewhat modified version of the blazingly awesome `tmux-sessionizer`
 # of @theprimeagen:

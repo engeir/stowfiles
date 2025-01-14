@@ -1,3 +1,3 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 /Users/eirikenger/bin/popup-mac tail -f ~/.local/share/keystroke/keystroke.log

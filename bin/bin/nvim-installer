@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 if ! command -v gum >/dev/null 2>&1; then
     echo "gum is a required dependency of this scipt. See https://github.com/charmbracelet/gum."
@@ -23,7 +23,7 @@ gum style \
     --foreground 212 --border-foreground 212 --border double \
     --align center --width 50 --margin "1 2" --padding "2 4" \
     "To use the installed distribution, run" "" "NVIM_APPNAME=neovim_distros/$NAME nvim" "" "Or, just run this script:"
-echo "#!/bin/bash
+echo "#!/usr/bin/env bash
 
 if ! command -v gum >/dev/null 2>&1; then
     echo \"gum is a required dependency of this scipt. See https://github.com/charmbracelet/gum.\"

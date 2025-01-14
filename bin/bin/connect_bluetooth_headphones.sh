@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 function get_headphones_index() {
     pacmd list-cards | grep bluez_card -B1 | grep index | awk '{print $2}'

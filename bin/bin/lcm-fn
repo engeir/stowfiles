@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 if lsblk -e 1,7 | grep een023/LaCie >/dev/null; then
     sudo umount /media/een023/LaCie

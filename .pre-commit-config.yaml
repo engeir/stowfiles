@@ -3,18 +3,19 @@
 
 ci:
   skip: [check-yaml, dprint]
-
 repos:
   - repo: https://github.com/pre-commit/pre-commit-hooks
     rev: v5.0.0
     hooks:
-      - id: check-yaml
       - id: check-json
       - id: trailing-whitespace
       - id: end-of-file-fixer
       - id: check-added-large-files
         args: [--maxkb=500]
-
+  - repo: https://github.com/google/yamlfmt
+    rev: v0.15.0
+    hooks:
+      - id: yamlfmt
   - repo: https://github.com/JohnnyMorganz/StyLua
     rev: v2.0.2
     hooks:
@@ -22,7 +23,6 @@ repos:
         name: stylua
         entry: stylua nvim_lua/.config/nvim/
         pass_filenames: false
-
   - repo: local
     hooks:
       # - id: update-nvim
@@ -30,18 +30,16 @@ repos:
       #   language: script
       #   pass_filenames: false
       #   entry: .update-nvim
-
       - id: dprint
         name: dprint
         entry: dprint fmt --incremental=true --allow-no-files
         language: node
         pass_filenames: false
         additional_dependencies: ["dprint"]
-
 # Exclude files that are generated
 exclude: |
   (?x)(
     ^INSTALLED-|
     ^nvim_lua\/\.config\/nvim\/README\.md|
-    ^fish\/\.config\/fish\/completions\/*
+    ^fish\/\.config\/fish\/completions\/.*
   )

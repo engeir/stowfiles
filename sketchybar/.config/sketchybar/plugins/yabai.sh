@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 window_state() {
   source "$HOME/.config/sketchybar/colors.sh"

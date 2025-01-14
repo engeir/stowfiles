@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 # Original from https://gist.github.com/lukehedger/277d136f68b028e22bed
 # ffmpeg -i "$1" -vcodec h264 -acodec mp2 "$2"

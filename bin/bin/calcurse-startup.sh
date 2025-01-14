@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 #
 # If the time is before some given time-of-day, check if there are any appointments in
 # my calendar and send them to notify-send. Otherwise, send a notify-send message saying

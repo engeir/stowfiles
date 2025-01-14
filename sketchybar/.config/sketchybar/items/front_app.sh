@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 FRONT_APP_SCRIPT='sketchybar --set $NAME label="$INFO"'
 
