@@ -2,7 +2,7 @@
 # See https://pre-commit.com/ for usage and config
 
 ci:
-  skip: [check-yaml, dprint]
+  skip: [yamlfmt, dprint]
 repos:
   - repo: https://github.com/pre-commit/pre-commit-hooks
     rev: v5.0.0
