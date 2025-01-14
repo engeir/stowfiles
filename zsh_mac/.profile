@@ -1,3 +1,4 @@
+#!/bin/sh
 # ~/.profile: executed by the command interpreter for login shells.
 # This file is not read by bash(1), if ~/.bash_profile or ~/.bash_login
 # exists.
@@ -57,8 +58,8 @@ xrdb "$HOME/.config/Xresources"
 #     if [ -e /home/een023/.nix-profile/etc/profile.d/nix.sh ]; then . /home/een023/.nix-profile/etc/profile.d/nix.sh; fi # added by Nix installer
 # fi
 
-gen-comps() {
-    if command -v "$1" &>/dev/null; then
+gen_comps() {
+    if command -v "$1" >/dev/null; then
         eval "$1 $2" >"$HOME/.config/zsh/.zsh_functions/_$3"
         eval "$(cat "$HOME/.config/zsh/.zsh_functions/_$3")"
     fi
@@ -69,9 +70,9 @@ gen-comps() {
 export PATH="$HOME/.local/share/zinit/plugins/atuinsh---atuin:$PATH"
 eval "$("$HOME/.local/bin/mise" activate zsh)"
 mkdir -p "$HOME/.config/zsh/.zsh_functions"
-gen-comps aqua "completion zsh" "aqua"
-gen-comps atuin "gen-completions --shell zsh" "atuin"
-gen-comps bw "completion --shell zsh" "bitwarden"
-gen-comps just "--completions zsh" "just"
-gen-comps pixi "completion --shell zsh" "pixi"
-gen-comps uv "generate-shell-completion zsh" "uv"
+gen_comps aqua "completion zsh" "aqua"
+gen_comps atuin "gen-completions --shell zsh" "atuin"
+gen_comps bw "completion --shell zsh" "bitwarden"
+gen_comps just "--completions zsh" "just"
+gen_comps pixi "completion --shell zsh" "pixi"
+gen_comps uv "generate-shell-completion zsh" "uv"
