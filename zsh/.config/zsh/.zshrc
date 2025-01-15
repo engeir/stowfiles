@@ -1,146 +1,125 @@
 #!/bin/zsh
+
 if command -v coreutils 1>/dev/null 2>&1; then
-    zmodload "zsh/zprof"
+    zmodload "zsh/zprof" # Uncomment to run profiler (also last line)
     t0=$(coreutils date "+%s.%N")
 fi
-# Enable colors:
-autoload -U colors && colors
 
-# /usr/bin/keychain --lockwait 0 --clear $HOME/.ssh/id_rsa
-# echo $HOME/.keychain/$HOSTNAME-sh
+unalias -a
 
-export EDITOR="nvim"
-export VISUAL="nvim"
-export TERMINAL="st"
-export TERM=screen-256color  # Needed for italics to work in tmux
-export PAGER=less  # Suggested at https://github.com/jarun/nnn/wiki/Advanced-use-cases#pager-as-opener
-LESSOPEN="|/usr/local/bin/lesspipe.sh %s"; export LESSOPEN
-export MANPAGER="sh -c 'col -bx | bat -l man -p'"
-export LESS='-Ri '
+# Paths (set with mise)
+export DISPLAY=:0
+vivid_theme="jellybeans"
 
-CABALPATH=~/.cabal
-PATH=$PATH:$CABALPATH/bin
-
-fpath+=${ZDOTDIR:-~}/.zsh_functions  # This must come before compinit
-fpath+=/home/een023/programs/zsh/conda-zsh-completion
-
-export BAT_PAGER="less -R"
-
-# The following lines were added by compinstall
-
-zstyle ':completion:*' completer _complete _ignored _correct _approximate
-zstyle ':completion:*' list-colors ${(s.:.)LS_COLORS}
-zstyle ':completion:*' list-prompt %SAt %p: Hit TAB for more, or the character to insert%s
-zstyle ':completion:*' matcher-list '' '+m:{[:lower:][:upper:]}={[:upper:][:lower:]}' 'r:|[._-]=** r:|=**'
-zstyle ':completion:*' max-errors 2
-zstyle ':completion:*' menu select=1
-zstyle ':completion:*' select-prompt %SScrolling active: current selection at %p%s
-# zstyle :compinstall filename '/home/een023/.config/zsh/.zshrc'
-
-autoload -Uz compinit
-# compinit  # Slows down the prompt. Just call it manually when in need
-_comp_options+=(globdots)  # Includes hidden files
-# End of lines added by compinstall
-
-# Lines configured by zsh-newuser-install
-HISTFILE=~/.cache/zsh/.histfile
-HISTSIZE=1000
-SAVEHIST=1000
-setopt autocd extendedglob notify
-unsetopt beep
-bindkey -v
-# End of lines configured by zsh-newuser-install
-
-export KEYTIMEOUT=1
-
-# Search history for input with the up- and down-arrow
-bindkey "^[[A" history-beginning-search-backward
-bindkey "^[[B" history-beginning-search-forward
-# Edit line in vim with ctrl-v
-autoload edit-command-line; zle -N edit-command-line
-bindkey '^v' edit-command-line
-
-# Speedy keys
-xset r rate 210 40
-
-# Alias, functions and more
-source ~/.config/zsh/exports.zsh
-source ~/.config/zsh/aliasrc
-source ~/.config/zsh/functionsrc
-source ~/.config/zsh/kb_alias
-source ~/.config/zsh/fzfrc
-source ~/.config/zsh/nnnrc
-autoload bashcompinit
-bashcompinit
-source /usr/share/bash-completion/completions/pacstall
-# ZVM_VI_SURROUND_BINDKEY=s-prefix
-source /home/een023/programs/zsh/zsh-vi-mode/zsh-vi-mode.plugin.zsh 2>/dev/null
-zvm_after_init_commands+=('[ -f /usr/share/doc/fzf/examples/key-bindings.zsh ] && source /usr/share/doc/fzf/examples/key-bindings.zsh')
-source /usr/share/zsh-autosuggestions/zsh-autosuggestions.zsh 2>/dev/null
-source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh 2>/dev/null
-# source /home/een023/.config/broot/launcher/bash/br
-if [ -e /home/een023/.nix-profile/etc/profile.d/nix.sh ]; then . /home/een023/.nix-profile/etc/profile.d/nix.sh; fi # added by Nix installer
-source "/usr/share/bash-completions/completions/cdo" 2>/dev/null
-
-# forgit
-source "$HOME/programs/forgit/forgit.plugin.zsh"
-
-# for tabby to recognize where I am
-precmd () { echo -n "\x1b]1337;CurrentDir=$(pwd)\x07" }
-
-# Change prompt:
-# PS1="%B%{$fg[red]%}[%{$fg[yellow]%}%n%{$fg[green]%}@%{$fg[blue]%}%M %{$fg[magenta]%}%~%{$fg[red]%}]%{$reset_color%}$%b "
-eval "$(starship init zsh)"
-eval "$(thefuck --alias)"
-xrdb ~/.config/Xresources
-. "/home/een023/.local/share/lscolors.sh"
-
-# Created by `pipx` on 2021-10-25 10:32:18
-export PATH="$PATH:/home/een023/.local/bin"
-
-# setup ssh-agent
-SSH_ENV=$HOME/.ssh/environment
-
-# start the ssh-agent
-function start_agent {
-    echo "Initializing new SSH agent..."
-    # spawn ssh-agent
-    /usr/bin/ssh-agent | sed 's/^echo/#echo/' > "${SSH_ENV}"
-    echo succeeded
-    chmod 600 "${SSH_ENV}"
-    . "${SSH_ENV}" > /dev/null
-    /usr/bin/ssh-add
-}
-
-if [ -f "${SSH_ENV}" ]; then
-    . "${SSH_ENV}" > /dev/null
-    ps -ef | grep ${SSH_AGENT_PID} | grep ssh-agent$ > /dev/null || {
-        start_agent;
-    }
-else
-    start_agent;
+ZINIT_HOME="${XDG_DATA_HOME:-${HOME}/.local/share}/zinit/zinit.git"
+if [ ! -d "$ZINIT_HOME" ]; then
+    mkdir -p "$(dirname "$ZINIT_HOME")"
+    git clone https://github.com/zdharma-continuum/zinit.git "$ZINIT_HOME"
 fi
+source "${ZINIT_HOME}/zinit.zsh"
 
-eval "$(atuin init zsh)"
-eval "$(atuin gen-completions --shell zsh --out-dir $HOME/.config/zsh/atuin_completion)"
-fpath+="$HOME"/.config/zsh/atuin_completion
-export GPG_TTY=$(tty)
+# Snippets
+zinit snippet OMZP::git
+zinit snippet OMZP::archlinux
+zinit snippet OMZP::command-not-found
+zinit snippet OMZP::ssh
 
-# This takes a moment to load (0.4-0.5 seconds), can be annoying
+zinit ice as"command" from"gh-r" \
+    atclone"./starship init zsh > init.zsh; ./starship completions zsh > _starship" \
+    atpull"%atclone" src"init.zsh"
+zinit light starship/starship
+zinit ice wait"2" as"command" from"gh-r" lucid \
+  mv"zoxide*/zoxide -> zoxide" \
+  atclone"./zoxide init zsh > init.zsh" \
+  atpull"%atclone" src"init.zsh" nocompile'!'
+zinit light ajeetdsouza/zoxide
+zinit light zsh-users/zsh-syntax-highlighting
+zinit light zsh-users/zsh-completions
+zinit light zsh-users/zsh-autosuggestions
+zinit light Aloxaf/fzf-tab
+zinit light ryanccn/vivid-zsh  # Sets LS_COLORS
+zi ice from'gh-r' as'program' sbin'**/eza -> eza' atclone'cp -vf completions/eza.zsh _eza'  # Install
+zi light eza-community/eza
+zi ice wait lucid has'eza' atinit'AUTOCD=1'  # Setup plugin
+zi light z-shell/zsh-eza
+zinit ice depth=1
+zinit light jeffreytse/zsh-vi-mode
+zinit light MichaelAquilina/zsh-auto-notify
+zinit light MichaelAquilina/zsh-you-should-use
+zinit light wfxr/forgit
+zinit light wintermi/zsh-mise
+# zinit light olets/zsh-abbr
+# This is overridden by atuin in insert mode, but takes precedence in vi/normal mode.
+zinit load zsh-users/zsh-history-substring-search
+zinit ice wait atload'_history_substring_search_config'
+# atuin
+zinit ice as"command" from"gh-r" bpick"atuin-*.tar.gz" mv"atuin*/atuin -> atuin" \
+    atclone"./atuin init zsh > init.zsh; ./atuin gen-completions --shell zsh > _atuin" \
+    atpull"%atclone" src"init.zsh"
+zinit light atuinsh/atuin
+
+fpath+="${ZDOTDIR:-~}/.zsh_functions" # This must come before compinit
+autoload -Uz compinit
+# From https://gist.github.com/ctechols/ca1035271ad134841284?permalink_comment_id=4624611#gistcomment-4624611
+# [ ! "$(find "${XDG_CONFIG_HOME:-$HOME/.config}"/zsh/.zcompdump -mtime 1)" ] || compinit
+# compinit -C
+compinit
+
+zinit cdreplay -q
+
+# Keybindings
+bindkey -v
+bindkey -M vicmd 'k' history-substring-search-up
+bindkey -M vicmd 'j' history-substring-search-down
+autoload edit-command-line
+zle -N edit-command-line
+bindkey '^v' edit-command-line
+bindkey "^k" history-substring-search-up
+bindkey "^j" history-substring-search-down
+bindkey '^ ' autosuggest-accept
+
+# History
+# From
+#  https://github.com/MichaelAquilina/zshrc/blob/master/zshrc
+#  https://github.com/dreamsofautonomy/zensh
+HISTSIZE="9999"
+HISTFILE="${XDG_DATA_HOME:-${HOME}/.local/share}/zsh/.zsh_history"
+SAVEHIST="$HISTSIZE"
+HISTDUP=erase
+setopt appendhistory
+setopt extended_history
+setopt hist_find_no_dups
+setopt hist_ignore_all_dups
+setopt hist_ignore_dups
+setopt hist_ignore_space
+setopt hist_save_no_dups
+setopt sharehistory
+# setopt INC_APPEND_HISTORY_TIME
+# setopt INTERACTIVE_COMMENTS
+# setopt PROMPT_CR
+
+zstyle ':completion:*' matcher-list 'm:{a-z}={A-Za-z}'
+zstyle ':completion:*' list-colors "${(s.:.)LS_COLORS}"
+zstyle ':completion:*' menu no
+zstyle ':fzf-tab:complete:cd:*' fzf-preview 'eza -1 --color=always $realpath'
+zstyle ':fzf-tab:complete:__zoxide_z:*' fzf-preview 'eza -1 --color=always $realpath'
+
+# Source some other configs
+. "$HOME/.config/zsh/functions.zsh"
+
 # bun completions
-# [ -s "/home/een023/.bun/_bun" ] && source "/home/een023/.bun/_bun"
+[ -s "$HOME/.bun/_bun" ] && source "$HOME/.bun/_bun"
 
-# bun
-export BUN_INSTALL="/home/een023/.bun"
-export PATH="$BUN_INSTALL/bin:$PATH"
-
-# bob
-export PATH="/home/een023/.local/share/bob/nvim-bin:$PATH"
-
-# mise
-eval "$(mise activate zsh)"
+# Shell integrations
+eval "$(fzf --zsh)"
+eval "$(zoxide init --cmd cd zsh)"
+eval "$(atuin init zsh)"
+eval "$(batpipe)"
+eval "$(batman --export-env)"
 
 if command -v coreutils 1>/dev/null 2>&1; then
     t1=$(coreutils date "+%s.%N")
-    printf "Profile took %.3f seconds to load\n" $((t1-t0))
+    printf " Ready in %.3f seconds\n" $((t1 - t0))
 fi
+
+# zprof  # Uncomment to run profiler (also first line)
