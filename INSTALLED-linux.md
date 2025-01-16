@@ -635,18 +635,18 @@ gir1.2-webkit-6.0 2.46.5-0ubuntu0.24.04.1 [Ubuntu/noble main]
 gir1.2-webkit2-4.1 2.46.5-0ubuntu0.24.04.1 [Ubuntu/noble main]
 gir1.2-wnck-3.0 43.0-3build4 [Ubuntu/noble main]
 gir1.2-zeitgeist-2.0 1.0.4-5ubuntu5 [Ubuntu/noble universe]
-git 1:2.43.0-1ubuntu7.1 [Ubuntu/noble main]
-git-all 1:2.43.0-1ubuntu7.1 [Ubuntu/noble universe]
-git-cvs 1:2.43.0-1ubuntu7.1 [Ubuntu/noble universe]
-git-doc 1:2.43.0-1ubuntu7.1 [Ubuntu/noble main]
-git-email 1:2.43.0-1ubuntu7.1 [Ubuntu/noble universe]
-git-gui 1:2.43.0-1ubuntu7.1 [Ubuntu/noble universe]
+git 1:2.43.0-1ubuntu7.2 [Ubuntu/noble main]
+git-all 1:2.43.0-1ubuntu7.2 [Ubuntu/noble universe]
+git-cvs 1:2.43.0-1ubuntu7.2 [Ubuntu/noble universe]
+git-doc 1:2.43.0-1ubuntu7.2 [Ubuntu/noble main]
+git-email 1:2.43.0-1ubuntu7.2 [Ubuntu/noble universe]
+git-gui 1:2.43.0-1ubuntu7.2 [Ubuntu/noble universe]
 git-lfs 3.4.1-1ubuntu0.2 [Ubuntu/noble universe]
-git-man 1:2.43.0-1ubuntu7.1 [Ubuntu/noble main]
-git-mediawiki 1:2.43.0-1ubuntu7.1 [Ubuntu/noble universe]
-git-svn 1:2.43.0-1ubuntu7.1 [Ubuntu/noble universe]
-gitk 1:2.43.0-1ubuntu7.1 [Ubuntu/noble universe]
-gitweb 1:2.43.0-1ubuntu7.1 [Ubuntu/noble universe]
+git-man 1:2.43.0-1ubuntu7.2 [Ubuntu/noble main]
+git-mediawiki 1:2.43.0-1ubuntu7.2 [Ubuntu/noble universe]
+git-svn 1:2.43.0-1ubuntu7.2 [Ubuntu/noble universe]
+gitk 1:2.43.0-1ubuntu7.2 [Ubuntu/noble universe]
+gitweb 1:2.43.0-1ubuntu7.2 [Ubuntu/noble universe]
 gjs 1.80.2-1build2 [Ubuntu/noble main]
 gkbd-capplet 3.28.1-1build3 [Ubuntu/noble main]
 glib-networking 2.80.0-1build1 [Ubuntu/noble main]
@@ -4297,7 +4297,7 @@ rpcsvc-proto 1.4.2-0ubuntu7 [Ubuntu/noble main]
 rpm 4.18.2+dfsg-2.1build2 [Ubuntu/noble universe]
 rpm-common 4.18.2+dfsg-2.1build2 [Ubuntu/noble universe]
 rpm2cpio 4.18.2+dfsg-2.1build2 [Ubuntu/noble universe]
-rsync 3.2.7-1ubuntu1 [Ubuntu/noble main]
+rsync 3.2.7-1ubuntu1.1 [Ubuntu/noble main]
 rsyslog 8.2312.0-3ubuntu9 [Ubuntu/noble main]
 rtkit 0.13-5build1 [Ubuntu/noble main]
 rtmpdump 2.4+20151223.gitfa8646d.1-2build7 [Ubuntu/noble universe]
@@ -4343,7 +4343,7 @@ shared-mime-info 2.4-4 [Ubuntu/noble main]
 shellcheck 0.9.0-1 [Ubuntu/noble universe]
 shfmt 3.10.0-pacstall1 [local]
 shim-signed 1.58+15.8-0ubuntu1 [Ubuntu/noble main]
-signal-desktop 7.37.0 [. xenial/xenial main]
+signal-desktop 7.38.0 [. xenial/xenial main]
 signon-plugin-oauth2 0.25-2build3 [Ubuntu/noble universe]
 silversearcher-ag 2.2.0+git20200805-1.1 [Ubuntu/noble universe]
 slack-desktop 4.41.105 [slack/jessie main]
@@ -4679,8 +4679,8 @@ zathura-pdf-poppler 0.3.2-1build3 [Ubuntu/noble universe]
 zbar-tools 0.23.93-4build3 [Ubuntu/noble universe]
 zeitgeist-core 1.0.4-5ubuntu5 [Ubuntu/noble universe]
 zeitgeist-datahub 1.0.4-5ubuntu5 [Ubuntu/noble universe]
-zen-browser 1.6b-pacstall1 [local]
-zen-browser-specific-bin 1.6b-pacstall1 [local]
+zen-browser 1.7b-pacstall1 [local]
+zen-browser-specific-bin 1.7b-pacstall1 [local]
 zenity 4.0.1-1build3 [Ubuntu/noble main]
 zenity-common 4.0.1-1build3 [Ubuntu/noble main]
 zip 3.0-13ubuntu0.1 [Ubuntu/noble main]
@@ -4803,7 +4803,7 @@ git-cliff v2.7.0:
     git-cliff-mangen
 git-delta v0.18.2:
     delta
-gitui v0.26.3:
+gitui v0.27.0:
     gitui
 halp v0.2.0:
     halp
@@ -4923,6 +4923,7 @@ pandoc-eqnos v2.5.0
 pandoc-include v1.4.1
 poetry v2.0.1
 pre-commit v4.0.1
+pre-commit-hooks v5.0.0
 rich-cli v1.8.0
 toml-cli v0.7.0
 ```
@@ -5319,12 +5320,12 @@ Name                                    Version                                 
 ```txt {snap}
 Name                       Version             Rev    Tracking         Publisher    Notes
 bare                       1.0                 5      latest/stable    canonical**  base
-bw                         2024.12.0           75     latest/stable    bitwarden**  -
+bw                         2025.1.0            76     latest/stable    bitwarden**  -
 core                       16-2.61.4-20240607  17200  latest/stable    canonical**  core
 core22                     20241119            1722   latest/stable    canonical**  base
 core24                     20240920            609    latest/stable    canonical**  base
 ffsend                     0.2.74              49     latest/stable    timvisee     -
-firefox                    134.0-1             5561   latest/stable/…  mozilla**    -
+firefox                    134.0.1-1           5600   latest/stable/…  mozilla**    -
 firmware-updater           0+git.7983059       147    1/stable/…       canonical**  -
 gnome-42-2204              0+git.510a601       176    latest/stable/…  canonical**  -
 gnome-46-2404              0+git.5d6be1b       48     latest/stable    canonical**  -
