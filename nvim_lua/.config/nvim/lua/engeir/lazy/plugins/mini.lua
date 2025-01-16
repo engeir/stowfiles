@@ -361,7 +361,7 @@ return {
   -- `mini.splitjoin` ------------------------------------------------------------------
   { "echasnovski/mini.splitjoin", config = true, enabled = false },
 
-  -- `echasnovski/mini.statusline`
+  -- `mini.statusline`
   {
     "echasnovski/mini.statusline",
     config = function()
@@ -511,7 +511,7 @@ return {
     end,
   },
 
-  -- `echasnovski/mini.tabline`
+  -- `mini.tabline`
   {
     "echasnovski/mini.tabline",
     opts = {

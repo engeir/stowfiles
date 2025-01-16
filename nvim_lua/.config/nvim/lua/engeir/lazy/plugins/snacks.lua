@@ -11,12 +11,14 @@ return {
   "folke/snacks.nvim",
   priority = 1000,
   lazy = false,
+  ---@module "snacks.nvim"
   ---@type snacks.Config
   opts = {
     bigfile = { enabled = true },
     dim = { animate = { enabled = false } },
     notifier = { enabled = false },
     quickfile = { enabled = true },
+    scope = { enabled = true },
     statuscolumn = { enabled = true },
     words = { enabled = true },
   },
