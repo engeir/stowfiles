@@ -8,36 +8,39 @@ function _G.set_terminal_keymaps()
   vim.api.nvim_buf_set_keymap(0, "t", "<M-l>", [[<C-\><C-n><C-W>l]], opts)
 end
 
--- if you only want these mappings for toggle term use term://*toggleterm#* instead
+-- If you only want these mappings for toggle term use `term://*toggleterm#*` instead
 vim.cmd("autocmd! TermOpen term://* lua set_terminal_keymaps()")
 
 local keymap = vim.keymap.set
+---@module "lazy"
+---@type LazySpec
 return {
   {
     "voldikss/vim-floaterm",
     init = function()
       vim.g.floaterm_width = 0.45
     end,
+    cmd = { "FloatermNew" },
     keys = {
       {
         "<leader>to",
         ":FloatermNew --wintype=vsplit --autohide=0 mise x -- python<CR><C-\\><C-n><C-w>h",
-        desc = "[T]erm [O]pen (Python)",
+        desc = "Term Open (Python)",
       },
       {
         "<leader>pv",
         ":FloatermNew --wintype=float --position=right --autoclose=2 nnn -dH<CR>",
         silent = true,
         noremap = true,
-        desc = "Open Floaterm [P]ath [V]iewer",
+        desc = "Open Floaterm Path Viewer",
       },
-      {
-        "<leader>H",
-        ":/%%<CR>VN",
-        desc = "Notebook: Jump to next [H]ighligh region",
-        silent = true,
-        noremap = true,
-      },
+      -- {
+      --   "<leader>H",
+      --   ":/%%<CR>VN",
+      --   desc = "Notebook: Jump to next Highligh region",
+      --   silent = true,
+      --   noremap = true,
+      -- },
       {
         "<C-r>",
         ":'<,'>FloatermSend <CR>",
@@ -49,28 +52,28 @@ return {
       {
         "<leader>tr",
         ":FloatermNew --wintype=float --position=right --autoclose=0 compiler %<CR>",
-        desc = "[R]un compiler on script",
+        desc = "Run compiler on the current file",
       },
       {
         "<leader>tn",
         ":FloatermNext <CR>",
         silent = true,
         noremap = true,
-        desc = "[T]erm [N]ext",
+        desc = "Term Next",
       },
       {
         "<leader>tp",
         ":FloatermPrev <CR>",
         silent = true,
         noremap = true,
-        desc = "[T]erm [P]revious",
+        desc = "Term Previous",
       },
       {
         "<leader>th",
         ":FloatermHide <CR>",
         silent = true,
         noremap = true,
-        desc = "[T]erm [H]ide",
+        desc = "Term Hide",
       },
     },
   },
