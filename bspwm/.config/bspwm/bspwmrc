@@ -132,6 +132,7 @@ bspc rule -a stalonetray state=floating manage=off
 bspc rule -a Viewnior state=floating follow=on focus=on
 bspc rule -a Polybar layer=above
 bspc rule -a polybar layer=above
+bspc rule -a ripdrag state=floating follow=on focus=on
 
 ## Autostart -------------------------------#
 
