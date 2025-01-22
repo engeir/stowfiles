@@ -208,8 +208,9 @@ return {
     -- Uncomment next line if you want to follow only stable versions
     -- tag = "*"
   },
-  {
+  { -- Has been archived. Trying to replace it with `treewalker.nvim`.
     "ziontee113/syntax-tree-surfer",
+    enabled = false,
     event = { "BufReadPre", "BufNewFile" },
     config = function()
       require("syntax-tree-surfer").setup()
