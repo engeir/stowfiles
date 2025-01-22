@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/usr/bin/env bash
 
 # Open a file from the source file, e.g. a PDF from a Markdown file.
 
@@ -10,6 +10,7 @@ ext="${file##*.}"
 cd "$dir" || exit 1
 
 case "$ext" in
-md) [ -f "$base".pdf ] && xdg-open "$base".pdf ;;
-*) echo File not found ;;
+    md) [ -f "$base".pdf ] && xdg-open "$base".pdf ;;
+    tex) [ -f "$base".pdf ] && xdg-open "$base".pdf ;;
+    *) echo File not found ;;
 esac
