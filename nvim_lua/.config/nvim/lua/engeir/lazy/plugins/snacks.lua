@@ -20,6 +20,9 @@ return {
     quickfile = { enabled = true },
     scope = { enabled = true },
     statuscolumn = { enabled = true },
+    styles = {
+      scratch = { wo = { winhighlight = "NormalFloat:NormalFloat" }, border = "" },
+    },
     words = { enabled = true },
   },
   keys = {
@@ -36,6 +39,13 @@ return {
         Snacks.profiler.scratch()
       end,
       desc = "Profiler Scratch Bufer",
+    },
+    {
+      "<leader>wts",
+      function()
+        Snacks.scratch.select()
+      end,
+      desc = "Select Scratch Buffer",
     },
   },
   init = function()
