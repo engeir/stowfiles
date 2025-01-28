@@ -10,10 +10,11 @@ theme = tokyonight
 
 background = #2d2d2d
 
-cursor-color = yellow
+cursor-color = #dd8d31
 cursor-opacity = 0.7
 
 mouse-hide-while-typing = true
+mouse-scroll-multiplier = 0.5
 
 # Key bindings. The format is `trigger=action`. Duplicate triggers will
 # overwrite previously set values. The list of actions is available in
