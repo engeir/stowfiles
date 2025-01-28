@@ -38,6 +38,12 @@ zinit light zsh-users/zsh-completions
 zinit light zsh-users/zsh-autosuggestions
 zinit light Aloxaf/fzf-tab
 zinit light ryanccn/vivid-zsh  # Sets LS_COLORS
+eza_params=(
+  '--group-directories-first' '-a' '-F=always' '--icons' '--group'
+  '--time-style=long-iso' '--color-scale=all' '--git'
+)
+
+[[ ! -z $_EZA_PARAMS ]] && eza_params=($_EZA_PARAMS)
 zi ice from'gh-r' as'program' sbin'**/eza -> eza' atclone'cp -vf completions/eza.zsh _eza'  # Install
 zi light eza-community/eza
 zi ice wait lucid has'eza' atinit'AUTOCD=1'  # Setup plugin
