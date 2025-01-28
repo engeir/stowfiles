@@ -12,5 +12,5 @@ cd "$dir" || exit 1
 case "$ext" in
     md) [ -f "$base".pdf ] && xdg-open "$base".pdf ;;
     tex) [ -f "$base".pdf ] && xdg-open "$base".pdf ;;
-    *) echo File not found ;;
+    *) [ -f "$base".pdf ] && xdg-open "$base".pdf ;;
 esac
