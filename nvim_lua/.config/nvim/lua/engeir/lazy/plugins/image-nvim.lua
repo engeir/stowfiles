@@ -24,7 +24,7 @@ return {
     end,
     config = function()
       require("image").setup({
-        backend = "ueberzug",
+        backend = "kitty",
         integrations = {
           markdown = {
             enabled = true,
@@ -38,6 +38,9 @@ return {
             download_remote_images = true,
             clear_in_insert_mode = false,
             only_render_image_at_cursor = false,
+          },
+          typst = {
+            enabled = false,
           },
         },
         editor_only_render_when_focused = true, -- auto show/hide images when the editor gains/looses focus

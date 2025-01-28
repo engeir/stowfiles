@@ -51,6 +51,7 @@ return {
         mode = { "n", "v" },
       },
       { "cr", group = "Refactor" },
+      { "gw", group = "Text/word operators" },
       { "]", group = "Next/Prev" },
       { "[", group = "Last/First" },
     })

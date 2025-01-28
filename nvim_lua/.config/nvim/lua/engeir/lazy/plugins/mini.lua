@@ -344,9 +344,11 @@ return {
     "echasnovski/mini.operators",
     event = { "BufReadPre", "BufNewFile" },
     opts = {
-      exchange = { prefix = "" },
-      multiply = { prefix = "" },
-      replace = { prefix = "" },
+      evaluate = { prefix = "gw=" },
+      exchange = { prefix = "gwx" },
+      multiply = { prefix = "gwm" },
+      replace = { prefix = "gwr" },
+      sort = { prefix = "gws" },
     },
   },
 
