@@ -167,6 +167,7 @@ C.own_paragraphs = {
   "clearpage",
   "documentclass",
   "newpage",
+  "chapter",
   "section",
   "subsection",
   "subsubsection",
