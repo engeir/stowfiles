@@ -25,7 +25,13 @@ return {
     ---@type blink.cmp.Config
     opts = {
       keymap = {
+        -- https://cmp.saghen.dev/configuration/keymap.html#default
         preset = "default",
+        ["<C-s>"] = { "show_signature", "hide_signature", "fallback" },
+        ["<C-k>"] = { "snippet_forward", "fallback" },
+        ["<C-j>"] = { "snippet_backward", "fallback" },
+        ["<C-y>"] = { "show", "show_documentation", "hide_documentation" },
+        ["<C-space>"] = { "select_and_accept" },
         cmdline = {
           preset = "enter",
           ["<S-Tab>"] = { "select_prev", "fallback" },
