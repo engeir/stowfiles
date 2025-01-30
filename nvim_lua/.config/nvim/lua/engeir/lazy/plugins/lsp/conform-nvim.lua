@@ -142,7 +142,6 @@ return {
       args = util.extend_args(stylua.args, { "--indent-type=Spaces" }),
       range_args = util.extend_args(stylua.args, { "--indent-type=Spaces" }), --"--indent-width=2"
     })
-    require("conform").formatters["tex-fmt"] = { prepend_args = { "--wrap", "88" } }
 
     -- Set up a custom function that takes the timeout as an argument
     vim.api.nvim_create_user_command("Format", function(opts)
