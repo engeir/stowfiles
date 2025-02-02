@@ -736,8 +736,8 @@ grim 1.4.0+ds-2build2 [Ubuntu/noble universe]
 groff 1.23.0-3build2 [Ubuntu/noble universe]
 groff-base 1.23.0-3build2 [Ubuntu/noble main]
 grub-common 2.12-1ubuntu7.1 [Ubuntu/noble main]
-grub-efi-amd64-bin 2.12-1ubuntu7 [Ubuntu/noble main]
-grub-efi-amd64-signed 1.202+2.12-1ubuntu7 [Ubuntu/noble main]
+grub-efi-amd64-bin 2.12-1ubuntu7.1 [Ubuntu/noble main]
+grub-efi-amd64-signed 1.202.2+2.12-1ubuntu7.1 [Ubuntu/noble main]
 grub-gfxpayload-lists 0.7build2 [Ubuntu/noble main]
 grub-pc 2.12-1ubuntu7.1 [Ubuntu/noble main]
 grub-pc-bin 2.12-1ubuntu7.1 [Ubuntu/noble main]
@@ -1331,18 +1331,17 @@ libdmx1 1:1.1.4-2build3 [Ubuntu/noble main]
 libdotconf0 1.3-0.3fakesync1build3 [Ubuntu/noble main]
 libdouble-conversion3 3.3.0-1build1 [Ubuntu/noble universe]
 libdpkg-perl 1.22.6ubuntu6.1 [Ubuntu/noble main]
-libdrm-amdgpu1 2.4.120-2build1 [Ubuntu/noble main]
-libdrm-amdgpu1:i386 2.4.120-2build1 [Ubuntu/noble main]
-libdrm-common 2.4.120-2build1 [Ubuntu/noble main]
-libdrm-dev 2.4.120-2build1 [Ubuntu/noble main]
-libdrm-intel1 2.4.120-2build1 [Ubuntu/noble main]
-libdrm-intel1:i386 2.4.120-2build1 [Ubuntu/noble main]
-libdrm-nouveau2 2.4.120-2build1 [Ubuntu/noble main]
-libdrm-nouveau2:i386 2.4.120-2build1 [Ubuntu/noble main]
-libdrm-radeon1 2.4.120-2build1 [Ubuntu/noble main]
-libdrm-radeon1:i386 2.4.120-2build1 [Ubuntu/noble main]
-libdrm2 2.4.120-2build1 [Ubuntu/noble main]
-libdrm2:i386 2.4.120-2build1 [Ubuntu/noble main]
+libdrm-amdgpu1 2.4.122-1~ubuntu0.24.04.1 [Ubuntu/noble main]
+libdrm-amdgpu1:i386 2.4.122-1~ubuntu0.24.04.1 [Ubuntu/noble main]
+libdrm-common 2.4.122-1~ubuntu0.24.04.1 [Ubuntu/noble main]
+libdrm-dev 2.4.122-1~ubuntu0.24.04.1 [Ubuntu/noble main]
+libdrm-intel1 2.4.122-1~ubuntu0.24.04.1 [Ubuntu/noble main]
+libdrm-intel1:i386 2.4.122-1~ubuntu0.24.04.1 [Ubuntu/noble main]
+libdrm-nouveau2 2.4.122-1~ubuntu0.24.04.1 [Ubuntu/noble main]
+libdrm-radeon1 2.4.122-1~ubuntu0.24.04.1 [Ubuntu/noble main]
+libdrm-radeon1:i386 2.4.122-1~ubuntu0.24.04.1 [Ubuntu/noble main]
+libdrm2 2.4.122-1~ubuntu0.24.04.1 [Ubuntu/noble main]
+libdrm2:i386 2.4.122-1~ubuntu0.24.04.1 [Ubuntu/noble main]
 libdsdp-5.8t64 5.8-10.1build1 [Ubuntu/noble universe]
 libduktape207 2.7.0+tests-0ubuntu3 [Ubuntu/noble main]
 libduktape207:i386 2.7.0+tests-0ubuntu3 [Ubuntu/noble main]
@@ -1377,9 +1376,9 @@ libeditorconfig0 0.12.7-0.1 [Ubuntu/noble main]
 libefiboot1t64 38-3.1build1 [Ubuntu/noble main]
 libefivar1t64 38-3.1build1 [Ubuntu/noble main]
 libegl-dev 1.7.0-1build1 [Ubuntu/noble main]
-libegl-mesa0 24.0.9-0ubuntu0.3 [Ubuntu/noble main]
+libegl-mesa0 24.2.8-1ubuntu1~24.04.1 [Ubuntu/noble main]
 libegl1 1.7.0-1build1 [Ubuntu/noble main]
-libegl1-mesa-dev 24.0.9-0ubuntu0.3 [Ubuntu/noble main]
+libegl1-mesa-dev 24.2.8-1ubuntu1~24.04.1 [Ubuntu/noble main]
 libei1 1.2.1-1 [Ubuntu/noble main]
 libeis1 1.2.1-1 [Ubuntu/noble main]
 libelf-dev 0.190-1.1build4.1 [Ubuntu/noble main]
@@ -1528,9 +1527,9 @@ libgamemode0:i386 1.8.1-2build1 [Ubuntu/noble main]
 libgamemodeauto0 1.8.1-2build1 [Ubuntu/noble main]
 libgamemodeauto0:i386 1.8.1-2build1 [Ubuntu/noble main]
 libgav1-1 0.18.0-1build3 [Ubuntu/noble universe]
-libgbm-dev 24.0.9-0ubuntu0.3 [Ubuntu/noble main]
-libgbm1 24.0.9-0ubuntu0.3 [Ubuntu/noble main]
-libgbm1:i386 24.0.9-0ubuntu0.3 [Ubuntu/noble main]
+libgbm-dev 24.2.8-1ubuntu1~24.04.1 [Ubuntu/noble main]
+libgbm1 24.2.8-1ubuntu1~24.04.1 [Ubuntu/noble main]
+libgbm1:i386 24.2.8-1ubuntu1~24.04.1 [Ubuntu/noble main]
 libgc1 1:8.2.6-1build1 [Ubuntu/noble main]
 libgcab-1.0-0 1.6-1build2 [Ubuntu/noble universe]
 libgcc-10-dev 10.5.0-4ubuntu2 [Ubuntu/noble universe]
@@ -1613,12 +1612,12 @@ libgjs0g 1.80.2-1build2 [Ubuntu/noble main]
 libgl-dev 1.7.0-1build1 [Ubuntu/noble main]
 libgl1 1.7.0-1build1 [Ubuntu/noble main]
 libgl1-amber-dri 21.3.9-0ubuntu2 [Ubuntu/noble main]
-libgl1-mesa-dev 24.0.9-0ubuntu0.3 [Ubuntu/noble main]
-libgl1-mesa-dri 24.0.9-0ubuntu0.3 [Ubuntu/noble main]
-libgl1-mesa-dri:i386 24.0.9-0ubuntu0.3 [Ubuntu/noble main]
+libgl1-mesa-dev 24.2.8-1ubuntu1~24.04.1 [Ubuntu/noble main]
+libgl1-mesa-dri 24.2.8-1ubuntu1~24.04.1 [Ubuntu/noble main]
+libgl1-mesa-dri:i386 24.2.8-1ubuntu1~24.04.1 [Ubuntu/noble main]
 libgl1:i386 1.7.0-1build1 [Ubuntu/noble main]
-libglapi-mesa 24.0.9-0ubuntu0.3 [Ubuntu/noble main]
-libglapi-mesa:i386 24.0.9-0ubuntu0.3 [Ubuntu/noble main]
+libglapi-mesa 24.2.8-1ubuntu1~24.04.1 [Ubuntu/noble main]
+libglapi-mesa:i386 24.2.8-1ubuntu1~24.04.1 [Ubuntu/noble main]
 libgles-dev 1.7.0-1build1 [Ubuntu/noble main]
 libgles1 1.7.0-1build1 [Ubuntu/noble main]
 libgles2 1.7.0-1build1 [Ubuntu/noble main]
@@ -1644,8 +1643,8 @@ libglvnd-dev 1.7.0-1build1 [Ubuntu/noble main]
 libglvnd0 1.7.0-1build1 [Ubuntu/noble main]
 libglvnd0:i386 1.7.0-1build1 [Ubuntu/noble main]
 libglx-dev 1.7.0-1build1 [Ubuntu/noble main]
-libglx-mesa0 24.0.9-0ubuntu0.3 [Ubuntu/noble main]
-libglx-mesa0:i386 24.0.9-0ubuntu0.3 [Ubuntu/noble main]
+libglx-mesa0 24.2.8-1ubuntu1~24.04.1 [Ubuntu/noble main]
+libglx-mesa0:i386 24.2.8-1ubuntu1~24.04.1 [Ubuntu/noble main]
 libglx0 1.7.0-1build1 [Ubuntu/noble main]
 libglx0:i386 1.7.0-1build1 [Ubuntu/noble main]
 libgme0 0.6.3-7build1 [Ubuntu/noble universe]
@@ -1852,8 +1851,8 @@ libido3-0.1-0 13.10.0+22.10.20221007-0ubuntu3 [Ubuntu/noble universe]
 libiec61883-0 1.2.0-6build1 [Ubuntu/noble main]
 libiec61883-0:i386 1.2.0-6build1 [Ubuntu/noble main]
 libieee1284-3t64 0.2.11-14.1build1 [Ubuntu/noble main]
-libigc1 1.0.15468.25-2build1 [Ubuntu/noble universe]
-libigdfcl1 1.0.15468.25-2build1 [Ubuntu/noble universe]
+libigc1 1.0.15468.25-2ubuntu0.1 [Ubuntu/noble universe]
+libigdfcl1 1.0.15468.25-2ubuntu0.1 [Ubuntu/noble universe]
 libigdgmm12 22.3.17+ds1-1 [Ubuntu/noble universe]
 libigdgmm12:i386 22.3.17+ds1-1 [Ubuntu/noble universe]
 libijs-0.35 0.35-15.1build1 [Ubuntu/noble main]
@@ -2130,8 +2129,9 @@ libllvm14t64 1:14.0.6-19build4 [Ubuntu/noble universe]
 libllvm15t64 1:15.0.7-14build3 [Ubuntu/noble universe]
 libllvm15t64:i386 1:15.0.7-14build3 [Ubuntu/noble universe]
 libllvm17t64 1:17.0.6-9ubuntu1 [Ubuntu/noble main]
-libllvm17t64:i386 1:17.0.6-9ubuntu1 [Ubuntu/noble main]
 libllvm18 1:18.1.3-1ubuntu1 [Ubuntu/noble main]
+libllvm19 1:19.1.1-1ubuntu1~24.04.2 [Ubuntu/noble main]
+libllvm19:i386 1:19.1.1-1ubuntu1~24.04.2 [Ubuntu/noble main]
 libllvmspirvlib14 14.0.0-12build1 [Ubuntu/noble universe]
 liblmdb0 0.9.31-1build1 [Ubuntu/noble main]
 liblocale-gettext-perl 1.07-6ubuntu5 [Ubuntu/noble main]
@@ -2392,8 +2392,8 @@ libmpdclient-dev 2.22-1.1build1 [Ubuntu/noble universe]
 libmpdclient2t64 2.22-1.1build1 [Ubuntu/noble universe]
 libmpeg2-4 0.5.1-9build1 [Ubuntu/noble universe]
 libmpeg2encpp-2.1-0t64 1:2.1.0+debian-8.1build1 [Ubuntu/noble universe]
-libmpfr-dev 4.2.1-1build1 [Ubuntu/noble main]
-libmpfr6 4.2.1-1build1 [Ubuntu/noble main]
+libmpfr-dev 4.2.1-1build1.1 [Ubuntu/noble main]
+libmpfr6 4.2.1-1build1.1 [Ubuntu/noble main]
 libmpg123-0t64 1.32.5-1ubuntu1.1 [Ubuntu/noble main]
 libmpg123-0t64:i386 1.32.5-1ubuntu1.1 [Ubuntu/noble main]
 libmplex2-2.1-0t64 1:2.1.0+debian-8.1build1 [Ubuntu/noble universe]
@@ -2414,7 +2414,7 @@ libmunge2 0.5.15-4build1 [Ubuntu/noble universe]
 libmutter-14-0 46.2-1ubuntu0.24.04.4 [Ubuntu/noble main]
 libmwaw-0.3-3 0.3.22-1build1 [Ubuntu/noble main]
 libmysofa1 1.3.2+dfsg-2ubuntu2 [Ubuntu/noble universe]
-libmysqlclient21 8.0.40-0ubuntu0.24.04.1 [Ubuntu/noble main]
+libmysqlclient21 8.0.41-0ubuntu0.24.04.1 [Ubuntu/noble main]
 libmythes-1.2-0 2:1.2.5-1build1 [Ubuntu/noble main]
 libnamespace-autoclean-perl 0.29-2 [Ubuntu/noble universe]
 libnamespace-clean-perl 0.27-2 [Ubuntu/noble main]
@@ -2484,7 +2484,7 @@ libnss-nis:i386 3.1-0ubuntu7 [Ubuntu/noble universe]
 libnss-nisplus 1.3-5build1 [Ubuntu/noble universe]
 libnss-nisplus:i386 1.3-5build1 [Ubuntu/noble universe]
 libnss-sss 2.9.4-1.1ubuntu6.2 [Ubuntu/noble main]
-libnss-systemd 255.4-1ubuntu8.4 [local]
+libnss-systemd 255.4-1ubuntu8.5 [Ubuntu/noble main]
 libnss3 2:3.98-1build1 [Ubuntu/noble main]
 libnss3-dev 2:3.98-1build1 [Ubuntu/noble main]
 libntfs-3g89t64 1:2022.10.3-1.2ubuntu3 [Ubuntu/noble main]
@@ -2551,8 +2551,8 @@ liborc-0.4-0t64 1:0.4.38-1ubuntu0.1 [Ubuntu/noble main]
 liborc-0.4-0t64:i386 1:0.4.38-1ubuntu0.1 [Ubuntu/noble main]
 liborcus-0.18-0 0.19.2-3build3 [Ubuntu/noble main]
 liborcus-parser-0.18-0 0.19.2-3build3 [Ubuntu/noble main]
-libosmesa6 24.0.9-0ubuntu0.3 [Ubuntu/noble main]
-libosmesa6:i386 24.0.9-0ubuntu0.3 [Ubuntu/noble main]
+libosmesa6 24.2.8-1ubuntu1~24.04.1 [Ubuntu/noble main]
+libosmesa6:i386 24.2.8-1ubuntu1~24.04.1 [Ubuntu/noble main]
 libosmgpsmap-1.0-1 1.2.0-2build2 [Ubuntu/noble universe]
 libosp5 1.5.2-15ubuntu2 [Ubuntu/noble universe]
 libostree-1-1 2024.5-1build2 [Ubuntu/noble universe]
@@ -2574,7 +2574,7 @@ libpam-modules-bin 1.5.3-5ubuntu5.1 [Ubuntu/noble main]
 libpam-pwquality 1.4.5-3build1 [Ubuntu/noble main]
 libpam-runtime 1.5.3-5ubuntu5.1 [Ubuntu/noble main]
 libpam-sss 2.9.4-1.1ubuntu6.2 [Ubuntu/noble main]
-libpam-systemd 255.4-1ubuntu8.4 [local]
+libpam-systemd 255.4-1ubuntu8.5 [Ubuntu/noble main]
 libpam0g 1.5.3-5ubuntu5.1 [Ubuntu/noble main]
 libpam0g-dev 1.5.3-5ubuntu5.1 [Ubuntu/noble main]
 libpango-1.0-0 1.52.1+ds-1build1 [Ubuntu/noble main]
@@ -2612,12 +2612,12 @@ libpciaccess-dev 0.17-3build1 [Ubuntu/noble main]
 libpciaccess0 0.17-3build1 [Ubuntu/noble main]
 libpciaccess0:i386 0.17-3build1 [Ubuntu/noble main]
 libpcre16-3 2:8.39-15build1 [Ubuntu/noble universe]
-libpcre2-16-0 10.42-4ubuntu2 [Ubuntu/noble main]
-libpcre2-32-0 10.42-4ubuntu2 [Ubuntu/noble main]
-libpcre2-8-0 10.42-4ubuntu2 [Ubuntu/noble main]
-libpcre2-8-0:i386 10.42-4ubuntu2 [Ubuntu/noble main]
-libpcre2-dev 10.42-4ubuntu2 [Ubuntu/noble main]
-libpcre2-posix3 10.42-4ubuntu2 [Ubuntu/noble main]
+libpcre2-16-0 10.42-4ubuntu2.1 [Ubuntu/noble main]
+libpcre2-32-0 10.42-4ubuntu2.1 [Ubuntu/noble main]
+libpcre2-8-0 10.42-4ubuntu2.1 [Ubuntu/noble main]
+libpcre2-8-0:i386 10.42-4ubuntu2.1 [Ubuntu/noble main]
+libpcre2-dev 10.42-4ubuntu2.1 [Ubuntu/noble main]
+libpcre2-posix3 10.42-4ubuntu2.1 [Ubuntu/noble main]
 libpcre3 2:8.39-15build1 [Ubuntu/noble universe]
 libpcre3-dev 2:8.39-15build1 [Ubuntu/noble universe]
 libpcre32-3 2:8.39-15build1 [Ubuntu/noble universe]
@@ -3028,10 +3028,10 @@ libsynctex2 2023.20230311.66589-9build3 [Ubuntu/noble main]
 libsyntax-keyword-try-perl 0.29-1build3 [Ubuntu/noble main]
 libsys-hostname-long-perl 1.5-3 [Ubuntu/noble main]
 libsysmetrics1 1.7.3ubuntu0.24.04.2 [Ubuntu/noble main]
-libsystemd-dev 255.4-1ubuntu8.4 [local]
-libsystemd-shared 255.4-1ubuntu8.4 [local]
-libsystemd0 255.4-1ubuntu8.4 [local]
-libsystemd0:i386 255.4-1ubuntu8.4 [local]
+libsystemd-dev 255.4-1ubuntu8.5 [Ubuntu/noble main]
+libsystemd-shared 255.4-1ubuntu8.5 [Ubuntu/noble main]
+libsystemd0 255.4-1ubuntu8.5 [Ubuntu/noble main]
+libsystemd0:i386 255.4-1ubuntu8.5 [Ubuntu/noble main]
 libsz2 1.1.2-1build1 [Ubuntu/noble universe]
 libtag1v5 1.13.1-1build1 [Ubuntu/noble main]
 libtag1v5-vanilla 1.13.1-1build1 [Ubuntu/noble main]
@@ -3138,9 +3138,9 @@ libu2f-udev 1.1.10-3build3 [Ubuntu/noble main]
 libubsan1 14.2.0-4ubuntu2~24.04 [Ubuntu/noble main]
 libuchardet0 0.0.8-1build1 [Ubuntu/noble main]
 libucx0 1.16.0+ds-5ubuntu1 [Ubuntu/noble universe]
-libudev-dev 255.4-1ubuntu8.4 [local]
-libudev1 255.4-1ubuntu8.4 [local]
-libudev1:i386 255.4-1ubuntu8.4 [local]
+libudev-dev 255.4-1ubuntu8.5 [Ubuntu/noble main]
+libudev1 255.4-1ubuntu8.5 [Ubuntu/noble main]
+libudev1:i386 255.4-1ubuntu8.5 [Ubuntu/noble main]
 libudfread0 1.1.2-1build1 [Ubuntu/noble universe]
 libudisks2-0 2.10.1-6ubuntu1 [Ubuntu/noble main]
 libudunits2-0 2.2.28-7build1 [Ubuntu/noble universe]
@@ -3316,7 +3316,7 @@ libx265-dev 3.5-2build1 [Ubuntu/noble universe]
 libxapian30 1.4.22-1build1 [Ubuntu/noble universe]
 libxapp-gtk3-module 2.8.2-1build3 [Ubuntu/noble universe]
 libxapp1 2.8.2-1build3 [Ubuntu/noble universe]
-libxatracker2 24.0.9-0ubuntu0.3 [Ubuntu/noble main]
+libxatracker2 24.2.8-1ubuntu1~24.04.1 [Ubuntu/noble main]
 libxau-dev 1:1.0.9-1build6 [Ubuntu/noble main]
 libxau6 1:1.0.9-1build6 [Ubuntu/noble main]
 libxau6:i386 1:1.0.9-1build6 [Ubuntu/noble main]
@@ -3612,15 +3612,17 @@ media-player-info 24-3 [Ubuntu/noble main]
 media-types 10.1.0 [Ubuntu/noble main]
 mediainfo 24.01.1-1build2 [Ubuntu/noble universe]
 memtest86+ 7.00-1build1 [Ubuntu/noble main]
-mesa-common-dev 24.0.9-0ubuntu0.3 [Ubuntu/noble main]
+mesa-common-dev 24.2.8-1ubuntu1~24.04.1 [Ubuntu/noble main]
+mesa-libgallium 24.2.8-1ubuntu1~24.04.1 [Ubuntu/noble main]
+mesa-libgallium:i386 24.2.8-1ubuntu1~24.04.1 [Ubuntu/noble main]
 mesa-utils 9.0.0-2 [Ubuntu/noble universe]
 mesa-utils-bin 9.0.0-2 [Ubuntu/noble universe]
-mesa-va-drivers 24.0.9-0ubuntu0.3 [Ubuntu/noble universe]
-mesa-va-drivers:i386 24.0.9-0ubuntu0.3 [Ubuntu/noble universe]
-mesa-vdpau-drivers 24.0.9-0ubuntu0.3 [Ubuntu/noble main]
-mesa-vdpau-drivers:i386 24.0.9-0ubuntu0.3 [Ubuntu/noble main]
-mesa-vulkan-drivers 24.0.9-0ubuntu0.3 [Ubuntu/noble main]
-mesa-vulkan-drivers:i386 24.0.9-0ubuntu0.3 [Ubuntu/noble main]
+mesa-va-drivers 24.2.8-1ubuntu1~24.04.1 [Ubuntu/noble universe]
+mesa-va-drivers:i386 24.2.8-1ubuntu1~24.04.1 [Ubuntu/noble universe]
+mesa-vdpau-drivers 24.2.8-1ubuntu1~24.04.1 [Ubuntu/noble main]
+mesa-vdpau-drivers:i386 24.2.8-1ubuntu1~24.04.1 [Ubuntu/noble main]
+mesa-vulkan-drivers 24.2.8-1ubuntu1~24.04.1 [Ubuntu/noble main]
+mesa-vulkan-drivers:i386 24.2.8-1ubuntu1~24.04.1 [Ubuntu/noble main]
 meson 1.3.2-1ubuntu1 [Ubuntu/noble universe]
 metacity-common 1:3.52.0-1build1 [Ubuntu/noble universe]
 mkdocs 1.5.3+dfsg-1 [Ubuntu/noble universe]
@@ -3659,12 +3661,12 @@ mupdf-tools 1.23.10+ds1-1build3 [Ubuntu/noble universe]
 mutter 46.2-1ubuntu0.24.04.4 [Ubuntu/noble universe]
 mutter-common 46.2-1ubuntu0.24.04.4 [Ubuntu/noble main]
 mutter-common-bin 46.2-1ubuntu0.24.04.4 [Ubuntu/noble main]
-mysql-client-8.0 8.0.40-0ubuntu0.24.04.1 [Ubuntu/noble main]
-mysql-client-core-8.0 8.0.40-0ubuntu0.24.04.1 [Ubuntu/noble main]
+mysql-client-8.0 8.0.41-0ubuntu0.24.04.1 [Ubuntu/noble main]
+mysql-client-core-8.0 8.0.41-0ubuntu0.24.04.1 [Ubuntu/noble main]
 mysql-common 5.8+1.1.0build1 [Ubuntu/noble main]
-mysql-server 8.0.40-0ubuntu0.24.04.1 [Ubuntu/noble main]
-mysql-server-8.0 8.0.40-0ubuntu0.24.04.1 [Ubuntu/noble main]
-mysql-server-core-8.0 8.0.40-0ubuntu0.24.04.1 [Ubuntu/noble main]
+mysql-server 8.0.41-0ubuntu0.24.04.1 [Ubuntu/noble main]
+mysql-server-8.0 8.0.41-0ubuntu0.24.04.1 [Ubuntu/noble main]
+mysql-server-core-8.0 8.0.41-0ubuntu0.24.04.1 [Ubuntu/noble main]
 mythes-en-us 1:24.2.1-1 [Ubuntu/noble main]
 nala 0.15.1 [Ubuntu/noble universe]
 nano 7.2-2ubuntu0.1 [Ubuntu/noble main]
@@ -4343,7 +4345,7 @@ shared-mime-info 2.4-4 [Ubuntu/noble main]
 shellcheck 0.9.0-1 [Ubuntu/noble universe]
 shfmt 3.10.0-pacstall1 [local]
 shim-signed 1.58+15.8-0ubuntu1 [Ubuntu/noble main]
-signal-desktop 7.40.0 [. xenial/xenial main]
+signal-desktop 7.40.1 [. xenial/xenial main]
 signon-plugin-oauth2 0.25-2build3 [Ubuntu/noble universe]
 silversearcher-ag 2.2.0+git20200805-1.1 [Ubuntu/noble universe]
 slack-desktop 4.41.105 [slack/jessie main]
@@ -4391,13 +4393,13 @@ sysstat 12.6.1-2 [Ubuntu/noble main]
 system-config-printer 1.5.18-1ubuntu9 [Ubuntu/noble universe]
 system-config-printer-common 1.5.18-1ubuntu9 [Ubuntu/noble main]
 system-config-printer-udev 1.5.18-1ubuntu9 [Ubuntu/noble main]
-systemd 255.4-1ubuntu8.4 [local]
-systemd-dev 255.4-1ubuntu8.4 [local]
+systemd 255.4-1ubuntu8.5 [Ubuntu/noble main]
+systemd-dev 255.4-1ubuntu8.5 [Ubuntu/noble main]
 systemd-hwe-hwdb 255.1.4 [Ubuntu/noble main]
-systemd-oomd 255.4-1ubuntu8.4 [local]
-systemd-resolved 255.4-1ubuntu8.4 [local]
-systemd-sysv 255.4-1ubuntu8.4 [local]
-systemd-timesyncd 255.4-1ubuntu8.4 [local]
+systemd-oomd 255.4-1ubuntu8.5 [Ubuntu/noble main]
+systemd-resolved 255.4-1ubuntu8.5 [Ubuntu/noble main]
+systemd-sysv 255.4-1ubuntu8.5 [Ubuntu/noble main]
+systemd-timesyncd 255.4-1ubuntu8.5 [Ubuntu/noble main]
 sysvinit-utils 3.08-6ubuntu3 [Ubuntu/noble main]
 t1utils 1.41-4build3 [Ubuntu/noble main]
 tar 1.35+dfsg-3build1 [Ubuntu/noble main]
@@ -4479,7 +4481,7 @@ ubuntu-wallpapers 24.04.2 [Ubuntu/noble main]
 ubuntu-wallpapers-jammy 24.04.2 [Ubuntu/noble universe]
 ubuntu-wallpapers-noble 24.04.2 [Ubuntu/noble main]
 ucf 3.0043+nmu1 [Ubuntu/noble main]
-udev 255.4-1ubuntu8.4 [local]
+udev 255.4-1ubuntu8.5 [Ubuntu/noble main]
 udisks2 2.10.1-6ubuntu1 [Ubuntu/noble main]
 ueberzugpp 2.9.6 [local]
 ufw 0.36.2-6 [Ubuntu/noble main]
@@ -4679,8 +4681,8 @@ zathura-pdf-poppler 0.3.2-1build3 [Ubuntu/noble universe]
 zbar-tools 0.23.93-4build3 [Ubuntu/noble universe]
 zeitgeist-core 1.0.4-5ubuntu5 [Ubuntu/noble universe]
 zeitgeist-datahub 1.0.4-5ubuntu5 [Ubuntu/noble universe]
-zen-browser 1.7.2b-pacstall1 [local]
-zen-browser-specific-bin 1.7.2b-pacstall1 [local]
+zen-browser 1.7.4b-pacstall1 [local]
+zen-browser-specific-bin 1.7.4b-pacstall1 [local]
 zenity 4.0.1-1build3 [Ubuntu/noble main]
 zenity-common 4.0.1-1build3 [Ubuntu/noble main]
 zip 3.0-13ubuntu0.1 [Ubuntu/noble main]
@@ -4718,6 +4720,7 @@ zoom-deb
 ```txt {mise}
 bun                         1.1.33
 cabal                       3.14.1.1        ~/.config/mise/config.toml  latest
+cargo:coreutils             0.0.29          ~/.config/mise/config.toml  latest
 cargo:mdbook                0.4.40
 cargo:mdbook-alerts         0.6.8
 cargo:mdbook-embedify       0.2.11
@@ -4725,17 +4728,19 @@ cargo:mdbook-katex          0.9.0
 cargo:mdbook-repl           0.2.6
 cargo:presenterm            0.9.0           ~/.config/mise/config.toml  latest
 cargo:ripdrag               0.4.10          ~/.config/mise/config.toml  latest
+cargo:tex-fmt               0.5.2           ~/.config/mise/config.toml  latest
 cargo:typos-cli             1.29.4
-dprint                      0.48.0          ~/.config/mise/config.toml  latest
+cargo:typstyle              0.12.14
+dprint                      0.49.0          ~/.config/mise/config.toml  latest
 go                          1.23.5          ~/.config/mise/config.toml  latest
 jq                          1.7.1           ~/.config/mise/config.toml  latest
-julia                       1.11.2          ~/.config/mise/config.toml  latest
+julia                       1.11.3          ~/.config/mise/config.toml  latest
 lua                         5.4.7           ~/.config/mise/config.toml  latest
-node                        23.6.1          ~/.config/mise/config.toml  latest
-npm                         11.0.0          ~/.config/mise/config.toml  latest
+node                        23.7.0          ~/.config/mise/config.toml  latest
+npm                         11.1.0          ~/.config/mise/config.toml  latest
 npm:@graphlab-fr/cosma      2.5.4           ~/.config/mise/config.toml  latest
 npm:cosma                   0.0.1           ~/.config/mise/config.toml  latest
-npm:cwebp                   3.1.0           ~/.config/mise/config.toml  latest
+npm:cwebp                   3.2.0           ~/.config/mise/config.toml  latest
 npm:cwebp-bin               8.0.0
 npm:retypeapp               3.6.0
 npm:tldr                    3.4.0           ~/.config/mise/config.toml  latest
@@ -4746,13 +4751,14 @@ python                      3.10.16         ~/.config/mise/config.toml  sub-0.3:
 python                      3.11.11         ~/.config/mise/config.toml  sub-0.2:latest
 python                      3.12.8          ~/.config/mise/config.toml  sub-0.1:latest
 python                      3.13.1          ~/.config/mise/config.toml  latest
-tinytex                     2025.01         ~/.config/mise/config.toml  latest
+tinytex                     2025.02         ~/.config/mise/config.toml  latest
 tmux                        3.5a            ~/.config/mise/config.toml  latest
 typst                       0.12.0          ~/.config/mise/config.toml  latest
 ubi:Enter-tainer/typstyle   0.12.14         ~/.config/mise/config.toml  latest
 ubi:Eoin-McMahon/blindfold  1.0.6           ~/.config/mise/config.toml  latest
+ubi:MordechaiHadad/bob      4.0.2           ~/.config/mise/config.toml  latest
 ubi:Myriad-Dreamin/shiroa   0.2.0-nightly5  ~/.config/mise/config.toml  latest
-ubi:charmbracelet/sequin    0.3.0           ~/.config/mise/config.toml  latest
+ubi:charmbracelet/sequin    0.3.1           ~/.config/mise/config.toml  latest
 ubi:etcd-io/etcd            3.5.18          ~/.config/mise/config.toml  latest
 ubi:filosottile/age         1.2.1           ~/.config/mise/config.toml  latest
 ubi:goreleaser/goreleaser   2.6.1           ~/.config/mise/config.toml  latest
@@ -4763,7 +4769,6 @@ ubi:mgdm/htmlq              0.4.0           ~/.config/mise/config.toml  latest
 ubi:pvolok/mprocs           0.7.2           ~/.config/mise/config.toml  latest
 ubi:pythops/bluetui         0.6             ~/.config/mise/config.toml  latest
 ubi:sharkdp/bat             0.25.0          ~/.config/mise/config.toml  latest
-ubi:uutils/coreutils        0.0.28          ~/.config/mise/config.toml  latest
 usage                       2.0.3           ~/.config/mise/config.toml  latest
 watchexec                   2.2.1           ~/.config/mise/config.toml  latest
 zig                         0.13.0          ~/.config/mise/config.toml  latest
@@ -4853,7 +4858,7 @@ mprocs v0.7.2:
     mprocs
 nu v0.101.0:
     nu
-numbat-cli v1.15.0:
+numbat-cli v1.16.0:
     numbat
 pastel v0.10.0:
     pastel
@@ -4868,7 +4873,7 @@ riffdiff v3.3.8:
     riff
 ripgrep v14.1.1:
     rg
-samply v0.12.0:
+samply v0.13.1:
     samply
 sccache v0.9.1:
     sccache
@@ -4888,13 +4893,13 @@ stylua v2.0.2:
     stylua
 taplo-cli v0.9.3:
     taplo
-television v0.10.2:
+television v0.10.3:
     tv
 tex-fmt v0.5.2:
     tex-fmt
 topgrade v16.0.2:
     topgrade
-tree-sitter-cli v0.24.7:
+tree-sitter-cli v0.25.1:
     tree-sitter
 viu v1.5.1:
     viu
@@ -4991,7 +4996,6 @@ i biber.x86_64-linux: x86_64-linux files of biber
 i biblatex: Sophisticated Bibliographies in LaTeX
 i bibtex: Process bibliographies (bib files) for LaTeX or other formats
 i bibtex.x86_64-linux: x86_64-linux files of bibtex
-i bigfoot: Footnotes for critical editions
 i bigintcalc: Integer calculations on very large numbers
 i bitset: Handle bit-vector datatype
 i bookmark: A new bookmark (outline) organization for hyperref
@@ -4999,7 +5003,6 @@ i booktabs: Publication quality tables in LaTeX
 i breakurl: Line-breakable \url-like links in hyperref when compiling via dvips/ps2pdf
 i caption: Customising captions in floating environments
 i carlisle: David Carlisle's small packages
-i catchfile: Catch an external file into a macro
 i catoptions: Preserving and recalling standard catcodes
 i ccicons: LaTeX support for Creative Commons icons
 i changepage: Margin adjustment and detection of odd/even pages
@@ -5008,8 +5011,6 @@ i chemgreek: Upright Greek letters in chemistry
 i cite: Improved citation handling in LaTeX
 i cleveref: Intelligent cross-referencing
 i cm: Computer Modern fonts
-i cm-super: CM-Super family of fonts
-i cmap: Make PDF files searchable and copyable
 i collectbox: Collect and process macro arguments as boxes
 i colortbl: Add colour to LaTeX tables
 i comment: Selectively include/exclude portions of text
@@ -5019,7 +5020,6 @@ i crop: Support for cropmarks
 i csquotes: Context sensitive quotation facilities
 i ctablestack: Catcode table stable support
 i currfile: Provide file name and path of input files
-i datatool: Tools to load and manipulate data
 i datetime: Change format of \today with commands for current time
 i dblfloatfix: Fixes for twocolumn floats
 i dehyph: German hyphenation patterns for traditional orthography
@@ -5027,8 +5027,6 @@ i doclicense: Support for putting documents under a license
 i draftwatermark: Put a grey textual watermark on document pages
 i dvipdfmx: An extended version of dvipdfm
 i dvipdfmx.x86_64-linux: x86_64-linux files of dvipdfmx
-i dvipng: A fast DVI to PNG/GIF converter
-i dvipng.x86_64-linux: x86_64-linux files of dvipng
 i dvips: A DVI to PostScript driver
 i dvips.x86_64-linux: x86_64-linux files of dvips
 i ec: Computer modern fonts in T1 and TS1 encodings
@@ -5051,7 +5049,6 @@ i euenc: Unicode font encoding definitions for XeTeX
 i eurosym: Metafont and macros for Euro sign
 i everysel: Provides hooks into \selectfont
 i everyshi: Take action at every \shipout
-i exam: Package for typesetting exam scripts
 i expex: Linguistic examples and glosses, with reference capabilities
 i extractbb: A reimplementation of extractbb, written in Lua
 i extractbb.x86_64-linux: x86_64-linux files of extractbb
@@ -5073,12 +5070,9 @@ i forarray: Using array structures in LaTeX
 i fp: Fixed point arithmetic
 i fpl: SC and OsF fonts for URW Palladio L
 i framed: Framed or shaded regions that can break across pages
-i fvextra: Extensions and patches for fancyvrb
 i geometry: Flexible and complete interface to document dimensions
 i gettitlestring: Clean up title references
 i gincltex: Include TeX files as graphics (.tex support for \includegraphics)
-i glossaries: Create glossaries and lists of acronyms
-i glossaries.x86_64-linux: x86_64-linux files of glossaries
 i glyphlist: Adobe Glyph List and TeX extensions
 i graphics: The LaTeX standard graphics bundle
 i graphics-cfg: Sample configuration files for LaTeX color and graphics
@@ -5088,7 +5082,6 @@ i grffile: Extended file name support for graphics (legacy package)
 i hardwrap: Hard wrap text to a certain character length
 i helvetic: URW 'Base 35' font pack for LaTeX
 i hycolor: Implements colour for packages hyperref and bookmark
-i hypcap: Adjusting the anchors of captions
 i hyperref: Extensive support for hypertext in LaTeX
 i hyperxmp: Embed XMP metadata within a LaTeX document
 i hyperxmp.x86_64-linux: x86_64-linux files of hyperxmp
@@ -5122,10 +5115,7 @@ i latex-bin: LaTeX executables and man pages
 i latex-bin.x86_64-linux: x86_64-linux files of latex-bin
 i latex-fonts: A collection of fonts used in LaTeX distributions
 i latex-tools-dev: Development pre-release of the LaTeX tools bundle
-i latex2pydata: Write data to file in Python literal format
 i latexconfig: configuration files for LaTeX-related formats
-i latexdiff: Determine and mark up significant differences between LaTeX files
-i latexdiff.x86_64-linux: x86_64-linux files of latexdiff
 i latexindent: Indent a LaTeX document, highlighting the programming structure
 i latexindent.x86_64-linux: x86_64-linux files of latexindent
 i latexmk: Fully automated LaTeX document generation
@@ -5169,14 +5159,11 @@ i memoir: Typeset fiction, non-fiction and mathematical books
 i metafont: A system for specifying fonts
 i metafont.x86_64-linux: x86_64-linux files of metafont
 i metalogo: Extended TeX logo macros
-i mfirstuc: Uppercase the first letter of a word
 i mfware: Supporting tools for use with Metafont
 i mfware.x86_64-linux: x86_64-linux files of mfware
 i mhchem: Typeset chemical formulae/equations and H and P statements
 i microtype: Subliminal refinements towards typographical perfection
 i minifp: Fixed-point real computations to 8 decimals
-i minted: Highlighted source code for LaTeX
-i minted.x86_64-linux: x86_64-linux files of minted
 i mnras: Monthly Notices of the Royal Astronomical Society
 i modes: A collection of Metafont mode_def's
 i morefloats: Increase the number of simultaneous LaTeX floats
@@ -5189,10 +5176,8 @@ i ncntrsbk: URW 'Base 35' font pack for LaTeX
 i needspace: Insert pagebreak if not enough space
 i newfloat: Define new floating environments
 i newtx: Alternative uses of the TX fonts, with improved metrics
-i noto: Support for Noto fonts
 i ntgclass: "European" versions of standard classes
 i oberdiek: A bundle of packages submitted by Heiko Oberdiek
-i opensans: The Open Sans font family, and LaTeX support
 i palatino: URW 'Base 35' font pack for LaTeX
 i paralist: Enumerate and itemize within paragraphs
 i parskip: Layout with zero \parindent, non-zero \parskip
@@ -5206,13 +5191,10 @@ i pdftex: A TeX extension for direct creation of PDF
 i pdftex.x86_64-linux: x86_64-linux files of pdftex
 i pdftexcmds: LuaTeX support for pdfTeX utility functions
 i pgf: Create PostScript and PDF graphics in TeX
-i pgfopts: LaTeX package options with pgfkeys
 i picinpar: Insert pictures into paragraphs
-i picture: Dimens for picture macros
 i placeins: Control float placement
 i plain: The Plain TeX format
 i polyglossia: An alternative to babel for XeLaTeX and LuaLaTeX
-i poormanlog: Logarithms and powers with (almost) 9 digits
 i prelim2e: Allows the marking of preliminary versions of a document
 i preprint: A bundle of packages provided "as is"
 i preview: Extract bits of a LaTeX source for output
@@ -5233,7 +5215,6 @@ i seqsplit: Split long sequences of characters in a neutral way
 i setspace: Set space between lines
 i sidecap: Typeset captions sideways
 i sidenotes: Typeset notes containing rich content, in the margin
-i silence: Selective filtering of error messages and warnings
 i siunitx: A comprehensive (SI) units package
 i soul: Hyphenation for letterspacing, underlining, and more
 i srcltx: Jump between DVI and TeX files
@@ -5244,7 +5225,6 @@ i stringenc: Converting a string between different encodings
 i sttools: Various macros
 i subfig: Figures broken into subfigures
 i subfigure: Deprecated: Figures divided into subfigures
-i substr: Deal with substrings in strings
 i symbol: URW 'Base 35' font pack for LaTeX
 i tabto-ltx: "Tab" to a measured position in the line
 i tabu: Flexible LaTeX tabulars
@@ -5271,20 +5251,14 @@ i tikzfill: TikZ libraries for filling with images and patterns
 i times: URW 'Base 35' font pack for LaTeX
 i tipa: Fonts and macros for IPA phonetics characters
 i titlesec: Select alternative section titles
-i tocbibind: Add bibliography/index/contents to Table of Contents
-i tocloft: Control table of contents, figures, etc
 i tools: The LaTeX standard tools bundle
-i totalcount: Commands for typesetting total values of counters
 i totcount: Find the last value of a counter
 i totpages: Count pages in a document, and report last page number
-i tracklang: Language and dialect tracker
 i translator: Easy translation of strings in LaTeX
 i trimspaces: Trim spaces around an argument or within a macro
 i tufte-latex: Document classes inspired by the work of Edward Tufte
-i type1cm: Arbitrary size font selection in LaTeX
 i ucs: Extended UTF-8 input encoding support for LaTeX
 i ulem: Package for underlining
-i underscore: Control the behaviour of "_" in text
 i unicode-data: Unicode data and loaders for TeX
 i unicode-math: Unicode mathematics support for XeTeX and LuaTeX
 i uniquecounter: Provides unlimited unique counter
@@ -5299,14 +5273,11 @@ i vruler: Numbering text
 i wallpaper: Easy addition of wallpapers (background images) to LaTeX documents, including tiling
 i wrapfig: Produces figures which text can flow around
 i xargs: Define commands with many optional arguments
-i xcharter: Extension of Bitstream Charter fonts
 i xcolor: Driver-independent color extensions for LaTeX and pdfLaTeX
 i xetex: An extended variant of TeX for use with Unicode sources
 i xetex.x86_64-linux: x86_64-linux files of xetex
 i xetexconfig: crop.cfg for XeLaTeX
-i xfor: A reimplementation of the LaTeX for-loop macro
 i xifthen: Extended conditional commands
-i xint: Expandable operations on long numbers
 i xkeyval: Extension of the keyval package
 i xltxtra: "Extras" for LaTeX users of XeTeX
 i xpatch: Extending etoolbox patching commands
