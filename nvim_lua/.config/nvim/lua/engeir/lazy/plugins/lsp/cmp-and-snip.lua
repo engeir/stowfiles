@@ -37,10 +37,10 @@ return {
           ["<S-Tab>"] = { "select_prev", "fallback" },
           ["<Tab>"] = { "select_next", "fallback" },
           ["<CR>"] = { "fallback" },
-          ["<C-y>"] = { "accept", "fallback" },
+          ["<C-space>"] = { "accept", "fallback" },
           -- disable a keymap from the preset
           ["<C-e>"] = {},
-          ["<C-space>"] = {},
+          ["<C-y>"] = {},
         },
       },
       appearance = {
