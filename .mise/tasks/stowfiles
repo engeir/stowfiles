@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
-#MISE description="List and update all installed software."
-#USAGE flag "-u --update" help="Update the software before listing them"
+#MISE description="List, write to file and optionally update all installed software."
+#USAGE flag "-u --update" help="Update the software before listing and writing them"
 #USAGE flag "-f --fix" help="Print steps to fix APT error and exit"
 
 osOut="$(grep "^ID" /etc/os-release | awk -F "=" '{print $2}' | tr '[:lower:]' '[:upper:]')"
@@ -91,9 +91,6 @@ if [ "$usage_update" = "true" ]; then
     run_updates
 elif [ "$usage_fix" = "true" ]; then
     try_fix_ppa
-else
-    echo "$HELP_TEXT"
-    exit 1
 fi
 
 # Run MacOS updates
