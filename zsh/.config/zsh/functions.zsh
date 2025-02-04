@@ -50,10 +50,16 @@ mkcd() {
 }
 compdef _cd mkcd
 
+mktp() {
+    # make a random directory and cd to it
+    here="$(mktemp -d /tmp/tmp.XXXXXX)"
+    cd "$here" || exit 1
+}
+
 y() {
     local tmp="$(mktemp -t "yazi-cwd.XXXXXX")" cwd
     yazi "$@" --cwd-file="$tmp"
-    if cwd="$(command cat -- "$tmp")" && [ -n "$cwd" ] && [ "$cwd" != "$PWD" ]; then
+    if cwd="$(command cat -- "$tmp")" && [ "$cwd" != "" ] && [ "$cwd" != "$PWD" ]; then
         builtin cd -- "$cwd"
     fi
     rm -f -- "$tmp"
