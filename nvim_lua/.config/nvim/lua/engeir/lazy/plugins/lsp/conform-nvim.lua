@@ -7,7 +7,7 @@ return {
       "=",
       function()
         require("conform").format(
-          { timeout_ms = 500, async = false, lsp_fallback = true },
+          { timeout_ms = 1500, async = false, lsp_fallback = true },
           function(err)
             if not err then
               if vim.startswith(vim.api.nvim_get_mode().mode:lower(), "v") then
