@@ -9,7 +9,7 @@ return {
   --    `goolord/alpha-nvim          -> mini.starter`
   --    `nvim-lualine/lualine.nvim   -> echasnovski/mini.surround`
   --    `kylechui/nvim-surround      -> mini.surround`
-  --    `folke/flash.nvim            <- mini.jump`
+  --    `folke/flash.nvim            -> mini.jump`
 
   -- `mini.ai` -------------------------------------------------------------------------
   {
@@ -328,8 +328,7 @@ return {
   },
 
   -- `mini.jump` -----------------------------------------------------------------------
-  -- Alternative is folke/flash.nvim
-  -- require("mini.jump").setup({ delay = { highlight = 10 ^ 7 } })
+  { "echasnovski/mini.jump", version = false, opts = {} },
 
   -- `mini.operators` ------------------------------------------------------------------
   {
