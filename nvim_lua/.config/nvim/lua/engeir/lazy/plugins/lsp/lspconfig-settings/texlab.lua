@@ -11,9 +11,7 @@ local function buf_clean(bufnr)
   }
   if texlab_client then
     texlab_client.request("workspace/executeCommand", params, function(err, _)
-      if err then
-        error(tostring(err))
-      end
+      if err then error(tostring(err)) end
     end, bufnr)
   else
     print(
@@ -31,9 +29,7 @@ local function buf_show_dep_graph(bufnr)
   }
   if texlab_client then
     texlab_client.request("workspace/executeCommand", params, function(err, result)
-      if err then
-        error(tostring(err))
-      end
+      if err then error(tostring(err)) end
       print(result.status)
     end, bufnr)
   else
@@ -93,21 +89,15 @@ return {
   },
   commands = {
     TexlabClean = {
-      function()
-        buf_clean(0)
-      end,
+      function() buf_clean(0) end,
       description = "Clean the texlab artifacts",
     },
     TexlabShowDepGraph = {
-      function()
-        buf_show_dep_graph(0)
-      end,
+      function() buf_show_dep_graph(0) end,
       description = "Show the texlab dependency graph",
     },
     TexlabBuildToggle = {
-      function()
-        vim.g.texlab_auto_build = not vim.g.texlab_auto_build
-      end,
+      function() vim.g.texlab_auto_build = not vim.g.texlab_auto_build end,
       description = "Toggle the auto build feature for texlab",
     },
   },

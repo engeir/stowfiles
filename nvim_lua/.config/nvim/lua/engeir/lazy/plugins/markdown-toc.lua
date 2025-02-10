@@ -2,9 +2,7 @@ return {
   {
     "hedyhli/markdown-toc.nvim",
     init = function()
-      if vim.fn.has("nvim-0.9") == 1 then
-        vim.o.exrc = true
-      end
+      if vim.fn.has("nvim-0.9") == 1 then vim.o.exrc = true end
     end,
     enabled = true,
     ft = "markdown", -- Lazy load on markdown filetype

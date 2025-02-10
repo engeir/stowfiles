@@ -14,24 +14,19 @@ return {
       group = vim.api.nvim_create_augroup("kickstart-lsp-attach", { clear = true }),
       callback = function(event)
         local map = function(mode, keys, func, desc)
-          if desc then
-            desc = "LSP: " .. desc
-          end
+          if desc then desc = "LSP: " .. desc end
           vim.keymap.set(mode, keys, func, { buffer = event.buf, desc = desc })
         end
-        local nmap = function(keys, func, desc)
-          map("n", keys, func, desc)
-        end
-        local imap = function(keys, func, desc)
-          map("i", keys, func, desc)
-        end
-        local xmap = function(keys, func, desc)
-          map("x", keys, func, desc)
-        end
+        local nmap = function(keys, func, desc) map("n", keys, func, desc) end
+        local imap = function(keys, func, desc) map("i", keys, func, desc) end
+        local xmap = function(keys, func, desc) map("x", keys, func, desc) end
 
-        vim.keymap.set("n", "<leader>wh", function()
-          vim.diagnostic.enable(not vim.diagnostic.is_enabled())
-        end, { silent = true, noremap = true, desc = "LSP: Toggle virtual text" })
+        vim.keymap.set(
+          "n",
+          "<leader>wh",
+          function() vim.diagnostic.enable(not vim.diagnostic.is_enabled()) end,
+          { silent = true, noremap = true, desc = "LSP: Toggle virtual text" }
+        )
         nmap("gd", require("telescope.builtin").lsp_definitions, "Goto Definition")
         nmap("gD", vim.lsp.buf.declaration, "Goto Declaration")
         nmap("gr", require("telescope.builtin").lsp_references, "Goto References")
@@ -45,9 +40,11 @@ return {
           require("telescope.builtin").lsp_type_definitions,
           "Goto Type Definition (Hint)"
         )
-        nmap("gH", function()
-          vim.lsp.inlay_hint.enable(not vim.lsp.inlay_hint.is_enabled({}))
-        end, "Toggle inlay Hint")
+        nmap(
+          "gH",
+          function() vim.lsp.inlay_hint.enable(not vim.lsp.inlay_hint.is_enabled({})) end,
+          "Toggle inlay Hint"
+        )
         nmap(
           "<leader>ds",
           require("telescope.builtin").lsp_document_symbols,
@@ -78,9 +75,11 @@ return {
           "Workspace Remove Folder"
         )
         nmap("<leader>ws", vim.lsp.buf.workspace_symbol, "Workspace Symbol")
-        nmap("<leader>wl", function()
-          print(vim.inspect(vim.lsp.buf.list_workspace_folders()))
-        end, "Workspace List Folders")
+        nmap(
+          "<leader>wl",
+          function() print(vim.inspect(vim.lsp.buf.list_workspace_folders())) end,
+          "Workspace List Folders"
+        )
         -- Diagnostic
         nmap("<leader>dl", vim.diagnostic.setloclist, "Diagnostic Setloclist")
 

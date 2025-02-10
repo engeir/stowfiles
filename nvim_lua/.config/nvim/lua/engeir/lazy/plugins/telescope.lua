@@ -19,21 +19,25 @@ return {
       local Job = require("plenary.job")
       local new_maker = function(filepath, bufnr, opts)
         filepath = vim.fn.expand(filepath)
-        Job:new({
-          command = "file",
-          args = { "--mime-type", "-b", filepath },
-          on_exit = function(j)
-            local mime_type = vim.split(j:result()[1], "/")[1]
-            if mime_type == "text" then
-              previewers.buffer_previewer_maker(filepath, bufnr, opts)
-            else
-              -- maybe we want to write something to the buffer here
-              vim.schedule(function()
-                vim.api.nvim_buf_set_lines(bufnr, 0, -1, false, { "BINARY" })
-              end)
-            end
-          end,
-        }):sync()
+        Job
+          :new({
+            command = "file",
+            args = { "--mime-type", "-b", filepath },
+            on_exit = function(j)
+              local mime_type = vim.split(j:result()[1], "/")[1]
+              if mime_type == "text" then
+                previewers.buffer_previewer_maker(filepath, bufnr, opts)
+              else
+                -- maybe we want to write something to the buffer here
+                vim.schedule(
+                  function()
+                    vim.api.nvim_buf_set_lines(bufnr, 0, -1, false, { "BINARY" })
+                  end
+                )
+              end
+            end,
+          })
+          :sync()
       end
 
       local actions = require("telescope.actions")
@@ -50,9 +54,7 @@ return {
         if not vim.tbl_isempty(multi) then
           require("telescope.actions").close(prompt_bufnr)
           for _, j in pairs(multi) do
-            if j.path ~= nil then
-              vim.cmd(string.format("%s %s", "edit", j.path))
-            end
+            if j.path ~= nil then vim.cmd(string.format("%s %s", "edit", j.path)) end
           end
         else
           require("telescope.actions").select_default(prompt_bufnr)
@@ -84,12 +86,8 @@ return {
             i = {
               ["<esc>"] = actions.close,
               ["<cr>"] = select_one_or_multi,
-              ["<C-j>"] = function(bufnr)
-                slow_scroll(bufnr, 1)
-              end,
-              ["<C-k>"] = function(bufnr)
-                slow_scroll(bufnr, -1)
-              end,
+              ["<C-j>"] = function(bufnr) slow_scroll(bufnr, 1) end,
+              ["<C-k>"] = function(bufnr) slow_scroll(bufnr, -1) end,
               ["<C-f>"] = actions.results_scrolling_up,
               ["<C-b>"] = actions.results_scrolling_down,
               ["<C-q>"] = actions.send_selected_to_qflist + actions.open_qflist,
@@ -163,16 +161,12 @@ return {
     keys = {
       {
         "<leader>fc",
-        function()
-          require("telescope.builtin").commands()
-        end,
+        function() require("telescope.builtin").commands() end,
         desc = "Find Commands",
       },
       {
         "<leader>fd",
-        function()
-          require("telescope.builtin").diagnostics()
-        end,
+        function() require("telescope.builtin").diagnostics() end,
         desc = "Find Diagnostics",
       },
       -- {
@@ -184,58 +178,42 @@ return {
       -- },
       {
         "<leader>fh",
-        function()
-          require("telescope.builtin").help_tags()
-        end,
+        function() require("telescope.builtin").help_tags() end,
         desc = "Find Help tags",
       },
       {
         "<leader>fk",
-        function()
-          require("telescope.builtin").keymaps()
-        end,
+        function() require("telescope.builtin").keymaps() end,
         desc = "Find Keymaps",
       },
       {
         "<leader>fl",
-        function()
-          require("telescope.builtin").current_buffer_fuzzy_find()
-        end,
+        function() require("telescope.builtin").current_buffer_fuzzy_find() end,
         desc = "Find Lines",
       },
       {
         "<leader>fo",
-        function()
-          require("telescope.builtin").git_commits()
-        end,
+        function() require("telescope.builtin").git_commits() end,
         desc = "Find Commits",
       },
       {
         "<leader>fp",
-        function()
-          require("telescope.builtin").spell_suggest()
-        end,
+        function() require("telescope.builtin").spell_suggest() end,
         desc = "Find Spell suggestions",
       },
       {
         "<leader>fr",
-        function()
-          require("telescope.builtin").grep_string({ search = "" })
-        end,
+        function() require("telescope.builtin").grep_string({ search = "" }) end,
         desc = "Find Ripgrep (find string)",
       },
       {
         "<leader>fs",
-        function()
-          require("telescope.builtin").git_files({ cwd = "~/stowfiles/" })
-        end,
+        function() require("telescope.builtin").git_files({ cwd = "~/stowfiles/" }) end,
         desc = "Find Stowfiles",
       },
       {
         "<leader>fw",
-        function()
-          require("telescope.builtin").grep_string()
-        end,
+        function() require("telescope.builtin").grep_string() end,
         desc = "Find Word under cursor",
       },
     },
@@ -244,9 +222,7 @@ return {
     "danielfalk/smart-open.nvim",
     event = { "BufReadPre", "BufNewFile" },
     branch = "0.2.x",
-    config = function()
-      require("telescope").load_extension("smart_open")
-    end,
+    config = function() require("telescope").load_extension("smart_open") end,
     dependencies = {
       "kkharji/sqlite.lua",
       -- Only required if using match_algorithm fzf
@@ -257,9 +233,7 @@ return {
     keys = {
       {
         "<leader>fg",
-        function()
-          require("telescope").extensions.smart_open.smart_open()
-        end,
+        function() require("telescope").extensions.smart_open.smart_open() end,
         desc = "Find Files",
         noremap = true,
         silent = true,
@@ -270,9 +244,7 @@ return {
     "nvim-telescope/telescope-bibtex.nvim",
     event = { "BufReadPre", "BufNewFile" },
     enabled = false, -- I'm just using either vimtex or texlab to complete this now.
-    config = function()
-      require("telescope").load_extension("bibtex")
-    end,
+    config = function() require("telescope").load_extension("bibtex") end,
     ft = "tex",
     keys = {
       { "<leader>fb", "<cmd>Telescope bibtex<cr>", desc = "Find Bibtex" },
@@ -281,8 +253,6 @@ return {
   {
     "nvim-telescope/telescope-ui-select.nvim",
     event = "InsertEnter",
-    config = function()
-      require("telescope").load_extension("ui-select")
-    end,
+    config = function() require("telescope").load_extension("ui-select") end,
   },
 }

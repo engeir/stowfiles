@@ -4,7 +4,5 @@ return {
   keys = {
     { "cra", "<cmd>AngryReviewer<CR>", desc = "AngryReviewer" },
   },
-  init = function()
-    vim.g.AngryReviewerEnglish = "british"
-  end,
+  init = function() vim.g.AngryReviewerEnglish = "british" end,
 }

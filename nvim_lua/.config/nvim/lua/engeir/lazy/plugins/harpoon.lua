@@ -28,9 +28,7 @@ return {
         local HarpoonList = harpoon:list()
         function HarpoonList:next()
           self._index = self._index + 1
-          if self._index > #self.items then
-            self._index = 1
-          end
+          if self._index > #self.items then self._index = 1 end
 
           self:select(self._index)
         end
@@ -45,9 +43,7 @@ return {
         local HarpoonList = harpoon:list()
         function HarpoonList:prev()
           self._index = self._index - 1
-          if self._index < 1 then
-            self._index = #self.items
-          end
+          if self._index < 1 then self._index = #self.items end
 
           self:select(self._index)
         end

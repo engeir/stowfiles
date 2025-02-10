@@ -119,26 +119,23 @@ return {
         },
       })
       vim.keymap.set({ "i", "s" }, "<c-k>", function()
-        if ls.jumpable(1) then
-          ls.jump(1)
-        end
+        if ls.jumpable(1) then ls.jump(1) end
       end, { silent = true })
       -- Jump backward <c-j> (default is just to create a newline)
       vim.keymap.set({ "i", "s" }, "<c-j>", function()
-        if ls.jumpable(-1) then
-          ls.jump(-1)
-        end
+        if ls.jumpable(-1) then ls.jump(-1) end
       end, { silent = true })
       -- <c-l> is for selecting within a list of options.
       -- Useful for choice nodes (introduced in the second luasnip tutorial by teeeej)
       vim.keymap.set("i", "<c-l>", function()
-        if ls.choice_active() then
-          ls.change_choice(1)
-        end
+        if ls.choice_active() then ls.change_choice(1) end
       end)
-      vim.keymap.set("n", "<leader><leader>s", function()
-        require("luasnip.loaders").edit_snippet_files()
-      end, { desc = "LuaSnip: Source Snippets File" })
+      vim.keymap.set(
+        "n",
+        "<leader><leader>s",
+        function() require("luasnip.loaders").edit_snippet_files() end,
+        { desc = "LuaSnip: Source Snippets File" }
+      )
 
       require("luasnip.loaders.from_vscode").lazy_load()
       require("luasnip.loaders.from_vscode").lazy_load({

@@ -21,22 +21,14 @@ return {
 
         -- Navigation
         map("n", "]g", function()
-          if vim.wo.diff then
-            return "]g"
-          end
-          vim.schedule(function()
-            gs.next_hunk()
-          end)
+          if vim.wo.diff then return "]g" end
+          vim.schedule(function() gs.next_hunk() end)
           return "<Ignore>"
         end, { expr = true, desc = "Gitsigns: Goto Next Hunk" })
 
         map("n", "[g", function()
-          if vim.wo.diff then
-            return "[g"
-          end
-          vim.schedule(function()
-            gs.prev_hunk()
-          end)
+          if vim.wo.diff then return "[g" end
+          vim.schedule(function() gs.prev_hunk() end)
           return "<Ignore>"
         end, { expr = true, desc = "Gitsigns: Goto Prev Hunk" })
 
@@ -72,9 +64,12 @@ return {
           { desc = "Gitsigns: Reset Buffer Hunks" }
         )
         map("n", "<leader>gp", gs.preview_hunk, { desc = "Gitsigns: Preview Hunks" })
-        map("n", "<leader>gb", function()
-          gs.blame_line({ full = true })
-        end, { desc = "Gitsigns: Show Hover Blame Line" })
+        map(
+          "n",
+          "<leader>gb",
+          function() gs.blame_line({ full = true }) end,
+          { desc = "Gitsigns: Show Hover Blame Line" }
+        )
         map(
           "n",
           "<leader>gB",
@@ -82,9 +77,12 @@ return {
           { desc = "Gitsigns: Toggle Inline Blame" }
         )
         map("n", "<leader>gv", gs.diffthis, { desc = "Gitsigns: Diff View" })
-        map("n", "<leader>gV", function()
-          gs.diffthis("~")
-        end, { desc = "Gitsigns: Diff View from HOME" })
+        map(
+          "n",
+          "<leader>gV",
+          function() gs.diffthis("~") end,
+          { desc = "Gitsigns: Diff View from HOME" }
+        )
         map("n", "<leader>gd", gs.toggle_deleted, { desc = "Gitsigns: Toggle Deleted" })
 
         -- Text object
@@ -132,16 +130,12 @@ return {
     keys = {
       {
         "<leader>gg",
-        function()
-          require("neogit").open()
-        end,
+        function() require("neogit").open() end,
         desc = "Neogit Open",
       },
       {
         "<leader>gc",
-        function()
-          require("neogit").open({ "commit" })
-        end,
+        function() require("neogit").open({ "commit" }) end,
         desc = "Neogit Commit",
       },
     },
@@ -159,9 +153,7 @@ return {
         fields = { "hash", "timestamp", "author", "branch_name", "tag" },
       },
       hooks = {
-        on_select_commit = function(commit)
-          print("selected commit:", commit.hash)
-        end,
+        on_select_commit = function(commit) print("selected commit:", commit.hash) end,
         on_select_range_commit = function(from, to)
           print("selected range:", from.hash, to.hash)
         end,
@@ -170,9 +162,7 @@ return {
     keys = {
       {
         "<leader>gl",
-        function()
-          require("gitgraph").draw({}, { all = true, max_count = 5000 })
-        end,
+        function() require("gitgraph").draw({}, { all = true, max_count = 5000 }) end,
         desc = "GitGraph - Draw",
       },
     },
@@ -183,15 +173,11 @@ return {
     keys = {
       {
         "<leader>gy",
-        function()
-          require("gitlinker").get_buf_range_url("n")
-        end,
+        function() require("gitlinker").get_buf_range_url("n") end,
         desc = "Gitlinker Yank URL",
       },
     },
-    config = function()
-      require("gitlinker").setup()
-    end,
+    config = function() require("gitlinker").setup() end,
   }, -- Quickly get a permalink to lines of code
   -- My plugins
   {

@@ -38,9 +38,7 @@ return {
       return { R, G, B, H, S, L, C, M, Y, K }
     end
 
-    function RgbHslCmykInput.to_rgb(value)
-      return { value[1], value[2], value[3] }
-    end
+    function RgbHslCmykInput.to_rgb(value) return { value[1], value[2], value[3] } end
 
     function RgbHslCmykInput:_set_rgb(RGB)
       self.value[1] = RGB[1]

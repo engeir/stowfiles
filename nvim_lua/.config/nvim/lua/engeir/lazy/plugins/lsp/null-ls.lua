@@ -4,9 +4,7 @@ return {
   enabled = false,
   config = function()
     local ok, null_ls = pcall(require, "null-ls")
-    if not ok then
-      return
-    end
+    if not ok then return end
 
     -- Nice:
     -- https://github.com/jose-elias-alvarez/null-ls.nvim#parsing-cli-program-output
@@ -153,9 +151,7 @@ return {
     -- https://github.com/jose-elias-alvarez/null-ls.nvim/issues/1259
     -- Use internal formatting for bindings like gq.
     vim.api.nvim_create_autocmd("LspAttach", {
-      callback = function(args)
-        vim.bo[args.buf].formatexpr = nil
-      end,
+      callback = function(args) vim.bo[args.buf].formatexpr = nil end,
     })
   end,
 }

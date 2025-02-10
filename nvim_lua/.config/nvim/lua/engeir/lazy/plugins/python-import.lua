@@ -4,9 +4,7 @@ return {
     keys = {
       {
         "<M-CR>",
-        function()
-          require("python_import.api").add_import_current_word_and_notify()
-        end,
+        function() require("python_import.api").add_import_current_word_and_notify() end,
         mode = { "i", "n" },
         silent = true,
         desc = "Add python import",
@@ -44,9 +42,7 @@ return {
       },
       {
         "<space>wt",
-        function()
-          require("python_import.api").add_rich_traceback()
-        end,
+        function() require("python_import.api").add_rich_traceback() end,
         silent = true,
         desc = "Add rich traceback",
         ft = "python",

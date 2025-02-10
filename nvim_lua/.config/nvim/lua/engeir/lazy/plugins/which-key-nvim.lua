@@ -9,23 +9,17 @@ return {
   keys = {
     {
       "<leader>?",
-      function()
-        require("which-key").show({ global = false })
-      end,
+      function() require("which-key").show({ global = false }) end,
       desc = "Buffer Local Keymaps (which-key)",
     },
     {
       "]<space>",
-      function()
-        require("which-key").show({ keys = "]", loop = true })
-      end,
+      function() require("which-key").show({ keys = "]", loop = true }) end,
       desc = "Hydra Mode (which-key)",
     },
     {
       "<c-w><space>",
-      function()
-        require("which-key").show({ keys = "<c-w>", loop = true })
-      end,
+      function() require("which-key").show({ keys = "<c-w>", loop = true }) end,
       desc = "Window Hydra Mode (which-key)",
     },
   },

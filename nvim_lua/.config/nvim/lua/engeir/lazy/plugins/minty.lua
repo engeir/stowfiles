@@ -5,15 +5,11 @@ return {
   keys = {
     {
       "<leader>uch",
-      function()
-        require("minty.huefy").open()
-      end,
+      function() require("minty.huefy").open() end,
     },
     {
       "<leader>ucs",
-      function()
-        require("minty.shades").open()
-      end,
+      function() require("minty.shades").open() end,
     },
   },
 }

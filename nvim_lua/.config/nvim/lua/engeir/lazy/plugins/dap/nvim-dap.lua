@@ -23,9 +23,7 @@ return {
     keys = {
       {
         "<leader>dpr",
-        function()
-          require("dap-python").test_method()
-        end,
+        function() require("dap-python").test_method() end,
       },
     },
     config = function()
@@ -43,15 +41,9 @@ return {
     config = function()
       local dap, dapui = require("dap"), require("dapui")
       dapui.setup()
-      dap.listeners.after.event_initialized["dapui_config"] = function()
-        dapui.open()
-      end
-      dap.listeners.before.event_terminated["dapui_config"] = function()
-        dapui.close()
-      end
-      dap.listeners.before.event_exited["dapui_config"] = function()
-        dapui.close()
-      end
+      dap.listeners.after.event_initialized["dapui_config"] = function() dapui.open() end
+      dap.listeners.before.event_terminated["dapui_config"] = function() dapui.close() end
+      dap.listeners.before.event_exited["dapui_config"] = function() dapui.close() end
     end,
   },
   {

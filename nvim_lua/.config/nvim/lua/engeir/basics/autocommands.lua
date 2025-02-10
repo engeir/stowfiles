@@ -23,9 +23,7 @@ vim.api.nvim_create_autocmd({ "FocusLost" }, {
 vim.api.nvim_create_autocmd({ "BufWritePost" }, {
   pattern = { "*.tex" },
   callback = function()
-    if vim.g.texlab_auto_build then
-      vim.cmd("silent! TexlabBuild")
-    end
+    if vim.g.texlab_auto_build then vim.cmd("silent! TexlabBuild") end
   end,
 })
 
@@ -73,16 +71,12 @@ vim.cmd(
 
 -- Fixes Autocomment
 vim.api.nvim_create_autocmd({ "BufWinEnter" }, {
-  callback = function()
-    vim.cmd("set formatoptions-=cro")
-  end,
+  callback = function() vim.cmd("set formatoptions-=cro") end,
 })
 
 -- Highlight Yanked Text
 vim.api.nvim_create_autocmd({ "TextYankPost" }, {
-  callback = function()
-    vim.highlight.on_yank({ higroup = "Visual", timeout = 200 })
-  end,
+  callback = function() vim.highlight.on_yank({ higroup = "Visual", timeout = 200 }) end,
 })
 
 -- Auto turn-off the search highlight
@@ -90,9 +84,7 @@ vim.api.nvim_create_autocmd("CursorMoved", {
   group = vim.api.nvim_create_augroup("auto-hlsearch", { clear = true }),
   callback = function()
     if vim.v.hlsearch == 1 and vim.fn.searchcount().exact_match == 0 then
-      vim.schedule(function()
-        vim.cmd.nohlsearch()
-      end)
+      vim.schedule(function() vim.cmd.nohlsearch() end)
     end
   end,
 })
@@ -122,9 +114,7 @@ local intercept_file_open = true
 vim.api.nvim_create_user_command("InterceptToggle", function()
   intercept_file_open = not intercept_file_open
   local intercept_state = "`Enabled`"
-  if not intercept_file_open then
-    intercept_state = "`Disabled`"
-  end
+  if not intercept_file_open then intercept_state = "`Disabled`" end
   vim.notify("Intercept file open set to " .. intercept_state, vim.log.levels.INFO, {
     title = "Intercept File Open",
     ---@param win integer The window handle

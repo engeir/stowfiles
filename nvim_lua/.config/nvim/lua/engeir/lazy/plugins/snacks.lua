@@ -2,9 +2,7 @@
 local function term_nav(dir)
   return function(self)
     return self:is_floating() and "<c-" .. dir .. ">"
-      or vim.schedule(function()
-        vim.cmd.wincmd(dir)
-      end)
+      or vim.schedule(function() vim.cmd.wincmd(dir) end)
   end
 end
 return {
@@ -17,6 +15,14 @@ return {
     bigfile = { enabled = true },
     dim = { animate = { enabled = false } },
     notifier = { enabled = false },
+    picker = {
+      sources = {
+        explorer = {
+          hidden = true,
+          layout = { layout = { position = "right", width = 0.3 } },
+        },
+      },
+    },
     quickfile = { enabled = true },
     scope = { enabled = true },
     statuscolumn = { enabled = true },
@@ -26,39 +32,26 @@ return {
     words = { enabled = true },
   },
   keys = {
-    {
-      "crf",
-      function()
-        Snacks.rename.rename_file()
-      end,
-      desc = "Rename File",
-    },
+    { "crf", function() Snacks.rename.rename_file() end, desc = "Rename File" },
     {
       "cps",
-      function()
-        Snacks.profiler.scratch()
-      end,
+      function() Snacks.profiler.scratch() end,
       desc = "Profiler Scratch Bufer",
     },
     {
       "<leader>wts",
-      function()
-        Snacks.scratch.select()
-      end,
+      function() Snacks.scratch.select() end,
       desc = "Select Scratch Buffer",
     },
+    { "<leader>pe", function() Snacks.explorer() end, desc = "File Explorer" },
   },
   init = function()
     vim.api.nvim_create_autocmd("User", {
       pattern = "VeryLazy",
       callback = function()
         -- Setup some globals for debugging (lazy-loaded)
-        _G.dd = function(...)
-          Snacks.debug.inspect(...)
-        end
-        _G.bt = function()
-          Snacks.debug.backtrace()
-        end
+        _G.dd = function(...) Snacks.debug.inspect(...) end
+        _G.bt = function() Snacks.debug.backtrace() end
         vim.print = _G.dd -- Override print to use snacks for `:=` command
 
         -- Create some toggle mappings

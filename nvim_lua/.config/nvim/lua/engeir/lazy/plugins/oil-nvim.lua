@@ -18,9 +18,7 @@ return {
   keys = {
     {
       "<leader>po",
-      function()
-        require("oil").open()
-      end,
+      function() require("oil").open() end,
       desc = "[P]ath explorer with [O]il",
     },
   },
@@ -30,14 +28,10 @@ return {
       -- Show files and directories that start with "."
       show_hidden = true,
       -- This function defines what is considered a "hidden" file
-      is_hidden_file = function(name, _)
-        return vim.startswith(name, ".")
-      end,
+      is_hidden_file = function(name, _) return vim.startswith(name, ".") end,
       -- This function defines what will never be shown, even when `show_hidden` is set
       is_always_hidden = function(name, _)
-        if vim.startswith(name, "..") or vim.endswith(name, ".pyi") then
-          return true
-        end
+        if vim.startswith(name, "..") or vim.endswith(name, ".pyi") then return true end
       end,
     }
     o.float = {

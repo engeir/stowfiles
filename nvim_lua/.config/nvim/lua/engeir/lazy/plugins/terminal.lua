@@ -17,9 +17,7 @@ local keymap = vim.keymap.set
 return {
   {
     "voldikss/vim-floaterm",
-    init = function()
-      vim.g.floaterm_width = 0.45
-    end,
+    init = function() vim.g.floaterm_width = 0.45 end,
     cmd = { "FloatermNew" },
     keys = {
       {

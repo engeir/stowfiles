@@ -1,9 +1,7 @@
 -- From
 -- https://github.com/tjdevries/config_manager/blob/master/xdg_config/nvim/after/plugin/cmp_gh_source.lua
 local ok, Job = pcall(require, "plenary.job")
-if not ok then
-  return
-end
+if not ok then return end
 
 local source = {}
 
@@ -61,12 +59,8 @@ source.complete = function(self, _, callback)
   end
 end
 
-source.get_trigger_characters = function()
-  return { "#" }
-end
+source.get_trigger_characters = function() return { "#" } end
 
-source.is_available = function()
-  return vim.bo.filetype == "gitcommit"
-end
+source.is_available = function() return vim.bo.filetype == "gitcommit" end
 
 require("cmp").register_source("gh_issues", source.new())

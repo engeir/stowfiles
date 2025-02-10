@@ -11,9 +11,7 @@ return {
     },
     {
       "junegunn/fzf",
-      build = function()
-        vim.fn["fzf#install"]()
-      end,
+      build = function() vim.fn["fzf#install"]() end,
     },
   },
   cmd = { "FzfxGBlame", "FzfxGCommits" },
@@ -21,7 +19,5 @@ return {
   -- specify version to avoid break changes
   version = "v5.*",
 
-  config = function()
-    require("fzfx").setup()
-  end,
+  config = function() require("fzfx").setup() end,
 }

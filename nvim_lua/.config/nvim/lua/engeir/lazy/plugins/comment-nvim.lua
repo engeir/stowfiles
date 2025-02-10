@@ -14,9 +14,7 @@ return {
   enabled = version,
   config = function()
     require("Comment").setup({
-      pre_hook = function()
-        return vim.bo.commentstring
-      end,
+      pre_hook = function() return vim.bo.commentstring end,
     })
 
     local ft = require("Comment.ft")

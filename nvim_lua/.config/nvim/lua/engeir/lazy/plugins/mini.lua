@@ -135,9 +135,7 @@ return {
     keys = {
       {
         "<leader>bd",
-        function()
-          require("mini.bufremove").delete()
-        end,
+        function() require("mini.bufremove").delete() end,
         desc = "Buffer Delete",
       },
     },
@@ -239,9 +237,7 @@ return {
       local function set_comment(pattern, c_string)
         vim.api.nvim_create_autocmd("FileType", {
           pattern = pattern,
-          callback = function()
-            vim.opt_local.commentstring = c_string
-          end,
+          callback = function() vim.opt_local.commentstring = c_string end,
         })
       end
 
@@ -281,9 +277,7 @@ return {
     keys = {
       {
         "-",
-        function()
-          require("mini.files").open(vim.api.nvim_buf_get_name(0))
-        end,
+        function() require("mini.files").open(vim.api.nvim_buf_get_name(0)) end,
         desc = "[P]ath explorer with [M]iniFiles",
       },
     },
@@ -328,9 +322,7 @@ return {
           "toggleterm",
           "lazyterm",
         },
-        callback = function()
-          vim.b.miniindentscope_disable = true
-        end,
+        callback = function() vim.b.miniindentscope_disable = true end,
       })
     end,
   },
@@ -405,9 +397,7 @@ return {
         return mode_info.short, mode_info.hl
       end
       ---@diagnostic ldisable-next-line: aduplicate-set-field
-      statuslne.section_location = function()
-        return "%2l:%-2v %P"
-      end
+      statuslne.section_location = function() return "%2l:%-2v %P" end
     end,
   },
 
@@ -432,9 +422,7 @@ return {
         -- return fortune
         local handle = nil
         -- local handle = io.popen("nvim --version")
-        if handle == nil then
-          return "Nvim Config by @engeir"
-        end
+        if handle == nil then return "Nvim Config by @engeir" end
         local result = "Config by @engeir — "
           .. string.match(handle:read("*a"), "NVIM v[^\n]*")
         handle:close()
@@ -531,9 +519,7 @@ return {
   {
     "echasnovski/mini.trailspace",
     enabled = false,
-    init = function()
-      require("mini.trailspace").setup()
-    end,
+    init = function() require("mini.trailspace").setup() end,
     keys = {
       {
         "<leader>mt",

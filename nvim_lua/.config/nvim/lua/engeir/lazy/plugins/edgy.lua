@@ -13,9 +13,7 @@ return {
         ft = "help",
         size = { height = 30 },
         -- only show help buffers
-        filter = function(buf)
-          return vim.bo[buf].buftype == "help"
-        end,
+        filter = function(buf) return vim.bo[buf].buftype == "help" end,
       },
       { ft = "spectre_panel", size = { height = 0.4 } },
     },

@@ -104,9 +104,7 @@ return {
           -- When cwd is not found, don't run the formatter (default false)
           require_cwd = false,
           -- When returns false, the formatter will not be used
-          condition = function(ctx)
-            return vim.fs.basename(ctx.filename) ~= "README.md"
-          end,
+          condition = function(ctx) return vim.fs.basename(ctx.filename) ~= "README.md" end,
           -- Exit codes that indicate success (default {0})
           exit_codes = { 0 },
         },
@@ -144,12 +142,16 @@ return {
     })
 
     -- Set up a custom function that takes the timeout as an argument
-    vim.api.nvim_create_user_command("Format", function(opts)
-      require("conform").format({
-        timeout_ms = opts.fargs[1] or 1500,
-        async = false,
-        lsp_fallback = true,
-      })
-    end, { desc = "Format buffer", nargs = "?" })
+    vim.api.nvim_create_user_command(
+      "Format",
+      function(opts)
+        require("conform").format({
+          timeout_ms = opts.fargs[1] or 1500,
+          async = false,
+          lsp_fallback = true,
+        })
+      end,
+      { desc = "Format buffer", nargs = "?" }
+    )
   end,
 }

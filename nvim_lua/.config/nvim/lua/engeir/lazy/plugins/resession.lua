@@ -3,23 +3,17 @@ return {
   keys = {
     {
       "<leader>sw",
-      function()
-        require("resession").save()
-      end,
+      function() require("resession").save() end,
       desc = "Session: Write",
     },
     {
       "<leader>sr",
-      function()
-        require("resession").load()
-      end,
+      function() require("resession").load() end,
       desc = "Session: Read",
     },
     {
       "<leader>sd",
-      function()
-        require("resession").delete()
-      end,
+      function() require("resession").delete() end,
       desc = "Session: Delete",
     },
   },
