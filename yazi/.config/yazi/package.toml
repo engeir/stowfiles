@@ -1,11 +1,22 @@
-[plugin]
-deps = [
-  { use = "yazi-rs/plugins:smart-enter", rev = "ec97f88" },
-  { use = "yazi-rs/plugins:max-preview", rev = "ec97f88" },
-  { use = "yazi-rs/plugins:chmod", rev = "ec97f88" },
-  # { use = "yazi-rs/plugins:git", rev = "ec97f88" },
-  { use = "yazi-rs/plugins:smart-filter", rev = "ec97f88" },
-]
+[[plugin.deps]]
+use = "yazi-rs/plugins:smart-enter"
+rev = "8945e54"
+hash = "aef2b1a805b80cce573bb766f1459d88"
+
+[[plugin.deps]]
+use = "yazi-rs/plugins:max-preview"
+rev = "8945e54"
+hash = "15b2ff7f6563c14d5b2e93b3e9da35de"
+
+[[plugin.deps]]
+use = "yazi-rs/plugins:chmod"
+rev = "8945e54"
+hash = "f28138c2e11e87962b66d583fef724c3"
+
+[[plugin.deps]]
+use = "yazi-rs/plugins:smart-filter"
+rev = "8945e54"
+hash = "b482f4f2d3c4e0aa3f8db89a95699439"
 
 [flavor]
 deps = []

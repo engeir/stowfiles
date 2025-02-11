@@ -97,7 +97,7 @@ bolt 0.9.7-1 [Ubuntu/noble main]
 borgbackup 1.2.8-1 [Ubuntu/noble universe]
 boxes 2.2.1-1 [Ubuntu/noble universe]
 bpfcc-tools 0.29.1+ds-1ubuntu7 [Ubuntu/noble main]
-bpftrace 0.20.2-1ubuntu4.2 [Ubuntu/noble main]
+bpftrace 0.20.2-1ubuntu4.2 [local]
 branding-ubuntu 0.11 [Ubuntu/noble universe]
 brightness-udev 0.5.1-3.1 [Ubuntu/noble universe]
 brightnessctl 0.5.1-3.1 [Ubuntu/noble universe]
@@ -174,7 +174,7 @@ cron-daemon-common 3.0pl1-184ubuntu2 [Ubuntu/noble main]
 csh 20230828-1 [Ubuntu/noble universe]
 csvtool 2.4-3build1 [Ubuntu/noble universe]
 cups 2.4.7-1.2ubuntu7.3 [Ubuntu/noble main]
-cups-browsed 2.0.0-0ubuntu10.2 [Ubuntu/noble main]
+cups-browsed 2.0.0-0ubuntu10.3 [Ubuntu/noble main]
 cups-bsd 2.4.7-1.2ubuntu7.3 [Ubuntu/noble main]
 cups-client 2.4.7-1.2ubuntu7.3 [Ubuntu/noble main]
 cups-common 2.4.7-1.2ubuntu7.3 [Ubuntu/noble main]
@@ -608,7 +608,7 @@ gir1.2-ical-3.0 3.0.17-1.1build3 [Ubuntu/noble main]
 gir1.2-javascriptcoregtk-4.1 2.46.5-0ubuntu0.24.04.1 [Ubuntu/noble main]
 gir1.2-javascriptcoregtk-6.0 2.46.5-0ubuntu0.24.04.1 [Ubuntu/noble main]
 gir1.2-json-1.0 1.8.0-2build2 [Ubuntu/noble main]
-gir1.2-mutter-14 46.2-1ubuntu0.24.04.4 [Ubuntu/noble main]
+gir1.2-mutter-14 46.2-1ubuntu0.24.04.5 [Ubuntu/noble main]
 gir1.2-nm-1.0 1.46.0-1ubuntu2.2 [Ubuntu/noble main]
 gir1.2-nma-1.0 1.10.6-3build2 [Ubuntu/noble main]
 gir1.2-nma4-1.0 1.10.6-3build2 [Ubuntu/noble main]
@@ -688,11 +688,11 @@ gnome-session-canberra 0.30-10ubuntu10 [Ubuntu/noble main]
 gnome-session-common 46.0-1ubuntu4 [Ubuntu/noble main]
 gnome-settings-daemon 46.0-1ubuntu1 [Ubuntu/noble main]
 gnome-settings-daemon-common 46.0-1ubuntu1 [Ubuntu/noble main]
-gnome-shell 46.0-0ubuntu6~24.04.5 [Ubuntu/noble main]
-gnome-shell-common 46.0-0ubuntu6~24.04.5 [Ubuntu/noble main]
+gnome-shell 46.0-0ubuntu6~24.04.6 [Ubuntu/noble main]
+gnome-shell-common 46.0-0ubuntu6~24.04.6 [Ubuntu/noble main]
 gnome-shell-extension-appindicator 58-1ubuntu24.04.1 [Ubuntu/noble main]
 gnome-shell-extension-desktop-icons-ng 46+really47.0.9-1 [Ubuntu/noble main]
-gnome-shell-extension-prefs 46.0-0ubuntu6~24.04.5 [Ubuntu/noble universe]
+gnome-shell-extension-prefs 46.0-0ubuntu6~24.04.6 [Ubuntu/noble universe]
 gnome-shell-extension-ubuntu-dock 90ubuntu2 [Ubuntu/noble main]
 gnome-shell-extension-ubuntu-tiling-assistant 46-1ubuntu1.1 [Ubuntu/noble main]
 gnome-shell-extensions 46.1-2 [Ubuntu/noble universe]
@@ -809,6 +809,7 @@ ibus-gtk3 1.5.29-2 [Ubuntu/noble main]
 ibus-gtk4 1.5.29-2 [Ubuntu/noble main]
 ibus-table 1.17.4-2 [Ubuntu/noble main]
 ibverbs-providers 50.0-2build2 [Ubuntu/noble main]
+icc-profiles-free 2.0.1+dfsg-1.1 [Ubuntu/noble main]
 icu-devtools 74.2-1ubuntu3.1 [Ubuntu/noble main]
 id3 1.1.2-3build1 [Ubuntu/noble universe]
 id3v2 0.1.12+dfsg-7 [Ubuntu/noble universe]
@@ -867,6 +868,7 @@ iw 6.7-1build1 [Ubuntu/noble main]
 java-common 0.75+exp1 [Ubuntu/noble main]
 javascript-common 11+nmu1 [Ubuntu/noble main]
 jayatana 2.7-0ubuntu8 [Ubuntu/noble universe]
+jbig2dec 0.20-1build3 [Ubuntu/noble universe]
 jo 1.9-1 [Ubuntu/noble universe]
 jp2a 1.1.1-2ubuntu2 [Ubuntu/noble universe]
 jpegoptim 1.4.7-1 [Ubuntu/noble universe]
@@ -899,14 +901,14 @@ kmod 31+20240202-2ubuntu7.1 [Ubuntu/noble main]
 kpackagelauncherqml 5.115.0-0ubuntu5 [Ubuntu/noble universe]
 kpackagetool5 5.115.0-0ubuntu5 [Ubuntu/noble universe]
 kpeople-vcard 0.1-3build3 [Ubuntu/noble universe]
-krb5-locales 1.20.1-6ubuntu2.2 [Ubuntu/noble main]
-krb5-multidev 1.20.1-6ubuntu2.2 [Ubuntu/noble main]
+krb5-locales 1.20.1-6ubuntu2.3 [Ubuntu/noble main]
+krb5-multidev 1.20.1-6ubuntu2.3 [Ubuntu/noble main]
 kwayland-data 4:5.115.0-0ubuntu5 [Ubuntu/noble universe]
 kwayland-integration 4:5.27.11-0ubuntu3 [Ubuntu/noble universe]
-language-pack-en 1:24.04+20240817 [Ubuntu/noble main]
-language-pack-en-base 1:24.04+20240817 [Ubuntu/noble main]
-language-pack-gnome-en 1:24.04+20240817 [Ubuntu/noble main]
-language-pack-gnome-en-base 1:24.04+20240817 [Ubuntu/noble main]
+language-pack-en 1:24.04+20250130 [Ubuntu/noble main]
+language-pack-en-base 1:24.04+20250130 [Ubuntu/noble main]
+language-pack-gnome-en 1:24.04+20250130 [Ubuntu/noble main]
+language-pack-gnome-en-base 1:24.04+20250130 [Ubuntu/noble main]
 language-selector-common 0.225 [Ubuntu/noble main]
 language-selector-gnome 0.225 [Ubuntu/noble main]
 laptop-detect 0.16 [Ubuntu/noble main]
@@ -1110,14 +1112,14 @@ libbytesize1 2.10-1ubuntu2 [Ubuntu/noble main]
 libbz2-1.0 1.0.8-5.1build0.1 [Ubuntu/noble main]
 libbz2-1.0:i386 1.0.8-5.1build0.1 [Ubuntu/noble main]
 libbz2-dev 1.0.8-5.1build0.1 [Ubuntu/noble main]
-libc-bin 2.39-0ubuntu8.3 [Ubuntu/noble main]
-libc-dev-bin 2.39-0ubuntu8.3 [Ubuntu/noble main]
-libc-devtools 2.39-0ubuntu8.3 [Ubuntu/noble main]
-libc6 2.39-0ubuntu8.3 [Ubuntu/noble main]
-libc6-dbg 2.39-0ubuntu8.3 [Ubuntu/noble main]
-libc6-dev 2.39-0ubuntu8.3 [Ubuntu/noble main]
-libc6-i386 2.39-0ubuntu8.3 [Ubuntu/noble main]
-libc6:i386 2.39-0ubuntu8.3 [Ubuntu/noble main]
+libc-bin 2.39-0ubuntu8.4 [Ubuntu/noble main]
+libc-dev-bin 2.39-0ubuntu8.4 [Ubuntu/noble main]
+libc-devtools 2.39-0ubuntu8.4 [Ubuntu/noble main]
+libc6 2.39-0ubuntu8.4 [Ubuntu/noble main]
+libc6-dbg 2.39-0ubuntu8.4 [Ubuntu/noble main]
+libc6-dev 2.39-0ubuntu8.4 [Ubuntu/noble main]
+libc6-i386 2.39-0ubuntu8.4 [Ubuntu/noble main]
+libc6:i386 2.39-0ubuntu8.4 [Ubuntu/noble main]
 libcaca-dev 0.99.beta20-4build2 [Ubuntu/noble main]
 libcaca0 0.99.beta20-4build2 [Ubuntu/noble main]
 libcaca0:i386 0.99.beta20-4build2 [Ubuntu/noble main]
@@ -1721,11 +1723,11 @@ libgsoap-2.8.132t64 2.8.132-2.1build2 [Ubuntu/noble universe]
 libgsound0t64 1.0.3-3.2build2 [Ubuntu/noble main]
 libgspell-1-2 1.12.2-1build4 [Ubuntu/noble main]
 libgspell-1-common 1.12.2-1build4 [Ubuntu/noble main]
-libgssapi-krb5-2 1.20.1-6ubuntu2.2 [Ubuntu/noble main]
-libgssapi-krb5-2:i386 1.20.1-6ubuntu2.2 [Ubuntu/noble main]
+libgssapi-krb5-2 1.20.1-6ubuntu2.3 [Ubuntu/noble main]
+libgssapi-krb5-2:i386 1.20.1-6ubuntu2.3 [Ubuntu/noble main]
 libgssdp-1.6-0 1.6.3-1build3 [Ubuntu/noble main]
 libgssglue1 0.9-1build1 [Ubuntu/noble main]
-libgssrpc4t64 1.20.1-6ubuntu2.2 [Ubuntu/noble main]
+libgssrpc4t64 1.20.1-6ubuntu2.3 [Ubuntu/noble main]
 libgstreamer-gl1.0-0 1.24.2-1ubuntu0.2 [Ubuntu/noble main]
 libgstreamer-plugins-bad1.0-0 1.24.2-1ubuntu4 [Ubuntu/noble universe]
 libgstreamer-plugins-base1.0-0 1.24.2-1ubuntu0.2 [Ubuntu/noble main]
@@ -1962,13 +1964,13 @@ libjxl-dev 0.7.0-10.2ubuntu6 [Ubuntu/noble universe]
 libjxl0.7 0.7.0-10.2ubuntu6 [Ubuntu/noble universe]
 libjxr-tools 1.2~git20170615.f752187-5.1ubuntu2 [Ubuntu/noble universe]
 libjxr0t64 1.2~git20170615.f752187-5.1ubuntu2 [Ubuntu/noble universe]
-libk5crypto3 1.20.1-6ubuntu2.2 [Ubuntu/noble main]
-libk5crypto3:i386 1.20.1-6ubuntu2.2 [Ubuntu/noble main]
+libk5crypto3 1.20.1-6ubuntu2.3 [Ubuntu/noble main]
+libk5crypto3:i386 1.20.1-6ubuntu2.3 [Ubuntu/noble main]
 libkaccounts2 4:23.08.5-0ubuntu4 [Ubuntu/noble universe]
-libkadm5clnt-mit12 1.20.1-6ubuntu2.2 [Ubuntu/noble main]
-libkadm5srv-mit12 1.20.1-6ubuntu2.2 [Ubuntu/noble main]
+libkadm5clnt-mit12 1.20.1-6ubuntu2.3 [Ubuntu/noble main]
+libkadm5srv-mit12 1.20.1-6ubuntu2.3 [Ubuntu/noble main]
 libkate1 0.4.1-11build2 [Ubuntu/noble universe]
-libkdb5-10t64 1.20.1-6ubuntu2.2 [Ubuntu/noble main]
+libkdb5-10t64 1.20.1-6ubuntu2.3 [Ubuntu/noble main]
 libkeyutils1 1.6.3-3build1 [Ubuntu/noble main]
 libkeyutils1:i386 1.6.3-3build1 [Ubuntu/noble main]
 libkf5activities5 5.115.0-0ubuntu3 [Ubuntu/noble universe]
@@ -2085,11 +2087,11 @@ libkmldom1t64 1.3.0-12build1 [Ubuntu/noble universe]
 libkmlengine1t64 1.3.0-12build1 [Ubuntu/noble universe]
 libkmod2 31+20240202-2ubuntu7.1 [Ubuntu/noble main]
 libkpathsea6 2023.20230311.66589-9build3 [Ubuntu/noble main]
-libkrb5-3 1.20.1-6ubuntu2.2 [Ubuntu/noble main]
-libkrb5-3:i386 1.20.1-6ubuntu2.2 [Ubuntu/noble main]
-libkrb5-dev 1.20.1-6ubuntu2.2 [Ubuntu/noble main]
-libkrb5support0 1.20.1-6ubuntu2.2 [Ubuntu/noble main]
-libkrb5support0:i386 1.20.1-6ubuntu2.2 [Ubuntu/noble main]
+libkrb5-3 1.20.1-6ubuntu2.3 [Ubuntu/noble main]
+libkrb5-3:i386 1.20.1-6ubuntu2.3 [Ubuntu/noble main]
+libkrb5-dev 1.20.1-6ubuntu2.3 [Ubuntu/noble main]
+libkrb5support0 1.20.1-6ubuntu2.3 [Ubuntu/noble main]
+libkrb5support0:i386 1.20.1-6ubuntu2.3 [Ubuntu/noble main]
 libksba8 1.6.6-1build1 [Ubuntu/noble main]
 libkwalletbackend5-5 5.115.0-0ubuntu3 [Ubuntu/noble universe]
 liblab-gamut1 2.42.2-9ubuntu0.1 [Ubuntu/noble universe]
@@ -2411,7 +2413,7 @@ libmtp-runtime 1.1.21-3.1build1 [Ubuntu/noble main]
 libmtp9t64 1.1.21-3.1build1 [Ubuntu/noble main]
 libmujs3 1.3.3-3build2 [Ubuntu/noble universe]
 libmunge2 0.5.15-4build1 [Ubuntu/noble universe]
-libmutter-14-0 46.2-1ubuntu0.24.04.4 [Ubuntu/noble main]
+libmutter-14-0 46.2-1ubuntu0.24.04.5 [Ubuntu/noble main]
 libmwaw-0.3-3 0.3.22-1build1 [Ubuntu/noble main]
 libmysofa1 1.3.2+dfsg-2ubuntu2 [Ubuntu/noble universe]
 libmysqlclient21 8.0.41-0ubuntu0.24.04.1 [Ubuntu/noble main]
@@ -2825,7 +2827,7 @@ libreoffice-writer 4:24.2.7-0ubuntu0.24.04.2 [Ubuntu/noble main]
 libresid-builder0c2a 2.1.1-15ubuntu3 [Ubuntu/noble universe]
 librest-1.0-0 0.9.1-6build3 [Ubuntu/noble main]
 librevenge-0.0-0 0.0.5-3build1 [Ubuntu/noble main]
-librewolf 134.0.2-1 [LibreWolf Software Repository/librewolf main]
+librewolf 135.0-1 [LibreWolf Software Repository/librewolf main]
 librhash0 1.4.3-3build1 [Ubuntu/noble main]
 librhythmbox-core10 3.4.7-2ubuntu6 [Ubuntu/noble main]
 librist4 0.2.10+dfsg-2 [Ubuntu/noble universe]
@@ -3173,9 +3175,9 @@ libuno-cppuhelpergcc3-3t64 4:24.2.7-0ubuntu0.24.04.2 [Ubuntu/noble main]
 libuno-purpenvhelpergcc3-3t64 4:24.2.7-0ubuntu0.24.04.2 [Ubuntu/noble main]
 libuno-sal3t64 4:24.2.7-0ubuntu0.24.04.2 [Ubuntu/noble main]
 libuno-salhelpergcc3-3t64 4:24.2.7-0ubuntu0.24.04.2 [Ubuntu/noble main]
-libunwind-dev 1.6.2-3build1 [Ubuntu/noble main]
-libunwind8 1.6.2-3build1 [Ubuntu/noble main]
-libunwind8:i386 1.6.2-3build1 [Ubuntu/noble main]
+libunwind-dev 1.6.2-3build1.1 [Ubuntu/noble main]
+libunwind8 1.6.2-3build1.1 [Ubuntu/noble main]
+libunwind8:i386 1.6.2-3build1.1 [Ubuntu/noble main]
 libupnp17t64 1:1.14.18-1.1ubuntu2 [Ubuntu/noble universe]
 libupower-glib3 1.90.3-1 [Ubuntu/noble main]
 liburi-perl 5.27-1 [Ubuntu/noble main]
@@ -3405,7 +3407,7 @@ libxerces-c3.2t64 3.2.4+debian-1.2ubuntu2 [Ubuntu/noble universe]
 libxext-dev 2:1.3.4-1build2 [Ubuntu/noble main]
 libxext6 2:1.3.4-1build2 [Ubuntu/noble main]
 libxext6:i386 2:1.3.4-1build2 [Ubuntu/noble main]
-libxfce4panel-2.0-4 4.18.4-1build2 [Ubuntu/noble universe]
+libxfce4panel-2.0-4 4.18.4-1ubuntu0.1 [Ubuntu/noble universe]
 libxfce4ui-2-0 4.18.4-1build4 [Ubuntu/noble universe]
 libxfce4ui-common 4.18.4-1build4 [Ubuntu/noble universe]
 libxfce4util-bin 4.18.1-2build3 [Ubuntu/noble universe]
@@ -3573,7 +3575,7 @@ llvm-18-tools 1:18.1.3-1ubuntu1 [Ubuntu/noble universe]
 llvm-runtime 1:18.0-59~exp2 [Ubuntu/noble universe]
 lm-sensors 1:3.6.0-9build1 [Ubuntu/noble universe]
 lmodern 2.005-1 [Ubuntu/noble universe]
-locales 2.39-0ubuntu8.3 [Ubuntu/noble main]
+locales 2.39-0ubuntu8.4 [Ubuntu/noble main]
 locate 4.9.0-5build1 [Ubuntu/noble universe]
 login 1:4.13+dfsg1-4ubuntu3.2 [Ubuntu/noble main]
 logrotate 3.21.0-2build1 [Ubuntu/noble main]
@@ -3658,9 +3660,9 @@ mscompress 0.4-10build1 [Ubuntu/noble main]
 mtr-tiny 0.95-1.1ubuntu0.1 [Ubuntu/noble main]
 mupdf 1.23.10+ds1-1build3 [Ubuntu/noble universe]
 mupdf-tools 1.23.10+ds1-1build3 [Ubuntu/noble universe]
-mutter 46.2-1ubuntu0.24.04.4 [Ubuntu/noble universe]
-mutter-common 46.2-1ubuntu0.24.04.4 [Ubuntu/noble main]
-mutter-common-bin 46.2-1ubuntu0.24.04.4 [Ubuntu/noble main]
+mutter 46.2-1ubuntu0.24.04.5 [Ubuntu/noble universe]
+mutter-common 46.2-1ubuntu0.24.04.5 [Ubuntu/noble main]
+mutter-common-bin 46.2-1ubuntu0.24.04.5 [Ubuntu/noble main]
 mysql-client-8.0 8.0.41-0ubuntu0.24.04.1 [Ubuntu/noble main]
 mysql-client-core-8.0 8.0.41-0ubuntu0.24.04.1 [Ubuntu/noble main]
 mysql-common 5.8+1.1.0build1 [Ubuntu/noble main]
@@ -3724,20 +3726,21 @@ nux-tools 4.0.8+18.10.20180623-0ubuntu10 [Ubuntu/noble universe]
 obsidian 1.6.7 [local]
 ocl-icd-libopencl1 2.3.2-1build1 [Ubuntu/noble universe]
 ocl-icd-libopencl1:i386 2.3.2-1build1 [Ubuntu/noble universe]
+ocrmypdf 15.2.0+dfsg1-1 [Ubuntu/noble universe]
 odt2txt 0.5-7build1 [Ubuntu/noble universe]
 ofono 1.31-3ubuntu3.24.04.2 [Ubuntu/noble universe]
 okular 4:23.08.5-0ubuntu5 [Ubuntu/noble universe]
 okular-extra-backends 4:23.08.5-0ubuntu5 [Ubuntu/noble universe]
 openconnect 9.12-1build5 [Ubuntu/noble universe]
 openjade 1.4devel1-23.1build1 [Ubuntu/noble universe]
-openjdk-11-jdk 11.0.25+9-1ubuntu1~24.04 [Ubuntu/noble universe]
-openjdk-11-jdk-headless 11.0.25+9-1ubuntu1~24.04 [Ubuntu/noble universe]
-openjdk-11-jre 11.0.25+9-1ubuntu1~24.04 [Ubuntu/noble universe]
-openjdk-11-jre-headless 11.0.25+9-1ubuntu1~24.04 [Ubuntu/noble universe]
-openjdk-21-jdk 21.0.5+11-1ubuntu1~24.04 [Ubuntu/noble main]
-openjdk-21-jdk-headless 21.0.5+11-1ubuntu1~24.04 [Ubuntu/noble main]
-openjdk-21-jre 21.0.5+11-1ubuntu1~24.04 [Ubuntu/noble main]
-openjdk-21-jre-headless 21.0.5+11-1ubuntu1~24.04 [Ubuntu/noble main]
+openjdk-11-jdk 11.0.26+4-1ubuntu1~24.04 [Ubuntu/noble universe]
+openjdk-11-jdk-headless 11.0.26+4-1ubuntu1~24.04 [Ubuntu/noble universe]
+openjdk-11-jre 11.0.26+4-1ubuntu1~24.04 [Ubuntu/noble universe]
+openjdk-11-jre-headless 11.0.26+4-1ubuntu1~24.04 [Ubuntu/noble universe]
+openjdk-21-jdk 21.0.6+7-1~24.04.1 [Ubuntu/noble main]
+openjdk-21-jdk-headless 21.0.6+7-1~24.04.1 [Ubuntu/noble main]
+openjdk-21-jre 21.0.6+7-1~24.04.1 [Ubuntu/noble main]
+openjdk-21-jre-headless 21.0.6+7-1~24.04.1 [Ubuntu/noble main]
 openprinting-ppds 20230202-1 [Ubuntu/noble main]
 opensp 1.5.2-15ubuntu2 [Ubuntu/noble universe]
 openssh-client 1:9.6p1-3ubuntu13.5 [Ubuntu/noble main]
@@ -3797,6 +3800,7 @@ plymouth-label 24.004.60-1ubuntu7 [Ubuntu/noble main]
 plymouth-theme-spinner 24.004.60-1ubuntu7 [Ubuntu/noble main]
 plymouth-theme-ubuntu-text 24.004.60-1ubuntu7 [Ubuntu/noble main]
 pmount 0.9.23-7.1build1 [Ubuntu/noble universe]
+pngquant 2.18.0-1build2 [Ubuntu/noble universe]
 po-debconf 1.0.21+nmu1 [Ubuntu/noble main]
 pocketsphinx-en-us 0.8.0+real5prealpha+1-15ubuntu5 [Ubuntu/noble universe]
 policykit-1 124-2ubuntu1.24.04.2 [Ubuntu/noble main]
@@ -3839,7 +3843,7 @@ pulseaudio-module-bluetooth 1:16.1+dfsg1-2ubuntu10.1 [Ubuntu/noble universe]
 pulseaudio-utils 1:16.1+dfsg1-2ubuntu10.1 [Ubuntu/noble universe]
 pulsemixer 1.5.1-1.1 [Ubuntu/noble universe]
 pyflakes3 3.2.0-1 [Ubuntu/noble universe]
-python-apt-common 2.7.7ubuntu3 [Ubuntu/noble main]
+python-apt-common 2.7.7ubuntu4 [Ubuntu/noble main]
 python-babel-localedata 2.10.3-3build1 [Ubuntu/noble main]
 python-gmpy2-common 2.1.5-3build1 [Ubuntu/noble universe]
 python-is-python3 3.11.4-1 [Ubuntu/noble main]
@@ -3855,7 +3859,7 @@ python3-all 3.12.3-0ubuntu2 [Ubuntu/noble main]
 python3-anyio 4.2.0-1 [Ubuntu/noble universe]
 python3-appdirs 1.4.4-4 [Ubuntu/noble main]
 python3-apport 2.28.1-0ubuntu3.3 [Ubuntu/noble main]
-python3-apt 2.7.7ubuntu3 [Ubuntu/noble main]
+python3-apt 2.7.7ubuntu4 [Ubuntu/noble main]
 python3-aptdaemon 1.1.1+bzr982-0ubuntu44 [Ubuntu/noble main]
 python3-aptdaemon.gtk3widgets 1.1.1+bzr982-0ubuntu44 [Ubuntu/noble main]
 python3-argon2 21.1.0-2build1 [Ubuntu/noble universe]
@@ -3891,6 +3895,7 @@ python3-click-plugins 1.1.1-4 [Ubuntu/noble universe]
 python3-cligj 0.7.2-2 [Ubuntu/noble universe]
 python3-cloudpickle 3.0.0-2 [Ubuntu/noble universe]
 python3-colorama 0.4.6-4 [Ubuntu/noble main]
+python3-coloredlogs 15.0.1-1 [Ubuntu/noble universe]
 python3-comm 0.2.1-1 [Ubuntu/noble universe]
 python3-commandnotfound 23.04.0 [Ubuntu/noble main]
 python3-commonmark 0.9.1-5 [Ubuntu/noble universe]
@@ -3918,12 +3923,13 @@ python3-decorator 5.1.1-5 [Ubuntu/noble main]
 python3-defer 1.0.6-2.1ubuntu1 [Ubuntu/noble main]
 python3-defusedxml 0.7.1-2 [Ubuntu/noble main]
 python3-deprecated 1.2.14-1 [Ubuntu/noble universe]
+python3-deprecation 2.1.0-3 [Ubuntu/noble main]
 python3-dev 3.12.3-0ubuntu2 [Ubuntu/noble main]
 python3-distlib 0.3.8-1 [Ubuntu/noble universe]
 python3-distributed 2023.12.1+ds-4 [Ubuntu/noble universe]
 python3-distro 1.9.0-1 [Ubuntu/noble main]
 python3-distro-info 1.7build1 [Ubuntu/noble main]
-python3-distupgrade 1:24.04.23 [Ubuntu/noble main]
+python3-distupgrade 1:24.04.26 [Ubuntu/noble main]
 python3-docutils 0.20.1+dfsg-3 [Ubuntu/noble main]
 python3-dropbox 11.36.2-1 [Ubuntu/noble universe]
 python3-entrypoints 0.4-2 [Ubuntu/noble universe]
@@ -3962,6 +3968,8 @@ python3-html5lib 1.1-6 [Ubuntu/noble main]
 python3-httpcore 1.0.2-2 [Ubuntu/noble universe]
 python3-httplib2 0.20.4-3 [Ubuntu/noble main]
 python3-httpx 0.26.0-2 [Ubuntu/noble universe]
+python3-humanfriendly 10.0-4 [Ubuntu/noble universe]
+python3-hypothesis 6.98.15-1 [Ubuntu/noble universe]
 python3-ibus-1.0 1.5.29-2 [Ubuntu/noble main]
 python3-idna 3.6-2ubuntu0.1 [Ubuntu/noble main]
 python3-imagesize 1.4.1-1 [Ubuntu/noble main]
@@ -4061,6 +4069,7 @@ python3-parso 0.8.3-1 [Ubuntu/noble universe]
 python3-partd 1.4.1-1 [Ubuntu/noble universe]
 python3-path 16.10.0-1 [Ubuntu/noble universe]
 python3-pathspec 0.12.1-1 [Ubuntu/noble universe]
+python3-pdfminer 20221105+dfsg-1 [Ubuntu/noble universe]
 python3-pexpect 4.9-2 [Ubuntu/noble main]
 python3-pickleshare 0.7.5-5 [Ubuntu/noble universe]
 python3-pikepdf 8.7.1+dfsg-2build2 [Ubuntu/noble universe]
@@ -4320,6 +4329,7 @@ ruby3.2-dev 3.2.3-1ubuntu0.24.04.3 [Ubuntu/noble main]
 ruby3.2-doc 3.2.3-1ubuntu0.24.04.3 [Ubuntu/noble main]
 rubygems-integration 1.18 [Ubuntu/noble main]
 rustc 1.75.0+dfsg0ubuntu1-0ubuntu7.1 [Ubuntu/noble main]
+rustdesk 1.3.7 [local]
 rxvt-unicode 9.31-3build2 [Ubuntu/noble universe]
 rygel 0.42.5-1ubuntu3 [Ubuntu/noble main]
 samba-libs 2:4.19.5+dfsg-4ubuntu9 [Ubuntu/noble main]
@@ -4345,7 +4355,7 @@ shared-mime-info 2.4-4 [Ubuntu/noble main]
 shellcheck 0.9.0-1 [Ubuntu/noble universe]
 shfmt 3.10.0-pacstall1 [local]
 shim-signed 1.58+15.8-0ubuntu1 [Ubuntu/noble main]
-signal-desktop 7.40.1 [. xenial/xenial main]
+signal-desktop 7.41.0 [. xenial/xenial main]
 signon-plugin-oauth2 0.25-2build3 [Ubuntu/noble universe]
 silversearcher-ag 2.2.0+git20200805-1.1 [Ubuntu/noble universe]
 slack-desktop 4.41.105 [slack/jessie main]
@@ -4456,26 +4466,26 @@ tree 2.1.1-2ubuntu3 [Ubuntu/noble universe]
 ttf-bitstream-vera 1.10-8.2 [Ubuntu/noble universe]
 tumbler 4.18.1-1.1build4 [Ubuntu/noble universe]
 tumbler-common 4.18.1-1.1build4 [Ubuntu/noble universe]
-tzdata 2024b-0ubuntu0.24.04 [Ubuntu/noble main]
+tzdata 2024b-0ubuntu0.24.04.1 [Ubuntu/noble main]
 ubuntu-advantage-desktop-daemon 1.11ubuntu0.1 [Ubuntu/noble main]
 ubuntu-advantage-tools 34~24.04 [Ubuntu/noble universe]
-ubuntu-desktop 1.539.1 [Ubuntu/noble main]
-ubuntu-desktop-minimal 1.539.1 [Ubuntu/noble main]
+ubuntu-desktop 1.539.2 [Ubuntu/noble main]
+ubuntu-desktop-minimal 1.539.2 [Ubuntu/noble main]
 ubuntu-docs 24.04.2 [Ubuntu/noble main]
 ubuntu-drivers-common 1:0.9.7.6ubuntu3.1 [Ubuntu/noble main]
-ubuntu-kernel-accessories 1.539.1 [Ubuntu/noble main]
+ubuntu-kernel-accessories 1.539.2 [Ubuntu/noble main]
 ubuntu-keyring 2023.11.28.1 [Ubuntu/noble main]
-ubuntu-minimal 1.539.1 [Ubuntu/noble main]
+ubuntu-minimal 1.539.2 [Ubuntu/noble main]
 ubuntu-mono 24.04-0ubuntu1 [Ubuntu/noble main]
 ubuntu-pro-client 34~24.04 [Ubuntu/noble main]
 ubuntu-pro-client-l10n 34~24.04 [Ubuntu/noble main]
-ubuntu-release-upgrader-core 1:24.04.23 [Ubuntu/noble main]
-ubuntu-release-upgrader-gtk 1:24.04.23 [Ubuntu/noble main]
+ubuntu-release-upgrader-core 1:24.04.26 [Ubuntu/noble main]
+ubuntu-release-upgrader-gtk 1:24.04.26 [Ubuntu/noble main]
 ubuntu-report 1.7.3ubuntu0.24.04.2 [Ubuntu/noble main]
 ubuntu-restricted-addons 29 [Ubuntu/noble multiverse]
 ubuntu-session 46.0-1ubuntu4 [Ubuntu/noble main]
 ubuntu-settings 24.04.5 [Ubuntu/noble main]
-ubuntu-standard 1.539.1 [Ubuntu/noble main]
+ubuntu-standard 1.539.2 [Ubuntu/noble main]
 ubuntu-touch-sounds 15.08build1 [Ubuntu/noble universe]
 ubuntu-wallpapers 24.04.2 [Ubuntu/noble main]
 ubuntu-wallpapers-jammy 24.04.2 [Ubuntu/noble universe]
@@ -4518,6 +4528,7 @@ unity-uwidgets 7.7.0+23.04.20230222.2-0ubuntu7 [Ubuntu/noble universe]
 unixodbc-common 2.3.12-1ubuntu0.24.04.1 [Ubuntu/noble main]
 uno-libs-private 4:24.2.7-0ubuntu0.24.04.2 [Ubuntu/noble main]
 unoconv 0.7-2ubuntu1 [Ubuntu/noble universe]
+unpaper 7.0.0-3build1 [Ubuntu/noble universe]
 unrar 1:7.0.7-1build1 [Ubuntu/noble multiverse]
 unrtf 0.21.10-clean-1 [Ubuntu/noble universe]
 untex 1:1.2-7build1 [Ubuntu/noble universe]
@@ -4681,11 +4692,11 @@ zathura-pdf-poppler 0.3.2-1build3 [Ubuntu/noble universe]
 zbar-tools 0.23.93-4build3 [Ubuntu/noble universe]
 zeitgeist-core 1.0.4-5ubuntu5 [Ubuntu/noble universe]
 zeitgeist-datahub 1.0.4-5ubuntu5 [Ubuntu/noble universe]
-zen-browser 1.7.4b-pacstall1 [local]
+zen-browser 1.7.6b-pacstall1 [local]
 zen-browser-specific-bin 1.7.4b-pacstall1 [local]
 zenity 4.0.1-1build3 [Ubuntu/noble main]
 zenity-common 4.0.1-1build3 [Ubuntu/noble main]
-zip 3.0-13ubuntu0.1 [Ubuntu/noble main]
+zip 3.0-13ubuntu0.2 [Ubuntu/noble main]
 zlib1g 1:1.3.dfsg-3.1ubuntu2.1 [Ubuntu/noble main]
 zlib1g-dev 1:1.3.dfsg-3.1ubuntu2.1 [Ubuntu/noble main]
 zlib1g:i386 1:1.3.dfsg-3.1ubuntu2.1 [Ubuntu/noble main]
@@ -4706,6 +4717,7 @@ neofetch
 obsidian-deb
 polybar
 quarto-deb
+rustdesk-deb
 shfmt-bin
 slack-deb
 thorium-deb
@@ -4726,13 +4738,13 @@ cargo:mdbook-alerts         0.6.8
 cargo:mdbook-embedify       0.2.11
 cargo:mdbook-katex          0.9.0
 cargo:mdbook-repl           0.2.6
-cargo:presenterm            0.9.0           ~/.config/mise/config.toml  latest
+cargo:presenterm            0.10.0          ~/.config/mise/config.toml  latest
 cargo:ripdrag               0.4.10          ~/.config/mise/config.toml  latest
 cargo:tex-fmt               0.5.2           ~/.config/mise/config.toml  latest
 cargo:typos-cli             1.29.4
 cargo:typstyle              0.12.14
 dprint                      0.49.0          ~/.config/mise/config.toml  latest
-go                          1.23.5          ~/.config/mise/config.toml  latest
+go                          1.23.6          ~/.config/mise/config.toml  latest
 jq                          1.7.1           ~/.config/mise/config.toml  latest
 julia                       1.11.3          ~/.config/mise/config.toml  latest
 lua                         5.4.7           ~/.config/mise/config.toml  latest
@@ -4744,19 +4756,19 @@ npm:cwebp                   3.2.0           ~/.config/mise/config.toml  latest
 npm:cwebp-bin               8.0.0
 npm:retypeapp               3.6.0
 npm:tldr                    3.4.0           ~/.config/mise/config.toml  latest
-pandoc                      3.6.2           ~/.config/mise/config.toml  latest
+pandoc                      3.6.3           ~/.config/mise/config.toml  latest
 pipx:bibfish                0.3.3
 python                      3.9.21          ~/.config/mise/config.toml  sub-0.4:latest
 python                      3.10.16         ~/.config/mise/config.toml  sub-0.3:latest
 python                      3.11.11         ~/.config/mise/config.toml  sub-0.2:latest
-python                      3.12.8          ~/.config/mise/config.toml  sub-0.1:latest
-python                      3.13.1          ~/.config/mise/config.toml  latest
+python                      3.12.9          ~/.config/mise/config.toml  sub-0.1:latest
+python                      3.13.2          ~/.config/mise/config.toml  latest
 tinytex                     2025.02         ~/.config/mise/config.toml  latest
 tmux                        3.5a            ~/.config/mise/config.toml  latest
 typst                       0.12.0          ~/.config/mise/config.toml  latest
 ubi:Enter-tainer/typstyle   0.12.14         ~/.config/mise/config.toml  latest
 ubi:Eoin-McMahon/blindfold  1.0.6           ~/.config/mise/config.toml  latest
-ubi:MordechaiHadad/bob      4.0.2           ~/.config/mise/config.toml  latest
+ubi:MordechaiHadad/bob      4.0.3           ~/.config/mise/config.toml  latest
 ubi:Myriad-Dreamin/shiroa   0.2.0-nightly5  ~/.config/mise/config.toml  latest
 ubi:charmbracelet/sequin    0.3.1           ~/.config/mise/config.toml  latest
 ubi:etcd-io/etcd            3.5.18          ~/.config/mise/config.toml  latest
@@ -4764,13 +4776,15 @@ ubi:filosottile/age         1.2.1           ~/.config/mise/config.toml  latest
 ubi:goreleaser/goreleaser   2.6.1           ~/.config/mise/config.toml  latest
 ubi:houseabsolute/precious  0.7.3           ~/.config/mise/config.toml  latest
 ubi:ismaelgv/rnr            0.5.0           ~/.config/mise/config.toml  latest
-ubi:junegunn/fzf            0.58.0          ~/.config/mise/config.toml  latest
+ubi:junegunn/fzf            0.59.0          ~/.config/mise/config.toml  latest
 ubi:mgdm/htmlq              0.4.0           ~/.config/mise/config.toml  latest
+ubi:ms-jpq/sad              0.4.32          ~/.config/mise/config.toml  latest
 ubi:pvolok/mprocs           0.7.2           ~/.config/mise/config.toml  latest
 ubi:pythops/bluetui         0.6             ~/.config/mise/config.toml  latest
 ubi:sharkdp/bat             0.25.0          ~/.config/mise/config.toml  latest
-usage                       2.0.3           ~/.config/mise/config.toml  latest
-watchexec                   2.2.1           ~/.config/mise/config.toml  latest
+usage                       2.0.4           ~/.config/mise/config.toml  latest
+watchexec                   2.3.0           ~/.config/mise/config.toml  latest
+yazi                        25.2.7          ~/.config/mise/config.toml  latest
 zig                         0.13.0          ~/.config/mise/config.toml  latest
 ```
 
@@ -4779,9 +4793,9 @@ zig                         0.13.0          ~/.config/mise/config.toml  latest
 ```txt {cargo}
 alacritty v0.15.0:
     alacritty
-bacon v3.9.1:
+bacon v3.10.0:
     bacon
-bob-nvim v4.0.2:
+bob-nvim v4.0.3:
     bob
 cargo-binstall v1.10.22:
     cargo-binstall
@@ -4803,7 +4817,7 @@ difftastic v0.62.0:
     difft
 fd-find v10.2.0:
     fd
-ffsend v0.2.76:
+ffsend v0.2.77:
     ffsend
 git-cliff v2.8.0:
     git-cliff
@@ -4818,7 +4832,7 @@ halp v0.2.0:
     halp-completions
     halp-mangen
     halp-test
-hayagriva v0.8.0:
+hayagriva v0.8.1:
     hayagriva
 helix-term v24.7.0 (/home/een023/programs/helix/helix-term):
     hx
@@ -4856,7 +4870,7 @@ menyoki v1.7.0:
     menyoki
 mprocs v0.7.2:
     mprocs
-nu v0.101.0:
+nu v0.102.0:
     nu
 numbat-cli v1.16.0:
     numbat
@@ -4893,7 +4907,7 @@ stylua v2.0.2:
     stylua
 taplo-cli v0.9.3:
     taplo
-television v0.10.3:
+television v0.10.6:
     tv
 tex-fmt v0.5.2:
     tex-fmt
@@ -4909,10 +4923,6 @@ xcolor v0.5.1:
     xcolor
 xh v0.23.1:
     xh
-yazi-cli v0.4.2:
-    ya
-yazi-fm v0.4.2:
-    yazi
 zellij v0.41.2:
     zellij
 ```
@@ -4926,9 +4936,9 @@ ds-format v4.1.2
 gorps v0.9.1
 httpie v3.2.4
 ncdump-rich v0.5.2
-nox v2024.10.9
+nox v2025.2.9
 pandoc-eqnos v2.5.0
-pandoc-include v1.4.1
+pandoc-include v1.4.2
 papis v0.14
 poetry v2.0.1
 pre-commit v4.1.0
@@ -5011,6 +5021,7 @@ i chemgreek: Upright Greek letters in chemistry
 i cite: Improved citation handling in LaTeX
 i cleveref: Intelligent cross-referencing
 i cm: Computer Modern fonts
+i cm-super: CM-Super family of fonts
 i collectbox: Collect and process macro arguments as boxes
 i colortbl: Add colour to LaTeX tables
 i comment: Selectively include/exclude portions of text
@@ -5027,6 +5038,8 @@ i doclicense: Support for putting documents under a license
 i draftwatermark: Put a grey textual watermark on document pages
 i dvipdfmx: An extended version of dvipdfm
 i dvipdfmx.x86_64-linux: x86_64-linux files of dvipdfmx
+i dvipng: A fast DVI to PNG/GIF converter
+i dvipng.x86_64-linux: x86_64-linux files of dvipng
 i dvips: A DVI to PostScript driver
 i dvips.x86_64-linux: x86_64-linux files of dvips
 i ec: Computer modern fonts in T1 and TS1 encodings
@@ -5116,6 +5129,8 @@ i latex-bin.x86_64-linux: x86_64-linux files of latex-bin
 i latex-fonts: A collection of fonts used in LaTeX distributions
 i latex-tools-dev: Development pre-release of the LaTeX tools bundle
 i latexconfig: configuration files for LaTeX-related formats
+i latexdiff: Determine and mark up significant differences between LaTeX files
+i latexdiff.x86_64-linux: x86_64-linux files of latexdiff
 i latexindent: Indent a LaTeX document, highlighting the programming structure
 i latexindent.x86_64-linux: x86_64-linux files of latexindent
 i latexmk: Fully automated LaTeX document generation
@@ -5257,8 +5272,10 @@ i totpages: Count pages in a document, and report last page number
 i translator: Easy translation of strings in LaTeX
 i trimspaces: Trim spaces around an argument or within a macro
 i tufte-latex: Document classes inspired by the work of Edward Tufte
+i type1cm: Arbitrary size font selection in LaTeX
 i ucs: Extended UTF-8 input encoding support for LaTeX
 i ulem: Package for underlining
+i underscore: Control the behaviour of "_" in text
 i unicode-data: Unicode data and loaders for TeX
 i unicode-math: Unicode mathematics support for XeTeX and LuaTeX
 i uniquecounter: Provides unlimited unique counter
@@ -5301,17 +5318,17 @@ Name                                    Version                                 
 ```txt {snap}
 Name                       Version             Rev    Tracking         Publisher    Notes
 bare                       1.0                 5      latest/stable    canonical**  base
-bw                         2025.1.2            78     latest/stable    bitwarden**  -
+bw                         2025.1.3            79     latest/stable    bitwarden**  -
 core                       16-2.61.4-20240607  17200  latest/stable    canonical**  core
 core22                     20250110            1748   latest/stable    canonical**  base
 core24                     20241119            716    latest/stable    canonical**  base
-ffsend                     0.2.74              49     latest/stable    timvisee     -
-firefox                    134.0.2-1           5647   latest/stable/…  mozilla**    -
-firmware-updater           0+git.7983059       147    1/stable/…       canonical**  -
+ffsend                     0.2.77              51     latest/stable    timvisee     -
+firefox                    135.0-2             5701   latest/stable/…  mozilla**    -
+firmware-updater           0+git.22198be       167    1/stable/…       canonical**  -
 gnome-42-2204              0+git.38ea591       202    latest/stable/…  canonical**  -
 gnome-46-2404              0+git.7d0cf36       77     latest/stable    canonical**  -
 gtk-common-themes          0.1-81-g442e511     1535   latest/stable/…  canonical**  -
-localsend                  1.16.1              26     latest/stable    tienisto     -
+localsend                  1.16.1              30     latest/stable    tienisto     -
 mesa-2404                  24.0.9              143    latest/stable    canonical**  -
 pdftk                      2.02-4              9      latest/stable    smoser       -
 snap-store                 0+git.7a3a49a6      1248   2/stable/…       canonical**  -
