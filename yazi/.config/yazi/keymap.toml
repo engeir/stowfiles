@@ -44,3 +44,6 @@ desc = "Chmod on selected files"
 on = "F"
 run = "plugin smart-filter"
 desc = "Smart filter"
+[[manager.prepend_keymap]]
+on = "M"
+run = "plugin mount"
