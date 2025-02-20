@@ -32,7 +32,11 @@ return {
         ["<C-j>"] = { "snippet_backward", "fallback" },
         ["<C-y>"] = { "show", "show_documentation", "hide_documentation" },
         ["<C-space>"] = { "select_and_accept" },
-        cmdline = {
+        ["<Tab>"] = {},
+        ["<S-Tab>"] = {},
+      },
+      cmdline = {
+        keymap = {
           preset = "enter",
           ["<S-Tab>"] = { "select_prev", "fallback" },
           ["<Tab>"] = { "select_next", "fallback" },
