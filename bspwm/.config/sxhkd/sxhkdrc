@@ -10,7 +10,7 @@
 
 super + Return
 # terminal emulator
-	ghostty
+	kitty
 	# st
 	# gnome-terminal
 

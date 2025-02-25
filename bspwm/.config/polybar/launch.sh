@@ -22,6 +22,19 @@ DEFAULT_NETWORK_INTERFACE=$(ip route | grep '^default' | awk '{print $5}' | head
 export DEFAULT_NETWORK_INTERFACE
 
 # Launch Polybar
+if xrandr -q | grep -q 'DP-1 connected'; then
+    # Maybe not the best solution, but I think DP-1 is only ever used with my stationary
+    # PC and the monitor I use with it.
+    polybar dp1 &
+    disown
+    bspc config -m DP-1 top_padding 0
+    hideIt.sh -w -i 0.2 -d "top" --name "polybar-dp1_DP-1" --peek 0 --region 0x0+1920+3 &
+    disown
+    sleep 0.5
+    xdo raise -N Polybar
+    exit 0
+fi
+
 polybar top &
 disown
 bspc config -m eDP-1 top_padding 0
