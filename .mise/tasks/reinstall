@@ -95,10 +95,10 @@ font-caskaydia-install() {
     getnf -i CascadiaMono
 }
 font-cartograph-install() {
-    if ! grep -q "$HOME/.local/share/fonts" <(fc-list); then
-        echo "I am only able to install fonts into $HOME/.local/share/fonts/. Sorry!"
-        exit 1
-    fi
+    # if ! grep -q "$HOME/.local/share/fonts" <(fc-list); then
+    #     echo "I am only able to install fonts into $HOME/.local/share/fonts/. Sorry!"
+    #     exit 1
+    # fi
     TMPDIR="/tmp/font-$RANDOM"
     mkdir -p "$TMPDIR"
     cd "$TMPDIR" || exit
@@ -209,6 +209,6 @@ pacstall-install() {
     done <<<"$not_installed"
 }
 cargo-install() {
-    echo "Not implemented!"
+    echo "Not implemented! (Use mise instead.)"
 }
 run-installer
