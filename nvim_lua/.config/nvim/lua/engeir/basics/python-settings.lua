@@ -5,7 +5,11 @@
 -- Probably need to use uname -o
 local homedir = vim.loop.os_homedir()
 
-if homedir == "/home/een023" or homedir == "/home/eirikre" then
+if
+  homedir == "/home/een023"
+  or homedir == "/home/eirikre"
+  or homedir == "/home/eirik"
+then
   vim.g.python3_host_prog = vim.fn.expand("$HOME/.local/share/nvim/.venv/bin/python")
   -- vim.cmd("source $HOME/.config/nvim/other-resources/add_ncl_complete_to_your_vimrc")
 elseif homedir == "/cluster/home/een023" then

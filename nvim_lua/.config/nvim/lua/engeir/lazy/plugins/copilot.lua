@@ -1,14 +1,14 @@
 return {
   {
     "zbirenbaum/copilot.lua",
-    enabled = false,
+    enabled = true,
     cmd = "Copilot",
     event = "InsertEnter",
     config = function()
       require("copilot").setup({
-        filetypes = { markdown = true, tex = false, python = false },
+        filetypes = { lua = true, markdown = true, tex = false, python = false },
         panel = {
-          enabled = false,
+          enabled = true,
           auto_refresh = true,
           keymap = {
             jump_prev = "[[",
