@@ -46,7 +46,7 @@ if command -v /usr/bin/keychain >/dev/null 2>&1; then
 fi
 # export LD_PRELOAD=/usr/lib/x86_64-linux-gnu/libgtk3-nocsd.so.0
 # fi
-xset r rate 210 40
+xset r rate 210 70
 xrdb "$HOME/.config/Xresources"
 
 # Config for fzf

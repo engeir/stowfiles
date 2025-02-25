@@ -134,7 +134,7 @@ super + alt + {q,r}
 	bspc {quit,wm -r}; \
 	setxkbmap -option ctrl:nocaps; \
 	xcape -e 'Control_L=Escape' \
-	xset r rate 210 40 \
+	xset r rate 210 70 \
 	xrdb "$HOME/.config/Xresources"
 
 
