@@ -50,7 +50,7 @@
         "**/target"
     ],
     "plugins": [
-        "https://plugins.dprint.dev/typescript-0.93.3.wasm",
+        "https://plugins.dprint.dev/typescript-0.93.4.wasm",
         "https://plugins.dprint.dev/json-0.19.4.wasm",
         "https://plugins.dprint.dev/markdown-0.17.8.wasm",
         // "/Users/salomon/dev/dprint-plugin-markdown/target/wasm32-unknown-unknown/release/dprint_plugin_markdown.wasm",
@@ -59,6 +59,6 @@
         // "https://plugins.dprint.dev/disrupted/css-0.1.3.wasm"
         // "/Users/salomon/dev/dprint-plugin-css/target/wasm32-unknown-unknown/release/dprint_plugin_css.wasm"
         "https://plugins.dprint.dev/exec-0.5.1.json@492414e39dea4dccc07b4af796d2f4efdb89e84bae2bd4e1e924c0cc050855bf",
-        "https://plugins.dprint.dev/prettier-0.54.0.json@b168e6754c9a2cb388454df69f360d3cf6c4e196a218148d20ce72b936c49dab"
+        "https://plugins.dprint.dev/prettier-0.56.0.json@0b67676535141b03f0eb0648172d3a20f13044b3d8df677d645bd79e3ee5147f"
     ]
 }

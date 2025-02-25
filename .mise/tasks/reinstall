@@ -69,7 +69,12 @@ case "$1" in
         ;;
     "go") ;;
     "flatpak") ;;
-    "snap") ;;
+    "snap")
+        run-installer() {
+            snap-install
+            exit 0
+        }
+        ;;
     *)
         echo "$1 is not a valid package manager"
         exit 1
@@ -199,8 +204,8 @@ pacstall-install-search() {
     fi
 }
 pacstall-install() {
-    present="$(pacstall -L | xargs -L 1 pacstall -Ci 2>/dev/null | sed -r "s/\x1B\[([0-9]{1,3}(;[0-9]{1,2};?)?)?[mGK]//g" | grep -E '^(name|version)' | paste -d ' ' - -)"
-    not_installed="$(diff <(echo "$list" | awk '{print $2}') <(echo "$present" | awk '{print $2}') | grep -E '^<' | sed 's/^< //')"
+    present="$(pacstall -L | sed -r "s/\x1B\[([0-9]{1,3}(;[0-9]{1,2};?)?)?[mGK]//g")"
+    not_installed="$(diff <(echo "$list") <(echo "$present") | grep -E '^<' | sed 's/^< //')"
     [[ -z $not_installed ]] && exit 0
     # sudo nala install "$not_installed"
     while IFS= read -r line; do
@@ -210,5 +215,14 @@ pacstall-install() {
 }
 cargo-install() {
     echo "Not implemented! (Use mise instead.)"
+}
+snap-install() {
+    present="$(snap list | awk 'NR>1 {print $1}')"
+    not_installed="$(diff <(echo "$list" | awk 'NR>1 {print $1}') <(echo "$present") | grep -E '^<' | sed 's/^< //')"
+    [[ -z $not_installed ]] && exit 0
+    while IFS= read -r line; do
+        echo "Installing $line"
+        sudo snap install "$line"
+    done <<<"$not_installed"
 }
 run-installer

@@ -94,6 +94,7 @@ pipx_uvx = true
 
 [tools]
 # cabal = "latest" # ghcup is a meta-tool that installs the Haskell toolchain (cabal)
+bun = "latest"
 go = "latest"
 jq = "latest"
 pandoc = "latest"
@@ -244,3 +245,4 @@ tmux = "latest"
 typst = "latest"
 yazi = "latest"
 zig = "latest"
+"cargo:du-dust" = "latest"
