@@ -22,7 +22,7 @@ DEFAULT_NETWORK_INTERFACE=$(ip route | grep '^default' | awk '{print $5}' | head
 export DEFAULT_NETWORK_INTERFACE
 
 # Launch Polybar
-if xrandr -q | grep -q 'DP-1 connected'; then
+if xrandr -q | grep -q '^DP-1 connected'; then
     # Maybe not the best solution, but I think DP-1 is only ever used with my stationary
     # PC and the monitor I use with it.
     polybar dp1 &
