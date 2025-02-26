@@ -1,5 +1,88 @@
 # Changelog
 
+## [2.1.0](https://github.com/engeir/stowfiles/compare/stowfiles-v2.0.0...stowfiles-v2.1.0) (2025-02-26)
+
+
+### Features
+
+* **bin:** support opening PDFs from TeX files ([681bcc8](https://github.com/engeir/stowfiles/commit/681bcc81ebb3dfea9b27069557bacf792b6523be))
+* **nvim:** [plugin] add doing.nvim ([e8d5ff4](https://github.com/engeir/stowfiles/commit/e8d5ff44b519982e15f8876dbdb255ba12fb42eb))
+* **polybar:** adjust polybar to stationary PC ([a30994c](https://github.com/engeir/stowfiles/commit/a30994c7fa135c716314232738d1aeaf9313f300))
+* **software:** reinstall to my ubuntu stationary ([894eb5a](https://github.com/engeir/stowfiles/commit/894eb5a2878c4d244fbb468ad9b851436021c1a5))
+* **yazi:** add mount plugin ([3ac095d](https://github.com/engeir/stowfiles/commit/3ac095d90b98af719b369d13c2d309f27de55eb1))
+* **zsh:** add function to create tmp directories ([006e8ab](https://github.com/engeir/stowfiles/commit/006e8abdb76579637331464009b311df1dc39d15))
+
+
+### Bug Fixes
+
+* **bin:** first check if scripts can be run with shebang ([1ac1fab](https://github.com/engeir/stowfiles/commit/1ac1fabc44e187a3f3ebc859f74a5d9307bf5d51))
+* **bspwm:** adjust scrips to account for HDMI as main ([406c548](https://github.com/engeir/stowfiles/commit/406c548722ca36640683faa70e558e5384d8ded1))
+* **ghostty:** [font] don't specify the exact style, just the family ([62401e8](https://github.com/engeir/stowfiles/commit/62401e8b2fb0261f6da7294e5026c2ef76a065f0))
+* **nvim:** breaking change in blink.cmp ([fab29bf](https://github.com/engeir/stowfiles/commit/fab29bff18c04f4ab6d3a69f9e6a7d06b13641c5))
+* **nvim:** map C-k back to snippet_forward and swap C-y and C-space ([b351ba9](https://github.com/engeir/stowfiles/commit/b351ba9b7581293297808e959febb9e91c121c52))
+* **nvim:** update icon which was undefined ([3b8e8bc](https://github.com/engeir/stowfiles/commit/3b8e8bceb64d12a6d1bbb1c02313625048a13437))
+* **polybar:** error in grep regex ([6143a35](https://github.com/engeir/stowfiles/commit/6143a35af759d79ca48a5bc8558e13a9dd797918))
+* **shell:** make `.profile` POSIX compliant ([081b330](https://github.com/engeir/stowfiles/commit/081b3306067a69ddbf04336982ed3619d1b3d10b))
+* **zsh:** eza params were overridden... ([dbf822f](https://github.com/engeir/stowfiles/commit/dbf822f60ed721b4f6e2066c78e50bd159bfa0e8))
+* **zsh:** set default eza params ([fc90c17](https://github.com/engeir/stowfiles/commit/fc90c170abd73161806c3d0ca8c7625a71e0c7cc))
+
+
+### Miscellaneous
+
+* **aqua:** install and setup aqua ([0728fbc](https://github.com/engeir/stowfiles/commit/0728fbcb0bd1ebf172b6ac57e175d4ef0fd24491))
+* **bin:** just try to open a similar PDF ([cb5a421](https://github.com/engeir/stowfiles/commit/cb5a421c6ebf64560af032f9062d750282b498f0))
+* **ghostty:** remove all ligatures ([2e7e1bf](https://github.com/engeir/stowfiles/commit/2e7e1bf482245ab97279c008eb2386bd2cdefe35))
+* **mise:** add tex-fmt and bob ([4468b35](https://github.com/engeir/stowfiles/commit/4468b35af447eefcfd5e90a87fb6e9302a23e4fb))
+* **mise:** don't specify the installation source for typst ([f909555](https://github.com/engeir/stowfiles/commit/f909555cb643db3ec9f45d37425ad3d7d6a50b49))
+* **mise:** use cargo not ubi to install coreutils ([de10604](https://github.com/engeir/stowfiles/commit/de106049ebc8d7943efe8e514f0ddbfbee24456a))
+* **nvim:** [plugin] remove flash.nvim, use mini.jump ([be53855](https://github.com/engeir/stowfiles/commit/be53855b572c5c5cfb183d2e772f35c9a5d800b3))
+* **nvim:** add git graph/log plugin ([45af7f9](https://github.com/engeir/stowfiles/commit/45af7f90d34e691f3d979b20c4795670aeb2b7a9))
+* **nvim:** add vimtex and other nvim-cmp sources to blink ([6a8a80a](https://github.com/engeir/stowfiles/commit/6a8a80acb45ef85413b9e5bd82b498b91c4ec4c7))
+* **nvim:** adjust Cmdline keymaps and add typstfmt as formatter ([f4f960e](https://github.com/engeir/stowfiles/commit/f4f960ef6a966cb3fa98577669b7c52438d3a582))
+* **nvim:** better comments and add scopes snack ([2c0e514](https://github.com/engeir/stowfiles/commit/2c0e514fca6c9741b6c65d7f562a91cd262629e3))
+* **nvim:** better mini.operators keymaps and use kitty images ([53ae71b](https://github.com/engeir/stowfiles/commit/53ae71b77b033a3707577afa0db3a84dcba801b2))
+* **nvim:** increase timeout_ms for the formatter ([e0c800c](https://github.com/engeir/stowfiles/commit/e0c800c653af23df96b1d3723347b4aa753151c5))
+* **nvim:** make keymap desc nicer to read ([fb4fefa](https://github.com/engeir/stowfiles/commit/fb4fefa3c8590ad49d3222f5a35c48b961c08bb7))
+* **nvim:** minor changes ([a1699c2](https://github.com/engeir/stowfiles/commit/a1699c2b960b48fdad7c94b6f93f76a125c7f84d))
+* **nvim:** remove digraphs from blink.cmp completion ([0a0859c](https://github.com/engeir/stowfiles/commit/0a0859cf1bd92a08f1f5b7f09ef9badf292b2ba2))
+* **nvim:** tex-fmt supports toml config file ([a1bfd70](https://github.com/engeir/stowfiles/commit/a1bfd70209786de6a814f2de2a3db66db0fbb73c))
+* **software:** install cargo tools via mise ([05bd600](https://github.com/engeir/stowfiles/commit/05bd6000f1713f22629acf97f87b22d2b8c1f1da))
+* **software:** install imagemagick via mise ([cba54c4](https://github.com/engeir/stowfiles/commit/cba54c488c858cd5fb98f0073fe6d63f90253d79))
+* **software:** install jsonlint via mise ([d1f18b0](https://github.com/engeir/stowfiles/commit/d1f18b058f435ca7616f5fe197318f2070c4540a))
+* **software:** install updates ([2dfefbc](https://github.com/engeir/stowfiles/commit/2dfefbcd75b847405b684c7ce71550db853bc4c8))
+* **software:** update installed ([f1b3aec](https://github.com/engeir/stowfiles/commit/f1b3aec9b49b87e6c46b9d5b1c20a4b6a3cd17a4))
+* **software:** update installed ([d158291](https://github.com/engeir/stowfiles/commit/d15829116f4bd8f4f1c06580b9bbfb6851aca156))
+* **software:** update installed ([feccb7a](https://github.com/engeir/stowfiles/commit/feccb7a51b09be6c25545c6062307ab621ed8904))
+* **software:** update installed ([bba8817](https://github.com/engeir/stowfiles/commit/bba88171d9c49f73d78d4559d0bb8867a2139cbb))
+* **software:** update installed and migrate yazi to mise ([202b1a3](https://github.com/engeir/stowfiles/commit/202b1a387e69332d4fffac3f782a005d567cece5))
+* **stowfiles:** default task should be to write to files ([1407773](https://github.com/engeir/stowfiles/commit/1407773dac63fc282509eaf0840886d24cebbcb0))
+* **system:** increase repeat frequency on keys ([3224305](https://github.com/engeir/stowfiles/commit/322430596c7e6f9ddfd2c14d3aed11a5ea5145f1))
+* **yazi:** add ruby dependencies ([fc07a0d](https://github.com/engeir/stowfiles/commit/fc07a0d3c0e80509fe72b3c57b75e84d56113f7a))
+* **yazi:** use ripdrag instead of dragondrop ([c11cf64](https://github.com/engeir/stowfiles/commit/c11cf6427abbb30d56087e74c4d5e5e57e60513b))
+* **zsh:** rename zsh_mac to zsh ([7a2a42e](https://github.com/engeir/stowfiles/commit/7a2a42ecb079b6805143edd9ca9ba6daa372c0d7))
+
+
+### Styles
+
+* **bash:** update shebang from `/bin/bash` to `/usr/bin/env bash` ([ca8f362](https://github.com/engeir/stowfiles/commit/ca8f362c1df6ad0c266068c742d50b05238ea779))
+* **ghostty:** better colors to my nvim `f/F/t/T` search results ([277a84e](https://github.com/engeir/stowfiles/commit/277a84e835b84e5a1b8c64262bb0c613aef844b7))
+* **llf:** a chapter is also a paragraph ([6a6e96f](https://github.com/engeir/stowfiles/commit/6a6e96f2849699119adc7750bae5aedaeeaa2b7c))
+* **nvim:** reduce line numbers by collapsing simple statements ([415c6e5](https://github.com/engeir/stowfiles/commit/415c6e569e4ed6b54700abef3f1e9632ae0dd1e7))
+* **stylua:** format yazi config file ([0c730de](https://github.com/engeir/stowfiles/commit/0c730defaacd75be48e1eb8c5fa43cd2e2c29a5b))
+
+
+### Code Refactoring
+
+* **nvim:** use dooing and snacks.scratch instead of doing.nvim ([d34af5e](https://github.com/engeir/stowfiles/commit/d34af5e0a97b5d387c1a596a767f857646c3ca72))
+* **nvim:** use treewalker.nvim instead of syntax-tree-surfer ([5a102c3](https://github.com/engeir/stowfiles/commit/5a102c350473d657d31e08d1499da3850ea61c0c))
+
+
+### Continuous Integration
+
+* **fix:** update ci skip yaml formatter ([8e1626d](https://github.com/engeir/stowfiles/commit/8e1626db98774b548ac661847aee865f9d75e3da))
+* **release-please:** force a bootstrap SHA ([5efaf34](https://github.com/engeir/stowfiles/commit/5efaf348e6393885619737c1284c996137e175b0))
+* **release-please:** we try again ([ec5afd7](https://github.com/engeir/stowfiles/commit/ec5afd7b74cf6bfe960ad7d48a507bcd9cc0b2c3))
+
 ## [2.0.0](https://github.com/engeir/stowfiles/compare/stowfiles-v1.24.0...stowfiles-v2.0.0) (2025-01-08)
 
 
