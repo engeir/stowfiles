@@ -1,5 +1,13 @@
 # Changelog
 
+## [2.1.1](https://github.com/engeir/stowfiles/compare/stowfiles-v2.1.0...stowfiles-v2.1.1) (2025-03-02)
+
+
+### Miscellaneous
+
+* **nvim:** adjust tex settings ([6edc445](https://github.com/engeir/stowfiles/commit/6edc445677d97dc7026a1bffc4656ab2b185def2))
+* **software:** update installed ([1dbbbec](https://github.com/engeir/stowfiles/commit/1dbbbec215b19949ee7a6bd84b249cc4658b26f6))
+
 ## [2.1.0](https://github.com/engeir/stowfiles/compare/stowfiles-v2.0.0...stowfiles-v2.1.0) (2025-02-26)
 
 
