@@ -31,6 +31,7 @@ s.inccommand = "split" -- Adds a split when you do substitutions
 s.incsearch = true
 s.iskeyword:append("-")
 s.laststatus = 3 -- Always display the status line (0 for vim, 2 for lua... or something idk)
+s.linebreak = true -- If lines are soft-wrapped, the breaks should be between words
 s.list = true
 s.listchars = { tab = "» ", trail = "·", nbsp = "␣" }
 s.ma = true -- Modifiable on

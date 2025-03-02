@@ -59,7 +59,7 @@ vim.api.nvim_create_autocmd({ "User" }, {
 vim.api.nvim_create_autocmd({ "FileType" }, {
   pattern = { "gitcommit", "tex" },
   callback = function()
-    vim.opt_local.wrap = false
+    -- vim.opt_local.wrap = false
     vim.opt_local.spell = true
     vim.opt_local.formatoptions:append("t")
   end,
