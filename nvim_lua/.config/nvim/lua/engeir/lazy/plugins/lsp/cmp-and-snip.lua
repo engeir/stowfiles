@@ -38,8 +38,16 @@ return {
       cmdline = {
         keymap = {
           preset = "enter",
-          ["<S-Tab>"] = { "select_prev", "fallback" },
-          ["<Tab>"] = { "select_next", "fallback" },
+          ["<Tab>"] = {
+            function(cmp)
+              if cmp.is_ghost_text_visible() and not cmp.is_menu_visible() then
+                return cmp.accept()
+              end
+            end,
+            "show_and_insert",
+            "select_next",
+          },
+          ["<S-Tab>"] = { "show_and_insert", "select_prev" },
           ["<CR>"] = { "fallback" },
           ["<C-space>"] = { "accept", "fallback" },
           -- disable a keymap from the preset
