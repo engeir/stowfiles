@@ -1,0 +1,39 @@
+;; See
+;; https://jtroo.github.io/config-1.7.0.html#aliases
+;; and
+;; https://www.toptal.com/developers/keycode
+(defcfg
+  process-unmapped-keys yes
+  linux-x11-repeat-delay-rate 200,50
+)
+
+(defsrc
+  caps a s d f h j k l
+  lsft rsft
+)
+(defvar
+  tap-time 200
+  hold-time 200
+)
+
+(defalias
+  escctrl (tap-hold $tap-time $hold-time esc lctl)
+  a (multi f24 (tap-hold $tap-time $hold-time a lsft))
+  s (multi f24 (tap-hold $tap-time $hold-time s lmet))
+  d (multi f24 (tap-hold $tap-time $hold-time d lalt))
+  f (multi f24 (tap-hold $tap-time $hold-time f lctl))
+  h (multi f24 (tap-hold $tap-time $hold-time h rctl))
+  j (multi f24 (tap-hold $tap-time $hold-time j ralt))
+  k (multi f24 (tap-hold $tap-time $hold-time k rmet))
+  l (multi f24 (tap-hold $tap-time $hold-time l rsft))
+  ;; Defines a macro for typing `, then use it when pressing L-Shift
+  accent (macro S-Equal spc)
+  lsftaccent (multi f24 (tap-hold $tap-time $hold-time @accent lsft))
+  ;; Make R-Shift inert *
+  rsftaccent (multi f24 (tap-hold $tap-time $hold-time S-Backslash rsft))
+)
+
+(deflayer base
+  @escctrl @a @s @d @f @h @j @k @l
+  @lsftaccent @rsftaccent
+)
