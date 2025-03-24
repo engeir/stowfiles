@@ -7,10 +7,19 @@
   linux-x11-repeat-delay-rate 200,50
 )
 
+;;(defsrc
+;;                     o
+;;  caps a s d f h j k l
+;;  lsft rsft
+;;)
 (defsrc
-  caps a s d f h j k l
-  lsft rsft
+       1    2    3    4    5    6    7    8    9    0    +    \    bspc
+  tab  q    w    e    r    t    y    u    i    o    p
+  caps a    s    d    f    g    h    j    k    l
+  lsft      z    x    c    v    b    n    m    ,    .    -    rsft
+  lctl lmet lalt           spc            ralt
 )
+
 (defvar
   tap-time 200
   hold-time 200
@@ -31,9 +40,24 @@
   lsftaccent (multi f24 (tap-hold $tap-time $hold-time @accent lsft))
   ;; Make R-Shift inert *
   rsftaccent (multi f24 (tap-hold $tap-time $hold-time S-Backslash rsft))
+
+  arr (layer-toggle arrows)
+  ;; Tap-hold keys with letters for tap and layers for hold
+  car (tap-hold-release $tap-time $hold-time c @arr)
 )
 
 (deflayer base
-  @escctrl @a @s @d @f @h @j @k @l
-  @lsftaccent @rsftaccent
+       _    _    _    _    _    _    _    8    9    0    +    \    bspc
+  tab  q    w    e    r    t    y    u    i    o    p
+  @escctrl @a @s @d   @f   g   @h    @j   @k   @l
+  lsft      z    x    @car v    b    n    m    ,    .    -    rsft
+  @lsftaccent _ _          _              @rsftaccent
+)
+
+(deflayer arrows
+       f1   f2   f3   f4   f5   f6   f7   f8   f9   f10  f11  f12  _
+  _    _    _    _    _    _    _    _    left rght S-tab
+  _    lsft lmet lalt lctl home left down up   rght
+  _         _    _    _    _    _    tab  _    C-w  _    _    _
+  _    _    _              _              _
 )
