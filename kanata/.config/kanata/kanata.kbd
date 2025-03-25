@@ -43,15 +43,15 @@
 
   arr (layer-toggle arrows)
   ;; Tap-hold keys with letters for tap and layers for hold
-  car (tap-hold-release $tap-time $hold-time c @arr)
+  sar (tap-hold-release $tap-time $hold-time spc @arr)
 )
 
 (deflayer base
        _    _    _    _    _    _    _    8    9    0    +    \    bspc
   tab  q    w    e    r    t    y    u    i    o    p
   @escctrl @a @s @d   @f   g   @h    @j   @k   @l
-  lsft      z    x    @car v    b    n    m    ,    .    -    rsft
-  @lsftaccent _ _          _              @rsftaccent
+  lsft      z    x    _    v    b    n    m    ,    .    -    rsft
+  @lsftaccent _ _         @sar            @rsftaccent
 )
 
 (deflayer arrows
