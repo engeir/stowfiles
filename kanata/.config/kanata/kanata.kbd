@@ -50,8 +50,8 @@
        _    _    _    _    _    _    _    8    9    0    +    \    bspc
   tab  q    w    e    r    t    y    u    i    o    p
   @escctrl @a @s @d   @f   g   @h    @j   @k   @l
-  lsft      z    x    _    v    b    n    m    ,    .    -    rsft
-  @lsftaccent _ _         @sar            @rsftaccent
+  @lsftaccent z  x    _    v    b    n    m    ,    .    -    @rsftaccent
+  lctl     _    _          @sar            ralt
 )
 
 (deflayer arrows
