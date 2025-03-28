@@ -1,5 +1,28 @@
 # Changelog
 
+## [2.2.0](https://github.com/engeir/stowfiles/compare/stowfiles-v2.1.0...stowfiles-v2.2.0) (2025-03-28)
+
+
+### Features
+
+* **kanata:** add arrows layer ([8722e25](https://github.com/engeir/stowfiles/commit/8722e256d70dd308d9a3080dd1c4a440ad04a2de))
+* **kanata:** add kanata to mise installed software ([53f8782](https://github.com/engeir/stowfiles/commit/53f87820084a3ed6509e543aa73d9afb7b1fd30d))
+* **kanata:** add simple keymap config file ([fe1937b](https://github.com/engeir/stowfiles/commit/fe1937ba5c1e0c65dd7b4d2bd00e3479612305fb))
+* **nvim:** [plugin] add ansible integrations ([8c14c44](https://github.com/engeir/stowfiles/commit/8c14c4438b66fe515c832f8d6d548f046d5b0bae))
+
+
+### Bug Fixes
+
+* **kanata:** shift was mapped to the ctrl keys ([bf8021a](https://github.com/engeir/stowfiles/commit/bf8021a805df87eb2dafdc6d6be2d676ab5685dd))
+* **nvim:** update blink.cmp keymaps ([430b6a4](https://github.com/engeir/stowfiles/commit/430b6a4035bbf3125661a5a32a70e210b78402d8))
+
+
+### Miscellaneous
+
+* **kanata:** use space hold to toggle arrows layer ([904c15b](https://github.com/engeir/stowfiles/commit/904c15ba6bdee42cd86d4eafe2c0dd2dc1bd2f3e))
+* **nvim:** adjust tex settings ([6edc445](https://github.com/engeir/stowfiles/commit/6edc445677d97dc7026a1bffc4656ab2b185def2))
+* **software:** update installed ([1dbbbec](https://github.com/engeir/stowfiles/commit/1dbbbec215b19949ee7a6bd84b249cc4658b26f6))
+
 ## [2.1.0](https://github.com/engeir/stowfiles/compare/stowfiles-v2.0.0...stowfiles-v2.1.0) (2025-02-26)
 
 
