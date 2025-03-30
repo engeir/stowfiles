@@ -1,3 +1,4 @@
+;; vim: filetype=lisp
 ;; See
 ;; https://jtroo.github.io/config-1.7.0.html#aliases
 ;; and
@@ -7,11 +8,6 @@
   linux-x11-repeat-delay-rate 200,50
 )
 
-;;(defsrc
-;;                     o
-;;  caps a s d f h j k l
-;;  lsft rsft
-;;)
 (defsrc
        1    2    3    4    5    6    7    8    9    0    +    \    bspc
   tab  q    w    e    r    t    y    u    i    o    p
@@ -37,6 +33,8 @@
   l (multi f24 (tap-hold $tap-time $hold-time l rsft))
   ;; Defines a macro for typing `, then use it when pressing L-Shift
   accent (macro S-Equal spc)
+  ;; Tilde
+  tilde (macro RA-BracketRight spc)
   lsftaccent (multi f24 (tap-hold $tap-time $hold-time @accent lsft))
   ;; Make R-Shift inert *
   rsftaccent (multi f24 (tap-hold $tap-time $hold-time S-Backslash rsft))
@@ -51,13 +49,13 @@
   tab  q    w    e    r    t    y    u    i    o    p
   @escctrl @a @s @d   @f   g   @h    @j   @k   @l
   @lsftaccent z  x    _    v    b    n    m    ,    .    -    @rsftaccent
-  lctl     _    _          @sar            ralt
+  lctl     _    _          @sar           @tilde
 )
 
 (deflayer arrows
        f1   f2   f3   f4   f5   f6   f7   f8   f9   f10  f11  f12  _
   _    _    _    _    _    _    _    _    left rght S-tab
   _    lsft lmet lalt lctl home left down up   rght
-  _         _    _    _    _    _    tab  _    C-w  _    _    _
+  _         _    _  Delete bspc ret  tab  _    C-w  _    _    _
   _    _    _              _              _
 )
