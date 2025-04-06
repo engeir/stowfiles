@@ -19,7 +19,7 @@ return {
         opts = {},
       },
     },
-    version = "v0.*", -- use a release tag to download pre-built binaries
+    version = "*", -- use a release tag to download pre-built binaries
 
     ---@module 'blink.cmp'
     ---@type blink.cmp.Config
@@ -61,10 +61,29 @@ return {
       },
       completion = {
         accept = { auto_brackets = { enabled = true } },
-        documentation = { auto_show = true },
+        documentation = { auto_show = true, auto_show_delay_ms = 500 },
+        menu = {
+          draw = {
+            treesitter = { "lsp" },
+            columns = {
+              { "label", "label_description", gap = 1 },
+              { "kind_icon", "kind" },
+            },
+          },
+        },
       },
       signature = { enabled = true },
-      snippets = { preset = "luasnip" },
+      -- snippets = { preset = "luasnip" },
+      snippets = {
+        expand = function(snippet) require("luasnip").lsp_expand(snippet) end,
+        active = function(filter)
+          if filter and filter.direction then
+            return require("luasnip").jumpable(filter.direction)
+          end
+          return require("luasnip").in_snippet()
+        end,
+        jump = function(direction) require("luasnip").jump(direction) end,
+      },
       sources = {
         default = {
           "calc",

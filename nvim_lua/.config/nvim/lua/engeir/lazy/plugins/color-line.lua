@@ -1,8 +1,5 @@
 return {
   -- Style and colour schemes ===================================================== --
-  -- nvim-ts-rainbow is archived, but nvim-ts-rainbow2 is ugly
-  { "p00f/nvim-ts-rainbow", event = { "BufReadPre", "BufNewFile" } }, -- Different colour for nested parenthesis
-  -- "HiPhish/nvim-ts-rainbow2", -- Different colour for nested parenthesis
   {
     "NvChad/nvim-colorizer.lua",
     event = { "BufReadPre", "BufNewFile" },
