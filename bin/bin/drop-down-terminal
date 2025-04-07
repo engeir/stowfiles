@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+
+alacritty -t "dropdown" &
+disown
+sleep 2
+hideIt.sh --direction top --name dropdown --signal --steps 10
+# xdo raise -N dropdown

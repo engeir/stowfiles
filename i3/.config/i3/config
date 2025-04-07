@@ -38,8 +38,15 @@ exec --no-startup-id nm-applet
 # Start picom
 exec --no-startup-id picom --config "$HOME/.config/picom/picom.conf"
 
+exec --no-startup-id dunst -geom "280x50-10+38" -frame_width "1" -font "Hack iCursive 12"
+
 # Set the background
 exec --no-startup-id random_wallpaper
+
+floating_minimum_size 900 x 600
+for_window [title="^dropdown$"] floating enable, sticky enable
+exec --no-startup-id drop-down-terminal
+bindsym $mod+t exec --no-startup-id hideIt.sh --name dropdown --toggle
 
 exec_always --no-startup-id "$HOME/.config/polybar/launch.sh"
 
@@ -135,9 +142,11 @@ set $ws8 "8"
 set $ws9 "9"
 set $ws10 "10"
 
+workspace_auto_back_and_forth yes
 # switch to the previous or next workspace
 bindsym $mod+Mod1+i workspace prev
 bindsym $mod+Mod1+o workspace next
+bindsym $mod+Tab workspace back_and_forth
 
 # switch to workspace
 bindsym $mod+1 workspace number $ws1
