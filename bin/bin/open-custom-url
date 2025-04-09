@@ -1,0 +1,42 @@
+#!/bin/bash
+
+# Usage
+#
+# Make this script executable and place it on your PATH, say
+# `/$HOME/bin/open-custom-url`. Then, place the following desktop entry somewhere, say in `$HOME/.local/share/applications/open-custom-url.desktop`:
+#
+# [Desktop Entry]
+# Version=1.0
+# Name=Browser Router
+# Exec=/home/local-lafadm/bin/open-custom-url %u
+# Terminal=false
+# Type=Application
+# MimeType=x-scheme-handler/unknown;x-scheme-handler/about;text/html;x-scheme-handler/http;x-scheme-handler/https;
+#
+# Finally, run
+#
+#     xdg-settings set default-web-browser open-custom-url.desktop
+#
+# from the same directory as the desktop script. Now, all domains that you place inside
+# of `$HOME/firefox_domains.txt` will be opened in Firefox, while the rest is opened in
+# Vivaldi.
+#
+# nrk.no
+# vg.no
+# vivaldi.com
+
+# Path to the text file containing domains to open with Firefox
+FIREFOX_DOMAINS_FILE="$HOME/firefox_domains.txt"
+
+# Get the URL passed to the script
+URL="$1"
+
+# Extract the domain from the URL
+DOMAIN=$(echo "$URL" | awk -F[/:] '{print $4}')
+
+# Check if the domain is in the Firefox domains list
+if grep -q "$DOMAIN" "$FIREFOX_DOMAINS_FILE"; then
+    firefox "$URL" # Open with Firefox
+else
+    vivaldi "$URL" # Open with Vivaldi (default browser)
+fi
