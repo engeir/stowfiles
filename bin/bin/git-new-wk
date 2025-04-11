@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+
+# Check if exactly one parameter is provided
+if [ "$#" -ne 1 ]; then
+    echo "Error: Exactly one parameter (branch name) is required."
+    echo "Usage: $0 <parameter>"
+    exit 1
+fi
+
+if git rev-parse --verify "$1" >/dev/null 2>&1; then
+    git worktree add "../../worktrees/$(basename $PWD)-$1" "$1"
+else
+    git worktree add "../../worktrees/$(basename $PWD)-$1" -b "$1"
+fi
