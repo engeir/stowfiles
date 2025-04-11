@@ -1,5 +1,38 @@
 # Changelog
 
+## [2.2.0](https://github.com/engeir/stowfiles/compare/stowfiles-v2.1.0...stowfiles-v2.2.0) (2025-04-11)
+
+
+### Features
+
+* **bin:** open URLs in any given browser you like ([008775f](https://github.com/engeir/stowfiles/commit/008775f27bcfafc8232be870d1bcbd00a8e89e26))
+* **i3:** add drop-down-terminal ([e6b51a4](https://github.com/engeir/stowfiles/commit/e6b51a4061f3f0d6e015d18591e67a9bacdd3d84))
+* **i3:** add simple initial config ([e59e613](https://github.com/engeir/stowfiles/commit/e59e613f768f0b05be10b31eeb28c5b84b4144f7))
+* **i3:** make displayselect notice closed lid ([2d2794a](https://github.com/engeir/stowfiles/commit/2d2794a8f94ebfab3fc7f9cbde879c181c4ffae3))
+* **kanata:** add arrows layer ([8722e25](https://github.com/engeir/stowfiles/commit/8722e256d70dd308d9a3080dd1c4a440ad04a2de))
+* **kanata:** add kanata to mise installed software ([53f8782](https://github.com/engeir/stowfiles/commit/53f87820084a3ed6509e543aa73d9afb7b1fd30d))
+* **kanata:** add return and backspace to the arrows layer ([cbf475b](https://github.com/engeir/stowfiles/commit/cbf475b5b0a76fa2e83b2ca9fa8d90a5bdf0832c))
+* **kanata:** add simple keymap config file ([fe1937b](https://github.com/engeir/stowfiles/commit/fe1937ba5c1e0c65dd7b4d2bd00e3479612305fb))
+* **nvim:** [plugin] add ansible integrations ([8c14c44](https://github.com/engeir/stowfiles/commit/8c14c4438b66fe515c832f8d6d548f046d5b0bae))
+
+
+### Bug Fixes
+
+* **kanata:** shift was mapped to the ctrl keys ([bf8021a](https://github.com/engeir/stowfiles/commit/bf8021a805df87eb2dafdc6d6be2d676ab5685dd))
+* **nvim:** update blink.cmp keymaps ([430b6a4](https://github.com/engeir/stowfiles/commit/430b6a4035bbf3125661a5a32a70e210b78402d8))
+* **nvim:** update nvim 0.11 deprecations ([fdf2cbf](https://github.com/engeir/stowfiles/commit/fdf2cbf221d3e41c0fbbf06a9b3057c3a4fff7b6))
+
+
+### Miscellaneous
+
+* **bin:** easily activate the kanata layout ([7df44ae](https://github.com/engeir/stowfiles/commit/7df44aed6983561ace6a30e9dc81835820d0f288))
+* **bin:** handy git script to create new worktrees ([7dc8d28](https://github.com/engeir/stowfiles/commit/7dc8d282ec8dd544f1014146de24871f434ab5c6))
+* **i3:** add better polybar and display support ([d41b22e](https://github.com/engeir/stowfiles/commit/d41b22e3c5286c72822b9df92df0ed2e09ae307f))
+* **kanata:** use space hold to toggle arrows layer ([904c15b](https://github.com/engeir/stowfiles/commit/904c15ba6bdee42cd86d4eafe2c0dd2dc1bd2f3e))
+* **nvim:** adjust tex settings ([6edc445](https://github.com/engeir/stowfiles/commit/6edc445677d97dc7026a1bffc4656ab2b185def2))
+* **software:** update installed ([1dbbbec](https://github.com/engeir/stowfiles/commit/1dbbbec215b19949ee7a6bd84b249cc4658b26f6))
+* **zsh:** search in hidden files, but not .git ([da51f60](https://github.com/engeir/stowfiles/commit/da51f600bb8da724aa6cac4f913ada03faa3e60e))
+
 ## [2.1.0](https://github.com/engeir/stowfiles/compare/stowfiles-v2.0.0...stowfiles-v2.1.0) (2025-02-26)
 
 
