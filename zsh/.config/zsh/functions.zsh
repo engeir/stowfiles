@@ -183,7 +183,7 @@ compdef _whereis nvp
 # ripgrep->fzf->nvim [QUERY]
 r() { (
     # https://junegunn.github.io/fzf/tips/ripgrep-integration/#wrap-up
-    RELOAD='reload:rg --column --color=always --smart-case {q} || :'
+    RELOAD='reload:rg --hidden --glob "!.git" --column --color=always --smart-case {q} || :'
     OPENER='if [[ $FZF_SELECT_COUNT -eq 0 ]]; then
             nvim {1} +{2}     # No selection. Open the current line in NeoVim.
           else
