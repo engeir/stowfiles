@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+
+pass root | sudo -S /home/local-lafadm/.local/bin/kanata -c /home/local-lafadm/stowfiles/kanata/.config/kanata/kanata.kbd
