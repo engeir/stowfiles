@@ -42,8 +42,8 @@ zi ice from'gh-r' as'program' sbin'**/eza -> eza' atclone'cp -vf completions/eza
 zi light eza-community/eza
 zi ice wait lucid has'eza' atinit'AUTOCD=1'  # Setup plugin
 _EZA_PARAMS=(
-  '--group-directories-first' '-a' '-F=always' '--icons' '--group'
-  '--time-style=long-iso' '--color-scale=all' '--git'
+  '--group-directories-first' '-a' '-F=always' '--icons' '--group' '--octal-permissions'
+  '--time-style=long-iso' '--color-scale=all' '--git' '--extended' '--mounts'
 )
 zi light z-shell/zsh-eza
 zinit ice depth=1
