@@ -2,13 +2,8 @@
 
 skip_global_compinit=1
 ZDOTDIR="${XDG_CONFIG_HOME:-${HOME}/.config}/zsh"
-source "$HOME/.cargo/env"
-. "$HOME/.cargo/env"
+[ -s "$HOME/.cargo/env" ] && . "$HOME/.cargo/env"
 
-# bun completions
-[ -s "/Users/eirikenger/.bun/_bun" ] && source "/Users/eirikenger/.bun/_bun"
+[ -s "$HOME/.bun/_bun" ] && . "$HOME/.bun/_bun"
 
-# bun completions
-[ -s "/home/een023/.bun/_bun" ] && source "/home/een023/.bun/_bun"
-
-. "$HOME/.atuin/bin/env"
+[ -s "$HOME/.atuin/bin/env" ] && . "$HOME/.atuin/bin/env"
