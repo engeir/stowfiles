@@ -1,3 +1,10 @@
 #!/usr/bin/env bash
 
-pass root | sudo -S /home/local-lafadm/.local/bin/kanata -c /home/local-lafadm/stowfiles/kanata/.config/kanata/kanata.kbd
+if command -v "$HOME/.local/bin/kanata" >/dev/null 2>&1; then
+    KANATA="$HOME/.local/bin/kanata"
+elif command -v "$HOME/.local/share/mise/installs/cargo-kanata/1.8.0/bin/kanata" >/dev/null 2>&1; then
+    KANATA="$HOME/.local/share/mise/installs/cargo-kanata/1.8.0/bin/kanata"
+else
+    notify-send "Very bad!" "I could not find the Kanata executable :("
+fi
+pass root | sudo -S "$KANATA" -c "$HOME/stowfiles/kanata/.config/kanata/kanata.kbd"
