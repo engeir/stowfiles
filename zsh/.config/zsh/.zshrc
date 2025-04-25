@@ -43,7 +43,7 @@ zi light eza-community/eza
 zi ice wait lucid has'eza' atinit'AUTOCD=1'  # Setup plugin
 _EZA_PARAMS=(
   '--group-directories-first' '-a' '-F=always' '--icons' '--group' '--octal-permissions'
-  '--time-style=long-iso' '--color-scale=all' '--git' '--extended' '--mounts'
+  '--time-style=long-iso' '--color-scale=all' '--git' '--mounts'
 )
 zi light z-shell/zsh-eza
 zinit ice depth=1

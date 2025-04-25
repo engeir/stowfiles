@@ -70,6 +70,7 @@ gen_comps() {
 export PATH="$HOME/.local/share/zinit/plugins/atuinsh---atuin:$PATH"
 eval "$("$HOME/.local/bin/mise" activate zsh)"
 mkdir -p "$HOME/.config/zsh/.zsh_functions"
+gen_comps mise "completion zsh" "mise"
 gen_comps aqua "completion zsh" "aqua"
 gen_comps atuin "gen-completions --shell zsh" "atuin"
 gen_comps bw "completion --shell zsh" "bitwarden"
