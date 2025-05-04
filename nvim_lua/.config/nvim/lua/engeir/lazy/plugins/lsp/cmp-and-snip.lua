@@ -37,7 +37,7 @@ return {
       },
       cmdline = {
         keymap = {
-          preset = "enter",
+          preset = "inherit",
           ["<Tab>"] = {
             function(cmp)
               if cmp.is_ghost_text_visible() and not cmp.is_menu_visible() then
@@ -53,6 +53,9 @@ return {
           -- disable a keymap from the preset
           ["<C-e>"] = {},
           ["<C-y>"] = {},
+        },
+        completion = {
+          menu = { auto_show = true },
         },
       },
       appearance = {
