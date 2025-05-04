@@ -38,14 +38,14 @@ zinit light zsh-users/zsh-completions
 zinit light zsh-users/zsh-autosuggestions
 zinit light Aloxaf/fzf-tab
 zinit light ryanccn/vivid-zsh  # Sets LS_COLORS
-zi ice from'gh-r' as'program' sbin'**/eza -> eza' atclone'cp -vf completions/eza.zsh _eza'  # Install
-zi light eza-community/eza
-zi ice wait lucid has'eza' atinit'AUTOCD=1'  # Setup plugin
+zinit ice from'gh-r' as'program' sbin'**/eza -> eza' atclone'cp -vf completions/eza.zsh _eza'  # Install
+zinit light eza-community/eza
+zinit ice wait lucid has'eza' atinit'AUTOCD=1' atload'unalias lx' # Setup plugin
 _EZA_PARAMS=(
   '--group-directories-first' '-a' '-F=always' '--icons' '--group' '--octal-permissions'
   '--time-style=long-iso' '--color-scale=all' '--git' '--mounts'
 )
-zi light z-shell/zsh-eza
+zinit light z-shell/zsh-eza
 zinit ice depth=1
 zinit light jeffreytse/zsh-vi-mode
 zinit light MichaelAquilina/zsh-auto-notify
