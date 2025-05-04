@@ -1,6 +1,9 @@
 #!/usr/bin/env bash
 
-if command -v "$HOME/.local/bin/kanata" >/dev/null 2>&1; then
+FIND_RES="$(find ~/.local/share/mise/installs -name kanata)"
+if command -v "$FIND_RES" >/dev/null 2>&1;then
+    KANATA="$FIND_RES"
+elif command -v "$HOME/.local/bin/kanata" >/dev/null 2>&1; then
     KANATA="$HOME/.local/bin/kanata"
 elif command -v "$HOME/.local/share/mise/installs/cargo-kanata/1.8.0/bin/kanata" >/dev/null 2>&1; then
     KANATA="$HOME/.local/share/mise/installs/cargo-kanata/1.8.0/bin/kanata"
