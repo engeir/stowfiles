@@ -20,7 +20,7 @@ on = "T"
 run = "plugin toggle-pane max-preview"
 desc = "Maximize or restore the preview pane"
 [[manager.prepend_keymap]]
-on = "P"
+on = "H"
 run = "plugin toggle-pane min-preview"
 desc = "Show or hide the preview pane"
 [[manager.prepend_keymap]]
