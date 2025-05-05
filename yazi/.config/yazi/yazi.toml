@@ -18,19 +18,18 @@ prepend_rules = [{ mime = "image/*", use = "nuke" }]
 [preview]
 max_width = 1000
 
-[plugin]
-prepend_previewers = [
-  # HEIC previewer
-  { mime = "image/heic", run = "heic" },
-  # `run` need to be the name of a Lua plugin
-  # { mime = "application/x-netcdf", name = "*.nc", run = "ncdump-rich" },
-]
-# [[plugin.prepend_fetchers]]
-# id = "git"
-# name = "*"
-# run = "git"
-#
-# [[plugin.prepend_fetchers]]
-# id = "git"
-# name = "*/"
-# run = "git"
+[[plugin.prepend_previewers]]
+mime = "image/heic"
+run = "heic"
+[[plugin.prepend_previewers]]
+name = "*.nc"
+run = 'piper -- ncdump-rich --long "$1"'
+
+[[plugin.prepend_fetchers]]
+id = "git"
+name = "*"
+run = "git"
+[[plugin.prepend_fetchers]]
+id = "git"
+name = "*/"
+run = "git"
