@@ -51,7 +51,7 @@ return {
     enabled = dap_enabled,
     event = { "BufReadPre", "BufNewFile" },
     dependencies = {
-      "williamboman/mason.nvim",
+      "mason-org/mason.nvim",
       "mfussenegger/nvim-dap",
     },
     config = true,

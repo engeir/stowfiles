@@ -1,10 +1,12 @@
 return {
-  "williamboman/mason.nvim",
+  "mason-org/mason.nvim",
+  version = "1.*",
   event = { "BufReadPre", "BufNewFile" },
   build = ":MasonUpdate",
   cmd = { "Mason" },
   dependencies = {
-    "williamboman/mason-lspconfig.nvim",
+    "mason-org/mason-lspconfig.nvim",
+    version = "1.*",
   },
   config = function()
     local mason = require("mason")

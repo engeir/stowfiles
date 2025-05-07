@@ -4,8 +4,8 @@ return {
   dependencies = {
     "saghen/blink.cmp",
     -- NOTE: this must be here, so that Mason config is run before this
-    "williamboman/mason.nvim",
-    "williamboman/mason-lspconfig.nvim",
+    "mason-org/mason.nvim",
+    "mason-org/mason-lspconfig.nvim",
     "WhoIsSethDaniel/mason-tool-installer.nvim",
     "b0o/schemastore.nvim",
   },
