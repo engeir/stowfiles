@@ -31,6 +31,7 @@
   j (multi f24 (tap-hold $tap-time $hold-time j ralt))
   k (multi f24 (tap-hold $tap-time $hold-time k rmet))
   l (multi f24 (tap-hold $tap-time $hold-time l rsft))
+  q (multi f24 (tap-hold $tap-time $hold-time q (multi lsft lmet lalt lctl)))
   ;; Defines a macro for typing `, then use it when pressing L-Shift
   accent (macro S-Equal spc)
   ;; Tilde
@@ -46,7 +47,7 @@
 
 (deflayer base
        _    _    _    _    _    _    _    8    9    0    +    \    bspc
-  tab  q    w    e    r    t    y    u    i    o    p
+  tab  @q   w    e    r    t    y    u    i    o    p
   @escctrl @a @s @d   @f   g   @h    @j   @k   @l
   @lsftaccent z  x    _    v    b    n    m    ,    .    -    @rsftaccent
   lctl     _    _          @sar           @tilde
