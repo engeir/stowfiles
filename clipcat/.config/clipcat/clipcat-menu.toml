@@ -1,0 +1,47 @@
+# Server endpoint
+# The `clipcat-menu` connects to the server via a Unix domain socket if `server_endpoint` is a file path, such as:
+# "/run/user/<user-id>/clipcat/grpc.sock".
+# It connects via HTTP if `server_endpoint` is a URL, like: "http://127.0.0.1:45045".
+# server_endpoint = "/run/user/<user-id>/clipcat/grpc.sock"
+
+# The default finder to invoke when no "--finder=<finder>" option is provided.
+finder = "dmenu"
+
+[log]
+# Emit log messages to systemd-journald.
+emit_journald = true
+# Emit log messages to stdout.
+emit_stdout = false
+# Emit log messages to stderr.
+emit_stderr = false
+# Log level.
+level = "INFO"
+
+# Options for "dmenu".
+[dmenu]
+# Length of line.
+line_length = 100
+# Length of menu.
+menu_length = 30
+# Prompt for the menu.
+menu_prompt = "Clipcat"
+# Extra arguments to pass to `dmenu`.
+extra_arguments = [
+  "-fn",
+  "CaskaydiaMono Nerd Font Mono-11",
+  "-nb",
+  "#282828",
+  "-nf",
+  "#ebdbb2",
+  "-sb",
+  "#d3869b",
+  "-sf",
+  "#282828",
+]
+
+# Customize your finder.
+[custom_finder]
+# External program name.
+program = "fzf"
+# Arguments for calling the external program.
+args = []

@@ -10,6 +10,7 @@
 # Please see https://i3wm.org/docs/userguide.html for a complete reference!
 
 set $mod Mod4
+set $monster Mod1+Shift+Mod4+Control
 
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
@@ -38,15 +39,20 @@ exec --no-startup-id nm-applet
 # Start picom
 exec --no-startup-id picom --config "$HOME/.config/picom/picom.conf"
 
-exec --no-startup-id dunst -geom "280x50-10+38" -frame_width "1" -font "Hack iCursive 12"
+exec --no-startup-id dunst -geom "280x50-10+38" -frame_width "1" -font "CaskaydiaMono Nerd Font Mono"
+bindsym $mod+Shift+Mod1+p exec dunstctl set-paused toggle
+
+exec --no-startup-id clipcatd
 
 # Set the background
 exec --no-startup-id random_wallpaper
 
 floating_minimum_size 900 x 600
 for_window [title="^dropdown$"] floating enable, sticky enable
-exec --no-startup-id drop-down-terminal
-bindsym $mod+t exec --no-startup-id hideIt.sh --name dropdown --toggle
+# exec --no-startup-id drop-down-terminal
+# bindsym $mod+t exec --no-startup-id hideIt.sh --name dropdown --toggle
+
+for_window [urgent="latest"] focus
 
 exec_always --no-startup-id "$HOME/.config/polybar/launch.sh"
 
@@ -68,9 +74,15 @@ floating_modifier $mod
 bindsym $mod+Shift+period exec i3lock
 bindsym $mod+Shift+p exec --no-startup-id passmenu
 bindsym $mod+Shift+d exec --no-startup-id displayselect
+# bindsym $mod+Shift+g exec --no-startup-id greenclip print | grep . | dmenu -i -l 10 -p clipboard | xargs -r -d'\n' -I '{}' greenclip print '{}'
+bindsym $mod+Shift+g exec --no-startup-id clipcat-menu -f dmenu
+bindsym $mod+Shift+Mod1+y exec alacritty -t "dropdown" -o font.size=12 -o window.dimensions.lines=50 -o window.dimensions.columns=150 -e pamfzf-new
+bindsym $mod+Shift+Mod1+u exec alacritty -t "dropdown" -o font.size=12 -o window.dimensions.lines=50 -o window.dimensions.columns=150 -e grnclp
+bindsym $mod+Shift+Mod1+f exec --no-startup-id pdf_open
 
 # start a terminal
-bindsym $mod+Return exec i3-sensible-terminal
+# bindsym $mod+Return exec i3-sensible-terminal
+bindsym $mod+Return exec alacritty
 
 # kill focused window
 bindsym $mod+q kill
@@ -133,6 +145,12 @@ bindsym $mod+a focus parent
 
 # focus the child container
 #bindsym $mod+d focus child
+
+# Make the currently focused window a scratchpad
+bindsym $mod+Shift+minus move scratchpad
+
+# Show the first scratchpad window
+bindsym $mod+Shift+Mod1+minus scratchpad show
 
 # Define names for default workspaces for which we configure key bindings later on.
 # We use variables to avoid repeating the names in multiple places.
