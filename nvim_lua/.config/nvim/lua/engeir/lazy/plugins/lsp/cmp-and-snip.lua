@@ -18,6 +18,7 @@ return {
         lazy = true,
         opts = {},
       },
+      "Kaiser-Yang/blink-cmp-avante",
     },
     version = "*", -- use a release tag to download pre-built binaries
 
@@ -96,6 +97,7 @@ return {
           "snippets",
           "buffer",
           "vimtex",
+          "avante",
         },
         providers = {
           lazydev = {
@@ -114,6 +116,13 @@ return {
             module = "blink.compat.source",
             score_offset = 20,
             opts = {},
+          },
+          avante = {
+            module = "blink-cmp-avante",
+            name = "Avante",
+            opts = {
+              -- options for blink-cmp-avante
+            },
           },
         },
       },
