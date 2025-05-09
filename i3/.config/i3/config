@@ -77,7 +77,7 @@ bindsym $mod+Shift+d exec --no-startup-id displayselect
 # bindsym $mod+Shift+g exec --no-startup-id greenclip print | grep . | dmenu -i -l 10 -p clipboard | xargs -r -d'\n' -I '{}' greenclip print '{}'
 bindsym $mod+Shift+g exec --no-startup-id clipcat-menu -f dmenu
 bindsym $mod+Shift+Mod1+y exec alacritty -t "dropdown" -o font.size=12 -o window.dimensions.lines=50 -o window.dimensions.columns=150 -e pamfzf-new
-bindsym $mod+Shift+Mod1+u exec alacritty -t "dropdown" -o font.size=12 -o window.dimensions.lines=50 -o window.dimensions.columns=150 -e grnclp
+bindsym $mod+Shift+Mod1+u exec alacritty -t "dropdown" -o font.size=12 -o window.dimensions.lines=50 -o window.dimensions.columns=150 -e clip-manage
 bindsym $mod+Shift+Mod1+f exec --no-startup-id pdf_open
 
 # start a terminal

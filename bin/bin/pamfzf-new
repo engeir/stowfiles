@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+
+pamfzf
+clipcatctl insert "$(xclip -o -selection clipboard)"
