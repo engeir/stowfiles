@@ -3,31 +3,38 @@
 if [[ $(uname -s) == "Darwin" ]]; then
     # Mac
     dmenu='dmenu-mac'
-else
-    # Linux
-    dmenu='dmenu -i -l 30'
-fi
-# Choose from any wallpapers and reset
-# First show the files in dmenu and catch the full path
-chosen=$(fd -e png -e jpg . "$HOME/syncthing/aerial-views" | sed 's:.*/::' | eval "$dmenu")
-# chosen=$(ls ~/.config/wallpapers.d/wallpaper*/* | sed 's:.*/::' | dmenu -i -l 20)
-# chosen=$(ls ~/.config/bspwm/wallpaper*/* | sed 's:.*/::' | dmenu -i -l 20)
+    # Choose from any wallpapers and reset
+    # First show the files in dmenu and catch the full path
+    chosen=$(fd -e png -e jpg . "$HOME/syncthing/aerial-views" | sed 's:.*/::' | eval "$dmenu")
+    # chosen=$(ls ~/.config/wallpapers.d/wallpaper*/* | sed 's:.*/::' | dmenu -i -l 20)
+    # chosen=$(ls ~/.config/bspwm/wallpaper*/* | sed 's:.*/::' | dmenu -i -l 20)
 
-# Exit if none is chosen
-[ "$chosen" = "" ] && exit
+    # Exit if none is chosen
+    [ "$chosen" = "" ] && exit
 
-DIR=$(fd -e png -e jpg "$chosen" "$HOME/syncthing/aerial-views")
-# DIR=$(ls ~/.config/bspwm/wallpaper*/* | grep "$chosen")
+    DIR=$(fd -e png -e jpg "$chosen" "$HOME/syncthing/aerial-views")
+    # DIR=$(ls ~/.config/bspwm/wallpaper*/* | grep "$chosen")
 
-# Copy the selected wallpaper to be the main wallpaper
-# cp "$DIR" "$HOME"/.cache/bspwm/wallpaper.jpg
-convert "$DIR" -blur 0x9 "$HOME/.cache/bspwm/wallpaper.jpg"
+    # Copy the selected wallpaper to be the main wallpaper
+    cp "$DIR" "$HOME"/.cache/bspwm/wallpaper.jpg
+    # convert "$DIR" -blur 0x9 "$HOME/.cache/bspwm/wallpaper.jpg"
 
-# Set the new wallpaper
-if [[ $(uname -s) == "Darwin" ]]; then
-    # Mac
+    # Set the new wallpaper
     m wallpaper "$DIR"
 else
     # Linux
-    feh --bg-fill "$HOME/.cache/bspwm/wallpaper.jpg"
+    get_img() {
+        chosen=$(nsxiv -obtf "$HOME/syncthing/aerial-views/")
+    }
+    valid_input=false
+    while [ "$valid_input" = false ]; do
+        get_img
+        if [[ $chosen == "" ]]; then
+            notify-send "Wallpaper picker" "Use Q to select an image."
+        else
+            valid_input=true
+        fi
+    done
+
+    feh --bg-fill "$chosen"
 fi
