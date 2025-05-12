@@ -1,0 +1,30 @@
+#!/usr/bin/env bash
+
+DIR="$HOME/shortcuts/links/"
+cd "$DIR" || exit 1
+
+CHOSEN="$(fzf --preview "bat --color=always {}" | xargs -I {} sh -c "head -n 1 {}")"
+
+# Create menu promoting user to either copy, open or both.
+echo "What would you like to do with the link?"
+echo "1) Copy to clipboard"
+echo "2) Open in default application"
+echo "3) Both (copy and open)"
+read -r choice
+
+case $choice in
+    1)
+        clipcatctl insert "$CHOSEN"
+        ;;
+    2)
+        xdg-open "$CHOSEN"
+        ;;
+    3)
+        clipcatctl insert "$CHOSEN"
+        xdg-open "$CHOSEN"
+        ;;
+    *)
+        echo "Invalid choice. Exiting..."
+        exit 1
+        ;;
+esac
