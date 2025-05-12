@@ -18,7 +18,8 @@ fd -e png -e jpg . "$HOME/syncthing/aerial-views" | sort -R | sed 1q | while rea
     else
         if ! diff "$HOME/.cache/bspwm/wallpaper.jpg" "$HOME/stowfiles/assets/black.jpg" >/dev/null; then
             # Linux
-            magick "$file" -blur 0x9 "$HOME"/.cache/bspwm/wallpaper.jpg
+            # convert "$file" -blur 0x9 "$HOME"/.cache/bspwm/wallpaper.jpg
+            cp "$file" "$HOME"/.cache/bspwm/wallpaper.jpg
             feh --bg-fill "$HOME"/.cache/bspwm/wallpaper.jpg
         fi
     fi
