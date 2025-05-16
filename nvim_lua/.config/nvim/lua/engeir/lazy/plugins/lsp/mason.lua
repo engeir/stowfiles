@@ -5,8 +5,7 @@ return {
   build = ":MasonUpdate",
   cmd = { "Mason" },
   dependencies = {
-    "mason-org/mason-lspconfig.nvim",
-    version = "1.*",
+    { "mason-org/mason-lspconfig.nvim", version = "1.*" },
     {
       "WhoIsSethDaniel/mason-tool-installer.nvim",
       opts = {
