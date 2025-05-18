@@ -104,7 +104,6 @@ timeout_ms = 2000
 # If this value is 0, no desktop notification will be emitted for long plaintext.
 long_plaintext_length = 2000
 
-
 # Snippets, only UTF-8 text is supported.
 
 # [[snippets]]
