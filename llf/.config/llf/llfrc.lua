@@ -1,7 +1,7 @@
 C = {}
 
 -- The maximum line we'll try to output
-C.max_len = 88
+C.max_len = 0
 
 -- Environments which don't deserve newlines before/after (everything else does)
 C.inline_environments = {
@@ -56,6 +56,8 @@ C.own_line_controlseqs = {
   "date",
   "documentclass",
   "item",
+  "choice", -- Used in the `exam.cls`.
+  "CorrectChoice", -- Used in the `exam.cls`.
   -- "label",
   "newcommand",
   "newfloat",
@@ -130,6 +132,7 @@ C.start_line_controlseqs = {
   -- my additions
   "multicolumn",
   "hline",
+  "part", -- Used in the `exam.cls`.
 }
 
 -- Environments in which newlines cannot be added haphazardly
