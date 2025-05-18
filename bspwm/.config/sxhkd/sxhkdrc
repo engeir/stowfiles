@@ -10,7 +10,8 @@
 
 super + Return
 # terminal emulator
-	kitty
+	ghostty
+	# kitty
 	# st
 	# gnome-terminal
 
@@ -30,6 +31,9 @@ alt + @space
 super + alt + x
 # Run custom scripts
 	~/bin/custom_scripts &
+super + shift + p
+# Open passwords menu
+	passmenu
 super + alt + g
 # Git conventions cheat sheet
 	~/bin/git-conventions &
