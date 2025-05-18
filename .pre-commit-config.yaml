@@ -1,6 +1,5 @@
 # .pre-commit-config.yaml
 # See https://pre-commit.com/ for usage and config
-
 ci:
   skip: [yamlfmt, dprint]
 repos:
@@ -25,11 +24,6 @@ repos:
         pass_filenames: false
   - repo: local
     hooks:
-      # - id: update-nvim
-      #   name: Update nvim README
-      #   language: script
-      #   pass_filenames: false
-      #   entry: .update-nvim
       - id: dprint
         name: dprint
         entry: dprint fmt --incremental=true --allow-no-files
