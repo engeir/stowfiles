@@ -1,5 +1,92 @@
 # Changelog
 
+## [2.2.0](https://github.com/engeir/stowfiles/compare/stowfiles-v2.1.0...stowfiles-v2.2.0) (2025-05-18)
+
+
+### Features
+
+* **bin:** add simple link picker with explanation ([6022bc8](https://github.com/engeir/stowfiles/commit/6022bc82142dcb7f2d4b08b304be31bcbff3ff6f))
+* **bin:** open URLs in any given browser you like ([008775f](https://github.com/engeir/stowfiles/commit/008775f27bcfafc8232be870d1bcbd00a8e89e26))
+* **bin:** use dmenu if nsxiv is not available ([d8bd800](https://github.com/engeir/stowfiles/commit/d8bd800a71ede1892a7aaae44f53bfa1c266af59))
+* **bin:** use nsxiv to select wallpaper ([55d968d](https://github.com/engeir/stowfiles/commit/55d968d63a821caf28ae7c49c2091d9061a1ad91))
+* **clipboard:** use clipcat instead of greenclip ([e7c4a71](https://github.com/engeir/stowfiles/commit/e7c4a71d59373c878e35fc4045675edf047056af))
+* **i3:** add drop-down-terminal ([e6b51a4](https://github.com/engeir/stowfiles/commit/e6b51a4061f3f0d6e015d18591e67a9bacdd3d84))
+* **i3:** add simple initial config ([e59e613](https://github.com/engeir/stowfiles/commit/e59e613f768f0b05be10b31eeb28c5b84b4144f7))
+* **i3:** make displayselect notice closed lid ([2d2794a](https://github.com/engeir/stowfiles/commit/2d2794a8f94ebfab3fc7f9cbde879c181c4ffae3))
+* **kanata:** add arrows layer ([8722e25](https://github.com/engeir/stowfiles/commit/8722e256d70dd308d9a3080dd1c4a440ad04a2de))
+* **kanata:** add kanata to mise installed software ([53f8782](https://github.com/engeir/stowfiles/commit/53f87820084a3ed6509e543aa73d9afb7b1fd30d))
+* **kanata:** add return and backspace to the arrows layer ([cbf475b](https://github.com/engeir/stowfiles/commit/cbf475b5b0a76fa2e83b2ca9fa8d90a5bdf0832c))
+* **kanata:** add simple keymap config file ([fe1937b](https://github.com/engeir/stowfiles/commit/fe1937ba5c1e0c65dd7b4d2bd00e3479612305fb))
+* **kanata:** make q held act as multi key ([96e7f76](https://github.com/engeir/stowfiles/commit/96e7f7614e6e774f15778be8ac69a17e8a14d43d))
+* **nvim:** [plugin] add ansible integrations ([8c14c44](https://github.com/engeir/stowfiles/commit/8c14c4438b66fe515c832f8d6d548f046d5b0bae))
+* **nvim:** add mason tool installer ([dbaf9ff](https://github.com/engeir/stowfiles/commit/dbaf9ffd11daf06f7b2e0c5203e7bf883ebcabee))
+* **nvim:** set up avante with local models via proxy ([e9a4b44](https://github.com/engeir/stowfiles/commit/e9a4b4491071fde7cc555344be78eda1ce7e61e6))
+* **picom:** finally using picom for what its worth ([a4e7788](https://github.com/engeir/stowfiles/commit/a4e7788728be484aa617f5f6a2e259194ecae393))
+* **tmux:** allow nested tmux sessions ([13260d7](https://github.com/engeir/stowfiles/commit/13260d77cef5b6f378019ad469e555b3d05fa621))
+* **tmux:** true remote tmux nesting ([2437247](https://github.com/engeir/stowfiles/commit/2437247e1fd0bac1e97b9c532b3c8fd1375fe5a8))
+* **yazi:** update plugins and add a couple more ([3e675de](https://github.com/engeir/stowfiles/commit/3e675defa424d7bdbade93c873f8801e6812b941))
+
+
+### Bug Fixes
+
+* **kanata:** make kanata work on more than one machine ([1dbf505](https://github.com/engeir/stowfiles/commit/1dbf5056225b116f8a1ba2ada95abd2535bef3d8))
+* **kanata:** make start-kanata resistant to version changes ([c9ace0d](https://github.com/engeir/stowfiles/commit/c9ace0daf7d85db589de106bf281b44242e0013f))
+* **kanata:** shift was mapped to the ctrl keys ([bf8021a](https://github.com/engeir/stowfiles/commit/bf8021a805df87eb2dafdc6d6be2d676ab5685dd))
+* **nvim:** adjust cmdline keymaps after v1.2.0 ([123f2bb](https://github.com/engeir/stowfiles/commit/123f2bb23baff88492829b4345dd9b3e831d7acc))
+* **nvim:** pin mason versions and move to new short url ([d7c7e8c](https://github.com/engeir/stowfiles/commit/d7c7e8c37693977c9cf25167b56eb26c1f35c527))
+* **nvim:** pin version of dependency correctly ([80b25de](https://github.com/engeir/stowfiles/commit/80b25de144543dc6d22cd6778f64c4b673eb51d2))
+* **nvim:** update blink.cmp keymaps ([430b6a4](https://github.com/engeir/stowfiles/commit/430b6a4035bbf3125661a5a32a70e210b78402d8))
+* **nvim:** update nvim 0.11 deprecations ([fdf2cbf](https://github.com/engeir/stowfiles/commit/fdf2cbf221d3e41c0fbbf06a9b3057c3a4fff7b6))
+* **nvim:** use the maintained version of obsidian.nvim ([20b6a97](https://github.com/engeir/stowfiles/commit/20b6a97e6758e0667b4cc69e9b3197664ec2d6d9))
+* **yazi:** change keymap of toggle hiding the previewer ([4882c71](https://github.com/engeir/stowfiles/commit/4882c7115ebb4596133b97668e75d94823c41ff0))
+* **yazi:** update after a break in the git plugin ([0298e1b](https://github.com/engeir/stowfiles/commit/0298e1bc809c050bc7c340b63f4005f810118875))
+
+
+### Miscellaneous
+
+* **bin:** easily activate the kanata layout ([7df44ae](https://github.com/engeir/stowfiles/commit/7df44aed6983561ace6a30e9dc81835820d0f288))
+* **bin:** handy git script to create new worktrees ([7dc8d28](https://github.com/engeir/stowfiles/commit/7dc8d282ec8dd544f1014146de24871f434ab5c6))
+* **bspwm:** use ghostty and set passmenu keybind ([b0757e3](https://github.com/engeir/stowfiles/commit/b0757e32ac527fca39be1b9619431fdcad2c9367))
+* diff images and screenshot script ([115c688](https://github.com/engeir/stowfiles/commit/115c688477076aeef7342e9a568613c831da8802))
+* **i3,bin:** adjust bindsym for clipboard manager ([7f5ae61](https://github.com/engeir/stowfiles/commit/7f5ae612faf04c5252206f361f8d18431feab75b))
+* **i3:** add better polybar and display support ([d41b22e](https://github.com/engeir/stowfiles/commit/d41b22e3c5286c72822b9df92df0ed2e09ae307f))
+* **kanata:** use space hold to toggle arrows layer ([904c15b](https://github.com/engeir/stowfiles/commit/904c15ba6bdee42cd86d4eafe2c0dd2dc1bd2f3e))
+* **nvim:** [plugins] add img-clip and overseer ([6d5f9eb](https://github.com/engeir/stowfiles/commit/6d5f9eb6c432a5096452b2e7fb0c5205fa71734e))
+* **nvim:** adjust tex settings ([6edc445](https://github.com/engeir/stowfiles/commit/6edc445677d97dc7026a1bffc4656ab2b185def2))
+* **nvim:** small changes to plugins ([5fe2ffd](https://github.com/engeir/stowfiles/commit/5fe2ffd2cf79ba4e4d8875e9532e6cfa233a2a61))
+* **nvim:** use tex-fmt over llf by default ([dfe128c](https://github.com/engeir/stowfiles/commit/dfe128c454e06a249d0ed84efaea85e5eb19f8ad))
+* push small changes ([2c73d03](https://github.com/engeir/stowfiles/commit/2c73d037f046f8c37649ef8d53401058691448f4))
+* removes comments ([f65ccf4](https://github.com/engeir/stowfiles/commit/f65ccf442a347d8108446f24c51077a7c0132ef5))
+* **software:** install updates ([51e0184](https://github.com/engeir/stowfiles/commit/51e01843bbf29bb4bbe54d3c4cfa8614d7654f52))
+* **software:** update installed ([b10a346](https://github.com/engeir/stowfiles/commit/b10a3463ab26c7e5823b27f09ee2b952def77e53))
+* **software:** update installed ([6895b04](https://github.com/engeir/stowfiles/commit/6895b043666dfed8a1c8f0dd916505aae1c4e5f2))
+* **software:** update installed ([1dbbbec](https://github.com/engeir/stowfiles/commit/1dbbbec215b19949ee7a6bd84b249cc4658b26f6))
+* **tmux:** simplify toggling on/off keymaps ([a5681cf](https://github.com/engeir/stowfiles/commit/a5681cfb150733fad0aee6a6a859a326933bda63))
+* **zsh,software:** add the lux package manager for lua ([f4776f3](https://github.com/engeir/stowfiles/commit/f4776f3a089e6410fb157f3b0f41e57a03e6f0c6))
+* **zsh:** add extra params to eza/ls long format ([37efc25](https://github.com/engeir/stowfiles/commit/37efc25700050969472a4a9375bb33437a74ff50))
+* **zsh:** search in hidden files, but not .git ([da51f60](https://github.com/engeir/stowfiles/commit/da51f600bb8da724aa6cac4f913ada03faa3e60e))
+
+
+### Styles
+
+* **format:** remove empty line ([61df0f1](https://github.com/engeir/stowfiles/commit/61df0f16c20d55eabbd46715693186c58bb869d8))
+* **format:** run shell formatters and linters ([4d5e753](https://github.com/engeir/stowfiles/commit/4d5e7536b7b419f63f62e4b2c25a2b0f69f8daa1))
+* **helix:** new colorscheme ([730eec1](https://github.com/engeir/stowfiles/commit/730eec1c8e6bb0bea3941939253ece8e016a3678))
+
+
+### Code Refactoring
+
+* **bin:** blurring is working, so we just copy ([17a0632](https://github.com/engeir/stowfiles/commit/17a0632df1c64299e9b77632037f3b240a764ed1))
+* **tmux:** more stable keymap toggling ([1ea48db](https://github.com/engeir/stowfiles/commit/1ea48db6197c1778550e1d0126bb94542160244a))
+* **zsh:** test if cmpletion files are present before sourcing ([f5942f7](https://github.com/engeir/stowfiles/commit/f5942f7c80517bfb96346055ec9b448e94ee2d0b))
+
+
+### Continuous Integration
+
+* **dprint:** add "allow-no-files" option ([532a13b](https://github.com/engeir/stowfiles/commit/532a13b862caca00967eb50f351f0b13ab110602))
+* **dprint:** use action rather than pinned binary download ([4d88cea](https://github.com/engeir/stowfiles/commit/4d88ceae77a25f712129c2b3c20572f6be3ddb39))
+* **revert:** go back to binary with pinned version ([7fc8192](https://github.com/engeir/stowfiles/commit/7fc81920ec0cfca794f1cef9a152516475522313))
+
 ## [2.1.0](https://github.com/engeir/stowfiles/compare/stowfiles-v2.0.0...stowfiles-v2.1.0) (2025-02-26)
 
 
