@@ -24,7 +24,11 @@ if [[ $(uname -s) == "Darwin" ]]; then
 else
     # Linux
     get_img() {
-        chosen=$(nsxiv -obtf "$HOME/syncthing/aerial-views/")
+        if command -v nsxiv; then
+            chosen=$(nsxiv -obtf "$HOME/syncthing/aerial-views/")
+        else
+            chosen=$(fd -e png -e jpg . "$HOME/syncthing/aerial-views" | sed 's:.*/::' | eval "$dmenu")
+        fi
     }
     valid_input=false
     while [ "$valid_input" = false ]; do
