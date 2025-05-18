@@ -21,17 +21,17 @@ config = { settings = { args = [] } }
 
 [[language]]
 name = "latex"
-text-width = 130
+text-width = 88
 
 # [auto-pairs]
 # '\'.'(' = '\)'
 
 [language-server.texlab.config.texlab]
 formatterLineLength = -1 # bib files
-latexindent = { modifyLineBreaks = true }
+latexindent = { modifyLineBreaks = false }
 
 [language-server.texlab.config.texlab.build]
-onSave = true
+onSave = false
 forwardSearchAfter = false
 
 [language-server.texlab.config.texlab.forwardSearch]
@@ -58,35 +58,41 @@ formatter = { command = "dprint", args = ["fmt", "--stdin", "md"] }
 name = "go"
 auto-format = false
 
-# introduce new language server
-[language-server.scls]
-command = "simple-completion-language-server"
+# # introduce new language server
+# [language-server.scls]
+# command = "simple-completion-language-server"
 
-[language-server.scls.config]
-max_completion_items = 20 # set max completion results len for each group: words, snippets, unicode-input
-snippets_first = true # completions will return before snippets by default
-feature_words = true # enable completion by word
-feature_snippets = true # enable snippets
-feature_unicode_input = true # enable "unicode input"
-feature_paths = true # enable path completion
+# [language-server.scls.config]
+# max_completion_items = 20 # set max completion results len for each group: words, snippets, unicode-input
+# snippets_first = true # completions will return before snippets by default
+# feature_words = true # enable completion by word
+# feature_snippets = true # enable snippets
+# feature_unicode_input = true # enable "unicode input"
+# feature_paths = true # enable path completion
 
-# write logs to /tmp/completion.log
-[language-server.scls.environment]
-RUST_LOG = "info,simple-completion-langauge-server=info"
-LOG_FILE = "/tmp/completion.log"
+# # write logs to /tmp/completion.log
+# [language-server.scls.environment]
+# RUST_LOG = "info,simple-completion-langauge-server=info"
+# LOG_FILE = "/tmp/completion.log"
 
 # append langage server to existed languages
 [[language]]
 name = "rust"
-language-servers = ["scls", "rust-analyzer"]
+language-servers = [
+  # "scls",
+  "rust-analyzer",
+]
 
-[[language]]
-name = "git-commit"
-language-servers = ["scls"]
+# [[language]]
+# name = "git-commit"
+# language-servers = ["scls"]
 
 [[language]]
 name = "latex"
-language-servers = ["scls", "texlab"]
+language-servers = [
+  # "scls",
+  "texlab",
+]
 
 # etc..
 
@@ -98,4 +104,4 @@ file-types = []
 shebangs = []
 roots = []
 auto-format = false
-language-servers = ["scls"]
+# language-servers = ["scls"]

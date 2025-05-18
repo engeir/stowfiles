@@ -1,4 +1,4 @@
-theme = "gruvbox_dark_soft_transparent"
+theme = "gruvbox_dark_soft"
 
 [editor]
 auto-completion = true
@@ -7,7 +7,7 @@ cursorline = true
 cursorcolumn = true
 line-number = "relative"
 mouse = true
-auto-save = true
+auto-save = false
 text-width = 88
 soft-wrap = { enable = true, wrap-at-text-width = true, wrap-indicator = "" }
 rulers = [88]

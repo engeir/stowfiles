@@ -1,6 +1,8 @@
-#!/bin/bash
+#!/usr/bin/env bash
 # From: https://github.com/naelstrof/slop
 
 slop=$(slop -f "%x %y %w %h %g %i") || exit 1
 read -r X Y W H G ID < <(echo "$slop")
-ffmpeg -f x11grab -s "$W"x"$H" -i :0.0+"$X,$Y" -f alsa -i pulse ~/myfile.webm
+# ffmpeg -f x11grab -s "$W"x"$H" -i :0.0+"$X,$Y" -f alsa -i pulse ~/myfile.webm
+ffmpeg -f x11grab -framerate 30 -s "$W"x"$H" -i :0.0+"$X,$Y" -c:v libx264 -preset ultrafast -crf 0 output.mp4
+# ffmpeg -i input.webm -c:v libx264 -c:a aac "$savefile"
