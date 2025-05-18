@@ -25,7 +25,7 @@ done
 
 shift $((OPTIND - 1))
 
-if [ $USEWAYLAND = true ]; then
+if [ "$USEWAYLAND" = true ]; then
     word=$(wl-paste -p)
 else
     word=$(xclip -o)
