@@ -22,12 +22,15 @@ if [[ $(uname -s) == "Darwin" ]]; then
     # Set the new wallpaper
     m wallpaper "$DIR"
 else
+    dmenu='dmenu -g 5 -l 7'
     # Linux
     get_img() {
         if command -v nsxiv; then
             chosen=$(nsxiv -obtf "$HOME/syncthing/aerial-views/")
         else
             chosen=$(fd -e png -e jpg . "$HOME/syncthing/aerial-views" | sed 's:.*/::' | eval "$dmenu")
+            [ "$chosen" = "" ] && exit
+            chosen=$(fd "$chosen" "$HOME/syncthing/aerial-views")
         fi
     }
     valid_input=false
