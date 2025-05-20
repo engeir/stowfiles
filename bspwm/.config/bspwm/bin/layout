@@ -5,7 +5,7 @@ if ! command -v bsp-layout >/dev/null 2>&1; then
     exit 1
 fi
 
-chosen=$(bsp-layout layouts | dmenu -b -i -l 20 -p "layout")
+chosen=$(bsp-layout layouts | dmenu -c -l 20 -p "layout")
 
 bsp-layout set "$chosen"
 # echo $chosen

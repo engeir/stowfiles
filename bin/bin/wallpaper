@@ -6,8 +6,6 @@ if [[ $(uname -s) == "Darwin" ]]; then
     # Choose from any wallpapers and reset
     # First show the files in dmenu and catch the full path
     chosen=$(fd -e png -e jpg . "$HOME/syncthing/aerial-views" | sed 's:.*/::' | eval "$dmenu")
-    # chosen=$(ls ~/.config/wallpapers.d/wallpaper*/* | sed 's:.*/::' | dmenu -i -l 20)
-    # chosen=$(ls ~/.config/bspwm/wallpaper*/* | sed 's:.*/::' | dmenu -i -l 20)
 
     # Exit if none is chosen
     [ "$chosen" = "" ] && exit
@@ -22,7 +20,7 @@ if [[ $(uname -s) == "Darwin" ]]; then
     # Set the new wallpaper
     m wallpaper "$DIR"
 else
-    dmenu='dmenu -g 5 -l 7'
+    dmenu='dmenu -c -g 5 -l 7'
     # Linux
     get_img() {
         if command -v nsxiv; then

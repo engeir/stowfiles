@@ -20,9 +20,7 @@ super + b
 
 alt + @space
 # program launcher
-	dmenu_run
-	# dmenu_run -nb '#000000' -nf "#3CB371" -sb "#3CB371" -fn 3
-	# dmenu_run -nb '#000000' -nf "#00008B" -sb "#00008B" -fn 3
+	dmenu_run -c -l 20
 
 # ctrl_r + @space
 # # Laumch with cerebro
@@ -280,9 +278,6 @@ super + shift + {i,o}
 #
 # my additions
 #
-#super + {_,shift + } d
-#	{rofis || rofi -show run,lighthouse | sh}
-##,dmenu_run -i -p "Search: "}
 
 # Brightness
 XF86MonBrightness{Up,Down}

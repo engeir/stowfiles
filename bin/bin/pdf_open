@@ -15,7 +15,7 @@ else
     # Linux
     DIR1="/home/een023/.local/share/data/Mendeley Ltd./Mendeley Desktop/Downloaded"
     DIR2="/home/een023/science/"
-    dmenu="dmenu -i -b -l 20"
+    dmenu="dmenu -b -l 20"
     open=xdg-open
     fd=fd
 fi

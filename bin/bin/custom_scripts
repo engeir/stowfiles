@@ -10,7 +10,7 @@ if [[ $(uname -s) == "Darwin" ]]; then
 else
     # Linux
     MACH="Linux"
-    dmenu='dmenu -i -l 20 -p "Choose a script to run:"'
+    dmenu='dmenu -c -l 10 -p "Choose a script to run:"'
     choises="passwords\npoweroff\nhard reset BSPWM\nopen pdf\ninspect system\nemojis\nhtml-symbols\nweather\nchange wallpaper\nlayouts\nfind word definition\nfind text\nread QR\nfram status\npomodoro"
 fi
 

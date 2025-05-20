@@ -3,19 +3,19 @@
 *.alpha: .90
 
 !! Set a default font and font size as below:
-/* Hack is the only one I've managed to patch with cursive */
-/* *.font:	Hack iCursive S12:size=11:antialias=true:autohint=true; */
-/* Hasklug looks good, but has ligatures ... */
-/* *.font: Hasklug Nerd Font:size=11:antialias=true:autohint=true; */
-/* *.font: BitstromWera Nerd Font:size=11:antialias=true:autohint=true; */
-/*
-These two are both from https://git.sainnhe.dev/sainnhe/icursive-nerd-font. Recursive
-seems to be better, for example with displaying the tilde (~). It does, however, use
-ligatures...
-*/
-*.font: MyRecursive:size=11:antialias=true:autohint=true;
+*.font: CaskaydiaMono Nerd Font:size=11:antialias=true:autohint=true;
 /* *.font: SpaceMono Nerd Font Mono:size=11:antialias=true:autohint=true; */
 /* *.font: Cascursive:size=11:antialias=true:autohint=true; */
+
+dmenu.font: CaskaydiaMono Nerd Font:size=14:antialias=true:autohint=true;
+! normal background color
+*.background    : #2d2d2d
+! normal foreground color
+*.foreground    : #7070c2
+! selected background color
+*.selbackground : #8c8cd9
+! selected foreground color
+*.selforeground : #2d2d2d
 
 #define t_bg_floor     #010000
 #define t_bg_dip       #191815
