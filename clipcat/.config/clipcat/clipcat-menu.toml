@@ -27,8 +27,9 @@ menu_length = 30
 menu_prompt = "Clipcat"
 # Extra arguments to pass to `dmenu`.
 extra_arguments = [
-  "-fn",
-  "CaskaydiaMono Nerd Font Mono-11",
+  "-c",
+  "-l",
+  "20",
   "-nb",
   "#282828",
   "-nf",
