@@ -20,7 +20,7 @@ if [[ $(uname -s) == "Darwin" ]]; then
     # Set the new wallpaper
     m wallpaper "$DIR"
 else
-    dmenu='dmenu -c -g 5 -l 7'
+    dmenu='dmenu -c -l 15'
     # Linux
     get_img() {
         if command -v nsxiv; then
