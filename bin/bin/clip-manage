@@ -1,4 +1,3 @@
 #!/usr/bin/env bash
 
 clipcat-menu -f fzf
-# greenclip print | grep . | fzf -e | xargs -r -d'\n' -I '{}' greenclip print '{}'
