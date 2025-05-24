@@ -24,6 +24,7 @@ zinit snippet OMZP::archlinux
 zinit snippet OMZP::command-not-found
 zinit snippet OMZP::ssh
 
+zinit light Aloxaf/fzf-tab
 zinit ice as"command" from"gh-r" \
     atclone"./starship init zsh > init.zsh; ./starship completions zsh > _starship" \
     atpull"%atclone" src"init.zsh"
@@ -36,7 +37,6 @@ zinit light ajeetdsouza/zoxide
 zinit light zsh-users/zsh-syntax-highlighting
 zinit light zsh-users/zsh-completions
 zinit light zsh-users/zsh-autosuggestions
-zinit light Aloxaf/fzf-tab
 zinit light ryanccn/vivid-zsh  # Sets LS_COLORS
 zinit ice from'gh-r' as'program' sbin'**/eza -> eza' atclone'cp -vf completions/eza.zsh _eza'  # Install
 zinit light eza-community/eza

@@ -1,6 +1,6 @@
 ! Run xrdb ~/.config/Xresources for the changes to take effect
 !! Transparency (0-1):
-*.alpha: .90
+! *.alpha: .90
 
 !! Set a default font and font size as below:
 *.font: CaskaydiaMono Nerd Font:size=11:antialias=true:autohint=true;
