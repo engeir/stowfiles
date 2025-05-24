@@ -1,5 +1,21 @@
 # Changelog
 
+## [2.3.0](https://github.com/engeir/stowfiles/compare/stowfiles-v2.2.0...stowfiles-v2.3.0) (2025-05-24)
+
+
+### Features
+
+* **dmenu,clipcat:** center dmenu view of clips ([46b918c](https://github.com/engeir/stowfiles/commit/46b918c4cb341576bdf8e59939f1a42f15ae539a))
+* **dmenu:** update dmenu commands to new flags ([a5bf272](https://github.com/engeir/stowfiles/commit/a5bf272870117d55418da46453ead64eada4ac0a))
+* **menu:** add centre patch and update style ([833db5b](https://github.com/engeir/stowfiles/commit/833db5bd862c14950585bdf8fc8b03ec4bfb2853))
+
+
+### Miscellaneous
+
+* **bin:** remove old comment ([20c087e](https://github.com/engeir/stowfiles/commit/20c087e79db3e0646302bed8b2531847b2df28bf))
+* **dmenu,bin:** adjust dmenu settings ([6c045fc](https://github.com/engeir/stowfiles/commit/6c045fc7236f8fad188bead4d95ad587ae8168e3))
+* **misc:** add some small changes and updates ([14c3a7a](https://github.com/engeir/stowfiles/commit/14c3a7a47e6721dba4cce513db04441d35708158))
+
 ## [2.2.0](https://github.com/engeir/stowfiles/compare/stowfiles-v2.1.0...stowfiles-v2.2.0) (2025-05-18)
 
 
