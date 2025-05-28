@@ -9,6 +9,11 @@
 #
 # Please see https://i3wm.org/docs/userguide.html for a complete reference!
 
+for_window [class="^.*"] border pixel 5
+# Since 4.22 (I run 4.20...)
+# gaps inner 5px
+# gaps outer 5px
+
 set $mod Mod4
 set $monster Mod1+Shift+Mod4+Control
 
@@ -71,13 +76,22 @@ floating_modifier $mod
 # tiling_drag modifier titlebar
 
 # lock the screen with i3lock
-bindsym $mod+Shift+period exec i3lock
+# bindsym $mod+Shift+period exec i3lock
+bindsym $mod+Shift+period exec slock
 bindsym $mod+Shift+p exec --no-startup-id passmenu
 bindsym $mod+Shift+d exec --no-startup-id displayselect
 bindsym $mod+Shift+g exec --no-startup-id clipcat-menu -f dmenu
 bindsym $mod+Shift+Mod1+y exec alacritty -t "dropdown" -o font.size=12 -o window.dimensions.lines=50 -o window.dimensions.columns=150 -e pamfzf-new
 bindsym $mod+Shift+Mod1+u exec alacritty -t "dropdown" -o font.size=12 -o window.dimensions.lines=50 -o window.dimensions.columns=150 -e clip-manage
+bindsym $monster+l exec alacritty -t "dropdown" -o font.size=12 -o window.dimensions.lines=50 -o window.dimensions.columns=150 -e cheat-sheet-links
+bindsym $monster+r exec alacritty -t "dropdown" -o font.size=12 -o window.dimensions.lines=50 -o window.dimensions.columns=150 -e cheat-sheet-links files-and-content
+bindsym $monster+j exec alacritty -t "dropdown" -o font.size=12 -o window.dimensions.lines=50 -o window.dimensions.columns=150 -e junta-shorten
 bindsym $mod+Shift+Mod1+f exec --no-startup-id pdf_open
+bindsym $monster+plus exec --no-startup-id bash ~/.config/picom/adjust-opacity +active
+bindsym $monster+minus exec --no-startup-id bash ~/.config/picom/adjust-opacity -active
+bindsym $monster+o exec --no-startup-id bash ~/.config/picom/adjust-opacity +inactive
+bindsym $monster+i exec --no-startup-id bash ~/.config/picom/adjust-opacity -inactive
+bindsym $monster+t exec --no-startup-id find_txt
 
 # start a terminal
 # bindsym $mod+Return exec i3-sensible-terminal
@@ -209,10 +223,10 @@ mode "resize" {
         # Pressing right will grow the window’s width.
         # Pressing up will shrink the window’s height.
         # Pressing down will grow the window’s height.
-        bindsym j resize shrink width 10 px or 10 ppt
-        bindsym k resize grow height 10 px or 10 ppt
-        bindsym l resize shrink height 10 px or 10 ppt
-        bindsym oslash resize grow width 10 px or 10 ppt
+        bindsym h resize shrink width 10 px or 10 ppt
+        bindsym j resize grow height 10 px or 10 ppt
+        bindsym k resize shrink height 10 px or 10 ppt
+        bindsym l resize grow width 10 px or 10 ppt
 
         # same bindings, but for the arrow keys
         bindsym Left resize shrink width 10 px or 10 ppt
@@ -253,3 +267,7 @@ bar {
 # client.urgent            $peach    $base $peach $overlay0  $peach
 # client.placeholder       $overlay0 $base $text  $overlay0  $overlay0
 # client.background        $base
+
+assign [class="^firefox$"] → $ws4
+assign [class="^vivaldi$"] → $ws7
+assign [class="^slack$"] → $ws7

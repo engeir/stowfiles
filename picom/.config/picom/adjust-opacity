@@ -12,22 +12,35 @@ if ! command -v crudini >/dev/null 2>&1; then
 fi
 ## Fetch background_opacity from alacritty.yml
 opacity="$(crudini --get ~/.config/picom/picom.conf "" active-opacity)"
+inopacity="$(crudini --get ~/.config/picom/picom.conf "" inactive-opacity)"
 
 if [ $# -eq 0 ]; then
     echo "need an argument: u to increase opacity; d to decrease; number 0-1.0 to specific opacity"
     exit 0
-elif [ "$1" == 'u' ]; then
+elif [ "$1" == '+active' ]; then
     new=$(echo "$opacity" 0.05 | awk '{print $1 + $2}')
     if (($(echo "$new > 1.0" | bc -l))); then
         new=1
     fi
     crudini --set ~/.config/picom/picom.conf "" active-opacity "$new"
-elif [ "$1" == 'd' ]; then
+elif [ "$1" == '-active' ]; then
     new=$(echo "$opacity" 0.05 | awk '{print $1 - $2}')
     if (($(echo "$new < 0.0" | bc -l))); then
         new=0
     fi
     crudini --set ~/.config/picom/picom.conf "" active-opacity "$new"
+elif [ "$1" == '+inactive' ]; then
+    new=$(echo "$inopacity" 0.05 | awk '{print $1 + $2}')
+    if (($(echo "$new > 1.0" | bc -l))); then
+        new=1
+    fi
+    crudini --set ~/.config/picom/picom.conf "" inactive-opacity "$new"
+elif [ "$1" == '-inactive' ]; then
+    new=$(echo "$inopacity" 0.05 | awk '{print $1 - $2}')
+    if (($(echo "$new < 0.0" | bc -l))); then
+        new=0
+    fi
+    crudini --set ~/.config/picom/picom.conf "" inactive-opacity "$new"
 elif (($(echo "$1 < 1.0" | bc -l))); then
     new=$1
     crudini --set ~/.config/picom/picom.conf "" inactive-opacity "$new"

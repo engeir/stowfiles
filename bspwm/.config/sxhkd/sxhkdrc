@@ -180,11 +180,11 @@ super + u
 super + alt + u
 	bspwm-hidden
 
-super + alt + {a,s,0}
-	bash ~/.config/picom/adjust-opacity {u,d,1} &
+super + alt + {a,s}
+	bash ~/.config/picom/adjust-opacity {+active,-active} &
 
-super + alt + {1-9}
-	bash ~/.config/picom/adjust-opacity 0.{1-9} &
+super + alt + {8,9}
+	bash ~/.config/picom/adjust-opacity {+inactive,-inactive} &
 
 #
 # focus/swap
