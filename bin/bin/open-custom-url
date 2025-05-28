@@ -3,7 +3,8 @@
 # Usage
 #
 # Make this script executable and place it on your PATH, say
-# `/$HOME/bin/open-custom-url`. Then, place the following desktop entry somewhere, say in `$HOME/.local/share/applications/open-custom-url.desktop`:
+# `/$HOME/bin/open-custom-url`. Then, place the following desktop entry somewhere, say
+# in `$HOME/.local/share/applications/open-custom-url.desktop`:
 #
 # [Desktop Entry]
 # Version=1.0
@@ -26,7 +27,9 @@
 # vivaldi.com
 
 # Path to the text file containing domains to open with Firefox
-FIREFOX_DOMAINS_FILE="$HOME/firefox_domains.txt"
+DOMAIN_FILE_PATH="$HOME/.local/share/open-custom-url"
+mkdir -p "$DOMAIN_FILE_PATH"
+FIREFOX_DOMAINS_FILE="$DOMAIN_FILE_PATH/firefox_domains.txt"
 
 # Get the URL passed to the script
 URL="$1"

@@ -13,8 +13,8 @@ if [[ $(uname -s) == "Darwin" ]]; then
     fd=fd
 else
     # Linux
-    DIR1="/home/een023/.local/share/data/Mendeley Ltd./Mendeley Desktop/Downloaded"
-    DIR2="/home/een023/science/"
+    DIR1="$HOME/Documents/pdfs/"
+    DIR2="$HOME/science/"
     dmenu="dmenu -b -l 20"
     open=xdg-open
     fd=fd
