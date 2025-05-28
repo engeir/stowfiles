@@ -38,7 +38,7 @@ level = "INFO"
 # Enable watching the X11/Wayland clipboard selection.
 enable_clipboard = true
 # Enable watching the X11/Wayland primary selection.
-enable_primary = true
+enable_primary = false
 
 # Ignore clips that match any of the MIME types.
 sensitive_mime_types = ["x-kde-passwordManagerHint"]
