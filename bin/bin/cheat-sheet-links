@@ -3,14 +3,63 @@
 DIR="$HOME/shortcuts/links/"
 cd "$DIR" || exit 1
 
-CHOSEN="$(fzf --preview "bat --color=always {}" | xargs -I {} sh -c "head -n 1 {}")"
+export PATH="$PATH:$HOME/.local/share/mise/shims/"
+
+files-and-content() {
+    # Alternativ 1:
+    # Messier, where the first characters searches for contents with rg, and the rest is
+    # searching with fzf. The searches are separated by a comma.
+    TEMP=$(mktemp -u)
+    export TEMP
+    trap 'rm -f "$TEMP"' EXIT
+    INITIAL_QUERY="${*:-}"
+    TRANSFORMER='
+      rg_pat={q:1}      # The first word is passed to ripgrep
+      fzf_pat={q:2..}   # The rest are passed to fzf
+      if ! [[ -r "$TEMP" ]] || [[ $rg_pat != $(cat "$TEMP") ]]; then
+        echo "$rg_pat" > "$TEMP"
+        printf "reload:sleep 0.1; rg --column --line-number --no-heading --color=always --smart-case %q || true" "$rg_pat"
+      fi
+      echo "+search:$fzf_pat"
+    '
+    CHOSEN="$(fzf --ansi --disabled --query "$INITIAL_QUERY" \
+        --with-shell 'bash -c' \
+        --bind "start,change:transform:$TRANSFORMER" \
+        --color "hl:-1:underline,hl+:-1:underline:reverse" \
+        --delimiter : \
+        --preview 'bat --color=always {1} --highlight-line {2}' \
+        --preview-window '<80(up),border-line,+{2}+3/3,~3' \
+        | xargs -I {} sh -c "head -n 1 {}")"
+}
+
+files() {
+    # Alternativ 2:
+    # Cleaner with only one line per file, but only file names can be searched.
+    CHOSEN="$(fzf --preview "bat --color=always {}" --preview-window "<80(up),border-line,+{2}+3/3,~3" | xargs -I {} sh -c "head -n 1 {}")"
+}
+
+case "$1" in
+    files-and-content)
+        files-and-content
+        ;;
+    files)
+        files
+        ;;
+    *)
+        files
+        ;;
+esac
+
+if [ "$CHOSEN" = "" ]; then
+    exit 0
+fi
 
 # Create menu promoting user to either copy, open or both.
 echo "What would you like to do with the link?"
 echo "1) Copy to clipboard"
 echo "2) Open in default application"
 echo "3) Both (copy and open)"
-read -r choice
+read -r -n 1 choice
 
 case $choice in
     1)
