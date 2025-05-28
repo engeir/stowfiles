@@ -28,6 +28,9 @@ fi
 if [ -d "$HOME/.cargo/bin" ]; then
     PATH="$HOME/.cargo/bin:$PATH"
 fi
+if [ -d "$HOME/.local/share/rye" ]; then
+    . "$HOME/.local/share/rye/env"
+fi
 export GPG_TTY=$(tty)
 
 # export PATH=$HOME/.config/rofi/bin:$PATH
@@ -65,8 +68,7 @@ gen_comps() {
     fi
 }
 
-# . "$HOME/.cargo/env"
-. "$HOME/.local/share/rye/env"
+export PATH="$PATH:$HOME/.local/share/mise/shims/"
 export PATH="$HOME/.local/share/zinit/plugins/atuinsh---atuin:$PATH"
 eval "$("$HOME/.local/bin/mise" activate zsh)"
 mkdir -p "$HOME/.config/zsh/.zsh_functions"
@@ -78,3 +80,6 @@ gen_comps just "--completions zsh" "just"
 gen_comps pixi "completion --shell zsh" "pixi"
 gen_comps uv "generate-shell-completion zsh" "uv"
 gen_comps jj "util completion zsh" "jj"
+# Vagrant is stupid, and does it in their own way.
+vagrant autocomplete install --zsh
+cp /opt/vagrant/embedded/gems/gems/vagrant-2.4.5/contrib/zsh/_vagrant "$HOME/.config/zsh/.zsh_functions/_vagrant"

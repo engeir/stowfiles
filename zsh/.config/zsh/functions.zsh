@@ -201,8 +201,8 @@ r() { (
         --query "$*"
 ); }
 
-wezterm-kill-pane() {
-    wezterm cli kill-pane --pane-id "$(wezterm cli list | fzf | awk '{print $3}')"
+evalssh() {
+    eval "$(ssh-agent -s)"
 }
 
 # # Change cursor for vi modes:
