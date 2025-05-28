@@ -126,6 +126,12 @@ vim.keymap.set(
   { desc = "Continue searching on the next line and swallow whitespace" }
 )
 vim.keymap.set("n", "<leader>v", "<C-v>$")
+vim.keymap.set(
+  "c",
+  "<C-h>",
+  "%s/—/-/g",
+  { desc = "Continue searching on the next line and swallow whitespace" }
+)
 
 -- Evaluate math
 vim.keymap.set("x", "<leader><leader>e", 'c<C-R>=py3eval(@")<CR><Esc>')
