@@ -53,7 +53,7 @@ s.smartindent = true -- Makes indenting smart
 s.smarttab = true -- Makes tabbing smarter will realize you have 2 vs 4
 s.softtabstop = 4 -- Insert 4 spaces for a tab (et = expandtab)
 s.spell = true
-s.spelllang = "en_gb"
+s.spelllang = "en_gb,nb"
 s.splitbelow = true -- Horizontal splits will automatically be below
 s.splitright = true -- Vertical splits will automatically be to the right
 s.swapfile = false -- creates a swapfile

@@ -6,21 +6,22 @@
 #USAGE   choices "INSTALLED-linux" "INSTALLED-mac"
 #USAGE }
 #USAGE arg "[package-manager]" help="The package manager to install from" {
-#USAGE   choices "fonts" "tlmgr" "cargo" "uv" "apt" "pacstall" "go" "flatpak" "snap"
+#USAGE   choices "apt" "cargo" "flatpak" "fonts" "go" "nvim-norsk-spelllang" "pacstall" "snap" "tlmgr" "uv"
 #USAGE }
 
 usage() {
     echo "Usage: $0 <package-manager>"
     echo "Supported package managers:"
-    echo "  fonts"
-    echo "  tlmgr"
-    echo "  cargo"
-    echo "  uv"
     echo "  apt"
-    echo "  pacstall"
-    echo "  go"
+    echo "  cargo"
     echo "  flatpak"
+    echo "  fonts"
+    echo "  go"
+    echo "  nvim-norsk-spelllang"
+    echo "  pacstall"
     echo "  snap"
+    echo "  tlmgr"
+    echo "  uv"
     exit 0
 }
 # If -h or --help is passed as an argument, print usage and exit
@@ -34,6 +35,12 @@ case "$1" in
     "fonts")
         run-installer() {
             fonts-install
+            exit 0
+        }
+        ;;
+    "nvim-norsk-spelllang")
+        run-installer() {
+            nvim-spell-install
             exit 0
         }
         ;;
@@ -125,6 +132,24 @@ fonts-install() {
         echo "CaskaydiaMono Nerd Font Mono, Regular style is not installed."
         font-caskaydia-install
     fi
+}
+nvim-spell-install() {
+    # Check if the spell files already exists.
+    if [[ -f "$HOME/.config/nvim/spell/nb.utf-8.spl" ]]; then
+        exit 0
+    fi
+    wget https://downloads.sourceforge.net/project/aoo-extensions/1216/2/dictionary-no-no-2.2.oxt && mv dictionary-no-no-2.2.oxt "$HOME/Downloads/" || exit 1
+    cd "$HOME/Downloads/" || exit 1
+    unzip dictionary-no-no-2.2.oxt -d dictionary-no-no-2.2
+    mkdir -p "$HOME/.config/nvim/spell/"
+    mv "$HOME/Downloads/dictionary-no-no-2.2/DICT/nb_NO.aff" "$HOME/.config/nvim/spell/nb.aff"
+    mv "$HOME/Downloads/dictionary-no-no-2.2/DICT/nb_NO.dic" "$HOME/.config/nvim/spell/nb.dic"
+    mv "$HOME/Downloads/dictionary-no-no-2.2/DICT/nn_NO.aff" "$HOME/.config/nvim/spell/nn.aff"
+    mv "$HOME/Downloads/dictionary-no-no-2.2/DICT/nn_NO.dic" "$HOME/.config/nvim/spell/nn.dic"
+    rm -rf "$HOME/Downloads/dictionary-no-no-2.2"
+    rm "$HOME/Downloads/dictionary-no-no-2.2.oxt"
+    nvim -c "mkspell $HOME/.config/nvim/spell/nb" -c "qa!"
+    nvim -c "mkspell $HOME/.config/nvim/spell/nn" -c "qa!"
 }
 tlmgr-install() {
     # Do shit
