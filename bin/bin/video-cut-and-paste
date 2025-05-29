@@ -8,6 +8,11 @@ Use it by running::
 
 where file.txt contains information about what input file to use, what name the new
 video should be saved to, and all start/stops in the source file.
+
+    file in.mp4
+    out out.mp4
+    start 00:02:23
+    stop 00:03:00
 """
 
 import sys
