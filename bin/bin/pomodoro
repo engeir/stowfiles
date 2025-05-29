@@ -1,0 +1,42 @@
+#!/usr/bin/env bash
+
+#MISE description="Simple Pomodoro CLI using `timer` to count down the sessions."
+#MISE quiet=true
+#USAGE flag "-h --help" help="Print this help message and exit"
+#USAGE arg "[work]" help="The amount of time to work (integer in `s`, `m`, or `h`)."
+#USAGE arg "[pause]" help="The amount of time to have a pause (integer in `s`, `m`, or `h`)."
+#USAGE arg "[repeats]" help="The number of times to repeat the process."
+
+declare -A pomo_options
+pomo_options["Work"]="$usage_work"
+pomo_options["Break"]="$usage_pause"
+pomo_options["Repeat"]="$usage_repeats"
+
+say() {
+    if command -v lolcat >/dev/null 2>&1 && command -v figlet >/dev/null 2>&1; then
+        echo "$@" | figlet | lolcat
+    elif command -v lolcat >/dev/null 2>&1 && command -v toilet >/dev/null 2>&1; then
+        echo "$@" | toilet | lolcat
+    else
+        echo "$@"
+    fi
+}
+pomofn() {
+    local val=$1
+    local n="${2:+Only $2 work session(s) to go!}"
+    say "$val"
+    timer -n "$val" -f "${pomo_options["$val"]}" 2>/dev/null
+    notify-send --app-name=Pomodoro🍅 "'$val' session done 🍅" "$n"
+}
+
+# Number of times to repeat the loop, default is 2
+num_loops=$((pomo_options["Repeat"] - 1))
+
+# A little hack to make sure we start and stop with a work session. No point in either
+# starting of ending with a break.
+pomofn "Work" "$num_loops"
+for ((n = 0; n < num_loops; n++)); do
+    pomofn "Break" "$n"
+    pomofn "Work" "$n"
+done
+say "You are done for the day!"
