@@ -5,99 +5,118 @@
 ```txt {mise}
 bun                         1.1.38
 cabal                       3.14.1.1        ~/.config/mise/config.toml  latest
-cargo:presenterm            0.9.0           ~/.config/mise/config.toml  latest
-dprint                      0.48.0          ~/.config/mise/config.toml  latest
-go                          1.23.4          ~/.config/mise/config.toml  latest
+cargo:coreutils             0.0.29          ~/.config/mise/config.toml  latest
+cargo:presenterm            0.10.0          ~/.config/mise/config.toml  latest
+cargo:ripdrag               0.4.10          ~/.config/mise/config.toml  latest
+cargo:tex-fmt               0.5.2           ~/.config/mise/config.toml  latest
+dprint                      0.49.0          ~/.config/mise/config.toml  latest
+gem:fontist                 1.21.2          ~/.config/mise/config.toml  latest
+go                          1.23.4
+go                          1.24.0          ~/.config/mise/config.toml  latest
 jq                          1.7.1           ~/.config/mise/config.toml  latest
 julia                       1.10.3
-julia                       1.11.2          ~/.config/mise/config.toml  latest
+julia                       1.11.2
+julia                       1.11.3          ~/.config/mise/config.toml  latest
 lua                         5.4.7           ~/.config/mise/config.toml  latest
-node                        23.6.0          ~/.config/mise/config.toml  latest
-npm                         11.0.0          ~/.config/mise/config.toml  latest
+node                        23.6.0
+node                        23.7.0          ~/.config/mise/config.toml  latest
+npm                         11.1.0          ~/.config/mise/config.toml  latest
 npm:@graphlab-fr/cosma      2.5.4           ~/.config/mise/config.toml  latest
 npm:cosma                   0.0.1           ~/.config/mise/config.toml  latest
-npm:cwebp                   3.1.0           ~/.config/mise/config.toml  latest
+npm:cwebp                   3.2.0           ~/.config/mise/config.toml  latest
 npm:cwebp-bin               8.0.0
 npm:tldr                    3.4.0           ~/.config/mise/config.toml  latest
-pandoc                      3.6.1           ~/.config/mise/config.toml  latest
+pandoc                      3.6.3           ~/.config/mise/config.toml  latest
 python                      3.9.21          ~/.config/mise/config.toml  sub-0.4:latest
 python                      3.10.16         ~/.config/mise/config.toml  sub-0.3:latest
 python                      3.11.11         ~/.config/mise/config.toml  sub-0.2:latest
 python                      3.12.4
-python                      3.12.8          ~/.config/mise/config.toml  sub-0.1:latest
-python                      3.13.1          ~/.config/mise/config.toml  latest
-tinytex                     2025.01         ~/.config/mise/config.toml  latest
+python                      3.12.9          ~/.config/mise/config.toml  sub-0.1:latest
+python                      3.13.2          ~/.config/mise/config.toml  latest
+ruby                        3.4.1           ~/.config/mise/config.toml  latest
+tinytex                     2025.02         ~/.config/mise/config.toml  latest
 tmux                        3.5a            ~/.config/mise/config.toml  latest
+typst                       0.12.0          ~/.config/mise/config.toml  latest
 ubi:Enter-tainer/typstyle   0.12.14         ~/.config/mise/config.toml  latest
 ubi:Eoin-McMahon/blindfold  1.0.6           ~/.config/mise/config.toml  latest
+ubi:MordechaiHadad/bob      4.0.3           ~/.config/mise/config.toml  latest
 ubi:Myriad-Dreamin/shiroa   0.2.0-nightly5  ~/.config/mise/config.toml  latest
-ubi:charmbracelet/sequin    0.3.0           ~/.config/mise/config.toml  latest
-ubi:etcd-io/etcd            3.5.17          ~/.config/mise/config.toml  latest
+ubi:charmbracelet/sequin    0.3.0
+ubi:charmbracelet/sequin    0.3.1           ~/.config/mise/config.toml  latest
+ubi:etcd-io/etcd            3.5.17
+ubi:etcd-io/etcd            3.5.18          ~/.config/mise/config.toml  latest
 ubi:filosottile/age         1.2.1           ~/.config/mise/config.toml  latest
-ubi:goreleaser/goreleaser   2.5.1           ~/.config/mise/config.toml  latest
+ubi:goreleaser/goreleaser   2.5.1
+ubi:goreleaser/goreleaser   2.7.0           ~/.config/mise/config.toml  latest
 ubi:houseabsolute/precious  0.7.3           ~/.config/mise/config.toml  latest
-ubi:ismaelgv/rnr            0.4.2           ~/.config/mise/config.toml  latest
-ubi:junegunn/fzf            0.57.0          ~/.config/mise/config.toml  latest
+ubi:ismaelgv/rnr            0.5.0           ~/.config/mise/config.toml  latest
+ubi:junegunn/fzf            0.57.0
+ubi:junegunn/fzf            0.59.0          ~/.config/mise/config.toml  latest
 ubi:mgdm/htmlq              0.4.0           ~/.config/mise/config.toml  latest
-ubi:pvolok/mprocs           0.7.1           ~/.config/mise/config.toml  latest
+ubi:ms-jpq/sad              0.4.32          ~/.config/mise/config.toml  latest
+ubi:pvolok/mprocs           0.7.1
+ubi:pvolok/mprocs           0.7.2           ~/.config/mise/config.toml  latest
 ubi:pythops/bluetui         0.6             ~/.config/mise/config.toml  latest
 ubi:sharkdp/bat             0.25.0          ~/.config/mise/config.toml  latest
-ubi:typst/typst             0.12.0          ~/.config/mise/config.toml  latest
-ubi:uutils/coreutils        0.0.28          ~/.config/mise/config.toml  latest
-usage                       1.7.4           ~/.config/mise/config.toml  latest
-watchexec                   2.2.1           ~/.config/mise/config.toml  latest
+ubi:typst/typst             0.12.0
+ubi:uutils/coreutils        0.0.28
+usage                       2.0.4           ~/.config/mise/config.toml  latest
+watchexec                   2.3.0           ~/.config/mise/config.toml  latest
+yazi                        25.2.11         ~/.config/mise/config.toml  latest
 zig                         0.13.0          ~/.config/mise/config.toml  latest
 ```
 
 ## Cargo
 
 ```txt {cargo}
-cargo-binstall v1.10.19:
+cargo-binstall v1.10.23:
     cargo-binstall
-cargo-update v16.0.0:
+cargo-update v16.1.0:
     cargo-install-update
     cargo-install-update-config
-coreutils v0.0.28:
+coreutils v0.0.29:
     coreutils
-hayagriva v0.8.0:
+hayagriva v0.8.1:
     hayagriva
-mdbook-pandoc v0.8.1:
+mdbook-pandoc v0.9.3:
     mdbook-pandoc
-yazi-fm v0.4.2:
+yazi-fm v25.2.11:
     yazi
 ```
 
 ## Uv
 
 ```txt {uv}
-ansible-core v2.18.1
+ansible-core v2.18.2
 babi v1.6.0
 beautysh v6.2.1
 bibfish v0.3.3
-black v24.10.0
+black v25.1.0
 crudini v0.9.5
 daltonlens v0.1.5
 ds-format v4.1.2
-euporie v2.8.4
+euporie v2.8.6
 flake8 v7.1.1
-fonttools v4.55.3
+fonttools v4.56.0
 globus-cli v3.32.0
 gorps v1.0.1
 httpie v3.2.4
 huge v0.1.3
-icloudpd v1.25.1
+icloudpd v1.26.1
 jupyter-client v8.6.3
 khal v0.11.3
-mypy v1.14.1
+mypy v1.15.0
 ncdump-rich v0.5.2
-nox v2024.10.9
+nox v2025.2.9
 npzviewer v0.2.0
 pandoc-eqnos v2.5.0
-pandoc-include v1.4.1
+pandoc-include v1.4.2
+papis v0.14
 pdfcropmargins v2.2.0
-pdftext v0.4.1
-poetry v2.0.0
-pre-commit v4.0.1
+pdftext v0.5.1
+poetry v2.0.1
+pre-commit v4.1.0
+pre-commit-hooks v5.0.0
 python-import v0.1.0
 rich-cli v1.8.0
 rich-codex v1.2.7
@@ -105,7 +124,7 @@ rofimoji v6.5.0
 toml-cli v0.7.0
 tuiview v0.1.1
 wtpython v0.1
-yt-dlp v2024.12.23
+yt-dlp v2025.1.26
 ```
 
 ## Go
@@ -113,6 +132,7 @@ yt-dlp v2024.12.23
 ```txt {go}
 github.com/RH12503/Triangula-CLI/triangula
 github.com/TheZoraiz/ascii-image-converter
+github.com/aquaproj/aqua/v2/cmd/aqua
 github.com/bellecp/fast-p
 github.com/birchb1024/frangipanni
 github.com/caarlos0/timer

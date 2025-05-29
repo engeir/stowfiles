@@ -2,3 +2,4 @@
 asciidoctor
 kramdown-asciidoc
 neovim
+bcrypt_pbkdf
