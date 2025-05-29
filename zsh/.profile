@@ -70,6 +70,7 @@ gen_comps() {
 
 export PATH="$PATH:$HOME/.local/share/mise/shims/"
 export PATH="$HOME/.local/share/zinit/plugins/atuinsh---atuin:$PATH"
+export PATH="$HOME/.local/share/mise/shims:$PATH"
 eval "$("$HOME/.local/bin/mise" activate zsh)"
 mkdir -p "$HOME/.config/zsh/.zsh_functions"
 gen_comps mise "completion zsh" "mise"

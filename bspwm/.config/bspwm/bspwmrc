@@ -138,7 +138,7 @@ bspc rule -a ripdrag state=floating follow=on focus=on
 ## Autostart -------------------------------#
 
 # Kill if already running
-killall -9 sxhkd xsettingsd dunst xfce4-power-manager
+killall -9 sxhkd xsettingsd dunst xfce4-power-manager clipcatd
 
 # Lauch notification daemon
 dunst \
@@ -157,6 +157,9 @@ fi
 
 # Lauch keybindings daemon
 sxhkd &
+
+# Launch clipboard daemon
+clipcatd &
 
 # Enable Super Keys For Menu
 ksuperkey -e 'Super_L=Alt_L|F1' &

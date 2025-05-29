@@ -8,6 +8,10 @@
 #     command
 #
 
+super + Escape
+# make sxhkd reload its configuration files:
+	pkill -USR1 -x sxhkd
+
 super + Return
 # terminal emulator
 	ghostty
@@ -48,9 +52,8 @@ super + alt + d
 	~/bin/delete-bookmark.sh &
 super + alt + f
 	farge &
-# make sxhkd reload its configuration files:
-super + Escape
-	pkill -USR1 -x sxhkd
+super + shift + g
+	clipcat-menu -f dmenu &
 
 # start surf in tabbed
 super + alt + Escape
