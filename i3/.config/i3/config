@@ -44,7 +44,7 @@ exec --no-startup-id nm-applet
 # Start picom
 exec --no-startup-id picom --config "$HOME/.config/picom/picom.conf"
 
-exec --no-startup-id dunst -geom "280x50-10+38" -frame_width "1" -font "CaskaydiaMono Nerd Font Mono"
+exec --no-startup-id dunst -conf "$HOME/.config/dunst/dunstrc"
 bindsym $mod+Shift+Mod1+p exec dunstctl set-paused toggle
 
 exec --no-startup-id clipcatd
