@@ -1,0 +1,2 @@
+priority_levels: ["", A, B, C, D, E, F, G, H]
+default_todo_file: ~/.local/share/todotui/todo.txt
