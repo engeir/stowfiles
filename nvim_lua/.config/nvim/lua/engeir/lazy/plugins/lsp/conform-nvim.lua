@@ -87,28 +87,13 @@ return {
       notify_on_error = true,
       -- Define custom formatters here
       formatters = {
-        blackd = {
-          -- This can be a string or a function that returns a string
-          command = "blackd-client",
-          -- OPTIONAL - all fields below this are optional
-          -- A list of strings, or a function that returns a list of strings
-          -- args = { "$FILENAME" },
-          -- Send file contents to stdin, read new contents from stdout (default true)
-          -- When false, will create a temp file (will appear in "$FILENAME" args). The temp
-          -- file is assumed to be modified in-place by the format command.
-          stdin = true,
-          -- A function that calculates the directory to run the command in
-          cwd = require("conform.util").root_file({
-            ".git",
-            "pyproject.toml",
-            "setup.py",
-          }),
-          -- When cwd is not found, don't run the formatter (default false)
-          require_cwd = false,
-          -- When returns false, the formatter will not be used
-          condition = function(ctx) return vim.fs.basename(ctx.filename) ~= "README.md" end,
-          -- Exit codes that indicate success (default {0})
-          exit_codes = { 0 },
+        d2 = {
+          command = "d2",
+          args = {
+            "fmt",
+            "$FILENAME",
+          },
+          stdin = false,
         },
         dprint = {
           command = "dprint",
