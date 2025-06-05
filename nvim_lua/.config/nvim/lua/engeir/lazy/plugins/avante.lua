@@ -5,11 +5,23 @@ return {
   version = false, -- Never set this value to "*"! Never!
   opts = {
     -- add any opts here
+    auto_suggestion_provider = "ollama",
+    behaviour = {
+      auto_focus_sidebar = true,
+      auto_suggestions = false,
+      auto_apply_diff_after_generation = true,
+      jump_result_buffer_on_finish = false,
+      support_paste_from_clipboard = true,
+    },
+    hints = { enable = true },
     provider = "ollama",
-    ollama = {
-      endpoint = "http://localhost:22434", -- Note that there is no /v1 at the end.
-      model = "nhn-thinking-medium:latest",
-      -- model = "gemma3:2yb-it-q8_0",
+    providers = {
+      ollama = {
+        endpoint = "http://localhost:22434", -- Note that there is no /v1 at the end.
+        -- model = "nhn-thinking-medium:latest",
+        -- model = "gemma3:27b-it-q8_0",
+        model = "r1-1776:latest",
+      },
     },
   },
   -- if you want to build from source then do `make BUILD_FROM_SOURCE=true`
@@ -20,12 +32,7 @@ return {
     "stevearc/dressing.nvim",
     "nvim-lua/plenary.nvim",
     "MunifTanjim/nui.nvim",
-    --- The below dependencies are optional,
-    -- "echasnovski/mini.pick", -- for file_selector provider mini.pick
     "nvim-telescope/telescope.nvim", -- for file_selector provider telescope
-    -- "hrsh7th/nvim-cmp", -- autocompletion for avante commands and mentions
-    -- "ibhagwan/fzf-lua", -- for file_selector provider fzf
-    -- "nvim-tree/nvim-web-devicons", -- or echasnovski/mini.icons
     -- "zbirenbaum/copilot.lua", -- for providers='copilot'
     {
       -- support for image pasting
