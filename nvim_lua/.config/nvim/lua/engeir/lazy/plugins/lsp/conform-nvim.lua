@@ -63,7 +63,7 @@ return {
         jsonc = { "dprint" },
         just = { "just" },
         lua = { "stylua", "injected" },
-        markdown = { "dprint", "injected", stop_after_first = false },
+        markdown = { "prettierd", "injected", stop_after_first = false },
         python = { "ruff_format", "ruff_fix", lsp_format = "first" },
         ruby = { "rubyfmt" },
         rust = { "rustfmt" },
