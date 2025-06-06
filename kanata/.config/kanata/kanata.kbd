@@ -43,11 +43,14 @@
   arr (layer-toggle arrows)
   ;; Tap-hold keys with letters for tap and layers for hold
   sar (tap-hold-release $tap-time $hold-time spc @arr)
+  ;; Tap-hold keys with letters for tap and layers for hold
+  entr (layer-toggle enter)
+  e (tap-hold-release $tap-time $hold-time e @entr)
 )
 
 (deflayer base
        _    _    _    _    _    _    _    8    9    0    +    \    bspc
-  tab  @q   w    e    r    t    y    u    i    o    p
+  tab  @q   w    @e   r    t    y    u    i    o    p
   @escctrl @a @s @d   @f   g   @h    @j   @k   @l
   @lsftaccent z  x    _    v    b    n    m    ,    .    -    @rsftaccent
   lctl     _    _          @sar           @tilde
@@ -59,4 +62,12 @@
   _    lsft lmet lalt lctl home left down up   rght
   _         _    _  Delete bspc ret  tab  _    C-w  _    _    _
   _    _    _              _              _
+)
+
+(deflayer enter
+       f1   f2   f3   f4   f5   f6   f7   f8   f9   f10  f11  f12  _
+  _    _    _    _    _    _    _    _    _    _    _
+  _    _    _    _    _    _    bspc _    _  Delete
+  _         _    _    _    _    _    _    _    _    _    _    _
+  _    _    _              ret            _
 )
