@@ -1,6 +1,5 @@
 return {
   "neovim/nvim-lspconfig",
-  event = { "BufReadPre", "BufNewFile" },
   dependencies = {
     "saghen/blink.cmp",
     -- NOTE: this must be here, so that Mason config is run before this

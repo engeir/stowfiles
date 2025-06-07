@@ -1,9 +1,7 @@
 return {
   "mason-org/mason.nvim",
   version = "1.*",
-  event = { "BufReadPre", "BufNewFile" },
   build = ":MasonUpdate",
-  cmd = { "Mason" },
   dependencies = {
     { "mason-org/mason-lspconfig.nvim", version = "1.*" },
     {
@@ -29,7 +27,6 @@ return {
           "taplo",
           "texlab",
           "tinymist",
-          "typstfmt",
           "yaml-language-server",
           "yamlfmt",
         },
