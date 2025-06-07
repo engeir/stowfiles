@@ -12,6 +12,12 @@ return {
   event = {
     "BufReadPre " .. vim.fn.expand("~") .. "/.local/share/obsidian-vault/Work/**.md",
     "BufNewFile " .. vim.fn.expand("~") .. "/.local/share/obsidian-vault/Work/**.md",
+    "BufReadPre "
+      .. vim.fn.expand("~")
+      .. "/projects/simple-recipes-cookbook/src/**.md",
+    "BufNewFile "
+      .. vim.fn.expand("~")
+      .. "/projects/simple-recipes-cookbook/src/**.md",
   },
   dependencies = {
     "nvim-lua/plenary.nvim",
@@ -23,10 +29,10 @@ return {
         name = "work",
         path = "~/.local/share/obsidian-vault/Work",
       },
-      -- {
-      --     name = "work",
-      --     path = "~/vaults/work",
-      -- },
+      {
+        name = "mere",
+        path = "~/projects/simple-recipes-cookbook/src",
+      },
     },
     -- Optional, completion of wiki links, local markdown links, and tags using nvim-cmp.
     completion = {
