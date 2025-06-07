@@ -1,7 +1,7 @@
 font-family = "CaskaydiaMono Nerd Font"
 font-family-bold = "CaskaydiaMono Nerd Font"
-font-family-italic = "Cartograph CF"
-font-family-bold-italic = "Cartograph CF"
+font-family-italic = "CartographCF Nerd Font"
+font-family-bold-italic = "CartographCF Nerd Font"
 font-feature = -calt
 font-feature = -liga
 font-feature = -dlig
