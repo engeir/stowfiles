@@ -40,7 +40,7 @@ zinit light zsh-users/zsh-autosuggestions
 zinit light ryanccn/vivid-zsh  # Sets LS_COLORS
 zinit ice from'gh-r' as'program' sbin'**/eza -> eza' atclone'cp -vf completions/eza.zsh _eza'  # Install
 zinit light eza-community/eza
-zinit ice wait lucid has'eza' atinit'AUTOCD=1' atload'unalias lx' # Setup plugin
+zinit ice wait lucid has'eza' atinit'AUTOCD=1' atload'unalias lx llm' # Setup plugin
 _EZA_PARAMS=(
   '--group-directories-first' '-a' '-F=always' '--icons' '--group' '--octal-permissions'
   '--time-style=long-iso' '--color-scale=all' '--git' '--mounts'
