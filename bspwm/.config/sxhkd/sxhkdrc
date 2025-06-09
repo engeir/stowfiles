@@ -54,6 +54,8 @@ super + alt + f
 	farge &
 super + shift + g
 	clipcat-menu -f dmenu &
+super + shift + alt + ctrl + p
+	flameshot gui
 
 # start surf in tabbed
 super + alt + Escape
