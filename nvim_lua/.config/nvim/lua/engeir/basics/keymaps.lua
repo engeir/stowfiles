@@ -106,6 +106,18 @@ vim.keymap.set("i", "<C-h>", "<C-G>u<Esc>[s1z=`]a<C-G>u", {
   noremap = true,
   desc = "Accept first spelling on previous misspelled word.",
 })
+vim.keymap.set(
+  "n",
+  "zng",
+  "<cmd>set spelllang=nb<CR>zg<cmd>set spelllang=en_gb,nb<CR>",
+  { desc = "zg, but to the Norwegian dictionary" }
+)
+vim.keymap.set(
+  "n",
+  "znG",
+  "<cmd>set spelllang=nb<CR>zG<cmd>set spelllang=en_gb,nb<CR>",
+  { desc = "zG, but to the Norwegian dictionary" }
+)
 
 -- Search, highlight and move
 vim.keymap.set(
