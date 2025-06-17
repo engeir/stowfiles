@@ -10,9 +10,9 @@ has() {
 }
 has "slop"
 has "tesseract"
-if ! grep "eng" <(tesseract --list-langs) >/dev/null 2>&1; then
-    echo "Install tesseract english trained data, or edit $0."
-    notify-send "Install tesseract english trained data, or edit $0."
+if ! grep "nor" <(tesseract --list-langs) >/dev/null 2>&1; then
+    echo "Install tesseract norwegian trained data, or edit $0."
+    notify-send "Install tesseract norwegian trained data, or edit $0."
     exit 1
 fi
 
@@ -22,5 +22,5 @@ echo "$imagefile"
 slop=$(slop -f "%g") || exit 1
 read -r G <<<$slop
 import -window root -crop $G $imagefile
-tesseract $imagefile $text 2>/dev/null
+tesseract -l nor $imagefile $text 2>/dev/null
 cat $text".txt" | xclip -selection c
