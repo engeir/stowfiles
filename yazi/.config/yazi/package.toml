@@ -1,36 +1,36 @@
 [[plugin.deps]]
 use = "yazi-rs/plugins:smart-enter"
-rev = "c0ad8a3"
+rev = "aeca767"
 hash = "a7ab702e1ef0c097defbc976ed34c186"
 
 [[plugin.deps]]
 use = "yazi-rs/plugins:chmod"
-rev = "c0ad8a3"
+rev = "aeca767"
 hash = "d0ad0c1946b46a30c8489735fe8de41c"
 
 [[plugin.deps]]
 use = "yazi-rs/plugins:smart-filter"
-rev = "c0ad8a3"
+rev = "aeca767"
 hash = "4d82cd9e7534d976f000edf9c0f68d8f"
 
 [[plugin.deps]]
 use = "yazi-rs/plugins:mount"
-rev = "c0ad8a3"
-hash = "c0b6cd7dc830b96e77e5c8a71eec7926"
+rev = "aeca767"
+hash = "277ba273e5d3d647feb5808d0fe4e4e0"
 
 [[plugin.deps]]
 use = "yazi-rs/plugins:git"
-rev = "c0ad8a3"
+rev = "aeca767"
 hash = "bf6f074cd41ee33c3360341d168f9733"
 
 [[plugin.deps]]
 use = "yazi-rs/plugins:toggle-pane"
-rev = "c0ad8a3"
+rev = "aeca767"
 hash = "d5d4f3527592da5fbe77fd6f51815f80"
 
 [[plugin.deps]]
 use = "yazi-rs/plugins:piper"
-rev = "c0ad8a3"
+rev = "aeca767"
 hash = "2bdc137505b8d9a0cc867a57d0e99b01"
 
 [flavor]
