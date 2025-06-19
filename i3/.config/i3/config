@@ -92,6 +92,7 @@ bindsym $monster+minus exec --no-startup-id bash ~/.config/picom/adjust-opacity 
 bindsym $monster+o exec --no-startup-id bash ~/.config/picom/adjust-opacity +inactive
 bindsym $monster+i exec --no-startup-id bash ~/.config/picom/adjust-opacity -inactive
 bindsym $monster+t exec --no-startup-id find_txt
+bindsym $monster+p exec --no-startup-id flameshot gui
 
 # start a terminal
 # bindsym $mod+Return exec i3-sensible-terminal
