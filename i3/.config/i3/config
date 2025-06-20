@@ -85,7 +85,7 @@ bindsym $mod+Shift+Mod1+y exec alacritty -t "dropdown" -o font.size=12 -o window
 bindsym $mod+Shift+Mod1+u exec alacritty -t "dropdown" -o font.size=12 -o window.dimensions.lines=50 -o window.dimensions.columns=150 -e clip-manage
 bindsym $monster+l exec alacritty -t "dropdown" -o font.size=12 -o window.dimensions.lines=50 -o window.dimensions.columns=150 -e cheat-sheet-links
 bindsym $monster+r exec alacritty -t "dropdown" -o font.size=12 -o window.dimensions.lines=50 -o window.dimensions.columns=150 -e cheat-sheet-links files-and-content
-bindsym $monster+j exec alacritty -t "dropdown" -o font.size=12 -o window.dimensions.lines=50 -o window.dimensions.columns=150 -e junta-shorten
+bindsym $monster+j exec alacritty -t "dropdown" -o font.size=12 -o window.dimensions.lines=50 -o window.dimensions.columns=150 -e url-shorten
 bindsym $mod+Shift+Mod1+f exec --no-startup-id pdf_open
 bindsym $monster+plus exec --no-startup-id bash ~/.config/picom/adjust-opacity +active
 bindsym $monster+minus exec --no-startup-id bash ~/.config/picom/adjust-opacity -active

@@ -1,0 +1,48 @@
+#!/usr/bin/env bash
+
+if ! command -v xclip 1>/dev/null; then
+    echo "The script depends on xclip."
+    exit 1
+fi
+
+# Get the URL from the clipboard
+url=$(xclip -o -selection clipboard)
+
+junta() {
+    # Use regex to extract the shortened URL
+    shortened_url=$(echo "$url" | grep -oP '^https://.*/\d{6}')
+}
+esm() {
+    base_url=$(echo "$url" | grep -oP '^https://.*?/')
+    IFS='/' read -r -a url_parts <<<"$url"
+
+    for part in "${url_parts[@]:2}"; do # Skip "https:" and domain parts
+        if [[ $part =~ ^[0-9]+$ ]]; then
+            shortened_url="$base_url$part"
+            return
+        fi
+    done
+
+    shortened_url='' # Set to empty if no numeric segment found
+}
+
+if echo "$url" | grep -q "https://junta.*"; then
+    junta
+elif echo "$url" | grep -q "https://esm.*"; then
+    esm
+fi
+
+# Check if the URL matches the expected format
+if [[ -n $shortened_url ]]; then
+    echo "Shortened URL: $shortened_url"
+
+    # Copy the shortened URL back to the clipboard
+    if command -v clipcatctl >/dev/null 2>&1; then
+        clipcatctl insert "$shortened_url"
+    else
+        echo "$shortened_url" | xclip -sel clip >/dev/null
+    fi
+    echo "Shortened URL has been copied to the clipboard."
+else
+    echo "Invalid URL format or no URL found in clipboard."
+fi
