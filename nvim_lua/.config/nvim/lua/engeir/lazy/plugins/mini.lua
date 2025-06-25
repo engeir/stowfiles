@@ -272,6 +272,10 @@ return {
             end
           end,
         },
+        windows = {
+          preview = true,
+          width_preview = 90,
+        },
       })
     end,
     keys = {
