@@ -1,5 +1,6 @@
 return {
   "huggingface/llm.nvim",
+  enabled = false,
   opts = {
     lsp = {
       bin_path = vim.api.nvim_call_function("stdpath", { "data" })
