@@ -35,7 +35,12 @@ files-and-content() {
 files() {
     # Alternativ 2:
     # Cleaner with only one line per file, but only file names can be searched.
-    CHOSEN="$(fzf --preview "bat --color=always {}" --preview-window "<80(up),border-line,+{2}+3/3,~3" | xargs -I {} sh -c "head -n 1 {}")"
+    if command -v tv >/dev/null 2>&1; then
+        CLI="tv"
+    else
+        CLI='fzf --preview "$viewer {}" --preview-window "<80(up),border-line,+{2}+3/3,~3"'
+    fi
+    CHOSEN="$(eval "$CLI" | xargs -I {} sh -c "head -n 1 {}")"
 }
 
 case "$1" in
