@@ -41,7 +41,7 @@ space = "·"
 nbsp = "⍽"
 tab = "→"
 newline = "⏎"
-tabpad = "·" # Tabs will look like "→···" (depending on tab width)
+tabpad = "·"  # Tabs will look like "→···" (depending on tab width)
 
 [keys.normal.space.h]
 r = ":reset-diff-change"
@@ -52,3 +52,4 @@ w = ":reflow"
 
 [keys.normal]
 D = "kill_to_line_end"
+"-" = "file_picker_in_current_buffer_directory"
