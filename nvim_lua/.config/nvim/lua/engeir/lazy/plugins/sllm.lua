@@ -4,5 +4,5 @@ return {
     "echasnovski/mini.notify",
     "echasnovski/mini.pick",
   },
-  opts = {},
+  opts = { default = "nhn-small:latest" },
 }

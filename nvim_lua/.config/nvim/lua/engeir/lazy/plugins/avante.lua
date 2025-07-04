@@ -20,7 +20,7 @@ return {
         endpoint = "http://localhost:22434", -- Note that there is no /v1 at the end.
         -- model = "nhn-thinking-medium:latest",
         -- model = "gemma3:27b-it-q8_0",
-        model = "r1-1776:latest",
+        model = "nhn-small:latest",
       },
     },
   },

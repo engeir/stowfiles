@@ -99,6 +99,9 @@ return {
           "vimtex",
           "avante",
         },
+        per_filetype = {
+          codecompanion = { "codecompanion" },
+        },
         providers = {
           lazydev = {
             name = "LazyDev",
