@@ -1,0 +1,78 @@
+#!/usr/bin/env bash
+
+# This is `snippet`
+#
+# Optional arguments: `new` (default, create new snippet), `edit` (edit an existing
+# snippet), and `delete` (delete an existing snippet).
+
+set -euo pipefail
+
+SNIP_DIR="$HOME/.local/share/snippets"
+mkdir -p "$SNIP_DIR"
+
+# Only markdown files are allowed here
+fd -E "*md" . "$SNIP_DIR" -X rm
+
+ACTION="${1:-new}"
+
+choose_file() {
+    local files
+    mapfile -t files < <(find "$SNIP_DIR" -maxdepth 1 -type f -name '*.md' -exec basename {} \;)
+
+    if [[ ${#files[@]} -eq 0 ]]; then
+        gum log --level error "No notes found."
+        return 1
+    fi
+
+    gum filter --limit=1 "${files[@]}"
+}
+
+case "$ACTION" in
+    new)
+        while true; do
+            FILENAME="$(gum input --placeholder="Give the file a name...")"
+            # Check for blank input
+            if [[ -z $FILENAME ]]; then
+                gum confirm "No name provided. Try again?" || exit 1
+                continue
+            fi
+
+            # Add .md extension if not present
+            if [[ ${FILENAME##*.} != "md" ]]; then
+                FILENAME="${FILENAME}.md"
+            fi
+
+            FULL_PATH="$SNIP_DIR/$FILENAME"
+
+            if [[ -e $FULL_PATH ]]; then
+                gum confirm "The file '$FILENAME' already exists. Edit it?" && {
+                    gum write --placeholder "Edit your note..." <"$FULL_PATH" >"$FULL_PATH.$$" && mv "$FULL_PATH.$$" "$FULL_PATH"
+                    echo "Note edited at $FULL_PATH"
+                    exit 0
+                }
+                gum confirm "Try a different filename?" || exit 1
+            else
+                gum write --placeholder "What do you want to note down?" >"$FULL_PATH"
+                echo "Note saved at $FULL_PATH"
+                exit 0
+            fi
+        done
+        ;;
+    edit)
+        FILE_TO_EDIT="$(choose_file)" || exit 1
+        gum write --placeholder "Edit your note..." <"$SNIP_DIR/$FILE_TO_EDIT" >"$SNIP_DIR/$FILE_TO_EDIT.$$"
+        mv "$SNIP_DIR/$FILE_TO_EDIT.$$" "$SNIP_DIR/$FILE_TO_EDIT"
+        echo "Note edited at $SNIP_DIR/$FILE_TO_EDIT"
+        ;;
+    delete)
+        FILE_TO_DELETE="$(choose_file)" || exit 1
+        gum confirm "Really delete '$FILE_TO_DELETE'?" && {
+            rm -f "$SNIP_DIR/$FILE_TO_DELETE"
+            echo "Deleted: $SNIP_DIR/$FILE_TO_DELETE"
+        }
+        ;;
+    *)
+        echo "Usage: $0 [new|edit|delete]"
+        exit 1
+        ;;
+esac

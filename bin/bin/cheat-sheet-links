@@ -1,9 +1,16 @@
 #!/usr/bin/env bash
 
-DIR="$HOME/shortcuts/links/"
+DIR="$HOME/.local/share/snippets/"
 cd "$DIR" || exit 1
 
 export PATH="$PATH:$HOME/.local/share/mise/shims/"
+
+if command -v glow >/dev/null 2>&1; then
+    # viewer="glow"
+    viewer="bat --color=always"
+else
+    viewer="bat --color=always"
+fi
 
 files-and-content() {
     # Alternativ 1:
@@ -24,21 +31,21 @@ files-and-content() {
     '
     CHOSEN="$(fzf --ansi --disabled --query "$INITIAL_QUERY" \
         --with-shell 'bash -c' \
-        --bind "start,change:transform:$TRANSFORMER" \
+        --bind "start,ctrl-k:preview-up,ctrl-j:preview-down,change:transform:$TRANSFORMER" \
         --color "hl:-1:underline,hl+:-1:underline:reverse" \
         --delimiter : \
         --preview 'bat --color=always {1} --highlight-line {2}' \
-        --preview-window '<80(up),border-line,+{2}+3/3,~3' \
+        --preview-window '<80(right:65%),border-line,+{2}+3/3,~3' \
         | xargs -I {} sh -c "head -n 1 {}")"
 }
 
 files() {
     # Alternativ 2:
     # Cleaner with only one line per file, but only file names can be searched.
-    if command -v tv >/dev/null 2>&1; then
+    if command -v tvee >/dev/null 2>&1; then
         CLI="tv"
     else
-        CLI='fzf --preview "$viewer {}" --preview-window "<80(up),border-line,+{2}+3/3,~3"'
+        CLI='fzf --bind "ctrl-k:preview-up,ctrl-j:preview-down" --preview "$viewer {}" --preview-window "<80(right:65%),border-line,+{2}+3/3,~3"'
     fi
     CHOSEN="$(eval "$CLI" | xargs -I {} sh -c "head -n 1 {}")"
 }
