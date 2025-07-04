@@ -11,7 +11,7 @@ SNIP_DIR="$HOME/.local/share/snippets"
 mkdir -p "$SNIP_DIR"
 
 # Only markdown files are allowed here
-fd -E "*md" . "$SNIP_DIR" -X rm
+# fd -E "*md" . "$SNIP_DIR" -X rm
 
 ACTION="${1:-new}"
 
@@ -77,8 +77,35 @@ case "$ACTION" in
             echo "Deleted: $SNIP_DIR/$FILE_TO_DELETE"
         }
         ;;
+    prune)
+        # Find likely gum write "temp" files (pattern: name.md.NNNNNN) in $SNIP_DIR
+        temp_files=()
+        while IFS= read -r -d '' f; do
+            temp_files+=("$(basename "$f")")
+        done < <(find "$SNIP_DIR" -maxdepth 1 -type f -regextype posix-egrep -regex ".*/[^/]+\.md\.[0-9]+" -print0)
+
+        if [[ ${#temp_files[@]} -eq 0 ]]; then
+            gum log --level info "No temporary/leftover snippet files found to prune."
+            exit 0
+        fi
+
+        TO_DELETE=$(printf "%s\n" "${temp_files[@]}" | gum choose --no-limit --header="Orphaned snippet files (select to delete):")
+        if [[ -z ${TO_DELETE:-} ]]; then
+            gum log --level info "No files selected for deletion."
+            exit 0
+        fi
+
+        gum confirm "Delete the selected files?" || exit 1
+        # If multi-select, TO_DELETE may have multiple lines
+        while IFS= read -r file; do
+            if [[ -n $file ]]; then
+                rm -f "$SNIP_DIR/$file"
+                echo "Deleted: $SNIP_DIR/$file"
+            fi
+        done <<<"$TO_DELETE"
+        ;;
     *)
-        echo "Usage: $0 [new|edit|delete]"
+        echo "Usage: $0 [new|edit|delete|prune]"
         exit 1
         ;;
 esac
