@@ -24,7 +24,13 @@ choose_file() {
         return 1
     fi
 
-    gum filter --limit=1 "${files[@]}"
+    gum filter \
+        --placeholder "Type to search your snippets..." \
+        --height 20 \
+        --limit 1 \
+        --prompt "› " \
+        --fuzzy \
+        "${files[@]}"
 }
 
 case "$ACTION" in
