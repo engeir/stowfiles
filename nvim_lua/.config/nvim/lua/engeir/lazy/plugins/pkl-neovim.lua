@@ -1,3 +1,3 @@
 return {
-  "apple/pkl-neovim"
+  "apple/pkl-neovim",
 }
