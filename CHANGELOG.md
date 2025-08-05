@@ -1,5 +1,93 @@
 # Changelog
 
+## [2.3.0](https://github.com/engeir/stowfiles/compare/stowfiles-v2.2.0...stowfiles-v2.3.0) (2025-08-05)
+
+
+### Features
+
+* **bin:** add url-shorten scirpt ([0fc5c30](https://github.com/engeir/stowfiles/commit/0fc5c30cd846921aff6ecbbc091973bf9e4c9a0f))
+* **bin:** make a simple snippet system ([c4b8cd3](https://github.com/engeir/stowfiles/commit/c4b8cd3a3bca9452334b7808a2a6bf191095b599))
+* **bin:** picker for cheat sheet of links ([1f59df2](https://github.com/engeir/stowfiles/commit/1f59df26504cfb4629035f27cde48f8453d3a6b2))
+* **bin:** upload the PNG to SVG script ([d8c6774](https://github.com/engeir/stowfiles/commit/d8c677406c8349b06413c3670d04fd60c0fa3541))
+* **dmenu,clipcat:** center dmenu view of clips ([46b918c](https://github.com/engeir/stowfiles/commit/46b918c4cb341576bdf8e59939f1a42f15ae539a))
+* **dmenu:** update dmenu commands to new flags ([a5bf272](https://github.com/engeir/stowfiles/commit/a5bf272870117d55418da46453ead64eada4ac0a))
+* **kanata:** use hold-down e to toggle return/backspace/delete layer ([e24e0d6](https://github.com/engeir/stowfiles/commit/e24e0d6a4b9fd34ab58e29541f2dee48620080ff))
+* **menu:** add centre patch and update style ([833db5b](https://github.com/engeir/stowfiles/commit/833db5bd862c14950585bdf8fc8b03ec4bfb2853))
+* **nvim:** [plugin] add llm.nvim ([9c6dc49](https://github.com/engeir/stowfiles/commit/9c6dc491d8e9b7bb12cc6f0aae66acfca8678aa4))
+* **nvim:** [plugin] add sllm.nvim ([342b3c7](https://github.com/engeir/stowfiles/commit/342b3c79ffc1a97a2f4570796eeb7501189c7d16))
+* **nvim:** add completion support in obsidian ([1b57d84](https://github.com/engeir/stowfiles/commit/1b57d849dc869af85b796485a6baf0d5fb7ac0a9))
+* **nvim:** add d2 highlighting and tree-sitter syntax ([71b9a9e](https://github.com/engeir/stowfiles/commit/71b9a9ec1f99f122804e9c0df5a44a043bb2e906))
+* **nvim:** make Obsidian plugin play better with the app ([205de8c](https://github.com/engeir/stowfiles/commit/205de8c523c64aca1384c66395acd50235b5cd73))
+* **nvim:** prettierd formats wikilinks better than dprint (no break) ([9af3d1e](https://github.com/engeir/stowfiles/commit/9af3d1ef340e6f909eabf4b3318fddedd9b54257))
+* **nvim:** use vim.lsp.{enable,config} and mason 2.0 ([11a12ad](https://github.com/engeir/stowfiles/commit/11a12ad2ddb699f5b33932386fb5e2ba1406a7e2))
+* **picom:** better control of (in)active opacity ([403df57](https://github.com/engeir/stowfiles/commit/403df57bf9009e0c44b936c1043aff21e7db0a3b))
+* **software:** (re)install spelling for nvim ([2a1765e](https://github.com/engeir/stowfiles/commit/2a1765e72abb5962d69e9835c8526ba358072277))
+* **tofi:** trying out tofi as a dmenu substitute on wayland ([48ac4a5](https://github.com/engeir/stowfiles/commit/48ac4a5e9ab7cf7a83158a84a510c9e70a6c74b6))
+* **zsh:** add jj completion ([f5863f0](https://github.com/engeir/stowfiles/commit/f5863f068d282c4b86be6f0a87300a3bd3923ba5))
+
+
+### Bug Fixes
+
+* **ghostty:** fix the italic (cursive) font ([69f9e53](https://github.com/engeir/stowfiles/commit/69f9e534d246d405be001d1e0469dfd351be2b42))
+* **nvim:** the injected formatting deleted text with d2 ([4ed3f85](https://github.com/engeir/stowfiles/commit/4ed3f856fd5561ffef9578f84b8267381908170b))
+* **nvim:** update avante.nvim config after API change ([0abfad0](https://github.com/engeir/stowfiles/commit/0abfad064dfcb8200efbe0baeb0cc4aaaff7a02a))
+
+
+### Miscellaneous
+
+* **bin:** a bit nicer fuzzy search menu ([a297898](https://github.com/engeir/stowfiles/commit/a297898e6e5ffdd33c89b44f7469194aa0468326))
+* **bin:** add example video edit file ([dabe75e](https://github.com/engeir/stowfiles/commit/dabe75e65e4eaf792ab6983e1665d455d74ad9b5))
+* **bin:** jq hack to find queries with fzf ([3418658](https://github.com/engeir/stowfiles/commit/3418658d489607347d2e69fcc505b0eda76d92b3))
+* **bin:** remove old comment ([20c087e](https://github.com/engeir/stowfiles/commit/20c087e79db3e0646302bed8b2531847b2df28bf))
+* **bin:** slightly better pomodoro script ([3867ce7](https://github.com/engeir/stowfiles/commit/3867ce725c91f0127e29fc8393a6b558a0a3df10))
+* **bin:** small changes ([bfdc15e](https://github.com/engeir/stowfiles/commit/bfdc15ed5039f91e20db7fec227707c0128c56ab))
+* **bin:** use Norwegian in the tesseract find_txt script ([9f8f584](https://github.com/engeir/stowfiles/commit/9f8f584a45918850d09d26756470a9e54619d1c2))
+* **bspwm:** add flameshot keymap as monster+p ([63892d5](https://github.com/engeir/stowfiles/commit/63892d504fda83f39a76b71a5dbd13088689048b))
+* **dmenu,bin:** adjust dmenu settings ([6c045fc](https://github.com/engeir/stowfiles/commit/6c045fc7236f8fad188bead4d95ad587ae8168e3))
+* **dunst:** nicer looks ([0da7d09](https://github.com/engeir/stowfiles/commit/0da7d0979f393c8e123133eeb8e66b043d8c68d3))
+* **helix:** add keymap to find files in current buffer dir ([88fe94d](https://github.com/engeir/stowfiles/commit/88fe94d7fffd93a1ac75c449fa56bae9b691ba71))
+* **i3:** add flameshot gui keybind ([707900a](https://github.com/engeir/stowfiles/commit/707900a91378337aa47e4cf0e3117c9199844411))
+* **misc:** add some small changes and updates ([14c3a7a](https://github.com/engeir/stowfiles/commit/14c3a7a47e6721dba4cce513db04441d35708158))
+* **mise:** add llm python CLI to interact with LLMs ([ad8812d](https://github.com/engeir/stowfiles/commit/ad8812dcfadbca90e100e8a793478c7e22b60a30))
+* **mise:** bottom (btm) is the best top alternative yet ([92e89c4](https://github.com/engeir/stowfiles/commit/92e89c477bdeaff3715a73fe686232ffad589694))
+* **nvim:** [mini.nvim] add preview window to mini.files ([956cbd1](https://github.com/engeir/stowfiles/commit/956cbd1fe5c36e39c1495ce392be4aef2a928ff9))
+* **nvim:** [plugin] add typst-preview ([657d1bd](https://github.com/engeir/stowfiles/commit/657d1bdabea741e7526fa746bebf0e8b2e62564f))
+* **nvim:** add an LLM prompt and update some other stuff ([406d975](https://github.com/engeir/stowfiles/commit/406d975e238a6d6e0c046e99d026fff7255baa59))
+* **nvim:** clean up some LSP config ([7e06ae1](https://github.com/engeir/stowfiles/commit/7e06ae1d84b837440fb76ec7ee5222cddd372bae))
+* **nvim:** disables llm.nvim to silence connection error ([dc6088e](https://github.com/engeir/stowfiles/commit/dc6088e9a3095673fbe01914663a8f709fa2b18d))
+* **nvim:** easily add new Norwegian words ([8460316](https://github.com/engeir/stowfiles/commit/8460316e7febe85f4735da229adb592331696a36))
+* **nvim:** find hidden files ([7e6bb11](https://github.com/engeir/stowfiles/commit/7e6bb11a6d8eed1163e93a7225668a78508f4fc4))
+* **nvim:** merge in obsidian changes ([baf5188](https://github.com/engeir/stowfiles/commit/baf5188cf98cfef63c26c53612307b9468c69e09))
+* **nvim:** small cmdline keymap to remove bad hyphens ([306af43](https://github.com/engeir/stowfiles/commit/306af43b34ed009f0b436b08a860bc7cc8d19240))
+* **nvim:** use title as id, similar to what the obsidian app does ([e11b798](https://github.com/engeir/stowfiles/commit/e11b798627b9fdfb88deaaf17846cdac9bfaf856))
+* small changes ([3f1e92b](https://github.com/engeir/stowfiles/commit/3f1e92b0ee6192f35431bab5a97658b7f6c4d49e))
+* **software:** small updates ([15f8ce1](https://github.com/engeir/stowfiles/commit/15f8ce15896add53242e40389cfc175fb8314893))
+* **software:** update installed ([e26ec5e](https://github.com/engeir/stowfiles/commit/e26ec5ee5589c656af4adaf8fed946fae785b56a))
+* **software:** update installed ([596c664](https://github.com/engeir/stowfiles/commit/596c664d9b7c2a4b17e9ff41bb745aad63d7067b))
+* **tmux,kanata:** make PageDown easier to press ([a8c5b96](https://github.com/engeir/stowfiles/commit/a8c5b960ff06ae8d8d96bed2579902ae58dae80a))
+* **todotui:** simple base config ([67bfd86](https://github.com/engeir/stowfiles/commit/67bfd86d74c0ef99b753e6871e069ce34529c804))
+* upload some stuff ([c3357e3](https://github.com/engeir/stowfiles/commit/c3357e3fbd3035c96a25fc0c82b6970a554d9696))
+* **yazi:** update plugin revisions ([8adf79f](https://github.com/engeir/stowfiles/commit/8adf79f0a3760a71c171d8e9d2df543d1ffcc211))
+* **yazi:** update to newer syntax ([d872af0](https://github.com/engeir/stowfiles/commit/d872af03a021f6d92e8a51b56b272ec9758ad3fd))
+* **zsh:** small additions ([2bdfa62](https://github.com/engeir/stowfiles/commit/2bdfa62552862f16c43f2580dc6a67339945bcc3))
+
+
+### Styles
+
+* **dprint:** format to pass CI ([8625d83](https://github.com/engeir/stowfiles/commit/8625d83f7b4bbc680a8ff8ae643694424837cdd3))
+* **stylua:** format lua files ([806400f](https://github.com/engeir/stowfiles/commit/806400f8810e9bb0769624818e693191dd73fac1))
+
+
+### Code Refactoring
+
+* **bin:** rm in the snippet script is too dangerous ([06dbeed](https://github.com/engeir/stowfiles/commit/06dbeedbfa8b3ebfad9e8a5b0841047df36c077d))
+* **bin:** use tv/television by default over fzf --preview ([52a8481](https://github.com/engeir/stowfiles/commit/52a848177eb17a5315b2bfe8b3993cc86e304307))
+
+
+### Continuous Integration
+
+* **pre-commit:** run stylua on all lua files ([a96911d](https://github.com/engeir/stowfiles/commit/a96911da608605547c50c000f77daa655fc50c81))
+
 ## [2.2.0](https://github.com/engeir/stowfiles/compare/stowfiles-v2.1.0...stowfiles-v2.2.0) (2025-05-18)
 
 
