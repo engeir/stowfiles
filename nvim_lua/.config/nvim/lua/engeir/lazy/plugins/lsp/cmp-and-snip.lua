@@ -25,16 +25,9 @@ return {
     ---@module 'blink.cmp'
     ---@type blink.cmp.Config
     opts = {
-      keymap = {
-        -- https://cmp.saghen.dev/configuration/keymap.html#default
-        preset = "default",
-        ["<C-s>"] = { "show_signature", "hide_signature", "fallback" },
-        ["<C-k>"] = { "snippet_forward", "fallback" },
-        ["<C-j>"] = { "snippet_backward", "fallback" },
-        ["<C-y>"] = { "show", "show_documentation", "hide_documentation" },
-        ["<C-space>"] = { "select_and_accept" },
-        ["<Tab>"] = {},
-        ["<S-Tab>"] = {},
+      appearance = {
+        use_nvim_cmp_as_default = false,
+        nerd_font_variant = "mono",
       },
       cmdline = {
         keymap = {
@@ -59,10 +52,6 @@ return {
           menu = { auto_show = true },
         },
       },
-      appearance = {
-        use_nvim_cmp_as_default = false,
-        nerd_font_variant = "mono",
-      },
       completion = {
         accept = { auto_brackets = { enabled = true } },
         documentation = { auto_show = true, auto_show_delay_ms = 500 },
@@ -75,6 +64,17 @@ return {
             },
           },
         },
+      },
+      keymap = {
+        -- https://cmp.saghen.dev/configuration/keymap.html#default
+        preset = "default",
+        ["<C-s>"] = { "show_signature", "hide_signature", "fallback" },
+        ["<C-k>"] = { "snippet_forward", "fallback" },
+        ["<C-j>"] = { "snippet_backward", "fallback" },
+        ["<C-y>"] = { "show", "show_documentation", "hide_documentation" },
+        ["<C-space>"] = { "select_and_accept" },
+        ["<Tab>"] = {},
+        ["<S-Tab>"] = {},
       },
       signature = { enabled = true },
       -- snippets = { preset = "luasnip" },

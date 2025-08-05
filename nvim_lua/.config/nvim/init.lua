@@ -18,6 +18,7 @@ require("engeir.basics.globals")
 require("engeir.basics.keymaps")
 require("engeir.basics.settings")
 require("engeir.basics.python-settings")
+require("engeir.basics.lsp")
 
 -- Plugins
 require("engeir.lazy")
