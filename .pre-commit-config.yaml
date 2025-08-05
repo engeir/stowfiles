@@ -20,7 +20,7 @@ repos:
     hooks:
       - id: stylua-github
         name: stylua
-        entry: stylua nvim_lua/.config/nvim/
+        entry: stylua -a .
         pass_filenames: false
   - repo: local
     hooks:
