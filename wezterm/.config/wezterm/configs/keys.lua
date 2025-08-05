@@ -122,9 +122,7 @@ return {
       })"
       ]]
       local file = io.popen(cmd)
-      if file == nil then
-        return 0
-      end
+      if file == nil then return 0 end
       local output = file:read("*a")
       file:close()
 

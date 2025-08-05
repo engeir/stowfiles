@@ -6,9 +6,7 @@ local config = {}
 
 -- In newer versions of wezterm, use the config_builder which will help provide clearer
 -- error messages
-if wezterm.config_builder then
-  config = wezterm.config_builder()
-end
+if wezterm.config_builder then config = wezterm.config_builder() end
 -- Spawn a fish shell in login mode
 -- config.default_prog = { "/usr/bin/fish", "-l" }
 
@@ -23,9 +21,7 @@ wezterm.on("update-right-status", function(window, pane)
   -- local leader = workspace:read("*a")
   -- workspace:close()
   local leader = window:active_workspace()
-  if window:leader_is_active() then
-    leader = leader .. "  LEADER"
-  end
+  if window:leader_is_active() then leader = leader .. "  LEADER" end
   window:set_right_status(leader)
 end)
 -- From https://wezfurlong.org/wezterm/config/lua/window-events/format-tab-title.html
@@ -39,9 +35,7 @@ function tab_title(tab_info)
   if title and #title > 0 then
     local cmd = { "despell", title }
     local handle = io.popen(table.concat(cmd, " "))
-    if handle == nil then
-      return title
-    end
+    if handle == nil then return title end
     local result = handle:read("*a")
     return result .. title
   end
@@ -50,9 +44,7 @@ function tab_title(tab_info)
   local active_title = tab_info.active_pane.title
   local cmd = { "despell", active_title }
   local handle = io.popen(table.concat(cmd, " "))
-  if handle == nil then
-    return active_title
-  end
+  if handle == nil then return active_title end
   local result = handle:read("*a")
   return active_title .. " " .. result
   -- return " " .. tab_info.active_pane.title .. " "
