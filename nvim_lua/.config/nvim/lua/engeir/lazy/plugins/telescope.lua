@@ -231,13 +231,13 @@ return {
       -- { "nvim-telescope/telescope-fzy-native.nvim" },
     },
     keys = {
-      {
-        "<leader>fg",
-        function() require("telescope").extensions.smart_open.smart_open() end,
-        desc = "Find Files",
-        noremap = true,
-        silent = true,
-      },
+      -- {
+      --   "<leader>fg",
+      --   function() require("telescope").extensions.smart_open.smart_open() end,
+      --   desc = "Find Files",
+      --   noremap = true,
+      --   silent = true,
+      -- },
     },
   },
   {
