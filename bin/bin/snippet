@@ -104,8 +104,13 @@ case "$ACTION" in
             fi
         done <<<"$TO_DELETE"
         ;;
+    format)
+        cd "$SNIP_DIR" >/dev/null 2>&1
+        prettier --write ./**/*.md
+        cd - >/dev/null 2>&1
+        ;;
     *)
-        echo "Usage: $0 [new|edit|delete|prune]"
+        echo "Usage: $0 [new|edit|delete|prune|format]"
         exit 1
         ;;
 esac
