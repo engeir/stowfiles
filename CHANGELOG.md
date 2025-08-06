@@ -1,5 +1,13 @@
 # Changelog
 
+## [2.4.0](https://github.com/engeir/stowfiles/compare/stowfiles-v2.3.0...stowfiles-v2.4.0) (2025-08-06)
+
+
+### Features
+
+* **bin:** add format option to the snippet script ([fcb3c45](https://github.com/engeir/stowfiles/commit/fcb3c45299cd5dab49e64c7721166d988abb9ddd))
+* **nvim:** [plugin] add fff.nvim ([394ec6f](https://github.com/engeir/stowfiles/commit/394ec6f3acbf7e6f81338a3eedf094316950d18f))
+
 ## [2.3.0](https://github.com/engeir/stowfiles/compare/stowfiles-v2.2.0...stowfiles-v2.3.0) (2025-08-05)
 
 
