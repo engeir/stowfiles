@@ -20,10 +20,16 @@ if [[ $(uname -s) == "Darwin" ]]; then
     # Set the new wallpaper
     m wallpaper "$DIR"
 else
-    dmenu='dmenu -c -l 15'
+    if [[ $XDG_SESSION_TYPE == "wayland" ]]; then
+        set_wp="swww img"
+        dmenu='mew -l 15'
+    else
+        set_wp="feh --bg-fill"
+        dmenu='dmenu -c -l 15'
+    fi
     # Linux
     get_img() {
-        if command -v nsxiv; then
+        if command -v nsxiv >/dev/null 2>&1; then
             chosen=$(nsxiv -obtf "$HOME/syncthing/aerial-views/")
         else
             chosen=$(fd -e png -e jpg . "$HOME/syncthing/aerial-views" | sed 's:.*/::' | eval "$dmenu")
@@ -41,5 +47,5 @@ else
         fi
     done
 
-    feh --bg-fill "$chosen"
+    eval "$set_wp" "$chosen"
 fi

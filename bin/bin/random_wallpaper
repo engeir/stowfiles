@@ -16,11 +16,16 @@ fd -e png -e jpg . "$HOME/syncthing/aerial-views" | sort -R | sed 1q | while rea
             wallpaper "/tmp/$num.jpg"
         fi
     else
+        if [[ $XDG_SESSION_TYPE == "wayland" ]]; then
+            set_wp="swww img"
+        else
+            set_wp="feh --bg-fill"
+        fi
         if ! diff "$HOME/.cache/bspwm/wallpaper.jpg" "$HOME/stowfiles/assets/black.jpg" >/dev/null; then
             # Linux
             # convert "$file" -blur 0x9 "$HOME"/.cache/bspwm/wallpaper.jpg
             cp "$file" "$HOME"/.cache/bspwm/wallpaper.jpg
-            feh --bg-fill "$HOME"/.cache/bspwm/wallpaper.jpg
+            eval "$set_wp" "$HOME"/.cache/bspwm/wallpaper.jpg
         fi
     fi
 done
