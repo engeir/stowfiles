@@ -1,0 +1,105 @@
+"$schema" = "https://raw.githubusercontent.com/JanDeDobbeleer/oh-my-posh/main/themes/schema.json"
+final_space = true
+version = 3
+
+[transient_prompt]
+background = "transparent"
+foreground_templates = ["{{ if gt .Code 0 }}#e91e63{{ end }}"]
+template = "{{if .Root}} # {{else}} $ {{end}}"
+
+[[blocks]]
+alignment = "left"
+type = "prompt"
+
+[[blocks.segments]]
+type = "root"
+style = "plain"
+foreground = "#b41818"
+template = " "
+
+[[blocks.segments]]
+foreground = "#61AFEF"
+# exclude_folders = ["/super/secret/project"]
+template = '{{if .Segments.Git}}../{{ .Format .Segments.Git.RepoName }}{{if matchP ".+" .Segments.Git.RelativeDir}}/{{ .Format .Segments.Git.RelativeDir }}{{else}}{{end}}{{else}}{{.Path}}{{end}}'
+style = "plain"
+type = "path"
+
+[blocks.segments.properties]
+style = "powerlevel"
+
+[[blocks.segments]]
+foreground = "#af7de8"
+style = "plain"
+type = "git"
+
+[blocks.segments.properties]
+branch_template = "{{ trunc 25 .Branch }}"
+fetch_status = true
+
+[[blocks.segments]]
+type = "python"
+style = "plain"
+foreground = "#ebeb47"
+template = "{{ if .Error }}{{ .Error }}{{ else }}  {{ .Full }}{{ if .Venv }}({{ .Venv }}){{ end }}{{ end }}"
+
+[[blocks.segments]]
+type = "project"
+style = "plain"
+# template = "  {{ .MajorMinorPatch }} "
+
+[[blocks.segments]]
+type = "executiontime"
+style = "plain"
+foreground = "#8800dd"
+template = " took {{ .FormattedMs }} "
+
+[blocks.segments.properties]
+threshold = 500
+style = "round"
+
+[[blocks]]
+alignment = "right"
+newline = false
+type = "prompt"
+# filler = " ~"
+overflow = "hide"
+filler = "{{ if .Overflow }} {{ else }} <#4d4d4d>~</>{{ end }}"
+foreground = "#4d4d4d"
+
+[[blocks.segments]]
+style = "plain"
+type = "session"
+template = " [{{.UserName}} @ {{.HostName}}"
+foreground = "#808080"
+
+[[blocks.segments]]
+type = "os"
+style = "plain"
+template = " on {{ if .WSL }}WSL at {{ end }}{{.Icon}} ]"
+foreground = "#808080"
+
+[[blocks.segments]]
+template = ' {{ .CurrentDate | date .Format }}'
+style = "plain"
+type = "time"
+foreground = "#808080"
+
+[blocks.segments.properties]
+time_format = "02Jan06, 15:04:05(-0700)"
+
+[[blocks]]
+type = "prompt"
+alignment = "left"
+newline = true
+
+[[blocks.segments]]
+type = "text"
+style = "plain"
+foreground = "#2e466b"
+template = "{{if gt .Jobs 0}}{{ .Jobs }}{{else}} {{end}}"
+
+[[blocks.segments]]
+type = "text"
+style = "plain"
+foreground_templates = ["{{ if gt .Code 0 }}#e91e63{{ end }}"]
+template = "{{if .Root}} # {{else}} $ {{end}}"

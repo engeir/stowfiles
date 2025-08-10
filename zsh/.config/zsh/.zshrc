@@ -25,10 +25,10 @@ zinit snippet OMZP::command-not-found
 zinit snippet OMZP::ssh
 
 zinit light Aloxaf/fzf-tab
-zinit ice as"command" from"gh-r" \
-    atclone"./starship init zsh > init.zsh; ./starship completions zsh > _starship" \
-    atpull"%atclone" src"init.zsh"
-zinit light starship/starship
+# zinit ice as"command" from"gh-r" \
+#     atclone"./starship init zsh > init.zsh; ./starship completions zsh > _starship" \
+#     atpull"%atclone" src"init.zsh"
+# zinit light starship/starship
 zinit ice wait"2" as"command" from"gh-r" lucid \
   mv"zoxide*/zoxide -> zoxide" \
   atclone"./zoxide init zsh > init.zsh" \
@@ -115,6 +115,7 @@ zstyle ':fzf-tab:complete:__zoxide_z:*' fzf-preview 'eza -1 --color=always $real
 [ -s "$HOME/.bun/_bun" ] && source "$HOME/.bun/_bun"
 
 # Shell integrations
+eval "$(oh-my-posh init zsh --config ~/.config/oh-my-posh/oh-my-posh.toml)"
 eval "$(fzf --zsh)"
 eval "$(zoxide init --cmd cd zsh)"
 eval "$(atuin init zsh)"
