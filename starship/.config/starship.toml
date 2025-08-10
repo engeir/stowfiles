@@ -17,7 +17,6 @@ $git_metrics\
 $git_status\
 $hg_branch\
 $docker_context\
-$package\
 $cmake\
 $cobol\
 $conda\
@@ -54,6 +53,7 @@ $typst\
 $vagrant\
 $vlang\
 $zig\
+$package\
 $memory_usage\
 $aws\
 $gcloud\
@@ -84,7 +84,7 @@ rtransient = ""
 
 [aws]
 format = 'on [$symbol($profile )(\($region\) )]($style)'
-style = "bold blue"
+style = "blue"
 symbol = "☁️ "
 [aws.region_aliases]
 ap-southeast-2 = "au"
@@ -97,7 +97,7 @@ discharging_symbol = "💀"
 
 [[battery.display]]
 threshold = 10
-style = "bold #fa4934"
+style = "#fa4934"
 
 [character]
 success_symbol = "[\\$](#b7ba26)"
@@ -105,7 +105,7 @@ error_symbol = "[\\$](#fa4934)"
 vimcmd_symbol = "[](#8dbf7c)"
 
 [directory]
-style = "bold #8dbf7b"
+style = "#8dbf7b"
 truncation_length = 8
 truncation_symbol = "…/"
 format = " [$path]($style)[$read_only]($read_only_style) "
@@ -115,13 +115,22 @@ symbol = " ~"
 style = "dimmed #a49681"
 
 [git_branch]
-style = "bold #bd7b8d"
+style = "#bd7b8d"
+
+[git_commit]
+only_detached = false
+tag_disabled = false
+
+[git_metrics]
+disabled = false
+added_style = "green"
+deleted_style = "red"
 
 [hostname]
 ssh_only = true
-format = " @ [SSH:](bold red)[$hostname]($style)"
+format = " @ [SSH:](red)[$hostname]($style)"
 trim_at = "."
-style = "bold dimmed #458487"
+style = "dimmed #458487"
 disabled = false
 
 [localip]
@@ -130,12 +139,12 @@ ssh_only = false
 format = ' is[ $localipv4]($style) '
 
 [nodejs]
-style = "bold #b7ba26"
+style = "#b7ba26"
 
 [os]
 disabled = false
-format = " [using $symbol]($style)"
-style = "bold"
+format = " [on $symbol]($style)"
+style = "blue"
 [os.symbols]
 Arch = "󰣇"
 Debian = ""
@@ -148,20 +157,30 @@ Redhat = ""
 RedHatEnterprise = ""
 Ubuntu = ""
 
+[package]
+format = '[$symbol$version]($style) '
+
 [python]
-style = "#e7b02f bold"
+style = "#f5f92f"
+symbol = " "
 
 [shell]
 disabled = false
 format = " [with $indicator]($style)"
-style = "bold"
+style = "blue"
 
 [status]
 disabled = false
+map_symbol = true
+pipestatus = true
+symbol = " "
+sigint_symbol = " "
+not_executable_symbol = " "
+not_found_symbol = " "
 
 [sudo]
 disabled = false
-style = "bold fg:bright-red"
+style = "fg:bright-red"
 symbol = "!"
 format = "[$symbol$output]($style) "
 
@@ -172,8 +191,8 @@ format = '[$time]($style)'
 disabled = false
 
 [username]
-style_user = "#e9d9b0 bold"
-style_root = "black bold"
+style_user = "#e9d9b0"
+style_root = "black"
 format = " [$user]($style)"
 disabled = false
 show_always = true
