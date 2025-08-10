@@ -43,6 +43,26 @@ foreground = "#ebeb47"
 template = "{{ if .Error }}{{ .Error }}{{ else }}  {{ .Full }}{{ if .Venv }}({{ .Venv }}){{ end }}{{ end }}"
 
 [[blocks.segments]]
+type = "go"
+style = "plain"
+
+[[blocks.segments]]
+type = "lua"
+style = "plain"
+
+[[blocks.segments]]
+type = "rust"
+style = "plain"
+
+[[blocks.segments]]
+type = "node"
+style = "plain"
+
+[[blocks.segments]]
+type = "zig"
+style = "plain"
+
+[[blocks.segments]]
 type = "project"
 style = "plain"
 # template = "  {{ .MajorMinorPatch }} "
@@ -67,22 +87,31 @@ filler = "{{ if .Overflow }} {{ else }} <#4d4d4d>~</>{{ end }}"
 foreground = "#4d4d4d"
 
 [[blocks.segments]]
+type = "battery"
+style = "plain"
+foreground = "#b8142a"
+template = " {{ if not .Error }}{{ if le .Percentage 20 }}{{ .Icon }}<b>{{ .Percentage }}</b>{{end}}{{ end }}"
+
+[blocks.segments.properties]
+discharging_icon = " "
+charging_icon = " "
+charged_icon = " "
+not_charging_icon = "󰂂 "
+
+[[blocks.segments]]
 style = "plain"
 type = "session"
-template = " [{{.UserName}} @ {{.HostName}}"
-foreground = "#808080"
+template = " <d>[{{.UserName}} @ {{.HostName}}</d>"
 
 [[blocks.segments]]
 type = "os"
 style = "plain"
-template = " on {{ if .WSL }}WSL at {{ end }}{{.Icon}} ]"
-foreground = "#808080"
+template = "<d> on {{ if .WSL }}WSL at {{ end }}{{.Icon}} ]</d>"
 
 [[blocks.segments]]
-template = ' {{ .CurrentDate | date .Format }}'
+template = ' <d>{{ .CurrentDate | date .Format }}</d>'
 style = "plain"
 type = "time"
-foreground = "#808080"
 
 [blocks.segments.properties]
 time_format = "02Jan06, 15:04:05(-0700)"

@@ -1,7 +1,10 @@
+# Get editor completions based on the config schema
+"$schema" = 'https://starship.rs/config-schema.json'
+
+add_newline = false
+
 format = """
-${custom.sudo}\
-$username\
-$hostname\
+$sudo\
 $shlvl\
 $singularity\
 $kubernetes\
@@ -17,6 +20,7 @@ $docker_context\
 $package\
 $cmake\
 $cobol\
+$conda\
 $dart\
 $deno\
 $dotnet\
@@ -29,7 +33,9 @@ $java\
 $julia\
 $kotlin\
 $lua\
+$mise\
 $nim\
+$nix_shell\
 $nodejs\
 $ocaml\
 $perl\
@@ -37,18 +43,17 @@ $php\
 $pulumi\
 $purescript\
 $python\
-$rlang\
 $red\
+$rlang\
 $ruby\
 $rust\
 $scala\
 $swift\
 $terraform\
-$vlang\
+$typst\
 $vagrant\
+$vlang\
 $zig\
-$nix_shell\
-$conda\
 $memory_usage\
 $aws\
 $gcloud\
@@ -56,16 +61,26 @@ $openstack\
 $azure\
 $env_var\
 $crystal\
-$sudo\
 $cmd_duration\
 $fill\
+$os\
+$shell\
+$username\
+$localip\
+$hostname\
 $time\
 $line_break\
 $jobs\
 $battery\
 $status\
-$shell\
 $character"""
+
+[profiles]
+transient = """
+$character\
+"""
+
+rtransient = ""
 
 [aws]
 format = 'on [$symbol($profile )(\($region\) )]($style)'
@@ -85,23 +100,15 @@ threshold = 10
 style = "bold #fa4934"
 
 [character]
-success_symbol = "[➜](bold #b7ba26) "
-error_symbol = "[✗](bold #fa4934) "
-vimcmd_symbol = "[👓](bold #8dbf7c) "
-
-[custom.sudo]
-description = "valid sudo timestamp marker"
-command = "echo -n '!'"
-ignore_timeout = true
-format = "[$symbol$output]($style) "
-style = "bold fg:bright-red"
-when = "sudo -vn &>/dev/null"
+success_symbol = "[\\$](#b7ba26)"
+error_symbol = "[\\$](#fa4934)"
+vimcmd_symbol = "[](#8dbf7c)"
 
 [directory]
 style = "bold #8dbf7b"
 truncation_length = 8
 truncation_symbol = "…/"
-format = " in [$path]($style)[$read_only]($read_only_style) "
+format = " [$path]($style)[$read_only]($read_only_style) "
 
 [fill]
 symbol = " ~"
@@ -117,21 +124,56 @@ trim_at = "."
 style = "bold dimmed #458487"
 disabled = false
 
+[localip]
+disabled = false
+ssh_only = false
+format = ' is[ $localipv4]($style) '
+
 [nodejs]
 style = "bold #b7ba26"
+
+[os]
+disabled = false
+format = " [using $symbol]($style)"
+style = "bold"
+[os.symbols]
+Arch = "󰣇"
+Debian = ""
+Fedora = ""
+Linux = ""
+Macos = ""
+NixOS = "❄️"
+Raspbian = ""
+Redhat = ""
+RedHatEnterprise = ""
+Ubuntu = ""
 
 [python]
 style = "#e7b02f bold"
 
+[shell]
+disabled = false
+format = " [with $indicator]($style)"
+style = "bold"
+
+[status]
+disabled = false
+
+[sudo]
+disabled = false
+style = "bold fg:bright-red"
+symbol = "!"
+format = "[$symbol$output]($style) "
+
 [time]
 style = "#a49681"
 time_format = "%d%b%y, %H:%M:%S(%z)"
-format = '[ $time]($style)'
+format = '[$time]($style)'
 disabled = false
 
 [username]
 style_user = "#e9d9b0 bold"
 style_root = "black bold"
-format = "[$user]($style)"
+format = " [$user]($style)"
 disabled = false
 show_always = true
