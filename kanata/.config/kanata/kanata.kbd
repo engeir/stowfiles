@@ -48,11 +48,14 @@
   ;; Tap-hold keys with letters for tap and layers for hold
   entr (layer-toggle enter)
   e (tap-hold-release $tap-time $hold-time e @entr)
+  ;; Tap to get r, hold to get mouse movement
+  mus (layer-toggle mouse)
+  mse (tap-hold-release $tap-time $hold-time r @mus)
 )
 
 (deflayer base
        _    _    _    _    _    _    _    8    9    0    +    \    bspc
-  tab  @q   w    @e   r    t    y    u    i    o    p
+  tab  @q   w    @e   @mse t    y    u    i    o    p
   @escctrl @a @s @d   @f   g   @h    @j   @k   @l
   @lsftaccent z  x    _    v    b    n    m    ,    .    -    @rsftaccent
   lctl     _    _          @sar           @tilde
@@ -72,4 +75,28 @@
   _    _    _    _    _    _    bspc _    _  Delete
   _         _    _    _    _    _    _    _    _    _    _    _
   _    _    _              ret            _
+)
+
+;; See https://codebenchers.com/blog/control-your-mouse-using-keyboard-kanata
+(defalias
+  fst (movemouse-speed 200)
+  slw (movemouse-speed 25)
+
+  mwu (mwheel-up 50 120)
+  mwd (mwheel-down 50 120)
+  mwl (mwheel-left 50 120)
+  mwr (mwheel-right 50 120)
+
+  ms↑ (movemouse-up 4 3)
+  ms← (movemouse-left 4 3)
+  ms↓ (movemouse-down 4 3)
+  ms→ (movemouse-right 4 3)
+)
+
+(deflayer mouse
+       _    _    _    _    _    _    _    _    _    _    _    _    _
+  _    @fst @slw @mwl _    _    _    @mwr mrgt mmid @mwu
+  _    _    _    _    _    _    @ms← @ms↓ @ms↑ @ms→
+  _         _    _    _    _    _    @mwd _    _    _    _    _
+  _    _    _              mlft           _
 )
