@@ -93,6 +93,8 @@ bindsym $monster+o exec --no-startup-id bash ~/.config/picom/adjust-opacity +ina
 bindsym $monster+i exec --no-startup-id bash ~/.config/picom/adjust-opacity -inactive
 bindsym $monster+t exec --no-startup-id find_txt
 bindsym $monster+p exec --no-startup-id flameshot gui
+bindsym $monster+a exec --no-startup-id uv run -w PyGObject https://github.com/s-n-g/i3-keylist/blob/0ef355711ca88c817dda7d9c99c920e244ab11a7/i3-keylist-view.py
+# uv run -w PyGObject https://raw.githubusercontent.com/s-n-g/i3-keylist/refs/heads/main/i3-keylist-view.py --shell | sort | yad --text-info --title="i3 keyman cheat sheet" --no-buttons --escape-ok --on-top --close-on-unfocus
 
 # start a terminal
 # bindsym $mod+Return exec i3-sensible-terminal
