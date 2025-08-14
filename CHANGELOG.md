@@ -1,5 +1,27 @@
 # Changelog
 
+## [2.4.0](https://github.com/engeir/stowfiles/compare/stowfiles-v2.3.0...stowfiles-v2.4.0) (2025-08-14)
+
+
+### Features
+
+* **bin:** add format option to the snippet script ([fcb3c45](https://github.com/engeir/stowfiles/commit/fcb3c45299cd5dab49e64c7721166d988abb9ddd))
+* **bin:** support wayland using swww to set wallpapers ([981cae5](https://github.com/engeir/stowfiles/commit/981cae53a6405fa31028cf0ff22ac7368c412658))
+* **kanata:** map mouse movements ([77f2fb9](https://github.com/engeir/stowfiles/commit/77f2fb9fa296ceeeb8548fd6a7781cfafaa3de8f))
+* **nvim:** [plugin] add fff.nvim ([394ec6f](https://github.com/engeir/stowfiles/commit/394ec6f3acbf7e6f81338a3eedf094316950d18f))
+* **zsh:** switch to oh-my-posh from starship ([8c1a5f5](https://github.com/engeir/stowfiles/commit/8c1a5f585b1cc268fc05224270243b8a52dcbd3f))
+
+
+### Miscellaneous
+
+* **zsh:** back to starship, but now with transient prompt ([bae924b](https://github.com/engeir/stowfiles/commit/bae924bb6459257a08961c0f114c8151c9a0b17f))
+
+
+### Styles
+
+* **nvim:** format lua code ([b6d1fb6](https://github.com/engeir/stowfiles/commit/b6d1fb6b69214c142d53931c89b5320413f603b8))
+* **starship:** small tweaks ([f942c4c](https://github.com/engeir/stowfiles/commit/f942c4ca432413e8f6f7dabece8425a81b964c98))
+
 ## [2.3.0](https://github.com/engeir/stowfiles/compare/stowfiles-v2.2.0...stowfiles-v2.3.0) (2025-08-05)
 
 
