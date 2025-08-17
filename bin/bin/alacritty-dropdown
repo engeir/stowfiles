@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+
+alacritty -t "dropdown" -o font.size=14 -o window.dimensions.lines=50 -o window.dimensions.columns=150 -e "$1"

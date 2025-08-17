@@ -1,0 +1,19 @@
+#!/usr/bin/env bash
+
+# cat ~/.config/hypr/configs/Keybinds.conf ~/.config/hypr/UserConfigs/UserKeybinds.conf \
+#     | grep '^bind' \
+#     | sed 's/\w*//; s/ = //' \
+#     | awk -F',' '{print $1 $2"\n" $3 $4}' \
+#     | sed 's/^\s//; s/^exec //' \
+#     | awk 'NR%2==1 { print } NR%2==0 { if (match($0, / *#[^#]*$/)) { cmd = substr($0, 1, RSTART); expl = substr($0, RSTART); print cmd; print expl; } else { print $0; print "" } }' \
+#     | yad --no-markup --no-buttons --escape-ok --list --columns 3 --column 'Keymap' --column 'Command' --column 'Description' --title "Hyprland Keymap Cheat Sheet"
+
+cat ~/.config/hypr/configs/Keybinds.conf ~/.config/hypr/UserConfigs/UserKeybinds.conf \
+    | grep '^bind' \
+    | sed 's/\w*//; s/ = //' \
+    | awk -F',' '{print $1 $2"£" $3 $4}' \
+    | sed 's/^\s//; s/£ exec /£ /' \
+    | sort \
+    | column -s "£" -t \
+    | fzf
+# | column -s "#" -t \
