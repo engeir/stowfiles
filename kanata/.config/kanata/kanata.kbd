@@ -26,7 +26,6 @@
 (defalias
   escctrl (tap-hold $tap-time $hold-time esc lctl)
   a (multi f24 (tap-hold $tap-time $hold-time a lsft))
-  s (multi f24 (tap-hold $tap-time $hold-time s lmet))
   d (multi f24 (tap-hold $tap-time $hold-time d lalt))
   f (multi f24 (tap-hold $tap-time $hold-time f lctl))
   h (multi f24 (tap-hold $tap-time $hold-time h rctl))
@@ -34,8 +33,35 @@
   k (multi f24 (tap-hold $tap-time $hold-time k rmet))
   l (multi f24 (tap-hold $tap-time $hold-time l rsft))
   q (multi f24 (tap-hold $tap-time $hold-time q (multi lsft lmet lalt lctl)))
+  s (multi f24 (tap-hold $tap-time $hold-time s lmet))
+  w (tap-hold-release $tap-time $hold-time w (layer-toggle numbers))
+
+  amp (unicode r#"&"#)
+  at (unicode r#"@"#)
+  dlr (unicode r#"$"#)
+  eq (unicode r#"="#)
+  hat (unicode r#"^"#)
+  ht (unicode r#"#"#)
+  lab (unicode r#"<"#)
+  lb (unicode r#"{"#)
+  lp (unicode r#"("#)
+  lsb (unicode r#"["#)
+  pct (unicode r#"%"#)
+  pip (unicode r#"|"#)
+  pls (unicode r#"+"#)
+  qe (unicode r#"?"#)
+  rab (unicode r#">"#)
+  rb (unicode r#"}"#)
+  rp (unicode r#")"#)
+  rsb (unicode r#"]"#)
+  sl (unicode r#"/"#)
+
+  bs (unicode r#"\"#)
+  ;; " ;; The line above breaks the syntax highlighting, this fixes it :)
   ;; Defines a macro for typing `, then use it when pressing L-Shift
   accent (macro S-Equal spc)
+  ;; Double quote
+  dq (macro S-2)
   ;; Tilde
   tilde (macro RA-BracketRight spc)
   lsftaccent (multi f24 (tap-hold $tap-time $hold-time @accent lsft))
@@ -48,24 +74,43 @@
   ;; Tap-hold keys with letters for tap and layers for hold
   entr (layer-toggle enter)
   e (tap-hold-release $tap-time $hold-time e @entr)
-  ;; Tap to get r, hold to get mouse movement
-  mus (layer-toggle mouse)
-  mse (tap-hold-release $tap-time $hold-time r @mus)
+  ;; Tap to get numbers layer, hold to get lalt
+  syml (layer-toggle symbols)
+  sym (tap-hold-release $tap-time $hold-time lalt @syml)
+  ;; See https://codebenchers.com/blog/control-your-mouse-using-keyboard-kanata
+  fst (movemouse-speed 200)
+  slw (movemouse-speed 25)
+  mwu (mwheel-up 50 120)
+  mwd (mwheel-down 50 120)
+  mwl (mwheel-left 50 120)
+  mwr (mwheel-right 50 120)
+  ms↑ (movemouse-up 4 3)
+  ms← (movemouse-left 4 3)
+  ms↓ (movemouse-down 4 3)
+  ms→ (movemouse-right 4 3)
 )
 
 (deflayer base
        _    _    _    _    _    _    _    8    9    0    +    \    bspc
-  tab  @q   w    @e   @mse t    y    u    i    o    p
-  @escctrl @a @s @d   @f   g   @h    @j   @k   @l
+  tab  @q   @w   @e   r    t    y    u    i    o    p
+  @escctrl @a @s @d   @f   g    @h   @j   @k   @l
   @lsftaccent z  x    _    v    b    n    m    ,    .    -    @rsftaccent
-  lctl     _    _          @sar           @tilde
+  lctl _    @sym           @sar           @tilde
 )
 
 (deflayer arrows
        f1   f2   f3   f4   f5   f6   f7   f8   f9   f10  f11  f12  _
-  _    _    _    _    _    _    pgdn pgup left rght S-tab
+  _    mmid @fst @slw mlft mrgt pgdn pgup S-tab tab _
   _    lsft lmet lalt lctl home left down up   rght
-  _         _    _  Delete bspc ret  tab  _    C-w  _    _    _
+  _         @mwl @mwd @mwu @mwr _    @ms← @ms↓ @ms↑ @ms→ _    _
+  _    _    _              _              _
+)
+
+(deflayer numbers
+       _    _    _    _    _    _    _    _    _    _    _    _    _
+  _    _    _    _    _    _    bspc 7    8    9    _
+  _    _    _    _    _    _    4    5    6    0
+  _         _    _    _    _    _    1    2    3    _    _    _
   _    _    _              _              _
 )
 
@@ -77,26 +122,32 @@
   _    _    _              ret            _
 )
 
-;; See https://codebenchers.com/blog/control-your-mouse-using-keyboard-kanata
-(defalias
-  fst (movemouse-speed 200)
-  slw (movemouse-speed 25)
+;; [x] amp: &
+;; [x] at: @
+;; [x] bs: \
+;; [x] dlr: $
+;; [x] dq: "
+;; [x] eq: =
+;; [x] hat: ^
+;; [x] ht: #
+;; [x] lab: <
+;; [x] lb: {
+;; [x] lp: (
+;; [x] lsb: [
+;; [x] pct: %
+;; [x] pip: |
+;; [x] pls: +
+;; [x] qe: ?
+;; [x] rab: >
+;; [x] rb: }
+;; [x] rp: )
+;; [x] rsb: ]
+;; [x] sl: /
 
-  mwu (mwheel-up 50 120)
-  mwd (mwheel-down 50 120)
-  mwl (mwheel-left 50 120)
-  mwr (mwheel-right 50 120)
-
-  ms↑ (movemouse-up 4 3)
-  ms← (movemouse-left 4 3)
-  ms↓ (movemouse-down 4 3)
-  ms→ (movemouse-right 4 3)
-)
-
-(deflayer mouse
+(deflayer symbols
        _    _    _    _    _    _    _    _    _    _    _    _    _
-  _    @fst @slw @mwl _    _    _    @mwr mrgt mmid @mwu
-  _    _    _    _    _    _    @ms← @ms↓ @ms↑ @ms→
-  _         _    _    _    _    _    @mwd _    _    _    _    _
-  _    _    _              mlft           _
+  _    @qe  @dq  @eq  @pls @hat @amp _    @lab @rab @pip
+  _    @at  @ht  @dlr @pct _    @lb  @lp  @rp  @rb
+  _         _    _    _    _    @bs  @sl  @lsb @rsb _    _    _
+  _    _    _              _              _
 )
