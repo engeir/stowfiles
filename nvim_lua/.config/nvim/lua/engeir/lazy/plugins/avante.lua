@@ -20,7 +20,7 @@ return {
         endpoint = "http://localhost:22434", -- Note that there is no /v1 at the end.
         -- model = "nhn-thinking-medium:latest",
         -- model = "gemma3:27b-it-q8_0",
-        model = "nhn-small:latest",
+        model = "nhn-medium:latest",
       },
     },
   },
@@ -50,14 +50,6 @@ return {
           use_absolute_path = true,
         },
       },
-    },
-    {
-      -- Make sure to set this up properly if you have lazy=true
-      "MeanderingProgrammer/render-markdown.nvim",
-      opts = {
-        file_types = { "Avante" },
-      },
-      ft = { "Avante" },
     },
   },
 }

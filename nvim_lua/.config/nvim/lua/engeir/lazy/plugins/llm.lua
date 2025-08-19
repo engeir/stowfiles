@@ -1,6 +1,7 @@
 return {
+  -- This code block
   "huggingface/llm.nvim",
-  enabled = false,
+  enabled = true,
   opts = {
     lsp = {
       bin_path = vim.api.nvim_call_function("stdpath", { "data" })
@@ -9,6 +10,8 @@ return {
     backend = "ollama",
     model = "nhn-large:latest",
     url = "http://localhost:22434", -- llm-ls uses "/api/generate"
+    accept_keymap = "<C-y>",
+    dismiss_keymap = "<C-e>",
     -- cf https://github.com/ollama/ollama/blob/main/docs/api.md#parameters
     request_body = {
       -- Modelfile options for the model you use
