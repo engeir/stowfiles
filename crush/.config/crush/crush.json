@@ -1,0 +1,49 @@
+{
+  "$schema": "https://charm.land/crush.json",
+  "providers": {
+    "ollama": {
+      "name": "Ollama",
+      "base_url": "http://localhost:22434/v1/",
+      "type": "openai",
+      "models": [
+        {
+          "name": "NHN Small",
+          "id": "nhn-small:latest",
+          "context_window": 256000,
+          "default_max_tokens": 20000
+        },
+        {
+          "name": "NHN Medium",
+          "id": "nhn-medium:latest"
+        },
+        {
+          "name": "NHN Large",
+          "id": "nhn-large:latest",
+          "context_window": 256000,
+          "default_max_tokens": 20000
+        },
+        {
+          "name": "NHN Coder Autocomplete",
+          "id": "nhn-coder-autocomplete:latest",
+          "context_window": 256000,
+          "default_max_tokens": 20000
+        },
+        {
+          "name": "NHN Embedding",
+          "id": "nhn-embedding:latest",
+          "context_window": 256000,
+          "default_max_tokens": 20000
+        }
+      ]
+    }
+  },
+  "lsp": {
+    "go": {
+      "command": "gopls"
+    },
+    "python": {
+      "command": "ruff",
+      "args": ["server"]
+    }
+  }
+}
