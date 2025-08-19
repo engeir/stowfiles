@@ -11,6 +11,28 @@ vim.keymap.set(
   "<cmd>update<CR>",
   { desc = "Save if changes has been made" }
 )
+-- Forcefully save with `sudo` privileges. Depends on having an executable that `sudo`
+-- can use by looking at the `SUDO_ASKPASS` environment variable
+vim.api.nvim_create_user_command("W", function()
+  local askpass_path = vim.fn.expand("~/bin/askpass-root")
+  if vim.fn.filereadable(askpass_path) == 0 then
+    vim.notify(
+      "Askpass helper not found at " .. askpass_path .. ". Please create it first.",
+      vim.log.levels.ERROR
+    )
+    return
+  end
+  if vim.fn.executable(askpass_path) == 0 then
+    vim.notify(
+      "Askpass helper at " .. askpass_path .. " is not executable. Please chmod +x it.",
+      vim.log.levels.ERROR
+    )
+    return
+  end
+  vim.env.SUDO_ASKPASS = askpass_path
+  vim.cmd("w !sudo -A tee % >/dev/null")
+  vim.cmd("edit!")
+end, { desc = "Write file with sudo using tee" })
 
 -- Close all but the current buffer
 vim.keymap.set(
