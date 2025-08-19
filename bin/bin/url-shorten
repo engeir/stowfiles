@@ -11,6 +11,10 @@ url=$(xclip -o -selection clipboard)
 junta() {
     # Use regex to extract the shortened URL
     shortened_url=$(echo "$url" | grep -oP '^https://.*/\d{6}')
+    # If the word "tickets" is found, remove it:
+    if [[ $shortened_url =~ tickets ]]; then
+        shortened_url=${shortened_url/tickets\//}
+    fi
 }
 esm() {
     base_url=$(echo "$url" | grep -oP '^https://.*?/')
