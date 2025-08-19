@@ -54,6 +54,7 @@ exec --no-startup-id random_wallpaper
 
 floating_minimum_size 900 x 600
 for_window [title="^dropdown$"] floating enable, sticky enable
+for_window [title="^i3 Keymap Cheat Sheet$"] floating enable, sticky enable
 # exec --no-startup-id drop-down-terminal
 # bindsym $mod+t exec --no-startup-id hideIt.sh --name dropdown --toggle
 
@@ -75,26 +76,25 @@ floating_modifier $mod
 # or left-clicking anywhere into the window while holding the floating modifier.
 # tiling_drag modifier titlebar
 
-# lock the screen with i3lock
-# bindsym $mod+Shift+period exec i3lock
-bindsym $mod+Shift+period exec slock
-bindsym $mod+Shift+p exec --no-startup-id passmenu
+bindsym $mod+Shift+Mod1+f exec --no-startup-id pdf_open
+bindsym $mod+Shift+Mod1+u exec alacritty -t "dropdown" -o font.size=12 -o window.dimensions.lines=50 -o window.dimensions.columns=150 -e clip-manage
+bindsym $mod+Shift+Mod1+y exec alacritty -t "dropdown" -o font.size=12 -o window.dimensions.lines=50 -o window.dimensions.columns=150 -e pamfzf-new
 bindsym $mod+Shift+d exec --no-startup-id displayselect
 bindsym $mod+Shift+g exec --no-startup-id clipcat-menu -f dmenu
-bindsym $mod+Shift+Mod1+y exec alacritty -t "dropdown" -o font.size=12 -o window.dimensions.lines=50 -o window.dimensions.columns=150 -e pamfzf-new
-bindsym $mod+Shift+Mod1+u exec alacritty -t "dropdown" -o font.size=12 -o window.dimensions.lines=50 -o window.dimensions.columns=150 -e clip-manage
-bindsym $monster+l exec alacritty -t "dropdown" -o font.size=12 -o window.dimensions.lines=50 -o window.dimensions.columns=150 -e cheat-sheet-links
-bindsym $monster+r exec alacritty -t "dropdown" -o font.size=12 -o window.dimensions.lines=50 -o window.dimensions.columns=150 -e cheat-sheet-links files-and-content
+bindsym $mod+Shift+p exec --no-startup-id passmenu
+bindsym $mod+Shift+period exec slock
+bindsym $monster+a exec --no-startup-id "grep '^bind' ~/.config/i3/config | sed 's/bindsym //; s/exec //; s/--no-startup-id //' | sort | sed 's/\s/\n/' | yad --no-markup --title 'i3 Keymap Cheat Sheet' --escape-ok --search-column=1 --list --columns 2 --column 'Keymap:TEXT' --column 'Command:TEXT' --no-buttons --close-on-unfocus"
+bindsym $monster+b exec --no-startup-id cheat-sheet-links dmenu
+bindsym $monster+c exec alacritty -t "dropdown" -o font.size=12 -o window.dimensions.lines=50 -o window.dimensions.columns=150 -e calcure
+bindsym $monster+i exec --no-startup-id bash ~/.config/picom/adjust-opacity -inactive
 bindsym $monster+j exec alacritty -t "dropdown" -o font.size=12 -o window.dimensions.lines=50 -o window.dimensions.columns=150 -e url-shorten
-bindsym $mod+Shift+Mod1+f exec --no-startup-id pdf_open
-bindsym $monster+plus exec --no-startup-id bash ~/.config/picom/adjust-opacity +active
+bindsym $monster+l exec alacritty -t "dropdown" -o font.size=12 -o window.dimensions.lines=50 -o window.dimensions.columns=150 -e cheat-sheet-links
 bindsym $monster+minus exec --no-startup-id bash ~/.config/picom/adjust-opacity -active
 bindsym $monster+o exec --no-startup-id bash ~/.config/picom/adjust-opacity +inactive
-bindsym $monster+i exec --no-startup-id bash ~/.config/picom/adjust-opacity -inactive
-bindsym $monster+t exec --no-startup-id find_txt
 bindsym $monster+p exec --no-startup-id flameshot gui
-bindsym $monster+a exec --no-startup-id uv run -w PyGObject https://github.com/s-n-g/i3-keylist/blob/0ef355711ca88c817dda7d9c99c920e244ab11a7/i3-keylist-view.py
-# uv run -w PyGObject https://raw.githubusercontent.com/s-n-g/i3-keylist/refs/heads/main/i3-keylist-view.py --shell | sort | yad --text-info --title="i3 keyman cheat sheet" --no-buttons --escape-ok --on-top --close-on-unfocus
+bindsym $monster+plus exec --no-startup-id bash ~/.config/picom/adjust-opacity +active
+bindsym $monster+r exec alacritty -t "dropdown" -o font.size=12 -o window.dimensions.lines=50 -o window.dimensions.columns=150 -e cheat-sheet-links files-and-content
+bindsym $monster+t exec --no-startup-id find_txt
 
 # start a terminal
 # bindsym $mod+Return exec i3-sensible-terminal
