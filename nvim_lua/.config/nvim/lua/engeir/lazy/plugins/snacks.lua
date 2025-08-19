@@ -14,6 +14,7 @@ return {
   opts = {
     bigfile = { enabled = true },
     dim = { animate = { enabled = false } },
+    image = {},
     notifier = { enabled = false },
     picker = {
       sources = {
@@ -30,6 +31,13 @@ return {
       scratch = { wo = { winhighlight = "NormalFloat:NormalFloat" }, border = "" },
     },
     words = { enabled = true },
+    zen = {
+      toggles = { git_signs = false, diagnostics = false },
+      ---@param win snacks.win
+      on_open = function(win) vim.cmd([[Markview enable]]) end,
+      ---@param win snacks.win
+      on_close = function(win) vim.cmd([[Markview disable]]) end,
+    },
   },
   keys = {
     { "crf", function() Snacks.rename.rename_file() end, desc = "Rename File" },
@@ -132,6 +140,7 @@ return {
         Snacks.toggle.inlay_hints():map("<leader>uh")
         Snacks.toggle.profiler():map("cpp")
         Snacks.toggle.profiler_highlights():map("cph")
+        Snacks.toggle.zen():map("<leader>uz")
       end,
     })
   end,
