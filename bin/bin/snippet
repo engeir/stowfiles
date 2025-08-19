@@ -106,7 +106,7 @@ case "$ACTION" in
         ;;
     format)
         cd "$SNIP_DIR" >/dev/null 2>&1
-        prettier --write ./**/*.md
+        prettier --write ./**/*.md | grep -v "unchanged" && true
         cd - >/dev/null 2>&1
         ;;
     *)
