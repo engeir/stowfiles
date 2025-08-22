@@ -35,7 +35,7 @@ files-and-content() {
         --color "hl:-1:underline,hl+:-1:underline:reverse" \
         --delimiter : \
         --preview 'bat --color=always {1} --highlight-line {2}' \
-        --preview-window '<80(right:65%),border-line,+{2}+3/3,~3' \
+        --preview-window '<80(up:65%),border-line,+{2}+3/3,~3' \
         | xargs -I {} sh -c "head -n 1 {}")"
 }
 
@@ -51,7 +51,7 @@ files() {
         # clipcatctl insert "$CHOSEN"
         # xdotool key ctrl+v
     else
-        CLI='fzf --bind "ctrl-k:preview-up,ctrl-j:preview-down" --preview "$viewer {}" --preview-window "<80(right:65%),border-line,+{2}+3/3,~3"'
+        CLI='fzf --bind "ctrl-k:preview-up,ctrl-j:preview-down" --preview "$viewer {}" --preview-window "<80(up:65%),border-line,+{2}+3/3,~3"'
     fi
     CHOSEN="$(eval "$CLI" | xargs -I {} sh -c "head -n 1 {}")"
 }
