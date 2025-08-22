@@ -77,23 +77,23 @@ floating_modifier $mod
 # tiling_drag modifier titlebar
 
 bindsym $mod+Shift+Mod1+f exec --no-startup-id pdf_open
-bindsym $mod+Shift+Mod1+u exec alacritty -t "dropdown" -o font.size=12 -o window.dimensions.lines=50 -o window.dimensions.columns=150 -e clip-manage
-bindsym $mod+Shift+Mod1+y exec alacritty -t "dropdown" -o font.size=12 -o window.dimensions.lines=50 -o window.dimensions.columns=150 -e pamfzf-new
+bindsym $mod+Shift+Mod1+u exec alacritty-dropdown clip-manage
+bindsym $mod+Shift+Mod1+y exec alacritty-dropdown pamfzf-new
 bindsym $mod+Shift+d exec --no-startup-id displayselect
 bindsym $mod+Shift+g exec --no-startup-id clipcat-menu -f dmenu
 bindsym $mod+Shift+p exec --no-startup-id passmenu
 bindsym $mod+Shift+period exec slock
 bindsym $monster+a exec --no-startup-id "grep '^bind' ~/.config/i3/config | sed 's/bindsym //; s/exec //; s/--no-startup-id //' | sort | sed 's/\s/\n/' | yad --no-markup --title 'i3 Keymap Cheat Sheet' --escape-ok --search-column=1 --list --columns 2 --column 'Keymap:TEXT' --column 'Command:TEXT' --no-buttons --close-on-unfocus"
 bindsym $monster+b exec --no-startup-id cheat-sheet-links dmenu
-bindsym $monster+c exec alacritty -t "dropdown" -o font.size=12 -o window.dimensions.lines=50 -o window.dimensions.columns=150 -e calcure
+bindsym $monster+c exec alacritty-dropdown calcure
 bindsym $monster+i exec --no-startup-id bash ~/.config/picom/adjust-opacity -inactive
 bindsym $monster+j exec alacritty -t "dropdown" -o font.size=12 -o window.dimensions.lines=50 -o window.dimensions.columns=150 -e url-shorten
-bindsym $monster+l exec alacritty -t "dropdown" -o font.size=12 -o window.dimensions.lines=50 -o window.dimensions.columns=150 -e cheat-sheet-links
+bindsym $monster+l exec alacritty-dropdown cheat-sheet-links
 bindsym $monster+minus exec --no-startup-id bash ~/.config/picom/adjust-opacity -active
 bindsym $monster+o exec --no-startup-id bash ~/.config/picom/adjust-opacity +inactive
 bindsym $monster+p exec --no-startup-id flameshot gui
 bindsym $monster+plus exec --no-startup-id bash ~/.config/picom/adjust-opacity +active
-bindsym $monster+r exec alacritty -t "dropdown" -o font.size=12 -o window.dimensions.lines=50 -o window.dimensions.columns=150 -e cheat-sheet-links files-and-content
+bindsym $monster+r exec alacritty-dropdown cheat-sheet-links files-and-content
 bindsym $monster+t exec --no-startup-id find_txt
 
 # start a terminal
