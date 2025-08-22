@@ -1,4 +1,4 @@
-;; vim: filetype=lisp
+;; vim: filetype=lisp:commentstring=;;\ %s
 ;; See
 ;; https://jtroo.github.io/config-1.7.0.html#aliases
 ;; and
