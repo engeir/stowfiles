@@ -36,28 +36,30 @@
   s (multi f24 (tap-hold $tap-time $hold-time s lmet))
   w (tap-hold-release $tap-time $hold-time w (layer-toggle numbers))
 
-  amp (unicode r#"&"#)
-  at (unicode r#"@"#)
-  dlr (unicode r#"$"#)
-  eq (unicode r#"="#)
-  hat (unicode r#"^"#)
-  ht (unicode r#"#"#)
-  lab (unicode r#"<"#)
-  lb (unicode r#"{"#)
-  lp (unicode r#"("#)
-  lsb (unicode r#"["#)
-  pct (unicode r#"%"#)
-  pip (unicode r#"|"#)
-  pls (unicode r#"+"#)
-  qe (unicode r#"?"#)
-  rab (unicode r#">"#)
-  rb (unicode r#"}"#)
-  rp (unicode r#")"#)
-  rsb (unicode r#"]"#)
-  sl (unicode r#"/"#)
+  ;; The unicode syntax didn't work across my machines, so let's try this then.
+  amp (macro S-6) ;; amp (unicode r#"&"#)
+  at (multi ralt 2) ;; at (unicode r#"@"#)
+  dlr (macro S-4) ;; dlr (unicode r#"$"#)
+  eq (macro S-0) ;; eq (unicode r#"="#)
+  hat (macro S-BracketRight spc) ;; hat (unicode r#"^"#)
+  ht (macro S-3) ;; ht (unicode r#"#"#)
+  lab <
+  lb (multi ralt 7) ;; lb (unicode r#"{"#)
+  lp (macro S-8) ;; lp (unicode r#"("#)
+  lsb (multi ralt 8) ;; lsb (unicode r#"["#)
+  pct (macro S-5) ;; pct (unicode r#"%"#)
+  pip Backquote ;; pip (unicode r#"|"#)
+  pls Minus ;; pls (unicode r#"+"#)
+  qe S-Minus ;; qe (unicode r#"?"#)
+  rab (macro S-<) ;; rab (unicode r#">"#)
+  rb (multi ralt 0) ;; rb (unicode r#"}"#)
+  rp (multi S-9) ;; rp (unicode r#")"#)
+  rsb (multi ralt 9) ;; rsb (unicode r#"]"#)
+  sl (macro S-7) ;; sl (unicode r#"/"#)
 
-  bs (unicode r#"\"#)
+  bs Equal ;; bs (unicode r#"\"#) ;; This is "Equal" on my keyboard. Unicode doesn't work :(
   ;; " ;; The line above breaks the syntax highlighting, this fixes it :)
+
   ;; Defines a macro for typing `, then use it when pressing L-Shift
   accent (macro S-Equal spc)
   ;; Double quote
@@ -75,8 +77,9 @@
   entr (layer-toggle enter)
   e (tap-hold-release $tap-time $hold-time e @entr)
   ;; Tap to get numbers layer, hold to get lalt
-  syml (layer-toggle symbols)
-  sym (tap-hold-release $tap-time $hold-time lalt @syml)
+  syml (layer-switch symbols)
+  symL (layer-switch base)
+  ;; sym (tap-hold-release $tap-time $hold-time lalt @syml)
   ;; See https://codebenchers.com/blog/control-your-mouse-using-keyboard-kanata
   fst (movemouse-speed 200)
   slw (movemouse-speed 25)
@@ -95,7 +98,7 @@
   tab  @q   @w   @e   r    t    y    u    i    o    p
   @escctrl @a @s @d   @f   g    @h   @j   @k   @l
   @lsftaccent z  x    _    v    b    n    m    ,    .    -    @rsftaccent
-  lctl _    @sym           @sar           @tilde
+  lctl _    @syml          @sar           @tilde
 )
 
 (deflayer arrows
@@ -147,7 +150,7 @@
 (deflayer symbols
        _    _    _    _    _    _    _    _    _    _    _    _    _
   _    @qe  @dq  @eq  @pls @hat @amp _    @lab @rab @pip
-  _    @at  @ht  @dlr @pct _    @lb  @lp  @rp  @rb
+@escctrl @at @ht @dlr @pct _    @lb  @lp  @rp  @rb
   _         _    _    _    _    @bs  @sl  @lsb @rsb _    _    _
-  _    _    _              _              _
+  _    _    @symL          _              _
 )
