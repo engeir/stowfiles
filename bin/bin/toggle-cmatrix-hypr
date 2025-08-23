@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+
+if pgrep kitty; then
+    pkill kitty
+else
+    kitty +kitten panel --edge=background -o font_size=12 cmatrix
+fi
