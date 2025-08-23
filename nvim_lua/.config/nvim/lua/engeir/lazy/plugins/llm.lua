@@ -1,7 +1,10 @@
 return {
   -- This code block
   "huggingface/llm.nvim",
-  enabled = true,
+  enabled = function()
+    vim.fn.system("ollama list >/dev/null 2>&1")
+    return vim.v.shell_error == 0
+  end,
   opts = {
     lsp = {
       bin_path = vim.api.nvim_call_function("stdpath", { "data" })
