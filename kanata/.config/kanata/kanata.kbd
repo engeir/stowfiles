@@ -39,7 +39,7 @@
   ;; The unicode syntax didn't work across my machines, so let's try this then.
   amp (macro S-6) ;; amp (unicode r#"&"#)
   at (multi ralt 2) ;; at (unicode r#"@"#)
-  dlr (macro S-4) ;; dlr (unicode r#"$"#)
+  dlr (multi ralt 4) ;; dlr (unicode r#"$"#)
   eq (macro S-0) ;; eq (unicode r#"="#)
   hat (macro S-BracketRight spc) ;; hat (unicode r#"^"#)
   ht (macro S-3) ;; ht (unicode r#"#"#)
