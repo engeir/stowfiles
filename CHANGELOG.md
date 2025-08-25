@@ -1,5 +1,57 @@
 # Changelog
 
+## [2.4.0](https://github.com/engeir/stowfiles/compare/stowfiles-v2.3.0...stowfiles-v2.4.0) (2025-08-25)
+
+
+### Features
+
+* add cruch and opencode configs for local llm use ([45a1540](https://github.com/engeir/stowfiles/commit/45a1540383f33bbaf41af05af8b511c9bc168408))
+* **bin:** add format option to the snippet script ([fcb3c45](https://github.com/engeir/stowfiles/commit/fcb3c45299cd5dab49e64c7721166d988abb9ddd))
+* **bin:** support wayland using swww to set wallpapers ([981cae5](https://github.com/engeir/stowfiles/commit/981cae53a6405fa31028cf0ff22ac7368c412658))
+* **hypr:** add script to show hyprland key mappings ([47b69ab](https://github.com/engeir/stowfiles/commit/47b69ab22bdb4fb49f9da21c8886b00ab80a0254))
+* **i3:** scale alacritty dropdown window to the focused screen ([84a4b71](https://github.com/engeir/stowfiles/commit/84a4b71a13badc4f51cc9af27a1f8f94db3206a7))
+* **kanata:** map mouse movements ([77f2fb9](https://github.com/engeir/stowfiles/commit/77f2fb9fa296ceeeb8548fd6a7781cfafaa3de8f))
+* **nvim:** [plugin] add fff.nvim ([394ec6f](https://github.com/engeir/stowfiles/commit/394ec6f3acbf7e6f81338a3eedf094316950d18f))
+* **nvim:** add circumvention when a file must be written by root ([9bcde86](https://github.com/engeir/stowfiles/commit/9bcde869f65d95de06b18833e7ba0fd7224b4750))
+* **zsh:** switch to oh-my-posh from starship ([8c1a5f5](https://github.com/engeir/stowfiles/commit/8c1a5f585b1cc268fc05224270243b8a52dcbd3f))
+
+
+### Bug Fixes
+
+* **kanata:** dollar sign is ralt+4, not shift! ([ffd4265](https://github.com/engeir/stowfiles/commit/ffd4265b8f5ba0d23ca16f74deecfb88e7444b41))
+* **kanata:** specify keycodes rather than unicode ([7bcbbf3](https://github.com/engeir/stowfiles/commit/7bcbbf30cfa2c933dc0d77e7842fe8429314d55c))
+
+
+### Miscellaneous
+
+* **bin:** add typing support to opening cheat-sheet-links from dmenu ([18ddb47](https://github.com/engeir/stowfiles/commit/18ddb4714042b4f341a0121afa70769993a3fa68))
+* **bin:** shorten urls even more ([1e00e5c](https://github.com/engeir/stowfiles/commit/1e00e5c23fe7321335ec868669f01e9e6b253773))
+* **bin:** show preview above to keep full width for long lines ([72c66c8](https://github.com/engeir/stowfiles/commit/72c66c8355e0aa54cd98b5ff0e91f76248ef148c))
+* **bin:** when formatting snippets, output only changed files ([f301abf](https://github.com/engeir/stowfiles/commit/f301abff9ec3b6d61852bc0a34b99c5a277b65c6))
+* **hypr:** add cmatrix wallpaper ([ae84eb9](https://github.com/engeir/stowfiles/commit/ae84eb93565fcf7621318820ab33aa97dfd75504))
+* **i3,bin:** toggle the cursor visibility ([bf24e1c](https://github.com/engeir/stowfiles/commit/bf24e1c2fe0b8d41b96bc09be4116e7bebb27f60))
+* **i3:** add simple keybind cheat sheet ([7e821d7](https://github.com/engeir/stowfiles/commit/7e821d7035fa70ed2071f9481f20b60593349f15))
+* **i3:** add some keymaps and sort them ([57c75e5](https://github.com/engeir/stowfiles/commit/57c75e5715f077d5f282608ecefd8ce6caf108a2))
+* **kanata:** improve mouse movement and add symbols and numbers ([297a782](https://github.com/engeir/stowfiles/commit/297a7825160e6df24018202557cc7deb3efefd54))
+* **nvim:** dont install ai plugins if ollama isnt configured ([36e9572](https://github.com/engeir/stowfiles/commit/36e9572bb97da7f79feaf3c17af51a4433e4df9c))
+* **nvim:** make zen mode nicer ([9440b35](https://github.com/engeir/stowfiles/commit/9440b3564dd71726ca67caef5d6e0b0d049cdaef))
+* **nvim:** update llm models and remove markdown previewer ([08ebe34](https://github.com/engeir/stowfiles/commit/08ebe34b4c5cebd12e01534314297e6925caf9fb))
+* **nvim:** update obsidian commands and remove markview dependency ([8a02800](https://github.com/engeir/stowfiles/commit/8a0280099b6dee5daea9cf069697e94c4326328f))
+* **tmux:** use C-q as prefix key, PageUp as copy-mode key ([95ff812](https://github.com/engeir/stowfiles/commit/95ff81267a5e49c7196e57970962de10322c0ac5))
+* **zsh:** back to starship, but now with transient prompt ([bae924b](https://github.com/engeir/stowfiles/commit/bae924bb6459257a08961c0f114c8151c9a0b17f))
+
+
+### Styles
+
+* **kanata:** set the correct commentstring ([a99c957](https://github.com/engeir/stowfiles/commit/a99c957aff36ca66c76a2551810e640692cfe937))
+* **nvim:** format lua code ([b6d1fb6](https://github.com/engeir/stowfiles/commit/b6d1fb6b69214c142d53931c89b5320413f603b8))
+* **starship:** small tweaks ([f942c4c](https://github.com/engeir/stowfiles/commit/f942c4ca432413e8f6f7dabece8425a81b964c98))
+
+
+### Code Refactoring
+
+* **bin,i3:** yad was too hard to work with, just need fuzzy search ([29ba540](https://github.com/engeir/stowfiles/commit/29ba5404099c97e7f3c0cd77da77f767c1e98988))
+
 ## [2.3.0](https://github.com/engeir/stowfiles/compare/stowfiles-v2.2.0...stowfiles-v2.3.0) (2025-08-05)
 
 
