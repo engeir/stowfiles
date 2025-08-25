@@ -34,9 +34,9 @@ return {
     zen = {
       toggles = { git_signs = false, diagnostics = false },
       ---@param win snacks.win
-      on_open = function(win) vim.cmd([[Markview enable]]) end,
+      -- on_open = function(win) vim.cmd([[Markview enable]]) end,
       ---@param win snacks.win
-      on_close = function(win) vim.cmd([[Markview disable]]) end,
+      -- on_close = function(win) vim.cmd([[Markview disable]]) end,
     },
   },
   keys = {

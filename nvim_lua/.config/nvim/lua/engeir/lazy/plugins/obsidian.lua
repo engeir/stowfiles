@@ -4,8 +4,9 @@ return {
   lazy = true,
   cmd = { "ObsidianQuickSwitch" }, -- "ObsidianWorkspace"
   keys = {
-    { "<leader>oq", "<cmd>ObsidianQuickSwitch<CR>" },
-    { "<leader>on", "<cmd>ObsidianNew<CR>" },
+    { "<leader>oq", "<cmd>Obsidian quick_switch<CR>" },
+    { "<leader>on", "<cmd>Obsidian new<CR>" },
+    { "<leader>ob", "<cmd>Obsidian backlinks<CR>" },
   },
   -- ft = "markdown",
   -- Replace the above line with this if you only want to load obsidian.nvim for markdown files in your vault:
