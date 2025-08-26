@@ -72,7 +72,7 @@ return {
         toml = { "dprint", "taplo", stop_after_first = false },
         typescript = { "prettierd", "dprint", "prettier", stop_after_first = true },
         typescriptreact = { "prettierd", "dprint", "prettier", stop_after_first = true },
-        typst = { "typstfmt", "typstyle", lsp_format = "first" },
+        typst = { "typstyle", lsp_format = "first" },
         vim = { "vimfmt", "injected" },
         yaml = function(bufnr)
           return { first(bufnr, "yamlfmt", "prettierd", "prettier"), "injected" }
