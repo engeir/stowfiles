@@ -19,17 +19,18 @@
 #     xdg-settings set default-web-browser open-custom-url.desktop
 #
 # from the same directory as the desktop script. Now, all domains that you place inside
-# of `$HOME/firefox_domains.txt` will be opened in Firefox, while the rest is opened in
-# Vivaldi.
+# of `$HOME/.local/share/open-custom-url/firefox_domains.txt` will be opened in Firefox,
+# while the rest is opened in $DEFAULT_BROWSER.
 #
 # nrk.no
 # vg.no
 # vivaldi.com
 
-# Path to the text file containing domains to open with Firefox
+DEFAULT_BROWSER="firefox"
+
+# Path to the directory containing domains files
 DOMAIN_FILE_PATH="$HOME/.local/share/open-custom-url"
 mkdir -p "$DOMAIN_FILE_PATH"
-FIREFOX_DOMAINS_FILE="$DOMAIN_FILE_PATH/firefox_domains.txt"
 
 # Get the URL passed to the script
 URL="$1"
@@ -37,9 +38,24 @@ URL="$1"
 # Extract the domain from the URL
 DOMAIN=$(echo "$URL" | awk -F[/:] '{print $4}')
 
-# Check if the domain is in the Firefox domains list
-if grep -q "$DOMAIN" "$FIREFOX_DOMAINS_FILE"; then
-    firefox "$URL" # Open with Firefox
-else
-    vivaldi "$URL" # Open with Vivaldi (default browser)
+# Flag to indicate if a browser was found for the domain
+FOUND_BROWSER=false
+
+# Loop through all domain files in the directory
+for DOMAIN_FILE in "$DOMAIN_FILE_PATH"/*_domains.txt; do
+    # Extract the browser name from the filename
+    BROWSER=$(basename "$DOMAIN_FILE" _domains.txt)
+
+    # Check if the domain is in the current domains list
+    if grep -q "$DOMAIN" "$DOMAIN_FILE"; then
+        # Open with the corresponding browser
+        "$BROWSER" "$URL"
+        FOUND_BROWSER=true
+        break
+    fi
+done
+
+# If no matching browser was found, use the default browser
+if [ "$FOUND_BROWSER" = false ]; then
+    "$DEFAULT_BROWSER" "$URL"
 fi
