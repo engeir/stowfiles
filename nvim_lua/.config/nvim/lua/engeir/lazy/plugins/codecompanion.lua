@@ -24,21 +24,23 @@ return {
         end
       end,
       adapters = {
-        ollama = function()
-          return require("codecompanion.adapters").extend("ollama", {
-            env = {
-              url = "http://localhost:22434",
-              api_key = "cmd:pass NHN/chat/API-KEY",
-            },
-            headers = {
-              ["Content-Type"] = "application/json",
-              ["Authorization"] = "Bearer ${api_key}",
-            },
-            parameters = {
-              sync = true,
-            },
-          })
-        end,
+        http = {
+          ollama = function()
+            return require("codecompanion.adapters.http").extend("ollama", {
+              env = {
+                url = "http://localhost:22434",
+                api_key = "cmd:pass NHN/chat/API-KEY",
+              },
+              headers = {
+                ["Content-Type"] = "application/json",
+                ["Authorization"] = "Bearer ${api_key}",
+              },
+              parameters = {
+                sync = true,
+              },
+            })
+          end,
+        },
       },
       strategies = {
         chat = {
