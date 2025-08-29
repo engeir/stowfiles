@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+
+# Without this, any key held while executing the script will affect what is typed.
+sleep 1
+setxkbmap no
+xdotool key colon
+xdotool type 'Ex'
+xdotool key Return
