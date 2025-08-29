@@ -2,7 +2,7 @@ return {
   "folke/trouble.nvim",
   dependencies = {
     {
-      "echasnovski/mini.icons",
+      "nvim-mini/mini.icons",
       config = function()
         require("mini.icons").setup()
         MiniIcons.mock_nvim_web_devicons()

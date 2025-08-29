@@ -10,7 +10,7 @@ return {
       "nvim-lua/plenary.nvim",
       { "nvim-telescope/telescope-fzf-native.nvim", build = "make" },
       "nvim-tree/nvim-web-devicons",
-      "echasnovski/mini.fuzzy",
+      "nvim-mini/mini.fuzzy",
     },
     config = function()
       -- Don't preview binaries

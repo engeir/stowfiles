@@ -5,8 +5,8 @@ return {
     return vim.v.shell_error == 0
   end,
   dependencies = {
-    "echasnovski/mini.notify",
-    "echasnovski/mini.pick",
+    "nvim-mini/mini.notify",
+    "nvim-mini/mini.pick",
   },
   opts = { default = "nhn-medium:latest" },
 }

@@ -7,26 +7,26 @@ return {
   --    `nvim-tree/nvim-web-devicons -> mini.icons`
   --    `windwp/nvim-autopairs       -> mini.pairs      -> altermo/ultimate-autopair.nvim`
   --    `goolord/alpha-nvim          -> mini.starter`
-  --    `nvim-lualine/lualine.nvim   -> echasnovski/mini.surround`
+  --    `nvim-lualine/lualine.nvim   -> nvim-mini/mini.surround`
   --    `kylechui/nvim-surround      -> mini.surround`
   --    `folke/flash.nvim            -> mini.jump`
 
   -- `mini.ai` -------------------------------------------------------------------------
   {
-    "echasnovski/mini.ai",
+    "nvim-mini/mini.ai",
     event = { "BufReadPre", "BufNewFile" },
     config = true,
   },
 
   -- `mini.align` ----------------------------------------------------------------------
-  { "echasnovski/mini.align", config = true, event = { "BufReadPre", "BufNewFile" } },
+  { "nvim-mini/mini.align", config = true, event = { "BufReadPre", "BufNewFile" } },
 
   -- `mini.base16` ---------------------------------------------------------------------
-  { "echasnovski/mini.base16", event = { "VeryLazy" }, enabled = false },
+  { "nvim-mini/mini.base16", event = { "VeryLazy" }, enabled = false },
 
   -- `mini.bracketed` ------------------------------------------------------------------
   {
-    "echasnovski/mini.bracketed",
+    "nvim-mini/mini.bracketed",
     event = { "BufReadPre", "BufNewFile" },
     keys = {
       { "<tab>", "<Cmd>lua MiniBracketed.buffer('forward')<CR>", desc = "Buffer Next" },
@@ -129,7 +129,7 @@ return {
 
   -- `mini.bufremove` ------------------------------------------------------------------
   {
-    "echasnovski/mini.bufremove",
+    "nvim-mini/mini.bufremove",
     event = { "BufReadPre", "BufNewFile" },
     config = true,
     keys = {
@@ -143,7 +143,7 @@ return {
 
   -- `mini.clue` -----------------------------------------------------------------------
   {
-    "echasnovski/mini.clue",
+    "nvim-mini/mini.clue",
     enabled = false,
     config = function()
       local miniclue = require("mini.clue")
@@ -217,7 +217,7 @@ return {
   },
   -- `mini.colors` ---------------------------------------------------------------------
   {
-    "echasnovski/mini.colors",
+    "nvim-mini/mini.colors",
     version = "*",
     config = true,
     event = { "VeryLazy" },
@@ -226,7 +226,7 @@ return {
 
   -- `mini.comment` --------------------------------------------------------------------
   {
-    "echasnovski/mini.comment",
+    "nvim-mini/mini.comment",
     enabled = false,
     version = "*",
     event = "VeryLazy",
@@ -253,14 +253,14 @@ return {
 
   -- `mini.cursorword` -----------------------------------------------------------------
   {
-    "echasnovski/mini.cursorword",
+    "nvim-mini/mini.cursorword",
     event = { "BufReadPost", "BufNewFile" },
     config = true,
   },
 
   -- `mini.files` ----------------------------------------------------------------------
   {
-    "echasnovski/mini.files",
+    "nvim-mini/mini.files",
     config = function()
       require("mini.files").setup({
         content = {
@@ -290,21 +290,21 @@ return {
   -- `mini.fuzzy` ----------------------------------------------------------------------
   -- Replaces one of the sorters:
   -- https://github.com/nvim-telescope/telescope.nvim#sorters
-  { "echasnovski/mini.fuzzy", config = true },
+  { "nvim-mini/mini.fuzzy", config = true },
 
   -- `mini.hues` -----------------------------------------------------------------------
   {
-    "echasnovski/mini.hues",
+    "nvim-mini/mini.hues",
     enabled = false,
     opts = { background = "#002734", foreground = "#c0c8cc", saturation = "low" },
   },
 
   -- `mini.icons` ----------------------------------------------------------------------
-  { "echasnovski/mini.icons", opts = {} },
+  { "nvim-mini/mini.icons", opts = {} },
 
   -- `mini.indentscope` ----------------------------------------------------------------
   {
-    "echasnovski/mini.indentscope",
+    "nvim-mini/mini.indentscope",
     enabled = false,
     event = { "BufReadPre", "BufNewFile" },
     opts = {
@@ -332,11 +332,11 @@ return {
   },
 
   -- `mini.jump` -----------------------------------------------------------------------
-  { "echasnovski/mini.jump", version = false, opts = {} },
+  { "nvim-mini/mini.jump", version = false, opts = {} },
 
   -- `mini.operators` ------------------------------------------------------------------
   {
-    "echasnovski/mini.operators",
+    "nvim-mini/mini.operators",
     event = { "BufReadPre", "BufNewFile" },
     opts = {
       evaluate = { prefix = "gw=" },
@@ -349,18 +349,18 @@ return {
 
   -- `mini.pairs` ----------------------------------------------------------------------
   {
-    "echasnovski/mini.pairs",
+    "nvim-mini/mini.pairs",
     enabled = false,
     event = { "InsertEnter", "CmdlineEnter" },
     config = true,
   },
 
   -- `mini.splitjoin` ------------------------------------------------------------------
-  { "echasnovski/mini.splitjoin", config = true, enabled = false },
+  { "nvim-mini/mini.splitjoin", config = true, enabled = false },
 
   -- `mini.statusline`
   {
-    "echasnovski/mini.statusline",
+    "nvim-mini/mini.statusline",
     config = function()
       local statuslne = require("mini.statusline")
       statuslne.setup()
@@ -406,14 +406,14 @@ return {
 
   -- `mini.surround` -------------------------------------------------------------------
   {
-    "echasnovski/mini.surround",
+    "nvim-mini/mini.surround",
     config = true,
     event = { "BufReadPre", "BufNewFile" },
   },
 
   -- `mini.starter` --------------------------------------------------------------------
   {
-    "echasnovski/mini.starter",
+    "nvim-mini/mini.starter",
     lazy = false,
     config = function()
       local starter = require("mini.starter")
@@ -506,7 +506,7 @@ return {
 
   -- `mini.tabline`
   {
-    "echasnovski/mini.tabline",
+    "nvim-mini/mini.tabline",
     opts = {
       tabpage_section = "right",
       format = function(buf_id, label)
@@ -520,7 +520,7 @@ return {
 
   -- `mini.trailspace` -----------------------------------------------------------------
   {
-    "echasnovski/mini.trailspace",
+    "nvim-mini/mini.trailspace",
     enabled = false,
     init = function() require("mini.trailspace").setup() end,
     keys = {
