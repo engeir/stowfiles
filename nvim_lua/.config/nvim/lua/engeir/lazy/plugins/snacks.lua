@@ -29,14 +29,23 @@ return {
     statuscolumn = { enabled = true },
     styles = {
       scratch = { wo = { winhighlight = "NormalFloat:NormalFloat" }, border = "" },
+      zen = { width = 100 },
     },
     words = { enabled = true },
     zen = {
       toggles = { git_signs = false, diagnostics = false },
       ---@param win snacks.win
-      -- on_open = function(win) vim.cmd([[Markview enable]]) end,
+      on_open = function(win)
+        vim.cmd([[set wrap]])
+        vim.opt.cursorline = false
+        vim.opt.cursorcolumn = false
+      end,
       ---@param win snacks.win
-      -- on_close = function(win) vim.cmd([[Markview disable]]) end,
+      on_close = function(win)
+        vim.cmd([[set wrap]])
+        vim.opt.cursorline = true
+        vim.opt.cursorcolumn = true
+      end,
     },
   },
   keys = {
