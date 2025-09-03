@@ -159,11 +159,11 @@ return {
       telescope.load_extension("fzf")
     end,
     keys = {
-      {
-        "<leader>fc",
-        function() require("telescope.builtin").commands() end,
-        desc = "Find Commands",
-      },
+      -- {
+      --   "<leader>fc",
+      --   function() require("telescope.builtin").commands() end,
+      --   desc = "Find Commands",
+      -- },
       {
         "<leader>fd",
         function() require("telescope.builtin").diagnostics() end,
@@ -201,11 +201,11 @@ return {
         function() require("telescope.builtin").spell_suggest() end,
         desc = "Find Spell suggestions",
       },
-      {
-        "<leader>fr",
-        function() require("telescope.builtin").grep_string({ search = "" }) end,
-        desc = "Find Ripgrep (find string)",
-      },
+      -- {
+      --   "<leader>fr",
+      --   function() require("telescope.builtin").grep_string({ search = "" }) end,
+      --   desc = "Find Ripgrep (find string)",
+      -- },
       {
         "<leader>fs",
         function() require("telescope.builtin").git_files({ cwd = "~/stowfiles/" }) end,

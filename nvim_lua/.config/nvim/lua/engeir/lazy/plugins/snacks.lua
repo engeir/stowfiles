@@ -64,9 +64,9 @@ return {
     -- stylua: ignore start
     -- Trying out the picker module on `<leader>.`
     -- Top Pickers & Explorer
-    { "<leader>.f", function() Snacks.picker.smart() end, desc = "Smart Find Files" },
+    { "<leader>.f", function() Snacks.picker.smart({ hidden = true }) end, desc = "Smart Find Files" },
     { "<leader>.b", function() Snacks.picker.buffers() end, desc = "Buffers" },
-    { "<leader>.r", function() Snacks.picker.grep() end, desc = "Grep" },
+    { "<leader>fr", function() Snacks.picker.grep({ hidden = true }) end, desc = "Grep" },
     { "<leader>.:", function() Snacks.picker.command_history() end, desc = "Command History" },
     { "<leader>.n", function() Snacks.picker.notifications() end, desc = "Notification History" },
     { "<leader>.e", function() Snacks.explorer() end, desc = "File Explorer" }, -- Duplicate
@@ -74,7 +74,7 @@ return {
     { "<leader>.c", function() Snacks.picker.files({ cwd = vim.fn.stdpath("config") }) end, desc = "Find Config File" },
     { "<leader>.F", function() Snacks.picker.files({ hidden = true }) end, desc = "Find Files" },
     { "<leader>.p", function() Snacks.picker.projects() end, desc = "Projects" },
-    { "<leader>.l", function() Snacks.picker.recent() end, desc = "Recent / Lately" },
+    { "<leader>.h", function() Snacks.picker.recent() end, desc = "Recent / History" },
     -- Git
     { "<leader>.gf", function() Snacks.picker.git_files() end, desc = "Find Git Files" },
     { "<leader>.gb", function() Snacks.picker.git_branches() end, desc = "Git Branches" },
@@ -109,13 +109,13 @@ return {
     { "<leader>.su", function() Snacks.picker.undo() end, desc = "Undo History" },
     { "<leader>.sC", function() Snacks.picker.colorschemes() end, desc = "Colorschemes" },
     -- LSP
-    { "<leader>.hd", function() Snacks.picker.lsp_definitions() end, desc = "Goto Definition" },
-    { "<leader>.hD", function() Snacks.picker.lsp_declarations() end, desc = "Goto Declaration" },
-    { "<leader>.hr", function() Snacks.picker.lsp_references() end, nowait = true, desc = "References" },
-    { "<leader>.hI", function() Snacks.picker.lsp_implementations() end, desc = "Goto Implementation" },
-    { "<leader>.hy", function() Snacks.picker.lsp_type_definitions() end, desc = "Goto T[y]pe Definition" },
-    { "<leader>ss", function() Snacks.picker.lsp_symbols() end, desc = "LSP Symbols" },
-    { "<leader>sS", function() Snacks.picker.lsp_workspace_symbols() end, desc = "LSP Workspace Symbols" },
+    { "<leader>.ld", function() Snacks.picker.lsp_definitions() end, desc = "Goto Definition" },
+    { "<leader>.lD", function() Snacks.picker.lsp_declarations() end, desc = "Goto Declaration" },
+    { "<leader>.lr", function() Snacks.picker.lsp_references() end, nowait = true, desc = "References" },
+    { "<leader>.lI", function() Snacks.picker.lsp_implementations() end, desc = "Goto Implementation" },
+    { "<leader>.ly", function() Snacks.picker.lsp_type_definitions() end, desc = "Goto T[y]pe Definition" },
+    { "<leader>.ls", function() Snacks.picker.lsp_symbols() end, desc = "LSP Symbols" },
+    { "<leader>.lS", function() Snacks.picker.lsp_workspace_symbols() end, desc = "LSP Workspace Symbols" },
     -- stylua: ignore stop
   },
   init = function()
