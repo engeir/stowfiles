@@ -91,6 +91,7 @@ experimental = true
 yes = true
 go_set_gobin = true
 pipx_uvx = true
+idiomatic_version_file_enable_tools = ["rust"]
 
 [tools]
 python = ["latest", "sub-0.1:latest", "sub-0.2:latest", "sub-0.3:latest", "sub-0.4:latest"]
@@ -256,3 +257,4 @@ glow = "latest"
 gleam = "latest"
 "cargo:watchexec-cli" = "latest"
 "ubi:marcosnils/bin" = "latest"
+"cargo:tidy-viewer" = "latest"
