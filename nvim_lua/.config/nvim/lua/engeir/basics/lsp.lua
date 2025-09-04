@@ -2,12 +2,12 @@
 -- ~.config/lsp/*.lua
 vim.lsp.enable({
   "harper_ls",
-  "jedi_language_server",
   "jsonls",
   "lua_ls",
   "texlab",
   "tinymist",
   "yamlls",
+  "zuban",
 })
 
 vim.api.nvim_create_autocmd("LspAttach", {
