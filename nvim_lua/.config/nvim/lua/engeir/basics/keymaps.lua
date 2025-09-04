@@ -188,3 +188,16 @@ if vim.fn.executable("open_output") then
     { desc = "[O]pen compiled output (not robust)" }
   )
 end
+
+vim.keymap.set(
+  "n",
+  "<leader>rn",
+  function() vim.cmd([[silent! %s/\\n/\="\r"/g]]) end,
+  { desc = "Insert newline for \\n string." }
+)
+vim.keymap.set(
+  "v",
+  "<leader>rn",
+  function() vim.cmd([[silent! '<,'>s/\\n/\="\r"/g]]) end,
+  { desc = "Insert newline for \\n string." }
+)
