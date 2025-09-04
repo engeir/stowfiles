@@ -46,7 +46,7 @@ files() {
         CLI="tv"
     elif [[ $1 == "dmenu" ]]; then
         setxkbmap no
-        xdotool type "$(fd -e md -x sh -c 'echo "{.} // $(head -n1 "{}")"' | dmenu -l 20 -c | sed 's|^[^ ]* // ||')" 
+        xdotool type "$(fd -e md -x sh -c 'echo "{.} // $(head -n1 "{}")"' | dmenu -l 20 -c | sed 's|^[^ ]* // ||')"
         # CHOSEN="$(fd -e md -x sh -c 'echo "{.} // $(head -n1 "{}")"' | dmenu -l 20 -c | sed 's|\w* // ||')"
         # clipcatctl insert "$CHOSEN"
         # xdotool key ctrl+v
