@@ -1,0 +1,68 @@
+#!/usr/bin/env bash
+
+if ! command -v timew >/dev/null;then
+    echo "The command `timew` does not exist on your system."
+    echo "See https://timewarrior.net/ for installation instructions."
+    exit 1
+fi
+
+menu=(
+    "start"
+    "stop"
+)
+tags=(
+    "LEARN"
+    "ANSIBLE"
+    "PUPPET"
+    "SATELLITE"
+    "TIME-WASTE"
+    "new"
+)
+get-running-tags() {
+    if timew >/dev/null 2>&1; then
+        # There is active time tracking
+        timew | grep -i "tracking" | sed 's/Tracking //'
+    else
+        # There is no active time tracking
+        echo ""
+    fi
+}
+get-all-tags() {
+    timew tags | tail -n +4 | awk '{print $1}'
+}
+start-func() {
+    STARTING=$(cat <(get-all-tags) <(printf "%s\n" "${tags[@]}") | tr " " "\n" | uniq | sed '/^$/d' | fzf -m --no-preview)
+    if grep -q "new" <(echo "$STARTING"); then
+        read -rp "Enter fullname: " NEW_TAG
+        STARTING=$(sed "s/new/${NEW_TAG^^}/" <(echo "$STARTING"))
+    fi
+    # shellcheck disable=2046
+    timew start "$(echo "$STARTING" | tr "\n" " ")"
+}
+stop-func() {
+    if [[ "$(get-running-tags)" == "" ]]; then
+        echo "No currently running time tracking."
+        exit 0
+    fi
+    STOPPING=$(cat <(get-running-tags) <(echo "all") | tr " " "\n" | fzf -m --no-preview)
+    if [[ $STOPPING == "all" ]]; then
+        timew stop
+        exit 0
+    fi
+    timew stop "$STOPPING"
+    exit 0
+}
+
+CMD_MODE=$(printf "%s\n" "${menu[@]}" | fzf --no-preview)
+
+case "$CMD_MODE" in
+    start)
+        start-func
+        ;;
+    stop)
+        stop-func
+        ;;
+    *)
+        exit 1
+        ;;
+esac
