@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+
+if ! /usr/local/bin/timew :quiet; then
+    /usr/bin/notify-send "Timewarrior" "timew is not tracking."
+fi

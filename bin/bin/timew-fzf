@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
-if ! command -v timew >/dev/null;then
-    echo "The command `timew` does not exist on your system."
+if ! command -v timew >/dev/null; then
+    echo "The command $(timew) does not exist on your system."
     echo "See https://timewarrior.net/ for installation instructions."
     exit 1
 fi
@@ -31,13 +31,13 @@ get-all-tags() {
     timew tags | tail -n +4 | awk '{print $1}'
 }
 start-func() {
-    STARTING=$(cat <(get-all-tags) <(printf "%s\n" "${tags[@]}") | tr " " "\n" | uniq | sed '/^$/d' | fzf -m --no-preview)
+    STARTING=$(cat <(get-all-tags) <(printf "%s\n" "${tags[@]}") | tr " " "\n" | sed '/^$/d' | sort | uniq | fzf -m --no-preview)
     if grep -q "new" <(echo "$STARTING"); then
-        read -rp "Enter fullname: " NEW_TAG
+        read -rp "Enter new tag name: " NEW_TAG
         STARTING=$(sed "s/new/${NEW_TAG^^}/" <(echo "$STARTING"))
     fi
-    # shellcheck disable=2046
-    timew start "$(echo "$STARTING" | tr "\n" " ")"
+    # shellcheck disable=SC2046
+    timew start $(echo "$STARTING" | tr "\n" " ")
 }
 stop-func() {
     if [[ "$(get-running-tags)" == "" ]]; then

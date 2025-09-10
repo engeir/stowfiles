@@ -98,6 +98,7 @@ bindsym $monster+o exec --no-startup-id bash ~/.config/picom/adjust-opacity +ina
 bindsym $monster+p exec --no-startup-id flameshot gui
 bindsym $monster+plus exec --no-startup-id bash ~/.config/picom/adjust-opacity +active
 bindsym $monster+r exec alacritty-dropdown cheat-sheet-links files-and-content
+bindsym $monster+s exec alacritty-dropdown timew-fzf
 bindsym $monster+t exec --no-startup-id find_txt
 
 # start a terminal
