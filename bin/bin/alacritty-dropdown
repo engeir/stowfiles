@@ -61,6 +61,7 @@ rows=$(awk "BEGIN {print int(($mon_height * 0.9) / $char_height)}")
 # Launch Alacritty with window size and font size
 alacritty \
     -t "dropdown" \
+    --class "dropdown" \
     --option "window.dimensions.columns=${columns}" \
     --option "window.dimensions.lines=${rows}" \
     --option "font.size=${font_size}" \

@@ -22,6 +22,9 @@ super + Return
 super + b
 	firefox
 
+super + shift + alt + ctrl + s
+	PATH=$PATH:~/.local/share/mise/shims ~/bin/alacritty-dropdown ~/bin/timew-fzf >~/loggy.log 2>&1
+
 alt + @space
 # program launcher
 	dmenu_run -c -l 20
