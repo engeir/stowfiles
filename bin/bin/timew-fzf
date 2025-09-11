@@ -31,29 +31,76 @@ get-all-tags() {
     timew tags | tail -n +4 | awk '{print $1}'
 }
 start-func() {
-    STARTING=$(cat <(get-all-tags) <(printf "%s\n" "${tags[@]}") | tr " " "\n" | sed '/^$/d' | sort | uniq | fzf -m --no-preview)
-    if grep -q "new" <(echo "$STARTING"); then
-        read -rp "Enter new tag name: " NEW_TAG
-        STARTING=$(sed "s/new/${NEW_TAG^^}/" <(echo "$STARTING"))
+    STARTING=$(cat <(get-all-tags) <(printf "%s\n" "${tags[@]}") | tr " " "\n" | sed '/^$/d' | sort | uniq | gum filter --no-limit)
+    if [[ $STARTING == "" ]]; then
+        exit 0
     fi
-    # shellcheck disable=SC2046
-    timew start $(echo "$STARTING" | tr "\n" " ")
+    if grep -q "new" <(echo "$STARTING"); then
+        NEW_TAG=$(gum input --cursor.foreground 212 --prompt.foreground 212 --prompt "Enter a new tag name: " --placeholder "New tag" | sed 's/ //g')
+        if [[ $NEW_TAG == "" ]]; then
+            gum format -- "Cannot have empty tags..."
+            exit 1
+        fi
+        STARTING=$(sed "s/new/${NEW_TAG^^}/" <(echo "$STARTING") | sed 's/\"//g')
+    fi
+    gum format -- "# Successfully started"
+
+    mapfile -t tags_array <<<"$STARTING"
+    # Run timew with each element as a separate, properly quoted argument
+    timew start "${tags_array[@]}" \
+        | gum style \
+            --foreground 212 --border-foreground 212 --border double \
+            --align center --width 50 --margin "1 2" --padding "2 4"
+    gum confirm "Bye!"
 }
 stop-func() {
     if [[ "$(get-running-tags)" == "" ]]; then
         echo "No currently running time tracking."
         exit 0
     fi
-    STOPPING=$(cat <(get-running-tags) <(echo "all") | tr " " "\n" | fzf -m --no-preview)
-    if [[ $STOPPING == "all" ]]; then
-        timew stop
+    STOPPING=$(cat <(get-running-tags) <(echo "all") | tr " " "\n" | gum filter --no-limit)
+    if [[ $STOPPING == "" ]]; then
         exit 0
     fi
-    timew stop "$STOPPING"
-    exit 0
+    if echo "$STOPPING" | grep -q "all"; then
+        timew stop \
+            | gum style \
+                --foreground 212 --border-foreground 212 --border double \
+                --align center --width 50 --margin "1 2" --padding "2 4"
+        gum confirm "Bye!"
+        exit 0
+    fi
+    timew stop "$STOPPING" \
+        | gum style \
+            --foreground 212 --border-foreground 212 --border double \
+            --align center --width 50 --margin "1 2" --padding "2 4"
+    gum confirm "Bye!"
 }
 
-CMD_MODE=$(printf "%s\n" "${menu[@]}" | fzf --no-preview)
+# === Main program
+
+CURRENT_TAGS=$(get-running-tags)
+
+output="# Welcome to Time Warrior TUI\n\n"
+
+if [[ -z $CURRENT_TAGS ]]; then
+    output+="There are currently no tags being tracked."
+else
+    output+="These tags are currently being tracked:\n"
+    # split into a real array
+    read -r -a tag_array <<<"$CURRENT_TAGS"
+    for tag in "${tag_array[@]}"; do
+        output+="- $tag\n"
+    done
+fi
+
+printf '%b' "$output" | gum format
+
+if gum confirm --affirmative="Start" --negative="Stop" ""; then
+    CMD_MODE="start"
+else
+    CMD_MODE="stop"
+fi
 
 case "$CMD_MODE" in
     start)
