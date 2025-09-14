@@ -1,0 +1,90 @@
+# i3blocks configuration file.
+# Based on i3status configuration to maintain consistent appearance.
+
+# Global properties
+separator_block_width=20
+separator=true
+markup=pango
+
+[timew]
+command=echo -n "📊 "; timew-i3block
+interval=10
+color=#00ff88
+border=#00ff88
+border_top=0
+border_left=0
+border_right=0
+border_bottom=2
+
+[wireless]
+command=i3blocks-wireless
+interval=10
+instance=wlan0
+color=#66ccff
+border=#66ccff
+border_top=0
+border_left=0
+border_right=0
+border_bottom=2
+
+[ethernet]
+command=i3blocks-ethernet
+interval=10
+instance=eth0
+color=#66ccff
+border=#66ccff
+border_top=0
+border_left=0
+border_right=0
+border_bottom=2
+
+[battery]
+command=cat /sys/class/power_supply/BAT*/capacity | head -1 | awk '{printf "🔋 BAT: %s%%\n", $1}'
+interval=30
+color=#ffaa00
+border=#ffaa00
+border_top=0
+border_left=0
+border_right=0
+border_bottom=2
+
+[disk]
+command=df -h / | awk 'NR==2{printf "💾 DISK: %s free\n", $4}'
+interval=30
+color=#ff6666
+border=#ff6666
+border_top=0
+border_left=0
+border_right=0
+border_bottom=2
+
+[load]
+command=uptime | awk -F'load average: ' '{printf "⚡ CPU: %.2f", $2}'; echo
+interval=5
+color=#66ff66
+border=#66ff66
+border_top=0
+border_left=0
+border_right=0
+border_bottom=2
+
+[memory]
+command=free -h | awk 'NR==2{printf "🧠 MEM: %s used, %s avail", $3, $7}'; echo
+interval=5
+color=#cc66ff
+border=#cc66ff
+border_top=0
+border_left=0
+border_right=0
+border_bottom=2
+
+[time]
+command=date '+🕒 %Y-%m-%d %H:%M:%S'
+interval=1
+color=#ffffff
+border=#ffffff
+border_top=0
+border_left=0
+border_right=0
+border_bottom=2
+background=#333333
