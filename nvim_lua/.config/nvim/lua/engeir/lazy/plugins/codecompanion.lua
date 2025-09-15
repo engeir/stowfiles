@@ -1,14 +1,14 @@
 return {
   "olimorris/codecompanion.nvim",
-  -- opts = {
-  --   strategies = {
-  --     --NOTE: Change the adapter as required
-  --     chat = { adapter = "ollama" },
-  --     inline = { adapter = "ollama" },
-  --   },
-  -- },
+  keys = {
+    {
+      "<leader>cc",
+      "<cmd>CodeCompanionChat<CR>",
+      desc = "CodeCompanion Chat",
+    },
+  },
   enabled = function()
-    vim.fn.system("ollama list >/dev/null 2>&1")
+    vim.fn.system("timeout 0.4 ollama list >/dev/null 2>&1")
     return vim.v.shell_error == 0
   end,
   config = function()
