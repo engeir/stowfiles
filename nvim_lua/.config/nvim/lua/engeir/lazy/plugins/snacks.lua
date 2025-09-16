@@ -17,6 +17,9 @@ return {
     image = {},
     notifier = { enabled = false },
     picker = {
+      win = {
+        input = { keys = { ["<c-c>"] = { "qflist", mode = { "i", "n" } } } },
+      },
       sources = {
         explorer = {
           hidden = true,
