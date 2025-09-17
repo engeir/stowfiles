@@ -104,13 +104,103 @@ case "$ACTION" in
             fi
         done <<<"$TO_DELETE"
         ;;
+    git)
+        if [[ $# -lt 2 ]]; then
+            echo "Usage: $0 git <subcommand> [args...]"
+            echo "Available git subcommands: init, clone, push, pull, or any git command"
+            exit 1
+        fi
+
+        GIT_SUBCOMMAND="${2}"
+        shift 2
+
+        case "$GIT_SUBCOMMAND" in
+            init)
+                if [[ -d "$SNIP_DIR/.git" ]]; then
+                    gum log --level warn "Git repository already exists in $SNIP_DIR"
+                    gum confirm "Reinitialize the repository?" || exit 0
+                fi
+                cd "$SNIP_DIR"
+                git init
+                gum log --level info "Git repository initialized in $SNIP_DIR"
+                ;;
+            clone)
+                if [[ $# -lt 1 ]]; then
+                    echo "Usage: $0 git clone <repository-url>"
+                    exit 1
+                fi
+                REPO_URL="$1"
+
+                if [[ -d "$SNIP_DIR/.git" ]]; then
+                    gum log --level warn "Git repository already exists in $SNIP_DIR"
+                    exit 1
+                fi
+
+                files_exist=false
+                if [[ -n "$(ls -A "$SNIP_DIR" 2>/dev/null)" ]]; then
+                    files_exist=true
+                    gum log --level warn "Snippet directory is not empty"
+                    gum confirm "Clone into existing directory? (may overwrite files)" || exit 1
+                fi
+
+                cd "$SNIP_DIR"
+                if [[ $files_exist == true ]]; then
+                    git clone "$REPO_URL" temp_clone
+                    mv temp_clone/.git .
+                    mv temp_clone/* . 2>/dev/null || true
+                    mv temp_clone/.* . 2>/dev/null || true
+                    rmdir temp_clone
+                else
+                    git clone "$REPO_URL" .
+                fi
+                gum log --level info "Repository cloned to $SNIP_DIR"
+                ;;
+            push)
+                if [[ ! -d "$SNIP_DIR/.git" ]]; then
+                    gum log --level error "Not a git repository. Run 'snippet git init' first."
+                    exit 1
+                fi
+                cd "$SNIP_DIR"
+                git add .
+                git commit -m "auto-commit snippets" || gum log --level info "No changes to commit"
+                git push "$@"
+                ;;
+            pull)
+                if [[ ! -d "$SNIP_DIR/.git" ]]; then
+                    gum log --level error "Not a git repository. Run 'snippet git init' first."
+                    exit 1
+                fi
+                cd "$SNIP_DIR"
+                git pull "$@"
+                ;;
+            *)
+                if [[ ! -d "$SNIP_DIR/.git" ]]; then
+                    gum log --level error "Not a git repository. Run 'snippet git init' first."
+                    exit 1
+                fi
+                cd "$SNIP_DIR"
+                git "$GIT_SUBCOMMAND" "$@"
+                ;;
+        esac
+        ;;
     format)
         cd "$SNIP_DIR" >/dev/null 2>&1
         prettier --write ./**/*.md | grep -v "unchanged" && true
         cd - >/dev/null 2>&1
         ;;
     *)
-        echo "Usage: $0 [new|edit|delete|prune|format]"
+        echo "Usage: $0 [new|edit|delete|prune|format|git]"
+        echo ""
+        echo "Actions:"
+        echo "  new     - Create a new snippet (default)"
+        echo "  edit    - Edit an existing snippet"
+        echo "  delete  - Delete an existing snippet"
+        echo "  prune   - Remove temporary/orphaned files"
+        echo "  format  - Format all snippets with prettier"
+        echo "  git     - Git operations in snippet directory"
+        echo ""
+        echo "Git usage: $0 git <command> [args...]"
+        echo "  Common commands: init, clone <url>, push, pull, status, add, commit"
         exit 1
         ;;
 esac
