@@ -7,8 +7,27 @@ if [ "$#" -ne 1 ]; then
     exit 1
 fi
 
+# Fetch all remote branches to ensure we have the latest refs
+git fetch --all
+
 if git rev-parse --verify "$1" >/dev/null 2>&1; then
-    git worktree add "../../worktrees/$(basename $PWD)-$1" "$1"
+    # Local branch exists
+    git worktree add "../../worktrees/$(basename "$PWD")-$1" "$1"
 else
-    git worktree add "../../worktrees/$(basename $PWD)-$1" -b "$1"
+    # Check if branch exists on any remote
+    remote_branch=""
+    while IFS= read -r remote; do
+        if git rev-parse --verify "$remote/$1" >/dev/null 2>&1; then
+            remote_branch="$remote/$1"
+            break
+        fi
+    done < <(git remote)
+
+    if [ "$remote_branch" != "" ]; then
+        # Remote branch exists
+        git worktree add "../../worktrees/$(basename "$PWD")-$1" -b "$1" "$remote_branch"
+    else
+        # No existing branch, create new one
+        git worktree add "../../worktrees/$(basename "$PWD")-$1" -b "$1"
+    fi
 fi

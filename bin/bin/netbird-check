@@ -1,0 +1,31 @@
+#!/bin/bash
+
+# Continuously check connectivity to vg.no and ip.nhn.no
+# If both fail, restart netbird
+
+check_connectivity() {
+    timeout 5 ping -c 3 -W 5 vg.no >/dev/null 2>&1
+    vg_status=$?
+
+    timeout 5 ping -c 3 -W 5 ip.nhn.no >/dev/null 2>&1
+    nhn_status=$?
+
+    if [ "$vg_status" -ne 0 ] && [ "$nhn_status" -ne 0 ]; then
+        echo "$(date): Both vg.no and ip.nhn.no unreachable. Restarting netbird..."
+        netbird down
+        sleep 2
+        netbird up
+        echo "$(date): Netbird restarted"
+    else
+        echo "$(date): Connectivity OK"
+    fi
+}
+
+echo "Starting netbird connectivity monitor..."
+echo "Press Ctrl+C to stop"
+
+while true; do
+    check_connectivity
+    sleep 10
+done
+

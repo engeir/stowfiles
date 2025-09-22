@@ -26,7 +26,7 @@
 # vg.no
 # vivaldi.com
 
-DEFAULT_BROWSER="firefox"
+DEFAULT_BROWSER="zen-browser"
 
 # Path to the directory containing domains files
 DOMAIN_FILE_PATH="$HOME/.local/share/open-custom-url"
