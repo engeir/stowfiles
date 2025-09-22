@@ -279,5 +279,5 @@ bar {
 # client.background        $base
 
 assign [class="^firefox$"] → $ws4
-assign [class="^vivaldi$"] → $ws7
-assign [class="^slack$"] → $ws7
+assign [class="Vivaldi-stable"] → $ws7
+assign [class="Slack"] → $ws7
