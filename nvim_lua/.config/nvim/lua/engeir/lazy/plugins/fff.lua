@@ -1,7 +1,7 @@
 return {
   "dmtrKovalenko/fff.nvim",
-  build = "cargo +nightly build --release",
-  opts = { prompt = "➜ " },
+  build = function() require("fff.download").download_or_build_binary() end,
+  lazy = false,
   keys = {
     {
       "<leader>ff",
