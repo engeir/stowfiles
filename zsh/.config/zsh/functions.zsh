@@ -174,11 +174,11 @@ nvp() {
 compdef _whereis nvp
 
 # The alias isn't going away, so instead I'm removing the function...
-# pdf-reduce() {
-#     # From
-#     # https://askubuntu.com/questions/113544/how-can-i-reduce-the-file-size-of-a-scanned-pdf-file
-#     gs -sDEVICE=pdfwrite -dCompatibilityLevel=1.4 -dPDFSETTINGS=/ebook -dNOPAUSE -dQUIET -dBATCH -sOutputFile=output.pdf "$1"
-# }
+pdf-reduce() {
+    # From
+    # https://askubuntu.com/questions/113544/how-can-i-reduce-the-file-size-of-a-scanned-pdf-file
+    gs -sDEVICE=pdfwrite -dCompatibilityLevel=1.4 -dPDFSETTINGS=/ebook -dNOPAUSE -dQUIET -dBATCH -sOutputFile=output.pdf "$1"
+}
 
 # ripgrep->fzf->nvim [QUERY]
 r() { (

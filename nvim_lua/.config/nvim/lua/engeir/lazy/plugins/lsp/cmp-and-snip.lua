@@ -208,10 +208,10 @@ return {
     config = function()
       require("luasnip-latex-snippets").setup({
         use_treesitter = false, -- see vimtex-faq-treesitter for an explanation of why this is difficult with tree-sitter
-        allow_on_markdown = false,
+        allow_on_markdown = true,
       })
     end,
     -- treesitter is required for markdown
-    ft = { "tex" },
+    ft = { "tex", "markdown" },
   },
 }
