@@ -28,4 +28,3 @@ while true; do
     check_connectivity
     sleep 10
 done
-
