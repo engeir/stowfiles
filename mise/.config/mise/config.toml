@@ -8,6 +8,7 @@ RIPGREP_CONFIG_PATH = "{{env.HOME}}/.config/ripgrep/ripgreprc"
 RUSH_CONFIG = "{{env.HOME}}/.config/rush/rush.ini"
 RYE_HOME = "{{env.HOME}}/.local/share/rye"
 ZDOTDIR = "{{env.HOME}}/.config/zsh/"
+SUDO_ASKPASS = "{{env.HOME}}/bin/askpass-root"
 _.path = [
   "{{env.HOME}}/.local/share/bob/nvim-bin/",
   "{{env.HOME}}/.local/share/nvim/mason/bin",
