@@ -22,3 +22,4 @@ newsboat/.newsboat/cache.db
 nushell/**/history*
 tmux/.tmux/plugins/
 yazi/.config/yazi/plugins/
+glide/.config/glide/glide.d.ts
