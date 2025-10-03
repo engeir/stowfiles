@@ -14,7 +14,7 @@ check_connectivity() {
         echo "$(date): Both vg.no and ip.nhn.no unreachable. Restarting netbird..."
         netbird down
         sleep 2
-        netbird up
+        netbird up --enable-rosenpass --rosenpass-permissive
         echo "$(date): Netbird restarted"
     else
         echo "$(date): Connectivity OK"
@@ -26,6 +26,6 @@ echo "Press Ctrl+C to stop"
 
 while true; do
     check_connectivity
-    sleep 10
+    sleep 5
 done
 
