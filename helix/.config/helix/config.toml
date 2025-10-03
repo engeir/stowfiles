@@ -11,6 +11,7 @@ auto-save = false
 text-width = 88
 soft-wrap = { enable = true, wrap-at-text-width = true, wrap-indicator = "" }
 rulers = [88]
+true-color = true
 
 [editor.cursor-shape]
 insert = "bar"
@@ -49,7 +50,25 @@ r = ":reset-diff-change"
 [keys.normal.space.space]
 s = ":format"
 w = ":reflow"
+r = ":reload"
+y = [
+  ':sh rm -f /var/tmp/yazi-path',
+  # ":insert-output nnn %{buffer_name} -p /var/tmp/yazi-path",
+  ':insert-output yazi --chooser-file=/var/tmp/yazi-path %{buffer_name}',
+  ":open %sh{cat /var/tmp/yazi-path}",
+  ":redraw",
+  ":reload-all",
+  ':set mouse false',
+  ':set mouse true'
+]
+
+[keys.normal.Z]
+Z = ":wq"
+Q = ":q!"
 
 [keys.normal]
 D = "kill_to_line_end"
 "-" = "file_picker_in_current_buffer_directory"
+tab = "goto_next_buffer"
+S-tab = "goto_previous_buffer"
+C-s = ":update"
