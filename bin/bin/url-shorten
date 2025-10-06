@@ -15,25 +15,33 @@ junta() {
     if [[ $shortened_url =~ tickets ]]; then
         shortened_url=${shortened_url/tickets\//}
     fi
+
+    # If already shortened, extract just the ticket number
+    if [[ $shortened_url =~ ^https://.*?/([0-9]{6})$ ]]; then
+        ticket_number="${BASH_REMATCH[1]}"
+    fi
 }
 esm() {
     base_url=$(echo "$url" | grep -oP '^https://.*?/')
-    IFS='/' read -r -a url_parts <<<"$url"
 
-    for part in "${url_parts[@]:2}"; do # Skip "https:" and domain parts
-        if [[ $part =~ ^[0-9]+$ ]]; then
-            shortened_url="$base_url$part"
-            return
-        fi
-    done
-
-    shortened_url='' # Set to empty if no numeric segment found
+    # Extract the first sequence of at least 5 digits from the URL
+    if [[ $url =~ [0-9]{5,} ]]; then
+        ticket_number="${BASH_REMATCH[0]}"
+        shortened_url="$base_url$ticket_number"
+    else
+        shortened_url='' # Set to empty if no numeric segment found
+    fi
 }
 
 if echo "$url" | grep -q "https://junta.*"; then
     junta
 elif echo "$url" | grep -q "https://esm.*"; then
     esm
+fi
+
+# If we have a ticket number from an already shortened URL, use that
+if [[ -n $ticket_number && $url =~ ^https://.*?/[0-9]+$ ]]; then
+    shortened_url="$ticket_number"
 fi
 
 # Check if the URL matches the expected format
