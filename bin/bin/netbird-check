@@ -7,11 +7,11 @@ check_connectivity() {
     timeout 5 ping -c 3 -W 5 vg.no >/dev/null 2>&1
     vg_status=$?
 
-    timeout 5 ping -c 3 -W 5 ip.nhn.no >/dev/null 2>&1
+    timeout 5 ping -c 3 -W 5 helsegitlab.nhn.no >/dev/null 2>&1
     nhn_status=$?
 
     if [ "$vg_status" -ne 0 ] && [ "$nhn_status" -ne 0 ]; then
-        echo "$(date): Both vg.no and ip.nhn.no unreachable. Restarting netbird..."
+        echo "$(date): Both vg.no and helsegitlab.nhn.no unreachable. Restarting netbird..."
         netbird down
         sleep 2
         netbird up --enable-rosenpass --rosenpass-permissive
@@ -28,4 +28,3 @@ while true; do
     check_connectivity
     sleep 5
 done
-
