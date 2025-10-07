@@ -9,3 +9,6 @@ expect -re "password" { send -- [exec pass Hp-Ubuntu/login]\r }
 
 expect eof
 """
+
+[tools]
+"ubi:ifd3f/caligula" = "latest"

@@ -6,12 +6,12 @@
   "install_layout": "flat",
   "install_prefix": "/home/eirik/.local/bin",
   "modify_path": true,
-  "provider": { "source": "cargo-dist", "version": "0.28.4" },
+  "provider": { "source": "cargo-dist", "version": "0.28.7" },
   "source": {
     "app_name": "uv",
     "name": "uv",
     "owner": "astral-sh",
     "release_type": "github"
   },
-  "version": "0.7.2"
+  "version": "0.8.19"
 }

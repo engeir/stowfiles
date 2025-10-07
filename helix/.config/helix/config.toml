@@ -59,7 +59,7 @@ y = [
   ":redraw",
   ":reload-all",
   ':set mouse false',
-  ':set mouse true'
+  ':set mouse true',
 ]
 
 [keys.normal.Z]
