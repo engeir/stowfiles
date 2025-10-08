@@ -1,5 +1,8 @@
 #!/usr/bin/env bash
 
+# Run once: shorten junta and ESM links.
+# Run twice: retrieve only the ticket number.
+
 if ! command -v xclip 1>/dev/null; then
     echo "The script depends on xclip."
     exit 1
