@@ -6,7 +6,7 @@ font-feature = -calt
 font-feature = -liga
 font-feature = -dlig
 
-theme = tokyonight
+# theme = tokyonight
 
 background = #2d2d2d
 
