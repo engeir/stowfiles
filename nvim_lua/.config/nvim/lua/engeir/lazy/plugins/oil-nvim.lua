@@ -21,6 +21,14 @@ return {
       function() require("oil").open() end,
       desc = "[P]ath explorer with [O]il",
     },
+    {
+      "<leader>pr",
+      function()
+        vim.cmd("vsplit")
+        require("oil").open()
+      end,
+      desc = "Path explorer with Oil to the right",
+    },
   },
   opts = function(_, o)
     o.delete_to_trash = false
