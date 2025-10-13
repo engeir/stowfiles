@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+
+if command -v timew >/dev/null; then
+    timew stop
+fi
+
+shutdown -h now

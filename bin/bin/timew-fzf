@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 if ! command -v timew >/dev/null; then
-    echo "The command $(timew) does not exist on your system."
+    echo 'The command `timew` does not exist on your system.'
     echo "See https://timewarrior.net/ for installation instructions."
     exit 1
 fi
