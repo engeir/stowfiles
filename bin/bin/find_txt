@@ -3,16 +3,29 @@
 
 has() {
     if ! command -v "$1" >/dev/null 2>&1; then
-        echo "$1 not found"
+        echo "$1 is not installed."
         notify-send "$1 is not installed."
         exit 1
     fi
 }
 has "slop"
 has "tesseract"
-if ! grep "nor" <(tesseract --list-langs) >/dev/null 2>&1; then
-    echo "Install tesseract norwegian trained data, or edit $0."
-    notify-send "Install tesseract norwegian trained data, or edit $0."
+has "dmenu"
+
+# If no language argument provided, use `dmenu` to select
+if [[ $# -eq 0 ]]; then
+    LANG=$(tesseract --list-langs 2>/dev/null | tail -n +2 | dmenu -p "Select language: ")
+    if [[ -z $LANG ]]; then
+        echo "No language selected"
+        exit 1
+    fi
+else
+    LANG="$1"
+fi
+
+if ! grep "^$LANG$" <(tesseract --list-langs 2>/dev/null | tail -n +2) >/dev/null 2>&1; then
+    echo "Install tesseract trained data for language $LANG, or edit $0."
+    notify-send "Install tesseract trained data for language $LANG, or edit $0."
     exit 1
 fi
 
@@ -20,7 +33,7 @@ imagefile="/tmp/sloppy.$RANDOM.png"
 text="/tmp/translation"
 echo "$imagefile"
 slop=$(slop -f "%g") || exit 1
-read -r G <<<$slop
-import -window root -crop $G $imagefile
-tesseract -l nor $imagefile $text 2>/dev/null
-cat $text".txt" | xclip -selection c
+read -r G <<<"$slop"
+import -window root -crop "$G" "$imagefile"
+tesseract -l "$LANG" "$imagefile" "$text" 2>/dev/null
+cat "$text.txt" | xclip -selection c
