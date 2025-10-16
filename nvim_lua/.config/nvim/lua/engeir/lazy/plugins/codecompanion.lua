@@ -26,7 +26,7 @@ return {
       adapters = {
         http = {
           ollama = function()
-            return require("codecompanion.adapters.http").extend("ollama", {
+            return require("codecompanion.adapters").extend("ollama", {
               env = {
                 url = "http://localhost:22434",
                 api_key = "cmd:pass NHN/chat/API-KEY",
@@ -44,10 +44,10 @@ return {
       },
       strategies = {
         chat = {
-          adapter = { name = "ollama", model = "nhn-medium:latest" },
+          adapter = { name = "ollama", model = "nhn-large:latest" },
         },
         inline = {
-          adapter = { name = "ollama", model = "nhn-code-autocomplete:latest" },
+          adapter = { name = "ollama", model = "nhn-coder-autocomplete:latest" },
         },
         cmd = {
           adapter = { name = "ollama", model = "nhn-large:latest" },

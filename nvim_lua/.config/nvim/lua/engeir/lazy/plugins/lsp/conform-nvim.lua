@@ -1,7 +1,5 @@
 return {
   "stevearc/conform.nvim",
-  event = { "BufWritePre" },
-  cmd = { "ConformInfo" },
   keys = {
     { -- copy/pasta from https://github.com/stevearc/dotfiles/blob/master/.config/nvim/lua/plugins/format.lua#L8-L21
       "=",
@@ -63,7 +61,7 @@ return {
         jsonc = { "dprint" },
         just = { "just" },
         lua = { "stylua", "injected" },
-        markdown = { "prettierd", "injected", stop_after_first = false },
+        markdown = { "prettier", stop_after_first = false },
         python = { "ruff_format", "ruff_fix", lsp_format = "first" },
         ruby = { "rubyfmt" },
         rust = { "rustfmt" },

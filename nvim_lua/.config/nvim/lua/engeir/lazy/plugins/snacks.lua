@@ -36,7 +36,7 @@ return {
     },
     words = { enabled = true },
     zen = {
-      toggles = { git_signs = false, diagnostics = false },
+      toggles = { git_signs = false, diagnostics = false, dim = false },
       ---@param win snacks.win
       on_open = function(win)
         vim.cmd([[set wrap]])

@@ -2,7 +2,8 @@ return {
   "yetone/avante.nvim",
   enabled = function()
     vim.fn.system("timeout 0.4 ollama list >/dev/null 2>&1")
-    return vim.v.shell_error == 0
+    -- return vim.v.shell_error == 0
+    return false
   end,
   event = "VeryLazy",
   version = false, -- Never set this value to "*"! Never!
