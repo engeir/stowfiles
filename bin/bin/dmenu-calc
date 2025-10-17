@@ -1,0 +1,53 @@
+#!/bin/bash
+
+# From https://github.com/helcoume/dmenu-calc
+
+if ! command -v dmenu >/dev/null 2>&1; then
+    echo "This script depends on the dmenu CLI."
+    notify-send "This script depends on the dmenu CLI."
+fi
+if ! command -v qalc >/dev/null 2>&1; then
+    echo "This script depends on the qalc/libqalc CLI."
+    notify-send "This script depends on the qalc/libqalc CLI."
+fi
+if ! command -v clipcatctl >/dev/null 2>&1; then
+    echo "This script depends on the clipcatctl CLI."
+    notify-send "This script depends on the clipcatctl CLI."
+fi
+
+history_file="$HOME/.local/share/dmenu-calc/history"
+
+get_history() {
+    [[ ! -f $history_file ]] && mkdir -p "$(dirname "$history_file")" && touch "$history_file"
+    if [[ ! -s $history_file ]]; then
+        echo "No history found"
+    else
+        tac "$history_file"
+    fi
+}
+
+is_in_history() { grep -q -x -F "$1" "$history_file"; }
+
+add_to_history() { echo "$1" >>"$history_file"; }
+
+copy_to_clipboard() { clipcatctl insert "$1"; }
+
+result_from_equation() { echo "$1" | sed 's/^.*\(=\|≈\) //'; }
+
+main() {
+    while
+        input=$(get_history | dmenu -c -l 10 -p "Calculator: " "$@")
+        [[ -n $input ]] # quit == no input
+    do
+        equation=$(if is_in_history "$input"; then
+            echo "$input"
+        else
+            qalc "$input"
+        fi)
+
+        add_to_history "$equation"
+        copy_to_clipboard "$(result_from_equation "$equation")"
+    done
+}
+
+main "$@"
