@@ -77,6 +77,43 @@ case "$ACTION" in
             echo "Deleted: $SNIP_DIR/$FILE_TO_DELETE"
         }
         ;;
+    rename)
+        FILE_TO_RENAME="$(choose_file)" || exit 1
+        CURRENT_NAME="${FILE_TO_RENAME%.md}"
+
+        while true; do
+            NEW_FILENAME="$(gum input --placeholder="Enter new name..." --value="$CURRENT_NAME")"
+
+            if [[ -z $NEW_FILENAME ]]; then
+                gum log --level error "No name provided."
+                gum confirm "Try again?" || exit 1
+                continue
+            fi
+
+            # Add .md extension if not present
+            if [[ ${NEW_FILENAME##*.} != "md" ]]; then
+                NEW_FILENAME="${NEW_FILENAME}.md"
+            fi
+
+            # Check if trying to rename to same name
+            if [[ $NEW_FILENAME == "$FILE_TO_RENAME" ]]; then
+                gum log --level info "Same filename, no changes made."
+                exit 0
+            fi
+
+            NEW_PATH="$SNIP_DIR/$NEW_FILENAME"
+
+            if [[ -e $NEW_PATH ]]; then
+                gum log --level error "File '$NEW_FILENAME' already exists."
+                gum confirm "Try a different name?" || exit 1
+                continue
+            fi
+
+            mv "$SNIP_DIR/$FILE_TO_RENAME" "$NEW_PATH"
+            echo "Renamed: $FILE_TO_RENAME → $NEW_FILENAME"
+            exit 0
+        done
+        ;;
     prune)
         # Find likely gum write "temp" files (pattern: name.md.NNNNNN) in $SNIP_DIR
         temp_files=()
@@ -189,12 +226,13 @@ case "$ACTION" in
         cd - >/dev/null 2>&1
         ;;
     *)
-        echo "Usage: $0 [new|edit|delete|prune|format|git]"
+        echo "Usage: $0 [new|edit|delete|rename|prune|format|git]"
         echo ""
         echo "Actions:"
         echo "  new     - Create a new snippet (default)"
         echo "  edit    - Edit an existing snippet"
         echo "  delete  - Delete an existing snippet"
+        echo "  rename  - Rename an existing snippet"
         echo "  prune   - Remove temporary/orphaned files"
         echo "  format  - Format all snippets with prettier"
         echo "  git     - Git operations in snippet directory"
