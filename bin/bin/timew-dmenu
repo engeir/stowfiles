@@ -52,12 +52,48 @@ start-func() {
         selected_tags=$(echo "$selected_tags" | sed "s/new/${new_tag^^}/")
     fi
 
-    # Convert to array and start tracking
-    mapfile -t tags_array <<<"$selected_tags"
+    # Convert to array properly: split by newlines AND spaces, then remove duplicates
+    tags_array=()
+    while IFS= read -r line; do
+        # Split each line by spaces and add to array
+        for tag in "${line[@]}"; do
+            # Only add if not already in array
+            found=false
+            for existing in "${tags_array[@]}"; do
+                if [[ $existing == "$tag" ]]; then
+                    found=true
+                    break
+                fi
+            done
+            if [[ $found == false ]]; then
+                tags_array+=("$tag")
+            fi
+        done
+    done <<<"$selected_tags"
+
+    if [[ ${#tags_array[@]} -eq 0 ]]; then
+        exit 0
+    fi
+
+    # Get last session info before starting new one
+    last_session_line=$(timew summary @1 2>/dev/null | grep -E '^W[0-9]+')
+    if [[ -n $last_session_line ]]; then
+        last_duration=$(echo "$last_session_line" | awk '{print $(NF-1)}')
+        last_tags=$(echo "$last_session_line" | awk '{for(i=5;i<NF-3;i++) printf "%s ", $i; print ""}' | xargs)
+    fi
+
     result=$(timew start "${tags_array[@]}" 2>&1)
 
     if [[ $? -eq 0 ]]; then
-        notify-send "TimeWarrior" "Started tracking: ${tags_array[*]}"
+        if [[ -n $last_duration ]]; then
+            if [[ -n $last_tags ]]; then
+                notify-send "TimeWarrior" "Started tracking: ${tags_array[*]}\nLast session: $last_tags ($last_duration)"
+            else
+                notify-send "TimeWarrior" "Started tracking: ${tags_array[*]}\nLast session: $last_duration"
+            fi
+        else
+            notify-send "TimeWarrior" "Started tracking: ${tags_array[*]}"
+        fi
     else
         notify-send "Error" "Failed to start tracking: $result"
     fi
