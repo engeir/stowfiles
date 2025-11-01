@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
 
+mkdir -p "$HOME/.cache/wallpaper"
 if [[ $(uname -s) == "Darwin" ]]; then
     # Mac
     dmenu='dmenu-mac'
@@ -11,17 +12,17 @@ if [[ $(uname -s) == "Darwin" ]]; then
     [ "$chosen" = "" ] && exit
 
     DIR=$(fd -e png -e jpg "$chosen" "$HOME/syncthing/aerial-views")
-    # DIR=$(ls ~/.config/bspwm/wallpaper*/* | grep "$chosen")
+    # DIR=$(ls ~/.config/wallpaper/wallpaper*/* | grep "$chosen")
 
     # Copy the selected wallpaper to be the main wallpaper
-    cp "$DIR" "$HOME"/.cache/bspwm/wallpaper.jpg
-    # convert "$DIR" -blur 0x9 "$HOME/.cache/bspwm/wallpaper.jpg"
+    cp "$DIR" "$HOME"/.cache/wallpaper/wallpaper.jpg
+    # convert "$DIR" -blur 0x9 "$HOME/.cache/wallpaper/wallpaper.jpg"
 
     # Set the new wallpaper
     m wallpaper "$DIR"
 else
     if [[ $XDG_SESSION_TYPE == "wayland" ]]; then
-        set_wp="swww img"
+        set_wp="swaybg -i"
         dmenu='mew -l 15'
     else
         set_wp="feh --bg-fill"
@@ -46,6 +47,7 @@ else
             valid_input=true
         fi
     done
+    cp "$chosen" "$HOME"/.cache/wallpaper/wallpaper.jpg
 
     eval "$set_wp" "$chosen"
 fi

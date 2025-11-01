@@ -3,18 +3,25 @@
 
 has() {
     if ! command -v "$1" >/dev/null 2>&1; then
-        echo "$1 is not installed."
-        notify-send "$1 is not installed."
+        echo "$1 is not installed. Adjust $0 if you think you do not need it."
+        notify-send "$1 is not installed. Adjust $0 if you think you do not need it."
         exit 1
     fi
 }
-has "slop"
 has "tesseract"
 has "dmenu"
+has "clipcatctl"
+if [[ -n $WAYLAND_DISPLAY ]]; then
+    has "slurp"
+    has "grim"
+else
+    has "slop"
+    has "import"
+fi
 
 # If no language argument provided, use `dmenu` to select
 if [[ $# -eq 0 ]]; then
-    LANG=$(tesseract --list-langs 2>/dev/null | tail -n +2 | dmenu -p "Select language: ")
+    LANG=$(tesseract --list-langs 2>/dev/null | tail -n +2 | dmenu -c -p "Select language: ")
     if [[ -z $LANG ]]; then
         echo "No language selected"
         exit 1
@@ -31,9 +38,12 @@ fi
 
 imagefile="/tmp/sloppy.$RANDOM.png"
 text="/tmp/translation"
-echo "$imagefile"
-slop=$(slop -f "%g") || exit 1
-read -r G <<<"$slop"
-import -window root -crop "$G" "$imagefile"
+if [[ -n $WAYLAND_DISPLAY ]]; then
+    grim -g "$(slurp)" "$imagefile"
+else
+    slop=$(slop -f "%g") || exit 1
+    read -r G <<<"$slop"
+    import -window root -crop "$G" "$imagefile"
+fi
 tesseract -l "$LANG" "$imagefile" "$text" 2>/dev/null
-cat "$text.txt" | xclip -selection c
+clipcatctl insert "$(cat "$text.txt")"

@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
 
+mkdir -p "$HOME/.cache/wallpaper"
 function wallpaper() {
     # https://apple.stackexchange.com/a/145174
     sqlite3 ~/Library/Application\ Support/Dock/desktoppicture.db "update data set value = '$1'" && killall Dock
@@ -8,24 +9,24 @@ function wallpaper() {
 fd -e png -e jpg . "$HOME/syncthing/aerial-views" | sort -R | sed 1q | while read -r file; do
     if [[ $(uname -s) == "Darwin" ]]; then
         # Mac
-        if ! diff "$HOME/.cache/bspwm/wallpaper.jpg" "$HOME/stowfiles/assets/black.jpg" >/dev/null; then
+        if ! diff "$HOME/.cache/wallpaper/wallpaper.jpg" "$HOME/stowfiles/assets/black.jpg" >/dev/null; then
             num="$RANDOM"
             magick "$file" -blur 0x25 "/tmp/$num.jpg"
-            cp "/tmp/$num.jpg" "$HOME/.cache/bspwm/wallpaper.jpg"
+            cp "/tmp/$num.jpg" "$HOME/.cache/wallpaper/wallpaper.jpg"
             # m wallpaper "/tmp/$num.jpg"
             wallpaper "/tmp/$num.jpg"
         fi
     else
         if [[ $XDG_SESSION_TYPE == "wayland" ]]; then
-            set_wp="swww img"
+            set_wp="swaybg -i"
         else
             set_wp="feh --bg-fill"
         fi
-        if ! diff "$HOME/.cache/bspwm/wallpaper.jpg" "$HOME/stowfiles/assets/black.jpg" >/dev/null; then
+        if ! diff "$HOME/.cache/wallpaper/wallpaper.jpg" "$HOME/stowfiles/assets/black.jpg" >/dev/null; then
             # Linux
-            # convert "$file" -blur 0x9 "$HOME"/.cache/bspwm/wallpaper.jpg
-            cp "$file" "$HOME"/.cache/bspwm/wallpaper.jpg
-            eval "$set_wp" "$HOME"/.cache/bspwm/wallpaper.jpg
+            # convert "$file" -blur 0x9 "$HOME"/.cache/wallpaper/wallpaper.jpg
+            cp "$file" "$HOME"/.cache/wallpaper/wallpaper.jpg
+            eval "$set_wp" "$HOME"/.cache/wallpaper/wallpaper.jpg
         fi
     fi
 done

@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+
+# mew-run -nb 2d2d2d -nf 7070c2 -sb 8c8cd0 -sf 2d2d2d -l 20
+dmenu_run -c -nb "#2d2d2d" -nf "#7070c2" -sb "#8c8cd0" -sf "#2d2d2d" -l 20 -fn "CaskaydiaMono Nerd Font"
+# pkill mew-run || true && zsh -c 'mew-run -nb 2d2d2d -nf 7070c2 -sb 8c8cd0 -sf 2d2d2d -l 20 -f "CaskaydiaMono Nerd Font"'

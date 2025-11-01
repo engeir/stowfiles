@@ -59,7 +59,6 @@ onescreen() { # If only one output available or chosen.
 }
 
 postrun() { # Stuff to run to clean up.
-    # setbg   # Fix background if screen size/arangement has changed.
     feh --bg-fill "$HOME"/.cache/bspwm/wallpaper.jpg
     {
         killall dunst
