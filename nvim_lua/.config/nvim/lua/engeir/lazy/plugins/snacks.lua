@@ -14,7 +14,7 @@ return {
   opts = {
     bigfile = { enabled = true },
     dim = { animate = { enabled = false } },
-    image = {},
+    image = { doc = { inline = false } },
     notifier = { enabled = false },
     picker = {
       win = {
