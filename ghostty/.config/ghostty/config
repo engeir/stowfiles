@@ -1,20 +1,35 @@
 font-family = "CaskaydiaMono Nerd Font"
 font-family-bold = "CaskaydiaMono Nerd Font"
-font-family-italic = "Cartograph CF"
-font-family-bold-italic = "Cartograph CF"
+font-family-italic = "CartographCF Nerd Font"
+font-family-bold-italic = "CartographCF Nerd Font"
 font-feature = -calt
 font-feature = -liga
 font-feature = -dlig
 
-# theme = tokyonight
+theme = Catppuccin Mocha
 
 background = #2d2d2d
+# background-image = /home/eirikre/syncthing/wallpapers/adventfjorden_in.jpg
+# background-image-opacity = 0.6
+# background-image-fit = cover
+# background-blur = true
 
+custom-shader = ~/.config/ghostty/shaders/shader.glsl
+# custom-shader = ~/.config/ghostty/shaders/cursor.glsl
+# custom-shader = ~/.config/ghostty/shaders/bloom.glsl
+# custom-shader = ~/.config/ghostty/shaders/drunkard.glsl
+# custom-shader = ~/.config/ghostty/shaders/tft.glsl
 cursor-color = #dd8d31
 cursor-opacity = 0.7
 
+link-previews = true
+
 mouse-hide-while-typing = true
 mouse-scroll-multiplier = 0.5
+
+quick-terminal-position = bottom
+quick-terminal-size = 45%
+quick-terminal-keyboard-interactivity = exclusive
 
 # Key bindings. The format is `trigger=action`. Duplicate triggers will
 # overwrite previously set values. The list of actions is available in
@@ -158,10 +173,10 @@ mouse-scroll-multiplier = 0.5
 
 # Windows, tabs, panes
 ## Move
-# keybind = alt+k=goto_split:top
-# keybind = alt+j=goto_split:bottom
-# keybind = alt+h=goto_split:left
-# keybind = alt+l=goto_split:right
+keybind = alt+.=goto_split:top
+keybind = alt+,=goto_split:bottom
+keybind = alt+m=goto_split:left
+keybind = alt+-=goto_split:right
 keybind = alt+left_bracket=goto_split:previous
 keybind = alt+right_bracket=goto_split:next
 keybind = alt+x>z=toggle_split_zoom
@@ -169,6 +184,7 @@ keybind = alt+x>z=toggle_split_zoom
 # keybind = alt+o=next_tab
 keybind = ctrl+shift+j=move_tab:-1
 keybind = ctrl+shift+k=move_tab:1
+keybind = alt+t=toggle_quick_terminal
 keybind = alt+x>t=toggle_tab_overview
 ## Adjust
 keybind = alt+x>equal=equalize_splits
