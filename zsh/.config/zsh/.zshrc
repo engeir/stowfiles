@@ -1,7 +1,7 @@
 #!/bin/zsh
 
 if command -v coreutils 1>/dev/null 2>&1; then
-    zmodload "zsh/zprof" # Uncomment to run profiler (also last line)
+    # zmodload "zsh/zprof" # Uncomment to run profiler (also last line)
     t0=$(coreutils date "+%s.%N")
 fi
 
@@ -85,8 +85,8 @@ fpath+="${ZDOTDIR:-~}/.zsh_functions" # This must come before compinit
 autoload -Uz compinit
 # From https://gist.github.com/ctechols/ca1035271ad134841284?permalink_comment_id=4624611#gistcomment-4624611
 # [ ! "$(find "${XDG_CONFIG_HOME:-$HOME/.config}"/zsh/.zcompdump -mtime 1)" ] || compinit
-# compinit -C
-compinit
+compinit -C
+# compinit
 
 zinit cdreplay -q
 
@@ -127,6 +127,8 @@ zstyle ':completion:*' menu no
 zstyle ':fzf-tab:complete:cd:*' fzf-preview 'eza -1 --color=always $realpath'
 zstyle ':fzf-tab:complete:__zoxide_z:*' fzf-preview 'eza -1 --color=always $realpath'
 
+eval "$(keychain --quiet --eval id_ed25519 159141A7F81B3ADBFB90EE2ED25BB0C81E6B195C)"
+
 # Source some other configs
 . "$HOME/.config/zsh/functions.zsh"
 
@@ -140,6 +142,7 @@ eval "$(zoxide init --cmd cd zsh)"
 eval "$(atuin init zsh)"
 eval "$(batpipe)"
 eval "$(batman --export-env)"
+eval "$(navi widget zsh)"
 
 if command -v coreutils 1>/dev/null 2>&1; then
     t1=$(coreutils date "+%s.%N")

@@ -40,13 +40,14 @@ fpath+=${ZDOTDIR:-~}/.zsh_functions
 
 # Start keychain
 # if [[ -d "/home/een023/" ]]; then
-if command -v /usr/bin/keychain >/dev/null 2>&1; then
-    if uname -a | grep -i ubuntu >/dev/null 2>&1; then
-        "$HOME/bin/start-keychain-expect"
-    elif uname -a | grep -i arch >/dev/null 2>&1; then
-        "$HOME/bin/start-keychain-arch-expect"
-    fi
-fi
+# if command -v /usr/bin/keychain >/dev/null 2>&1; then
+#     if uname -a | grep -i ubuntu >/dev/null 2>&1; then
+#         "$HOME/bin/start-keychain-expect"
+#     elif uname -a | grep -i arch >/dev/null 2>&1; then
+#         "$HOME/bin/start-keychain-arch-expect"
+#     fi
+# fi
+eval "$(keychain --eval id_ed25519 159141A7F81B3ADBFB90EE2ED25BB0C81E6B195C)"
 # export LD_PRELOAD=/usr/lib/x86_64-linux-gnu/libgtk3-nocsd.so.0
 # fi
 xset r rate 210 70
