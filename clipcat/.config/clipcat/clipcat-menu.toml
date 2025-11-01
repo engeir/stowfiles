@@ -38,6 +38,8 @@ extra_arguments = [
   "#d3869b",
   "-sf",
   "#282828",
+  "-fn",
+  "CaskaydiaMono Nerd Font",
 ]
 
 # Customize your finder.
