@@ -73,8 +73,10 @@ export PATH="$PATH:$HOME/.local/share/mise/shims/"
 export PATH="$HOME/.local/share/zinit/plugins/atuinsh---atuin:$PATH"
 export PATH="$HOME/.local/share/mise/shims:$PATH"
 eval "$("$HOME/.local/bin/mise" activate zsh)"
+eval "$("$HOME/.local/bin/mise" x -- fnox activate zsh)"
 mkdir -p "$HOME/.config/zsh/.zsh_functions"
 gen_comps mise "completion zsh" "mise"
+gen_comps fnox "completion zsh" "fnox"
 gen_comps aqua "completion zsh" "aqua"
 gen_comps atuin "gen-completions --shell zsh" "atuin"
 gen_comps bw "completion --shell zsh" "bitwarden"
@@ -84,4 +86,6 @@ gen_comps uv "generate-shell-completion zsh" "uv"
 gen_comps jj "util completion zsh" "jj"
 # Vagrant is stupid, and does it in their own way.
 vagrant autocomplete install --zsh
-cp /opt/vagrant/embedded/gems/gems/vagrant-2.4.5/contrib/zsh/_vagrant "$HOME/.config/zsh/.zsh_functions/_vagrant"
+if [ -f "/opt/vagrant/embedded/gems/gems/vagrant-2.4.5/contrib/zsh/_vagrant" ]; then
+    cp /opt/vagrant/embedded/gems/gems/vagrant-2.4.5/contrib/zsh/_vagrant "$HOME/.config/zsh/.zsh_functions/_vagrant"
+fi
