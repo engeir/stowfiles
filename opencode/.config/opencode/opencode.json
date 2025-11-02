@@ -9,11 +9,20 @@
       },
       "models": {
         "nhn-medium:latest": {
-          "name": "NHN Medium",
-          "tools": true
+          "name": "NHN Medium"
         }
       }
     }
   },
-  "model": "ollama/nhn-medium:latest"
+  "model": "ollama/nhn-medium:latest",
+  "mcp": {
+    "mise": {
+      "enabled": true,
+      "type": "local",
+      "command": ["mise", "mcp"],
+      "environment": {
+        "MISE_EXPERIMENTAL": "1"
+      }
+    }
+  }
 }
