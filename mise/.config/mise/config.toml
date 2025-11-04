@@ -1,3 +1,8 @@
+[settings]
+experimental = true
+python_venv_auto_create = true
+lockfile = true
+
 [env]
 AQUA_GLOBAL_CONFIG = "{{env.HOME}}/.config/aquaproj-aqua/aqua.yaml"
 BUN_INSTALL = "{{env.HOME}}/.bun"
