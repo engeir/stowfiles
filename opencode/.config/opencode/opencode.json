@@ -8,8 +8,23 @@
         "baseURL": "http://localhost:22434/v1"
       },
       "models": {
-        "nhn-medium:latest": {
+        "nhn-large": {
+          "name": "NHN Large"
+        },
+        "nhn-medium": {
           "name": "NHN Medium"
+        },
+        "nhn-embedding": {
+          "name": "NHN Embedding"
+        },
+        "nhn-coder": {
+          "name": "NHN Coder"
+        },
+        "nhn-coder-autocomplete": {
+          "name": "NHN Coder Autocomplete"
+        },
+        "nhn-small": {
+          "name": "NHN Small"
         }
       }
     }

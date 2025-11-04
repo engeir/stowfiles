@@ -282,4 +282,5 @@ bar {
 assign [class="^firefox$"] → $ws4
 assign [class="^zen$"] → $ws4
 assign [class="Vivaldi-stable"] → $ws7
+assign [class="brave-browser"] → $ws7
 assign [class="Slack"] → $ws7

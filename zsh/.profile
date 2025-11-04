@@ -28,8 +28,8 @@ fi
 if [ -d "$HOME/.cargo/bin" ]; then
     PATH="$HOME/.cargo/bin:$PATH"
 fi
-if [ -d "$HOME/.local/share/rye" ]; then
-    . "$HOME/.local/share/rye/env"
+if [ -d "$HOME/.local/kitty.app/bin" ]; then
+    PATH="$HOME/.local/kitty.app/bin:$PATH"
 fi
 export GPG_TTY=$(tty)
 

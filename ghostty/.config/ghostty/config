@@ -5,6 +5,7 @@ font-family-bold-italic = "CartographCF Nerd Font"
 font-feature = -calt
 font-feature = -liga
 font-feature = -dlig
+font-size = 14
 
 theme = Catppuccin Mocha
 
@@ -21,6 +22,8 @@ custom-shader = ~/.config/ghostty/shaders/shader.glsl
 # custom-shader = ~/.config/ghostty/shaders/tft.glsl
 cursor-color = #dd8d31
 cursor-opacity = 0.7
+custom-shader = ~/.config/ghostty/shaders/smear.glsl
+# custom-shader = ~/.config/ghostty/shaders/smr.glsl
 
 link-previews = true
 
@@ -186,6 +189,7 @@ keybind = ctrl+shift+j=move_tab:-1
 keybind = ctrl+shift+k=move_tab:1
 keybind = alt+t=toggle_quick_terminal
 keybind = alt+x>t=toggle_tab_overview
+keybind = alt+t=toggle_quick_terminal
 ## Adjust
 keybind = alt+x>equal=equalize_splits
 keybind = alt+x>alt+down=resize_split:down,10
@@ -221,6 +225,6 @@ window-decoration = false
 
 confirm-close-surface = false
 
-shell-integration = zsh
+command = zsh
 
 bold-is-bright = true
