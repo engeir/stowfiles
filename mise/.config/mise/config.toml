@@ -2,6 +2,10 @@
 experimental = true
 python_venv_auto_create = true
 lockfile = true
+yes = true
+go_set_gobin = true
+pipx_uvx = true
+idiomatic_version_file_enable_tools = ["rust"]
 
 [env]
 AQUA_GLOBAL_CONFIG = "{{env.HOME}}/.config/aquaproj-aqua/aqua.yaml"
@@ -85,13 +89,6 @@ HAS_ALLOW_UNSAFE = "y"
 # ERROR: ld.so: object 'libgtk3-nocsd.so.0' from LD_PRELOAD cannot be preloaded (failed to map segment from shared object): ignored.
 # See https://stackoverflow.com/a/53825858
 # LD_PRELOAD = "/usr/lib/x86_64-linux-gnu/libgtk3-nocsd.so.0"
-
-[settings]
-experimental = true
-yes = true
-go_set_gobin = true
-pipx_uvx = true
-idiomatic_version_file_enable_tools = ["rust"]
 
 [tools]
 python = [
@@ -184,7 +181,6 @@ python = [
 "npm:cosma" = "latest"
 "npm:cwebp" = "latest"
 "npm:jsonlint" = "latest"
-"npm:opencode-ai" = "latest"
 "npm:tldr" = "latest"
 "npm:yaml-language-server" = "latest"
 "pipx:calcure" = "latest"
@@ -231,3 +227,4 @@ typst = "latest"
 usage = "latest"
 yazi = "latest"
 zig = "0.13"
+"npm:opencode-ai" = "latest"

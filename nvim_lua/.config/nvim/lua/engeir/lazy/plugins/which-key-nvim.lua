@@ -32,6 +32,7 @@ return {
       { "<leader>f", group = "Find" },
       { "<leader>g", group = "Git" },
       { "<leader>h", group = "Harpoon", icon = "󱡀" },
+      { "<leader>o", group = "Opencode", icon = "🤖" },
       { "<leader>j", group = "Just", icon = "󰖷" },
       { "<leader>t", group = "Terminal" },
       { "<leader>u", group = "Ui" },

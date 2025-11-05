@@ -30,6 +30,12 @@
     }
   },
   "model": "ollama/nhn-medium:latest",
+  "lsp": {
+    "ruff": {
+      "command": ["ruff", "server"],
+      "extensions": [".py"]
+    }
+  },
   "mcp": {
     "mise": {
       "enabled": true,

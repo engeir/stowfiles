@@ -15,7 +15,7 @@ background = #2d2d2d
 # background-image-fit = cover
 # background-blur = true
 
-custom-shader = ~/.config/ghostty/shaders/shader.glsl
+# custom-shader = ~/.config/ghostty/shaders/shader.glsl
 # custom-shader = ~/.config/ghostty/shaders/cursor.glsl
 # custom-shader = ~/.config/ghostty/shaders/bloom.glsl
 # custom-shader = ~/.config/ghostty/shaders/drunkard.glsl
