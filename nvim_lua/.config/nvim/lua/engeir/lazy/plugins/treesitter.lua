@@ -170,62 +170,6 @@ return {
     event = { "BufReadPre", "BufNewFile" },
   },
   {
-    "zbirenbaum/neodim",
-    event = "LspAttach",
-    enabled = false,
-    opts = {
-      alpha = 0.5, -- make the dimmed text even dimmer
-      blend_color = "#282828",
-      hide = {
-        -- virtual_text = false,
-        -- signs = false,
-        -- underline = false,
-      },
-    },
-  },
-  {
-    "danymat/neogen",
-    event = { "BufReadPre", "BufNewFile" },
-    dependencies = "nvim-treesitter/nvim-treesitter",
-    opts = {
-      snippet_engine = "luasnip",
-      languages = {
-        python = {
-          template = {
-            annotation_convention = "numpydoc",
-          },
-        },
-      },
-    },
-    keys = {
-      {
-        "gp",
-        ":lua require('neogen').generate()<CR>",
-        desc = "Neogen: [G]enerate docstring",
-        { noremap = true, silent = true },
-      },
-    },
-    -- Uncomment next line if you want to follow only stable versions
-    -- tag = "*"
-  },
-  { -- Has been archived. Trying to replace it with `treewalker.nvim`.
-    "ziontee113/syntax-tree-surfer",
-    enabled = false,
-    event = { "BufReadPre", "BufNewFile" },
-    config = function()
-      require("syntax-tree-surfer").setup()
-      vim.keymap.set("n", "]9", function()
-        vim.opt.opfunc = "v:lua.STSSwapCurrentNodeNextNormal_Dot"
-        return "g@l"
-      end, { silent = true, expr = true, desc = "Right sibling swap" })
-
-      vim.keymap.set("n", "[8", function()
-        vim.opt.opfunc = "v:lua.STSSwapCurrentNodePrevNormal_Dot"
-        return "g@l"
-      end, { silent = true, expr = true, desc = "Left sibling swap" })
-    end,
-  },
-  {
     "windwp/nvim-ts-autotag",
     event = { "BufReadPre", "BufNewFile" },
     config = true,
