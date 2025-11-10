@@ -225,14 +225,133 @@ case "$ACTION" in
         prettier --write ./**/*.md | grep -v "unchanged" && true
         cd - >/dev/null 2>&1
         ;;
+    browse)
+        # Check for flags
+        SEARCH_MODE=false
+        DMENU_MODE=false
+        
+        case "${2:-}" in
+            "--search"|"-s")
+                SEARCH_MODE=true
+                shift 2
+                ;;
+            "--dmenu"|"-d")
+                DMENU_MODE=true
+                shift 2
+                ;;
+        esac
+
+        cd "$SNIP_DIR" || exit 1
+        export PATH="$PATH:$HOME/.local/share/mise/shims/"
+
+        # Extract snippet function
+        extract_snippet() {
+            local file="$1"
+            local first_line
+            first_line=$(head -n 1 "$file")
+            if [[ $first_line =~ ^'```' ]]; then
+                sed -n '2p' "$file"
+            else
+                echo "$first_line"
+            fi
+        }
+        export -f extract_snippet
+
+        if [[ $DMENU_MODE == true ]]; then
+            # Dmenu mode - directly type the selection
+            setxkbmap no
+            xdotool type "$(fd -e md -x sh -c 'echo "{.} // $(extract_snippet "{}")"' | dmenu -l 20 -c | sed 's|^[^ ]* // ||')"
+            exit 0
+        elif [[ $SEARCH_MODE == true ]]; then
+            # Advanced search with ripgrep + fzf
+            TEMP=$(mktemp -u)
+            export TEMP
+            trap 'rm -f "$TEMP"' EXIT
+            INITIAL_QUERY="${*:-}"
+            TRANSFORMER="
+              rg_pat={q:1}      # The first word is passed to ripgrep
+              fzf_pat={q:2..}   # The rest are passed to fzf
+              if ! [[ -r \"$TEMP\" ]] || [[ \$rg_pat != \$(cat \"$TEMP\") ]]; then
+                echo \"\$rg_pat\" > \"$TEMP\"
+                printf \"reload:sleep 0.1; rg --column --line-number --no-heading --color=always --smart-case %q || true\" \"\$rg_pat\"
+              fi
+              echo \"+search:\$fzf_pat\"
+            "
+            CHOSEN="$(fzf --ansi --disabled --query "$INITIAL_QUERY" \
+                --with-shell 'bash -c' \
+                --bind "start,ctrl-k:preview-up,ctrl-j:preview-down,change:transform:$TRANSFORMER" \
+                --color "hl:-1:underline,hl+:-1:underline:reverse" \
+                --delimiter : \
+                --preview 'bat --color=always {1} --highlight-line {2}' \
+                --preview-window '<80(up:65%),border-line,+{2}+3/3,~3' \
+                | sed 's/\(.*\.md\).*/\1/' | xargs -I {} sh -c "extract_snippet {}")"
+        else
+            # Simple file browse with preview
+            if command -v tvee >/dev/null 2>&1; then
+                CLI="tv"
+            else
+                CLI='fzf --bind "ctrl-k:preview-up,ctrl-j:preview-down" --preview "bat --color=always {}" --preview-window "<80(up:65%),border-line,+{2}+3/3,~3"'
+            fi
+            CHOSEN="$(find . -name "*.md" -exec basename {} \; | eval "$CLI" | xargs -I {} sh -c "extract_snippet {}")"
+        fi
+
+        if [[ -z $CHOSEN ]]; then
+            exit 0
+        fi
+
+        # Action menu
+        echo "What would you like to do?"
+        echo "1) Copy to clipboard"
+        echo "2) Open/Execute"
+        echo "3) Both (copy and open)"
+        read -r -n 1 choice
+
+        case $choice in
+            1)
+                if command -v clipcatctl >/dev/null 2>&1; then
+                    clipcatctl insert "$CHOSEN"
+                elif command -v xclip >/dev/null 2>&1; then
+                    echo "$CHOSEN" | xclip -selection clipboard
+                else
+                    echo "$CHOSEN"
+                fi
+                ;;
+            2)
+                if [[ $CHOSEN =~ ^https?:// ]]; then
+                    xdg-open "$CHOSEN"
+                else
+                    echo "$CHOSEN"
+                fi
+                ;;
+            3)
+                if command -v clipcatctl >/dev/null 2>&1; then
+                    clipcatctl insert "$CHOSEN"
+                elif command -v xclip >/dev/null 2>&1; then
+                    echo "$CHOSEN" | xclip -selection clipboard
+                fi
+                if [[ $CHOSEN =~ ^https?:// ]]; then
+                    xdg-open "$CHOSEN"
+                else
+                    echo "$CHOSEN"
+                fi
+                ;;
+            *)
+                echo "Invalid choice."
+                exit 1
+                ;;
+        esac
+        ;;
     *)
-        echo "Usage: $0 [new|edit|delete|rename|prune|format|git]"
+        echo "Usage: $0 [new|edit|delete|rename|browse|prune|format|git]"
         echo ""
         echo "Actions:"
         echo "  new     - Create a new snippet (default)"
         echo "  edit    - Edit an existing snippet"
         echo "  delete  - Delete an existing snippet"
         echo "  rename  - Rename an existing snippet"
+        echo "  browse  - Browse and select snippet content"
+        echo "          --search, -s : Search within file contents"
+        echo "          --dmenu, -d  : Use dmenu and type selection directly"
         echo "  prune   - Remove temporary/orphaned files"
         echo "  format  - Format all snippets with prettier"
         echo "  git     - Git operations in snippet directory"
