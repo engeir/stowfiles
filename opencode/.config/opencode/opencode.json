@@ -44,6 +44,14 @@
       "environment": {
         "MISE_EXPERIMENTAL": "1"
       }
+    },
+    "github": {
+      "type": "remote",
+      "url": "https://api.githubcopilot.com/mcp",
+      "enabled": true,
+      "headers": {
+        "Authorization": "Bearer $(pass GitHub/PAT)"
+      }
     }
   }
 }
