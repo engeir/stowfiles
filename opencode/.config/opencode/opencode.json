@@ -46,11 +46,19 @@
       }
     },
     "github": {
-      "type": "remote",
-      "url": "https://api.githubcopilot.com/mcp",
+      "type": "local",
       "enabled": true,
-      "headers": {
-        "Authorization": "Bearer $(pass GitHub/PAT)"
+      "command": [
+        "docker",
+        "run",
+        "-i",
+        "--rm",
+        "-e",
+        "GITHUB_PERSONAL_ACCESS_TOKEN",
+        "ghcr.io/github/github-mcp-server"
+      ],
+      "environment": {
+        "GITHUB_PERSONAL_ACCESS_TOKEN": "{env:GITHUB_PAT}"
       }
     }
   }
