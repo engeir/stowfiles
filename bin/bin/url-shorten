@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-# Run once: shorten junta and ESM links.
+# Run once: shorten links.
 # Run twice: retrieve only the ticket number.
 
 if ! command -v xclip 1>/dev/null; then
@@ -36,7 +36,7 @@ esm() {
     fi
 }
 
-if echo "$url" | grep -q "https://junta.*"; then
+if echo "$url" | grep -qE "https://(junta|saku).*"; then
     junta
 elif echo "$url" | grep -q "https://esm.*"; then
     esm
