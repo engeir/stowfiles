@@ -85,8 +85,8 @@ fpath+="${ZDOTDIR:-~}/.zsh_functions" # This must come before compinit
 autoload -Uz compinit
 # From https://gist.github.com/ctechols/ca1035271ad134841284?permalink_comment_id=4624611#gistcomment-4624611
 # [ ! "$(find "${XDG_CONFIG_HOME:-$HOME/.config}"/zsh/.zcompdump -mtime 1)" ] || compinit
-compinit -C
-# compinit
+# compinit -C
+compinit
 
 zinit cdreplay -q
 
@@ -124,8 +124,18 @@ setopt sharehistory
 zstyle ':completion:*' matcher-list 'm:{a-z}={A-Za-z}'
 zstyle ':completion:*' list-colors "${(s.:.)LS_COLORS}"
 zstyle ':completion:*' menu no
+zstyle ':completion:*:descriptions' format '[%d]'
+# No preview by default
+zstyle ':fzf-tab:complete:*' fzf-preview
 zstyle ':fzf-tab:complete:cd:*' fzf-preview 'eza -1 --color=always $realpath'
 zstyle ':fzf-tab:complete:__zoxide_z:*' fzf-preview 'eza -1 --color=always $realpath'
+zstyle ':fzf-tab:complete:(\\|*/|)man:*' fzf-preview 'man $word'
+# give a preview of commandline arguments when completing `kill`
+zstyle ':completion:*:*:*:*:processes' command "ps -u $USER -o pid,user,comm -w -w"
+zstyle ':fzf-tab:complete:(kill|ps):argument-rest' fzf-preview \
+  '[[ $group == "[process ID]" ]] && ps --pid=$word -o cmd --no-headers -w -w'
+zstyle ':fzf-tab:complete:(kill|ps):argument-rest' fzf-flags --preview-window=down:3:wrap
+zstyle ':fzf-tab:complete:systemctl-*:*' fzf-preview 'SYSTEMD_COLORS=1 systemctl status $word'
 
 eval "$(keychain --quiet --eval id_ed25519 159141A7F81B3ADBFB90EE2ED25BB0C81E6B195C)"
 
@@ -137,6 +147,8 @@ eval "$(keychain --quiet --eval id_ed25519 159141A7F81B3ADBFB90EE2ED25BB0C81E6B1
 
 # Shell integrations
 # eval "$(oh-my-posh init zsh --config ~/.config/oh-my-posh/oh-my-posh.toml)"
+eval "$(mise activate zsh)"
+eval "$(mise x -- fnox activate zsh)"
 eval "$(fzf --zsh)"
 eval "$(zoxide init --cmd cd zsh)"
 eval "$(atuin init zsh)"
