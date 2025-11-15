@@ -38,18 +38,11 @@ export GPG_TTY=$(tty)
 
 fpath+=${ZDOTDIR:-~}/.zsh_functions
 
-# Start keychain
-# if [[ -d "/home/een023/" ]]; then
-# if command -v /usr/bin/keychain >/dev/null 2>&1; then
-#     if uname -a | grep -i ubuntu >/dev/null 2>&1; then
-#         "$HOME/bin/start-keychain-expect"
-#     elif uname -a | grep -i arch >/dev/null 2>&1; then
-#         "$HOME/bin/start-keychain-arch-expect"
-#     fi
-# fi
-eval "$(keychain --eval id_ed25519 159141A7F81B3ADBFB90EE2ED25BB0C81E6B195C)"
-# export LD_PRELOAD=/usr/lib/x86_64-linux-gnu/libgtk3-nocsd.so.0
-# fi
+# GPG agent setup - configured to handle both GPG and SSH keys
+# The agent is managed by systemd and configured in ~/.gnupg/gpg-agent.conf
+# SSH_AUTH_SOCK is set in shell rc files to point to gpg-agent's SSH socket
+gpgconf --launch gpg-agent
+
 xset r rate 210 70
 xrdb "$HOME/.config/Xresources"
 

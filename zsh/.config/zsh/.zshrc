@@ -124,7 +124,6 @@ setopt sharehistory
 zstyle ':completion:*' matcher-list 'm:{a-z}={A-Za-z}'
 zstyle ':completion:*' list-colors "${(s.:.)LS_COLORS}"
 zstyle ':completion:*' menu no
-zstyle ':completion:*:descriptions' format '[%d]'
 # No preview by default
 zstyle ':fzf-tab:complete:*' fzf-preview
 zstyle ':fzf-tab:complete:cd:*' fzf-preview 'eza -1 --color=always $realpath'
@@ -137,7 +136,9 @@ zstyle ':fzf-tab:complete:(kill|ps):argument-rest' fzf-preview \
 zstyle ':fzf-tab:complete:(kill|ps):argument-rest' fzf-flags --preview-window=down:3:wrap
 zstyle ':fzf-tab:complete:systemctl-*:*' fzf-preview 'SYSTEMD_COLORS=1 systemctl status $word'
 
-eval "$(keychain --quiet --eval id_ed25519 159141A7F81B3ADBFB90EE2ED25BB0C81E6B195C)"
+# GPG agent for SSH - configured in ~/.gnupg/gpg-agent.conf
+export SSH_AUTH_SOCK=$(gpgconf --list-dirs agent-ssh-socket)
+gpg-connect-agent updatestartuptty /bye >/dev/null 2>&1
 
 # Source some other configs
 . "$HOME/.config/zsh/functions.zsh"
