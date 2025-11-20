@@ -15,7 +15,6 @@ DPRINT_INSTALL = "{{env.HOME}}/.local/bin/"
 HELIX_RUNTIME = "{{env.HOME}}/programs/helix/runtime"
 RIPGREP_CONFIG_PATH = "{{env.HOME}}/.config/ripgrep/ripgreprc"
 RUSH_CONFIG = "{{env.HOME}}/.config/rush/rush.ini"
-RYE_HOME = "{{env.HOME}}/.local/share/rye"
 ZDOTDIR = "{{env.HOME}}/.config/zsh/"
 SUDO_ASKPASS = "{{env.HOME}}/bin/askpass-root"
 _.path = [
@@ -25,7 +24,6 @@ _.path = [
   "{{env.HOME}}/.pixi/bin",
   "{{env.BUN_INSTALL}}/bin",
   "{{env.DENO_INSTALL}}/bin",
-  "{{env.RYE_HOME}}/shims/",
   "{{env.HOME}}/.local/share/aquaproj-aqua",
 ]
 _.source = "{{env.HOME}}/.config/mise/machine_specific.sh"
