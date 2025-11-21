@@ -2,6 +2,146 @@
 
 ## [2.3.0](https://github.com/engeir/stowfiles/compare/stowfiles-v2.2.0...stowfiles-v2.3.0) (2025-08-05)
 
+## [2025.11.1](https://github.com/engeir/stowfiles/compare/stowfiles-v2.3.0..2025.11.1) - 2025-11-21
+
+### Features
+
+- **(bin)** Extend link shortener to accept saku on the same format as junta - ([d770abc](https://github.com/engeir/stowfiles/commit/d770abc2cfc251b2d0c6dcd34170f98ccde735eb))
+- **(bin)** Add option to rename a snippet file - ([2dc5b7d](https://github.com/engeir/stowfiles/commit/2dc5b7d22145ea5f980f504a78854b0b1a4dd617))
+- **(bin)** Add info about last session in timew script - ([523474a](https://github.com/engeir/stowfiles/commit/523474a0bbf1f9747f9103133054f7e9add18a85))
+- **(bin)** Nice little dmenu calculator - ([3b07491](https://github.com/engeir/stowfiles/commit/3b074912f7af32fa0e3808d85173c43c5941bad6))
+- **(bin)** Easily toggle screenkey with nice cli options - ([afb2fd2](https://github.com/engeir/stowfiles/commit/afb2fd22eb15fe07821bad90c498ec5bba795882))
+- **(bin)** Easily control git repo for the snippet library - ([a07cb98](https://github.com/engeir/stowfiles/commit/a07cb9811e864b4e80f15ad13ca2f9c185674e47))
+- **(bin)** Prettify the time warrior script - ([7b8a474](https://github.com/engeir/stowfiles/commit/7b8a474c6f065cec36ed3077d018890b5e42980b)) by @engeir
+- **(bin)** Fix timew scripts and create i3 keymap for it - ([995ba64](https://github.com/engeir/stowfiles/commit/995ba64d3b248aa3e14684110903dc4b463d987a))
+- **(bin)** Add timew easy workflow script - ([e44b712](https://github.com/engeir/stowfiles/commit/e44b712cb4d4095f4d8a5b5830008e3d64d184b3)) by @engeir
+- **(bin)** Hacky way of keymapping on remote servers without vimrc - ([53f2ba0](https://github.com/engeir/stowfiles/commit/53f2ba013aeebc96a1ce889c90433a82738bcff5))
+- **(bin)** Open-custom-url accepts any browser overrides - ([be06bee](https://github.com/engeir/stowfiles/commit/be06beee68b03732ffb012e5a69349d8e7e797af))
+- **(bin)** Support wayland using swww to set wallpapers - ([981cae5](https://github.com/engeir/stowfiles/commit/981cae53a6405fa31028cf0ff22ac7368c412658)) by @engeir
+- **(bin)** Add format option to the snippet script - ([fcb3c45](https://github.com/engeir/stowfiles/commit/fcb3c45299cd5dab49e64c7721166d988abb9ddd))
+- **(glide)** Test the keyboard driven glide browser - ([a04d654](https://github.com/engeir/stowfiles/commit/a04d654e84620977b8a454390bdeea12145f2d25)) by @engeir
+- **(hypr)** Add script to show hyprland key mappings - ([47b69ab](https://github.com/engeir/stowfiles/commit/47b69ab22bdb4fb49f9da21c8886b00ab80a0254)) by @engeir
+- **(i3)** Scale alacritty dropdown window to the focused screen - ([84a4b71](https://github.com/engeir/stowfiles/commit/84a4b71a13badc4f51cc9af27a1f8f94db3206a7))
+- **(kanata)** Map mouse movements - ([77f2fb9](https://github.com/engeir/stowfiles/commit/77f2fb9fa296ceeeb8548fd6a7781cfafaa3de8f)) by @engeir
+- **(mango)** Add config for the Mango wayland compositor - ([be170d8](https://github.com/engeir/stowfiles/commit/be170d89f373043f9c3849d744ea651bd45566a4)) by @engeir
+- **(nvim)** [plugin] add embedded opencode via opencode.nvim - ([c9ffbb1](https://github.com/engeir/stowfiles/commit/c9ffbb17bb016116777c8ccfde78fcbed3c89df7)) by @engeir
+- **(nvim)** Add circumvention when a file must be written by root - ([9bcde86](https://github.com/engeir/stowfiles/commit/9bcde869f65d95de06b18833e7ba0fd7224b4750))
+- **(nvim)** [plugin] add fff.nvim - ([394ec6f](https://github.com/engeir/stowfiles/commit/394ec6f3acbf7e6f81338a3eedf094316950d18f))
+- **(opencode)** Add GitHub MCP config - ([f3cedd7](https://github.com/engeir/stowfiles/commit/f3cedd76d6efa24f1482a3cde11630115c5d6bf5))
+- **(opencode)** Add mise mcp - ([ec96e06](https://github.com/engeir/stowfiles/commit/ec96e068366346e63f019b3d7b0a0ecad7c1641b)) by @engeir
+- **(tmux)** Zen mode for the wide boyz - ([fa016fb](https://github.com/engeir/stowfiles/commit/fa016fb9d348cb47ef34a662bc3680d2ade6a83f)) by @engeir
+- **(zsh)** Unify gpg and ssh setup - ([62eac33](https://github.com/engeir/stowfiles/commit/62eac332bfaa09b1752489373ea51534705c9a78)) by @engeir
+- **(zsh)** Switch to oh-my-posh from starship - ([8c1a5f5](https://github.com/engeir/stowfiles/commit/8c1a5f585b1cc268fc05224270243b8a52dcbd3f)) by @engeir
+- Get the github mcp to work - ([6dd0aac](https://github.com/engeir/stowfiles/commit/6dd0aac8dcab46670db4e3b4652a71840bd520dc)) by @engeir
+- Run twice to get just the ticket number - ([48ba87e](https://github.com/engeir/stowfiles/commit/48ba87eff8ad9b8f6ba57ce4e7bb809bcdc24eb4))
+- Add cruch and opencode configs for local llm use - ([45a1540](https://github.com/engeir/stowfiles/commit/45a1540383f33bbaf41af05af8b511c9bc168408))
+
+### Bug Fixes
+
+- **(bin)** Parse the chosen file correctly in the ripgrep version - ([d9329ce](https://github.com/engeir/stowfiles/commit/d9329ce3d5d65195050a221ac1e09c6c1465b308))
+- **(bin)** Netbird run with rosenpass options work better - ([fde88c1](https://github.com/engeir/stowfiles/commit/fde88c169d0d4f7c37199295a070f5ed3512368f))
+- **(bin)** Reset the background when adjusting displays - ([f75b007](https://github.com/engeir/stowfiles/commit/f75b0075bf57017c73a8f3832e2c9e0c6d85678c))
+- **(bin,i3)** Better non-invasive timew control with dmenu - ([d793aa2](https://github.com/engeir/stowfiles/commit/d793aa247038f7475b421f5b32a9124943400acb))
+- **(kanata)** Dollar sign is ralt+4, not shift! - ([ffd4265](https://github.com/engeir/stowfiles/commit/ffd4265b8f5ba0d23ca16f74deecfb88e7444b41)) by @engeir
+- **(kanata)** Specify keycodes rather than unicode - ([7bcbbf3](https://github.com/engeir/stowfiles/commit/7bcbbf30cfa2c933dc0d77e7842fe8429314d55c))
+- **(nvim)** Blink.pairs make opencode.nvim crash - ([cf42992](https://github.com/engeir/stowfiles/commit/cf42992c75fa09d9d2b65266011a5646fe6f9de0)) by @engeir
+- **(nvim)** Add sidekick.nvim and fix issue with SELinux and no exec on /tamp - ([3db2ab9](https://github.com/engeir/stowfiles/commit/3db2ab966437813d1c0c205a21608b2f4bc518d8))
+- **(nvim)** Set timeout on the ollama list command - ([feca756](https://github.com/engeir/stowfiles/commit/feca75648c7107a0887950bf9fb4e4668c639a58))
+- **(nvim)** Update deprecated codecompanion syntax - ([ba4684f](https://github.com/engeir/stowfiles/commit/ba4684f37d685695c9237f85c167c337c98a9092))
+
+### Documentation
+
+- **(bin)** Add small description about what url-shorten does - ([e028127](https://github.com/engeir/stowfiles/commit/e028127954d32ba2efb76e3bb8495cd37f3905e8))
+- **(katana)** Shorten url - ([d9a1e79](https://github.com/engeir/stowfiles/commit/d9a1e7926b6f761d67f5ed601bcdabf7e47dbd7e))
+
+### Refactoring
+
+- **(bin)** Move cheat-sheet-links functionality into snippet script - ([f3cdbf0](https://github.com/engeir/stowfiles/commit/f3cdbf0f6e511b5aee4044b60a412ebef11ec9dd))
+- **(bin,i3)** Yad was too hard to work with, just need fuzzy search - ([29ba540](https://github.com/engeir/stowfiles/commit/29ba5404099c97e7f3c0cd77da77f767c1e98988))
+
+### Styling
+
+- **(format)** Yaml files - ([1854c3b](https://github.com/engeir/stowfiles/commit/1854c3bb767f4c29410bea43a5667b302012d693)) by @engeir
+- **(i3)** Add nice i3blocks - ([7fabdc1](https://github.com/engeir/stowfiles/commit/7fabdc1a6117ab793c22c3d93c5c9da6ff22ce23))
+- **(kanata)** Set the correct commentstring - ([a99c957](https://github.com/engeir/stowfiles/commit/a99c957aff36ca66c76a2551810e640692cfe937))
+- **(nvim)** Format lua code - ([b6d1fb6](https://github.com/engeir/stowfiles/commit/b6d1fb6b69214c142d53931c89b5320413f603b8)) by @engeir
+- **(starship)** Small tweaks - ([f942c4c](https://github.com/engeir/stowfiles/commit/f942c4ca432413e8f6f7dabece8425a81b964c98)) by @engeir
+- **(yaml-fmt)** Format - ([fa212e4](https://github.com/engeir/stowfiles/commit/fa212e408cf036c909100867aed59686ff4121a7)) by @engeir
+- Push push - ([81c4318](https://github.com/engeir/stowfiles/commit/81c4318d0169217e72c2a6d00b77203b6e258276)) by @engeir
+- Fix formatting issues - ([829f51f](https://github.com/engeir/stowfiles/commit/829f51f92300ae3cab7c47916fe05a2ee447fbf4)) by @engeir
+
+### Miscellaneous
+
+- **(X11)** Swap bspwm with i3 - ([ba073cd](https://github.com/engeir/stowfiles/commit/ba073cd38598397e18a573d14355c6d1de83b8a9)) by @engeir
+- **(bin)** Small fixes for better wayland support - ([caa3aca](https://github.com/engeir/stowfiles/commit/caa3aca52faad3aa887a5cef1c79e2a05355e3a2)) by @engeir
+- **(bin)** Small fixes and additions to scripts - ([c45dd5e](https://github.com/engeir/stowfiles/commit/c45dd5e1e0605e441756ab5524be62e0c1a110e9))
+- **(bin)** Custom download script for zen-browser - ([95527e0](https://github.com/engeir/stowfiles/commit/95527e0aa5d6fa171179d972b8ea0fa22f6174a1))
+- **(bin)** Better worktree creation for remotes - ([9a1dd35](https://github.com/engeir/stowfiles/commit/9a1dd358fdea157e7bd6f625a5c09e7df21f436e))
+- **(bin)** Show preview above to keep full width for long lines - ([72c66c8](https://github.com/engeir/stowfiles/commit/72c66c8355e0aa54cd98b5ff0e91f76248ef148c))
+- **(bin)** Shorten urls even more - ([1e00e5c](https://github.com/engeir/stowfiles/commit/1e00e5c23fe7321335ec868669f01e9e6b253773))
+- **(bin)** When formatting snippets, output only changed files - ([f301abf](https://github.com/engeir/stowfiles/commit/f301abff9ec3b6d61852bc0a34b99c5a277b65c6))
+- **(bin)** Add typing support to opening cheat-sheet-links from dmenu - ([18ddb47](https://github.com/engeir/stowfiles/commit/18ddb4714042b4f341a0121afa70769993a3fa68))
+- **(bspwm)** Add timew-fzf to keymaps and add alacritty option - ([cca602b](https://github.com/engeir/stowfiles/commit/cca602b51c636b42428eb649a251efcd792367d3)) by @engeir
+- **(clipcat)** Set font - ([4790738](https://github.com/engeir/stowfiles/commit/4790738f6854e621e37659a79dba6dc97bec1ba9)) by @engeir
+- **(dunst)** Better display of progress bar - ([b818dfe](https://github.com/engeir/stowfiles/commit/b818dfe89a949a88fa7fd6738d6b7e4223f65be3)) by @engeir
+- **(ghostty)** Add some very cool and useful shaders - ([112aa2e](https://github.com/engeir/stowfiles/commit/112aa2ec00ad2a1584a945087b5d7a362c55b20b)) by @engeir
+- **(helix)** Add sane defaults as used in (n)vim - ([72ab3fa](https://github.com/engeir/stowfiles/commit/72ab3fa462aeb30e927dcbed06bbd3419bd19fa5))
+- **(hypr)** Better lock screen keymap - ([84a5c51](https://github.com/engeir/stowfiles/commit/84a5c511b8fd4b2abec0657c33451bc7a3853044)) by @engeir
+- **(hypr)** Upload hyprland config - ([0838428](https://github.com/engeir/stowfiles/commit/083842865dc6cca410f93ba0d6cb23eb546e35ed)) by @engeir
+- **(hypr)** Add cmatrix wallpaper - ([ae84eb9](https://github.com/engeir/stowfiles/commit/ae84eb93565fcf7621318820ab33aa97dfd75504)) by @engeir
+- **(i3)** Im ready to make zen browser my new default gecko browser - ([1d5aa2f](https://github.com/engeir/stowfiles/commit/1d5aa2fa3455dc101ef8c737f35b6a11de1d242e))
+- **(i3)** Fix match string in class variable - ([79c21c8](https://github.com/engeir/stowfiles/commit/79c21c8ed0ca8003ee2a1e6fffdfbdd043ae1f50))
+- **(i3)** Add some keymaps and sort them - ([57c75e5](https://github.com/engeir/stowfiles/commit/57c75e5715f077d5f282608ecefd8ce6caf108a2))
+- **(i3)** Add simple keybind cheat sheet - ([7e821d7](https://github.com/engeir/stowfiles/commit/7e821d7035fa70ed2071f9481f20b60593349f15)) by @engeir
+- **(i3,bin)** Toggle the cursor visibility - ([bf24e1c](https://github.com/engeir/stowfiles/commit/bf24e1c2fe0b8d41b96bc09be4116e7bebb27f60))
+- **(kanata)** Improve mouse movement and add symbols and numbers - ([297a782](https://github.com/engeir/stowfiles/commit/297a7825160e6df24018202557cc7deb3efefd54)) by @engeir
+- **(kitty)** Shut up that bell - ([2af6b7b](https://github.com/engeir/stowfiles/commit/2af6b7b6cc705ae4414a701e3c26827dba4770b7))
+- **(kitty)** Better defaults - ([486414f](https://github.com/engeir/stowfiles/commit/486414f0b12077d52e6cc7b4285ce83aeb764260))
+- **(kitty)** Nicer defaults - ([6aa00cf](https://github.com/engeir/stowfiles/commit/6aa00cf53a091bdec0cdcc4be1ef2b1bfbfaa2c7))
+- **(mise)** Remove rye - ([598297b](https://github.com/engeir/stowfiles/commit/598297b68552a4277a2797195ad8df7ba7fe38f7)) by @engeir
+- **(mise)** Clean up installed programs - ([3118303](https://github.com/engeir/stowfiles/commit/3118303dee4a8b7161bd2af1f4cbfbe781b6e28c)) by @engeir
+- **(mise)** Set the sudo askpass program - ([f4af13e](https://github.com/engeir/stowfiles/commit/f4af13e6de53366ea4e09ceac4f65d8742fd7256)) by @engeir
+- **(mise)** Enable rust idiomatic_version - ([f77a0eb](https://github.com/engeir/stowfiles/commit/f77a0ebe156f2397e335e2f26ed9b23d092fb3a7)) by @engeir
+- **(mise)** Update packages - ([5b1dc8d](https://github.com/engeir/stowfiles/commit/5b1dc8db73817fa9b8dfbbf54764e5d25f1f0e99)) by @engeir
+- **(nvim)** Clean up plugins - ([67080aa](https://github.com/engeir/stowfiles/commit/67080aabfcaf88dc6ab75f859328d14d471b51dd)) by @engeir
+- **(nvim)** Better image display with snacks.nvim - ([13731d9](https://github.com/engeir/stowfiles/commit/13731d97a47a80b4422a1a029f94692c2223dc6c)) by @engeir
+- **(nvim)** Remove code shadow in zen mode - ([2dad8b2](https://github.com/engeir/stowfiles/commit/2dad8b24dcc7ee26d7ef8b6840aa550cb199a02e))
+- **(nvim)** Keymap to open oil on the right - ([50821a2](https://github.com/engeir/stowfiles/commit/50821a2e1ab7fd6be1aed40769762f623aad6ad2)) by @engeir
+- **(nvim)** Adjust keymap to avoid tmux prefix - ([343aad4](https://github.com/engeir/stowfiles/commit/343aad442cbb5f822e775adb628b9ca2a77e6b15))
+- **(nvim)** Remove jedi lsp, add zuban - ([e1c292d](https://github.com/engeir/stowfiles/commit/e1c292d7e2dda1fdb2e181a30e4dab4dc820121a)) by @engeir
+- **(nvim)** Add keymap that inserts newline bytes for \n strings - ([998fa90](https://github.com/engeir/stowfiles/commit/998fa90106b548d28a7622c696bb0487d16789c2))
+- **(nvim)** Use snacks.picker over telescope - ([6090df4](https://github.com/engeir/stowfiles/commit/6090df46917fe31a3740561455e2341972b43fbe)) by @engeir
+- **(nvim)** Rename mini plugins - ([a44652a](https://github.com/engeir/stowfiles/commit/a44652a3ddbf88c4777ab58bc153d6ab3e7b6b40)) by @engeir
+- **(nvim)** Less distractions in zen mode - ([94e5b64](https://github.com/engeir/stowfiles/commit/94e5b647bb70ad8403af1031335ad624b680bca4))
+- **(nvim)** Add commentstring to puppet - ([c183a2b](https://github.com/engeir/stowfiles/commit/c183a2ba3f90db13d634a2c7daf69b56b7fe2299))
+- **(nvim)** Remove the deprecated typstfmt - ([74b02c6](https://github.com/engeir/stowfiles/commit/74b02c6884aef5e36d801f0c13439af4c3b527f1))
+- **(nvim)** Update obsidian commands and remove markview dependency - ([8a02800](https://github.com/engeir/stowfiles/commit/8a0280099b6dee5daea9cf069697e94c4326328f))
+- **(nvim)** Dont install ai plugins if ollama isnt configured - ([36e9572](https://github.com/engeir/stowfiles/commit/36e9572bb97da7f79feaf3c17af51a4433e4df9c)) by @engeir
+- **(nvim)** Make zen mode nicer - ([9440b35](https://github.com/engeir/stowfiles/commit/9440b3564dd71726ca67caef5d6e0b0d049cdaef))
+- **(nvim)** Update llm models and remove markdown previewer - ([08ebe34](https://github.com/engeir/stowfiles/commit/08ebe34b4c5cebd12e01534314297e6925caf9fb))
+- **(opencode)** Add ruff lsp support - ([81d8801](https://github.com/engeir/stowfiles/commit/81d8801b83165881a7959ba27b8c45c19d3293f7)) by @engeir
+- **(stowfiles)** Update installed - ([de9e88e](https://github.com/engeir/stowfiles/commit/de9e88ec4b9aba9ad2b9165d0aaf3fa0c0413c21)) by @engeir
+- **(tmux)** Add keybind to navi - ([c3396f5](https://github.com/engeir/stowfiles/commit/c3396f5e87417b71570e6b9ab13d58908068f16c)) by @engeir
+- **(tmux)** Easier navigation hints when sharing screen - ([ec1a01f](https://github.com/engeir/stowfiles/commit/ec1a01f6507108b593f74de46ccb72db9f3fa782)) by @engeir
+- **(tmux)** Use C-q as prefix key, PageUp as copy-mode key - ([95ff812](https://github.com/engeir/stowfiles/commit/95ff81267a5e49c7196e57970962de10322c0ac5))
+- **(yazi)** Small update - ([2557aff](https://github.com/engeir/stowfiles/commit/2557afff60a93c4d1b4d2af81f5f119af8a88340)) by @engeir
+- **(zsh)** Better compinit settings - ([e94ec6b](https://github.com/engeir/stowfiles/commit/e94ec6b2df838304536efa45fc237d2acdbe4855)) by @engeir
+- **(zsh)** Better eval of GPG and SSH keys - ([fa76c70](https://github.com/engeir/stowfiles/commit/fa76c708495dff56318a217f4c82107433d8f319)) by @engeir
+- **(zsh)** Back to starship, but now with transient prompt - ([bae924b](https://github.com/engeir/stowfiles/commit/bae924bb6459257a08961c0f114c8151c9a0b17f))
+- Small qol updates - ([d248c13](https://github.com/engeir/stowfiles/commit/d248c13f1736027b0812ac3e9f5550dbfc41134a))
+- Small qol updates - ([74c1cb1](https://github.com/engeir/stowfiles/commit/74c1cb1d30a45c0dbeac6b039bd941337da7c871))
+- Update installed - ([8b8b491](https://github.com/engeir/stowfiles/commit/8b8b49116df717b3c8e7afeeafc84417e0d97205)) by @engeir
+- Helsegitlab is more tricky than ip subdomain for some reason - ([9bd2ed6](https://github.com/engeir/stowfiles/commit/9bd2ed673f078c8f78806c589887aafc24b4ad32))
+- Random update - ([80a723d](https://github.com/engeir/stowfiles/commit/80a723d6db95bccbb40e6f5b1c0895c0b0f08704)) by @engeir
+
+### Ci
+
+- **(fix)** Remove non-existing files - ([fe40cf9](https://github.com/engeir/stowfiles/commit/fe40cf9211a4bf56e45138fb27618545829c887e)) by @engeir
+- **(fix)** Add git-cliff dependency - ([a4b2947](https://github.com/engeir/stowfiles/commit/a4b2947b9a3632aacebc4eb5e97aaf6047b449bc)) by @engeir
+- **(release)** Use git-cliff and calver, removes release-please - ([fa3db41](https://github.com/engeir/stowfiles/commit/fa3db41437f9169e311a693dfae2f6c0cc89060a)) by @engeir
+
+<!-- generated by git-cliff -->
+
 
 ### Features
 
