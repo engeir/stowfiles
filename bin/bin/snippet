@@ -229,7 +229,7 @@ case "$ACTION" in
         # Check for flags
         SEARCH_MODE=false
         DMENU_MODE=false
-        
+
         case "${2:-}" in
             "--search"|"-s")
                 SEARCH_MODE=true
