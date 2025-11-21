@@ -1,0 +1,57 @@
+amends "package://github.com/jdx/hk/releases/download/v1.2.0/hk@1.2.0#/Config.pkl"
+import "package://github.com/jdx/hk/releases/download/v1.2.0/hk@1.2.0#/Builtins.pkl"
+
+local linters = new Mapping<String, Step> {
+    ["prettier"] = (Builtins.prettier) {
+        glob = List("*.md", "*.yaml", "*.yml", "*.js")
+    }
+    ["djlint"] {
+        glob = "*.html"
+        check = "uv run djlint --check {{files}}"
+        fix = "uv run djlint --reformat --quiet {{files}}"
+    }
+    ["hadolint"] {
+        glob = "Dockerfile*"
+        check = "hadolint {{files}}"
+    }
+    ["taplo"] = Builtins.taplo
+    ["ruff"] = Builtins.ruff
+    ["mypy"] = Builtins.mypy
+    ["pydoclint"] {
+        glob = "*py"
+        check = "pydoclint {{files}} >/dev/null"
+    }
+    ["pydocstringformatter"] {
+        glob = "*py"
+        check = "pydocstringformatter {{files}} >/dev/null"
+    }
+    ["xdoctest"] {
+        glob = "*py"
+        check = "xdoctest {{files}} >/dev/null"
+    }
+    ["pkl"] {
+        glob = "*.pkl"
+        check = "pkl eval {{files}} >/dev/null"
+    }
+}
+
+hooks {
+    ["pre-commit"] {
+        fix = true    // automatically modify files with available linter fixes
+        stash = "git"
+        steps {
+            ...linters // add all linters defined above
+        }
+    }
+    ["pre-push"] {
+        steps = linters
+    }
+    // "fix" and "check" are special steps for `hk fix` and `hk check` commands
+    ["fix"] {
+        fix = true
+        steps = linters
+    }
+    ["check"] {
+        steps = linters
+    }
+}

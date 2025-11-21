@@ -1,0 +1,257 @@
+name: Release PR with CalVer
+on:
+  push:
+    branches:
+      - main
+permissions:
+  contents: write
+  packages: write
+  pull-requests: write
+jobs:
+  release-pr:
+    runs-on: ubuntu-latest
+    if: "!contains(github.event.head_commit.message, 'chore(release):')"
+    steps:
+      - name: Checkout
+        uses: actions/checkout@08eba0b27e820071cde6df949e0beb9ba4906955 # v4.3.0
+        with:
+          fetch-depth: 0
+          token: ${{ secrets.RELEASE_TOKEN }}
+      - name: Install mise
+        uses: jdx/mise-action@c37c93293d6b742fc901e1406b8f764f6fb19dac # v2.4.4
+        with:
+          install: true
+      - name: Get latest tag
+        id: get_tag
+        run: |
+          # Get the latest tag or use 2025.1.0 if no tags exist
+          LATEST_TAG=$(git describe --tags --abbrev=0 2>/dev/null || echo "2025.0.0")
+          echo "latest_tag=$LATEST_TAG" >> $GITHUB_OUTPUT
+          echo "Latest tag: $LATEST_TAG"
+      - name: Check for changes since last tag
+        id: check_changes
+        run: |
+          LATEST_TAG="${{ steps.get_tag.outputs.latest_tag }}"
+          # Count commits since last tag (excluding merge commits from release PR)
+          COMMIT_COUNT=$(git rev-list ${LATEST_TAG}..HEAD --count --no-merges 2>/dev/null || echo "999")
+          echo "commit_count=$COMMIT_COUNT" >> $GITHUB_OUTPUT
+          echo "Commits since last tag: $COMMIT_COUNT"
+
+          if [ "$COMMIT_COUNT" -eq "0" ]; then
+            echo "has_changes=false" >> $GITHUB_OUTPUT
+          else
+            echo "has_changes=true" >> $GITHUB_OUTPUT
+          fi
+      - name: Generate new CalVer tag
+        id: calver
+        if: steps.check_changes.outputs.has_changes == 'true'
+        run: |
+          # Generate CalVer tag: YYYY.MM.MICRO
+          YEAR=$(date +%Y)
+          MONTH=$(date +%-m)  # %-m gives month without leading zero (1-12)
+          LATEST_TAG="${{ steps.get_tag.outputs.latest_tag }}"
+
+          # Extract year, month, micro from latest tag
+          if [[ $LATEST_TAG =~ ^v?([0-9]+)\.([0-9]+)\.([0-9]+)$ ]]; then
+            TAG_YEAR="${BASH_REMATCH[1]}"
+            TAG_MONTH="${BASH_REMATCH[2]}"
+            TAG_MICRO="${BASH_REMATCH[3]}"
+          else
+            # No valid tag found, start fresh
+            TAG_YEAR="0"
+            TAG_MONTH="0"
+            TAG_MICRO="0"
+          fi
+
+          # If year or month changed, reset micro to 1
+          if [ "$TAG_YEAR" != "$YEAR" ] || [ "$TAG_MONTH" != "$MONTH" ]; then
+            NEW_TAG="$YEAR.$MONTH.1"
+          else
+            # Same year and month, increment micro
+            NEW_MICRO=$((TAG_MICRO + 1))
+            NEW_TAG="$YEAR.$MONTH.$NEW_MICRO"
+          fi
+
+          echo "new_tag=$NEW_TAG" >> $GITHUB_OUTPUT
+          echo "New tag will be: $NEW_TAG"
+      - name: Generate changelog with git-cliff
+        id: changelog
+        if: steps.check_changes.outputs.has_changes == 'true'
+        run: |
+          # Generate changelog for unreleased changes with the new version tag
+          NEW_VERSION="${{ steps.calver.outputs.new_tag }}"
+          LATEST_TAG="${{ steps.get_tag.outputs.latest_tag }}"
+
+          # Generate changelog from last tag to HEAD, using the new version
+          CHANGELOG=$(mise x -- git-cliff --tag "$NEW_VERSION" --strip header "$LATEST_TAG..HEAD")
+          echo "content<<EOF" >> $GITHUB_OUTPUT
+          echo "$CHANGELOG" >> $GITHUB_OUTPUT
+          echo "EOF" >> $GITHUB_OUTPUT
+      - name: Check if release PR exists
+        id: check_pr
+        if: steps.check_changes.outputs.has_changes == 'true'
+        run: |
+          # Check if there's already an open release PR
+          PR_NUMBER=$(gh pr list --head release-please --base main --json number --jq '.[0].number')
+          if [ -n "$PR_NUMBER" ]; then
+            echo "pr_exists=true" >> $GITHUB_OUTPUT
+            echo "pr_number=$PR_NUMBER" >> $GITHUB_OUTPUT
+            echo "Found existing PR #$PR_NUMBER"
+          else
+            echo "pr_exists=false" >> $GITHUB_OUTPUT
+            echo "No existing release PR found"
+          fi
+        env:
+          GH_TOKEN: ${{ secrets.RELEASE_TOKEN }}
+      - name: Create or update release branch
+        id: release_branch
+        if: steps.check_changes.outputs.has_changes == 'true'
+        run: |
+          git config user.name "han-eirik"
+          git config user.email "han-eirik@users.noreply.github.com"
+
+          # Create or update release-please branch
+          git checkout -B release-please
+
+          # Update version numbers across project files
+          # To add a new file for version updates, just add a new sed line below
+          NEW_VERSION="${{ steps.calver.outputs.new_tag }}"
+
+          # README.md - Update example Docker version
+          sed -i "s|Latest version: v[0-9]\+\.[0-9]\+\.[0-9]\+|Latest version: v$NEW_VERSION|g" README.md
+
+          # .env.example - If you have a VERSION variable
+          # sed -i "s/^VERSION=.*/VERSION=$NEW_VERSION/" .env.example
+
+          # docs/config.yml - If you have docs with version
+          # sed -i "s/^version:.*/version: $NEW_VERSION/" docs/config.yml
+
+          # Update CHANGELOG.md - prepend new release to existing changelog
+          NEW_CHANGELOG='${{ steps.changelog.outputs.content }}'
+          if [ -f CHANGELOG.md ]; then
+            # Existing changelog - prepend new release after the header
+            # Extract header (first 3 lines: # Changelog + blank + description)
+            head -n 3 CHANGELOG.md > CHANGELOG.tmp
+            # Add new release
+            echo "" >> CHANGELOG.tmp
+            echo "$NEW_CHANGELOG" >> CHANGELOG.tmp
+            # Add existing releases (skip header)
+            tail -n +4 CHANGELOG.md >> CHANGELOG.tmp
+            mv CHANGELOG.tmp CHANGELOG.md
+          else
+            # No existing changelog - create new one with header
+            {
+              echo "# Changelog"
+              echo ""
+              echo "All notable changes to this project will be documented in this file."
+              echo ""
+              echo "$NEW_CHANGELOG"
+            } > CHANGELOG.md
+          fi
+
+          # Stage all updated files (add more files here if you add version updates above)
+          git add pyproject.toml CHANGELOG.md README.md
+          git diff --staged --quiet || git commit -m "chore(release): prepare release $NEW_VERSION"
+
+          # Force push to update the branch
+          git push origin release-please --force
+      - name: Create or update PR
+        if: steps.check_changes.outputs.has_changes == 'true'
+        run: |
+          NEW_TAG="${{ steps.calver.outputs.new_tag }}"
+
+          # Create PR body
+          PR_BODY="## Release $NEW_TAG
+
+          This PR was automatically generated and will create a new release when merged.
+
+          ### Changes
+
+          ${{ steps.changelog.outputs.content }}
+
+          ---
+
+          **Merging this PR will:**
+          - Create tag \`$NEW_TAG\`
+          - Create GitHub Release with changelog
+          - Build and push Docker images
+          - Update version to \`$NEW_TAG\`
+          "
+
+          if [ "${{ steps.check_pr.outputs.pr_exists }}" == "true" ]; then
+            # Update existing PR
+            gh pr edit ${{ steps.check_pr.outputs.pr_number }} \
+              --title "chore(release): $NEW_TAG" \
+              --body "$PR_BODY"
+            echo "Updated existing PR #${{ steps.check_pr.outputs.pr_number }}"
+          else
+            # Create new PR
+            gh pr create \
+              --title "chore(release): $NEW_TAG" \
+              --body "$PR_BODY" \
+              --base main \
+              --head release-please
+            echo "Created new release PR"
+          fi
+        env:
+          GH_TOKEN: ${{ secrets.RELEASE_TOKEN }}
+  # This job runs when the release PR is merged
+  create-release:
+    runs-on: ubuntu-latest
+    if: github.event_name == 'push' && github.ref == 'refs/heads/main' && contains(github.event.head_commit.message, 'chore(release):')
+    steps:
+      - name: Checkout
+        uses: actions/checkout@08eba0b27e820071cde6df949e0beb9ba4906955 # v4.3.0
+        with:
+          fetch-depth: 0
+      - name: Extract version from commit
+        id: extract_version
+        run: |
+          # Extract version from commit message like "chore(release): prepare release 2025.1.0"
+          VERSION=$(echo "${{ github.event.head_commit.message }}" | grep -oP '(?<=release )[0-9]+\.[0-9]+\.[0-9]+' || echo "")
+          if [ -z "$VERSION" ]; then
+            echo "Could not extract version from commit message"
+            exit 1
+          fi
+          echo "version=$VERSION" >> $GITHUB_OUTPUT
+          echo "Creating release for version: $VERSION"
+      - name: Create and push tag
+        run: |
+          VERSION="${{ steps.extract_version.outputs.version }}"
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git tag -a "$VERSION" -m "Release $VERSION"
+          git push origin "$VERSION"
+      - name: Install mise
+        uses: jdx/mise-action@c37c93293d6b742fc901e1406b8f764f6fb19dac # v2.4.4
+        with:
+          install: true
+      - name: Generate release notes
+        id: read_changelog
+        run: |
+          VERSION="${{ steps.extract_version.outputs.version }}"
+          PREVIOUS_TAG=$(git describe --tags --abbrev=0 HEAD^ 2>/dev/null || echo "")
+
+          if [ -n "$PREVIOUS_TAG" ]; then
+            # Generate changelog for just this release
+            CHANGELOG=$(mise x -- git-cliff --strip header "$PREVIOUS_TAG..$VERSION")
+          else
+            # First release - generate from beginning
+            CHANGELOG=$(mise x -- git-cliff --strip header --tag "$VERSION")
+          fi
+
+          echo "changelog<<EOF" >> $GITHUB_OUTPUT
+          echo "$CHANGELOG" >> $GITHUB_OUTPUT
+          echo "EOF" >> $GITHUB_OUTPUT
+      - name: Create GitHub Release
+        uses: ncipollo/release-action@b7eabc95ff50cbeeedec83973935c8f306dfcd0b # v1.20.0
+        with:
+          tag: ${{ steps.extract_version.outputs.version }}
+          name: Release ${{ steps.extract_version.outputs.version }}
+          body: ${{ steps.read_changelog.outputs.changelog }}
+          draft: false
+          prerelease: false
+          token: ${{ secrets.RELEASE_TOKEN }}
+      - name: Delete release branch
+        run: |
+          git push origin --delete release-please || true

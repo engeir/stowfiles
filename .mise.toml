@@ -9,3 +9,7 @@ expect -re "password" { send -- [exec pass Hp-Ubuntu/login]\r }
 
 expect eof
 """
+
+[tools]
+hk = "latest"
+pkl = "latest"

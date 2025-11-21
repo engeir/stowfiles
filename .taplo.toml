@@ -1,0 +1,4 @@
+[formatting]
+allowed_blank_lines = 1
+column_width = 88
+reorder_keys = true
