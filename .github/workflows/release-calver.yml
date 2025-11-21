@@ -150,7 +150,7 @@ jobs:
           fi
 
           # Stage all updated files (add more files here if you add version updates above)
-          git add pyproject.toml CHANGELOG.md README.md
+          git add CHANGELOG.md README.md
           git diff --staged --quiet || git commit -m "chore(release): prepare release $NEW_VERSION"
 
           # Force push to update the branch
