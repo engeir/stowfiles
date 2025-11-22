@@ -1,11 +1,11 @@
 [settings]
 experimental = true
-python_venv_auto_create = true
-lockfile = true
-yes = true
 go_set_gobin = true
-pipx_uvx = true
 idiomatic_version_file_enable_tools = ["rust"]
+lockfile = true
+pipx_uvx = true
+python_venv_auto_create = true
+yes = true
 
 [env]
 AQUA_GLOBAL_CONFIG = "{{env.HOME}}/.config/aquaproj-aqua/aqua.yaml"
@@ -128,8 +128,6 @@ python = [
 "cargo:just" = "latest"
 "cargo:kanata" = "latest"
 "cargo:languagetool-rust" = "latest"
-"cargo:leftwm" = "latest"
-"cargo:leftwm-watchdog" = "latest"
 "cargo:lscolors" = "latest"
 "cargo:lux-cli" = "latest"
 "cargo:mask" = "latest"
