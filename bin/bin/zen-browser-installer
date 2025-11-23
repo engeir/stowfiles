@@ -1,14 +1,12 @@
 #!/usr/bin/env bash
 
-# https://github.com/zen-browser/desktop/releases/latest/download/zen.linux-x86_64.tar.xz
-
 if ! command -v gum >/dev/null 2>&1; then
     echo "gum is a required dependency of this script. See https://github.com/charmbracelet/gum."
     exit 1
 fi
 
-INSTALL_DIR="/usr/lib/zen-browser"
-URL="https://github.com/zen-browser/desktop/releases/latest/download/zen.linux-x86_64.tar.xz"
+INSTALL_DIR="/home/eirikre/bin/zen-browser"
+URL="https://github.com/zen-browser/desktop/releases/download/1.17.8b/zen-x86_64.AppImage"
 
 gum style \
     --foreground 212 --border-foreground 212 --border double \
@@ -26,17 +24,16 @@ gum confirm "Proceed with installation?" || exit 0
 TMP_DIR=$(mktemp -d -p /var/tmp)
 trap "rm -rf $TMP_DIR" EXIT
 
-# Download the tarball
+# Download the AppImage
 gum spin --spinner dot --title "Downloading Zen Browser..." -- \
-    curl -L "$URL" -o "$TMP_DIR/zen.tar.xz"
+    curl -L "$URL" -o "$TMP_DIR/zen-browser"
 
-# Extract to temporary location
-gum spin --spinner dot --title "Extracting archive..." -- \
-    tar -xf "$TMP_DIR/zen.tar.xz" -C "$TMP_DIR"
+gum spin --spinner dot --title "Creating executable..." -- \
+    chmod +x "$TMP_DIR/zen-browser"
 
 # Remove old installation if it exists and install new version
 gum spin --spinner dot --title "Installing to $INSTALL_DIR..." -- \
-    sudo -A rm -rf "$INSTALL_DIR" && sudo -A mv "$TMP_DIR/zen" "$INSTALL_DIR"
+    sudo -A rm -rf "$INSTALL_DIR" && sudo -A mv "$TMP_DIR/zen-browser" "$INSTALL_DIR"
 
 gum style \
     --foreground 212 --border-foreground 212 --border double \

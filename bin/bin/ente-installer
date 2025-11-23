@@ -1,0 +1,54 @@
+#!/usr/bin/env bash
+
+# https://github.com/ente-io/photos-desktop/releases
+
+if ! command -v gum >/dev/null 2>&1; then
+    echo "gum is a required dependency of this script. See https://github.com/charmbracelet/gum."
+    exit 1
+fi
+
+if ! command -v jq >/dev/null 2>&1; then
+    echo "jq is a required dependency of this script. Install with: sudo pacman -S jq"
+    exit 1
+fi
+
+# Fetch latest version from GitHub API
+echo "Fetching latest version..."
+LATEST_VERSION=$(curl -s "https://api.github.com/repos/ente-io/photos-desktop/releases/latest" | jq -r '.tag_name')
+VERSION=${LATEST_VERSION#v}
+URL="https://github.com/ente-io/photos-desktop/releases/download/${LATEST_VERSION}/ente-${VERSION}-x86_64.AppImage"
+
+INSTALL_DIR="/usr/bin"
+APP_NAME="ente"
+
+gum style \
+    --foreground 212 --border-foreground 212 --border double \
+    --align center --width 50 --margin "1 2" --padding "2 4" \
+    "Welcome to the Ente Photos installer!" "" "Ente will be installed to $INSTALL_DIR/$APP_NAME"
+
+gum style \
+    --foreground 212 --border-foreground 212 --border double \
+    --align center --width 50 --margin "1 2" --padding "2 4" \
+    "This will download and install Ente from:" "" "$URL"
+
+gum confirm "Proceed with installation?" || exit 0
+
+# Create temporary directory
+TMP_DIR=$(mktemp -d -p /var/tmp)
+trap 'rm -rf "$TMP_DIR"' EXIT
+
+# Download the AppImage
+gum spin --spinner dot --title "Downloading Ente Photos..." -- \
+    curl -L "$URL" -o "$TMP_DIR/ente.AppImage"
+
+# Make executable
+chmod +x "$TMP_DIR/ente.AppImage"
+
+# Remove old installation if it exists and install new version
+gum spin --spinner dot --title "Installing to $INSTALL_DIR..." -- \
+    sudo -A rm -f "$INSTALL_DIR/$APP_NAME" && sudo -A mv "$TMP_DIR/ente.AppImage" "$INSTALL_DIR/$APP_NAME"
+
+gum style \
+    --foreground 212 --border-foreground 212 --border double \
+    --align center --width 50 --margin "1 2" --padding "2 4" \
+    "Installation complete!" "" "Run '$APP_NAME' to launch Ente Photos"
