@@ -1,5 +1,7 @@
 # Changelog
 
+
+
 ## [2025.11.2](https://github.com/engeir/stowfiles/compare/2025.11.1..2025.11.2) - 2025-11-23
 
 ### Features
