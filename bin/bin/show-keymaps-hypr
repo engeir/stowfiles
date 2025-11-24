@@ -15,5 +15,5 @@ cat ~/.config/hypr/configs/Keybinds.conf ~/.config/hypr/UserConfigs/UserKeybinds
     | sed 's/^\s//; s/£ exec /£ /' \
     | sort \
     | column -s "£" -t \
-    | fzf
+    | fzf --no-preview
 # | column -s "#" -t \
