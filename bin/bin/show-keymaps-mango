@@ -1,0 +1,169 @@
+#!/usr/bin/env bash
+
+# Extract keybindings from mango bind.conf
+# HELP comments on the line immediately above the binding will be shown as descriptions
+# Bindings without HELP comments will have empty descriptions
+
+CONFIG="$HOME/.config/mango/bind.conf"
+
+if [ ! -f "$CONFIG" ]; then
+    echo "Error: Config file not found at $CONFIG"
+    exit 1
+fi
+
+# Process the config file
+awk '
+    # If line is a HELP comment, save it
+    /^# HELP:/ {
+        help = substr($0, 9)  # Remove "# HELP: "
+        # Trim leading/trailing whitespace
+        gsub(/^[ \t]+|[ \t]+$/, "", help)
+        next
+    }
+    
+    # If line is a bind, process it (with or without help comment)
+    /^bind=/ {
+        # Extract keybind and command
+        line = substr($0, 6)  # Remove "bind="
+        
+        # Split by comma
+        split(line, parts, ",")
+        
+        # Keybind is parts[1] and parts[2]
+        keybind = parts[1] "," parts[2]
+        
+        # Command is rest
+        cmd = ""
+        for (i = 3; i <= length(parts); i++) {
+            if (i > 3) cmd = cmd ","
+            cmd = cmd parts[i]
+        }
+        
+        # Clean up keybind formatting
+        gsub(/SUPER/, "Super", keybind)
+        gsub(/ALT/, "Alt", keybind)
+        gsub(/CTRL/, "Ctrl", keybind)
+        gsub(/SHIFT/, "Shift", keybind)
+        gsub(/none/, "", keybind)
+        
+        # Convert keycodes to numbers
+        gsub(/code:10/, "1", keybind)
+        gsub(/code:11/, "2", keybind)
+        gsub(/code:12/, "3", keybind)
+        gsub(/code:13/, "4", keybind)
+        gsub(/code:14/, "5", keybind)
+        gsub(/code:15/, "6", keybind)
+        gsub(/code:16/, "7", keybind)
+        gsub(/code:17/, "8", keybind)
+        gsub(/code:18/, "9", keybind)
+        gsub(/code:60/, ".", keybind)
+        
+        # Replace separators with + for readability
+        gsub(/\+/, " + ", keybind)
+        gsub(/,/, " + ", keybind)
+        
+        # Clean up any leading/trailing " + " from removed "none"
+        gsub(/^ \+ /, "", keybind)
+        gsub(/ \+ $/, "", keybind)
+        
+        # Truncate command to 30 chars if needed
+        if (length(cmd) > 30) {
+            cmd = substr(cmd, 1, 27) "..."
+        }
+        
+        # Output formatted with special separator
+        printf "%s£%s£%s\n", keybind, cmd, help
+        
+        # Reset help for next iteration
+        help = ""
+        next
+    }
+    
+    # If line is a mousebind, process it (with or without help comment)
+    /^mousebind=/ {
+        line = substr($0, 11)  # Remove "mousebind="
+        split(line, parts, ",")
+        
+        keybind = parts[1] "," parts[2]
+        cmd = ""
+        for (i = 3; i <= length(parts); i++) {
+            if (i > 3) cmd = cmd ","
+            cmd = cmd parts[i]
+        }
+        
+        # Format mouse bindings
+        gsub(/SUPER/, "Super", keybind)
+        gsub(/ALT/, "Alt", keybind)
+        gsub(/CTRL/, "Ctrl", keybind)
+        gsub(/SHIFT/, "Shift", keybind)
+        gsub(/NONE/, "Mouse", keybind)
+        gsub(/btn_left/, "Left Click", keybind)
+        gsub(/btn_right/, "Right Click", keybind)
+        gsub(/btn_middle/, "Middle Click", keybind)
+        gsub(/,/, " + ", keybind)
+        gsub(/\+/, " + ", keybind)
+        
+        # Truncate command to 30 chars if needed
+        if (length(cmd) > 30) {
+            cmd = substr(cmd, 1, 27) "..."
+        }
+        
+        printf "%s£%s£%s\n", keybind, cmd, help
+        help = ""
+        next
+    }
+    
+    # If line is a gesturebind, process it (with or without help comment)
+    /^gesturebind=/ {
+        line = substr($0, 13)  # Remove "gesturebind="
+        split(line, parts, ",")
+        
+        gesture = parts[2] " (" parts[3] " fingers)"
+        cmd = ""
+        for (i = 4; i <= length(parts); i++) {
+            if (i > 4) cmd = cmd ","
+            cmd = cmd parts[i]
+        }
+        
+        # Capitalize gesture direction
+        gsub(/^[a-z]/, toupper(substr(gesture, 1, 1)), gesture)
+        
+        # Truncate command to 30 chars if needed
+        if (length(cmd) > 30) {
+            cmd = substr(cmd, 1, 27) "..."
+        }
+        
+        printf "Gesture: %s£%s£%s\n", gesture, cmd, help
+        help = ""
+        next
+    }
+    
+    # If line is a switchbind, process it (with or without help comment)
+    /^switchbind=/ {
+        line = substr($0, 12)  # Remove "switchbind="
+        split(line, parts, ",")
+        
+        switch_action = parts[1]
+        cmd = ""
+        for (i = 2; i <= length(parts); i++) {
+            if (i > 2) cmd = cmd ","
+            cmd = cmd parts[i]
+        }
+        
+        # Format switch action
+        if (switch_action == "fold") switch_action = "Lid Close"
+        if (switch_action == "unfold") switch_action = "Lid Open"
+        
+        # Truncate command to 30 chars if needed
+        if (length(cmd) > 30) {
+            cmd = substr(cmd, 1, 27) "..."
+        }
+        
+        printf "Switch: %s£%s£%s\n", switch_action, cmd, help
+        help = ""
+        next
+    }
+    
+    # If we hit any other line, clear help
+    { help = "" }
+' "$CONFIG" | sort | column -s "£" -t | fzf --header "Mango Keybindings Cheat Sheet" --header-first --no-preview
