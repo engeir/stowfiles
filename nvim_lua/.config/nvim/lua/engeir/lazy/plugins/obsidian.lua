@@ -1,12 +1,11 @@
 return {
   "obsidian-nvim/obsidian.nvim",
   version = "*", -- recommended, use latest release instead of latest commit
-  lazy = true,
-  cmd = { "ObsidianQuickSwitch" }, -- "ObsidianWorkspace"
+  cmd = { "Obsidian" }, -- "ObsidianWorkspace"
   keys = {
-    { "<leader>oq", "<cmd>Obsidian quick_switch<CR>" },
-    { "<leader>on", "<cmd>Obsidian new<CR>" },
-    { "<leader>ob", "<cmd>Obsidian backlinks<CR>" },
+    { "<leader>oq", "<cmd>Obsidian quick_switch<CR>", desc = "Obsidian quick switch" },
+    { "<leader>on", "<cmd>Obsidian new<CR>", desc = "Obsidian new" },
+    { "<leader>ob", "<cmd>Obsidian backlinks<CR>", desc = "Obsidian backlinks" },
   },
   -- ft = "markdown",
   -- Replace the above line with this if you only want to load obsidian.nvim for markdown files in your vault:
@@ -19,6 +18,12 @@ return {
     "BufNewFile "
       .. vim.fn.expand("~")
       .. "/projects/simple-recipes-cookbook/src/**.md",
+    "BufReadPre "
+      .. vim.fn.expand("~")
+      .. "/.local/share/obsidian-vault/personal/**.md",
+    "BufNewFile "
+      .. vim.fn.expand("~")
+      .. "/.local/share/obsidian-vault/personal/**.md",
   },
   dependencies = {
     "nvim-lua/plenary.nvim",
@@ -33,6 +38,10 @@ return {
       {
         name = "mere",
         path = "~/projects/simple-recipes-cookbook/src",
+      },
+      {
+        name = "personal",
+        path = "~/.local/share/obsidian-vault/personal",
       },
     },
     -- Optional, completion of wiki links, local markdown links, and tags using nvim-cmp.

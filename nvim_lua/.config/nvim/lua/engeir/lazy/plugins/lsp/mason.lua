@@ -21,7 +21,6 @@ return {
       "lua_ls",
       "markdownlint",
       "mypy",
-      "pyrefly",
       "ruff",
       "shellcheck",
       "shellharden",
