@@ -1,6 +1,18 @@
 #!/bin/env bash
 # Read QR codes
 
+has() {
+    if ! command -v "$1" >/dev/null 2>&1; then
+        echo "$1 is not installed. Adjust $0 if you think you do not need it."
+        notify-send "$1 is not installed. Adjust $0 if you think you do not need it."
+        exit 1
+    fi
+}
+
+has slop
+has import
+has zbarimg
+
 imagefile="/tmp/sloppy.$RANDOM.png"
 text="/tmp/translation"
 echo "$imagefile"
