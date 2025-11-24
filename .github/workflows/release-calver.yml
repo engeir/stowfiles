@@ -131,12 +131,12 @@ jobs:
           if [ -f CHANGELOG.md ]; then
             # Existing changelog - prepend new release after the header
             # Extract header (first 3 lines: # Changelog + blank + description)
-            head -n 3 CHANGELOG.md > CHANGELOG.tmp
+            head -n 1 CHANGELOG.md > CHANGELOG.tmp
             # Add new release
             echo "" >> CHANGELOG.tmp
             echo "$NEW_CHANGELOG" >> CHANGELOG.tmp
             # Add existing releases (skip header)
-            tail -n +4 CHANGELOG.md >> CHANGELOG.tmp
+            tail -n +2 CHANGELOG.md >> CHANGELOG.tmp
             mv CHANGELOG.tmp CHANGELOG.md
           else
             # No existing changelog - create new one with header
