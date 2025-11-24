@@ -30,6 +30,21 @@
     }
   },
   "model": "ollama/nhn-medium:latest",
+  "permission": {
+    "bash": {
+      "*": "ask",
+      "ls": "allow",
+      "pwd": "allow",
+      "echo": "allow",
+      "cat": "allow",
+      "which": "allow",
+      "id": "allow",
+      "whoami": "allow",
+      "uname": "allow"
+    },
+    "edit": "ask",
+    "webfetch": "allow"
+  },
   "lsp": {
     "ruff": {
       "command": ["ruff", "server"],
