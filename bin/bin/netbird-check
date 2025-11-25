@@ -1,7 +1,12 @@
 #!/bin/bash
 
-# Continuously check connectivity to vg.no and ip.nhn.no
-# If both fail, restart netbird
+# Continuously check connectivity to vg.no, helsegitlab.nhn.no and ip.nhn.no
+# If all fail, restart netbird
+
+LOG_FILE="$HOME/.local/share/netbird-check.log"
+SUCCESS_LOGGED=0
+
+mkdir -p "$(dirname "$LOG_FILE")"
 
 check_connectivity() {
     timeout 5 ping -c 3 -W 5 vg.no >/dev/null 2>&1
@@ -10,20 +15,49 @@ check_connectivity() {
     timeout 5 ping -c 3 -W 5 helsegitlab.nhn.no >/dev/null 2>&1
     nhn_status=$?
 
-    if [ "$vg_status" -ne 0 ] || [ "$nhn_status" -ne 0 ]; then
-        if [ "$vg_status" -ne 0 ] && [ "$nhn_status" -ne 0 ]; then
-            echo "$(date): Both vg.no and helsegitlab.nhn.no unreachable. Restarting netbird..."
+    timeout 5 ping -c 3 -W 5 ip.nhn.no >/dev/null 2>&1
+    ip_status=$?
+
+    if [ "$vg_status" -ne 0 ] || [ "$ip_status" -ne 0 ] || [ "$nhn_status" -ne 0 ]; then
+        # Clear the current line and print error on new line
+        printf "\r\033[K"
+        if [ "$nhn_status" -ne 0 ]; then
+            echo "$(date): helsegitlab.nhn.no unreachable. Restarting netbird..."
         elif [ "$vg_status" -ne 0 ]; then
             echo "$(date): vg.no unreachable. Restarting netbird..."
-        else
-            echo "$(date): helsegitlab.nhn.no unreachable. Restarting netbird..."
+        elif [ "$ip_status" -ne 0 ]; then
+            echo "$(date): ip.nhn.no unreachable. Restarting netbird..."
         fi
+
+        # Log netbird status before restart (always append)
+        {
+            echo "=== $(date): Connectivity failure, logging status before restart ==="
+            netbird status --detail 2>&1
+            echo ""
+        } >>"$LOG_FILE"
+
         netbird down
         sleep 2
-        netbird up --enable-rosenpass --rosenpass-permissive
-        echo "$(date): Netbird restarted"
+        netbird up # --enable-rosenpass --rosenpass-permissive
+        echo "$(date): Netbird restarted. Waiting 20 seconds for everything to settle."
+        # Make sure we wait for everything to be configured
+        sleep 20
+
+        # Reset the success logged flag since we restarted
+        SUCCESS_LOGGED=0
     else
-        echo "$(date): Connectivity OK"
+        # Update same line for OK status
+        printf "\r$(date): Connectivity OK"
+
+        # Log netbird status during success (only once until next restart)
+        if [ "$SUCCESS_LOGGED" -eq 0 ]; then
+            {
+                echo "=== $(date): Connectivity OK, logging current status ==="
+                netbird status --detail 2>&1
+                echo ""
+            } >>"$LOG_FILE"
+            SUCCESS_LOGGED=1
+        fi
     fi
 }
 
