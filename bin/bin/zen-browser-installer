@@ -5,7 +5,7 @@ if ! command -v gum >/dev/null 2>&1; then
     exit 1
 fi
 
-INSTALL_DIR="/home/eirikre/bin/zen-browser"
+INSTALL_DIR="$HOME/bin/zen-browser"
 URL="https://github.com/zen-browser/desktop/releases/download/1.17.8b/zen-x86_64.AppImage"
 
 gum style \
@@ -22,7 +22,8 @@ gum confirm "Proceed with installation?" || exit 0
 
 # Create temporary directory
 TMP_DIR=$(mktemp -d -p /var/tmp)
-trap "rm -rf $TMP_DIR" EXIT
+# A bit dangerous to just remove stuff in scripts...
+# trap "rm -rf $TMP_DIR" EXIT
 
 # Download the AppImage
 gum spin --spinner dot --title "Downloading Zen Browser..." -- \
@@ -33,7 +34,7 @@ gum spin --spinner dot --title "Creating executable..." -- \
 
 # Remove old installation if it exists and install new version
 gum spin --spinner dot --title "Installing to $INSTALL_DIR..." -- \
-    sudo -A rm -rf "$INSTALL_DIR" && sudo -A mv "$TMP_DIR/zen-browser" "$INSTALL_DIR"
+    sudo -A rm -rf "$INSTALL_DIR"; sudo -A mv "$TMP_DIR/zen-browser" "$INSTALL_DIR"
 
 gum style \
     --foreground 212 --border-foreground 212 --border double \
