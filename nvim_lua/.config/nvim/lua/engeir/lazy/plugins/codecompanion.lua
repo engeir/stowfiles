@@ -7,10 +7,11 @@ return {
       desc = "CodeCompanion Chat",
     },
   },
-  enabled = function()
-    vim.fn.system("timeout 0.4 ollama list >/dev/null 2>&1")
-    return vim.v.shell_error == 0
-  end,
+  enabled = true,
+  -- function()
+  --   vim.fn.system("timeout 0.4 ollama list >/dev/null 2>&1")
+  --   return vim.v.shell_error == 0
+  -- end,
   config = function()
     require("codecompanion").setup({
       system_prompt = function(opts)
@@ -24,6 +25,15 @@ return {
         end
       end,
       adapters = {
+        acp = {
+          claude_code = function()
+            return require("codecompanion.adapters").extend("claude_code", {
+              env = {
+                CLAUDE_CODE_OAUTH_TOKEN = "cmd:pass Claude/OAuth/token",
+              },
+            })
+          end,
+        },
         http = {
           ollama = function()
             return require("codecompanion.adapters").extend("ollama", {
