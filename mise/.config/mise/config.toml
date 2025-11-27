@@ -47,17 +47,18 @@ EXE = "64"
 FIFO = "06"
 HARDLINK = "81"
 MISSING = "f0"
-NNN_FCOLORS = "{{env.BLK}}{{env.CHR}}{{env.DIR}}{{env.EXE}}{{env.REG}}{{env.HARDLINK}}{{env.SYMLINK}}{{env.MISSING}}{{env.ORPHAN}}{{env.FIFO}}{{env.SOCK}}{{env.OTHER}}"
-NNN_FIFO = "/tmp/nnn.fifo nnn"
-NNN_TERMINAL = "{{env.TERMINAL}}"
-NNN_TRASH = 1
-NNN_USE_EDITOR = 1
 ORPHAN = "00"
 OTHER = "58"
 REG = "fa"
 SOCK = "00"
 SYMLINK = "d6"
 USE_VIDEOTHUMB = 1
+
+NNN_FCOLORS = "{{env.BLK}}{{env.CHR}}{{env.DIR}}{{env.EXE}}{{env.REG}}{{env.HARDLINK}}{{env.SYMLINK}}{{env.MISSING}}{{env.ORPHAN}}{{env.FIFO}}{{env.SOCK}}{{env.OTHER}}"
+NNN_FIFO = "/tmp/nnn.fifo nnn"
+NNN_TERMINAL = "{{env.TERMINAL}}"
+NNN_TRASH = 1
+NNN_USE_EDITOR = 1
 # # ubuntu
 # NNN_PLUG_UBUNTU = 'a:bookmarks;b:bibfinder;c:diffs;d:dragdrop;f:fzcd;i:ipinfo;j:autojump;m:viewmedia;o:organize;p:preview-tui2;r:rm-send;s:fzplug;u:upload'
 # NNN_BMS_UBUNTU = 'b:~/Pictures/;c:~/.config/;d:~/Downloads/;l:~/.local;n:~/Documents/notes_papers/;m:~/stowfiles/;o:~/OneDrive/;p:~/programs/;r:~/science/ref/;s:~/bin/;t:~/Documents/teaching/;w:~/Documents/work/'
@@ -75,10 +76,11 @@ USE_VIDEOTHUMB = 1
 # NNN_OPENER = "{{ get_env(name='NNN_OPENER_' ~ env.MACHINE) }}"
 
 # FZF settings
+FZF_DEFAULT_COMMAND = 'fd --type f -I'
+
 FD_OPTIONS = "--follow --exclude .git --exclude node_modules"
 FZF_ALT_C_COMMAND = "fd --type d {{env.FD_OPTIONS}}"
 FZF_CTRL_T_COMMAND = "{{env.FZF_DEFAULT_COMMAND}}"
-FZF_DEFAULT_COMMAND = 'fd --type f -I'
 FZF_DEFAULT_OPTS = "--layout=reverse --height 100% -1 --multi --inline-info --preview='[[ $(file --mime {}) =~ binary ]] && echo {} is a binary file || (bat --style=numbers --color=always {} || cat {}) 2> /dev/null | head -300' --bind='f3:execute(bat --style=numbers {} || less -f {}),f2:toggle-preview,ctrl-f:preview-down,ctrl-b:preview-up,ctrl-d:half-page-down,ctrl-u:half-page-up,ctrl-s:select-all+accept,ctrl-y:execute-silent(echo {+} | xclip -sel clip)'"
 
 HAS_ALLOW_UNSAFE = "y"
