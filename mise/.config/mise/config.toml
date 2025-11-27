@@ -12,11 +12,16 @@ AQUA_GLOBAL_CONFIG = "{{env.HOME}}/.config/aquaproj-aqua/aqua.yaml"
 BUN_INSTALL = "{{env.HOME}}/.bun"
 DENO_INSTALL = "{{env.HOME}}/.deno"
 DPRINT_INSTALL = "{{env.HOME}}/.local/bin/"
+EDITOR = "nvim"
 HELIX_RUNTIME = "{{env.HOME}}/programs/helix/runtime"
+PAGER = "less" # Suggested at https://github.com/jarun/nnn/wiki/Advanced-use-cases#pager-as-opener
 RIPGREP_CONFIG_PATH = "{{env.HOME}}/.config/ripgrep/ripgreprc"
 RUSH_CONFIG = "{{env.HOME}}/.config/rush/rush.ini"
-ZDOTDIR = "{{env.HOME}}/.config/zsh/"
 SUDO_ASKPASS = "{{env.HOME}}/bin/askpass-root"
+TERM = "screen-256color" # Needed for italics to work in tmux
+TERMINAL = "ghostty"
+VISUAL = "{{env.EDITOR}}"
+ZDOTDIR = "{{env.HOME}}/.config/zsh/"
 _.path = [
   "{{env.HOME}}/.local/share/bob/nvim-bin/",
   "{{env.HOME}}/.local/share/nvim/mason/bin",
@@ -27,11 +32,6 @@ _.path = [
   "{{env.HOME}}/.local/share/aquaproj-aqua",
 ]
 _.source = "{{env.HOME}}/.config/mise/machine_specific.sh"
-EDITOR = "nvim"
-VISUAL = "{{env.EDITOR}}"
-TERMINAL = "ghostty"
-TERM = "screen-256color" # Needed for italics to work in tmux
-PAGER = "less" # Suggested at https://github.com/jarun/nnn/wiki/Advanced-use-cases#pager-as-opener
 # LESSOPEN = "|/usr/local/bin/lesspipe.sh %s"  # I'm testing if batpipe from bat-extras is good (instead of lesspipe)
 # MANROFFOPT = "-c"  # Fix formatting issue (or just use batman from bat-extras)
 # MANPAGER = "sh -c 'col -bx | bat -l man -p'"
@@ -40,24 +40,24 @@ BAT_THEME = "Catppuccin Mocha"
 LESS = '-Ri '
 
 # NNN
-NNN_USE_EDITOR = 1
-USE_VIDEOTHUMB = 1
 BLK = "34"
 CHR = "c9"
 DIR = "e6"
 EXE = "64"
-REG = "fa"
-HARDLINK = "81"
-SYMLINK = "d6"
-MISSING = "f0"
-ORPHAN = "00"
 FIFO = "06"
-SOCK = "00"
-OTHER = "58"
+HARDLINK = "81"
+MISSING = "f0"
 NNN_FCOLORS = "{{env.BLK}}{{env.CHR}}{{env.DIR}}{{env.EXE}}{{env.REG}}{{env.HARDLINK}}{{env.SYMLINK}}{{env.MISSING}}{{env.ORPHAN}}{{env.FIFO}}{{env.SOCK}}{{env.OTHER}}"
 NNN_FIFO = "/tmp/nnn.fifo nnn"
-NNN_TRASH = 1
 NNN_TERMINAL = "{{env.TERMINAL}}"
+NNN_TRASH = 1
+NNN_USE_EDITOR = 1
+ORPHAN = "00"
+OTHER = "58"
+REG = "fa"
+SOCK = "00"
+SYMLINK = "d6"
+USE_VIDEOTHUMB = 1
 # # ubuntu
 # NNN_PLUG_UBUNTU = 'a:bookmarks;b:bibfinder;c:diffs;d:dragdrop;f:fzcd;i:ipinfo;j:autojump;m:viewmedia;o:organize;p:preview-tui2;r:rm-send;s:fzplug;u:upload'
 # NNN_BMS_UBUNTU = 'b:~/Pictures/;c:~/.config/;d:~/Downloads/;l:~/.local;n:~/Documents/notes_papers/;m:~/stowfiles/;o:~/OneDrive/;p:~/programs/;r:~/science/ref/;s:~/bin/;t:~/Documents/teaching/;w:~/Documents/work/'
@@ -77,9 +77,9 @@ NNN_TERMINAL = "{{env.TERMINAL}}"
 # FZF settings
 FD_OPTIONS = "--follow --exclude .git --exclude node_modules"
 FZF_ALT_C_COMMAND = "fd --type d {{env.FD_OPTIONS}}"
-FZF_DEFAULT_OPTS = "--layout=reverse --height 100% -1 --multi --inline-info --preview='[[ $(file --mime {}) =~ binary ]] && echo {} is a binary file || (bat --style=numbers --color=always {} || cat {}) 2> /dev/null | head -300' --bind='f3:execute(bat --style=numbers {} || less -f {}),f2:toggle-preview,ctrl-f:preview-down,ctrl-b:preview-up,ctrl-d:half-page-down,ctrl-u:half-page-up,ctrl-s:select-all+accept,ctrl-y:execute-silent(echo {+} | xclip -sel clip)'"
-FZF_DEFAULT_COMMAND = 'fd --type f -I'
 FZF_CTRL_T_COMMAND = "{{env.FZF_DEFAULT_COMMAND}}"
+FZF_DEFAULT_COMMAND = 'fd --type f -I'
+FZF_DEFAULT_OPTS = "--layout=reverse --height 100% -1 --multi --inline-info --preview='[[ $(file --mime {}) =~ binary ]] && echo {} is a binary file || (bat --style=numbers --color=always {} || cat {}) 2> /dev/null | head -300' --bind='f3:execute(bat --style=numbers {} || less -f {}),f2:toggle-preview,ctrl-f:preview-down,ctrl-b:preview-up,ctrl-d:half-page-down,ctrl-u:half-page-up,ctrl-s:select-all+accept,ctrl-y:execute-silent(echo {+} | xclip -sel clip)'"
 
 HAS_ALLOW_UNSAFE = "y"
 
@@ -97,6 +97,7 @@ python = [
   "sub-0.4:latest",
 ]
 
+bun = "latest"
 "cargo:alacritty" = "latest"
 "cargo:bacon" = "latest"
 "cargo:bob-nvim" = "latest"
@@ -172,15 +173,33 @@ python = [
 "cargo:xcolor" = "latest"
 "cargo:xh" = "latest"
 "cargo:zellij" = "latest"
+claude = "latest"
+dprint = "latest"
+fnox = "latest"
+gleam = "latest"
+glow = "latest"
+go = "latest"
 "go:github.com/yuucu/todotui/cmd/todotui" = "latest"
+jj = "latest"
+jq = "latest"
+lua = "latest"
+node = "latest"
+npm = "latest"
 "npm:@graphlab-fr/cosma" = "latest"
 "npm:cosma" = "latest"
 "npm:cwebp" = "latest"
 "npm:jsonlint" = "latest"
+"npm:opencode-ai" = "latest"
 "npm:tldr" = "latest"
 "npm:yaml-language-server" = "latest"
+pandoc = "latest"
 "pipx:calcure" = "latest"
 "pipx:llm" = "latest"
+prettier = "latest"
+rust = "latest"
+tinytex = "latest"
+tmux = "latest"
+typst = "latest"
 "ubi:Enter-tainer/typstyle" = "latest"
 "ubi:MordechaiHadad/bob" = "latest"
 "ubi:Myriad-Dreamin/shiroa" = "latest"
@@ -201,26 +220,6 @@ python = [
 "ubi:pvolok/mprocs" = "latest"
 "ubi:pythops/bluetui" = "latest"
 "ubi:sharkdp/bat" = "latest"
-bun = "latest"
-claude = "latest"
-dprint = "latest"
-fnox = "latest"
-gleam = "latest"
-glow = "latest"
-go = "latest"
-jj = "latest"
-jq = "latest"
-julia = "latest"
-lua = "latest"
-node = "latest"
-npm = "latest"
-pandoc = "latest"
-prettier = "latest"
-rust = "latest"
-tinytex = "latest"
-tmux = "latest"
-typst = "latest"
 usage = "latest"
 yazi = "latest"
 zig = "0.13"
-"npm:opencode-ai" = "latest"
