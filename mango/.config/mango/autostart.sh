@@ -28,10 +28,10 @@ swaybg -m fill -i ~/.cache/wallpaper/wallpaper.jpg >/dev/null 2>&1 &
 
 # top bar
 has waybar
-~/.config/mango/scripts/hide_waybar_mango.sh
+~/.config/mango/scripts/hide_waybar_mango.sh --set
 
 has clipcatd
-pgrep -x clipcatd || clipcatd >/dev/null 2>&1 &
+pgrep -x clipcatd >/dev/null || clipcatd >/dev/null 2>&1 &
 
 # xwayland dpi scale
 has xrdb
@@ -44,12 +44,12 @@ fcitx5 --replace -d >/dev/null 2>&1 &
 
 # bluetooth
 has blueman-applet
-pgrep -x blueman-applet || blueman-applet >/dev/null 2>&1 &
+pgrep -x blueman-applet >/dev/null || blueman-applet >/dev/null 2>&1 &
 
 # network
 has nm-applet
-pgrep -x nm-applet || nm-applet >/dev/null 2>&1 &
+pgrep -x nm-applet >/dev/null || nm-applet >/dev/null 2>&1 &
 
 # change light value and volume value by swayosd-client in keybind
 has swayosd-server
-pgrep -x swayosd-server || swayosd-server >/dev/null 2>&1 &
+pgrep -x swayosd-server >/dev/null || swayosd-server >/dev/null 2>&1 &
