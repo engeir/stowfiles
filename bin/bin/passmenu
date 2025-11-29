@@ -9,13 +9,12 @@ if [[ $1 == "--type" ]]; then
 fi
 
 if [[ -n $WAYLAND_DISPLAY ]]; then
-    dmenu='dmenu  -c -nb "#2d2d2d" -nf "#7070c2" -sb "#8c8cd0" -sf "#2d2d2d" -l 20 -fn "CaskaydiaMono Nerd Font"'
-    # dmenu='mew -nb 2d2d2d -nf 7070c2 -sb 8c8cd0 -sf 2d2d2d -l 20 -f "CaskaydiaMono Nerd Font"'
+    dmenu=(fuzzel -d -w 50 -p "pass: ")
     xdotool="ydotool type --file -"
 elif [[ $(uname -s) == "Darwin" ]]; then
-    dmenu=sk
+    dmenu=(sk)
 elif [[ -n $DISPLAY ]]; then
-    dmenu='dmenu  -c -nb "#2d2d2d" -nf "#7070c2" -sb "#8c8cd0" -sf "#2d2d2d" -l 20 -fn "CaskaydiaMono Nerd Font"'
+    dmenu=(dmenu -c -nb "#2d2d2d" -nf "#7070c2" -sb "#8c8cd0" -sf "#2d2d2d" -l 20 -fn "CaskaydiaMono Nerd Font")
     xdotool="xdotool type --clearmodifiers --file -"
 else
     echo "Error: No Wayland or X11 display detected" >&2
@@ -27,7 +26,7 @@ password_files=("$prefix"/**/*.gpg)
 password_files=("${password_files[@]#"$prefix"/}")
 password_files=("${password_files[@]%.gpg}")
 
-password=$(printf '%s\n' "${password_files[@]}" | eval "$dmenu" "$@")
+password=$(printf '%s\n' "${password_files[@]}" | "${dmenu[@]}" "$@")
 
 [[ -n $password ]] || exit
 
