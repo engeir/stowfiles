@@ -1,9 +1,19 @@
 #!/bin/bash
 
+has() {
+    if ! command -v "$1" >/dev/null 2>&1; then
+        echo "$1 is not installed. Adjust $0 if you think you do not need it."
+        notify-send "$1 is not installed. Adjust $0 if you think you do not need it."
+        exit 1
+    fi
+}
+
+has fuzzel
+
 PATH="$HOME/bin:$HOME/.local/bin:$HOME/.local/share/mise/shims:$PATH"
 
 {
     tr ':' '\n' <<<"$PATH" | while IFS= read -r dir; do
         [ -e "$dir" ] && find -L "$dir" -maxdepth 1 -type f -executable -printf '%f\n' 2>/dev/null
-    done | fuzzel -d | "${SHELL:-"/bin/sh"}" &
+    done | sort -u | fuzzel -d | "${SHELL:-"/bin/sh"}" &
 }
