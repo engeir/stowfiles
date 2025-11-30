@@ -13,15 +13,23 @@ if [[ $(uname -s) == "Darwin" ]]; then
     fd=fd
 else
     # Linux
-    DIR1="$HOME/Documents/pdfs/"
+    DIR1="$HOME/Documents/"
     DIR2="$HOME/science/"
-    dmenu="dmenu -b -l 20"
+    if [[ -n $WAYLAND_DISPLAY ]]; then
+        FS="16"
+        WIDTH="$(mmsg -gx | grep "$(mmsg -go | grep 'selmon 1' | awk '{print $1}')" | grep "width" | awk '{print $3}')"
+        WIDTH=$(("$WIDTH" / FS))
+        WIDTH=$((WIDTH < 150 ? WIDTH : 150))
+        dmenu=(fuzzel -a bottom -d --dpi-aware=yes -w "$WIDTH" -f "CaskaydiaMono Nerd Font:size=$FS" -l 20 -p "PDF: ")
+    else
+        dmenu=(dmenu -b -nb "#2d2d2d" -nf "#7070c2" -sb "#8c8cd0" -sf "#2d2d2d" -l 20 -fn "CaskaydiaMono Nerd Font")
+    fi
     open=xdg-open
     fd=fd
 fi
 
 cd ~ || exit 1
-c=$("$fd" -I . -e 'pdf' "$DIR1" "$DIR2" | grep -o ".*pdf$" | awk -F'/' '{print $NF}' | eval "$dmenu")
+c=$("$fd" -I . -e 'pdf' "$DIR1" "$DIR2" | grep -o ".*pdf$" | awk -F'/' '{print $NF}' | "${dmenu[@]}")
 
 # Exit if none is chosen
 [ "$c" = "" ] && exit
