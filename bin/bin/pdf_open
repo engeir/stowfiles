@@ -17,7 +17,8 @@ else
     DIR2="$HOME/science/"
     if [[ -n $WAYLAND_DISPLAY ]]; then
         FS="16"
-        WIDTH="$(mmsg -gx | grep "$(mmsg -go | grep 'selmon 1' | awk '{print $1}')" | grep "width" | awk '{print $3}')"
+        MONITOR=$(mmsg -go | grep 'selmon 1' | awk '{print $1}')
+        WIDTH=$(wlr-randr --json | jq -r ".[] | select(.name == \"$MONITOR\") | .modes[] | select(.current == true) | .width")
         WIDTH=$(("$WIDTH" / FS))
         WIDTH=$((WIDTH < 150 ? WIDTH : 150))
         dmenu=(fuzzel -a bottom -d --dpi-aware=yes -w "$WIDTH" -f "CaskaydiaMono Nerd Font:size=$FS" -l 20 -p "PDF: ")
