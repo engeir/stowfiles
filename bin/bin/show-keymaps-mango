@@ -164,6 +164,48 @@ awk '
         next
     }
     
+    # If line is an axisbind (mouse scroll wheel), process it (with or without help comment)
+    /^axisbind=/ {
+        line = substr($0, 10)  # Remove "axisbind="
+        split(line, parts, ",")
+        
+        keybind = parts[1] "," parts[2]
+        cmd = ""
+        for (i = 3; i <= length(parts); i++) {
+            if (i > 3) cmd = cmd ","
+            cmd = cmd parts[i]
+        }
+        
+        # Format axis bindings
+        gsub(/SUPER/, "Super", keybind)
+        gsub(/ALT/, "Alt", keybind)
+        gsub(/CTRL/, "Ctrl", keybind)
+        gsub(/SHIFT/, "Shift", keybind)
+        
+        # Convert UP/DOWN to scroll directions
+        if (keybind ~ /UP/) {
+            gsub(/,UP/, "", keybind)
+            if (keybind != "") keybind = keybind " + "
+            keybind = keybind "Scroll Up"
+        } else if (keybind ~ /DOWN/) {
+            gsub(/,DOWN/, "", keybind)
+            if (keybind != "") keybind = keybind " + "
+            keybind = keybind "Scroll Down"
+        }
+        
+        gsub(/\+/, " + ", keybind)
+        gsub(/,/, " + ", keybind)
+        
+        # Truncate command to 30 chars if needed
+        if (length(cmd) > 30) {
+            cmd = substr(cmd, 1, 27) "..."
+        }
+        
+        printf "%s£%s£%s\n", keybind, cmd, help
+        help = ""
+        next
+    }
+    
     # If we hit any other line, clear help
     { help = "" }
 ' "$CONFIG" | sort | column -s "£" -t | fzf --header "Mango Keybindings Cheat Sheet" --header-first --no-preview
