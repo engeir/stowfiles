@@ -5,7 +5,7 @@ if ! command -v gum >/dev/null 2>&1; then
     exit 1
 fi
 
-INSTALL_DIR="$HOME/bin/zen-browser"
+INSTALL_DIR="$HOME/.local/bin/zen-browser"
 URL="https://github.com/zen-browser/desktop/releases/download/1.17.8b/zen-x86_64.AppImage"
 
 gum style \

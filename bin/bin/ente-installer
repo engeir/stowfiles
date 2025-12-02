@@ -19,7 +19,7 @@ VERSION=${LATEST_VERSION#v}
 URL="https://github.com/ente-io/photos-desktop/releases/download/${LATEST_VERSION}/ente-${VERSION}-x86_64.AppImage"
 
 INSTALL_DIR="/usr/bin"
-APP_NAME="ente"
+APP_NAME="ente.AppImage"
 
 gum style \
     --foreground 212 --border-foreground 212 --border double \
