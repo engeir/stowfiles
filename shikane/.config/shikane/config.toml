@@ -1,4 +1,31 @@
+# Shikane + MangoWC lid and monitor management solution
+#
+# This config works together with:
+# - mango bind.conf (switchbind for lid events)
+# - mango idle.sh script (handles suspend/wake logic)
+#
+# Behavior:
+# - Windows moved to appropriate profile
+#   - Lid up/down while connected to monitor
+#   - Monitor (dis)connected while lid up
+# - Suspend:
+#   - Lid down without monitor
+#   - Lid down + using monitor → disconnect monitor (idle.sh)
+# - Wake up:
+#   - Lid up while suspended
+#   - Lid down + suspended → connect monitor (ACPI/BIOS)
+#
+# How it works:
+# 1. Shikane detects monitor changes and switches profiles
+# 2. Each profile exec runs idle.sh which checks lid state + monitor count
+# 3. idle.sh decides: suspend if lid closed AND no external monitors
+# 4. Lid events (from bind.conf switchbind) directly control eDP-1 on/off
+#
+# shikane: https://gitlab.com/w0lff/shikane
+# mango: https://github.com/DreamMaoMao/mangowc
+
 [[profile]]
+exec = ["~/.config/mango/scripts/idle.sh"]
 name = "laptop"
 
 [[profile.output]]
@@ -11,16 +38,21 @@ search = ["m=0x323D", "s=", "v=AU Optronics"]
 transform = "normal"
 
 [[profile]]
-name = "laptop-one-monitor"
+exec = ["~/.config/mango/scripts/idle.sh"]
+name = "one-monitor"
 
 [[profile.output]]
 adaptive_sync = false
 enable = true
 mode = "2560x1440@59.951Hz"
-position = "1920,0"
+position = "0,0"
 scale = 1.0
 search = ["m=P27h-30", "s=V30D3RX6", "v=Lenovo Group Limited"]
 transform = "normal"
+
+[[profile]]
+exec = ["~/.config/mango/scripts/idle.sh"]
+name = "laptop-one-monitor"
 
 [[profile.output]]
 adaptive_sync = false
@@ -29,4 +61,13 @@ mode = "1920x1080@60.049Hz"
 position = "0,0"
 scale = 1.0
 search = ["m=0x323D", "s=", "v=AU Optronics"]
+transform = "normal"
+
+[[profile.output]]
+adaptive_sync = false
+enable = true
+mode = "2560x1440@59.951Hz"
+position = "1920,0"
+scale = 1.0
+search = ["m=P27h-30", "s=V30D3RX6", "v=Lenovo Group Limited"]
 transform = "normal"
