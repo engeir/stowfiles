@@ -17,6 +17,8 @@ dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP
 # monitor auto attach
 has shikane
 pgrep -x shikane >/dev/null 2>&1 || shikane >/dev/null 2>&1 &
+# has way-displays
+# pgrep -x way-displays >/dev/null 2>&1 || exec way-displays >/tmp/way-displays."$XDG_VTNR.$USER".log 2>&1
 
 # notify
 has dunst
