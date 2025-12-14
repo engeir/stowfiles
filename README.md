@@ -7,7 +7,7 @@
 <img src="assets/logo-alt.svg" width="50%">
 </div>
 
-<sup>Latest version: v2025.11.3</sup>
+<sup>Latest version: v2025.12.1</sup>
 
 ## Neovim
 
