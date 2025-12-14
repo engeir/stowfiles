@@ -569,4 +569,3 @@ i zapfchan: URW 'Base 35' font pack for LaTeX
 i zapfding: URW 'Base 35' font pack for LaTeX
 i zref: A new reference scheme for LaTeX
 ```
-    
