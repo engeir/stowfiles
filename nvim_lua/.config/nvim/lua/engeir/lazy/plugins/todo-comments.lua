@@ -1,7 +1,6 @@
 return {
   "folke/todo-comments.nvim",
   event = { "BufReadPost", "BufNewFile" },
-  cmd = { "TodoTrouble", "TodoTelescope" },
   opts = {
     keywords = {
       FIXME = {
@@ -23,6 +22,5 @@ return {
   },
   keys = {
     { "<leader>wtq", "<cmd>TodoQuickFix<CR>", desc = "TodoQuickFix" },
-    { "<leader>wtf", "<cmd>TodoTelescope<CR>", desc = "TodoTelescope" },
   },
 }

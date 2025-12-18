@@ -432,40 +432,7 @@ return {
         return result
       end
 
-      local my_telescope = {
-        {
-          name = "All files",
-          action = "lua require('telescope.builtin').find_files({hidden=true})",
-          section = "Telescope",
-        },
-        {
-          name = "Git files",
-          action = "lua require'engeir.lazy.telescope.telescope-extra'.project_files()",
-          section = "Telescope",
-        },
-        {
-          name = "Old files",
-          action = "Telescope oldfiles",
-          section = "Telescope",
-        },
-        {
-          name = "Live grep",
-          action = "lua require('telescope.builtin').grep_string({search=''})",
-          section = "Telescope",
-        },
-        {
-          name = "Command history",
-          action = "Telescope command_history",
-          section = "Telescope",
-        },
-        {
-          name = "Help tags",
-          action = "Telescope help_tags",
-          section = "Telescope",
-        },
-      }
       local items = {
-        my_telescope,
         starter.sections.recent_files(5, true, true),
         starter.sections.recent_files(5, false, true),
         {
@@ -477,7 +444,7 @@ return {
       }
       local content_hooks = {
         starter.gen_hook.adding_bullet(),
-        starter.gen_hook.indexing("all", { "Builtin actions", "Telescope" }),
+        starter.gen_hook.indexing("all", { "Builtin actions" }),
         starter.gen_hook.aligning("center", "center"),
       }
       local starter_opts = {
