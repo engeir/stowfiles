@@ -1,6 +1,6 @@
 return {
   "saghen/blink.pairs",
-  version = "0.3",
+  version = "*",
   dependencies = "saghen/blink.download",
 
   --- @module 'blink.pairs'

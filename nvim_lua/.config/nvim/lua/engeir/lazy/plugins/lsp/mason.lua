@@ -24,7 +24,7 @@ return {
       "ruff",
       "shellcheck",
       "shellharden",
-      "sourcery",
+      -- "sourcery",
       "stylua",
       "taplo",
       "texlab",

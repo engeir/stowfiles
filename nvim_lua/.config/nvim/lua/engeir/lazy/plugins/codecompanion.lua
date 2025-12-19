@@ -8,6 +8,7 @@ return {
     },
   },
   enabled = true,
+  version = "v17.33.0",
   -- function()
   --   vim.fn.system("timeout 0.4 ollama list >/dev/null 2>&1")
   --   return vim.v.shell_error == 0
@@ -54,7 +55,8 @@ return {
       },
       strategies = {
         chat = {
-          adapter = { name = "ollama", model = "nhn-large:latest" },
+          adapter = "claude_code",
+          -- adapter = { name = "ollama", model = "nhn-large:latest" },
         },
         inline = {
           adapter = { name = "ollama", model = "nhn-coder-autocomplete:latest" },
