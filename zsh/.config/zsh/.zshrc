@@ -101,6 +101,17 @@ bindkey "^k" history-substring-search-up
 bindkey "^j" history-substring-search-down
 bindkey '^ ' autosuggest-accept
 
+# Some default suffix aliases
+alias -s md='bat'
+alias -s json='jless'
+alias -s yaml='bat -l yaml'
+alias -s md="$EDITOR"
+# Global aliases
+alias -g NUL='> /dev/null 2>&1'
+alias -g NE='2> /dev/null'
+alias -g DN='> /dev/null'
+bindkey -s '^Xgc' 'git commit -m ""\C-b'
+
 # History
 # From
 #  https://github.com/MichaelAquilina/zshrc/blob/master/zshrc
