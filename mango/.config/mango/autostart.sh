@@ -14,6 +14,10 @@ set +e
 has dbus-update-activation-environment
 dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP=wlroots >/dev/null 2>&1
 
+# battery
+has batsignal
+pgrep -x batsignal >/dev/null 2>&1 || batsignal -b >/dev/null 2>&1 &
+
 # monitor auto attach
 has shikane
 pgrep -x shikane >/dev/null 2>&1 || shikane >/dev/null 2>&1 &
