@@ -27,6 +27,21 @@
           "name": "NHN Small"
         }
       }
+    },
+    "openwebui": {
+      "npm": "@ai-sdk/openai-compatible",
+      "name": "OpenWebUI",
+      "options": {
+        "baseURL": "https://chat.nhn.no/api"
+      },
+      "models": {
+        "nhn-large:fast": {
+          "name": "NHN Large"
+        },
+        "nhn-small:fast": {
+          "name": "NHN Small"
+        }
+      }
     }
   },
   "model": "ollama/nhn-medium:latest",
