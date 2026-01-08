@@ -1,0 +1,65 @@
+#!/usr/bin/env bash
+
+# https://github.com/pkgforge-dev/ghostty-appimage/releases
+
+if ! command -v gum >/dev/null 2>&1; then
+    echo "gum is a required dependency of this script. See https://github.com/charmbracelet/gum."
+    exit 1
+fi
+
+INSTALL_DIR="$HOME/.local/bin"
+
+# Ensure install directory exists
+mkdir -p "$INSTALL_DIR"
+
+# Get the latest release URL dynamically
+API_RESPONSE=$(gum spin --spinner dot --title "Fetching latest release info..." -- \
+    curl -s "https://api.github.com/repos/pkgforge-dev/ghostty-appimage/releases/latest")
+
+# Extract tag_name (version) from API response
+VERSION_TAG=$(echo "$API_RESPONSE" | grep -o '"tag_name": "[^"]*"' | cut -d'"' -f4)
+
+if [[ -z "$VERSION_TAG" ]]; then
+    gum style \
+        --foreground 196 --border-foreground 196 --border double \
+        --align center --width 50 --margin "1 2" --padding "2 4" \
+        "Error: Could not get version from GitHub API" "" "Please check your internet connection."
+    exit 1
+fi
+
+# Remove 'v' prefix from version for filename
+VERSION=${VERSION_TAG#v}
+
+# Construct download URL using the correct filename format
+URL="https://github.com/pkgforge-dev/ghostty-appimage/releases/download/${VERSION_TAG}/Ghostty-${VERSION}-x86_64.AppImage"
+
+gum style \
+    --foreground 212 --border-foreground 212 --border double \
+    --align center --width 50 --margin "1 2" --padding "2 4" \
+    "Welcome to the Ghostty AppImage installer!" "" "Ghostty ${VERSION:-latest} will be installed to $INSTALL_DIR"
+
+gum style \
+    --foreground 212 --border-foreground 212 --border double \
+    --align center --width 50 --margin "1 2" --padding "2 4" \
+    "This will download and install Ghostty from:" "" "$URL"
+
+gum confirm "Proceed with installation?" || exit 0
+
+# Create temporary directory
+TMP_DIR=$(mktemp -d -p /var/tmp)
+trap 'rm -rf "$TMP_DIR"' EXIT
+
+# Download the AppImage
+gum spin --spinner dot --title "Downloading Ghostty AppImage..." -- \
+    curl -L "$URL" -o "$TMP_DIR/ghostty.AppImage"
+
+# Make it executable and move to install directory
+gum spin --spinner dot --title "Installing to $INSTALL_DIR..." -- \
+    chmod +x "$TMP_DIR/ghostty.AppImage" && \
+    rm -f "$INSTALL_DIR/ghostty" && \
+    mv "$TMP_DIR/ghostty.AppImage" "$INSTALL_DIR/ghostty"
+
+gum style \
+    --foreground 212 --border-foreground 212 --border double \
+    --align center --width 50 --margin "1 2" --padding "2 4" \
+    "Installation complete!" "" "Run 'ghostty' to launch Ghostty terminal"
