@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+
+rnnoise status | grep -i "is loaded" && exit 0
+rnnoise activate &
