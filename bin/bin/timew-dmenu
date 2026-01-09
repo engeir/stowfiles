@@ -36,7 +36,7 @@ start-func() {
     all_tags=$(cat <(get-all-tags) <(printf "%s\n" "${tags[@]}") | tr " " "\n" | sed '/^$/d' | sort | uniq)
 
     # Use dmenu for tag selection (allow multiple selections with newlines)
-    selected_tags=$(echo "$all_tags" | dmenu -c -l 10 -p "Select tags to start (Ctrl+Enter for multiple):")
+    selected_tags=$(echo "$all_tags" | dmenu -c -nb "#2d2d2d" -nf "#7070c2" -sb "#8c8cd0" -sf "#2d2d2d" -fn "CaskaydiaMono Nerd Font:size=14" -l 10 -p "Select tags to start (Ctrl+Enter for multiple):")
 
     if [[ -z $selected_tags ]]; then
         exit 0
@@ -44,7 +44,7 @@ start-func() {
 
     # Handle "new" tag
     if echo "$selected_tags" | grep -q "new"; then
-        new_tag=$(echo "" | dmenu -c -p "Enter new tag name:")
+        new_tag=$(echo "" | dmenu -c -nb "#2d2d2d" -nf "#7070c2" -sb "#8c8cd0" -sf "#2d2d2d" -fn "CaskaydiaMono Nerd Font:size=14" -p "Enter new tag name:")
         if [[ -z $new_tag ]]; then
             notify-send "Error" "Cannot have empty tags"
             exit 1
@@ -109,7 +109,7 @@ stop-func() {
 
     # Show current tags + "all" option
     stop_options=$(echo -e "${current_tags}\nall")
-    selected=$(echo "$stop_options" | dmenu -c -l 10 -p "Select tags to stop:")
+    selected=$(echo "$stop_options" | dmenu -c -nb "#2d2d2d" -nf "#7070c2" -sb "#8c8cd0" -sf "#2d2d2d" -fn "CaskaydiaMono Nerd Font:size=14" -l 10 -p "Select tags to stop:")
 
     if [[ -z $selected ]]; then
         exit 0
@@ -139,7 +139,7 @@ else
 fi
 
 # Show current status and ask for action
-action=$(echo -e "start\nstop" | dmenu -c -l 2 -p "$status_msg - Choose action:")
+action=$(echo -e "start\nstop" | dmenu -c -nb "#2d2d2d" -nf "#7070c2" -sb "#8c8cd0" -sf "#2d2d2d" -fn "CaskaydiaMono Nerd Font:size=14" -l 2 -p "$status_msg - Choose action:")
 
 case "$action" in
     start)

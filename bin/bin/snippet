@@ -260,7 +260,7 @@ case "$ACTION" in
         if [[ $DMENU_MODE == true ]]; then
             # Dmenu mode - directly type the selection
             setxkbmap no
-            xdotool type "$(fd -e md -x sh -c 'echo "{.} // $(extract_snippet "{}")"' | dmenu -l 20 -c | sed 's|^[^ ]* // ||')"
+            xdotool type "$(fd -e md -x sh -c 'echo "{.} // $(extract_snippet "{}")"' | dmenu -nb "#2d2d2d" -nf "#7070c2" -sb "#8c8cd0" -sf "#2d2d2d" -fn "CaskaydiaMono Nerd Font:size=14" -l 20 -c | sed 's|^[^ ]* // ||')"
             exit 0
         elif [[ $SEARCH_MODE == true ]]; then
             # Advanced search with ripgrep + fzf
