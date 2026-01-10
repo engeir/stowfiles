@@ -14,8 +14,8 @@ super + Escape
 
 super + Return
 # terminal emulator
-	ghostty
-	# kitty
+	kitty
+	# ghostty
 	# st
 	# gnome-terminal
 
