@@ -1,7 +1,0 @@
-#!/usr/bin/env bash
-
-if timew :quiet; then
-    echo "timew: $(timew | grep Tra | sed 's/Tracking //')"
-else
-    echo "timew is not tracking"
-fi
