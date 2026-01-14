@@ -6,6 +6,19 @@
 # displays and lets user select one to use. User may also select "manual
 # selection" which opens arandr.
 
+has() {
+    if ! command -v "$1" >/dev/null 2>&1; then
+        echo "$1 is not installed. Adjust $0 if you think you do not need it."
+        notify-send "$1 is not installed. Adjust $0 if you think you do not need it."
+        exit 1
+    fi
+}
+
+has arandr
+has dmenu
+has feh
+has xrandr
+
 twoscreen() { # If multi-monitor is selected and there are two screens.
     mirror=$(printf 'no\nyes' | dmenu -nb "#2d2d2d" -nf "#7070c2" -sb "#8c8cd0" -sf "#2d2d2d" -fn "CaskaydiaMono Nerd Font:size=14" -c -l 6 -p "Mirror displays?")
     # Mirror displays using native resolution of external display and a scaled
@@ -59,7 +72,12 @@ onescreen() { # If only one output available or chosen.
 }
 
 postrun() { # Stuff to run to clean up.
-    feh --bg-fill "$HOME"/.cache/bspwm/wallpaper.jpg
+    # Run the `random_wallpaper` command if available.
+    if command -v random_wallpaper >/dev/null 2>&1; then
+        random_wallpaper
+    else
+        feh --bg-fill "$HOME"/.cache/bspwm/wallpaper.jpg
+    fi
     {
         killall dunst
         setsid -f dunst
