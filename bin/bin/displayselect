@@ -14,7 +14,6 @@ has() {
     fi
 }
 
-has arandr
 has dmenu
 has feh
 has xrandr
@@ -108,6 +107,7 @@ fi
 chosen=$(printf '%s\nmulti-monitor\nmanual selection' "$screens" | dmenu -nb "#2d2d2d" -nf "#7070c2" -sb "#8c8cd0" -sf "#2d2d2d" -fn "CaskaydiaMono Nerd Font:size=14" -c -l 6 -p "Select display arangement:") \
     && case "$chosen" in
         "manual selection")
+            has arandr
             arandr
             exit
             ;;
