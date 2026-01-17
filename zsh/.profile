@@ -55,7 +55,7 @@ export PATH="$HOME/.local/share/zinit/plugins/atuinsh---atuin:$PATH"
 export PATH="$HOME/.local/share/mise/shims:$PATH"
 
 # Only run zsh-specific completions when in zsh
-if [ -n "$ZSH_VERSION" ]; then
+if [ "$ZSH_VERSION" != "" ]; then
     gen_comps() {
         if command -v "$1" >/dev/null; then
             eval "$1 $2" >"$HOME/.config/zsh/.zsh_functions/_$3"
