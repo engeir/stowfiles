@@ -1,0 +1,62 @@
+#!/bin/bash
+
+has() {
+    if ! command -v "$1" >/dev/null 2>&1; then
+        echo "$1 is not installed. Adjust $0 if you think you do not need it."
+        notify-send "$1 is not installed. Adjust $0 if you think you do not need it."
+        exit 1
+    fi
+}
+
+has awk
+has grep
+has upower
+has wlsunset
+
+# Configuration
+FLICKER_INTERVAL=0.08 # Faster flicker
+DARK_GAMMA=0.4        # Very dark for flicker effect (range 0.1-1.0)
+NORMAL_GAMMA=1.0      # Normal gamma
+CHECK_INTERVAL=5
+FLICKER_COUNT=8     # Number of flickers per cycle
+BATTERY_THRESHOLD=5 # Battery percentage threshold
+
+# Function to set gamma using wlsunset
+set_gamma() {
+    local gamma=$1
+    killall wlsunset 2>/dev/null
+    timeout 0.15 wlsunset -T 6500 -g "$gamma" &>/dev/null &
+}
+
+# Cleanup on exit
+trap 'killall wlsunset 2>/dev/null; exit' EXIT INT TERM
+
+# Track current state to avoid unnecessary gamma resets
+CURRENTLY_FLICKERING=false
+
+# Main loop
+while true; do
+    # Get battery percentage and charging status
+    BATTERY_PERCENT=$(upower -i "$(upower -e | grep 'battery')" | grep 'percentage' | awk '{print $2}' | tr -d '%')
+    CHARGING=$(upower -i "$(upower -e | grep 'battery')" | grep 'state' | awk '{print $2}')
+
+    # Check if battery is low and not charging
+    if [ "$BATTERY_PERCENT" -lt "$BATTERY_THRESHOLD" ] && [ "$CHARGING" != "charging" ]; then
+        CURRENTLY_FLICKERING=true
+        # Simulate flicker by rapidly changing gamma
+        for ((i = 0; i < FLICKER_COUNT; i++)); do
+            set_gamma "$DARK_GAMMA"
+            sleep "$FLICKER_INTERVAL"
+            set_gamma "$NORMAL_GAMMA"
+            sleep "$FLICKER_INTERVAL"
+        done
+    else
+        # Only reset gamma if we were previously flickering
+        if [ "$CURRENTLY_FLICKERING" = true ]; then
+            set_gamma "$NORMAL_GAMMA"
+            CURRENTLY_FLICKERING=false
+        fi
+    fi
+
+    sleep "$CHECK_INTERVAL"
+done

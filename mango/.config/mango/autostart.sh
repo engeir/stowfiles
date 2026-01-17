@@ -18,6 +18,10 @@ dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP
 has batsignal
 pgrep -x batsignal >/dev/null 2>&1 || batsignal -b >/dev/null 2>&1 &
 
+# screen flicker on low battery
+has battery-low-flicker-gamma
+pgrep -x battery-low-fli >/dev/null 2>&1 || battery-low-flicker-gamma &>/dev/null &
+
 # monitor auto attach
 has shikane
 pgrep -x shikane >/dev/null 2>&1 || shikane >/dev/null 2>&1 &
