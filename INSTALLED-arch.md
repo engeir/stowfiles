@@ -4,152 +4,153 @@
 
 ```txt {mise}
 age                                                        1.2.1
-bun                                                        1.3.5                         ~/.config/mise/config.toml  latest
-cargo:alacritty                                            0.15.1                        ~/.config/mise/config.toml  latest
-cargo:bacon                                                3.18.0                        ~/.config/mise/config.toml  latest
-cargo:blendr                                               1.3.3                         ~/.config/mise/config.toml  latest
-cargo:bob-nvim                                             4.1.2                         ~/.config/mise/config.toml  latest
-cargo:bottom                                               0.11.1                        ~/.config/mise/config.toml  latest
-cargo:cargo-binstall                                       1.15.6                        ~/.config/mise/config.toml  latest
-cargo:cargo-info                                           0.7.7                         ~/.config/mise/config.toml  latest
-cargo:cargo-update                                         18.0.0                        ~/.config/mise/config.toml  latest
-cargo:cargo-watch                                          8.5.3                         ~/.config/mise/config.toml  latest
-cargo:coreutils                                            0.2.2                         ~/.config/mise/config.toml  latest
-cargo:despell                                              1.0.1                         ~/.config/mise/config.toml  latest
-cargo:difftastic                                           0.65.0                        ~/.config/mise/config.toml  latest
-cargo:diskus                                               0.8.0                         ~/.config/mise/config.toml  latest
-cargo:du-dust                                              1.2.3                         ~/.config/mise/config.toml  latest
-cargo:dua-cli                                              2.32.0                        ~/.config/mise/config.toml  latest
-cargo:dysk                                                 3.3.0                         ~/.config/mise/config.toml  latest
-cargo:erdtree                                              3.1.2                         ~/.config/mise/config.toml  latest
-cargo:fd-find                                              10.3.0                        ~/.config/mise/config.toml  latest
-cargo:ffsend                                               0.2.77                        ~/.config/mise/config.toml  latest
-cargo:git-cliff                                            2.10.1                        ~/stowfiles/.mise.toml      latest
-cargo:git-delta                                            0.18.2                        ~/.config/mise/config.toml  latest
-cargo:gitui                                                0.27.0                        ~/.config/mise/config.toml  latest
-cargo:halp                                                 0.2.0                         ~/.config/mise/config.toml  latest
-cargo:hayagriva                                            0.9.1                         ~/.config/mise/config.toml  latest
-cargo:hvm                                                  2.0.22                        ~/.config/mise/config.toml  latest
-cargo:hyperfine                                            1.19.0                        ~/.config/mise/config.toml  latest
-cargo:irust                                                1.76.2                        ~/.config/mise/config.toml  latest
+bitwarden                                                  2025.12.0
+bun                                                        1.3.6             ~/.config/mise/config.toml  latest
+cargo:alacritty                                            0.15.1            ~/.config/mise/config.toml  latest
+cargo:bacon                                                3.18.0            ~/.config/mise/config.toml  latest
+cargo:bob-nvim                                             4.1.2             ~/.config/mise/config.toml  latest
+cargo:bottom                                               0.11.1            ~/.config/mise/config.toml  latest
+cargo:cargo-binstall                                       1.15.6            ~/.config/mise/config.toml  latest
+cargo:cargo-info                                           0.7.7             ~/.config/mise/config.toml  latest
+cargo:cargo-update                                         18.0.0            ~/.config/mise/config.toml  latest
+cargo:cargo-watch                                          8.5.3             ~/.config/mise/config.toml  latest
+cargo:coreutils                                            0.2.2             ~/.config/mise/config.toml  latest
+cargo:despell                                              1.0.1             ~/.config/mise/config.toml  latest
+cargo:difftastic                                           0.65.0            ~/.config/mise/config.toml  latest
+cargo:diskus                                               0.8.0             ~/.config/mise/config.toml  latest
+cargo:du-dust                                              1.2.3             ~/.config/mise/config.toml  latest
+cargo:dua-cli                                              2.32.0            ~/.config/mise/config.toml  latest
+cargo:dysk                                                 3.3.0             ~/.config/mise/config.toml  latest
+cargo:erdtree                                              3.1.2             ~/.config/mise/config.toml  latest
+cargo:fd-find                                              10.3.0            ~/.config/mise/config.toml  latest
+cargo:ffsend                                               0.2.77            ~/.config/mise/config.toml  latest
+cargo:git-cliff                                            2.10.1            ~/stowfiles/.mise.toml      latest
+cargo:git-delta                                            0.18.2            ~/.config/mise/config.toml  latest
+cargo:gitui                                                0.27.0            ~/.config/mise/config.toml  latest
+cargo:halp                                                 0.2.0             ~/.config/mise/config.toml  latest
+cargo:hayagriva                                            0.9.1             ~/.config/mise/config.toml  latest
+cargo:hvm                                                  2.0.22            ~/.config/mise/config.toml  latest
+cargo:hyperfine                                            1.19.0            ~/.config/mise/config.toml  latest
+cargo:irust                                                1.76.2            ~/.config/mise/config.toml  latest
 cargo:jj-cli                                               0.30.0
-cargo:jless                                                0.9.0                         ~/.config/mise/config.toml  latest
-cargo:jnv                                                  0.6.1                         ~/.config/mise/config.toml  latest
-cargo:just                                                 1.43.0                        ~/.config/mise/config.toml  latest
-cargo:kanata                                               1.9.0                         ~/.config/mise/config.toml  latest
-cargo:languagetool-rust                                    3.0.0                         ~/.config/mise/config.toml  latest
-cargo:lscolors                                             0.20.0                        ~/.config/mise/config.toml  latest
-cargo:lux-cli                                              0.18.1                        ~/.config/mise/config.toml  latest
-cargo:mask                                                 0.11.6                        ~/.config/mise/config.toml  latest
-cargo:mdbook                                               0.4.52                        ~/.config/mise/config.toml  latest
-cargo:mdbook-admonish                                      1.20.0                        ~/.config/mise/config.toml  latest
-cargo:mdbook-alerts                                        0.8.0                         ~/.config/mise/config.toml  latest
-cargo:mdbook-katex                                         0.9.4                         ~/.config/mise/config.toml  latest
-cargo:mdbook-repl                                          0.2.8                         ~/.config/mise/config.toml  latest
-cargo:mdbook-svgbob                                        0.2.2                         ~/.config/mise/config.toml  latest
-cargo:mdbook-toc                                           0.14.2                        ~/.config/mise/config.toml  latest
-cargo:menyoki                                              1.7.0                         ~/.config/mise/config.toml  latest
-cargo:mprocs                                               0.7.3                         ~/.config/mise/config.toml  latest
-cargo:navi                                                 2.23.0                        ~/.config/mise/config.toml  latest
-cargo:nu                                                   0.107.0                       ~/.config/mise/config.toml  latest
-cargo:numbat-cli                                           1.16.0                        ~/.config/mise/config.toml  latest
-cargo:pastel                                               0.10.0                        ~/.config/mise/config.toml  latest
-cargo:pngquant                                             3.0.3                         ~/.config/mise/config.toml  latest
-cargo:porsmo                                               0.3.4                         ~/.config/mise/config.toml  latest
-cargo:presenterm                                           0.15.1                        ~/.config/mise/config.toml  latest
-cargo:pueue                                                4.0.1                         ~/.config/mise/config.toml  latest
-cargo:riffdiff                                             3.4.1                         ~/.config/mise/config.toml  latest
-cargo:ripdrag                                              0.4.10                        ~/.config/mise/config.toml  latest
-cargo:ripgrep                                              14.1.1                        ~/.config/mise/config.toml  latest
-cargo:samply                                               0.13.1                        ~/.config/mise/config.toml  latest
-cargo:sccache                                              0.10.0                        ~/.config/mise/config.toml  latest
-cargo:sd                                                   1.0.0                         ~/.config/mise/config.toml  latest
-cargo:shellharden                                          4.3.1                         ~/.config/mise/config.toml  latest
-cargo:shpool                                               0.9.2                         ~/.config/mise/config.toml  latest
-cargo:skim                                                 0.20.5                        ~/.config/mise/config.toml  latest
-cargo:spotify-tui                                          0.25.0                        ~/.config/mise/config.toml  latest
-cargo:spotify_player                                       0.21.1                        ~/.config/mise/config.toml  latest
-cargo:stylua                                               2.3.0                         ~/.config/mise/config.toml  latest
-cargo:taplo-cli                                            0.10.0                        ~/.config/mise/config.toml  latest
-cargo:tex-fmt                                              0.5.5                         ~/.config/mise/config.toml  latest
-cargo:tidy-viewer                                          1.8.93                        ~/.config/mise/config.toml  latest
-cargo:tin-summer                                           1.21.14                       ~/.config/mise/config.toml  latest
-cargo:topgrade                                             16.0.4                        ~/.config/mise/config.toml  latest
-cargo:tree-sitter-cli                                      0.25.10                       ~/.config/mise/config.toml  latest
-cargo:viu                                                  1.5.1                         ~/.config/mise/config.toml  latest
-cargo:vivid                                                0.10.1                        ~/.config/mise/config.toml  latest
-cargo:watchexec-cli                                        2.3.2                         ~/.config/mise/config.toml  latest
-cargo:xcolor                                               0.5.1                         ~/.config/mise/config.toml  latest
-cargo:xh                                                   0.25.0                        ~/.config/mise/config.toml  latest
-cargo:zellij                                               0.43.1                        ~/.config/mise/config.toml  latest
-claude                                                     2.0.76                        ~/.config/mise/config.toml  latest
-dprint                                                     0.51.1                        ~/.config/mise/config.toml  latest
+cargo:jless                                                0.9.0             ~/.config/mise/config.toml  latest
+cargo:jnv                                                  0.6.1             ~/.config/mise/config.toml  latest
+cargo:just                                                 1.43.0            ~/.config/mise/config.toml  latest
+cargo:kanata                                               1.9.0             ~/.config/mise/config.toml  latest
+cargo:languagetool-rust                                    3.0.0             ~/.config/mise/config.toml  latest
+cargo:lscolors                                             0.20.0            ~/.config/mise/config.toml  latest
+cargo:lux-cli                                              0.18.1            ~/.config/mise/config.toml  latest
+cargo:mask                                                 0.11.6            ~/.config/mise/config.toml  latest
+cargo:mdbook                                               0.4.52            ~/.config/mise/config.toml  latest
+cargo:mdbook-admonish                                      1.20.0            ~/.config/mise/config.toml  latest
+cargo:mdbook-alerts                                        0.8.0             ~/.config/mise/config.toml  latest
+cargo:mdbook-katex                                         0.9.4             ~/.config/mise/config.toml  latest
+cargo:mdbook-repl                                          0.2.8             ~/.config/mise/config.toml  latest
+cargo:mdbook-svgbob                                        0.2.2             ~/.config/mise/config.toml  latest
+cargo:mdbook-toc                                           0.14.2            ~/.config/mise/config.toml  latest
+cargo:menyoki                                              1.7.0             ~/.config/mise/config.toml  latest
+cargo:mprocs                                               0.7.3             ~/.config/mise/config.toml  latest
+cargo:navi                                                 2.23.0            ~/.config/mise/config.toml  latest
+cargo:nu                                                   0.107.0           ~/.config/mise/config.toml  latest
+cargo:numbat-cli                                           1.16.0            ~/.config/mise/config.toml  latest
+cargo:pastel                                               0.10.0            ~/.config/mise/config.toml  latest
+cargo:pngquant                                             3.0.3             ~/.config/mise/config.toml  latest
+cargo:porsmo                                               0.3.4             ~/.config/mise/config.toml  latest
+cargo:presenterm                                           0.15.1            ~/.config/mise/config.toml  latest
+cargo:pueue                                                4.0.1             ~/.config/mise/config.toml  latest
+cargo:riffdiff                                             3.4.1             ~/.config/mise/config.toml  latest
+cargo:ripdrag                                              0.4.10            ~/.config/mise/config.toml  latest
+cargo:ripgrep                                              14.1.1            ~/.config/mise/config.toml  latest
+cargo:rusticon                                             0.2.3             ~/.config/mise/config.toml  latest
+cargo:samply                                               0.13.1            ~/.config/mise/config.toml  latest
+cargo:sccache                                              0.10.0            ~/.config/mise/config.toml  latest
+cargo:sd                                                   1.0.0             ~/.config/mise/config.toml  latest
+cargo:shellharden                                          4.3.1             ~/.config/mise/config.toml  latest
+cargo:shpool                                               0.9.2             ~/.config/mise/config.toml  latest
+cargo:skim                                                 0.20.5            ~/.config/mise/config.toml  latest
+cargo:spotify-tui                                          0.25.0            ~/.config/mise/config.toml  latest
+cargo:spotify_player                                       0.21.1            ~/.config/mise/config.toml  latest
+cargo:stylua                                               2.3.0             ~/.config/mise/config.toml  latest
+cargo:taplo-cli                                            0.10.0            ~/.config/mise/config.toml  latest
+cargo:tex-fmt                                              0.5.5             ~/.config/mise/config.toml  latest
+cargo:tidy-viewer                                          1.8.93            ~/.config/mise/config.toml  latest
+cargo:tin-summer                                           1.21.14           ~/.config/mise/config.toml  latest
+cargo:topgrade                                             16.0.4            ~/.config/mise/config.toml  latest
+cargo:tree-sitter-cli                                      0.25.10           ~/.config/mise/config.toml  latest
+cargo:viu                                                  1.5.1             ~/.config/mise/config.toml  latest
+cargo:vivid                                                0.10.1            ~/.config/mise/config.toml  latest
+cargo:watchexec-cli                                        2.3.2             ~/.config/mise/config.toml  latest
+cargo:xcolor                                               0.5.1             ~/.config/mise/config.toml  latest
+cargo:xh                                                   0.25.0            ~/.config/mise/config.toml  latest
+cargo:zellij                                               0.43.1            ~/.config/mise/config.toml  latest
+claude                                                     2.1.12            ~/.config/mise/config.toml  latest
+dprint                                                     0.51.1            ~/.config/mise/config.toml  latest
 ffmpeg                                                     8.0.1
-fnox                                                       1.7.0                         ~/.config/mise/config.toml  latest
-github:Enter-tainer/typstyle                               0.14.0                        ~/.config/mise/config.toml  latest
-github:MordechaiHadad/bob                                  4.1.6                         ~/.config/mise/config.toml  latest
-github:Myriad-Dreamin/shiroa                               0.3.0                         ~/.config/mise/config.toml  latest
-github:charmbracelet/sequin                                0.3.1                         ~/.config/mise/config.toml  latest
-github:dundee/gdu                                          5.32.0                        ~/.config/mise/config.toml  latest
-github:etcd-io/etcd                                        3.6.7                         ~/.config/mise/config.toml  latest
-github:filosottile/age                                     1.3.1                         ~/.config/mise/config.toml  latest
-github:goreleaser/goreleaser                               2.13.2                        ~/.config/mise/config.toml  latest
-github:houseabsolute/precious                              0.10.1                        ~/.config/mise/config.toml  latest
-github:ifd3f/caligula                                      0.4.10                        ~/.config/mise/config.toml  latest
-github:ismaelgv/rnr                                        0.5.1                         ~/.config/mise/config.toml  latest
-github:junegunn/fzf                                        0.67.0                        ~/.config/mise/config.toml  latest
-github:mayanayza/netvisor                                  0.12.9                        ~/.config/mise/config.toml  latest
-github:mgdm/htmlq                                          0.4.0                         ~/.config/mise/config.toml  latest
-github:ms-jpq/sad                                          0.4.32                        ~/.config/mise/config.toml  latest
-github:patrickvane/shfmt                                   master                        ~/.config/mise/config.toml  latest
-github:pvolok/mprocs                                       0.8.2                         ~/.config/mise/config.toml  latest
-github:pythops/bluetui                                     0.8.0                         ~/.config/mise/config.toml  latest
-github:sharkdp/bat                                         0.26.1                        ~/.config/mise/config.toml  latest
-gleam                                                      1.14.0                        ~/.config/mise/config.toml  latest
-glow                                                       2.1.1                         ~/.config/mise/config.toml  latest
+fnox                                                       1.8.0             ~/.config/mise/config.toml  latest
+github:Enter-tainer/typstyle                               0.14.4            ~/.config/mise/config.toml  latest
+github:MordechaiHadad/bob                                  4.1.6             ~/.config/mise/config.toml  latest
+github:Myriad-Dreamin/shiroa                               0.3.0             ~/.config/mise/config.toml  latest
+github:charmbracelet/sequin                                0.3.1             ~/.config/mise/config.toml  latest
+github:dundee/gdu                                          5.32.0            ~/.config/mise/config.toml  latest
+github:etcd-io/etcd                                        3.6.7             ~/.config/mise/config.toml  latest
+github:filosottile/age                                     1.3.1             ~/.config/mise/config.toml  latest
+github:goreleaser/goreleaser                               2.13.3            ~/.config/mise/config.toml  latest
+github:houseabsolute/precious                              0.10.1            ~/.config/mise/config.toml  latest
+github:ifd3f/caligula                                      0.4.10            ~/.config/mise/config.toml  latest
+github:ismaelgv/rnr                                        0.5.1             ~/.config/mise/config.toml  latest
+github:junegunn/fzf                                        0.67.0            ~/.config/mise/config.toml  latest
+github:mayanayza/netvisor                                  0.13.5            ~/.config/mise/config.toml  latest
+github:mgdm/htmlq                                          0.4.0             ~/.config/mise/config.toml  latest
+github:ms-jpq/sad                                          0.4.32            ~/.config/mise/config.toml  latest
+github:patrickvane/shfmt                                   master            ~/.config/mise/config.toml  latest
+github:pvolok/mprocs                                       0.8.2             ~/.config/mise/config.toml  latest
+github:pythops/bluetui                                     0.8.0             ~/.config/mise/config.toml  latest
+github:sharkdp/bat                                         0.26.1            ~/.config/mise/config.toml  latest
+gleam                                                      1.14.0            ~/.config/mise/config.toml  latest
+glow                                                       2.1.1             ~/.config/mise/config.toml  latest
 go                                                         1.25.5
 go:github.com/golangci/golangci-lint/v2/cmd/golangci-lint  2.1.6
-go:github.com/yuucu/todotui/cmd/todotui                    0.7.2                         ~/.config/mise/config.toml  latest
+go:github.com/yuucu/todotui/cmd/todotui                    0.7.2             ~/.config/mise/config.toml  latest
 go:golang.org/x/tools/gopls                                0.18.1
 hadolint                                                   2.14.0
 helm                                                       3.17.4
-hk                                                         1.28.0                        ~/stowfiles/.mise.toml      latest
+hk                                                         1.29.0            ~/stowfiles/.mise.toml      latest
 hugo                                                       0.151.0
-jj                                                         0.36.0                        ~/.config/mise/config.toml  latest
-jq                                                         1.8.1                         ~/.config/mise/config.toml  latest
+jj                                                         0.37.0            ~/.config/mise/config.toml  latest
+jq                                                         1.8.1             ~/.config/mise/config.toml  latest
 julia                                                      1.10.3
 kind                                                       0.29.0
 kubectl                                                    1.33.3
-lua                                                        5.4.7                         ~/.config/mise/config.toml  latest
-node                                                       25.2.1                        ~/.config/mise/config.toml  latest
-npm                                                        11.7.0                        ~/.config/mise/config.toml  latest
-npm:@graphlab-fr/cosma                                     2.6.0                         ~/.config/mise/config.toml  latest
-npm:cosma                                                  0.0.1                         ~/.config/mise/config.toml  latest
-npm:cwebp                                                  3.2.0                         ~/.config/mise/config.toml  latest
+lua                                                        5.4.7             ~/.config/mise/config.toml  latest
+node                                                       25.3.0            ~/.config/mise/config.toml  latest
+npm                                                        11.7.0            ~/.config/mise/config.toml  latest
+npm:@graphlab-fr/cosma                                     2.6.0             ~/.config/mise/config.toml  latest
+npm:cosma                                                  0.0.1             ~/.config/mise/config.toml  latest
+npm:cwebp                                                  3.2.0             ~/.config/mise/config.toml  latest
 npm:cwebp-bin                                              8.0.0
-npm:jsonlint                                               1.6.3                         ~/.config/mise/config.toml  latest
-npm:opencode-ai                                            1.0.223                       ~/.config/mise/config.toml  latest
-npm:tldr                                                   3.4.0                         ~/.config/mise/config.toml  latest
-npm:yaml-language-server                                   1.19.2                        ~/.config/mise/config.toml  latest
-pandoc                                                     3.8.3                         ~/.config/mise/config.toml  latest
+npm:jsonlint                                               1.6.3             ~/.config/mise/config.toml  latest
+npm:opencode-ai                                            1.1.25            ~/.config/mise/config.toml  latest
+npm:tldr                                                   3.4.0             ~/.config/mise/config.toml  latest
+npm:yaml-language-server                                   1.19.2            ~/.config/mise/config.toml  latest
+pandoc                                                     3.8.3             ~/.config/mise/config.toml  latest
 pinact                                                     3.4.2
-pipx:calcure                                               3.2.1                         ~/.config/mise/config.toml  latest
-pipx:llm                                                   0.28                          ~/.config/mise/config.toml  latest
-pkl                                                        0.30.2                        ~/stowfiles/.mise.toml      latest
-prettier                                                   3.7.4                         ~/.config/mise/config.toml  latest
-python                                                     3.10.19                       ~/.config/mise/config.toml  sub-0.4:latest
-python                                                     3.11.14                       ~/.config/mise/config.toml  sub-0.3:latest
-python                                                     3.12.12                       ~/.config/mise/config.toml  sub-0.2:latest
-python                                                     3.13.11                       ~/.config/mise/config.toml  sub-0.1:latest
-python                                                     3.14.2                        ~/.config/mise/config.toml  latest
-rust                                                       nightly-2025-09-01 (symlink)
-rust                                                       1.92.0 (symlink)              ~/.config/mise/config.toml  latest
-tinytex                                                    2026.01                       ~/.config/mise/config.toml  latest
-tmux                                                       3.6                           ~/.config/mise/config.toml  latest
-typst                                                      0.14.2                        ~/.config/mise/config.toml  latest
-usage                                                      2.11.0                        ~/.config/mise/config.toml  latest
-yazi                                                       25.12.29                      ~/.config/mise/config.toml  latest
-zig                                                        0.13.0                        ~/.config/mise/config.toml  0.13
+pipx:calcure                                               3.2.1             ~/.config/mise/config.toml  latest
+pipx:llm                                                   0.28              ~/.config/mise/config.toml  latest
+pkl                                                        0.30.2            ~/stowfiles/.mise.toml      latest
+prettier                                                   3.8.0             ~/.config/mise/config.toml  latest
+python                                                     3.10.19           ~/.config/mise/config.toml  sub-0.4:latest
+python                                                     3.11.14           ~/.config/mise/config.toml  sub-0.3:latest
+python                                                     3.12.12           ~/.config/mise/config.toml  sub-0.2:latest
+python                                                     3.13.11           ~/.config/mise/config.toml  sub-0.1:latest
+python                                                     3.14.2            ~/.config/mise/config.toml  latest
+rust                                                       1.92.0 (symlink)  ~/.config/mise/config.toml  latest
+rye                                                        0.44.0
+tinytex                                                    2026.01           ~/.config/mise/config.toml  latest
+tmux                                                       3.6               ~/.config/mise/config.toml  latest
+typst                                                      0.14.2            ~/.config/mise/config.toml  latest
+usage                                                      2.12.0            ~/.config/mise/config.toml  latest
+yazi                                                       26.1.4            ~/.config/mise/config.toml  latest
+zig                                                        0.13.0            ~/.config/mise/config.toml  0.13
 ```
 
 ## Cargo
@@ -168,7 +169,7 @@ hayagriva v0.9.1:
     hayagriva
 mdbook-pandoc v0.11.0:
     mdbook-pandoc
-yazi-fm v25.12.29:
+yazi-fm v26.1.4:
     yazi
 ```
 
@@ -182,16 +183,17 @@ bibfish v0.3.4
 black v25.12.0
 crudini v0.9.6
 daltonlens v0.1.5
+dolphie v6.11.2
 ds-format v4.3.0
 euporie v2.10.3
 flake8 v7.3.0
 fonttools v4.61.1
-globus-cli v3.40.0
+globus-cli v3.41.0
 gorps v1.0.1
 httpie v3.2.4
 huge v0.1.3
 icloudpd v1.32.2
-jupyter-client v8.7.0
+jupyter-client v8.8.0
 khal v0.13.0
 mypy v1.19.1
 ncdump-rich v0.5.2
@@ -206,6 +208,7 @@ poetry v2.2.1
 pre-commit v4.5.1
 pre-commit-hooks v6.0.0
 python-import v0.1.0
+recoverpy v2.2.1
 rich-cli v1.8.1
 rich-codex v1.2.11
 rofimoji v6.7.0
@@ -214,7 +217,7 @@ tuiview v0.1.1
 wtpython v0.1
 yt-dlp v2025.12.8
 yubikey-manager v5.8.0
-zuban v0.4.1
+zuban v0.4.2
 ```
 
 ## Go
@@ -570,3 +573,4 @@ i zapfchan: URW 'Base 35' font pack for LaTeX
 i zapfding: URW 'Base 35' font pack for LaTeX
 i zref: A new reference scheme for LaTeX
 ```
+    
