@@ -19,7 +19,7 @@ VERSION=${LATEST_VERSION#v}
 URL="https://github.com/ente-io/photos-desktop/releases/download/${LATEST_VERSION}/ente-${VERSION}-x86_64.AppImage"
 
 INSTALL_DIR="/usr/bin"
-APP_NAME="ente-desktop"
+APP_NAME="ente.AppImage"
 
 gum style \
     --foreground 212 --border-foreground 212 --border double \
@@ -45,8 +45,11 @@ gum spin --spinner dot --title "Downloading Ente Photos..." -- \
 chmod +x "$TMP_DIR/ente.AppImage"
 
 # Remove old installation if it exists and install new version
+gum spin --spinner dot --title "Removing old installation..." -- \
+    sudo -A rm -f "$INSTALL_DIR/$APP_NAME" || true
+
 gum spin --spinner dot --title "Installing to $INSTALL_DIR..." -- \
-    sudo -A rm -f "$INSTALL_DIR/$APP_NAME" && sudo -A mv "$TMP_DIR/ente.AppImage" "$INSTALL_DIR/$APP_NAME"
+    sudo -A mv "$TMP_DIR/ente.AppImage" "$INSTALL_DIR/$APP_NAME"
 
 gum style \
     --foreground 212 --border-foreground 212 --border double \

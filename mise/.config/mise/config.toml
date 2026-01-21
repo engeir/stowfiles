@@ -5,7 +5,6 @@ idiomatic_version_file_enable_tools = ["rust"]
 lockfile = true
 pipx_uvx = true
 python_venv_auto_create = true
-yes = true
 
 [env]
 AQUA_GLOBAL_CONFIG = "{{env.HOME}}/.config/aquaproj-aqua/aqua.yaml"
@@ -224,3 +223,5 @@ typst = "latest"
 usage = "latest"
 yazi = "latest"
 zig = "0.13"
+lazydocker = "latest"
+gum = "latest"
