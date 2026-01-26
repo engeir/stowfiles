@@ -56,6 +56,7 @@ awk '
         gsub(/code:16/, "7", keybind)
         gsub(/code:17/, "8", keybind)
         gsub(/code:18/, "9", keybind)
+        gsub(/code:20/, "?", keybind)
         gsub(/code:60/, ".", keybind)
         
         # Replace separators with + for readability
