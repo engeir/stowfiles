@@ -65,6 +65,12 @@ vim.api.nvim_create_autocmd({ "FileType" }, {
   end,
 })
 
+-- Set wrap and spell in markdown and gitcommit
+vim.api.nvim_create_autocmd({ "FileType" }, {
+  pattern = { "fyler" },
+  callback = function() vim.opt_local.spell = false end,
+})
+
 vim.cmd(
   "autocmd BufEnter * ++nested if winnr('$') == 1 && bufname() == 'NvimTree_' . tabpagenr() | quit | endif"
 )
