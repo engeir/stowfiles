@@ -1,5 +1,63 @@
 # Changelog
 
+## [2026.1.1](https://github.com/engeir/stowfiles/compare/2025.12.1..2026.1.1) - 2026-01-27
+
+### Features
+
+- **(bin)** Summarize timew with compact tags - ([7918e96](https://github.com/engeir/stowfiles/commit/7918e9683df05aae52df94fce806eb141d95fd3a))
+- **(bin)** Add script to look-up CVE notes - ([7fa6579](https://github.com/engeir/stowfiles/commit/7fa6579b6dfdfdac36480adcc4c781cb128a03db))
+- **(bin)** Add rfv to search with both ripgrep and fzf - ([8490942](https://github.com/engeir/stowfiles/commit/8490942a9e3e00022132ca08c1cf8d4796f4feb4))
+- **(bin)** Add ghostty appimage installer - ([14cfd2b](https://github.com/engeir/stowfiles/commit/14cfd2b8aa0eff832101ff9d2d06dff67f3fe1a8))
+- **(bin,mango)** Screen flicker on low battery - ([8290bb9](https://github.com/engeir/stowfiles/commit/8290bb9ef19090998963ed590d955a126cc729ab)) by @engeir
+- **(mango)** Add batsignal to the autostart script - ([963c222](https://github.com/engeir/stowfiles/commit/963c22214947866facbaec26e03143b22f8bd9d7)) by @engeir
+- **(mise,nvim)** Add TS highlighting - ([6499544](https://github.com/engeir/stowfiles/commit/6499544d0b7dc13f5f59a0ae793ff4d4e33701f9)) by @engeir
+- **(nvim)** [plugin] add kubectl.nvim - ([43c7453](https://github.com/engeir/stowfiles/commit/43c7453e43e59756241fd603f62720be1dce77fb)) by @engeir
+- **(nvim)** [plugin] add fyler.nvim - ([dfaf94d](https://github.com/engeir/stowfiles/commit/dfaf94de1364d0bd090a67960d1b5246eaf7e07d))
+- **(nvim)** Add snippets and nvim-scissors - ([081721d](https://github.com/engeir/stowfiles/commit/081721de68cc8375b0b15f33566d85fcb3f544ae)) by @engeir
+- **(pitchfork)** Add to global mise and zsh config - ([1ee544b](https://github.com/engeir/stowfiles/commit/1ee544b1e7ccab079ec78b846debc27c5a774111)) by @engeir
+
+### Bug Fixes
+
+- **(bin)** Dmenu-calc cannot have fuzzy match - ([0b4880e](https://github.com/engeir/stowfiles/commit/0b4880e468235bc0ee1223a7f64ff639cdf08f8f))
+- **(nvim)** Use correct lsp name for harper-ls - ([d7446b6](https://github.com/engeir/stowfiles/commit/d7446b69296dc126683ed14cb933090e934b6abf)) by @engeir
+- **(nvim)** Pin nvim-treesitter to master branch - ([a9c16e4](https://github.com/engeir/stowfiles/commit/a9c16e4a0d9ca3bbfe49c7f8d3d5daf96248dc53)) by @engeir
+
+### Refactoring
+
+- **(bin)** Move arandr deps in displayselect - ([c0081ee](https://github.com/engeir/stowfiles/commit/c0081eee708deb1447f28539b155edab41ed91d9))
+- **(mise)** [**breaking**] Use "github" in favour of "ubi" - ([62cae19](https://github.com/engeir/stowfiles/commit/62cae1977b646eb09fa6dbc046a3b287c3cf8aab)) by @engeir
+- **(nvim)** Remove the last references to telescope - ([03989fa](https://github.com/engeir/stowfiles/commit/03989fa3800ae08d4235511e6530fce3d7e3ed10)) by @engeir
+
+### Styling
+
+- **(bin)** Set dmenu colour and font - ([ac39653](https://github.com/engeir/stowfiles/commit/ac39653d63bb80367bec619e4789afdf255e9bd5))
+- **(prettier)** Format markdown - ([fa9fae0](https://github.com/engeir/stowfiles/commit/fa9fae0a6fec6ee00e8fbeabc0f0116df0a14d0d)) by @engeir
+- **(zsh)** Apply formatting - ([11bf06d](https://github.com/engeir/stowfiles/commit/11bf06ddde1b19b337b4282dd2a083c49d765258)) by @engeir
+- Run formatter - ([f782296](https://github.com/engeir/stowfiles/commit/f7822968add09d7a7dd33fc14b36977017194056)) by @engeir
+
+### Miscellaneous
+
+- **(bin)** Run random_wallpaper in displayselect if available - ([af7c5a5](https://github.com/engeir/stowfiles/commit/af7c5a5381e40ca5b2da8493d44ea4e711e20b39))
+- **(bin)** Move timew script out of public repo - ([6a18b20](https://github.com/engeir/stowfiles/commit/6a18b20bccdaa18980affbc62c3c08037118643f))
+- **(bspwm)** Use kitty as the default terminal - ([4fd1996](https://github.com/engeir/stowfiles/commit/4fd1996446dcc8bb986f18e8365b835cd2825c6b)) by @engeir
+- **(dmenu)** Add colour style and font type & size - ([bf5d7ac](https://github.com/engeir/stowfiles/commit/bf5d7acaa4aece6924230c674290b7e294b03454))
+- **(ghostty)** Add two nice smear shaders - ([153d2a7](https://github.com/engeir/stowfiles/commit/153d2a7fd076a8b5ce0feaecbc42dd44a798aaa1))
+- **(i3)** Better cheat sheet keymap to MONSTER + ? - ([589be3c](https://github.com/engeir/stowfiles/commit/589be3c5ca0cab74384105879fa9e1f86a51d734))
+- **(mango)** Show cheat sheet with MONSTER + ? - ([5a651a9](https://github.com/engeir/stowfiles/commit/5a651a9314c93dff48491b459cc8c6d1118e0175)) by @engeir
+- **(mango)** Dont specify tag rule for mpv - ([73f04aa](https://github.com/engeir/stowfiles/commit/73f04aaaa669c1748ffe299e8b8aaaeb30375bf0)) by @engeir
+- **(nvim)** Add restart keymap - ([6853362](https://github.com/engeir/stowfiles/commit/6853362900defe736f47ef7107da20bc7042da78)) by @engeir
+- **(nvim)** Pin some plugin versions, remove others - ([204a2e9](https://github.com/engeir/stowfiles/commit/204a2e9204b35d475f93140faf8d589c8fba9ece))
+- **(nvim)** Treat jjdescription similar to gitcommit - ([7b6eae3](https://github.com/engeir/stowfiles/commit/7b6eae3eb4910613626baf988853e88ea33b176a)) by @engeir
+- **(rnnoise)** Add rnnoise config and startup script - ([4f5ba06](https://github.com/engeir/stowfiles/commit/4f5ba06aff0b69a992862ba14f12b901837f93b9))
+- **(software)** Update ente desktop - ([3f76c6d](https://github.com/engeir/stowfiles/commit/3f76c6d6b4aeed56ca850bcd778d70967b3741d5)) by @engeir
+- **(software)** Update installed - ([a21569d](https://github.com/engeir/stowfiles/commit/a21569df7cced9c82ccfc11c04562e926bfcd4f2)) by @engeir
+- **(software)** Small changes - ([6deac58](https://github.com/engeir/stowfiles/commit/6deac582e9cbee7f86330c32548530014a02f8e5))
+- **(software)** Update installed - ([057c476](https://github.com/engeir/stowfiles/commit/057c4765e838072e1fc8b0bf70016adc213a83a2)) by @engeir
+- **(software)** Update installed - ([92ee719](https://github.com/engeir/stowfiles/commit/92ee71924fcc09aed807bd9d6c17bf9c539829ef)) by @engeir
+- **(zsh)** Add suffix and global aliases - ([c0db194](https://github.com/engeir/stowfiles/commit/c0db194e12b57ab0e5635303aa0d2ec7bf1a2c66)) by @engeir
+
+<!-- generated by git-cliff -->
+
 ## [2025.12.1](https://github.com/engeir/stowfiles/compare/2025.11.3..2025.12.1) - 2025-12-14
 
 ### Features
