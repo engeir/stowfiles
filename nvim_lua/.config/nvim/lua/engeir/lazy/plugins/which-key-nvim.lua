@@ -49,6 +49,11 @@ return {
         desc = "Run current highlight as lua code",
         mode = { "n", "v" },
       },
+      {
+        "<leader>ur",
+        "<cmd>restart<cr>",
+        desc = "Restart neovim",
+      },
       { "cr", group = "Refactor" },
       { "gw", group = "Text/word operators" },
       { "]", group = "Next/Prev" },
