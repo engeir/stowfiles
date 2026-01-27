@@ -160,6 +160,7 @@ gpg-connect-agent updatestartuptty /bye >/dev/null 2>&1
 # Shell integrations
 # eval "$(oh-my-posh init zsh --config ~/.config/oh-my-posh/oh-my-posh.toml)"
 eval "$(mise activate zsh)"
+eval "$(pitchfork activate zsh)"
 eval "$(mise x -- fnox activate zsh)"
 eval "$(fzf --zsh)"
 eval "$(zoxide init --cmd cd zsh)"

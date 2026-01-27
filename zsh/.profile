@@ -66,6 +66,7 @@ if [ "$ZSH_VERSION" != "" ]; then
     mkdir -p "$HOME/.config/zsh/.zsh_functions"
     gen_comps mise "completion zsh" "mise"
     gen_comps fnox "completion zsh" "fnox"
+    gen_comps pitchfork "completion zsh" "pitchfork"
     gen_comps aqua "completion zsh" "aqua"
     gen_comps atuin "gen-completions --shell zsh" "atuin"
     gen_comps bw "completion --shell zsh" "bitwarden"
