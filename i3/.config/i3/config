@@ -99,7 +99,7 @@ bindsym $monster+o exec --no-startup-id bash ~/.config/picom/adjust-opacity +ina
 bindsym $monster+p exec --no-startup-id flameshot gui
 bindsym $monster+plus exec --no-startup-id bash ~/.config/picom/adjust-opacity +active
 bindsym $monster+r exec alacritty-dropdown snippet browse --search
-bindsym $monster+a exec alacritty-dropdown rtui
+bindsym $monster+a exec alacritty-dropdown rtui-dd
 bindsym $monster+s exec --no-startup-id timew-dmenu
 bindsym $monster+t exec --no-startup-id find_txt nor
 
