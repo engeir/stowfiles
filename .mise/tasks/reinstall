@@ -150,6 +150,8 @@ nvim-spell-install() {
     rm "$HOME/Downloads/dictionary-no-no-2.2.oxt"
     nvim -c "mkspell $HOME/.config/nvim/spell/nb" -c "qa!"
     nvim -c "mkspell $HOME/.config/nvim/spell/nn" -c "qa!"
+    echo 'You can now generate a complete list of words using the Hunspell-command'
+    echo '`unmunch "$HOME/.config/nvim/spell/nb.aff" "$HOME/.config/nvim/spell/nb.dic" >nb-ordliste.txt`'
 }
 tlmgr-install() {
     # Do shit

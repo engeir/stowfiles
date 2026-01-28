@@ -13,6 +13,8 @@ return {
       python = { "mypy" }, -- ruff is run via lsp, don't need it here
       -- rst = { "rstcheck" },  -- rstcheck doesn't seem to work
       sh = { "shellcheck" },
+      ["yaml.ansible"] = { "ansible_lint" },
+      yaml = { "yamllint" },
       -- tex = { "chktex" },
       zsh = { "shellcheck" },
     }

@@ -12,7 +12,7 @@ return {
         .. "/mason/bin/llm-ls",
     },
     backend = "ollama",
-    model = "nhn-large:latest",
+    model = "nhn-medium:latest",
     url = "http://localhost:22434", -- llm-ls uses "/api/generate"
     accept_keymap = "<C-y>",
     dismiss_keymap = "<C-e>",
