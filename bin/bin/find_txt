@@ -38,7 +38,9 @@ fi
 
 if ! grep "^$LANG$" <(tesseract --list-langs 2>/dev/null | tail -n +2) >/dev/null 2>&1; then
     echo "Install tesseract trained data for language $LANG, or edit $0."
-    notify-send "Install tesseract trained data for language $LANG, or edit $0."
+    echo ""
+    echo "See the tesseract documentation at https://tesseract-ocr.github.io/tessdoc/Installation.html and available languages at https://github.com/tesseract-ocr/tessdata."
+    notify-send "Install tesseract trained data for language $LANG, or edit $0." "See the tesseract documentation at https://tesseract-ocr.github.io/tessdoc/Installation.html and available languages at https://github.com/tesseract-ocr/tessdata."
     exit 1
 fi
 
