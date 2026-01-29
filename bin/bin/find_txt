@@ -1,5 +1,11 @@
-#!/bin/env bash
-# From: https://github.com/naelstrof/slop
+#!/usr/bin/env bash
+
+# Adjusted from: https://github.com/naelstrof/slop
+#
+# This script uses a patched version of dmenu that introduce the center flag.
+#     https://github.com/engeir/dmenu-flexipatch
+# Remove the `-c` (center) flag and optionally the `-fn` (font) option for the vanilla
+# experience.
 
 has() {
     if ! command -v "$1" >/dev/null 2>&1; then
@@ -9,8 +15,7 @@ has() {
     fi
 }
 has "tesseract"
-has "dmenu"
-has "clipcatctl"
+
 if [[ -n $WAYLAND_DISPLAY ]]; then
     has "slurp"
     has "grim"
@@ -21,7 +26,8 @@ fi
 
 # If no language argument provided, use `dmenu` to select
 if [[ $# -eq 0 ]]; then
-    LANG=$(tesseract --list-langs 2>/dev/null | tail -n +2 | dmenu -c -p "Select language: ")
+    has "dmenu"
+    LANG=$(tesseract --list-langs 2>/dev/null | tail -n +2 | dmenu -nb "#2d2d2d" -nf "#7070c2" -sb "#8c8cd0" -sf "#2d2d2d" -fn "CaskaydiaMono Nerd Font:size=14" -l 20 -c -p "Select language: ")
     if [[ -z $LANG ]]; then
         echo "No language selected"
         exit 1
@@ -46,4 +52,8 @@ else
     import -window root -crop "$G" "$imagefile"
 fi
 tesseract -l "$LANG" "$imagefile" "$text" 2>/dev/null
-clipcatctl insert "$(cat "$text.txt")"
+if has "clipcatctl"; then
+    clipcatctl insert "$(cat "$text.txt")"
+else
+    cat "$text.txt" | xclip -sel copy
+fi
