@@ -85,7 +85,7 @@ bindsym $mod+Shift+g exec --no-startup-id clipcat-menu -f dmenu
 bindsym $mod+Shift+p exec --no-startup-id passmenu
 bindsym $mod+Shift+period exec slock
 # bindsym $monster+a exec --no-startup-id "grep '^bind' ~/.config/i3/config | sed 's/bindsym //; s/exec //; s/--no-startup-id //' | sort | sed 's/\s/\n/' | yad --no-markup --title 'i3 Keymap Cheat Sheet' --escape-ok --search-column=1 --list --columns 2 --column 'Keymap:TEXT' --column 'Command:TEXT' --no-buttons --close-on-unfocus"
-bindsym $monster+question exec --no-startup-id alacritty-dropdown show-keymaps-i3
+bindsym $monster+0 exec --no-startup-id alacritty-dropdown show-keymaps-i3
 bindsym $monster+b exec --no-startup-id snippet browse --dmenu
 bindsym $monster+c exec alacritty-dropdown calcure
 bindsym $monster+d exec --no-startup-id toggle-cursor
