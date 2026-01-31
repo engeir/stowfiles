@@ -14,6 +14,7 @@ declare -A layout_map=(
     ["RT"]="right tile: Master tile to the right, new tiles stack vertically to the left"
     ["S"]="scroller: Scroll tiles horizontally"
     ["T"]="tile: Master tile to the left, new tiles stack vertically to the right"
+    ["TG"]="tile+grid: Like 'tile' for few windos, but like 'grid' as windows are added."
     ["VG"]="vertical grid: Same as 'grid', but filling in the vertical direction first"
     ["VK"]="vertical deck: Show the main tile and a second tile, where all other windows are stacked"
     ["VS"]="vertical scroller: Scroll tiles vertically"
