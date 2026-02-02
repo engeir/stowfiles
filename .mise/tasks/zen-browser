@@ -1,0 +1,100 @@
+#!/usr/bin/env bash
+
+#MISE description="Backup or apply Zen Browser config (keyboard shortcuts) for the default profile"
+#USAGE arg "<action>" help="Action to perform" {
+#USAGE   choices "backup" "apply"
+#USAGE }
+
+set -euo pipefail
+
+PROFILES_INI="$HOME/.zen/profiles.ini"
+CONFIG_DIR="$MISE_PROJECT_ROOT/zen-browser"
+
+get_default_profile_path() {
+  if [[ ! -f $PROFILES_INI ]]; then
+    echo "Error: profiles.ini not found at $PROFILES_INI" >&2
+    exit 1
+  fi
+
+  local default_path=""
+  local in_profile_section=false
+  local section_path=""
+  local section_is_default=false
+
+  while IFS= read -r line || [[ -n $line ]]; do
+    if [[ $line =~ ^\[(.+)\]$ ]]; then
+      # Check if previous section was the default profile
+      if "$in_profile_section" && [[ -n $section_path ]] && "$section_is_default"; then
+        default_path="$section_path"
+        break
+      fi
+      # Reset for new section
+      in_profile_section=false
+      if [[ ${BASH_REMATCH[1]} =~ ^Profile ]]; then
+        in_profile_section=true
+        section_path=""
+        section_is_default=false
+      fi
+    elif "$in_profile_section"; then
+      if [[ $line =~ ^Path=(.+)$ ]]; then
+        section_path="${BASH_REMATCH[1]}"
+      elif [[ $line == "Default=1" ]]; then
+        section_is_default=true
+      fi
+    fi
+  done <"$PROFILES_INI"
+
+  # Check last section
+  if "$in_profile_section" && [[ -n $section_path ]] && "$section_is_default"; then
+    default_path="$section_path"
+  fi
+
+  if [[ -z $default_path ]]; then
+    echo "Error: Could not find default profile in profiles.ini" >&2
+    exit 1
+  fi
+
+  echo "$default_path"
+}
+
+backup() {
+  local profile_path
+  profile_path=$(get_default_profile_path)
+  local profile_dir="$HOME/.zen/$profile_path"
+  local shortcuts_file="$profile_dir/zen-keyboard-shortcuts.json"
+
+  if [[ ! -f $shortcuts_file ]]; then
+    echo "Error: Keyboard shortcuts file not found at $shortcuts_file"
+    exit 1
+  fi
+
+  mkdir -p "$CONFIG_DIR"
+  cp "$shortcuts_file" "$CONFIG_DIR/"
+
+  echo "Backed up: $shortcuts_file"
+  echo "       to: $CONFIG_DIR/zen-keyboard-shortcuts.json"
+}
+
+apply() {
+  local profile_path
+  profile_path=$(get_default_profile_path)
+  local profile_dir="$HOME/.zen/$profile_path"
+  local shortcuts_src="$CONFIG_DIR/zen-keyboard-shortcuts.json"
+
+  if [[ ! -f $shortcuts_src ]]; then
+    echo "Error: Source file not found at $shortcuts_src"
+    echo "Run 'mise run zen-browser backup' first"
+    exit 1
+  fi
+
+  cp "$shortcuts_src" "$profile_dir/zen-keyboard-shortcuts.json"
+
+  echo "Applied: $shortcuts_src"
+  echo "     to: $profile_dir/zen-keyboard-shortcuts.json"
+}
+
+# shellcheck disable=SC2154
+case "$usage_action" in
+  backup) backup ;;
+  apply) apply ;;
+esac
