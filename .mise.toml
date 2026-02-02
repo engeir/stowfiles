@@ -1,3 +1,7 @@
+[hooks.enter]
+script = "mise completion zsh >assets/completions.sh && source assets/completions.sh"
+shell = "zsh"
+
 [tasks.update-auto]
 description = "Run a system update passwordless."
 run = """
