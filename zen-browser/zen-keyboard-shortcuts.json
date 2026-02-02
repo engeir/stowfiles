@@ -1441,7 +1441,7 @@
     },
     {
       "id": "zen-compact-mode-show-sidebar",
-      "key": "s",
+      "key": "S",
       "keycode": "",
       "group": "zen-compact-mode",
       "l10nId": "zen-compact-mode-shortcut-show-sidebar",
@@ -1593,8 +1593,7 @@
         "control": false,
         "alt": false,
         "shift": false,
-        "meta": false,
-        "accel": false
+        "meta": false
       },
       "action": "cmd_zenWorkspaceSwitch3",
       "disabled": false,
@@ -1611,8 +1610,7 @@
         "control": false,
         "alt": false,
         "shift": false,
-        "meta": false,
-        "accel": false
+        "meta": false
       },
       "action": "cmd_zenWorkspaceSwitch2",
       "disabled": false,
@@ -1639,7 +1637,7 @@
     },
     {
       "id": "zen-workspace-forward",
-      "key": "O",
+      "key": "o",
       "keycode": "",
       "group": "zen-workspace",
       "l10nId": "zen-workspace-shortcut-forward",
@@ -1657,7 +1655,7 @@
     },
     {
       "id": "zen-workspace-backward",
-      "key": "I",
+      "key": "i",
       "keycode": "",
       "group": "zen-workspace",
       "l10nId": "zen-workspace-shortcut-backward",
@@ -1693,7 +1691,7 @@
     },
     {
       "id": "zen-split-view-vertical",
-      "key": "v",
+      "key": "L",
       "keycode": "",
       "group": "zen-split-view",
       "l10nId": "zen-split-view-shortcut-vertical",
@@ -1702,7 +1700,7 @@
         "alt": true,
         "shift": false,
         "meta": false,
-        "accel": true
+        "accel": false
       },
       "action": "cmd_zenSplitViewVertical",
       "disabled": false,
@@ -1711,7 +1709,7 @@
     },
     {
       "id": "zen-split-view-horizontal",
-      "key": "h",
+      "key": "-",
       "keycode": "",
       "group": "zen-split-view",
       "l10nId": "zen-split-view-shortcut-horizontal",
@@ -1720,7 +1718,7 @@
         "alt": true,
         "shift": false,
         "meta": false,
-        "accel": true
+        "accel": false
       },
       "action": "cmd_zenSplitViewHorizontal",
       "disabled": false,
