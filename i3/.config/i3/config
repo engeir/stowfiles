@@ -76,6 +76,7 @@ floating_modifier $mod
 # or left-clicking anywhere into the window while holding the floating modifier.
 # tiling_drag modifier titlebar
 
+bindsym $mod+Mod1+space exec --no-startup-id alacritty-dropdown-launcher
 bindsym $mod+Shift+Mod1+f exec --no-startup-id pdf_open
 bindsym $mod+Shift+Mod1+t exec --no-startup-id find_txt
 bindsym $mod+Shift+Mod1+u exec alacritty-dropdown clip-manage
