@@ -19,8 +19,8 @@ has batsignal
 pgrep -x batsignal >/dev/null 2>&1 || batsignal -b >/dev/null 2>&1 &
 
 # screen flicker on low battery
-has battery-low-flicker-gamma
-pgrep -x battery-low-fli >/dev/null 2>&1 || battery-low-flicker-gamma &>/dev/null &
+has battery-flicker
+pgrep -x battery-flicker >/dev/null 2>&1 || battery-flicker &>/dev/null &
 
 # monitor auto attach
 has shikane
@@ -46,7 +46,6 @@ pgrep -x clipcatd >/dev/null || clipcatd >/dev/null 2>&1 &
 # xwayland dpi scale
 has xrdb
 echo "Xft.dpi: 140" | xrdb -merge # DPI scaling
-# xrdb merge ~/.Xresources >/dev/null 2>&1
 
 # ime input
 has fcitx5
