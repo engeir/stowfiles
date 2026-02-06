@@ -1,5 +1,12 @@
 #!/usr/bin/env bash
 
+# The original passmenu script, extended to accept OTP after passmenu-otp and to work on
+# Wayland with fuzzel.
+#
+# passmenu: https://github.com/cdown/passmenu
+# passmenu-otp: https://github.com/petrmanek/passmenu-otp
+# fuzzel: https://codeberg.org/dnkl/fuzzel
+
 shopt -s nullglob globstar
 
 typeit=0
@@ -30,10 +37,15 @@ password=$(printf '%s\n' "${password_files[@]}" | "${dmenu[@]}" "$@")
 
 [[ -n $password ]] || exit
 
+pass_cmd=show
+if pass show "$password" | grep -q '^otpauth://'; then
+    pass_cmd=otp
+fi
+
 if [[ $typeit -eq 0 ]]; then
-    pass show -c "$password" 2>/dev/null
+    pass "$pass_cmd" -c "$password" 2>/dev/null
 else
-    pass show "$password" | {
+    pass "$pass_cmd" "$password" | {
         IFS= read -r pass
         printf %s "$pass"
     } | "$xdotool"
