@@ -1,22 +1,24 @@
 [mgr]
-sort_by = "alphabetical"
-sort_sensitive = false
-sort_reverse = false
-sort_dir_first = true
 linemode = "size"
 show_hidden = true
 show_symlink = true
+sort_by = "alphabetical"
+sort_dir_first = true
+sort_reverse = false
+sort_sensitive = false
 
 [opener]
-nuke = [
-  { run = '~/.config/nnn/plugins/nuke "$1"', desc = "Open", for = "linux" },
-]
+edit = [{ run = '${EDITOR:-nvim} "$@"', block = true, for = "unix" }]
+feh = [{ run = 'feh --scale-down "$1"' }]
+# nuke = [
+#   { run = '~/.config/nnn/plugins/nuke "$1"', desc = "Open", for = "linux" },
+# ]
 
 [open]
-prepend_rules = [{ mime = "image/*", use = "nuke" }]
+prepend_rules = [{ mime = "image/*", use = "feh" }, { mime = "*/csv", use = "edit" }]
 
 [preview]
-max_width = 1000
+max_width = 1500
 
 [[plugin.prepend_previewers]]
 mime = "image/heic"
