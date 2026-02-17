@@ -20,12 +20,29 @@ prepend_rules = [{ mime = "image/*", use = "feh" }, { mime = "*/csv", use = "edi
 [preview]
 max_width = 1500
 
-[[plugin.prepend_previewers]]
-mime = "image/heic"
-run = "heic"
-[[plugin.prepend_previewers]]
-name = "*.nc"
-run = 'piper -- ncdump-rich --long "$1"'
+[plugin]
+prepend_previewers = [
+  { name = "*.csv", run = "duckdb" },
+  { mime = "*/csv", run = "duckdb" },
+  { name = "*.tsv", run = "duckdb" },
+  { name = "*.json", run = "duckdb" },
+  { name = "*.parquet", run = "duckdb" },
+  { name = "*.txt", run = "duckdb" },
+  { name = "*.xlsx", run = "duckdb" },
+  { name = "*.db", run = "duckdb" },
+  { name = "*.duckdb", run = "duckdb" },
+  { mime = "image/heic", run = "heic" },
+  { name = "*.nc", run = 'piper -- ncdump-rich --long "$1"' },
+]
+
+prepend_preloaders = [
+  { name = "*.csv", run = "duckdb", multi = false },
+  { name = "*.tsv", run = "duckdb", multi = false },
+  { name = "*.json", run = "duckdb", multi = false },
+  { name = "*.parquet", run = "duckdb", multi = false },
+  { name = "*.txt", run = "duckdb", multi = false },
+  { name = "*.xlsx", run = "duckdb", multi = false },
+]
 
 [[plugin.prepend_fetchers]]
 id = "git"

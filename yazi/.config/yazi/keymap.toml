@@ -2,35 +2,48 @@
 
 [mgr]
 append_keymap = [
-  { on = ["<C-k>"], run = "seek -5", desc = "Seek up 5 units in the preview" },
-  { on = ["<C-j>"], run = "seek 5", desc = "Seek down 5 units in the preview" },
+  { on = [
+    "<C-k>",
+  ], run = "seek -5", desc = "Seek up 5 units in the preview" },
+  { on = [
+    "<C-j>",
+  ], run = "seek 5", desc = "Seek down 5 units in the preview" },
 ]
 
 [[mgr.prepend_keymap]]
+desc = "Scroll one column to the left"
+on = "H"
+run = "plugin duckdb -1"
+
+[[mgr.prepend_keymap]]
+desc = "Scroll one column to the right"
+on = "L"
+run = "plugin duckdb +1"
+[[mgr.prepend_keymap]]
+desc = "Enter the child directory, or open the file"
 on = "l"
 run = "plugin smart-enter"
-desc = "Enter the child directory, or open the file"
 [[mgr.prepend_keymap]]
 on = "<C-n>"
 run = '''
     shell 'ripdrag "$@" -x 2>/dev/null &' --confirm
 '''
 [[mgr.prepend_keymap]]
-on = "T"
-run = "plugin toggle-pane max-preview"
 desc = "Maximize or restore the preview pane"
+on = ["c", "t"]
+run = "plugin toggle-pane max-preview"
 [[mgr.prepend_keymap]]
-on = "H"
-run = "plugin toggle-pane min-preview"
 desc = "Show or hide the preview pane"
+on = ["c", "T"]
+run = "plugin toggle-pane min-preview"
 [[mgr.prepend_keymap]]
+desc = "Chmod on selected files"
 on = ["c", "m"]
 run = "plugin chmod"
-desc = "Chmod on selected files"
 [[mgr.prepend_keymap]]
+desc = "Smart filter"
 on = "F"
 run = "plugin smart-filter"
-desc = "Smart filter"
 [[mgr.prepend_keymap]]
 on = "M"
 run = "plugin mount"
