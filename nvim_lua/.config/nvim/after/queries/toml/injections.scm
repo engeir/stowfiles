@@ -40,3 +40,24 @@
   (#offset! @injection.content 0 1 0 -1) ; rm quotes
   (#set! injection.language "bash") ; default to bash
 )
+
+(pair
+  (bare_key) @key (#any-of? @key "run" "preinstall" "cd" "enter" "leave" "postinstall")
+  (array
+    (string) @injection.content
+    (#is-mise?)
+    (#not-match? @injection.content "^['\"]{3}") ; not multiline
+    (#offset! @injection.content 0 1 0 -1) ; rm quotes
+    (#set! injection.language "bash")
+  )
+)
+
+(pair
+  (bare_key) @key (#any-of? @key "usage")
+  (string) @injection.content
+
+  (#is-mise?)
+  (#not-match? @injection.content "^['\"]{3}") ; not multiline
+  (#offset! @injection.content 0 1 0 -1) ; rm quotes
+  (#set! injection.language "bash") ; default to bash
+)
