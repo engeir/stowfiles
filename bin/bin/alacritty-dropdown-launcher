@@ -2,10 +2,21 @@
 # Dropdown CLI launcher with predefined commands
 # Select a command from a list and run it in alacritty-dropdown
 
+has() {
+    if ! command -v "$1" >/dev/null 2>&1; then
+        echo "$1 is not installed. Adjust $0 if you think you do not need it."
+        notify-send "$1 is not installed. Adjust $0 if you think you do not need it."
+        exit 1
+    fi
+}
+
+has dmenu
+
 # Define your commands here (one per line)
 # Format: "description|command"
 commands=(
     "Time tracking - Edit|twe edit"
+    "SMAX TUI|smax tui"
     "Remmina|rtui-dd"
     "Calculator|bc -l"
     "System monitor|htop"
