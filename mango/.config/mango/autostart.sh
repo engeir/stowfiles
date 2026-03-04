@@ -10,10 +10,6 @@ has() {
 
 set +e
 
-# obs
-has dbus-update-activation-environment
-dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP=wlroots >/dev/null 2>&1
-
 # battery
 has batsignal
 pgrep -x batsignal >/dev/null 2>&1 || batsignal -b >/dev/null 2>&1 &
