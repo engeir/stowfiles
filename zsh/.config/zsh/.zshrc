@@ -70,8 +70,6 @@ zinit light jeffreytse/zsh-vi-mode
 zinit light MichaelAquilina/zsh-auto-notify
 zinit light MichaelAquilina/zsh-you-should-use
 zinit light wfxr/forgit
-zinit light wintermi/zsh-mise
-# zinit light olets/zsh-abbr
 # This is overridden by atuin in insert mode, but takes precedence in vi/normal mode.
 zinit load zsh-users/zsh-history-substring-search
 zinit ice wait atload'_history_substring_search_config'
@@ -83,6 +81,11 @@ zinit light atuinsh/atuin
 
 fpath+="${ZDOTDIR:-~}/.zsh_functions" # This must come before compinit
 autoload -Uz compinit
+# Remove broken symlinks from zinit completions dir to prevent compinit errors
+() {
+    local _d="${XDG_DATA_HOME:-${HOME}/.local/share}/zinit/completions"
+    [[ -d "$_d" ]] && for _f in "$_d"/_*(N@); do [[ -e "$_f" ]] || rm -f "$_f"; done
+}
 # From https://gist.github.com/ctechols/ca1035271ad134841284?permalink_comment_id=4624611#gistcomment-4624611
 # [ ! "$(find "${XDG_CONFIG_HOME:-$HOME/.config}"/zsh/.zcompdump -mtime 1)" ] || compinit
 # compinit -C

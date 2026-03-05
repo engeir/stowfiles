@@ -71,7 +71,7 @@ if [ "$ZSH_VERSION" != "" ]; then
     gen_comps atuin "gen-completions --shell zsh" "atuin"
     gen_comps bw "completion --shell zsh" "bitwarden"
     gen_comps just "--completions zsh" "just"
-    gen_comps pixi "completion zsh" "pixi"
+    gen_comps pixi "completion --shell zsh" "pixi"
     gen_comps uv "generate-shell-completion zsh" "uv"
     gen_comps jj "util completion zsh" "jj"
     # Vagrant is stupid, and does it in their own way.
