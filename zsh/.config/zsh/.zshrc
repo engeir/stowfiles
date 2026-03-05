@@ -19,9 +19,10 @@ fi
 source "${ZINIT_HOME}/zinit.zsh"
 
 # Snippets
-zinit snippet OMZP::git
-zinit snippet OMZP::archlinux
-zinit snippet OMZP::command-not-found
+zinit wait"0" lucid for \
+    OMZP::git \
+    OMZP::archlinux \
+    OMZP::command-not-found
 zinit snippet OMZP::ssh
 
 zinit light Aloxaf/fzf-tab
@@ -55,8 +56,8 @@ zinit ice wait"2" as"command" from"gh-r" lucid \
 zinit light ajeetdsouza/zoxide
 zinit light zsh-users/zsh-syntax-highlighting
 zinit light zsh-users/zsh-completions
-zinit light zsh-users/zsh-autosuggestions
-zinit light ryanccn/vivid-zsh  # Sets LS_COLORS
+zinit ice wait"0" lucid; zinit light zsh-users/zsh-autosuggestions
+zinit ice wait"0" lucid; zinit light ryanccn/vivid-zsh  # Sets LS_COLORS
 zinit ice from'gh-r' as'program' sbin'**/eza -> eza' atclone'cp -vf completions/eza.zsh _eza'  # Install
 zinit light eza-community/eza
 zinit ice wait lucid has'eza' atinit'AUTOCD=1' atload'unalias lx llm' # Setup plugin
@@ -67,9 +68,10 @@ _EZA_PARAMS=(
 zinit light z-shell/zsh-eza
 zinit ice depth=1
 zinit light jeffreytse/zsh-vi-mode
-zinit light MichaelAquilina/zsh-auto-notify
-zinit light MichaelAquilina/zsh-you-should-use
-zinit light wfxr/forgit
+zinit wait"0" lucid for \
+    MichaelAquilina/zsh-auto-notify \
+    MichaelAquilina/zsh-you-should-use \
+    wfxr/forgit
 # This is overridden by atuin in insert mode, but takes precedence in vi/normal mode.
 zinit load zsh-users/zsh-history-substring-search
 zinit ice wait atload'_history_substring_search_config'
@@ -79,18 +81,21 @@ zinit ice as"command" from"gh-r" bpick"atuin-*.tar.gz" mv"atuin*/atuin -> atuin"
     atpull"%atclone" src"init.zsh"
 zinit light atuinsh/atuin
 
-fpath+="${ZDOTDIR:-~}/.zsh_functions" # This must come before compinit
+fpath+="${ZDOTDIR:-~}/.zsh_functions"
 autoload -Uz compinit
-# Remove broken symlinks from zinit completions dir to prevent compinit errors
 () {
-    local _d="${XDG_DATA_HOME:-${HOME}/.local/share}/zinit/completions"
-    [[ -d "$_d" ]] && for _f in "$_d"/_*(N@); do [[ -e "$_f" ]] || rm -f "$_f"; done
+    local _dump="${ZDOTDIR:-~}/.zcompdump"
+    local _zinit_comp="${XDG_DATA_HOME:-${HOME}/.local/share}/zinit/completions"
+    if [[ ! -f "$_dump" ]] || (( $(date +%s) - $(stat -c %Y "$_dump") > 86400 )); then
+        # Full rebuild: first clean dead symlinks that cause compinit errors
+        [[ -d "$_zinit_comp" ]] && for _f in "$_zinit_comp"/_*(N@); do
+            [[ -e "$_f" ]] || rm -f "$_f"
+        done
+        compinit
+    else
+        compinit -C
+    fi
 }
-# From https://gist.github.com/ctechols/ca1035271ad134841284?permalink_comment_id=4624611#gistcomment-4624611
-# [ ! "$(find "${XDG_CONFIG_HOME:-$HOME/.config}"/zsh/.zcompdump -mtime 1)" ] || compinit
-# compinit -C
-compinit
-
 zinit cdreplay -q
 
 # Keybindings
@@ -160,17 +165,32 @@ gpg-connect-agent updatestartuptty /bye >/dev/null 2>&1
 # bun completions
 [ -s "$HOME/.bun/_bun" ] && source "$HOME/.bun/_bun"
 
-# Shell integrations
-# eval "$(oh-my-posh init zsh --config ~/.config/oh-my-posh/oh-my-posh.toml)"
-eval "$(mise activate zsh)"
-eval "$(pitchfork activate zsh)"
-eval "$(mise x -- fnox activate zsh)"
-eval "$(fzf --zsh)"
-eval "$(zoxide init --cmd cd zsh)"
-eval "$(atuin init zsh)"
-eval "$(batpipe)"
-eval "$(batman --export-env)"
-eval "$(navi widget zsh)"
+# Shell integrations — cached to avoid subprocess overhead on every start
+() {
+    local _dir="${XDG_CACHE_HOME:-$HOME/.cache}/zsh"
+    mkdir -p "$_dir"
+
+    _zi() {
+        local cache="$_dir/$1.zsh" bin="${commands[$2]:-}"
+        shift 2
+        [[ ! -f "$cache" || ( -n "$bin" && "$bin" -nt "$cache" ) ]] && "$@" >| "$cache"
+        builtin source "$cache"
+    }
+
+    _zi mise        mise        mise activate zsh
+    _zi pitchfork   pitchfork   pitchfork activate zsh
+    _zi fnox        mise        mise x -- fnox activate zsh
+    _zi fzf         fzf         fzf --zsh
+    _zi zoxide      zoxide      zoxide init --cmd cd zsh
+    _zi atuin       atuin       atuin init zsh
+    _zi batpipe     batpipe     batpipe
+    _zi batman      batman      batman --export-env
+    _zi navi        navi        navi widget zsh
+
+    unfunction _zi
+}
+# Atuin needs a unique session ID per shell (not the cached one)
+export ATUIN_SESSION="$(</proc/sys/kernel/random/uuid)"
 
 if command -v coreutils 1>/dev/null 2>&1; then
     t1=$(coreutils date "+%s.%N")
