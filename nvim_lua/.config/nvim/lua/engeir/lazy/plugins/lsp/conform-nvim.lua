@@ -48,7 +48,7 @@ return {
             "injected",
           }
         end,
-        bib = { "llf", stop_after_first = true },
+        bib = { "tex-fmt", "llf", stop_after_first = true },
         css = { "dprint", "prettierd", stop_after_first = true },
         d2 = { "d2" },
         dockerfile = { "dprint" },
