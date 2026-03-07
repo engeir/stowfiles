@@ -86,7 +86,9 @@ autoload -Uz compinit
 () {
     local _dump="${ZDOTDIR:-~}/.zcompdump"
     local _zinit_comp="${XDG_DATA_HOME:-${HOME}/.local/share}/zinit/completions"
-    if [[ ! -f "$_dump" ]] || (( $(date +%s) - $(stat -c %Y "$_dump") > 86400 )); then
+    if [[ ! -f "$_dump" ]] \
+        || (( $(date +%s) - $(stat -c %Y "$_dump") > 86400 )) \
+        || [[ "${ZDOTDIR:-~}/.zshrc" -nt "$_dump" ]]; then
         # Full rebuild: first clean dead symlinks that cause compinit errors
         [[ -d "$_zinit_comp" ]] && for _f in "$_zinit_comp"/_*(N@); do
             [[ -e "$_f" ]] || rm -f "$_f"
