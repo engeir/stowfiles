@@ -81,10 +81,35 @@ zinit ice as"command" from"gh-r" bpick"atuin-*.tar.gz" mv"atuin*/atuin -> atuin"
     atpull"%atclone" src"init.zsh"
 zinit light atuinsh/atuin
 
-fpath+="${ZDOTDIR:-~}/.zsh_functions"
+# Generate and cache tool completions (only when binary is newer than cache)
+() {
+    local _comp_dir="${XDG_CACHE_HOME:-$HOME/.cache}/zsh/completions"
+    mkdir -p "$_comp_dir"
+    fpath+="$_comp_dir"
+
+    _gc() {
+        local out="$_comp_dir/_$1" bin="${commands[$2]:-}"
+        shift 2
+        [[ -z "$bin" ]] && return
+        [[ ! -f "$out" || "$bin" -nt "$out" ]] && "$@" >| "$out"
+    }
+
+    _gc mise       mise       mise completion zsh
+    _gc fnox       fnox       fnox completion zsh
+    _gc pitchfork  pitchfork  pitchfork completion zsh
+    _gc aqua       aqua       aqua completion zsh
+    _gc atuin      atuin      atuin gen-completions --shell zsh
+    _gc bitwarden  bw         bw completion --shell zsh
+    _gc just       just       just --completions zsh
+    _gc pixi       pixi       pixi completion --shell zsh
+    _gc uv         uv         uv generate-shell-completion zsh
+    _gc jj         jj         jj util completion zsh
+
+    unfunction _gc
+}
 autoload -Uz compinit
 () {
-    local _dump="${ZDOTDIR:-~}/.zcompdump"
+    local _dump="${XDG_CACHE_HOME:-$HOME/.cache}/zsh/zcompdump"
     local _zinit_comp="${XDG_DATA_HOME:-${HOME}/.local/share}/zinit/completions"
     if [[ ! -f "$_dump" ]] \
         || (( $(date +%s) - $(stat -c %Y "$_dump") > 86400 )) \
@@ -93,9 +118,9 @@ autoload -Uz compinit
         [[ -d "$_zinit_comp" ]] && for _f in "$_zinit_comp"/_*(N@); do
             [[ -e "$_f" ]] || rm -f "$_f"
         done
-        compinit
+        compinit -d "$_dump"
     else
-        compinit -C
+        compinit -C -d "$_dump"
     fi
 }
 zinit cdreplay -q
@@ -181,7 +206,7 @@ gpg-connect-agent updatestartuptty /bye >/dev/null 2>&1
 
     _zi mise        mise        mise activate zsh
     _zi pitchfork   pitchfork   pitchfork activate zsh
-    _zi fnox        mise        mise x -- fnox activate zsh
+    _zi fnox        mise        fnox activate zsh
     _zi fzf         fzf         fzf --zsh
     _zi zoxide      zoxide      zoxide init --cmd cd zsh
     _zi atuin       atuin       atuin init zsh
