@@ -5,7 +5,6 @@ go_set_gobin = true
 idiomatic_version_file_enable_tools = ["rust"]
 lockfile = true
 pipx_uvx = true
-python_venv_auto_create = true
 
 [env]
 AQUA_GLOBAL_CONFIG = "{{env.HOME}}/.config/aquaproj-aqua/aqua.yaml"
