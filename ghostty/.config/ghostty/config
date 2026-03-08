@@ -22,8 +22,10 @@ background = #2d2d2d
 # custom-shader = ~/.config/ghostty/shaders/tft.glsl
 cursor-color = #dd8d31
 cursor-opacity = 0.7
-custom-shader = ~/.config/ghostty/shaders/smear.glsl
+# custom-shader = ~/.config/ghostty/shaders/smear.glsl
+# custom-shader = ~/.config/ghostty/shaders/kitty-tail.glsl
 # custom-shader = ~/.config/ghostty/shaders/smr.glsl
+custom-shader = ~/.config/ghostty/shaders/neovide.glsl
 
 link-previews = true
 
