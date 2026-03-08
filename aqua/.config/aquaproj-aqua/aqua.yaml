@@ -8,5 +8,4 @@
 #   - all
 registries:
   - type: standard
-    ref: v4.475.0 # renovate: depName=aquaproj/aqua-registry
-packages:
+    ref: v4.476.0 # renovate: depName=aquaproj/aqua-registry
