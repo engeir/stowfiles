@@ -11,7 +11,7 @@ expect eof
 """
 
 [tools]
-"cargo:git-cliff" = "latest"
+"github:orhun/git-cliff" = "latest"
 hk = "latest"
 "pipx:pydoclint" = "latest"
 "pipx:pydocstringformatter" = "latest"
