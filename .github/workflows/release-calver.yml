@@ -106,6 +106,8 @@ jobs:
       - name: Create or update release branch
         id: release_branch
         if: steps.check_changes.outputs.has_changes == 'true'
+        env:
+          NEW_CHANGELOG: ${{ steps.changelog.outputs.content }}
         run: |
           git config user.name "han-eirik"
           git config user.email "han-eirik@users.noreply.github.com"
@@ -115,7 +117,7 @@ jobs:
 
           # Update version numbers across project files
           # To add a new file for version updates, just add a new sed line below
-          NEW_VERSION="${{ steps.calver.outputs.new_tag }}"
+          NEW_VERSION='${{ steps.calver.outputs.new_tag }}'
 
           # README.md - Update example Docker version
           sed -i "s|Latest version: v[0-9]\+\.[0-9]\+\.[0-9]\+|Latest version: v$NEW_VERSION|g" README.md
@@ -127,7 +129,7 @@ jobs:
           # sed -i "s/^version:.*/version: $NEW_VERSION/" docs/config.yml
 
           # Update CHANGELOG.md - prepend new release to existing changelog
-          NEW_CHANGELOG='${{ steps.changelog.outputs.content }}'
+          # $NEW_CHANGELOG is set via env: block above
           if [ -f CHANGELOG.md ]; then
             # Existing changelog - prepend new release after the header
             # Extract header (first 3 lines: # Changelog + blank + description)
@@ -157,6 +159,9 @@ jobs:
           git push origin release-please --force
       - name: Create or update PR
         if: steps.check_changes.outputs.has_changes == 'true'
+        env:
+          NEW_CHANGELOG: ${{ steps.changelog.outputs.content }}
+          GH_TOKEN: ${{ secrets.RELEASE_TOKEN }}
         run: |
           NEW_TAG="${{ steps.calver.outputs.new_tag }}"
 
@@ -167,7 +172,7 @@ jobs:
 
           ### Changes
 
-          ${{ steps.changelog.outputs.content }}
+          $NEW_CHANGELOG
 
           ---
 
@@ -193,8 +198,6 @@ jobs:
               --head release-please
             echo "Created new release PR"
           fi
-        env:
-          GH_TOKEN: ${{ secrets.RELEASE_TOKEN }}
   # This job runs when the release PR is merged
   create-release:
     runs-on: ubuntu-latest
