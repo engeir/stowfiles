@@ -235,7 +235,8 @@ jobs:
           install: true
       - name: Generate release notes
         id: read_changelog
-        env: VERSION=${{ steps.extract_version.outputs.version }}
+        env:
+          VERSION: ${{ steps.extract_version.outputs.version }}
         run: |
           PREVIOUS_TAG=$(git describe --tags --abbrev=0 HEAD^ 2>/dev/null || echo "")
 
