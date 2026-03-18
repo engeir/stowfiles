@@ -506,26 +506,26 @@ zed 0.132.5
 ## Mise
 
 ```txt {mise}
-cabal                         3.10.3.0  ~/.config/mise/config.toml latest        
-go                            1.22.3    ~/.config/mise/config.toml latest        
-node                          22.2.0    ~/.config/mise/config.toml latest        
-pandoc                        3.2       ~/.config/mise/config.toml latest        
+cabal                         3.10.3.0  ~/.config/mise/config.toml latest
+go                            1.22.3    ~/.config/mise/config.toml latest
+node                          22.2.0    ~/.config/mise/config.toml latest
+pandoc                        3.2       ~/.config/mise/config.toml latest
 python                        3.8.19    ~/.config/mise/config.toml sub-0.4:latest
 python                        3.9.19    ~/.config/mise/config.toml sub-0.3:latest
 python                        3.10.14   ~/.config/mise/config.toml sub-0.2:latest
 python                        3.11.9    ~/.config/mise/config.toml sub-0.1:latest
-python                        3.12.3    ~/.config/mise/config.toml latest        
-tinytex                       2024.05   ~/.config/mise/config.toml latest        
-ubi:PaulJuliusMartinez/jless  0.7.0     ~/.config/mise/config.toml latest        
-ubi:etcd-io/etcd              3.3.27    ~/.config/mise/config.toml latest        
-ubi:filosottile/age           1.1.1     ~/.config/mise/config.toml 1.1.1         
-ubi:goreleaser/goreleaser     1.13.0    ~/.config/mise/config.toml latest        
-ubi:houseabsolute/precious    0.0.7     ~/.config/mise/config.toml latest        
-ubi:ismaelgv/rnr              0.1.6     ~/.config/mise/config.toml latest        
-ubi:mgdm/htmlq                0.2.0     ~/.config/mise/config.toml latest        
-ubi:pvolok/mprocs             0.0.1     ~/.config/mise/config.toml latest        
-usage                         0.2.0     ~/.config/mise/config.toml latest        
-watchexec                     2.1.1     ~/.config/mise/config.toml latest        
+python                        3.12.3    ~/.config/mise/config.toml latest
+tinytex                       2024.05   ~/.config/mise/config.toml latest
+ubi:PaulJuliusMartinez/jless  0.7.0     ~/.config/mise/config.toml latest
+ubi:etcd-io/etcd              3.3.27    ~/.config/mise/config.toml latest
+ubi:filosottile/age           1.1.1     ~/.config/mise/config.toml 1.1.1
+ubi:goreleaser/goreleaser     1.13.0    ~/.config/mise/config.toml latest
+ubi:houseabsolute/precious    0.0.7     ~/.config/mise/config.toml latest
+ubi:ismaelgv/rnr              0.1.6     ~/.config/mise/config.toml latest
+ubi:mgdm/htmlq                0.2.0     ~/.config/mise/config.toml latest
+ubi:pvolok/mprocs             0.0.1     ~/.config/mise/config.toml latest
+usage                         0.2.0     ~/.config/mise/config.toml latest
+watchexec                     2.1.1     ~/.config/mise/config.toml latest
 ```
 
 ## Cargo
@@ -1045,4 +1045,3 @@ i zapfchan: URW 'Base 35' font pack for LaTeX
 i zapfding: URW 'Base 35' font pack for LaTeX
 i zref: A new reference scheme for LaTeX
 ```
-    

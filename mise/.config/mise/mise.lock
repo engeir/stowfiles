@@ -71,52 +71,52 @@ url_api = "https://api.github.com/repos/aquaproj/aqua/releases/assets/371922609"
 provenance = "github-attestations"
 
 [[tools.bun]]
-version = "1.3.10"
+version = "1.3.11"
 backend = "core:bun"
 
 [tools.bun."platforms.linux-arm64"]
-checksum = "sha256:fa5ecb25cafa8e8f5c87a0f833719d46dd0af0a86c7837d806531212d55636d3"
-url = "https://github.com/oven-sh/bun/releases/download/bun-v1.3.10/bun-linux-aarch64.zip"
+checksum = "sha256:d13944da12a53ecc74bf6a720bd1d04c4555c038dfe422365356a7be47691fdf"
+url = "https://github.com/oven-sh/bun/releases/download/bun-v1.3.11/bun-linux-aarch64.zip"
 
 [tools.bun."platforms.linux-arm64-musl"]
-checksum = "sha256:d2c81365a2e529b78a42330d3a0056e8dbd7896b4a6782c8e392b6532141e34d"
-url = "https://github.com/oven-sh/bun/releases/download/bun-v1.3.10/bun-linux-aarch64-musl.zip"
+checksum = "sha256:0f5bf5dc3f276053196274bb84f90a44e2fa40c9432bd6757e3247a8d9476a3d"
+url = "https://github.com/oven-sh/bun/releases/download/bun-v1.3.11/bun-linux-aarch64-musl.zip"
 
 [tools.bun."platforms.linux-x64"]
-checksum = "sha256:f57bc0187e39623de716ba3a389fda5486b2d7be7131a980ba54dc7b733d2e08"
-url = "https://github.com/oven-sh/bun/releases/download/bun-v1.3.10/bun-linux-x64.zip"
+checksum = "sha256:8611ba935af886f05a6f38740a15160326c15e5d5d07adef966130b4493607ed"
+url = "https://github.com/oven-sh/bun/releases/download/bun-v1.3.11/bun-linux-x64.zip"
 
 [tools.bun."platforms.linux-x64-baseline"]
-checksum = "sha256:41201a8c5ee74a9dcbb1ce25a1104f1f929838b57a845aa78d98379b0ce7cde2"
-url = "https://github.com/oven-sh/bun/releases/download/bun-v1.3.10/bun-linux-x64-baseline.zip"
+checksum = "sha256:abe346f63414547cdf6b35b7a649a490c728b93d006226156923918a84c0e59b"
+url = "https://github.com/oven-sh/bun/releases/download/bun-v1.3.11/bun-linux-x64-baseline.zip"
 
 [tools.bun."platforms.linux-x64-musl"]
-checksum = "sha256:48a6c32277d343db0148ce066336472ffd380358a4d26bb1329714742492d824"
-url = "https://github.com/oven-sh/bun/releases/download/bun-v1.3.10/bun-linux-x64-musl.zip"
+checksum = "sha256:b0fce3bc4fab52f26a1e0d8886dc07fd0c0eb2a274cb343b59c83a2d5997b5b1"
+url = "https://github.com/oven-sh/bun/releases/download/bun-v1.3.11/bun-linux-x64-musl.zip"
 
 [tools.bun."platforms.linux-x64-musl-baseline"]
-checksum = "sha256:a7bc4cdea1ef255a83adbf39c7aafcd30e09f2b8f74deec4b10ee318bc024d1f"
-url = "https://github.com/oven-sh/bun/releases/download/bun-v1.3.10/bun-linux-x64-musl-baseline.zip"
+checksum = "sha256:2fa2b697f14ada86a28df771d3876ca7606d7453b2339454893b1937aa9c0c7e"
+url = "https://github.com/oven-sh/bun/releases/download/bun-v1.3.11/bun-linux-x64-musl-baseline.zip"
 
 [tools.bun."platforms.macos-arm64"]
-checksum = "sha256:82034e87c9d9b4398ea619aee2eed5d2a68c8157e9a6ae2d1052d84d533ccd8d"
-url = "https://github.com/oven-sh/bun/releases/download/bun-v1.3.10/bun-darwin-aarch64.zip"
+checksum = "sha256:6f5a3467ed9caec4795bf78cd476507d9f870c7d57b86c945fcb338126772ffc"
+url = "https://github.com/oven-sh/bun/releases/download/bun-v1.3.11/bun-darwin-aarch64.zip"
 
 [tools.bun."platforms.macos-x64"]
-checksum = "sha256:c1d90bf6140f20e572c473065dc6b37a4b036349b5e9e4133779cc642ad94323"
-url = "https://github.com/oven-sh/bun/releases/download/bun-v1.3.10/bun-darwin-x64.zip"
+checksum = "sha256:c4fe2b9247218b0295f24e895aaec8fee62e74452679a9026b67eacbd611a286"
+url = "https://github.com/oven-sh/bun/releases/download/bun-v1.3.11/bun-darwin-x64.zip"
 
 [tools.bun."platforms.macos-x64-baseline"]
-checksum = "sha256:f9686c4e4e760db4cde77a0f1fad05e552648b9c9cbfa4f7fc9a7ec26b9f3267"
-url = "https://github.com/oven-sh/bun/releases/download/bun-v1.3.10/bun-darwin-x64-baseline.zip"
+checksum = "sha256:fb6739b08bf54550edaa7c824cd5b2dca45b6a06afef408443087a63105f6f8d"
+url = "https://github.com/oven-sh/bun/releases/download/bun-v1.3.11/bun-darwin-x64-baseline.zip"
 
 [tools.bun."platforms.windows-x64"]
-checksum = "sha256:7a77b3e245e2e26965c93089a4a1332e8a326d3364c89fae1d1fd99cdd3cd73d"
-url = "https://github.com/oven-sh/bun/releases/download/bun-v1.3.10/bun-windows-x64.zip"
+checksum = "sha256:066f8694f8b7d8df592452746d18f01710d4053e93030922dbc6e8c34a8c4b9f"
+url = "https://github.com/oven-sh/bun/releases/download/bun-v1.3.11/bun-windows-x64.zip"
 
 [tools.bun."platforms.windows-x64-baseline"]
-checksum = "sha256:715709c69b176e20994533d3292bd0b7c32de9c0c5575b916746ec6b2aa38346"
-url = "https://github.com/oven-sh/bun/releases/download/bun-v1.3.10/bun-windows-x64-baseline.zip"
+checksum = "sha256:9d0e0f923e9626f3bc6044fc32e0d3ab29039aea753f5678ef8801cf26f75288"
+url = "https://github.com/oven-sh/bun/releases/download/bun-v1.3.11/bun-windows-x64-baseline.zip"
 
 [[tools."cargo:alacritty"]]
 version = "0.16.1"
@@ -159,7 +159,7 @@ version = "1.0.1"
 backend = "cargo:despell"
 
 [[tools."cargo:difftastic"]]
-version = "0.67.0"
+version = "0.68.0"
 backend = "cargo:difftastic"
 
 [[tools."cargo:diskus"]]
@@ -231,7 +231,7 @@ version = "0.6.2"
 backend = "cargo:jnv"
 
 [[tools."cargo:just"]]
-version = "1.47.0"
+version = "1.47.1"
 backend = "cargo:just"
 
 [[tools."cargo:kanata"]]
@@ -415,52 +415,52 @@ version = "0.43.1"
 backend = "cargo:zellij"
 
 [[tools.dprint]]
-version = "0.52.0"
+version = "0.53.0"
 backend = "aqua:dprint/dprint"
 
 [tools.dprint."platforms.linux-arm64"]
-checksum = "sha256:e1434b394718b63d560ecaf36c748e91f06c49fe4b09ffc8c6b6e0e6833d0900"
-url = "https://github.com/dprint/dprint/releases/download/0.52.0/dprint-aarch64-unknown-linux-musl.zip"
+checksum = "sha256:d238e1c0f69bc6023c61f7e4f5e427c550c49ae1dfa32e255e9e1bae3953772b"
+url = "https://github.com/dprint/dprint/releases/download/0.53.0/dprint-aarch64-unknown-linux-musl.zip"
 
 [tools.dprint."platforms.linux-arm64-musl"]
-checksum = "sha256:e1434b394718b63d560ecaf36c748e91f06c49fe4b09ffc8c6b6e0e6833d0900"
-url = "https://github.com/dprint/dprint/releases/download/0.52.0/dprint-aarch64-unknown-linux-musl.zip"
+checksum = "sha256:d238e1c0f69bc6023c61f7e4f5e427c550c49ae1dfa32e255e9e1bae3953772b"
+url = "https://github.com/dprint/dprint/releases/download/0.53.0/dprint-aarch64-unknown-linux-musl.zip"
 
 [tools.dprint."platforms.linux-x64"]
-checksum = "sha256:ff86d0b9dc28183e111e7cd7d4101fdc4e1b9be0fb84bd08f3b9a41688010aa1"
-url = "https://github.com/dprint/dprint/releases/download/0.52.0/dprint-x86_64-unknown-linux-musl.zip"
+checksum = "sha256:9994d64de357a2b4e93079c21b63506d821bcf37be519c536dc33536d82d752c"
+url = "https://github.com/dprint/dprint/releases/download/0.53.0/dprint-x86_64-unknown-linux-musl.zip"
 
 [tools.dprint."platforms.linux-x64-baseline"]
-checksum = "sha256:ff86d0b9dc28183e111e7cd7d4101fdc4e1b9be0fb84bd08f3b9a41688010aa1"
-url = "https://github.com/dprint/dprint/releases/download/0.52.0/dprint-x86_64-unknown-linux-musl.zip"
+checksum = "sha256:9994d64de357a2b4e93079c21b63506d821bcf37be519c536dc33536d82d752c"
+url = "https://github.com/dprint/dprint/releases/download/0.53.0/dprint-x86_64-unknown-linux-musl.zip"
 
 [tools.dprint."platforms.linux-x64-musl"]
-checksum = "sha256:ff86d0b9dc28183e111e7cd7d4101fdc4e1b9be0fb84bd08f3b9a41688010aa1"
-url = "https://github.com/dprint/dprint/releases/download/0.52.0/dprint-x86_64-unknown-linux-musl.zip"
+checksum = "sha256:9994d64de357a2b4e93079c21b63506d821bcf37be519c536dc33536d82d752c"
+url = "https://github.com/dprint/dprint/releases/download/0.53.0/dprint-x86_64-unknown-linux-musl.zip"
 
 [tools.dprint."platforms.linux-x64-musl-baseline"]
-checksum = "sha256:ff86d0b9dc28183e111e7cd7d4101fdc4e1b9be0fb84bd08f3b9a41688010aa1"
-url = "https://github.com/dprint/dprint/releases/download/0.52.0/dprint-x86_64-unknown-linux-musl.zip"
+checksum = "sha256:9994d64de357a2b4e93079c21b63506d821bcf37be519c536dc33536d82d752c"
+url = "https://github.com/dprint/dprint/releases/download/0.53.0/dprint-x86_64-unknown-linux-musl.zip"
 
 [tools.dprint."platforms.macos-arm64"]
-checksum = "sha256:bb3a5be1444fcfaf2f405cbf8af7da809d055705a2ca17bd2e7edff6f2959354"
-url = "https://github.com/dprint/dprint/releases/download/0.52.0/dprint-aarch64-apple-darwin.zip"
+checksum = "sha256:1906f3292dab7d333afbbb15b2e05a29f080f5cf91746ca6c73ee843da298d82"
+url = "https://github.com/dprint/dprint/releases/download/0.53.0/dprint-aarch64-apple-darwin.zip"
 
 [tools.dprint."platforms.macos-x64"]
-checksum = "sha256:aa42a8ce7f84393c601f16bfd57e2425ccfa3b68f06d62162aa73888fd38bc75"
-url = "https://github.com/dprint/dprint/releases/download/0.52.0/dprint-x86_64-apple-darwin.zip"
+checksum = "sha256:4248d4a7c8d747a5c6c874663c43406418ffe043a46e987e8cf4c97fa804a6ff"
+url = "https://github.com/dprint/dprint/releases/download/0.53.0/dprint-x86_64-apple-darwin.zip"
 
 [tools.dprint."platforms.macos-x64-baseline"]
-checksum = "sha256:aa42a8ce7f84393c601f16bfd57e2425ccfa3b68f06d62162aa73888fd38bc75"
-url = "https://github.com/dprint/dprint/releases/download/0.52.0/dprint-x86_64-apple-darwin.zip"
+checksum = "sha256:4248d4a7c8d747a5c6c874663c43406418ffe043a46e987e8cf4c97fa804a6ff"
+url = "https://github.com/dprint/dprint/releases/download/0.53.0/dprint-x86_64-apple-darwin.zip"
 
 [tools.dprint."platforms.windows-x64"]
-checksum = "sha256:bbb22a19022e104b27f28426bb984fee3733294b67b3c6bbb3a8ebed1e0c1cb2"
-url = "https://github.com/dprint/dprint/releases/download/0.52.0/dprint-x86_64-pc-windows-msvc.zip"
+checksum = "sha256:913b8233e02a659d21b9b3f50eff147b9036bef2157f4dd830c45e2d8abf2787"
+url = "https://github.com/dprint/dprint/releases/download/0.53.0/dprint-x86_64-pc-windows-msvc.zip"
 
 [tools.dprint."platforms.windows-x64-baseline"]
-checksum = "sha256:bbb22a19022e104b27f28426bb984fee3733294b67b3c6bbb3a8ebed1e0c1cb2"
-url = "https://github.com/dprint/dprint/releases/download/0.52.0/dprint-x86_64-pc-windows-msvc.zip"
+checksum = "sha256:913b8233e02a659d21b9b3f50eff147b9036bef2157f4dd830c45e2d8abf2787"
+url = "https://github.com/dprint/dprint/releases/download/0.53.0/dprint-x86_64-pc-windows-msvc.zip"
 
 [[tools.fnox]]
 version = "1.18.0"
@@ -1281,63 +1281,63 @@ url = "https://github.com/junegunn/fzf/releases/download/v0.70.0/fzf-0.70.0-wind
 url_api = "https://api.github.com/repos/junegunn/fzf/releases/assets/365142647"
 
 [[tools."github:mayanayza/netvisor"]]
-version = "0.14.18"
+version = "0.14.19"
 backend = "github:mayanayza/netvisor"
 
 [tools."github:mayanayza/netvisor"."platforms.linux-arm64"]
-checksum = "sha256:04a4b3289254cb580a6e15903a10b65f752002243c3e62e5fcb623880350e4d8"
-url = "https://github.com/scanopy/scanopy/releases/download/v0.14.18/scanopy-daemon-linux-arm64"
-url_api = "https://api.github.com/repos/scanopy/scanopy/releases/assets/371616767"
+checksum = "sha256:50f4f9e4c87823eaddaac630109ecd6d7784a546595a38792f40225acdb0f481"
+url = "https://github.com/scanopy/scanopy/releases/download/v0.14.19/scanopy-daemon-linux-arm64"
+url_api = "https://api.github.com/repos/scanopy/scanopy/releases/assets/374479966"
 
 [tools."github:mayanayza/netvisor"."platforms.linux-arm64-musl"]
-checksum = "sha256:04a4b3289254cb580a6e15903a10b65f752002243c3e62e5fcb623880350e4d8"
-url = "https://github.com/scanopy/scanopy/releases/download/v0.14.18/scanopy-daemon-linux-arm64"
-url_api = "https://api.github.com/repos/scanopy/scanopy/releases/assets/371616767"
+checksum = "sha256:50f4f9e4c87823eaddaac630109ecd6d7784a546595a38792f40225acdb0f481"
+url = "https://github.com/scanopy/scanopy/releases/download/v0.14.19/scanopy-daemon-linux-arm64"
+url_api = "https://api.github.com/repos/scanopy/scanopy/releases/assets/374479966"
 
 [tools."github:mayanayza/netvisor"."platforms.linux-x64"]
-checksum = "sha256:03c37e83f5238c3fb9a5cc3aa54e3290d8dcda8f99633552254b1765bec38563"
-url = "https://github.com/scanopy/scanopy/releases/download/v0.14.18/scanopy-daemon-linux-amd64"
-url_api = "https://api.github.com/repos/scanopy/scanopy/releases/assets/371616764"
+checksum = "sha256:4fbb0e345e16db8ecdb34b62023e1c6a42cc14c2611339058a18a38e6675866c"
+url = "https://github.com/scanopy/scanopy/releases/download/v0.14.19/scanopy-daemon-linux-amd64"
+url_api = "https://api.github.com/repos/scanopy/scanopy/releases/assets/374479962"
 
 [tools."github:mayanayza/netvisor"."platforms.linux-x64-baseline"]
-checksum = "sha256:03c37e83f5238c3fb9a5cc3aa54e3290d8dcda8f99633552254b1765bec38563"
-url = "https://github.com/scanopy/scanopy/releases/download/v0.14.18/scanopy-daemon-linux-amd64"
-url_api = "https://api.github.com/repos/scanopy/scanopy/releases/assets/371616764"
+checksum = "sha256:4fbb0e345e16db8ecdb34b62023e1c6a42cc14c2611339058a18a38e6675866c"
+url = "https://github.com/scanopy/scanopy/releases/download/v0.14.19/scanopy-daemon-linux-amd64"
+url_api = "https://api.github.com/repos/scanopy/scanopy/releases/assets/374479962"
 
 [tools."github:mayanayza/netvisor"."platforms.linux-x64-musl"]
-checksum = "sha256:03c37e83f5238c3fb9a5cc3aa54e3290d8dcda8f99633552254b1765bec38563"
-url = "https://github.com/scanopy/scanopy/releases/download/v0.14.18/scanopy-daemon-linux-amd64"
-url_api = "https://api.github.com/repos/scanopy/scanopy/releases/assets/371616764"
+checksum = "sha256:4fbb0e345e16db8ecdb34b62023e1c6a42cc14c2611339058a18a38e6675866c"
+url = "https://github.com/scanopy/scanopy/releases/download/v0.14.19/scanopy-daemon-linux-amd64"
+url_api = "https://api.github.com/repos/scanopy/scanopy/releases/assets/374479962"
 
 [tools."github:mayanayza/netvisor"."platforms.linux-x64-musl-baseline"]
-checksum = "sha256:03c37e83f5238c3fb9a5cc3aa54e3290d8dcda8f99633552254b1765bec38563"
-url = "https://github.com/scanopy/scanopy/releases/download/v0.14.18/scanopy-daemon-linux-amd64"
-url_api = "https://api.github.com/repos/scanopy/scanopy/releases/assets/371616764"
+checksum = "sha256:4fbb0e345e16db8ecdb34b62023e1c6a42cc14c2611339058a18a38e6675866c"
+url = "https://github.com/scanopy/scanopy/releases/download/v0.14.19/scanopy-daemon-linux-amd64"
+url_api = "https://api.github.com/repos/scanopy/scanopy/releases/assets/374479962"
 
 [tools."github:mayanayza/netvisor"."platforms.macos-arm64"]
-checksum = "sha256:f01a7d910fa12d146dada36a57dd01a9cabea24f0258019a3f764e99b915f2dd"
-url = "https://github.com/scanopy/scanopy/releases/download/v0.14.18/scanopy-daemon-darwin-arm64"
-url_api = "https://api.github.com/repos/scanopy/scanopy/releases/assets/371616765"
+checksum = "sha256:3077d8128e568b40f4602d799d9ba58f489cf98fde29391b2a2bbb8268127f7b"
+url = "https://github.com/scanopy/scanopy/releases/download/v0.14.19/scanopy-daemon-darwin-arm64"
+url_api = "https://api.github.com/repos/scanopy/scanopy/releases/assets/374479964"
 
 [tools."github:mayanayza/netvisor"."platforms.macos-x64"]
-checksum = "sha256:b5e01fd232ac92a9a7ec6b310f328c7ed0c566ad04acf782ca1ee86f68655407"
-url = "https://github.com/scanopy/scanopy/releases/download/v0.14.18/scanopy-daemon-darwin-amd64"
-url_api = "https://api.github.com/repos/scanopy/scanopy/releases/assets/371616768"
+checksum = "sha256:17b3a5dc905a76e619e1e1a0c3da5df55bd0d4e88e07a310bc41d6c975d9b763"
+url = "https://github.com/scanopy/scanopy/releases/download/v0.14.19/scanopy-daemon-darwin-amd64"
+url_api = "https://api.github.com/repos/scanopy/scanopy/releases/assets/374479963"
 
 [tools."github:mayanayza/netvisor"."platforms.macos-x64-baseline"]
-checksum = "sha256:b5e01fd232ac92a9a7ec6b310f328c7ed0c566ad04acf782ca1ee86f68655407"
-url = "https://github.com/scanopy/scanopy/releases/download/v0.14.18/scanopy-daemon-darwin-amd64"
-url_api = "https://api.github.com/repos/scanopy/scanopy/releases/assets/371616768"
+checksum = "sha256:17b3a5dc905a76e619e1e1a0c3da5df55bd0d4e88e07a310bc41d6c975d9b763"
+url = "https://github.com/scanopy/scanopy/releases/download/v0.14.19/scanopy-daemon-darwin-amd64"
+url_api = "https://api.github.com/repos/scanopy/scanopy/releases/assets/374479963"
 
 [tools."github:mayanayza/netvisor"."platforms.windows-x64"]
-checksum = "sha256:bde2472e1269599b6c011e94f6d0c50bc0180a1f2b2c969946c22cb29d03febc"
-url = "https://github.com/scanopy/scanopy/releases/download/v0.14.18/scanopy-daemon-windows-amd64.exe"
-url_api = "https://api.github.com/repos/scanopy/scanopy/releases/assets/371616766"
+checksum = "sha256:f6824d4046b455e2470423acd611533f2714f28c554705209f67139f335273e8"
+url = "https://github.com/scanopy/scanopy/releases/download/v0.14.19/scanopy-daemon-windows-amd64.exe"
+url_api = "https://api.github.com/repos/scanopy/scanopy/releases/assets/374479965"
 
 [tools."github:mayanayza/netvisor"."platforms.windows-x64-baseline"]
-checksum = "sha256:bde2472e1269599b6c011e94f6d0c50bc0180a1f2b2c969946c22cb29d03febc"
-url = "https://github.com/scanopy/scanopy/releases/download/v0.14.18/scanopy-daemon-windows-amd64.exe"
-url_api = "https://api.github.com/repos/scanopy/scanopy/releases/assets/371616766"
+checksum = "sha256:f6824d4046b455e2470423acd611533f2714f28c554705209f67139f335273e8"
+url = "https://github.com/scanopy/scanopy/releases/download/v0.14.19/scanopy-daemon-windows-amd64.exe"
+url_api = "https://api.github.com/repos/scanopy/scanopy/releases/assets/374479965"
 
 [[tools."github:mgdm/htmlq"]]
 version = "0.4.0"
@@ -1576,52 +1576,52 @@ url = "https://github.com/sharkdp/bat/releases/download/v0.26.1/bat-v0.26.1-x86_
 url_api = "https://api.github.com/repos/sharkdp/bat/releases/assets/323549116"
 
 [[tools.gleam]]
-version = "1.14.0"
+version = "1.15.1"
 backend = "aqua:gleam-lang/gleam"
 
 [tools.gleam."platforms.linux-arm64"]
-checksum = "sha256:16371f8e3b45303d240758fe07f4adcb0fe444edf2f82312a24451323869730c"
-url = "https://github.com/gleam-lang/gleam/releases/download/v1.14.0/gleam-v1.14.0-aarch64-unknown-linux-musl.tar.gz"
+checksum = "sha256:a73fa3a5b585a971f295d536d4902e8a33428d2167015dcbe031a90989b9fdb6"
+url = "https://github.com/gleam-lang/gleam/releases/download/v1.15.1/gleam-v1.15.1-aarch64-unknown-linux-musl.tar.gz"
 
 [tools.gleam."platforms.linux-arm64-musl"]
-checksum = "sha256:16371f8e3b45303d240758fe07f4adcb0fe444edf2f82312a24451323869730c"
-url = "https://github.com/gleam-lang/gleam/releases/download/v1.14.0/gleam-v1.14.0-aarch64-unknown-linux-musl.tar.gz"
+checksum = "sha256:a73fa3a5b585a971f295d536d4902e8a33428d2167015dcbe031a90989b9fdb6"
+url = "https://github.com/gleam-lang/gleam/releases/download/v1.15.1/gleam-v1.15.1-aarch64-unknown-linux-musl.tar.gz"
 
 [tools.gleam."platforms.linux-x64"]
-checksum = "sha256:5dc66abbf3eb80f209f1c261ecfc44dc1404dd8ac503e483369d37182a4fcce8"
-url = "https://github.com/gleam-lang/gleam/releases/download/v1.14.0/gleam-v1.14.0-x86_64-unknown-linux-musl.tar.gz"
+checksum = "sha256:e7013cc57334a16816263dfff9a35c8ab3797fe65f1dcb2ae67a4a688bda52d4"
+url = "https://github.com/gleam-lang/gleam/releases/download/v1.15.1/gleam-v1.15.1-x86_64-unknown-linux-musl.tar.gz"
 
 [tools.gleam."platforms.linux-x64-baseline"]
-checksum = "sha256:5dc66abbf3eb80f209f1c261ecfc44dc1404dd8ac503e483369d37182a4fcce8"
-url = "https://github.com/gleam-lang/gleam/releases/download/v1.14.0/gleam-v1.14.0-x86_64-unknown-linux-musl.tar.gz"
+checksum = "sha256:e7013cc57334a16816263dfff9a35c8ab3797fe65f1dcb2ae67a4a688bda52d4"
+url = "https://github.com/gleam-lang/gleam/releases/download/v1.15.1/gleam-v1.15.1-x86_64-unknown-linux-musl.tar.gz"
 
 [tools.gleam."platforms.linux-x64-musl"]
-checksum = "sha256:5dc66abbf3eb80f209f1c261ecfc44dc1404dd8ac503e483369d37182a4fcce8"
-url = "https://github.com/gleam-lang/gleam/releases/download/v1.14.0/gleam-v1.14.0-x86_64-unknown-linux-musl.tar.gz"
+checksum = "sha256:e7013cc57334a16816263dfff9a35c8ab3797fe65f1dcb2ae67a4a688bda52d4"
+url = "https://github.com/gleam-lang/gleam/releases/download/v1.15.1/gleam-v1.15.1-x86_64-unknown-linux-musl.tar.gz"
 
 [tools.gleam."platforms.linux-x64-musl-baseline"]
-checksum = "sha256:5dc66abbf3eb80f209f1c261ecfc44dc1404dd8ac503e483369d37182a4fcce8"
-url = "https://github.com/gleam-lang/gleam/releases/download/v1.14.0/gleam-v1.14.0-x86_64-unknown-linux-musl.tar.gz"
+checksum = "sha256:e7013cc57334a16816263dfff9a35c8ab3797fe65f1dcb2ae67a4a688bda52d4"
+url = "https://github.com/gleam-lang/gleam/releases/download/v1.15.1/gleam-v1.15.1-x86_64-unknown-linux-musl.tar.gz"
 
 [tools.gleam."platforms.macos-arm64"]
-checksum = "sha256:81a7c879ff2ebd0d6a4831f92a738542e21148784ba6cc1aa1c3f726f36b0c22"
-url = "https://github.com/gleam-lang/gleam/releases/download/v1.14.0/gleam-v1.14.0-aarch64-apple-darwin.tar.gz"
+checksum = "sha256:07574517355767975715763faf0c6dfe48138562e4558222f236b046a99e7539"
+url = "https://github.com/gleam-lang/gleam/releases/download/v1.15.1/gleam-v1.15.1-aarch64-apple-darwin.tar.gz"
 
 [tools.gleam."platforms.macos-x64"]
-checksum = "sha256:809c9a0e2e440c62554ff5cf5c2c38a961d25b98197313dc4b73e6dea88f104d"
-url = "https://github.com/gleam-lang/gleam/releases/download/v1.14.0/gleam-v1.14.0-x86_64-apple-darwin.tar.gz"
+checksum = "sha256:224aa038e09d7de9341b0b6f1ca81d00d5d85cc95b91af9a6311f041841c5815"
+url = "https://github.com/gleam-lang/gleam/releases/download/v1.15.1/gleam-v1.15.1-x86_64-apple-darwin.tar.gz"
 
 [tools.gleam."platforms.macos-x64-baseline"]
-checksum = "sha256:809c9a0e2e440c62554ff5cf5c2c38a961d25b98197313dc4b73e6dea88f104d"
-url = "https://github.com/gleam-lang/gleam/releases/download/v1.14.0/gleam-v1.14.0-x86_64-apple-darwin.tar.gz"
+checksum = "sha256:224aa038e09d7de9341b0b6f1ca81d00d5d85cc95b91af9a6311f041841c5815"
+url = "https://github.com/gleam-lang/gleam/releases/download/v1.15.1/gleam-v1.15.1-x86_64-apple-darwin.tar.gz"
 
 [tools.gleam."platforms.windows-x64"]
-checksum = "sha256:0531746b964de611da660c4e65a635dc0f7a4e9147e4b2e89b8c58ec316501b8"
-url = "https://github.com/gleam-lang/gleam/releases/download/v1.14.0/gleam-v1.14.0-x86_64-pc-windows-msvc.zip"
+checksum = "sha256:c3a79b88dc2eeeaff7d9d38a581fbbc4a89e0cbccb17378ee4e3ffedd00c21e8"
+url = "https://github.com/gleam-lang/gleam/releases/download/v1.15.1/gleam-v1.15.1-x86_64-pc-windows-msvc.zip"
 
 [tools.gleam."platforms.windows-x64-baseline"]
-checksum = "sha256:0531746b964de611da660c4e65a635dc0f7a4e9147e4b2e89b8c58ec316501b8"
-url = "https://github.com/gleam-lang/gleam/releases/download/v1.14.0/gleam-v1.14.0-x86_64-pc-windows-msvc.zip"
+checksum = "sha256:c3a79b88dc2eeeaff7d9d38a581fbbc4a89e0cbccb17378ee4e3ffedd00c21e8"
+url = "https://github.com/gleam-lang/gleam/releases/download/v1.15.1/gleam-v1.15.1-x86_64-pc-windows-msvc.zip"
 
 [[tools.glow]]
 version = "2.1.1"
@@ -1876,7 +1876,7 @@ version = "11.11.1"
 backend = "npm"
 
 [[tools."npm:@graphlab-fr/cosma"]]
-version = "2.6.0"
+version = "2.6.1"
 backend = "npm:@graphlab-fr/cosma"
 
 [[tools."npm:cosma"]]
@@ -1892,7 +1892,7 @@ version = "1.6.3"
 backend = "npm:jsonlint"
 
 [[tools."npm:opencode-ai"]]
-version = "1.2.26"
+version = "1.2.27"
 backend = "npm:opencode-ai"
 
 [[tools."npm:tldr"]]
@@ -1904,7 +1904,7 @@ version = "1.21.0"
 backend = "npm:yaml-language-server"
 
 [[tools.pandoc]]
-version = "3.9"
+version = "3.9.0.1"
 backend = "asdf:pandoc"
 
 [[tools."pipx:calcure"]]
@@ -1912,7 +1912,7 @@ version = "3.2.1"
 backend = "pipx:calcure"
 
 [[tools."pipx:llm"]]
-version = "0.28"
+version = "0.29"
 backend = "pipx:llm"
 
 [[tools.pitchfork]]

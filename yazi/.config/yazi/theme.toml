@@ -25,15 +25,15 @@ count_cut = { fg = "#1e1e2e", bg = "#f38ba8" }
 count_selected = { fg = "#1e1e2e", bg = "#89b4fa" }
 
 # Border
-border_symbol = "│"
 border_style = { fg = "#7f849c" }
+border_symbol = "│"
 
 # Highlighting
 syntect_theme = "~/.config/yazi/Catppuccin-mocha.tmTheme"
 
 [status]
-separator_open = ""
 separator_close = ""
+separator_open = ""
 separator_style = { fg = "#45475a", bg = "#45475a" }
 
 # Mode
@@ -42,47 +42,47 @@ mode_select = { fg = "#1e1e2e", bg = "#a6e3a1", bold = true }
 mode_unset = { fg = "#1e1e2e", bg = "#f2cdcd", bold = true }
 
 # Progress
+progress_error = { fg = "#f38ba8", bg = "#45475a" }
 progress_label = { fg = "#ffffff", bold = true }
 progress_normal = { fg = "#89b4fa", bg = "#45475a" }
-progress_error = { fg = "#f38ba8", bg = "#45475a" }
 
 # Permissions
-permissions_t = { fg = "#89b4fa" }
 permissions_r = { fg = "#f9e2af" }
+permissions_s = { fg = "#7f849c" }
+permissions_t = { fg = "#89b4fa" }
 permissions_w = { fg = "#f38ba8" }
 permissions_x = { fg = "#a6e3a1" }
-permissions_s = { fg = "#7f849c" }
 
 [input]
 border = { fg = "#89b4fa" }
+selected = { reversed = true }
 title = {}
 value = {}
-selected = { reversed = true }
 
 [select]
-border = { fg = "#89b4fa" }
 active = { fg = "#f5c2e7" }
+border = { fg = "#89b4fa" }
 inactive = {}
 
 [tasks]
 border = { fg = "#89b4fa" }
-title = {}
 hovered = { underline = true }
+title = {}
 
 [which]
-mask = { bg = "#313244" }
 cand = { fg = "#94e2d5" }
-rest = { fg = "#9399b2" }
 desc = { fg = "#f5c2e7" }
+mask = { bg = "#313244" }
+rest = { fg = "#9399b2" }
 separator = "  "
 separator_style = { fg = "#585b70" }
 
 [help]
-on = { fg = "#f5c2e7" }
-exec = { fg = "#94e2d5" }
 desc = { fg = "#9399b2" }
-hovered = { bg = "#585b70", bold = true }
+exec = { fg = "#94e2d5" }
 footer = { fg = "#45475a", bg = "#cdd6f4" }
+hovered = { bg = "#585b70", bold = true }
+on = { fg = "#f5c2e7" }
 
 [filetype]
 rules = [
@@ -100,166 +100,6 @@ rules = [
 ]
 
 [icon]
-files = [
-  { name = "gulpfile.js", text = "", fg_dark = "#f38ba8", fg_light = "#f38ba8" },
-  { name = ".babelrc", text = "", fg_dark = "#f9e2af", fg_light = "#f9e2af" },
-  { name = "copying.lesser", text = "", fg_dark = "#f9e2af", fg_light = "#f9e2af" },
-  { name = ".npmrc", text = "", fg_dark = "#f38ba8", fg_light = "#f38ba8" },
-  { name = "docker-compose.yml", text = "󰡨", fg_dark = "#89b4fa", fg_light = "#89b4fa" },
-  { name = "svelte.config.js", text = "", fg_dark = "#fab387", fg_light = "#fab387" },
-  { name = "copying", text = "", fg_dark = "#f9e2af", fg_light = "#f9e2af" },
-  { name = "prettier.config.ts", text = "", fg_dark = "#89b4fa", fg_light = "#89b4fa" },
-  { name = "gruntfile.babel.js", text = "", fg_dark = "#fab387", fg_light = "#fab387" },
-  { name = ".SRCINFO", text = "󰣇", fg_dark = "#89b4fa", fg_light = "#89b4fa" },
-  { name = ".xinitrc", text = "", fg_dark = "#fab387", fg_light = "#fab387" },
-  { name = "docker-compose.yaml", text = "󰡨", fg_dark = "#89b4fa", fg_light = "#89b4fa" },
-  { name = "nuxt.config.ts", text = "󱄆", fg_dark = "#a6e3a1", fg_light = "#a6e3a1" },
-  { name = "build", text = "", fg_dark = "#a6e3a1", fg_light = "#a6e3a1" },
-  { name = ".editorconfig", text = "", fg_dark = "#f5e0dc", fg_light = "#f5e0dc" },
-  { name = "nuxt.config.mjs", text = "󱄆", fg_dark = "#a6e3a1", fg_light = "#a6e3a1" },
-  { name = ".gitlab-ci.yml", text = "", fg_dark = "#fab387", fg_light = "#fab387" },
-  { name = "PKGBUILD", text = "", fg_dark = "#89b4fa", fg_light = "#89b4fa" },
-  { name = ".bash_profile", text = "", fg_dark = "#a6e3a1", fg_light = "#a6e3a1" },
-  { name = ".bashrc", text = "", fg_dark = "#a6e3a1", fg_light = "#a6e3a1" },
-  { name = "compose.yml", text = "󰡨", fg_dark = "#89b4fa", fg_light = "#89b4fa" },
-  { name = "eslint.config.cjs", text = "", fg_dark = "#585b70", fg_light = "#585b70" },
-  { name = "go.mod", text = "", fg_dark = "#74c7ec", fg_light = "#74c7ec" },
-  { name = ".mailmap", text = "󰊢", fg_dark = "#fab387", fg_light = "#fab387" },
-  { name = "gtkrc", text = "", fg_dark = "#f5e0dc", fg_light = "#f5e0dc" },
-  { name = "go.work", text = "", fg_dark = "#74c7ec", fg_light = "#74c7ec" },
-  { name = "justfile", text = "", fg_dark = "#7f849c", fg_light = "#7f849c" },
-  { name = "kritadisplayrc", text = "", fg_dark = "#cba6f7", fg_light = "#cba6f7" },
-  { name = "commitlint.config.js", text = "󰜘", fg_dark = "#94e2d5", fg_light = "#94e2d5" },
-  { name = ".env", text = "", fg_dark = "#f9e2af", fg_light = "#f9e2af" },
-  { name = "PrusaSlicerGcodeViewer.ini", text = "", fg_dark = "#fab387", fg_light = "#fab387" },
-  { name = "r", text = "󰟔", fg_dark = "#6c7086", fg_light = "#6c7086" },
-  { name = "license", text = "", fg_dark = "#f9e2af", fg_light = "#f9e2af" },
-  { name = ".gitignore", text = "", fg_dark = "#fab387", fg_light = "#fab387" },
-  { name = "tailwind.config.js", text = "󱏿", fg_dark = "#74c7ec", fg_light = "#74c7ec" },
-  { name = ".prettierrc.yml", text = "", fg_dark = "#89b4fa", fg_light = "#89b4fa" },
-  { name = ".zprofile", text = "", fg_dark = "#a6e3a1", fg_light = "#a6e3a1" },
-  { name = ".zshenv", text = "", fg_dark = "#a6e3a1", fg_light = "#a6e3a1" },
-  { name = "xmonad.hs", text = "", fg_dark = "#f38ba8", fg_light = "#f38ba8" },
-  { name = ".eslintignore", text = "", fg_dark = "#585b70", fg_light = "#585b70" },
-  { name = "tsconfig.json", text = "", fg_dark = "#74c7ec", fg_light = "#74c7ec" },
-  { name = ".prettierrc.json5", text = "", fg_dark = "#89b4fa", fg_light = "#89b4fa" },
-  { name = ".ds_store", text = "", fg_dark = "#45475a", fg_light = "#45475a" },
-  { name = "gulpfile.coffee", text = "", fg_dark = "#f38ba8", fg_light = "#f38ba8" },
-  { name = "R", text = "󰟔", fg_dark = "#6c7086", fg_light = "#6c7086" },
-  { name = ".zshrc", text = "", fg_dark = "#a6e3a1", fg_light = "#a6e3a1" },
-  { name = ".prettierrc.toml", text = "", fg_dark = "#89b4fa", fg_light = "#89b4fa" },
-  { name = ".gvimrc", text = "", fg_dark = "#a6e3a1", fg_light = "#a6e3a1" },
-  { name = ".xsession", text = "", fg_dark = "#fab387", fg_light = "#fab387" },
-  { name = ".justfile", text = "", fg_dark = "#7f849c", fg_light = "#7f849c" },
-  { name = ".gitconfig", text = "", fg_dark = "#fab387", fg_light = "#fab387" },
-  { name = "gradle-wrapper.properties", text = "", fg_dark = "#585b70", fg_light = "#585b70" },
-  { name = "ionic.config.json", text = "", fg_dark = "#89b4fa", fg_light = "#89b4fa" },
-  { name = "cantorrc", text = "", fg_dark = "#89b4fa", fg_light = "#89b4fa" },
-  { name = ".gleam", text = "", fg_dark = "#f5c2e7", fg_light = "#f5c2e7" },
-  { name = "package-lock.json", text = "", fg_dark = "#313244", fg_light = "#313244" },
-  { name = "package.json", text = "", fg_dark = "#f38ba8", fg_light = "#f38ba8" },
-  { name = "hyprland.conf", text = "", fg_dark = "#74c7ec", fg_light = "#74c7ec" },
-  { name = "gulpfile.babel.js", text = "", fg_dark = "#f38ba8", fg_light = "#f38ba8" },
-  { name = ".nvmrc", text = "", fg_dark = "#a6e3a1", fg_light = "#a6e3a1" },
-  { name = ".prettierignore", text = "", fg_dark = "#89b4fa", fg_light = "#89b4fa" },
-  { name = "ext_typoscript_setup.txt", text = "", fg_dark = "#fab387", fg_light = "#fab387" },
-  { name = "QtProject.conf", text = "", fg_dark = "#a6e3a1", fg_light = "#a6e3a1" },
-  { name = "avif", text = "", fg_dark = "#7f849c", fg_light = "#7f849c" },
-  { name = "mix.lock", text = "", fg_dark = "#7f849c", fg_light = "#7f849c" },
-  { name = "build.gradle", text = "", fg_dark = "#585b70", fg_light = "#585b70" },
-  { name = "gemfile$", text = "", fg_dark = "#313244", fg_light = "#313244" },
-  { name = ".vimrc", text = "", fg_dark = "#a6e3a1", fg_light = "#a6e3a1" },
-  { name = "i18n.config.ts", text = "󰗊", fg_dark = "#7f849c", fg_light = "#7f849c" },
-  { name = "gulpfile.ts", text = "", fg_dark = "#f38ba8", fg_light = "#f38ba8" },
-  { name = "build.zig.zon", text = "", fg_dark = "#fab387", fg_light = "#fab387" },
-  { name = "checkhealth", text = "󰓙", fg_dark = "#89b4fa", fg_light = "#89b4fa" },
-  { name = "xmobarrc", text = "", fg_dark = "#f38ba8", fg_light = "#f38ba8" },
-  { name = "_vimrc", text = "", fg_dark = "#a6e3a1", fg_light = "#a6e3a1" },
-  { name = ".luaurc", text = "", fg_dark = "#89b4fa", fg_light = "#89b4fa" },
-  { name = "kdenlive-layoutsrc", text = "", fg_dark = "#89b4fa", fg_light = "#89b4fa" },
-  { name = "gradlew", text = "", fg_dark = "#585b70", fg_light = "#585b70" },
-  { name = "xsettingsd.conf", text = "", fg_dark = "#fab387", fg_light = "#fab387" },
-  { name = "vlcrc", text = "󰕼", fg_dark = "#fab387", fg_light = "#fab387" },
-  { name = "xorg.conf", text = "", fg_dark = "#fab387", fg_light = "#fab387" },
-  { name = "xmobarrc.hs", text = "", fg_dark = "#f38ba8", fg_light = "#f38ba8" },
-  { name = "workspace", text = "", fg_dark = "#a6e3a1", fg_light = "#a6e3a1" },
-  { name = ".gitattributes", text = "", fg_dark = "#fab387", fg_light = "#fab387" },
-  { name = "favicon.ico", text = "", fg_dark = "#f9e2af", fg_light = "#f9e2af" },
-  { name = "go.sum", text = "", fg_dark = "#74c7ec", fg_light = "#74c7ec" },
-  { name = "pom.xml", text = "", fg_dark = "#313244", fg_light = "#313244" },
-  { name = "webpack", text = "󰜫", fg_dark = "#74c7ec", fg_light = "#74c7ec" },
-  { name = "vagrantfile$", text = "", fg_dark = "#6c7086", fg_light = "#6c7086" },
-  { name = "unlicense", text = "", fg_dark = "#f9e2af", fg_light = "#f9e2af" },
-  { name = "tmux.conf.local", text = "", fg_dark = "#a6e3a1", fg_light = "#a6e3a1" },
-  { name = "settings.gradle", text = "", fg_dark = "#585b70", fg_light = "#585b70" },
-  { name = ".dockerignore", text = "󰡨", fg_dark = "#89b4fa", fg_light = "#89b4fa" },
-  { name = "sym-lib-table", text = "", fg_dark = "#f5e0dc", fg_light = "#f5e0dc" },
-  { name = "_gvimrc", text = "", fg_dark = "#a6e3a1", fg_light = "#a6e3a1" },
-  { name = "kdenliverc", text = "", fg_dark = "#89b4fa", fg_light = "#89b4fa" },
-  { name = "kdeglobals", text = "", fg_dark = "#89b4fa", fg_light = "#89b4fa" },
-  { name = ".prettierrc.yaml", text = "", fg_dark = "#89b4fa", fg_light = "#89b4fa" },
-  { name = "rmd", text = "", fg_dark = "#74c7ec", fg_light = "#74c7ec" },
-  { name = "tailwind.config.mjs", text = "󱏿", fg_dark = "#74c7ec", fg_light = "#74c7ec" },
-  { name = "sxhkdrc", text = "", fg_dark = "#313244", fg_light = "#313244" },
-  { name = "robots.txt", text = "󰚩", fg_dark = "#6c7086", fg_light = "#6c7086" },
-  { name = "tailwind.config.ts", text = "󱏿", fg_dark = "#74c7ec", fg_light = "#74c7ec" },
-  { name = "prettier.config.mjs", text = "", fg_dark = "#89b4fa", fg_light = "#89b4fa" },
-  { name = "mpv.conf", text = "", fg_dark = "#1e1e2e", fg_light = "#1e1e2e" },
-  { name = "py.typed", text = "", fg_dark = "#f9e2af", fg_light = "#f9e2af" },
-  { name = "PrusaSlicer.ini", text = "", fg_dark = "#fab387", fg_light = "#fab387" },
-  { name = "procfile", text = "", fg_dark = "#7f849c", fg_light = "#7f849c" },
-  { name = "rakefile", text = "", fg_dark = "#313244", fg_light = "#313244" },
-  { name = "kritarc", text = "", fg_dark = "#cba6f7", fg_light = "#cba6f7" },
-  { name = ".Xresources", text = "", fg_dark = "#fab387", fg_light = "#fab387" },
-  { name = "prettier.config.js", text = "", fg_dark = "#89b4fa", fg_light = "#89b4fa" },
-  { name = "commitlint.config.ts", text = "󰜘", fg_dark = "#94e2d5", fg_light = "#94e2d5" },
-  { name = "weston.ini", text = "", fg_dark = "#f9e2af", fg_light = "#f9e2af" },
-  { name = "eslint.config.js", text = "", fg_dark = "#585b70", fg_light = "#585b70" },
-  { name = "cmakelists.txt", text = "", fg_dark = "#7f849c", fg_light = "#7f849c" },
-  { name = ".git-blame-ignore-revs", text = "", fg_dark = "#fab387", fg_light = "#fab387" },
-  { name = "config", text = "", fg_dark = "#7f849c", fg_light = "#7f849c" },
-  { name = "nuxt.config.cjs", text = "󱄆", fg_dark = "#a6e3a1", fg_light = "#a6e3a1" },
-  { name = "node_modules", text = "", fg_dark = "#f38ba8", fg_light = "#f38ba8" },
-  { name = "makefile", text = "", fg_dark = "#7f849c", fg_light = "#7f849c" },
-  { name = "lxqt.conf", text = "", fg_dark = "#89b4fa", fg_light = "#89b4fa" },
-  { name = "i18n.config.js", text = "󰗊", fg_dark = "#7f849c", fg_light = "#7f849c" },
-  { name = "FreeCAD.conf", text = "", fg_dark = "#f38ba8", fg_light = "#f38ba8" },
-  { name = "prettier.config.cjs", text = "", fg_dark = "#89b4fa", fg_light = "#89b4fa" },
-  { name = "tmux.conf", text = "", fg_dark = "#a6e3a1", fg_light = "#a6e3a1" },
-  { name = "kalgebrarc", text = "", fg_dark = "#89b4fa", fg_light = "#89b4fa" },
-  { name = "i3status.conf", text = "", fg_dark = "#f5e0dc", fg_light = "#f5e0dc" },
-  { name = ".settings.json", text = "", fg_dark = "#6c7086", fg_light = "#6c7086" },
-  { name = "containerfile", text = "󰡨", fg_dark = "#89b4fa", fg_light = "#89b4fa" },
-  { name = "i3blocks.conf", text = "", fg_dark = "#f5e0dc", fg_light = "#f5e0dc" },
-  { name = "lxde-rc.xml", text = "", fg_dark = "#9399b2", fg_light = "#9399b2" },
-  { name = "gradle.properties", text = "", fg_dark = "#585b70", fg_light = "#585b70" },
-  { name = "hypridle.conf", text = "", fg_dark = "#74c7ec", fg_light = "#74c7ec" },
-  { name = "gruntfile.ts", text = "", fg_dark = "#fab387", fg_light = "#fab387" },
-  { name = "gruntfile.js", text = "", fg_dark = "#fab387", fg_light = "#fab387" },
-  { name = "dockerfile", text = "󰡨", fg_dark = "#89b4fa", fg_light = "#89b4fa" },
-  { name = "groovy", text = "", fg_dark = "#585b70", fg_light = "#585b70" },
-  { name = "hyprlock.conf", text = "", fg_dark = "#74c7ec", fg_light = "#74c7ec" },
-  { name = ".prettierrc", text = "", fg_dark = "#89b4fa", fg_light = "#89b4fa" },
-  { name = "gnumakefile", text = "", fg_dark = "#7f849c", fg_light = "#7f849c" },
-  { name = "commit_editmsg", text = "", fg_dark = "#fab387", fg_light = "#fab387" },
-  { name = "fp-lib-table", text = "", fg_dark = "#f5e0dc", fg_light = "#f5e0dc" },
-  { name = "fp-info-cache", text = "", fg_dark = "#f5e0dc", fg_light = "#f5e0dc" },
-  { name = "eslint.config.ts", text = "", fg_dark = "#585b70", fg_light = "#585b70" },
-  { name = "nuxt.config.js", text = "󱄆", fg_dark = "#a6e3a1", fg_light = "#a6e3a1" },
-  { name = "platformio.ini", text = "", fg_dark = "#fab387", fg_light = "#fab387" },
-  { name = ".nuxtrc", text = "󱄆", fg_dark = "#a6e3a1", fg_light = "#a6e3a1" },
-  { name = "gruntfile.coffee", text = "", fg_dark = "#fab387", fg_light = "#fab387" },
-  { name = "eslint.config.mjs", text = "", fg_dark = "#585b70", fg_light = "#585b70" },
-  { name = "compose.yaml", text = "󰡨", fg_dark = "#89b4fa", fg_light = "#89b4fa" },
-  { name = "bspwmrc", text = "", fg_dark = "#313244", fg_light = "#313244" },
-  { name = "brewfile", text = "", fg_dark = "#313244", fg_light = "#313244" },
-  { name = ".eslintrc", text = "", fg_dark = "#585b70", fg_light = "#585b70" },
-  { name = ".gtkrc-2.0", text = "", fg_dark = "#f5e0dc", fg_light = "#f5e0dc" },
-  { name = ".Xauthority", text = "", fg_dark = "#fab387", fg_light = "#fab387" },
-  { name = ".prettierrc.json", text = "", fg_dark = "#89b4fa", fg_light = "#89b4fa" },
-  { name = ".npmignore", text = "", fg_dark = "#f38ba8", fg_light = "#f38ba8" },
-  { name = ".gitmodules", text = "", fg_dark = "#fab387", fg_light = "#fab387" },
-]
 exts = [
   { name = "rake", text = "", fg_dark = "#313244", fg_light = "#313244" },
   { name = "skp", text = "󰻫", fg_dark = "#a6e3a1", fg_light = "#a6e3a1" },
@@ -693,4 +533,164 @@ exts = [
   { name = "cob", text = "⚙", fg_dark = "#585b70", fg_light = "#585b70" },
   { name = "cmake", text = "", fg_dark = "#7f849c", fg_light = "#7f849c" },
   { name = "webp", text = "", fg_dark = "#7f849c", fg_light = "#7f849c" },
+]
+files = [
+  { name = "gulpfile.js", text = "", fg_dark = "#f38ba8", fg_light = "#f38ba8" },
+  { name = ".babelrc", text = "", fg_dark = "#f9e2af", fg_light = "#f9e2af" },
+  { name = "copying.lesser", text = "", fg_dark = "#f9e2af", fg_light = "#f9e2af" },
+  { name = ".npmrc", text = "", fg_dark = "#f38ba8", fg_light = "#f38ba8" },
+  { name = "docker-compose.yml", text = "󰡨", fg_dark = "#89b4fa", fg_light = "#89b4fa" },
+  { name = "svelte.config.js", text = "", fg_dark = "#fab387", fg_light = "#fab387" },
+  { name = "copying", text = "", fg_dark = "#f9e2af", fg_light = "#f9e2af" },
+  { name = "prettier.config.ts", text = "", fg_dark = "#89b4fa", fg_light = "#89b4fa" },
+  { name = "gruntfile.babel.js", text = "", fg_dark = "#fab387", fg_light = "#fab387" },
+  { name = ".SRCINFO", text = "󰣇", fg_dark = "#89b4fa", fg_light = "#89b4fa" },
+  { name = ".xinitrc", text = "", fg_dark = "#fab387", fg_light = "#fab387" },
+  { name = "docker-compose.yaml", text = "󰡨", fg_dark = "#89b4fa", fg_light = "#89b4fa" },
+  { name = "nuxt.config.ts", text = "󱄆", fg_dark = "#a6e3a1", fg_light = "#a6e3a1" },
+  { name = "build", text = "", fg_dark = "#a6e3a1", fg_light = "#a6e3a1" },
+  { name = ".editorconfig", text = "", fg_dark = "#f5e0dc", fg_light = "#f5e0dc" },
+  { name = "nuxt.config.mjs", text = "󱄆", fg_dark = "#a6e3a1", fg_light = "#a6e3a1" },
+  { name = ".gitlab-ci.yml", text = "", fg_dark = "#fab387", fg_light = "#fab387" },
+  { name = "PKGBUILD", text = "", fg_dark = "#89b4fa", fg_light = "#89b4fa" },
+  { name = ".bash_profile", text = "", fg_dark = "#a6e3a1", fg_light = "#a6e3a1" },
+  { name = ".bashrc", text = "", fg_dark = "#a6e3a1", fg_light = "#a6e3a1" },
+  { name = "compose.yml", text = "󰡨", fg_dark = "#89b4fa", fg_light = "#89b4fa" },
+  { name = "eslint.config.cjs", text = "", fg_dark = "#585b70", fg_light = "#585b70" },
+  { name = "go.mod", text = "", fg_dark = "#74c7ec", fg_light = "#74c7ec" },
+  { name = ".mailmap", text = "󰊢", fg_dark = "#fab387", fg_light = "#fab387" },
+  { name = "gtkrc", text = "", fg_dark = "#f5e0dc", fg_light = "#f5e0dc" },
+  { name = "go.work", text = "", fg_dark = "#74c7ec", fg_light = "#74c7ec" },
+  { name = "justfile", text = "", fg_dark = "#7f849c", fg_light = "#7f849c" },
+  { name = "kritadisplayrc", text = "", fg_dark = "#cba6f7", fg_light = "#cba6f7" },
+  { name = "commitlint.config.js", text = "󰜘", fg_dark = "#94e2d5", fg_light = "#94e2d5" },
+  { name = ".env", text = "", fg_dark = "#f9e2af", fg_light = "#f9e2af" },
+  { name = "PrusaSlicerGcodeViewer.ini", text = "", fg_dark = "#fab387", fg_light = "#fab387" },
+  { name = "r", text = "󰟔", fg_dark = "#6c7086", fg_light = "#6c7086" },
+  { name = "license", text = "", fg_dark = "#f9e2af", fg_light = "#f9e2af" },
+  { name = ".gitignore", text = "", fg_dark = "#fab387", fg_light = "#fab387" },
+  { name = "tailwind.config.js", text = "󱏿", fg_dark = "#74c7ec", fg_light = "#74c7ec" },
+  { name = ".prettierrc.yml", text = "", fg_dark = "#89b4fa", fg_light = "#89b4fa" },
+  { name = ".zprofile", text = "", fg_dark = "#a6e3a1", fg_light = "#a6e3a1" },
+  { name = ".zshenv", text = "", fg_dark = "#a6e3a1", fg_light = "#a6e3a1" },
+  { name = "xmonad.hs", text = "", fg_dark = "#f38ba8", fg_light = "#f38ba8" },
+  { name = ".eslintignore", text = "", fg_dark = "#585b70", fg_light = "#585b70" },
+  { name = "tsconfig.json", text = "", fg_dark = "#74c7ec", fg_light = "#74c7ec" },
+  { name = ".prettierrc.json5", text = "", fg_dark = "#89b4fa", fg_light = "#89b4fa" },
+  { name = ".ds_store", text = "", fg_dark = "#45475a", fg_light = "#45475a" },
+  { name = "gulpfile.coffee", text = "", fg_dark = "#f38ba8", fg_light = "#f38ba8" },
+  { name = "R", text = "󰟔", fg_dark = "#6c7086", fg_light = "#6c7086" },
+  { name = ".zshrc", text = "", fg_dark = "#a6e3a1", fg_light = "#a6e3a1" },
+  { name = ".prettierrc.toml", text = "", fg_dark = "#89b4fa", fg_light = "#89b4fa" },
+  { name = ".gvimrc", text = "", fg_dark = "#a6e3a1", fg_light = "#a6e3a1" },
+  { name = ".xsession", text = "", fg_dark = "#fab387", fg_light = "#fab387" },
+  { name = ".justfile", text = "", fg_dark = "#7f849c", fg_light = "#7f849c" },
+  { name = ".gitconfig", text = "", fg_dark = "#fab387", fg_light = "#fab387" },
+  { name = "gradle-wrapper.properties", text = "", fg_dark = "#585b70", fg_light = "#585b70" },
+  { name = "ionic.config.json", text = "", fg_dark = "#89b4fa", fg_light = "#89b4fa" },
+  { name = "cantorrc", text = "", fg_dark = "#89b4fa", fg_light = "#89b4fa" },
+  { name = ".gleam", text = "", fg_dark = "#f5c2e7", fg_light = "#f5c2e7" },
+  { name = "package-lock.json", text = "", fg_dark = "#313244", fg_light = "#313244" },
+  { name = "package.json", text = "", fg_dark = "#f38ba8", fg_light = "#f38ba8" },
+  { name = "hyprland.conf", text = "", fg_dark = "#74c7ec", fg_light = "#74c7ec" },
+  { name = "gulpfile.babel.js", text = "", fg_dark = "#f38ba8", fg_light = "#f38ba8" },
+  { name = ".nvmrc", text = "", fg_dark = "#a6e3a1", fg_light = "#a6e3a1" },
+  { name = ".prettierignore", text = "", fg_dark = "#89b4fa", fg_light = "#89b4fa" },
+  { name = "ext_typoscript_setup.txt", text = "", fg_dark = "#fab387", fg_light = "#fab387" },
+  { name = "QtProject.conf", text = "", fg_dark = "#a6e3a1", fg_light = "#a6e3a1" },
+  { name = "avif", text = "", fg_dark = "#7f849c", fg_light = "#7f849c" },
+  { name = "mix.lock", text = "", fg_dark = "#7f849c", fg_light = "#7f849c" },
+  { name = "build.gradle", text = "", fg_dark = "#585b70", fg_light = "#585b70" },
+  { name = "gemfile$", text = "", fg_dark = "#313244", fg_light = "#313244" },
+  { name = ".vimrc", text = "", fg_dark = "#a6e3a1", fg_light = "#a6e3a1" },
+  { name = "i18n.config.ts", text = "󰗊", fg_dark = "#7f849c", fg_light = "#7f849c" },
+  { name = "gulpfile.ts", text = "", fg_dark = "#f38ba8", fg_light = "#f38ba8" },
+  { name = "build.zig.zon", text = "", fg_dark = "#fab387", fg_light = "#fab387" },
+  { name = "checkhealth", text = "󰓙", fg_dark = "#89b4fa", fg_light = "#89b4fa" },
+  { name = "xmobarrc", text = "", fg_dark = "#f38ba8", fg_light = "#f38ba8" },
+  { name = "_vimrc", text = "", fg_dark = "#a6e3a1", fg_light = "#a6e3a1" },
+  { name = ".luaurc", text = "", fg_dark = "#89b4fa", fg_light = "#89b4fa" },
+  { name = "kdenlive-layoutsrc", text = "", fg_dark = "#89b4fa", fg_light = "#89b4fa" },
+  { name = "gradlew", text = "", fg_dark = "#585b70", fg_light = "#585b70" },
+  { name = "xsettingsd.conf", text = "", fg_dark = "#fab387", fg_light = "#fab387" },
+  { name = "vlcrc", text = "󰕼", fg_dark = "#fab387", fg_light = "#fab387" },
+  { name = "xorg.conf", text = "", fg_dark = "#fab387", fg_light = "#fab387" },
+  { name = "xmobarrc.hs", text = "", fg_dark = "#f38ba8", fg_light = "#f38ba8" },
+  { name = "workspace", text = "", fg_dark = "#a6e3a1", fg_light = "#a6e3a1" },
+  { name = ".gitattributes", text = "", fg_dark = "#fab387", fg_light = "#fab387" },
+  { name = "favicon.ico", text = "", fg_dark = "#f9e2af", fg_light = "#f9e2af" },
+  { name = "go.sum", text = "", fg_dark = "#74c7ec", fg_light = "#74c7ec" },
+  { name = "pom.xml", text = "", fg_dark = "#313244", fg_light = "#313244" },
+  { name = "webpack", text = "󰜫", fg_dark = "#74c7ec", fg_light = "#74c7ec" },
+  { name = "vagrantfile$", text = "", fg_dark = "#6c7086", fg_light = "#6c7086" },
+  { name = "unlicense", text = "", fg_dark = "#f9e2af", fg_light = "#f9e2af" },
+  { name = "tmux.conf.local", text = "", fg_dark = "#a6e3a1", fg_light = "#a6e3a1" },
+  { name = "settings.gradle", text = "", fg_dark = "#585b70", fg_light = "#585b70" },
+  { name = ".dockerignore", text = "󰡨", fg_dark = "#89b4fa", fg_light = "#89b4fa" },
+  { name = "sym-lib-table", text = "", fg_dark = "#f5e0dc", fg_light = "#f5e0dc" },
+  { name = "_gvimrc", text = "", fg_dark = "#a6e3a1", fg_light = "#a6e3a1" },
+  { name = "kdenliverc", text = "", fg_dark = "#89b4fa", fg_light = "#89b4fa" },
+  { name = "kdeglobals", text = "", fg_dark = "#89b4fa", fg_light = "#89b4fa" },
+  { name = ".prettierrc.yaml", text = "", fg_dark = "#89b4fa", fg_light = "#89b4fa" },
+  { name = "rmd", text = "", fg_dark = "#74c7ec", fg_light = "#74c7ec" },
+  { name = "tailwind.config.mjs", text = "󱏿", fg_dark = "#74c7ec", fg_light = "#74c7ec" },
+  { name = "sxhkdrc", text = "", fg_dark = "#313244", fg_light = "#313244" },
+  { name = "robots.txt", text = "󰚩", fg_dark = "#6c7086", fg_light = "#6c7086" },
+  { name = "tailwind.config.ts", text = "󱏿", fg_dark = "#74c7ec", fg_light = "#74c7ec" },
+  { name = "prettier.config.mjs", text = "", fg_dark = "#89b4fa", fg_light = "#89b4fa" },
+  { name = "mpv.conf", text = "", fg_dark = "#1e1e2e", fg_light = "#1e1e2e" },
+  { name = "py.typed", text = "", fg_dark = "#f9e2af", fg_light = "#f9e2af" },
+  { name = "PrusaSlicer.ini", text = "", fg_dark = "#fab387", fg_light = "#fab387" },
+  { name = "procfile", text = "", fg_dark = "#7f849c", fg_light = "#7f849c" },
+  { name = "rakefile", text = "", fg_dark = "#313244", fg_light = "#313244" },
+  { name = "kritarc", text = "", fg_dark = "#cba6f7", fg_light = "#cba6f7" },
+  { name = ".Xresources", text = "", fg_dark = "#fab387", fg_light = "#fab387" },
+  { name = "prettier.config.js", text = "", fg_dark = "#89b4fa", fg_light = "#89b4fa" },
+  { name = "commitlint.config.ts", text = "󰜘", fg_dark = "#94e2d5", fg_light = "#94e2d5" },
+  { name = "weston.ini", text = "", fg_dark = "#f9e2af", fg_light = "#f9e2af" },
+  { name = "eslint.config.js", text = "", fg_dark = "#585b70", fg_light = "#585b70" },
+  { name = "cmakelists.txt", text = "", fg_dark = "#7f849c", fg_light = "#7f849c" },
+  { name = ".git-blame-ignore-revs", text = "", fg_dark = "#fab387", fg_light = "#fab387" },
+  { name = "config", text = "", fg_dark = "#7f849c", fg_light = "#7f849c" },
+  { name = "nuxt.config.cjs", text = "󱄆", fg_dark = "#a6e3a1", fg_light = "#a6e3a1" },
+  { name = "node_modules", text = "", fg_dark = "#f38ba8", fg_light = "#f38ba8" },
+  { name = "makefile", text = "", fg_dark = "#7f849c", fg_light = "#7f849c" },
+  { name = "lxqt.conf", text = "", fg_dark = "#89b4fa", fg_light = "#89b4fa" },
+  { name = "i18n.config.js", text = "󰗊", fg_dark = "#7f849c", fg_light = "#7f849c" },
+  { name = "FreeCAD.conf", text = "", fg_dark = "#f38ba8", fg_light = "#f38ba8" },
+  { name = "prettier.config.cjs", text = "", fg_dark = "#89b4fa", fg_light = "#89b4fa" },
+  { name = "tmux.conf", text = "", fg_dark = "#a6e3a1", fg_light = "#a6e3a1" },
+  { name = "kalgebrarc", text = "", fg_dark = "#89b4fa", fg_light = "#89b4fa" },
+  { name = "i3status.conf", text = "", fg_dark = "#f5e0dc", fg_light = "#f5e0dc" },
+  { name = ".settings.json", text = "", fg_dark = "#6c7086", fg_light = "#6c7086" },
+  { name = "containerfile", text = "󰡨", fg_dark = "#89b4fa", fg_light = "#89b4fa" },
+  { name = "i3blocks.conf", text = "", fg_dark = "#f5e0dc", fg_light = "#f5e0dc" },
+  { name = "lxde-rc.xml", text = "", fg_dark = "#9399b2", fg_light = "#9399b2" },
+  { name = "gradle.properties", text = "", fg_dark = "#585b70", fg_light = "#585b70" },
+  { name = "hypridle.conf", text = "", fg_dark = "#74c7ec", fg_light = "#74c7ec" },
+  { name = "gruntfile.ts", text = "", fg_dark = "#fab387", fg_light = "#fab387" },
+  { name = "gruntfile.js", text = "", fg_dark = "#fab387", fg_light = "#fab387" },
+  { name = "dockerfile", text = "󰡨", fg_dark = "#89b4fa", fg_light = "#89b4fa" },
+  { name = "groovy", text = "", fg_dark = "#585b70", fg_light = "#585b70" },
+  { name = "hyprlock.conf", text = "", fg_dark = "#74c7ec", fg_light = "#74c7ec" },
+  { name = ".prettierrc", text = "", fg_dark = "#89b4fa", fg_light = "#89b4fa" },
+  { name = "gnumakefile", text = "", fg_dark = "#7f849c", fg_light = "#7f849c" },
+  { name = "commit_editmsg", text = "", fg_dark = "#fab387", fg_light = "#fab387" },
+  { name = "fp-lib-table", text = "", fg_dark = "#f5e0dc", fg_light = "#f5e0dc" },
+  { name = "fp-info-cache", text = "", fg_dark = "#f5e0dc", fg_light = "#f5e0dc" },
+  { name = "eslint.config.ts", text = "", fg_dark = "#585b70", fg_light = "#585b70" },
+  { name = "nuxt.config.js", text = "󱄆", fg_dark = "#a6e3a1", fg_light = "#a6e3a1" },
+  { name = "platformio.ini", text = "", fg_dark = "#fab387", fg_light = "#fab387" },
+  { name = ".nuxtrc", text = "󱄆", fg_dark = "#a6e3a1", fg_light = "#a6e3a1" },
+  { name = "gruntfile.coffee", text = "", fg_dark = "#fab387", fg_light = "#fab387" },
+  { name = "eslint.config.mjs", text = "", fg_dark = "#585b70", fg_light = "#585b70" },
+  { name = "compose.yaml", text = "󰡨", fg_dark = "#89b4fa", fg_light = "#89b4fa" },
+  { name = "bspwmrc", text = "", fg_dark = "#313244", fg_light = "#313244" },
+  { name = "brewfile", text = "", fg_dark = "#313244", fg_light = "#313244" },
+  { name = ".eslintrc", text = "", fg_dark = "#585b70", fg_light = "#585b70" },
+  { name = ".gtkrc-2.0", text = "", fg_dark = "#f5e0dc", fg_light = "#f5e0dc" },
+  { name = ".Xauthority", text = "", fg_dark = "#fab387", fg_light = "#fab387" },
+  { name = ".prettierrc.json", text = "", fg_dark = "#89b4fa", fg_light = "#89b4fa" },
+  { name = ".npmignore", text = "", fg_dark = "#f38ba8", fg_light = "#f38ba8" },
+  { name = ".gitmodules", text = "", fg_dark = "#fab387", fg_light = "#fab387" },
 ]

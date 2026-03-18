@@ -1,6 +1,6 @@
 import sys
 import subprocess
-from sioyek.sioyek import DocumentPos, Sioyek, clean_path
+from sioyek.sioyek import Sioyek, clean_path
 
 
 def rename_bookmark(text: str, focus=False) -> None:

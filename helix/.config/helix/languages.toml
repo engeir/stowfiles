@@ -1,22 +1,22 @@
 [[language]]
-name = "python"
 auto-format = false
 language-servers = [
   { name = "jedi-language-server" },
   { name = "ruff-lsp" },
   # { name = "ruff" },
 ]
+name = "python"
 # formatter = { command = "black", args = [ "--line-length", "88", "--quiet", "-", ] }
 # formatter = { command = "ruff", args = ["format", "-"] }
 
 [language-server.jedi-language-server]
-command = "jedi-language-server"
 args = []
+command = "jedi-language-server"
 config = {}
 
 [language-server.ruff-lsp]
-command = "ruff-lsp"
 args = []
+command = "ruff-lsp"
 config = { settings = { args = [] } }
 
 [[language]]
@@ -27,16 +27,16 @@ text-width = 88
 # '\'.'(' = '\)'
 
 [language-server.texlab.config.texlab]
-formatterLineLength = -1 # bib files
+formatterLineLength = -1                   # bib files
 latexindent = { modifyLineBreaks = false }
 
 [language-server.texlab.config.texlab.build]
-onSave = false
 forwardSearchAfter = false
+onSave = false
 
 [language-server.texlab.config.texlab.forwardSearch]
-executable = "zathura"
 args = ["--synctex-forward", "%l:1:%f", "%p"]
+executable = "zathura"
 # latexmk does something much more complicated that actually works
 # args = [ "-x", "nvim", "--headless", "-c", '"VimtexInverseSearch ½{line} '%{input}'"', "--synctex-forward", "%l:1:%f", "%p"]
 
@@ -45,18 +45,18 @@ onEdit = true
 onOpenAndSave = true
 
 [language-server.texlab.config.texlab.experimental]
+citationCommands = ["citeA"]
 followPackageLinks = true
 labelReferenceCommands = ["subref"]
-citationCommands = ["citeA"]
 mathEnvironments = ["align*", "equation"]
 
 [[language]]
-name = "markdown"
 formatter = { command = "dprint", args = ["fmt", "--stdin", "md"] }
+name = "markdown"
 
 [[language]]
-name = "go"
 auto-format = false
+name = "go"
 
 # # introduce new language server
 # [language-server.scls]
@@ -77,31 +77,31 @@ auto-format = false
 
 # append langage server to existed languages
 [[language]]
-name = "rust"
 language-servers = [
   # "scls",
   "rust-analyzer",
 ]
+name = "rust"
 
 # [[language]]
 # name = "git-commit"
 # language-servers = ["scls"]
 
 [[language]]
-name = "latex"
 language-servers = [
   # "scls",
   "texlab",
 ]
+name = "latex"
 
 # etc..
 
 # introduce a new language to enable completion on any doc by forcing set language with :set-language stub
 [[language]]
-name = "stub"
-scope = "text.stub"
-file-types = []
-shebangs = []
-roots = []
 auto-format = false
+file-types = []
+name = "stub"
+roots = []
+scope = "text.stub"
+shebangs = []
 # language-servers = ["scls"]

@@ -136,7 +136,6 @@ int io_speed_up = [] {
 
 [[snippets]]
 [snippets.Text]
-name = "rust-sieve-primes"
 content = '''
 fn sieve_primes(n: usize) -> Vec<usize> {
     if n < 2 {
@@ -160,3 +159,4 @@ fn sieve_primes(n: usize) -> Vec<usize> {
         .collect()
 }
 '''
+name = "rust-sieve-primes"

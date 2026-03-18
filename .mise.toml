@@ -13,4 +13,7 @@ expect eof
 [tools]
 "cargo:git-cliff" = "latest"
 hk = "latest"
+"pipx:pydoclint" = "latest"
+"pipx:pydocstringformatter" = "latest"
+"pipx:xdoctest" = "latest"
 pkl = "latest"

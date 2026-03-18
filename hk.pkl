@@ -16,14 +16,14 @@ local linters = new Mapping<String, Step> {
     }
     ["taplo"] = Builtins.taplo
     ["ruff"] = Builtins.ruff
-    ["mypy"] = Builtins.mypy
-    ["pydoclint"] {
-        glob = "*py"
-        check = "pydoclint {{files}} >/dev/null"
-    }
+    // ["pydoclint"] {
+    //     glob = "*py"
+    //     check = "pydoclint {{files}} >/dev/null"
+    // }
     ["pydocstringformatter"] {
         glob = "*py"
         check = "pydocstringformatter {{files}} >/dev/null"
+        fix = "pydocstringformatter --write {{files}} >/dev/null"
     }
     ["xdoctest"] {
         glob = "*py"

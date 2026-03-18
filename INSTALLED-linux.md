@@ -5103,4 +5103,3 @@ snapd-desktop-integration  0.9                              315    latest/stable
 thunderbird                140.6.0esr-2                     919    latest/stable    canonical**         -
 vivaldi                    7.7.3851.66                      322    latest/stable    vivaldi-packager**  -
 ```
-    

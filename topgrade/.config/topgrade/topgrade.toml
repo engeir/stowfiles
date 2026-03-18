@@ -111,11 +111,7 @@ ignore_failures = ["go"]
 [git]
 # max_concurrency = 5
 # Additional git repositories to pull
-repos = [
-  "~/programs/*",
-  "~/projects/*",
-  "~/.config/neovim_distros/*",
-]
+repos = ["~/programs/*", "~/projects/*", "~/.config/neovim_distros/*"]
 
 # Don't pull the predefined git repos
 # pull_predefined = false

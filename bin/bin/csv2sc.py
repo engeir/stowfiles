@@ -1,53 +1,48 @@
-#!/usr/bin/python2
+#!/usr/bin/env python3
+
+# Converts from CSV to spreadsheet calculator. Whatever that is.
 
 import sys
 import string
 
 if len(sys.argv) < 2:
-    print "Usage: %s infile [outfile] [delimiter_char]" % sys.argv[0]
+    print(f"Usage: {sys.argv[0]} infile [outfile] [delimiter_char]")
     sys.exit(1)
 
 filename_in = sys.argv[1]
 
 if len(sys.argv) > 2:
-    filename_out = sys.argv[2]
-    outfile = open(filename_out, "w")
+    outfile = open(sys.argv[2], "w")
 else:
     outfile = sys.stdout
 
 delimiter = ":"
 if len(sys.argv) == 4:
     delimiter = sys.argv[3][0]
-    print "using delimiter %c" % delimiter
-
-infile = open(filename_in, "r")
+    print(f"using delimiter {delimiter!r}")
 
 letters = string.ascii_uppercase
 text = ["# Produced by convert_csv_to_sc.py"]
-row = 0
-for line in infile.readlines():
-    allp = line.rstrip().split(delimiter)
-    if len(allp) > 25:
-        print "i'm too simple to handle more than 26 many columns"
-        sys.exit(2)
-    column = 0
-    for p in allp:
-        col = letters[column]
-        if len(p) == 0:
-            continue
-        try:
-            n = string.atol(p)
-            text.append("let %c%d = %d" % (col, row, n))
-        except:
-            if p[0] == '"':
-                text.append("label %c%d = %s" % (col, row, p))
-            else:
-                text.append('label %c%d = "%s"' % (col, row, p))
-        column += 1
-    row += 1
 
-infile.close()
-outfile.write("\n".join(text))
-outfile.write("\n")
-if outfile != sys.stdout:
+with open(filename_in, "r") as infile:
+    for row, line in enumerate(infile):
+        allp = line.rstrip().split(delimiter)
+        if len(allp) > 26:
+            print("too many columns (max 26)")
+            sys.exit(2)
+        for column, p in enumerate(allp):
+            if not p:
+                continue
+            col = letters[column]
+            try:
+                n = int(p)
+                text.append(f"let {col}{row} = {n}")
+            except ValueError:
+                if p[0] == '"':
+                    text.append(f"label {col}{row} = {p}")
+                else:
+                    text.append(f'label {col}{row} = "{p}"')
+
+outfile.write("\n".join(text) + "\n")
+if outfile is not sys.stdout:
     outfile.close()

@@ -1,16 +1,16 @@
 [default]
-nerdfont = "◒"
 color = "none"
 emoji = "🐠"
+nerdfont = "◒"
 
 [icons.fish]
-nerdfont = "󰈺"
 color = "orange"
+nerdfont = "󰈺"
 
 [icons.python]
-nerdfont = "🐍"
 color = "yellow"
+nerdfont = "🐍"
 
 [icons.bash]
-nerdfont = ""
 color = "blue"
+nerdfont = ""

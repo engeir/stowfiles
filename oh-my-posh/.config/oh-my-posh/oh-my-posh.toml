@@ -12,16 +12,16 @@ alignment = "left"
 type = "prompt"
 
 [[blocks.segments]]
-type = "root"
-style = "plain"
 foreground = "#b41818"
+style = "plain"
 template = " "
+type = "root"
 
 [[blocks.segments]]
 foreground = "#61AFEF"
 # exclude_folders = ["/super/secret/project"]
-template = '{{if .Segments.Git}}../{{ .Format .Segments.Git.RepoName }}{{if matchP ".+" .Segments.Git.RelativeDir}}/{{ .Format .Segments.Git.RelativeDir }}{{else}}{{end}}{{else}}{{.Path}}{{end}}'
 style = "plain"
+template = '{{if .Segments.Git}}../{{ .Format .Segments.Git.RepoName }}{{if matchP ".+" .Segments.Git.RelativeDir}}/{{ .Format .Segments.Git.RelativeDir }}{{else}}{{end}}{{else}}{{.Path}}{{end}}'
 type = "path"
 
 [blocks.segments.properties]
@@ -37,98 +37,98 @@ branch_template = "{{ trunc 25 .Branch }}"
 fetch_status = true
 
 [[blocks.segments]]
-type = "python"
-style = "plain"
 foreground = "#ebeb47"
+style = "plain"
 template = "{{ if .Error }}{{ .Error }}{{ else }}  {{ .Full }}{{ if .Venv }}({{ .Venv }}){{ end }}{{ end }}"
+type = "python"
 
 [[blocks.segments]]
+style = "plain"
 type = "go"
-style = "plain"
 
 [[blocks.segments]]
+style = "plain"
 type = "lua"
-style = "plain"
 
 [[blocks.segments]]
+style = "plain"
 type = "rust"
-style = "plain"
 
 [[blocks.segments]]
+style = "plain"
 type = "node"
-style = "plain"
 
 [[blocks.segments]]
+style = "plain"
 type = "zig"
-style = "plain"
 
 [[blocks.segments]]
-type = "project"
 style = "plain"
+type = "project"
 # template = "  {{ .MajorMinorPatch }} "
 
 [[blocks.segments]]
-type = "executiontime"
-style = "plain"
 foreground = "#8800dd"
+style = "plain"
 template = " took {{ .FormattedMs }} "
+type = "executiontime"
 
 [blocks.segments.properties]
-threshold = 500
 style = "round"
+threshold = 500
 
 [[blocks]]
 alignment = "right"
 newline = false
 type = "prompt"
 # filler = " ~"
-overflow = "hide"
 filler = "{{ if .Overflow }} {{ else }} <#4d4d4d>~</>{{ end }}"
 foreground = "#4d4d4d"
+overflow = "hide"
 
 [[blocks.segments]]
-type = "battery"
-style = "plain"
 foreground = "#b8142a"
+style = "plain"
 template = " {{ if not .Error }}{{ if le .Percentage 20 }}{{ .Icon }}<b>{{ .Percentage }}</b>{{end}}{{ end }}"
+type = "battery"
 
 [blocks.segments.properties]
-discharging_icon = " "
-charging_icon = " "
 charged_icon = " "
+charging_icon = " "
+discharging_icon = " "
 not_charging_icon = "󰂂 "
 
 [[blocks.segments]]
 style = "plain"
-type = "session"
 template = " <d>[{{.UserName}} @ {{.HostName}}</d>"
+type = "session"
 
 [[blocks.segments]]
-type = "os"
 style = "plain"
 template = "<d> on {{ if .WSL }}WSL at {{ end }}{{.Icon}} ]</d>"
+type = "os"
 
 [[blocks.segments]]
-template = ' <d>{{ .CurrentDate | date .Format }}</d>'
 style = "plain"
+template = ' <d>{{ .CurrentDate | date .Format }}</d>'
 type = "time"
 
 [blocks.segments.properties]
 time_format = "02Jan06, 15:04:05(-0700)"
 
 [[blocks]]
-type = "prompt"
 alignment = "left"
 newline = true
+type = "prompt"
 
 [[blocks.segments]]
-type = "text"
-style = "plain"
 foreground = "#2e466b"
+style = "plain"
 template = "{{if gt .Jobs 0}}{{ .Jobs }}{{else}} {{end}}"
+type = "text"
 
 [[blocks.segments]]
-type = "text"
-style = "plain"
 foreground_templates = ["{{ if gt .Code 0 }}#e91e63{{ end }}"]
+style = "plain"
 template = "{{if .Root}} # {{else}} $ {{end}}"
+type = "text"
