@@ -211,9 +211,11 @@ jobs:
           fetch-depth: 0
       - name: Extract version from commit
         id: extract_version
+        env:
+          COMMIT_MSG: ${{ github.event.head_commit.message }}
         run: |
           # Extract version from commit message like "chore(release): prepare release 2025.1.0"
-          VERSION=$(echo "${{ github.event.head_commit.message }}" | grep -oP '(?<=release )[0-9]+\.[0-9]+\.[0-9]+' || echo "")
+          VERSION=$(echo "$COMMIT_MSG" | grep -oP '(?<=release )[0-9]+\.[0-9]+\.[0-9]+' || echo "")
           if [ -z "$VERSION" ]; then
             echo "Could not extract version from commit message"
             exit 1
@@ -233,8 +235,8 @@ jobs:
           install: true
       - name: Generate release notes
         id: read_changelog
+        env: VERSION=${{ steps.extract_version.outputs.version }}
         run: |
-          VERSION="${{ steps.extract_version.outputs.version }}"
           PREVIOUS_TAG=$(git describe --tags --abbrev=0 HEAD^ 2>/dev/null || echo "")
 
           if [ -n "$PREVIOUS_TAG" ]; then
