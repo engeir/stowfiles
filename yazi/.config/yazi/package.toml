@@ -1,42 +1,42 @@
 [[plugin.deps]]
-hash = "56fdabc96fc1f4d53c96eb884b02a5be"
-rev = "25918dc"
 use = "yazi-rs/plugins:smart-enter"
+rev = "1962818"
+hash = "187cc58ba7ac3befd49c342129e6f1b6"
 
 [[plugin.deps]]
-hash = "8da0b15a97b5dfd13941d1ecc617ac7c"
-rev = "25918dc"
 use = "yazi-rs/plugins:chmod"
+rev = "1962818"
+hash = "f0c8c378184d5f8abd1b095a443d336d"
 
 [[plugin.deps]]
-hash = "407d19bc4fb46eff5fa8ff8337644847"
-rev = "25918dc"
 use = "yazi-rs/plugins:smart-filter"
+rev = "1962818"
+hash = "c887903a63a2ff520081b6d90a4b3392"
 
 [[plugin.deps]]
-hash = "9ad20d763df07ce40fd09de549d914b0"
-rev = "25918dc"
 use = "yazi-rs/plugins:mount"
+rev = "1962818"
+hash = "91937a4a9b779eabc6983e258befdfe9"
 
 [[plugin.deps]]
-hash = "270915fa8282a19908449530ff66f7e2"
-rev = "25918dc"
 use = "yazi-rs/plugins:git"
+rev = "1962818"
+hash = "26db011a778f261d730d4f5f8bf24b3f"
 
 [[plugin.deps]]
-hash = "8a7c58225816a163a6e8730c0adafbc8"
-rev = "25918dc"
 use = "yazi-rs/plugins:toggle-pane"
+rev = "1962818"
+hash = "4c0260feb50ea2437380690ffc241da7"
 
 [[plugin.deps]]
-hash = "384464b6df8cb807425c521f8cd790f3"
-rev = "25918dc"
 use = "yazi-rs/plugins:piper"
+rev = "1962818"
+hash = "384464b6df8cb807425c521f8cd790f3"
 
 [[plugin.deps]]
-hash = "87b9233a74325e95011670ed20bbd0d4"
-rev = "3f8c863"
 use = "wylie102/duckdb"
+rev = "3f8c863"
+hash = "87b9233a74325e95011670ed20bbd0d4"
 
 [flavor]
 deps = []

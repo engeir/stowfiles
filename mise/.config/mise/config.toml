@@ -222,3 +222,5 @@ typst = "latest"
 usage = "latest"
 yazi = "latest"
 zig = "0.15"
+lazygit = "latest"
+"github:netbirdio/netbird" = { version = "latest", asset_pattern = "netbird_*_linux_amd64.tar.gz" }

@@ -27,7 +27,7 @@ text-width = 88
 # '\'.'(' = '\)'
 
 [language-server.texlab.config.texlab]
-formatterLineLength = -1                   # bib files
+formatterLineLength = -1 # bib files
 latexindent = { modifyLineBreaks = false }
 
 [language-server.texlab.config.texlab.build]
