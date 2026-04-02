@@ -1423,6 +1423,68 @@ url_api = "https://api.github.com/repos/ms-jpq/sad/releases/assets/225952509"
 url = "https://github.com/ms-jpq/sad/releases/download/v0.4.32/x86_64-pc-windows-gnu.zip"
 url_api = "https://api.github.com/repos/ms-jpq/sad/releases/assets/225952525"
 
+[[tools."github:netbirdio/netbird"]]
+version = "0.67.1"
+backend = "github:netbirdio/netbird"
+
+[tools."github:netbirdio/netbird".options]
+asset_pattern = "netbird_*_linux_amd64.tar.gz"
+
+[tools."github:netbirdio/netbird"."platforms.linux-arm64"]
+checksum = "sha256:e6dede1af1cf0ec14671b9ce0324f6ec9fe7e54d53d529bdff47b3c240782836"
+url = "https://github.com/netbirdio/netbird/releases/download/v0.67.1/netbird_0.67.1_linux_amd64.tar.gz"
+url_api = "https://api.github.com/repos/netbirdio/netbird/releases/assets/382044301"
+
+[tools."github:netbirdio/netbird"."platforms.linux-arm64-musl"]
+checksum = "sha256:e6dede1af1cf0ec14671b9ce0324f6ec9fe7e54d53d529bdff47b3c240782836"
+url = "https://github.com/netbirdio/netbird/releases/download/v0.67.1/netbird_0.67.1_linux_amd64.tar.gz"
+url_api = "https://api.github.com/repos/netbirdio/netbird/releases/assets/382044301"
+
+[tools."github:netbirdio/netbird"."platforms.linux-x64"]
+checksum = "sha256:e6dede1af1cf0ec14671b9ce0324f6ec9fe7e54d53d529bdff47b3c240782836"
+url = "https://github.com/netbirdio/netbird/releases/download/v0.67.1/netbird_0.67.1_linux_amd64.tar.gz"
+url_api = "https://api.github.com/repos/netbirdio/netbird/releases/assets/382044301"
+
+[tools."github:netbirdio/netbird"."platforms.linux-x64-baseline"]
+checksum = "sha256:e6dede1af1cf0ec14671b9ce0324f6ec9fe7e54d53d529bdff47b3c240782836"
+url = "https://github.com/netbirdio/netbird/releases/download/v0.67.1/netbird_0.67.1_linux_amd64.tar.gz"
+url_api = "https://api.github.com/repos/netbirdio/netbird/releases/assets/382044301"
+
+[tools."github:netbirdio/netbird"."platforms.linux-x64-musl"]
+checksum = "sha256:e6dede1af1cf0ec14671b9ce0324f6ec9fe7e54d53d529bdff47b3c240782836"
+url = "https://github.com/netbirdio/netbird/releases/download/v0.67.1/netbird_0.67.1_linux_amd64.tar.gz"
+url_api = "https://api.github.com/repos/netbirdio/netbird/releases/assets/382044301"
+
+[tools."github:netbirdio/netbird"."platforms.linux-x64-musl-baseline"]
+checksum = "sha256:e6dede1af1cf0ec14671b9ce0324f6ec9fe7e54d53d529bdff47b3c240782836"
+url = "https://github.com/netbirdio/netbird/releases/download/v0.67.1/netbird_0.67.1_linux_amd64.tar.gz"
+url_api = "https://api.github.com/repos/netbirdio/netbird/releases/assets/382044301"
+
+[tools."github:netbirdio/netbird"."platforms.macos-arm64"]
+checksum = "sha256:e6dede1af1cf0ec14671b9ce0324f6ec9fe7e54d53d529bdff47b3c240782836"
+url = "https://github.com/netbirdio/netbird/releases/download/v0.67.1/netbird_0.67.1_linux_amd64.tar.gz"
+url_api = "https://api.github.com/repos/netbirdio/netbird/releases/assets/382044301"
+
+[tools."github:netbirdio/netbird"."platforms.macos-x64"]
+checksum = "sha256:e6dede1af1cf0ec14671b9ce0324f6ec9fe7e54d53d529bdff47b3c240782836"
+url = "https://github.com/netbirdio/netbird/releases/download/v0.67.1/netbird_0.67.1_linux_amd64.tar.gz"
+url_api = "https://api.github.com/repos/netbirdio/netbird/releases/assets/382044301"
+
+[tools."github:netbirdio/netbird"."platforms.macos-x64-baseline"]
+checksum = "sha256:e6dede1af1cf0ec14671b9ce0324f6ec9fe7e54d53d529bdff47b3c240782836"
+url = "https://github.com/netbirdio/netbird/releases/download/v0.67.1/netbird_0.67.1_linux_amd64.tar.gz"
+url_api = "https://api.github.com/repos/netbirdio/netbird/releases/assets/382044301"
+
+[tools."github:netbirdio/netbird"."platforms.windows-x64"]
+checksum = "sha256:e6dede1af1cf0ec14671b9ce0324f6ec9fe7e54d53d529bdff47b3c240782836"
+url = "https://github.com/netbirdio/netbird/releases/download/v0.67.1/netbird_0.67.1_linux_amd64.tar.gz"
+url_api = "https://api.github.com/repos/netbirdio/netbird/releases/assets/382044301"
+
+[tools."github:netbirdio/netbird"."platforms.windows-x64-baseline"]
+checksum = "sha256:e6dede1af1cf0ec14671b9ce0324f6ec9fe7e54d53d529bdff47b3c240782836"
+url = "https://github.com/netbirdio/netbird/releases/download/v0.67.1/netbird_0.67.1_linux_amd64.tar.gz"
+url_api = "https://api.github.com/repos/netbirdio/netbird/releases/assets/382044301"
+
 [[tools."github:pvolok/mprocs"]]
 version = "0.8.3"
 backend = "github:pvolok/mprocs"
@@ -1822,6 +1884,54 @@ url = "https://github.com/jesseduffield/lazydocker/releases/download/v0.25.0/laz
 [tools.lazydocker."platforms.windows-x64-baseline"]
 checksum = "sha256:2af0b2516cd006b1849f2cdae4cd82abbf5d1c2d49b88563daffaa1fb4ac46bb"
 url = "https://github.com/jesseduffield/lazydocker/releases/download/v0.25.0/lazydocker_0.25.0_Windows_x86_64.zip"
+
+[[tools.lazygit]]
+version = "0.60.0"
+backend = "aqua:jesseduffield/lazygit"
+
+[tools.lazygit."platforms.linux-arm64"]
+checksum = "sha256:2c699579165416eede4d2cfaf7d76ccd8f3b20f20f2e8b4abff6b5a6350fcdd7"
+url = "https://github.com/jesseduffield/lazygit/releases/download/v0.60.0/lazygit_0.60.0_linux_arm64.tar.gz"
+
+[tools.lazygit."platforms.linux-arm64-musl"]
+checksum = "sha256:2c699579165416eede4d2cfaf7d76ccd8f3b20f20f2e8b4abff6b5a6350fcdd7"
+url = "https://github.com/jesseduffield/lazygit/releases/download/v0.60.0/lazygit_0.60.0_linux_arm64.tar.gz"
+
+[tools.lazygit."platforms.linux-x64"]
+checksum = "sha256:6252ca6cf98bc4fd3e0d927b54225910cfa57b065d0ad88263f14592f7f9ab15"
+url = "https://github.com/jesseduffield/lazygit/releases/download/v0.60.0/lazygit_0.60.0_linux_x86_64.tar.gz"
+
+[tools.lazygit."platforms.linux-x64-baseline"]
+checksum = "sha256:6252ca6cf98bc4fd3e0d927b54225910cfa57b065d0ad88263f14592f7f9ab15"
+url = "https://github.com/jesseduffield/lazygit/releases/download/v0.60.0/lazygit_0.60.0_linux_x86_64.tar.gz"
+
+[tools.lazygit."platforms.linux-x64-musl"]
+checksum = "sha256:6252ca6cf98bc4fd3e0d927b54225910cfa57b065d0ad88263f14592f7f9ab15"
+url = "https://github.com/jesseduffield/lazygit/releases/download/v0.60.0/lazygit_0.60.0_linux_x86_64.tar.gz"
+
+[tools.lazygit."platforms.linux-x64-musl-baseline"]
+checksum = "sha256:6252ca6cf98bc4fd3e0d927b54225910cfa57b065d0ad88263f14592f7f9ab15"
+url = "https://github.com/jesseduffield/lazygit/releases/download/v0.60.0/lazygit_0.60.0_linux_x86_64.tar.gz"
+
+[tools.lazygit."platforms.macos-arm64"]
+checksum = "sha256:5045f0ff2117f12cb5232d65e01c054eb9ea6b8e2f0f0b80e99fbaa589b581b9"
+url = "https://github.com/jesseduffield/lazygit/releases/download/v0.60.0/lazygit_0.60.0_darwin_arm64.tar.gz"
+
+[tools.lazygit."platforms.macos-x64"]
+checksum = "sha256:9210a8bd8bf18537f9d7747361c8eba62518e10e4d5fbfe915cf110635eaab78"
+url = "https://github.com/jesseduffield/lazygit/releases/download/v0.60.0/lazygit_0.60.0_darwin_x86_64.tar.gz"
+
+[tools.lazygit."platforms.macos-x64-baseline"]
+checksum = "sha256:9210a8bd8bf18537f9d7747361c8eba62518e10e4d5fbfe915cf110635eaab78"
+url = "https://github.com/jesseduffield/lazygit/releases/download/v0.60.0/lazygit_0.60.0_darwin_x86_64.tar.gz"
+
+[tools.lazygit."platforms.windows-x64"]
+checksum = "sha256:435b53165ff4604e201549b9317eb0b8bb5b3f6728be612656988e90c821a9b9"
+url = "https://github.com/jesseduffield/lazygit/releases/download/v0.60.0/lazygit_0.60.0_windows_x86_64.zip"
+
+[tools.lazygit."platforms.windows-x64-baseline"]
+checksum = "sha256:435b53165ff4604e201549b9317eb0b8bb5b3f6728be612656988e90c821a9b9"
+url = "https://github.com/jesseduffield/lazygit/releases/download/v0.60.0/lazygit_0.60.0_windows_x86_64.zip"
 
 [[tools.node]]
 version = "25.8.1"
