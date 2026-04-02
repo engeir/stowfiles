@@ -56,7 +56,7 @@ zinit ice wait"2" as"command" from"gh-r" lucid \
 zinit light ajeetdsouza/zoxide
 zinit light zsh-users/zsh-syntax-highlighting
 zinit light zsh-users/zsh-completions
-zinit ice wait"0" lucid; zinit light zsh-users/zsh-autosuggestions
+zinit light zsh-users/zsh-autosuggestions
 zinit ice wait"0" lucid; zinit light ryanccn/vivid-zsh  # Sets LS_COLORS
 zinit ice from'gh-r' as'program' sbin'**/eza -> eza' atclone'cp -vf completions/eza.zsh _eza'  # Install
 zinit light eza-community/eza
