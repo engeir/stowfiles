@@ -195,12 +195,16 @@ gpg-connect-agent updatestartuptty /bye >/dev/null 2>&1
 # Shell integrations — cached to avoid subprocess overhead on every start
 () {
     local _dir="${XDG_CACHE_HOME:-$HOME/.cache}/zsh"
+    local _mise_lock="${XDG_CONFIG_HOME:-$HOME/.config}/mise/mise.lock"
     mkdir -p "$_dir"
 
     _zi() {
         local cache="$_dir/$1.zsh" bin="${commands[$2]:-}"
         shift 2
-        [[ ! -f "$cache" || ( -n "$bin" && "$bin" -nt "$cache" ) ]] && "$@" >| "$cache"
+        [[ ! -f "$cache" \
+           || ( -n "$bin" && "$bin" -nt "$cache" ) \
+           || ( -f "$_mise_lock" && "$_mise_lock" -nt "$cache" ) ]] \
+           && "$@" >| "$cache"
         builtin source "$cache"
     }
 
