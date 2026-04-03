@@ -444,6 +444,10 @@ backend = "cargo:skim"
 version = "4.3.0"
 backend = "cargo:skim"
 
+[[tools."cargo:skim"]]
+version = "4.4.0"
+backend = "cargo:skim"
+
 [[tools."cargo:spotify-tui"]]
 version = "0.25.0"
 backend = "cargo:spotify-tui"
@@ -482,6 +486,10 @@ backend = "cargo:tin-summer"
 
 [[tools."cargo:topgrade"]]
 version = "17.1.0"
+backend = "cargo:topgrade"
+
+[[tools."cargo:topgrade"]]
+version = "17.2.1"
 backend = "cargo:topgrade"
 
 [[tools."cargo:tree-sitter-cli"]]
@@ -1803,6 +1811,65 @@ checksum = "sha256:730666f8e311cb8278f3c26899caab4e944b088aebe1b98fbe4d604edd064
 url = "https://github.com/scanopy/scanopy/releases/download/v0.15.5/scanopy-daemon-windows-amd64.exe"
 url_api = "https://api.github.com/repos/scanopy/scanopy/releases/assets/386348768"
 
+[[tools."github:mayanayza/netvisor"]]
+version = "0.15.6"
+backend = "github:mayanayza/netvisor"
+
+[tools."github:mayanayza/netvisor"."platforms.linux-arm64"]
+checksum = "sha256:84d09d0849d133ef4485a2c510d4be6c573c0b30c2747631988e507f66c56c2e"
+url = "https://github.com/scanopy/scanopy/releases/download/v0.15.6/scanopy-daemon-linux-arm64"
+url_api = "https://api.github.com/repos/scanopy/scanopy/releases/assets/387229844"
+
+[tools."github:mayanayza/netvisor"."platforms.linux-arm64-musl"]
+checksum = "sha256:84d09d0849d133ef4485a2c510d4be6c573c0b30c2747631988e507f66c56c2e"
+url = "https://github.com/scanopy/scanopy/releases/download/v0.15.6/scanopy-daemon-linux-arm64"
+url_api = "https://api.github.com/repos/scanopy/scanopy/releases/assets/387229844"
+
+[tools."github:mayanayza/netvisor"."platforms.linux-x64"]
+checksum = "sha256:72a28f24b61ee8adc7c0d7c65cadbba894fe4942128edd017d18d0b5017fec2b"
+url = "https://github.com/scanopy/scanopy/releases/download/v0.15.6/scanopy-daemon-linux-amd64"
+url_api = "https://api.github.com/repos/scanopy/scanopy/releases/assets/387229841"
+
+[tools."github:mayanayza/netvisor"."platforms.linux-x64-baseline"]
+checksum = "sha256:72a28f24b61ee8adc7c0d7c65cadbba894fe4942128edd017d18d0b5017fec2b"
+url = "https://github.com/scanopy/scanopy/releases/download/v0.15.6/scanopy-daemon-linux-amd64"
+url_api = "https://api.github.com/repos/scanopy/scanopy/releases/assets/387229841"
+
+[tools."github:mayanayza/netvisor"."platforms.linux-x64-musl"]
+checksum = "sha256:72a28f24b61ee8adc7c0d7c65cadbba894fe4942128edd017d18d0b5017fec2b"
+url = "https://github.com/scanopy/scanopy/releases/download/v0.15.6/scanopy-daemon-linux-amd64"
+url_api = "https://api.github.com/repos/scanopy/scanopy/releases/assets/387229841"
+
+[tools."github:mayanayza/netvisor"."platforms.linux-x64-musl-baseline"]
+checksum = "sha256:72a28f24b61ee8adc7c0d7c65cadbba894fe4942128edd017d18d0b5017fec2b"
+url = "https://github.com/scanopy/scanopy/releases/download/v0.15.6/scanopy-daemon-linux-amd64"
+url_api = "https://api.github.com/repos/scanopy/scanopy/releases/assets/387229841"
+
+[tools."github:mayanayza/netvisor"."platforms.macos-arm64"]
+checksum = "sha256:50eb846398abdd1b7751c6d51952ac775286e5122a3c190624dc8c42f1b65059"
+url = "https://github.com/scanopy/scanopy/releases/download/v0.15.6/scanopy-daemon-darwin-arm64"
+url_api = "https://api.github.com/repos/scanopy/scanopy/releases/assets/387229838"
+
+[tools."github:mayanayza/netvisor"."platforms.macos-x64"]
+checksum = "sha256:a336b0ee0f9b1ca2e48c65d7e0166d96d65107a4a4df2b89ab1f03a618cef569"
+url = "https://github.com/scanopy/scanopy/releases/download/v0.15.6/scanopy-daemon-darwin-amd64"
+url_api = "https://api.github.com/repos/scanopy/scanopy/releases/assets/387229840"
+
+[tools."github:mayanayza/netvisor"."platforms.macos-x64-baseline"]
+checksum = "sha256:a336b0ee0f9b1ca2e48c65d7e0166d96d65107a4a4df2b89ab1f03a618cef569"
+url = "https://github.com/scanopy/scanopy/releases/download/v0.15.6/scanopy-daemon-darwin-amd64"
+url_api = "https://api.github.com/repos/scanopy/scanopy/releases/assets/387229840"
+
+[tools."github:mayanayza/netvisor"."platforms.windows-x64"]
+checksum = "sha256:6807755c039b3d886cfdf21bb2e0aa6487b8ab70dc2035be44d81243f276e1a3"
+url = "https://github.com/scanopy/scanopy/releases/download/v0.15.6/scanopy-daemon-windows-amd64.exe"
+url_api = "https://api.github.com/repos/scanopy/scanopy/releases/assets/387229842"
+
+[tools."github:mayanayza/netvisor"."platforms.windows-x64-baseline"]
+checksum = "sha256:6807755c039b3d886cfdf21bb2e0aa6487b8ab70dc2035be44d81243f276e1a3"
+url = "https://github.com/scanopy/scanopy/releases/download/v0.15.6/scanopy-daemon-windows-amd64.exe"
+url_api = "https://api.github.com/repos/scanopy/scanopy/releases/assets/387229842"
+
 [[tools."github:mgdm/htmlq"]]
 version = "0.4.0"
 backend = "github:mgdm/htmlq"
@@ -2010,6 +2077,68 @@ url_api = "https://api.github.com/repos/netbirdio/netbird/releases/assets/386508
 checksum = "sha256:043c6dbaabaec4c868d4262233b1a6c99d7f7f0cfef7a512aa264ed3c4d9a56e"
 url = "https://github.com/netbirdio/netbird/releases/download/v0.67.2/netbird_0.67.2_linux_amd64.tar.gz"
 url_api = "https://api.github.com/repos/netbirdio/netbird/releases/assets/386508594"
+
+[[tools."github:netbirdio/netbird"]]
+version = "0.67.3"
+backend = "github:netbirdio/netbird"
+
+[tools."github:netbirdio/netbird".options]
+asset_pattern = "netbird_*_linux_amd64.tar.gz"
+
+[tools."github:netbirdio/netbird"."platforms.linux-arm64"]
+checksum = "sha256:e958418923b5dab4c745c6c72b619f2a2b1bd37e12802102ca1e0c63d5846c43"
+url = "https://github.com/netbirdio/netbird/releases/download/v0.67.3/netbird_0.67.3_linux_amd64.tar.gz"
+url_api = "https://api.github.com/repos/netbirdio/netbird/releases/assets/387219923"
+
+[tools."github:netbirdio/netbird"."platforms.linux-arm64-musl"]
+checksum = "sha256:e958418923b5dab4c745c6c72b619f2a2b1bd37e12802102ca1e0c63d5846c43"
+url = "https://github.com/netbirdio/netbird/releases/download/v0.67.3/netbird_0.67.3_linux_amd64.tar.gz"
+url_api = "https://api.github.com/repos/netbirdio/netbird/releases/assets/387219923"
+
+[tools."github:netbirdio/netbird"."platforms.linux-x64"]
+checksum = "sha256:e958418923b5dab4c745c6c72b619f2a2b1bd37e12802102ca1e0c63d5846c43"
+url = "https://github.com/netbirdio/netbird/releases/download/v0.67.3/netbird_0.67.3_linux_amd64.tar.gz"
+url_api = "https://api.github.com/repos/netbirdio/netbird/releases/assets/387219923"
+
+[tools."github:netbirdio/netbird"."platforms.linux-x64-baseline"]
+checksum = "sha256:e958418923b5dab4c745c6c72b619f2a2b1bd37e12802102ca1e0c63d5846c43"
+url = "https://github.com/netbirdio/netbird/releases/download/v0.67.3/netbird_0.67.3_linux_amd64.tar.gz"
+url_api = "https://api.github.com/repos/netbirdio/netbird/releases/assets/387219923"
+
+[tools."github:netbirdio/netbird"."platforms.linux-x64-musl"]
+checksum = "sha256:e958418923b5dab4c745c6c72b619f2a2b1bd37e12802102ca1e0c63d5846c43"
+url = "https://github.com/netbirdio/netbird/releases/download/v0.67.3/netbird_0.67.3_linux_amd64.tar.gz"
+url_api = "https://api.github.com/repos/netbirdio/netbird/releases/assets/387219923"
+
+[tools."github:netbirdio/netbird"."platforms.linux-x64-musl-baseline"]
+checksum = "sha256:e958418923b5dab4c745c6c72b619f2a2b1bd37e12802102ca1e0c63d5846c43"
+url = "https://github.com/netbirdio/netbird/releases/download/v0.67.3/netbird_0.67.3_linux_amd64.tar.gz"
+url_api = "https://api.github.com/repos/netbirdio/netbird/releases/assets/387219923"
+
+[tools."github:netbirdio/netbird"."platforms.macos-arm64"]
+checksum = "sha256:e958418923b5dab4c745c6c72b619f2a2b1bd37e12802102ca1e0c63d5846c43"
+url = "https://github.com/netbirdio/netbird/releases/download/v0.67.3/netbird_0.67.3_linux_amd64.tar.gz"
+url_api = "https://api.github.com/repos/netbirdio/netbird/releases/assets/387219923"
+
+[tools."github:netbirdio/netbird"."platforms.macos-x64"]
+checksum = "sha256:e958418923b5dab4c745c6c72b619f2a2b1bd37e12802102ca1e0c63d5846c43"
+url = "https://github.com/netbirdio/netbird/releases/download/v0.67.3/netbird_0.67.3_linux_amd64.tar.gz"
+url_api = "https://api.github.com/repos/netbirdio/netbird/releases/assets/387219923"
+
+[tools."github:netbirdio/netbird"."platforms.macos-x64-baseline"]
+checksum = "sha256:e958418923b5dab4c745c6c72b619f2a2b1bd37e12802102ca1e0c63d5846c43"
+url = "https://github.com/netbirdio/netbird/releases/download/v0.67.3/netbird_0.67.3_linux_amd64.tar.gz"
+url_api = "https://api.github.com/repos/netbirdio/netbird/releases/assets/387219923"
+
+[tools."github:netbirdio/netbird"."platforms.windows-x64"]
+checksum = "sha256:e958418923b5dab4c745c6c72b619f2a2b1bd37e12802102ca1e0c63d5846c43"
+url = "https://github.com/netbirdio/netbird/releases/download/v0.67.3/netbird_0.67.3_linux_amd64.tar.gz"
+url_api = "https://api.github.com/repos/netbirdio/netbird/releases/assets/387219923"
+
+[tools."github:netbirdio/netbird"."platforms.windows-x64-baseline"]
+checksum = "sha256:e958418923b5dab4c745c6c72b619f2a2b1bd37e12802102ca1e0c63d5846c43"
+url = "https://github.com/netbirdio/netbird/releases/download/v0.67.3/netbird_0.67.3_linux_amd64.tar.gz"
+url_api = "https://api.github.com/repos/netbirdio/netbird/releases/assets/387219923"
 
 [[tools."github:pvolok/mprocs"]]
 version = "0.8.3"
