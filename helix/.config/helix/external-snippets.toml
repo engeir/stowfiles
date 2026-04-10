@@ -1,6 +1,6 @@
 [[sources]] # list of sources to load
 git = "https://github.com/rafamadriz/friendly-snippets.git" # git repo with snippets collections
-name = "friendly-snippets" # optional name shown on snippet description
+name = "friendly-snippets"                                  # optional name shown on snippet description
 
 # [[sources.paths]] # list of paths to load on current source
 # scope = ["python"]                   # optional scopes for current snippets

@@ -42,7 +42,7 @@ nbsp = "⍽"
 newline = "⏎"
 space = "·"
 tab = "→"
-tabpad = "·" # Tabs will look like "→···" (depending on tab width)
+tabpad = "·"  # Tabs will look like "→···" (depending on tab width)
 
 [keys.normal.space.h]
 r = ":reset-diff-change"
