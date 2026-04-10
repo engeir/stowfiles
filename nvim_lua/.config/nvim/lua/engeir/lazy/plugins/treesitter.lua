@@ -41,6 +41,13 @@ return {
       -- https://github.com/nvim-treesitter/nvim-treesitter#adding-custom-languages
       -- `vim.treesitter.language.register("groovy", "Jenkinsfile")`
 
+      vim.treesitter.query.add_predicate("is-mise?", function(_, _, bufnr, _)
+        local fname = vim.api.nvim_buf_get_name(tonumber(bufnr) or 0)
+        return fname:match("mise%.toml$") ~= nil
+          or fname:match("%.mise%.toml$") ~= nil
+          or fname:match("/mise/config%.toml$") ~= nil
+      end, { force = true })
+
       vim.api.nvim_create_autocmd("FileType", {
         group = vim.api.nvim_create_augroup("treesitter.setup", {}),
         callback = function(args)
