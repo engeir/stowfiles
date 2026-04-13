@@ -1,0 +1,127 @@
+#!/usr/bin/env bash
+
+# bitwarden menu script, modelled after passmenu, for use with fuzzel/dmenu.
+# BW_SESSION is retrieved via fnox (secrets manager); store it with:
+#   fnox set BW_SESSION $(bw unlock --raw)
+# fnox is looked up via mise install path since it may not be in the WM PATH.
+#
+# deps: bw, jq, clipcatctl, fnox (via mise), fuzzel/dmenu/sk
+#
+# passmenu: https://github.com/cdown/passmenu
+# fuzzel: https://codeberg.org/dnkl/fuzzel
+# fnox: https://fnox.jdx.dev
+
+has() {
+    if ! command -v "$1" >/dev/null 2>&1; then
+        echo "$1 is not installed. Adjust $0 if you think you do not need it."
+        notify-send "$1 is not installed. Adjust $0 if you think you do not need it."
+        exit 1
+    fi
+}
+has "bw"
+has "jq"
+has "clipcatctl"
+
+FNOX="$(find ~/.local/share/mise/installs -name fnox -type f)"
+BW_SESSION="$("$FNOX" get BW_SESSION)"
+export BW_SESSION
+
+typeit=0
+get_username=0
+get_totp=0
+do_sync=0
+
+while [[ $# -gt 0 ]]; do
+    case "$1" in
+        --type)
+            typeit=1
+            shift
+            ;;
+        --username)
+            get_username=1
+            shift
+            ;;
+        --totp)
+            get_totp=1
+            shift
+            ;;
+        --sync)
+            do_sync=1
+            shift
+            ;;
+        *) break ;;
+    esac
+done
+
+if [[ -n $WAYLAND_DISPLAY ]]; then
+    dmenu=(fuzzel -d -w 50 -p "bw: ")
+    xdotool="ydotool type --file -"
+elif [[ $(uname -s) == "Darwin" ]]; then
+    dmenu=(sk)
+elif [[ -n $DISPLAY ]]; then
+    dmenu=(dmenu -c -nb "#2d2d2d" -nf "#7070c2" -sb "#8c8cd0" -sf "#2d2d2d" -l 20 -fn "CaskaydiaMono Nerd Font:size=14")
+    xdotool="xdotool type --clearmodifiers --file -"
+else
+    echo "Error: No Wayland or X11 display detected" >&2
+    notify-send "Error: No Wayland or X11 display detected"
+    exit 1
+fi
+
+if [[ -z $BW_SESSION ]]; then
+    echo 'Error: BW_SESSION is not set. Unlock with: export BW_SESSION=$(bw unlock --raw)' >&2
+    notify-send 'Error: BW_SESSION is not set. Unlock with: export BW_SESSION=$(bw unlock --raw)'
+    exit 1
+fi
+
+if [[ $do_sync -eq 1 ]]; then
+    bw sync --session "$BW_SESSION" >/dev/null
+fi
+
+items=$(bw list items --session "$BW_SESSION" 2>/dev/null) || {
+    echo "Error: Could not list items. Is the vault unlocked?" >&2
+    notify-send "Error: Could not list items. Is the vault unlocked?"
+    exit 1
+}
+
+# Only show login items (type 1), display as "name — username" or "name"
+display=$(echo "$items" | jq -r '
+    .[] | select(.type == 1) |
+    if (.login.username // "") != "" then
+        "\(.name) \u2014 \(.login.username)"
+    else
+        .name
+    end')
+
+selected=$(printf '%s\n' "$display" | "${dmenu[@]}" "$@")
+[[ -n $selected ]] || exit
+
+# Look up item by parsed name + username
+if [[ $selected == *" — "* ]]; then
+    sel_name="${selected% — *}"
+    sel_user="${selected##* — }"
+    item=$(echo "$items" | jq -c --arg n "$sel_name" --arg u "$sel_user" \
+        'first(.[] | select(.type == 1 and .name == $n and .login.username == $u))')
+else
+    item=$(echo "$items" | jq -c --arg n "$selected" \
+        'first(.[] | select(.type == 1 and .name == $n))')
+fi
+
+[[ -n $item ]] || exit
+
+# Determine value to output
+if [[ $get_totp -eq 1 ]]; then
+    item_id=$(echo "$item" | jq -r '.id')
+    value=$(bw get totp "$item_id" --session "$BW_SESSION")
+elif [[ $get_username -eq 1 ]]; then
+    value=$(echo "$item" | jq -r '.login.username // empty')
+else
+    value=$(echo "$item" | jq -r '.login.password // empty')
+fi
+
+[[ -n $value ]] || exit
+
+if [[ $typeit -eq 0 ]]; then
+    clipcatctl insert "$value"
+else
+    printf '%s' "$value" | eval "$xdotool"
+fi
