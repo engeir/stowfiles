@@ -210,7 +210,7 @@ gpg-connect-agent updatestartuptty /bye >/dev/null 2>&1
 
     _zi mise        mise        mise activate zsh
     _zi pitchfork   pitchfork   pitchfork activate zsh
-    _zi fnox        mise        fnox activate zsh
+    _zi fnox        fnox        fnox activate zsh
     _zi fzf         fzf         fzf --zsh
     _zi zoxide      zoxide      zoxide init --cmd cd zsh
     _zi atuin       atuin       atuin init zsh
