@@ -8,43 +8,34 @@
         "baseURL": "http://localhost:22434/v1"
       },
       "models": {
-        "nhn-large": {
-          "name": "NHN Large"
+        "nhn-embedding:bge-m3": {
+          "name": "nhn-embedding"
         },
-        "nhn-medium": {
-          "name": "NHN Medium"
-        },
-        "nhn-embedding": {
-          "name": "NHN Embedding"
-        },
-        "nhn-coder": {
-          "name": "NHN Coder"
-        },
-        "nhn-coder-autocomplete": {
-          "name": "NHN Coder Autocomplete"
-        },
-        "nhn-small": {
-          "name": "NHN Small"
+        "snowflake-arctic-embed2:568m": {
+          "name": "snowflake-arctic-embed"
         }
       }
     },
     "openwebui": {
       "npm": "@ai-sdk/openai-compatible",
-      "name": "OpenWebUI",
+      "name": "Open WebUI",
       "options": {
-        "baseURL": "https://chat.nhn.no/api"
+        "baseURL": "https://chat.nhn.no/api",
+        "apiKey": "{env:OPENWEBUI_API_KEY}"
       },
       "models": {
-        "nhn-large:fast": {
-          "name": "NHN Large"
+        "nhn-coder": {
+          "name": "nhn-coder"
         },
-        "nhn-small:fast": {
-          "name": "NHN Small"
+        "nhn-large:fast": {
+          "name": "nhn-large"
+        },
+        "nhn-medium": {
+          "name": "nhn-medium"
         }
       }
     }
   },
-  "model": "ollama/nhn-medium:latest",
   "permission": {
     "bash": {
       "*": "ask",
