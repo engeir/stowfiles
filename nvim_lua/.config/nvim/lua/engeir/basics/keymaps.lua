@@ -11,6 +11,10 @@ vim.keymap.set(
   "<cmd>update<CR>",
   { desc = "Save if changes has been made" }
 )
+-- Undotree
+vim.cmd("packadd nvim.undotree")
+vim.keymap.set("n", "gru", require("undotree").open)
+
 -- Forcefully save with `sudo` privileges. Depends on having an executable that `sudo`
 -- can use by looking at the `SUDO_ASKPASS` environment variable
 vim.api.nvim_create_user_command("W", function()
