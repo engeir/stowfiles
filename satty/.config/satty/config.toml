@@ -1,0 +1,3 @@
+[general]
+actions-on-enter = ["save-to-clipboard"]
+disable-notifications = true
