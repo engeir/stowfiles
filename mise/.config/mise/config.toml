@@ -4,7 +4,6 @@ experimental = true
 go_set_gobin = true
 idiomatic_version_file_enable_tools = ["rust"]
 lockfile = true
-pipx_uvx = true
 
 [env]
 AQUA_GLOBAL_CONFIG = "{{env.HOME}}/.config/aquaproj-aqua/aqua.yaml"
@@ -90,17 +89,7 @@ HAS_ALLOW_UNSAFE = "y"
 # LD_PRELOAD = "/usr/lib/x86_64-linux-gnu/libgtk3-nocsd.so.0"
 
 [tools]
-python = [
-  "latest",
-  "sub-0.1:latest",
-  "sub-0.2:latest",
-  "sub-0.3:latest",
-  "sub-0.4:latest",
-]
-
-aqua = "latest"
 bun = "latest"
-"cargo:alacritty" = "latest"
 "cargo:bacon" = "latest"
 "cargo:bob-nvim" = "latest"
 "cargo:bottom" = "latest"
@@ -164,7 +153,6 @@ bun = "latest"
 "cargo:tex-fmt" = "latest"
 "cargo:tidy-viewer" = "latest"
 "cargo:tin-summer" = "latest"
-"cargo:topgrade" = "latest"
 "cargo:tree-sitter-cli" = "latest"
 "cargo:viu" = "latest"
 "cargo:vivid" = "latest"
@@ -182,7 +170,6 @@ fnox = "latest"
 "github:dundee/gdu" = "latest"
 "github:etcd-io/etcd" = "latest"
 "github:filosottile/age" = "latest"
-"github:goreleaser/goreleaser" = "latest"
 "github:houseabsolute/precious" = "latest"
 "github:ifd3f/caligula" = "latest"
 "github:ismaelgv/rnr" = "latest"
@@ -216,10 +203,17 @@ pandoc = "latest"
 "pipx:llm" = "latest"
 pitchfork = "latest"
 prettier = "latest"
+python = [
+  "latest",
+  "sub-0.1:latest",
+  "sub-0.2:latest",
+  "sub-0.3:latest",
+  "sub-0.4:latest",
+]
 rust = "latest"
 tinytex = "latest"
 tmux = "latest"
 typst = "latest"
 usage = "latest"
 yazi = "latest"
-zig = "0.15"
+zig = "0.16"
