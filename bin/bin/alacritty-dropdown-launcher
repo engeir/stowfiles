@@ -17,6 +17,7 @@ has dmenu
 commands=(
     "Time tracking - Edit|twe edit"
     "SMAX TUI|smax tui"
+    "Add snippet|snippet"
     "Remmina|rtui-dd"
     "Calculator|bc -l"
     "System monitor|htop"

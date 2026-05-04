@@ -14,7 +14,7 @@ check_program awk
 check_program alacritty
 
 # User preference (font size scaling; tweak these if necessary)
-base_font_size=14       # points (default font size in Alacritty or your config)
+base_font_size=9        # points (default font size in Alacritty or your config)
 base_screen_height=1080 # px: reference for scaling font size
 
 # Get mouse position
