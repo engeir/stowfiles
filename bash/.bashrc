@@ -287,3 +287,4 @@ r() { (
 evalssh() {
     eval "$(ssh-agent -s)"
 }
+. "$HOME/.cargo/env"

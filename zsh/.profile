@@ -53,3 +53,4 @@ gpgconf --launch gpg-agent
 export PATH="$PATH:$HOME/.local/share/mise/shims/"
 export PATH="$HOME/.local/share/zinit/plugins/atuinsh---atuin:$PATH"
 export PATH="$HOME/.local/share/mise/shims:$PATH"
+. "$HOME/.cargo/env"
