@@ -1,0 +1,48 @@
+#!/usr/bin/env bash
+#
+# fix-headset — Configure Jabra Link 380 USB dongle for PipeWire.
+#
+# Sets the card to analog-stereo + mono-input profile (avoids the buggy
+# pro-audio profile that runs mic at 16kHz, causing tinny/distorted audio
+# in Teams, Zen, etc.) and ensures the mic is unmuted at full volume.
+#
+
+say() {
+    echo "$@"
+    notify-send "$@"
+}
+
+# Verify the Jabra USB dongle is plugged in
+if ! lsusb | grep -iq jabra; then
+    say "No USB dongle attached!"
+    exit 1
+fi
+
+# Grab the PipeWire object IDs for the Jabra's playback (sink) and capture (source) nodes
+SINK_ID=$(wpctl status 2>/dev/null | grep 'Jabra Link 380' | head -1 | grep -oP '\d+(?=\. Jabra)')
+SRC_ID=$(wpctl status 2>/dev/null | grep 'Jabra Link 380' | tail -1 | grep -oP '\d+(?=\. Jabra)')
+
+if [ "$SINK_ID" = "" ] || [ "$SRC_ID" = "" ]; then
+    say "Could not find Jabra headset in wpctl"
+    exit 1
+fi
+
+# Find the ALSA card name (serial changes on reconnect, so match on stable vendor prefix)
+JABRA_CARD=$(pactl list cards | grep 'Name:.*alsa_card.usb-0b0e_Jabra' | awk '{print $2}')
+if [ "$JABRA_CARD" = "" ]; then
+    say "Could not find Jabra card in pactl"
+    exit 1
+fi
+
+# Force the correct profile if PipeWire auto-selected pro-audio (16kHz mic = bad quality)
+CURRENT_PROFILE=$(pactl list cards | awk "/$JABRA_CARD/{found=1} found && /Active Profile:/{print \$3; exit}")
+if [ "$CURRENT_PROFILE" != "output:analog-stereo+input:mono-fallback" ]; then
+    say "Setting Jabra profile to analog-stereo+mono-input"
+    pactl set-card-profile "$JABRA_CARD" output:analog-stereo+input:mono-fallback
+fi
+
+# Set the Jabra source as default, unmute it, and crank volume to 100%
+wpctl set-default "$SRC_ID"
+wpctl set-mute "$SRC_ID" 0
+wpctl set-volume "$SRC_ID" 100%
+exit 0
