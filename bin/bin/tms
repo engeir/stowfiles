@@ -15,7 +15,7 @@ else
     items=$(find "$HOME" -maxdepth 0 -type d 2>/dev/null)
     items+=$(echo "" && find "$HOME/stowfiles" -maxdepth 0 -type d 2>/dev/null)
     # ubuntu + mac
-    items+=$(echo "" && find "$HOME/projects" -maxdepth 1 -mindepth 1 -type d 2>/dev/null)
+    items+=$(echo "" && find "$HOME/projects" -maxdepth 2 -mindepth 1 -type d 2>/dev/null)
     # ubuntu
     items+=$(echo "" && find "$HOME/Documents/work/projects" -maxdepth 1 -mindepth 1 -type d 2>/dev/null)
     items+=$(echo "" && find "$HOME/Documents/work" -maxdepth 0 -type d 2>/dev/null)
