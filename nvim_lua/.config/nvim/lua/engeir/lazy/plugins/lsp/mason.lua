@@ -20,7 +20,7 @@ return {
       "jsonlint",
       "lua_ls",
       "markdownlint",
-      "mypy",
+      -- "mypy",
       "ruff",
       "shellcheck",
       "shellharden",
