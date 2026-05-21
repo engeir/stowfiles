@@ -2,42 +2,43 @@
   "$schema": "https://opencode.ai/config.json",
   "autoupdate": false,
   "share": "disabled",
-  "enabled_providers": ["goophy"],
+  "enabled_providers": [
+    "goophy"
+  ],
   "plugin": [
     "superpowers@git+https://github.com/obra/superpowers.git"
   ],
   "provider": {
-    "ollama": {
+    "goophy": {
       "npm": "@ai-sdk/openai-compatible",
-      "name": "Ollama (local)",
+      "name": "NHN-PAI (Goophy)",
       "options": {
-        "baseURL": "http://localhost:22434/v1"
+        "baseURL": "http://localhost:22434/api/v1"
       },
       "models": {
+        "nhn-coder": {
+          "name": "nhn-coder",
+          "limit": {
+            "context": 99000,
+            "output": 32000
+          }
+        },
+        "nhn-medium": {
+          "name": "nhn-medium"
+        },
+        "nhn-large:fast": {
+          "name": "nhn-large:fast",
+          "max_tokens": 16384,
+          "limit": {
+            "context": 8000,
+            "output": 8000
+          }
+        },
         "nhn-embedding:bge-m3": {
           "name": "nhn-embedding"
         },
         "snowflake-arctic-embed2:568m": {
           "name": "snowflake-arctic-embed"
-        }
-      }
-    },
-    "openwebui": {
-      "npm": "@ai-sdk/openai-compatible",
-      "name": "Open WebUI",
-      "options": {
-        "baseURL": "https://chat.nhn.no/api",
-        "apiKey": "{env:OPENWEBUI_API_KEY}"
-      },
-      "models": {
-        "nhn-coder": {
-          "name": "nhn-coder"
-        },
-        "nhn-large:fast": {
-          "name": "nhn-large"
-        },
-        "nhn-medium": {
-          "name": "nhn-medium"
         }
       }
     }
