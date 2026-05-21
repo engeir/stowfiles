@@ -52,6 +52,10 @@ url = "https://github.com/oven-sh/bun/releases/download/bun-v1.3.13/bun-windows-
 version = "3.22.0"
 backend = "cargo:bacon"
 
+[[tools."cargo:bob-nvim"]]
+version = "4.1.6"
+backend = "cargo:bob-nvim"
+
 [[tools."cargo:bottom"]]
 version = "0.12.3"
 backend = "cargo:bottom"
@@ -1125,6 +1129,65 @@ checksum = "sha256:cce66ae7e442030334927bfbfd917690713e63d215aba93027f99807828fe
 url = "https://github.com/junegunn/fzf/releases/download/v0.72.0/fzf-0.72.0-windows_amd64.zip"
 url_api = "https://api.github.com/repos/junegunn/fzf/releases/assets/405825807"
 
+[[tools."github:logseq/logseq"]]
+version = "0.10.15"
+backend = "github:logseq/logseq"
+
+[tools."github:logseq/logseq"."platforms.linux-arm64"]
+checksum = "sha256:cc7e00e8cca676fd962640d7f50a2c7e05ab6a83ed2501df35cb91baf097f478"
+url = "https://github.com/logseq/logseq/releases/download/0.10.15/Logseq-linux-arm64-0.10.15.zip"
+url_api = "https://api.github.com/repos/logseq/logseq/releases/assets/322890119"
+
+[tools."github:logseq/logseq"."platforms.linux-arm64-musl"]
+checksum = "sha256:cc7e00e8cca676fd962640d7f50a2c7e05ab6a83ed2501df35cb91baf097f478"
+url = "https://github.com/logseq/logseq/releases/download/0.10.15/Logseq-linux-arm64-0.10.15.zip"
+url_api = "https://api.github.com/repos/logseq/logseq/releases/assets/322890119"
+
+[tools."github:logseq/logseq"."platforms.linux-x64"]
+checksum = "sha256:cfa7afc2d4311efedb1d21508858ebeaff2f3eb896254c2b569a5dc8e2aa3803"
+url = "https://github.com/logseq/logseq/releases/download/0.10.15/Logseq-linux-x64-0.10.15.zip"
+url_api = "https://api.github.com/repos/logseq/logseq/releases/assets/322890122"
+
+[tools."github:logseq/logseq"."platforms.linux-x64-baseline"]
+checksum = "sha256:cfa7afc2d4311efedb1d21508858ebeaff2f3eb896254c2b569a5dc8e2aa3803"
+url = "https://github.com/logseq/logseq/releases/download/0.10.15/Logseq-linux-x64-0.10.15.zip"
+url_api = "https://api.github.com/repos/logseq/logseq/releases/assets/322890122"
+
+[tools."github:logseq/logseq"."platforms.linux-x64-musl"]
+checksum = "sha256:cfa7afc2d4311efedb1d21508858ebeaff2f3eb896254c2b569a5dc8e2aa3803"
+url = "https://github.com/logseq/logseq/releases/download/0.10.15/Logseq-linux-x64-0.10.15.zip"
+url_api = "https://api.github.com/repos/logseq/logseq/releases/assets/322890122"
+
+[tools."github:logseq/logseq"."platforms.linux-x64-musl-baseline"]
+checksum = "sha256:cfa7afc2d4311efedb1d21508858ebeaff2f3eb896254c2b569a5dc8e2aa3803"
+url = "https://github.com/logseq/logseq/releases/download/0.10.15/Logseq-linux-x64-0.10.15.zip"
+url_api = "https://api.github.com/repos/logseq/logseq/releases/assets/322890122"
+
+[tools."github:logseq/logseq"."platforms.macos-arm64"]
+checksum = "sha256:078cecf427429f8e1ce79ef5f2fe8688294b6e76d8ef3faa7df24029d95f67ee"
+url = "https://github.com/logseq/logseq/releases/download/0.10.15/Logseq-darwin-arm64-0.10.15.zip"
+url_api = "https://api.github.com/repos/logseq/logseq/releases/assets/322890109"
+
+[tools."github:logseq/logseq"."platforms.macos-x64"]
+checksum = "sha256:3144371063d1110f4cd6fe4d3a3cac5608d4e264753f1fc2f2237939e675fd79"
+url = "https://github.com/logseq/logseq/releases/download/0.10.15/Logseq-darwin-x64-0.10.15.zip"
+url_api = "https://api.github.com/repos/logseq/logseq/releases/assets/322890110"
+
+[tools."github:logseq/logseq"."platforms.macos-x64-baseline"]
+checksum = "sha256:3144371063d1110f4cd6fe4d3a3cac5608d4e264753f1fc2f2237939e675fd79"
+url = "https://github.com/logseq/logseq/releases/download/0.10.15/Logseq-darwin-x64-0.10.15.zip"
+url_api = "https://api.github.com/repos/logseq/logseq/releases/assets/322890110"
+
+[tools."github:logseq/logseq"."platforms.windows-x64"]
+checksum = "sha256:05fd9eee843347fc4fbb3e9993a2ca219915b87fbf8df91f3d87aaa3a4f11f0d"
+url = "https://github.com/logseq/logseq/releases/download/0.10.15/Logseq-win-x64-0.10.15.zip"
+url_api = "https://api.github.com/repos/logseq/logseq/releases/assets/322890117"
+
+[tools."github:logseq/logseq"."platforms.windows-x64-baseline"]
+checksum = "sha256:05fd9eee843347fc4fbb3e9993a2ca219915b87fbf8df91f3d87aaa3a4f11f0d"
+url = "https://github.com/logseq/logseq/releases/download/0.10.15/Logseq-win-x64-0.10.15.zip"
+url_api = "https://api.github.com/repos/logseq/logseq/releases/assets/322890117"
+
 [[tools."github:mayanayza/netvisor"]]
 version = "0.16.2"
 backend = "github:mayanayza/netvisor"
@@ -1481,6 +1544,65 @@ url_api = "https://api.github.com/repos/sharkdp/bat/releases/assets/323549116"
 checksum = "sha256:0f729b4b6f5f28d395c641eacc2e9ff68d0096b85aa0eec344aa62425144b69b"
 url = "https://github.com/sharkdp/bat/releases/download/v0.26.1/bat-v0.26.1-x86_64-pc-windows-msvc.zip"
 url_api = "https://api.github.com/repos/sharkdp/bat/releases/assets/323549116"
+
+[[tools."github:zen-browser/desktop"]]
+version = "twilight-1"
+backend = "github:zen-browser/desktop"
+
+[tools."github:zen-browser/desktop"."platforms.linux-arm64"]
+checksum = "sha256:9b16b55dc16a09477a8fbe6f7d5f1d5c37785fad91bfb24b0effa2ccb9f9bc99"
+url = "https://github.com/zen-browser/desktop/releases/download/twilight-1/zen.linux-aarch64.tar.xz"
+url_api = "https://api.github.com/repos/zen-browser/desktop/releases/assets/422985356"
+
+[tools."github:zen-browser/desktop"."platforms.linux-arm64-musl"]
+checksum = "sha256:9b16b55dc16a09477a8fbe6f7d5f1d5c37785fad91bfb24b0effa2ccb9f9bc99"
+url = "https://github.com/zen-browser/desktop/releases/download/twilight-1/zen.linux-aarch64.tar.xz"
+url_api = "https://api.github.com/repos/zen-browser/desktop/releases/assets/422985356"
+
+[tools."github:zen-browser/desktop"."platforms.linux-x64"]
+checksum = "sha256:da681730916b7c2d8051f3489cf28cee08dc15eae81707a881046f81d776e2fa"
+url = "https://github.com/zen-browser/desktop/releases/download/twilight-1/zen.linux-x86_64.tar.xz"
+url_api = "https://api.github.com/repos/zen-browser/desktop/releases/assets/422985353"
+
+[tools."github:zen-browser/desktop"."platforms.linux-x64-baseline"]
+checksum = "sha256:da681730916b7c2d8051f3489cf28cee08dc15eae81707a881046f81d776e2fa"
+url = "https://github.com/zen-browser/desktop/releases/download/twilight-1/zen.linux-x86_64.tar.xz"
+url_api = "https://api.github.com/repos/zen-browser/desktop/releases/assets/422985353"
+
+[tools."github:zen-browser/desktop"."platforms.linux-x64-musl"]
+checksum = "sha256:da681730916b7c2d8051f3489cf28cee08dc15eae81707a881046f81d776e2fa"
+url = "https://github.com/zen-browser/desktop/releases/download/twilight-1/zen.linux-x86_64.tar.xz"
+url_api = "https://api.github.com/repos/zen-browser/desktop/releases/assets/422985353"
+
+[tools."github:zen-browser/desktop"."platforms.linux-x64-musl-baseline"]
+checksum = "sha256:da681730916b7c2d8051f3489cf28cee08dc15eae81707a881046f81d776e2fa"
+url = "https://github.com/zen-browser/desktop/releases/download/twilight-1/zen.linux-x86_64.tar.xz"
+url_api = "https://api.github.com/repos/zen-browser/desktop/releases/assets/422985353"
+
+[tools."github:zen-browser/desktop"."platforms.macos-arm64"]
+checksum = "sha256:a8f4fe0c703c32896eab0afeb4b81befd2ebab7be76d8261484633c0a23092e1"
+url = "https://github.com/zen-browser/desktop/releases/download/twilight-1/macos.mar"
+url_api = "https://api.github.com/repos/zen-browser/desktop/releases/assets/422985365"
+
+[tools."github:zen-browser/desktop"."platforms.macos-x64"]
+checksum = "sha256:a8f4fe0c703c32896eab0afeb4b81befd2ebab7be76d8261484633c0a23092e1"
+url = "https://github.com/zen-browser/desktop/releases/download/twilight-1/macos.mar"
+url_api = "https://api.github.com/repos/zen-browser/desktop/releases/assets/422985365"
+
+[tools."github:zen-browser/desktop"."platforms.macos-x64-baseline"]
+checksum = "sha256:a8f4fe0c703c32896eab0afeb4b81befd2ebab7be76d8261484633c0a23092e1"
+url = "https://github.com/zen-browser/desktop/releases/download/twilight-1/macos.mar"
+url_api = "https://api.github.com/repos/zen-browser/desktop/releases/assets/422985365"
+
+[tools."github:zen-browser/desktop"."platforms.windows-x64"]
+checksum = "sha256:8bbffe3fa867d785c403bff2443c17fc2fef98f4bbef73dffc02a5b668e36d6d"
+url = "https://github.com/zen-browser/desktop/releases/download/twilight-1/zen.win-x86_64.zip"
+url_api = "https://api.github.com/repos/zen-browser/desktop/releases/assets/395436696"
+
+[tools."github:zen-browser/desktop"."platforms.windows-x64-baseline"]
+checksum = "sha256:8bbffe3fa867d785c403bff2443c17fc2fef98f4bbef73dffc02a5b668e36d6d"
+url = "https://github.com/zen-browser/desktop/releases/download/twilight-1/zen.win-x86_64.zip"
+url_api = "https://api.github.com/repos/zen-browser/desktop/releases/assets/395436696"
 
 [[tools.gleam]]
 version = "1.16.0"
@@ -1868,6 +1990,65 @@ backend = "npm:yaml-language-server"
 [[tools.pandoc]]
 version = "3.9.0.2"
 backend = "asdf:pandoc"
+
+[[tools.pi]]
+version = "0.74.0"
+backend = "github:badlogic/pi-mono"
+
+[tools.pi."platforms.linux-arm64"]
+checksum = "sha256:261aa912878ca983c903d9c4a0408310dd8637b583085651d9b5ddb70c9df572"
+url = "https://github.com/earendil-works/pi/releases/download/v0.74.0/pi-linux-arm64.tar.gz"
+url_api = "https://api.github.com/repos/earendil-works/pi/releases/assets/414593863"
+
+[tools.pi."platforms.linux-arm64-musl"]
+checksum = "sha256:261aa912878ca983c903d9c4a0408310dd8637b583085651d9b5ddb70c9df572"
+url = "https://github.com/earendil-works/pi/releases/download/v0.74.0/pi-linux-arm64.tar.gz"
+url_api = "https://api.github.com/repos/earendil-works/pi/releases/assets/414593863"
+
+[tools.pi."platforms.linux-x64"]
+checksum = "sha256:d67657a30d49c9faca80868d2a4bdba4dfcac04702893f45a6d14b249345eb8d"
+url = "https://github.com/earendil-works/pi/releases/download/v0.74.0/pi-linux-x64.tar.gz"
+url_api = "https://api.github.com/repos/earendil-works/pi/releases/assets/414593861"
+
+[tools.pi."platforms.linux-x64-baseline"]
+checksum = "sha256:d67657a30d49c9faca80868d2a4bdba4dfcac04702893f45a6d14b249345eb8d"
+url = "https://github.com/earendil-works/pi/releases/download/v0.74.0/pi-linux-x64.tar.gz"
+url_api = "https://api.github.com/repos/earendil-works/pi/releases/assets/414593861"
+
+[tools.pi."platforms.linux-x64-musl"]
+checksum = "sha256:d67657a30d49c9faca80868d2a4bdba4dfcac04702893f45a6d14b249345eb8d"
+url = "https://github.com/earendil-works/pi/releases/download/v0.74.0/pi-linux-x64.tar.gz"
+url_api = "https://api.github.com/repos/earendil-works/pi/releases/assets/414593861"
+
+[tools.pi."platforms.linux-x64-musl-baseline"]
+checksum = "sha256:d67657a30d49c9faca80868d2a4bdba4dfcac04702893f45a6d14b249345eb8d"
+url = "https://github.com/earendil-works/pi/releases/download/v0.74.0/pi-linux-x64.tar.gz"
+url_api = "https://api.github.com/repos/earendil-works/pi/releases/assets/414593861"
+
+[tools.pi."platforms.macos-arm64"]
+checksum = "sha256:3063179823c6a985634312240c57015024316f7fe6661edd41f14c77d8b15e10"
+url = "https://github.com/earendil-works/pi/releases/download/v0.74.0/pi-darwin-arm64.tar.gz"
+url_api = "https://api.github.com/repos/earendil-works/pi/releases/assets/414593862"
+
+[tools.pi."platforms.macos-x64"]
+checksum = "sha256:fa65c98f2c651ec2f89fb1a8a3dc9b987947bc9b102361a2f178862abacc7560"
+url = "https://github.com/earendil-works/pi/releases/download/v0.74.0/pi-darwin-x64.tar.gz"
+url_api = "https://api.github.com/repos/earendil-works/pi/releases/assets/414593859"
+
+[tools.pi."platforms.macos-x64-baseline"]
+checksum = "sha256:fa65c98f2c651ec2f89fb1a8a3dc9b987947bc9b102361a2f178862abacc7560"
+url = "https://github.com/earendil-works/pi/releases/download/v0.74.0/pi-darwin-x64.tar.gz"
+url_api = "https://api.github.com/repos/earendil-works/pi/releases/assets/414593859"
+
+[tools.pi."platforms.windows-x64"]
+checksum = "sha256:0cbfb81e31b0fea0a4f88f95d05f3a32a782a686d54771ede30042ae42e9931f"
+url = "https://github.com/earendil-works/pi/releases/download/v0.74.0/pi-windows-x64.zip"
+url_api = "https://api.github.com/repos/earendil-works/pi/releases/assets/414593860"
+
+[tools.pi."platforms.windows-x64-baseline"]
+checksum = "sha256:0cbfb81e31b0fea0a4f88f95d05f3a32a782a686d54771ede30042ae42e9931f"
+url = "https://github.com/earendil-works/pi/releases/download/v0.74.0/pi-windows-x64.zip"
+url_api = "https://api.github.com/repos/earendil-works/pi/releases/assets/414593860"
 
 [[tools."pipx:calcure"]]
 version = "3.2.1"
