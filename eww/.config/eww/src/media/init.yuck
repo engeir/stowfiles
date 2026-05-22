@@ -1,0 +1,21 @@
+(defpoll media-title :interval "2s"
+  "playerctl metadata title 2>/dev/null || echo 'Nothing playing'")
+
+(defpoll media-artist :interval "2s"
+  "playerctl metadata artist 2>/dev/null || echo ''")
+
+(defpoll media-status :interval "2s"
+  "playerctl status 2>/dev/null || echo 'Stopped'")
+
+(defpoll media-art :interval "3s"
+  "~/.config/mango/scripts/get_media_art.sh")
+
+(defwindow media-popup
+  :geometry (geometry :x "0" :y "0px" :width "280px" :anchor "top center")
+  :monitor 0
+  :stacking "fg"
+  :exclusive false
+  :focusable true
+  :transparent true
+  :class "media-window"
+  (media-widget))

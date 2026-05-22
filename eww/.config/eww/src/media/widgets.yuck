@@ -1,0 +1,11 @@
+(defwidget media-widget []
+  (box :class "media-popup" :orientation "v" :space-evenly false :spacing 12
+    (image :path media-art :image-width 256 :image-height 256)
+    (box :class "media-info" :orientation "v" :space-evenly false :spacing 4
+      (label :class "media-title" :text media-title :limit-width 28)
+      (label :class "media-artist" :text media-artist :limit-width 28))
+    (box :class "media-controls" :orientation "h" :space-evenly true
+      (button :class "media-btn" :onclick "playerctl previous" "⏮")
+      (button :class "media-btn media-play" :onclick "playerctl play-pause"
+        {media-status == "Playing" ? "⏸" : "▶"})
+      (button :class "media-btn" :onclick "playerctl next" "⏭"))))

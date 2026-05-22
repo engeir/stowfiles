@@ -197,6 +197,7 @@ python = [
   "sub-0.3:latest",
   "sub-0.4:latest",
 ]
+rust = "latest"
 tinytex = "latest"
 tmux = "latest"
 typst = "latest"

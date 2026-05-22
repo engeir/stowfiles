@@ -1,0 +1,31 @@
+; defined ones
+(include './src/var.yuck')
+(include './src/widgets.yuck')
+
+; header
+(include './src/header/fetch.yuck')
+(include './src/header/init.yuck')
+
+; focal
+(include './src/focal/widgets.yuck')
+(include './src/focal/audioSliders.yuck')
+(include './src/focal/init.yuck')
+
+; footer
+(include './src/footer/btns.yuck')
+(include './src/footer/init.yuck')
+
+; dashboard
+(include './src/dashboard.yuck')
+
+; media popup
+(include './src/media/widgets.yuck')
+(include './src/media/init.yuck')
+
+; whole eww window
+(defwindow eww
+           :geometry (geometry :x "-1%"
+                               :y "-2%"
+                               :anchor "right bottom")
+           :wm-ignore true
+(dashboard))

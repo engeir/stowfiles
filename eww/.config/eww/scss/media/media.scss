@@ -1,0 +1,54 @@
+window.media-window,
+window.media-window .background {
+  background-color: transparent;
+  background: none;
+}
+
+.media-popup {
+  background-color: rgba(37, 41, 49, 0.5);
+  padding: 12px;
+
+  image {}
+
+  .media-info {
+    padding: 4px 2px;
+
+    .media-title {
+      color: $white;
+      font-size: 14px;
+      font-weight: bold;
+    }
+
+    .media-artist {
+      color: $lightGrey;
+      font-size: 12px;
+    }
+  }
+
+  .media-controls {
+    margin-top: 4px;
+
+    .media-btn {
+      background-color: $grey;
+      color: $white;
+      border-radius: 8px;
+      padding: 8px 20px;
+      font-size: 18px;
+      border: none;
+
+      &:hover {
+        background-color: $blue;
+        color: $black;
+      }
+    }
+
+    .media-play {
+      background-color: $green;
+      color: $black;
+
+      &:hover {
+        background-color: $white;
+      }
+    }
+  }
+}
