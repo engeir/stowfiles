@@ -1550,49 +1550,49 @@ version = "twilight-1"
 backend = "github:zen-browser/desktop"
 
 [tools."github:zen-browser/desktop"."platforms.linux-arm64"]
-checksum = "sha256:9b16b55dc16a09477a8fbe6f7d5f1d5c37785fad91bfb24b0effa2ccb9f9bc99"
+checksum = "sha256:a4962b531487603038addcf41043506ac084439589c6c0b0a0e4afbf2d62c6ec"
 url = "https://github.com/zen-browser/desktop/releases/download/twilight-1/zen.linux-aarch64.tar.xz"
-url_api = "https://api.github.com/repos/zen-browser/desktop/releases/assets/422985356"
+url_api = "https://api.github.com/repos/zen-browser/desktop/releases/assets/426164258"
 
 [tools."github:zen-browser/desktop"."platforms.linux-arm64-musl"]
-checksum = "sha256:9b16b55dc16a09477a8fbe6f7d5f1d5c37785fad91bfb24b0effa2ccb9f9bc99"
+checksum = "sha256:a4962b531487603038addcf41043506ac084439589c6c0b0a0e4afbf2d62c6ec"
 url = "https://github.com/zen-browser/desktop/releases/download/twilight-1/zen.linux-aarch64.tar.xz"
-url_api = "https://api.github.com/repos/zen-browser/desktop/releases/assets/422985356"
+url_api = "https://api.github.com/repos/zen-browser/desktop/releases/assets/426164258"
 
 [tools."github:zen-browser/desktop"."platforms.linux-x64"]
-checksum = "sha256:da681730916b7c2d8051f3489cf28cee08dc15eae81707a881046f81d776e2fa"
+checksum = "sha256:e99593c87e1ff55426cbb5e96ccd6288d02acc2721956d2fbd18d0ab5329cef1"
 url = "https://github.com/zen-browser/desktop/releases/download/twilight-1/zen.linux-x86_64.tar.xz"
-url_api = "https://api.github.com/repos/zen-browser/desktop/releases/assets/422985353"
+url_api = "https://api.github.com/repos/zen-browser/desktop/releases/assets/426164249"
 
 [tools."github:zen-browser/desktop"."platforms.linux-x64-baseline"]
-checksum = "sha256:da681730916b7c2d8051f3489cf28cee08dc15eae81707a881046f81d776e2fa"
+checksum = "sha256:e99593c87e1ff55426cbb5e96ccd6288d02acc2721956d2fbd18d0ab5329cef1"
 url = "https://github.com/zen-browser/desktop/releases/download/twilight-1/zen.linux-x86_64.tar.xz"
-url_api = "https://api.github.com/repos/zen-browser/desktop/releases/assets/422985353"
+url_api = "https://api.github.com/repos/zen-browser/desktop/releases/assets/426164249"
 
 [tools."github:zen-browser/desktop"."platforms.linux-x64-musl"]
-checksum = "sha256:da681730916b7c2d8051f3489cf28cee08dc15eae81707a881046f81d776e2fa"
+checksum = "sha256:e99593c87e1ff55426cbb5e96ccd6288d02acc2721956d2fbd18d0ab5329cef1"
 url = "https://github.com/zen-browser/desktop/releases/download/twilight-1/zen.linux-x86_64.tar.xz"
-url_api = "https://api.github.com/repos/zen-browser/desktop/releases/assets/422985353"
+url_api = "https://api.github.com/repos/zen-browser/desktop/releases/assets/426164249"
 
 [tools."github:zen-browser/desktop"."platforms.linux-x64-musl-baseline"]
-checksum = "sha256:da681730916b7c2d8051f3489cf28cee08dc15eae81707a881046f81d776e2fa"
+checksum = "sha256:e99593c87e1ff55426cbb5e96ccd6288d02acc2721956d2fbd18d0ab5329cef1"
 url = "https://github.com/zen-browser/desktop/releases/download/twilight-1/zen.linux-x86_64.tar.xz"
-url_api = "https://api.github.com/repos/zen-browser/desktop/releases/assets/422985353"
+url_api = "https://api.github.com/repos/zen-browser/desktop/releases/assets/426164249"
 
 [tools."github:zen-browser/desktop"."platforms.macos-arm64"]
-checksum = "sha256:a8f4fe0c703c32896eab0afeb4b81befd2ebab7be76d8261484633c0a23092e1"
+checksum = "sha256:fbf8234eed18b1dd3754aaf0cabc2806051738e663050fb2abe58738b63f2d27"
 url = "https://github.com/zen-browser/desktop/releases/download/twilight-1/macos.mar"
-url_api = "https://api.github.com/repos/zen-browser/desktop/releases/assets/422985365"
+url_api = "https://api.github.com/repos/zen-browser/desktop/releases/assets/426164252"
 
 [tools."github:zen-browser/desktop"."platforms.macos-x64"]
-checksum = "sha256:a8f4fe0c703c32896eab0afeb4b81befd2ebab7be76d8261484633c0a23092e1"
+checksum = "sha256:fbf8234eed18b1dd3754aaf0cabc2806051738e663050fb2abe58738b63f2d27"
 url = "https://github.com/zen-browser/desktop/releases/download/twilight-1/macos.mar"
-url_api = "https://api.github.com/repos/zen-browser/desktop/releases/assets/422985365"
+url_api = "https://api.github.com/repos/zen-browser/desktop/releases/assets/426164252"
 
 [tools."github:zen-browser/desktop"."platforms.macos-x64-baseline"]
-checksum = "sha256:a8f4fe0c703c32896eab0afeb4b81befd2ebab7be76d8261484633c0a23092e1"
+checksum = "sha256:fbf8234eed18b1dd3754aaf0cabc2806051738e663050fb2abe58738b63f2d27"
 url = "https://github.com/zen-browser/desktop/releases/download/twilight-1/macos.mar"
-url_api = "https://api.github.com/repos/zen-browser/desktop/releases/assets/422985365"
+url_api = "https://api.github.com/repos/zen-browser/desktop/releases/assets/426164252"
 
 [tools."github:zen-browser/desktop"."platforms.windows-x64"]
 checksum = "sha256:8bbffe3fa867d785c403bff2443c17fc2fef98f4bbef73dffc02a5b668e36d6d"
@@ -2444,6 +2444,10 @@ url = "https://github.com/typst/typst/releases/download/v0.14.2/typst-x86_64-pc-
 [[tools.usage]]
 version = "3.3.0"
 backend = "asdf:usage"
+
+[[tools.uv]]
+version = "0.11.14"
+backend = "asdf:uv"
 
 [[tools.yazi]]
 version = "26.5.6"
