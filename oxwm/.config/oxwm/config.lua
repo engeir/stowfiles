@@ -29,7 +29,7 @@ oxwm.gaps.set_smart(true)
 -- STATUS BAR
 -- ============================================================
 
-oxwm.bar.set_font("CaskaydiaMono Nerd Font:style=Bold:size=12")
+oxwm.bar.set_font("CaskaydiaMono Nerd Font:style=Bold:size=10")
 oxwm.bar.set_position("top")
 oxwm.bar.set_hide_vacant_tags(false)
 
@@ -44,63 +44,63 @@ local blk_bg = "#201b14"
 oxwm.bar.set_blocks({
   oxwm.bar.block.systray(),
   oxwm.bar.block.shell({
-    format   = " timew:{} ",
-    command  = "timew-i3block 2>/dev/null || echo off",
+    format = " {} ",
+    command = "timew-i3block 2>/dev/null || echo off",
     interval = 10,
-    color    = blk_bg,
+    color = blk_bg,
     underline = false,
   }),
   oxwm.bar.block.shell({
-    format   = " net:{} ",
-    command  = "nmcli -t -f active,ssid dev wifi 2>/dev/null | awk -F: '/^yes/{print $2}' | head -1 || echo --",
+    format = " {} ",
+    command = "nmcli -t -f active,ssid dev wifi 2>/dev/null | awk -F: '/^yes/{print $2}' | head -1 || echo --",
     interval = 10,
-    color    = blk_bg,
+    color = blk_bg,
     underline = false,
   }),
   oxwm.bar.block.shell({
-    format   = " disk:{} ",
-    command  = "df -h / | awk 'NR==2{print $4}'",
+    format = " {} ",
+    command = "df -h / | awk 'NR==2{print $4}'",
     interval = 30,
-    color    = blk_bg,
+    color = blk_bg,
     underline = false,
   }),
   oxwm.bar.block.shell({
-    format   = " cpu:{} ",
-    command  = "uptime | awk -F'load average: ' '{printf \"%.2f\", $2}'",
+    format = " {} ",
+    command = "uptime | awk -F'load average: ' '{printf \"%.2f\", $2}'",
     interval = 5,
-    color    = blk_bg,
+    color = blk_bg,
     underline = false,
   }),
   oxwm.bar.block.shell({
-    format   = " mem:{} ",
-    command  = "free -h | awk 'NR==2{print $3\"/\"$2}'",
+    format = " {} ",
+    command = "free -h | awk 'NR==2{print $3\"/\"$2}'",
     interval = 5,
-    color    = blk_bg,
+    color = blk_bg,
     underline = false,
   }),
   oxwm.bar.block.shell({
-    format   = " vol:{} ",
-    command  = "pactl get-sink-volume @DEFAULT_SINK@ 2>/dev/null | grep -oP '\\d+%' | head -1 || echo '?'",
+    format = " {} ",
+    command = "pactl get-sink-volume @DEFAULT_SINK@ 2>/dev/null | grep -oP '\\d+%' | head -1 || echo '?'",
     interval = 3,
-    color    = blk_bg,
+    color = blk_bg,
     underline = false,
   }),
   oxwm.bar.block.battery({
-    format      = " bat:{} ",
-    charging    = "+{}%",
+    format = " {} ",
+    charging = "+{}%",
     discharging = "{}%",
-    full        = "full",
+    full = "full",
     battery_name = "BAT0",
-    interval    = 30,
-    color       = blk_bg,
-    underline   = false,
+    interval = 30,
+    color = blk_bg,
+    underline = false,
   }),
   oxwm.bar.block.datetime({
-    format      = " {} ",
+    format = " {} ",
     date_format = "%a %d %b  %H:%M",
-    interval    = 60,
-    color       = blk_bg,
-    underline   = false,
+    interval = 60,
+    color = blk_bg,
+    underline = false,
   }),
 })
 
