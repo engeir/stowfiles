@@ -201,7 +201,7 @@ oxwm.key.bind({ "Mod4" }, "Up",    oxwm.client.focus_stack(-1))
 oxwm.key.bind({ "Mod4" }, "Right", oxwm.client.focus_stack(1))
 
 -- $monster bindings (Mod4+Mod1+Shift+Control)
-oxwm.key.bind({ "Mod4", "Mod1", "Shift", "Control" }, "0",     oxwm.spawn("alacritty-dropdown show-keymaps-i3"))
+oxwm.key.bind({ "Mod4", "Mod1", "Shift", "Control" }, "0",     oxwm.spawn("alacritty-dropdown show-keymaps-oxwm"))
 oxwm.key.bind({ "Mod4", "Mod1", "Shift", "Control" }, "a",     oxwm.spawn("alacritty-dropdown rtui-dd"))
 oxwm.key.bind({ "Mod4", "Mod1", "Shift", "Control" }, "b",     oxwm.spawn("snippet browse --dmenu"))
 oxwm.key.bind({ "Mod4", "Mod1", "Shift", "Control" }, "c",     oxwm.spawn("alacritty-dropdown calcure"))

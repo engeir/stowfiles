@@ -1,0 +1,57 @@
+#!/usr/bin/env python3
+"""Display oxwm keybindings parsed from config.lua."""
+
+import re
+import os
+import subprocess
+
+CONFIG = os.path.expanduser("~/.config/oxwm/config.lua")
+
+MOD_MAP = {
+    "Mod4": "Super",
+    "Mod1": "Alt",
+    "Control": "Ctrl",
+    "Shift": "Shift",
+}
+
+PATTERN = re.compile(
+    r'oxwm\.key\.bind\(\s*\{([^}]*)\}\s*,\s*"([^"]+)"\s*,\s*(.+?)\)'
+)
+
+def fmt_mods(raw):
+    mods = re.findall(r'"([^"]+)"', raw)
+    return "+".join(MOD_MAP.get(m, m) for m in mods) if mods else "(none)"
+
+KEEP_ARG = re.compile(
+    r'^oxwm\.(layout\.set|client\.focus_stack|client\.move_stack'
+    r'|monitor\.focus|monitor\.tag|set_master_factor|inc_num_master)'
+    r'\(("?)([^")]+)\2'
+)
+
+def fmt_action(raw):
+    raw = raw.strip()
+    raw = re.sub(r'oxwm\.spawn_terminal\(.*', "terminal", raw)
+    raw = re.sub(r'oxwm\.spawn\("([^"]+)".*', r'\1', raw)
+    m = KEEP_ARG.match(raw)
+    if m:
+        return f"{m.group(1)}({m.group(3)})"
+    raw = re.sub(r'oxwm\.', "", raw)
+    raw = re.sub(r'\(.*', "", raw)
+    return raw.strip()
+
+rows = []
+with open(CONFIG) as f:
+    for line in f:
+        if "oxwm.key.bind" not in line or line.lstrip().startswith("--"):
+            continue
+        m = PATTERN.search(line)
+        if m:
+            mods, key, action = m.group(1), m.group(2), m.group(3)
+            rows.append((fmt_mods(mods), key, fmt_action(action)))
+
+rows.sort()
+col1 = max(len(r[0]) for r in rows) + 2
+col2 = max(len(r[1]) for r in rows) + 2
+lines = [f"{m:<{col1}}{k:<{col2}}{a}" for m, k, a in rows]
+
+subprocess.run(["less", "-S"], input="\n".join(lines), text=True)
