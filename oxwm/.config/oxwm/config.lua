@@ -17,7 +17,7 @@ oxwm.tag.set_back_and_forth(true)
 -- ============================================================
 
 oxwm.border.set_width(3)
-oxwm.border.set_focused_color("#DA7510")   -- vivid orange
+oxwm.border.set_focused_color("#DA7510") -- vivid orange
 oxwm.border.set_unfocused_color("#2a2318") -- near-invisible on dark bg
 
 oxwm.gaps.enable()
@@ -34,37 +34,37 @@ oxwm.bar.set_position("top")
 oxwm.bar.set_hide_vacant_tags(false)
 
 -- schemes: (background, foreground, underline)
-oxwm.bar.set_scheme_normal("#201b14",  "#D1B88E", "#444444")
+oxwm.bar.set_scheme_normal("#201b14", "#D1B88E", "#444444")
 oxwm.bar.set_scheme_occupied("#2a2318", "#ddca9e", "#c9b890")
 oxwm.bar.set_scheme_selected("#DA7510", "#201b14", "#DA7510")
-oxwm.bar.set_scheme_urgent("#ad401f",  "#ddca9e", "#ad401f")
+oxwm.bar.set_scheme_urgent("#ad401f", "#ddca9e", "#ad401f")
 
 oxwm.bar.set_blocks({
-    oxwm.bar.block.systray(),
-    oxwm.bar.block.shell({
-        format = " vol:{} ",
-        command = "pactl get-sink-volume @DEFAULT_SINK@ 2>/dev/null | grep -oP '\\d+%' | head -1 || echo '?'",
-        interval = 3,
-        color = "#201b14",
-        underline = false,
-    }),
-    oxwm.bar.block.battery({
-        format = " bat:{} ",
-        charging  = "+{}%",
-        discharging = "{}%",
-        full      = "full",
-        battery_name = "BAT0",
-        interval  = 30,
-        color     = "#e8d0a0",
-        underline = false,
-    }),
-    oxwm.bar.block.datetime({
-        format      = " {} ",
-        date_format = "%a %d %b  %H:%M",
-        interval    = 60,
-        color       = "#e8d0a0",
-        underline   = false,
-    }),
+  oxwm.bar.block.systray(),
+  oxwm.bar.block.shell({
+    format = " vol:{} ",
+    command = "pactl get-sink-volume @DEFAULT_SINK@ 2>/dev/null | grep -oP '\\d+%' | head -1 || echo '?'",
+    interval = 3,
+    color = "#201b14",
+    underline = false,
+  }),
+  oxwm.bar.block.battery({
+    format = " bat:{} ",
+    charging = " bat:+{}%",
+    discharging = " bat:{}%",
+    full = " bat:full",
+    battery_name = "BAT0",
+    interval = 30,
+    color = "#201b14",
+    underline = false,
+  }),
+  oxwm.bar.block.datetime({
+    format = " {} ",
+    date_format = "%a %d %b  %H:%M",
+    interval = 60,
+    color = "#201b14",
+    underline = false,
+  }),
 })
 
 -- ============================================================
@@ -72,25 +72,25 @@ oxwm.bar.set_blocks({
 -- ============================================================
 
 -- Config / session
-oxwm.key.bind({ "Mod4", "Shift" },           "r", oxwm.restart())
-oxwm.key.bind({ "Mod4", "Shift" },           "slash", oxwm.show_keybinds())
+oxwm.key.bind({ "Mod4", "Shift" }, "r", oxwm.restart())
+oxwm.key.bind({ "Mod4", "Shift" }, "slash", oxwm.show_keybinds())
 
 -- Applications
-oxwm.key.bind({ "Mod4" },                    "Return", oxwm.spawn_terminal())
-oxwm.key.bind({ "Mod4" },                    "b",      oxwm.spawn("zen"))
-oxwm.key.bind({ "Mod4" },                    "space",  oxwm.spawn("~/bin/menu_run"))
-oxwm.key.bind({ "Mod1" },                    "space",  oxwm.spawn("menu_run -c -l 20"))
+oxwm.key.bind({ "Mod4" }, "Return", oxwm.spawn_terminal())
+oxwm.key.bind({ "Mod4" }, "b", oxwm.spawn("zen"))
+oxwm.key.bind({ "Mod4" }, "space", oxwm.spawn("~/bin/menu_run"))
+oxwm.key.bind({ "Mod1" }, "space", oxwm.spawn("menu_run -c -l 20"))
 
 -- Kill
 oxwm.key.bind({ "Mod4" }, "q", oxwm.client.kill())
 
 -- Focus: hjkl + Tab
 -- oxwm is stack-based; h/k = prev, l/j = next (closest to mango directional intent)
-oxwm.key.bind({ "Mod4" },        "h",   oxwm.client.focus_stack(-1))
-oxwm.key.bind({ "Mod4" },        "j",   oxwm.client.focus_stack(1))
-oxwm.key.bind({ "Mod4" },        "k",   oxwm.client.focus_stack(-1))
-oxwm.key.bind({ "Mod4" },        "l",   oxwm.client.focus_stack(1))
-oxwm.key.bind({ "Mod4" },        "Tab", oxwm.client.focus_stack(1))
+oxwm.key.bind({ "Mod4" }, "h", oxwm.client.focus_stack(-1))
+oxwm.key.bind({ "Mod4" }, "j", oxwm.client.focus_stack(1))
+oxwm.key.bind({ "Mod4" }, "k", oxwm.client.focus_stack(-1))
+oxwm.key.bind({ "Mod4" }, "l", oxwm.client.focus_stack(1))
+oxwm.key.bind({ "Mod4" }, "Tab", oxwm.client.focus_stack(1))
 oxwm.key.bind({ "Mod4", "Shift" }, "Tab", oxwm.client.focus_stack(-1))
 
 -- Swap in stack: Shift+hjkl
@@ -129,9 +129,9 @@ oxwm.key.bind({ "Mod4", "Mod1", "Shift" }, "b", oxwm.toggle_bar())
 -- Monitor focus / send window
 oxwm.key.bind({ "Mod4", "Mod1", "Shift" }, "i", oxwm.monitor.focus(-1))
 oxwm.key.bind({ "Mod4", "Mod1", "Shift" }, "o", oxwm.monitor.focus(1))
-oxwm.key.bind({ "Mod4", "Shift" }, "Up",    oxwm.monitor.tag(-1))
-oxwm.key.bind({ "Mod4", "Shift" }, "Down",  oxwm.monitor.tag(1))
-oxwm.key.bind({ "Mod4", "Shift" }, "Left",  oxwm.monitor.tag(-1))
+oxwm.key.bind({ "Mod4", "Shift" }, "Up", oxwm.monitor.tag(-1))
+oxwm.key.bind({ "Mod4", "Shift" }, "Down", oxwm.monitor.tag(1))
+oxwm.key.bind({ "Mod4", "Shift" }, "Left", oxwm.monitor.tag(-1))
 oxwm.key.bind({ "Mod4", "Shift" }, "Right", oxwm.monitor.tag(1))
 
 -- Tag navigation (nonempty, mango: Alt+Super+i/o)
@@ -140,34 +140,55 @@ oxwm.key.bind({ "Mod4", "Mod1" }, "o", oxwm.tag.view_next_nonempty())
 
 -- Tags 1-9  (oxwm tags are 0-indexed)
 for i = 1, 9 do
-    oxwm.key.bind({ "Mod4" },                     tostring(i), oxwm.tag.view(i - 1))
-    oxwm.key.bind({ "Mod4", "Shift" },            tostring(i), oxwm.tag.move_to(i - 1))
-    oxwm.key.bind({ "Mod4", "Control" },          tostring(i), oxwm.tag.toggletag(i - 1))
-    oxwm.key.bind({ "Mod4", "Control", "Shift" }, tostring(i), oxwm.tag.toggleview(i - 1))
+  oxwm.key.bind({ "Mod4" }, tostring(i), oxwm.tag.view(i - 1))
+  oxwm.key.bind({ "Mod4", "Shift" }, tostring(i), oxwm.tag.move_to(i - 1))
+  oxwm.key.bind({ "Mod4", "Control" }, tostring(i), oxwm.tag.toggletag(i - 1))
+  oxwm.key.bind({ "Mod4", "Control", "Shift" }, tostring(i), oxwm.tag.toggleview(i - 1))
 end
 
 -- Brightness  (X11 scripts, not swayosd)
-oxwm.key.bind({},       "XF86MonBrightnessDown", oxwm.spawn("~/.config/oxwm/scripts/brightness.sh down"))
-oxwm.key.bind({},       "XF86MonBrightnessUp",   oxwm.spawn("~/.config/oxwm/scripts/brightness.sh up"))
-oxwm.key.bind({ "Mod1" }, "XF86MonBrightnessDown", oxwm.spawn("~/.config/oxwm/scripts/brightness.sh down small"))
-oxwm.key.bind({ "Mod1" }, "XF86MonBrightnessUp",   oxwm.spawn("~/.config/oxwm/scripts/brightness.sh up small"))
+oxwm.key.bind(
+  {},
+  "XF86MonBrightnessDown",
+  oxwm.spawn("~/.config/oxwm/scripts/brightness.sh down")
+)
+oxwm.key.bind(
+  {},
+  "XF86MonBrightnessUp",
+  oxwm.spawn("~/.config/oxwm/scripts/brightness.sh up")
+)
+oxwm.key.bind(
+  { "Mod1" },
+  "XF86MonBrightnessDown",
+  oxwm.spawn("~/.config/oxwm/scripts/brightness.sh down small")
+)
+oxwm.key.bind(
+  { "Mod1" },
+  "XF86MonBrightnessUp",
+  oxwm.spawn("~/.config/oxwm/scripts/brightness.sh up small")
+)
 
 -- Volume  (X11 scripts)
-oxwm.key.bind({}, "XF86AudioLowerVolume", oxwm.spawn("~/.config/oxwm/scripts/volume.sh down"))
-oxwm.key.bind({}, "XF86AudioRaiseVolume", oxwm.spawn("~/.config/oxwm/scripts/volume.sh up"))
-oxwm.key.bind({}, "XF86AudioMute",        oxwm.spawn("~/.config/oxwm/scripts/volume.sh mute"))
+oxwm.key.bind(
+  {},
+  "XF86AudioLowerVolume",
+  oxwm.spawn("~/.config/oxwm/scripts/volume.sh down")
+)
+oxwm.key.bind(
+  {},
+  "XF86AudioRaiseVolume",
+  oxwm.spawn("~/.config/oxwm/scripts/volume.sh up")
+)
+oxwm.key.bind({}, "XF86AudioMute", oxwm.spawn("~/.config/oxwm/scripts/volume.sh mute"))
 
 -- Screenshot (matches i3: $monster+p = Mod1+Shift+Mod4+Control+p)
-oxwm.key.bind({ "Mod4", "Mod1", "Shift", "Control" }, "p",
-    oxwm.spawn("flameshot gui"))
+oxwm.key.bind({ "Mod4", "Mod1", "Shift", "Control" }, "p", oxwm.spawn("flameshot gui"))
 
 -- Lock screen (matches i3: $mod+Shift+period → slock)
-oxwm.key.bind({ "Mod4", "Shift" }, "period",
-    oxwm.spawn("slock"))
+oxwm.key.bind({ "Mod4", "Shift" }, "period", oxwm.spawn("slock"))
 
 -- Clipboard (i3: clipcat-menu -f dmenu)
-oxwm.key.bind({ "Mod4", "Shift" }, "g",
-    oxwm.spawn("clipcat-menu -f dmenu"))
+oxwm.key.bind({ "Mod4", "Shift" }, "g", oxwm.spawn("clipcat-menu -f dmenu"))
 
 -- Password managers
 oxwm.key.bind({ "Mod4", "Shift" }, "p", oxwm.spawn("bash $HOME/bin/passmenu"))
@@ -177,10 +198,18 @@ oxwm.key.bind({ "Mod4", "Shift" }, "b", oxwm.spawn("bash $HOME/bin/bwmenu"))
 oxwm.key.bind({ "Mod4", "Shift" }, "e", oxwm.quit())
 
 -- Notifications pause toggle (i3: $mod+Shift+Mod1+p)
-oxwm.key.bind({ "Mod4", "Shift", "Mod1" }, "p", oxwm.spawn("dunstctl set-paused toggle"))
+oxwm.key.bind(
+  { "Mod4", "Shift", "Mod1" },
+  "p",
+  oxwm.spawn("dunstctl set-paused toggle")
+)
 
 -- Mic mute (i3: XF86AudioMicMute)
-oxwm.key.bind({}, "XF86AudioMicMute", oxwm.spawn("pactl set-source-mute @DEFAULT_SOURCE@ toggle"))
+oxwm.key.bind(
+  {},
+  "XF86AudioMicMute",
+  oxwm.spawn("pactl set-source-mute @DEFAULT_SOURCE@ toggle")
+)
 
 -- Display select (i3: $mod+Shift+d)
 oxwm.key.bind({ "Mod4", "Shift" }, "d", oxwm.spawn("displayselect"))
@@ -191,43 +220,95 @@ oxwm.key.bind({ "Mod4", "Mod1" }, "space", oxwm.spawn("alacritty-dropdown-launch
 -- File/text helpers (i3: $mod+Shift+Mod1+f/t/u/y)
 oxwm.key.bind({ "Mod4", "Shift", "Mod1" }, "f", oxwm.spawn("pdf_open"))
 oxwm.key.bind({ "Mod4", "Shift", "Mod1" }, "t", oxwm.spawn("find_txt"))
-oxwm.key.bind({ "Mod4", "Shift", "Mod1" }, "u", oxwm.spawn("alacritty-dropdown clip-manage"))
-oxwm.key.bind({ "Mod4", "Shift", "Mod1" }, "y", oxwm.spawn("alacritty-dropdown pamfzf-new"))
+oxwm.key.bind(
+  { "Mod4", "Shift", "Mod1" },
+  "u",
+  oxwm.spawn("alacritty-dropdown clip-manage")
+)
+oxwm.key.bind(
+  { "Mod4", "Shift", "Mod1" },
+  "y",
+  oxwm.spawn("alacritty-dropdown pamfzf-new")
+)
 
 -- Arrow key focus (i3: $mod+arrows)
-oxwm.key.bind({ "Mod4" }, "Left",  oxwm.client.focus_stack(-1))
-oxwm.key.bind({ "Mod4" }, "Down",  oxwm.client.focus_stack(1))
-oxwm.key.bind({ "Mod4" }, "Up",    oxwm.client.focus_stack(-1))
+oxwm.key.bind({ "Mod4" }, "Left", oxwm.client.focus_stack(-1))
+oxwm.key.bind({ "Mod4" }, "Down", oxwm.client.focus_stack(1))
+oxwm.key.bind({ "Mod4" }, "Up", oxwm.client.focus_stack(-1))
 oxwm.key.bind({ "Mod4" }, "Right", oxwm.client.focus_stack(1))
 
 -- $monster bindings (Mod4+Mod1+Shift+Control)
-oxwm.key.bind({ "Mod4", "Mod1", "Shift", "Control" }, "0",     oxwm.spawn("alacritty-dropdown show-keymaps-oxwm"))
-oxwm.key.bind({ "Mod4", "Mod1", "Shift", "Control" }, "a",     oxwm.spawn("alacritty-dropdown rtui-dd"))
-oxwm.key.bind({ "Mod4", "Mod1", "Shift", "Control" }, "b",     oxwm.spawn("snippet browse --dmenu"))
-oxwm.key.bind({ "Mod4", "Mod1", "Shift", "Control" }, "c",     oxwm.spawn("alacritty-dropdown calcure"))
-oxwm.key.bind({ "Mod4", "Mod1", "Shift", "Control" }, "d",     oxwm.spawn("toggle-cursor"))
-oxwm.key.bind({ "Mod4", "Mod1", "Shift", "Control" }, "e",     oxwm.spawn("send-ex-cmd"))
-oxwm.key.bind({ "Mod4", "Mod1", "Shift", "Control" }, "i",     oxwm.spawn("bash ~/.config/picom/adjust-opacity -inactive"))
-oxwm.key.bind({ "Mod4", "Mod1", "Shift", "Control" }, "j",     oxwm.spawn("url-shorten"))
-oxwm.key.bind({ "Mod4", "Mod1", "Shift", "Control" }, "l",     oxwm.spawn("alacritty-dropdown snippet browse"))
-oxwm.key.bind({ "Mod4", "Mod1", "Shift", "Control" }, "m",     oxwm.spawn("alacritty-dropdown pulsemixer"))
-oxwm.key.bind({ "Mod4", "Mod1", "Shift", "Control" }, "minus", oxwm.spawn("bash ~/.config/picom/adjust-opacity -active"))
-oxwm.key.bind({ "Mod4", "Mod1", "Shift", "Control" }, "o",     oxwm.spawn("bash ~/.config/picom/adjust-opacity +inactive"))
-oxwm.key.bind({ "Mod4", "Mod1", "Shift", "Control" }, "plus",  oxwm.spawn("bash ~/.config/picom/adjust-opacity +active"))
-oxwm.key.bind({ "Mod4", "Mod1", "Shift", "Control" }, "r",     oxwm.spawn("alacritty-dropdown snippet browse --search"))
-oxwm.key.bind({ "Mod4", "Mod1", "Shift", "Control" }, "s",     oxwm.spawn("timew-dmenu"))
-oxwm.key.bind({ "Mod4", "Mod1", "Shift", "Control" }, "t",     oxwm.spawn("find_txt nor"))
+oxwm.key.bind(
+  { "Mod4", "Mod1", "Shift", "Control" },
+  "0",
+  oxwm.spawn("alacritty-dropdown show-keymaps-oxwm")
+)
+oxwm.key.bind(
+  { "Mod4", "Mod1", "Shift", "Control" },
+  "a",
+  oxwm.spawn("alacritty-dropdown rtui-dd")
+)
+oxwm.key.bind(
+  { "Mod4", "Mod1", "Shift", "Control" },
+  "b",
+  oxwm.spawn("snippet browse --dmenu")
+)
+oxwm.key.bind(
+  { "Mod4", "Mod1", "Shift", "Control" },
+  "c",
+  oxwm.spawn("alacritty-dropdown calcure")
+)
+oxwm.key.bind({ "Mod4", "Mod1", "Shift", "Control" }, "d", oxwm.spawn("toggle-cursor"))
+oxwm.key.bind({ "Mod4", "Mod1", "Shift", "Control" }, "e", oxwm.spawn("send-ex-cmd"))
+oxwm.key.bind(
+  { "Mod4", "Mod1", "Shift", "Control" },
+  "i",
+  oxwm.spawn("bash ~/.config/picom/adjust-opacity -inactive")
+)
+oxwm.key.bind({ "Mod4", "Mod1", "Shift", "Control" }, "j", oxwm.spawn("url-shorten"))
+oxwm.key.bind(
+  { "Mod4", "Mod1", "Shift", "Control" },
+  "l",
+  oxwm.spawn("alacritty-dropdown snippet browse")
+)
+oxwm.key.bind(
+  { "Mod4", "Mod1", "Shift", "Control" },
+  "m",
+  oxwm.spawn("alacritty-dropdown pulsemixer")
+)
+oxwm.key.bind(
+  { "Mod4", "Mod1", "Shift", "Control" },
+  "minus",
+  oxwm.spawn("bash ~/.config/picom/adjust-opacity -active")
+)
+oxwm.key.bind(
+  { "Mod4", "Mod1", "Shift", "Control" },
+  "o",
+  oxwm.spawn("bash ~/.config/picom/adjust-opacity +inactive")
+)
+oxwm.key.bind(
+  { "Mod4", "Mod1", "Shift", "Control" },
+  "plus",
+  oxwm.spawn("bash ~/.config/picom/adjust-opacity +active")
+)
+oxwm.key.bind(
+  { "Mod4", "Mod1", "Shift", "Control" },
+  "r",
+  oxwm.spawn("alacritty-dropdown snippet browse --search")
+)
+oxwm.key.bind({ "Mod4", "Mod1", "Shift", "Control" }, "s", oxwm.spawn("timew-dmenu"))
+oxwm.key.bind({ "Mod4", "Mod1", "Shift", "Control" }, "t", oxwm.spawn("find_txt nor"))
 
 -- ============================================================
 -- WINDOW RULES
 -- ============================================================
 
-oxwm.rule.add({ title = "dropdown",         floating = true })
-oxwm.rule.add({ class = "Thunar",           floating = true })
-oxwm.rule.add({ class = "Translate",        floating = true })
-oxwm.rule.add({ class = "Rofi",             floating = true })
-oxwm.rule.add({ class = "Google-chrome",    tag = 4 })
-oxwm.rule.add({ class = "TelegramDesktop",  tag = 5 })
+oxwm.rule.add({ title = "dropdown", floating = true })
+oxwm.rule.add({ class = "Thunar", floating = true })
+oxwm.rule.add({ class = "Translate", floating = true })
+oxwm.rule.add({ class = "Rofi", floating = true })
+oxwm.rule.add({ class = "Google-chrome", tag = 4 })
+oxwm.rule.add({ class = "TelegramDesktop", tag = 5 })
 
 -- ============================================================
 -- AUTOSTART
