@@ -167,6 +167,51 @@ oxwm.key.bind({ "Mod4", "Shift" }, "g",
 oxwm.key.bind({ "Mod4", "Shift" }, "p", oxwm.spawn("bash $HOME/bin/passmenu"))
 oxwm.key.bind({ "Mod4", "Shift" }, "b", oxwm.spawn("bash $HOME/bin/bwmenu"))
 
+-- Quit WM (i3: $mod+Shift+e)
+oxwm.key.bind({ "Mod4", "Shift" }, "e", oxwm.quit())
+
+-- Notifications pause toggle (i3: $mod+Shift+Mod1+p)
+oxwm.key.bind({ "Mod4", "Shift", "Mod1" }, "p", oxwm.spawn("dunstctl set-paused toggle"))
+
+-- Mic mute (i3: XF86AudioMicMute)
+oxwm.key.bind({}, "XF86AudioMicMute", oxwm.spawn("pactl set-source-mute @DEFAULT_SOURCE@ toggle"))
+
+-- Display select (i3: $mod+Shift+d)
+oxwm.key.bind({ "Mod4", "Shift" }, "d", oxwm.spawn("displayselect"))
+
+-- Dropdown launcher (i3: $mod+Mod1+space)
+oxwm.key.bind({ "Mod4", "Mod1" }, "space", oxwm.spawn("alacritty-dropdown-launcher"))
+
+-- File/text helpers (i3: $mod+Shift+Mod1+f/t/u/y)
+oxwm.key.bind({ "Mod4", "Shift", "Mod1" }, "f", oxwm.spawn("pdf_open"))
+oxwm.key.bind({ "Mod4", "Shift", "Mod1" }, "t", oxwm.spawn("find_txt"))
+oxwm.key.bind({ "Mod4", "Shift", "Mod1" }, "u", oxwm.spawn("alacritty-dropdown clip-manage"))
+oxwm.key.bind({ "Mod4", "Shift", "Mod1" }, "y", oxwm.spawn("alacritty-dropdown pamfzf-new"))
+
+-- Arrow key focus (i3: $mod+arrows)
+oxwm.key.bind({ "Mod4" }, "Left",  oxwm.client.focus_stack(-1))
+oxwm.key.bind({ "Mod4" }, "Down",  oxwm.client.focus_stack(1))
+oxwm.key.bind({ "Mod4" }, "Up",    oxwm.client.focus_stack(-1))
+oxwm.key.bind({ "Mod4" }, "Right", oxwm.client.focus_stack(1))
+
+-- $monster bindings (Mod4+Mod1+Shift+Control)
+oxwm.key.bind({ "Mod4", "Mod1", "Shift", "Control" }, "0",     oxwm.spawn("alacritty-dropdown show-keymaps-i3"))
+oxwm.key.bind({ "Mod4", "Mod1", "Shift", "Control" }, "a",     oxwm.spawn("alacritty-dropdown rtui-dd"))
+oxwm.key.bind({ "Mod4", "Mod1", "Shift", "Control" }, "b",     oxwm.spawn("snippet browse --dmenu"))
+oxwm.key.bind({ "Mod4", "Mod1", "Shift", "Control" }, "c",     oxwm.spawn("alacritty-dropdown calcure"))
+oxwm.key.bind({ "Mod4", "Mod1", "Shift", "Control" }, "d",     oxwm.spawn("toggle-cursor"))
+oxwm.key.bind({ "Mod4", "Mod1", "Shift", "Control" }, "e",     oxwm.spawn("send-ex-cmd"))
+oxwm.key.bind({ "Mod4", "Mod1", "Shift", "Control" }, "i",     oxwm.spawn("bash ~/.config/picom/adjust-opacity -inactive"))
+oxwm.key.bind({ "Mod4", "Mod1", "Shift", "Control" }, "j",     oxwm.spawn("url-shorten"))
+oxwm.key.bind({ "Mod4", "Mod1", "Shift", "Control" }, "l",     oxwm.spawn("alacritty-dropdown snippet browse"))
+oxwm.key.bind({ "Mod4", "Mod1", "Shift", "Control" }, "m",     oxwm.spawn("alacritty-dropdown pulsemixer"))
+oxwm.key.bind({ "Mod4", "Mod1", "Shift", "Control" }, "minus", oxwm.spawn("bash ~/.config/picom/adjust-opacity -active"))
+oxwm.key.bind({ "Mod4", "Mod1", "Shift", "Control" }, "o",     oxwm.spawn("bash ~/.config/picom/adjust-opacity +inactive"))
+oxwm.key.bind({ "Mod4", "Mod1", "Shift", "Control" }, "plus",  oxwm.spawn("bash ~/.config/picom/adjust-opacity +active"))
+oxwm.key.bind({ "Mod4", "Mod1", "Shift", "Control" }, "r",     oxwm.spawn("alacritty-dropdown snippet browse --search"))
+oxwm.key.bind({ "Mod4", "Mod1", "Shift", "Control" }, "s",     oxwm.spawn("timew-dmenu"))
+oxwm.key.bind({ "Mod4", "Mod1", "Shift", "Control" }, "t",     oxwm.spawn("find_txt nor"))
+
 -- ============================================================
 -- WINDOW RULES
 -- ============================================================
