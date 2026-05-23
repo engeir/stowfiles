@@ -223,12 +223,12 @@ oxwm.key.bind({ "Mod4", "Shift", "Mod1" }, "t", oxwm.spawn("find_txt"))
 oxwm.key.bind(
   { "Mod4", "Shift", "Mod1" },
   "u",
-  oxwm.spawn("alacritty-dropdown clip-manage")
+  oxwm.spawn("alacritty-dropdown --font 11 clip-manage")
 )
 oxwm.key.bind(
   { "Mod4", "Shift", "Mod1" },
   "y",
-  oxwm.spawn("alacritty-dropdown pamfzf-new")
+  oxwm.spawn("alacritty-dropdown --font 11 pamfzf-new")
 )
 
 -- Arrow key focus (i3: $mod+arrows)
@@ -241,12 +241,12 @@ oxwm.key.bind({ "Mod4" }, "Right", oxwm.client.focus_stack(1))
 oxwm.key.bind(
   { "Mod4", "Mod1", "Shift", "Control" },
   "0",
-  oxwm.spawn("alacritty-dropdown show-keymaps-oxwm")
+  oxwm.spawn("alacritty-dropdown --font 11 show-keymaps-oxwm")
 )
 oxwm.key.bind(
   { "Mod4", "Mod1", "Shift", "Control" },
   "a",
-  oxwm.spawn("alacritty-dropdown rtui-dd")
+  oxwm.spawn("alacritty-dropdown --font 11 rtui-dd")
 )
 oxwm.key.bind(
   { "Mod4", "Mod1", "Shift", "Control" },
@@ -256,7 +256,7 @@ oxwm.key.bind(
 oxwm.key.bind(
   { "Mod4", "Mod1", "Shift", "Control" },
   "c",
-  oxwm.spawn("alacritty-dropdown calcure")
+  oxwm.spawn("alacritty-dropdown --font 11 calcure")
 )
 oxwm.key.bind({ "Mod4", "Mod1", "Shift", "Control" }, "d", oxwm.spawn("toggle-cursor"))
 oxwm.key.bind({ "Mod4", "Mod1", "Shift", "Control" }, "e", oxwm.spawn("send-ex-cmd"))
@@ -269,12 +269,12 @@ oxwm.key.bind({ "Mod4", "Mod1", "Shift", "Control" }, "j", oxwm.spawn("url-short
 oxwm.key.bind(
   { "Mod4", "Mod1", "Shift", "Control" },
   "l",
-  oxwm.spawn("alacritty-dropdown snippet browse")
+  oxwm.spawn("alacritty-dropdown --font 11 snippet browse")
 )
 oxwm.key.bind(
   { "Mod4", "Mod1", "Shift", "Control" },
   "m",
-  oxwm.spawn("alacritty-dropdown pulsemixer")
+  oxwm.spawn("alacritty-dropdown --font 11 pulsemixer")
 )
 oxwm.key.bind(
   { "Mod4", "Mod1", "Shift", "Control" },
@@ -294,7 +294,7 @@ oxwm.key.bind(
 oxwm.key.bind(
   { "Mod4", "Mod1", "Shift", "Control" },
   "r",
-  oxwm.spawn("alacritty-dropdown snippet browse --search")
+  oxwm.spawn("alacritty-dropdown --font 11 snippet browse --search")
 )
 oxwm.key.bind({ "Mod4", "Mod1", "Shift", "Control" }, "s", oxwm.spawn("timew-dmenu"))
 oxwm.key.bind({ "Mod4", "Mod1", "Shift", "Control" }, "t", oxwm.spawn("find_txt nor"))

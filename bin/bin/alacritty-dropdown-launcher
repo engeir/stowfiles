@@ -33,7 +33,7 @@ if [ "$selected" != "" ]; then
         desc="${entry%%|*}"
         cmd="${entry##*|}"
         if [ "$desc" = "$selected" ]; then
-            alacritty-dropdown bash -c "$cmd"
+            alacritty-dropdown --font 11 bash -c "$cmd"
             exit 0
         fi
     done
