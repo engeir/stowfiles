@@ -45,7 +45,7 @@ oxwm.bar.set_blocks({
         format = " vol:{} ",
         command = "pactl get-sink-volume @DEFAULT_SINK@ 2>/dev/null | grep -oP '\\d+%' | head -1 || echo '?'",
         interval = 3,
-        color = "#e8d0a0",
+        color = "#201b14",
         underline = false,
     }),
     oxwm.bar.block.battery({
