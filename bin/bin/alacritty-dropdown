@@ -14,8 +14,18 @@ check_program awk
 check_program alacritty
 
 # User preference (font size scaling; tweak these if necessary)
-base_font_size="${2:-9}" # points (pass as $2, else default 9)
+base_font_size=9
 base_screen_height=1080   # px: reference for scaling font size
+
+# Parse --font SIZE from args, pass remainder to alacritty
+cmd_args=()
+while [[ $# -gt 0 ]]; do
+    case "$1" in
+        --font) base_font_size="$2"; shift 2 ;;
+        *)      cmd_args+=("$1"); shift ;;
+    esac
+done
+set -- "${cmd_args[@]}"
 
 # Get mouse position
 eval "$(xdotool getmouselocation --shell)"
