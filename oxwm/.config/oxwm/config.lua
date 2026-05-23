@@ -33,12 +33,11 @@ oxwm.bar.set_font("CaskaydiaMono Nerd Font:style=Bold:size=12")
 oxwm.bar.set_position("top")
 oxwm.bar.set_hide_vacant_tags(false)
 
--- schemes: (foreground, background, underline)
--- selected bg=DA7510 so it stands out regardless of param order ambiguity
-oxwm.bar.set_scheme_normal("#D1B88E",  "#201b14", "#444444")
-oxwm.bar.set_scheme_occupied("#ddca9e", "#2a2318", "#c9b890")
-oxwm.bar.set_scheme_selected("#201b14", "#DA7510", "#DA7510")
-oxwm.bar.set_scheme_urgent("#ddca9e",  "#ad401f", "#ad401f")
+-- schemes: (background, foreground, underline)
+oxwm.bar.set_scheme_normal("#201b14",  "#D1B88E", "#444444")
+oxwm.bar.set_scheme_occupied("#2a2318", "#ddca9e", "#c9b890")
+oxwm.bar.set_scheme_selected("#DA7510", "#201b14", "#DA7510")
+oxwm.bar.set_scheme_urgent("#ad401f",  "#ddca9e", "#ad401f")
 
 oxwm.bar.set_blocks({
     oxwm.bar.block.systray(),
