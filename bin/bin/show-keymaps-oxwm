@@ -14,30 +14,32 @@ MOD_MAP = {
     "Shift": "Shift",
 }
 
-PATTERN = re.compile(
-    r'oxwm\.key\.bind\(\s*\{([^}]*)\}\s*,\s*"([^"]+)"\s*,\s*(.+?)\)'
-)
+PATTERN = re.compile(r'oxwm\.key\.bind\(\s*\{([^}]*)\}\s*,\s*"([^"]+)"\s*,\s*(.+?)\)')
+
 
 def fmt_mods(raw):
     mods = re.findall(r'"([^"]+)"', raw)
     return "+".join(MOD_MAP.get(m, m) for m in mods) if mods else "(none)"
 
+
 KEEP_ARG = re.compile(
-    r'^oxwm\.(layout\.set|client\.focus_stack|client\.move_stack'
-    r'|monitor\.focus|monitor\.tag|set_master_factor|inc_num_master)'
+    r"^oxwm\.(layout\.set|client\.focus_stack|client\.move_stack"
+    r"|monitor\.focus|monitor\.tag|set_master_factor|inc_num_master)"
     r'\(("?)([^")]+)\2'
 )
 
+
 def fmt_action(raw):
     raw = raw.strip()
-    raw = re.sub(r'oxwm\.spawn_terminal\(.*', "terminal", raw)
-    raw = re.sub(r'oxwm\.spawn\("([^"]+)".*', r'\1', raw)
+    raw = re.sub(r"oxwm\.spawn_terminal\(.*", "terminal", raw)
+    raw = re.sub(r'oxwm\.spawn\("([^"]+)".*', r"\1", raw)
     m = KEEP_ARG.match(raw)
     if m:
         return f"{m.group(1)}({m.group(3)})"
-    raw = re.sub(r'oxwm\.', "", raw)
-    raw = re.sub(r'\(.*', "", raw)
+    raw = re.sub(r"oxwm\.", "", raw)
+    raw = re.sub(r"\(.*", "", raw)
     return raw.strip()
+
 
 rows = []
 with open(CONFIG) as f:
