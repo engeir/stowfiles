@@ -72,7 +72,7 @@ oxwm.bar.set_blocks({
     underline = false,
   }),
   oxwm.bar.block.shell({
-    format = " {} ",
+    format = " {} ",
     command = "free -h | awk 'NR==2{print $3\"/\"$2}'",
     interval = 5,
     color = blk_bg,
