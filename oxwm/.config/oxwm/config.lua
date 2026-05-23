@@ -114,6 +114,11 @@ oxwm.key.bind({ "Mod4" }, "f", oxwm.client.toggle_fullscreen())
 -- Layout cycle (mango: Ctrl+Super+l)
 oxwm.key.bind({ "Mod4", "Control" }, "l", oxwm.layout.cycle())
 
+-- Direct layout selection
+oxwm.key.bind({ "Mod4" }, "m", oxwm.layout.set("monocle"))
+oxwm.key.bind({ "Mod4" }, "t", oxwm.layout.set("tiling"))
+oxwm.key.bind({ "Mod4" }, "g", oxwm.layout.set("grid"))
+
 -- Gaps toggle (mango: Shift+Super+u)
 oxwm.key.bind({ "Mod4", "Shift" }, "u", oxwm.toggle_gaps())
 
@@ -216,6 +221,7 @@ oxwm.key.bind({ "Mod4", "Mod1", "Shift", "Control" }, "t",     oxwm.spawn("find_
 -- WINDOW RULES
 -- ============================================================
 
+oxwm.rule.add({ title = "dropdown",         floating = true })
 oxwm.rule.add({ class = "Thunar",           floating = true })
 oxwm.rule.add({ class = "Translate",        floating = true })
 oxwm.rule.add({ class = "Rofi",             floating = true })
