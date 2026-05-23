@@ -39,31 +39,68 @@ oxwm.bar.set_scheme_occupied("#2a2318", "#ddca9e", "#c9b890")
 oxwm.bar.set_scheme_selected("#DA7510", "#201b14", "#DA7510")
 oxwm.bar.set_scheme_urgent("#ad401f", "#ddca9e", "#ad401f")
 
+local blk_bg = "#201b14"
+
 oxwm.bar.set_blocks({
   oxwm.bar.block.systray(),
   oxwm.bar.block.shell({
-    format = " vol:{} ",
-    command = "pactl get-sink-volume @DEFAULT_SINK@ 2>/dev/null | grep -oP '\\d+%' | head -1 || echo '?'",
+    format   = " timew:{} ",
+    command  = "timew-i3block 2>/dev/null || echo off",
+    interval = 10,
+    color    = blk_bg,
+    underline = false,
+  }),
+  oxwm.bar.block.shell({
+    format   = " net:{} ",
+    command  = "nmcli -t -f active,ssid dev wifi 2>/dev/null | awk -F: '/^yes/{print $2}' | head -1 || echo --",
+    interval = 10,
+    color    = blk_bg,
+    underline = false,
+  }),
+  oxwm.bar.block.shell({
+    format   = " disk:{} ",
+    command  = "df -h / | awk 'NR==2{print $4}'",
+    interval = 30,
+    color    = blk_bg,
+    underline = false,
+  }),
+  oxwm.bar.block.shell({
+    format   = " cpu:{} ",
+    command  = "uptime | awk -F'load average: ' '{printf \"%.2f\", $2}'",
+    interval = 5,
+    color    = blk_bg,
+    underline = false,
+  }),
+  oxwm.bar.block.shell({
+    format   = " mem:{} ",
+    command  = "free -h | awk 'NR==2{print $3\"/\"$2}'",
+    interval = 5,
+    color    = blk_bg,
+    underline = false,
+  }),
+  oxwm.bar.block.shell({
+    format   = " vol:{} ",
+    command  = "pactl get-sink-volume @DEFAULT_SINK@ 2>/dev/null | grep -oP '\\d+%' | head -1 || echo '?'",
     interval = 3,
-    color = "#201b14",
+    color    = blk_bg,
     underline = false,
   }),
   oxwm.bar.block.battery({
-    format = " bat:{} ",
-    charging = " bat:+{}%",
-    discharging = " bat:{}%",
-    full = " bat:full",
+    format      = " bat:{} ",
+    charging    = "+{}%",
+    discharging = "{}%",
+    full        = "full",
     battery_name = "BAT0",
-    interval = 30,
-    color = "#201b14",
-    underline = false,
+    interval    = 30,
+    color       = blk_bg,
+    underline   = false,
   }),
   oxwm.bar.block.datetime({
-    format = " {} ",
+    format      = " {} ",
     date_format = "%a %d %b  %H:%M",
-    interval = 60,
-    color = "#201b14",
-    underline = false,
+    interval    = 60,
+    color       = blk_bg,
+    underline   = false,
   }),
 })
 
