@@ -17,8 +17,8 @@ oxwm.tag.set_back_and_forth(true)
 -- ============================================================
 
 oxwm.border.set_width(3)
-oxwm.border.set_focused_color("#c9b890")   -- mango focuscolor
-oxwm.border.set_unfocused_color("#444444") -- mango bordercolor
+oxwm.border.set_focused_color("#DA7510")   -- vivid orange
+oxwm.border.set_unfocused_color("#2a2318") -- near-invisible on dark bg
 
 oxwm.gaps.enable()
 oxwm.gaps.set_inner(5, 5)
