@@ -35,8 +35,8 @@ oxwm.bar.set_hide_vacant_tags(false)
 
 oxwm.bar.set_scheme_normal("#D1B88E",  "#201b14", "#444444")
 oxwm.bar.set_scheme_occupied("#c9b890", "#201b14", "#c9b890")
-oxwm.bar.set_scheme_selected("#201b14", "#c9b890", "#c9b890")
-oxwm.bar.set_scheme_urgent("#201b14",  "#ad401f", "#ad401f")
+oxwm.bar.set_scheme_selected("#201b14", "#DA7510", "#DA7510")
+oxwm.bar.set_scheme_urgent("#ddca9e",  "#ad401f", "#ad401f")
 
 oxwm.bar.set_blocks({
     oxwm.bar.block.systray(),
