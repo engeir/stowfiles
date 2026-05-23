@@ -56,4 +56,4 @@ col1 = max(len(r[0]) for r in rows) + 2
 col2 = max(len(r[1]) for r in rows) + 2
 lines = [f"{m:<{col1}}{k:<{col2}}{a}" for m, k, a in rows]
 
-subprocess.run(["less", "-S"], input="\n".join(lines), text=True)
+subprocess.run(["fzf", "--no-sort", "--prompt=keymap> "], input="\n".join(lines), text=True)
