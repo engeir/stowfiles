@@ -9,7 +9,7 @@ DIM="#c9b890"
 
 FIFO=$(mktemp -u /tmp/leftwm-bar-XXXXXX)
 mkfifo "$FIFO"
-exec 3>"$FIFO"          # keep FIFO alive so reader never sees EOF
+exec 3<>"$FIFO"         # keep FIFO alive (O_RDWR never blocks)
 trap 'rm -f "$FIFO"; kill 0' EXIT INT TERM
 
 # ── Tags + layout producer ───────────────────────────────────────
