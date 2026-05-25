@@ -13,12 +13,13 @@ exec 3<>"$FIFO"         # keep FIFO alive (O_RDWR never blocks)
 trap 'rm -f "$FIFO"; kill 0' EXIT INT TERM
 
 # Wait for leftwm pipe to be ready
-until leftwm-state -w 0 -s "{{layout}}" --quit >/dev/null 2>&1; do sleep 0.5; done
+until leftwm-state -s "{{ window_title }}" --quit >/dev/null 2>&1; do sleep 0.5; done
 
 # ── Tags + layout producer ───────────────────────────────────────
-TAGS_TMPL="TAGS:{{#tags}}{{#focused}}%{B${ORANGE}}%{F${BG}} {{name}} %{F-}%{B-}{{/focused}}{{^focused}}{{#occupied}}%{F${DIM}} {{name}} %{F-}{{/occupied}}{{^occupied}}%{F${GREY}} {{name}} %{F-}{{/occupied}}{{/focused}}{{/tags}}|LAY|{{layout}}"
+# Liquid template; no -w flag (workspaces context), filter to index==0
+TAGS_TMPL="TAGS:{% for ws in workspaces %}{% if ws.index == 0 %}{% for tag in ws.tags %}{% if tag.focused %}%{B${ORANGE}}%{F${BG}} {{ tag.name }} %{F-}%{B-}{% elsif tag.busy %}%{F${DIM}} {{ tag.name }} %{F-}{% else %}%{F${GREY}} {{ tag.name }} %{F-}{% endif %}{% endfor %}{% endif %}{% endfor %}|LAY|{% for ws in workspaces %}{% if ws.index == 0 %}{{ ws.layout }}{% endif %}{% endfor %}"
 
-( exec >"$FIFO"; leftwm-state -w 0 -s "$TAGS_TMPL" ) &
+( exec >"$FIFO"; leftwm-state -s "$TAGS_TMPL" ) &
 
 # ── Status producer ──────────────────────────────────────────────
 (

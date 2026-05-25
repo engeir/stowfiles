@@ -14,8 +14,8 @@ width=$(xrandr --current | awk '/ connected primary/{match($0,/([0-9]+)x/,a); pr
 
 sleep 1   # let leftwm finish creating its pipe before bar.sh connects
 "$SCRIPTPATH/scripts/bar.sh" | lemonbar \
-    -g "${width}x24+0+0" \
-    -f "CaskaydiaMono Nerd Font Bold:size=10" \
+    -g "${width}x28+0+0" \
+    -f "CaskaydiaMono Nerd Font Bold:size=12" \
     -B "#201b14" -F "#D1B88E" -p &
 
 pgrep -u "$USER" -x dunst     >/dev/null || dunst -conf "$HOME/.config/dunst/dunstrc" &

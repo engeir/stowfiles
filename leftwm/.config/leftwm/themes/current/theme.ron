@@ -1,13 +1,13 @@
 #![enable(implicit_some)]
 (
     border_width: 3,
-    margin: 5,
-    workspace_margin: 5,
+    margin: 3,
+    workspace_margin: 2,
     default_border_color: "#2a2318",
     floating_border_color: "#444444",
     focused_border_color: "#DA7510",
     on_new_window: "new_window_right",
     always_focus_new_windows: false,
-    gutter: None,
+    gutter: [(side: Top, value: 28)],
     background_color: None,
 )
