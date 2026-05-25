@@ -8,6 +8,6 @@
     focused_border_color: "#DA7510",
     on_new_window: "new_window_right",
     always_focus_new_windows: false,
-    gutter: [(side: Top, value: 28)],
+    gutter: None,
     background_color: None,
 )

@@ -10,7 +10,7 @@ DIM="#c9b890"
 FIFO=$(mktemp -u /tmp/leftwm-bar-XXXXXX)
 mkfifo "$FIFO"
 exec 3<>"$FIFO"         # keep FIFO alive (O_RDWR never blocks)
-trap 'rm -f "$FIFO"; kill 0' EXIT INT TERM
+trap 'rm -f "$FIFO"; kill $(jobs -p) 2>/dev/null' EXIT INT TERM
 
 # Wait for leftwm pipe to be ready
 until leftwm-state -s "{{ window_title }}" --quit >/dev/null 2>&1; do sleep 0.5; done
