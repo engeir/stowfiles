@@ -1,9 +1,8 @@
 #![enable(implicit_some)]
-// gruvbox-inspired borders — gaps set by outer margin (bar height + 5px padding)
 (
     border_width: 3,
-    margin: (top: 30, bottom: 5, left: 5, right: 5),
-    workspace_margin: (top: 0, bottom: 0, left: 0, right: 0),
+    margin: 5,
+    workspace_margin: 5,
     default_border_color: "#2a2318",
     floating_border_color: "#444444",
     focused_border_color: "#DA7510",

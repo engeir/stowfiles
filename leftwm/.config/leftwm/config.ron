@@ -7,7 +7,7 @@
     workspaces: [],
     tags: ["1", "2", "3", "4", "5", "6", "7", "8", "9"],
     max_window_width: None,
-    layouts: [MainAndDeck, MainAndVertStack, Monocle, EvenVertical, Floating],
+    layouts: ["MainAndDeck", "MainAndVertStack", "Monocle", "EvenVertical", "Floating"],
     layout_mode: Tag,
     insert_behavior: Bottom,
     focus_behaviour: Sloppy,
