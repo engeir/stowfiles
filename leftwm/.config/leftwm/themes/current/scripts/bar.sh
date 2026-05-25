@@ -13,12 +13,12 @@ exec 3<>"$FIFO"         # keep FIFO alive (O_RDWR never blocks)
 trap 'rm -f "$FIFO"; kill 0' EXIT INT TERM
 
 # Wait for leftwm pipe to be ready
-until leftwm-state -w 0 -t "{{layout}}" >/dev/null 2>&1; do sleep 0.5; done
+until leftwm-state -w 0 -s "{{layout}}" --quit >/dev/null 2>&1; do sleep 0.5; done
 
 # ── Tags + layout producer ───────────────────────────────────────
 TAGS_TMPL="TAGS:{{#tags}}{{#focused}}%{B${ORANGE}}%{F${BG}} {{name}} %{F-}%{B-}{{/focused}}{{^focused}}{{#occupied}}%{F${DIM}} {{name}} %{F-}{{/occupied}}{{^occupied}}%{F${GREY}} {{name}} %{F-}{{/occupied}}{{/focused}}{{/tags}}|LAY|{{layout}}"
 
-( exec >"$FIFO"; leftwm-state -w 0 -s -t "$TAGS_TMPL" ) &
+( exec >"$FIFO"; leftwm-state -w 0 -s "$TAGS_TMPL" ) &
 
 # ── Status producer ──────────────────────────────────────────────
 (
