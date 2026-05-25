@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
 SCRIPTPATH="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+export XDG_RUNTIME_DIR="${XDG_RUNTIME_DIR:-/run/user/$(id -u)}"
 
 pkill -u "$USER" -x lemonbar 2>/dev/null
 pkill -u "$USER" -x picom   2>/dev/null
