@@ -84,7 +84,6 @@
         (command: ToggleMaximized,  value: "",                                               modifier: ["modkey"],                            key: "m"),
         (command: ToggleFullScreen, value: "",                                               modifier: ["modkey"],                            key: "f"),
         (command: ToggleSticky,     value: "",                                               modifier: ["modkey"],                            key: "g"),
-        (command: MinimizeWindow,   value: "",                                               modifier: ["modkey"],                            key: "i"),
 
         // ── Master size / count ───────────────────────────────────────
         (command: IncreaseMainSize,  value: "",                                              modifier: ["modkey", "Alt"],                     key: "l"),
@@ -120,21 +119,13 @@
         (command: MoveToTag,        value: "7",                                              modifier: ["modkey", "Shift"],                   key: "7"),
         (command: MoveToTag,        value: "8",                                              modifier: ["modkey", "Shift"],                   key: "8"),
         (command: MoveToTag,        value: "9",                                              modifier: ["modkey", "Shift"],                   key: "9"),
-        (command: ToggleTag,        value: "1",                                              modifier: ["modkey", "Control"],                 key: "1"),
-        (command: ToggleTag,        value: "2",                                              modifier: ["modkey", "Control"],                 key: "2"),
-        (command: ToggleTag,        value: "3",                                              modifier: ["modkey", "Control"],                 key: "3"),
-        (command: ToggleTag,        value: "4",                                              modifier: ["modkey", "Control"],                 key: "4"),
-        (command: ToggleTag,        value: "5",                                              modifier: ["modkey", "Control"],                 key: "5"),
-        (command: ToggleTag,        value: "6",                                              modifier: ["modkey", "Control"],                 key: "6"),
-        (command: ToggleTag,        value: "7",                                              modifier: ["modkey", "Control"],                 key: "7"),
-        (command: ToggleTag,        value: "8",                                              modifier: ["modkey", "Control"],                 key: "8"),
-        (command: ToggleTag,        value: "9",                                              modifier: ["modkey", "Control"],                 key: "9"),
+
         (command: FocusPreviousTag, value: "",                                               modifier: ["modkey", "Alt"],                     key: "i"),
         (command: FocusNextTag,     value: "",                                               modifier: ["modkey", "Alt"],                     key: "o"),
 
         // ── Monitor (workspace) ───────────────────────────────────────
-        (command: FocusPreviousWorkspace,       value: "",                                   modifier: ["modkey", "Alt", "Shift"],             key: "i"),
-        (command: FocusNextWorkspace,           value: "",                                   modifier: ["modkey", "Alt", "Shift"],             key: "o"),
+        (command: FocusWorkspacePrevious,       value: "",                                   modifier: ["modkey", "Alt", "Shift"],             key: "i"),
+        (command: FocusWorkspaceNext,           value: "",                                   modifier: ["modkey", "Alt", "Shift"],             key: "o"),
         (command: MoveWindowToPreviousWorkspace, value: "",                                  modifier: ["modkey", "Shift"],                   key: "Left"),
         (command: MoveWindowToNextWorkspace,    value: "",                                   modifier: ["modkey", "Shift"],                   key: "Right"),
 
