@@ -11,15 +11,16 @@ width=$(xrandr --current | awk '/ connected primary/{match($0,/([0-9]+)x/,a); pr
 [ -z "$width" ] && width=$(xrandr --current | awk '/ connected/{match($0,/([0-9]+)x/,a); print a[1]; exit}')
 [ -z "$width" ] && width=1920
 
+sleep 1   # let leftwm finish creating its pipe before bar.sh connects
 "$SCRIPTPATH/scripts/bar.sh" | lemonbar \
     -g "${width}x24+0+0" \
     -f "CaskaydiaMono Nerd Font Bold:size=10" \
     -B "#201b14" -F "#D1B88E" -p &
 
-pgrep -u "$USER" -x dunst         >/dev/null || dunst -conf "$HOME/.config/dunst/dunstrc" &
-pgrep -u "$USER" -x nm-applet     >/dev/null || nm-applet --no-agent &
-pgrep -u "$USER" -x blueman-applet >/dev/null || blueman-applet &
-pgrep -u "$USER" -x clipcatd      >/dev/null || clipcatd &
-pgrep -u "$USER" -x batsignal     >/dev/null || batsignal &
+pgrep -u "$USER" -x dunst     >/dev/null || dunst -conf "$HOME/.config/dunst/dunstrc" &
+pgrep -u "$USER" -x nm-applet >/dev/null || nm-applet --no-agent &
+pgrep -u "$USER" -x clipcatd  >/dev/null || clipcatd &
+command -v blueman-applet >/dev/null && { pgrep -u "$USER" -x blueman-applet >/dev/null || blueman-applet &; }
+command -v batsignal      >/dev/null && { pgrep -u "$USER" -x batsignal      >/dev/null || batsignal &; }
 
 random_wallpaper 2>/dev/null &

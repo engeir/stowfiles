@@ -130,13 +130,13 @@
         (command: MoveWindowToNextWorkspace,    value: "",                                   modifier: ["modkey", "Shift"],                   key: "Right"),
 
         // ── Media keys ────────────────────────────────────────────────
-        (command: Execute, value: "$HOME/.config/leftwm/themes/gruvbox/scripts/volume.sh up",           modifier: [], key: "XF86AudioRaiseVolume"),
-        (command: Execute, value: "$HOME/.config/leftwm/themes/gruvbox/scripts/volume.sh down",         modifier: [], key: "XF86AudioLowerVolume"),
-        (command: Execute, value: "$HOME/.config/leftwm/themes/gruvbox/scripts/volume.sh mute",         modifier: [], key: "XF86AudioMute"),
-        (command: Execute, value: "$HOME/.config/leftwm/themes/gruvbox/scripts/brightness.sh up",       modifier: [], key: "XF86MonBrightnessUp"),
-        (command: Execute, value: "$HOME/.config/leftwm/themes/gruvbox/scripts/brightness.sh down",     modifier: [], key: "XF86MonBrightnessDown"),
-        (command: Execute, value: "$HOME/.config/leftwm/themes/gruvbox/scripts/brightness.sh up small", modifier: ["Alt"], key: "XF86MonBrightnessUp"),
-        (command: Execute, value: "$HOME/.config/leftwm/themes/gruvbox/scripts/brightness.sh down small",modifier: ["Alt"], key: "XF86MonBrightnessDown"),
+        (command: Execute, value: "$HOME/.config/leftwm/themes/current/scripts/volume.sh up",           modifier: [], key: "XF86AudioRaiseVolume"),
+        (command: Execute, value: "$HOME/.config/leftwm/themes/current/scripts/volume.sh down",         modifier: [], key: "XF86AudioLowerVolume"),
+        (command: Execute, value: "$HOME/.config/leftwm/themes/current/scripts/volume.sh mute",         modifier: [], key: "XF86AudioMute"),
+        (command: Execute, value: "$HOME/.config/leftwm/themes/current/scripts/brightness.sh up",       modifier: [], key: "XF86MonBrightnessUp"),
+        (command: Execute, value: "$HOME/.config/leftwm/themes/current/scripts/brightness.sh down",     modifier: [], key: "XF86MonBrightnessDown"),
+        (command: Execute, value: "$HOME/.config/leftwm/themes/current/scripts/brightness.sh up small", modifier: ["Alt"], key: "XF86MonBrightnessUp"),
+        (command: Execute, value: "$HOME/.config/leftwm/themes/current/scripts/brightness.sh down small",modifier: ["Alt"], key: "XF86MonBrightnessDown"),
 
         // ── Monster — X11 specials (Mod1+Shift+Mod4+Control) ─────────
         (command: Execute, value: "alacritty-dropdown show-keymaps-i3",            modifier: ["modkey", "Alt", "Shift", "Control"], key: "0"),
