@@ -1,0 +1,169 @@
+#![enable(implicit_some)]
+// leftwm config — based on mango keybindings, i3 X11 extras
+// Commands that may need newer leftwm (v0.5+): ToggleSticky, SetLayout, MinimizeWindow, ToggleTag
+(
+    modkey: "Mod4",
+    mousekey: "Mod4",
+    workspaces: [],
+    tags: ["1", "2", "3", "4", "5", "6", "7", "8", "9"],
+    max_window_width: None,
+    layouts: [MainAndDeck, MainAndVertStack, Monocle, EvenVertical, Floating],
+    layout_mode: Tag,
+    insert_behavior: Bottom,
+    focus_behaviour: Sloppy,
+    focus_new_windows: true,
+    single_window_border: true,
+    sloppy_mouse_follows_focus: true,
+    create_follows_cursor: None,
+    disable_current_tag_swap: false,
+    disable_tile_drag: false,
+    disable_window_snap: true,
+    auto_derive_workspaces: true,
+
+    scratchpad: [
+        (
+            name: "Dropdown",
+            value: "alacritty-dropdown-launcher",
+            x: 0.0,
+            y: 0.0,
+            height: 0.45,
+            width: 1.0,
+        ),
+    ],
+
+    window_rules: [
+        (window_class: "zen-browser",     spawn_on_tag: 4),
+        (window_class: "zen",             spawn_on_tag: 4),
+        (window_class: "firefox",         spawn_on_tag: 4),
+        (window_class: "brave-browser",   spawn_on_tag: 4),
+        (window_class: "Signal",          spawn_on_tag: 7),
+        (window_title: "dropdown",        spawn_floating: true, spawn_sticky: true),
+        (window_class: "flameshot",       spawn_floating: true, spawn_fullscreen: true),
+    ],
+
+    keybind: [
+        // ── Programs ──────────────────────────────────────────────────
+        (command: Execute,          value: "kitty",                                          modifier: ["modkey"],                            key: "Return"),
+        (command: Execute,          value: "zen",                                            modifier: ["modkey"],                            key: "b"),
+        (command: Execute,          value: "menu_run",                                       modifier: ["modkey"],                            key: "space"),
+        (command: Execute,          value: "menu_run -c -l 20",                              modifier: ["Alt"],                               key: "space"),
+        (command: ToggleScratchPad, value: "Dropdown",                                       modifier: ["modkey", "Alt"],                     key: "space"),
+        (command: Execute,          value: "displayselect",                                  modifier: ["modkey", "Shift"],                   key: "d"),
+        (command: Execute,          value: "clipcat-menu -f dmenu",                          modifier: ["modkey", "Shift"],                   key: "g"),
+        (command: Execute,          value: "passmenu",                                       modifier: ["modkey", "Shift"],                   key: "p"),
+        (command: Execute,          value: "slock",                                          modifier: ["modkey", "Shift"],                   key: "period"),
+        (command: Execute,          value: "dunstctl set-paused toggle",                     modifier: ["modkey", "Shift", "Alt"],             key: "p"),
+        (command: Execute,          value: "pdf_open",                                       modifier: ["modkey", "Shift", "Alt"],             key: "f"),
+        (command: Execute,          value: "find_txt",                                       modifier: ["modkey", "Shift", "Alt"],             key: "t"),
+        (command: Execute,          value: "alacritty-dropdown clip-manage",                 modifier: ["modkey", "Shift", "Alt"],             key: "u"),
+        (command: Execute,          value: "alacritty-dropdown pamfzf-new",                  modifier: ["modkey", "Shift", "Alt"],             key: "y"),
+
+        // ── WM control ────────────────────────────────────────────────
+        (command: CloseWindow,      value: "",                                               modifier: ["modkey"],                            key: "q"),
+        (command: SoftReload,       value: "",                                               modifier: ["modkey", "Shift"],                   key: "r"),
+        (command: HardReload,       value: "",                                               modifier: ["modkey", "Shift", "Control"],         key: "r"),
+
+        // ── Window focus (h=top/master, j/k=down/up, l≈forward) ──────
+        (command: FocusWindowTop,   value: "",                                               modifier: ["modkey"],                            key: "h"),
+        (command: FocusWindowDown,  value: "",                                               modifier: ["modkey"],                            key: "j"),
+        (command: FocusWindowUp,    value: "",                                               modifier: ["modkey"],                            key: "k"),
+        (command: FocusWindowDown,  value: "",                                               modifier: ["modkey"],                            key: "l"),
+        (command: FocusWindowDown,  value: "",                                               modifier: ["modkey"],                            key: "Tab"),
+        (command: FocusWindowUp,    value: "",                                               modifier: ["modkey", "Shift"],                   key: "Tab"),
+        (command: FocusWindowTop,   value: "",                                               modifier: ["modkey"],                            key: "p"),
+
+        // ── Window swap / move ────────────────────────────────────────
+        (command: SwapWindowTop,    value: "",                                               modifier: ["modkey", "Shift"],                   key: "h"),
+        (command: MoveWindowDown,   value: "",                                               modifier: ["modkey", "Shift"],                   key: "j"),
+        (command: MoveWindowUp,     value: "",                                               modifier: ["modkey", "Shift"],                   key: "k"),
+        (command: MoveWindowDown,   value: "",                                               modifier: ["modkey", "Shift"],                   key: "l"),
+        (command: SwapWindowTop,    value: "",                                               modifier: ["Alt"],                               key: "s"),
+
+        // ── Window state ──────────────────────────────────────────────
+        (command: ToggleFloating,   value: "",                                               modifier: ["modkey"],                            key: "s"),
+        (command: ToggleMaximized,  value: "",                                               modifier: ["modkey"],                            key: "m"),
+        (command: ToggleFullScreen, value: "",                                               modifier: ["modkey"],                            key: "f"),
+        (command: ToggleSticky,     value: "",                                               modifier: ["modkey"],                            key: "g"),
+        (command: MinimizeWindow,   value: "",                                               modifier: ["modkey"],                            key: "i"),
+
+        // ── Master size / count ───────────────────────────────────────
+        (command: IncreaseMainSize,  value: "",                                              modifier: ["modkey", "Alt"],                     key: "l"),
+        (command: DecreaseMainSize,  value: "",                                              modifier: ["modkey", "Alt"],                     key: "h"),
+        (command: IncreaseMainCount, value: "",                                              modifier: ["modkey", "Alt"],                     key: "k"),
+        (command: DecreaseMainCount, value: "",                                              modifier: ["modkey", "Alt"],                     key: "j"),
+
+        // ── Layout switch ─────────────────────────────────────────────
+        (command: PreviousLayout,   value: "",                                               modifier: ["modkey"],                            key: "comma"),
+        (command: NextLayout,       value: "",                                               modifier: ["modkey"],                            key: "period"),
+        (command: SetLayout,        value: "MainAndDeck",                                    modifier: ["modkey", "Control"],                 key: "d"),
+        (command: SetLayout,        value: "MainAndVertStack",                               modifier: ["modkey", "Control"],                 key: "t"),
+        (command: SetLayout,        value: "Monocle",                                        modifier: ["modkey", "Control"],                 key: "m"),
+        (command: SetLayout,        value: "EvenVertical",                                   modifier: ["modkey", "Control"],                 key: "g"),
+        (command: SetLayout,        value: "Floating",                                       modifier: ["modkey", "Control"],                 key: "f"),
+
+        // ── Tags ──────────────────────────────────────────────────────
+        (command: GotoTag,          value: "1",                                              modifier: ["modkey"],                            key: "1"),
+        (command: GotoTag,          value: "2",                                              modifier: ["modkey"],                            key: "2"),
+        (command: GotoTag,          value: "3",                                              modifier: ["modkey"],                            key: "3"),
+        (command: GotoTag,          value: "4",                                              modifier: ["modkey"],                            key: "4"),
+        (command: GotoTag,          value: "5",                                              modifier: ["modkey"],                            key: "5"),
+        (command: GotoTag,          value: "6",                                              modifier: ["modkey"],                            key: "6"),
+        (command: GotoTag,          value: "7",                                              modifier: ["modkey"],                            key: "7"),
+        (command: GotoTag,          value: "8",                                              modifier: ["modkey"],                            key: "8"),
+        (command: GotoTag,          value: "9",                                              modifier: ["modkey"],                            key: "9"),
+        (command: MoveToTag,        value: "1",                                              modifier: ["modkey", "Shift"],                   key: "1"),
+        (command: MoveToTag,        value: "2",                                              modifier: ["modkey", "Shift"],                   key: "2"),
+        (command: MoveToTag,        value: "3",                                              modifier: ["modkey", "Shift"],                   key: "3"),
+        (command: MoveToTag,        value: "4",                                              modifier: ["modkey", "Shift"],                   key: "4"),
+        (command: MoveToTag,        value: "5",                                              modifier: ["modkey", "Shift"],                   key: "5"),
+        (command: MoveToTag,        value: "6",                                              modifier: ["modkey", "Shift"],                   key: "6"),
+        (command: MoveToTag,        value: "7",                                              modifier: ["modkey", "Shift"],                   key: "7"),
+        (command: MoveToTag,        value: "8",                                              modifier: ["modkey", "Shift"],                   key: "8"),
+        (command: MoveToTag,        value: "9",                                              modifier: ["modkey", "Shift"],                   key: "9"),
+        (command: ToggleTag,        value: "1",                                              modifier: ["modkey", "Control"],                 key: "1"),
+        (command: ToggleTag,        value: "2",                                              modifier: ["modkey", "Control"],                 key: "2"),
+        (command: ToggleTag,        value: "3",                                              modifier: ["modkey", "Control"],                 key: "3"),
+        (command: ToggleTag,        value: "4",                                              modifier: ["modkey", "Control"],                 key: "4"),
+        (command: ToggleTag,        value: "5",                                              modifier: ["modkey", "Control"],                 key: "5"),
+        (command: ToggleTag,        value: "6",                                              modifier: ["modkey", "Control"],                 key: "6"),
+        (command: ToggleTag,        value: "7",                                              modifier: ["modkey", "Control"],                 key: "7"),
+        (command: ToggleTag,        value: "8",                                              modifier: ["modkey", "Control"],                 key: "8"),
+        (command: ToggleTag,        value: "9",                                              modifier: ["modkey", "Control"],                 key: "9"),
+        (command: FocusPreviousTag, value: "",                                               modifier: ["modkey", "Alt"],                     key: "i"),
+        (command: FocusNextTag,     value: "",                                               modifier: ["modkey", "Alt"],                     key: "o"),
+
+        // ── Monitor (workspace) ───────────────────────────────────────
+        (command: FocusPreviousWorkspace,       value: "",                                   modifier: ["modkey", "Alt", "Shift"],             key: "i"),
+        (command: FocusNextWorkspace,           value: "",                                   modifier: ["modkey", "Alt", "Shift"],             key: "o"),
+        (command: MoveWindowToPreviousWorkspace, value: "",                                  modifier: ["modkey", "Shift"],                   key: "Left"),
+        (command: MoveWindowToNextWorkspace,    value: "",                                   modifier: ["modkey", "Shift"],                   key: "Right"),
+
+        // ── Media keys ────────────────────────────────────────────────
+        (command: Execute, value: "$HOME/.config/leftwm/themes/gruvbox/scripts/volume.sh up",           modifier: [], key: "XF86AudioRaiseVolume"),
+        (command: Execute, value: "$HOME/.config/leftwm/themes/gruvbox/scripts/volume.sh down",         modifier: [], key: "XF86AudioLowerVolume"),
+        (command: Execute, value: "$HOME/.config/leftwm/themes/gruvbox/scripts/volume.sh mute",         modifier: [], key: "XF86AudioMute"),
+        (command: Execute, value: "$HOME/.config/leftwm/themes/gruvbox/scripts/brightness.sh up",       modifier: [], key: "XF86MonBrightnessUp"),
+        (command: Execute, value: "$HOME/.config/leftwm/themes/gruvbox/scripts/brightness.sh down",     modifier: [], key: "XF86MonBrightnessDown"),
+        (command: Execute, value: "$HOME/.config/leftwm/themes/gruvbox/scripts/brightness.sh up small", modifier: ["Alt"], key: "XF86MonBrightnessUp"),
+        (command: Execute, value: "$HOME/.config/leftwm/themes/gruvbox/scripts/brightness.sh down small",modifier: ["Alt"], key: "XF86MonBrightnessDown"),
+
+        // ── Monster — X11 specials (Mod1+Shift+Mod4+Control) ─────────
+        (command: Execute, value: "alacritty-dropdown show-keymaps-i3",            modifier: ["modkey", "Alt", "Shift", "Control"], key: "0"),
+        (command: Execute, value: "alacritty-dropdown rtui-dd",                    modifier: ["modkey", "Alt", "Shift", "Control"], key: "a"),
+        (command: Execute, value: "snippet browse --dmenu",                        modifier: ["modkey", "Alt", "Shift", "Control"], key: "b"),
+        (command: Execute, value: "alacritty-dropdown calcure",                    modifier: ["modkey", "Alt", "Shift", "Control"], key: "c"),
+        (command: Execute, value: "toggle-cursor",                                 modifier: ["modkey", "Alt", "Shift", "Control"], key: "d"),
+        (command: Execute, value: "send-ex-cmd",                                   modifier: ["modkey", "Alt", "Shift", "Control"], key: "e"),
+        (command: Execute, value: "bash $HOME/.config/picom/adjust-opacity -inactive", modifier: ["modkey", "Alt", "Shift", "Control"], key: "i"),
+        (command: Execute, value: "url-shorten",                                   modifier: ["modkey", "Alt", "Shift", "Control"], key: "j"),
+        (command: Execute, value: "alacritty-dropdown snippet browse",             modifier: ["modkey", "Alt", "Shift", "Control"], key: "l"),
+        (command: Execute, value: "alacritty-dropdown pulsemixer",                 modifier: ["modkey", "Alt", "Shift", "Control"], key: "m"),
+        (command: Execute, value: "bash $HOME/.config/picom/adjust-opacity -active",   modifier: ["modkey", "Alt", "Shift", "Control"], key: "minus"),
+        (command: Execute, value: "bash $HOME/.config/picom/adjust-opacity +inactive", modifier: ["modkey", "Alt", "Shift", "Control"], key: "o"),
+        (command: Execute, value: "flameshot gui",                                 modifier: ["modkey", "Alt", "Shift", "Control"], key: "p"),
+        (command: Execute, value: "bash $HOME/.config/picom/adjust-opacity +active",   modifier: ["modkey", "Alt", "Shift", "Control"], key: "equal"),
+        (command: Execute, value: "alacritty-dropdown snippet browse --search",    modifier: ["modkey", "Alt", "Shift", "Control"], key: "r"),
+        (command: Execute, value: "timew-dmenu",                                   modifier: ["modkey", "Alt", "Shift", "Control"], key: "s"),
+        (command: Execute, value: "find_txt nor",                                  modifier: ["modkey", "Alt", "Shift", "Control"], key: "t"),
+    ],
+)

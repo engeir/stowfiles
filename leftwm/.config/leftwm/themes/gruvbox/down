@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+pkill -u "$USER" -x polybar
+pkill -u "$USER" -x picom

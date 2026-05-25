@@ -1,0 +1,25 @@
+#!/usr/bin/env bash
+SCRIPTPATH="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+
+pkill -u "$USER" -x polybar 2>/dev/null
+pkill -u "$USER" -x picom   2>/dev/null
+
+picom --config "$HOME/.config/picom/picom.conf" &
+
+# One polybar instance per connected monitor
+readarray -t monitors < <(polybar --list-monitors 2>/dev/null | cut -d: -f1)
+if [[ ${#monitors[@]} -eq 0 ]]; then
+    monitors=("$(xrandr | awk '/ connected/{print $1; exit}')")
+fi
+for i in "${!monitors[@]}"; do
+    MONITOR="${monitors[$i]}" MONITOR_IDX="$i" \
+        polybar main -c "$SCRIPTPATH/polybar/config.ini" &
+done
+
+pgrep -u "$USER" -x dunst         >/dev/null || dunst -conf "$HOME/.config/dunst/dunstrc" &
+pgrep -u "$USER" -x nm-applet     >/dev/null || nm-applet --no-agent &
+pgrep -u "$USER" -x blueman-applet >/dev/null || blueman-applet &
+pgrep -u "$USER" -x clipcatd      >/dev/null || clipcatd &
+pgrep -u "$USER" -x batsignal     >/dev/null || batsignal &
+
+random_wallpaper 2>/dev/null &
