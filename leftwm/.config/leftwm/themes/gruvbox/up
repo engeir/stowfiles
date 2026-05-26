@@ -7,6 +7,8 @@ pkill -u "$USER" -x picom   2>/dev/null
 
 picom --config "$HOME/.config/picom/picom.conf" &
 
+leftwm-command "LoadTheme $SCRIPTPATH/theme.ron"
+
 # Determine primary monitor width for lemonbar geometry
 width=$(xrandr --current | awk '/ connected primary/{match($0,/([0-9]+)x/,a); print a[1]}')
 [ -z "$width" ] && width=$(xrandr --current | awk '/ connected/{match($0,/([0-9]+)x/,a); print a[1]; exit}')

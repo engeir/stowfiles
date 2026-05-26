@@ -1,0 +1,281 @@
+[[repos]]
+definitions_version = 1
+name = "community"
+url = "https://raw.githubusercontent.com/leftwm/leftwm-community-themes/master/known.toml"
+
+[[repos.themes]]
+commit = "*"
+current = false
+leftwm_versions = ">0.2.10, <0.3.0"
+name = "Amber"
+repository = "https://github.com/di-effe/amber"
+version = "0.2.2"
+
+[[repos.themes]]
+commit = "*"
+current = false
+leftwm_versions = "^0.3.0"
+name = "arch-one-dark"
+repository = "https://github.com/jamesbaker1901/leftwm-arch-one-dark/"
+version = "1.0.0"
+
+[[repos.themes]]
+commit = "*"
+current = false
+leftwm_versions = ">0.2.7"
+name = "Ascent"
+repository = "https://gitlab.com/mWalrus/ascent"
+version = "1.0.0"
+
+[[repos.themes]]
+commit = "*"
+current = false
+leftwm_versions = "<0.3.0"
+name = "Blue Coffee"
+repository = "https://github.com/Qwart376/Blue-Coffee/"
+version = "0.0.1"
+
+[[repos.themes]]
+commit = "*"
+current = false
+leftwm_versions = "^0.2.8, <0.3.0"
+name = "Bumblebee"
+repository = "https://github.com/mfdorst/leftwm-bumblebee/"
+version = "0.0.1"
+
+[[repos.themes]]
+commit = "*"
+current = false
+leftwm_versions = ">0.2.10, <0.3.0"
+name = "Catppuccin"
+repository = "https://github.com/di-effe/catppuccin"
+version = "0.1.1"
+
+[[repos.themes]]
+commit = "*"
+current = false
+leftwm_versions = "<0.3.0"
+name = "Coffee"
+repository = "https://github.com/lex148/leftwm-coffee/"
+version = "0.0.1"
+
+[[repos.themes]]
+commit = "*"
+current = false
+leftwm_versions = "^0.4.0"
+name = "Dementive"
+repository = "https://github.com/dementive/leftwm-dementive"
+version = "0.1"
+
+[[repos.themes]]
+commit = "*"
+current = false
+leftwm_versions = "^0.4.0"
+name = "Desire"
+repository = "https://github.com/copypasteonly/Desire"
+version = "0.1"
+
+[[repos.themes]]
+commit = "*"
+current = false
+leftwm_versions = "^0.3.0"
+name = "Double Bar"
+repository = "https://github.com/PeterDauwe/doublebar/"
+version = "0.0.2"
+
+[[repos.themes]]
+commit = "*"
+current = false
+leftwm_versions = "^0.3.0"
+name = "Dracula Rounded"
+repository = "https://github.com/AethanFoot/leftwm-theme-dracula-rounded/"
+version = "0.0.3"
+
+[[repos.themes]]
+commit = "*"
+current = false
+leftwm_versions = "*"
+name = "Epitaph"
+repository = "https://github.com/VentGrey/Epitaph"
+version = "0.0.2"
+
+[[repos.themes]]
+commit = "*"
+current = false
+leftwm_versions = ">0.2.7, <0.3.0"
+name = "Flamingo"
+repository = "https://github.com/necaris/leftwm-theme-flamingo"
+version = "0.0.1"
+
+[[repos.themes]]
+commit = "*"
+current = false
+leftwm_versions = "^0.3.0"
+name = "Forest"
+repository = "https://github.com/lex148/forest/"
+version = "0.0.1"
+
+[[repos.themes]]
+commit = "*"
+current = false
+leftwm_versions = ">0.2.7"
+name = "Garden"
+repository = "https://github.com/taylor85345/leftwm-theme-garden"
+version = "0.0.4"
+
+[[repos.themes]]
+commit = "*"
+current = false
+leftwm_versions = "<0.3.0"
+name = "Ground Zero"
+repository = "https://github.com/Qwart376/Ground-Zero/"
+version = "0.0.1"
+
+[[repos.themes]]
+commit = "*"
+current = false
+leftwm_versions = "^0.3.0"
+name = "minimal-solarized"
+repository = "https://github.com/minda1975/minimal_solarized"
+version = "0.1.0"
+
+[[repos.themes]]
+commit = "*"
+current = false
+leftwm_versions = ">0.2.10, <0.3.0"
+name = "Molese"
+repository = "https://github.com/m0lese/leftwm-config"
+version = "2.1.0"
+
+[[repos.themes]]
+commit = "*"
+current = false
+leftwm_versions = "*"
+name = "Ocean-night"
+repository = "https://github.com/TheRoniOne/ocean-night"
+version = "0.0.1"
+
+[[repos.themes]]
+commit = "*"
+current = false
+leftwm_versions = "^0.3.0"
+name = "Orange Forest"
+repository = "https://github.com/PVautour/leftwm-theme-orange-forest/"
+version = "0.0.2"
+
+[[repos.themes]]
+commit = "*"
+current = false
+leftwm_versions = "^0.3.0"
+name = "plan9"
+repository = "https://github.com/seabassapologist/leftwm-theme-plan9"
+version = "0.1.0"
+
+[[repos.themes]]
+commit = "*"
+current = false
+leftwm_versions = "<0.3.0"
+name = "Red Moon"
+repository = "https://github.com/Qwart376/Red-Moon"
+version = "0.0.1"
+
+[[repos.themes]]
+commit = "*"
+current = false
+leftwm_versions = ">=0.3.0"
+name = "Serika"
+repository = "https://github.com/VuiMuich/leftwm-theme-serika.git"
+version = "0.0.1"
+
+[[repos.themes]]
+commit = "*"
+current = false
+leftwm_versions = "<0.3.0"
+name = "Soothe"
+relative_directory = "theme/"
+repository = "https://github.com/b4skyx/leftwm-soothe/"
+version = "0.0.1"
+
+[[repos.themes]]
+commit = "*"
+current = false
+leftwm_versions = ">0.2.10, <0.3.0"
+name = "SpaceJelly"
+repository = "https://gitlab.com/leftwmthemes/space_jelly"
+version = "1.0.0"
+
+[[repos.themes]]
+commit = "*"
+current = false
+leftwm_versions = "^0.2.11, <0.3.0"
+name = "sunflower"
+repository = "https://github.com/mautamu/leftwm-sunflower/"
+version = "0.1.2"
+
+[[repos.themes]]
+commit = "*"
+current = false
+leftwm_versions = "<0.3.0"
+name = "Sunset"
+repository = "https://github.com/Syudagye/leftwm-sunset"
+version = "0.0.1"
+
+[[repos.themes]]
+commit = "*"
+current = false
+leftwm_versions = "<0.3.0"
+name = "TNG"
+repository = "https://github.com/lex148/leftwm-tng/"
+version = "0.0.1"
+
+[[repos.themes]]
+commit = "*"
+current = false
+leftwm_versions = "<0.3.0"
+name = "Windows XP"
+repository = "https://github.com/lex148/leftwm-windowsxp/"
+version = "0.0.1"
+
+[[repos.themes]]
+commit = "*"
+current = false
+leftwm_versions = ">0.3.0"
+name = "Zexanima"
+repository = "https://github.com/calebgasser/zexanima-leftwm-theme/"
+version = "0.0.1"
+
+[[repos.themes]]
+commit = "*"
+current = false
+leftwm_versions = ">0.3.0"
+name = "Blood-Moon"
+repository = "https://github.com/zawesomekid/Blood-Moon-leftwm-theme"
+version = "0.0.1"
+
+[[repos.themes]]
+commit = "*"
+current = false
+directory = "/home/eirikre/.config/leftwm/themes/Late-Night"
+leftwm_versions = ">0.3.0"
+name = "Late-Night"
+repository = "https://github.com/JacoMalan1/LateNight"
+version = "0.0.2"
+
+[[repos]]
+definitions_version = 1
+name = "LOCAL"
+url = "localhost"
+
+[[repos.themes]]
+current = true
+directory = "/home/eirikre/.config/leftwm/themes/gruvbox"
+leftwm_versions = "*"
+name = "gruvbox"
+version = "0.0.0"
+
+[[repos.themes]]
+current = false
+directory = "/home/eirikre/.config/leftwm/themes/testtheme"
+leftwm_versions = "*"
+name = "testtheme"
+version = "0.0.0"
