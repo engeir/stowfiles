@@ -1,0 +1,53 @@
+* {
+  font-family: "CaskaydiaMono Nerd Font", "Monospace";
+  font-size: 12px;
+  color: #D1B88E;
+}
+
+window.bar {
+  background-color: #201b14;
+  border: none;
+}
+
+.left, .right {
+  padding: 0 6px;
+  background-color: transparent;
+}
+
+button.tag {
+  background: transparent;
+  background-image: none;
+  border: none;
+  box-shadow: none;
+  color: #444444;
+  padding: 2px 6px;
+  border-radius: 3px;
+  min-width: 0;
+}
+
+button.tag:hover {
+  background-color: rgba(218, 117, 16, 0.2);
+}
+
+button.tag.busy {
+  color: #c9b890;
+}
+
+button.tag.focused {
+  background-color: #DA7510;
+  color: #201b14;
+}
+
+.layout {
+  color: #DA7510;
+  padding: 0 8px;
+}
+
+.cpu   { color: #b8bb26; }
+.mem   { color: #d3869b; }
+.disk  { color: #83a598; }
+.net   { color: #8ec07c; }
+.vol   { color: #DA7510; }
+.bat   { color: #fabd2f; }
+.timew { color: #c9b890; }
+.clock { color: #D1B88E; }

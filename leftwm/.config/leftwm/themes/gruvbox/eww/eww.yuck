@@ -1,0 +1,69 @@
+; ── Variables ─────────────────────────────────────────────────────────
+(deflisten workspaces :initial "[]"
+  "scripts/workspaces.sh")
+
+(deflisten layout :initial ""
+  "scripts/layout.sh")
+
+(defpoll cpu :interval "10s"
+  "uptime | awk -F'load average: ' '{split($2,a,\",\"); printf \"%.1f\", a[1]}'")
+
+(defpoll mem :interval "10s"
+  "free -h | awk 'NR==2{printf \"%s/%s\", $3, $2}'")
+
+(defpoll disk :interval "30s"
+  "df -h / | awk 'NR==2{print $4}'")
+
+(defpoll net :interval "10s"
+  "scripts/network.sh")
+
+(defpoll vol :interval "5s"
+  "scripts/vol.sh")
+
+(defpoll bat :interval "30s"
+  "scripts/bat.sh")
+
+(defpoll timew :interval "30s"
+  "scripts/timew.sh")
+
+(defpoll clock :interval "30s"
+  "date '+%a %d %b  %H:%M'")
+
+; ── Widgets ────────────────────────────────────────────────────────────
+(defwidget tag-btn [name index focused busy]
+  (button
+    :class {focused ? "tag focused" : busy ? "tag busy" : "tag"}
+    :onclick "leftwm-command 'GotoTag ${index}'"
+    name))
+
+(defwidget bar-left []
+  (box :orientation "h" :spacing 4 :halign "start" :class "left"
+    (for t in workspaces
+      (tag-btn :name {t.name} :index {t.index} :focused {t.focused} :busy {t.busy}))
+    (label :class "layout" :text layout)))
+
+(defwidget bar-right []
+  (box :orientation "h" :spacing 12 :halign "end" :class "right"
+    (label :class "cpu"   :text {"CPU ${cpu}"})
+    (label :class "mem"   :text {"MEM ${mem}"})
+    (label :class "disk"  :text {"DSK ${disk}"})
+    (label :class "net"   :text {"NET ${net}"})
+    (label :class "vol"   :text {"VOL ${vol}"})
+    (label :visible {bat != ""} :class "bat" :text {"BAT ${bat}"})
+    (label :class "timew" :text {"TW ${timew}"})
+    (label :class "clock" :text clock)))
+
+(defwidget bar-widget []
+  (centerbox :orientation "h"
+    (bar-left)
+    (box)
+    (bar-right)))
+
+; ── Window ─────────────────────────────────────────────────────────────
+(defwindow bar
+  :monitor 0
+  :geometry (geometry :x "0" :y "0" :width "100%" :height "28px" :anchor "top left")
+  :stacking "fg"
+  :exclusive true
+  :wm-ignore false
+  (bar-widget))

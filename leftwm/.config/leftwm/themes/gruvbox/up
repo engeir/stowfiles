@@ -3,22 +3,16 @@ SCRIPTPATH="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 export XDG_RUNTIME_DIR="${XDG_RUNTIME_DIR:-/run/user/$(id -u)}"
 
 pkill -u "$USER" -x lemonbar 2>/dev/null
+eww --config "$SCRIPTPATH/eww" kill 2>/dev/null
 pkill -u "$USER" -x picom   2>/dev/null
 
 picom --config "$HOME/.config/picom/picom.conf" &
 
 leftwm-command "LoadTheme $SCRIPTPATH/theme.ron"
 
-# Determine primary monitor width for lemonbar geometry
-width=$(xrandr --current | awk '/ connected primary/{match($0,/([0-9]+)x/,a); print a[1]}')
-[ -z "$width" ] && width=$(xrandr --current | awk '/ connected/{match($0,/([0-9]+)x/,a); print a[1]; exit}')
-[ -z "$width" ] && width=1920
+sleep 1   # let leftwm finish creating its pipe before eww scripts connect
 
-sleep 1   # let leftwm finish creating its pipe before bar.sh connects
-"$SCRIPTPATH/scripts/bar.sh" | lemonbar \
-    -g "${width}x28+0+0" \
-    -f "CaskaydiaMono Nerd Font:style=Bold:size=12" \
-    -B "#201b14" -F "#D1B88E" -p &
+eww --config "$SCRIPTPATH/eww" open bar
 
 pgrep -u "$USER" -x dunst     >/dev/null || dunst -conf "$HOME/.config/dunst/dunstrc" &
 pgrep -u "$USER" -x nm-applet >/dev/null || nm-applet --no-agent &
