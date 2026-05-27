@@ -3,7 +3,7 @@ SCRIPTPATH="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 export XDG_RUNTIME_DIR="${XDG_RUNTIME_DIR:-/run/user/$(id -u)}"
 
 pkill -u "$USER" -x lemonbar 2>/dev/null
-eww --config "$SCRIPTPATH/eww" kill 2>/dev/null
+eww-x11 --config "$SCRIPTPATH/eww" kill 2>/dev/null
 pkill -u "$USER" -x picom   2>/dev/null
 
 picom --config "$HOME/.config/picom/picom.conf" &
@@ -12,7 +12,7 @@ leftwm-command "LoadTheme $SCRIPTPATH/theme.ron"
 
 sleep 1   # let leftwm finish creating its pipe before eww scripts connect
 
-eww --config "$SCRIPTPATH/eww" open bar
+eww-x11 --config "$SCRIPTPATH/eww" open bar
 
 pgrep -u "$USER" -x dunst     >/dev/null || dunst -conf "$HOME/.config/dunst/dunstrc" &
 pgrep -u "$USER" -x nm-applet >/dev/null || nm-applet --no-agent &

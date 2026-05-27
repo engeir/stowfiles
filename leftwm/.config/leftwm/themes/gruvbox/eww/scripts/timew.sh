@@ -1,3 +1,3 @@
 #!/usr/bin/env bash
-tw=$(timew get dom.active.tag.1 2>/dev/null)
-[ -z "$tw" ] || [ "$tw" = "0" ] && echo "-" || echo "$tw"
+command -v timew-i3block >/dev/null 2>&1 || exit 0
+timew-i3block 2>/dev/null || true

@@ -26,32 +26,33 @@
 (defpoll timew :interval "30s"
   "scripts/timew.sh")
 
-(defpoll clock :interval "30s"
-  "date '+%a %d %b  %H:%M'")
+(defpoll clock :interval "1s"
+  "date '+%a %d %b %H:%M:%S'")
 
 ; ── Widgets ────────────────────────────────────────────────────────────
 (defwidget tag-btn [name index focused busy]
   (button
     :class {focused ? "tag focused" : busy ? "tag busy" : "tag"}
-    :onclick "leftwm-command 'GotoTag ${index}'"
+    :onclick "leftwm-command 'GoToTag ${index} true'"
     name))
 
 (defwidget bar-left []
-  (box :orientation "h" :spacing 4 :halign "start" :class "left"
+  (box :orientation "h" :spacing 0 :halign "start" :space-evenly false :class "left"
     (for t in workspaces
       (tag-btn :name {t.name} :index {t.index} :focused {t.focused} :busy {t.busy}))
     (label :class "layout" :text layout)))
 
 (defwidget bar-right []
-  (box :orientation "h" :spacing 12 :halign "end" :class "right"
-    (label :class "cpu"   :text {"CPU ${cpu}"})
-    (label :class "mem"   :text {"MEM ${mem}"})
-    (label :class "disk"  :text {"DSK ${disk}"})
-    (label :class "net"   :text {"NET ${net}"})
-    (label :class "vol"   :text {"VOL ${vol}"})
-    (label :visible {bat != ""} :class "bat" :text {"BAT ${bat}"})
-    (label :class "timew" :text {"TW ${timew}"})
-    (label :class "clock" :text clock)))
+  (box :orientation "h" :spacing 12 :halign "end" :space-evenly false :class "right"
+    (label :visible {timew != ""} :class "timew" :text {"📊 ${timew}"})
+    (label :class "cpu"   :text {"⚡ ${cpu}"})
+    (label :class "mem"   :text {"🧠 ${mem}"})
+    (label :class "disk"  :text {"💾 ${disk}"})
+    (label :class "net"   :text {"🌐 ${net}"})
+    (label :class "vol"   :text {"🔊 ${vol}"})
+    (label :visible {bat != ""} :class "bat" :text {"🔋 ${bat}"})
+    (systray :spacing 5 :orientation "h")
+    (label :class "clock" :text {"🕒 ${clock}"})))
 
 (defwidget bar-widget []
   (centerbox :orientation "h"
@@ -63,7 +64,6 @@
 (defwindow bar
   :monitor 0
   :geometry (geometry :x "0" :y "0" :width "100%" :height "28px" :anchor "top left")
-  :stacking "fg"
-  :exclusive true
-  :wm-ignore false
+  :windowtype "dock"
+  :reserve (struts :side "top" :distance "28px")
   (bar-widget))

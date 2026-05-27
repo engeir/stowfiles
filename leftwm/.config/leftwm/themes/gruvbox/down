@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
 SCRIPTPATH="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
-eww --config "$SCRIPTPATH/eww" kill 2>/dev/null
+eww-x11 --config "$SCRIPTPATH/eww" kill 2>/dev/null
 pkill -u "$USER" -x lemonbar 2>/dev/null
 pkill -u "$USER" -x picom
