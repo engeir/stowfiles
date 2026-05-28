@@ -81,6 +81,8 @@ postrun() { # Stuff to run to clean up.
         killall dunst
         setsid -f dunst
     } >/dev/null 2>&1 # Restart dunst to ensure proper location on screen
+    # Let leftwm pick up new monitor config and re-run theme up script
+    command -v leftwm-command >/dev/null 2>&1 && leftwm-command "SoftReload"
 }
 
 # Get all possible displays

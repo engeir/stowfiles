@@ -22,12 +22,13 @@
 
     scratchpad: [
         (
-            name: "Dropdown",
-            value: "alacritty-dropdown-launcher",
-            x: 0.0,
-            y: 0.0,
-            height: 0.45,
-            width: 1.0,
+            name: "smax",
+            value: "alacritty",
+            args: ["-e", "smax", "tui"],
+            x: 0.05,
+            y: 0.06,
+            height: 0.9,
+            width: 0.9,
         ),
     ],
 
@@ -47,7 +48,8 @@
         (command: Execute,          value: "zen",                                            modifier: ["modkey"],                            key: "b"),
         (command: Execute,          value: "menu_run",                                       modifier: ["modkey"],                            key: "space"),
         (command: Execute,          value: "menu_run -c -l 20",                              modifier: ["Alt"],                               key: "space"),
-        (command: ToggleScratchPad, value: "Dropdown",                                       modifier: ["modkey", "Alt"],                     key: "space"),
+        (command: Execute,          value: "alacritty-dropdown-launcher",                    modifier: ["modkey", "Alt"],                     key: "space"),
+        (command: ToggleScratchPad, value: "smax",                                           modifier: ["modkey", "Alt"],                     key: "f"),
         (command: Execute,          value: "displayselect",                                  modifier: ["modkey", "Shift"],                   key: "d"),
         (command: Execute,          value: "clipcat-menu -f dmenu",                          modifier: ["modkey", "Shift"],                   key: "g"),
         (command: Execute,          value: "passmenu",                                       modifier: ["modkey", "Shift"],                   key: "p"),

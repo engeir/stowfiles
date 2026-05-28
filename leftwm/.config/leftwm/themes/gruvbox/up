@@ -13,6 +13,8 @@ leftwm-command "LoadTheme $SCRIPTPATH/theme.ron"
 sleep 1   # let leftwm finish creating its pipe before eww scripts connect
 
 eww-x11 --config "$SCRIPTPATH/eww" open bar
+[ "$(xrandr --listactivemonitors | head -1 | awk '{print $2}')" -ge 2 ] 2>/dev/null \
+    && eww-x11 --config "$SCRIPTPATH/eww" open bar1
 
 pgrep -u "$USER" -x dunst     >/dev/null || dunst -conf "$HOME/.config/dunst/dunstrc" &
 pgrep -u "$USER" -x nm-applet >/dev/null || nm-applet --no-agent &
