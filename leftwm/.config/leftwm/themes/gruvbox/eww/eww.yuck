@@ -44,7 +44,7 @@
 
 (defwidget bar-right []
   (box :orientation "h" :spacing 12 :halign "end" :space-evenly false :class "right"
-    (label :visible {timew != ""} :class "timew" :text {"📊 ${timew}"})
+    (button :visible {timew != ""} :class "timew" :onclick "timew-dmenu &" {"📊 ${timew}"})
     (label :class "cpu"   :text {"⚡ ${cpu}"})
     (label :class "mem"   :text {"🧠 ${mem}"})
     (label :class "disk"  :text {"💾 ${disk}"})
