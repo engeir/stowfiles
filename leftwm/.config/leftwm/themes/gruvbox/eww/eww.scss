@@ -1,7 +1,6 @@
 * {
   font-family: "CaskaydiaMono Nerd Font", "Monospace";
-  font-size: 14px;
-  color: #D1B88E;
+  font-size: 15px;
 }
 
 window.bar, window.bar1 {
@@ -16,12 +15,11 @@ window.bar, window.bar1 {
   background-color: transparent;
 }
 
-button.tag, button.timew {
+.tag, .timew, .cpu, .mem, .net {
   background: transparent;
   background-image: none;
   border: none;
   box-shadow: none;
-  color: #2e2620;
   padding: 2px 9px;
   border-radius: 0px;
   min-width: 0;
@@ -47,6 +45,7 @@ button.tag.focused {
   padding: 0 0px;
 }
 
+.tag   { color: #D1B88E; }
 .cpu   { color: #b8bb26; }
 .mem   { color: #d3869b; }
 .disk  { color: #83a598; }

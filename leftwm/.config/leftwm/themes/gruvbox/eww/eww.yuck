@@ -45,10 +45,10 @@
 (defwidget bar-right []
   (box :orientation "h" :spacing 12 :halign "end" :space-evenly false :class "right"
     (button :visible {timew != ""} :class "timew" :onclick "timew-dmenu &" {"📊 ${timew}"})
-    (label :class "cpu"   :text {"⚡ ${cpu}"})
-    (label :class "mem"   :text {"🧠 ${mem}"})
+    (button :class "cpu"   :onclick "alacritty-dropdown --font 11 btm --default_widget_type cpu &" {"⚡ ${cpu}"})
+    (button :class "mem"   :onclick "alacritty-dropdown --font 11 btm --default_widget_type mem &" {"🧠 ${mem}"})
     (label :class "disk"  :text {"💾 ${disk}"})
-    (label :class "net"   :text {"🌐 ${net}"})
+    (button :class "net"   :onclick "alacritty-dropdown --font 11 nmtui &" {"🌐 ${net}"})
     (label :class "vol"   :text {"🔊 ${vol}"})
     (label :visible {bat != ""} :class "bat" :text {"🔋 ${bat}"})
     (systray :spacing 5 :orientation "h")
@@ -63,14 +63,14 @@
 ; ── Windows ────────────────────────────────────────────────────────────
 (defwindow bar
   :monitor 0
-  :geometry (geometry :x "0" :y "0" :width "100%" :height "28px" :anchor "top left")
+  :geometry (geometry :x "0" :y "0" :width "100%" :height "30px" :anchor "top left")
   :windowtype "dock"
-  :reserve (struts :side "top" :distance "28px")
+  :reserve (struts :side "top" :distance "31px")
   (bar-widget))
 
 (defwindow bar1
   :monitor 1
-  :geometry (geometry :x "0" :y "0" :width "100%" :height "28px" :anchor "top left")
+  :geometry (geometry :x "0" :y "0" :width "100%" :height "30px" :anchor "top left")
   :windowtype "dock"
-  :reserve (struts :side "top" :distance "28px")
+  :reserve (struts :side "top" :distance "31px")
   (bar-widget))

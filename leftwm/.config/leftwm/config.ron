@@ -24,7 +24,7 @@
         (
             name: "smax",
             value: "alacritty",
-            args: ["-e", "smax", "tui"],
+            args: ["--option", "font.size=16", "-e", "smax", "tui"],
             x: 0.05,
             y: 0.06,
             height: 0.9,
