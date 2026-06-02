@@ -2,9 +2,12 @@
 #
 # fix-headset — Configure Jabra Link 380 USB dongle for PipeWire.
 #
-# Sets the card to analog-stereo + mono-input profile (avoids the buggy
-# pro-audio profile that runs mic at 16kHz, causing tinny/distorted audio
-# in Teams, Zen, etc.) and ensures the mic is unmuted at full volume.
+# Sets the card to analog-stereo + mono-input profile (avoids the buggy pro-audio
+# profile that runs mic at 16kHz, causing tinny/distorted audio in Teams, Zen, etc.) and
+# ensures the mic is unmuted at full volume.
+#
+# If Jabra is not detected, falls back to built-in speakers (fixes the suspend-wake HDMI
+# routing bug).
 #
 
 say() {
@@ -12,10 +15,25 @@ say() {
     notify-send "$@"
 }
 
+# Find the built-in PCI audio card (not USB)
+PC_CARD=$(pactl list cards short | awk '$2 ~ /alsa_card\.pci/ {print $2}')
+if [ "$PC_CARD" = "" ]; then
+    say "Could not find built-in PCI audio card"
+    exit 1
+fi
+
 # Verify the Jabra USB dongle is plugged in
 if ! lsusb | grep -iq jabra; then
-    say "No USB dongle attached!"
-    exit 1
+    say "No Jabra dongle detected — falling back to built-in speakers"
+    SPEAKER_PROFILE=$(pactl list cards | awk -v card="$PC_CARD" '/Name:.*'"$card"'/,/Name:/' | grep -E 'Speaker.*available: yes' | sed 's/:.*//' | xargs)
+    if [ "$SPEAKER_PROFILE" = "" ]; then
+        SPEAKER_PROFILE="HiFi (HDMI1, HDMI2, HDMI3, Mic1, Mic2, Speaker)"
+    fi
+    pactl set-card-profile "$PC_CARD" "$SPEAKER_PROFILE"
+    SPEAKER_SINK="alsa_output.${PC_CARD//_/__}.HiFi__Speaker__sink"
+    pactl set-default-sink "$SPEAKER_SINK"
+    say "Switched to built-in speakers"
+    exit 0
 fi
 
 # Grab the PipeWire object IDs for the Jabra's playback (sink) and capture (source) nodes
