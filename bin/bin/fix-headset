@@ -25,7 +25,7 @@ fi
 # Verify the Jabra USB dongle is plugged in
 if ! lsusb | grep -iq jabra; then
     say "No Jabra dongle detected — falling back to built-in speakers"
-    SPEAKER_PROFILE=$(pactl list cards | awk -v card="$PC_CARD" '/Name:.*'"$card"'/,/Name:/' | grep -E 'Speaker.*available: yes' | sed 's/:.*//' | xargs)
+    SPEAKER_PROFILE=$(pactl list cards | awk '/Name:.*'"$PC_CARD"'/,/Name:/' | grep -E 'Speaker.*available: yes' | sed 's/:.*//' | xargs)
     if [ "$SPEAKER_PROFILE" = "" ]; then
         SPEAKER_PROFILE="HiFi (HDMI1, HDMI2, HDMI3, Mic1, Mic2, Speaker)"
     fi
