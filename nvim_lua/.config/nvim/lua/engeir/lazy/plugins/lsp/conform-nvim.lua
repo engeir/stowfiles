@@ -62,6 +62,7 @@ return {
         just = { "just" },
         lua = { "stylua", "injected" },
         markdown = { "prettier", stop_after_first = false },
+        nix = {"nixpkgs_fmt"},
         python = { "ruff_format", "ruff_fix", lsp_format = "first" },
         ruby = { "rubyfmt" },
         rust = { "rustfmt" },

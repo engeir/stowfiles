@@ -8,6 +8,7 @@ vim.lsp.enable({
   "tinymist",
   "yamlls",
   "zuban",
+  "nil",
 })
 
 vim.api.nvim_create_autocmd("LspAttach", {

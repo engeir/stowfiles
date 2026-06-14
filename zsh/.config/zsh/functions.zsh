@@ -205,6 +205,15 @@ evalssh() {
     eval "$(ssh-agent -s)"
 }
 
+zsh-reset() {
+    local f
+    for f in ~/.cache/zsh/*.zsh; do
+        [[ -s "$f" ]] || rm -f "$f"
+    done
+    rm -f ~/.cache/zsh/zcompdump
+    print "zsh caches cleared — open a new shell"
+}
+
 # # Change cursor for vi modes:
 # zle_keymap_select() {
 #     if [[ $KEYMAP == vicmd ]] ||

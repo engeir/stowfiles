@@ -1,17 +1,18 @@
 #!/usr/bin/env bash
 
 # Requirements: xdotool, xrandr, awk, Alacritty v0.12+
-check_program() {
+has() {
     if ! command -v "$1" >/dev/null 2>&1; then
-        echo "Error: $1 is not installed"
+        echo "$1 is not installed. Adjust $0 if you think you do not need it."
+        notify-send "$1 is not installed. Adjust $0 if you think you do not need it."
         exit 1
     fi
 }
 
-check_program xdotool
-check_program xrandr
-check_program awk
-check_program alacritty
+has xdotool
+has xrandr
+has awk
+has alacritty
 
 # User preference (font size scaling; tweak these if necessary)
 base_font_size=9

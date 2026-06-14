@@ -21,6 +21,7 @@ return {
       "lua_ls",
       "markdownlint",
       -- "mypy",
+      "nil",
       "ruff",
       "shellcheck",
       "shellharden",

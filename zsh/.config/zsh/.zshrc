@@ -1,8 +1,8 @@
 #!/bin/zsh
 
-if command -v coreutils 1>/dev/null 2>&1; then
+if command -v date 1>/dev/null 2>&1; then
     # zmodload "zsh/zprof" # Uncomment to run profiler (also last line)
-    t0=$(coreutils date "+%s.%N")
+    t0=$(date "+%s.%N")
 fi
 
 unalias -a
@@ -33,6 +33,8 @@ zinit ice as"command" from"gh-r" \
 zinit light starship/starship
 autoload -Uz add-zsh-hook
 add-zsh-hook precmd transient-prompt-precmd
+
+PROMPT="${PROMPT/terminal-width=\"\$COLUMNS\"/terminal-width=\"\$((COLUMNS-1))\"}"
 TRANSIENT_PROMPT="${PROMPT// prompt / prompt --profile transient }"
 TRANSIENT_RPROMPT="${PROMPT// prompt / prompt --profile rtransient }"
 function transient-prompt-precmd {
@@ -81,6 +83,7 @@ zinit ice as"command" from"gh-r" bpick"atuin-*.tar.gz" mv"atuin*/atuin -> atuin"
     atpull"%atclone" src"init.zsh"
 zinit light atuinsh/atuin
 
+. "/etc/profiles/per-user/$USER/etc/profile.d/hm-session-vars.sh"
 # Generate and cache tool completions (only when binary is newer than cache)
 () {
     local _comp_dir="${XDG_CACHE_HOME:-$HOME/.cache}/zsh/completions"
@@ -213,18 +216,20 @@ gpg-connect-agent updatestartuptty /bye >/dev/null 2>&1
     _zi fnox        fnox        fnox activate zsh
     _zi fzf         fzf         fzf --zsh
     _zi zoxide      zoxide      zoxide init --cmd cd zsh
-    _zi atuin       atuin       atuin init zsh
     _zi batpipe     batpipe     batpipe
     _zi batman      batman      batman --export-env
     _zi navi        navi        navi widget zsh
 
     unfunction _zi
 }
+# Run atuin init fresh every shell — its output includes aliases and config-derived
+# env vars, so caching it would silently ignore alias additions and config changes.
+eval "$(atuin init zsh)"
 # Atuin needs a unique session ID per shell (not the cached one)
 export ATUIN_SESSION="$(</proc/sys/kernel/random/uuid)"
 
-if command -v coreutils 1>/dev/null 2>&1; then
-    t1=$(coreutils date "+%s.%N")
+if command -v date 1>/dev/null 2>&1; then
+    t1=$(date "+%s.%N")
     printf " Ready in %.3f seconds\n" $((t1 - t0))
 fi
 
