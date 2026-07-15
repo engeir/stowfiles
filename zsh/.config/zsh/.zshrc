@@ -83,7 +83,10 @@ zinit ice as"command" from"gh-r" bpick"atuin-*.tar.gz" mv"atuin*/atuin -> atuin"
     atpull"%atclone" src"init.zsh"
 zinit light atuinsh/atuin
 
-. "/etc/profiles/per-user/$USER/etc/profile.d/hm-session-vars.sh"
+if [ -f "/etc/profiles/per-user/$USER/etc/profile.d/hm-session-vars.sh" ]; then
+ . "/etc/profiles/per-user/$USER/etc/profile.d/hm-session-vars.sh"
+fi
+
 # Generate and cache tool completions (only when binary is newer than cache)
 () {
     local _comp_dir="${XDG_CACHE_HOME:-$HOME/.cache}/zsh/completions"
@@ -97,6 +100,9 @@ zinit light atuinsh/atuin
         [[ ! -f "$out" || "$bin" -nt "$out" ]] && "$@" >| "$out"
     }
 
+    _gc ror        ror        ror completion zsh
+    _gc pamcli     pamcli     pamcli completion zsh
+    _gc kubectl    kubectl    kubectl completion zsh
     _gc mise       mise       mise completion zsh
     _gc fnox       fnox       fnox completion zsh
     _gc pitchfork  pitchfork  pitchfork completion zsh
@@ -148,6 +154,8 @@ alias -s md="$EDITOR"
 alias -g NUL='> /dev/null 2>&1'
 alias -g NE='2> /dev/null'
 alias -g DN='> /dev/null'
+alias -g BAT='| bat -l'
+alias -g CP='| xclip -sel clip'
 bindkey -s '^Xgc' 'git commit -m ""\C-b'
 
 # History
