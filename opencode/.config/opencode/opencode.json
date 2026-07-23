@@ -67,6 +67,33 @@
       "extensions": [
         ".py"
       ]
+    },
+    "ty": {
+      "command": [
+        "ty",
+        "server"
+      ],
+      "extensions": [
+        ".py"
+      ]
+    },
+    "pyrefly": {
+      "command": [
+        "pyrefly",
+        "lsp"
+      ],
+      "extensions": [
+        ".py"
+      ]
+    },
+    "zuban": {
+      "command": [
+        "zuban",
+        "server"
+      ],
+      "extensions": [
+        ".py"
+      ]
     }
   },
   "mcp": {
