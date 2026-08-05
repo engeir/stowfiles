@@ -75,7 +75,7 @@ return {
     { "<leader>.e", function() Snacks.explorer() end, desc = "File Explorer" }, -- Duplicate
     -- Find
     { "<leader>.c", function() Snacks.picker.files({ cwd = vim.fn.stdpath("config") }) end, desc = "Find Config File" },
-    { "<leader>.F", function() Snacks.picker.files({ hidden = true }) end, desc = "Find Files" },
+    { "<leader>ff", function() Snacks.picker.files({ ignored = true, hidden = true }) end, desc = "Find All Files" },
     { "<leader>.p", function() Snacks.picker.projects() end, desc = "Projects" },
     { "<leader>.h", function() Snacks.picker.recent() end, desc = "Recent / History" },
     -- Git

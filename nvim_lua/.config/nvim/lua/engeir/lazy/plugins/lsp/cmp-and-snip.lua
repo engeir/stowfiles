@@ -7,6 +7,7 @@ return {
     dependencies = {
       "rafamadriz/friendly-snippets",
       "folke/lazydev.nvim",
+      "saghen/blink.lib",
       {
         "saghen/blink.compat",
         dependencies = {
@@ -18,7 +19,11 @@ return {
         opts = {},
       },
     },
-    version = "*", -- use a release tag to download pre-built binaries
+    build = function()
+      -- build the fuzzy matcher, optionally add a timeout to `pwait(timeout_ms)`
+      -- you can use `gb` in `:Lazy` to rebuild the plugin as needed
+      require("blink.cmp").build():pwait(60000)
+    end,
 
     ---@module 'blink.cmp'
     ---@type blink.cmp.Config

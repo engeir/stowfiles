@@ -4,14 +4,14 @@ return {
   lazy = false,
   keys = {
     {
-      "<leader>ff",
+      "<leader>fg",
       function() require("fff").find_files() end,
       desc = "Find Files",
     },
     {
-      "<leader>fg",
-      function() require("fff").find_in_git_root() end,
-      desc = "Find Git Files",
+      "<leader>fp",
+      function() require('fff').live_grep() end,
+      desc = "Find Grep",
     },
   },
 }
