@@ -142,7 +142,7 @@
         (command: Execute, value: "$HOME/.config/leftwm/themes/current/scripts/brightness.sh down small",modifier: ["Alt"], key: "XF86MonBrightnessDown"),
 
         // ── Monster — X11 specials (Mod1+Shift+Mod4+Control) ─────────
-        (command: Execute, value: "alacritty-dropdown show-keymaps-i3",                modifier: ["modkey", "Alt", "Shift", "Control"], key: "0"),
+        (command: Execute, value: "alacritty-dropdown show-keymaps-leftwm",            modifier: ["modkey", "Alt", "Shift", "Control"], key: "0"),
         (command: Execute, value: "alacritty-dropdown rtui-dd",                        modifier: ["modkey", "Alt", "Shift", "Control"], key: "a"),
         (command: Execute, value: "snippet browse --dmenu",                            modifier: ["modkey", "Alt", "Shift", "Control"], key: "b"),
         (command: Execute, value: "alacritty-dropdown calcure",                        modifier: ["modkey", "Alt", "Shift", "Control"], key: "c"),

@@ -1,0 +1,73 @@
+#!/usr/bin/env python3
+"""Display leftwm keybindings parsed from config.ron."""
+
+import os
+import re
+import subprocess
+
+CONFIG = os.path.expanduser("~/.config/leftwm/config.ron")
+
+MOD_MAP = {
+    "modkey": "Super",
+    "Mod1": "Alt",
+    "Control": "Ctrl",
+    "Shift": "Shift",
+}
+
+KEYBIND_RE = re.compile(
+    r"\(\s*command:\s*(\w+)"
+    r",\s*value:\s*\"([^\"]*)\""
+    r",\s*modifier:\s*\[([^\]]*)\]"
+    r",\s*key:\s*\"([^\"]+)\""
+)
+
+
+def fmt_mods(raw):
+    mods = re.findall(r'"([^"]+)"', raw)
+    if not mods:
+        return "(none)"
+    return "+".join(MOD_MAP.get(m, m) for m in mods)
+
+
+def fmt_command(cmd, value):
+    if cmd == "Execute":
+        return value.strip()
+    if cmd == "SetLayout":
+        return f"SetLayout({value})"
+    if cmd == "ToggleScratchPad":
+        return f"ToggleScratchPad({value})"
+    if cmd == "GotoTag":
+        return f"GotoTag({value})"
+    if cmd == "MoveToTag":
+        return f"MoveToTag({value})"
+    return cmd
+
+
+rows = []
+in_keybinds = False
+with open(CONFIG) as f:
+    for line in f:
+        stripped = line.strip()
+        if stripped == "keybind: [":
+            in_keybinds = True
+            continue
+        if in_keybinds and stripped == "],":
+            break
+        if not in_keybinds or stripped.startswith("//"):
+            continue
+        m = KEYBIND_RE.search(stripped)
+        if m:
+            cmd, value, mods, key = m.groups()
+            rows.append((fmt_mods(mods), key, fmt_command(cmd, value)))
+
+rows.sort()
+col1 = max(len(r[0]) for r in rows) + 2
+col2 = max(len(r[1]) for r in rows) + 2
+lines = [f"{m:<{col1}}{k:<{col2}}{a}" for m, k, a in rows]
+
+subprocess.run(
+    ["fzf", "--no-sort", "--prompt=keymap> "],
+    input="\n".join(lines),
+    text=True,
+    check=False,
+)
