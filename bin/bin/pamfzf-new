@@ -1,4 +1,8 @@
 #!/usr/bin/env bash
 
+# Hide the password from history
+clipcatctl toggle-watcher
 pamfzf
-clipcatctl insert "$(xclip -o -selection clipboard)"
+# But keep it on the clipboard even after the terminal is killed
+xclip -o -selection clipboard 2>/dev/null | setsid -f xclip -selection clipboard 2>/dev/null
+clipcatctl toggle-watcher
