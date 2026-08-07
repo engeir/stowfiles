@@ -7,6 +7,12 @@
 # passmenu-otp: https://github.com/petrmanek/passmenu-otp
 # fuzzel: https://codeberg.org/dnkl/fuzzel
 
+egsit() {
+    if command -v clipcatctl; then clipcatctl enable-watcher; fi
+    exit "$@"
+}
+
+if command -v clipcatctl; then clipcatctl disable-watcher; fi
 shopt -s nullglob globstar
 
 typeit=0
@@ -25,7 +31,7 @@ elif [[ -n $DISPLAY ]]; then
     xdotool="xdotool type --clearmodifiers --file -"
 else
     echo "Error: No Wayland or X11 display detected" >&2
-    exit 1
+    egsit 1
 fi
 
 prefix=${PASSWORD_STORE_DIR-~/.password-store}
@@ -35,7 +41,7 @@ password_files=("${password_files[@]%.gpg}")
 
 password=$(printf '%s\n' "${password_files[@]}" | "${dmenu[@]}" "$@")
 
-[[ -n $password ]] || exit
+[[ -n $password ]] || egsit
 
 pass_cmd=show
 if pass show "$password" | grep -q '^otpauth://'; then
@@ -50,3 +56,4 @@ else
         printf %s "$pass"
     } | "$xdotool"
 fi
+if command -v clipcatctl; then clipcatctl enable-watcher; fi
