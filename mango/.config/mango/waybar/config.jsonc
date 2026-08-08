@@ -8,10 +8,12 @@
     "reload_style_on_change": true,
     "height": 30,
     "modules-left": [
-        "ext/workspaces",
-        // "dwl/tags",
-        "wlr/taskbar",
-        "dwl/window"
+        "mango/workspaces",
+        "mango/layout",
+        "mango/window",
+        // "mango/language",
+        // "mango/keymode",
+        "wlr/taskbar"
     ],
     "modules-center": [
         "custom/playerctl"
@@ -28,6 +30,39 @@
         // "custom/notification",
         "custom/power"
     ],
+    "mango/workspaces": {
+        "format": "{icon}",
+        "hide-empty": true,
+        "on-click": "activate",
+        "on-click-right": "toggle",
+        "overview-label": "OVERVIEW"
+    },
+    "mango/keymode": {
+    	"format": "{}"
+    	// "format-default": " Default",
+        // "format-test": " Test",
+    },
+    "mango/window": {
+        "format": "{}",
+        "icon": true,
+        // "on-click":"bash ~/.config/mango/scripts/screenshot.sh",
+        // "on-click-right":"bash ~/tool/shotTranslate.sh shot",
+	    "icon-size": 20
+	    // "rewrite": {
+	    // 	"主目录": "🌎 $1",
+	    // 	"(.*) - zsh": "> [$1]"
+	    // },
+    },
+    "mango/layout": {
+        "format": "{}"
+        // "format-S": "Scroller",
+        // "format-T": "Tile",
+    },
+    "mango/language": {
+    "format": "{short}",
+    "format-en": "󰌌 US",
+    "format-nb": "󰌌 NB"
+    },
     "ext/workspaces": {
       "format": "{icon}",
       "ignore-hidden": true,
@@ -45,14 +80,6 @@
       //   "active": "",
       //   "default": ""
       // },
-    },
-    "dwl/tags": {
-      "num-tags": 9,
-      "hide-vacant": true
-      // "tag-labels": ["一", "二", "三", "四", "五", "六", "七", "八", "九"]
-    },
-    "dwl/window": {
-        "format": "[{layout}]{title}"
     },
     // "custom/notification": {
     //   "tooltip": false,
