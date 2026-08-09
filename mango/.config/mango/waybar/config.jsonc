@@ -10,15 +10,15 @@
     "modules-left": [
         "mango/workspaces",
         "mango/layout",
-        "mango/window",
+        "mango/window"
         // "mango/language",
         // "mango/keymode",
-        "wlr/taskbar"
     ],
     "modules-center": [
         "custom/playerctl"
     ],
     "modules-right": [
+        "wlr/taskbar",
         "tray",
         "network",
         "pulseaudio",
@@ -32,7 +32,7 @@
     ],
     "mango/workspaces": {
         "format": "{icon}",
-        "hide-empty": true,
+        "hide-empty": false,
         "on-click": "activate",
         "on-click-right": "toggle",
         "overview-label": "OVERVIEW"

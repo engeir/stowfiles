@@ -72,8 +72,6 @@ tooltip {
 
 #workspaces button.hidden {
   color: #9e906f;
-
-  background-color: transparent;
 }
 
 #workspaces button.visible {
@@ -84,14 +82,14 @@ tooltip {
   color: #d79921;
 }
 
+#workspaces button.empty {
+  color: #2d2d2d;
+}
+
 #workspaces button.active {
-  background-color: transparent;
+  background-color: #85212ebb;
   color: #ddca9e;
-  margin-top: 0px;
-  margin-bottom: 0px;
-  padding-top: 1px;
-  padding-bottom: 0px;
-  border-radius: 0px;
+  border-radius: 40px;
 }
 
 #workspaces button.urgent {
@@ -103,8 +101,6 @@ tooltip {
   padding-bottom: 0px;
   border-radius: 0px;
 }
-
-
 
 #tags {
   border: none;
