@@ -3,6 +3,9 @@
 # Extract keybindings from mango bind.conf
 # HELP comments on the line immediately above the binding will be shown as descriptions
 # Bindings without HELP comments will have empty descriptions
+#
+# Selected binds get executed using the `mmsg dispatch` subcommand, escaping will quit
+# silently.
 
 CONFIG="$HOME/.config/mango/bind.conf"
 
@@ -11,8 +14,18 @@ if [ ! -f "$CONFIG" ]; then
     exit 1
 fi
 
+if [ "$MANGO_INSTANCE_SIGNATURE" = "" ]; then
+    echo "Error: MANGO_INSTANCE_SIGNATURE not set (not running under mango?)" >&2
+    exit 1
+fi
+
+if [ ! -S "$MANGO_INSTANCE_SIGNATURE" ]; then
+    echo "Error: mango IPC socket missing at $MANGO_INSTANCE_SIGNATURE" >&2
+    exit 1
+fi
+
 # Process the config file
-awk '
+CHOICE="$(awk '
     # If line is a HELP comment, save it
     /^# HELP:/ {
         help = substr($0, 9)  # Remove "# HELP: "
@@ -67,19 +80,20 @@ awk '
         gsub(/^ \+ /, "", keybind)
         gsub(/ \+ $/, "", keybind)
         
-        # Truncate command to 30 chars if needed
+        # Keep full command for dispatch, truncate a copy for display
+        cmd_full = cmd
         if (length(cmd) > 30) {
             cmd = substr(cmd, 1, 27) "..."
         }
-        
-        # Output formatted with special separator
-        printf "%s£%s£%s\n", keybind, cmd, help
-        
+
+        # Output formatted with special separator; 4th field is full cmd (hidden from view)
+        printf "%s£%s£%s£%s\n", keybind, cmd, help, cmd_full
+
         # Reset help for next iteration
         help = ""
         next
     }
-    
+
     # If line is a mousebind, process it (with or without help comment)
     /^mousebind=/ {
         line = substr($0, 11)  # Remove "mousebind="
@@ -104,16 +118,16 @@ awk '
         gsub(/,/, " + ", keybind)
         gsub(/\+/, " + ", keybind)
         
-        # Truncate command to 30 chars if needed
+        cmd_full = cmd
         if (length(cmd) > 30) {
             cmd = substr(cmd, 1, 27) "..."
         }
-        
-        printf "%s£%s£%s\n", keybind, cmd, help
+
+        printf "%s£%s£%s£%s\n", keybind, cmd, help, cmd_full
         help = ""
         next
     }
-    
+
     # If line is a gesturebind, process it (with or without help comment)
     /^gesturebind=/ {
         line = substr($0, 13)  # Remove "gesturebind="
@@ -129,16 +143,16 @@ awk '
         # Capitalize gesture direction
         gsub(/^[a-z]/, toupper(substr(gesture, 1, 1)), gesture)
         
-        # Truncate command to 30 chars if needed
+        cmd_full = cmd
         if (length(cmd) > 30) {
             cmd = substr(cmd, 1, 27) "..."
         }
-        
-        printf "Gesture: %s£%s£%s\n", gesture, cmd, help
+
+        printf "Gesture: %s£%s£%s£%s\n", gesture, cmd, help, cmd_full
         help = ""
         next
     }
-    
+
     # If line is a switchbind, process it (with or without help comment)
     /^switchbind=/ {
         line = substr($0, 12)  # Remove "switchbind="
@@ -155,16 +169,16 @@ awk '
         if (switch_action == "fold") switch_action = "Lid Close"
         if (switch_action == "unfold") switch_action = "Lid Open"
         
-        # Truncate command to 30 chars if needed
+        cmd_full = cmd
         if (length(cmd) > 30) {
             cmd = substr(cmd, 1, 27) "..."
         }
-        
-        printf "Switch: %s£%s£%s\n", switch_action, cmd, help
+
+        printf "Switch: %s£%s£%s£%s\n", switch_action, cmd, help, cmd_full
         help = ""
         next
     }
-    
+
     # If line is an axisbind (mouse scroll wheel), process it (with or without help comment)
     /^axisbind=/ {
         line = substr($0, 10)  # Remove "axisbind="
@@ -197,16 +211,23 @@ awk '
         gsub(/\+/, " + ", keybind)
         gsub(/,/, " + ", keybind)
         
-        # Truncate command to 30 chars if needed
+        cmd_full = cmd
         if (length(cmd) > 30) {
             cmd = substr(cmd, 1, 27) "..."
         }
-        
-        printf "%s£%s£%s\n", keybind, cmd, help
+
+        printf "%s£%s£%s£%s\n", keybind, cmd, help, cmd_full
         help = ""
         next
     }
-    
+
     # If we hit any other line, clear help
     { help = "" }
-' "$CONFIG" | sort | column -s "£" -t | fzf --header "Mango Keybindings Cheat Sheet" --header-first --no-preview
+' "$CONFIG" | sort | column -s'£' -t -o'£' | awk -F'£' '{ print $1, $2, $3 "\037" $4 }' | fzf \
+    --delimiter=$'\037' --with-nth=1 --accept-nth=2 \
+    --header "Mango Keybindings Cheat Sheet" --header-first --no-preview)"
+
+# Empty CHOICE means Esc / no selection -> exit clean
+[ "$CHOICE" = "" ] && exit 0
+
+mmsg dispatch "$CHOICE"
