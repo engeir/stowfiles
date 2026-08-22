@@ -10,12 +10,14 @@ sort_sensitive = false
 [opener]
 edit = [{ run = '${EDITOR:-nvim} "$@"', block = true, for = "unix" }]
 feh = [{ run = 'feh --scale-down "$1"' }]
+swayimg = [{ run = 'swayimg "$1"' }]
 # nuke = [
 #   { run = '~/.config/nnn/plugins/nuke "$1"', desc = "Open", for = "linux" },
 # ]
 
-[open]
-prepend_rules = [{ mime = "image/*", use = "feh" }, { mime = "*/csv", use = "edit" }]
+# nsxiv is default, and very good
+# [open]
+# prepend_rules = [{ mime = "image/*", use = "swayimg" }, { mime = "*/csv", use = "edit" }]
 
 [preview]
 max_width = 1500
