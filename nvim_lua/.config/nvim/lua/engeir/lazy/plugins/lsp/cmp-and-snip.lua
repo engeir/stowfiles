@@ -113,6 +113,7 @@ return {
           },
         },
       },
+      fuzzy = { implementation = "rust" },
     },
     opts_extend = { "sources.default" },
   },
