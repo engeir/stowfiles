@@ -37,7 +37,7 @@ lc() {
 
 fif() {
     # find-in-file <search-term>
-    if [ ! "$#" -gt 0 ]; then
+    if [ ! "$" -gt 0 ]; then
         echo "Need a string to search for!"
         return 1
     fi
@@ -208,10 +208,24 @@ evalssh() {
 zsh-reset() {
     local f
     for f in ~/.cache/zsh/*.zsh; do
-        [[ -s "$f" ]] || rm -f "$f"
+        [[ -s $f ]] || rm -f "$f"
     done
     rm -f ~/.cache/zsh/zcompdump
     print "zsh caches cleared — open a new shell"
+}
+
+cool-print() {
+    effect="$1"
+    shift
+    if ! tte "$effect" -h >&/dev/null; then
+        echo "first"
+        args="$effect ${@}"
+        effect="beams"
+    else
+        echo "second"
+        args="${@}"
+    fi
+    echo "$args" | figlet -f slant | tte --canvas-width 0 --canvas-height 0 --anchor-text c "$effect"
 }
 
 # # Change cursor for vi modes:
