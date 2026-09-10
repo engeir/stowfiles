@@ -118,7 +118,9 @@ return {
             name = "Ripgrep",
             ---@module "blink-ripgrep"
             ---@type blink-ripgrep.Options
-            opts = {},
+            opts = {
+              project_root_marker = { ".git", "package.json", "ansible.cfg" },
+            },
           },
         },
       },
