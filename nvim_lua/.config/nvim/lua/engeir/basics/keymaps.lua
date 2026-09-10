@@ -170,6 +170,12 @@ vim.keymap.set(
   "%s/—/-/g",
   { desc = "Continue searching on the next line and swallow whitespace" }
 )
+vim.keymap.set(
+  "n",
+  "<C-w>t",
+  "<Cmd>tab split<CR>",
+  { desc = "Open the current buffer in a new tab" }
+)
 
 -- Evaluate math
 vim.keymap.set("x", "<leader><leader>e", 'c<C-R>=py3eval(@")<CR><Esc>')
