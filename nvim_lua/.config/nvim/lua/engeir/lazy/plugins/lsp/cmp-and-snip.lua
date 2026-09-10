@@ -8,6 +8,7 @@ return {
       "rafamadriz/friendly-snippets",
       "folke/lazydev.nvim",
       "saghen/blink.lib",
+      { "mikavilpas/blink-ripgrep.nvim", version = "*" },
       {
         "saghen/blink.compat",
         dependencies = {
@@ -89,6 +90,7 @@ return {
           "snippets",
           "buffer",
           "vimtex",
+          "ripgrep",
         },
         per_filetype = {
           codecompanion = { "codecompanion" },
@@ -111,9 +113,15 @@ return {
             score_offset = 20,
             opts = {},
           },
+          ripgrep = {
+            module = "blink-ripgrep",
+            name = "Ripgrep",
+            ---@module "blink-ripgrep"
+            ---@type blink-ripgrep.Options
+            opts = {},
+          },
         },
       },
-      fuzzy = { implementation = "rust" },
     },
     opts_extend = { "sources.default" },
   },
