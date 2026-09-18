@@ -154,7 +154,8 @@ alias -s md="$EDITOR"
 alias -g NUL='> /dev/null 2>&1'
 alias -g NE='2> /dev/null'
 alias -g DN='> /dev/null'
-alias -g BAT='| bat -l'
+alias -g B='| bat -l'
+alias -g BP='| bat --paging never -p -l'
 alias -g CP='| xclip -sel clip'
 bindkey -s '^Xgc' 'git commit -m ""\C-b'
 

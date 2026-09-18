@@ -6,5 +6,5 @@ return {
     "stevearc/dressing.nvim",
   },
   ---@type GitlabSettings
-  opts = { config_path = "/home/local-lafadm/.config/glab-cli/" },
+  opts = { config_path = vim.fn.expand("~") .. "/.config/glab-cli/" },
 }
