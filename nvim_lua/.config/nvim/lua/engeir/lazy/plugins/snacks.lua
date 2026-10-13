@@ -15,6 +15,7 @@ return {
     bigfile = { enabled = true },
     dim = { animate = { enabled = false } },
     image = { doc = { inline = false, float = true } },
+    lazygit = {},
     notifier = { enabled = false },
     picker = {
       win = {
@@ -79,6 +80,7 @@ return {
     { "<leader>.p", function() Snacks.picker.projects() end, desc = "Projects" },
     { "<leader>.h", function() Snacks.picker.recent() end, desc = "Recent / History" },
     -- Git
+    { "<leader>.gg", function() Snacks.lazygit() end, desc = "Lazygit" },
     { "<leader>.gf", function() Snacks.picker.git_files() end, desc = "Find Git Files" },
     { "<leader>.gb", function() Snacks.picker.git_branches() end, desc = "Git Branches" },
     { "<leader>.gl", function() Snacks.picker.git_log() end, desc = "Git Log" },
@@ -137,6 +139,17 @@ return {
         Snacks.toggle
           .option("relativenumber", { name = "Relative Number" })
           :map("<leader>uL")
+        Snacks.toggle
+          .new({
+            id = "indent_guides",
+            name = "Indent Guides",
+            get = function() return require("blink.indent").is_enabled() ~= false end,
+            set = function(state)
+              local indent = require("blink.indent")
+              indent.enable(state)
+            end,
+          })
+          :map("<leader>ui")
         Snacks.toggle.diagnostics():map("<leader>ud")
         Snacks.toggle.line_number():map("<leader>ul")
         -- Snacks.toggle
