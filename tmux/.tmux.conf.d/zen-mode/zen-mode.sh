@@ -1,14 +1,22 @@
 #!/usr/bin/bash
 # Tmux Zen Mode - Center your terminal
-# Usage: tmux-zen.sh [width]
+# Usage: tmux-zen.sh [pct]
+#
+# pct = width of the center pane as a percentage of the window width
+# (default: 80)
 #
 # https://github.com/akr411/dotfiles/blob/main/.config/tmux/scripts/tmux-zen.sh
 
-CENTER_WIDTH="${1:-120}"
+WIDTH_PCT="${1:-80}"
+if ! [[ "$WIDTH_PCT" =~ ^[0-9]+$ ]] || [ "$WIDTH_PCT" -lt 1 ] || [ "$WIDTH_PCT" -gt 100 ]; then
+    echo "Usage: $0 [pct] (1-100, default 80)" >&2
+    exit 1
+fi
 
 CURRENT_PANE=$(tmux display-message -p '#{pane_id}')
 PANE_COUNT=$(tmux display-message -p '#{window_panes}')
 WINDOW_WIDTH=$(tmux display-message -p '#{window_width}')
+CENTER_WIDTH=$((WINDOW_WIDTH * WIDTH_PCT / 100))
 
 # Check if we're already in zen mode
 is_zen_mode() {
