@@ -8,9 +8,9 @@ sort_reverse = false
 sort_sensitive = false
 
 [opener]
-edit = [{ run = '${EDITOR:-nvim} "$@"', block = true, for = "unix" }]
-feh = [{ run = 'feh --scale-down "$1"' }]
-swayimg = [{ run = 'swayimg "$1"' }]
+edit = [{ run = '${EDITOR:-nvim} %s', block = true, for = "unix" }]
+feh = [{ run = 'feh --scale-down %s' }]
+swayimg = [{ run = 'swayimg %s' }]
 # nuke = [
 #   { run = '~/.config/nnn/plugins/nuke "$1"', desc = "Open", for = "linux" },
 # ]
