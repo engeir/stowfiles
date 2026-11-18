@@ -1,6 +1,7 @@
 {
   "local-gitlab-schema": {
     "body": [
+      "-- curl -L -o ~/.local/share/yaml-schemas/gitlab-ci.json https://gitlab.com/gitlab-org/gitlab-foss/-/raw/master/app/assets/javascripts/editor/schema/ci.json",
       "local schema = vim.fn.expand(\"~/.local/share/yaml-schemas/gitlab-ci.json\")",
       "",
       "vim.api.nvim_create_autocmd(\"LspAttach\", {",
