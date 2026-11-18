@@ -1,1 +1,37 @@
-{ "optsss": { "prefix": "optsss", "body": "opts = {}," } }
+{
+  "local-gitlab-schema": {
+    "body": [
+      "local schema = vim.fn.expand(\"~/.local/share/yaml-schemas/gitlab-ci.json\")",
+      "",
+      "vim.api.nvim_create_autocmd(\"LspAttach\", {",
+      "    callback = function(args)",
+      "        local client = vim.lsp.get_client_by_id(args.data.client_id)",
+      "        if not client or client.name ~= \"yamlls\" then",
+      "            return",
+      "        end",
+      "",
+      "        local settings = client.settings or {}",
+      "        settings.yaml = settings.yaml or {}",
+      "        local schemas = vim.deepcopy(settings.yaml.schemas or {})",
+      "",
+      "        -- drop remote GitLab CI schema(s) from schemastore",
+      "        for url in pairs(schemas) do",
+      "            if url:match(\"gitlab\") and url:match(\"ci%.json\") then",
+      "                schemas[url] = nil",
+      "            end",
+      "        end",
+      "        schemas[\"file://\" .. schema] = \".gitlab-ci.yml\"",
+      "",
+      "        settings.yaml.schemas = schemas",
+      "        client.settings = settings",
+      "        client.notify(\"workspace/didChangeConfiguration\", { settings = settings })",
+      "    end,",
+      "})"
+    ],
+    "prefix": "local-gitlab-schema"
+  },
+  "optsss": {
+    "body": "opts = {},",
+    "prefix": "optsss"
+  }
+}
