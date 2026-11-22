@@ -1,0 +1,30 @@
+{
+  "version": 1,
+  "minVersion": 1,
+  "processPluginDecisions": [
+    {
+      "configFile": "/home/eirik/stowfiles/.dprint.jsonc",
+      "plugin": "https://plugins.dprint.dev/exec-0.5.0.json@8d9972eee71fa1590e04873540421f3eda7674d0f1aae3d7c788615e7b7413d0",
+      "configHash": "1:4b927c4d599692850ee9a7c7b26d1a148706f7e2a23ac88bc5b36d674a2a329a",
+      "configKey": "exec",
+      "allowed": true,
+      "decidedAt": 1795364126240
+    },
+    {
+      "configFile": "/home/eirik/stowfiles/.dprint.jsonc",
+      "plugin": "https://plugins.dprint.dev/prettier-0.46.1.json@e5bd083088a8dfc6e5ce2d3c9bee81489b065bd5345ef55b59f5d96627928b7a",
+      "configHash": "1:e7c4ce4c1fd7d7ba9ea1a37a07a1a11bdca09cb785efb386f1b4cdff05833945",
+      "configKey": "prettier",
+      "allowed": true,
+      "decidedAt": 1795364126240
+    },
+    {
+      "configFile": "/home/eirik/stowfiles/dprint/.config/dprint/dprint.jsonc",
+      "plugin": "https://plugins.dprint.dev/exec-0.9.0.json@939c28cce4022e2676ac9596585448c16abee12b8ccb0320a9eb9596ade1c219",
+      "configHash": "1:4b927c4d599692850ee9a7c7b26d1a148706f7e2a23ac88bc5b36d674a2a329a",
+      "configKey": "exec",
+      "allowed": true,
+      "decidedAt": 1795364126241
+    }
+  ]
+}

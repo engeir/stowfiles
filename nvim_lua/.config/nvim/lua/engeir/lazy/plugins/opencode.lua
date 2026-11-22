@@ -1,5 +1,6 @@
 return {
   "sudo-tee/opencode.nvim",
+  enabled = false,
   opts = {},
   dependencies = {
     "nvim-lua/plenary.nvim",
